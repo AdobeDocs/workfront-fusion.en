@@ -1,4 +1,4 @@
-# Mapping panel: article indes
+# Mapping panel: article index
 
 * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
 * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
