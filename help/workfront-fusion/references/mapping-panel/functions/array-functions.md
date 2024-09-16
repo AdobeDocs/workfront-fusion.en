@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bf065d00-5d84-47e1-8169-bf9e01e2429d
 ---
-# Array functions in Adobe Workfront Fusion
+# Array functions in [!DNL Adobe Workfront Fusion]
 
 ## Access requirements 
 
