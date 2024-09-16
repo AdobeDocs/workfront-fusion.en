@@ -24,6 +24,8 @@ user-guide-description: Workfront Fustion documentation - add more
 * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
 * [Create and manage templates](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
 * [References](/help/workfront-fusion/references/references-toc.md)
+    * [Scenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
+    * [Modules](/help/workfront-fusion/references/modules/modules-toc.md)
     * [Mapping panel](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
     * [Errors](/help/workfront-fusion/references/errors/errors-toc.md)
     * [Navigation](/help/workfront-fusion/references/navigation/navigation-toc.md)
