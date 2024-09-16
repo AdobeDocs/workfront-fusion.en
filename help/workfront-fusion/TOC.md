@@ -27,6 +27,8 @@ user-guide-description: Workfront Fustion documentation - add more
     * [Scenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
     * [Modules](/help/workfront-fusion/references/modules/modules-toc.md)
     * [Mapping panel](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
+        * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
+        * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
     * [Errors](/help/workfront-fusion/references/errors/errors-toc.md)
     * [Navigation](/help/workfront-fusion/references/navigation/navigation-toc.md)
     * [Apps and their modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
