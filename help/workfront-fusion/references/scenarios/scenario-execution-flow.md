@@ -13,64 +13,78 @@ This article explains how a scenario executes and how data flows through it. It 
 
 After a scenario is set up correctly and activated, it executes according to its defined schedule.
 
-As the scenario begins, the first module responds to an event it has been set to watch for. If it returns any bundles (data), they pass on to the next module and the scenario continues, passing the bundles through each successive module, one by one.
+As the scenario begins, the first module responds to an event it has been set to watch for. When it returns data, that data is packaged into bundles. The scenario returns one bundle for each event. For example, if a module is set to watch for issues, it will return a bundle of data for each issue it finds. 
 
-If the bundles process correctly throughout all of the modules, the scenario is marked as a success in the scenario detail area, as explained in [Scenario details in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-detail.md).
+If the trigger module returns any bundles of data, those bundles pass on to the next module and the scenario continues, passing the bundles through each successive module, one at a time.
 
-* For more information on setting up a scenario, see [The scenario editor in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-editor.md).
-* For more information on activating a scenario, see [Activate or deactivate a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/activate-or-inactivate-scenario.md).
-* For more information on scheduling a scenario, see [Schedule a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/schedule-a-scenario.md).
-* For more information on modules, see [Types of modules](../../workfront-fusion/modules/module-types.md).
+If the bundles process correctly through all of the modules, the scenario is marked as a success in the scenario details page.
 
 ### Example: [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
 
 >[!INFO]
 >
->**Example:** In a scenario that watches for incoming requests in [!DNL Workfront] and then converts them to [!DNL Workfront] projects, data would flow as follows.
+>**Example:** In this scenario that watches for incoming requests in [!DNL Workfront] and then converts them to [!DNL Workfront] projects, data would flow as follows:
 >
->The scenario's first step, performed by the first module, is to watch for requests. Each request that comes in is considered one bundle. If the module runs without finding any bundles, the scenario ends after the first module.
+>The scenario's first step, performed by the first module, is to watch for requests. Each request that it finds is considered one bundle. If the module runs without finding any bundles, the scenario ends after the first module.
 >
->If the first module returns a bundle, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the second and last module, which converts the request to a project.
+>If the first module returns a bundle, the bundle passes through the rest of the scenario. In this example, the bundle would go to the second module, which converts the request to a project.
 >
->?![](assets/example-execution-flow-wf-only-350x157.png)
+>![](assets/example-execution-flow-wf-only.png)
 
 ### Example: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
 
 >[!INFO]
 >
->**Example:** In a scenario that downloads documents from [!DNL Adobe Workfront] and sends them to a folder in [!DNL Dropbox], data would flow as follows.
+>**Example:** In This scenario that downloads documents from [!DNL Adobe Workfront] and sends them to a folder in [!DNL Dropbox], data would flow as follows:
 >
->The scenario's first step, performed by the first module, is to watch for bundles (documents). In this example, the module watches for bundles in [!DNL Workfront]. If it does not return a bundle, the scenario ends after the first module.
+>The scenario's first step, performed by the first module, is to watch for documents in Workfront.. Each document that it finds is considered one bundle. If the module runs without finding any bundles, the scenario ends after the first module.
 >
->If a bundle is returned, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the second and last module, which uploads the bundle to the [!DNL Dropbox] folder.
+>If a bundle is returned, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the secondmodule, which uploads the bundle to the [!DNL Dropbox] folder.
 >
->![](assets/example-wf-dropbox-scen-execution-flow-350x202.png)
+>![](assets/example-execution-flow-wf-dropbox.png)
 >
 >If the first module returns multiple bundles, the first bundle is uploaded to [!DNL Dropbox] before the second bundle is uploaded. Then the second bundle uploads, then the third, and so on.
 
 ## Information about processed bundles
 
-For each module, the bundle goes through a 4-step process before going on to the next module or reaching its final destination. The 4-step process is Initalization, Operation, Commit/Rollback, and Finalization. This is called transaction processing and it helps to explain how data was processed in a module.
+For each module, the bundle goes through a 4-step process before going on to the next module or reaching its final destination. 
 
-Once a scenario run is complete, each module displays an icon showing the number of operations performed. You can click this icon to display the detailed information about the processed bundles, in the format described above. You can see which modules settings were used and which bundles were returned by which module.
+* Initialization
+* Operation
+* Commit/Rollback
+* Finalization
 
-![](assets/info-processed-bundles-350x396.png)
+For information about this process, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-A module received input information such as:
+After a scenario run is complete, each module displays an icon showing the number of operations performed. You can click this icon to display the detailed information about the processed bundles for each step in the process. You can see which module settings were used, and which bundles were returned by each module.
 
-* Converted image
-* Selected folder where the image shall be uploaded to
-* Original name of the [!DNL Facebook] image
+![](assets/Info-processed-bundles.png)
+
+In this example, the module received input information such as:
+
+* The ID of the issue it found
+* The object that the issue will be converted to (Project)
+* The ID of the template it will use to create the project
+* The record type of the object it found (OPTASK, which is an issue)
 
 After processing, the module returned this output information:
 
-* Image ID assigned by [!DNL Dropbox]
-* Full path where in [!DNL Dropbox] [!DNL Workfront Fusion] uploaded the file
+* ID of the newly created project.
 
-The above information is captured for each bundle separately, as marked by the drop down boxes [!UICONTROL Operation 1] and [!UICONTROL Operation 2] in the image.
+If the module found more than one issue, the information is captured for each bundle separately. There would be an Operation 2 area with input and output sections describing the second bundle, and so on.
 
-For more information on transaction processing see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-cycles-phases.md).
+## Errors while executing a scenario
 
-## Error occurred while executing a scenario
+An error might occur during the scenario run. For example, if you have deleted the template that the module will use to create the new project, the scenario terminates with an error message. For more information about how to handle errors, see [Error processing in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/errors/error-processing.md).
 
-An error might occur during the scenario run. For example, if you delete the [!DNL Dropbox] folder that you have set as the target folder in the module setting, the scenario terminates with an error message. For more information about how to handle errors, see [Error processing in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/errors/error-processing.md).
+## Resources
+
+* For more information on setting up a scenario, see [The scenario editor in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-editor.md).
+* For more information on the scenario details page, see [Scenario details in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-detail.md).
+* For more information on activating a scenario, see [Activate or deactivate a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/activate-or-inactivate-scenario.md).
+* For more information on scheduling a scenario, see [Schedule a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/schedule-a-scenario.md).
+* For more information on modules, see [Types of modules](../../workfront-fusion/modules/module-types.md).
+
+
+
+
