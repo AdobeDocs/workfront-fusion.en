@@ -7,7 +7,9 @@ feature: Workfront Fusion
 ---
 # Scenario execution flow in [!DNL Adobe Workfront Fusion]
 
-This article explains how a scenario executes and how data flows through it. It also explains where you can find information about your processed data and how to read it.
+<!--audited: 09/2024-->
+
+This article explains how a scenario executes and how data flows through it, and how to view the data processed by each module.
 
 ## Scenario execution flow
 
@@ -54,7 +56,9 @@ For each module, the bundle goes through a 4-step process before going on to the
 * Commit/Rollback
 * Finalization
 
-For information about this process, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+>[!NOTE]
+>
+>The larger scenario goes through this process as well. For information about this process on the scenario level, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 After a scenario run is complete, each module displays an icon showing the number of operations performed. You can click this icon to display the detailed information about the processed bundles for each step in the process. You can see which module settings were used, and which bundles were returned by each module.
 
