@@ -75,5 +75,4 @@ For more information, see [The scenario settings panel in [!DNL Adobe Workfront 
 
 
 
-<!--Scenario is initialized, module init, op, comm, fin, then scenario finalized.-->
 
