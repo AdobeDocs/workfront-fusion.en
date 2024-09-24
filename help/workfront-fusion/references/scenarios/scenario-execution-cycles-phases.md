@@ -70,7 +70,7 @@ During the finalization phase, open connections (for example, FTP connections, d
 
 ## Resources
 
-For more information, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+<!--For more information, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
 
 
 
