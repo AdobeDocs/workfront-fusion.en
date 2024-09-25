@@ -1,17 +1,19 @@
 ---
 content-type: reference
-title: Error Processing in [!DNL Adobe Workfront Fusion]
+title: Error types in [!DNL Adobe Workfront Fusion]
 description: Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to a service or if a validation fails. This article discusses the common errors that you may encounter.
 author: Becky
 feature: Workfront Fusion
 ---
-# Error processing in [!DNL Adobe Workfront Fusion]
+# Error types in [!DNL Adobe Workfront Fusion]
 
-Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to a service or if a validation fails. This article discusses the common errors that you may encounter.
+Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to the service, or if a validation fails. 
 
-[!DNL Adobe Workfront Fusion] distinguishes between several basic error types. It will react differently depending upon on the type of error that occurred.
+[!DNL Adobe Workfront Fusion] distinguishes between several basic error types. The type of error determines your Fusion scenario's next actions.
 
 ## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:
 
@@ -20,53 +22,57 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!DNL Pro] or higher</p> </td> 
+    <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
+   <td> New: Standard<p>Or</p><p>Current: Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Any </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
+
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
 
++++
 ## Connection Error 
 
 `ConnectionError`
 
-Connection error is one of the most common errors usually caused by unavailability of the third-party service for various reasons (overloading, maintenance, outage, and so on). The default handling of this error depends on which module it was encountered on:
+Connection errors are one of the most common errors. They are usually caused by unavailability of the third-party service for various reasons, such as overloading, maintenance, or outage. The default handling of this error depends on which module encountered the error.
 
-* If the error occurs on the first module, the execution of the scenario is terminated with a warning message. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals (these are explained below). If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
-* If the connection error occurs on another module than the first one, the subsequent steps depend on the [Allow storing incomplete executions](../../workfront-fusion/scenarios/scenario-settings-panel.md#allow) option in the scenario advanced settings:
+* If the error occurs on the first module, the execution of the scenario is terminated with a warning message. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
+* If the connection error occurs on another module than the first one, the subsequent steps depend on the Allow storing incomplete executions option in the scenario advanced settings:
 
     * If this option is enabled, the execution of the scenario is moved to the [!UICONTROL Incomplete executions] folder where [!DNL Workfront Fusion] repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, the execution will remain in the Incomplete executions folder awaiting manual resolution by the user.
 
-      For more informationon incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+      For more information on incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
     * If this option is disabled, the execution of the scenario ends with an error followed by a rollback phase. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
+
+    <!--For more information on the Allow storing incomplete executions setting, see [Allow storing incomplete executions](/) in the article Scenario settings panel.-->
 
 ### Increasing time intervals
 
-The algorithm of multiplicatively increasing time intervals between attempts when an error occurs is known as exponential backoff. The increasing time intervals are set as follows:
+The algorithm for increasing time intervals between attempts when an error occurs is known as exponential backoff. The increasing time intervals are set as follows:
 
 1. 10 minutes
 1. 1 hour
@@ -74,7 +80,7 @@ The algorithm of multiplicatively increasing time intervals between attempts whe
 1. 12 hours
 1. 24 hours
 
-The main reason for employing the increasing time intervals in [!DNL Workfront Fusion] is to prevent frequently executed scenarios from consuming operations on repeatedly failing attempts.
+The increasing time intervals help prevent frequently executed scenarios from using operations on repeatedly failing attempts.
 
 >[!INFO]
 >
@@ -83,6 +89,8 @@ The main reason for employing the increasing time intervals in [!DNL Workfront F
 >A scenario contains the [!DNL Google Sheets] trigger [!UICONTROL Watch Rows]. [!DNL Google Sheets] is unavailable for 30 minutes due to maintenance when [!DNL Workfront Fusion] starts the scenario, so it is unable to retrieve new rows. The scenario stops and tries again in 10 minutes. Because [!DNL Google Sheets] is still unavailable, [!DNL Workfront Fusion] is still unable to get information about new rows. The next run of the scenario is scheduled in 1 hour. [!DNL Google Sheets] is available again at this time, and the scenario runs successfully.
 
 ## Data error
+
+<!--Becky start here-->
 
 `DataError`
 
