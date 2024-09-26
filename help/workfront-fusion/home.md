@@ -3,12 +3,9 @@ title: Placeholder
 description: This is the guide home page. Edit.
 ---
 
-# Placeholder
-
-
-______________ content below line copied from wf.en repo and needs to be updated.
-
 # [!DNL Workfront] documentation
+
+<!--UPDATE THIS-->
 
 Welcome to the Adobe Workfront product and technical documentation home page. Use the following Adobe Workfront links, help articles, and additional resources to learn how to implement and effectively use Adobe Workfront in your organization.
 

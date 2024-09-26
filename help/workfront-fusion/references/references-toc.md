@@ -1,5 +1,5 @@
  
- # References: article index
+# References: article index
  
 * [Scenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
 * [Modules](/help/workfront-fusion/references/modules/modules-toc.md)
