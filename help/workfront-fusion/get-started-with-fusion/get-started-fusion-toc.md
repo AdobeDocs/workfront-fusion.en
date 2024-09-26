@@ -6,6 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 --- -->
+
 # Get started with Workfront Fusion: article index
  
 * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion.toc.md)
