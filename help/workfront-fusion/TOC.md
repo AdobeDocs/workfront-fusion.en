@@ -1,7 +1,7 @@
 ---
-user-guide-title: Workfront Fustion documentation
-breadcrumb-title: Workfront Fustion
-user-guide-description: Workfront Fustion documentation - add more
+user-guide-title: Workfront Fusion documentation
+breadcrumb-title: Workfront Fusion
+user-guide-description: Workfront Fusion documentation - add more
 ---
 
 # Workfront Fusion documentation {#using}
