@@ -1,4 +1,4 @@
-<!-----
+---
 content-type: reference
 title: "Error References: Article Index"
 description: This section contains reference material related to errors in Adobe Workfront Fusion.
