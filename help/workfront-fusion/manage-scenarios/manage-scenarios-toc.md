@@ -5,6 +5,6 @@ description: This section contains articles related to managing scenarios in Ado
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
---- 
+---
 
 # Manage scenarios: article index

@@ -5,7 +5,7 @@ description: This section contains reference material related to errors in Adobe
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
------>
+---
 
 # Errors in Adobe Workfront Fusion
 

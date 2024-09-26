@@ -5,6 +5,6 @@ description: This section contains articles related to configuring error handlin
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
---- 
+---
 
 # Configure error handling: article index
