@@ -153,7 +153,7 @@ If a scenario terminates with the `RuntimeError`, its further behavior depends o
 >[!NOTE]
 >
 >If a scenario starts with an instant trigger and encounters this error, the setting of [!UICONTROL Max number of consecutive errors] is ignored, and the scenario is deactivated immediately.
-<!-->> For more information, see [Instant triggers](../../workfront-fusion/modules/module-types.md#instant) in the article [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+<!-- For more information, see [Instant triggers](../../workfront-fusion/modules/module-types.md#instant) in the article [Types of modules](../../workfront-fusion/modules/module-types.md).-->
 
 ## Inconsistency Error
 
