@@ -5,6 +5,6 @@ description: This section contains articles related to adding modules in Workfro
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
---- 
+---
 
 # Add modules: article index
