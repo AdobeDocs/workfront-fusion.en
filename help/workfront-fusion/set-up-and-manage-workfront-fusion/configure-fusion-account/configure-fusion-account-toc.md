@@ -6,3 +6,5 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 --- 
+
+# Configuring your Fusion account: article index

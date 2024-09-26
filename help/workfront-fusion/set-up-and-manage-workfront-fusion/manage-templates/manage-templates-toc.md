@@ -6,3 +6,6 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 --- 
+
+# Managing templates: article index
+

@@ -6,3 +6,5 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 --- 
+
+# Set up and managing organizations and teams: article index
