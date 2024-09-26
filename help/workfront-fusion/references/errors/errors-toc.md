@@ -6,6 +6,7 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 ----->
+
 # Errors in Adobe Workfront Fusion
 
 * [Error processing](/help/workfront-fusion/references/errors/error-processing.md)
