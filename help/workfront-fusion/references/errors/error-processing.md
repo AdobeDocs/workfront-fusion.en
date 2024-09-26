@@ -54,6 +54,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
 
 +++
+
 ## Connection Error 
 
 `ConnectionError`
@@ -90,23 +91,13 @@ The increasing time intervals help prevent frequently executed scenarios from us
 
 ## Data error
 
-<!--Becky start here-->
-
 `DataError`
 
-A data error is generated when an item is incorrectly mapped and does not pass the validation performed on the [!DNL Workfront Fusion] side or on the side of the third-party service being used. 
+A data error is generated when an item is incorrectly mapped and does not pass the validation performed on either the [!DNL Workfront Fusion] side or on the side of the third-party service. 
 
-If this error occurs, the scenario, up to where the module failed, is moved to the incomplete executions folder where you can troubleshoot the issue. However, the scenario does not stop and continues to run according to its schedule. To stop the execution of the scenario when Data error appears, enable the Sequential processing option in the Scenario settings panel. 
+If this error occurs, the scenario, up to where the module failed, is moved to the incomplete executions folder, where you can troubleshoot the issue. However, the scenario does not stop, and continues to run according to its schedule. To stop the execution of the scenario when Data error appears, enable the Sequential processing option in the Scenario settings panel. 
 
-If you have not enabled the [!UICONTROL Allow storing incomplete executions] option in the scenario settings, the execution of the scenario terminates with the error and a rollback is performed.
-
-For more information on mapping, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
-
-For information about incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
-
-For imformation about the scenario setting panel, see [The scenario settings panel in Adobe Workfront Fusion](../../workfront-fusion/scenarios/scenario-settings-panel.md).
-
-For information about schedules, see [Schedule a scenario in Adobe Workfront Fusion](../../workfront-fusion/scenarios/schedule-a-scenario.md).
+If you have not enabled the [!UICONTROL Allow storing incomplete executions] option in the scenario settings, the execution of the scenario terminates with the error, and a rollback is performed.
 
 ## Duplicate Data Error
 
@@ -114,23 +105,24 @@ For information about schedules, see [Schedule a scenario in Adobe Workfront Fus
 
 If [!DNL Workfront Fusion] tries to insert the same bundle twice into a service that does not allow duplicate data, a duplicate data error is generated. If this error occurs, [!DNL Workfront Fusion] proceeds in the same way as as it does for the data error.
 
+For more information, see [Data Error](#data-error) in this article.
+
+
 ## Invalid Access Token Error
 
 `InvalidAccessTokenError`
 
-An invalid access token error occurs when [!DNL Workfront Fusion] cannot access your account registered with a third-party service. This usually happens when you revoke access rights for [!DNL Workfront Fusion] in the administration of a given service, but related scenarios keep running according to schedule.
+An invalid access token error occurs when [!DNL Workfront Fusion] cannot access your account registered with a third-party service. This usually happens when you revoke access rights for [!DNL Workfront Fusion] in the administration of a given service, but scenarios that use that service continue running according to schedule.
 
-If this error occurs, the execution of a scenario is stopped immediately. The rest of the scenario starting from the module where the error occurred is moved to the incomplete executions folder.
-
-For information about incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+If this error occurs, the scenario execution stops immediately. The rest of the scenario starting from the module where the error occurred moves to the incomplete executions folder.
 
 ## Rate Limit Error
 
 `RateLimitError`
 
-If a limit set by a given service is exceeded, a rate limit error is generated. If this error happens, [!DNL Workfront Fusion] proceeds in the same way as it does for the Connection Error. 
+If a limit set by a given service is exceeded, a rate limit error is generated. If this error occurs, [!DNL Workfront Fusion] proceeds in the same way as it does for the Connection Error. 
 
-For more information, see [Connection Error](#connection-error).
+For more information, see [Connection Error](#connection-error) in this article.
 
 ## Incomplete Data Error
 
@@ -148,28 +140,43 @@ For more information, see [Number of consecutive errors](../../workfront-fusion/
 >
 >A scenario has the [!DNL Workfront] trigger [!UICONTROL Watch Record] set to watch for documents. The scenario executes while you are uploading a large document, such as a long video. Because [!UICONTROL Workfront Fusion] tries to download the video while it is still uploading to Workfront, the scenario terminates with the `IncompleteDataError`.
 
-## Run time error
+## Runtime error
 
 `RuntimeError`
 
-If any other error (not mentioned above) appears during scenario execution, it is reported as a `RunTimeError`.
+Any error that appears during scenario execution and is not one of these error types is reported as a `RunTimeError`.
 
-If a scenario terminates with the `RuntimeError`, its further behavior will depend on its setting of [!UICONTROL Max number of consecutive errors]. For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article [The scenario settings panel in Adobe Workfront Fusion](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+If a scenario terminates with the `RuntimeError`, its further behavior depends on the [!UICONTROL Max number of consecutive errors] setting. For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article The scenario settings panel in Adobe Workfront Fusion.
 
 >[!NOTE]
 >
->If a scenario starts with an instant trigger, the setting of [!UICONTROL Max number of consecutive errors] is ignored and the scenario is deactivated immediately once the first error has occurred. For more information, see [Instant triggers](../../workfront-fusion/modules/module-types.md#instant) in the article [Types of modules](../../workfront-fusion/modules/module-types.md).
+>If a scenario starts with an instant trigger and encounters this error, the setting of [!UICONTROL Max number of consecutive errors] is ignored, and the scenario is deactivated immediately.
+> For more information, see [Instant triggers](../../workfront-fusion/modules/module-types.md#instant) in the article [Types of modules](../../workfront-fusion/modules/module-types.md).
 
 ## Inconsistency Error
 
 `InconsistencyError`
 
-If any error described above occurs during the commit or rollback phase, a scenario will terminate with Inconsistency Error. For more information, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-cycles-phases.md).
+If any of these errors occurs during the commit or rollback phase, the scenario terminates with an Inconsistency Error. 
 
 If this error appears in a scenario, the execution of the scenario is immediately stopped.
 
 ## Warning
 
-While executing a scenario, you may receive a warning informing you about a problem. However, it does not prevent the scenario from being successfully completed.
+While executing a scenario, you may receive a warning informing you about a problem. A warning does not prevent the scenario from completing successfully.
 
-For example, a warning can appear when the maximum allowed file size is exceeded and the [!UICONTROL Enable data loss] option is disabled. For more information, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in the article [The scenario settings panel in Adobe Workfront Fusion](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+For example, a warning can appear when the maximum allowed file size is exceeded and the [!UICONTROL Enable data loss] option is disabled. 
+
+## Resources
+
+<!--For more information on mapping, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+
+For information about incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+
+For information about the scenario setting panel, see [The scenario settings panel in Adobe Workfront Fusion](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+
+For information about schedules, see [Schedule a scenario in Adobe Workfront Fusion](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
+
+For information about scenario phases, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-cycles-phases.md).
+
+<!--For information on the Enable data loss option, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in the article The scenario settings panel in Adobe Workfront Fusion.-->
