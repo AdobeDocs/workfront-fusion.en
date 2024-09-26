@@ -77,7 +77,7 @@ When there is an error in your scenario with an instant trigger, the scenario:
 
 If an error occurs during the scenario execution, the event is placed back into the queue during the instant trigger's rollback phase. In such a situation, you can fix the scenario and run it again. 
 
-For more information, see [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) in the article [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-cycles-phases.md).
+For more information, see [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) in the article Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion].
 
 If there is a Webhook response module in your scenario, the error is sent to the Webhook response. The Webhook response module is always executed last (when the [!UICONTROL Auto commit] option in the Scenario settings is not enabled). 
 
@@ -98,7 +98,7 @@ You can create your own webhooks. <!--For more information, see [Webhooks](../..
 
 ## Resources
 
-For more information on cycles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-cycles-phases.md).
+For more information on cycles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 
 
