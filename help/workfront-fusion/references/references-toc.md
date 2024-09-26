@@ -1,3 +1,11 @@
+---
+content-type: reference
+title: "References: article index"
+description: This section contains reference material related to Adobe Workfront Fusion.
+author: Becky
+feature: Workfront Fusion
+recommendations: noDisplay, noCatalog
+---
  
 # References: article index
  
