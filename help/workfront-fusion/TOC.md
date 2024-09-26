@@ -8,8 +8,8 @@ user-guide-description: Workfront Fusion documentation - add more
 
 * Get started with Workfront Fusion {#get-started-with-fusion}
     * [Get started with Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
-    * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion.toc.md)
-    * [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion.toc.md)
+    * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+    * [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
 * Set up and manage Workfront Fusion {#set-up-and-manage-fusion}
     * [Set up and manage Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
     * [Licensing and operations overviews](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
@@ -48,6 +48,8 @@ user-guide-description: Workfront Fusion documentation - add more
         * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
     * Errors {#errors}
         * [Errors](/help/workfront-fusion/references/errors/errors-toc.md)
+        * [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
+        * [Error types](/help/workfront-fusion/references/errors/error-processing.md)
     * Navigation {#navigation}
         * [Navigation](/help/workfront-fusion/references/navigation/navigation-toc.md)
     * Apps and their modules {#apps-and-their-modules}
