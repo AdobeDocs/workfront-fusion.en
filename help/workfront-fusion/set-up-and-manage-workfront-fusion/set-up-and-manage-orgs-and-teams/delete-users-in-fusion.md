@@ -17,7 +17,8 @@ Adobe Workfront Fusion administrators can delete users inside Workfront Fusion.
 >* See [Delete users through the [!DNL Adobe Admin Console]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/delete-users-admin-console.md).
 >* Contact your Adobe Admin Console Administrator.
 >
-<!-->For a list of procedures that differ based on whether your organization has been onboarded to the Adobe Admin Console, see [Platform-based administration differences (Adobe Workfront Fusion/Adobe Business Platform)](../../workfront-fusion/fusion-in-admin-console/fusion-adobe-admin-console.md).-->
+<!--
+>For a list of procedures that differ based on whether your organization has been onboarded to the Adobe Admin Console, see [Platform-based administration differences (Adobe Workfront Fusion/Adobe Business Platform)](../../workfront-fusion/fusion-in-admin-console/fusion-adobe-admin-console.md).-->
 
 
 >[!NOTE]
