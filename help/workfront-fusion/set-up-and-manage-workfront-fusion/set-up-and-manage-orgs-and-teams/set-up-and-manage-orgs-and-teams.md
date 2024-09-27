@@ -8,3 +8,9 @@ recommendations: noDisplay, noCatalog
 ---
 
 # Set up and managing organizations and teams: article index
+
+* [Delete users in the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/delete-users-admin-console.md)
+
+
+
+
