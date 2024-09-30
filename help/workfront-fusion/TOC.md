@@ -36,6 +36,11 @@ user-guide-description: Workfront Fusion documentation - add more
     * [Manage scenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
+    * [Create a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
+    * [Add a trigger module to a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
+    * [Use a function to update a project in a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
+    * [Add a filter to a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
+    * [Add a webhook to a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Create and manage templates {#create-and-manage-templates}
     * [Create and manage templates](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
 * References {#references}
@@ -53,8 +58,21 @@ user-guide-description: Workfront Fusion documentation - add more
         * [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md)
     * Mapping panel {#mapping-panel}
         * [Mapping panel](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
-        * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-        * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+        * Data types {#data types}
+            * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
+            * [Item data types in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
+            * [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
+            * [Data structures in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
+        * Functions {#functions}
+            * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+            * [General functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
+            * [Date and time functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
+            * [Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
+            * [Tokens for date and time parsing in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
+            * [String functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
+            * [Math functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
+            * [Math variables in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
+            * [Array functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)
     * Errors {#errors}
         * [Errors](/help/workfront-fusion/references/errors/errors-toc.md)
         * [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
