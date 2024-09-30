@@ -28,7 +28,9 @@ user-guide-description: Workfront Fusion documentation - add more
 * Create scenarios {#create-scenarios}
     * [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
     * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
-    * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
+    * Map data {#map-data}
+        * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
+        * [Map items using functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
     * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
     * [Configure error handling](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
     * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
