@@ -75,7 +75,7 @@ The following are tabs in the mapping panel:
 
 * **General functions** ![](assets/toolbar-icon-general-function.png) - See [General functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) for more information.
 
-* **Math functions** ![](assets/toolbar-icon-math-functions.png) - See [Math functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/) for more information.
+* **Math functions** ![](assets/toolbar-icon-math-functions.png) - See [Math functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) for more information.
 
 * **Text and binary functions** ![](assets/toolbar-icon-text&binary-functions.png) - See [String functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) for more information.
 
