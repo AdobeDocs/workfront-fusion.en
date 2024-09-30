@@ -1,7 +1,7 @@
 ---
 content-type: reference
-title: 'Data Types References: Article Index'
-description: This section contains reference material related to data types in Adobe Workfront Fusion. 
+title: "Data types references: article index"
+description: This section contains reference material related to data types in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
