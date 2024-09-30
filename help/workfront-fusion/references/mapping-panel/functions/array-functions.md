@@ -119,7 +119,7 @@ Returns a primitive array containing values of a complex array. This function al
   >
   >  Returns a primitive array with emails having a label equal to work or home
 
-For more information, see [Map information from one module to another in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md)
+<!--For more information, see [Map information from one module to another in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).-->
 
 ### shuffle
 

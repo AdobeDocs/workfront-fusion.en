@@ -15,7 +15,7 @@ A data structure is a document that describes in detail the format of the data b
 
 You can create a data structure by clicking the [!UICONTROL Create a new data structure] button in the [!UICONTROL Data structure overview] section or in the settings of the module that requires data structure specification.
 
-Supported data types are described in the [[!UICONTROL Types of modules]](../../workfront-fusion/modules/module-types.md) article.
+<!--Supported data types are described in the [[!UICONTROL Types of modules]](../../workfront-fusion/modules/module-types.md) article.-->
 
 ## Access requirements
 

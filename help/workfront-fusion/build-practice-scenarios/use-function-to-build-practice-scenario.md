@@ -12,7 +12,7 @@ exl-id: f4588063-024f-4520-986e-45342a6b6777
 
 Updating a Workfront work item is a common use case for Workfront Fusion. In this example, you will use a function to change the name of a project to be in uppercase letters.
 
-Fusion includes many types of functions that allow you to transform and perform conditional logic on your data. For more information on using functions, see [Map information from one module to another in Adobe Workfront Fusion](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).
+Fusion includes many types of functions that allow you to transform and perform conditional logic on your data. <!--For more information on using functions, see [Map information from one module to another in Adobe Workfront Fusion](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).-->
 
 This example modifies the scenario created in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 
@@ -43,7 +43,7 @@ When this scenario converts a request to a project, the project's name is the sa
 1. Click the **Name** field. 
 
    The mapping panel opens.
-1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon]assets/toolbar-icon-text&binary-functions.png)
+1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon](assets/toolbar-icon-text&binary-functions.png)
 1. Select the function **upper**.
 
    The function appears in the Name field, including the formatting for the input it expects.
@@ -73,6 +73,6 @@ When this scenario converts a request to a project, the project's name is the sa
    >
    >Save often as you hone and test a scenario.
 
-## Resources:
+<!--## Resources-->
 
-* [Map items using functions in [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md)
+<!--* [Map items using functions in [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md)-->

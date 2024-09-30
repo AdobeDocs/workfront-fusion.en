@@ -158,7 +158,7 @@ The replacement string can include the following special replacement patterns:
 >
 >Do not use named capture groups such as `/ is (?<number>\d+)/` in the replacement string argument. Doing so results in an error.
 
-For more information on regular expressions, see [Text parser](../../workfront-fusion/apps-and-their-modules/text-parser.md).
+<!--For more information on regular expressions, see [Text parser](../../workfront-fusion/apps-and-their-modules/text-parser.md).-->
 
 ## [!UICONTROL trim (text)]
 

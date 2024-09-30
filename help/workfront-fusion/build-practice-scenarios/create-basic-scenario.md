@@ -85,7 +85,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
 1. In the [!UICONTROL Connection] box, select your Workfront connection. 
 
-   If you do not have a Workfront connection, see [Create a connection to [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/connections/connect-to-fusion-general.md)
+   <!--If you do not have a Workfront connection, see [Create a connection to [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/connections/connect-to-fusion-general.md)-->
 1. In the [!UICONTROL Record Type] box, select **[!UICONTROL Task]**. This sets the module to search only tasks.
 
    You can find **[!UICONTROL Task]** in the list if you start typing the word "[!UICONTROL task]."
@@ -162,8 +162,8 @@ For this scenario, a successful test would result in locating the new task and c
 
    For more information about the data in the inspection bubbles, see:
 
-   * For general information, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/scenario-execution-flow.md).
-   * For information about processed bundles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/scenario-execution-cycles-phases.md).
+   * For general information, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
+   * For information about processed bundles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 1. In [!DNL Workfront Fusion], click **[!UICONTROL Save]** near the lower-left corner to save your progress on the scenario.
 
@@ -193,13 +193,13 @@ The last step in creating a scenario is activating it.
 
 Because this scenario is searching for a specific task, there is no need to activate it. Activating a scenario causes it to run on a schedule or when a specific action occurs in an application. After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
 
-For more information about activating scenarios, see [Activate or deactivate a scenario in [!UICONTROL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/activate-or-inactivate-scenario.md).
+<!--For more information about activating scenarios, see [Activate or deactivate a scenario in [!UICONTROL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/activate-or-inactivate-scenario.md).-->
 
-For information about schedules, see [Schedule a scenario in [!UICONTROL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/schedule-a-scenario.md).
+<!--For information about schedules, see [Schedule a scenario in [!UICONTROL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/schedule-a-scenario.md).-->
 
 ## Next steps
 
-* [Add a trigger module](/help/quicksilver/workfront-fusion/get-started/build-practice-scenarios/add-trigger-to-simple-scenario.md) to allow the scenario to periodically look for new requests and convert them to projects.
+* [Add a trigger module](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md) to allow the scenario to periodically look for new requests and convert them to projects.
 * Add a webhook to allow the scenario to execute every time a request is entered.
 * Add a filter to ensure that only certain requests are converted to projects.
 * Add a function that customizes the name of the new project.

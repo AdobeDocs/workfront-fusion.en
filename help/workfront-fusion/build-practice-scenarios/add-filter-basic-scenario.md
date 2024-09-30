@@ -69,6 +69,6 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
    >
    >Save often as you hone and test a scenario.
 
-## Resources
+<!--## Resources-->
 
-* For more information on filters, see [Add a filter to a scenario](/help/quicksilver/workfront-fusion/scenarios/add-a-filter-to-a-scenario.md).
+<!--* For more information on filters, see [Add a filter to a scenario](/help/quicksilver/workfront-fusion/scenarios/add-a-filter-to-a-scenario.md).-->

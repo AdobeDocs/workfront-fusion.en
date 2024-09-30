@@ -300,7 +300,7 @@ Use this function when you have a Date value, such as `12-10-2021 20:30`, that y
 
 This is useful, for example, when you need to change the date format of one app or webservice to that of a connected app or web service in the same scenario.
 
-For more information, see [Date](../../workfront-fusion/mapping/item-data-types.md#date) and [Text](../../workfront-fusion/mapping/item-data-types.md#text) in the article [Item data types in Adobe Workfront Fusion](../../workfront-fusion/mapping/item-data-types.md).
+For more information, see Date and Text in the article [Item data types in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
 #### Parameters
 
@@ -324,7 +324,7 @@ For more information, see [Date](../../workfront-fusion/mapping/item-data-types.
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Text </td> 
-   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="../../workfront-fusion/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -334,7 +334,7 @@ For more information, see [Date](../../workfront-fusion/mapping/item-data-types.
  </tbody> 
 </table>
 
- If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/type-coercion.md).
+ If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 #### Return value and type
 
@@ -364,11 +364,11 @@ The `formatDate` function returns a text representation of the given Date value 
 
 ### [!UICONTROL parseDate (text; format; [timezone])]
 
-Use this function when you have a Text value representing a date (such as `12-10-2019 20:30` or `Aug 18, 2019 10:00 AM`) and you want to convert (parse) it to a Date value (a binary machine readable representation). For more information, see [Date](../../workfront-fusion/mapping/item-data-types.md#date) and [Text](../../workfront-fusion/mapping/item-data-types.md#text) in the article [Item data types in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/item-data-types.md).
+Use this function when you have a Text value representing a date (such as `12-10-2019 20:30` or `Aug 18, 2019 10:00 AM`) and you want to convert (parse) it to a Date value (a binary machine readable representation). For more information, see Date and Text in the article [Item data types in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
 #### Parameters
 
-The second column indicates the expected type. If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/type-coercion.md).
+The second column indicates the expected type. If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -390,7 +390,7 @@ The second column indicates the expected type. If different type is provided, ty
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Text </td> 
-   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="../../workfront-fusion/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting in Adobe Workfront Fusion</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting in Adobe Workfront Fusion</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
@@ -400,7 +400,7 @@ The second column indicates the expected type. If different type is provided, ty
  </tbody> 
 </table>
 
- If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/type-coercion.md).
+ If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 #### Return value and type
 
