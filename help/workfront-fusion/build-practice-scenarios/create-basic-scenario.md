@@ -135,7 +135,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
    A panel opens that allows you to select what to use as the ID of the task you want to convert to a project. Because you enabled mapping, the panel includes output from any previous modules. You selected ID as an output of the previous module, so it is now available in the panel.
 
-   This panel is called the mapping panel. For more information on the mapping panel, see [Map information from one module to another](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).
+   This panel is called the mapping panel. <!--For more information on the mapping panel, see [Map information from one module to another](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).-->
 1. Select **ID** in the mapping panel.
 
    An ID block appears in the ID field. It shows the number of the module it is mapped from, and the field that is mapped.
