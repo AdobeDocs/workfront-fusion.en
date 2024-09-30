@@ -14,7 +14,7 @@ Filters allow you to ensure that your scenario progresses only if certain condit
 
 In this example, you will add a filter to your scenario that allows a new project to be created from a request only if the request was submitted to a specific request queue.
 
-This example modifies the scenario created in [Create a basic scenario](/help/quicksilver/workfront-fusion/get-started/build-practice-scenarios/create-simple-scenario.md).
+This example modifies the scenario created in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ This example modifies the scenario created in [Create a basic scenario](/help/qu
 
 ## Prerequisites
 
-You must create the scenario described in [Create a basic scenario](/help/quicksilver/workfront-fusion/get-started/build-practice-scenarios/create-simple-scenario.md) before following this procedure.
+You must create the scenario described in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) before following this procedure.
 
 ## Add a filter 
 
