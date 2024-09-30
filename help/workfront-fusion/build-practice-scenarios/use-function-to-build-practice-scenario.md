@@ -43,7 +43,7 @@ When this scenario converts a request to a project, the project's name is the sa
 1. Click the **Name** field. 
 
    The mapping panel opens.
-1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon](/help/quicksilver/workfront-fusion/functions/assets/toolbar-icon-text&binary-functions.png)
+1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon]assets/toolbar-icon-text&binary-functions.png)
 1. Select the function **upper**.
 
    The function appears in the Name field, including the formatting for the input it expects.
@@ -51,7 +51,7 @@ When this scenario converts a request to a project, the project's name is the sa
    The input for this example is the name of the issue the project was converted from.
 
 1. Move your cursor between the parentheses, because this is where the input will go.
-1. In the mapping panel, click the **module output** icon. ![Module output icon](/help/quicksilver/workfront-fusion/functions/assets/toolbar-icon-functions-you-map-from-other-modules.png) 
+1. In the mapping panel, click the **module output** icon. ![Module output icon](assets/toolbar-icon-functions-you-map-from-other-modules.png) 
 1. Select the name block that was output by your first module.
 
    The name block appears in the function.
