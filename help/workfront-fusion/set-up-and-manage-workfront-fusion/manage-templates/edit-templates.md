@@ -54,9 +54,10 @@ You must have the following access to use the functionality in this article:
   </tbody>
 </table>
 
+<!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md). -->
 
 +++
 
@@ -64,7 +65,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 1. Click **[!UICONTROL Administration]** in the left navigation panel to open the [!UICONTROL Administration] area.
 1. Click **[!UICONTROL Templates]** in the left navigation panel.
-1. Click **[!UICONTROL Detail]** to the right of the template you want to edit. For information about specific template options that you can edit, see [Create new templates in [!DNL Adobe Workfront Fusion]](../../../workfront-fusion/scenarios/templates/create-new-fusion-templates.md).
+1. Click **[!UICONTROL Detail]** to the right of the template you want to edit. For information about specific template options that you can edit, see <!--[Create new templates in [!DNL Adobe Workfront Fusion]](../../../workfront-fusion/scenarios/templates/create-new-fusion-templates.md).-->
 
     >[!NOTE]
     >

@@ -56,9 +56,10 @@ You must have the following access to use the functionality in this article:
   </tbody>
 </table>
 
+<!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 +++
 
@@ -76,10 +77,6 @@ Disapproving a template removes it from the [!UICONTROL Public templates] tab an
 >[!NOTE]
 >
 >If you are approving the template that was previously approved and then edited, your second approval will overwrite the original template.
-
-
-
-
 
 
 ## Questions about how this works
