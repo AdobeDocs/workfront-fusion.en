@@ -60,7 +60,7 @@ user-guide-description: Workfront Fusion documentation - add more
         * [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md)
     * Mapping panel {#mapping-panel}
         * [Mapping panel](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
-        * Data types {#data types}
+        * Data types {#data-types}
             * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
             * [Item data types in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
             * [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
