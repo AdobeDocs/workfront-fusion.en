@@ -73,17 +73,19 @@ By default, an organization owner (or authorized user) can invite another person
 
 To invite a user to join an organization:
 
-1. Click **[!UICONTROL Change details]** in the upper-right corner of the screen.
-1. Select **[!UICONTROL Invite a new user]**.
+1. Select **Org overview** in the left navigation.
+1. Click the **[!UICONTROL Change details]** dropdown in the upper-right corner of the screen. and select **[!UICONTROL Invite a new user]**.
 
-   ![](assets/fusion-organization-invite-user-350x199.png)
+   Or
+
+   Select the **Users** tab, and click **Invite a new user**. 
 
 1. Fill in the user's email address and name.
 1. Select a role for the user. For more information on roles, see [Organization roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/org-and-team-overview.md#organization-roles) in the article Organization and team overview.
-1. (Optional) Add a note. This note appears in the invitation email that the user receives.
 1. (Optional) Select the specific teams that you want to add the user to. 
 
    You can adjust the user's team role later. For instructions, see [View or edit user roles for a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md#view-or-edit-user-roles-for-a-team) in the article View or edit user roles.
+1. (Optional) Add a note. This note appears in the invitation email that the user receives.
 1. Click **[!UICONTROL Save]**.
 
 [!DNL Fusion] sends an email with an invitation to the specific organization and an [!UICONTROL Accept The Role] button.
