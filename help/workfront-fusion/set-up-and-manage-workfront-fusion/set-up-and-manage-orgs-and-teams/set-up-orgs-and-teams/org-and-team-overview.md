@@ -3,7 +3,6 @@ title: Fusion organizations and teams overview
 description: Adobe Workfront Fusion's Organization and Teams features make it possible for enterprises to control access to scenarios and other features within Fusion.
 author: Becky
 feature: Workfront Fusion
-xl-id: 601e937f-0286-4557-9a87-59aa9c0c22f1
 ---
 # [!DNL Adobe Workfront Fusion] organizations and teams overview
 
