@@ -8,7 +8,7 @@ description: You can add a user to the Adobe Admin Console and assign them to Ad
 author: Becky
 feature: Workfront Fusion
 ---
-# Add users to [!DNL Adobe Workfront Fusion] through the [!DNL Adobe Admin Console]
+# Add users to Adobe Workfront Fusion through the Adobe Admin Console
 
 >[!IMPORTANT]
 >
