@@ -47,8 +47,12 @@ user-guide-description: Workfront Fusion documentation - add more
     * [Create and manage templates](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
 * References {#references}
     * [References](/help/workfront-fusion/references/references-toc.md)
+    * Licenses and roles {#licenses-and-roles}
+        * [Licenses and roles references: article index](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
+        * [Access requirements in Workfront Fusion documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
+        * [Organization and team roles in Adobe Workfront Fusion](help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
     * Scenarios {#scenarios}
-        * [Scenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
+        * [Scenarios: article index](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
         * [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
         * [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
         * [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)

@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;user-management
-navigation-topic: organizations
 title: Organization roles in [!DNL Adobe Workfront Fusion]
 description: This article includes information about the access and permissions of the roles in [!DNL Adobe] Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-exl-id: 0370fa9d-6680-4724-a431-8df884ce4f9a
 ---
 # Organization and team roles in [!DNL Adobe Workfront Fusion]
 
@@ -15,53 +10,7 @@ This article describes the access and functionality available to the different t
 
 >[!NOTE]
 >
->Organization roles are separate from team roles in [!DNL Workfront Fusion]. For more information on organization and team roles, see [Organizations and teams](../organizations/organizations-and-teams.md).
-
-## Access requirements
-
-You must have the following access to use the functionality in this article:
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!DNL Pro] or higher</p> </td> 
-  </tr> 
-   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
-   </tr>
-   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Product</td> 
-   <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
-   </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Access level configurations*</td> 
-   <td> 
-     <p>You must be a [!DNL Workfront Fusion] administrator for your organization.</p>
-     <p>You must be a [!DNL Workfront Fusion] administrator for your team.</p>
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
-
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+>Organization roles are separate from team roles in [!DNL Workfront Fusion]. For more information on organization and team roles, see [Organizations and teams overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/org-and-team-overview.md).
 
 ## Organization roles
 

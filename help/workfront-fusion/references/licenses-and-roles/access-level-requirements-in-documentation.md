@@ -1,16 +1,12 @@
 ---
-title: Access Requirements in Workfront Documentation
-content-type: reference
-product-area: system-administration
-keywords: access,level,system,administrator,planner,worker,reviewer,requestor,external,user
-navigation-topic: access-levels
-description: Workfront documentation how-to articles contain a table that explains the access and permissions needed for that procedure. This article explains the access requirements table in more detail and contains links for more information.
+title: Access Requirements in Workfront Fusion Documentation
+description: Workfront Fusion documentation how-to articles contain a table that explains the access and permissions needed for that procedure. This article explains the access requirements table in more detail and contains links for more information.
 author: Becky
 feature: System Setup and Administration
-role: Admin
-exl-id: 39ea0d53-ec31-4644-b772-cfe260b8e013
 ---
-# Access requirements in Workfront documentation
+# Access requirements in Workfront Fusion documentation
+
+<!--Revise this article after figuring out what we need to include in the access table.
 
 Workfront documentation how-to articles contain a table that explains the access and permissions requirements needed for that procedure. This Access requirements table allows you to understand whether you can perform a certain action in Workfront, or why you might not be able to. This article explains each element of the Access requirements table, and provides troubleshooting tips and links to more in-depth information.
 
@@ -94,3 +90,5 @@ Some rows contain information labeled "New" and "Current." This is because Workf
   </tr> 
  </tbody> 
 </table>
+
+-->

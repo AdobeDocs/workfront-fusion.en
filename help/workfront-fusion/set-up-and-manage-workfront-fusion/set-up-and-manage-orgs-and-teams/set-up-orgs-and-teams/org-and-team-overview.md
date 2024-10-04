@@ -63,7 +63,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
 [!DNL Workfront Fusion] users belong to an organization. 
 
-Users must be added to an organization before they are added to a team. <!--For instructions, see []().-->
+Users must be added to an organization before they are added to a team. 
 
 ### Organization roles
 
@@ -75,7 +75,7 @@ A user has one of the following roles in an organization:
 * **[!UICONTROL Accountant]**: Accountants can see license information on the organization dashboard, but cannot perform any actions.
 * **[!UICONTROL App Developer]**: Functionality for this role is currently unavailable, and will be made available in the near future. We do not recommend assigning users to this role at this time.
 
-<!--For information on specific actions available to users in each organization role, see [Organization and team roles](/help/workfront-fusion/references/).-->
+For information on specific actions available to users in each organization role, see [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
 ## Teams
 
@@ -107,5 +107,5 @@ A user has one of the following roles in each of their teams:
 * **[!UICONTROL Team Operator]**: The [!UICONTROL operator] role allows users to see execution data and change the "Active" status of scenarios.
 * **[!UICONTROL Team Restricted Member]**: Functionality for this role is currently unavailable, and will be made available in the near future. We do not recommend assigning users to this role at this time.
 
-<!--For information on specific actions available to users in each team role, see [Organization and team roles](/help/quicksilver/workfront-fusion/organizations/organization-roles.md).-->
+For information on specific actions available to users in each team role, see [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
