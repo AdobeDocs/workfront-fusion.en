@@ -9,6 +9,8 @@ feature: Workfront Fusion
 
 <!--Affected by IMS-->
 
+<!-- Need to test in non-IMS environment-->
+
 >[!NOTE] 
 >
 >If your organization has been moved to the Unified Shell, you receive notifications through the Adobe Notifications area. You must use the Unified Shell experience to be able to see notifications in the Adobe Notifications area. 

@@ -82,14 +82,3 @@ To create a team:
    ![Create a team](assets/create-new-team-button.png)
 1. Enter a name for the new team, and click **Add**.
 
-#### Switch between teams
-
-You may be part of more than one team in Fusion. Since teams do not share resources, you may need to switch teams to access specific scenarios or other resources.
-
-If your organization is not on the Adobe Unified Experience, you can switch teams by clicking the team name in the left navigation, then selecting a team from the dropdown.
-
-If your team is on the Adobe Unified Experience, you can select a new team by clicking on the team name in the header, then selecting a team from the dropdown. This option is available from all pages that are specific to a certain team, such as a scenario page or the Connections page.
-
-<!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode"> <img src="assets/organization-add-team-350x181.png" style="width: 350;height: 181;"> </p>
--->
