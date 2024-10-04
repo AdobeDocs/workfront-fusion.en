@@ -7,8 +7,6 @@ title: Add users to Adobe Workfront Fusion through the Adobe Admin Console
 description: You can add a user to the Adobe Admin Console and assign them to Adobe Workfront Fusion, or assign an existing user in the Adobe Admin Console to Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-exl-id: c8924e00-1154-4cf8-84e8-472251b5fc28
-
 ---
 # Add users to [!DNL Adobe Workfront Fusion] through the [!DNL Adobe Admin Console]
 
@@ -137,11 +135,11 @@ Before using the [!DNL Admin Console] for [!DNL Workfront], you should receive a
     
     ![Fusion in Admin Console](assets/fusion-product-admin-console.png)
     
-1.  In the list that displays, select the organization where you want to add a user.
+1. In the list that displays, select the organization where you want to add a user.
     
     ![Fusion instance in Admin Console](assets/fusion-instances-admin-console.png)
     
-1.  In the list that displays, with the **[!UICONTROL Product Profiles]** tab selected, click the name of the [!DNL Workfront Fusion] [!UICONTROL Product Profile] link.
+1. In the list that displays, with the **[!UICONTROL Product Profiles]** tab selected, click the name of the [!DNL Workfront Fusion] [!UICONTROL Product Profile] link.
     
     <!-- Image refers to WF    ![Workfront Fusion Product Profile](assets/prod-profile-1.png)-->
      
