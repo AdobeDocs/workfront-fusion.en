@@ -14,7 +14,7 @@ Your users are assigned to teams when you create them. If an existing user needs
 
 Adding a user to a team is handled from the page for that team.
 
-1. Go to the team you want to add the user to by selecting **Organizations** in the left panel, clicking the **Teams** tab on the organization page, and selecting the team.
+1. Go to the team you want to add the user to by selecting **Org overview** in the left panel, clicking the **Teams** tab on the organization page, and selecting the team.
 
    Or
 
@@ -24,6 +24,6 @@ Adding a user to a team is handled from the page for that team.
 1. Locate the user on the page. Users in your organization appear on this page even if they are not a member of the team.
 1. Click **None** to the right of the user's name, then select the role you want them to have on the team.
 
-The user is added to the team.
+    The user is added to the team, with the role you selected.
 
 
