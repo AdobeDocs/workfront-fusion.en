@@ -65,13 +65,40 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 1. Click **[!UICONTROL Administration]** in the left navigation panel to open the [!UICONTROL Administration] area.
 1. Click **[!UICONTROL Templates]** in the left navigation panel.
-1. Click **[!UICONTROL Detail]** to the right of the template you want to edit. For information about specific template options that you can edit, see <!--[Create new templates in [!DNL Adobe Workfront Fusion]](../../../workfront-fusion/scenarios/templates/create-new-fusion-templates.md).-->
+1. Click **[!UICONTROL Detail]** to the right of the template you want to edit. 
+1. (Optional) Rename the template by replacing the default **[!UICONTROL New template name]** in the upper-left corner.
+1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png), and select the language from the Language drop-down.
 
-    >[!NOTE]
-    >
-    >In the [!UICONTROL Options] in the top-right corner, there is one additional option - the SVG diagram that provides you with the SVG code. Also, the publishing process is the same as in the case of a standard user, refer to the Publishing and sharing templates section for more details.
+   >[!IMPORTANT]
+   >
+   >The Languages selection corresponds to the languages available in the system settings and concerns only the name of the public template and its description. You can't change a template language once the template has been saved.
+
+1. (Optional) To edit the template description, click **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png), and enter the description.
+1. Add or edit apps, modules, and tools in the same way as you would do when creating a standard scenario.
+
+   To add contextual help to the modules, see [Set up [!UICONTROL Wizard] functionality](#set-up-wizard-functionality) in this article.
+
+   <!--For more information on building a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../../workfront-fusion/scenarios/create-a-scenario.md).-->
+
+   >[!NOTE]
+   >
+   >If your template includes modules that require adding the connection, credentials, or other privacy-sensitive information, this information is not shared with the template users.
+1. (Optional)In the [!UICONTROL Options] in the top-right corner, there is one additional option: the SVG diagram that provides you with the SVG code. Also, the publishing process is the same as in the case of a standard user, refer to the Publishing and sharing templates section for more details. 
+1. (Optional) Click **[!UICONTROL Run once]** to test the template.
+1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png).
 1. Click the **[!UICONTROL Publish]** button in the upper-right corner of the screen.<!-- - if admin does this, does it need to be approved?-->
 
+
+## Set up [!UICONTROL Wizard] functionality
+
+The [!DNL Workfront Fusion template] [!UICONTROL Wizard] allows you to provide future users of your template with instructions or information related to the specific fields used in modules.
+
+1. Click the module added to the template to see the module's fields.
+1. Locate the field where you want to add [!UICONTROL Wizard] information, and enable **[!UICONTROL Use in Wizard]** for that field.
+1. Enter the information you want to make visible for users into the [!UICONTROL Help] field.
+1. (Optional) To allow users to see this text when using the template, enable **[!UICONTROL Use as default value]**.
+1. Repeat steps 2-4 for each field that you want to provide information for.
+1. Click **[!UICONTROL OK]** to save changes and close the module.
 
 ## Template statuses
 
