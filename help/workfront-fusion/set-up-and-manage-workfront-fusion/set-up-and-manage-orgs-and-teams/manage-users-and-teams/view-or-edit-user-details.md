@@ -65,9 +65,6 @@ You must have the following access to use the functionality in this article:
   <tr data-mc-conditions=""> 
    <td role="rowheader">Access level configurations*</td> 
    <td> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Access level configurations*</td> 
-   <td> 
      <p>You must be a [!DNL Workfront Fusion] administrator for your organization.</p>
      <p>You must be a [!DNL Workfront Fusion] administrator for your team.</p>
    </td> 

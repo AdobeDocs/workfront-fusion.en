@@ -18,6 +18,13 @@ user-guide-description: Workfront Fusion documentation - add more
         * [Set up and manage organizations and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
         * Set up organizations and teams {#set-up-orgs-and-teams}
             * [Set up orgs and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/set-up-orgs-and-teams.md)
+            * [Organization and team overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/org-and-team-overview.md)
+            * [Invite a user to an organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/invite-a-user-to-an-org.md)
+            * [Create a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/create-a-team.md)
+            * [Add users to Adobe Workfront Fusion through the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/add-fusion-users-admin-console.md)
+            * [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/add-a-user-to-a-team.md)
+            * [Switch between orgs and teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/switch-orgs-or-teams.md)
+            * [Set Team Notification Options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/set-team-notification-options.md)
         * Manage users and teams {#manage-users-and-teams}
             * [Manage users and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
             * [View or edit user details](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
@@ -47,8 +54,12 @@ user-guide-description: Workfront Fusion documentation - add more
     * [Create and manage templates](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
 * References {#references}
     * [References](/help/workfront-fusion/references/references-toc.md)
+    * Licenses and roles {#licenses-and-roles}
+        * [Licenses and roles references: article index](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
+        * [Access requirements in Workfront Fusion documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
+        * [Organization and team roles in Adobe Workfront Fusion](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
     * Scenarios {#scenarios}
-        * [Scenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
+        * [Scenarios: article index](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
         * [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
         * [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
         * [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)

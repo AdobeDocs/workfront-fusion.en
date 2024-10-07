@@ -64,9 +64,7 @@ You must have the following access to use the functionality in this article:
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Access level configurations*</td> 
-   <td> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Access level configurations*</td> 
+  
    <td> 
      <p>You must be a [!DNL Workfront Fusion] administrator for your organization.</p>
      <p>You must be a [!DNL Workfront Fusion] administrator for your team.</p>
@@ -83,10 +81,21 @@ You must have the following access to use the functionality in this article:
 
 +++
 
-## View or edit user roles
+## View or edit user roles for an organization
 
-[!DNL Adobe Workfront Fusion] administrators can view and update user roles.
+[!DNL Adobe Workfront Fusion] administrators can view and update user roles for an organization.
 
 1. While logged in as a [!DNL Workfront Fusion] administrator, select **[!UICONTROL All users]** in the left navigation.
 1. Click **[!UICONTROL Details]** in the row of the user that you want to view.
 1. (Optional) To update the role of the user in an organization, click the dropdown in the **[!DNL Role]** column in the row of the organization where you want to change the user's role, then select the new role.
+
+## View or edit user roles for a team
+
+[!DNL Adobe Workfront Fusion] administrators and team administrators can view and update user roles.
+
+1. While logged in as a [!DNL Workfront Fusion] administrator, select **[!UICONTROL All users]** in the left navigation.
+1. Click **[!UICONTROL Details]** in the row of the user that you want to view.
+1. Click the Teams icon in the **[!DNL Role]** column in the row of the organization that contains the team where you want to view or edit the user's role.
+1. (Optional) To update the role of the user in a team, click the dropdown in the **[!DNL Role]** column in the row of the team where you want to change the user's role, then select the new role.
+
+
