@@ -81,7 +81,7 @@ To invite a user to join an organization:
    Select the **Users** tab, and click **Invite a new user**. 
 
 1. Fill in the user's email address and name.
-1. Select a role for the user. For more information on roles, see [Organization roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/org-and-team-overview.md#organization-roles) in the article Organization and team overview.
+1. Select a role for the user. For more information on roles, see [Organization roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#organization-roles) in the article Organization and team overview.
 1. (Optional) Select the specific teams that you want to add the user to. 
 
    You can adjust the user's team role later. For instructions, see [View or edit user roles for a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md#view-or-edit-user-roles-for-a-team) in the article View or edit user roles.

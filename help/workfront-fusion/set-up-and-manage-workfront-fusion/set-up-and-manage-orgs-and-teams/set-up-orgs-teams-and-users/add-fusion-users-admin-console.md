@@ -14,7 +14,7 @@ feature: Workfront Fusion
 >
 >The procedures described on this page apply only to organizations that have been onboarded to the [!DNL Adobe Admin Console].
 >
->If your organization has not yet been onboarded to the [!DNL Adobe Admin Console], see [Invite a user to an organization in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/invite-a-user-to-an-org.md).
+>If your organization has not yet been onboarded to the [!DNL Adobe Admin Console], see [Invite a user to an organization in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/invite-a-user-to-an-org.md).
 
 You can add a user to the [!DNL Adobe Admin Console] and assign them to [!DNL Adobe Workfront Fusion], or assign an existing user in the [!DNL Adobe Admin Console] to [!DNL Workfront Fusion].
 
@@ -190,5 +190,5 @@ For instructions, see [View or edit user roles](/help/workfront-fusion/set-up-an
 
 You can add an existing user to a team in Fusion. This is handled inside Fusion.
 
-For instructions, see [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/add-a-user-to-a-team.md).
+For instructions, see [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 

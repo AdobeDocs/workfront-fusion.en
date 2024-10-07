@@ -10,7 +10,7 @@ This article describes the access and functionality available to the different t
 
 >[!NOTE]
 >
->Organization roles are separate from team roles in [!DNL Workfront Fusion]. For more information on organization and team roles, see [Organizations and teams overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/org-and-team-overview.md).
+>Organization roles are separate from team roles in [!DNL Workfront Fusion]. For more information on organization and team roles, see [Organizations and teams overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Organization roles
 
