@@ -187,3 +187,4 @@ For instructions, see [View or edit user roles](/help/workfront-fusion/set-up-an
 You can add an existing user to a team in Fusion. This is handled inside Fusion.
 
 For instructions, see [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/add-a-user-to-a-team.md).
+
