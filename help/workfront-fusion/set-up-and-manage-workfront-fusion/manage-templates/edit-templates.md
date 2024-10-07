@@ -80,13 +80,13 @@ You can check the status on the template page under the template name.
 The following statuses are available:
 
 * **[!UICONTROL Private]**: This template is visible only for the template author and their team.
-* **[!UICONTROL Published]**: This template is visible only for the template author and their team. You can send published templates for approval and copy a shareable link.
-* **[!UICONTROL Approved]**: This template is visible for all Workfront Fusion users in the [!UICONTROL Public templates] tab. You can copy a shareable link by clicking [!UICONTROL Options] in the upper-right corner of the screen.
+* **[!UICONTROL Published]**: This template is visible only for the template author and their team. Once published, you can send the template for approval if desired. You can also copy a shareable link.
+* **[!UICONTROL Approved]**: This template is visible for all Workfront Fusion users in the [!UICONTROL Public templates] tab. You can also copy a shareable link by clicking [!UICONTROL Options] in the upper-right corner of the screen.
 
 You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 
-* **Eye icon**: The template is published, it is visible only for the team, and the approval request was not sent.
-* **Yellow checkmark icon**: The template is published, it is visible only for the team, and the approval request was sent.
-* **Green checkmark icon**: The template is published and public. It is visible for any Workfront Fusion user in the [!UICONTROL Public templates] tab. It is also still visible in the [!UICONTROL Team templates] tab, and the template author or their team member can still edit it.
+* **Eye icon**: The template is published; it is visible only for the team; and an approval request was not sent.
+* **Yellow checkmark icon**: The template is published; it is visible only for the team; and it is pending approval to be added to the Public templates tab.
+* **Green checkmark icon**: The template is available in the Public templates tab and is visible for any Workfront Fusion user. It is also still visible in the [!UICONTROL Team templates] tab. The template author or their team member can still edit it.
 
 Templates without icons have [!UICONTROL Private] status. They are not published and are visible only to the team.
