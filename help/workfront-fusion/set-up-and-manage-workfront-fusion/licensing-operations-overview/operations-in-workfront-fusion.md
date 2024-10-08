@@ -1,17 +1,12 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: get-started-with-workfront-fusion-2-0
 title: Operations in Adobe Workfront Fusion
 description: An operation in Adobe Workfront Fusion is a task performed by a module. For tracking purposes, any successful action performed by a module is an operation.
 author: Becky
 feature: Workfront Fusion
-exl-id: 34268fb6-e485-42be-b751-3ee79bbf5797
 ---
-# Operations in [!DNL Adobe Workfront Fusion]
+# Operations in Adobe Workfront Fusion
 
-An operation in [!DNL Adobe Workfront Fusion] is a task performed by a module. For tracking purposes, any successful action performed by a module is an operation.
+An operation in Adobe Workfront Fusion is a task performed by a module. For tracking purposes, any successful action performed by a module is an operation.
 
 ## Considerations when counting the number of operations
 
