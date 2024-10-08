@@ -20,7 +20,7 @@ user-guide-description: Workfront Fusion documentation - add more
     * Set up and manage orgs and teams {#set-up-and-manage-orgs-and-teams}
         * [Set up and manage organizations and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
         * Set up organizations and teams {#set-up-orgs-teams-and-users}
-            * [Set up orgs and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-teams-and-users.md)
+            * [Set up orgs,teams, and users: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md)
             * [Organization and team overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md)
             * [Invite a user to an organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/invite-a-user-to-an-org.md)
             * [Configure IP Addresses for Fusion in your organization's allowlist](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
