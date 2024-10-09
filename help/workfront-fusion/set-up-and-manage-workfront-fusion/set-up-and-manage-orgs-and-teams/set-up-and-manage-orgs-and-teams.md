@@ -9,6 +9,7 @@ recommendations: noDisplay, noCatalog
 
 # Set up and manage organizations and teams: article index
 
+* [Set up organizations, teams, and users: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md)
 * [Manage users and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
 
 
