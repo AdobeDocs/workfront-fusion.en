@@ -9,7 +9,9 @@ user-guide-description: Workfront Fusion documentation - add more
 * Get started with Workfront Fusion {#get-started-with-fusion}
     * [Get started with Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
     * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
-    * [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
+    * Navigate Workfront Fusion {#navigate-workfront-fusion}
+        * [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
+        * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
 * Set up and manage Workfront Fusion {#set-up-and-manage-fusion}
     * [Set up and manage Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
     * Licensing and operations overviews {#licensing-and-operations-overviews}
