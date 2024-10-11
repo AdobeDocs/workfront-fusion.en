@@ -6,6 +6,8 @@ feature: Workfront Fusion
 ---
 # Navigate Adobe Workfront Fusion
 
+<!--Affected by IMS-->
+
 You can navigate through the different areas of Adobe Workfront Fusion by using the left navigation panel. Here, you can find all of the major areas of Fusion, and can quickly move from one area to another.
 
 This article introduces these areas, and provides links to more information about each area.
@@ -22,6 +24,8 @@ Org overview <br> ![Org icon](assets/org-icon.png) | Here, you can see informati
 | Data Stores  <br> ![Data stores icon](assets/data-store-icon.png) | Data stores are small databases that exist outside of scenarios. Data stores allow you to transfer data between scenarios or between separate runs of a scenario. In the Data Stores area, you can view and manage data stores owned by your team. | [Data stores]() | 
 | Data Structures <br> ![Data structures icon](assets/data-structure-icon.png) | Data structures describe the format of data being transferred to Fusion, and are commonly used for serializing or parsing formats such as JSON, XML, and CSV. In the Data Structures, you can view and manage data structures owned by your team. | [Data structures]() | 
 
-
+>[!NOTE]
+>
+>All of the areas under the Team heading are owned by individual teams. To see the page belonging to a different team (such as a different team's Scenarios page), Click the Team dropdown near the top of the page, and select another team.
 
 
