@@ -12,7 +12,7 @@ A scenario is built of different elements. Understanding the terminology of thos
 
 ## Scenario
 
-A scenario is a user-created series of automated steps, created to move and manipulate data. "Scenario" refers to the entire group of connected steps.
+A **scenario** is a user-created series of automated steps, created to move and manipulate data. "Scenario" refers to the entire group of connected steps.
 
 ![Scenario](assets/entire-scenario-scenario.png)
 
@@ -36,7 +36,7 @@ A scenario may be divided into **routes**. A route is a section of the scenario 
 
 ## Scenario segment
 
-A section of a scenario consisting of a series of modules that all connect to the same application. Scenario segments often represent a short workflow in the application.
+A scenario segment is a section of a scenario that consists of a series of contiguous modules that all connect to the same application. Scenario segments often represent a short workflow in the application.
 
 ![Scenario segment](assets/scenario-segment.png)
 
