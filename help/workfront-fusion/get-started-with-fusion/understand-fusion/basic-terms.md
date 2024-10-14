@@ -75,7 +75,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Operation</p> </td> 
-   <td> <p>A task performed by a module.</p><!--<p>For more information, see <a href="../../workfront-fusion/get-started/operations-in-workfront-fusion.md" class="MCXref xref">Operations in [!DNL Adobe Workfront Fusion]</a>.</p>-->
+   <td> <p>A task performed by a module, such as retrieving a record or uploading a file.</p><!--<p>For more information, see <a href="../../workfront-fusion/get-started/operations-in-workfront-fusion.md" class="MCXref xref">Operations in [!DNL Adobe Workfront Fusion]</a>.</p>-->
   </tr> 
   <tr> 
    <td role="rowheader">Public/Private Keys</td> 
