@@ -21,6 +21,28 @@ Usually, an allowlist is configured by a network administrator. Work with your o
 >
 >As a Fusion administrator, you must ensure that these IP addresses and domains are added to your organization's allowlist. This is true even if you do not add them yourself. Fusion cannot configure your organization's allowlist.
 
+## Identify your datacenter
+
+The IP addresses vary based on where your data is stored. 
+
+If you access Fusion through a URL, you can examine the URL to locate your datacenter.
+
+| URL | Datacenter |
+| --- | --- |
+| https://app.workfrontfusion.com/ | US datacenter |
+| https://app-eu.workfrontfusion.com/ | EU datacenter |
+| https://app-az.workfrontfusion.com/ | Azure datacenter |
+
+If you access Fusion through experience.adobe.com, you can check the network tab in your browser to identify the datacenter.
+
+| URL | Datacenter |
+| --- | --- |
+| Calls to https://fusion.adobe.com |US datacenter |
+| Calls to https://eu.fusion.adobe.com | EU datacenter |
+| Calls to https://az.fusion.adobe.com  | Azure datacenter |
+
+## IP addresses for Workfront Fusion
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
