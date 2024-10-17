@@ -3,13 +3,13 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: functions
-title: Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]
+title: Tokens for date and time formatting
 description: The following tokens for date and time formatting are available in the [!DNL Adobe Workfront Fusion mapping] panel.
 author: Becky
 feature: Workfront Fusion
 exl-id: 19d0608e-7902-4d09-b71d-e6ae8ed7a6fd
 ---
-# Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]
+# Tokens for date and time formatting
 
 ## Access requirements
 

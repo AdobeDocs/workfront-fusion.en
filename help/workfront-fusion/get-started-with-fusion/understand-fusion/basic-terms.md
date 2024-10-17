@@ -47,7 +47,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Cycle</p> </td> 
-   <td> <p>A cycle consists two phases of the scenario run: operation and commit. The scenario may consists of one or more cycles. For more detailed information, see <a href="/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md" class="MCXref xref">Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>A cycle consists two phases of the scenario run: operation and commit. The scenario may consists of one or more cycles. For more detailed information, see <a href="/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md" class="MCXref xref">Scenario execution, cycles, and phases</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data Store</p> </td> 
@@ -67,7 +67,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> -->
   <tr> 
    <td role="rowheader"> <p>Iterator</p> </td> 
-   <td> <p>A type of module that allows you to take one bundle of data (a collection of data) and divide into separate bundles. These bundles can then be processed individually by later modules. <!--For more information, see <a href="../../workfront-fusion/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p>A type of module that allows you to take one bundle of data (a collection of data) and divide into separate bundles. These bundles can then be processed individually by later modules. <!--For more information, see <a href="../../workfront-fusion/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Module</p> </td> 
@@ -75,7 +75,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Operation</p> </td> 
-   <td> <p>A task performed by a module, such as retrieving a record or uploading a file.</p><!--<p>For more information, see <a href="../../workfront-fusion/get-started/operations-in-workfront-fusion.md" class="MCXref xref">Operations in [!DNL Adobe Workfront Fusion]</a>.</p>-->
+   <td> <p>A task performed by a module, such as retrieving a record or uploading a file.</p><!--<p>For more information, see <a href="../../workfront-fusion/get-started/operations-in-workfront-fusion.md" class="MCXref xref">Operations</a>.</p>-->
   </tr> 
   <tr> 
    <td role="rowheader">Public/Private Keys</td> 
@@ -83,7 +83,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Router</p> </td> 
-   <td>A router allows you to duplicate data or add new routes to a scenario, so to re-route data and handle different groups of data separately. <!--For more information, see <a href="../../workfront-fusion/modules/router-module.md" class="MCXref xref">[!UICONTROL Router] module in [!DNL Adobe Workfront Fusion]</a>.--></td> 
+   <td>A router allows you to duplicate data or add new routes to a scenario, so to re-route data and handle different groups of data separately. <!--For more information, see <a href="../../workfront-fusion/modules/router-module.md" class="MCXref xref">[!UICONTROL Router] module</a>.--></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario</p> </td> 
@@ -95,7 +95,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Trigger</p> </td> 
-   <td> <p>A trigger is a kind of module that watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant trigger or webhook).<!-- For more information, see <a href="../../workfront-fusion/webhooks/instant-triggers-webhooks.md" class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p>A trigger is a kind of module that watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant trigger or webhook).<!-- For more information, see <a href="../../workfront-fusion/webhooks/instant-triggers-webhooks.md" class="MCXref xref">Instant triggers (webhooks)</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 

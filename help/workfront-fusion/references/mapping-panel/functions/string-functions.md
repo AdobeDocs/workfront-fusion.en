@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c6676a87-2498-4de8-b877-7edc30aeabae
 ---
-# String functions in [!DNL Adobe Workfront Fusion]
+# String functions
 
 ## Access requirements
 

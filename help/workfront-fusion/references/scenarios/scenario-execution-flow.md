@@ -5,7 +5,7 @@ description: This article explains how a scenario executes and how data flows th
 author: Becky
 feature: Workfront Fusion
 ---
-# Scenario execution flow in [!DNL Adobe Workfront Fusion]
+# Scenario execution flow
 
 <!--audited: 09/2024-->
 
@@ -58,7 +58,7 @@ For each module, the bundle goes through a 4-step process before going on to the
 
 >[!NOTE]
 >
->The larger scenario goes through this process as well. For information about this process on the scenario level, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+>The larger scenario goes through this process as well. For information about this process on the scenario level, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 After a scenario run is complete, each module displays an icon showing the number of operations performed. You can click this icon to display the detailed information about the processed bundles for each step in the process. You can see which module settings were used, and which bundles were returned by each module.
 
@@ -79,14 +79,14 @@ If the module found more than one issue, the information is captured for each bu
 
 ## Errors while executing a scenario
 
-An error might occur during the scenario run. For example, if you have deleted the template that the module will use to create the new project, the scenario terminates with an error message. For more information about how to handle errors, see [Error processing in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/error-processing.md).
+An error might occur during the scenario run. For example, if you have deleted the template that the module will use to create the new project, the scenario terminates with an error message. For more information about how to handle errors, see [Error processing](/help/workfront-fusion/references/errors/error-processing.md).
 
 ## Resources
 
-<!--* For more information on setting up a scenario, see [The scenario editor in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-editor.md).-->
-<!--* For more information on the scenario details page, see [Scenario details in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-detail.md).-->
-<!--* For more information on activating a scenario, see [Activate or deactivate a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/activate-or-inactivate-scenario.md).-->
-<!--* For more information on scheduling a scenario, see [Schedule a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
+<!--* For more information on setting up a scenario, see [The scenario editor](../../workfront-fusion/scenarios/scenario-editor.md).-->
+<!--* For more information on the scenario details page, see [Scenario details](../../workfront-fusion/scenarios/scenario-detail.md).-->
+<!--* For more information on activating a scenario, see [Activate or deactivate a scenario](../../workfront-fusion/scenarios/activate-or-inactivate-scenario.md).-->
+<!--* For more information on scheduling a scenario, see [Schedule a scenario](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
 <!--* For more information on modules, see [Types of modules](../../workfront-fusion/modules/module-types.md).-->
 
 

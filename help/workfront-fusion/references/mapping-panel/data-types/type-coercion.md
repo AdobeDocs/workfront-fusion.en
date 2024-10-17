@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 847a17c9-bd67-4132-81a8-2a5fe8d516cb
 ---
-# Type coercion in [!DNL Adobe Workfront Fusion]
+# Type coercion
 
 ## Access requirements
 

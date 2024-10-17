@@ -1,11 +1,11 @@
 ---
 content-type: reference
-title: Directives for Error Handling in [!DNL Adobe Workfront Fusion]
+title: Directives for Error Handling
 description: This article describes directives that you can use for error handling in your [!DNL Adobe Workfront Fusion] scenarios.
 author: Becky
 feature: Workfront Fusion
 ---
-# Directives for error handling in [!DNL Adobe Workfront Fusion]
+# Directives for error handling
 
 Error handling directives allow you to choose what occurs when a scenario encounters an error.
 

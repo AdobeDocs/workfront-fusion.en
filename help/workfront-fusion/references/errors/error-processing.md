@@ -1,11 +1,11 @@
 ---
 content-type: reference
-title: Error types in [!DNL Adobe Workfront Fusion]
+title: Error types
 description: Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to a service or if a validation fails. This article discusses the common errors that you may encounter.
 author: Becky
 feature: Workfront Fusion
 ---
-# Error types in [!DNL Adobe Workfront Fusion]
+# Error types
 
 Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to the service, or if a validation fails. 
 
@@ -66,7 +66,7 @@ Connection errors are one of the most common errors. They are usually caused by 
 
     * If this option is enabled, the execution of the scenario is moved to the [!UICONTROL Incomplete executions] folder where [!DNL Workfront Fusion] repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, the execution will remain in the Incomplete executions folder awaiting manual resolution by the user.
 
-      <!--For more information on incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
+      <!--For more information on incomplete executions, see [View and resolve incomplete executions](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
     * If this option is disabled, the execution of the scenario ends with an error followed by a rollback phase. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
 
     <!--For more information on the Allow storing incomplete executions setting, see [Allow storing incomplete executions](/) in the article Scenario settings panel.-->
@@ -171,7 +171,7 @@ For example, a warning can appear when the maximum allowed file size is exceeded
 
 ## Resources
 
-<!--For more information on mapping, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+<!--For more information on mapping, see [Map information from one module to another](../../workfront-fusion/mapping/map-information-between-modules.md).
 
 For information about incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -179,6 +179,6 @@ For information about the scenario setting panel, see [The scenario settings pan
 
 For information about schedules, see [Schedule a scenario in Adobe Workfront Fusion](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
 
-For information about scenario phases, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+For information about scenario phases, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 <!--For information on the Enable data loss option, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in the article The scenario settings panel in Adobe Workfront Fusion.-->

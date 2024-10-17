@@ -3,13 +3,13 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: mapping
-title: Item data types in [!DNL Adobe Workfront Fusion]
+title: Item data types
 description: Your [!DNL Adobe Workfront Fusion] scenarios can contain the types of items listed below in a bundle.
 author: Becky
 feature: Workfront Fusion
 exl-id: 36c25a86-0d05-4871-a6a6-4fd54cfcc4b1
 ---
-# Item data types in [!DNL Adobe Workfront Fusion]
+# Item data types
 
 ## Access requirements
 
@@ -54,7 +54,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
 You can contain the types of items listed below in a bundle.
 
-For information on which types of items [!DNL Workfront Fusion] allows for conversion between one other, see [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+For information on which types of items [!DNL Workfront Fusion] allows for conversion between one other, see [Type coercion](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto">
  <col> 
@@ -78,7 +78,7 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Date</p> </td> 
-   <td> <p>Dates are entered in the ISO 8601 date format, for example, <code>2015-09-18T11:58Z</code>. You can change the time zone in your profile settings<!--, as explained in <a href="../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md" class="MCXref xref">Change profile settings in [!DNL Adobe Workfront Fusion]</a>-->. </p> <p>If you click a field that requires a date, a pop-up calendar displays in the module settings. The time is not required for some items.</p> <p>Values of Date items are formatted using the local and Web timezone selected in your profile. You can display the ISO 8601 version of a date item's value by hovering over the item.</p> <p>Note: If the ISO value does not display, the item is probably text, not a date.</p> <p>The time is entered in the <code>hours:minutes:seconds</code> format, for example,<code>14:03:52</code>.</p> </td> 
+   <td> <p>Dates are entered in the ISO 8601 date format, for example, <code>2015-09-18T11:58Z</code>. You can change the time zone in your profile settings<!--, as explained in <a href="../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md" class="MCXref xref">Change profile settings</a>-->. </p> <p>If you click a field that requires a date, a pop-up calendar displays in the module settings. The time is not required for some items.</p> <p>Values of Date items are formatted using the local and Web timezone selected in your profile. You can display the ISO 8601 version of a date item's value by hovering over the item.</p> <p>Note: If the ISO value does not display, the item is probably text, not a date.</p> <p>The time is entered in the <code>hours:minutes:seconds</code> format, for example,<code>14:03:52</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (binary data)</p> </td> 
@@ -90,11 +90,11 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Select (menu)</p> </td> 
-   <td> <p>When you configure the module settings<!-- as described in <a href="../../workfront-fusion/modules/configure-a-modules-settings.md" class="MCXref xref">Configure a module's settings in [!DNL Adobe Workfront Fusion]</a>-->, you can select from several items of the same type. An example is the folder select menu in the settings for the [!DNL Dropbox] modules. </p> <p>When setting modules, the select menu can appear in two forms:</p> <p> <p>If multiple selection is possible, several items with check boxes display.</p> <p> <img src="assets/image-kb-type-list-multi-350x232.jpg" style="width: 350;height: 232;"> </p> </p> <p>If only one option is possible, a drop-down menu displays.</p> <p> <img src="assets/select-menu-dropdown-350x130.jpg" style="width: 350;height: 130;"> </p> <p>If you need to map an item from another module, use the <strong>Map</strong> button. This button opens a text field instead of the selection menu. <!--For more information, see <a href="../../workfront-fusion/mapping/map-information-between-modules.md" class="MCXref xref">Map information from one module to another in [!DNL Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p>When you configure the module settings<!-- as described in <a href="../../workfront-fusion/modules/configure-a-modules-settings.md" class="MCXref xref">Configure a module's settings</a>-->, you can select from several items of the same type. An example is the folder select menu in the settings for the [!DNL Dropbox] modules. </p> <p>When setting modules, the select menu can appear in two forms:</p> <p> <p>If multiple selection is possible, several items with check boxes display.</p> <p> <img src="assets/image-kb-type-list-multi-350x232.jpg" style="width: 350;height: 232;"> </p> </p> <p>If only one option is possible, a drop-down menu displays.</p> <p> <img src="assets/select-menu-dropdown-350x130.jpg" style="width: 350;height: 130;"> </p> <p>If you need to map an item from another module, use the <strong>Map</strong> button. This button opens a text field instead of the selection menu. <!--For more information, see <a href="../../workfront-fusion/mapping/map-information-between-modules.md" class="MCXref xref">Map information from one module to another</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Array</p> </td> 
-   <td> <p>You can use the array type to work with several values of the same type, including collections. An example is the [!UICONTROL Email] modules: they return an array of attachments and each attachment contains name, content, size, and so on. <!--For more information, see <a href="../../workfront-fusion/mapping/map-an-array.md" class="MCXref xref">Map an array in [!DNL Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p>You can use the array type to work with several values of the same type, including collections. An example is the [!UICONTROL Email] modules: they return an array of attachments and each attachment contains name, content, size, and so on. <!--For more information, see <a href="../../workfront-fusion/mapping/map-an-array.md" class="MCXref xref">Map an array</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validation</p> </td> 

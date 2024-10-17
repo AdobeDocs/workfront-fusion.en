@@ -2,13 +2,13 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: 'se a function to update a project in a basic scenario in [!DNL Adobe Workfront Fusion]'
+title: 'se a function to update a project in a basic scenario'
 description: Learn how to add a function to update a work item in Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: f4588063-024f-4520-986e-45342a6b6777
 ---
-# Use a function to update a project in a basic scenario in [!DNL Adobe Workfront Fusion]
+# Use a function to update a project in a basic scenario
 
 Updating a Workfront work item is a common use case for Workfront Fusion. In this example, you will use a function to change the name of a project to be in uppercase letters.
 
@@ -75,4 +75,4 @@ When this scenario converts a request to a project, the project's name is the sa
 
 <!--## Resources-->
 
-<!--* [Map items using functions in [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md)-->
+<!--* [Map items using functions](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md)-->
