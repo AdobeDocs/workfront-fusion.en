@@ -89,4 +89,5 @@ Workfront Fusion usually obtains access rights to a given service for an unlimit
 
 To renew a connection:
 
-1. Click the **Reauthorize** button in the **Connections** area.
+1. To open the Connections area, click Connections ![Connections icon](assets/connections-icon.png) in the left navigation.
+1. (Optional) To reauthorize a connection, click **Reauthorize** in the row for that connection.

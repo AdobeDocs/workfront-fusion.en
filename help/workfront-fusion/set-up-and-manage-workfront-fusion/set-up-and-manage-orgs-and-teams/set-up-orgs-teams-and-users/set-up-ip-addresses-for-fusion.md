@@ -29,17 +29,17 @@ If you access Fusion through a URL, you can examine the URL to locate your datac
 
 | URL | Datacenter |
 | --- | --- |
-| https://app.workfrontfusion.com/ | US datacenter |
-| https://app-eu.workfrontfusion.com/ | EU datacenter |
-| https://app-az.workfrontfusion.com/ | Azure datacenter |
+| `https://app.workfrontfusion.com` | US datacenter |
+| `https://app-eu.workfrontfusion.com` | EU datacenter |
+| `https://app-az.workfrontfusion.com` | Azure cluster |
 
-If you access Fusion through experience.adobe.com, you can check the network tab in your browser to identify the datacenter.
+If you access Fusion through `experience.adobe.com`, you can check the network tab in your browser to identify the datacenter.
 
 | URL | Datacenter |
 | --- | --- |
-| Calls to https://fusion.adobe.com |US datacenter |
-| Calls to https://eu.fusion.adobe.com | EU datacenter |
-| Calls to https://az.fusion.adobe.com  | Azure datacenter |
+| Calls to `https://fusion.adobe.com` |US datacenter |
+| Calls to `https://eu.fusion.adobe.com` | EU datacenter |
+| Calls to `https://az.fusion.adobe.com`  | Azure cluster |
 
 ## IP addresses for Workfront Fusion
 
