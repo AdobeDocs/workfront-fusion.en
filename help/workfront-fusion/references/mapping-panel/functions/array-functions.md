@@ -231,7 +231,7 @@ Enter one of the following values for the `mode` parameter.
 
    In other words, the function returns an array that contains all of the elements of `array1` that do not exist in `array2`, and all of the elements of `array2` that do not exist in `array1`.
 
->[!BEGINSHADEBOX]
+>[ENDSHADEBOX]
   
 **Examples:** 
   
@@ -257,7 +257,7 @@ yourArray = [3,4,5,6,7]
   
     Returns `[1,2,6,7]`
 
-  >[!ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 ### deDuplicate
 
