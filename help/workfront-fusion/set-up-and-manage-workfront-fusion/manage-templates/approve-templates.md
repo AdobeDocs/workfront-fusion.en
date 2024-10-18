@@ -79,6 +79,27 @@ Disapproving a template removes it from the [!UICONTROL Public templates] tab an
 >If you are approving the template that was previously approved and then edited, your second approval will overwrite the original template.
 
 
+## Template statuses
+
+You can check the status on the template page under the template name.
+
+The following statuses are available:
+
+* **[!UICONTROL Private]**: This template is visible only for the template author and their team.
+* **[!UICONTROL Published]**: This template is visible only for the template author and their team. Once published, you can send the template for approval if desired. You can also copy a shareable link.
+* **[!UICONTROL Approved]**: This template is visible for all Workfront Fusion users in the [!UICONTROL Public templates] tab. You can also copy a shareable link by clicking [!UICONTROL Options] in the upper-right corner of the screen.
+
+You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
+
+* **Eye icon**: The template is published; it is visible only for the team; and an approval request was not sent.
+* **Yellow checkmark icon**: The template is published; it is visible only for the team; and it is pending approval to be added to the Public templates tab.
+* **Green checkmark icon**: The template is available in the Public templates tab and is visible for any Workfront Fusion user. It is also still visible in the [!UICONTROL Team templates] tab. The template author or their team member can still edit it.
+
+Templates without icons have [!UICONTROL Private] status. They are not published and are visible only to the team.
+
+
+
+
 ## Questions about how this works
 
 Editing

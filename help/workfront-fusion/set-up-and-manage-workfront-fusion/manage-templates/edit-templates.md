@@ -7,7 +7,7 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 ---
 
-# Approve or disapprove templates
+# Edit templates
 
 Adobe Workfront Fusion templates are pre-built scenarios designed to automate and streamline various workflows. These templates can help you quickly set up integrations and automations without needing to build everything from scratch.
 
