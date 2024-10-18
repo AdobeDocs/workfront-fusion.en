@@ -18,75 +18,87 @@ When you map items, you can use functions to create simple or complex formulas. 
 <!--For more information, see [Map information from one module to another in Adobe Workfront Fusion](../../workfront-fusion/mapping/map-information-between-modules.md).-->
 
 
-## Access requirements 
+## Access requirements
 
-You must have the following access to use the functionality in this article: 
++++ Expand to view access requirements for the functionality in this article.
 
-<table style="table-layout:auto"> 
+You must have the following access to use the functionality in this article:
 
- <col>  
- <col>  
- <tbody>  
-  <tr>  
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td>  
-   <td> <p>Any</p> </td>  
-  </tr>  
-  <tr data-mc-conditions="">  
-   <td role="rowheader">[!DNL Adobe Workfront] license</td>  
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td>  
-  </tr>  
-  <tr>  
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td>  
-   <td> 
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p> 
-   <p>Or</p> 
-   <p>Legacy: Any </p> 
-   </td>  
-  </tr>  
-  <tr>  
-   <td role="rowheader">Product</td>  
-   <td> 
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul> 
-   <p>Or</p> 
-   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p> 
-   </td>  
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
- </tbody>  
-</table> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
+   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td>
+   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Or</p>
+   <p>Legacy: Any </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   </td> 
+  </tr>
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Access level configurations*</td> 
+   <td> 
+     <p>You must be a [!DNL Workfront Fusion] administrator for your organization.</p>
+     <p>You must be a [!DNL Workfront Fusion] administrator for your team.</p>
+   </td> 
+  </tr> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
 
-<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).--> 
+<!--<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->-->
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).--> 
+<!--<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->-->
 
++++
 
 ## Mapping tab overview
 
 To open the [!UICONTROL mapping] panel for a field:
 
-1. Click **Scenarios** in the left panel.
-1. Choose a scenario.
+1. In a scenario module, click the field where you want to map a value.
 
-![](assets/open-functions-bar.png)
+   The mapping panel opens
+1. (Conditional) If the mapping panel does not open, enable the Map toggle above the field.
 
+![Map toggle](assets/map-toggle.png)
 
 ### Mapping panel tabs
 
-The following are tabs in the mapping panel:
+The mapping panel includes the following tabs. Each tab includes functions and keywords for that type of data.
 
-* **General functions** ![](assets/toolbar-icon-general-function.png) - See [General functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) for more information.
+* ![](assets/toolbar-icon-general-function.png) **General functions**: See [General functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) for more information.
 
-* **Math functions** ![](assets/toolbar-icon-math-functions.png) - See [Math functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) for more information.
+* ![](assets/toolbar-icon-math-functions.png) **Math functions**: See [Math functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) for more information.
 
-* **Text and binary functions** ![](assets/toolbar-icon-text&binary-functions.png) - See [String functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) for more information.
+* ![](assets/toolbar-icon-text&binary-functions.png) **Text and binary functions**: See [String functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) for more information.
 
-* **Date and time** ![](assets/toolbar-icon-date&time-functions.png) - See [Date and time functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md) and the articles below for more information:
+* ![](assets/toolbar-icon-date&time-functions.png) **Date and time**: See [Date and time functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md) and the articles below for more information:
 
     * [Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
     * [Tokens for date and time parsing in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
 
-* **Functions for working with arrays** ![](assets/toolbar-icon-functions-for-arrays.png) - See [Array functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) for more information.
+* ![](assets/toolbar-icon-functions-for-arrays.png) **Functions for working with arrays**: See [Array functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) for more information.
 
-* **Map other functions** ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) displays the items that you can map from other modules. This tab is not always available. 
+* ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) **Map other functions** displays the items that you can map from other modules. This tab is not always available. 
 
 ![](assets/functions-toolbar-350x189.png)
 
@@ -114,6 +126,16 @@ To insert a function into a field:
 ## Nesting functions
 
 You can nest functions within each other.
+
+>[!BEGINSHADEBOX]
+
+   **Example:** 
+
+   In this example, the substring function limits the trimmed project name to 50 characters.
+
+   ![](assets/trimmed-name-under-50.png)
+
+>[!ENDSHADEBOX]
 
 ## Use [!DNL Google Sheets] functions
 
