@@ -18,6 +18,13 @@ user-guide-description: Workfront Fusion documentation - add more
         * [Set up and manage organizations and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
         * Set up organizations and teams {#set-up-orgs-and-teams}
             * [Set up orgs and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/set-up-orgs-and-teams.md)
+            * [Organization and team overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/org-and-team-overview.md)
+            * [Invite a user to an organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/invite-a-user-to-an-org.md)
+            * [Create a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/create-a-team.md)
+            * [Add users to Adobe Workfront Fusion through the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/add-fusion-users-admin-console.md)
+            * [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/add-a-user-to-a-team.md)
+            * [Switch between orgs and teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/switch-orgs-or-teams.md)
+            * [Set Team Notification Options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/set-team-notification-options.md)
         * Manage users and teams {#manage-users-and-teams}
             * [Manage users and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
             * [View or edit user details](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
@@ -28,7 +35,9 @@ user-guide-description: Workfront Fusion documentation - add more
 * Create scenarios {#create-scenarios}
     * [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
     * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
-    * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
+    * Map data {#map-data}
+        * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
+        * [Map items using functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
     * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
     * [Configure error handling](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
     * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
@@ -36,12 +45,21 @@ user-guide-description: Workfront Fusion documentation - add more
     * [Manage scenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
+    * [Create a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
+    * [Add a trigger module to a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/add-trigger-to-basic-scenario.md)
+    * [Use a function to update a project in a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
+    * [Add a filter to a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
+    * [Add a webhook to a basic scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Create and manage templates {#create-and-manage-templates}
     * [Create and manage templates](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
 * References {#references}
     * [References](/help/workfront-fusion/references/references-toc.md)
+    * Licenses and roles {#licenses-and-roles}
+        * [Licenses and roles references: article index](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
+        * [Access requirements in Workfront Fusion documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
+        * [Organization and team roles in Adobe Workfront Fusion](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
     * Scenarios {#scenarios}
-        * [Scenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
+        * [Scenarios: article index](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
         * [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
         * [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
         * [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)
@@ -53,8 +71,21 @@ user-guide-description: Workfront Fusion documentation - add more
         * [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md)
     * Mapping panel {#mapping-panel}
         * [Mapping panel](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
-        * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
-        * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+        * Data types {#data-types}
+            * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
+            * [Item data types in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
+            * [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
+            * [Data structures in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
+        * Functions {#functions}
+            * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+            * [General functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
+            * [Date and time functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
+            * [Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
+            * [Tokens for date and time parsing in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
+            * [String functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)
+            * [Math functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)
+            * [Math variables in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-variables.md)
+            * [Array functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)
     * Errors {#errors}
         * [Errors](/help/workfront-fusion/references/errors/errors-toc.md)
         * [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
