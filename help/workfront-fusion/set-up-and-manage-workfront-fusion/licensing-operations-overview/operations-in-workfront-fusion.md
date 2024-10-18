@@ -1,10 +1,10 @@
 ---
-title: Operations in Adobe Workfront Fusion
+title: Operations
 description: An operation in Adobe Workfront Fusion is a task performed by a module. For tracking purposes, any successful action performed by a module is an operation.
 author: Becky
 feature: Workfront Fusion
 ---
-# Operations in Adobe Workfront Fusion
+# Operations
 
 An operation in Adobe Workfront Fusion is a task performed by a module. For tracking purposes, any successful action performed by a module is an operation.
 

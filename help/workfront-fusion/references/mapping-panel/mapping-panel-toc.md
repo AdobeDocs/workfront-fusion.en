@@ -1,7 +1,7 @@
 ---
 content-type: reference
 title: "Mapping panel references: article index"
-description: This section contains reference material related the mapping panel in Adobe Workfront Fusion.
+description: This section contains reference material related to the mapping panel in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog

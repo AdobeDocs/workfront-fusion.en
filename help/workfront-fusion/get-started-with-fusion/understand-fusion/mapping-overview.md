@@ -1,20 +1,16 @@
 ---
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: mapping
-title: Map information from one module to another in [!DNL Adobe Workfront Fusion]
+title: Map information from one module to another
 description: Mapping is the process of assigning a module's outputs, structured into items, to another module's input fields.
 author: Becky
 feature: Workfront Fusion
-exl-id: e8d619e9-6425-4136-ac71-47d979d68a2d
 ---
-# Map information from one module to another in [!DNL Adobe Workfront Fusion]
+# Map information from one module to another
 
-Mapping is the process of assigning a module's outputs, structured into items, to another module's input fields.
+Mapping is the process of assigning a module's outputs to another module's input fields.
 
-The mapping panel displays when you click a field where you want to insert a value outputted from a preceding module in a scenario. Within a module, in any field that is available for mapping, you can create a formula using any combination of functions and mapped items from the mapping panel with static text that you type. These elements can be nested inside each other.
+The mapping panel displays when you click a field where you can  insert a value outputted from a preceding module in a scenario. Within a module, in any field that is available for mapping, you can create a formula using any combination of functions and mapped items from the mapping panel with static text that you type. These elements can be nested inside each other.
 
-## Access requirements
+<!--## Access requirements
 
 You must have the following access to use the functionality in this article:
 
@@ -51,7 +47,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 ## Bundles and items
 
@@ -74,24 +70,6 @@ To explore the output of a module:
 >
 >The outputs from modules wrapped between an [!UICONTROL Iterator] and [!UICONTROL Aggregator] are not accessible beyond the [!UICONTROL Aggregator] module.
 
-## Map an item
-
-After you have created a sequence of modules by linking two or more of them, each module can process values of items outputted by the modules that precede it.
-
-To assign the items to a module's input fields:
-
-1. Click on the module that should process the output of the preceding module or modules.
-1. In the Module settings panel that displays, click a field where you want to use the value of an item outputted from a preceding module(s).
-
-   The mapping panel opens.
-
-1. Click an item from the mapping panel to insert it into the field.
-1. (Optional) To search for a particular field in the mapping panel, click the mapping panel search bar and type in the term you want to search for. Click the field when it appears in the list.
-
-   Search results contain the search term and are not case sensitive.
-
-For more information, see [Configure a module's settings in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/configure-a-modules-settings.md).
-
 ## Formulas
 
 You can map multiple items into a field, combine them with literals (fixed values), and employ Operators and Functions to build complex formulas:
@@ -106,24 +84,24 @@ The first tab ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) 
 
 The other tabs contain the following types of functions:
 
-* **General functions** ![](assets/toolbar-icon-general-function.png) - See [General functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/general-functions.md) for more information.
+* **General functions** ![](assets/toolbar-icon-general-function.png) - See [General functions](../../workfront-fusion/functions/general-functions.md) for more information.
 
-* **Math functions** ![](assets/toolbar-icon-math-functions.png) - See [Math functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/math-functions.md) for more information.
+* **Math functions** ![](assets/toolbar-icon-math-functions.png) - See [Math functions](../../workfront-fusion/functions/math-functions.md) for more information.
 
-* **Text and binary functions** ![](assets/toolbar-icon-text&binary-functions.png) - See [String functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/string-functions.md) for more information.
+* **Text and binary functions** ![](assets/toolbar-icon-text&binary-functions.png) - See [String functions](../../workfront-fusion/functions/string-functions.md) for more information.
 
-* **Date and time** ![](assets/toolbar-icon-date&time-functions.png) - See [Date and time functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/date-and-time-functions.md) and the articles below for more information.
+* **Date and time** ![](assets/toolbar-icon-date&time-functions.png) - See [Date and time functions](../../workfront-fusion/functions/date-and-time-functions.md) and the articles below for more information.
 
-    * [Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/tokens-for-date-and-time-formatting.md)
-    * [Tokens for date and time parsing in Adobe Workfront Fusion](../../workfront-fusion/functions/tokens-for-date-and-time-parsing.md)
+    * [Tokens for date and time formatting](../../workfront-fusion/functions/tokens-for-date-and-time-formatting.md)
+    * [Tokens for date and time parsing](../../workfront-fusion/functions/tokens-for-date-and-time-parsing.md)
 
-* **Functions for working with arrays** ![](assets/toolbar-icon-functions-for-arrays.png) - See [Array functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/array-functions.md) for more information.
+* **Functions for working with arrays** ![](assets/toolbar-icon-functions-for-arrays.png) - See [Array functions](../../workfront-fusion/functions/array-functions.md) for more information.
 
 >[!TIP]
 >
 >When you create a complex formula that you want to reuse it in another field, you can click the field that contains the combination, use Command-A or Ctrl-A to select it, then copy and paste it into the other field.
 
-For more information on mapping items using functions, see [Map items using functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/map-using-functions.md).
+For more information on mapping items using functions, see [Map items using functions](../../workfront-fusion/functions/map-using-functions.md).
 
 ## Collections
 
@@ -147,7 +125,7 @@ You can identify an array type item by the square brackets at the end of the ite
 
 ![](assets/array.png)
 
-For more information about arrays, see [Item data types in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/item-data-types.md)
+For more information about arrays, see [Item data types](../../workfront-fusion/mapping/item-data-types.md)
 
 ### Map an array's first element
 
@@ -202,9 +180,9 @@ Because the `map()` function returns an array (as there could be more elements w
 
 * The 2nd parameter is the element's index - one.
 
-For more information about the `map()` function, see [Array functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/array-functions.md).
+For more information about the `map()` function, see [Array functions](../../workfront-fusion/functions/array-functions.md).
 
-For more information about the `get()` function, see [General functions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/functions/general-functions.md).
+For more information about the `get()` function, see [General functions](../../workfront-fusion/functions/general-functions.md).
 
 ## Converting elements to a series of bundles
 

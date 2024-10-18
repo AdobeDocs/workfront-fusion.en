@@ -71,5 +71,5 @@ To assign output items to a module's input fields:
    Search results contain the search term and are not case sensitive.
 1. Click an item from the mapping panel to insert it into the field.
 
-<!--For more information, see [Configure a module's settings in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/configure-a-modules-settings.md).-->
+<!--For more information, see [Configure a module's settings](../../workfront-fusion/modules/configure-a-modules-settings.md).-->
 
