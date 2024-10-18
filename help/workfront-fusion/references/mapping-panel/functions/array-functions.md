@@ -107,19 +107,19 @@ Adds values specified in parameters to an array and returns that array.
 
 Returns a primitive array containing values of a complex array. This function allows filtering values. Use raw variable names for keys.
 
-  >[!BEGINSHADEBOX]
+>[!BEGINSHADEBOX]
   
-  **Examples:**
+**Examples:**
   
-  * `map(Emails[];email)`
+ * `map(Emails[];email)`
   
-    Returns a primitive array with emails
+  Returns a primitive array with emails
   
-  * `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work;home)`
   
-    Returns a primitive array with emails having a label equal to work or home
+  Returns a primitive array with emails having a label equal to work or home
 
-  >[!ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 <!--For more information, see [Map information from one module to another in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).-->
 
@@ -153,27 +153,27 @@ To access nested properties, use dot notation.
 
 The first item in an array is index 1.
 
-  >[!BEGINSHADEBOX]
+>[!BEGINSHADEBOX]
   
-  **Examples:**
+**Examples:**
   
-  * `sort(Contacts[];name)`
+* `sort(Contacts[];name)`
   
-      Sorts an array of contacts by the "name" property in default ascending order
+     Sorts an array of contacts by the "name" property in default ascending order
   
-  * `sort(Contacts[];desc;name)`
+* `sort(Contacts[];desc;name)`
   
      Sorts an array of contacts by the "name" property in descending order
   
-  * `sort(Contacts[];asc ci;name)`
+* `sort(Contacts[];asc ci;name)`
   
-      Sorts an array of contacts by the "name" property in case-insensitive ascending order
+    Sorts an array of contacts by the "name" property in case-insensitive ascending order
   
-  * `sort(Emails[];sender.name)`
+* `sort(Emails[];sender.name)`
   
-      Sorts an array of emails by the "sender.name" property
+    Sorts an array of emails by the "sender.name" property
 
-  >[!ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 ### [!UICONTROL reverse (array)]
 
@@ -187,13 +187,13 @@ Creates a new array with all sub-array elements concatenated into it, recursivel
 
 Removes duplicates inside an array. Use the "[!UICONTROL key]" argument to access properties inside complex objects. To access nested properties, use dot notation. The first item in an array is index 1.
 
-  >[!BEGINSHADEBOX]
+>[!BEGINSHADEBOX]
   
-  **Example:** `distinct(Contacts[];name)` 
+**Example:** `distinct(Contacts[];name)` 
   
-  Removes duplicates inside an array of contacts by comparing the "name" property
+Removes duplicates inside an array of contacts by comparing the "name" property
 
-  >[!ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 ### toCollection
 
@@ -231,31 +231,31 @@ Enter one of the following values for the `mode` parameter.
 
    In other words, the function returns an array that contains all of the elements of `array1` that do not exist in `array2`, and all of the elements of `array2` that do not exist in `array1`.
 
-  >[!BEGINSHADEBOX]
+>[!BEGINSHADEBOX]
   
-  **Examples:** 
+**Examples:** 
   
-  Given the following arrays:
+Given the following arrays:
   
-  ```
-  myArray = [1,2,3,4,5]
-  ```
+```
+myArray = [1,2,3,4,5]
+```
   
-  ```
-  yourArray = [3,4,5,6,7]
-  ```
+```
+yourArray = [3,4,5,6,7]
+```
+
+* `arrayDifference [myArray, yourArray, classic]`
   
-  * `arrayDifference [myArray, yourArray, classic]`
+  Returns `[1,2]`
   
-      Returns `[1,2]`
+* `arrayDifference [yourArray, myArray, classic]`
   
-  * `arrayDifference [yourArray, myArray, classic]`
+    Returns `[6,7]`
   
-      Returns `[6,7]`
+* `arrayDifference [myArray, yourArray, symmetric]`
   
-  * `arrayDifference [myArray, yourArray, symmetric]`
-  
-      Returns `[1,2,6,7]`
+    Returns `[1,2,6,7]`
 
   >[!ENDSHADEBOX]
 
