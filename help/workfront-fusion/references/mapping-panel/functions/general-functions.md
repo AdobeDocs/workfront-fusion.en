@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 74bfda4e-5690-4b8c-ac58-20cf261f188d
 ---
-# General functions in [!DNL Adobe Workfront Fusion]
+# General functions
 
 ## Access requirements
 

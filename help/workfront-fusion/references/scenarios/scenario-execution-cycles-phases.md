@@ -1,10 +1,10 @@
 ---
-title: Scenario Execution, Cycles, and Phases in [!DNL Adobe Workfront Fusion]
+title: Scenario Execution, Cycles, and Phases
 description: This article describes events that occur while an [!DNL Adobe Workfront Fusion] scenario is running, such as initialization, operations, commits, and rollbacks.
 author: Becky
 feature: Workfront Fusion
 ---
-# Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]
+# Scenario execution, cycles, and phases
 
 Each scenario execution starts with the initialization phase, continues with at least one cycle composed of the operation and commit/rollback phases, and ends with the finalization phase
 
@@ -70,7 +70,7 @@ During the finalization phase, open connections (for example, FTP connections, d
 
 ## Resources
 
-<!--For more information, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
+<!--For more information, see [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
 
 
 

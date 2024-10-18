@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d356276d-e5d9-496f-85cd-cb60a8f8f377
 ---
-# [!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]
+# [!UICONTROL Iterator] module
 
 <!--audited: 09/2024-->
 

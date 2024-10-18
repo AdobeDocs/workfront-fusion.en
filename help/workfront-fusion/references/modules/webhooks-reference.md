@@ -1,10 +1,10 @@
 ---
-title: Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]
+title: Instant triggers (webhooks)
 description: Many services provide webhooks to deliver instant notifications whenever a certain change occurs in the service. To process these notifications, we recommend that you use instant triggers. This article describes the use and functionality of instant triggers in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 ---
-# Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]
+# Instant triggers (webhooks)
 
 Many services provide webhooks to deliver instant notifications whenever a certain change (event) occurs in the service. To process these events, we recommend that you use instant triggers. Instant triggers display the `Instant` tag in the list of modules for a given connector.
 
@@ -77,7 +77,7 @@ When there is an error in your scenario with an instant trigger, the scenario:
 
 If an error occurs during the scenario execution, the event is placed back into the queue during the instant trigger's rollback phase. In such a situation, you can fix the scenario and run it again. 
 
-For more information, see [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) in the article Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion].
+For more information, see [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) in the article Scenario execution, cycles, and phases.
 
 If there is a Webhook response module in your scenario, the error is sent to the Webhook response. The Webhook response module is always executed last (when the [!UICONTROL Auto commit] option in the Scenario settings is not enabled). 
 
@@ -98,7 +98,7 @@ You can create your own webhooks. <!--For more information, see [Webhooks](../..
 
 ## Resources
 
-For more information on cycles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+For more information on cycles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 
 

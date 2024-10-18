@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 76c63afc-4bb6-4895-9bba-6b3913ecbcf6
 ---
-# Date and time functions in [!DNL Adobe Workfront Fusion]
+# Date and time functions
 
 ## Access requirements 
 
@@ -324,17 +324,17 @@ For more information, see Date and Text in the article [Item data types in Adobe
   <tr> 
    <td>[!UICONTROL format] </td> 
    <td>Text </td> 
-   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting in [!DNL Adobe Workfront Fusion]</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
+   <td> <p>Lets you specify a format using date/time formatting tokens. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">Tokens for date and time formatting</a>.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL timezone] </td> 
    <td>Text </td> 
-   <td> <p>(Optional) Lets you specify the timezone used for the conversion. </p> <p>For the list of recognized timezones, see the "TZ database name" column in the Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List of tz database time zones</a>. Only the values listed in this column are recognized by the function as a valid timezone. Any other value is ignored and the Scenarios timezone specified in your Profile is used instead. <!--For more information, see in the article <a href="../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md" class="MCXref xref">Change profile settings in [!DNL Adobe Workfront Fusion]</a>.--></p> <p>If you omit this parameter, the Scenarios timezone specified in your Profile settings is applied. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
+   <td> <p>(Optional) Lets you specify the timezone used for the conversion. </p> <p>For the list of recognized timezones, see the "TZ database name" column in the Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List of tz database time zones</a>. Only the values listed in this column are recognized by the function as a valid timezone. Any other value is ignored and the Scenarios timezone specified in your Profile is used instead. <!--For more information, see in the article <a href="../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md" class="MCXref xref">Change profile settings</a>.--></p> <p>If you omit this parameter, the Scenarios timezone specified in your Profile settings is applied. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
- If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+ If different type is provided, type coercion is applied. For more information, see [Type coercion](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 #### Return value and type
 
@@ -368,7 +368,7 @@ Use this function when you have a Text value representing a date (such as `12-10
 
 #### Parameters
 
-The second column indicates the expected type. If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+The second column indicates the expected type. If different type is provided, type coercion is applied. For more information, see [Type coercion](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -400,7 +400,7 @@ The second column indicates the expected type. If different type is provided, ty
  </tbody> 
 </table>
 
- If different type is provided, type coercion is applied. For more information, see [Type coercion in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+ If different type is provided, type coercion is applied. For more information, see [Type coercion](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 #### Return value and type
 

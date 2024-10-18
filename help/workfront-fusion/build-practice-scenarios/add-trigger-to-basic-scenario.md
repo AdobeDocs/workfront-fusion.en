@@ -77,4 +77,4 @@ Because the first module has been replaced, the second module must be mapped to 
 
 ## Resources
 
-* For more information on webhooks, see [Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/webhooks-reference.md).
+* For more information on webhooks, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).

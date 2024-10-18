@@ -2,13 +2,13 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: Create a basic scenario in [!DNL Adobe Workfront Fusion]
+title: Create a basic scenario
 description: Learn how to create a simple automation scenario with Adobe Workfront Fusion. Automation scenarios automate Workfront processes, including data manipulation and transformation. This example takes you through the process of creating a scenario that searches for a [!DNL Workfront] task in Workfront and the converts it to a project.
 author: Becky
 feature: Workfront Fusion
 exl-id: 06fa7e15-b8dc-4fe1-9703-c160d580ef79
 ---
-# Create a basic scenario in [!DNL Adobe Workfront Fusion]
+# Create a basic scenario
 
 The role of [!DNL Adobe Workfront Fusion] is to automate your processes so that you can concentrate on new tasks rather than repeating the same tasks again and again. It works by linking actions within and between apps and services to create a scenario that transfers and transforms your data automatically. The scenario you create watches for data in an app or service and processes that data to provide the result you want.
 
@@ -162,8 +162,8 @@ For this scenario, a successful test would result in locating the new task and c
 
    For more information about the data in the inspection bubbles, see:
 
-   * For general information, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * For information about processed bundles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * For general information, see [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
+   * For information about processed bundles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 1. In [!DNL Workfront Fusion], click **[!UICONTROL Save]** near the lower-left corner to save your progress on the scenario.
 

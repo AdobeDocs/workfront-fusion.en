@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: cdc32842-8717-4e05-ab19-2661ee14c12c
 ---
-# [!UICONTROL Aggregator] module in [!DNL Adobe Workfront Fusion]
+# [!UICONTROL Aggregator] module
 
 <!--audited: 09/2024-->
 
@@ -79,7 +79,7 @@ The following image shows a typical setup of the [!UICONTROL Aggregator] module 
   <tr> 
    <td> <p>[!UICONTROL Source Module]</p> </td> 
    <td> <p>The module where the bundle aggregation starts. The source module is usually an iterator or a search module that outputs a series of bundles.</p><p>When you setup the aggregator's source module (and close the aggregator's setup), the route between the source module and the aggregator module are wrapped in a grey area, so that you can see clearly the start and the end of the aggregation. 
-   <!--</p> <p>For more information on iterators, see <a href="../../workfront-fusion/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]</a></p> <p>For more information on search modules see Search modules in <a href="../../workfront-fusion/modules/module-types.md" class="MCXref xref">Types of modules</a>.</p>--> </td> 
+   <!--</p> <p>For more information on iterators, see <a href="../../workfront-fusion/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a></p> <p>For more information on search modules see Search modules in <a href="../../workfront-fusion/modules/module-types.md" class="MCXref xref">Types of modules</a>.</p>--> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Target structure type]</p><p>(Applicable only for the [!UICONTROL Array aggregator] module.)</p> </td> 

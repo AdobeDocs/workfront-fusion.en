@@ -78,7 +78,7 @@ For instructions, see "Remove users and user groups from a product" in the artic
 
 ## Deactivate a user in all products in the [!DNL Adobe Admin Console]
 
-To delete a user in [!DNL Adobe Workfront Fusion], you must deactivate the user through the [!DNL Adobe Admin Console].
+To delete a user, you must deactivate the user through the [!DNL Adobe Admin Console].
 
 A user is deactivated from the [!DNL Adobe Admin Console] when one of the following applies:
 

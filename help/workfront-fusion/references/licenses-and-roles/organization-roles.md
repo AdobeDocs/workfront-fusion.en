@@ -1,10 +1,10 @@
 ---
-title: Organization roles in [!DNL Adobe Workfront Fusion]
+title: Organization roles
 description: This article includes information about the access and permissions of the roles in [!DNL Adobe] Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 ---
-# Organization and team roles in [!DNL Adobe Workfront Fusion]
+# Organization and team roles
 
 This article describes the access and functionality available to the different team and organization roles in [!DNL Workfront Fusion].
 
