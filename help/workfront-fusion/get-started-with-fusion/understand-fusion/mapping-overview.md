@@ -60,11 +60,13 @@ To explore the output of a module:
 
    A log containing all of the module's phases displays. You can find the bundle or bundles outputted by a module's operation phase under the **[!UICONTROL Output]** heading. Each bundle contains its items and each item's values.
 
->[!INFO]
->
->**Example:** This example shows the module [!UICONTROL Email] > [!UICONTROL Watch emails]. You can see that it performed 1 operation producing a single bundle that contains various items such as `Date`, `Email ID (UID)`, `size`, and so on.
->
->![](assets/watch-emails-350x298.png)
+>[!BEGINSHADEBOX]
+
+**Example:** This example shows the module [!UICONTROL Email] > [!UICONTROL Watch emails]. You can see that it performed 1 operation producing a single bundle that contains various items such as `Date`, `Email ID (UID)`, `size`, and so on.
+
+![](assets/watch-emails-350x298.png)
+
+>[!ENDSHADEBOX]
 
 >[!NOTE]
 >
