@@ -111,7 +111,7 @@ Returns a primitive array containing values of a complex array. This function al
   
 **Examples:**
   
- * `map(Emails[];email)`
+* `map(Emails[];email)`
   
   Returns a primitive array with emails
   
@@ -231,7 +231,7 @@ Enter one of the following values for the `mode` parameter.
 
    In other words, the function returns an array that contains all of the elements of `array1` that do not exist in `array2`, and all of the elements of `array2` that do not exist in `array1`.
 
->[ENDSHADEBOX]
+>[!BEGINSHADEBOX]
   
 **Examples:** 
   
