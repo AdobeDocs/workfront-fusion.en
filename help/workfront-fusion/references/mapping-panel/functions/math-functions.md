@@ -60,37 +60,41 @@ Returns the average value of the numeric values in a specific array, or the aver
 
 Returns the smallest integer greater than or equal to a specified number.
 
->[!INFO]
->
->**Examples:** 
->
->* `ceil(` `1.2` `)`
->
->   Returns 2
->
->* `ceil(` `4` `)`
->
->   Returns 4
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* `ceil(` `1.2` `)`
+
+   Returns 2
+
+* `ceil(` `4` `)`
+
+   Returns 4
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL floor (number)]
 
 Returns the largest integer less than or equal to a specified number.
 
->[!INFO]
->
->**Examples:** 
->
->* `floor(` `1.2` `)`
->
->   Returns 1
->
->* `floor(` `1.9` `)`
->
->   Returns 1
->
->* `floor(` `4` `)`
->
->   Returns 4
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* `floor(` `1.2` `)`
+
+   Returns 1
+
+* `floor(` `1.9` `)`
+
+   Returns 1
+
+* `floor(` `4` `)`
+
+   Returns 4
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL max ([array of values]), max(value1;value2; ...)]
 
@@ -104,25 +108,27 @@ Returns the smallest number in a specified array or the smallest number among nu
 
 Rounds a numeric value to the nearest integer.
 
->[!INFO]
->
->**Examples:** 
->
->* `round(` `1.2` `)`
->
->   Returns 1
->
->* `round(` `1.5` `)`
->
->   Returns 2
->
->* `round(` `1.7` `)`
->
->   Returns 2
-> 
->* `round(` `2` `)`
->
->   Returns 2
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* `round(` `1.2` `)`
+
+   Returns 1
+
+* `round(` `1.5` `)`
+
+   Returns 2
+
+* `round(` `1.7` `)`
+
+   Returns 2
+ 
+* `round(` `2` `)`
+
+   Returns 2
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL sum ([array of values]), sum(value1; value2; ...)]
 
@@ -136,10 +142,12 @@ Parses a string with a number and returns the number. For example, parseNumber(1
 
 Returns a number in requested format. By default, the decimal point is a comma (,) and the thousands separator is a period (.).
 
->[!INFO]
->
->**Example:** 
->
->`formatNumber( 123456789 ; 3 ; , ; . )`
->
->Returns 123.456.789,000
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+`formatNumber( 123456789 ; 3 ; , ; . )`
+
+Returns 123.456.789,000
+
+>[!ENDSHADEBOX]

@@ -73,16 +73,17 @@ Other connectors may include iterator modules specific to that iterator. These c
 
 <!--For more information, see [Configure a module's settings](../../workfront-fusion/modules/configure-a-modules-settings.md).-->
 
->[!INFO]
->
->**Examples:** 
->
->* The below scenario shows how to retrieve emails with attachments and save the attachments as single files in a selected [!DNL Dropbox] folder.
->
->   Emails can contain an array of attachments. The [!UICONTROL Iterator] module after the first module enables the scenario to handle each attachment separately. The [!UICONTROL Iterator] module splits the array of attachments into single bundles. Each bundle, with one attachment, is then saved one at a time in a selected [!DNL Dropbox] folder. The [!UICONTROL Iterator] module set-up is shown above: the [!UICONTROL Array] field should contain the `Attachments` array.
->
->   ![](assets/attachments-array.jpg)
+>[!BEGINSHADEBOX]
 
+**Examples:** 
+
+* The below scenario shows how to retrieve emails with attachments and save the attachments as single files in a selected [!DNL Dropbox] folder.
+
+   Emails can contain an array of attachments. The [!UICONTROL Iterator] module after the first module enables the scenario to handle each attachment separately. The [!UICONTROL Iterator] module splits the array of attachments into single bundles. Each bundle, with one attachment, is then saved one at a time in a selected [!DNL Dropbox] folder. The [!UICONTROL Iterator] module set-up is shown above: the [!UICONTROL Array] field should contain the `Attachments` array.
+
+   ![](assets/attachments-array.jpg)
+
+>[!ENDSHADEBOX]
 
 
 ## Troubleshooting
