@@ -79,11 +79,11 @@ The following error handling directives are available in Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Break</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>The state of the scenario execution is stored in the queue of incomplete executions where the error can be resolved manually. <!--For more information, see <a href="../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">View and resolve incomplete executions in Adobe Workfront Fusion</a>. --></p> <p>There are, however, some exceptions. <!--For more information, see <a href="../../workfront-fusion/scenarios/scenario-settings-panel.md#allow" class="MCXref xref">Allow storing incomplete executions</a> in the article <a href="../../workfront-fusion/scenarios/scenario-settings-panel.md" class="MCXref xref">The scenario settings panel in Adobe Workfront Fusion</a>.--></p></li><li> <p>Subsequent modules are not processed.</p></li><li> <p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li><p>The scenario execution status is marked as "warning" when the [!UICONTROL Automatically complete execution] option is disabled.</p></li></ul> <p>For more information, see the <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> section in this article</p> </td> 
+   <td><ul><li> <p>The state of the scenario execution is stored in the queue of incomplete executions where the error can be resolved manually. <!--For more information, see <a href="../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">View and resolve incomplete executions</a>. --></p> <p>There are, however, some exceptions. <!--For more information, see <a href="../../workfront-fusion/scenarios/scenario-settings-panel.md#allow" class="MCXref xref">Allow storing incomplete executions</a> in the article <a href="../../workfront-fusion/scenarios/scenario-settings-panel.md" class="MCXref xref">The scenario settings panel</a>.--></p></li><li> <p>Subsequent modules are not processed.</p></li><li> <p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li><p>The scenario execution status is marked as "warning" when the [!UICONTROL Automatically complete execution] option is disabled.</p></li></ul> <p>For more information, see the <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> section in this article</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Retry</p> <p> <img src="assets/retry.png"> </p> </td> 
-   <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. <!--For more information, see <a href="../../workfront-fusion/errors/retry.md" class="MCXref xref">Retry error handling in Adobe Workfront Fusion</a>.--></p> </td> 
+   <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. <!--For more information, see <a href="../../workfront-fusion/errors/retry.md" class="MCXref xref">Retry error handling</a>.--></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -92,10 +92,10 @@ The following error handling directives are available in Workfront Fusion.
 >
 >* Error handling directives cannot be used outside of an error handling route.
 >
->   <!--For more information, see [Error handler route](../../workfront-fusion/errors/error-handling.md#error) in the article Error handling in Adobe Workfront Fusion.-->
+>   <!--For more information, see [Error handler route](../../workfront-fusion/errors/error-handling.md#error) in the article Error handling.-->
 >* [!DNL Workfront Fusion] currently does not offer a Throw module that would enable you to easily conditionally generate (throw) errors, though a workaround can be employed to mimic its functionality.
 >
->  <!-- For more information, see [Workaround for Throw](../../workfront-fusion/errors/throw.md#workaround-for-throw) in the article Throw error handling in Adobe Workfront Fusion.-->
+>  <!-- For more information, see [Workaround for Throw](../../workfront-fusion/errors/throw.md#workaround-for-throw) in the article Throw error handling.-->
 
 <!-- move this section to how-to
 
@@ -103,7 +103,7 @@ The following error handling directives are available in Workfront Fusion.
 
 When an error is handled by the [!DNL Break] directive, a record is created in the Incomplete executions folder. This record stores the state of the scenario execution, along with data from the prior modules. The record references the module where the error originated and contains information regarding the data that was received by the module as input. For each bundle of data that causes the error, a separate record is created.
 
-For more information, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+For more information, see [View and resolve incomplete executions](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Resolve errors resulting from the Break directive
 
@@ -130,9 +130,9 @@ When "Automatically complete execution" is turned off, the run is marked as "War
 
 There are some exceptions to executions being stored under Incomplete Executions, and with some error types, the auto-retry of a scenario execution is not possible. 
 
-For more information, see [Allow storing incomplete executions](../../workfront-fusion/scenarios/scenario-settings-panel.md#allow) in the article [The scenario settings panel in Adobe Workfront Fusion](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+For more information, see [Allow storing incomplete executions](../../workfront-fusion/scenarios/scenario-settings-panel.md#allow) in the article [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).
 
-For additional information, see [Advanced error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/advanced-error-handling.md).
+For additional information, see [Advanced error handling](../../workfront-fusion/errors/advanced-error-handling.md).
 
 -->
 

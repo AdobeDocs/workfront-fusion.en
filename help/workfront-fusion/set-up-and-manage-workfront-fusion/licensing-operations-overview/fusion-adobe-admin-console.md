@@ -39,5 +39,5 @@ The following table lists the procedures that must be handled differently, and l
 {style="table-layout:auto"}
 
 
-<!--| Change profile settings | [Change profile settings in Adobe Workfront Fusion](../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md)  | [Fusion in Unified Shell|-->
+<!--| Change profile settings | [Change profile settings](../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md)  | [Fusion in Unified Shell|-->
 

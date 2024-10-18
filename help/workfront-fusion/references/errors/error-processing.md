@@ -132,7 +132,7 @@ An incomplete data error occurs only with triggers. This error is generated if a
 
 If a scenario terminates with the `IncompleteDataError`, its further behavior will depend on its setting of [!UICONTROL Max number of consecutive errors]. 
 
-<!--For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article The scenario settings panel in Adobe Workfront Fusion.-->
+<!--For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article The scenario settings panel.-->
 
 >[!INFO]
 >
@@ -148,7 +148,7 @@ Any error that appears during scenario execution and is not one of these error t
 
 If a scenario terminates with the `RuntimeError`, its further behavior depends on the [!UICONTROL Max number of consecutive errors] setting. 
 
-<!--For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article The scenario settings panel in Adobe Workfront Fusion.-->
+<!--For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article The scenario settings panel.-->
 
 >[!NOTE]
 >
@@ -173,12 +173,12 @@ For example, a warning can appear when the maximum allowed file size is exceeded
 
 <!--For more information on mapping, see [Map information from one module to another](../../workfront-fusion/mapping/map-information-between-modules.md).
 
-For information about incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+For information about incomplete executions, see [View and resolve incomplete executions](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
 
-For information about the scenario setting panel, see [The scenario settings panel in Adobe Workfront Fusion](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+For information about the scenario setting panel, see [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).
 
-For information about schedules, see [Schedule a scenario in Adobe Workfront Fusion](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
+For information about schedules, see [Schedule a scenario](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
 
 For information about scenario phases, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-<!--For information on the Enable data loss option, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in the article The scenario settings panel in Adobe Workfront Fusion.-->
+<!--For information on the Enable data loss option, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in the article The scenario settings panel.-->

@@ -16,7 +16,7 @@ feature: Workfront Fusion
 >
 >For instructions on adding a user in the Adobe Admin Console:
 >
->* See [Add a user to an organization in Adobe Workfront Fusion](../../workfront-fusion/organizations/add-user-to-an-organization.md#create)
+>* See [Add a user to an organization](../../workfront-fusion/organizations/add-user-to-an-organization.md#create)
 >* See the section "Add users" in the article [Manage users individually](https://helpx.adobe.com/enterprise/using/manage-users-individually.html)
 >* Contact your Adobe Admin Console Administrator.
 >

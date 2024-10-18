@@ -3,7 +3,7 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: functions
-title: Tokens for date and time parsing in Adobe Workfront Fusion
+title: Tokens for date and time parsing
 description: The following tokens for date and time parsing are available in the [!DNL Adobe Workfront Fusion mapping] panel.
 author: Becky
 feature: Workfront Fusion

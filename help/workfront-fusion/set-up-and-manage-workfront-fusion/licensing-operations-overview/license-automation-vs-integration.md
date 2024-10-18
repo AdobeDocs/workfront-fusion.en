@@ -14,7 +14,7 @@ The new Workfront Fusion licensing model is based on the number of operations yo
 
 If your organization has a Workfront Ultimate plan, your Fusion instance is included in your plan and allows an unlimited number of Fusion operations per month. If your organization has a Workfront Prime or Select plan, Fusion can be purchased, and pricing is based on the number of operations performed in a month. 
 
-For information on what counts as an operation under the new licensing model, see [Operations in Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
+For information on what counts as an operation under the new licensing model, see [Operations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
 
 ## Connector-based licensing model (Legacy)
 
