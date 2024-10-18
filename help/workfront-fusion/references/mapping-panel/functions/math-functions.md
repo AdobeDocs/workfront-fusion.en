@@ -60,17 +60,19 @@ Returns the average value of the numeric values in a specific array, or the aver
 
 Returns the smallest integer greater than or equal to a specified number.
 
->[!INFO]
->
->**Examples:** 
->
->* `ceil(` `1.2` `)`
->
->   Returns 2
->
->* `ceil(` `4` `)`
->
->   Returns 4
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* `ceil(` `1.2` `)`
+
+   Returns 2
+
+* `ceil(` `4` `)`
+
+   Returns 4
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL floor (number)]
 
