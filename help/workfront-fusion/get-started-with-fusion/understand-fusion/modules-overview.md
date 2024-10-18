@@ -24,12 +24,14 @@ Unlike trigger modules, action modules can be placed at the beginning, middle or
 
 Scenarios can contain an unlimited number of action modules, although large numbers of modules (150+) may affect performance.
 
->[!INFO]
->
->**Examples:** 
->
->* **[!DNL Workfront] > [!UICONTROL Upload a file]** sends a file to [!DNL Workfront] and returns its identifier.
->* **[!UICONTROL Image] > [!UICONTROL Resize]** receives an image, resizes it to specified dimensions, and passes the resized image on to the next action.
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* **[!DNL Workfront] > [!UICONTROL Upload a file]** sends a file to [!DNL Workfront] and returns its identifier.
+* **[!UICONTROL Image] > [!UICONTROL Resize]** receives an image, resizes it to specified dimensions, and passes the resized image on to the next action.
+
+>[!ENDSHADEBOX]
 
 The Action type has four subtypes:
 
@@ -67,11 +69,13 @@ You can place Search modules at the beginning, middle, or end of a scenario.
 
 Scenarios can contain an unlimited number of Search modules, although large numbers of modules (150+) may affect performance.
 
->[!INFO]
->
->**Example:**
->
->**[!DNL Workfront] > [!UICONTROL Read Related Records]**  reads records that match the search query you specify, in a particular parent object.
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+**[!DNL Workfront] > [!UICONTROL Read Related Records]**  reads records that match the search query you specify, in a particular parent object.
+
+>[!ENDSHADEBOX]
 
 ## Trigger modules
 
@@ -95,13 +99,15 @@ Polling triggers allow you to select the first bundle that they should output vi
 
 <!--For more information, see [Choose where a trigger module starts in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/modules/choose-where-trigger-module-starts.md).-->
 
->[!INFO]
->
->**Examples:** 
->
->* **[!DNL Workfront] > [!UICONTROL Watch records]** returns records that were newly added after the last time the scenario was run.
->
->* **[!DNL Google Sheets] > [!UICONTROL Watch Rows]** returns new rows added after the last time the scenario was run.
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* **[!DNL Workfront] > [!UICONTROL Watch records]** returns records that were newly added after the last time the scenario was run.
+
+* **[!DNL Google Sheets] > [!UICONTROL Watch Rows]** returns new rows added after the last time the scenario was run.
+
+>[!ENDSHADEBOX]
 
 ### Instant triggers
 
@@ -111,12 +117,14 @@ Instant triggers enable a service to notify [!DNL Workfront Fusion] about a chan
 
 For ifor details on how the incoming data is handled by an instant trigger, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md) for details on how the incoming data is handled.
 
->[!INFO]
->
->**Examples:** 
->
->* **[!DNL Workfront] > [!UICONTROL Watch Events]** returns information when a certain type of event occurs in Workfront, such as the creation of a task.
->* **[!DNL Google Sheets] > [!UICONTROL Watch Changes]** returns information whenever a cell is updated.
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* **[!DNL Workfront] > [!UICONTROL Watch Events]** returns information when a certain type of event occurs in Workfront, such as the creation of a task.
+* **[!DNL Google Sheets] > [!UICONTROL Watch Changes]** returns information whenever a cell is updated.
+
+>[!ENDSHADEBOX]
 
 ## Aggregators
 
@@ -128,13 +136,15 @@ You can place Aggregators only in the middle of a scenario.
 
 Scenarios can contain an unlimited number of aggregators, although large numbers of modules (150+) may affect performance.
 
->[!INFO]
->
->**Examples:** 
->
->* **[!UICONTROL Archive] > [!UICONTROL Create an archive]** compresses multiple files into a zip archive
->* **[!UICONTROL CSV] > [!UICONTROL Aggregate to CSV]** merges multiple strings from a CSV file into a single row
->* **[!UICONTROL Tools] > [!UICONTROL Text aggregator]** combines several strings together into a single string
+>[!BEGINSHADEBOX]
+
+**Examples:** 
+
+* **[!UICONTROL Archive] > [!UICONTROL Create an archive]** compresses multiple files into a zip archive.
+* **[!UICONTROL CSV] > [!UICONTROL Aggregate to CSV]** merges multiple strings from a CSV file into a single row.
+* **[!UICONTROL Tools] > [!UICONTROL Text aggregator]** combines several strings together into a single string.
+
+>[!ENDSHADEBOX]
 
 For more information, see [Aggregator module](/help/workfront-fusion/references/modules/aggregator-module.md).
 
@@ -148,10 +158,12 @@ You can place Iterators only in the middle of a scenario.
 
 Scenarios can contain an unlimited number of iterators, although large numbers of modules (150+) may affect performance.
 
->[!INFO]
->
->**Example:**
->
->**[!UICONTROL Email] > [!UICONTROL Retrieve attachments]** breaks an array of attachments into separate bundles
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+**[!UICONTROL Email] > [!UICONTROL Retrieve attachments]** breaks an array of attachments into separate bundles.
+
+>[!ENDSHADEBOX]
 
 For more information, see [Iterator module](/help/workfront-fusion/references/modules/iterator-module.md)<!-- and [Map an array](../../workfront-fusion/mapping/map-an-array.md)-->.
