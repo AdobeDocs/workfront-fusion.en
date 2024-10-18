@@ -17,7 +17,7 @@ user-guide-description: Workfront Fusion documentation - add more
     * Licensing and operations overviews {#licensing-and-operations-overviews}
         * [Licensing and operations overviews](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
         * [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
-        * [Operations in Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
+        * [Operations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
         * [Platform-based administration differences (Adobe Workfront Fusion/Adobe Admin Console)](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/fusion-adobe-admin-console.md)
     * Set up and manage orgs and teams {#set-up-and-manage-orgs-and-teams}
         * [Set up and manage organizations and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
@@ -62,7 +62,7 @@ user-guide-description: Workfront Fusion documentation - add more
     * Licenses and roles {#licenses-and-roles}
         * [Licenses and roles references: article index](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
         * [Access requirements in Workfront Fusion documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
-        * [Organization and team roles in Adobe Workfront Fusion](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
+        * [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
     * Scenarios {#scenarios}
         * [Scenarios: article index](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
         * [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
