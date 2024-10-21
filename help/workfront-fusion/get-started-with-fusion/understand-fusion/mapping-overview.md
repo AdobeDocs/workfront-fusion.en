@@ -53,12 +53,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 The operation of a module produces zero, one, or more bundles as its output. A bundle consists of one or more items.
 
-To explore the output of a module:
+You can map these items to fields in later modules.
 
-1. Click **[!UICONTROL Run once]** to execute the module.
-1. Click the bubble above the module.
-
-   A log containing all of the module's phases displays. You can find the bundle or bundles outputted by a module's operation phase under the **[!UICONTROL Output]** heading. Each bundle contains its items and each item's values.
+After the module has run, you can view the output by clicking the magnifying glass icon above the module. Here, you can view a log of all of the bundle or bundles that the module output. Each bundle shows the items it contains and the values of those items.
 
 >[!BEGINSHADEBOX]
 
@@ -74,34 +71,30 @@ To explore the output of a module:
 
 ## Formulas
 
-You can map multiple items into a field, combine them with literals (fixed values), and employ Operators and Functions to build complex formulas:
+You can map multiple items into a field, combine them with fixed values, and use operators and functions to build complex formulas:
 
-![](assets/operators-and-functions.png) 
+![](assets/quotes-in-json.png) 
 
-You can find the functions and operators in the mapping panel under one of its tabs.
+You can find the functions and operators in the mapping panel. Functions and operators are sorted into different tabs based on the type of data they handle.
 
 ![](assets/functions-toolbar-350x189.png)
 
-The first tab ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) (shown upon opening the panel) displays the items that you can map from other modules.
+The first tab ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) displays the items that you can map from other modules.
 
 The other tabs contain the following types of functions:
 
-* **General functions** ![](assets/toolbar-icon-general-function.png) - See [General functions](../../workfront-fusion/functions/general-functions.md) for more information.
+| Type of functions | For more information, see:|
+|---|---|
+|  **General functions**<br>![](assets/toolbar-icon-general-function.png)|[General functions](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Math functions**<br>![](assets/toolbar-icon-math-functions.png)| [Math functions](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)|
+| **Text and binary functions**<br>![](assets/toolbar-icon-text&binary-functions.png)| [String functions](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)|
+| **Date and time** <br> ![](assets/toolbar-icon-date&time-functions.png)| <ul><li>[Date and time functions](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tokens for date and time formatting](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tokens for date and time parsing](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
+|**Functions for working with arrays**<br> ![](assets/toolbar-icon-functions-for-arrays.png)|[Array functions](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)|
 
-* **Math functions** ![](assets/toolbar-icon-math-functions.png) - See [Math functions](../../workfront-fusion/functions/math-functions.md) for more information.
-
-* **Text and binary functions** ![](assets/toolbar-icon-text&binary-functions.png) - See [String functions](../../workfront-fusion/functions/string-functions.md) for more information.
-
-* **Date and time** ![](assets/toolbar-icon-date&time-functions.png) - See [Date and time functions](../../workfront-fusion/functions/date-and-time-functions.md) and the articles below for more information.
-
-    * [Tokens for date and time formatting](../../workfront-fusion/functions/tokens-for-date-and-time-formatting.md)
-    * [Tokens for date and time parsing](../../workfront-fusion/functions/tokens-for-date-and-time-parsing.md)
-
-* **Functions for working with arrays** ![](assets/toolbar-icon-functions-for-arrays.png) - See [Array functions](../../workfront-fusion/functions/array-functions.md) for more information.
 
 >[!TIP]
 >
->When you create a complex formula that you want to reuse it in another field, you can click the field that contains the combination, use Command-A or Ctrl-A to select it, then copy and paste it into the other field.
+>When you create a complex formula that you want to reuse in another field, you can click the field that contains the combination, use Cmd-A or Ctrl-A to select it, then copy and paste it into the other field.
 
 For more information on mapping items using functions, see [Map items using functions](../../workfront-fusion/functions/map-using-functions.md).
 
@@ -109,13 +102,13 @@ For more information on mapping items using functions, see [Map items using func
 
 Some items can contain multiple values of various types. These are collection type items.
 
-You can identify a [!UICONTROL collection] type item by the small black rectangle displayed to the right of the item's label and its automatically expanded list of sub-items:
+You can identify a [!UICONTROL collection] type item by the expand arrow to the right of the item's label, and by its automatically expanded list of sub-items.
 
 ![](assets/collection.png)
 
 >[!NOTE]
 >
->In most cases, you map the collection's sub-items rather than the item representing the whole collection.
+>In most cases, you map the collection's sub-items instead of mapping the item that represents the whole collection.
 
 For more information about collections, see [Item data types in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/item-data-types.md)
 
