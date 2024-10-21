@@ -51,11 +51,11 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data Store</p> </td> 
-   <td> <p>A data store stores data from scenarios or allows you to transfer data between individual scenarios or scenario runs. <!--For more information, see <a href="../../workfront-fusion/modules/data-stores.md" class="MCXref xref">Data Stores in [!UICONTROL Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p>A data store stores data from scenarios or allows you to transfer data between individual scenarios or scenario runs. <!--For more information, see <a href="../../workfront-fusion/modules/data-stores.md" class="MCXref xref">Data Stores</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Filter</p> </td> 
-   <td> <p> A filter can be applied between two modules, and allows you to then only work with bundles that fit certain criteria. There are a number of different filters you can apply. <!-- For more information, see <a href="../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md" class="MCXref xref">Add a filter to a scenario in [!UICONTROL Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p> A filter can be applied between two modules, and allows you to then only work with bundles that fit certain criteria. There are a number of different filters you can apply. <!-- For more information, see <a href="../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md" class="MCXref xref">Add a filter to a scenario</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID </p> </td> 
@@ -99,7 +99,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 
-   <td> <p>A special type of trigger that allows you to run a scenario immediately after a new bundle is available. For more information, see <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant triggers (webhooks) in [!UICONTROL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>A special type of trigger that allows you to run a scenario immediately after a new bundle is available. For more information, see <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant triggers (webhooks)</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

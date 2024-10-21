@@ -64,9 +64,9 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-<!--<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->-->
+<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->
 
-<!--<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->-->
+<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 +++
 
@@ -85,21 +85,14 @@ To open the [!UICONTROL mapping] panel for a field:
 
 The mapping panel includes the following tabs. Each tab includes functions and keywords for that type of data.
 
-* ![](assets/toolbar-icon-general-function.png) **General functions**: See [General functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) for more information.
-
-* ![](assets/toolbar-icon-math-functions.png) **Math functions**: See [Math functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) for more information.
-
-* ![](assets/toolbar-icon-text&binary-functions.png) **Text and binary functions**: See [String functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) for more information.
-
-* ![](assets/toolbar-icon-date&time-functions.png) **Date and time**: See [Date and time functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md) and the articles below for more information:
-
-    * [Tokens for date and time formatting](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
-    * [Tokens for date and time parsing](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)
-
-
-* ![](assets/toolbar-icon-functions-for-arrays.png) **Functions for working with arrays**: See [Array functions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) for more information.
-
-* ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) **Map other functions** displays the items that you can map from other modules. This tab is not always available. 
+| Type of functions | For more information, see:|
+|---|---|
+| **Map from other modules**<br>![](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+|  **General functions**<br>![](assets/toolbar-icon-general-function.png)|[General functions](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
+| **Math functions**<br>![](assets/toolbar-icon-math-functions.png)| [Math functions](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)|
+| **Text and binary functions**<br>![](assets/toolbar-icon-text&binary-functions.png)| [String functions](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)|
+| **Date and time** <br> ![](assets/toolbar-icon-date&time-functions.png)| <ul><li>[Date and time functions](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tokens for date and time formatting](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tokens for date and time parsing](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
+|**Functions for working with arrays**<br> ![](assets/toolbar-icon-functions-for-arrays.png)|[Array functions](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)|
 
 ![](assets/functions-toolbar-350x189.png)
 
