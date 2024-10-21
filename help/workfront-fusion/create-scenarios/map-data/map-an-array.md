@@ -66,13 +66,7 @@ You must have the following access to use the functionality in this article:
 
 1. Click the field where you want to map the array. This is the field that the array is mapped to.
 
-   >[!INFO]
-   >
-   >  **Example:** For the example above, you would click the [!UICONTROL Add an attachment] button for an email.
-   >
-   >![](assets/add-an-attachment-button-350x152.jpg)
-
-1. In the box that displays, enter the item.
+1. In the box that displays, map the item.
 
    The panel allows you to map fields in the same way as with any other type of item. If you do not want to fill in each item separately, but want to map another array into the target field, use the [!UICONTROL Map] button. In this case, make sure that both arrays (the source array and the target array) have the same structure.
 
@@ -80,7 +74,9 @@ You must have the following access to use the functionality in this article:
 
 You can divide an array into individual bundles using an iterator. Fore more information, see [[!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/iterator-module.md).
 
+## Map items into a new array
 
+Some fields in Workfront Fusion allow you to map elements into an array. For example, you can create an array of 
 
 ## Map array elements
 
