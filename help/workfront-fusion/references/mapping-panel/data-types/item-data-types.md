@@ -82,7 +82,7 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (binary data)</p> </td> 
-   <td> <p>File content is usually sent as Buffer type content (image content, video file, and others). In some cases, text data is included in this type (for example, a text file). [!DNL Workfront Fusion] is able to automatically convert text data in binary code to text and text to text data in binary code. <!--For more information, see <a href="../../workfront-fusion/mapping/about-mapping-files.md" class="MCXref xref">About mapping files in [!UICONTROL Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p>File content is usually sent as Buffer type content (image content, video file, and others). In some cases, text data is included in this type (for example, a text file). [!DNL Workfront Fusion] is able to automatically convert text data in binary code to text and text to text data in binary code. <!--For more information, see <a href="../../workfront-fusion/mapping/about-mapping-files.md" class="MCXref xref">About mapping files</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Collection</p> </td> 

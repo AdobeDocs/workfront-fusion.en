@@ -121,7 +121,7 @@ Returns a primitive array containing values of a complex array. This function al
 
 >[!ENDSHADEBOX]
 
-<!--For more information, see [Map information from one module to another in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).-->
+<!--For more information, see [Map information from one module to another](../../workfront-fusion/mapping/map-information-between-modules.md).-->
 
 ### shuffle
 

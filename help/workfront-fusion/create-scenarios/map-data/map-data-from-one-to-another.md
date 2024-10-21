@@ -6,6 +6,8 @@ feature: Workfront Fusion
 ---
 # Map information from one module to another
 
+<!--Edit troubleshooting-->
+
 Mapping is the process of assigning a module's outputs to another module's input fields.
 
 The mapping panel displays when you click a field where you can insert a value outputted from a preceding module in a scenario. 
@@ -69,7 +71,62 @@ To assign output items to a module's input fields:
 1. (Optional) To search for a particular field in the mapping panel, click the mapping panel search bar and type in the term you want to search for. Click the field when it appears in the list.
 
    Search results contain the search term and are not case sensitive.
+1. To select a value that is an element of a collection, click the arrow next to that collection, then select the element when it appears.
+    
+    ![Collection element](assets/collection-dropdown.png)
+
 1. Click an item from the mapping panel to insert it into the field.
 
 <!--For more information, see [Configure a module's settings](../../workfront-fusion/modules/configure-a-modules-settings.md).-->
+
+
+## Troubleshooting
+
+### Missing items in the mapping panel
+
+For each module, the mapping panel displays all output items, listed by the author of the module. In some cases, this list might be incomplete for various reasons, and some items might be missing. [!DNL Workfront Fusion] can auto-discover the missing output items when you run the module in the scenario editor. The exact procedure differs slightly depending on the module's type:
+
+#### Instant trigger
+
+1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
+
+   If there are no queued webhooks, the module waits for a new webhook to process.
+
+1. Generate a webhook.
+
+   For example, the webhook module **[!DNL Slack] >[!UICONTROL Listen for new events]** (which watches for new channel messages in a channel) sends a message to the channel.
+
+1. When the module finishes running, click the bubble above the module to explore its full output.
+
+   The mapping panel will contains all the items that were discovered in the module's output.
+
+#### Polling trigger
+
+1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
+1. If there is no output, click **[!UICONTROL Choose where to start]** and adjust the settings.
+1. If there is no event to be processed, create one and go back to step 2.
+
+   For example, the webhook module **[!UICONTROL Gmail] >[!UICONTROL Watch emails]** sends an email to the folder that the module is watching.
+
+1. When the module finishes running, click the bubble above the module to explore its full output.
+
+   The mapping panel now contains all of the items that were discovered in the module's output.
+
+#### Other modules
+
+You may choose to execute:
+
+* The whole scenario (or just the part containing the module)
+
+   If your scenario starts with a trigger, refer to the [Instant trigger](#instant-trigger) or [Polling trigger](#polling-trigger) section above.
+
+* Just the single module
+
+If you choose to execute just the single module:
+
+1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays..
+1. Provide sample values for the input items, then click **[!UICONTROL OK]** .
+1. When the module finishes running, click the bubble above the module to explore its full output.
+
+   The mapping panel now contains all of the items that were discovered in the module's output.
 

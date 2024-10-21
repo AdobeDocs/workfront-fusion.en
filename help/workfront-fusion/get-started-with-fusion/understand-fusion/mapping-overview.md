@@ -1,10 +1,10 @@
 ---
-title: Map information from one module to another
+title: Mapping overview
 description: Mapping is the process of assigning a module's outputs, structured into items, to another module's input fields.
 author: Becky
 feature: Workfront Fusion
 ---
-# Map information from one module to another
+# Mapping overview
 
 Mapping is the process of assigning a module's outputs to another module's input fields.
 
@@ -100,137 +100,28 @@ For more information on mapping items using functions, see [Map items using func
 
 ## Collections
 
-Some items can contain multiple values of various types. These are collection type items.
+Items can contain multiple values of various types. These are collection-type items.
 
-You can identify a [!UICONTROL collection] type item by the expand arrow to the right of the item's label, and by its automatically expanded list of sub-items.
+Collection-type bundles display `(Collection)` next to the bundle label in the module output. 
 
 ![](assets/collection.png)
 
->[!NOTE]
->
->In most cases, you map the collection's sub-items instead of mapping the item that represents the whole collection.
+In most cases, you map the collection's elements instead of mapping the item that represents the whole collection.
 
-For more information about collections, see [Item data types in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/item-data-types.md)
+To locate a collection's element in the mapping panel, click the arrow next to the collection.
+
+![](assets/collection-dropdown.png)
+
+For more information about collections, see [Item data types](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
 ## Arrays
 
-Some items can contain multiple elements of the same type. These are array type items.
+Items can contain multiple values of the same type. These are array-type items.
 
-You can identify an array type item by the square brackets at the end of the item's label. Click the small black rectangle to the right of the item's label to reveal the element's items:
+Array-type bundles display `(Array)` next to the bundle label in the module output.
+
+In the mapping panel, arrays display with square bracksts. You can identify an array type item by the square brackets at the end of the item's label. To locate specific array element in the mapping panel, click the arrow next to the array.
 
 ![](assets/array.png)
 
-For more information about arrays, see [Item data types](../../workfront-fusion/mapping/item-data-types.md)
-
-### Map an array's first element
-
-If you map an array's `Recipient name` item, it displays in the field like this:
-
-![](assets/map-array-1st-element.png)
-
-The number in the square brackets is an index that determines which element of the array will be used. It is set to 1 by default.
-
-### Map an array's n-th element
-
-If you want to access another element, click on the square brackets and edit the index value:
-
-![](assets/access-another-element.png)
-
-### Map an array's element with a given key
-
-Some arrays contain several collections with key and value items. These are typically various metadata, attributes, and so on.
-
-The following example shows the output of the [!DNL Jira] App.
-
-![](assets/output-of-jira-app-350x100.png)
-
-In this example, we get a file name from an array of attachments for the specific attachment with an ID of 10108.
-
-The output from [!DNL Jira] looks like this:
-
-![](assets/output-from-jira-350x261.png)
-
-The typical requirement is to look up an element by its given key value and obtain the corresponding value from the value item. This can be achieved with a formula employing a combination of the `map()` and `get()` functions.
-
-The following is a detailed breakdown of the formula:
-
-1. The first parameter of the `map()` function is the whole array item.
-1. The second parameter is the raw name of the value item. To obtain the raw name, hover over the item in the [!UICONTROL mapping] panel:
-
-   ![](assets/obtain-raw-name-350x124.png)
-
-   >[!NOTE]
-   >
-   >All parameters are case sensitive. Even though in this particular example the item's label differs from its raw name only in capitalization, it is necessary to use the raw name, which is all lowercase value in contrast to the label Value.
-
-1. The 3rd parameter is the raw name of the key item:
-
-   ![](assets/3rd-parameter-350x166.png)
-
-1. The 4th parameter is the given key value.
-
-Because the `map()` function returns an array (as there could be more elements with the given key value), it is necessary to apply the `get()` function to get its first element:
-
-* The 1st parameter of the `get()` function is the result of the `map()` function.
-
-* The 2nd parameter is the element's index - one.
-
-For more information about the `map()` function, see [Array functions](../../workfront-fusion/functions/array-functions.md).
-
-For more information about the `get()` function, see [General functions](../../workfront-fusion/functions/general-functions.md).
-
-## Converting elements to a series of bundles
-
-Arrays can be converted to a series of bundles using the [!UICONTROL Iterator] module. For more information, see [[!UICONTROL Iterator] module in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/modules/iterator-module.md).
-
-![](assets/series-of-bundles-350x169.png)
-
-## Troubleshooting
-
-### Missing items in the mapping panel
-
-For each module, the mapping panel displays all output items, listed by the author of the module. In some cases, this list might be incomplete for various reasons, and some items might be missing. [!DNL Workfront Fusion] can auto-discover the missing output items when you run the module in the scenario editor. The exact procedure differs slightly depending on the module's type:
-
-#### Instant trigger
-
-1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
-
-   If there are no queued webhooks, the module waits for a new webhook to process.
-
-1. Generate a webhook.
-
-   For example, the webhook module **[!DNL Slack] >[!UICONTROL Listen for new events]** (which watches for new channel messages in a channel) sends a message to the channel.
-
-1. When the module finishes running, click the bubble above the module to explore its full output.
-
-   The mapping panel will contains all the items that were discovered in the module's output.
-
-#### Polling trigger
-
-1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
-1. If there is no output, click **[!UICONTROL Choose where to start]** and adjust the settings.
-1. If there is no event to be processed, create one and go back to step 2.
-
-   For example, the webhook module **[!UICONTROL Gmail] >[!UICONTROL Watch emails]** sends an email to the folder that the module is watching.
-
-1. When the module finishes running, click the bubble above the module to explore its full output.
-
-   The mapping panel now contains all of the items that were discovered in the module's output.
-
-#### Other modules
-
-You may choose to execute:
-
-* The whole scenario (or just the part containing the module)
-
-   If your scenario starts with a trigger, refer to the [Instant trigger](#instant-trigger) or [Polling trigger](#polling-trigger) section above.
-
-* Just the single module
-
-If you choose to execute just the single module:
-
-1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays..
-1. Provide sample values for the input items, then click **[!UICONTROL OK]** .
-1. When the module finishes running, click the bubble above the module to explore its full output.
-
-   The mapping panel now contains all of the items that were discovered in the module's output.
+For information about mapping arrays and array elements, see [Map arrays and array elements](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).
