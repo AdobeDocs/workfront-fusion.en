@@ -62,9 +62,9 @@ You must have the following access to use the functionality in this article:
 
 +++
 
-## Map an array
+## Map an entire array
 
-1. Click the button located in the target field.
+1. Click the field where you want to map the array. This is the field that the array is mapped to.
 
    >[!INFO]
    >
@@ -151,3 +151,4 @@ The output from [!DNL Jira] looks like this:
 Arrays can be converted to a series of bundles using the [!UICONTROL Iterator] module. For more information, see [[!UICONTROL Iterator] module](../../workfront-fusion/modules/iterator-module.md).
 
 ![](assets/series-of-bundles-350x169.png)
+
