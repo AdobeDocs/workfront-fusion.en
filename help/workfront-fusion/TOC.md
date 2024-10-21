@@ -42,6 +42,7 @@ user-guide-description: Workfront Fusion documentation - add more
     * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
+        * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
         * [Map items using functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
     * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
     * [Configure error handling](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
