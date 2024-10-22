@@ -76,32 +76,65 @@ You can divide an array into individual bundles using an iterator. Fore more inf
 
 ## Map items into a new array
 
-Some fields in Workfront Fusion allow you to map elements into an array. For example, you can create an array of 
+Some fields in Workfront Fusion allow you to map elements into an array. For example, you can create an array of checklist items into the Workfront Boards > Add checklist item module. When the module is run, all of the checklist items are added to the card.
+
+Any module field that displays "Add item" creates an array.
+
+![Add item](assets/add-item.png)
+
+To add elements to the array:
+
+1. Click **Add item**
+1. In the panel that opens, enter details about the item.
+1. Click **Add**.
+1. (Optional) Repeat steps 1-3 for each element you want to add to the[!UICONTROL ] array.                                                           
 
 ## Map array elements
 
 
 ### Map array elements by number
 
-Array elements display as a number in square brackets after the array name.
+Array elements display as a number in square brackets after the array name. You can map an individual element of an array into a field by using this index number.
 
 ![](assets/map-array-1st-element.png)
 
-The number in the square brackets is an index that determines which element of the array will be used. It is set to 1 by default, which represents the first element of the array.
-
-To map a different element, click on the square brackets and enter the index of the element you want to map. 
-
 >[!NOTE]
 >
->Array indexing in Workfront Fusion starts from 1. 
+>Array indexing in Workfront Fusion starts from 1.
 
-![](assets/access-another-element.png)
+To map an array element:
+
+1. Click the field where to you want to map the element. 
+
+   The mapping panel opens.
+
+1. Locate the array that contains the element you want to map. 
+1. Click the dropdown arrow next to the array.
+1. Click the element that you want to map.
+
+   The element is mapped, with the index of 1. This maps the first element in the array.
+
+1. To map a different element of the array, click on the [1] and enter the index number of the array element that you want to map.
+
+   ![](assets/access-another-element.png)
 
 ### Map an array's element with a given key
 
 Some arrays contain collections with key-value items such as metadata, attributes, and so on. To use one of these values, you can look up an element by its given key value and obtain the corresponding value from the value item. We recommend using a formula employing a combination of the `map()` and `get()` functions.
 
-The following is a detailed breakdown of the formula:
+
+
+>[!BEGINSHADEBOX]
+
+The following example shows the output of the [!DNL Jira] App.
+
+![](assets/output-of-jira-app-350x100.png)
+
+In this example, we get a file name from an array of attachments for the specific attachment with an ID of 10108.
+
+The output from [!DNL Jira] looks like this:
+
+![](assets/output-from-jira-350x261.png)
 
 1. The first parameter of the `map()` function is the whole array item.
 1. The second parameter is the raw name of the value item. To obtain the raw name, hover over the item in the [!UICONTROL mapping] panel:
@@ -124,23 +157,11 @@ Because the `map()` function returns an array (as there could be more elements w
 
 * The 2nd parameter is the element's index - one.
 
+>[!ENDSHADEBOX]
+
 For more information about the `map()` function, see [Array functions](../../workfront-fusion/functions/array-functions.md).
 
 For more information about the `get()` function, see [General functions](../../workfront-fusion/functions/general-functions.md).
-
->[!BEGINSHADEBOX]
-
-The following example shows the output of the [!DNL Jira] App.
-
-![](assets/output-of-jira-app-350x100.png)
-
-In this example, we get a file name from an array of attachments for the specific attachment with an ID of 10108.
-
-The output from [!DNL Jira] looks like this:
-
-![](assets/output-from-jira-350x261.png)
-
->[!ENDSHADEBOX]
 
 ## Converting elements to a series of bundles
 
