@@ -130,32 +130,42 @@ The following example shows the output of the [!DNL Jira] App.
 
 ![](assets/output-of-jira-app-350x100.png)
 
-In this example, we get a file name from an array of attachments for the specific attachment with an ID of 10108.
+This example gets a file name from an array of attachments, for the specific attachment with an ID of 10108.
 
-The output from [!DNL Jira] looks like this:
+This example generates the following output:
 
 ![](assets/output-from-jira-350x261.png)
 
-1. The first parameter of the `map()` function is the whole array item.
-1. The second parameter is the raw name of the value item. To obtain the raw name, hover over the item in the [!UICONTROL mapping] panel:
+The formula can be explained as follows:
 
-   ![](assets/obtain-raw-name-350x124.png)
+* `map`
 
-   >[!NOTE]
-   >
-   >All parameters are case sensitive. Even though in this particular example the item's label differs from its raw name only in capitalization, it is necessary to use the raw name, which is all lowercase value in contrast to the label Value.
+    1. The first parameter of the `map()` function is the whole array item.
+    1. The second parameter is the raw name of the value item. To obtain the raw name, hover over the item in the [!UICONTROL mapping] panel:
 
-1. The 3rd parameter is the raw name of the key item:
+       ![](assets/obtain-raw-name-350x124.png)
 
-   ![](assets/3rd-parameter-350x166.png)
+       >[!NOTE]
+       >
+       >All parameters are case sensitive. Even though in this particular example the item's label differs from its raw name only in capitalization, it is necessary to use the raw name.
 
-1. The 4th parameter is the given key value.
+    1. The third parameter is the raw name of the key item:
 
-Because the `map()` function returns an array (as there could be more elements with the given key value), it is necessary to apply the `get()` function to get its first element:
+       ![](assets/3rd-parameter-350x166.png)
 
-* The 1st parameter of the `get()` function is the result of the `map()` function.
+    1. The fourth parameter is the given key value.
 
-* The 2nd parameter is the element's index - one.
+    Because the `map()` function returns an array (as there could be more elements with the given key value), it is necessary to apply the `get()` function to get its first element:
+
+* `get`
+
+    1. The first parameter of the `get()` function is the result of the `map()` function.
+
+    1. The second parameter is the element's index. In this exammple, the index is `1`.
+
+This example generates the following output:
+
+![](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -163,9 +173,9 @@ For more information about the `map()` function, see [Array functions](../../wor
 
 For more information about the `get()` function, see [General functions](../../workfront-fusion/functions/general-functions.md).
 
-## Converting elements to a series of bundles
+## Convert array elements to a series of bundles
 
 Arrays can be converted to a series of bundles using the [!UICONTROL Iterator] module. For more information, see [[!UICONTROL Iterator] module](../../workfront-fusion/modules/iterator-module.md).
 
-![](assets/series-of-bundles-350x169.png)
+![](assets/series-of-bundles.png)
 
