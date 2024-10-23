@@ -72,7 +72,7 @@ You must have the following access to use the functionality in this article:
 
    You can add any number of items to an array.
 
-You can divide an array into individual bundles using an iterator. Fore more information, see [[!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/iterator-module.md).
+You can divide an array into individual bundles using an iterator. Fore more information, see [[!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Map items into a new array
 
@@ -169,13 +169,13 @@ This example generates the following output:
 
 >[!ENDSHADEBOX]
 
-For more information about the `map()` function, see [Array functions](../../workfront-fusion/functions/array-functions.md).
+For more information about the `map()` function, see [Array functions](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md).
 
-For more information about the `get()` function, see [General functions](../../workfront-fusion/functions/general-functions.md).
+For more information about the `get()` function, see [General functions](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md).
 
 ## Convert array elements to a series of bundles
 
-Arrays can be converted to a series of bundles using the [!UICONTROL Iterator] module. For more information, see [[!UICONTROL Iterator] module](../../workfront-fusion/modules/iterator-module.md).
+Arrays can be converted to a series of bundles using the [!UICONTROL Iterator] module. For more information, see [[!UICONTROL Iterator] module](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![](assets/series-of-bundles.png)
 
