@@ -6,8 +6,6 @@ feature: Workfront Fusion
 ---
 # Map information from one module to another
 
-<!--Edit troubleshooting-->
-
 Mapping is the process of assigning a module's outputs to another module's input fields.
 
 The mapping panel displays when you click a field where you can insert a value outputted from a preceding module in a scenario. 
@@ -82,51 +80,52 @@ To assign output items to a module's input fields:
 
 ## Troubleshooting
 
-### Missing items in the mapping panel
+### Problem: Missing items in the mapping panel
 
-For each module, the mapping panel displays all output items, listed by the author of the module. In some cases, this list might be incomplete for various reasons, and some items might be missing. [!DNL Workfront Fusion] can auto-discover the missing output items when you run the module in the scenario editor. The exact procedure differs slightly depending on the module's type:
+The mapping panel displays output items from previous modules. Occasionally, some items might be missing from this panel. You can run the module that is missing output in the scenario editor, and the mapping panel can then include those items in later modules. The exact procedure differs depending on the module's type
+
+* [Instant trigger](#instant-trigger)
+* [Polling trigger](#polling-trigger)
+* [Other modules](#other-modules)
 
 #### Instant trigger
 
 1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
 
-   If there are no queued webhooks, the module waits for a new webhook to process.
+   Because this is an instant trigger, it begins watching for events.
 
-1. Generate a webhook.
+1. Create the event that the module is watching. 
 
-   For example, the webhook module **[!DNL Slack] >[!UICONTROL Listen for new events]** (which watches for new channel messages in a channel) sends a message to the channel.
+   For example, if the module is a Workfront > Watch Events module that is watching for task assignments, log into Workfront (as a user that is not the one that the Fusion connection is using) and assign a task.
 
 1. When the module finishes running, click the bubble above the module to explore its full output.
 
-   The mapping panel will contains all the items that were discovered in the module's output.
+   The mapping panel for later modules now contains all of the items in the module's output.
 
 #### Polling trigger
 
 1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
 1. If there is no output, click **[!UICONTROL Choose where to start]** and adjust the settings.
-1. If there is no event to be processed, create one and go back to step 2.
+1. (Conditional) If there is no event to be processed, create the event that the module watches for and repeat step 2.
 
-   For example, the webhook module **[!UICONTROL Gmail] >[!UICONTROL Watch emails]** sends an email to the folder that the module is watching.
+   For example, if the module is a Workfront > Watch records module that is watching for task assignments, log into Workfront (as a user that is not the one that the Fusion connection is using) and assign a task, then run the module again.
 
 1. When the module finishes running, click the bubble above the module to explore its full output.
 
-   The mapping panel now contains all of the items that were discovered in the module's output.
+   The mapping panel for later modules now contains all of the items in the module's output.
 
 #### Other modules
 
 You may choose to execute:
 
 * The whole scenario (or just the part containing the module)
+* The single module
 
-   If your scenario starts with a trigger, refer to the [Instant trigger](#instant-trigger) or [Polling trigger](#polling-trigger) section above.
-
-* Just the single module
-
-If you choose to execute just the single module:
+To execute the single module:
 
 1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays..
 1. Provide sample values for the input items, then click **[!UICONTROL OK]** .
 1. When the module finishes running, click the bubble above the module to explore its full output.
 
-   The mapping panel now contains all of the items that were discovered in the module's output.
+   The mapping panel for later modules now contains all of the items in the module's output.
 
