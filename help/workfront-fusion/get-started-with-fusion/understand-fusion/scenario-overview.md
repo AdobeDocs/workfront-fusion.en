@@ -24,7 +24,7 @@ A **scenario** is a user-created series of automated steps, created to move and 
 
 A scenario begins with a **trigger**. The trigger watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant). 
 
-![Trigger](assets/scenario%20trigger.png)
+![Trigger](assets/scenario-trigger.png)
 
 ### Module
 
