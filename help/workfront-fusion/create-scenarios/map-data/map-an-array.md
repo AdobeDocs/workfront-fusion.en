@@ -4,7 +4,7 @@ description: You can map an array or individual array elements to a module field
 author: Becky
 feature: Workfront Fusion
 ---
-# Map arrays and array elements
+# Map an array or array element
 
 An array is a bundle item that can contain the following:
 

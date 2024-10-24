@@ -1,10 +1,10 @@
 ---
-title: Connections overview
+title: Connection overview
 description: For most apps, it is necessary to create a connection, through which [!DNL Adobe Workfront Fusion] can communicate with the given third-party service according to the settings of the specific scenario.
 author: Becky
 feature: Workfront Fusion
 ---
-# Connections overview
+# Connection overview
 
 Workfront Fusion requires a connection for most applications.  It uses this connection to communicate with the given third-party service.
 

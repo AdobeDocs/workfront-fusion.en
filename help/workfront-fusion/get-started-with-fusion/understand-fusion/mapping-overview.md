@@ -96,7 +96,7 @@ The other tabs contain the following types of functions:
 >
 >When you create a complex formula that you want to reuse in another field, you can click the field that contains the combination, use Cmd-A or Ctrl-A to select it, then copy and paste it into the other field.
 
-For more information on mapping items using functions, see [Map items using functions](../../workfront-fusion/functions/map-using-functions.md).
+For more information on mapping items using functions, see [Map items using functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
 
 ## Collections
 

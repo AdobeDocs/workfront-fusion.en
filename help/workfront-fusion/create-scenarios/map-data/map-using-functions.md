@@ -1,14 +1,10 @@
 ---
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: functions
 title: Map items using functions
 description: When you map items, you can use functions to create simple or complex formulas.
 author: Becky
 feature: Workfront Fusion
-exl-id: e64d9b1e-8576-43db-ac29-0d386a482fbc
 ---
-# Map items using functions
+# Map an item using functions
 
 When you map items, you can use functions to create simple or complex formulas. The functions available are similar to functions in Excel and in some programming languages:
 
