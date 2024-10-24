@@ -4,7 +4,7 @@ description: The following glossary explains some common terms in Adobe Workfron
 author: Becky
 feature: Workfront Fusion
 ---
-# Adobe Workfront Fusion Glossary
+# Adobe Workfront Fusion glossary
 
 The following glossary explains some common terms in Adobe Workfront Fusion.
 
