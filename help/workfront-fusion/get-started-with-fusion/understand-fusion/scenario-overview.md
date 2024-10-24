@@ -78,8 +78,8 @@ In this example, the scenario triggers when a user is added to an [!DNL Excel] s
 
 ![](assets/fusion-integration-example.png)
 
-For a list of dedicated connectors, see [Apps and their modules](../../workfront-fusion/apps-and-their-modules/apps-and-their-modules.md).
-
+<!--For a list of dedicated connectors, see [Apps and their modules](../../workfront-fusion/apps-and-their-modules/apps-and-their-modules.md).-->
+<!--
 >[!IMPORTANT]
 >
 >[!DNL Adobe Workfront Fusion] can connect to almost any web service. If the app you want to work with does not have a dedicated [!DNL Workfront Fusion] connector, you can use the following modules to connect directly to the web service:
@@ -88,7 +88,7 @@ For a list of dedicated connectors, see [Apps and their modules](../../workfront
 >* [[!UICONTROL SOAP] module](../../workfront-fusion/apps-and-their-modules/soap-module.md) 
 >* [[!UICONTROL JSON] modules](../../workfront-fusion/apps-and-their-modules/json-modules.md) 
 >
-
+-->
 +++
 
 ## References
