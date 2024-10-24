@@ -8,3 +8,6 @@ recommendations: noDisplay, noCatalog
 ---
 
 # Manage scenarios: article index
+
+* [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
+* [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)

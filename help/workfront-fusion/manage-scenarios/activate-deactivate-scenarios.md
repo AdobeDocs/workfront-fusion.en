@@ -1,15 +1,30 @@
-<!--# References metadata
-
 ---
-title: 'Function References: Article Index'
-description: This section contains reference material related to functions in Adobe Workfront Fusion. 
+product-previous: workfront-fusion
+product-area: workfront-integrations
+navigation-topic: scenarios
+title: Activate or deactivate a scenario
+description: This article describes why active or deactivated scenarios are useful in different situations, and how to activate or deactivate a scenario.
 author: Becky
 feature: Workfront Fusion
-recommendations: noDisplay, noCatalog
+
 ---
+# Activate or deactivate a scenario
 
-This section contains the following articles:-->
+You can work with scenarios either in an active or an inactive state:
 
+<!--* An active scenario executes periodically according to its defined schedule, as explained in [Schedule a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
+
+   This is useful when you want to automate the function of a scenario.
+
+* An inactive scenario executes only when you run it manually.
+
+   This is useful when you want to run the scenario manually every time.
+
+You can activate or deactivate a scenario at any time, depending on how you want to use the scenario.
+
+A newly created scenario is inactive by default.
+
+## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
 
@@ -60,3 +75,14 @@ You must have the following access to use the functionality in this article:
 <!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 +++
+
+## Prerequisites
+
+You must create a scenario before you can activate it. <!--link to create scenario article-->
+
+## Activate or deactivate a scenario:
+
+1. Click **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) in the left panel, then click the scenario to open it.
+1. In the lower-left corner of the window, click the **[!UICONTROL On/Off]** toggle.
+
+   ![](assets/on-off-switch.jpg)
