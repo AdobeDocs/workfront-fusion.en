@@ -1,11 +1,12 @@
 ---
-user-guide-title: Workfront Fusion documentation
-breadcrumb-title: Workfront Fusion
-user-guide-description: Workfront Fusion documentation - add more
+user-guide-title: Adobe Workfront Fusion documentation
+breadcrumb-title: Adobe Workfront Fusion
+user-guide-description: Use the docs, tutorials, and additional resources to learn how to implement and effectively use Adobe Workfront Fusion in your organization.
 ---
 
-# Workfront Fusion documentation {#using}
+# Adobe Workfront Fusion documentation {#using}
 
+* [Adobe Workfront Fusion Documentation](home.md)
 * Fusion release activity {#fusion-release-activity}
     * [Fusion release activity](/help/workfront-fusion/fusion-release-activity/fusion-release-activity.md)
 * Get started with Workfront Fusion {#get-started-with-fusion}
