@@ -6,6 +6,8 @@ user-guide-description: Workfront Fusion documentation - add more
 
 # Workfront Fusion documentation {#using}
 
+* Fusion release activity {#fusion-release-activity}
+    * [Fusion release activity](/help/workfront-fusion/fusion-release-activity/fusion-release-activity.md)
 * Get started with Workfront Fusion {#get-started-with-fusion}
     * [Get started with Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
     * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
