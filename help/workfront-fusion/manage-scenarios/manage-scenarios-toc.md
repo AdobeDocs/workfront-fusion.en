@@ -12,3 +12,4 @@ recommendations: noDisplay, noCatalog
 * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
