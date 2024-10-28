@@ -93,6 +93,9 @@ The first tab ![](assets/toolbar-icon-functions-you-map-from-other-modules.png) 
 
 The other tabs include functions, operators, and keywords that you can use to create formulas. These are sorted into different tabs based on the type of data they handle.
 
+![](assets/mapping-panel-blank.png)
+
+
 For more information on function tabs, see [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
 For more information on mapping items using functions, see [Map items using functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).

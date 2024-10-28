@@ -106,8 +106,6 @@ To insert a function into a field:
 
 You can nest functions within each other.
 
-<!--Fill this in: To nest a function:-->
-
 >[!BEGINSHADEBOX]
 
    **Example:** 
@@ -117,6 +115,18 @@ You can nest functions within each other.
    ![](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
+
+To nest a function:
+
+1. Click the field where you are creating a formula.
+
+   This opens the mapping panel.
+
+1. Click the first function that you want to add. This is the function on the outside. If the following example, this is the `substring` function.
+1. In that function, click where you want the nested function to go. In this example, the nested function goes in the place of the first parameter.
+1. In the mapping panel, click the nested function. In this example, this is the `trim` function.
+1. Continue configuring the function as desired.
+1. Continue configuring the module, or click **OK**.
 
 ## Use [!DNL Google Sheets] functions
 
