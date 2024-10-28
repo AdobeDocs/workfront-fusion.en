@@ -15,6 +15,7 @@ user-guide-description: Workfront Fusion documentation - add more
         * [Connection overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)
         * [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
         * [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
+        * [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
     * Navigate Workfront Fusion {#navigate-workfront-fusion}
         * [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
         * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)

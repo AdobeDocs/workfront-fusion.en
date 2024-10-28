@@ -66,41 +66,30 @@ You must have the following access to use the functionality in this article:
 
 +++
 
-## Mapping tab overview
-
-To open the [!UICONTROL mapping] panel for a field:
-
-1. In a scenario module, click the field where you want to map a value.
-
-   The mapping panel opens
-1. (Conditional) If the mapping panel does not open, enable the Map toggle above the field.
-
-![Map toggle](assets/map-toggle.png)
-
-### Mapping panel tabs
-
-The mapping panel includes the following tabs. Each tab includes functions and keywords for that type of data.
-
-| Type of functions | For more information, see:|
-|---|---|
-| **Map from other modules**<br>![](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
-|  **General functions**<br>![](assets/toolbar-icon-general-function.png)|[General functions](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
-| **Math functions**<br>![](assets/toolbar-icon-math-functions.png)| [Math functions](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md)|
-| **Text and binary functions**<br>![](assets/toolbar-icon-text&binary-functions.png)| [String functions](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md)|
-| **Date and time** <br> ![](assets/toolbar-icon-date&time-functions.png)| <ul><li>[Date and time functions](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tokens for date and time formatting](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tokens for date and time parsing](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
-|**Functions for working with arrays**<br> ![](assets/toolbar-icon-functions-for-arrays.png)|[Array functions](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)|
-
-![](assets/functions-toolbar-350x189.png)
-
 ## Insert functions into fields
 
 To insert a function into a field:
 
-1. Click the function name.
+1. Click the field where you want to insert a function.
+1. Select the tab in the mapping panel that contains the function you want to insert. 
 
-   Or
+   For information on mapping panel tabs, see [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+   1. Click the function name.
 
-   Drag the function into the field.
+      Or
+
+      Drag the function into the field.
+1. Configure the function parameters. 
+
+    For an explanation of function parameters, hover over the function in the mapping panel. 
+
+    For more information on functions and their parameters, see the articles under [Function references: article index](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md).
+
+1. Continue configuring the module, or click **OK**.
+
+>[!TIP]
+>
+>When you create a complex formula that you want to reuse in another field, you can click the field that contains the combination, use Cmd-A or Ctrl-A to select it, then copy and paste it into the other field.
 
 
 >[!BEGINSHADEBOX]
@@ -126,6 +115,18 @@ You can nest functions within each other.
    ![](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
+
+To nest a function:
+
+1. Click the field where you are creating a formula.
+
+   This opens the mapping panel.
+
+1. Click the first function that you want to add. This is the function on the outside. If the following example, this is the `substring` function.
+1. In that function, click where you want the nested function to go. In this example, the nested function goes in the place of the first parameter.
+1. In the mapping panel, click the nested function. In this example, this is the `trim` function.
+1. Continue configuring the function as desired.
+1. Continue configuring the module, or click **OK**.
 
 ## Use [!DNL Google Sheets] functions
 
