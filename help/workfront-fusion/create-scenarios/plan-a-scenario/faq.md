@@ -4,81 +4,39 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: workfront-fusion-basics
 title: Adobe Workfront Fusion FAQ
-description: This article addresses common questions related to [!DNL Adobe Workfront Fusion], including information about object commonly used in Fusion workflows
+description: This article addresses common questions related to creating a scenario, including information about objects commonly used in Fusion workflows
 author: Becky
 feature: Workfront Fusion
-exl-id: e2ecc190-ec26-46f0-a4f2-7b283639a1eb
 ---
-# Adobe Workfront Fusion FAQ
+# Scenario creation FAQ
 
-<!--Edit me-->
-
-## Access requirements
-
-You must have the following access to use the functionality in this article:
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!DNL Pro] or higher</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Product</td> 
-   <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
-
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+The information in this article may be useful as you begin creating scenarios in Workfront Fusion.
 
 ## What is a scenario?
 
 ### Answer
 
-A scenario defines a sequence of steps to be executed by [!DNL Adobe Workfront Fusion]. For each scenario, you specify the data source, how the data is to be processed, and what data is to be used and what is to be ignored. [!DNL Workfront Fusion] lets you create as complex of scenarios as you need; even the most sophisticated scenarios are possible.
+A scenario defines a sequence of steps to be executed by Adobe Workfront Fusion. For each scenario, you specify the data source, which data to use, and how the data is to be processed. Fusion lets you create simple or complex of scenarios, able to meet the use cases for your organization..
 
-For more information, see [Create a practice integration scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/get-started/create-a-practice-scenario.md).
+For more information on scenarios, see [Scenario overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
 
-## Can I use more than one module in a scenario? Or just a trigger and action?
+## How many modules can I use in a scenario?
 
 ### Answer
 
-You can use as many modules as you want in a scenario. You can create independent routes and specify which data should flow through them. You can also use results returned by individual actions and then pass them on to the next action.
+You can use as many modules as you want in a scenario. You can separate modules into routes, and can specify which data should flow through each route. You can also use the output of one module as input to another module.
+
+Although there is no limit to the number of modules in a scenario, more than 150 modules can affect scenario performance.
+
+Fore more information on modules, see [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
 
 ## Can [!DNL Workfront Fusion] work with files?
 
 ### Answer
 
-Yes. Using [!DNL Workfront Fusion], files can be received, saved, transformed, converted, encrypted, and so on. Moreover, [!DNL Workfront Fusion] provides a wide range of built-in features designed to enable users to work effectively and creatively with the data contained in the files.
+Yes. Workfront Fusion can receive, save, transform, convert, and encrypt files. Fusion also provides a wide range of built-in features designed to enable users to work effectively and creatively with the data contained in the files.
 
-For more information, see [About mapping files in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/about-mapping-files.md).
-
-## What happens if I let [!DNL Workfront Fusion] process an email containing more than one attachment?
-
-### Answer
-
-If you use the [!UICONTROL Email] module [!UICONTROL Retrieve attachments], each attachment is sent individually through the rest of the modules in the scenario. Similar modules are also available in other apps that receive multiple files at once.
+For more information on working with files in Fusion, see [Map a file between modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md).
 
 For more information, see [[!UICONTROL Email] modules](../../workfront-fusion/apps-and-their-modules/email-modules.md).
 
@@ -86,7 +44,25 @@ For more information, see [[!UICONTROL Email] modules](../../workfront-fusion/ap
 
 ### Answer
 
-Common scenarios are run at intervals according to the schedule you specify (for example, every hour, every 5 minutes, once a month, and the like). There are special triggers, called instant triggers (webhooks), that can start your scenario immediately after they receive data from a given service. Instant triggers can be extremely useful. We recommend to use them whenever possible. They help to reduce the number of operations. Received data is processed immediately without waiting for the next scheduled run. For example, the [!DNL Google Sheets] module [!UICONTROL Watch Changes] starts a scenario immediately after a cell is updated.
+Scenarios can run at intervals according to the schedule you specify, such as every hour or every 5 minutes. There are special triggers, called instant triggers (webhooks), that can start your scenario immediately after they receive data from a given service. Fusion processes the received data immediately, without waiting for the next scheduled run. 
+
+For more information on the difference between polled and instant triggers, see [Trigger modules](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) in the article Module overview.
+
+## What is an operation?
+
+### Answer
+
+An operation is any task performed by a module. An operation occurs, for example, every time a trigger runs and every time an action performs a task.
+
+Some Fusion plans are based on the number of operations your organization uses.
+
+For more information on operations, see [Operations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
+
+## What is data transfer?
+
+### Answer
+
+Data transfer refers to the amount of data transferred through your scenario. For example,  a scenario that retrieves a 100KB image from Workfront, then uploads the image to a document storage provider. The amount of data used in this scenario is 200KB.
 
 ## What are aggregators?
 
@@ -95,12 +71,6 @@ Common scenarios are run at intervals according to the schedule you specify (for
 An [!UICONTROL Aggregator] merges data into one single collection. An example of this is files being compressed into a zip archive and sent as an email attachment.
 
 For more information, see [[!UICONTROL Aggregator] module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/aggregator-module.md).
-
-## What is an operation?
-
-### Answer
-
-An operation is any task performed by a module. An operation occurs, for example, every time a trigger runs and every time an action performs a task.
 
 ## What is data transfer?
 
@@ -115,3 +85,9 @@ Data transfer refers to the amount of data transferred through your scenario. Fo
 A connection is the link between your [!DNL Workfront Fusion] account and the third-party service you want to use. The connection can be easily created when editing a scenario. To add a connection, click the **[!UICONTROL Add]** button in the module setting and follow the step-by-step instructions.
 
 For more information, see [Connections overview](../../workfront-fusion/connections/about-connecting-wf-fusion-to-app-or-service.md).
+
+## What happens if I let [!DNL Workfront Fusion] process an email containing more than one attachment?
+
+### Answer
+
+If you use the [!UICONTROL Email] module [!UICONTROL Retrieve attachments], each attachment is sent individually through the rest of the modules in the scenario. Similar modules are also available in other apps that receive multiple files at once.
