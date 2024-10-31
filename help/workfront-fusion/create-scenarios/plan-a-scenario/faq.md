@@ -64,27 +64,21 @@ For more information on operations, see [Operations](/help/workfront-fusion/set-
 
 Data transfer refers to the amount of data transferred through your scenario. For example,  a scenario that retrieves a 100KB image from Workfront, then uploads the image to a document storage provider. The amount of data used in this scenario is 200KB.
 
+## What is a connection?
+
+### Answer
+
+A connection is the link between your [!DNL Workfront Fusion] account and the third-party service you want to use. The connection can be  created when editing a scenario. 
+
+For more information, see [Connection overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
+
 ## What are aggregators?
 
 ### Answer
 
 An [!UICONTROL Aggregator] merges data into one single collection. An example of this is files being compressed into a zip archive and sent as an email attachment.
 
-For more information, see [[!UICONTROL Aggregator] module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/aggregator-module.md).
-
-## What is data transfer?
-
-### Answer
-
-Data transfer refers to the amount of data transferred through your scenario. For example, suppose you have a scenario that retrieves a 100KB image from FTP and reduces its size to 50KB and saves both images to [!DNL Dropbox]. The amount of data used in this scenario is 250KB.
-
-## What is a connection?
-
-### Answer
-
-A connection is the link between your [!DNL Workfront Fusion] account and the third-party service you want to use. The connection can be easily created when editing a scenario. To add a connection, click the **[!UICONTROL Add]** button in the module setting and follow the step-by-step instructions.
-
-For more information, see [Connections overview](../../workfront-fusion/connections/about-connecting-wf-fusion-to-app-or-service.md).
+For more information, see [[!UICONTROL Aggregator] module](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 ## What happens if I let [!DNL Workfront Fusion] process an email containing more than one attachment?
 
