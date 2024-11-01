@@ -34,8 +34,6 @@ Yes. Workfront Fusion can receive, save, transform, convert, and encrypt files. 
 
 For more information on working with files in Fusion, see [Map a file between modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md).
 
-For more information, see [[!UICONTROL Email] modules](../../workfront-fusion/apps-and-their-modules/email-modules.md).
-
 ## Some triggers allow scenarios to run instantly. What does "instantly" mean?
 
 ### Answer
