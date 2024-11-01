@@ -8,6 +8,8 @@ feature: Workfront Fusion
 
 <!--EDIT ME-->
 
+<!--This is not working as of Nov 1, 2024-->
+
 You can copy modules, groups of modules, or entire scenarios in Adobe Workfront Fusion. This ability allows you to reuse scenarios or parts of scenarios without having to build them again.
 
 ## Access requirements
