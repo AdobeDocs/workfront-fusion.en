@@ -94,7 +94,7 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Array</p> </td> 
-   <td> <p>You can use the array type to work with several values of the same type, including collections. An example is the [!UICONTROL Email] modules: they return an array of attachments and each attachment contains name, content, size, and so on. <!--For more information, see <a href="../../workfront-fusion/mapping/map-an-array.md" class="MCXref xref">Map an array</a>.--></p> </td> 
+   <td> <p>You can use the array type to work with several values of the same type, including collections. An example is the [!UICONTROL Email] modules: they return an array of attachments and each attachment contains name, content, size, and so on. For more information, see <a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">Map an array or array element</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validation</p> </td> 
