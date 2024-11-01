@@ -77,7 +77,8 @@ The following image shows a typical setup of the [!UICONTROL Aggregator] module 
   <tr> 
    <td> <p>[!UICONTROL Source Module]</p> </td> 
    <td> <p>The module where the bundle aggregation starts. The source module is usually an iterator or a search module that outputs a series of bundles.</p><p>When you setup the aggregator's source module (and close the aggregator's setup), the route between the source module and the aggregator module are wrapped in a grey area, so that you can see clearly the start and the end of the aggregation. 
-   <</p> <p>For more information on iterators, see <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a></p> <p>For more information on search modules see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref">Search modules</a> in Module Overview.</p> </td> 
+   <</p> <p>For more information on iterators, see <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a></p> 
+   <p>For more information on search modules see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref">Search modules</a> in Module Overview.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Target structure type]</p><p>(Applicable only for the [!UICONTROL Array aggregator] module.)</p> </td> 
