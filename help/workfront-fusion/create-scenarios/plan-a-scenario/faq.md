@@ -1,14 +1,10 @@
 ---
-content-type: faq
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: workfront-fusion-basics
-title: Adobe Workfront Fusion FAQ
-description: This article addresses common questions related to creating a scenario, including information about objects commonly used in Fusion workflows
+title: Scenario planning FAQ
+description: The information in this article may be useful as you begin creating scenarios in Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 ---
-# Scenario creation FAQ
+# Scenario planning FAQ
 
 The information in this article may be useful as you begin creating scenarios in Workfront Fusion.
 
@@ -37,8 +33,6 @@ Fore more information on modules, see [Module overview](/help/workfront-fusion/g
 Yes. Workfront Fusion can receive, save, transform, convert, and encrypt files. Fusion also provides a wide range of built-in features designed to enable users to work effectively and creatively with the data contained in the files.
 
 For more information on working with files in Fusion, see [Map a file between modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md).
-
-For more information, see [[!UICONTROL Email] modules](../../workfront-fusion/apps-and-their-modules/email-modules.md).
 
 ## Some triggers allow scenarios to run instantly. What does "instantly" mean?
 

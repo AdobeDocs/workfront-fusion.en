@@ -1,14 +1,10 @@
 ---
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: get-started-with-workfront-fusion-2-0
-title: Fusion Basics videos
-description: Fusion Basics videos
+title: Video overviews
+description: These videos may be helpful as you plan a scenario
 author: Becky
 feature: Workfront Fusion
-exl-id: 7ba95790-1255-4a3e-ba7b-8dc73001b583
 ---
-# Adobe Workfront Fusion video overviews
+# Video overviews
 
 These videos are available to help familiarize you with some of the functionality of Adobe Workfront Fusion.
 

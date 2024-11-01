@@ -46,10 +46,13 @@ user-guide-description: Workfront Fusion documentation - add more
         * [Manage templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
 * Create scenarios {#create-scenarios}
     * [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-    * Plan a scenario {#plan-a-senario}
+    * Plan a scenario {#plan-a-scenario}
         * [Plan a scenario: article index](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+        * [Scenario planning FAQ](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
+        * [Video overviews](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
     * Add modules {#add-modules}
         * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
+        * [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)

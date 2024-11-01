@@ -8,3 +8,10 @@ recommendations: noDisplay, noCatalog
 ---
 
 # Add modules: article index
+
+* [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
+
+
+
+
+
