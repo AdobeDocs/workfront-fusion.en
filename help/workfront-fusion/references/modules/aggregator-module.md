@@ -13,9 +13,7 @@ exl-id: cdc32842-8717-4e05-ab19-2661ee14c12c
 
 <!--audited: 09/2024-->
 
-An aggregator module is a module that merges several bundles of data into a single bundle. 
-
-<!--For more information about module types, see [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+An aggregator module is a module that merges several bundles of data into a single bundle.
 
 ## Access requirements
 

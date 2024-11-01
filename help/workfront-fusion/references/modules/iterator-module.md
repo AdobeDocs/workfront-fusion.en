@@ -15,8 +15,6 @@ exl-id: d356276d-e5d9-496f-85cd-cb60a8f8f377
 
 An [!UICONTROL Iterator] is a type of module that converts an array into a series of bundles. Each array item is outputted as a separate bundle.
 
-<!--For more information, see [Types of modules](../../workfront-fusion/modules/module-types.md) and [Map an array](../../workfront-fusion/mapping/map-an-array.md).-->
-
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
