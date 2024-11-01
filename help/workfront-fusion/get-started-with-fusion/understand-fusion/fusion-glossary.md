@@ -63,7 +63,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Items</p> </td> 
-   <td> <p>A part of a bundle. Bundles can consist of multiple items. There are several different types of items: text, number, boolean (yes/no), date, time, buffer (binary data), collections, select menu, array, and validation.</p><p> For more information, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/" class="MCXref xref">Item data types</a>.</p> </td> 
+   <td> <p>A part of a bundle. Bundles can consist of multiple items. There are several different types of items: text, number, boolean (yes/no), date, time, buffer (binary data), collections, select menu, array, and validation.</p><p> For more information, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item data types</a>.</p> </td> 
   </tr>
   <tr> 
    <td role="rowheader"> <p>Iterator</p> </td> 
