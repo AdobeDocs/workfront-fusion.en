@@ -11,9 +11,6 @@ When you map items, you can use functions to create simple or complex formulas. 
 * They evaluate general logic, math, text, dates, and arrays. 
 * They let you perform conditional logic and transformations of item values, such as converting a text to uppercase, trimming text, converting a date into a different format, and more. 
 
-<!--For more information, see [Map information from one module to another in Adobe Workfront Fusion](../../workfront-fusion/mapping/map-information-between-modules.md).-->
-
-
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -62,7 +59,7 @@ You must have the following access to use the functionality in this article:
 
 <!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -135,8 +132,6 @@ If [!DNL Workfront Fusion] does not feature a function you want to use, but it i
 1. In [!DNL Google Sheets], create a new empty spreadsheet.
 1. In [!DNL Workfront Fusion], open your scenario.
 1. Add the **[!DNL Google Sheets]** >**[!UICONTROL Update a cell]** module to the scenario.
-
-   <!--For instructions on adding a module, see [Add a module in a scenario](../../workfront-fusion/scenarios/create-a-scenario.md#add) in the article [Create a scenario](../../workfront-fusion/scenarios/create-a-scenario.md).-->
 
 1. Configure the module:
 

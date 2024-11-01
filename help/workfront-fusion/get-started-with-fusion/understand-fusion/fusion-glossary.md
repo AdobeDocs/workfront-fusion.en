@@ -19,7 +19,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Aggregator</p> </td> 
-   <td> <p>A type of module that merges together multiple bundles (multiple collections of data) into one single bundle. For more information, see <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Aggregator module</a>.</p> </td> 
+   <td> <p>A type of module that merges together multiple bundles (multiple collections of data) into one single bundle. </p><p>For more information, see <a href="/help/workfront-fusion/references/modules/aggregator-module.md" class="MCXref xref">Aggregator module</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API</td> 
@@ -39,7 +39,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr>
    <td role="rowheader"> <p>Connection</p> </td> 
-   <td> <p>A connections represents a set of credentials to connect to a given service. You can configure connections inside any module, and then can use that connection in any other module. Every module must have a connection selected, so that Fusion can use those credentials to access the information that the module requires. <!--For more information, see <a href="../../workfront-fusion/connections/about-connecting-wf-fusion-to-app-or-service.md" class="MCXref xref">Connections overview</a>.--></p> </td> 
+   <td> <p>A connections represents a set of credentials to connect to a given service. You can configure connections inside any module, and then can use that connection in any other module. Every module must have a connection selected, so that Fusion can use those credentials to access the information that the module requires. </p><p>For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">Connection overview</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Connector</td> 
@@ -51,31 +51,31 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data Store</p> </td> 
-   <td> <p>A data store stores data from scenarios or allows you to transfer data between individual scenarios or scenario runs. <!--For more information, see <a href="../../workfront-fusion/modules/data-stores.md" class="MCXref xref">Data Stores</a>.--></p> </td> 
+   <td> <p>A data store stores data from scenarios or allows you to transfer data between individual scenarios or scenario runs. </p><p><!--For more information, see <a href="../../workfront-fusion/modules/data-stores.md" class="MCXref xref">Data Stores</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Filter</p> </td> 
-   <td> <p> A filter can be applied between two modules, and allows you to then only work with bundles that fit certain criteria. There are a number of different filters you can apply. <!-- For more information, see <a href="../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md" class="MCXref xref">Add a filter to a scenario</a>.--></p> </td> 
+   <td> <p> A filter can be applied between two modules, and allows you to then only work with bundles that fit certain criteria. There are a number of different filters you can apply. </p><p><!-- For more information, see <a href="../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md" class="MCXref xref">Add a filter to a scenario</a>.--></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID </p> </td> 
    <td> <p>A name that is used to uniquely identify a bundle. An ID is usually used to differentiate a bundle that is to be updated or deleted from a given service. IDs can be mapped from the output of a previous module.</p> </td> 
   </tr> 
-  <!--<tr> 
+  <tr> 
    <td role="rowheader"> <p>Items</p> </td> 
-   <td> <p>A part of a bundle. Bundles can consist of multiple items. There are several different types of items: text, number, boolean (yes/no), date, time, buffer (binary data), collections, select menu, array, and validation.</p> </td> 
-  </tr> -->
+   <td> <p>A part of a bundle. Bundles can consist of multiple items. There are several different types of items: text, number, boolean (yes/no), date, time, buffer (binary data), collections, select menu, array, and validation.</p><p> For more information, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/" class="MCXref xref">Item data types</a>.</p> </td> 
+  </tr>
   <tr> 
    <td role="rowheader"> <p>Iterator</p> </td> 
-   <td> <p>A type of module that allows you to take one bundle of data (a collection of data) and divide into separate bundles. These bundles can then be processed individually by later modules. <!--For more information, see <a href="../../workfront-fusion/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a>.--></p> </td> 
+   <td> <p>A type of module that allows you to take one bundle of data (a collection of data) and divide into separate bundles. These bundles can then be processed individually by later modules. </p><p>For more information, see <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Module</p> </td> 
-   <td> <p>A single step within a scenario that performs a function, such as creating a record, within the associated app or service.</p> <p>Each app or service has various modules that define the way it responds to a request.</p>  <p> <img src="assets/module.png"> </p> <!--<p>For more information, see <a href="../../workfront-fusion/modules/module-types.md" class="MCXref xref">Types of modules</a>.</p>--> </td> 
+   <td> <p>A single step within a scenario that performs a function, such as creating a record, within the associated app or service.</p> <p>Each app or service has various modules that define the way it responds to a request.</p>  <p> <img src="assets/module.png"> </p> <p>For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Module overview</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Operation</p> </td> 
-   <td> <p>A task performed by a module, such as retrieving a record or uploading a file.</p><!--<p>For more information, see <a href="../../workfront-fusion/get-started/operations-in-workfront-fusion.md" class="MCXref xref">Operations</a>.</p>-->
+   <td> <p>A task performed by a module, such as retrieving a record or uploading a file.</p><p>For more information, see <a href="/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md" class="MCXref xref">Operations</a>.</p>
   </tr> 
   <tr> 
    <td role="rowheader">Public/Private Keys</td> 
@@ -83,7 +83,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Router</p> </td> 
-   <td>A router allows you to duplicate data or add new routes to a scenario, so to re-route data and handle different groups of data separately. <!--For more information, see <a href="../../workfront-fusion/modules/router-module.md" class="MCXref xref">[!UICONTROL Router] module</a>.--></td> 
+   <td>A router allows you to duplicate data or add new routes to a scenario, so to re-route data and handle different groups of data separately.</p><p> <!--For more information, see <a href="../../workfront-fusion/modules/router-module.md" class="MCXref xref">[!UICONTROL Router] module</a>.--></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario</p> </td> 
@@ -95,11 +95,11 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Trigger</p> </td> 
-   <td> <p>A trigger is a kind of module that watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant trigger or webhook).<!-- For more information, see <a href="../../workfront-fusion/webhooks/instant-triggers-webhooks.md" class="MCXref xref">Instant triggers (webhooks)</a>.--></p> </td> 
+   <td> <p>A trigger is a kind of module that watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant trigger or webhook).</p> <p>For more information, see <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant triggers (webhooks)</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 
-   <td> <p>A special type of trigger that allows you to run a scenario immediately after a new bundle is available. For more information, see <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant triggers (webhooks)</a>.</p> </td> 
+   <td> <p>A special type of trigger that allows you to run a scenario immediately after a new bundle is available. </p><p>For more information, see <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant triggers (webhooks)</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
