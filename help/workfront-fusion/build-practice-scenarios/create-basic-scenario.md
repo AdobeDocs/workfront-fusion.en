@@ -61,7 +61,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 1. In the **Scenarios** area, click **Create a new scenario**.
 
-   To locate the Scenarios area, see [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md.)
+   To locate the Scenarios area, see [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md).
 
    The scenario editor displays, containing an empty module in the center.
 
