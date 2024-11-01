@@ -166,4 +166,4 @@ Scenarios can contain an unlimited number of iterators, although large numbers o
 
 >[!ENDSHADEBOX]
 
-For more information, see [Iterator module](/help/workfront-fusion/references/modules/iterator-module.md)<!-- and [Map an array](../../workfront-fusion/mapping/map-an-array.md)-->.
+For more information, see [Iterator module](/help/workfront-fusion/references/modules/iterator-module.md) and [Map an array](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

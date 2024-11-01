@@ -12,7 +12,7 @@ exl-id: f4588063-024f-4520-986e-45342a6b6777
 
 Updating a Workfront work item is a common use case for Workfront Fusion. In this example, you will use a function to change the name of a project to be in uppercase letters.
 
-Fusion includes many types of functions that allow you to transform and perform conditional logic on your data. <!--For more information on using functions, see [Map information from one module to another](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).-->
+Fusion includes many types of functions that allow you to transform and perform conditional logic on your data. For more information on using functions, see [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
 This example modifies the scenario created in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 
@@ -73,6 +73,6 @@ When this scenario converts a request to a project, the project's name is the sa
    >
    >Save often as you hone and test a scenario.
 
-<!--## Resources-->
+## Resources
 
-<!--* [Map items using functions](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md)-->
+[Map items using functions](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
