@@ -14,6 +14,7 @@ recommendations: noDisplay, noCatalog
 * [Connection overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)
 * [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
 * [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
+* [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
 
 
 

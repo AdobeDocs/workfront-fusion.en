@@ -1,14 +1,10 @@
 ---
-content-type: faq
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: workfront-fusion-basics
-title: Adobe Workfront Fusion FAQ
-description: This article addresses common questions related to creating a scenario, including information about objects commonly used in Fusion workflows
+title: Scenario planning FAQ
+description: The information in this article may be useful as you begin creating scenarios in Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 ---
-# Scenario creation FAQ
+# Scenario planning FAQ
 
 The information in this article may be useful as you begin creating scenarios in Workfront Fusion.
 
