@@ -63,7 +63,7 @@ When you copy a module, the copy retains all of the field values and settings of
 
 You can paste the module or modules into another area of the same scenario, or into a different scenario.
 
-Consider the following when pasting modules into a different scenario.
+Consider the following when pasting modules into a different scenario:
 
 * Any field values that pull information from another module that you did not copy can no longer access that information. You must set these fields to pull information from the new scenario.
 * If you paste the modules into a scenario owned by another team or organization, all connections must be updated to connections owned by the team or organization that owns the new scenario.
