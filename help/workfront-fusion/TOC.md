@@ -64,6 +64,7 @@ user-guide-description: Workfront Fusion documentation - add more
     * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
 * Manage scenarios {#manage-scenarios}
     * [Manage scenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+    * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
