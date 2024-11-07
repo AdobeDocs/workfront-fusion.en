@@ -76,7 +76,7 @@ If a module encounters an error during its operation, a new incomplete execution
 
 -->
 
-For more information, see [Errors resulting into incomplete executions](#errors-resulting-into-incomplete-executions).
+<!--For more information, see [Errors resulting into incomplete executions](#errors-resulting-into-incomplete-executions).-->
 
 >[!NOTE]
 >
@@ -84,15 +84,15 @@ For more information, see [Errors resulting into incomplete executions](#errors-
 >
 >`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
 >
->For more information, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+><!--For more information, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
 
 ## Resolve incomplete executions
 
 When a new incomplete execution is stored, you can resolve it as follows:
 
+1. Open a Scenario. 
 1. Click the **[!UICONTROL Incomplete Executions]** tab.
-1. Locate the incomplete execution you would like to resolve and click **[!UICONTROL Detail]**.
-
+1. Locate the incomplete execution you would like to resolve, and click **[!UICONTROL Detail]**.
 
    If you want to see the log of all module's operations before you attempt to resolve the incomplete execution, you can resolve the incomplete execution from the [!UICONTROL History] folder:
 
@@ -111,7 +111,7 @@ The following options in the [!UICONTROL Scenario settings] panel determine if a
 * Sequential processing
 * Enable data loss
 
-For more information about these options, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+<!--For more information about these options, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
 
 ## Errors resulting into incomplete executions 
 
