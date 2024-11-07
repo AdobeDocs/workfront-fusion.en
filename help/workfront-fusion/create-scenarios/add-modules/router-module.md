@@ -76,56 +76,67 @@ You must add a Router module before configuring routes.
    To insert the Router module between two modules, click on the wrench icon below the route connecting the two modules and select **[!UICONTROL Add a router]** from the menu.
 
    ![](assets/insert-router-350x191.png)
+1. Add the first route to the router by clicking on the right handle of the router and adding a module, similar to adding any module. 
+1. To add another route, click the router module. A route appears. Add modules to this route as desired.
 
-   >[!NOTE]
-   >
-   > You can also insert a Router module automatically. For example, in the image below, to connect the module in the lower-right corner to the one in the upper-left corner (which is already connected to the one in the upper-right corner), drag the left handle of the lower-right module and drop it onto the upper-left module.
-   >
-   >![](assets/insert-router-automatically-350x379.png)
+   You can add as many routes as you want.
 
-1. Verify the order of the routes. you can click the [!UICONTROL Auto-align] icon, which will arrange the routes according to the order from top to bottom.
->
->   To change the order, remove the Router module and re-connect the routes in the desired order.
->
->* 
->
+1. To verify the order of the routes, click the Auto-align icon ![Auto-align icon](assets/auto-align.png).
+
+   The routes are arranged in the order they execute. The top route executes first.
+
+1. (Optional) To change route order, unlink the routes by right clicking on the path from the router and selecting Unlink, then dragging them to the router module in the desired order. The first route attached will be the first route to execute (the top route).
+
+1. Continue to [Add a filter to a route](#add-a-filter-to-a-route).
 
 ## Add a filter to a route
 
-You can put a filter on a route after the Router module to filter bundles as on any other route:
+You can put a filter on a route after the Router module to filter bundles. Only bundles that pass through the filter will be handled by the modules on the route.
 
-1. Click one of the dots in the route.
+If data passes the filter of more than one route, the data is handled by both routes. The top route handles the data first.
 
-   ![](assets/router-click-a-dot-in-route-350x339.png)
+1. Click the wrench icon ![Wrench](assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.
+1. Select **Set up a filter.**
+1. In the label field of the panel that displays, add a label. This label displays in the scenario. 
+1. Configure filter conditions.
 
-1. In the **[!UICONTROL Set up a filter]** box that displays, add conditions, then click **[!UICONTROL OK]** to save the filter setup.
+   <!--For more information, see [Add a filter to a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md).-->
 
-   ![](assets/set-up-a-filter-2-350x242.png)
+1. Click **[!UICONTROL OK]** to save the filter setup.
 
-For more information, see [Add a filter to a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md).
+1. Continue to [Configure a fallback route](#configure-a-fallback-route).
 
 ## Configure a fallback route
 
-The filter setup on a route after a Router module contains a special option: The fallback route:
+The fallback route is the route that executes on any bundles that do not pass any filter to another route.
 
-![](assets/fallback-route-350x260.png)
+You can enable a fallback route in the filter panel.
 
-When enabled, this route is used in the case when a bundle cannot continue on from the Router module via any other route because the filters on the other routes filtered it out.
+1. Click the wrench icon ![Wrench](assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.
+1. Select **Set up a filter.**
+1. In the label field of the panel that displays, add a label. This label displays in the scenario.
+1. Enable the fallback route checkbox.
 
-The Fallback route is distinguished with a different arrow sign inside the Router module:
+   ![](assets/fallback-route-350x260.png)
+
+1. Click **[!UICONTROL OK]** to save the filter setup.
+
+The Fallback route is marked with a different arrow in the Router module:
 
 ![](assets/arrow-sign-in-router-module-350x361.png)
 
-## If/Else
+## Example: `if/else` use case
 
-A typical use case of the fallback route is to continue the flow with one route if the condition is met and with another route if it is not, as in the following steps:
+>[!BEGINSHADEBOX]
 
-1. Insert a Router module in your scenario.
-1. Connect both routes to the Router module .
-1. Click on the first route and specify a condition:
+A typical use case of the fallback route is to continue the flow with one route if the condition is met and with another route if it is not. as in the following steps:
+
+In this example, the first route is configured with a filter. This represents the `if` component. 
 
    ![](assets/set-up-a-filter-2-350x242.png)
 
-1. Click on the second route and enable the [!UICONTROL fallback route] option:
+The second route is configured as a fallback route. This represents the `else` component.
 
    ![](assets/enable-fallback-route-option-350x238.png)
+
+>[!ENDSHADEBOX]
