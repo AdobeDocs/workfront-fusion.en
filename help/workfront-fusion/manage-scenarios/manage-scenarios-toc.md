@@ -15,3 +15,4 @@ recommendations: noDisplay, noCatalog
 * [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
 * [Update a module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
 * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
+* [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
