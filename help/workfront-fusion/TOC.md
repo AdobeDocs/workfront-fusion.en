@@ -53,6 +53,10 @@ user-guide-description: Workfront Fusion documentation - add more
     * Add modules {#add-modules}
         * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
         * [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
+        * [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+        * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
+        * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
+        * [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)

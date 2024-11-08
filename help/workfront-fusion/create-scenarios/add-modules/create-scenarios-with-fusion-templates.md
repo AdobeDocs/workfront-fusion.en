@@ -78,7 +78,7 @@ Public templates are available with no prerequisites.
 
 1. When you have configured all the settings required for the template, you receive a notification that your template is ready to go, and the standard scenario options appear at the bottom of the screen. You can now continue building your scenario.
 
-   For information on building a scenario, see [Create a scenario in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/create-a-scenario.md).
+   <!--For information on building a scenario, see [Create a scenario in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/create-a-scenario.md).-->
 
 1. Click the **Save** icon ![](assets/save-icon.png) near the bottom of the screen to save your scenario.
 
