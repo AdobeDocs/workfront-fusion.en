@@ -64,8 +64,11 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 You must add a Router module before configuring routes.
 
-1. 
-1. To connect the Router module after a module, click on the module's right handle, start typing **Router** to search for it, then select **[!UICONTROL Flow Control]** > **Router** in the list of modules that displays.
+1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Select the scenario where you want to add a router.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. In the scenario editor, Click on the right handle of the module after which you want to add the router.
+1. Select **[!UICONTROL Flow Control]** > **Router** in the list of modules that displays.
 
    ![](assets/connect-the-router-350x108.png)
 
