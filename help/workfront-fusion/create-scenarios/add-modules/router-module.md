@@ -17,9 +17,6 @@ The Router module allows you to branch your scenario into several routes, and pr
 Routes are processed sequentially, not in parallel. A bundle is not sent to the next route until it has been completely processed by the previous route.
 
 
-
-
-
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -67,6 +64,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 You must add a Router module before configuring routes.
 
+1. 
 1. To connect the Router module after a module, click on the module's right handle, start typing **Router** to search for it, then select **[!UICONTROL Flow Control]** > **Router** in the list of modules that displays.
 
    ![](assets/connect-the-router-350x108.png)
