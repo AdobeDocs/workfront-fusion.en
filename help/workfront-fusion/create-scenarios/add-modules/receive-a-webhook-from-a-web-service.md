@@ -61,7 +61,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 1. Enter a **Webhook name** in the box that displays
 1. (Optional) configure the webhook. 
 
-   For instructions, see [Webhooks]().
+   <!--For instructions, see [Webhooks]().-->
    
 1. Click **Save**.
 
