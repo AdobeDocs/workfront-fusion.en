@@ -121,15 +121,15 @@ The Resume directive then supplies the Folder path as the output for the failed 
 
 >[!ENDSHADEBOX]
 
-## Nesting
+<!--## Nesting
 
-<!--BECKY take screenshot and redo this section
+BECKY take screenshot and redo this section
 
 Error handler routes can be created and configured on all modules, except routers. Therefore, you can  create an error handler route for a module that is already part of an existing error handler route.
 
 Here's an example of a nested error handler route:
 
-![](assets/nested-error-handling-route-350x174.png)
+![](assets/nested-error-handling-route.png)
 
 In this scenario, the second error handler route is nested under the first error handler route. So, if the Dropbox > Create a folder module encounters an error, the execution moves to the first route. If the DataError Takes Place filter is passed, the next module is executed followed by the Resume directive module if an error does not take place with the Dropbox > List all files/subfolders in a folder module.
 
