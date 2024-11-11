@@ -130,8 +130,9 @@ You can filter the execution history to view only executions with the specified 
 1. In the [!UICONTROL filter] dialog, enter the values that you want to filter by.
 1. Click **[!UICONTROL Save]**.
 
-The filter icon is orange in columns with a currently active filter.
+The filter icon is orange in columns with an active filter.
 
+<!-- don't see how to do this
 ## Sort the scenario execution history
 
 You can sort the scenario execution history.
@@ -139,6 +140,7 @@ You can sort the scenario execution history.
 1. Open the full-page history for a scenario as described in [View scenario execution history on the [!UICONTROL History] tab](#view-scenario-execution-history-on-the-history-tab) in this article.
 1. Click the [!UICONTROL Sort] icon in the header of the column you want to filter by.
 1. Optional: To reverse the order of the sort, click the [!UICONTROL Sort] icon again.
+-->
 
 ## Search all executions of a scenario
 
@@ -184,6 +186,6 @@ The [!UICONTROL Search in history] window opens.
 
 1. (Optional) Change the order that results display in the **[!UICONTROL Sort by dates]** dropdown.
 
-1. (Optional) To copy a scenario execution ID, click the **[!UICONTROL Copy execution ID]** icon <img src="assets/copy-fusion-execution-id-icon.png"> in the row of the desired execution
+1. (Optional) To copy a scenario execution ID, click the **[!UICONTROL Copy execution ID]** icon <img src="assets/copy-fusion-execution-id-icon.png"> in the row of the desired execution.
 
 1. (Optional) Click on a result of the [!UICONTROL Fulltext search] to examine the scenario module output bundle that contains the information.

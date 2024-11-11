@@ -86,18 +86,22 @@ If a module encounters an error during its operation, a new incomplete execution
 >
 ><!--For more information, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
 
-## Resolve incomplete executions
+## Resolve incomplete executions from the Incomplete Executions tab
 
 When a new incomplete execution is stored, you can resolve it as follows:
 
 1. Open a Scenario. 
 1. Click the **[!UICONTROL Incomplete Executions]** tab.
-1. Locate the incomplete execution you would like to resolve, and click **[!UICONTROL Detail]**.
+1. Locate the incomplete execution you would like to resolve, and click **[!UICONTROL Details]**.
 
-   If you want to see the log of all module's operations before you attempt to resolve the incomplete execution, you can resolve the incomplete execution from the [!UICONTROL History] folder:
 
+## Resolve incomplete executions from the History tab
+
+If you want to see the log of all module's operations before you attempt to resolve the incomplete execution, you can resolve the incomplete execution from the [!UICONTROL History] folder:
+
+1. Open a Scenario. 
 1. Click the **[!UICONTROL History]** tab.
-1. Locate the scenario's failed execution log and click **[!UICONTROL Details]**.
+1. Locate the scenario's failed execution, and click **[!UICONTROL Details]**.
 1. Open the module's log where all the module's operations are shown.
 1. Locate the failed operation and click **[!UICONTROL Resolve]**:
 
