@@ -114,10 +114,6 @@ Scenario blueprints represent the arrangement, mapping, and field values of a gi
 
 A scenario blueprint represents the entire scenario. If you want to copy only certain modules from a scenario, see [Copy a module or a group of modules](#copy-a-module-or-a-group-of-modules) in this article.
 
->[!NOTE]
->
->For information on blueprints in the context of [!DNL Adobe Workfront], see [Blueprints overview](../../administration-and-setup/blueprints/blueprints-overview.md).
-
 ### Export a scenario blueprint
 
 1. In the scenario, click the **[!UICONTROL More]** menu in the scenario settings area.
@@ -144,4 +140,4 @@ A scenario blueprint represents the entire scenario. If you want to copy only ce
 
 You can create templates as a starting point for your [!DNL Workfront Fusion] scenarios. When you create a scenario from a template, you can modify the scenario without modifying the template. Field values are not saved in templates.
 
-For more information on creating and using templates, see [Scenario Templates](../../workfront-fusion/scenarios/templates/fusion-templates.md).
+For more information on creating a scenario using a template, see [Create scenarios with templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md).
