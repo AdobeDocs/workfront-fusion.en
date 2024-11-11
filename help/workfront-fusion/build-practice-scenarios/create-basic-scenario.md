@@ -49,10 +49,11 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+--> 
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
--->
+
 
 ## Create a practice scenario
 
@@ -60,7 +61,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
 1. In the **Scenarios** area, click **Create a new scenario**.
 
-    <!--To locate the Scenarios area, see navigation article-->
+   To locate the Scenarios area, see [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md).
 
    The scenario editor displays, containing an empty module in the center.
 
@@ -135,7 +136,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
    A panel opens that allows you to select what to use as the ID of the task you want to convert to a project. Because you enabled mapping, the panel includes output from any previous modules. You selected ID as an output of the previous module, so it is now available in the panel.
 
-   This panel is called the mapping panel. <!--For more information on the mapping panel, see [Map information from one module to another](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).-->
+   This panel is called the mapping panel. For more information on the mapping panel, see [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
 1. Select **ID** in the mapping panel.
 
    An ID block appears in the ID field. It shows the number of the module it is mapped from, and the field that is mapped.

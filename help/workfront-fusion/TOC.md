@@ -11,7 +11,14 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Fusion release activity](/help/workfront-fusion/fusion-release-activity/fusion-release-activity.md)
 * Get started with Workfront Fusion {#get-started-with-fusion}
     * [Get started with Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
-    * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+    * Understand Workfront Fusion {#understand-workfront-fusion}
+        * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+        * [Adobe Workfront Fusion glossary](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
+        * [Scenario overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
+        * [Connection overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)
+        * [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
+        * [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
+        * [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
     * Navigate Workfront Fusion {#navigate-workfront-fusion}
         * [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
         * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
@@ -42,7 +49,17 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Manage templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
 * Create scenarios {#create-scenarios}
     * [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-    * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
+    * Plan a scenario {#plan-a-scenario}
+        * [Plan a scenario: article index](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+        * [Scenario planning FAQ](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
+        * [Video overviews](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
+    * Add modules {#add-modules}
+        * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
+        * [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
+        * [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+        * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
+        * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
+        * [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
@@ -62,6 +79,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
     * [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
     * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+    * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)

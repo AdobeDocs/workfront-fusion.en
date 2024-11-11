@@ -13,9 +13,7 @@ exl-id: cdc32842-8717-4e05-ab19-2661ee14c12c
 
 <!--audited: 09/2024-->
 
-An aggregator module is a module that merges several bundles of data into a single bundle. 
-
-<!--For more information about module types, see [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+An aggregator module is a module that merges several bundles of data into a single bundle.
 
 ## Access requirements
 
@@ -57,7 +55,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -79,7 +77,8 @@ The following image shows a typical setup of the [!UICONTROL Aggregator] module 
   <tr> 
    <td> <p>[!UICONTROL Source Module]</p> </td> 
    <td> <p>The module where the bundle aggregation starts. The source module is usually an iterator or a search module that outputs a series of bundles.</p><p>When you setup the aggregator's source module (and close the aggregator's setup), the route between the source module and the aggregator module are wrapped in a grey area, so that you can see clearly the start and the end of the aggregation. 
-   <!--</p> <p>For more information on iterators, see <a href="../../workfront-fusion/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a></p> <p>For more information on search modules see Search modules in <a href="../../workfront-fusion/modules/module-types.md" class="MCXref xref">Types of modules</a>.</p>--> </td> 
+   </p> <p>For more information on iterators, see <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a></p> 
+   <p>For more information on search modules see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref">Search modules</a> in Module Overview.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Target structure type]</p><p>(Applicable only for the [!UICONTROL Array aggregator] module.)</p> </td> 

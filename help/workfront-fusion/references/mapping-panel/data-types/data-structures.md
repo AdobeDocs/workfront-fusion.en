@@ -15,7 +15,7 @@ A data structure is a document that describes in detail the format of the data b
 
 You can create a data structure by clicking the [!UICONTROL Create a new data structure] button in the [!UICONTROL Data structure overview] section or in the settings of the module that requires data structure specification.
 
-<!--Supported data types are described in the [[!UICONTROL Types of modules]](../../workfront-fusion/modules/module-types.md) article.-->
+Supported data types are described in the [Data types](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md) article.
 
 ## Access requirements
 
@@ -54,7 +54,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Data structure generator
 

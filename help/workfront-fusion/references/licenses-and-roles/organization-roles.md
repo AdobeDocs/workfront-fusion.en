@@ -57,24 +57,7 @@ This article describes the access and functionality available to the different t
    <td>✓ </td> 
    <td>✓ </td> 
    <td>✓ </td> 
-  </tr> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
-    <td> <p>Process payments</p> </td> 
-    <td>✓ </td> 
-    <td>✓ </td> 
-    <td> </td> 
-    <td> </td> 
-   </tr>
-  --> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
-    <td> <p>List payments</p> </td> 
-    <td>✓ </td> 
-    <td>✓ </td> 
-    <td> </td> 
-    <td> </td> 
-   </tr>
-  --> 
-  <tr> 
+    <tr> 
    <td> <p>Add team</p> </td> 
    <td>✓ </td> 
    <td>✓ </td> 

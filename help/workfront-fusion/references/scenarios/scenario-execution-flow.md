@@ -91,7 +91,7 @@ An error might occur during the scenario run. For example, if you have deleted t
 <!--* For more information on the scenario details page, see [Scenario details](../../workfront-fusion/scenarios/scenario-detail.md).-->
 <!--* For more information on activating a scenario, see [Activate or deactivate a scenario](../../workfront-fusion/scenarios/activate-or-inactivate-scenario.md).-->
 <!--* For more information on scheduling a scenario, see [Schedule a scenario](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
-<!--* For more information on modules, see [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+* For more information on modules, see [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
 
 
 
