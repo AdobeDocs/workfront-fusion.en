@@ -91,19 +91,9 @@ To add an error handler to a module:
 
     If you add more modules to the route, the Ignore directive is applied by default. If there is an error, the subsequent modules on that route are processed.
 
-<!--this is not what the picture shows
+    For more information on directives, see [Error handling directives](#error-handling-directives) in this article.
 
->[!BEGINSHADEBOX]
-
-In this example, if an error occurs while executing the [!UICONTROL Create a folder] module, the [!UICONTROL Ignore] directive will be applied automatically and the scenario will move to the next module on the error handler route.
-
-However, if there is no error, the scenario will move to the [!UICONTROL List all files in a folder module] on the regular route.
-
-![](assets/if-there-is-no-error-350x234.png)
-
->[!ENDSHADEBOX]
-
--->
+1. (Optional) Add a filter to the error handling route. For instructions, see [Add a filter to an error handling route](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
 
 >[!NOTE]
 >
@@ -111,7 +101,7 @@ However, if there is no error, the scenario will move to the [!UICONTROL List al
 
 ## Error handling directives
 
-The directives are briefly explained below. For more information, see [Directives for error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/directives-for-error-handling.md).
+The directives are briefly explained below. For more information, see [Directives for error handling in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 There are five directives, which can be grouped into the following categories based on whether a scenario execution continues after the error.
 
