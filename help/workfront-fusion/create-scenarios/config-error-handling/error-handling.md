@@ -73,13 +73,17 @@ To add an error handler to a module:
 1. Click the **[!UICONTROL Scenario]** tab in the left panel.
 1. Select the scenario where you want to add an error handling route.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Right click the module after which you want to add an error handler, and select **[!UICONTROL Add error handler]**:
+1. Right click the module after which you want to add an error handler route, and select **[!UICONTROL Add error handler]**:
 
     ![](assets/error-handler-route.png)
 
+    An error handler route is added to the module. If the module is the last module in a route, the error handler directlys follow the module. If the module has more modules after it, a separate error handler route is added. 
+
     The error handling module shows a list of Directives as well as the apps being used in your scenario. 
+
+    ![Error route](assets/error-route.png)
     
-1. If the module that you added an error handler to is the last module in your route, select one of the directives. 
+1. Select one of the directives. 
 
     Or 
 
@@ -101,29 +105,35 @@ However, if there is no error, the scenario will move to the [!UICONTROL List al
 
 -->
 
-Note that an error handler route is composed of transparent circles, while a regular route is composed of solid circles.
+>[!NOTE]
+>
+>Note that an error handler route is composed of transparent circles, while a regular route is composed of solid circles.
 
 ## Error handling directives
 
 The directives are briefly explained below. For more information, see [Directives for error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/directives-for-error-handling.md).
 
-There are a total of five directives which can be grouped into the following categories based on whether a scenario execution should continue or not.
+There are five directives, which can be grouped into the following categories based on whether a scenario execution continues after the error.
 
 The following directives ensure that a scenario execution continues:
 
-* **[!UICONTROL Resume]**: Allows you to specify a substitute output for the module with the error. The scenario execution status is marked as success
-* **[!UICONTROL Ignore]**: ignores the error. The scenario execution status is marked as success
-* **[!UICONTROL Break]**: Stores the input to the queue of incomplete executions. The scenario execution status is marked as warning. For more information, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+* **[!UICONTROL Resume]**: Allows you to specify a substitute output for the module with the error. The scenario execution status is marked as success.
+* **[!UICONTROL Ignore]**: ignores the error. The scenario execution status is marked as success.
+* **[!UICONTROL Break]**: Stores the input to the queue of incomplete executions. The scenario execution status is marked as warning. 
+
+<!--   For more information, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
 
 If a scenario execution should stop when an error occurs, use one of the following directives:
 
-* **[!UICONTROL Rollback]**: Stops the scenario execution immediately and marks its status as error
-* **[!UICONTROL Commit]**: Stops the scenario execution immediately and marks its status as success
+* **[!UICONTROL Rollback]**: Stops the scenario execution immediately and marks its status as error.
+* **[!UICONTROL Commit]**: Stops the scenario execution immediately and marks its status as success.
+
+## Resources
 
 For more information on error handling, see:
 
-* [Directives for error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/directives-for-error-handling.md)
-* [Advanced error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/advanced-error-handling.md) 
+* [Directives for error handling in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
+<!--* [Advanced error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/advanced-error-handling.md) -->
 
 
 
