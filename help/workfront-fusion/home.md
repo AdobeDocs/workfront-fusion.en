@@ -5,7 +5,7 @@ description: This is the guide home page. Edit.
 
 # [!DNL Workfront] documentation
 
-<!--UPDATE THIS-->
+<!--UPDATE THIS
 
 Welcome to the Adobe Workfront product and technical documentation home page. Use the following Adobe Workfront links, help articles, and additional resources to learn how to implement and effectively use Adobe Workfront in your organization.
 
@@ -97,3 +97,5 @@ Searching documentation can be more efficient with a few strategic approaches. H
 ### Find answers in Community Forums
 
 * **Ask Questions**: If the documentation doesn't answer your question, try posting in the [Workfront Community forums](https://experienceleaguecommunities.adobe.com/t5/workfront/ct-p/workfront?profile.language=en) where other users and experts can offer assistance.
+
+-->

@@ -1,11 +1,14 @@
 ---
-user-guide-title: Workfront Fusion documentation
-breadcrumb-title: Workfront Fusion
-user-guide-description: Workfront Fusion documentation - add more
+user-guide-title: Adobe Workfront Fusion documentation
+breadcrumb-title: Adobe Workfront Fusion
+user-guide-description: Use the docs, tutorials, and additional resources to learn how to implement and effectively use Adobe Workfront Fusion in your organization.
 ---
 
-# Workfront Fusion documentation {#using}
+# Adobe Workfront Fusion documentation {#using}
 
+* [Adobe Workfront Fusion Documentation](home.md)
+* Fusion release activity {#fusion-release-activity}
+    * [Fusion release activity](/help/workfront-fusion/fusion-release-activity/fusion-release-activity.md)
 * Get started with Workfront Fusion {#get-started-with-fusion}
     * [Get started with Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
     * Understand Workfront Fusion {#understand-workfront-fusion}
@@ -68,6 +71,14 @@ user-guide-description: Workfront Fusion documentation - add more
     * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
 * Manage scenarios {#manage-scenarios}
     * [Manage scenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+    * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
+    * [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
+    * [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+    * [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
+    * [Update a module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
+    * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
+    * [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
+    * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
     * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
