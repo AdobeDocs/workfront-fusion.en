@@ -1,11 +1,11 @@
 ---
-title: Create scenarios with Adobe Workfront Fusion templates
-description: Adobe Workfront FusionTemplates feature allow you to create and use existing templates as a starting point for your Workfront Fusion scenarios.
+title: Create scenarios with templates
+description: Adobe Workfront Fusion Templates feature allow you to create and use existing templates as a starting point for your Workfront Fusion scenarios.
 author: Becky
 feature: Workfront Fusion
 exl-id: 43b30244-f4a5-4036-939c-aff7827c21b1
 ---
-# Create scenarios with Adobe Workfront Fusion templates
+# Create scenarios with templates
 
 Adobe Workfront Fusion Templates allow you to create and use existing templates as a starting point for your Workfront Fusion scenarios.
 
@@ -60,7 +60,7 @@ Public templates are available with no prerequisites.
 
 ## Create a scenario from a template
 
-1. Click the **Templates** tab ![](assets/fusion-template-icon.png) in the left navigation panel.
+1. Click the **Templates** tab ![](assets/templates-icon.png) in the left navigation panel.
 1. Click on the tab that contains the template you want to use (**Public templates** or **Team templates**).
 1. Search for a specific template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
 1. Click the template you want to use to create a scenario.
@@ -78,7 +78,7 @@ Public templates are available with no prerequisites.
 
 1. When you have configured all the settings required for the template, you receive a notification that your template is ready to go, and the standard scenario options appear at the bottom of the screen. You can now continue building your scenario.
 
-   For information on building a scenario, see [Create a scenario in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/create-a-scenario.md).
+   <!--For information on building a scenario, see [Create a scenario in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/create-a-scenario.md).-->
 
 1. Click the **Save** icon ![](assets/save-icon.png) near the bottom of the screen to save your scenario.
 

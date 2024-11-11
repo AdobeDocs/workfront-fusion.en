@@ -98,9 +98,9 @@ Cloning a scenario creates a copy of the scenario, which you can then edit.
 
    1. Click the **[!UICONTROL Scenario]** tab in the left panel, then click a scenario you would like details on.
 
-      Or
+<!--      Or
 
-      If you are working on the scenario in the [The scenario editor in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-editor.md), click the left arrow ![](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+      If you are working on the scenario in the the scenario editor, click the left arrow ![](assets/exit-editing-arrow.png) near the upper-left corner of the window.-->
 
 1. Right click **[!UICONTROL Options]** at the upper-right of the page.
 1. Select **[!UICONTROL Clone]**.
@@ -113,10 +113,6 @@ Cloning a scenario creates a copy of the scenario, which you can then edit.
 Scenario blueprints represent the arrangement, mapping, and field values of a given scenario at a given point in time. You can export a scenario blueprint into a JSON file on your computer, then import it when creating a new scenario. Scenarios imported from a scenario blueprint can be edited.
 
 A scenario blueprint represents the entire scenario. If you want to copy only certain modules from a scenario, see [Copy a module or a group of modules](#copy-a-module-or-a-group-of-modules) in this article.
-
->[!NOTE]
->
->For information on blueprints in the context of [!DNL Adobe Workfront], see [Blueprints overview](../../administration-and-setup/blueprints/blueprints-overview.md).
 
 ### Export a scenario blueprint
 
@@ -144,4 +140,4 @@ A scenario blueprint represents the entire scenario. If you want to copy only ce
 
 You can create templates as a starting point for your [!DNL Workfront Fusion] scenarios. When you create a scenario from a template, you can modify the scenario without modifying the template. Field values are not saved in templates.
 
-For more information on creating and using templates, see [Scenario Templates](../../workfront-fusion/scenarios/templates/fusion-templates.md).
+For more information on creating a scenario using a template, see [Create scenarios with templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md).
