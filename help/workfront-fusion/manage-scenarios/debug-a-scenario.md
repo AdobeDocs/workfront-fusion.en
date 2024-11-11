@@ -141,6 +141,7 @@ To use the [!DNL Workfront Fusion] Devtool, you must add the [!DNL Workfront Fus
 1. Click the **[!DNL Workfront Fusion]** tab in [!DNL Chrome Dev Tools].
 
 -->
+
 ## Use the [!DNL Workfront Fusion] Devtool
 
 Workfront Fusion Devtool is divided into 3 main sections. You can find these in the left panel of your Devtool window.
