@@ -8,7 +8,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1058905c-6c95-4a8c-8956-e1606f1486d9
 ---
-# Retry error handling in [!DNL Adobe Workfront Fusion]
+# Configure `retry` error handling workaround
 
 <!--EDIT ME-->
 

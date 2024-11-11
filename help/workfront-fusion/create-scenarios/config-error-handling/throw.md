@@ -9,7 +9,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 6258bd4d-31a0-4fbb-b1b4-8e9a5a9dbe36
 ---
-# Throw error handling in [!DNL Adobe Workfront Fusion]
+# Configure `throw` error workaround
 
 <!--EDIT ME-->
 
