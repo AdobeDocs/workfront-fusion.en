@@ -12,7 +12,7 @@ The [!UICONTROL Incomplete executions] folder stores scenario executions that we
 >
 >By default the storing of incomplete executions is disabled. To enable it, enable the [!UICONTROL Allow storing incomplete executions] option in the scenario advanced settings.
 >
->For more information about scenario settings, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+>For more information about scenario settings, see <!--[The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
 
 ## Access requirements
 
