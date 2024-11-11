@@ -60,7 +60,7 @@ Public templates are available with no prerequisites.
 
 ## Create a scenario from a template
 
-1. Click the **Templates** tab ![](assets/fusion-template-icon.png) in the left navigation panel.
+1. Click the **Templates** tab ![](assets/templates-icon.png) in the left navigation panel.
 1. Click on the tab that contains the template you want to use (**Public templates** or **Team templates**).
 1. Search for a specific template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
 1. Click the template you want to use to create a scenario.
