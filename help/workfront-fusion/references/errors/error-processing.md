@@ -51,7 +51,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -157,7 +157,7 @@ If a scenario terminates with the `RuntimeError`, its further behavior depends o
 >[!NOTE]
 >
 >If a scenario starts with an instant trigger and encounters this error, the setting of [!UICONTROL Max number of consecutive errors] is ignored, and the scenario is deactivated immediately.
-<!-- For more information, see [Instant triggers](../../workfront-fusion/modules/module-types.md#instant) in the article [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+>For more information, see [Instant triggers](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) in the article Modules overview.
 
 ## Inconsistency Error
 
@@ -175,13 +175,13 @@ For example, a warning can appear when the maximum allowed file size is exceeded
 
 ## Resources
 
-<!--For more information on mapping, see [Map information from one module to another](../../workfront-fusion/mapping/map-information-between-modules.md).
+For more information on mapping, see [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
 
-For information about incomplete executions, see [View and resolve incomplete executions](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+<!--For information about incomplete executions, see [View and resolve incomplete executions](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
 
-For information about the scenario setting panel, see [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+<!--For information about the scenario setting panel, see [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
 
-For information about schedules, see [Schedule a scenario](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
+<!--For information about schedules, see [Schedule a scenario](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
 
 For information about scenario phases, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 

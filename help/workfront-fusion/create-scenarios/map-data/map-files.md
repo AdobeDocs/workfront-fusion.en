@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9ed5f176-86d8-4139-b582-c2f58aaed8d4
 ---
-# Map files
+# Map a file between modules
 
 Some modules can process files. These modules can either return an output file to be sent for further processing, or require a file to be passed to them for processing. Files can me mapped, so that a file output by one module can be processed by another.
 
@@ -57,7 +57,7 @@ You must have the following access to use the functionality in this article:
 
 <!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

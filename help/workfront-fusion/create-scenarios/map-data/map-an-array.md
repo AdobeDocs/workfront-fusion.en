@@ -4,7 +4,7 @@ description: You can map an array or individual array elements to a module field
 author: Becky
 feature: Workfront Fusion
 ---
-# Map arrays and array elements
+# Map an array or array element
 
 An array is a bundle item that can contain the following:
 
@@ -58,13 +58,13 @@ You must have the following access to use the functionality in this article:
 
 <!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Map an entire array
 
-1. Click the field where you want to map the array. This is the field that the array is mapped to.
+1. In the module that you want to map the array to, click the field where you want to map the array. This is the field that the array is mapped to.
 
 1. In the box that displays, map the item.
 
