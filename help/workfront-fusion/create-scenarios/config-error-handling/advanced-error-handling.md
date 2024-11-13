@@ -121,20 +121,22 @@ The Resume directive then supplies the Folder path as the output for the failed 
 
 >[!ENDSHADEBOX]
 
-<!--## Nesting
-
-BECKY take screenshot and redo this section
+## Nesting
 
 Error handler routes can be created and configured on all modules, except routers. Therefore, you can  create an error handler route for a module that is already part of an existing error handler route.
 
-Here's an example of a nested error handler route:
+>[!BEGINSHADEBOX]
+
+Example:
+
+A nested error handler route with filters:
 
 ![](assets/nested-error-handling-route.png)
 
-In this scenario, the second error handler route is nested under the first error handler route. So, if the Dropbox > Create a folder module encounters an error, the execution moves to the first route. If the DataError Takes Place filter is passed, the next module is executed followed by the Resume directive module if an error does not take place with the Dropbox > List all files/subfolders in a folder module.
+In this scenario, the second error handler route is nested under the first error handler route. 
 
-However, if an error does take place with this [!DNL Dropbox] module, then the execution moves to Error Handler Route 2 and ends with the [!UICONTROL Ignore] directive. The [!UICONTROL Resume directive] module is not executed in this case.
+If the Dropbox > Create a folder module encounters an error, the execution moves to the first route. If the `DataError Takes Place` filter is passed, the next module executes, followed by the Resume directive module if an error does not occur in the Dropbox > List all files/subfolders in a folder module.
 
-That is a combination of filtering and nesting error handlers.
+However, if an error does occur in the Dropbox > List all files/subfolders in a folder module, then the execution moves to Error Handler Route 2 and ends with the [!UICONTROL Ignore] directive. The [!UICONTROL Resume directive] module is not executed in this case.
 
--->
+>[!ENDSHADEBOX]
