@@ -135,8 +135,8 @@ A nested error handler route with filters:
 
 In this scenario, the second error handler route is nested under the first error handler route. 
 
-If the Dropbox > Create a folder module encounters an error, the execution moves to the first route. If the `DataError Takes Place` filter is passed, the next module executes, followed by the Resume directive module if an error does not take place with the Dropbox > List all files/subfolders in a folder module.
+If the Dropbox > Create a folder module encounters an error, the execution moves to the first route. If the `DataError Takes Place` filter is passed, the next module executes, followed by the Resume directive module if an error does not occur in the Dropbox > List all files/subfolders in a folder module.
 
-However, if an error does take place with the Dropbox > List all files/subfolders in a folder module, then the execution moves to Error Handler Route 2 and ends with the [!UICONTROL Ignore] directive. The [!UICONTROL Resume directive] module is not executed in this case.
+However, if an error does occur in the Dropbox > List all files/subfolders in a folder module, then the execution moves to Error Handler Route 2 and ends with the [!UICONTROL Ignore] directive. The [!UICONTROL Resume directive] module is not executed in this case.
 
 >[!ENDSHADEBOX]
