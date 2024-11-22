@@ -97,3 +97,11 @@ To renew a connection:
 1. To open the Connections area, click **Connections** ![Connections icon](assets/connections-icon.png) in the left navigation.
 1. Locate the connection you want to renew.
 1. In the line for that connection, click the **[!UICONTROL Reauthorize]** button in the **[!UICONTROL Connections]** area.
+
+## Resources
+
+* For more information on connection metadata, such as environment and type, see [Connection metadata](/help/workfront-fusion/references/connections/connection-metadata.md).
+
+
+
+
