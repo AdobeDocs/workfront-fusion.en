@@ -1,18 +1,14 @@
 ---
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: errors
-title: Retry error handling in [!DNL Adobe Workfront Fusion]
-description: In some cases it is useful to re-execute a failing module for a couple of times if there is a chance that the reason for the failure might pass over time.
+title: Configure retry error handling workaround
+description: Sometimes, it is useful to re-execute a failing module if there is a chance that the reason for the failure might resolve quickly.
 author: Becky
 feature: Workfront Fusion
-exl-id: 1058905c-6c95-4a8c-8956-e1606f1486d9
 ---
 # Configure `retry` error handling workaround
 
-<!--EDIT ME-->
+Sometimes, it is useful to re-execute a failing module if there is a chance that the reason for the failure might resolve quickly.
 
-In some cases it is useful to re-execute a failing module if there is a chance that the reason for the failure might pass over time.
+Adobe Workfront Fusion currently does not offer the `retry` error handling directive, but two workarounds are available to mimic `retry` functionality.
 
 ## Access requirements
 
@@ -41,7 +37,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
    <p>Or</p>
    <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
    </td> 
@@ -55,57 +51,84 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Workarounds to the [!UICONTROL Retry] error handling directive
 
-[!UICONTROL Adobe Workfront Fusion] currently does not offer the [!UICONTROL Retry] error handling directive, though two workarounds can be employed to mimic its functionality. For more information, see [Directives for error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/directives-for-error-handling.md).
+ Workfront Fusion currently does not offer the `retry` error handling directive. Use one of the following workarounds to mimic retry functionality. 
+ 
+ For instructions, see [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
-### Use the [!UICONTROL Break] directive
+ * [Use the Break directive](#use-the-break-directive)
+ * [Use the Repeater module](#use-the-repeater-module)
 
-1. In the scenario settings panel, enable the **[!UICONTROL Allow storing of Incomplete Executions]** option.
-   
-   For more information, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+### Use the Break directive
 
-1. Attach an error handler route to the module, as described in [Error handling in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/errors/error-handling.md).
-1. Link the [!UICONTROL Break] directive to the error handler route  and configure it.
+When the Break directive executes, the state of the scenario execution is stored in the queue of incomplete executions. If this occurs, you can then resolve the incomplete execution manually. 
 
-   For more information, see [Directives for error handling in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/errors/directives-for-error-handling.md).
+For instructions see [Resolve errors handled by the Break directive](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
 
-   ![](assets/break-directive-350x241.png)
+For instructions on resolving incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 #### Drawbacks
 
 * The minimum retry interval is one minute.
-* If the module is processing multiple bundles and the processing of a bundle fails, the partial execution (only the bundle that caused the error) is moved to the incomplete executions folder and scheduled for retries according to the [!UICONTROL Break] directive settings. However, the current execution continues and the module continues to process the subsequent bundles. You can enable the "[!UICONTROL Sequential processing]" option in the [!UICONTROL Scenario settings] to prevent the scenario from executing again until the execution stored in the the Incomplete executions folder has been successfully resolved.
+* If the module is processing multiple bundles and the processing of a bundle fails, the partial execution (only the bundle that caused the error) is moved to the incomplete executions folder and scheduled for retries according to the [!UICONTROL Break] directive settings. However, the current execution continues and the module continues to process the subsequent bundles. 
 
-    For more information on incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+   To prevent the scenario from executing again until the execution stored in the the Incomplete executions folder has been successfully resolved, enable the "[!UICONTROL Sequential processing]" option in the [!UICONTROL Scenario settings].
 
-### Use the [!UICONTROL Repeater] module
+<!--   For more information on incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
 
-1. Employ the **[!UICONTROL Repeater]** module and set its **[!UICONTROL Repeats]** field to the maximum number of attempts.
-1. Link the potentially failing module to the **[!UICONTROL Repeater]** module.
-1. Attach an error handler route to this module (see [Error handling in [!DNL Adobe Workfront Fusio]n](../../workfront-fusion/errors/error-handling.md)).
-1. Link the **[!UICONTROL Tools] > [!UICONTROL Sleep]** module to the error handler route and set its **[!UICONTROL Delay]** field to the number of seconds between the attempts.
+### Use the Repeater module
 
-1. Link the **[!UICONTROL Ignore]** directive after the **[!UICONTROL Tools] > [!UICONTROL Sleep]** module (see [Directives for error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/directives-for-error-handling.md)).
+The Repeater module workaround is more complex, but more customizable.
 
-1. Link the **[!UICONTROL Tools] > [!UICONTROL Set variable]** module after the the potentially failing module and configure it to store the module's result in a variable named, for example, `Result`.
+#### Configure the error handler route
 
-1. Link the **[!UICONTROL Array aggregator]** module after the **[!UICONTROL Tools] > [!UICONTROL Set variable]** and choose the **[!DNL Repeater]** module in its Source Module field.
+1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Select the scenario where you want to add the workaround.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Click the **Flow Control** icon ![Flow control](assets/flow-control-icon.png) and select **Repeater**.
+1. In the Repeater module, set the **[!UICONTROL Repeats]** field to the maximum number of times that you want the scenario to retry.
+1. Attach the potentially failing module after the **[!UICONTROL Repeater]** module.
+1. Attach an error handler route to the potentially failing module.
 
-1. Link the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module to the **[!UICONTROL Array aggregator]** module and configure it to obtain the value of the `Result` variable.
+   For instructions, see [Add error handling](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md).
+1. Add the **[!UICONTROL Tools] > [!UICONTROL Sleep]** module to the error handler route and set its **[!UICONTROL Delay]** field to the number of seconds between retry attempts.
 
-1. Insert the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module between the **[!UICONTROL Repeater]** module and the potentially failing module and configure it obtain the value of the `Result` variable.
+1. Add the **[!UICONTROL Ignore]** directive after the **[!UICONTROL Tools] > [!UICONTROL Sleep]** module. 
+1. Continue to [Configure the default route](#configure-the-default-route).
+
+#### Configure the default route
+
+1. Add the **[!UICONTROL Tools] > [!UICONTROL Set variable]** module in a separate (non-error handler) route after the the potentially failing module, and configure it to store the module's result in a variable named, such as `Result`.
+
+1. Add the **[!UICONTROL Array aggregator]** module after the **[!UICONTROL Tools] > [!UICONTROL Set variable]**, and select the **[!DNL Repeater]** module in its Source Module field.
+
+1. Add the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module after the **[!UICONTROL Array aggregator]** module, and map the value of the `Result` variable to it.
+
+1. Insert the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module between the **[!UICONTROL Repeater]** module and the potentially failing module, and map the value of the `Result` variable to it.
 
 1. Insert a filter between this **[!UICONTROL Tools] > [!UICONTROL Get variable]** module and the potentially failing module to continue only if the `Result` variable does not exist.
 
->[!INFO]
->
->**Example:** Here is a sample scenario where the [!UICONTROL HTTP] >[!UICONTROL Make a request] module represents the potentially failing module:
->
->![](assets/http-make-request-350x116.png)
->
->If the result of the potentially failing module is too complex to be stored in a simple variable, you can employ a data store to store/retrieve the result. The data store would contain just one record. The record's key can be, for example, `Result`.
->
->For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/data-stores.md)
+>[!BEGINSHADEBOX]
 
-#### Drawback
+**Example:** 
 
-This workaround might appear a bit too complex, and  is also more demanding in terms of operations.
+In this sample scenario, the [!UICONTROL HTTP] > [!UICONTROL Make a request] module represents the potentially failing module:
+
+![](assets/http-make-request.png)
+
+>[!ENDSHADEBOX]
+
+If the result of the potentially failing module is too complex to be stored in a simple variable, you can use a data store to store and retrieve the result. The data store would contain just one record. The record's key can be, for example, `Result`.
+
+<!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/data-stores.md)-->
+
+#### Drawbacks
+
+* This workaround is more complex.
+* This workaround uses more operations.
+
+<!--
+## Resources
+
+* For more information on Repeater modules and break directives, see [Flow control]().
+* For more information on Get Variable modules, see [Tools]().
+-->
