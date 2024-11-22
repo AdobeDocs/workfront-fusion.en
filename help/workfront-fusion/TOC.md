@@ -134,7 +134,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
         * [Error types](/help/workfront-fusion/references/errors/error-processing.md)
     * Connections {#connections}
-        * [Connection reference: article index](/help/workfront-fusion/references/connections/connection%20reference%20toc.md)
+        * [Connection reference: article index](/help/workfront-fusion/references/connections/connection-reference-toc.md)
         * [Connection metadata](/help/workfront-fusion/references/connections/connection-metadata.md)
     * Navigation {#navigation}
         * [Navigation](/help/workfront-fusion/references/navigation/navigation-toc.md)
