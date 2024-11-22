@@ -97,25 +97,27 @@ The Repeater module workaround is more complex, but more customizable.
 
 #### Configure the default route
 
-1. Add the **[!UICONTROL Tools] > [!UICONTROL Set variable]** module in a separate (non-error handler) route after the the potentially failing module, and configure it to store the module's result in a variable named, for example, `Result`.
+1. Add the **[!UICONTROL Tools] > [!UICONTROL Set variable]** module in a separate (non-error handler) route after the the potentially failing module, and configure it to store the module's result in a variable named, such as `Result`.
 
 1. Add the **[!UICONTROL Array aggregator]** module after the **[!UICONTROL Tools] > [!UICONTROL Set variable]**, and select the **[!DNL Repeater]** module in its Source Module field.
 
-1. Add the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module after the **[!UICONTROL Array aggregator]** module, and configure it to obtain the value of the `Result` variable.
+1. Add the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module after the **[!UICONTROL Array aggregator]** module, and map the value of the `Result` variable to it.
 
-1. Insert the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module between the **[!UICONTROL Repeater]** module and the potentially failing module, and configure it obtain the value of the `Result` variable.
+1. Insert the **[!UICONTROL Tools] > [!UICONTROL Get variable]** module between the **[!UICONTROL Repeater]** module and the potentially failing module, and map the value of the `Result` variable to it.
 
 1. Insert a filter between this **[!UICONTROL Tools] > [!UICONTROL Get variable]** module and the potentially failing module to continue only if the `Result` variable does not exist.
 
 >[!BEGINSHADEBOX]
 
-**Example:** Here is a sample scenario where the [!UICONTROL HTTP] >[!UICONTROL Make a request] module represents the potentially failing module:
+**Example:** 
+
+In this sample scenario, the [!UICONTROL HTTP] > [!UICONTROL Make a request] module represents the potentially failing module:
 
 ![](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 
-If the result of the potentially failing module is too complex to be stored in a simple variable, you can employ a data store to store/retrieve the result. The data store would contain just one record. The record's key can be, for example, `Result`.
+If the result of the potentially failing module is too complex to be stored in a simple variable, you can use a data store to store and retrieve the result. The data store would contain just one record. The record's key can be, for example, `Result`.
 
 <!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/data-stores.md)-->
 
@@ -127,5 +129,6 @@ If the result of the potentially failing module is too complex to be stored in a
 <!--
 ## Resources
 
-For more information on Repeater modules and break directives, see [Flow control]().
+* For more information on Repeater modules and break directives, see [Flow control]().
+* For more information on Get Variable modules, see [Tools]().
 -->
