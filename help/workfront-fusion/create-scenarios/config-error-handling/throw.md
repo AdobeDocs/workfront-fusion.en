@@ -17,9 +17,9 @@ Currently, the error handling directives cannot be used out of the scope of an e
 
 You can use the following workaround to mimic `throw` error functionality.
 
-For information on incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+For information on incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-For information on error handling directives, see [Directives for error handling in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/errors/directives-for-error-handling.md).
+For information on error handling directives, see [Directives for error handling in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 ## Access requirements
 
@@ -58,11 +58,11 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion licenses]](../../workfront-fusion/get-started/license-automation-vs-integration.md)
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
 ## Workaround for `throw`
 
-To conditionally throw an error, you can configure a module to make it purposely fail during its operation. One possibility is to employ the [!UICONTROL JSON] > [!UICONTROL Parse JSON] module (see [JSON modules](../../workfront-fusion/apps-and-their-modules/json-modules.md)), configured to optionally throw an error (BundleValidationError in this case):
+To conditionally throw an error, you can configure a module to make it purposely fail during its operation. One possibility is to employ the [!UICONTROL JSON] > [!UICONTROL Parse JSON] module, configured to optionally throw an error (BundleValidationError in this case):
 
 ![JSON error](assets/json-parse-json.png)
 
