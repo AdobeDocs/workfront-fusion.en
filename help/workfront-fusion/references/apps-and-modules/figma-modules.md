@@ -14,9 +14,9 @@ exl-id: d88db592-32d4-4765-952f-9ffb58cf1720
 
 With the [!DNL Adobe Workfront Fusion] [!DNL Figma] modules, you can retrieve lists of comments, files, file versions, or projects. You can also post a comment or make a call to the [!DNL Figma] API.
 
-If you need instructions on creating a scenario, see [Create a scenario](../../workfront-fusion/scenarios/create-a-scenario.md).
+If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
-For information about modules, see [Modules in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/modules.md).
+For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Access requirements
 
