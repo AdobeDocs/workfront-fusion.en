@@ -24,7 +24,7 @@ The environment type, like other connection metadata, is used for informational 
 
 ## Authentication Type 
 
-Fusion connections can be used for both service accounts and personal accounts. Service accounts are used for authentication when a scenario automates as Fusion. Personal accounts are authentication based on a specific person. Which authentication type is used depends on the scenario's requirements. Personal accounts should be used for automated user actions. For example, if a Fusion scenario automates approval by a specific person, then the authentication type should be for that person. Otherwise, Fusion is acting as Fusion and the type should be "Service Account."
+Fusion connections can be used for both service accounts and personal accounts. Service accounts are used for authentication when a scenario automates as Fusion. Personal accounts are authentication based on a specific person. Which authentication type is used depends on the scenario's requirements. Personal accounts should be used for automated user actions. For example, if a Fusion scenario automates approval by a specific person, then the authentication type should be for that person. Otherwise, Fusion is acting as Fusion and the type should be Service Account.
 
 Authentication type, like other connection metadata, is used for informational purposes only. Users are responsible for accurately setting this attribute, and using the correct type of connection in a scenario.
 
