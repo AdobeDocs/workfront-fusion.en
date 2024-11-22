@@ -38,7 +38,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
    <p>Or</p>
    <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -95,46 +95,7 @@ The following error handling directives are available in Workfront Fusion.
 >   <!--For more information, see [Error handler route](../../workfront-fusion/errors/error-handling.md#error) in the article Error handling.-->
 >* [!DNL Workfront Fusion] currently does not offer a Throw module that would enable you to easily conditionally generate (throw) errors, though a workaround can be employed to mimic its functionality.
 >
->  <!-- For more information, see [Workaround for Throw](../../workfront-fusion/errors/throw.md#workaround-for-throw) in the article Throw error handling.-->
-
-<!-- move this section to how-to
-
-## Break {#break}
-
-When an error is handled by the [!DNL Break] directive, a record is created in the Incomplete executions folder. This record stores the state of the scenario execution, along with data from the prior modules. The record references the module where the error originated and contains information regarding the data that was received by the module as input. For each bundle of data that causes the error, a separate record is created.
-
-For more information, see [View and resolve incomplete executions](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
-
-### Resolve errors resulting from the Break directive
-
-You can resolve the error manually by updating the scenario (if needed) and running it once.
-
-You can also configure the scenario to automatically process an incomplete execution by re-executing the scenario. To configure the module to process incomplete executions:
-
-1. Inside the Break module, enable the [!UICONTROL **Automatically complete execution**] option.
-1. In the **Number of attempts** field, enter or map the maximum number of attemps that you want the module to retry the execution
-
-   This number must be between 1 and 100.
-1. In the **Interval between attempts** field, enter or map the number of minutes between each retry attempt.
-
-With this option enabled, when an error takes place, the incomplete execution is retrieved (after the time specified in the [!UICONTROL Interval between attempts] field) and executed with the original input data. This will repeat until the execution of the module completes without an error or until the Number of attempts specified is reached.
-
-   >[!NOTE]
-   >
-   >If the initial retry attempt fails, the interval between retries increases exponentially every other attempt.
-
-
-When "Automatically complete execution" is turned on, the scenario run is marked as "Success" because the Break error handler's auto-retry is handling the issue automatically. In this case, users do not receive an email about the failed run.
-
-When "Automatically complete execution" is turned off, the run is marked as "Warning". 
-
-There are some exceptions to executions being stored under Incomplete Executions, and with some error types, the auto-retry of a scenario execution is not possible. 
-
-For more information, see [Allow storing incomplete executions](../../workfront-fusion/scenarios/scenario-settings-panel.md#allow) in the article [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).
-
-For additional information, see [Advanced error handling](../../workfront-fusion/errors/advanced-error-handling.md).
-
--->
+>  For more information, see [Configure `throw` error workaround](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md).
 
 ## Resources
 
