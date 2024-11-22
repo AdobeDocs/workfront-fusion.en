@@ -67,7 +67,7 @@ The Data structure describes how the JSON data is organized and enables the mapp
 1. Manually run the scenario. This allows the [!UICONTROL Parse JSON] module to identify the JSON structure from the JSON you have provided.
 1. You can now connect following modules. The items from the Parse JSON module are now available for mapping.
 
-For more information, see [Data structures in [!UICONTROL Adobe Workfront Fusion]]().
+For more information, see [Data structures in [!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 ### Collection vs. Array
 

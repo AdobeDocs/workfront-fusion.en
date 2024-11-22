@@ -53,7 +53,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 When encrypting and decrypting via PGP, it is necessary to use a keychain and to create a private or public key (or both).
 
-For more information on public and private keys, see [Basic terms in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/get-started/basic-terms.md). For more information on keychains, see [Keys in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/connections/keys.md).
+For more information on public and private keys, see [Adobe Workfront Fusion glossary](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md). <!--For more information on keychains, see [Keys in [!DNL Adobe Workfront Fusion]]().-->
 
 ## [!UICONTROL Encryptor] modules and their fields
 

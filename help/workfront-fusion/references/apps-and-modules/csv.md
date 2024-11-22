@@ -85,7 +85,7 @@ For more information on aggregators, see [Aggregator module](/help/workfront-fus
 
 The [!UICONTROL Create CSV (advanced)] Aggregator lets you create a CSV text from received text values. It employs a data structure that defines the CSV columns in the resulting CSV file. Once defined, the columns appear as fields in the CSV module setup, and can be mapped to later module in the scenario.
 
-For more information on aggregators, see [Aggregator module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/aggregator-module.md).
+For more information on aggregators, see [Aggregator module in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 <table style="table-layout:auto">
  <col> 
@@ -123,7 +123,7 @@ For more information on aggregators, see [Aggregator module in [!DNL Adobe Workf
 <p>"[object Object]","Lizeth Fulmore"</p>
 <p>"[object Object]","Hilario Gullatt"</p>
 <p>"[object Object]","Abby Eisenbarth"</p>
-<p>Since the item <code>Full Name</code> is of simple type Text, it is exported just fine. But the item <code>Emails</code>, which is of a complex type Array of Collections, is exported as [object Object], which is how Collections and Arrays are transformed to text by default. For more information, see <a href="../../workfront-fusion/mapping/item-data-types.md" class="MCXref xref">Item data types in Adobe Workfront Fusion</a>.</p>
+<p>Since the item <code>Full Name</code> is of simple type Text, it is exported just fine. But the item <code>Emails</code>, which is of a complex type Array of Collections, is exported as [object Object], which is how Collections and Arrays are transformed to text by default. For more information, see <a href="" class="MCXref xref">Item data types in Adobe Workfront Fusion</a>.</p>
 <p>To export content of the <code>Email </code>item of the first collection of the <code>Emails[]</code> array instead, it is necessary to employ the [!UICONTROL Create CSV (advanced)] module. The module enables you to define individual columns of your CSV file and map items to them, including the nested ones.</p>
 <ol>
 <li value="1">Insert the module [!UICONTROL Create CSV (advanced)] in a scenario and open its configuration.</li>

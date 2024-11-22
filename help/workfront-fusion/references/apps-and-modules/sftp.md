@@ -375,7 +375,7 @@ Creates a new folder in the specified location.
 
 >[!NOTE]
 >
->If the folder already exists, the module will throw an error. To continue the flow uninterrupted, attach an error handler route to the module to catch the error and employ the [!UICONTROL Resume] directive to continue the flow. For information about attaching an error handler route, see [Error handling in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/errors/error-handling.md). For information about the error handler route, see [Directives for error handling in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/errors/directives-for-error-handling.md).
+>If the folder already exists, the module will throw an error. To continue the flow uninterrupted, attach an error handler route to the module to catch the error and employ the [!UICONTROL Resume] directive to continue the flow. For information about attaching an error handler route, see [Error handling in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md). For information about the error handler route, see [Directives for error handling in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 <table style="table-layout:auto"> 
  <col> 

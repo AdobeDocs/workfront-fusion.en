@@ -746,7 +746,7 @@ When you are configuring this module, the following fields display.
 
 ### Iterators (deprecated) 
 
-The [!UICONTROL iterate attachments] and [!UICONTROL iterate attendees] modules have been deprecated. To iterate attachments or attendees, use the [!UICONTROL Flow Control] > [!UICONTROL Iterator] module. For more information, see [Iterator module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/iterator-module.md)
+The [!UICONTROL iterate attachments] and [!UICONTROL iterate attendees] modules have been deprecated. To iterate attachments or attendees, use the [!UICONTROL Flow Control] > [!UICONTROL Iterator] module. For more information, see [Iterator module](/help/workfront-fusion/references/modules/iterator-module.md
 
 ### Other
 

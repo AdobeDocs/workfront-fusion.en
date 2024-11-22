@@ -88,7 +88,7 @@ The Google Drive connector uses the following:
 
 If you are [!DNL @gmail.com] or [!DNL @googlemail.com] user you need to create an OAuth client on [the [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) in order to obtain [!UICONTROL Client ID] and [!UICONTROL Client Secret].
 
-For step-by-step instructions on how to create the OAuth client (and obtain [!UICONTROL Client ID] and [!UICONTROL Client Secret]), see [Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](../../workfront-fusion/connections/connect-fusion-to-google-using-oauth.md).
+For step-by-step instructions on how to create the OAuth client (and obtain [!UICONTROL Client ID] and [!UICONTROL Client Secret]), see [Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 For instructions about connecting your [!DNL Google Drive] account to [!UICONTROL Workfront Fusion], see [Create a connection to [!UICONTROL Adobe Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 

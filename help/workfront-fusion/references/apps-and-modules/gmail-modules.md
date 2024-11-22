@@ -66,13 +66,13 @@ To use [!DNL Gmail] modules, you must have a [!DNL Gmail] account.
 
 ### Connect [!DNL Gmail] to [!DNL Workfront Fusion] using[!DNL  Google Workspace] {#connect-gmail-to-workfront-fusion-using-g-suite}
 
-For instructions about connecting your [!DNL Google Workspace] account to [!UICONTROL Workfront Fusion], see [Connect the module's app or web service to [!DNL Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md#connect) in the article the articles under [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
+For instructions about connecting your [!DNL Google Workspace] account to [!UICONTROL Workfront Fusion], see [Create a connection - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md.
 
 ### Connect [!DNL Gmail] to [!DNL Workfront Fusion] using [!DNL gmail.com] or [!DNL googlemail].com {#connect-gmail-to-workfront-fusion-using-gmail-com-or-googlemail-com}
 
 If you are [!DNL @gmail.com] or [!DNL @googlemail.com] user you must create an OAuth client on [the [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) in order to obtain a [!UICONTROL Client ID] and [!UICONTROL Client Secret].
 
-For step-by-step instructions on how to create the OAuth client and obtain a [!UICONTROL Client ID] and [!UICONTROL Client Secret], see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](../../workfront-fusion/connections/connect-fusion-to-google-using-oauth.md).
+For step-by-step instructions on how to create the OAuth client and obtain a [!UICONTROL Client ID] and [!UICONTROL Client Secret], see [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
 ## [!DNL Gmail] modules and their fields
 
@@ -434,7 +434,7 @@ When you are configuring this module, the following fields display.
 
 #### [!UICONTROL Iterate attachments]
 
-You can iterate email attachments. Each attachment is a separate bundle in the module's output. For more information, see [Iterator module in Adobe Workfront Fusion](../../workfront-fusion/modules/iterator-module.md).
+You can iterate email attachments. Each attachment is a separate bundle in the module's output. For more information, see [Iterator module](/help/workfront-fusion/references/modules/iterator-module.md).
 
 <table style="table-layout:auto"> 
  <col> 

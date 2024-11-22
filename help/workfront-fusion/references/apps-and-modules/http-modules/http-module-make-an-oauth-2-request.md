@@ -70,7 +70,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../../workfront-fusion/get-started/license-automation-vs-integration.md)
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](..//help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
 ## Creating a connection for an [!DNL OAuth] request 
 
@@ -230,7 +230,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] request module to connect to [!DNL Google].
 
-1. Ensure that you have created a project, configured OAuth settings, and generated your credentials as described in [Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](../../../workfront-fusion/connections/connect-fusion-to-google-using-oauth.md).
+1. Ensure that you have created a project, configured OAuth settings, and generated your credentials as described in [Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](..//help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 1. Open the [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request] module.
 1. Click **[!UICONTROL Add]** next to the connection box.
 1. Enter the following values:
@@ -265,11 +265,11 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client ID] </td> 
-      <td> <p>Enter your [!DNL Google] Client ID. </p> <p>To create a client ID, see <a href="../../../workfront-fusion/connections/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Create OAuth Credentials</a> in <a href="../../../workfront-fusion/connections/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client</a>.</p> </td> 
+      <td> <p>Enter your [!DNL Google] Client ID. </p> <p>To create a client ID, see <a href="..//help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Create OAuth Credentials</a> in <a href="..//help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client</a>.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client Secret]</td> 
-      <td> <p>Enter your [!DNL Google] Client Secret. </p> <p>To create a client secret, see <a href="../../../workfront-fusion/connections/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Create OAuth Credentials</a> in <a href="../../../workfront-fusion/connections/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] to [!DNL Google] Services using a custom OAuth client</a>.</p> </td> 
+      <td> <p>Enter your [!DNL Google] Client Secret. </p> <p>To create a client secret, see <a href="..//help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Create OAuth Credentials</a> in <a href="..//help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] to [!DNL Google] Services using a custom OAuth client</a>.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
@@ -283,7 +283,7 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
 
 ### Instructions for connecting to [!DNL Microsoft Graph API] via the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module 
 
-For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Graph REST API] via the [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](../../../workfront-fusion/connections/call-the-ms-graph-rest-api.md).
+For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Graph REST API] via the [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md).
 
 ## OAuth 2.0 request module setup 
 
@@ -291,7 +291,7 @@ When you have established an [!DNL Oauth 2].0 connection as described in [Creati
 
 When you configure the [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request] module, [!DNL Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../../workfront-fusion/mapping/map-information-between-modules.md).
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](..//help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 <!--
 <img src="assets/map-toggle-350x74.png" style="width: 350;height: 74;" data-mc-conditions="QuicksilverOrClassic.Draft mode">
@@ -307,7 +307,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx]) </td> 
-   <td> <p>Use this option to set up error handling.</p> <p>For more information, see <a href="../../../workfront-fusion/errors/error-handling.md" class="MCXref xref">Error handling in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Use this option to set up error handling.</p> <p>For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Error handling in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 

@@ -3,13 +3,13 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 keywords: connector
 navigation-topic: connections-annd-webhooks
-title: Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions
+title: Create a connection - Basic instructions
 description: Many [!DNL Adobe Workfront Fusion] connectors do not require custom configuration when creating a connection. This article describes the default connection creation process.
 author: Becky
 feature: Workfront Fusion
 exl-id: 6576a515-a1a1-4613-8d04-3c9d36bb1ed9
 ---
-# Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions
+# Create a connection - Basic instructions
 
 <!--Edit me-->
 

@@ -441,7 +441,7 @@ The module returns any standard fields associated with the record, along with an
       </ul> </li> 
      <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
       <ul> 
-       <li> <p>[!UICONTROL Search Criteria]</p> <p>Enter the criteria by which you want the module to search. For more information on setting up search filters, see <a href="../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md" class="MCXref xref">Add a filter to a scenario in Adobe Workfront Fusion</a>.</p> </li> 
+       <li> <p>[!UICONTROL Search Criteria]</p> <p>Enter the criteria by which you want the module to search. <!--For more information on setting up search filters, see <a href="." class="MCXref xref">Add a filter to a scenario in Adobe Workfront Fusion</a>.</p>--> </li> 
        <li> <p>[!UICONTROL Sort by]</p> <p>Indicate which field you want the module to sort results by, and whether they should be sorted ascending or descending.</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 

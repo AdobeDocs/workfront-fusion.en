@@ -119,7 +119,7 @@ This trigger module starts a scenario when an envelope is sent, delivered, signe
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/scenarios/create-a-scenario.md#connect" class="MCXref xref">Connect the module's app or web service to [!DNL Workfront Fusion]</a> in the article <a href="../../workfront-fusion/scenarios/create-a-scenario.md" class="MCXref xref">Create a scenario in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -347,7 +347,7 @@ This action module creates a new envelope from a template. It returns the new en
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td>
 
-<td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see <a href="../../workfront-fusion/scenarios/create-a-scenario.md#connect" class="MCXref xref">Connect the module's app or web service to Workfront Fusion</a> in the article <a href="../../workfront-fusion/scenarios/create-a-scenario.md" class="MCXref xref">Create a scenario in Adobe Workfront Fusion</a>.</p> </td> 
+<td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see the articles under <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Account] </td>
@@ -380,7 +380,7 @@ This action module adds one or more recipients to an existing envelope. If the e
  <tbody> 
   <tr data-mc-conditions=""> 
     <td>[!UICONTROL Connection] </td>
-   <td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see <a href="../../workfront-fusion/scenarios/create-a-scenario.md#connect" class="MCXref xref">Connect the module's app or web service to Workfront Fusion</a> in the article <a href="../../workfront-fusion/scenarios/create-a-scenario.md" class="MCXref xref">Create a scenario in Adobe Workfront Fusion</a>.</p> </td> 
+   <td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
     <td>[!UICONTROL Account] </td>

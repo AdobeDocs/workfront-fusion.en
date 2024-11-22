@@ -93,19 +93,19 @@ To use a [!UICONTROL Repeater] module:
 
 ## [!UICONTROL Iterator]
 
-An [!UICONTROL Iterator] is a special type of module that converts an array into a series of bundles. Each array item will be a separate bundle in the [!UICONTROL Iterator] module output. For more information, see [[!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/iterator-module.md).
+An [!UICONTROL Iterator] is a special type of module that converts an array into a series of bundles. Each array item will be a separate bundle in the [!UICONTROL Iterator] module output. For more information, see [Iterator module](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ## Array aggregator
 
-An array aggregator is a special type of module which allows to merge several bundles into one single bundle. For more information, see [[!UICONTROL Aggregator] module in Adobe Workfront Fusion](../../workfront-fusion/modules/aggregator-module.md).
+An array aggregator is a special type of module which allows to merge several bundles into one single bundle. For more information, see [Aggregator module](/help/workfront-fusion/references/modules/aggregator-module.md).
 
 ## [!UICONTROL Router]
 
-The [!UICONTROL Router] module allows you to branch your flow into several routes and process the data within each route differently. Once a [!UICONTROL Router] module receives a bundle, it forwards it to each connected route in the order the routes were attached to the [!UICONTROL Router] module. For more information, see [Router module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/router-module.md).
+The [!UICONTROL Router] module allows you to branch your flow into several routes and process the data within each route differently. Once a [!UICONTROL Router] module receives a bundle, it forwards it to each connected route in the order the routes were attached to the [!UICONTROL Router] module. For more information, see [Router module in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <!--
 <div data-mc-conditions="QuicksilverOrClassic.Draft mode">
 <h2>Directives</h2>
-<p>The error handling directives allow you to control how your scenario reacts to errors. For more information, see <a href="../../workfront-fusion/errors/advanced-error-handling.md" class="MCXref xref">Advanced error handling in Adobe Workfront Fusion</a> and <a href="../../workfront-fusion/errors/directives-for-error-handling.md" class="MCXref xref">Directives for error handling in Adobe Workfront Fusion</a>.</p>
+<p>The error handling directives allow you to control how your scenario reacts to errors. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md" class="MCXref xref">Advanced error handling in Adobe Workfront Fusion</a> and <a href="/help/workfront-fusion/references/errors/directives-for-error-handling.md" class="MCXref xref">Directives for error handling in Adobe Workfront Fusion</a>.</p>
 </div>
 -->

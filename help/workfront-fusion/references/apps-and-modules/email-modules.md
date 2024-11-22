@@ -565,4 +565,4 @@ The email iterator module lets you manage email attachments separately. For exam
  </tbody> 
 </table>
 
-For more information about iterators, see [Iterator module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/iterator-module.md).
+For more information about iterators, see [Iterator module](/help/workfront-fusion/references/modules/iterator-module.md).

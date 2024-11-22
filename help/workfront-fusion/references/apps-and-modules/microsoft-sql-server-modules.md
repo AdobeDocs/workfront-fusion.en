@@ -71,7 +71,7 @@ You can execute your custom logic directly on your database server through store
 
 When [!DNL Fusion] establishes the connection to the [!DNL SQL server] destination, the [!DNL Fusion] user identifies the Host (the domain name or IP address where the server is hosted) and the port. [!DNL Fusion] can connect to any available host and port.
 
-For information about specific IP addresses used by [!DNL Workfront Fusion], see [IP Addresses for accessing [!DNL Adobe Workfront Fusion]](../../workfront-fusion/get-started/ip-addresses-for-fusion.md)
+For information about specific IP addresses used by [!DNL Workfront Fusion], see [IP Addresses for accessing [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
 
 To learn more about creating a stored procedure, see the [!DNL Microsoft SQL Server] documentation.
 

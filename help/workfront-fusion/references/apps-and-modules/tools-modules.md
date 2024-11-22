@@ -93,7 +93,7 @@ You can use this module, for example, for contacts or any other list that is sch
 
 This module retrieves values that were previously created by the [!UICONTROL Set Variable] or [!UICONTROL Set Multiple Variables] module.
 
-This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Multiple Variables] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] module. For more information on the order in which modules are executed, see [Router module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/router-module.md).
+This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Multiple Variables] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] module. For more information on the order in which modules are executed, see [Router module in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
@@ -118,7 +118,7 @@ This module can read variables that were set anywhere in the scenario, even if t
 
 This module retrieves a value that was previously created by the [!UICONTROL Set Variable] or [!UICONTROL Set Multiple Variables] module.
 
-This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Variable] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Variable] module. For more information on the order in which modules are executed, see [Router module in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/router-module.md).
+This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Variable] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Variable] module. For more information on the order in which modules are executed, see [Router module in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 

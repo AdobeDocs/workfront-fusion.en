@@ -423,7 +423,7 @@ This search module searches for assets base on criteria you supply.
     <ul> 
      <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>Select the field that you want to use in your search</p> </li> 
      <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>Select the operator that you want to use in your search.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter or map the value to look for in the selected field. The value type should be the same as the data type of the selected field. </p> <p>For more information on data types, see <a href="../../workfront-fusion/mapping/item-data-types.md" class="MCXref xref">Item data types in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter or map the value to look for in the selected field. The value type should be the same as the data type of the selected field. </p> <p>For more information on data types, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item data types in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

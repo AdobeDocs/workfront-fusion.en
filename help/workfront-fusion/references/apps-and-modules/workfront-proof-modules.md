@@ -371,7 +371,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Specify whether you want the proof that is created to require a login. </p> <p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="../../workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p> </td> 
+   <td> <p>Specify whether you want the proof that is created to require a login. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Resolution ID]</td> 
@@ -458,7 +458,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page. For more information, see <a href="../../workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> </td> 
+   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p>--> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -556,7 +556,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page. For more information, see <a href="../../workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> </td> 
+   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> --></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
@@ -612,7 +612,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Specify whether you want the proof that is created to require a login. </p> <p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="../../workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p> </td> 
+   <td> <p>Specify whether you want the proof that is created to require a login. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show Versions Like]</td> 

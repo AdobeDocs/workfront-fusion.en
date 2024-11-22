@@ -54,7 +54,7 @@ You must have the following access to use the functionality in this article:
 
 &#42;To find out what plan, license type, or access you have, contact your Workfront administrator.
 
-&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md)
+&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
 ## Use a webhook in [!DNL Workfront Fusion]
 
@@ -237,7 +237,7 @@ You can extract a particular header value with the combination of `map()` and `g
 >
 >![](assets/set-up-a-filter-350x169.png)
 >
->For further information on obtaining an array's element with a given key, see [Map an array's element with a given key](../../workfront-fusion/mapping/map-information-between-modules.md#mapping) in the article [Map information from one module to another in Adobe Workfront Fusion](../../workfront-fusion/mapping/map-information-between-modules.md).
+>For further information on obtaining an array's element with a given key, see [Map an array's element with a given key](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#mapping) in the article [Map information from one module to another in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ## Responding to webhooks
 
