@@ -260,25 +260,25 @@ When you are configuring this module, the following fields display.
 </table>
 
 <!--
-<h2 data-mc-conditions="QuicksilverOrClassic.Draft mode">Possible problems</h2>
+<h2>Possible problems</h2>
 -->
 
 <!--
-<p style="color: #ff1493;" data-mc-conditions="QuicksilverOrClassic.Draft mode">This is drafted out because we don't have a download module for Box yet</p>
+<p style="color: #ff1493;">This is drafted out because we don't have a download module for Box yet</p>
 -->
 
 <!--
-<h3 data-mc-conditions="QuicksilverOrClassic.Draft mode">Watch files trigger module doesn't download a file contained in the folder.</h3>
+<h3>Watch files trigger module doesn't download a file contained in the folder.</h3>
 -->
 
 <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode">There are several situations when downloading a file fails:</p>
+<p>There are several situations when downloading a file fails:</p>
 -->
 
 <!--
-  <li data-mc-conditions="QuicksilverOrClassic.Draft mode">The current file lock setting does not allow the file to be downloaded or the downloading of the file is disabled. In this case, the file is ignored.</li>
+  <li>The current file lock setting does not allow the file to be downloaded or the downloading of the file is disabled. In this case, the file is ignored.</li>
   -->
 
 <!--
-  <li data-mc-conditions="QuicksilverOrClassic.Draft mode">When the scenario started, the file was being uploaded to the server and was not ready to be downloaded. The scenario run gets stopped and Workfront Fusion tries downloading the file again during the next execution of the scenario.</li>
+  <li>When the scenario started, the file was being uploaded to the server and was not ready to be downloaded. The scenario run gets stopped and Workfront Fusion tries downloading the file again during the next execution of the scenario.</li>
   -->

@@ -1158,23 +1158,23 @@ When you are configuring this module, the following fields display.
 </table>
 
 <!--
-<h2 data-mc-conditions="QuicksilverOrClassic.Draft mode">ActiveCampaign Event modules</h2>
+<h2>ActiveCampaign Event modules</h2>
 -->
 
   <!--
-  <li data-mc-conditions="QuicksilverOrClassic.Draft mode"><a href="#watch-events" class="MCXref xref">Watch Events</a> </li>
+  <li><a href="#watch-events" class="MCXref xref">Watch Events</a> </li>
   -->
 
 <!--
-<h3 data-mc-conditions="QuicksilverOrClassic.Draft mode" id="watch-events">Watch Events</h3>
+<h3 id="watch-events">Watch Events</h3>
 -->
 
 <!--
-<p style="color: #ff1493;" data-mc-conditions="QuicksilverOrClassic.Draft mode">I don't see this one</p>
+<p style="color: #ff1493;">I don't see this one</p>
 -->
 
 <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode">This trigger module executes a scenario when a new event is fired. The module returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.</p>
+<p>This trigger module executes a scenario when a new event is fired. The module returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.</p>
 -->
 
 <!--
@@ -1183,98 +1183,98 @@ When you are configuring this module, the following fields display.
 <col>
 <tbody>
 <tr> <!--
-<td data-mc-conditions="QuicksilverOrClassic.Draft mode">Webhook Name</td>
+<td>Webhook Name</td>
 -->
 <td> <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode"> Enter the webhook name.</p>
+<p> Enter the webhook name.</p>
 --> </td>
 </tr>
 <tr> <!--
-<td data-mc-conditions="QuicksilverOrClassic.Draft mode">Connection </td>
+<td>Connection </td>
 -->
 <td> <p>For instructions about connecting your ActiveCampaign account to Workfront Fusion, see <a href="#connect-active-campaign-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Active Campaign to Workfront Fusion</a> in this article.</p> </td>
 </tr>
 <tr> <!--
-<td data-mc-conditions="QuicksilverOrClassic.Draft mode">Custom webhook name in ActiveCampaign</td>
+<td>Custom webhook name in ActiveCampaign</td>
 -->
 <td> <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode"> Enter the webhook name mentioned in the ActiveCampaign.</p>
+<p> Enter the webhook name mentioned in the ActiveCampaign.</p>
 --> </td>
 </tr>
 <tr> <!--
-<td data-mc-conditions="QuicksilverOrClassic.Draft mode">Events </td>
+<td>Events </td>
 -->
 <td> <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode">Select the events you want to watch:</p>
+<p>Select the events you want to watch:</p>
 -->
 <ul> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Campaign forwarded</li>
+<li>Campaign forwarded</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Campaign opened</li>
+<li>Campaign opened</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Campaign shared</li>
+<li>Campaign shared</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Campaign starts sending</li>
+<li>Campaign starts sending</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Contact added</li>
+<li>Contact added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Contact note added</li>
+<li>Contact note added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Contact tag added</li>
+<li>Contact tag added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Contact tag removed</li>
+<li>Contact tag removed</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Contact unsubscription</li>
+<li>Contact unsubscription</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Contact updated</li>
+<li>Contact updated</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal added</li>
+<li>Deal added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal note added</li>
+<li>Deal note added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal pipeline added</li>
+<li>Deal pipeline added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal stage added</li>
+<li>Deal stage added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal task added</li>
+<li>Deal task added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal task completed</li>
+<li>Deal task completed</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal task type added</li>
+<li>Deal task type added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Deal updated</li>
+<li>Deal updated</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Email bounces</li>
+<li>Email bounces</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Email replies</li>
+<li>Email replies</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Link clicked</li>
+<li>Link clicked</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">List added</li>
+<li>List added</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">SMS reply</li>
+<li>SMS reply</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">SMS sent</li>
+<li>SMS sent</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">SMS unsubscribe</li>
+<li>SMS unsubscribe</li>
 -->
 </ul> </td>
 </tr>
 <tr>
 <td> <!--
-<p style="font-weight: bold;" data-mc-conditions="QuicksilverOrClassic.Draft mode">Sources</p>
+<p style="font-weight: bold;">Sources</p>
 --> </td>
 <td> <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode">Select the sources which causes the events:</p>
+<p>Select the sources which causes the events:</p>
 -->
 <ul> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Run the hooks when a contact triggers the action</li>
+<li>Run the hooks when a contact triggers the action</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Run the hooks when an admin user triggers the action</li>
+<li>Run the hooks when an admin user triggers the action</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Run the hooks when an API call triggers the action</li>
+<li>Run the hooks when an API call triggers the action</li>
 --> <!--
-<li data-mc-conditions="QuicksilverOrClassic.Draft mode">Run the hooks when automated systems trigger the action</li>
+<li>Run the hooks when automated systems trigger the action</li>
 -->
 </ul> </td>
 </tr>
@@ -1332,10 +1332,10 @@ When you are configuring this module, the following fields display.
    <td>Limit </td> 
    <td> <p>The maximum number of organizations should return during one scenario execution cycle.</p> </td> 
   </tr> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
+   <tr> 
     <td>Name </td> 
     <td> <p>Enter the name of the organization whose details you want to retrieve. </p> <!--
-      <p style="color: #ff1493;" data-mc-conditions="QuicksilverOrClassic.Draft mode">CO: Isn't it a list of organizations?</p>
+      <p style="color: #ff1493;">CO: Isn't it a list of organizations?</p>
      --> </td> 
    </tr>
   --> 
@@ -1590,23 +1590,23 @@ When you are configuring this module, the following fields display.
 </table>
 
 <!--
-<h2 data-mc-conditions="QuicksilverOrClassic.Draft mode">Other ActiveCampaign modules</h2>
+<h2>Other ActiveCampaign modules</h2>
 -->
 
   <!--
-  <li data-mc-conditions="QuicksilverOrClassic.Draft mode">Make an API Call</li>
+  <li>Make an API Call</li>
   -->
 
   <!--
-  <li data-mc-conditions="QuicksilverOrClassic.Draft mode">Make a Legacy API Call</li>
+  <li>Make a Legacy API Call</li>
   -->
 
 <!--
-<h3 data-mc-conditions="QuicksilverOrClassic.Draft mode">Make an API Call</h3>
+<h3>Make an API Call</h3>
 -->
 
 <!--
-<h3 data-mc-conditions="QuicksilverOrClassic.Draft mode">Make a Legacy API Call</h3>
+<h3>Make a Legacy API Call</h3>
 -->
 
 ## Troubleshooting
@@ -1649,19 +1649,19 @@ These steps seem really wonky in Alloy article. Test!
 1. In the **Settings** dropdown menu, click **Developer**, then click **Manage Webhooks**.
 
    <!--
-   <p style="color: #ff1493;" data-mc-conditions="QuicksilverOrClassic.Draft mode">screenshot</p>
+   <p style="color: #ff1493;">screenshot</p>
    -->
 
 1. In the Webhook settings fields, click **Edit** to open the webhook settings in the ActiveCampaign.
 
    <!--
-   <p style="color: #ff1493;" data-mc-conditions="QuicksilverOrClassic.Draft mode">screenshot</p>
+   <p style="color: #ff1493;">screenshot</p>
    -->
 
 1. In the Webhook settings section, in the **List** dropdown menu, select the list that you want to work with the Workfront Fusion webhook.
 
    <!--
-   <p style="color: #ff1493;" data-mc-conditions="QuicksilverOrClassic.Draft mode">screenshot</p>
+   <p style="color: #ff1493;">screenshot</p>
    -->
 
 1. Run your scenario in Workfront Fusion and then **send sample Data** so that you can confirm if the webhook catches the correct data.

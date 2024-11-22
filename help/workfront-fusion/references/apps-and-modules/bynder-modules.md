@@ -464,23 +464,23 @@ This trigger module starts a scenario when an asset is created or updated.
    <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
   </tr> 
   <tr> <!--
-    <td role="rowheader" data-mc-conditions="QuicksilverOrClassic.Draft mode">Event type</td>
+    <td role="rowheader">Event type</td>
    --> <!--
-    <td data-mc-conditions="QuicksilverOrClassic.Draft mode">Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
+    <td>Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
    --> 
   </tr> 
   <tr>
-     <td role="rowheader" data-mc-conditions="QuicksilverOrClassic.Draft mode">[!UICONTROL Collections]</td>
+     <td role="rowheader">[!UICONTROL Collections]</td>
    <td> <p>Select the collection that you want to watch for new assets. To watch all collections, leave this field empty.</p> </td> 
   </tr> 
   <tr> <!--
-    <td role="rowheader" data-mc-conditions="QuicksilverOrClassic.Draft mode">Outputs</td>
+    <td role="rowheader">Outputs</td>
    --> <!--
-    <td data-mc-conditions="QuicksilverOrClassic.Draft mode">Select the fields that you want to include in the output.</td>
+    <td>Select the fields that you want to include in the output.</td>
    --> 
   </tr> 
   <tr> 
-    <td role="rowheader" data-mc-conditions="QuicksilverOrClassic.Draft mode">[!UICONTROL Limit]</td>
+    <td role="rowheader">[!UICONTROL Limit]</td>
 
 <td> <p>Enter the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 

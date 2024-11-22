@@ -206,12 +206,12 @@ This action module creates a new asset.
    <td role="rowheader">[!UICONTROL Name] </td> 
    <td> <p>Enter the name of the new file or folder.</p> </td> 
   </tr> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
+   <tr> 
     <td role="rowheader">File Type </td> 
     <td> <p>Select the type of file you want to upload.</p> </td> 
    </tr>
   --> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
+   <tr> 
     <td role="rowheader">File Size </td> 
     <td> <p>The file size in bytes.</p> </td> 
    </tr>

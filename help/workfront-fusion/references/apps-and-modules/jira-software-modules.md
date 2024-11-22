@@ -130,7 +130,7 @@ To connect [!DNL Jira Software] to [!DNL Workfront Fusion], you must create an A
 ### Connect [!DNL Jira Server] to [!DNL Workfront Fusion]
 
 <!--
-<p style="color: #ff1493;" data-mc-conditions="QuicksilverOrClassic.Draft mode">Becky: Find out and document how to find these things</p>
+<p style="color: #ff1493;">Becky: Find out and document how to find these things</p>
 -->
 
 To authorize a connection between [!DNL Workfront Fusion] and [!DNL Jira Server], you need your Consumer Key, Private Key, And Service URL. You might need to contact your [!DNL Jira] administrator for this information.
@@ -578,7 +578,7 @@ When you are configuring this module, the following fields display.
    <td role="rowheader"> <p>[!UICONTROL Max Results]</p> </td> 
    <td> <p>Enter or map the maximum number of records you want the module to retrieve during each scenario execution cycle.</p> </td> 
   </tr> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
+   <tr> 
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 
    </tr>

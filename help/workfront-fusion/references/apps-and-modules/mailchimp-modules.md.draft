@@ -44,12 +44,12 @@ You must have the following access to use the functionality in this article:
    <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
    </td> 
   </tr> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
+   <tr> 
     <td role="rowheader">Access level configurations*</td> 
     <td> <!--
-      <p data-mc-conditions="QuicksilverOrClassic.Draft mode">You must be a Workfront Fusion administrator for your organization.</p>
+      <p>You must be a Workfront Fusion administrator for your organization.</p>
      --> <!--
-      <p data-mc-conditions="QuicksilverOrClassic.Draft mode">You must be a Workfront Fusion administrator for your team.</p>
+      <p>You must be a Workfront Fusion administrator for your team.</p>
      --> </td> 
    </tr>
   --> 

@@ -320,7 +320,7 @@ This module returns responses matching the given criteria.
     <td>Select how you want dates, times, and duration to be represented in the output. This field is ignored if [!UICONTROL Value Render] Option is set to Formatted Value. </td>
   </tr> 
   <tr>
-    <td role="rowheader" data-mc-conditions="QuicksilverOrClassic.Draft mode">[!UICONTROL Maximum number of returned responses]</td>
+    <td role="rowheader">[!UICONTROL Maximum number of returned responses]</td>
    <td> <p> Set the maximum number of responses that [!DNL Workfront Fusion] returns during one cycle.</p> </td> 
   </tr> 
  </tbody> 

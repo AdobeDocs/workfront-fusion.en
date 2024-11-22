@@ -52,7 +52,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 You must have an Airtable account to use the functionality in this article.
 
 <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode">For more information, see the tutorial .</p>
+<p>For more information, see the tutorial .</p>
 -->
 
 ## Airtable API information

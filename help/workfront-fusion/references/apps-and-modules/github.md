@@ -564,21 +564,21 @@ This module lists all comments on the specified issue.
 </table>
 
 <!--
-<h2 data-mc-conditions="QuicksilverOrClassic.Draft mode">Troubleshooting</h2>
+<h2>Troubleshooting</h2>
 -->
 
 <!--
-<h3 data-mc-conditions="QuicksilverOrClassic.Draft mode">Module does not receive any events</h3>
+<h3>Module does not receive any events</h3>
 -->
 
 <!--
-<p data-mc-conditions="QuicksilverOrClassic.Draft mode">If a module does not receive any events, check the webhook settings in Github and make sure that:</p>
+<p>If a module does not receive any events, check the webhook settings in Github and make sure that:</p>
 -->
 
 <!--
-  <p data-mc-conditions="QuicksilverOrClassic.Draft mode">You have set the correct type of event that the chosen module should receive</p>
+  <p>You have set the correct type of event that the chosen module should receive</p>
   -->
 
 <!--
-  <p data-mc-conditions="QuicksilverOrClassic.Draft mode">You have entered the correct Payload URL</p>
+  <p>You have entered the correct Payload URL</p>
   -->

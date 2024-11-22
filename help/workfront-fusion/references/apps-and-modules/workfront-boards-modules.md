@@ -20,7 +20,7 @@ Adobe Workfront Boards are flexible tools that allow team collaboration by provi
 
 You can use the Adobe Workfront Boards modules to read or update records, make an API call to the Workfront Boards API, or trigger a scenario when an action occurs on a board.
 
-For general information on Workfront Boards, see [Boards overview](/help/quicksilver/agile/boards-overview.md).
+<!--For general information on Workfront Boards, see [Boards overview](/help/quicksilver/agile/boards-overview.md).-->
 
 ## Access requirements
 
@@ -57,7 +57,7 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).
+<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
