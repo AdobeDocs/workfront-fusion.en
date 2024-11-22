@@ -10,3 +10,4 @@ recommendations: noDisplay, noCatalog
 # Configure scenario settings: article index
 
 * [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+* [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
