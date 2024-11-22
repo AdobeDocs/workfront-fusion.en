@@ -47,16 +47,16 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion licenses]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
 ## Workarounds to the [!UICONTROL Retry] error handling directive
 
- Workfront Fusion currently does not offer the `retry` error handling directive. Use one of the following workarounds to mimic retry functionality. 
+Workfront Fusion currently does not offer the `retry` error handling directive. Use one of the following workarounds to mimic retry functionality. 
  
- For instructions, see [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+For instructions, see [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
- * [Use the Break directive](#use-the-break-directive)
- * [Use the Repeater module](#use-the-repeater-module)
+* [Use the Break directive](#use-the-break-directive)
+* [Use the Repeater module](#use-the-repeater-module)
 
 ### Use the Break directive
 
