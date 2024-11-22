@@ -8,7 +8,7 @@ feature: Workfront Fusion
 
 When an error is handled by the Break directive, a record is created in the Incomplete executions folder. This record stores the state of the scenario execution, along with data from the prior modules. The record references the module where the error originated and contains information regarding the data that was received by the module as input. For each bundle of data that causes the error, a separate record is created.
 
-For more information, see [View and resolve incomplete executions](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+For more information, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ## Resolve errors resulting from the Break directive
 
@@ -33,13 +33,14 @@ With this option enabled, when an error takes place, the incomplete execution is
    >If the initial retry attempt fails, the interval between retries increases exponentially every other attempt.
 
 
-When "Automatically complete execution" is turned on, the scenario run is marked as "Success" because the Break error handler's auto-retry is handling the issue automatically. In this case, users do not receive an email about the failed run.
+When the Automatically complete execution option is enabled, the scenario run is marked as "Success" because the Break error handler's auto-retry is handling the issue automatically. In this case, users do not receive an email about the failed run.
 
-When "Automatically complete execution" is turned off, the run is marked as "Warning". 
+When the Automatically complete execution option is turned off, the run is marked as "Warning". 
 
 There are some exceptions to executions being stored under Incomplete Executions, and with some error types, the auto-retry of a scenario execution is not possible. 
 
-For more information, see [Allow storing incomplete executions](../../workfront-fusion/scenarios/scenario-settings-panel.md#allow) in the article [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+<!--## Resources
 
-For additional information, see [Advanced error handling](../../workfront-fusion/errors/advanced-error-handling.md).
+For more information, see [Allow storing incomplete executions](../../workfront-fusion/scenarios/scenario-settings-panel.md#allow) in the article [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
+
 
