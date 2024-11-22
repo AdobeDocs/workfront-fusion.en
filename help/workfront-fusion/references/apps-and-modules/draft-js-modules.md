@@ -13,7 +13,7 @@ exl-id: 5f4634ed-0861-4c21-8cfe-da5a5e633ff8
 
 In an [!DNL Adobe Workfront Fusion] scenario, you can use the [!UICONTROL Draft.js] modules to convert Draft.js to HTML and HTML to Draft.js. You can use this in combination with Workfront modules to add rich text to or read rich text from Workfront fields.
 
-If you need instructions on creating a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md).
+For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
 

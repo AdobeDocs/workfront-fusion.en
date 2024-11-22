@@ -257,9 +257,9 @@ This function can be useful, for example, if you want to lower the [!DNL target]
 >
 >The first scenario would end up with storing all the necessary information in a data store together with the current timestamp. The second scenario would periodically check the data store for records with a timestamp older than the intended delay, retrieve the records, finalize the processing of the data and remove the records from the data store.
 >
->For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/data-stores.md).
+><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
 >
->For more information on specific data store modules, see [[!UICONTROL Data store] modules](../../workfront-fusion/apps-and-their-modules/data-store-modules.md).
+>For more information on specific data store modules, see [[!UICONTROL Data store] modules](/help/workfront-fusion/references/apps-and-modules/data-store-modules.md).
 
 ### Aggregators 
 

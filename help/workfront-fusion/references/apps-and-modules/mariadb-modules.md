@@ -10,7 +10,7 @@ exl-id: 45d4d7fe-a70c-4906-adb4-f913a870fe47
 
 In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL MariaDB], as well as connect it to multiple third-party applications and services.
 
-If you need instructions on creating a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md).
+For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
 
@@ -101,7 +101,7 @@ You can create a connection to your [!DNL MariaDB] account directly from inside 
 
 When you configure [!DNL MariaDB] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL MariaDB] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![](assets/map-toggle-350x74.png)
 

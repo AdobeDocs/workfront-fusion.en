@@ -14,7 +14,7 @@ exl-id: 146802cd-b863-4c93-b767-50e05892c4de
 
 In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Qualtrics], as well as connect it to multiple third-party applications and services.
 
-If you need instructions on creating a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md).
+For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
 

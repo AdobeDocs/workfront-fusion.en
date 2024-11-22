@@ -73,7 +73,7 @@ The HubSpot CRM connector uses the following:
 
 ## Connect [!DNL Adobe Workfront Fusion] to [!DNL HubSpot CRM]
 
-For instructions about connecting your [!DNL HubSpot CRM] account to [!DNL Workfront Fusion], see [Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions](../../workfront-fusion/connections/connect-to-fusion-general.md)
+For instructions about connecting your [!DNL HubSpot CRM] account to [!DNL Workfront Fusion], see [Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ For instructions about connecting your [!DNL HubSpot CRM] account to [!DNL Workf
 
 When you configure [!DNL Hubspot CRM] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Hubspot CRM] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![](assets/map-toggle-350x74.png)
 
@@ -1430,7 +1430,7 @@ This action module creates a new task for a calendar. The connection used in thi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event Date]</td> 
-   <td>Enter or map the date for this task.<p>For a list of supported date and time formats, see <a href="../../workfront-fusion/mapping/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Enter or map the date for this task.<p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Category]</td> 
@@ -1696,7 +1696,7 @@ This action module creates and immediately publishes a message on the specified 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Trigger at]</td> 
-   <td>Enter or map the date and time that you want the broadcast to be sent. If this is left blank, the broadcast is sent immediately.<p>For a list of supported date and time formats, see <a href="../../workfront-fusion/mapping/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Enter or map the date and time that you want the broadcast to be sent. If this is left blank, the broadcast is sent immediately.<p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
