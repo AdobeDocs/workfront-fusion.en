@@ -91,8 +91,8 @@ When sequential processing is enabled, parallel executions of the scenario are d
 
 **Incomplete Executions**: If "Incomplete Executions" is also enabled, if an error occurs during the execution of a scenario, the scenario is paused. One of the following then occurs:
 
-   * If the Sequential processing option is **enabled**, Workfront Fusion stops processing the pre-existing sequence until all incomplete executions are resolved.
-   * If the Sequential processing option is **disabled**, the scenario continues to run according to its schedule, accompanied by repeated attempts to rerun the incomplete executions.
+* If the Sequential processing option is **enabled**, Workfront Fusion stops processing the pre-existing sequence until all incomplete executions are resolved.
+* If the Sequential processing option is **disabled**, the scenario continues to run according to its schedule, accompanied by repeated attempts to rerun the incomplete executions.
 
    <!--For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).-->
 
