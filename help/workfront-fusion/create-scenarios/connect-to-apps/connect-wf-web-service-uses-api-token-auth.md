@@ -10,6 +10,8 @@ exl-id: 0feb745a-1ee0-4b29-92ab-14c12a8647d4
 ---
 # Connect [!DNL Adobe Workfront Fusion] to a web service that uses API token authorization
 
+<!--Edit me-->
+
 Some services do not allow integration solutions such as [!DNL Adobe Workfront Fusion] to create an app that you can easily use in your scenario.
 
 There is a workaround to this situation. You can connect the desired service (app) to [!DNL Workfront Fusion] using [!DNL Workfront Fusion]'s [!UICONTROL HTTP] module.

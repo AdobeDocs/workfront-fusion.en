@@ -10,6 +10,8 @@ exl-id: 5efc0001-a8cd-4ffc-b074-3536f095727b
 ---
 # Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client
 
+<!--Edit me-->
+
 ## Access requirements
 
 You must have the following access to use the functionality in this article:

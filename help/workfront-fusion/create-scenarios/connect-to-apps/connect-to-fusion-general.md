@@ -11,6 +11,8 @@ exl-id: 6576a515-a1a1-4613-8d04-3c9d36bb1ed9
 ---
 # Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions
 
+<!--Edit me-->
+
 ## Access requirements
 
 You must have the following access to use the functionality in this article:

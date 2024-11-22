@@ -11,6 +11,8 @@ exl-id: 32dfef7a-7942-4025-8cb9-055d4e28090b
 ---
 # Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] with updated security measures
 
+<!--Edit me-->
+
 ## Access requirements
 
 You must have the following access to use the functionality in this article:

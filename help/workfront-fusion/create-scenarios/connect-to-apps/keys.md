@@ -13,6 +13,8 @@ exl-id: a36947aa-c218-4ff0-879c-2041c3cccae0
 
 The keychain in [!DNL Adobe Workfront Fusion] will help you to administer public and private keys. Keys are used, for example, by the [!UICONTROL Encryptor] app for encrypting or decrypting PGP messages.
 
+<!--Add to configure module setting article?-->
+
 ## Access requirements
 
 You must have the following access to use the functionality in this article:
