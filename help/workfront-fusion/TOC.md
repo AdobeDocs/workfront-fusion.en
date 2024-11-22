@@ -66,7 +66,9 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Map items using functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
         * [Map arrays](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
         * [Map files](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
-    * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
+    * Connect to applications {#connect-to-applications}
+        * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
+        * [Manage connections](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
     * Configure error handling {#configure-error-handling}
         * [Configure error handling](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
         * [Add error handling](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
