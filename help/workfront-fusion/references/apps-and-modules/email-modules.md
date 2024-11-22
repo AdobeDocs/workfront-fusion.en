@@ -88,7 +88,7 @@ When you configure [!UICONTROL Email] modules, [!DNL Workfront Fusion] displays 
 
 Some of the email fields might already contain data because you used them in another module in the scenario. See the email help documentation if you need information about them.
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![](assets/map-toggle-350x74.png)
 

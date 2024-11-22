@@ -58,7 +58,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 You must add the Fusion IP addresses to [!DNL Adobe Campaign].
 
 * For instructions on adding IP addresses to your Campaign allowlist, see [Adding IP addresses to the allowlist](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing#adding-ip-addresses-allow-list) in the Adobe Campaign documentation.
-* For a list of IP addresses to add to the allowlist, see [IP Addresses for accessing Adobe Workfront Fusion](/help/quicksilver/workfront-fusion/get-started/ip-addresses-for-fusion.md).
+* For a list of IP addresses to add to the allowlist, see [IP Addresses for accessing Adobe Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md).
 
 ## Adobe Campaign API information
 
@@ -139,7 +139,7 @@ The Adobe Campaign connector uses the following:
 
 When you configure [!DNL Adobe Campaign] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Adobe Campaign] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![](assets/map-toggle-350x74.png)
 
