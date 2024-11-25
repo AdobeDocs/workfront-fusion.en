@@ -67,19 +67,8 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see <!--[[!DNL Adobe 
 
 1. Click **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) in the left panel.
 
-1. If you want to create a scenario, click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page.
 
-   Or
 
-   If you want to edit an existing scenario, click the scenario.
-
-   In the scenario editor that displays, you can do everything listed in the table below. For more information, see <!--[Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md).-->
-
-1. When you finish editing a scenario (or at any time while you are editing), click the [!UICONTROL **Save**] icon. ![](assets/save-icon.gif)
-
-   >[!NOTE]
-   >
-   >After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are only available for 60 days.
 
 ## Available scenario editor actions
 
@@ -136,11 +125,7 @@ You can use the Favorites icon to add modules you use often.
 
 
 
-
-
-
-
-
+## Old section 
 
 
 
