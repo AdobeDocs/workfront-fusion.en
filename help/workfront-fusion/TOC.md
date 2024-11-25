@@ -76,7 +76,10 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Configure throw error workaround](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)
         * [Configure retry error handling workaround](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
         * [Resolve errors handled by the Break directive](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
-    * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+    * Configure scenario settings {#configure-scenario-settings}
+        * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+        * [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+        * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
 * Manage scenarios {#manage-scenarios}
     * [Manage scenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
     * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
