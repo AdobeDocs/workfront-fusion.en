@@ -14,6 +14,13 @@ A scenario is comprised of a series of modules that indicate how data should be 
 
 A scenario is built of different elements. Understanding the terminology of those elements makes it easier to use the documentation.
 
+* [Scenario](#scenario)
+* [Trigger](#trigger)
+* [Module](#module)
+* [Route](#route)
+* [Scenario segment](#scenario-segment)
+* [Connector](#connector)
+
 ### Scenario
 
 A **scenario** is a user-created series of automated steps, created to move and manipulate data. The term "scenario" refers to the entire group of connected steps.
