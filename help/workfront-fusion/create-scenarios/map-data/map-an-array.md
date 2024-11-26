@@ -64,6 +64,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Map an entire array
 
+1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Select the scenario where you want to map an array.
+1. Click anywhere on the scenario to enter the Scenario editor.
 1. In the module that you want to map the array to, click the field where you want to map the array. This is the field that the array is mapped to.
 
 1. In the box that displays, map the item.

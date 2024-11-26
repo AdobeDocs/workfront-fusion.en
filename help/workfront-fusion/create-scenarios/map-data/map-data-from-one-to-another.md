@@ -61,6 +61,9 @@ After you have created a sequence of modules by linking two or more of them, eac
 
 To assign output items to a module's input fields:
 
+1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Select the scenario where you want to map data.
+1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click on the module that should process the output of the preceding module or modules.
 1. In the Module settings panel that displays, click a field where you want to use the value of an item outputted from a preceding module.
 

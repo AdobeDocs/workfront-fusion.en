@@ -69,7 +69,7 @@ You must have the following access to use the functionality in this article:
 
 &#42;To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](..//help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
 ## Providing your [!DNL Workfront Fusion] public certificate
 
@@ -95,8 +95,8 @@ You can use the following links to download the Workfront Fusion public certific
 >
 >* These are non-wildcard mTLS certificates.
 
-* [Download [!DNL Workfront Fusion] Certificate 2023](/help/workfront-fusion/references/apps-and-modules/http-modules/assets/fusion-prod-us-mtls-certificate.pem)
-* [Download [!DNL Workfront Fusion] EU Certificate 2023](/help/workfront-fusion/references/apps-and-modules/http-modules/assets/fusion-prod-eu-mtls-certificate.pem)
+* [Download [!DNL Workfront Fusion] Certificate 2023](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem)
+* [Download [!DNL Workfront Fusion] EU Certificate 2023](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem)
 
    For use in the EU 
 
@@ -125,7 +125,7 @@ To enable Mutual TLS in an [!UICONTROL HTTP] request module:
 1. Add an [!UICONTROL HTTP] request module to your scenario.
 1. Begin configuring the module.
 
-   For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL HTTP] modules](..//help/workfront-fusion/references/apps-and-modules/http-modules/http-modules-1.md).
+   <!--For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL Universal connectors] modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/).-->
 
 1. Enable **[!UICONTROL Show advanced settings]** near the bottom of the module.
 1. Enable **[!UICONTROL Use Mutual TLS]**.

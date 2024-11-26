@@ -4,25 +4,25 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 keywords: connector
 navigation-topic: http-modules
-title: HTTP &gt; Make an API Key Authorization request
-description: This [!DNL Adobe Workfront Fusion] action module sends an HTTPS request to a specified URL that requires an API Key Auth authorization, and processes the response.
+title: HTTP &gt; Make a Client Certificate Authorization request module
+description: This [!DNL Adobe Workfront Fusion] module enables you to configure an HTTP request with HTTP client certificate authorization and submit it to a server. The received HTTP response is then contained in the output bundle.
 author: Becky
 feature: Workfront Fusion
-exl-id: 70bf87c7-6d51-4ef4-9dce-80ad004e613f
+exl-id: c0b0057f-3db0-4c10-a274-ebaec1a5b87b
 ---
-# HTTP >[!UICONTROL Make an API Key Authorization request]
+# HTTP >[!UICONTROL Make a Client Certificate Authorization request] module
 
 >[!NOTE]
 >
->[!DNL Adobe Workfront Fusion] requires an [!DNL Adobe Workfront Fusion] license in addition to an Adobe Workfront license.
+>Adobe Workfront Fusion requires an [!DNL Adobe Workfront Fusion] license in addition to an Adobe Workfront license.
 
-This [!DNL Adobe Workfront Fusion] action module sends an HTTPS request to a specified URL that requires an API Key Auth authorization, and processes the response.
+This [!DNL Adobe Workfront Fusion] module enables you to configure an HTTP request with HTTP client certificate authorization and submit it to a server. The received HTTP response is then contained in the output bundle.
 
 >[!NOTE]
 >
 >If you are connecting to an Adobe product that does not currently have a dedicated connector, we recommend using the Adobe Authenticator module.
 >
->For more information, see [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-authenticator-modules.md).
+>For more information, see [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
 ## Access requirements
 
@@ -33,7 +33,7 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
+   <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
    <td> <p>[!UICONTROL Pro] or higher</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
@@ -61,13 +61,15 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-For information on [!UICONTROL Adobe Workfront Fusion] licenses, see [Adobe Workfront Fusion licenses](..//help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request] module configuration
+## [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] module configuration
 
-When you configure the [!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request] module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
+When you configure the [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](..//help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+<img src="assets/map-toggle-350x74.png" style="width: 350;height: 74;">
 
 <table style="table-layout:auto"> 
  <col> 
@@ -75,17 +77,11 @@ If you see the map button above a field or function, you can use it to set varia
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Credentials]</td> 
-   <td> <p>Select the key that contains your API Key authentication credentials. To add a new key, click <strong>[!UICONTROL Add]</strong> and configure the following information:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Key name]</strong></p> <p>Enter a name for this set of API credentials.</p> </li> 
-     <li> <p><strong>[!UICONTROL Key]</strong> </p> <p>Enter the API Key.</p> </li> 
-     <li> <p><strong>[!UICONTROL API Key placement]</strong> </p> <p>Select whether to place the API Key in the header or in the query of the API call.</p> </li> 
-     <li> <p><strong>[!UICONTROL API Key parameter name]</strong> </p> <p>Enter the name by which the API call identifies the API Key, such as "apiKey" or "X-API-Key." You can find this information in the documentation of the web service the module is connecting to.</p> </li> 
-    </ul> </td> 
+   <td> <p>Select the key that contains your client certificate authentication credentials, or click <strong>[!UICONTROL Add]</strong> to add your credentials to a new key. </p> <p>Note: You can add more credentials to easily switch between each connection.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
-   <td> <p>Use this option to set up error handling.</p> <p>For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Error handling in Adobe Workfront Fusion</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td> <p>Use this option to set up error handling.</p> <p>For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Error handling in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -93,7 +89,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="..//help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
@@ -159,7 +155,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Enable this option to use Mutual TLS in the HTTP request.</p> <p>For more information on Mutual TLS, see <a href="..//help/workfront-fusion/references/apps-and-modules/http-modules/use-mtls-in-http-modules.md" class="MCXref xref">Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Enable this option to use Mutual TLS in the HTTP request.</p> <p>For more information on Mutual TLS, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
