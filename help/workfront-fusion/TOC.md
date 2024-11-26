@@ -145,7 +145,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Navigation](/help/workfront-fusion/references/navigation/navigation-toc.md)
     * Apps and their modules {#apps-and-their-modules}
         * [Apps and their modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
-        * Universal connectors (#universal-connectors)
+        * Universal connectors {#universal-connectors}
             * [HTTP >[!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
             * [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
             * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
