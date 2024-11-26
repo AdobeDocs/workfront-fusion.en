@@ -17,16 +17,16 @@ recommendations: noDisplay, noCatalog
 
 These connectors allow you to connect to any app or web service that has a public API. 
 
-* [HTTP >[!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-api-key-auth-request.md)
-* [[!UICONTROL HTTP] > Other modules](/help/workfront-fusion/references/apps-and-modules/http-modules/http-modules.md)
+* [HTTP >[!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > Other modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
 * [SOAP module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
 * [SFTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
-* [Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/http-modules/use-mtls-in-http-modules.md)
+* [Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
 
 ## Connectors for Adobe products
 
