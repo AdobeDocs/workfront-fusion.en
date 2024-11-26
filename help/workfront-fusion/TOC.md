@@ -69,6 +69,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * Connect to applications {#connect-to-applications}
         * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
         * [Manage connections](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
+        * [Connect Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
     * Configure error handling {#configure-error-handling}
         * [Configure error handling](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
         * [Add error handling](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
@@ -156,3 +157,5 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [FTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
             * [SFTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
             * [Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+        * Adobe connectors {adobe-connectors}
+            * [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
