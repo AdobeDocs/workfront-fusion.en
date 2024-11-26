@@ -19,7 +19,7 @@
      <li aemmigrated="true"> <p aemmigrated="true"><a href="..//help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md" class="MCXref xref" xrefformat="{para}" aemmigrated="true">HTTP &gt; Make a Client Certificate Authorization request module</a> </p> </li> 
      <li aemmigrated="true"> <p aemmigrated="true"><a href="..//help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-api-key-auth-request.md" class="MCXref xref" xrefformat="{para}" aemmigrated="true">HTTP &gt; Make an API Key Authorization request </a> </p> </li> 
      <li aemmigrated="true"> <p aemmigrated="true"><a href="..//help/workfront-fusion/references/apps-and-modules/http-modules/http-modules.md" class="MCXref xref" xrefformat="{para}" aemmigrated="true">HTTP &gt; Other modules</a> </p> </li> 
-     <li aemmigrated="true"> <p aemmigrated="true"><a href="..//help/workfront-fusion/references/apps-and-modules/http-modules/use-mtls-in-http-modules.md" class="MCXref xref" xrefformat="{para}" aemmigrated="true">Use Mutual TLS in HTTP modules in Adobe Workfront Fusion</a> </p> </li> 
+     <li aemmigrated="true"> <p aemmigrated="true"><a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref" xrefformat="{para}" aemmigrated="true">Use Mutual TLS in HTTP modules in Adobe Workfront Fusion</a> </p> </li> 
     </ul> 
    </div> 
   </div>

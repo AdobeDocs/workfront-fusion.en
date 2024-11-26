@@ -25,7 +25,7 @@ The right choice of the module depends on the authentication/ authorization mech
 >
 >If you are connecting to an Adobe product that does not currently have a dedicated connector, we recommend using the Adobe Authenticator module.
 >
->For more information, see [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-authenticator-modules.md).
+>For more information, see [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
 See the following articles for specific module instructions:
 
@@ -35,4 +35,4 @@ See the following articles for specific module instructions:
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] module](..//help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]](..//help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] > Other modules](..//help/workfront-fusion/references/apps-and-modules/http-modules/http-modules.md)
-* [Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]](..//help/workfront-fusion/references/apps-and-modules/http-modules/use-mtls-in-http-modules.md)
+* [Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)

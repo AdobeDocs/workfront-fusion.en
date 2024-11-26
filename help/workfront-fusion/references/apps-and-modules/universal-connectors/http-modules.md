@@ -30,7 +30,7 @@ The right choice of the module depends on the authentication/ authorization mech
 >
 >If you are connecting to an Adobe product that does not currently have a dedicated connector, we recommend using the Adobe Authenticator module.
 >
->For more information, see [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-authenticator-modules.md).
+>For more information, see [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md).
 
 ## Request modules
 

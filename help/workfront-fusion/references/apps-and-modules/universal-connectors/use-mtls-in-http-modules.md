@@ -69,7 +69,7 @@ You must have the following access to use the functionality in this article:
 
 &#42;To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](..//help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
 ## Providing your [!DNL Workfront Fusion] public certificate
 
@@ -95,8 +95,8 @@ You can use the following links to download the Workfront Fusion public certific
 >
 >* These are non-wildcard mTLS certificates.
 
-* [Download [!DNL Workfront Fusion] Certificate 2023](/help/workfront-fusion/references/apps-and-modules/http-modules/assets/fusion-prod-us-mtls-certificate.pem)
-* [Download [!DNL Workfront Fusion] EU Certificate 2023](/help/workfront-fusion/references/apps-and-modules/http-modules/assets/fusion-prod-eu-mtls-certificate.pem)
+* [Download [!DNL Workfront Fusion] Certificate 2023](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem)
+* [Download [!DNL Workfront Fusion] EU Certificate 2023](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem)
 
    For use in the EU 
 
