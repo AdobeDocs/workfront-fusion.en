@@ -125,7 +125,7 @@ To enable Mutual TLS in an [!UICONTROL HTTP] request module:
 1. Add an [!UICONTROL HTTP] request module to your scenario.
 1. Begin configuring the module.
 
-   For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL Universal connectors] modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules-1.md).
+   <!--For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL Universal connectors] modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/).-->
 
 1. Enable **[!UICONTROL Show advanced settings]** near the bottom of the module.
 1. Enable **[!UICONTROL Use Mutual TLS]**.
