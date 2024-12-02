@@ -10,4 +10,5 @@ recommendations: noDisplay, noCatalog
 # Navigate Fusion: article index
 
 * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
-
+* [Scenario editor overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
+* [Scenario details overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario.details.md)
