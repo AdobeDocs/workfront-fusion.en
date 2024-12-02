@@ -15,7 +15,7 @@ An [!DNL Adobe Workfront Fusion] data store, similar to a database or a simple t
 
 The data store modules enable you to add, replace, update, retrieve, delete, search, or count records in your [!DNL Adobe Workfront Fusion] data store.
 
-For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/)
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 For a video introduction to data stores in Workfront Fusion, see:
 

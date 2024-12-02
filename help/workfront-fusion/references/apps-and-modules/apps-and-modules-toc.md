@@ -94,7 +94,7 @@ Fusion offers connectors for many third-party applications.
 * [Microsoft SQL Server modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
 * [Microsoft Word Template modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [NetSuite modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
-* [OpenAI (ChatGPT & DALL-E) modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors)
+* [OpenAI (ChatGPT & DALL-E) modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
 * [PowerBI modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/powerbi-modules.md)
 * [Qualtrics modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/qualtrics-modules.md)
 * [Quickbase modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/quickbase-modules.md)

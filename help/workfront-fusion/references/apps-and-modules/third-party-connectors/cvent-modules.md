@@ -89,7 +89,7 @@ The Cvent connector uses the following:
 >* You have [!UICONTROL SOAP] access to the [!DNL Cvent] API.
 >* The [!DNL Workfront Fusion] IP addresses have been added to your organization's allowlist.
 >
->  For a list of [!DNL Workfront Fusion] IP addresses, see [IP Addresses for accessing [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/)
+>  For a list of [!DNL Workfront Fusion] IP addresses, see [Configure IP Addresses for Fusion in your organization's allowlist](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)
 
 
 You can create a connection to your [!DNL Cvent] account directly from inside a [!DNL Cvent] module.
