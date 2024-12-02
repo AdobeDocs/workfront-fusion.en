@@ -19,7 +19,7 @@ You can also configure the scenario to automatically process an incomplete execu
 1. Click the **[!UICONTROL Scenario]** tab in the left panel.
 1. Select the scenario where you want to add the workaround.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Click the **Flow Control** icon ![Flow control](assets/flow-control-icon.png) and select **Break**.
+1. Click the **Flow Control** icon ![Flow control](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.png) and select **Break**.
 1. Inside the Break module, enable the [!UICONTROL **Automatically complete execution**] option.
 1. In the **Number of attempts** field, enter or map the maximum number of attemps that you want the module to retry the execution
 

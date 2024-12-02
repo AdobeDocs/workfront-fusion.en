@@ -392,7 +392,7 @@ When you are configuring this module, the following fields display.
 >
 >In our example, 6 users were returned:
 >
->![](assets/matches-of-the-search-350x573.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL Upload Attachment/Document]

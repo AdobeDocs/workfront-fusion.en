@@ -31,7 +31,7 @@ The scenario's first step, performed by the first module, is to watch for reques
 
 If the first module returns a bundle, the bundle passes through the rest of the scenario. In this example, the bundle would go to the second module, which converts the request to a project.
 
-![](assets/example-execution-flow-wf-only.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ The scenario's first step, performed by the first module, is to watch for docume
 
 If a bundle is returned, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the secondmodule, which uploads the bundle to the [!DNL Dropbox] folder.
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-execution-flow-wf-dropbox.png)
 
 If the first module returns multiple bundles, the first bundle is uploaded to [!DNL Dropbox] before the second bundle is uploaded. Then the second bundle uploads, then the third, and so on.
 
@@ -66,7 +66,7 @@ For each module, the bundle goes through a 4-step process before going on to the
 
 After a scenario run is complete, each module displays an icon showing the number of operations performed. You can click this icon to display the detailed information about the processed bundles for each step in the process. You can see which module settings were used, and which bundles were returned by each module.
 
-![](assets/Info-processed-bundles.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/Info-processed-bundles.png)
 
 In this example, the module received input information such as:
 

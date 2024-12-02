@@ -84,7 +84,7 @@ The Repeater module workaround is more complex, but more customizable.
 1. Click the **[!UICONTROL Scenario]** tab in the left panel.
 1. Select the scenario where you want to add the workaround.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Click the **Flow Control** icon ![Flow control](assets/flow-control-icon.png) and select **Repeater**.
+1. Click the **Flow Control** icon ![Flow control](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.png) and select **Repeater**.
 1. In the Repeater module, set the **[!UICONTROL Repeats]** field to the maximum number of times that you want the scenario to retry.
 1. Attach the potentially failing module after the **[!UICONTROL Repeater]** module.
 1. Attach an error handler route to the potentially failing module.
@@ -113,7 +113,7 @@ The Repeater module workaround is more complex, but more customizable.
 
 In this sample scenario, the [!UICONTROL HTTP] > [!UICONTROL Make a request] module represents the potentially failing module:
 
-![](assets/http-make-request.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 

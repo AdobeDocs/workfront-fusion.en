@@ -75,13 +75,13 @@ To add an error handler to a module:
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Right click the module after which you want to add an error handler route, and select **[!UICONTROL Add error handler]**:
 
-    ![](assets/error-handler-route.png)
+    ![](/help/workfront-fusion/references/apps-and-modules/assets/error-handler-route.png)
 
     An error handler route is added to the module. If the module is the last module in a route, the error handler directlys follow the module. If the module has more modules after it, a separate error handler route is added. 
 
     The error handling module shows a list of Directives as well as the apps being used in your scenario. 
 
-    ![Error route](assets/error-route.png)
+    ![Error route](/help/workfront-fusion/references/apps-and-modules/assets/error-route.png)
     
 1. Select one of the directives. 
 

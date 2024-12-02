@@ -44,11 +44,11 @@ The Update subtype includes the following three operations:
 
 * **Erase the content of a field**. This operation takes place when the content of the field is evaluated to the `erase` keyword (not to be confused with `empty`).
 
-  ![Erase keyword](assets/erase-content-of-field.png)
+  ![Erase keyword](/help/workfront-fusion/references/apps-and-modules/assets/erase-content-of-field.png)
 
 * **Leave the content of a field unchanged**. This operation takes place when the field is left empty or the content of the field is evaluated to empty (represented via null in JSON).
 
-  ![Empty bundle](assets/leave-content-field-unchanged.png)
+  ![Empty bundle](/help/workfront-fusion/references/apps-and-modules/assets/leave-content-field-unchanged.png)
 
 * **Replace the content of a field**. This operation takes place in all other cases than those two described above.
 
@@ -57,7 +57,7 @@ The Update subtype includes the following three operations:
 >* If you do not see the `erase` keyword in the mapping panel, the module is not an update module or it has not been updated to the latest specifications for the app.
 >* `Empty` does not change the field content. If it is necessary to erase the field, you can use the following formula:
 >
->   ![If empty](assets/formula-ifempty-name-erase.png)
+>   ![If empty](/help/workfront-fusion/references/apps-and-modules/assets/formula-ifempty-name-erase.png)
 >
 >* Leaving a field unchanged when its content is evaluated as empty is currently not supported.
 

@@ -29,7 +29,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 1. Select [!DNL Adobe Workfront] from the list of applications, then choose the module **[!UICONTROL Update Record]**.
 1. in the ID field, select the ID block that is under the Convert object module. This is the ID of the project that was output by that module. 
 
-   ![ID from Convert object](assets/id-convert-object.png)
+   ![ID from Convert object](/help/workfront-fusion/references/apps-and-modules/assets/id-convert-object.png)
 
 1. In the Record Type field, select Project, because the object to be updated is a project.
 1. In the Select Fields to Map area, select Name. 
@@ -43,7 +43,7 @@ When this scenario converts a request to a project, the project's name is the sa
 1. Click the **Name** field. 
 
    The mapping panel opens.
-1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon](assets/toolbar-icon-text&binary-functions.png)
+1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon](/help/workfront-fusion/references/apps-and-modules/assets/toolbar-icon-text&binary-functions.png)
 1. Select the function **upper**.
 
    The function appears in the Name field, including the formatting for the input it expects.
@@ -51,12 +51,12 @@ When this scenario converts a request to a project, the project's name is the sa
    The input for this example is the name of the issue the project was converted from.
 
 1. Move your cursor between the parentheses, because this is where the input will go.
-1. In the mapping panel, click the **module output** icon. ![Module output icon](assets/toolbar-icon-functions-you-map-from-other-modules.png) 
+1. In the mapping panel, click the **module output** icon. ![Module output icon](/help/workfront-fusion/references/apps-and-modules/assets/toolbar-icon-functions-you-map-from-other-modules.png) 
 1. Select the name block that was output by your first module.
 
    The name block appears in the function.
 
-   ![Name block in function](assets/map-name.png)
+   ![Name block in function](/help/workfront-fusion/references/apps-and-modules/assets/map-name.png)
 
 1. Click OK to save the module settings.
 

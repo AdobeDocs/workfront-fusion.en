@@ -10,7 +10,7 @@ feature: Workfront Fusion
 
 Many services provide webhooks to deliver instant notifications whenever a certain change (event) occurs in the service. To process these events, we recommend that you use instant triggers. Instant triggers display the `Instant` tag in the list of modules for a given connector.
 
-![](assets/instant.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/instant.png)
 
 If a connector does not include a webhook, you can do one of the following:
 
@@ -28,7 +28,7 @@ For a video introduction to webhooks in Workfront Fusion, see:
 
 When you configure an instant trigger, you are prompted to select when it runs.
 
-![](assets/schedule-setting.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/schedule-setting.png)
 
 Select `Immediately` to run the scenario immediately when [!DNL Workfront Fusion] receives new events from the service. These events go into a queue, and are then processed in the scenario one at a time.
 
@@ -49,7 +49,7 @@ When the scenario executes, the total amount of pending events waiting in the qu
 
 If you use any other schedule setting than [!UICONTROL Immediately], the scenario executes at the intervals you specify. Because several webhooks can be gathered in the queue during the interval, we recommend setting the [!UICONTROL Maximum number of cycles] option to a higher value than the default 1 to process more webhooks in one scenario run:
 
-1. Click the [!UICONTROL Scenario settings] icon ![](assets/scenario-settings-icon.png) at the bottom of your scenario.
+1. Click the [!UICONTROL Scenario settings] icon ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png) at the bottom of your scenario.
 1. In the **[!UICONTROL Scenario settings]** panel that appears, enter a number in the **[!UICONTROL Max number of cycles]** field to indicate the number of events from the queue that you want to run each time you execute the scenario. 
 
 Events remaining in the queue will be processed next time the scenario is run, up to the number set in the Max number of cycles field.

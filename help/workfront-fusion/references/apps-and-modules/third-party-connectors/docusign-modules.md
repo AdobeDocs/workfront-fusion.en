@@ -223,13 +223,13 @@ This action module allows you to perform a custom API call.
 >
 >Specifies when the request begins checking for status changes for envelopes in the account.
 >
->![](assets/example-docusign-setup-350x770.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 >
 >The result can be found in the module's Output under Bundle > Body > envelopes.
 >
 >In our example, 6 envelopes were returned:
 >
->![](assets/docusign-example-output-350x677.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 #### [!UICONTROL Download a document]
 

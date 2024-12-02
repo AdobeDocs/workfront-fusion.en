@@ -62,7 +62,7 @@ Returns a floating-point pseudo-random number in the range [`0`,`1`] (inclusive 
 
 Use the following formula to generate an integer pseudo-random number in the range [`min`,`max`] (inclusive of both `min` and `max`):
 
-![](assets/math-variable-random-350x61.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/math-variable-random-350x61.png)
 
 ```
 floor(random * (1.max - 1.min + 1)) + 1.min

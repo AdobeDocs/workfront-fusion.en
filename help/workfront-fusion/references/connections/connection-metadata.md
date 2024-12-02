@@ -10,11 +10,11 @@ Fusion uses metadata to identify important attributes of a connection.
 
 Connection metadata can be set when creating a new connection. These attributes are in the same dialog box used for setting up a connection: 
 
-![Connection metadata](assets/connection-metadata-setup.png)
+![Connection metadata](/help/workfront-fusion/references/apps-and-modules/assets/connection-metadata-setup.png)
 
 Fusion users can view and edit connections from the Connections area.  
 
-![Connection metadata in Connections area](assets/connections-area-metadata.png)
+![Connection metadata in Connections area](/help/workfront-fusion/references/apps-and-modules/assets/connections-area-metadata.png)
 
 ## Environment Type 
 

@@ -60,4 +60,4 @@ For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfron
 
 Data structures don't always have to be created. You can make it easier by using a template from our built-in generator. By providing a data sample, the generator will automatically create a data structure based on the data sample you entered. The created data structure can then be manually modified.
 
-![](assets/data-structure-generator-350x341.jpg)
+![](/help/workfront-fusion/references/apps-and-modules/assets/data-structure-generator-350x341.jpg)

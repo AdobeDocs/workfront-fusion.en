@@ -49,7 +49,7 @@ The module returns the ID of the  file and any associated fields, along with any
 >
 >**Example:** Get the ZIP file from the defined [!DNL Dropbox] folder (for example, Archives), extract it using the [!UICONTROL Archive] module and send extracted files to the desired email address as attachments with the [!UICONTROL Email] or [!DNL Gmail] module.
 >
->![](assets/example-dropbox-350x134.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 ## [!UICONTROL Create an archive] 
 
@@ -96,7 +96,7 @@ When you are configuring this module, the following fields display.
 >
 >**Example:** Watch incoming emails using the [!DNL Gmail] >[!UICONTROL Watch emails] module. If an email is received, its attachments are iterated into individual bundles then archived to the [!DNL ZIP] file and saved to the defined Dropbox folder.
 >
->![](assets/example-gmail-350x102.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 ## [!UICONTROL Inflate] 
 

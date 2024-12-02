@@ -79,10 +79,10 @@ You can manage all connections from the Connections area.
 >
 >* Click Team overview in the left navigation, then click the dropdown arrow next to the team name near the top of the page. Select a new team.
 
-1. To open the Connections area, click **Connections** ![Connections icon](assets/connections-icon.png) in the left navigation.
+1. To open the Connections area, click **Connections** ![Connections icon](/help/workfront-fusion/references/apps-and-modules/assets/connections-icon.png) in the left navigation.
 1. Locate the connection you want to manage, then perform one or more of the following steps in the line for that connection.
 1. (Optional) Assign an environment and connection type by clicking the **Environment** and **Type** dropdowns and selecting an option.
-1. (Optional) To view which permissions were given to Workfront Fusion for the connection, click the View icon ![View connection permissions](assets/view-connection-permissions.png) for that connection.
+1. (Optional) To view which permissions were given to Workfront Fusion for the connection, click the View icon ![View connection permissions](/help/workfront-fusion/references/apps-and-modules/assets/view-connection-permissions.png) for that connection.
 1. (Optional) To rename a connection, highlight the connection name and type the new name.
 1. (Optional) To reauthorize a connection, click **Reauthorize**.
 1. (Optional) To delete a connection, click **Delete**, then click **Really?**.
@@ -94,7 +94,7 @@ You can manage all connections from the Connections area.
 
 To renew a connection:
 
-1. To open the Connections area, click **Connections** ![Connections icon](assets/connections-icon.png) in the left navigation.
+1. To open the Connections area, click **Connections** ![Connections icon](/help/workfront-fusion/references/apps-and-modules/assets/connections-icon.png) in the left navigation.
 1. Locate the connection you want to renew.
 1. In the line for that connection, click the **[!UICONTROL Reauthorize]** button in the **[!UICONTROL Connections]** area.
 
