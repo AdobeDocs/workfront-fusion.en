@@ -20,7 +20,10 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
         * [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
     * Navigate Workfront Fusion {#navigate-workfront-fusion}
-        * [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
+        * [Navigate Workfront Fusion: article index](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
+        * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
+        * [Scenario editor overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
+        * [Scenario details overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario.details.md)
         * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
 * Set up and manage Workfront Fusion {#set-up-and-manage-fusion}
     * [Set up and manage Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
