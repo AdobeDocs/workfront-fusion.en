@@ -157,6 +157,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [SOAP module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
             * [FTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
             * [SFTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
+            * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
             * [Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
         * Adobe connectors {#adobe-connectors}
             * [Adobe Acrobat Sign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
