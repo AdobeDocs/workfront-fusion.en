@@ -175,7 +175,7 @@ For more information about the JSON modules, see [JSON modules](../../workfront-
 
 1. Enter or map the values you want to create JSON from.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/json-values-350x288.png)
+   ![](assets/json-values-350x288.png)
 
 1. Connect the [!UICONTROL JSON] > [!UICONTROL Create JSON] module to the HTTP > Make a Request module.
 1. Map the JSON string from the [!UICONTROL Create JSON] module to the [!UICONTROL Request content] field in the [!UICONTROL HTTP] >[!UICONTROL Make a Request] module.

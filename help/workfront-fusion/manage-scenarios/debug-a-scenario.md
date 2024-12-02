@@ -81,7 +81,7 @@ Accessing the Devtool differs based on whether you are using Fusion in the [!DNL
 
 If you use Fusion in the Adobe Unified Shell, or have updated to the new Fusion experience, you can access the Devtool from the Scenario editor.
 
-1. Click the **Helper tools** ![Helper tools](/help/workfront-fusion/references/apps-and-modules/assets/debugger-icon.png) icon near the bottom of the screen.
+1. Click the **Helper tools** ![Helper tools](assets/debugger-icon.png) icon near the bottom of the screen.
 
 Or: 
 
@@ -154,7 +154,7 @@ Workfront Fusion Devtool is divided into 3 main sections. You can find these in 
 
 Live Stream displays what is happening in the background when you click Run once in your scenario.
 
-1. Click the **[!UICONTROL Live Stream]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/live-stream-icon.png) to open the Live Stream section.
+1. Click the **[!UICONTROL Live Stream]** icon ![](assets/live-stream-icon.png) to open the Live Stream section.
 1. Do any of the following:
 
    <table style="table-layout:auto"> 
@@ -204,7 +204,7 @@ Live Stream displays what is happening in the background when you click Run once
 
 The Scenario Debugger is useful for more complex scenarios. It displays the history of the scenario runs and enables you to search modules by their name or ID.
 
-1. Click the **[!UICONTROL Scenario Debugger]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-debugger-icon.png) to open the Scenario Debugger.
+1. Click the **[!UICONTROL Scenario Debugger]** icon ![](assets/scenario-debugger-icon.png) to open the Scenario Debugger.
 1. (Optional) Enter the search term (name or module ID) in the search field.
 1. Click the module name.
 1. Click the operation to view request details.
@@ -213,7 +213,7 @@ The Scenario Debugger is useful for more complex scenarios. It displays the hist
 
 The [!DNL Workfront Fusion] Devtool features tools that make setting up your scenario easier.
 
-1. Click the **[!UICONTROL Tools]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/console-tools-icon.png) to open the Tools. 
+1. Click the **[!UICONTROL Tools]** icon ![](assets/console-tools-icon.png) to open the Tools. 
 1. Select the tool you want to use
 1. Configure the fields as detailed below.
 1. Click **[!UICONTROL Run]**.

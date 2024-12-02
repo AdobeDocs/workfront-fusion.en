@@ -104,7 +104,7 @@ It is possible to generate a JWT token with the help of built-in functions:
 
 Header:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![](assets/jwt-header-350x19.png)
 
 Code for copy&paste:
 
@@ -114,7 +114,7 @@ Code for copy&paste:
 
 Payload:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![](assets/jwt-payload-350x17.png)
 
 Code for copy&paste:
 
@@ -124,7 +124,7 @@ Code for copy&paste:
 
 Token:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![](assets/jwt-token-350x15.png)
 
 Code for copy&paste:
 

@@ -11,7 +11,7 @@ Because the applications that Workfront Fusion connects to may update or release
 
 If you see a green Upgrade module icon on a module in a scenario, Workfront Fusion has released a new version of that module. 
 
-![Update icon](/help/workfront-fusion/references/apps-and-modules/assets/update-indicator.png)
+![Update icon](assets/update-indicator.png)
 
 You can update the module without creating a new scenario.
 
@@ -67,8 +67,8 @@ You must have the following access to use the functionality in this article:
 
 ## Update a module to a new version
 
-1. Click the **Upgrade module** icon ![Upgrade icon](/help/workfront-fusion/references/apps-and-modules/assets/upgrade-icon.png) on the module you want to upgrade to a new version.
-    ![Update icon](/help/workfront-fusion/references/apps-and-modules/assets/update-indicator.png)
+1. Click the **Upgrade module** icon ![Upgrade icon](assets/upgrade-icon.png) on the module you want to upgrade to a new version.
+    ![Update icon](assets/update-indicator.png)
 1. Click **Show me new modules**.
 1. Select the new module that matches the existing module.
 1. Configure the module with the same settings as the existing module.

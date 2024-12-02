@@ -44,11 +44,11 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 ### Add and configure the filter
 
 1. Open the scenario in the scenario editor.
-1. Click the wrench icon ![Wrench icon](/help/workfront-fusion/references/apps-and-modules/assets/wrench-icon.png) between the first and second module, and select **Set up a filter**.
+1. Click the wrench icon ![Wrench icon](assets/wrench-icon.png) between the first and second module, and select **Set up a filter**.
 1. In the Label field, enter a label for this filter, such as "Filter for request queue."
 1. In the **Condition** area, in the top field, map the `projectID` from the first module.
 
-   ![Map project ID](/help/workfront-fusion/references/apps-and-modules/assets/map-proj-id.png)
+   ![Map project ID](assets/map-proj-id.png)
 1. Leave the **Condition** operator as Equal to.
 1. In the bottom field of the **Condition** area, paste in the project ID that you made note of from the project URL in [Prepare to add the filter](#prepare-to-add-the-filter).
 1. Click **OK** to save the filter settings.

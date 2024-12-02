@@ -143,7 +143,7 @@ Regular expressions (enclosed in `/.../`) can be used as search string with a co
 
 **Example:**  
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/replace---1-350x31.png)
+![](assets/replace---1-350x31.png)
 
 All of these numbers X X X X are replaced with X  
 
@@ -158,11 +158,11 @@ The replacement string can include the following special replacement patterns:
 
 **Examples:**  
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/variable-value-350x63.png)
+![](assets/variable-value-350x63.png)
 
 Returns: Phone number `+420777111222`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/variable-value---2-350x55.png)
+![](assets/variable-value---2-350x55.png)
 
 Returns: Phone number: `+420777111222`
 

@@ -79,7 +79,7 @@ You must create a scenario before you can activate it. <!--link to create scenar
 
 ## Activate or deactivate a scenario:
 
-1. Click **[!UICONTROL Scenarios]** ![](/help/workfront-fusion/references/apps-and-modules/assets/scenarios-icon.png) in the left panel, then click the scenario to open it.
+1. Click **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) in the left panel, then click the scenario to open it.
 1. In the lower-left corner of the window, click the **[!UICONTROL On/Off]** toggle.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/on-off-switch.jpg)
+   ![](assets/on-off-switch.jpg)

@@ -87,7 +87,7 @@ Searching documentation can be more efficient with a few strategic approaches. H
 * **Table of Contents**: Start with the table of contents to get an overview of available topics and narrow down to specific topics by the expanding sections.
 * **Search bar**: Use the search bar to find documentation. Enter specific terms related to your issue or topic. Instead of general terms like "project management," use "project timeline setup" or "task dependencies."
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/exl-site-nav.png)
+![](assets/exl-site-nav.png)
 
 ### Explore Learning and Training Sections
 

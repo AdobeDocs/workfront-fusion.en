@@ -212,10 +212,10 @@ URL: `/v1/dashboard`
 
 Method: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![](assets/datadog-api-example.png)
 
 The result can be found in the module's Output under Bundle > Body > dashboards.
 
 In our example, 3 dashboards were returned:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![](assets/datadog-api-response-example.png)

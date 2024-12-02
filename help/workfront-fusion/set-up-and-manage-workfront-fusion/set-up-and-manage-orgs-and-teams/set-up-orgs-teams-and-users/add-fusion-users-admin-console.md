@@ -137,15 +137,15 @@ Before using the [!DNL Admin Console] for [!DNL Workfront], you should receive a
 
 1. From the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com/), select the **[!UICONTROL Products]** tab in the top navigation bar, and then select the **[!DNL Workfront Fusion]** product tile.
     
-    ![Fusion in Admin Console](/help/workfront-fusion/references/apps-and-modules/assets/fusion-product-admin-console.png)
+    ![Fusion in Admin Console](assets/fusion-product-admin-console.png)
     
 1. In the list that displays, select the organization where you want to add a user.
     
-    ![Fusion instance in Admin Console](/help/workfront-fusion/references/apps-and-modules/assets/fusion-instances-admin-console.png)
+    ![Fusion instance in Admin Console](assets/fusion-instances-admin-console.png)
     
 1. In the list that displays, with the **[!UICONTROL Product Profiles]** tab selected, click the name of the [!DNL Workfront Fusion] [!UICONTROL Product Profile] link.
     
-    <!-- Image refers to WF    ![Workfront Fusion Product Profile](/help/workfront-fusion/references/apps-and-modules/assets/prod-profile-1.png)-->
+    <!-- Image refers to WF    ![Workfront Fusion Product Profile](assets/prod-profile-1.png)-->
      
     >[!IMPORTANT]
     >

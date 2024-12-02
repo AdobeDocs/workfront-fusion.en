@@ -88,7 +88,7 @@ The Fusion AI can currently generate modules that connect to the following appli
 1. Click the **[!UICONTROL Scenario]** tab in the left panel.
 1. Select the scenario where you want to add a module.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Click the Generate with AI icon ![Generate with AI](/help/workfront-fusion/references/apps-and-modules/assets/generate-with-ai-icon-beta.png) near the bottom of the scenario editor page.
+1. Click the Generate with AI icon ![Generate with AI](assets/generate-with-ai-icon-beta.png) near the bottom of the scenario editor page.
 
    Or
 

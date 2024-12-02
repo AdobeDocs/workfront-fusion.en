@@ -748,10 +748,10 @@ URL: `/v2/teams`
 
 Method: `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
+![](assets/api-call-example.png)
 
 The result can be found in the module's Output under Bundle > Body.
 
 In our example, the details of 1 team were returned:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-output.png)
+![](assets/api-call-output.png)

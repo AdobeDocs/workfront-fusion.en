@@ -86,4 +86,4 @@ To manually unlock a locked scenario:
 1. Click **[!UICONTROL Options]** in the upper-right corner of the screen.
 1. Select **[!UICONTROL Unlock execution]**.
 1. Click **[!UICONTROL Unlock]**.
-    ![](/help/workfront-fusion/references/apps-and-modules/assets/unlock-scenario.png)
+    ![](assets/unlock-scenario.png)

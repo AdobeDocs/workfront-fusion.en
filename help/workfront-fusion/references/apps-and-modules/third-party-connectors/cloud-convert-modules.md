@@ -536,7 +536,7 @@ Triggers when a job in your account or task is created, finishes, or fails.
 >* If working with the Array Aggregator (e.g. you have many files in different formats to convert), use the **[!UICONTROL I don't know the input format]** option in the [!UICONTROL Add a task] dialog. Otherwise the error is returned.
 >* Linking tasks within the job (name > input, name > input,...):
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  ![](assets/linking-name-across-jobs-350x808.png)>
 
 ### Tasks 
 
@@ -740,13 +740,13 @@ URL: `/v2/tasks`
 
 Method: `GET` 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![](assets/cloudconvert-api-example-input.png)
 
 Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data].
 
 In our example, 6 tasks were returned:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![](assets/cloudconvert-api-example-output.png)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -812,6 +812,6 @@ See the following table for possible errors and their solutions:
 >1. Open the module's settings.
 >1. Configure the module as shown below:
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![](assets/cloudconvert-mp4-example.png)
 >
 >1. Make sure to include all the settings in the Conversion and engine specific options field: for each setting from step 5, locate the corresponding parameter from step 13 and its corresponding value.

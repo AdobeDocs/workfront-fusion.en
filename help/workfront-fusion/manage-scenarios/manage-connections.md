@@ -70,14 +70,14 @@ You can manage all connections from the Connections area.
 >
 >To select a new team, click the dropdown arrow next to the team name near the top of the page. Select a new team from the list.
 
-1. To open the Connections area, click Connections ![Connections icon](/help/workfront-fusion/references/apps-and-modules/assets/connections-icon.png) in the left navigation.
+1. To open the Connections area, click Connections ![Connections icon](assets/connections-icon.png) in the left navigation.
 1. (Optional) To specify the environment or type, clicking the Environment and Type dropdowns and selecting an option.
 
    >[!NOTE]
    >
    >Environment and Type are only for your own convenience in identifying connections. They do not have any affect on the functionality of the connection.
 
-1. (Optional) To view which permissions were given to Workfront Fusion for a connection, click the View icon ![View connection permissions](/help/workfront-fusion/references/apps-and-modules/assets/view-connection-permissions.png) for that connection.
+1. (Optional) To view which permissions were given to Workfront Fusion for a connection, click the View icon ![View connection permissions](assets/view-connection-permissions.png) for that connection.
 1. (Optional) To rename or edit the name of a connection, click on the name and make the change.
 1. (Optional) To reauthorize a connection, click **Reauthorize** in the row for that connection.
 1. (Optional) To verify that the connection to the service was is working, click **Verify** in the row for that connection.
@@ -89,5 +89,5 @@ Workfront Fusion usually obtains access rights to a given service for an unlimit
 
 To renew a connection:
 
-1. To open the Connections area, click Connections ![Connections icon](/help/workfront-fusion/references/apps-and-modules/assets/connections-icon.png) in the left navigation.
+1. To open the Connections area, click Connections ![Connections icon](assets/connections-icon.png) in the left navigation.
 1. (Optional) To reauthorize a connection, click **Reauthorize** in the row for that connection.

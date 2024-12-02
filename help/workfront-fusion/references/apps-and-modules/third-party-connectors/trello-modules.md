@@ -1211,7 +1211,7 @@ This action module adds a comment to a selected card.
 
 If you want to edit a card or create a new comment, you need to know the ID of the card or its shortlink. You can get this information from the output of the [!UICONTROL New Card] trigger. The shortlink for a card can also be obtained by opening the card and clicking on the [!UICONTROL Share] button. The shortlink can be found in the [!UICONTROL Link to this card] box, at the end of the URL after `https://trello.com/c/`.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![](assets/share-and-more-350x575.png)
 
 ### How to find IDs of other objects in [!DNL Trello] 
 

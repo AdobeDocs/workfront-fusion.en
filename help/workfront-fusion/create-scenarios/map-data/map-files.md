@@ -76,7 +76,7 @@ You can also enter this name and data manually, or map it from previous modules.
 >
 >If you need to process a file from a URL, we recommend using the `HTTP > Get a File` module to download the file from the URL, and then mapping the file from the `HTTP > Get a File` module to the desired module's field in your scenario.
 >
->![Map file](/help/workfront-fusion/references/apps-and-modules/assets/map-source-file.png)
+>![Map file](assets/map-source-file.png)
 
 To map a file:
 
@@ -86,11 +86,11 @@ To map a file:
 1. In the target module, which is the target you are mapping to, locate the **Source file** area.
 1. To map a file output by a previous module, select the module that output the file.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/wf-download-document.png)
+   ![](assets/wf-download-document.png)
 
 1. To map the name and data manually, select Map, then enter or map the file's name and data.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/use-the-map-option.png)
+   ![](assets/use-the-map-option.png)
 
 1. Continue configuring the module, or click **OK**.
 

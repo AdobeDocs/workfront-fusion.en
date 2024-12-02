@@ -180,7 +180,7 @@ file.
 #### Configure the client app as a consumer in [!DNL Jira] 
 
 1. Log in to your [!DNL Jira] instance.
-1. In the left navigation panel, click **[!UICONTROL [!DNL Jira] Settings]** ![](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]**.
+1. In the left navigation panel, click **[!UICONTROL [!DNL Jira] Settings]** ![](assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]**.
 1. In the **[!UICONTROL Enter the URL of the application you want to link]** field, enter
 
    ```

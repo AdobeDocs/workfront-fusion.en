@@ -71,7 +71,7 @@ Adding a Router to an error handling route allows you to configure different rou
 
 For example, to configure one route to execute when the error is a DataError, you can set up a filter that allows the data to pass through if the mapped error type is equal to DataError.
 
-![DataError filter](/help/workfront-fusion/references/apps-and-modules/assets/filter-dataerror.png)
+![DataError filter](assets/filter-dataerror.png)
 
 For information on how Fusion evaluates and processes various data types, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
@@ -83,11 +83,11 @@ This example scenario shows how these filters work for error handling.
 
 If you use the Dropbox > Create a folder module, and a folder with the same name already exists, the module throws a DataError:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/dropbox.png)
+![](assets/dropbox.png)
 
 The complete scenario functions as follows:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/dropbox-scenario.png)
+![](assets/dropbox-scenario.png)
 
 1. The Tools > Set Variable module contains the folder name
 1. The HTTP > Get a file module fetches the file that needs to be uploaded to the folder
@@ -105,19 +105,19 @@ Below is a detailed explanation of the DataError route.
 
 To use the existing folder in your subsequent modules, such as Upload a file, you must add an error handler route to the module and fetch the folder path to be mapped into the Resume directive module that follows:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/add-error-handler-route.png)
+![](assets/add-error-handler-route.png)
 
 The filter on the first route is set to only handle the particular error (DataError) that appears when a folder with the same name already exists:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/condition.png)
+![](assets/condition.png)
 
 The Dropbox > List all files in a folder module is configured to return all the folders in the target folder. The following filter only passes on the one we were originally trying to create. (The folder name is stored in the 33. Folder Name item.)
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/condition2.png)
+![](assets/condition2.png)
 
 The Resume directive then supplies the Folder path as the output for the failed module. Note that the Folder ID has been left blank since it is not needed by the Upload a file module.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control.png)
+![](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -131,7 +131,7 @@ Example:
 
 A nested error handler route with filters:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/nested-error-handling-route.png)
+![](assets/nested-error-handling-route.png)
 
 In this scenario, the second error handler route is nested under the first error handler route. 
 

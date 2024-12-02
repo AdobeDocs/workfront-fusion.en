@@ -60,7 +60,7 @@ If an error occurs during the operation or commit phase on any module, the phase
 >
 >All [!DNL Workfront Fusion] modules that support rollback (also known as transactionality) are marked with the ACID tag.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/acid-modules.png)
+>![](assets/acid-modules.png)
 >
 >Modules not marked with this tag cannot be reverted back to their initial state when errors occur in other modules. A typical example of a non-ACID module is the [!UICONTROL Email] >[!UICONTROL Send an Email] action. After the email is sent you cannot undo the sending.
 

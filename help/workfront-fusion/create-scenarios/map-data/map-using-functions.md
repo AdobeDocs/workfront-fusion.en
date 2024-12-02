@@ -98,7 +98,7 @@ To insert a function into a field:
 
    In this example, the substring function limits project name to 50 characters.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/example-meet-length-restriction-350x184.png)
+   ![](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -112,7 +112,7 @@ You can nest functions within each other.
 
    In this example, the substring function limits the trimmed project name to 50 characters.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/trimmed-name-under-50.png)
+   ![](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -143,9 +143,9 @@ If [!DNL Workfront Fusion] does not feature a function you want to use, but it i
 
       You can use the output of preceding modules as usual.
 
-      ![](/help/workfront-fusion/references/apps-and-modules/assets/exploit-google-sheet-functions-350x218.png)
+      ![](assets/exploit-google-sheet-functions-350x218.png)
 
 1. Insert the **[!UICONTROL Google Sheets] >[!UICONTROL Get a cell]** module to obtain the calculated result.
 1. Configure the module, using the same Cell ID that you used in step 4.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/exploit-google-sheet-functions-2-350x187.png)
+   ![](assets/exploit-google-sheet-functions-2-350x187.png)

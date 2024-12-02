@@ -116,7 +116,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    The name appears just below the module. Below that, [!DNL Workfront Fusion] includes a brief description of the type of action performed by the module.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/module-renamed-wf.png)
+   ![](assets/module-renamed-wf.png)
 
 1. Continue with [Add and configure the second module](#add-and-configure-the-second-module).
 
@@ -131,7 +131,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    The toggle turns blue when it is enabled. This allows you to map the task ID from the previous module.
 
-   ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle.png)
+   ![Map toggle](assets/map-toggle.png)
 1. Click the **[!UICONTROL Task ID]** field.  
 
    A panel opens that allows you to select what to use as the ID of the task you want to convert to a project. Because you enabled mapping, the panel includes output from any previous modules. You selected ID as an output of the previous module, so it is now available in the panel.
@@ -141,7 +141,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    An ID block appears in the ID field. It shows the number of the module it is mapped from, and the field that is mapped.
 
-   ![Map ID](/help/workfront-fusion/references/apps-and-modules/assets/map-id.png)
+   ![Map ID](assets/map-id.png)
 
 1. Click the **Template ID** field, begin typing the name of the Workfront template you want to use for this project, then select it when it appears in the list.
 1. Click **[!UICONTROL OK]** to save the module configuration.
@@ -183,9 +183,9 @@ For this scenario, a successful test would result in locating the new task and c
 >
 >1. Close the **[!UICONTROL Notes]** area.
 >
->     After you add a note to a scenario, an orange dot displays on the **[!UICONTROL Notes]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
+>     After you add a note to a scenario, an orange dot displays on the **[!UICONTROL Notes]** icon ![](assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
 >
->1. Click the **[!UICONTROL Notes]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/notes-icon-w-dot.png) to view your notes.
+>1. Click the **[!UICONTROL Notes]** icon ![](assets/notes-icon-w-dot.png) to view your notes.
 >
 
 ## Activate the scenario

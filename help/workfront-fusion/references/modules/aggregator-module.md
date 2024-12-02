@@ -68,7 +68,7 @@ When an [!UICONTROL Aggregator] module executes, it does the following:
 
 The following image shows a typical setup of the [!UICONTROL Aggregator] module :
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/array-aggregator.png)
+![](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ The following image shows a typical setup of the [!UICONTROL Aggregator] module 
 
 This example scenario shows how to zip all email attachments and uploading the ZIP to [!DNL Dropbox].
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/dropbox-archive.png)
+![](assets/dropbox-archive.png)
 
 The scenario below shows how to:
 
@@ -129,4 +129,4 @@ The scenario below shows how to:
 
 Below is a sample setup of the [!UICONTROL Archive] > [!UICONTROL Create an archive] aggregator:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/archive-create-an-archive.png)
+![](assets/archive-create-an-archive.png)

@@ -70,19 +70,19 @@ You must add a Router module before configuring routes.
 1. In the scenario editor, Click on the right handle of the module after which you want to add the router.
 1. Select **[!UICONTROL Flow Control]** > **Router** in the list of modules that displays.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/connect-the-router-350x108.png)
+   ![](assets/connect-the-router-350x108.png)
 
     Or
  
    To insert the Router module between two modules, click on the wrench icon below the route connecting the two modules and select **[!UICONTROL Add a router]** from the menu.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/insert-router-350x191.png)
+   ![](assets/insert-router-350x191.png)
 1. Add the first route to the router by clicking on the right handle of the router and adding a module, similar to adding any module. 
 1. To add another route, click the router module. A route appears. Add modules to this route as desired.
 
    You can add as many routes as you want.
 
-1. To verify the order of the routes, click the Auto-align icon ![Auto-align icon](/help/workfront-fusion/references/apps-and-modules/assets/auto-align.png).
+1. To verify the order of the routes, click the Auto-align icon ![Auto-align icon](assets/auto-align.png).
 
    The routes are arranged in the order they execute. The top route executes first.
 
@@ -96,7 +96,7 @@ You can put a filter on a route after the Router module to filter bundles. Only 
 
 If data passes the filter of more than one route, the data is handled by both routes. The top route handles the data first.
 
-1. Click the wrench icon ![Wrench](/help/workfront-fusion/references/apps-and-modules/assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.
+1. Click the wrench icon ![Wrench](assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.
 1. Select **Set up a filter.**
 1. In the label field of the panel that displays, add a label. This label displays in the scenario. 
 1. Configure filter conditions.
@@ -113,18 +113,18 @@ The fallback route is the route that executes on any bundles that do not pass an
 
 You can enable a fallback route in the filter panel.
 
-1. Click the wrench icon ![Wrench](/help/workfront-fusion/references/apps-and-modules/assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.
+1. Click the wrench icon ![Wrench](assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.
 1. Select **Set up a filter.**
 1. In the label field of the panel that displays, add a label. This label displays in the scenario.
 1. Enable the fallback route checkbox.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/fallback-route-350x260.png)
+   ![](assets/fallback-route-350x260.png)
 
 1. Click **[!UICONTROL OK]** to save the filter setup.
 
 The Fallback route is marked with a different arrow in the Router module:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/arrow-sign-in-router-module-350x361.png)
+![](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Example: `if/else` use case
 
@@ -134,10 +134,10 @@ A typical use case of the fallback route is to continue the flow with one route 
 
 In this example, the first route is configured with a filter. This represents the `if` component. 
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-2-350x242.png)
+   ![](assets/set-up-a-filter-2-350x242.png)
 
 The second route is configured as a fallback route. This represents the `else` component.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/enable-fallback-route-option-350x238.png)
+   ![](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

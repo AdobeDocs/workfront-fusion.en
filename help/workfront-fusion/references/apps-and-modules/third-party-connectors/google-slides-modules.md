@@ -456,17 +456,17 @@ Performs an arbitrary authorized API call.
 >
 >**Example:** Using an API call you can get the presentation details for the presentation ID you have entered. You can find the presentation ID in the URL when you the open the presentation in [!DNL Google Slides].
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+>![](assets/api-call-350x13.png)
 >
 >The following API call returns the presentation details:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+>![](assets/presentation-details.png)
 >
 >Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId].
 >
 >In our example, the requested presentation details were returned:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+>![](assets/presentation-details-2.png)
 
 #### [!UICONTROL Insert Links in a Presentation]
 

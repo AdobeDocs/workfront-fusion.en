@@ -67,7 +67,7 @@ The following example shows a workflow that:
 1. Gets information about the object the field is attached to, including who the object is assigned to
 1. Sends a notification about the field change to the user the object is assigned to
 
-![Automation example](/help/workfront-fusion/references/apps-and-modules/assets/fusion-template-example.png)
+![Automation example](assets/fusion-template-example.png)
 
 ### Workfront Fusion for Work Automation and Integration 
 
@@ -102,4 +102,4 @@ The following example shows a workflow that:
 1. Creates the user in [!DNL Workfront] if the user did not exist
 1. Uploads the [!DNL Workfront] user ID back to the spreadsheet.
 
-![Example automation scenario](/help/workfront-fusion/references/apps-and-modules/assets/fusion-integration-example.png)
+![Example automation scenario](assets/fusion-integration-example.png)

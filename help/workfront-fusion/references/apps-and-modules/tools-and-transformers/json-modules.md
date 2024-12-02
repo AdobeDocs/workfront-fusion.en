@@ -85,7 +85,7 @@ If the JSON string field contains a collection `{ ... }`, The output is a single
 >}
 >```
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+>![](assets/json-collection.png)
 
 If the JSON string field contains an array `[ ... ]`, the output is a series of bundles. each bundle contains one element of the array.
 
@@ -107,7 +107,7 @@ If the JSON string field contains an array `[ ... ]`, the output is a series of 
 >]
 >```
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+>![](assets/json-array.png)
 
 ## [!UICONTROL JSON] modules and their fields
 

@@ -66,7 +66,7 @@ All messages from incoming webhooks are stored in the webhook's queue.
 1. Locate the Webhook for which you want to view the queue.
 1. Locate the number of events in the Events received button. 
 
-   ![Webhook queue](/help/workfront-fusion/references/apps-and-modules/assets/webhook-queue.png)
+   ![Webhook queue](assets/webhook-queue.png)
    
 1. Click the button to view details about events in the queue.
 

@@ -73,7 +73,7 @@ To create an if statement that returns a value only if two or more expressions a
 
 To combine `if` statements, use the `and` and `or` operators.
 
-![and operator](/help/workfront-fusion/references/apps-and-modules/assets/and-in-if-statement.png)
+![and operator](assets/and-in-if-statement.png)
 
 >[!BEGINSHADEBOX]
 

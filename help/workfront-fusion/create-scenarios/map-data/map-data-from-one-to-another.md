@@ -74,7 +74,7 @@ To assign output items to a module's input fields:
    Search results contain the search term and are not case sensitive.
 1. To select a value that is an element of a collection, click the arrow next to that collection, then select the element when it appears.
     
-    ![Collection element](/help/workfront-fusion/references/apps-and-modules/assets/collection-dropdown.png)
+    ![Collection element](assets/collection-dropdown.png)
 
 1. Click an item from the mapping panel to insert it into the field.
 
