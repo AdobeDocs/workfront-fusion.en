@@ -273,7 +273,7 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
-      <td> <p>Add <code>[!UICONTROL access_type]</code> - <code>[!UICONTROL offline] </code>key-value pair.</p> <p> <img src="assets/google-authentication-http.png"> </p> <p>Note: If you experience authentication issues, for example with token refreshing, try adding the <code>[!UICONTROL prompt] </code>- <code>[!UICONTROL consent] </code>key-value pair.</p> </td> 
+      <td> <p>Add <code>[!UICONTROL access_type]</code> - <code>[!UICONTROL offline] </code>key-value pair.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/google-authentication-http.png"> </p> <p>Note: If you experience authentication issues, for example with token refreshing, try adding the <code>[!UICONTROL prompt] </code>- <code>[!UICONTROL consent] </code>key-value pair.</p> </td> 
      </tr> 
     </tbody> 
    </table>

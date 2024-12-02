@@ -149,7 +149,7 @@ This action module creates a new board with the selected settings.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Enter or map the ID of the organization. The Organization ID can be retrieved by using another module, such as the Watch Activities module.</p> <p> <img src="assets/id-of-org.png"> </p> </td> 
+   <td> <p>Enter or map the ID of the organization. The Organization ID can be retrieved by using another module, such as the Watch Activities module.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/id-of-org.png"> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
@@ -226,7 +226,7 @@ This action module edits the settings of an existing board.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
-   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to create. You can retrieve the Board ID using another module, such as the Watch Boards module</p> <p> <img src="assets/watch-boards.png"> </p> </td> 
+   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to create. You can retrieve the Board ID using another module, such as the Watch Boards module</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New name]</td> 
@@ -238,7 +238,7 @@ This action module edits the settings of an existing board.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to edit. You can retrieve the Board ID using another module, such as the [!DNL Watch Activities] module.</p> <p> <img src="assets/org-id.png"> </p> </td> 
+   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to edit. You can retrieve the Board ID using another module, such as the [!DNL Watch Activities] module.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/org-id.png"> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
