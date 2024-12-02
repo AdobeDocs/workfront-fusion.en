@@ -91,6 +91,6 @@ If another module tries to access the same data, it has to wait until the previo
 
 Turn on Auto-commit. Auto-commit finishes (commits) every transaction immediately after the module execution is done.
 
-1. Click the [!UICONTROL Scenario settings] icon ![](assets/scenario-settings-icon.png)at the bottom of the screen.
+1. Click the [!UICONTROL Scenario settings] icon ![](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)at the bottom of the screen.
 1. Click the **[!UICONTROL Auto commit]** checkbox.
 1. Click **[!UICONTROL OK]** to save the scenario settings.

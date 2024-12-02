@@ -608,11 +608,11 @@ This action module allows you to perform a custom API call.
 
 [!UICONTROL GET]
 
-![](assets/api-call-example.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-example.png)
 
 Details of the retrieved document can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body].
 
-![](assets/api-output.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
 #### [!UICONTROL Make All Links in a Document Clickable] 
 

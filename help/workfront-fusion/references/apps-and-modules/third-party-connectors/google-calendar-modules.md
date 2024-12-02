@@ -828,7 +828,7 @@ You can trigger a scenario a specified time before an event with the help of sta
 
 1. Use the [!UICONTROL Google Calendar] >[!UICONTROL Update an event] module to add an email reminder to your event:
 
-   ![](assets/trigger-scen-before-event-350x209.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Create a new scenario starting with the [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] module.
 
@@ -846,11 +846,11 @@ You can trigger a scenario a specified time before an event with the help of sta
    1. Click the bubble above the module to inspect the module's output.
    1. Expand the `Text` item and copy the Confirmation code:
 
-      ![](assets/confirmation-code-350x252.png)
+      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. In Gmail, paste the Confirmation code in the edit box and click&#x200B;**[!UICONTROL Verify]**:
 
-      ![](assets/paste-code-350x46.png)
+      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Open the **[!UICONTROL Filters and Blocked Addresses]** tab.
    1. Click **[!UICONTROL Create a new filter]**.

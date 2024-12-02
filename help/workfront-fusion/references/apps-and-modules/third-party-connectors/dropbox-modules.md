@@ -743,15 +743,15 @@ To automatically modify the URL, you can use the `replace()` function twice:
 
 * Replace www with dl
 
-   ![](assets/www-to-dl-350x32.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
 
 * And to remove ?dl=0
 
-   ![](assets/remove-dl0-350x33.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 To do it in one step, combine these functions:
 
-![](assets/replace-both-350x47.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 You can also copy it and paste it into the field. Replace `1.url` with the URL.
 

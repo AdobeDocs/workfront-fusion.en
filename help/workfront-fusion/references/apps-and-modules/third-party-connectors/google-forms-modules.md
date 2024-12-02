@@ -84,7 +84,7 @@ In order to work with your form responses, the spreadsheet from your responses m
 
 1. Open your form.
 1. Go to the **[!UICONTROL Responses]** tab.
-1. Click the **[!UICONTROL Create Spreadsheet]** icon ![](assets/spreadsheet-icon.png).
+1. Click the **[!UICONTROL Create Spreadsheet]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Select whether you want to create a new spreadsheet or an existing spreadsheet
 1. Click **[!UICONTROL Create]**.

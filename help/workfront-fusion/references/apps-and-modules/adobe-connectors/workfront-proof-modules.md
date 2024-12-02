@@ -434,7 +434,7 @@ When you are configuring this module, the following fields display.
 >
 >**Example:**
 >
->![](assets/wfp-api-module-example-350x586.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/wfp-api-module-example-350x586.png)
 
 #### [!UICONTROL Download Proof]
 

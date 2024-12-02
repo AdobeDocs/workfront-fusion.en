@@ -1963,13 +1963,13 @@ Allows you to perform a custom API call.
 >
 >**Method**: `GET`
 >
->![](assets/hubspot-api-config.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-config.png)
 >
 >Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL contacts].
 >
 >In our example, 3 contacts were returned:
 >
->![](assets/hubspot-api-output.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/hubspot-api-output.png)
 
 +++
 

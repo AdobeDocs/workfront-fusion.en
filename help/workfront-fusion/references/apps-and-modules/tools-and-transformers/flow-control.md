@@ -60,13 +60,13 @@ For example, you could use a [!UICONTROL Repeater] module to send five emails wi
 
 To use a [!UICONTROL Repeater] module:
 
-1. Click the [!UICONTROL Flow Control] icon ![](assets/flow-control-icon.gif) at the bottom of the screen, then click **[!UICONTROL Repeater]** in the menu that displays.
+1. Click the [!UICONTROL Flow Control] icon ![](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) at the bottom of the screen, then click **[!UICONTROL Repeater]** in the menu that displays.
 1. Click the [!UICONTROL Repeater] bundle, then click **[!UICONTROL Connect automatically]** in the box that displays.
 1. In the [!UICONTROL Flow Control] box that appears, type the number of repetitions (outputted bundles) you want in the **[!UICONTROL Repeats]** box.
 
    In our email example, you would type 5.
 
-   ![](assets/repeater-2-350x207.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
    The value of the item increases in each repetition by this value specified in the **[!UICONTROL Step]** field, which you can view by selecting **[!UICONTROL Show advanced settings]**. This number is 1 by default.
 
@@ -77,7 +77,7 @@ To use a [!UICONTROL Repeater] module:
 
    In our email example, you would type Hello in the [!UICONTROL Subject] box, then map `i` from the repeater module.
 
-   ![](assets/repeater-3-350x207.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
 | Item | Description |
 |---|---|
