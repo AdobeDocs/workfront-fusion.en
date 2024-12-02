@@ -45,13 +45,12 @@ Fusion offers connectors for many of Adobe's products and services.
 * [Adobe Experience Manager Forms modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Creative Cloud Libraries modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Adobe Frame.io modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
-* [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/marketo-modules.md)
+<!--* [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/marketo-modules.md)-->
 * [Adobe PDF Services modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
 * [Adobe Workfront modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
 * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
 * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
-* [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
-
+<!--* [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)-->
 
 ## Connectors for third-party applications
 
@@ -62,7 +61,7 @@ Fusion offers connectors for many third-party applications.
 * [Anaplan modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/anaplan-modules.md)
 * [AWS S3 modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/aws-s3-modules.md)
 * [Azure Active Directory modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-ad-modules.md)
-* [Azure DevOps modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-dev-ops.md)
+<!--* [Azure DevOps modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-dev-ops.md)-->
 * [Box modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/box-modules.md)
 * [Bynder modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/bynder-modules.md)
 * [CloudConvert modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cloud-convert-modules.md)

@@ -171,7 +171,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe I/O Events modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
             * [Adobe Journey Optimizer modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
             * [Adobe Lightroom modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
-            * [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/marketo-modules.md)
+            <!--* [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/marketo-modules.md)-->
             * [Adobe PDF Services modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
             * [Adobe Photoshop modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
             * [Adobe Target modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
@@ -185,7 +185,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Anaplan modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/anaplan-modules.md)
             * [AWS S3 modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/aws-s3-modules.md)
             * [Azure Active Directory modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-ad-modules.md)
-            * [Azure DevOps modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-dev-ops.md)
+            <!--* [Azure DevOps modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/azure-dev-ops.md)-->
             * [Box modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/box-modules.md)
             * [Bynder modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/bynder-modules.md)
             * [CloudConvert modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/cloud-convert-modules.md)
