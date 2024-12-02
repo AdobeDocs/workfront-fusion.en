@@ -526,7 +526,7 @@ Fill in the [!UICONTROL Generate document] module fields as follows:
      <li> <p>[!UICONTROL Key]</p> <p>Enter a key. In the template, the key is the text shown in the value tag. For example, if you want to place text in the value tag <code>&#123;&#123;name&#125;&#125;</code>, enter <code>name </code>in the key field.</p> </li> 
      <li> <p>Value Type</p> <p>Select whether the data in the value field is a value, an object, or an array of objects.</p> </li> 
      <li> <p>[!UICONTROL Value]</p> <p>Enter or map the text that you want to appear in the generated document in place of the value tag.</p> </li> 
-    </ul> <p> <img src="assets/generate-with-template-350x241.png" style="width: 350;height: 241;"> </p> </td> 
+    </ul> <p> <img src="/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/generate-with-template-350x241.png" style="width: 350;height: 241;"> </p> </td> 
   </tr> 
  </tbody> 
 </table>

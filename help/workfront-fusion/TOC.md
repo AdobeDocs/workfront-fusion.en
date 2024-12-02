@@ -178,7 +178,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
             * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
             * [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
-        * Connectors for third-party applications (#third-party-app-connectors)
+        * Connectors for third-party applications {#third-party-app-connectors}
             * [Airtable modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
             * [Allocadia modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/allocadia-modules.md)
             * [Anaplan modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/anaplan-modules.md)
@@ -216,7 +216,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Microsoft SQL Server modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
             * [Microsoft Word Template modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
             * [NetSuite modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
-            * [OpenAI (ChatGPT & DALL-E) modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors)
+            * [OpenAI (ChatGPT & DALL-E) modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
             * [PowerBI modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/powerbi-modules.md)
             * [Qualtrics modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/qualtrics-modules.md)
             * [Quickbase modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/quickbase-modules.md)
@@ -229,7 +229,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Trello modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
             * [Widen modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
             * [Workday modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
-        * Tools and transformers (#tools and transformers)
+        * Tools and transformers {#tools and transformers}
             * [Archive modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
             * [CSV modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
             * [Data store modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
