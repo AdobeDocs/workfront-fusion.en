@@ -24,7 +24,6 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
         * [Scenario editor overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
         * [Scenario details overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario.details.md)
-        * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
 * Set up and manage Workfront Fusion {#set-up-and-manage-fusion}
     * [Set up and manage Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
     * Licensing and operations overviews {#licensing-and-operations-overviews}
