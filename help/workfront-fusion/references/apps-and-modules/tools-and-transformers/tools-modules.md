@@ -259,7 +259,7 @@ This function can be useful, for example, if you want to lower the [!DNL target]
 >
 ><!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]]().-->
 >
->For more information on specific data store modules, see [[!UICONTROL Data store] modules](/help/workfront-fusion/references/apps-and-modules/data-store-modules.md).
+>For more information on specific data store modules, see [[!UICONTROL Data store] modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md).
 
 ### Aggregators 
 

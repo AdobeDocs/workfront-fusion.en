@@ -719,7 +719,7 @@ Use the [!UICONTROL Search Rows (Advanced)] module & use this formula to get the
 
 ### Add a button in a sheet to run a scenario
 
-1. In [!DNL Workfront Fusion], insert the **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** module/trigger in the scenario and configure it (see [Webhooks](/help/workfront-fusion/references/apps-and-modules/webhooks-updated.md)).
+1. In [!DNL Workfront Fusion], insert the **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** module/trigger in the scenario and configure it (see [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)).
 
 1. Copy the webhook's URL.
 1. Execute the scenario.

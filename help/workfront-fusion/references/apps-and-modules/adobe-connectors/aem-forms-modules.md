@@ -192,7 +192,7 @@ This instant trigger (webhook) allows you to start a scenario when a Submit acti
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/references/apps-and-modules/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">Create a connection to [!DNL Adobe Experience Manager Forms]</a></p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">Create a connection to [!DNL Adobe Experience Manager Forms]</a></p> </td> 
   </tr> 
 
   The module creates a webhook and gives you the webhook address, which you can enter into the form submission dialog in [!DNL Adobe Experience Manager Forms].
