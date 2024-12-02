@@ -161,7 +161,7 @@ When you configure [!DNL PDF Services], [!DNL Workfront Fusion] displays the fie
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![]()
 
 * [[!UICONTROL Combine PDF files]](#combine-pdf-files) 
 * [[!UICONTROL Compress PDF files]](#compress-pdf-files) 
@@ -850,7 +850,7 @@ This action module a custom HTTP request to the PDF Services API.
    <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>For each field that you want to add to the API call, click <b>Add item</b> and enter the field's key and optional value.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
