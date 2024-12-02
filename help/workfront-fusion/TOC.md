@@ -69,6 +69,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * Connect to applications {#connect-to-applications}
         * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
         * [Manage connections](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
+        * [Connect to Workfront Fusion - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
         * [Connect Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
     * Configure error handling {#configure-error-handling}
         * [Configure error handling](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)

@@ -113,7 +113,7 @@ When you configure [!DNL SharePoint] modules, [!DNL Workfront Fusion] displays t
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![]()
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Drive item](#drive-item)
 * [Item](#item)
