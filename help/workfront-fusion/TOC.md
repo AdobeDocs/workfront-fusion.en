@@ -178,7 +178,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe Workfront modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
             * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
             * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
-            * [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
+            <!--* [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)-->
         * Connectors for third-party applications {#third-party-app-connectors}
             * [Airtable modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
             * [Allocadia modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/allocadia-modules.md)
