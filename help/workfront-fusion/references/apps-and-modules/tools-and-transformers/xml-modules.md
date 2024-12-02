@@ -70,7 +70,7 @@ The [!UICONTROL XML] > [!UICONTROL Parse XML] module parses an XML formatted tex
      <li value="4">Click <strong>[!UICONTROL Save]</strong>.</li> 
      <li value="5">Verify that the data structure has been successfully generated.</li> 
      <li value="6"> <p>Click the <strong>[!UICONTROL Save]</strong> button to save the data structure.</p> <p>You can skip the steps 2-5 to supply an empty data structure. If the data structure is empty, the output of the module is not available in the mapping panel until the module has been executed at least once.</p> </li> 
-    </ol> <p>For more information, see <a href="" class="MCXref xref">Data structures in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+    </ol> <p>For more information, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref">Data structures in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Preserve numbers as text]</td> 
@@ -78,7 +78,7 @@ The [!UICONTROL XML] > [!UICONTROL Parse XML] module parses an XML formatted tex
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL XML]</p> </td> 
-   <td> <p>Enter or map the XML formatted text you would like to parse.</p> <p>If you use a formula, make sure its result value type is (or can be automatically coerced to) the [!UICONTROL Text] data type. </p> <p> <img src="assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>If the result value type is [!UICONTROL Buffer] (binary data) then use the <code>toString()</code> function to convert it to the Text data type. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a> and <a href="" class="MCXref xref">Item data types in [!UICONTROL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Enter or map the XML formatted text you would like to parse.</p> <p>If you use a formula, make sure its result value type is (or can be automatically coerced to) the [!UICONTROL Text] data type. </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>If the result value type is [!UICONTROL Buffer] (binary data) then use the <code>toString()</code> function to convert it to the Text data type. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a> and <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item data types in [!UICONTROL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -93,7 +93,7 @@ The [!UICONTROL XML] > [!UICONTROL Parse XML] module parses an XML formatted tex
 >
 >   **URL**: URL of the XML file (e.g. `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](assets/url-of-xml-file-350x184.png)
+>   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Click **[!UICONTROL OK]**&#x200B;to save and close the module's configuration.
 >1. Add [!UICONTROL XML] > [!UICONTROL Parse XML] module, connect it after the [!UICONTROL HTTP] > [!UICONTROL Get a file] module and configure it as follows:
@@ -120,7 +120,7 @@ The [!UICONTROL XML] > [!UICONTROL Parse XML] module parses an XML formatted tex
 >     </tr> 
 >     <tr> 
 >      <td role="rowheader">[!UICONTROL XML]</td> 
->      <td> <p>Map the <code>Data </code>item from the output of the [!UICONTROL HTTP] &gt; [!UICONTROL Get a file] module into the field. Use the <code>toString()</code> function to convert its value from the [!UICONTROL Buffer] (binary data) type to [!UICONTROL Text] data type.</p> <p>You may copy and paste the formula's code into the field: <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>For more information the Buffer and Text data types, see <a href="" class="MCXref xref">Item data types in Adobe Workfront Fusion</a>.</p> <p> <img src="assets/paste-formula-code-350x99.png" style="width: 350;height: 99;"> </p> </td> 
+>      <td> <p>Map the <code>Data </code>item from the output of the [!UICONTROL HTTP] &gt; [!UICONTROL Get a file] module into the field. Use the <code>toString()</code> function to convert its value from the [!UICONTROL Buffer] (binary data) type to [!UICONTROL Text] data type.</p> <p>You may copy and paste the formula's code into the field: <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>For more information the Buffer and Text data types, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item data types in Adobe Workfront Fusion</a>.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png" style="width: 350;height: 99;"> </p> </td> 
 >     </tr> 
 >    </tbody> 
 >   </table>
@@ -141,7 +141,7 @@ By default, the [!UICONTROL XML] > [!UICONTROL Parse XML] module puts attributes
 
 is converted into this bundle:
 
-![](assets/xml-converted-to-bundle.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## Create XML
 
@@ -196,7 +196,7 @@ The [!UICONTROL XML] > [!UICONTROL Create XML] module converts a bundle to an XM
 >
 >1. Click the **[!UICONTROL Generator]** button and paste your XML sample to the [!UICONTROL Sample data] field:
 >
->   ![](assets/sample-data-field-350x146.png)
+>   ![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 >1. Click **[!UICONTROL Save]**. The Specification field in the Data structure now contains the generated structure.
 >1. Change the name of your Data structure to something more specific and click **[!UICONTROL Save]**. A field corresponding to the root array attribute appears as a mappable field in the JSON module's setup.

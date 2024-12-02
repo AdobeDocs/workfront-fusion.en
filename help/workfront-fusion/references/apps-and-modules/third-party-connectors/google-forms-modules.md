@@ -84,7 +84,7 @@ In order to work with your form responses, the spreadsheet from your responses m
 
 1. Open your form.
 1. Go to the **[!UICONTROL Responses]** tab.
-1. Click the **[!UICONTROL Create Spreadsheet]** icon ![](assets/spreadsheet-icon.png).
+1. Click the **[!UICONTROL Create Spreadsheet]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png).
 
 1. Select whether you want to create a new spreadsheet or an existing spreadsheet
 1. Click **[!UICONTROL Create]**.
@@ -95,7 +95,7 @@ When you configure [!DNL Google Forms] modules, [!DNL Workfront Fusion] displays
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Triggers](#triggers)
 * [Actions](#actions)

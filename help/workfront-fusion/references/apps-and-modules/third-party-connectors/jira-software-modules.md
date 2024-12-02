@@ -180,7 +180,7 @@ file.
 #### Configure the client app as a consumer in [!DNL Jira] 
 
 1. Log in to your [!DNL Jira] instance.
-1. In the left navigation panel, click **[!UICONTROL [!DNL Jira] Settings]** ![](assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]**.
+1. In the left navigation panel, click **[!UICONTROL [!DNL Jira] Settings]** ![](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **[!UICONTROL Applications]**> **[!UICONTROL Application links]**.
 1. In the **[!UICONTROL Enter the URL of the application you want to link]** field, enter
 
    ```
@@ -270,7 +270,7 @@ When you configure [!DNL Jira Software] modules, [!DNL Workfront Fusion] display
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Triggers](#triggers)
 * [Actions](#actions)
@@ -404,7 +404,7 @@ When you are configuring this module, the following fields display.
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
-     <img src="assets/quotes-in-json-350x120.png">  </td> 
+     <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
 </table>

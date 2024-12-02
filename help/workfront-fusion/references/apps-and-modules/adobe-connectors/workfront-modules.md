@@ -143,7 +143,7 @@ When you configure [!DNL Workfront] modules, [!DNL Workfront Fusion] displays th
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
@@ -512,7 +512,7 @@ When you are configuring this module, the following fields display.
    <td role="rowheader">[!UICONTROL Body]</td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
@@ -2058,7 +2058,7 @@ The following operators are available in the Workfront > Watch events filter:
 >
 >Using the event filter, you can set up the webhook to trigger the scenario when an issue is assigned to Ana when the issue is created. Ana has the userID b378489d8f7cd3cee0539260720a84b7.
 >
->![](assets/event-filter-watch-events-350x277.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >If 100 issues are created in a day, but only two of them are assigned to Ana, the scenario would execute twice.
 >
@@ -2066,7 +2066,7 @@ The following operators are available in the Workfront > Watch events filter:
 >
 >To filter events so that only issues assigned to Ana are processed, you could create a filter after the [!UICONTROL Watch Events] module.
 >
->![](assets/watch-events-non-event-filter-350x206.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >If 100 issues are created in a day, but only two of them are assigned to Ana, the scenario would execute 100 times. 98 of the executions would stop at the filter, but the trigger module is still consuming data and performing operations in all of the executions.
 

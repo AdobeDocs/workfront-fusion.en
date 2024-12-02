@@ -116,20 +116,20 @@ For more information on aggregators, see [Aggregator module in [!DNL Adobe Workf
 
 
 <p>Let us assume you would like to export your Google contacts to a CSV file with two columns "Full Name" and "Email". The output bundle from the [!UICONTROL Google Contacts] >[!UICONTROL Get contacts from a group] module has the following structure. The email addresses are stored inside the <code>[!UICONTROL Emails[]]</code> item, which is an array of collections, each collection containing two items: <code>Label</code> and <code>Email</code>.</p>
-<p> <img src="assets/transforming-350x546.png" style="width: 350;height: 546;"> </p>
+<p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/transforming-350x546.png" style="width: 350;height: 546;"> </p>
 <p>If you employ the simple [!DNL Create CSV] module, you are offered a list of checkboxes corresponding to a bundle's top-level items. If you attempt to tick <code>Full name</code> and <code>Emails</code> items, the [!UICONTROL Create CSV] module produces the following output, which is probably not what you want:</p>
 <p>"emails","fullName"</p>
 <p>"[object Object]","Shon Winer"</p>
 <p>"[object Object]","Lizeth Fulmore"</p>
 <p>"[object Object]","Hilario Gullatt"</p>
 <p>"[object Object]","Abby Eisenbarth"</p>
-<p>Since the item <code>Full Name</code> is of simple type Text, it is exported just fine. But the item <code>Emails</code>, which is of a complex type Array of Collections, is exported as [object Object], which is how Collections and Arrays are transformed to text by default. For more information, see <a href="" class="MCXref xref">Item data types in Adobe Workfront Fusion</a>.</p>
+<p>Since the item <code>Full Name</code> is of simple type Text, it is exported just fine. But the item <code>Emails</code>, which is of a complex type Array of Collections, is exported as [object Object], which is how Collections and Arrays are transformed to text by default. For more information, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item data types in Adobe Workfront Fusion</a>.</p>
 <p>To export content of the <code>Email </code>item of the first collection of the <code>Emails[]</code> array instead, it is necessary to employ the [!UICONTROL Create CSV (advanced)] module. The module enables you to define individual columns of your CSV file and map items to them, including the nested ones.</p>
 <ol>
 <li value="1">Insert the module [!UICONTROL Create CSV (advanced)] in a scenario and open its configuration.</li>
 <li value="2">Click the <strong>[!UICONTROL Add]</strong> button next to the [!UICONTROL Data structure] field to create a new Data structure.</li>
-<li value="3"> <p>Write in a name for the Data structure and click the <strong>[!UICONTROL Add item]</strong> button to add the individual columns. If you want to export two columns: "Full Name" and "Email", the resulting Data structure would look like this:</p> <p> <img src="assets/google-contacts-350x524.png" style="width: 350;height: 524;"> </p> </li>
-<li value="4"> <p>Once you have successfully defined the Data structure, fields corresponding to each individual column should appear in the configuration of the [!UICONTROL Create CSV (advanced)] module so you can map the items. Take the first item from the <code>[!UICONTROL Emails[]]</code> array and map its item <code>Email </code>to the field/column Email:</p> <p> <img src="assets/create-csv-advanced-350x308.png" style="width: 350;height: 308;"> </p> </li>
+<li value="3"> <p>Write in a name for the Data structure and click the <strong>[!UICONTROL Add item]</strong> button to add the individual columns. If you want to export two columns: "Full Name" and "Email", the resulting Data structure would look like this:</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/google-contacts-350x524.png" style="width: 350;height: 524;"> </p> </li>
+<li value="4"> <p>Once you have successfully defined the Data structure, fields corresponding to each individual column should appear in the configuration of the [!UICONTROL Create CSV (advanced)] module so you can map the items. Take the first item from the <code>[!UICONTROL Emails[]]</code> array and map its item <code>Email </code>to the field/column Email:</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/create-csv-advanced-350x308.png" style="width: 350;height: 308;"> </p> </li>
 <li value="5"> <p>Execute the scenario. Since the item <code>Emails[1]: Email</code> mapped to column "Email" is of simple type Text, it exports correctly now:</p> <p>"Full Name","Email"</p> <p>"Shon Winer","Shon@Winer.com"</p> <p>"Lizeth Fulmore","Lizeth@Fulmore.com"</p> <p>"Hilario Gullatt","Hilario@Gullatt.com"</p> <p>"Abby Eisenbarth","Abby@Eisenbarth.com"</p> </li>
 </ol>
 </div>
@@ -165,7 +165,7 @@ The [!UICONTROL Parse CSV] transformer lets you parse CSV text from a received t
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>Enter or map the CSV file that you want to parse.<p>Note: <p>If your data comes in binary form (typically from a file), you must use the `toString()` function to convert the binary data to [!UICONTROL String]:</p><p><img src="assets/parse-csv-350x123.png" style="width: 350;height: 123;"></p></p></td> 
+   <td>Enter or map the CSV file that you want to parse.<p>Note: <p>If your data comes in binary form (typically from a file), you must use the `toString()` function to convert the binary data to [!UICONTROL String]:</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png" style="width: 350;height: 123;"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

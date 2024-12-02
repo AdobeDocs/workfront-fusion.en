@@ -69,7 +69,7 @@ When you configure the [!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate 
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-<img src="assets/map-toggle-350x74.png" style="width: 350;height: 74;">
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 

@@ -81,7 +81,7 @@ New users to [!DNL Adobe Sign] should pay close attention some of the constraint
 
 [!DNL Adobe Sign] agreements need a field to work with. There are some options for doing this but the easiest and most common is uploading a transient document and then mapping that document to your agreement.
 
-![](assets/adobe-sign-recommendations-350x168.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign] modules and their fields
 
@@ -89,7 +89,7 @@ When you configure [!DNL Adobe Acrobat Sign] modules, [!DNL Workfront Fusion] di
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Triggers](#triggers)
 * [Actions](#actions)
@@ -637,7 +637,7 @@ This module allows you to perform a custom API call.
    <td role="rowheader">[!UICONTROL Body]</td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
   <tr> 
@@ -940,11 +940,11 @@ Upload a transient document. A transient document is available for 7 days after 
 
 **Example:** In this workflow, the document to sign (previously downloaded from Workfront) is uploaded as a transient document.
 
-![](assets/sign-example-1-350x308.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 The [!UICONTROL Upload document] module gives the document an [!DNL Adobe Acrobat Sign] ID that can be referenced in later modules. When the agreement is created, the uploaded document's ID is included in the [!UICONTROL Files to send] field.
 
-![](assets/sign-example-2-350x356.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

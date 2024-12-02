@@ -163,7 +163,7 @@ When you configure [!DNL Google Sheets] modules, [!DNL Workfront Fusion] display
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -544,7 +544,7 @@ This action module allows you to perform a custom API call.
    <td role="rowheader">[!UICONTROL Body]</td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:   <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
@@ -719,13 +719,13 @@ Use the [!UICONTROL Search Rows (Advanced)] module & use this formula to get the
 
 ### Add a button in a sheet to run a scenario
 
-1. In [!DNL Workfront Fusion], insert the **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** module/trigger in the scenario and configure it (see [Webhooks](/help/workfront-fusion/references/apps-and-modules/webhooks-updated.md)).
+1. In [!DNL Workfront Fusion], insert the **[!UICONTROL Webhook]** > **[!UICONTROL Custom webhooks]** module/trigger in the scenario and configure it (see [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)).
 
 1. Copy the webhook's URL.
 1. Execute the scenario.
 1. In Google Sheets, choose **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**... from the main menu bar.
 
-1. In the [!UICONTROL Drawing] window, Click the **[!UICONTROL Text box]** icon ![](assets/text-box.png) near the top of the window.
+1. In the [!UICONTROL Drawing] window, Click the **[!UICONTROL Text box]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) near the top of the window.
 1. Design a button and click the **[!UICONTROL Save and Close]** button in the top-right corner:
 1. The button will be placed in your worksheet. Click the three vertical dots in the button's top-right corner:
 1. Choose **[!UICONTROL Assign script..].** from the menu.
@@ -749,7 +749,7 @@ Use the [!UICONTROL Search Rows (Advanced)] module & use this formula to get the
 
 If you store a Date value in a spreadsheet without any formatting, it will appear in the spreadsheet as text in ISO 8601 format. However, [!DNL Google Sheets] formulas or functions that work with dates that do not understand this text (Example: formula `=A1+10`) will display the following error:
 
-![](assets/mceclip6-350x87.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 To help allow [!DNL Google Sheets] to understand the date, format it with the [[!UICONTROL formatDate] (date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda) function. The correct format passed to the function as the second argument depends on the spreadsheet's locale settings.
 
@@ -763,7 +763,7 @@ To determine the correct format:
 
 **Example:** The use of `MM/DD/YYYY HH:mm:ss` format for the United States locale:
 
-![](assets/locale-time-350x83.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## Exploiting [!DNL Google Sheets] functions
 

@@ -73,7 +73,7 @@ When you configure [!UICONTROL Text parser] modules, [!DNL Adobe Workfront Fusio
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Transformers
 
@@ -245,4 +245,4 @@ Searches the entered text for a specified value or regular expression and replac
 
 Data scraping, sometimes called web scraping, data extraction, or web harvesting, is the process of collecting data from websites and storing it in your local database or spreadsheets. If you want to scrape data from a website and you are not familiar with regular expressions, you may use a data scraping tool.
 
-If the data scraping tool provides a REST API, you can connect to it via our universal [[!UICONTROL HTTP] modules](/help/workfront-fusion/references/apps-and-modules/http-modules/http-modules-1.md) and [Webhooks](/help/workfront-fusion/references/apps-and-modules/webhooks-updated.md) modules.
+If the data scraping tool provides a REST API, you can connect to it via our universal [[!UICONTROL HTTP] modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) and [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) modules.

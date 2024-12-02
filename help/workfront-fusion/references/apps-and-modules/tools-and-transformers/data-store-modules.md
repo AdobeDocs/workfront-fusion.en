@@ -15,7 +15,7 @@ An [!DNL Adobe Workfront Fusion] data store, similar to a database or a simple t
 
 The data store modules enable you to add, replace, update, retrieve, delete, search, or count records in your [!DNL Adobe Workfront Fusion] data store.
 
-For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/)
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 For a video introduction to data stores in Workfront Fusion, see:
 
@@ -72,7 +72,7 @@ When you configure Data Store modules, [!DNL Workfront Fusion] displays the fiel
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 All [!UICONTROL Data Store] modules are Action type modules.
 

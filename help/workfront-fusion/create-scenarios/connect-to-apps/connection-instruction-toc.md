@@ -158,7 +158,7 @@ The following apps do not follow the basic configuration for [!DNL Workfront Fus
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Marketo]</p> </td> 
-   <td><a href="../../workfront-fusion/apps-and-their-modules/marketo-modules.md#connect" class="MCXref xref">Connect [!DNL Marketo] to [!DNL Workfront Fusion]</a> in <a href="../../workfront-fusion/apps-and-their-modules/marketo-modules.md" class="MCXref xref">[!DNL Marketo] modules</a></td> 
+   <td><a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/marketo-modules.md#connect" class="MCXref xref">Connect [!DNL Marketo] to [!DNL Workfront Fusion]</a> in <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/marketo-modules.md" class="MCXref xref">[!DNL Marketo] modules</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!DNL MS Dynamics]</p> </td> 

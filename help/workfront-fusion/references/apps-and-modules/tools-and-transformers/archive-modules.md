@@ -21,7 +21,7 @@ When you configure [!UICONTROL Archive] modules, [!DNL Workfront Fusion] display
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [[!UICONTROL Extract an archive]](#extract-an-archive)
 * [[!UICONTROL Create an archive]](#create-an-archive)
@@ -49,7 +49,7 @@ The module returns the ID of the  file and any associated fields, along with any
 >
 >**Example:** Get the ZIP file from the defined [!DNL Dropbox] folder (for example, Archives), extract it using the [!UICONTROL Archive] module and send extracted files to the desired email address as attachments with the [!UICONTROL Email] or [!DNL Gmail] module.
 >
->![](assets/example-dropbox-350x134.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 ## [!UICONTROL Create an archive] 
 
@@ -96,7 +96,7 @@ When you are configuring this module, the following fields display.
 >
 >**Example:** Watch incoming emails using the [!DNL Gmail] >[!UICONTROL Watch emails] module. If an email is received, its attachments are iterated into individual bundles then archived to the [!DNL ZIP] file and saved to the defined Dropbox folder.
 >
->![](assets/example-gmail-350x102.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 ## [!UICONTROL Inflate] 
 

@@ -90,7 +90,7 @@ When you configure [!DNL Google Calendar] modules, [!DNL Workfront Fusion] displ
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Events](#events)
 * [Calendars](#calendars)
@@ -785,7 +785,7 @@ This module allows you to perform a custom API call.
    <td role="rowheader">[!UICONTROL Body]</td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:   <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
@@ -828,7 +828,7 @@ You can trigger a scenario a specified time before an event with the help of sta
 
 1. Use the [!UICONTROL Google Calendar] >[!UICONTROL Update an event] module to add an email reminder to your event:
 
-   ![](assets/trigger-scen-before-event-350x209.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/trigger-scen-before-event-350x209.png)
 
 1. Create a new scenario starting with the [!UICONTROL Webhooks] >[!UICONTROL Custom mailhook] module.
 
@@ -846,11 +846,11 @@ You can trigger a scenario a specified time before an event with the help of sta
    1. Click the bubble above the module to inspect the module's output.
    1. Expand the `Text` item and copy the Confirmation code:
 
-      ![](assets/confirmation-code-350x252.png)
+      ![](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
    1. In Gmail, paste the Confirmation code in the edit box and click&#x200B;**[!UICONTROL Verify]**:
 
-      ![](assets/paste-code-350x46.png)
+      ![](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Open the **[!UICONTROL Filters and Blocked Addresses]** tab.
    1. Click **[!UICONTROL Create a new filter]**.

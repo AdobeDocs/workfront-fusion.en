@@ -85,7 +85,7 @@ If the JSON string field contains a collection `{ ... }`, The output is a single
 >}
 >```
 >
->![](assets/json-collection.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 If the JSON string field contains an array `[ ... ]`, the output is a series of bundles. each bundle contains one element of the array.
 
@@ -107,7 +107,7 @@ If the JSON string field contains an array `[ ... ]`, the output is a series of 
 >]
 >```
 >
->![](assets/json-array.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 ## [!UICONTROL JSON] modules and their fields
 
@@ -115,7 +115,7 @@ When you configure [!DNL JSON] modules, [!DNL Workfront Fusion] displays the fie
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Convert JSON to XML](#convert-json-to-xml) 
 * [Parse JSON](#parse-json) 
@@ -292,4 +292,4 @@ When using conditional statements such as `if` in your JSON, put the quotation m
 >
 >**Example:**  
 >
->![](assets/quotes-in-json-350x120.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)

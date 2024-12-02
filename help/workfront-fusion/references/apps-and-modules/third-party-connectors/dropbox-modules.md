@@ -141,7 +141,7 @@ When you configure [!DNL Dropbox] modules, [!DNL Workfront Fusion] displays the 
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Trigger modules](#trigger-modules)
 * [Modules for getting [!DNL Dropbox] files and folders](#modules-for-getting-dropbox-files-and-folders)
@@ -680,7 +680,7 @@ When you are configuring this module, the following fields display.
    <td>[!UICONTROL Body] </td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:   <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
@@ -743,15 +743,15 @@ To automatically modify the URL, you can use the `replace()` function twice:
 
 * Replace www with dl
 
-   ![](assets/www-to-dl-350x32.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
 
 * And to remove ?dl=0
 
-   ![](assets/remove-dl0-350x33.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 To do it in one step, combine these functions:
 
-![](assets/replace-both-350x47.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 You can also copy it and paste it into the field. Replace `1.url` with the URL.
 

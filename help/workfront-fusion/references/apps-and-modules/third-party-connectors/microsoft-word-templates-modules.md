@@ -80,11 +80,11 @@ You can use a [!DNL Microsoft Word Template] module to merge data from multiple 
 
 For example, you could use this [!DNL Microsoft Word] template:
 
-![](assets/word-template-before-filled-350x62.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 To create this document:
 
-![](assets/word-template-exampled-filled-350x85.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## About value tags
 
@@ -106,7 +106,7 @@ A simple value tag is simply replaced with a corresponding value. The tag's name
 
 To do this, you would set up the module as follows:
 
-![](assets/word-template-simple-value-350x286.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Condition tag {#condition-tag}
 
@@ -121,7 +121,7 @@ You can use a condition tag to wrap text that should be rendered only when certa
 
 To do this, you would set up the module as follows:
 
-![](assets/word-template-conditional-350x501.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 In the document, the phone number would appear as follows:
 
@@ -149,7 +149,7 @@ You can use a loop tag, also known as a section tag, to repeat a section of text
 To do this, you would set up the module as follows:
 
 
-![](assets/word-template-fill-out-a-document-350x732.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 The module would create the following document:
 
@@ -166,19 +166,19 @@ The module would create the following document:
 
 The first module loads the template. The next module retrieves all contacts from the group you specify in [!DNL Google Contacts]. The aggregator module aggregates all values retrieved from Google Contacts and merges them into the template. And the last module saves the filled template to the desired location.
 
-![](assets/word-template-batch-scenario-350x124.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-scenario-350x124.png)
 
 You could use this scenario with the following template:
 
-![](assets/word-template-batch-template-350x26.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-template-350x26.png)
 
 To do this, you would set up the module as follows:
 
-![](assets/word-template-batch-module-setup-350x323.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-module-setup-350x323.png)
 
 The module would create the following document:
 
-![](assets/word-template-batch-document-350x46.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-batch-document-350x46.png)
 -->
 
 ## [!DNL Microsoft Word Template] modules

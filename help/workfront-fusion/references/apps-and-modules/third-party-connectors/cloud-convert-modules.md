@@ -85,7 +85,7 @@ When you configure [!DNL CloudConvert] modules, [!DNL Workfront Fusion] displays
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Common tasks](#common-tasks) 
 * [Jobs](#jobs) 
@@ -536,7 +536,7 @@ Triggers when a job in your account or task is created, finishes, or fails.
 >* If working with the Array Aggregator (e.g. you have many files in different formats to convert), use the **[!UICONTROL I don't know the input format]** option in the [!UICONTROL Add a task] dialog. Otherwise the error is returned.
 >* Linking tasks within the job (name > input, name > input,...):
 >
->  ![](assets/linking-name-across-jobs-350x808.png)>
+>  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### Tasks 
 
@@ -727,7 +727,7 @@ Allows you to perform a custom API call.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.<img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -740,13 +740,13 @@ URL: `/v2/tasks`
 
 Method: `GET` 
 
-![](assets/cloudconvert-api-example-input.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data].
 
 In our example, 6 tasks were returned:
 
-![](assets/cloudconvert-api-example-output.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -776,7 +776,7 @@ See the following table for possible errors and their solutions:
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL RuntimeError:] </p> <p><span style="font-weight: normal;">[!UICONTROL Maximum number of repeats exceeded.]</span> </p> </td> 
-   <td> <p>Locate the corresponding [!DNL CloudConvert] job in your [!DNL CloudConvert] dashboard's list of jobs and check the job's duration:</p> <p> <img src="assets/cloudconvert-duration-350x177.png" style="width: 350;height: 177;"> </p> <p>The [!DNL CloudConvert] &gt; [!UICONTROL Convert a File] module's timeout is set to 3 minutes. If the job's duration exceeds 3 minutes (possibly due to a temporary overload of the [!DNL CloudConvert] service), the module throws the above mentioned error.</p> <p>In this case consider one of these options:</p> 
+   <td> <p>Locate the corresponding [!DNL CloudConvert] job in your [!DNL CloudConvert] dashboard's list of jobs and check the job's duration:</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-duration-350x177.png" style="width: 350;height: 177;"> </p> <p>The [!DNL CloudConvert] &gt; [!UICONTROL Convert a File] module's timeout is set to 3 minutes. If the job's duration exceeds 3 minutes (possibly due to a temporary overload of the [!DNL CloudConvert] service), the module throws the above mentioned error.</p> <p>In this case consider one of these options:</p> 
     <ul> 
      <li>Enable the <strong>[!UICONTROL Allow storing of Incomplete Executions]</strong> option in the scenario settings to store the incomplete executions for later manual resolution. Optionally you may attach an error handling route to the [!DNL CloudConvert] module with the [!UICONTROL Break] directive to resolve the incomplete executions automatically.</li> 
      <li>Disable the <strong>[!UICONTROL Download a file] option</strong> in the [!DNL CloudConvert] &gt; [!UICONTROL Convert a file] module. In this case the module will not wait for the conversion result. To obtain the conversion result, create a new scenario and use the [!DNL CloudConvert] &gt; [!UICONTROL New Job Event] trigger.</li> 
@@ -812,6 +812,6 @@ See the following table for possible errors and their solutions:
 >1. Open the module's settings.
 >1. Configure the module as shown below:
 >
->   ![](assets/cloudconvert-mp4-example.png)
+>   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. Make sure to include all the settings in the Conversion and engine specific options field: for each setting from step 5, locate the corresponding parameter from step 13 and its corresponding value.

@@ -94,7 +94,7 @@ When you configure [!UICONTROL Trello] modules, [!DNL Workfront Fusion] displays
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Boards](#boards)
 * [Lists](#lists)
@@ -149,7 +149,7 @@ This action module creates a new board with the selected settings.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Enter or map the ID of the organization. The Organization ID can be retrieved by using another module, such as the Watch Activities module.</p> <p> <img src="assets/id-of-org.png"> </p> </td> 
+   <td> <p>Enter or map the ID of the organization. The Organization ID can be retrieved by using another module, such as the Watch Activities module.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/id-of-org.png"> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
@@ -226,7 +226,7 @@ This action module edits the settings of an existing board.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Board ID]</p> </td> 
-   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to create. You can retrieve the Board ID using another module, such as the Watch Boards module</p> <p> <img src="assets/watch-boards.png"> </p> </td> 
+   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to create. You can retrieve the Board ID using another module, such as the Watch Boards module</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New name]</td> 
@@ -238,7 +238,7 @@ This action module edits the settings of an existing board.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to edit. You can retrieve the Board ID using another module, such as the [!DNL Watch Activities] module.</p> <p> <img src="assets/org-id.png"> </p> </td> 
+   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to edit. You can retrieve the Board ID using another module, such as the [!DNL Watch Activities] module.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/org-id.png"> </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
@@ -1211,7 +1211,7 @@ This action module adds a comment to a selected card.
 
 If you want to edit a card or create a new comment, you need to know the ID of the card or its shortlink. You can get this information from the output of the [!UICONTROL New Card] trigger. The shortlink for a card can also be obtained by opening the card and clicking on the [!UICONTROL Share] button. The shortlink can be found in the [!UICONTROL Link to this card] box, at the end of the URL after `https://trello.com/c/`.
 
-![](assets/share-and-more-350x575.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### How to find IDs of other objects in [!DNL Trello] 
 

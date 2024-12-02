@@ -60,7 +60,7 @@ You must have the following access to use the functionality in this article:
 
 >[!NOTE]
 >
->To call a third party webhook (an outgoing webhook) use one of the HTTP modules. For more information, see [HTTP modules](/help/workfront-fusion/references/apps-and-modules/http-modules/http-modules-1.md).
+>To call a third party webhook (an outgoing webhook) use one of the HTTP modules. For more information, see [HTTP modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
 To use a webhook to connect an app to [!DNL Workfront Fusion]:
 
@@ -114,7 +114,7 @@ Or you can follow the steps below to send the sample data via the [!UICONTROL HT
     </tbody> 
    </table>
 
-   ![](assets/new-scenario-set-up-like-this-350x446.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Open the scenario with the [!UICONTROL Webhooks] module in a separate browser tab or window.
 1. In the webhooks module, click **[!UICONTROL Redetermine data structure]**.
@@ -126,7 +126,7 @@ Or you can follow the steps below to send the sample data via the [!UICONTROL HT
 
    A "[!UICONTROL Successfully determined]" message means that the module has successfully determined the data structure.
 
-   ![](assets/successfully-determined-350x175.png)
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. Click **[!UICONTROL OK]** to save the data structure.
 
@@ -198,7 +198,7 @@ Workfront Fusion
 
 In order to receive files encoded with `multipart/form-data`, you must configure a data structure with a `collection` type field that contains the nested fields `name`, `mime`, and `data`. The field `name` is a `text` type and contains the name of the uploaded file. The `mime` is a `text` type and contains a file in MIME format. The field `data` is a `buffer` type and contains binary data for the file being transferred.
 
-For more information on MIME format, see [MIME modules](/help/workfront-fusion/references/apps-and-modules/mime.md).
+For more information on MIME format, see [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md).
 
 ### [!UICONTROL JSON]
 
@@ -235,7 +235,7 @@ You can extract a particular header value with the combination of `map()` and `g
 >
 >The example below shows a formula that extracts the value of the `authorization` header from the `Headers[]` array. The formula is used in a filter that compares the extracted value with the given text to pass only webhooks if there is a match.
 >
->![](assets/set-up-a-filter-350x169.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >For further information on obtaining an array's element with a given key, see [Map an array's element with a given key](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md#mapping) in the article [Map information from one module to another in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -270,7 +270,7 @@ The configuration of the module contains two fields: [!UICONTROL Status] and [!U
 
   >[!TIP]
   >
-  >We recommend setting the `Content-Type` header to the corresponding MIME type: `text/plain` for plain text, `text/html` for HTML, `application/json` for JSON, `application/xml` for XML, and so on. For more information on MIME types, see [MIME modules](/help/workfront-fusion/references/apps-and-modules/mime.md).
+  >We recommend setting the `Content-Type` header to the corresponding MIME type: `text/plain` for plain text, `text/html` for HTML, `application/json` for JSON, `application/xml` for XML, and so on. For more information on MIME types, see [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md).
 
 Timeout for sending a response is 40 seconds. If the response is not available within that period, Workfront Fusion returns a '200 Accepted' status.
 
@@ -305,11 +305,11 @@ Timeout for sending a response is 40 seconds. If the response is not available w
 > </tbody> 
 ></table>
 >
->![](assets/custom-headers-350x235.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >This will produce an HTML response that displays in a web browser:
 >
->![](assets/html-response-350x70.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### Redirect example 
 
@@ -336,7 +336,7 @@ Timeout for sending a response is 40 seconds. If the response is not available w
 > </tbody> 
 ></table>
 >
->![](assets/webhook-response-350x279.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Webhook deactivation
 
@@ -354,6 +354,6 @@ Deactivated webhooks are deleted and unregistered automatically if they are not 
 
 If some items are missing in the mapping panel in the setup of the modules following the [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] module, click on the **[!UICONTROL Webhooks] > [!UICONTROL Custom Webhook]** module to open its setup and click **[!UICONTROL Re-determine data structure]**:
 
-![](assets/redetermine-data-structure-btn-350x195.png)
+![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Then follow the steps described in the section [Configure the webhook's data structure](#configure-the-webhook-s-data-structure) in this article.

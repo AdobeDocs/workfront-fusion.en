@@ -161,7 +161,7 @@ When you configure [!DNL PDF Services], [!DNL Workfront Fusion] displays the fie
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [[!UICONTROL Combine PDF files]](#combine-pdf-files) 
 * [[!UICONTROL Compress PDF files]](#compress-pdf-files) 
@@ -195,7 +195,7 @@ This action module takes multiple PDF files and combines them into a single PDF 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Documents]</td> 
-   <td> <p>You can use an aggregator module to gather documents to combine into a PDF, or you can add the documents manually. </p> <p>We recommend using an [!UICONTROL Array Aggregator] module to aggregate output from a previous module. By using an aggregator, you do not need to know the names, locations, or numbers of files to combine. Using an aggregator is therefore much more flexible and scalable than manually entering the documents to be combined.</p> <p>To use the [!UICONTROL Combine PDF] files module with an aggregator, you must enable mapping on the [!UICONTROL Documents] field. </p> <p>In this example, the [!UICONTROL Read Related Records] module identifies documents associated with a project, and the [!UICONTROL Download Documents] module downloads each one. All of the PDFs are aggregated into an array, which is passed into the [!UICONTROL Combine PDF] files module.</p> <p> <img src="assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>You can also enter documents manually.</p> <p>For each document to include in the combined PDF:</p> 
+   <td> <p>You can use an aggregator module to gather documents to combine into a PDF, or you can add the documents manually. </p> <p>We recommend using an [!UICONTROL Array Aggregator] module to aggregate output from a previous module. By using an aggregator, you do not need to know the names, locations, or numbers of files to combine. Using an aggregator is therefore much more flexible and scalable than manually entering the documents to be combined.</p> <p>To use the [!UICONTROL Combine PDF] files module with an aggregator, you must enable mapping on the [!UICONTROL Documents] field. </p> <p>In this example, the [!UICONTROL Read Related Records] module identifies documents associated with a project, and the [!UICONTROL Download Documents] module downloads each one. All of the PDFs are aggregated into an array, which is passed into the [!UICONTROL Combine PDF] files module.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/combine-example-350x104.png" style="width: 350;height: 104;"> </p> <p>You can also enter documents manually.</p> <p>For each document to include in the combined PDF:</p> 
     <ol> 
      <li value="1"> <p>Click [!UICONTROL Add a Document]</p> </li> 
      <li value="2"> <p>In the [!UICONTROL Source file] field, select the module that outputs the document you want to include, or map the source file's name and data. </p> </li> 
@@ -526,7 +526,7 @@ Fill in the [!UICONTROL Generate document] module fields as follows:
      <li> <p>[!UICONTROL Key]</p> <p>Enter a key. In the template, the key is the text shown in the value tag. For example, if you want to place text in the value tag <code>&#123;&#123;name&#125;&#125;</code>, enter <code>name </code>in the key field.</p> </li> 
      <li> <p>Value Type</p> <p>Select whether the data in the value field is a value, an object, or an array of objects.</p> </li> 
      <li> <p>[!UICONTROL Value]</p> <p>Enter or map the text that you want to appear in the generated document in place of the value tag.</p> </li> 
-    </ul> <p> <img src="assets/generate-with-template-350x241.png" style="width: 350;height: 241;"> </p> </td> 
+    </ul> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/generate-with-template-350x241.png" style="width: 350;height: 241;"> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -850,7 +850,7 @@ This action module a custom HTTP request to the PDF Services API.
    <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>For each field that you want to add to the API call, click <b>Add item</b> and enter the field's key and optional value.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 

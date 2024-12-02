@@ -102,7 +102,7 @@ When you configure [!DNL DocuSign] modules, [!DNL Workfront Fusion] displays the
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Triggers](#triggers)
 * [Actions](#actions)
@@ -195,7 +195,7 @@ This action module allows you to perform a custom API call.
    <td>[!UICONTROL Body]</td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
   <tr> 
@@ -223,13 +223,13 @@ This action module allows you to perform a custom API call.
 >
 >Specifies when the request begins checking for status changes for envelopes in the account.
 >
->![](assets/example-docusign-setup-350x770.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 >
 >The result can be found in the module's Output under Bundle > Body > envelopes.
 >
 >In our example, 6 envelopes were returned:
 >
->![](assets/docusign-example-output-350x677.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 #### [!UICONTROL Download a document]
 

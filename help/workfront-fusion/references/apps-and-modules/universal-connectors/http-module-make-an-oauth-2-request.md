@@ -273,7 +273,7 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
-      <td> <p>Add <code>[!UICONTROL access_type]</code> - <code>[!UICONTROL offline] </code>key-value pair.</p> <p> <img src="assets/google-authentication-http.png"> </p> <p>Note: If you experience authentication issues, for example with token refreshing, try adding the <code>[!UICONTROL prompt] </code>- <code>[!UICONTROL consent] </code>key-value pair.</p> </td> 
+      <td> <p>Add <code>[!UICONTROL access_type]</code> - <code>[!UICONTROL offline] </code>key-value pair.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/google-authentication-http.png"> </p> <p>Note: If you experience authentication issues, for example with token refreshing, try adding the <code>[!UICONTROL prompt] </code>- <code>[!UICONTROL consent] </code>key-value pair.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -294,7 +294,7 @@ When you configure the [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request]
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 <!--
-<img src="assets/map-toggle-350x74.png" style="width: 350;height: 74;">
+<img src="" style="width: 350;height: 74;">
 -->
 
 <table style="table-layout:auto">  
