@@ -59,11 +59,6 @@ You need an existing Google account to make this connection.
 
 To create this connection, you must create and configure a project on Google Cloud platform, and then configure the connection in Fusion based on that project.
 
-* [Create a project on Google Cloud Platform](#create-a-project-on-google-cloud-platform)
-* [Configure OAuth consent settings](#configure-oauth-consent-settings) 
-* [Create OAuth Credentials](#create-oauth-credentials)
-* [Connect to Google in Workfront Fusion](#connect-to-google-in-workfront-fusion)
-
 >[!NOTE]
 >
 >This procedure is intended for:
@@ -71,31 +66,27 @@ To create this connection, you must create and configure a project on Google Clo
 >* Personal use (`@gmail.com` and `@googlemail.com` users)
 >* Internal use (Google Workspace users that prefer to use a custom OAuth client)
 
+* [Create a project on Google Cloud Platform](#create-a-project-on-google-cloud-platform)
+* [Configure OAuth consent settings](#configure-oauth-consent-settings) 
+* [Create OAuth credentials](#create-oauth-credentials)
+* [Connect to Google in Workfront Fusion](#connect-to-google-in-workfront-fusion)
+
 ### Create a project on Google Cloud Platform 
 
 To create a project on Google Cloud Platform:
 
-1. Sign in to [Google Cloud Platform](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) using your Google credentials.
-1. In the left panel, click **Dashboard**.
-1. Click **Create project** in the upper-right corner of the screen.
-1. Enter the **Project name**, then click **Create**.
+1. Begin creating a project on Google Cloud Platform.
 
-1. Click the **Enable APIs and services** tab near the top of the screen.
-1. In the **Search for APIs and Services** field at the top of the screen, type the name of the service you want to use (such as Gmail API or Google Drive API).
-1. When it displays, click the API or service you want to connect to Workfront Fusion.
-1. Click **Enable** to enable the selected API.
-1. Repeat steps 6-8 for each API you want to enable.
-
-   >[!NOTE]
-   >
-   >You must enable Google Drive API as well as the API of all Google apps you want to use (such as Google Sheets API).
-
-1. On the screen that appears, click **Create credentials** in the upper-right corner.
+   For instructions, see [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project) in the Gogle documentation.
+1. When enabling APIs, you must enable Google Drive API as well as the API of all Google apps you want to use (such as Google Sheets API).
+1. Finish creating the project.
 1. Continue to the section [Configure OAuth consent settings](#configure-oauth-consent-settings) in this article.
 
 ### Configure OAuth consent settings 
 
-1. In the left panel, click **OAuth consent screen**.
+1. Begin configuring OAuth for your project
+
+   For instructions, see [Configure the OAuth consent screen and choose scopes](https://developers.google.com/workspace/guides/configure-oauth-consent) in the Google documentation.
 1. Select **External**, then click **Create**.
 
    >[!NOTE]
@@ -124,10 +115,7 @@ To create a project on Google Cloud Platform:
    </table>
 
 1. Under Authorized domains, click **Add domain**, and enter `workfrontfusion.com`.
-
-1. Click **Save and continue**.
-1. Click **Add or remove scopes**.
-1. In the right panel, enable the following scopes:
+1. Add the following scopes:
 
 <table style="table-layout:auto">
     <col> 
@@ -152,10 +140,7 @@ To create a project on Google Cloud Platform:
 
 You may need to expand the list or go to the next page of the list to see them all.
 
-1. Click **Update**.
-1. Click **Save and continue**.
 1. (Optional) Add any test users to the project.
-1. Click **Save and continue**.
 1. Examine your information for accuracy, then click **Back to dashboard**.
 
    >[!NOTE]
@@ -166,13 +151,13 @@ You may need to expand the list or go to the next page of the list to see them a
 
 ### Create OAuth Credentials 
 
-1. In the left panel, click **Credentials**.
+1. Begin creating OAuth cliet ID credentials.
+
+   For instructions, see [Create access credentials](https://developers.google.com/workspace/guides/create-credentials).
 
    >[!NOTE]
    >
    >If this is not the first API or service (Gmail or Google Drive) you have enabled, you don't have to create new credentials.
-
-1. Click **Create credentials** near the top of the screen, then select **OAuth client ID** from the drop-down menu.
 
 1. Fill the required fields as follows:
 
@@ -191,7 +176,7 @@ You may need to expand the list or go to the next page of the list to see them a
     </tbody> 
    </table>
 
-1. Under Authorized redirect URIs, click **Add URI** and enter **one** of the following:
+1. Under Authorized redirect URIs,  enter **one** of the following:
 
    * For Gmail or Google Drive: `https://app.workfrontfusion.com/oauth/cb/google-restricted`
 
@@ -215,7 +200,7 @@ The process of creating a connection to Google differs depending on whether you 
 
 1. In Workfront Fusion, locate the Google module that you need to create a connection for.
 1. Click **Create a connection**, then click **Show advanced settings**.
-
+1. Fill in the Connection name, Environment, and Type fields as applicable.
 1. Enter the Client ID and Client Secret you retrieved in [Create OAuth Credentials](#create-oauth-credentials) in the respective fields, then click **Continue**.
 
 1. Sign in with your Google account.
@@ -235,4 +220,4 @@ For instructions on connecting to Google in the HTTP > Make an OAuth2.0 request 
 
 ## Possible error message:[403 Access Not Configured]
 
-If the `403 Access Not Configured` error message displays, you you need to enable the corresponding API in your Google Cloud Platform. To enable the API, follow the steps in the section [Create a project on Google Cloud Platform](#create-a-project-on-google-cloud-platform) in this article.
+If the `403 Access Not Configured` error message displays, you must enable the corresponding API in your Google Cloud Platform. To enable the API, follow the steps in the section [Create a project on Google Cloud Platform](#create-a-project-on-google-cloud-platform) in this article.
