@@ -12,6 +12,14 @@ feature: Workfront Fusion
 
 Many [!DNL Adobe Workfront Fusion] connectors do not require custom configuration when creating a connection. This article describes the default connection creation process.
 
+>[!NOTE]
+>
+>
+>If Adobe Workfront Fusion doesn't offer an app for the web service you would like to use in your scenario, you can connect to the web service using [!DNL Workfront Fusion] HTTP and Webhooks modules, as explained in the following articles:
+>
+>* [Connect Adobe Workfront Fusion to a web service that uses API token authorization](../../workfront-fusion/connections/connect-wf-web-service-uses-api-token-auth.md)
+>* [Receive a webhook from a web service](../../workfront-fusion/connections/receive-a-webhook-from-a-web-service.md)
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
