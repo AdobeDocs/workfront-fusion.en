@@ -1,10 +1,10 @@
 ---
-title: Create connections in [!DNL Adobe Workfront Fusion]
+title: Create connections
 description: A connection must adhere to the requirements set by the API of the app or web service it connects to. For this reason, instructions for setting up a connection vary based on the app or web service. This article can help you identify and locate the instructions for connecting [!DNL Adobe Workfront Fusion] to your chosen app or web service.
 author: Becky
 feature: Workfront Fusion
 ---
-# Create connections in [!DNL Adobe Workfront Fusion]
+# Create connections
 
 A connection must adhere to the requirements set by the API of the app or web service it connects to. For this reason, instructions for setting up a connection vary based on the app or web service. This article can help you identify and locate the instructions for connecting [!DNL Adobe Workfront Fusion] to your chosen app or web service.
 

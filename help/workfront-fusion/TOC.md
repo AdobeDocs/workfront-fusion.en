@@ -70,9 +70,13 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Map files](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
     * Connect to applications {#connect-to-applications}
         * [Connect to applications](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
+        * [Create connections](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
+        * [Create a connection - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+        * [Connect Adobe Workfront Fusion to a web service that uses API token authorization](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
+        * [Connect Adobe Workfront Fusion to Google Services with updated security measures](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-google-with-new-security-measures.md)
+        * [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
+        * [Call the MS Graph REST API](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
         * [Manage connections](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
-        * [Connect to Workfront Fusion - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-        * [Connect Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
     * Configure error handling {#configure-error-handling}
         * [Configure error handling](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
         * [Add error handling](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)
@@ -121,6 +125,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Aggregator modules](/help/workfront-fusion/references/modules/aggregator-module.md)
         * [Iterator modules](/help/workfront-fusion/references/modules/iterator-module.md)
         * [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md)
+        * [Keys](/help/workfront-fusion/references/modules/keys.md)
     * Mapping panel {#mapping-panel}
         * [Mapping panel](/help/workfront-fusion/references/mapping-panel/mapping-panel-toc.md)
         * Data types {#data-types}

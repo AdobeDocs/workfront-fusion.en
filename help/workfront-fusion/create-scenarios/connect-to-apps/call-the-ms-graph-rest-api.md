@@ -1,10 +1,10 @@
 ---
-title: Call the MS Graph REST API via the Adobe Workfront Fusion HTTP &gt; Make an OAuth 2.0 request module
+title: Call the MS Graph REST API
 description: Call the MS Graph REST API via the Adobe Workfront Fusion HTTP &gt; Make an OAuth 2.0 request module
 author: Becky
 feature: Workfront Fusion
 ---
-# Call the MS Graph REST API via the Adobe Workfront Fusion HTTP > Make an OAuth 2.0 request module
+# Call the MS Graph REST API
 
 Many Microsoft web services are accessed through the Microsoft Graph API. You can create a connection to the Microsoft Graph API, by using the Workfront Fusion HTTP > Make an OAuth 2.0 request module.
 
