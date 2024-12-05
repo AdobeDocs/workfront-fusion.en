@@ -25,7 +25,7 @@ To see a list of available Adobe APIs, see [Adobe APIs](https://developer.adobe.
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plan</td>
+      <td role="rowheader">[!DNL Adobe Workfront] package</td>
       <td>
         <p>New: Any</p><p>Or</p><p>Current: [!UICONTROL Pro] or higher</p>
       </td>
