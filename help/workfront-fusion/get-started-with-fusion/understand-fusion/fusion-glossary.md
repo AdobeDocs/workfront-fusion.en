@@ -51,7 +51,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Data Store</p> </td> 
-   <td> <p>A data store stores data from scenarios or allows you to transfer data between individual scenarios or scenario runs. </p><p><!--For more information, see <a href="../../workfront-fusion/modules/data-stores.md" class="MCXref xref">Data Stores</a>.--></p> </td> 
+   <td> <p>A data store stores data from scenarios or allows you to transfer data between individual scenarios or scenario runs. </p><p>For more information, see <a href="/help/workfront-fusion/create-scenarios/map-data/data-stores.md" class="MCXref xref">Data Stores</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Filter</p> </td> 

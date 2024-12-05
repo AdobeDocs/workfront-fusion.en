@@ -119,16 +119,14 @@ In this sample scenario, the [!UICONTROL HTTP] > [!UICONTROL Make a request] mod
 
 If the result of the potentially failing module is too complex to be stored in a simple variable, you can use a data store to store and retrieve the result. The data store would contain just one record. The record's key can be, for example, `Result`.
 
-<!--For more information on data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/data-stores.md)-->
+For more information on data stores, see [Data Stores](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
 #### Drawbacks
 
 * This workaround is more complex.
 * This workaround uses more operations.
 
-<!--
 ## Resources
 
-* For more information on Repeater modules and break directives, see [Flow control]().
-* For more information on Get Variable modules, see [Tools]().
--->
+* For more information on Repeater modules and break directives, see [Flow control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md).
+* For more information on Get Variable modules, see [Tools](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md).

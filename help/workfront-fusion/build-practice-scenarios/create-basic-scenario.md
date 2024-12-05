@@ -193,9 +193,9 @@ The last step in creating a scenario is activating it.
 
 Because this scenario is searching for a specific task, there is no need to activate it. Activating a scenario causes it to run on a schedule or when a specific action occurs in an application. After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
 
-<!--For more information about activating scenarios, see [Activate or deactivate a scenario](/help/quicksilver/workfront-fusion/scenarios/activate-or-inactivate-scenario.md).-->
+For more information about activating scenarios, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
-<!--For information about schedules, see [Schedule a scenario](/help/quicksilver/workfront-fusion/scenarios/schedule-a-scenario.md).-->
+For information about schedules, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
 ## Next steps
 

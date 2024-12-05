@@ -57,9 +57,9 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->
+For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -94,7 +94,7 @@ When sequential processing is enabled, parallel executions of the scenario are d
 * If the Sequential processing option is **enabled**, Workfront Fusion stops processing the pre-existing sequence until all incomplete executions are resolved.
 * If the Sequential processing option is **disabled**, the scenario continues to run according to its schedule, accompanied by repeated attempts to rerun the incomplete executions.
 
-   <!--For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).-->
+   For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
    <!--
 
@@ -106,7 +106,7 @@ When sequential processing is enabled, parallel executions of the scenario are d
    >
    >If the use case for your scenarios does not require sequential processing, we recommend disabling the sequential processing option.
 
-   <!--For more information on scheduling, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).-->
+   For more information on scheduling, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
 ### Data is confidential
 
