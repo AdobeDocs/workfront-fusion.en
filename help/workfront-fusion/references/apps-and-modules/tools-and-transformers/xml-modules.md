@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: apps-and-their-modules
 title: XML
 description: The XML app enables you to parse an XML formatted text via the XML &gt; Parse XML module and convert it to a bundle to make the data available to other modules. You can also convert a bundle to an XML formatted text via the XML &gt; Create XML module
 author: Becky
 feature: Workfront Fusion
-exl-id: 3459e930-8156-4171-8920-34f4e07bc530
 ---
 # XML
 

@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: modules
 title: HTTP request methods
 description: When you are configuring an API call in a module, you need to fill in the field for the HTTP request method.
 author: Becky
 feature: Workfront Fusion
-exl-id: 20b3c0f4-4a4c-4ba0-8570-ac39573ef1c0
 ---
 # HTTP request methods
 

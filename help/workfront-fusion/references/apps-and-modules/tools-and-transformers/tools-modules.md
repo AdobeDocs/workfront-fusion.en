@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: apps-and-their-modules
 title: Tools
 description: The [!DNL Adobe Workfront Fusion Tools] section includes several useful modules that can enhance your scenario.
 author: Becky
 feature: Workfront Fusion
-exl-id: 97a68fbc-1272-43fc-b4f2-4c1c9e590741
 ---
 # [!UICONTROL Tools]
 

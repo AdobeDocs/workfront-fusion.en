@@ -4,7 +4,6 @@ description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate work
 author: Becky
 draft: Probably
 feature: Workfront Fusion
-exl-id: d46935bc-4f6c-4502-bd2f-3927f33241e1
 ---
 # [!DNL Widen] modules
 

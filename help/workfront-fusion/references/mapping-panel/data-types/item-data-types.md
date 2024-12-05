@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: mapping
 title: Item data types
 description: Your [!DNL Adobe Workfront Fusion] scenarios can contain the types of items listed below in a bundle.
 author: Becky
 feature: Workfront Fusion
-exl-id: 36c25a86-0d05-4871-a6a6-4fd54cfcc4b1
 ---
 # Item data types
 
