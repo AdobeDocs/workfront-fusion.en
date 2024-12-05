@@ -224,7 +224,7 @@ There is currently no tool which can automate restoring lost data.
 
 1. Examine all execution logs of scenarios where items were inserted to the data store.
 
-   For more information on examining execution logs, see [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.mdd).
+   For more information on examining execution logs, see [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md).
 
 1. Copy the data.
 1. Insert the data into your data store again.
