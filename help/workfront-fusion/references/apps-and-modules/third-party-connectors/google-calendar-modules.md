@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;calendars
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Google Calendar modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Google Calendar, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 168e8fce-645d-4108-84b7-46a113c83f41
 ---
 # [!DNL Google Calendar] modules
 

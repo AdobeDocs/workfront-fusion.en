@@ -6,7 +6,6 @@ title: 'Create practice scenarios: article index'
 description: Follow these examples to learn how to create scenarios in Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
-exl-id: cd00008a-833c-46dd-a82d-22f27809493e
 ---
 # Create practice scenarios: article index
 

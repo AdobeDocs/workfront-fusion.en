@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: OpenAI (ChatGPT) modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use OpenAIT(ChatGPT), as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 3a747013-5fb6-4416-8d95-d656dfeeb7db
 ---
 # [!DNL OpenAI (ChatGPT & DALL-E)] modules
 

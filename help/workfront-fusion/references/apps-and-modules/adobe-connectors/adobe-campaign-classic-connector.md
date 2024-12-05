@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Adobe Campaign v7/v8 modules
 description: With the [!DNL Adobe Campaign] modules, you can start an [!DNL Adobe Workfront Fusion] scenario based on events in your [!DNL Adobe Campaign] account, create, read, or update agreements and other records, search for records using criteria you set, and upload documents.
 author: Becky
 feature: Workfront Fusion
-exl-id: 84e8fa35-0c3c-46bd-8886-88c6d8d9e1d5
 ---
 # [!DNL Adobe Campaign] modules
 

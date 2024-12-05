@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;documents
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Microsoft Office 365 Excel modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Microsoft 365 Excel, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-exl-id: 9aa3739d-6800-4eb1-a17f-32fdfd8ed0f2
 ---
 # [!DNL Microsoft Office 365 Excel] modules
 

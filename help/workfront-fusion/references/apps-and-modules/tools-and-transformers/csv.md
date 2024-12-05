@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;documents
-navigation-topic: apps-and-their-modules
 title: CSV
 description: The Adobe Workfront Fusion CSV modules let you create CSV files and parse CSV text from a received text value or a file.
 author: Becky
 feature: Workfront Fusion
-exl-id: 4e37482a-e84e-4ab2-a48f-7e7bfbecee56
 ---
 # CSV
 

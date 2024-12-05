@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: http-modules
 title: HTTP &gt; Make an API Key Authorization request
 description: This [!DNL Adobe Workfront Fusion] action module sends an HTTPS request to a specified URL that requires an API Key Auth authorization, and processes the response.
 author: Becky
 feature: Workfront Fusion
-exl-id: 70bf87c7-6d51-4ef4-9dce-80ad004e613f
 ---
 # HTTP >[!UICONTROL Make an API Key Authorization request]
 

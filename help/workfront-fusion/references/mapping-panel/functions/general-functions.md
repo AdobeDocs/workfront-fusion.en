@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: functions
 title: General functions
 description: The following general functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
-exl-id: 74bfda4e-5690-4b8c-ac58-20cf261f188d
 ---
 # General functions
 

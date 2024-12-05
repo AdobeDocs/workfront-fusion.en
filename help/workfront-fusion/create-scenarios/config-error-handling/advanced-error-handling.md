@@ -3,7 +3,6 @@ title: Add filtering and nesting to error handling routes
 description: You an add advanced error handling techniques to your error handling route by including filtering and nesting.
 author: Becky
 feature: Workfront Fusion
-exl-id: 57f43fc2-23ed-44f5-8785-90739329b5ee
 ---
 # Add filtering and nesting to error handling routes
 

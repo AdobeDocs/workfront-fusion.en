@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: modules
 title: Aggregator module
 description: An aggregator module is a type of module designed to merge several bundles of data into a single bundle.
 author: Becky
 feature: Workfront Fusion
-exl-id: cdc32842-8717-4e05-ab19-2661ee14c12c
 ---
 # [!UICONTROL Aggregator] module
 

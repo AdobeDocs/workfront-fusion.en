@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;documents
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Bynder modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Bynder], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: e4dc9588-334a-41a3-85d1-996cb819c3fa
 ---
 # [!DNL Bynder] modules
 

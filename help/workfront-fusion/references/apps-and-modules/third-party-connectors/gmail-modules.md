@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Gmail modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Gmail, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 1987156c-e003-4f99-8913-cb47f77efbfc
 ---
 # [!DNL Gmail] modules
 

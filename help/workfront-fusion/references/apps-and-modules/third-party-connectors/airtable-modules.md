@@ -1,15 +1,8 @@
 ---
-filename: airtable-modules
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Airtable modules
 description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
 author: Becky
 feature: Workfront Fusion
-exl-id: 1d78e0db-9a77-437d-a72f-88fb256981c0
 ---
 # Airtable modules
 
@@ -482,7 +475,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>Enter a path relative to <code>https://api.airtable.com/}</code>. Example: <code>v0/{base}/{table}</code> </td> 
+   <td>Enter a path relative to <code>https://api.airtable.com/</code>. Example: <code>v0/{base}/{table}</code> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Method</td> 

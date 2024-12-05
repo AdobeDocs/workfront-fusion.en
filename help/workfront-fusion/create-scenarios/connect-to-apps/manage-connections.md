@@ -6,7 +6,6 @@ title: Manage connections
 description: For most apps, it is necessary to create a connection, through which [!DNL Adobe Workfront Fusion] can communicate with the given third-party service according to the settings of the specific scenario.
 author: Becky
 feature: Workfront Fusion
-exl-id: 2d5cf083-9893-45e8-8f7d-0f8f5a74eef3
 ---
 # Manage connections
 

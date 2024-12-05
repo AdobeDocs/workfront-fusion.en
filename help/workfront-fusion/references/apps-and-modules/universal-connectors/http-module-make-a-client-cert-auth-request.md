@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: http-modules
 title: HTTP &gt; Make a Client Certificate Authorization request module
 description: This [!DNL Adobe Workfront Fusion] module enables you to configure an HTTP request with HTTP client certificate authorization and submit it to a server. The received HTTP response is then contained in the output bundle.
 author: Becky
 feature: Workfront Fusion
-exl-id: c0b0057f-3db0-4c10-a274-ebaec1a5b87b
 ---
 # HTTP >[!UICONTROL Make a Client Certificate Authorization request] module
 

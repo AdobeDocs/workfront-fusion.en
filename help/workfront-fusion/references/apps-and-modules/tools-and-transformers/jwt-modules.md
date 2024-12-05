@@ -1,13 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: apps-and-their-modules
 title: JWT modules
 description: The [!DNL Adobe Workfront Fusion] [!UICONTROL JWT] app provides a module that creates JWT tokens based on the provided algorithm.
 author: Becky
 feature: Workfront Fusion
-exl-id: 1c09967e-a236-404f-bf3e-9de66118e77b
 ---
 # [!UICONTROL JWT] module
 

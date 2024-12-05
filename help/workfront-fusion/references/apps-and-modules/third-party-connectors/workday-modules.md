@@ -1,15 +1,9 @@
 ---
 filename: workday-modules
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Workday modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Workday], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 535573e0-b6ad-43a2-b7cb-ed32d1dc8d16
 ---
 # [!DNL Workday] modules
 

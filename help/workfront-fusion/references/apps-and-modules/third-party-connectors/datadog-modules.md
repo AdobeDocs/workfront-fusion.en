@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;documents
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Datadog modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Datadog, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: a0b4352d-a1ce-4459-a58e-71de860b8a90
 ---
 # [!DNL Datadog] modules
 

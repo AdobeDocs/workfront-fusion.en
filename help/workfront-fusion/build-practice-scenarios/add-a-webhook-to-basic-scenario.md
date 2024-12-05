@@ -6,7 +6,6 @@ title: Add a webhook to a basic scenario
 description: Webhooks, also known as instant triggers, are a specific kind of trigger module that can start a scenario whenever a change is made, instead of on a given schedule.
 author: Becky
 feature: Workfront Fusion
-exl-id: 6694b883-6f94-449c-bcfe-5a4053e8655a
 ---
 # Add a webhook to a basic scenario
 

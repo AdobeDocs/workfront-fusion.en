@@ -6,7 +6,6 @@ title: 'se a function to update a project in a basic scenario'
 description: Learn how to add a function to update a work item in Workfront.
 author: Becky
 feature: Workfront Fusion
-exl-id: f4588063-024f-4520-986e-45342a6b6777
 ---
 # Use a function to update a project in a basic scenario
 
