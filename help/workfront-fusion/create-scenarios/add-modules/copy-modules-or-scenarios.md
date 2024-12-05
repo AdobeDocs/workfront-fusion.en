@@ -116,6 +116,9 @@ A scenario blueprint represents the entire scenario. If you want to copy only ce
 
 ### Export a scenario blueprint
 
+1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Select the scenario where you want to export a blueprint.
+1. Click anywhere on the scenario to enter the Scenario editor.
 1. In the scenario, click the **[!UICONTROL More]** menu in the scenario settings area.
 1. Click **[!UICONTROL Export Blueprint]**.
 
