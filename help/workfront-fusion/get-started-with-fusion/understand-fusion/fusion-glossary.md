@@ -83,7 +83,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Router</p> </td> 
-   <td>A router allows you to duplicate data or add new routes to a scenario, so to re-route data and handle different groups of data separately.</p><p> <!--For more information, see <a href="../../workfront-fusion/modules/router-module.md" class="MCXref xref">[!UICONTROL Router] module</a>.--></td> 
+   <td>A router allows you to duplicate data or add new routes to a scenario, so to re-route data and handle different groups of data separately.</p><p> For more information, see <a href="/help/workfront-fusion/create-scenarios/add-modules/router-module.md" class="MCXref xref">[!UICONTROL Router] module</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario</p> </td> 

@@ -93,7 +93,7 @@ Each scenario can contain only one Trigger.
 
 Polling triggers regularly poll a given service even if there has been no change since the previous scenario run. We recommend that you schedule a scenario containing a polling trigger to run at regular intervals. If there is a change that matches the configuration of the trigger, the trigger returns bundles containing information about the change. If there is no change that matches the configuration, the trigger does not output any bundles. 
 
-<!--For instructions on scheduling a scenario, see [Schedule a scenario](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
+For instructions on scheduling a scenario, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
 Polling triggers allow you to select the first bundle that they should output via a panel that displays automatically after you save a trigger or change the trigger settings. This selection affects only the first execution of the module. After the module has executed once, subsequent executions watch only for changes that occur after the most recent execution.
 
@@ -113,7 +113,7 @@ Polling triggers allow you to select the first bundle that they should output vi
 
 Instant triggers enable a service to notify [!DNL Workfront Fusion] about a change immediately after it occurs. We recommend that you schedule a scenario containing an instant trigger to run immediately. 
 
-<!--For instructions, see [Schedule a scenario](../../workfront-fusion/scenarios/schedule-a-scenario.md). -->
+For instructions, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
 For ifor details on how the incoming data is handled by an instant trigger, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md) for details on how the incoming data is handled.
 
