@@ -28,7 +28,7 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront plan</td> 
+   <td role="rowheader">Adobe Workfront package 
    <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
