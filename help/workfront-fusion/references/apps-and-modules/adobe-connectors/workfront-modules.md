@@ -632,7 +632,7 @@ When you are configuring this module, the following fields display.
       </ul> <p>For all other record types, select <b>[!UICONTROL Other objects and endpoints]</b>, and locate the record type on the alphabetically sorted pages.</p> </li> 
      <li value="2"> <p>On the page of the appropriate record type, search (Ctrl-F or Cmd-F) for the action.</p> </li> 
      <li value="3"> <p>View descriptions for available fields under the selected action.</p> </li> 
-    </ol> <p>Note:  <p>When creating a proof through the [!DNL Workfront] [!UICONTROL Misc Action] module, best practice is to create a proof without any advanced options, then update the proof using the [!DNL Workfront Proof] SOAP API.</p><!--<p>For more information on creating a proof with the [!DNL Workfront] API (which this module uses), see <a href="wf-api/tips-tricks-and-troubleshooting/api-create-proof-options-json.md" class="MCXref xref">Add advanced proofing options when creating a proof through the [!DNL Adobe Workfront] API</a></p> --></p> </td> 
+    </ol> <p>Note:  <p>When creating a proof through the [!DNL Workfront] [!UICONTROL Misc Action] module, best practice is to create a proof without any advanced options, then update the proof using the [!DNL Workfront Proof] SOAP API.</p><p>For more information on creating a proof with the [!DNL Workfront] API (which this module uses), see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Add advanced proofing options when creating a proof through the [!DNL Adobe Workfront] API</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -2070,7 +2070,7 @@ The following operators are available in the Workfront > Watch events filter:
 >
 >If 100 issues are created in a day, but only two of them are assigned to Ana, the scenario would execute 100 times. 98 of the executions would stop at the filter, but the trigger module is still consuming data and performing operations in all of the executions.
 
-<!--For more information on event subscriptions, see [FAQs - Event Subscriptions](wf-api/general/event-subs-faq.md).-->
+For more information on Workfront event subscriptions, see [FAQs - Event Subscriptions](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
 For more information on webhooks, see [Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
