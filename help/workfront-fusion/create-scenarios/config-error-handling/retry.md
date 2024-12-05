@@ -73,7 +73,7 @@ For instructions on resolving incomplete executions, see [View and resolve incom
 
    To prevent the scenario from executing again until the execution stored in the the Incomplete executions folder has been successfully resolved, enable the "[!UICONTROL Sequential processing]" option in the [!UICONTROL Scenario settings].
 
-<!--   For more information on incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
+For more information on incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Use the Repeater module
 

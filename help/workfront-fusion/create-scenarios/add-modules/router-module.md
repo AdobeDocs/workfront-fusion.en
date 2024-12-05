@@ -6,12 +6,6 @@ feature: Workfront Fusion
 ---
 # Add a Router module and configure routes
 
-<!--EDIT ME and separate out the reference stuff-->
-
-<!-- Ask Courtney if this needs to be split up-->
-
-<!--IN PROGRESS-->
-
 The Router module allows you to branch your scenario into several routes, and process the data within each route differently. When a Router module receives a bundle, it forwards it to each connected route in the order the routes were attached to the Router module.
 
 Routes are processed sequentially, not in parallel. A bundle is not sent to the next route until it has been completely processed by the previous route.

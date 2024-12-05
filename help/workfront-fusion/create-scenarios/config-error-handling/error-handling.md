@@ -111,7 +111,7 @@ The following directives ensure that a scenario execution continues:
 * **[!UICONTROL Ignore]**: ignores the error. The scenario execution status is marked as success.
 * **[!UICONTROL Break]**: Stores the input to the queue of incomplete executions. The scenario execution status is marked as warning. 
 
-<!--   For more information, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
+For more information, see [View and resolve incomplete executions in Adobe Workfront Fusion](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 If a scenario execution should stop when an error occurs, use one of the following directives:
 
@@ -123,7 +123,7 @@ If a scenario execution should stop when an error occurs, use one of the followi
 For more information on error handling, see:
 
 * [Directives for error handling in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
-<!--* [Advanced error handling in Adobe Workfront Fusion](../../workfront-fusion/errors/advanced-error-handling.md) -->
+* [Add filtering and nesting to error handling routes](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
 
 
 
