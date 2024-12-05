@@ -86,6 +86,7 @@ If the module found more than one issue, the information is captured for each bu
 An error might occur during the scenario run. For example, if you have deleted the template that the module will use to create the new project, the scenario terminates with an error message. For more information about how to handle errors, see [Error processing](/help/workfront-fusion/references/errors/error-processing.md).
 
 ## Resources
+
 * For more information on setting up a scenario, see [The scenario editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
 * For more information on the scenario details page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario.details.md).
 * For more information on activating a scenario, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
