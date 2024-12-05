@@ -1,6 +1,6 @@
 ---
 title: Add a module to a scenario
-<!--description: You can enter a text prompt to create an HTTP module configured to the prompt.
+description: This article describes the basic process of adding a module to a scenario. 
 author: Becky
 feature: Workfront Fusion
 ---

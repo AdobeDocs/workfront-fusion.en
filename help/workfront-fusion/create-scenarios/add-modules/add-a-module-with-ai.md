@@ -1,6 +1,6 @@
 ---
 title: Generate a scenario segment using AI
-<!--description: You can enter a text prompt to create an HTTP module configured to the prompt.
+description: You can use AI to enter a text prompt describing what you need a segment of your scenario to do. Fusion then generates one or more modules that perform those actions, which you can use in your scenario.
 author: Becky
 feature: Workfront Fusion
 ---
