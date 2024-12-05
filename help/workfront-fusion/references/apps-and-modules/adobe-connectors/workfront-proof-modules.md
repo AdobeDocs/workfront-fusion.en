@@ -205,7 +205,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Webhook]</td> 
-   <td>You can select an existing webhook or create a new one. For more information, see <a href="<!--For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>. </td> 
+   <td>You can select an existing webhook or create a new one. For more information, see <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 

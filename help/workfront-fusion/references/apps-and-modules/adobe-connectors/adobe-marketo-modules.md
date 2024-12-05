@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Marketo modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Marketo], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 7f6dace5-ab50-45da-a926-1a8919057f7b
 ---
 # [!DNL Marketo] modules
 
@@ -120,7 +114,7 @@ This trigger module starts a scenario when a record is created or updated.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Webhook]</p> </td> 
-   <td> <p>Enter the webhook that you want the module to use.</p> <p>For more information on webhooks, see <a href="<!--For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Enter the webhook that you want the module to use.</p> <p>For more information on webhooks, see <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
