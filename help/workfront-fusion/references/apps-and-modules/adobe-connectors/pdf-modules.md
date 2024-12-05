@@ -4,7 +4,6 @@ description: Adobe PDF Services
 author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
-exl-id: e0a5736b-dbdb-43c6-83ff-e88a5625a5bf
 ---
 # [!DNL Adobe PDF Services]
 

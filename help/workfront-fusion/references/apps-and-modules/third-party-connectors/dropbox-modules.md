@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;documents
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Dropbox modules
 description: In a [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Dropbox, as well as connect it to multiple third-party applications and services.This allows you to automate activities such as monitoring, searching, retrieving, listing, creating, and editing files and folders in your Dropbox.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-exl-id: a35631d7-40ac-4e7f-9a37-ad3879c0b6a2
 ---
 # [!DNL Dropbox] modules
 

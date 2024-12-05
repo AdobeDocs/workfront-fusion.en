@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations;calendars
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Microsoft Office 365 Calendar
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Microsoft Office 365 Calendar, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 814c285e-c106-458a-a0b1-760677634f4f
 ---
 # [!DNL Microsoft Office 365 Calendar] 
 

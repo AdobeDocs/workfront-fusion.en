@@ -1,14 +1,8 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Qualtrics modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Qualtrics, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 146802cd-b863-4c93-b767-50e05892c4de
 ---
 # Qualtrics modules
 

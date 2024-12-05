@@ -1,15 +1,8 @@
 ---
-filename: aem-assets-modules
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-keywords: connector
-navigation-topic: apps-and-their-modules
 title: Adobe Experience Manager Assets modules
 description: With the [!DNL Adobe Experience Manager Assets] connector for [!DNL Adobe Workfront Fusion], you can start a scenario based on events in your [!DNL Adobe Experience Manager Assets] account, create, upload, and update assets, and copy or move folders and assets.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-exl-id: 0749f230-8cab-464f-863c-9cb4870125d1
 ---
 # [!DNL Adobe Experience Manager Assets] modules
 

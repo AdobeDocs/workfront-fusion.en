@@ -2,9 +2,7 @@
 title: Jira Software modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Jira] Software, as well as connect it to multiple third-party applications and services.
 author: Becky
-draft: Probably
 feature: Workfront Fusion
-exl-id: 6437fe98-2c2b-4b49-97e2-f94b23da93fd
 ---
 # [!DNL Jira Software] modules
 
