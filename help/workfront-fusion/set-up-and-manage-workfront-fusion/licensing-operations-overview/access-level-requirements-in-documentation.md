@@ -29,40 +29,12 @@ Some rows contain information labeled "New" and "Current." This is because Workf
    <ul><li>To find out what Adobe Workfront package your organization uses, including whether your organization is under the new or current packaging model, contact your Workfront administrator.</li>
    <li>For instructions on how a Workfront administrator can locate your organization's Workfront plan, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">View your organization's cluster and Workfront plan</a> in the Workfront documentation.</li><li>For more information on the new Workfront plans, see <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront pricing and packaging</a>.</li></ul> </td> 
   </tr> 
-<!--  <tr> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> Adobe Workfront licenses refer to the set of Workfront features included with the license assigned to you. For example, one user might have a license that includes marking work items complete and logging time, while another user has a license that allows them only to approve assets or submit requests. <p> 
-   <ul>
-   <li>To find out which license you are assigned, contact your Workfront administrator.</li>
-   <li>Adobe Workfront is transitioning to a new pricing and packaging model. For information about licenses see:
-   <ul>
-   <li>New: <a href="/help/quicksilver/administration-and-setup/add-users/how-access-levels-work/licenses-overview.md" class="MCXref xref">New licenses overview</a></li>
-   <li>Current: <a href="/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/wf-licenses.md" class="MCXref xref">Licenses overview</a></li></ul></li>
-   <li>If you have the correct access level and still don't have access, ask your Workfront administrator if they set additional restrictions in your access level. For information on how a Workfront administrator can modify your access level, see <a href="/help/quicksilver/administration-and-setup/get-started-wf-administration/firewall-overview.md#view-your-organizations-cluster-and-workfront-plan" class="MCXref xref">Create or modify custom access levels</a>.
-   </ul>
-      </p> </td> 
-  </tr> -->
   <tr> 
    <td role="rowheader">Product</td> 
    <td>In some cases, Fusion must be purchased in addition to Workfront. If your organization has the Ultimate Workfront package, Fusion is included.
   <tr> 
    <td role="rowheader">Access level</td> 
-   <td> Access levels are sets of permissions for actions you can perform in Fusion. For example, some actions can only be perfomed by a Fusion Administrator. <!--<p>Workfront has built-in access levels that correspond to Workfront licenses, but your Workfront administrator can create more access levels to more accurately reflect permission sets needed in your organization.</p>
-   <ul>
-    <li>Adobe Workfront is transitioning to a new pricing and packaging model. For information about access levels for each model see:
-   <ul>
-   <li>New: <a href="/help/quicksilver/administration-and-setup/add-users/how-access-levels-work/access-level-overview.md" class="MCXref xref">New access levels overview</a></li>
-   <li>Current: <a href="/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-levels-overview.md" class="MCXref xref">Access levels overview</a></li></ul></li>
-    <li>To find out the details of your access level, contact your Workfront administrator</li>
-    <li>If you are a Workfront administrator, see <a href="/help/quicksilver/administration-and-setup/add-users/configure-and-grant-access/configure-access.md" class="MCXref xref">Configure access to Adobe Workfront</a> to learn more about granting access to specific objects in the access level.</li>  
-   <li>If you have the correct access level and still don't have access, ask your Workfront administrator if they set additional restrictions in your access level. For information on how a Workfront administrator can modify your access level, see <a href="/help/quicksilver/administration-and-setup/add-users/configure-and-grant-access/create-modify-access-levels.md" class="MCXref xref">Create or modify custom access levels</a>.</li>
-    </td>
-  </tr> -->
-  <!--<tr> 
-   <td role="rowheader">Object permissions</td> 
-   <td><p>Object permissions refer to the access you have to individual Workfront objects when you create them or when they are shared with you. For example, you must have View access to a specific project to view the project, even if your access level allows you to view projects. This section of the Access requirement table describes any specific object permissions you need to perform the action in the article.</p>
-   <p>For information on requesting additional access to an object, see <a href="/help/quicksilver/workfront-basics/grant-and-request-access-to-objects/request-access.md" class="MCXref xref">Request access to objects</a>.</p><p>For information on sharing an object, see <a href="/help/quicksilver/workfront-basics/grant-and-request-access-to-objects/share-an-object.md" class="MCXref xref">Share an object</a>.</p></td> 
-  </tr> -->
+   <td> Access levels are sets of permissions for actions you can perform in Fusion. For example, some actions can only be perfomed by a Fusion Administrator. 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>Adobe Workfront Fusion has a separate licensing model than Workfront. 
