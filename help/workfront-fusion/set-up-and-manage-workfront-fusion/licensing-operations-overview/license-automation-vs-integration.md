@@ -87,7 +87,7 @@ Benefits of a Workfront Fusion for Work Automation and Integration license inclu
 
 #### Connectors and modules available for Workfront Fusion for Work Automation and Integration 
 
-<!--For a list of available dedicated connectors, see [Apps and their modules](../../workfront-fusion/apps-and-their-modules/apps-and-their-modules.md).-->
+For a list of available dedicated connectors, see [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
 >[!IMPORTANT]
 >
