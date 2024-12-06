@@ -38,7 +38,7 @@ Some rows contain information labeled "New" and "Current." This is because Workf
    <ul>
    <li>New: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">New licenses overview</a></li>
    <li>Current: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Licenses overview</a></li></ul></li>
-   <li>If you have the correct access level and still don't have access, ask your Workfront administrator if they set additional restrictions in your access level. For information on how a Workfront administrator can modify your access level, see <a href="/help/quicksilver/administration-and-setup/get-started-wf-administration/firewall-overview.md#view-your-organizations-cluster-and-workfront-plan" class="MCXref xref">Create or modify custom access levels</a>.
+   <li>If you have the correct access level and still don't have access, ask your Workfront administrator if they set additional restrictions in your access level. For information on how a Workfront administrator can modify your access level, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Create or modify custom access levels</a>.
    </ul>
       </p> </td> 
   </tr> 
