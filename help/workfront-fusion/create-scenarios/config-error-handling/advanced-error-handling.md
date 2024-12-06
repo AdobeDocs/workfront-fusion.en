@@ -62,7 +62,7 @@ There are two kinds of filtering that can take place on an error handler route.
 
 You can use a filter to control which errors are handled by the error handler route. This allows you to process only specific types of errors. If an error does not pass through the filter, it will be treated as if there is no error handler route defined for the given module.
 
-These filters are configured like any other filter in Fusion. <!--For instructions, see [Add a filter to a scenario]-->
+These filters are configured like any other filter in Fusion. For instructions, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 ### Add a Router followed by filters to the error handler 
 

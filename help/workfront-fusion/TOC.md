@@ -65,6 +65,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
         * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
         * [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
+        * [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)

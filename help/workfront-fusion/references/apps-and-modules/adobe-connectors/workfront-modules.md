@@ -2068,5 +2068,5 @@ For more information on Workfront event subscriptions, see [FAQs - Event Subscri
 
 For more information on webhooks, see [Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
-<!--For more information on filters in scenarios, see [Add a filter to a scenario in [!DNL Adobe Workfront Fusion]]().-->
+For more information on filters in scenarios, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
  
