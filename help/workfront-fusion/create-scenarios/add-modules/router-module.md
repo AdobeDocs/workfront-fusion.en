@@ -98,7 +98,7 @@ If data passes the filter of more than one route, the data is handled by both ro
 1. In the label field of the panel that displays, add a label. This label displays in the scenario. 
 1. Configure filter conditions.
 
-   <!--For more information, see [Add a filter to a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md).-->
+   For more information, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Click **[!UICONTROL OK]** to save the filter setup.
 

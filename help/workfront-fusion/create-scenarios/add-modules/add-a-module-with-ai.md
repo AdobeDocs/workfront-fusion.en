@@ -6,7 +6,7 @@ feature: Workfront Fusion
 ---
 # Generate a scenario segment using AI 
 
-DO NOT DELETE - linked through CSH-->
+<!--DO NOT DELETE - linked through CSH-->
 
 <!--Check if this is in GA before repo goes live. If not, hide this article.-->
 

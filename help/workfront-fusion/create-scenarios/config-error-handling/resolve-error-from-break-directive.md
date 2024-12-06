@@ -41,6 +41,6 @@ There are some exceptions to executions being stored under Incomplete Executions
 
 ## Resources
 
-For more information, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) in the article [Configure scenario settings].
+For more information, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) in the article Configure scenario settings.
 
 

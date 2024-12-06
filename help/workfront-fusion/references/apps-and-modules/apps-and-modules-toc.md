@@ -88,6 +88,7 @@ Fusion offers connectors for many third-party applications.
 * [Microsoft 356 Email modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
 * [Microsoft 365 Excel modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-excel-modules.md)
 * [Microsoft Dynamics modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md)
+* [Microsoft Dynamics Finance and Operations modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
 * [Microsoft OneDrive modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [Microsoft OneDrive for Business modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
 * [Microsoft SQL Server modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)

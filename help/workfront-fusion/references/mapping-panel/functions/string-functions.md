@@ -168,7 +168,7 @@ Returns: Phone number: `+420777111222`
 
 >[!ENDSHADEBOX]
 
-<!--For more information on regular expressions, see [Text parser](../../workfront-fusion/apps-and-their-modules/text-parser.md).-->
+-For more information on regular expressions, see [Text parser](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md).
 
 ## [!UICONTROL trim (text)]
 

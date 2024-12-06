@@ -79,11 +79,11 @@ The following error handling directives are available in Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Break</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>The state of the scenario execution is stored in the queue of incomplete executions where the error can be resolved manually. For more information, see <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">View and resolve incomplete executions</a>.</p> <p>There are, however, some exceptions. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Allow storing incomplete executions</a> in the article Configure scenario settings.</p></li><li> <p>Subsequent modules are not processed.</p></li><li> <p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li><p>The scenario execution status is marked as "warning" when the [!UICONTROL Automatically complete execution] option is disabled.</p></li></ul> <p>For more information, see the <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> section in this article</p> </td> 
+   <td><ul><li> <p>The state of the scenario execution is stored in the queue of incomplete executions where the error can be resolved manually. For more information, see <a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">View and resolve incomplete executions</a>.</p> <p>There are, however, some exceptions. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">Allow storing incomplete executions</a> in the article Configure scenario settings</a>.</p></li><li> <p>Subsequent modules are not processed.</p></li><li> <p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li><p>The scenario execution status is marked as "warning" when the [!UICONTROL Automatically complete execution] option is disabled.</p></li></ul> <p>For more information, see the <a href="#break" class="MCXref xref">[!UICONTROL Break]</a> section in this article</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Retry</p> <p> <img src="assets/retry.png"> </p> </td> 
-   <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. <!--For more information, see <a href="../../workfront-fusion/errors/retry.md" class="MCXref xref">Retry error handling</a>.--></p> </td> 
+   <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">Retry error handling</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -91,8 +91,6 @@ The following error handling directives are available in Workfront Fusion.
 >[!NOTE]
 >
 >* Error handling directives cannot be used outside of an error handling route.
->
->   <!--For more information, see [Error handler route](../../workfront-fusion/errors/error-handling.md#error) in the article Error handling.-->
 >* [!DNL Workfront Fusion] currently does not offer a Throw module that would enable you to easily conditionally generate (throw) errors, though a workaround can be employed to mimic its functionality.
 >
 >  For more information, see [Configure `throw` error workaround](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md).

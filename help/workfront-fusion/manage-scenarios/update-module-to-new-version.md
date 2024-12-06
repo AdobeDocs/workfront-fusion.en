@@ -15,6 +15,8 @@ If you see a green Upgrade module icon on a module in a scenario, Workfront Fusi
 
 You can update the module without creating a new scenario.
 
+## Access requirements
+
 +++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:

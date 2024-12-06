@@ -1,12 +1,9 @@
 ---
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: get-started-with-workfront-fusion-2-0
+
 title: AI Assistant in Workfront Fusion
 description: AI Assistant in Workfront Fusion
 author: Becky
 feature: Workfront Fusion
-exl-id: 99d614da-e900-448b-ab80-13f002638670
 ---
 # AI Assistant in Workfront Fusion
 
@@ -55,6 +52,7 @@ You must have the following access to use the functionality in this article:
 </table>
 
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+
 
 For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 

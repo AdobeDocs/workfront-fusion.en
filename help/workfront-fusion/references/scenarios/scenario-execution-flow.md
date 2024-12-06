@@ -7,8 +7,6 @@ feature: Workfront Fusion
 ---
 # Scenario execution flow
 
-<!--audited: 09/2024-->
-
 This article explains how a scenario executes and how data flows through it, and how to view the data processed by each module.
 
 ## Scenario execution flow
@@ -83,7 +81,7 @@ If the module found more than one issue, the information is captured for each bu
 
 ## Errors while executing a scenario
 
-An error might occur during the scenario run. For example, if you have deleted the template that the module will use to create the new project, the scenario terminates with an error message. For more information about how to handle errors, see [Error processing](/help/workfront-fusion/references/errors/error-processing.md).
+An error might occur during the scenario run. For example, if you have deleted the template that the module will use to create the new project, the scenario terminates with an error message. For more information about how to handle errors, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
 ## Resources
 

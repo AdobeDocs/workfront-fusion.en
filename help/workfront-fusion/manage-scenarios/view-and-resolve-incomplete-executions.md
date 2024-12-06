@@ -86,6 +86,7 @@ If a module encounters an error during its operation, a new incomplete execution
 >
 >For more information, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable) in the article Configure scenario settings.
 
+
 ## Resolve incomplete executions from the Incomplete Executions tab
 
 When a new incomplete execution is stored, you can resolve it as follows:

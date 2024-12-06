@@ -96,10 +96,6 @@ When sequential processing is enabled, parallel executions of the scenario are d
 
    For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-   <!--
-
-   This option determines how [!DNL Workfront Fusion] proceeds if an error occurs and the execution of a scenario is moved to the [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md). If the [!UICONTROL Sequential processing] option is enabled, Workfront Fusion stops processing the task sequence altogether until all incomplete executions are resolved. If the [!UICONTROL Sequential processing] option is disabled, the scenario continues to run according to its schedule, accompanied by repeated attempts to rerun the incomplete executions.-->
-
    >[!NOTE]
    >
    >Sequential processing may cause a delay in the execution of a scenario. If there are incomplete executions still in the queue when an instant scenario triggers or a scheduled scenario is set to execute, that scenario will execute after all of the executions before it in the queue are complete.
@@ -112,31 +108,31 @@ When sequential processing is enabled, parallel executions of the scenario are d
 
 Once a scenario has been executed, you can by default display information about which data was processed by modules in the scenario. If you do not want this information to be stored, enable the [!UICONTROL Data is confidential] option.
 
-<!--For more information about displaying information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).-->
-
 >[!IMPORTANT]
 >
 >If you enable this option, it may be difficult to solve errors that may occur during the execution of a scenario.
 
 ### [!UICONTROL Allow storing incomplete executions]
 
-This option determines how [!DNL Adobe Workfront Fusion] proceeds if an error occurs during the execution of a scenario. With this option enabled, the scenario is paused and moved to <!--[View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)-->. This gives you the possibility to fix the issue and continue executing from where the scenario was stopped. If this option is disabled, the scenario run stops and a rollback phase is started.
+This option determines how [!DNL Adobe Workfront Fusion] proceeds if an error occurs during the execution of a scenario. With this option enabled, the scenario is paused and moved to the incomplete execustion folder. This gives you the possibility to fix the issue and continue executing from where the scenario was stopped. If this option is disabled, the scenario run stops and a rollback phase is started.
+
+For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Enable data loss
 
-This option has to do with enabling data loss if [!DNL Workfront Fusion] fails to save a bundle to the queue of <!--[View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)--> (for example, due to a lack of free space). With this option enabled, the data is lost in order to prevent interruptions in the overall scenario execution. This is useful for scenarios where the highest priority is continuous execution and the incoming erroneous data is not that important.
+This option has to do with enabling data loss if [!DNL Workfront Fusion] fails to save a bundle to the queue of incomplete executions (for example, due to a lack of free space). With this option enabled, the data is lost in order to prevent interruptions in the overall scenario execution. This is useful for scenarios where the highest priority is continuous execution and the incoming erroneous data is not that important.
 
 Beyond that, when executing a scenario, a module can sometimes encounter a file that is larger than the maximum allowed size. In this case, [!DNL Workfront Fusion] proceeds in accordance with the setting of the [!UICONTROL Enable data loss] option and a warning message is shown.
 
-For more information about maximum file size, see <!--[About mapping files in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/about-mapping-files.md).-->
+For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-For more information on warnings, see <!--[Error processing in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/errors/error-processing.md).-->
+For more information about maximum file size, see [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#files).
+
+For more information on warnings, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
 ### [!UICONTROL Auto commit]
 
 The [!UICONTROL Auto commit] settings applies to transactions and defines the way to process a scenario. If the Auto commit option is on, the commit phase on each module starts immediately after completing the operation phase. With the Auto commit option disabled, no commit occurs until operations are executed for all modules (this is the default mode).
-
-For more information on transactions, see <!--[Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-cycles-phases.md).-->
 
 ### Maximum number of cycles
 
@@ -149,11 +145,11 @@ Setting more cycles can be useful when you want to prevent connection interrupti
 
 * If the scenario starts with a polling trigger, the setting defines the maximum number of cycles allowed during the scenario execution.
 
-   For more information on polling triggers, see <!--[Polling triggers](../../workfront-fusion/modules/module-types.md#polling) in [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+   For more information on polling triggers, see [Polling triggers](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#polling-triggers) in the article Module overview.
 
 * If the scenario starts with an instant trigger, the setting is ignored and all the pending events are processed during a single scenario execution, one event per one cycle.
 
-   For more information on instant triggers, see <!--[Instant triggers](../../workfront-fusion/modules/module-types.md#instant) in [Types of modules](../../workfront-fusion/modules/module-types.md).->
+   For more information on instant triggers, see [Instant triggers](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) in the article Module overview.
 
 * If the scenario does not start with a trigger (instant/polling), the specified maximum number of cycles is always performed.
 
@@ -184,7 +180,7 @@ You can see the already-run cycles in the Scenario details:
 
 ![](assets/scenario-detail-350x207.png)
 
-For more information about this page, see <!--[Scenario details in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-detail.md).-->
+For more information about this page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario.details.md).
 
 >[!ENDSHADEBOX]
 
@@ -192,7 +188,7 @@ For more information about this page, see <!--[Scenario details in [!DNL Adobe W
 
 Defines the maximum number of consecutive execution attempts before the execution of a scenario is deactivated (excluding [!UICONTROL DataError], [!UICONTROL DuplicateDataError] and [!UICONTROL ConnectionError]).
 
-For more information on errors, see <!--[Error processing in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/errors/error-processing.md).-->
+For more information on errors, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
 >[!NOTE]
 >

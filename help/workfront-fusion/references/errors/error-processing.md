@@ -152,7 +152,8 @@ Any error that appears during scenario execution and is not one of these error t
 
 If a scenario terminates with the `RuntimeError`, its further behavior depends on the [!UICONTROL Max number of consecutive errors] setting. 
 
-For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number) in the article Configure scenario settings.
+For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errorsnumber) in the article Configure scenario settings.
+
 
 >[!NOTE]
 >

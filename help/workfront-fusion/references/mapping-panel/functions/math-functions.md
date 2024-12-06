@@ -6,8 +6,6 @@ feature: Workfront Fusion
 ---
 # Math functions
 
-<!--Audited: 4/2024-->
-
 ## Access requirements
 
 You must have the following access to use the functionality in this article:
