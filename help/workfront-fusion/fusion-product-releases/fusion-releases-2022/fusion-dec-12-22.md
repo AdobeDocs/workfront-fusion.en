@@ -5,7 +5,6 @@ author: Becky
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
-exl-id: 404db789-706d-46ae-b14b-023502d287f0
 ---
 # Workfront Fusion release activity: Week of December 12, 2022
 

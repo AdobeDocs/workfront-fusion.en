@@ -8,7 +8,6 @@ description: This page describes all enhancements made in Adobe Workfront Fusion
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-exl-id: 195fc28b-435c-4c5e-be47-c73dea0499a6
 hidefromtoc: yes
 ---
 # Workfront Fusion release activity:&nbsp;Week of August 24, 2020
@@ -19,7 +18,7 @@ For a list of all recent changes, see [Adobe Workfront Fusion release activity](
 
 For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
-## More easily convert objects with custom data in the Workfront “Misc Action” Module
+## More easily convert objects with custom data in the Workfront "Misc Action" Module
 
 When selecting either the convertToProject action or the convertToTask action, the following new features aid in the setup and management of this common process.
 

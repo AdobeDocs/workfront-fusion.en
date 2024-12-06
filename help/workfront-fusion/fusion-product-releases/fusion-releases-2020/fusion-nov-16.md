@@ -8,7 +8,6 @@ description: This page describes all enhancements made in Adobe Workfront Fusion
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-exl-id: 9221a69e-2482-478b-95a9-f62dd28538d6
 hidefromtoc: yes
 ---
 # Workfront Fusion release activity:&nbsp;Week of November 16, 2020
@@ -27,7 +26,7 @@ To expand the ways you can use the Jira Cloud connector, we've added three new m
 * List Records
 * Search for Records
 
-We've also updated existing modules to support the “Sprint” object type. Previously, the “Sprint” object could only be accessed through the Custom API Call module.
+We've also updated existing modules to support the "Sprint" object type. Previously, the "Sprint" object could only be accessed through the Custom API Call module.
 
 For more information, see [Jira Software modules](../../../../../workfront-fusion/apps-and-their-modules/jira-software-modules.md).
 
