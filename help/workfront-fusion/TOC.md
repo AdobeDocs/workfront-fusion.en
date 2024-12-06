@@ -67,7 +67,6 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Workfront Fusion release activity: Week of February 28, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-28-22.md) 
         * [Workfront Fusion release activity: Week of February 21, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md) 
         * [Workfront Fusion release activity: Week of February 14, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md) 
-        * [Workfront Fusion release activity: Week of February 7, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-7-21.md)
         * [Workfront Fusion release activity: Week of January 3, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-jan-3-22.md)
     * Fusion releases - 2021 {#fusion-releases-2021}
         * [Workfront Fusion release activity: Week of November 29, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-nov-29-21.md) 
@@ -85,9 +84,10 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Workfront Fusion release activity: Week of May 10, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-10.md) 
         * [Workfront Fusion release activity: Week of May 3, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-may-3.md)
         * [Workfront Fusion release activity: Week of April 26, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md) 
-        * [Workfront Fusion release activity: Week of April 19, 2021](fusion-apr-19.md) 
+        * [Workfront Fusion release activity: Week of April 19, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md) 
         * [Workfront Fusion release activity: Week of March 8, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-mar-8.md)
         * [Workfront Fusion release activity: Week of February 15, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-15.md)
+        * [Workfront Fusion release activity: Week of February 7, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-7-21.md)
         * [Workfront Fusion release activity: Week of February 1, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-1.md) 
         * [Workfront Fusion release activity: Week of January 25, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-25.md) 
         * [Workfront Fusion release activity: Week of January 18, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-jan-18.md) 
@@ -198,6 +198,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
     * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
     * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+    * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
@@ -218,6 +219,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
         * [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
         * [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)
+        * [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md)
     * Modules {#modules}
         * [Modules](/help/workfront-fusion/references/modules/modules-toc.md)
         * [Webhooks (Instant triggers)](/help/workfront-fusion/references/modules/webhooks-reference.md)
@@ -318,6 +320,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Microsoft 356 Email modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
             * [Microsoft 365 Excel modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-excel-modules.md)
             * [Microsoft Dynamics modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md)
+            * [Microsoft Dynamics Finance and Operations modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
             * [Microsoft OneDrive modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
             * [Microsoft OneDrive for Business modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
             * [Microsoft SQL Server modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)

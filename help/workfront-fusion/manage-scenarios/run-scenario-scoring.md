@@ -1,10 +1,10 @@
 ---
-title: Run the Scenario Scoring Expert in Adobe Workfront Fusion
+title: Run the Scenario Scoring Expert
 description: The Scenario Scoring Expert can help you ensure that your scenario is configured in a way that follows best practices. It checks your scenario and gives recommendations for its structure and organization.
 author: Becky
 feature: Workfront Fusion
 ---
-# Run the Scenario Scoring Expert in Adobe Workfront Fusion
+# Run the Scenario Scoring Expert
 
 The Scenario Scoring Expert can help you ensure that your scenario is configured in a way that follows best practices. It checks your scenario and gives recommendations for its structure and organization.
 

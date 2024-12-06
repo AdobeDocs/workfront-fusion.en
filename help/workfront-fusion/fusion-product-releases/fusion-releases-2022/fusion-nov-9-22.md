@@ -20,8 +20,6 @@ During the implementation of this change, we were able to understand expected lo
 
 To see currently queued webhook events, navigate to Webhooks, in left navigation. Truck icons with a number in the numerator indicate queue events for that webhook. Click on the truck icon to see the queued events.
 
-![](assets/fusion-webhook-queue-1866x567.png)
-
 
 **Unused webhooks will now be deactivated or deleted**
 
