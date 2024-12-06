@@ -17,3 +17,4 @@ recommendations: noDisplay, noCatalog
 * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
 * [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
 * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+* [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)

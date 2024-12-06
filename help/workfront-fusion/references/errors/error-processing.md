@@ -69,7 +69,7 @@ Connection errors are one of the most common errors. They are usually caused by 
       For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
     * If this option is disabled, the execution of the scenario ends with an error followed by a rollback phase. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
 
-    For more information on the Allow storing incomplete executions setting, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md) in the article Configure scenario settings.
+   For more information on the Allow storing incomplete executions setting, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) in the article Configure scenario settings.
 
 ### Increasing time intervals
 
@@ -134,7 +134,7 @@ An incomplete data error occurs only with triggers. This error is generated if a
 
 If a scenario terminates with the `IncompleteDataError`, its further behavior will depend on its setting of [!UICONTROL Max number of consecutive errors]. 
 
-For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors) in the article The scenario settings panel.
+For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number) in the article Configure scenario settings.
 
 >[!BEGINSHADEBOX]
 
@@ -153,6 +153,7 @@ Any error that appears during scenario execution and is not one of these error t
 If a scenario terminates with the `RuntimeError`, its further behavior depends on the [!UICONTROL Max number of consecutive errors] setting. 
 
 For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errorsnumber) in the article Configure scenario settings.
+
 
 >[!NOTE]
 >
@@ -179,10 +180,10 @@ For more information on mapping, see [Mapping overview](/help/workfront-fusion/g
 
 For information about incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
--For information about the scenario setting panel, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
+For information about the scenario settings panel, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
 For information about schedules, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
 For information about scenario phases, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-For information on the Enable data loss option, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) in the article Configure scenario settings.
+For information on the Enable data loss option, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable) in the article Configure scenario settings.

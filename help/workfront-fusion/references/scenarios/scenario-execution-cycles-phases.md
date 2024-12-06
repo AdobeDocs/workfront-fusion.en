@@ -70,8 +70,7 @@ During the finalization phase, open connections (for example, FTP connections, d
 
 ## Resources
 
-For more information, see [The scenario settings panel](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
-
+For more information, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
 
 

@@ -1,5 +1,5 @@
 ---
-navigation-topic: get-started-with-workfront-fusion-2-0
+
 title: AI Assistant in Workfront Fusion
 description: AI Assistant in Workfront Fusion
 author: Becky
@@ -20,17 +20,17 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td>
-   <td> <p>New: Any</p> <p>Or</p> <p>Current: Not available</p></td> 
+   <td role="rowheader">Adobe Workfront package 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: Not available</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current: Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
    <p>Legacy: Any </p>
    </td> 
@@ -38,16 +38,23 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New: [!DNL Workfront Fusion] is included in the Ultimate Workfront plan.</p> <p>Or</p>
-   <p>Current: Not available</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront Plan: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront Plan: Workfront Fusion is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Access level configurations*</td> 
+  </tr> 
+   </td> 
+  </tr> 
  </tbody> 
 </table>
 
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -61,7 +68,7 @@ For more information on signing the agreement, see [Sign the Adobe Gen AI agreem
 
 ## Get information from AI Assistant
 
-To get information or instructions from the Workfront Fusion Documentation using AI Assistant:
+To get information or instructions from the Workfront Documentation using AI Assistant:
 
 1. Click the **AI Assistant** icon ![AI Assistant icon](assets/ai-assistant-icon.png) near the upper-right corner of the screen.
 1. In the AI Assistant panel, enter your prompt in the text area near the bottom of the panel.
