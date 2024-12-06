@@ -6,8 +6,6 @@ feature: Workfront Fusion
 ---
 # [!UICONTROL Aggregator] module
 
-<!--audited: 09/2024-->
-
 An aggregator module is a module that merges several bundles of data into a single bundle.
 
 ## Access requirements

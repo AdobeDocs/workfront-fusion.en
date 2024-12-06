@@ -96,6 +96,9 @@ Currently, the scenario editor does include a feature for copying a filter.
 
 To copy a filter without copying modules, you can use the Fusion DevTool
 
+1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
 1. Open the Fusion DevTool by clicking on the DevTool icon ![DevTool icon](assets/debugger-icon.png) near the bottom of the screen.
    
    If you do not see the DevTool icon, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) for instructions on opening the DevTool.

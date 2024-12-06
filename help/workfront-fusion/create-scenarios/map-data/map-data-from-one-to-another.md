@@ -78,7 +78,7 @@ To assign output items to a module's input fields:
 
 1. Click an item from the mapping panel to insert it into the field.
 
-<!--For more information, see [Configure a module's settings](../../workfront-fusion/modules/configure-a-modules-settings.md).-->
+For more information, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 
 ## Troubleshooting

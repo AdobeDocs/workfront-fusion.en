@@ -9,8 +9,6 @@ recommendations: noDisplay, noCatalog
 
 # Delete users through the [!DNL Adobe Admin Console]
 
-<!-- audited: 9/2024)-->
-
 >[!IMPORTANT]
 >
 >The functionality in this article is available only if your organization's instance of [!DNL Adobe Workfront Fusion] has been onboarded to the [!DNL Adobe Business Platform].

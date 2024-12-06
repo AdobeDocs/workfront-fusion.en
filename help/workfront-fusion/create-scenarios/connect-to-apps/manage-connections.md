@@ -11,8 +11,6 @@ feature: Workfront Fusion
 
 <!--affected by unified shell-->
 
-<!--audited: Nov 2024-->
-
 A connection represents the authorization and permissions that Fusion uses to access the application. You can create one or more connections for each application, and can use the same connection in multiple modules or scenarios. 
 
 You can manage these connections in the Connections area.

@@ -6,8 +6,6 @@ feature: Workfront Fusion
 ---
 # [!UICONTROL Iterator] module
 
-<!--audited: 09/2024-->
-
 An [!UICONTROL Iterator] is a type of module that converts an array into a series of bundles. Each array item is outputted as a separate bundle.
 
 ## Access requirements
@@ -64,7 +62,7 @@ Other connectors may include iterator modules specific to that iterator. These c
 
 ![](assets/specialized-iterators.jpg)
 
-<!--For more information, see [Configure a module's settings](../../workfront-fusion/modules/configure-a-modules-settings.md).-->
+For more information, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 >[!BEGINSHADEBOX]
 

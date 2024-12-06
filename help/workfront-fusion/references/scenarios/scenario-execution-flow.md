@@ -7,8 +7,6 @@ feature: Workfront Fusion
 ---
 # Scenario execution flow
 
-<!--audited: 09/2024-->
-
 This article explains how a scenario executes and how data flows through it, and how to view the data processed by each module.
 
 ## Scenario execution flow

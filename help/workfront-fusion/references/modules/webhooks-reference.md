@@ -15,9 +15,9 @@ Many services provide webhooks to deliver instant notifications whenever a certa
 If a connector does not include a webhook, you can do one of the following:
 
 * Create a custom webhook using the Webhook module.
-   <!--For more information, see [Webhooks]()-->
+   For more information, see [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 * Use polling triggers to periodically poll the service.
-   <!--For more information see [Schedule a scenario]()-->
+   For more information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
 
 For a video introduction to webhooks in Workfront Fusion, see:
 
@@ -83,7 +83,7 @@ For more information, see [Rollback](/help/workfront-fusion/references/scenarios
 
 If there is a Webhook response module in your scenario, the error is sent to the Webhook response. The Webhook response module is always executed last (when the [!UICONTROL Auto commit] option in the Scenario settings is not enabled). 
 
-<!--For more information, see [Responding to webhooks](../../workfront-fusion/apps-and-their-modules/webhooks-updated.md#respondi) in the article [Webhooks](../../workfront-fusion/apps-and-their-modules/webhooks-updated.md).-->
+For more information, see [Responding to webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks) in the article Webhooks.
 
 ### Webhook deactivation
 
@@ -96,7 +96,7 @@ Deactivated webhooks are deleted and unregistered automatically if they are not 
 
 ## Custom webhooks
 
-You can create your own webhooks. <!--For more information, see [Webhooks](../../workfront-fusion/apps-and-their-modules/webhooks-updated.md).-->
+You can create your own webhooks. For more information, see [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md).
 
 ## Resources
 
