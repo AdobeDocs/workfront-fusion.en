@@ -30,6 +30,19 @@ Some rows contain information labeled "New" and "Current." This is because Workf
    <li>For instructions on how a Workfront administrator can locate your organization's Workfront plan, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">View your organization's cluster and Workfront plan</a> in the Workfront documentation.</li><li>For more information on the new Workfront plans, see <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront pricing and packaging</a>.</li></ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> Adobe Workfront licenses refer to the set of Workfront features included with the license assigned to you. For example, one user might have a license that includes marking work items complete and logging time, while another user has a license that allows them only to approve assets or submit requests. <p> 
+   <ul>
+   <li>To find out which license you are assigned, contact your Workfront administrator.</li>
+   <li>Adobe Workfront is transitioning to a new pricing and packaging model. For information about licenses see:
+   <ul>
+   <li>New: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">New licenses overview</a></li>
+   <li>Current: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Licenses overview</a></li></ul></li>
+   <li>If you have the correct access level and still don't have access, ask your Workfront administrator if they set additional restrictions in your access level. For information on how a Workfront administrator can modify your access level, see <a href="/help/quicksilver/administration-and-setup/get-started-wf-administration/firewall-overview.md#view-your-organizations-cluster-and-workfront-plan" class="MCXref xref">Create or modify custom access levels</a>.
+   </ul>
+      </p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">Product</td> 
    <td>In some cases, Fusion must be purchased in addition to Workfront. If your organization has the Ultimate Workfront package, Fusion is included.
   <tr> 

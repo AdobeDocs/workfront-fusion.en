@@ -104,6 +104,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
     * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
     * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
+    * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
