@@ -12,7 +12,7 @@ The [!UICONTROL Incomplete executions] folder stores scenario executions that we
 >
 >By default the storing of incomplete executions is disabled. To enable it, enable the [!UICONTROL Allow storing incomplete executions] option in the scenario advanced settings.
 >
->For more information about scenario settings, see <!--[The scenario settings panel in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).-->
+>For more information about scenario settings, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
 ## Access requirements
 
@@ -84,7 +84,8 @@ If a module encounters an error during its operation, a new incomplete execution
 >
 >`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
 >
-><!--For more information, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable) in [The scenario settings panel in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).-->
+>For more information, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable) in the article Configure scenario settings.
+
 
 ## Resolve incomplete executions from the Incomplete Executions tab
 
@@ -115,7 +116,7 @@ The following options in the [!UICONTROL Scenario settings] panel determine if a
 * Sequential processing
 * Enable data loss
 
-<!--For more information about these options, see [The scenario settings panel in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).-->
+For more information about these options, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
 ## Errors resulting into incomplete executions 
 
