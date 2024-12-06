@@ -19,7 +19,7 @@ If a module encounters an error during the scenario execution, and there is no e
 
 By adding an error handler route to a module, you can replace the default error handling logic with your own. Adobe Workfront Fusion offers five different directives that can be inserted at the end of your error handler routes. 
 
-For more information on default error handling, see [Error processing](/help/workfront-fusion/references/errors/error-processing.md).
+For more information on default error handling, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
 For more information on error handling directives, see [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 

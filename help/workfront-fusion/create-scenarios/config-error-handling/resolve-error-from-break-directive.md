@@ -39,8 +39,8 @@ When the Automatically complete execution option is turned off, the run is marke
 
 There are some exceptions to executions being stored under Incomplete Executions, and with some error types, the auto-retry of a scenario execution is not possible. 
 
-<!--## Resources
+## Resources
 
-For more information, see [Allow storing incomplete executions](../../workfront-fusion/scenarios/scenario-settings-panel.md#allow) in the article [The scenario settings panel](../../workfront-fusion/scenarios/scenario-settings-panel.md).-->
+For more information, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) in the article Configure scenario settings.
 
 

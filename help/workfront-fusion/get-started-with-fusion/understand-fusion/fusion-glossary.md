@@ -55,7 +55,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Filter</p> </td> 
-   <td> <p> A filter can be applied between two modules, and allows you to then only work with bundles that fit certain criteria. There are a number of different filters you can apply. </p><p><!-- For more information, see <a href="../../workfront-fusion/scenarios/add-a-filter-to-a-scenario.md" class="MCXref xref">Add a filter to a scenario</a>.--></p> </td> 
+   <td> <p> A filter can be applied between two modules, and allows you to then only work with bundles that fit certain criteria. There are a number of different filters you can apply. </p><p>For more information, see <a href="/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md" class="MCXref xref">Add a filter to a scenario</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID </p> </td> 
