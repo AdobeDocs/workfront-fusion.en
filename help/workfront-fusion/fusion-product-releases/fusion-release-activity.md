@@ -182,7 +182,6 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 * [Workfront Fusion release activity: Week of February 28, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-28-22.md) 
 * [Workfront Fusion release activity: Week of February 21, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-21-22.md) 
 * [Workfront Fusion release activity: Week of February 14, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-14-22.md) 
-* [Workfront Fusion release activity: Week of February 7, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-feb-7-21.md)
 
 ### January 2022
 
@@ -233,7 +232,7 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 ### April 2021
 
 * [Workfront Fusion release activity: Week of April 26, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-26.md) 
-* [Workfront Fusion release activity: Week of April 19, 2021](fusion-apr-19.md) 
+* [Workfront Fusion release activity: Week of April 19, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-apr-19.md) 
 
 ### March 2021
 
@@ -242,6 +241,7 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 ### February 2021
 
 * [Workfront Fusion release activity: Week of February 15, 2021](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-15.md)
+* [Workfront Fusion release activity: Week of February 7, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2021/fusion-feb-7-21.md)
 
 ### January 2021
 

@@ -68,7 +68,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    Click on the module that you want to configure.
 
-1. If required for the module, create a **[!UICONTROL Connection]** to your registered user account for that given service, as described in [Connections overview](../../workfront-fusion/connections/about-connecting-wf-fusion-to-app-or-service.md).
+1. If required for the module, create a **[!UICONTROL Connection]** to your registered user account for that given service, as described in [Connections overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 1. In each field, type the appropriate text.
 
    Or
@@ -77,7 +77,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    
    For information on mapping, see [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
 
-   For information about the different item data types [!DNL Workfront Fusion] can recognize (such as date, number, and text), see [Item data types in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/item-data-types.md).
+   For information about the different item data types [!DNL Workfront Fusion] can recognize (such as date, number, and text), see [Item data types](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
    >[!NOTE]
    >
