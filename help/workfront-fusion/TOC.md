@@ -8,7 +8,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 
 * [Adobe Workfront Fusion Documentation](home.md)
 * Fusion release activity {#fusion-release-activity}
-    * [Fusion release activity](/help/workfront-fusion/fusion-release-activity/fusion-release-activity.md)
+    * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2024 {#fusion-releases-2024}
         * [Workfront Fusion release activity: Week of December 2, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
         * [Workfront Fusion release activity: Week of November 25, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
@@ -40,14 +40,14 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Workfront Fusion release activity: Week of September 4, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-9-1.md)
         * [Workfront Fusion release activity: Week of August 21, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-8-21.md)
         * [Workfront Fusion release activity: Week of August 7, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-8-7.md)
-        * [Workfront Fusion release activity: Week of  July 10, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-7-10.md)
-        * [Workfront Fusion release activity: Week of  June 26, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-6-29.md)
-        * [Workfront Fusion release activity: Week of  June 12, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-6-12.md)
-        * [Workfront Fusion release activity: Week of  May 15, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-5-15.md)
-        * [Workfront Fusion release activity: Week of  May 1, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-5-2.md)
-        * [Workfront Fusion release activity: Week of April 17, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-4-20.md)
-        * [Workfront Fusion release activity: Week of March 20, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-3-21.md)
-        * [Workfront Fusion release activity: Week of March 6, 2023](../../../product-announcements/product-releases/fusion-release-activity/fusion-2023-3-6.md)
+        * [Workfront Fusion release activity: Week of  July 10, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-7-10.md)
+        * [Workfront Fusion release activity: Week of  June 26, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-6-29.md)
+        * [Workfront Fusion release activity: Week of  June 12, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-6-12.md)
+        * [Workfront Fusion release activity: Week of  May 15, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-5-15.md)
+        * [Workfront Fusion release activity: Week of  May 1, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-5-2.md)
+        * [Workfront Fusion release activity: Week of April 17, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-4-20.md)
+        * [Workfront Fusion release activity: Week of March 20, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-21.md)
+        * [Workfront Fusion release activity: Week of March 6, 2023](/help/workfront-fusion/fusion-product-releases/fusion-releases-2023/fusion-2023-3-6.md)
     * Fusion releases - 2022 {#fusion-releases-2022}
         * [Workfront Fusion release activity: Week of December 12, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-dec-12-22.md)
         * [Workfront Fusion release activity: Week of November 14, 2022](/help/workfront-fusion/fusion-product-releases/fusion-releases-2022/fusion-nov-14-22.md)
