@@ -22,7 +22,6 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 You can now use Workfront Fusion to connect to your SharePoint account. With the SharePoint modules, you can perform actions in your SharePoint account such as creating items, reading documents, or downloading files.
 
-For information about available SharePoint modules, see [SharePoint modules](../../../../../workfront-fusion/apps-and-their-modules/sharepoint-modules.md).
 
 **Preview release**
 

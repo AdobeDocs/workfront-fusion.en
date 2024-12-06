@@ -28,7 +28,6 @@ With the Microsoft OneDrive connector, you can:
 * Get files, or get share links for a file
 * Make a custom API call
 
-For more information, see [Microsoft OneDrive modules](../../../workfront-fusion/apps-and-their-modules/microsoft-onedrive-modules.md).
 
 ## Split.io connector and modules now available
 
@@ -39,5 +38,3 @@ Now you can use Workfront Fusion 2.0 to connect to your Split.io account. With t
 * Associate tags with a split
 * Retrieve a list of workspaces, environments, splits, split definitions, or traffic types
 * Perform a custom API call
-
-For more information, see [Split.io modules](../../../workfront-fusion/apps-and-their-modules/split-io-modules.md).

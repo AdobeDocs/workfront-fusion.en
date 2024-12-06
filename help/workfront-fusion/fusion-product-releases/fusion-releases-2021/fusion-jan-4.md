@@ -32,5 +32,3 @@ To expand the ways you can use the Microsoft 365 Email connector, we've added so
 * Make an API call
 
 We've also removed the Iterate attachments module. You can combine the List attachments module with the Iterator module to iterate attachments.
-
-For more information, see [Microsoft Office 365 Email](../../../workfront-fusion/apps-and-their-modules/microsoft-365-email-modules.md).

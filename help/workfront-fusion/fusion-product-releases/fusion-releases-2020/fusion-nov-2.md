@@ -28,8 +28,6 @@ With the Allocadia modules, you can:
 * Create, read, update, or delete an Allocadia record
 * Perform a custom API call
 
-For information about available Allocadia modules, see [Allocadia modules](../../../../../workfront-fusion/apps-and-their-modules/allocadia-modules.md).
-
 ## DocuSign connector and modules now available (Coming soon)
 
 You can now use Workfront Fusion 2.0 to connect to your DocuSign account. With the DocuSign modules, you can:
@@ -41,5 +39,3 @@ You can now use Workfront Fusion 2.0 to connect to your DocuSign account. With t
 * Download a document as a filed
 * Upload a file to an envelope
 * Perform a custom API call
-
-For more information, see [DocuSign modules](../../../../../workfront-fusion/apps-and-their-modules/docusign-modules.md).

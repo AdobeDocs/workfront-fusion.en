@@ -31,5 +31,3 @@ To make it easier to locate the data you need in your Scenario Execution History
 * Use your keyboard to open the search window and navigate through the results
 
 Previously, users could search only for text, and could use filters only on the full list of executions.
-
-For more information, see [View a scenario's execution history in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/view-scenario-execution-history.md).

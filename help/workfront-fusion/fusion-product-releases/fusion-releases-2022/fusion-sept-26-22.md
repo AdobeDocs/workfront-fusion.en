@@ -21,5 +21,3 @@ Now you can use Adobe Workfront Fusion to connect to your GitLab account. With t
 * Retrieve information about Gitlab objects
 * Retry builds or failed pipeline jobs
 * Edit, modify, or update GitLab objects
-
-For more information, including a complete list of available actions, see [GitLab modules](/help/quicksilver/workfront-fusion/apps-and-their-modules/gitlab-modules.md).

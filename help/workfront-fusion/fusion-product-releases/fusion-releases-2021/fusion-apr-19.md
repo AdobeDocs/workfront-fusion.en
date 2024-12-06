@@ -32,5 +32,3 @@ We've added more modules to the Slack connector in Workfront Fusion. Now you can
 * Perform a custom API call
 
 All of the existing modules are still available.
-
-For more information, see [Slack modules](../../../workfront-fusion/apps-and-their-modules/slack-modules.md).

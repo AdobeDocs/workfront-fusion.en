@@ -22,5 +22,3 @@ Now you can use Adobe Workfront Fusion to connect to your Adobe Acrobat Sign acc
 * Create, update, and read agreements or other records
 * List or search for records in your Adobe Acrobat Sign account
 * Make a custom API call
-
-For more information, see [Adobe Acrobat Sign modules](../../../workfront-fusion/apps-and-their-modules/adobe-sign-modules.md).

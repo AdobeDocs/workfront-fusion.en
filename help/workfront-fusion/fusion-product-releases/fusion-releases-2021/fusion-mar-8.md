@@ -21,7 +21,3 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 ## Search for items in the mapping panel
 
 To make it easier for you to find the items you want to map in your scenarios, we've added the ability to search the mapping panel. This makes mapping much easier in scenarios that have a lot of modules or data.
-
-For more information on mapping, see [Map information from one module to another in Adobe Workfront Fusion](../../../workfront-fusion/mapping/map-information-between-modules.md).
-
-This feature is now included in the [Universal connectors and routing in Workfront Fusion](https://experienceleague.adobe.com/docs/workfront-course-map/using/learning-paths/workfront-fusion-program/universal-connectors-and-routing-in-fusion-MCNYZ474LYKNDSDE7PCZFB7CFR44.html) learning path on Adobe Experience League.

@@ -22,12 +22,9 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 To help you use your Workfront scenarios more easily, we've introduced a new type of field. The "Select fields to map" field allows you to choose which fields you want to have available to modify on a given object. This makes it easier for you to enter information or troubleshoot, since you don't have to scroll through as many fields. Limiting the available fields also prevents problems that were occasionally encountered when objects with many custom fields could become too big to run efficiently.
 
-For more information, see [Adobe Workfront modules](../../../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).
 
 ## Updates to Workfront > Watch Fields module
 
 To make it easier to set up the Workfront > Watch fields module, we've updated the module to only display fields that have actually been setup for tracking in your Workfront instance. Your Workfront administrator configures which object fields and actions Workfront tracks.
 
 We have also included a fix that ensures that you can use mapped fields from the object without first running the scenario once.
-
-For more information, see [Adobe Workfront modules](../../../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).

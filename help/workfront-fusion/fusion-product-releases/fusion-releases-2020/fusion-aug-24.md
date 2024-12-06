@@ -25,15 +25,12 @@ When selecting either the convertToProject action or the convertToTask action, t
 * There is nowa new list of Project (or Task) standard fields that you can fill out or map for the new object. Previously, this module required an advanced setup. If you have used this module previously, your advanced configuration is still available under Advanced settings.
 * A new parameter: Copy Custom Data. If enabled, any custom fields that have values on the original object and exist on the new object areautomatically copied to the new object.
 
-For more information, see [Adobe Workfront modules](../../../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).
-
 ## Upload a document to a specific folder in the Workfront Upload Document Module.
 
 Now, when uploading a document to a Project, Task, or Issue, you can optionally identify the folder to which you want to upload the file.
 
 Previously, uploading directly to a folder was not available.
 
-For more information, see [Adobe Workfront modules](../../../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).
 
 ## Hubspot CRM and modules now available
 

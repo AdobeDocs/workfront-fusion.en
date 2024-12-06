@@ -32,5 +32,3 @@ With the Adobe PDF tools modules, you can:
 * Use Optical Character Recognition (OCR) on a file
 * Modify a PDF by deleting or rotating certain pages
 * Get PDF file properties such as page count, version, or encryption
-
-For more information, see [Adobe PDF Services](../../../workfront-fusion/apps-and-their-modules/pdf-modules.md).

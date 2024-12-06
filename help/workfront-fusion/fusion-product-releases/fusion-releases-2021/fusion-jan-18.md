@@ -22,8 +22,6 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 To make it easier for you to debug your scenarios, we've created a Workfront Fusion 2.0 DevTool Chrome extension. With this extension, you can check manual runs of your scenario, review all performed operations, and see details of every API call. The DevTool also features tools that let you modify your scenario without having to modify modules or filters one by one.
 
-For instructions, and to download the Workfront Fusion 2.0 Devtool, see [Debug scenarios with the Adobe Workfront Fusion DevTool](../../../workfront-fusion/scenarios/debug-scenarios-with-dev-tool.md).
-
 ## Azure Active Directory connector and modules now available
 
 You can now use Workfront Fusion to connect to your Azure Active Directory applications. With the Azure Active Directory modules, you can:
@@ -33,8 +31,6 @@ You can now use Workfront Fusion to connect to your Azure Active Directory appli
 * Get data from existing records.
 * Search records based on criteria you specify.
 * Perform a custom API call.
-
-For more information see [Azure Active Directory modules](../../../workfront-fusion/apps-and-their-modules/azure-ad-modules.md).
 
 ## Azure DevOps connector and modules now available
 
@@ -48,8 +44,6 @@ You can now use Workfront Fusion to connect to your Azure DevOps applications. W
 * Retrieve a list of work items.
 * Perform a custom API call.
 
-For more information see [Azure DevOps modules](../../../workfront-fusion/apps-and-their-modules/azure-dev-ops.md).
-
 ## Qualtrics connector and modules now available
 
 You can now use Workfront Fusion 2.0 to connect to your Qualtrics account. With the Qualtrics modules, you can:
@@ -60,4 +54,3 @@ You can now use Workfront Fusion 2.0 to connect to your Qualtrics account. With 
 * Distribute a survey via email.
 * Perform a custom API call.
 
-For more information see [Qualtrics modules](../../../workfront-fusion/apps-and-their-modules/qualtrics-modules.md).

@@ -35,6 +35,3 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
    To make your webhooks easier to set up for the Workfront > Watch events module, we've included the most common event filter. Now, the webhook has an option to filter out any changes made by modules using the connection specified for the Watch events module. In other words, with this filter enabled, any changes made by the Workfront user associated with that connection cannot trigger the scenario.
 
    Previously, this filter was not available. Therefore, it was easier for changes made in Workfront modules to trigger scenarios containing those modules, potentially causing scenarios to trigger themselves in an infinite loop.
-
-For more information on event filters in the Workfront > Watch events module, see [Adobe Workfront modules](../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).
-

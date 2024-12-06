@@ -9,7 +9,6 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
-exl-id: 06b5d602-e656-40e8-a397-c39eaadc924a
 ---
 # Workfront Fusion release activity: Week of November 14, 2022
 
@@ -24,5 +23,3 @@ With the Microsoft Power BI modules, you can:
 * Create, read, delete, list, or refresh datasets
 * Add or delete rows in a dataset table
 * Make a custom API call to the Microsoft Power BI API
-
-For more information, see [Microsoft Power BI modules](../../../workfront-fusion/apps-and-their-modules/powerbi-modules.md).

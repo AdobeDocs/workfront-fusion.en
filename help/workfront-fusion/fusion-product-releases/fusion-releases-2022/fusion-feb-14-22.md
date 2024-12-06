@@ -21,5 +21,3 @@ To expand functionality of the Anaplan connector, we've made the following updat
 
 * Use a dedicated module to upload a file to Anaplan. Now, you can take a file in Anaplan and upload it to additional workspaces and models.
 * Retrieve Anaplan Views with the Get a Record module. Now, you can list all views of an Anaplan module or model.
-
-For more information, see [Anaplan Modules](../../../workfront-fusion/apps-and-their-modules/anaplan-modules.md).

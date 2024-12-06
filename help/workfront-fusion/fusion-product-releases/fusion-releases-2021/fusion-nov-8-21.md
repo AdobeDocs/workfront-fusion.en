@@ -24,5 +24,3 @@ We've created a module for one of the most common actions available in the Misce
 * Task to Project
 
 Previously, these conversions were available only through the Miscellaneous actions module.
-
-For more information, see [Adobe Workfront modules](../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).

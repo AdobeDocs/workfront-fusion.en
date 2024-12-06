@@ -20,5 +20,3 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 To allow you more control over your API calls in Workfront Fusion's Azure DevOps connector, we've added the ability to select the Azure DevOps API version in the Custom API Call module. Workfront Fusion supports Azure DevOps API versions 4.1 through 7.1.
 
 Previously, you could not select the API version.
-
-For more information, see [Azure DevOps modules](../../../workfront-fusion/apps-and-their-modules/azure-dev-ops.md).

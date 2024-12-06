@@ -27,12 +27,8 @@ Previously, users set their own email notification settings.
 >
 >Fusion applies organization notification settings to the team level for each team in the organization. To ensure that your teams are taking advantage of the new notification capability, update the email notification settings at the team level.
 
-For more information, see [Adobe Workfront Fusion organizations and teams](../../../workfront-fusion/organizations/organizations-and-teams.md).
-
 ## Select API version in the Workfront > Custom API Call module
 
 To make your API calls more customizable, we've made it possible for you to select the version of the Workfront API that you want the Workfront > Custom API Call module to access. You can choose from version 11, version 12, or the Workfront internal API.
 
 Previously, you could not select the Workfront API version for this module.
-
-For more information, see [Adobe Workfront modules](../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).

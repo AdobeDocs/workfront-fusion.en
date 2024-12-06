@@ -28,13 +28,9 @@ To expand the ways you can use the Jira Cloud connector, we've added three new m
 
 We've also updated existing modules to support the "Sprint" object type. Previously, the "Sprint" object could only be accessed through the Custom API Call module.
 
-For more information, see [Jira Software modules](../../../../../workfront-fusion/apps-and-their-modules/jira-software-modules.md).
-
 ## Execution ID is now available for mapping in scenarios
 
 The Execution ID for a scenario is now available in the mapping panel. This ID represents a specific execution of the scenario, and can be used as metadata. For example, the execution ID can be saved with a record that Fusion creates, so that you can later determine which Fusion execution created the record. You can find the Execution ID in the mapping panel under General Functions.
-
-For more information on scenario executions, see [Scenario execution, cycles, and phases in Adobe Workfront Fusion](../../../../../workfront-fusion/scenarios/scenario-execution-cycles-phases.md).
 
 ## Keyboard shortcuts for Workfront Fusion 2.0 scenarios
 
@@ -42,8 +38,6 @@ To make scenario building more convenient, we've added some keyboard shortcuts:
 
 * Ctrl/Cmd+Shift+Enter: Run a scenario once
 * Ctrl/Cmd + Shift + S: Save a scenario
-
-For more information on building Workfront Fusion 2.0 scenarios, see [Create a scenario in Adobe Workfront Fusion](../../../../../workfront-fusion/scenarios/create-a-scenario.md).
 
 ## Updates to Office 365 Excel connector
 
@@ -59,12 +53,9 @@ To expand the ways you can use the Office 365 Excel connector, we've added some 
 
 Previously available modules are still present in the app.
 
-For more information, see [Microsoft Office 365 Excel modules](../../../../../workfront-fusion/apps-and-their-modules/microsoft-365-excel-modules.md).
 
 ## Use OAuth 2.0 in your Workfront app connections
 
 We've updated the Workfront connector to use OAuth 2.0. This update means that it's easier to make changes in your Workfront app connections. For example, if something about your connection changes (such as a password), you no longer need to update each individual connection in your scenarios. In addition, OAuth2 provides other benefits such as improved security and the ability to use Single Sign-on (SSO).
 
 Existing connections do not require any changes at this time. You can, however, reauthorize existing connections if you want to take advantage of the benefits of OAuth 2.0.
-
-For more information, see [Adobe Workfront modules](../../../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).

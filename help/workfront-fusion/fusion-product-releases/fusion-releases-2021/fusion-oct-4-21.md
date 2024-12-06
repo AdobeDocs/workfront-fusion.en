@@ -21,15 +21,12 @@ For increased clarity, we've made it possible to see the event filters used by a
 
 Previously, users could only see event filters when setting up the webhook, and there was no way to view the filters in an existing Workfront > Watch Events module.
 
-For more information, see [Event subscription filters in the Workfront > Watch Events modules](../../../workfront-fusion/apps-and-their-modules/workfront-modules.md#event) in [Adobe Workfront modules](../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).
-
 ## Attach custom forms to Workfront objects using the Workfront > Create record and Update record modules
 
 To make the use of custom forms more similar to the experience in Workfront, we've made it possible to add custom forms to Workfront objects. Now, you can select a custom form when creating or updating an object. The custom form's fields then open for you to enter values.
 
 Previously, you could enter values into fields on custom forms, but they were not organized by form and could be difficult to find.
 
-For more information, see [Adobe Workfront modules](../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).
 
 ## Use rich text in comments and custom fields created by Workfront Fusion
 
@@ -47,7 +44,3 @@ Updates support the following rich text formats:
 * Break Line
 
 Previously, rich text could only be added to comments or custom fields through Workfront itself or the Workfront API.
-
-For more information on the Create record and Update record modules, see [Adobe Workfront modules](../../../workfront-fusion/apps-and-their-modules/workfront-modules.md).
-
-For more information on the rich text available in comments or custom fields, see [Update work](../../../workfront-basics/updating-work-items-and-viewing-updates/update-work.md).

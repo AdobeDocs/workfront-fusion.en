@@ -20,5 +20,3 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 Now, when creating a connection in a Frame.io module, you can select the option to create a connection using OAuth2 PKCE, a secure, industry standard authentication method. The existing API token connection type is still available for the Frame.io connector.
 
 Previously, only the API token connection method was available for the Frame.io connector.
-
-For more information, see [Frame.io modules](../../../workfront-fusion/apps-and-their-modules/frame-io-modules.md).

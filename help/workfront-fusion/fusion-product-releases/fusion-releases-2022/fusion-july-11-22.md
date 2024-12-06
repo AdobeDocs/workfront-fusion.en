@@ -31,9 +31,6 @@ Now you can use Adobe Workfront Fusion to connect to your Figma account. With th
 *   Retrieve a file, image, style, or component
     
 *   Make a call to the Figma API
-    
-
-For more information, see [Figma modules](../../../workfront-fusion/apps-and-their-modules/figma-modules.md).
 
 ## Workday connector and modules now available
 
@@ -44,9 +41,6 @@ Now you can use Adobe Workfront Fusion to connect to your Workday account. With 
 *   Retrieve a list of records
     
 *   Make a request to the Workday API
-    
-
-For more information, see [Workday modules](../../../workfront-fusion/apps-and-their-modules/workday-modules.md).
 
 ## Adobe Creative Cloud Libraries connection and modules now available
 
@@ -59,9 +53,6 @@ Now you can use Adobe Workfront Fusion to connect to your Adobe Creative Cloud L
 *   List elements in a given library
     
 *   Perform a custom API call
-    
-
-For more information, see [Adobe Creative Cloud Libraries moduels](../../../workfront-fusion/apps-and-their-modules/creative-cloud-libraries-modules.md).
 
 ## Adobe Target connection and modules now available
 
@@ -74,6 +65,3 @@ Now you can use Adobe Workfront Fusion to connect to your Adobe Target account. 
 *   Search records based on criteria you specify
     
 *   Perform a custom API call
-    
-
-For more information, [Adobe Target modules](../../../workfront-fusion/apps-and-their-modules/adobe-target-modules.md).

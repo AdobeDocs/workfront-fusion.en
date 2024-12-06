@@ -30,5 +30,3 @@ You can now use Workfront Fusion to connect to your Bynder account. With the Byn
 * Retrieve a list of assets
 * Search assets based on criteria you specify
 * Perform a custom API call
-
-For more information see [Bynder modules](../../../workfront-fusion/apps-and-their-modules/bynder-modules.md).

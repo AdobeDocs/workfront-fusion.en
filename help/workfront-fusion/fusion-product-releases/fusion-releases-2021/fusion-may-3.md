@@ -22,8 +22,6 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 The Salesforce > Search for records module now has the option to search using SOQL (Salesforce Object Query Language). You can also search using the previously available options (SOSL and simple searches).
 
-For more information, see [Salesforce modules](../../../workfront-fusion/apps-and-their-modules/salesforce-modules.md).
-
 ## New connection type in Azure DevOps connector requires fewer scopes
 
 To enhance security, we've added a new connector type to the Workfront Fusion Azure DevOps Connector. Now, when you create a connection in an Azure DevOps module, you can select from two types of connections:
@@ -37,5 +35,3 @@ To enhance security, we've added a new connector type to the Workfront Fusion Az
   This is the legacy connection type, which requests all scopes available in a connection to Azure DevOps.
 
 We recommend that you use the Azure DevOps connection type in all your new scenarios that use Azure DevOps. We also recommend that you change any Azure DevOps modules in your existing scenarios to use the new connection type. The legacy Azure DevOps (Request all scopes) connection type will be deprecated in the near future.
-
-For more information, see [Azure DevOps modules](../../../workfront-fusion/apps-and-their-modules/azure-dev-ops.md).

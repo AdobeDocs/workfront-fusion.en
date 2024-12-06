@@ -16,5 +16,3 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 ## NetSuite app and module now available
 
 You can now use Workfront Fusion 2.0 to connect to your NetSuite account. With the NetSuite Make an API Call module, you can automate API calls to your NetSuite account.
-
-For more information, see [NetSuite modules](../../../workfront-fusion/apps-and-their-modules/netsuite.md).

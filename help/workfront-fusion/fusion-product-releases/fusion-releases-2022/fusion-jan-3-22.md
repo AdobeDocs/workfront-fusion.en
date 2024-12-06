@@ -25,5 +25,3 @@ With the Frame.io connector, you can:
 * Create, read, update, delete, or list assets or comments.
 * List projects for a specified team.
 * Make a custom API call.
-
-For more information, see [Frame.io modules](../../../workfront-fusion/apps-and-their-modules/frame-io-modules.md).

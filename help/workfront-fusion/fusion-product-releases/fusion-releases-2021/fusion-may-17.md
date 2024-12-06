@@ -22,7 +22,6 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 To make your Workfront Fusion Scenarios easier to work with, we've made it possible to copy and paste modules. Now, you can copy a module or group of modules and paste them into the same or a different scenario. Copying modules preserves the field values in that module.
 
-For more information, see [Copy modules or scenarios in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/copy-modules-or-scenarios.md).
 
 ## Select multiple modules in a Workfront Fusion scenario
 
@@ -34,7 +33,6 @@ Now, when editing a scenario, you can select multiple modules at a time. You can
 
 Copying and moving modules preserve the module values and any lines connecting the modules.
 
-For more information on editing scenarios, see [Create a scenario in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/create-a-scenario.md).
 
 ## Modules now preserve unsaved information
 
@@ -46,5 +44,3 @@ New records and updates to existing records are now handled by separate modules.
 
 * To watch for new records, you can use the Watch Records trigger module. This module no longer watches for updated records.
 * To get updated records, you can use the new Search Users/Groups Delta module. This module returns new, updated, and deleted records.
-
-For more information, see [Azure Active Directory modules](../../../workfront-fusion/apps-and-their-modules/azure-ad-modules.md).

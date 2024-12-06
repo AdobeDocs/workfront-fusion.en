@@ -34,5 +34,3 @@ Now you can use Adobe Workfront Fusion to connect to your Adobe AEM Assets accou
     
 *   Make a custom API call
     
-
-For more information, see [Adobe Experience Manager Assets modules](../../../workfront-fusion/apps-and-their-modules/aem-assets-modules.md).

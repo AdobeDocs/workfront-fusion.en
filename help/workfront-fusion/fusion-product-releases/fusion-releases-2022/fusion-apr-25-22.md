@@ -20,5 +20,3 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 Because Workfront Proof is so closely integrated with Workfront, and a major component of many Workfront workflows, we're making the Workfront Proof connector available to organizations with a Workfront Fusion for Work Automation license. Now, you can use Workfront Proof in your Fusion scenarios regardless of license.
 
 Previously, the Workfront Proof connector was only available to organization with a Workfront Fusion for Work Automation and Integration license.
-
-For more information, see [Adobe Workfront Fusion licenses](../../../workfront-fusion/get-started/license-automation-vs-integration.md).
