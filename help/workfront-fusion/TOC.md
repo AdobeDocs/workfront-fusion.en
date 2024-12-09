@@ -105,6 +105,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Get started with Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
     * Understand Workfront Fusion {#understand-workfront-fusion}
         * [Understand Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+        * [Adobe Workfront Fusion overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
         * [Adobe Workfront Fusion glossary](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
         * [Scenario overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
         * [Connection overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)
