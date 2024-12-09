@@ -1,51 +1,12 @@
 ---
 title: HTTP request methods
-description: When you are configuring an API call in a module, you need to fill in the field for the HTTP request method.
+description: When you are configuring an API call in a module, you must select the HTTP request method. This article describes the available methods, and why you would select each one.
 author: Becky
 feature: Workfront Fusion
 ---
 # HTTP request methods
 
-When you are configuring an API call in a module, you need to fill in the field for the HTTP request method.
-
-## Access requirements
-
-You must have the following access to use the functionality in this article:
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!DNL Pro] or higher</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Product</td> 
-   <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
-
-For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+When you are configuring an API call in a module, you must select the HTTP request method. This article describes the available methods, and why you would select each one.
 
 ## HTTP methods
 

@@ -241,3 +241,43 @@ Searches the entered text for a specified value or regular expression and replac
 Data scraping, sometimes called web scraping, data extraction, or web harvesting, is the process of collecting data from websites and storing it in your local database or spreadsheets. If you want to scrape data from a website and you are not familiar with regular expressions, you may use a data scraping tool.
 
 If the data scraping tool provides a REST API, you can connect to it via our universal [[!UICONTROL HTTP] modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors) and [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md) modules.
+
+## Text parser troubleshooting
+
+Use this information if you can not get a text parser to produce any output.
+
+>[!BEGINSHADEBOX]
+
+Example:
+
+The module should parse the filetype of a file document "filename.docx", and the extension of the filename varies from DOCX to PDF to CSV.
+
+The expression that you may choose to use in this case is [!DNL \..+]
+
+This regular expression would normally result in a full match.
+
+However, implementing this expression in your text parser does not result in a match:
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+
+The reason for this is that the "i" shows only the number of matches per match so in this case, we have 2 matches, threfore after the "i" there is a numerical value 1 and 2. The use case for this is that should you ever need to match or pass data through a filter only the second matched value you can specify which value that is represented by the numerical value.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+
+To be able to get the match values that you require to add brackets to the part that you want to parse (for example, to extract from "filename.docx" - "docx" only), then, according to the regex expression we are using for this case scenario, the brackets should be applied on &#92;.(.+)
+
+This captures the DOCX, places it in a group, and leave the "." out of it.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+
+In the output shown in the picture below, the capturing group will match any character (except for line terminators).
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+
+Another workaround that also incorporates regex is using the replace function
+
+`{{replace("abcdefghijklmno pqr stuvw xyz.docx"; "/.\./"; ".")}}`
+
+Then replace `abcdefghijklmno pqr stuvw xyz.docx` with your actual filename variable.
+
+>[!ENDSHADEBOX]

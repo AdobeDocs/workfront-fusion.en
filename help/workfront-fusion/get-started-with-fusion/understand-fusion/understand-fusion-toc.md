@@ -9,6 +9,7 @@ recommendations: noDisplay, noCatalog
 
 # Understand Fusion: article index
 
+* [Adobe Workfront Fusion overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
 * [Adobe Workfront Fusion glossary](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
 * [Scenario overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
 * [Connection overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)
