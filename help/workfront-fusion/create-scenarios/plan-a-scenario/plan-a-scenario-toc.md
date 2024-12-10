@@ -9,3 +9,4 @@ feature: Workfront Fusion
 
 * [Scenario planning FAQ](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
 * [Video overviews](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
+* [Workflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
