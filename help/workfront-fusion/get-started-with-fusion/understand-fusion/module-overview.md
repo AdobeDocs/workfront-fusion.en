@@ -97,7 +97,7 @@ For instructions on scheduling a scenario, see [Schedule a scenario](/help/workf
 
 Polling triggers allow you to select the first bundle that they should output via a panel that displays automatically after you save a trigger or change the trigger settings. This selection affects only the first execution of the module. After the module has executed once, subsequent executions watch only for changes that occur after the most recent execution.
 
-<!--For more information, see [Choose where a trigger module starts](../../workfront-fusion/modules/choose-where-trigger-module-starts.md).-->
+For more information, see [Choose where a trigger module starts](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md).
 
 >[!BEGINSHADEBOX]
 

@@ -87,7 +87,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario</p> </td> 
-   <td> <p>A user-created series of automated steps, each represented and performed by a module. The purpose of a scenario is to move and manipulate data.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <!--<p> For more information, see <a href="../../workfront-fusion/scenarios/create-a-scenario.md" class="MCXref xref">Create a scenario in[!UICONTROL  Adobe Workfront Fusion]</a>.--></p> </td> 
+   <td> <p>A user-created series of automated steps, each represented and performed by a module. The purpose of a scenario is to move and manipulate data.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Scenario overview</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario segment</p> </td> 
