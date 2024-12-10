@@ -4,7 +4,6 @@ title: Configure scenario settings
 description: You can configure specific settings for scenarios in the scenario settings panel.
 author: Becky
 feature: Workfront Fusion
-recommendations: noDisplay, noCatalog
 ---
 
 # Configure scenario settings

@@ -17,7 +17,7 @@ recommendations: noDisplay, noCatalog
 * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
 * [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
 * [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
-
+* [Choose where a trigger module starts](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
 
 
 

@@ -150,6 +150,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Plan a scenario: article index](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
         * [Scenario planning FAQ](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
         * [Video overviews](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
+        * [Workflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
     * Add modules {#add-modules}
         * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
         * [Add a module to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
@@ -160,6 +161,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
         * [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
         * [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
+        * [Choose where a trigger module starts](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
@@ -187,6 +189,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
         * [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
         * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
+        * [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
 * Manage scenarios {#manage-scenarios}
     * [Manage scenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
     * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
