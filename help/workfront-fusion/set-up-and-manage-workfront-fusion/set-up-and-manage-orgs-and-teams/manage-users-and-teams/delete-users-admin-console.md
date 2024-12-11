@@ -83,7 +83,15 @@ In [!DNL Workfront Fusion], the deactivation affects the user in one of the foll
 
 * If the user is in only one organization, the user is deactivated.
 * If the user is in more than one organization, the user is removed from the organization that the user was modified in on the [!DNL Adobe Admin Console].
-* For other considerations when deleting a user in [!DNL Workfront Fusion], see [Considerations when deleting a user in [!DNL Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-in-fusion.md#considerations-when-deleting-a-user-in-workfront-fusion)
+* Consider the following when deleting a user.
+
+### Considerations when deleting a user in Workfront Fusion
+
+Consider the following when deleting a user.
+
+* When a user is deleted, the user's connections, keys, and webhooks are removed. 
+* Any scenarios belonging to the user are transferred to the organization Owner. The connections in these scenarios must be updated, because the connections belonging to the user are no longer valid.
+* If the deleted user owns any applications or public templates, the applications or public templates are transferred to the organization Owner. If there is not an organization Owner, the applications or public templates are transferred to another user.
 
 
 
