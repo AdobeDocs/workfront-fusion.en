@@ -9,14 +9,6 @@ recommendations: noDisplay, noCatalog
 
 # Delete users through the [!DNL Adobe Admin Console]
 
->[!IMPORTANT]
->
->The functionality in this article is available only if your organization's instance of [!DNL Adobe Workfront Fusion] has been onboarded to the [!DNL Adobe Business Platform].
->
->For a list of procedures that differ based on whether your organization has been onboarded to the [!DNL Adobe Business Platform], see [Platform-based administration differences ([!DNL Adobe Workfront Fusion]/[!DNL Adobe Business Platform])](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/fusion-adobe-admin-console.md).
-
-<!--Check this note - when all are moved to Adobe Admin Console, remove-->
-
 You can remove a user from [!DNL Adobe Workfront Fusion] only, leaving access to any other [!DNL Adobe] product profiles, or you can remove the user from the [!DNL Adobe Admin Console] entirely.
 
 ## Access requirements
