@@ -179,7 +179,7 @@ You can see the already-run cycles in the Scenario details:
 
 ![](assets/scenario-detail-350x207.png)
 
-For more information about this page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario.details.md).
+For more information about this page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
 >[!ENDSHADEBOX]
 

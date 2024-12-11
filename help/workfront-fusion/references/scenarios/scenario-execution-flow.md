@@ -86,7 +86,7 @@ An error might occur during the scenario run. For example, if you have deleted t
 ## Resources
 
 * For more information on setting up a scenario, see [The scenario editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
-* For more information on the scenario details page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario.details.md).
+* For more information on the scenario details page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 * For more information on activating a scenario, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 * For more information on scheduling a scenario, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * For more information on modules, see [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).

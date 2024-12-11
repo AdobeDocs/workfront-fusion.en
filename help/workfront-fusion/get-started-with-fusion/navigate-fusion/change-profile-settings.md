@@ -1,16 +1,12 @@
 ---
-title: Manage [!DNL Adobe Workfront Fusion] users in your organization
-description: Manage [!DNL Adobe Workfront Fusion] users in your organization
+title: Change profile settings
+description: You can change information in your [!DNL Adobe Workfront Fusion] account profile.
 author: Becky
 feature: Workfront Fusion
 ---
-# View or edit user details
+# Change profile settings
 
-[!DNL Adobe Workfront Fusion] administrators can manage user details inside [!DNL Workfront Fusion].
-
->[!NOTE]
->
->If your organization is currently in the process of moving to the Adobe Admin Console, you cannot manage users in Workfront (adding or deleting users.) You can perform these actions in the Adobe Admin Console after your migration is complete.
+You can change information in your [!DNL Adobe Workfront Fusion] account profile.
 
 ## Access requirements
 
@@ -64,11 +60,14 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 +++
 
-## View or edit user details
 
-[!DNL Adobe Workfront Fusion] administrators can view and update user details.
+## Change profile settings
 
-1. While logged in as a [!DNL Workfront Fusion] administrator, select **[!UICONTROL All users]** in the left navigation.
-1. Click **[!UICONTROL Details]** in the row of the user that you want to view.
-1. (Optional) To update the user's details, click **[!UICONTROL Options]** in the upper-right corner of the screen, then select **[!UICONTROL Change Details]**.
-1. Edit the details, then click **Save**.
+You can access your profile and preference options by clicking your profile picture in the top navigation area.
+
+This menu allows you to:
+
+* Choose **[!UICONTROL Dark theme]** formatting for [!DNL Adobe Experience Cloud].
+* Set **[!UICONTROL Preferences]** for [!DNL Adobe Experience Cloud], including primary and secondary language preferences.
+* Access your **[!UICONTROL [!DNL Workfront] Profile]**. Once you are on the profile, click the **[!UICONTROL More]** menu and select **[!UICONTROL Edit]**. 
+* **[!UICONTROL Sign out]** of Adobe Experience Cloud.

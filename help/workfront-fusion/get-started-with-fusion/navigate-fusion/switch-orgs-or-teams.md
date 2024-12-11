@@ -1,11 +1,11 @@
 ---
-title: Switch between orgs and teams
+title: Switch between orgs or teams
 description: Email notification options are set on the team level.
 author: Becky
 feature: Workfront Fusion
 ---
 
-# Switch between orgs and teams
+# Switch between orgs or teams
 
 If you are a member of more than one organization or team, you can switch between them without logging out of Fusion.
 

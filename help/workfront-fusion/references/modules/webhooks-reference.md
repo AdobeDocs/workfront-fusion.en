@@ -6,8 +6,6 @@ feature: Workfront Fusion
 ---
 # Instant triggers (webhooks)
 
-<!--Add more info from the webhooks article in apps and their modules-->
-
 Many services provide webhooks to deliver instant notifications whenever a certain change (event) occurs in the service. To process these events, we recommend that you use instant triggers. Instant triggers display the `Instant` tag in the list of modules for a given connector.
 
 ![](assets/instant.png)

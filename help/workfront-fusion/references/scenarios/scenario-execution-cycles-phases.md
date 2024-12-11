@@ -23,7 +23,7 @@ Each scenario execution starts with the initialization phase, continues with at 
 
 On a smaller scale, each module also follows these phases. Information about the module phases can be found in the processed bundle information, found in the numbered bubble to the top right of each module after the scenario has run. For more information on locating processed bundle information, see [Information about processed bundles](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles).
 
-Information about the larger scenario phases can be found in the execution details. <!--For more information, see-->
+Information about the larger scenario phases can be found in the execution details. 
 
 ## Scenario execution phases
 
