@@ -7,19 +7,7 @@ feature: Workfront Fusion
 
 # Set Team Notification Options
 
-<!--Affected by IMS-->
-
-<!-- Need to test in non-IMS environment-->
-
->[!NOTE] 
->
->If your organization has been moved to the Unified Shell, you receive notifications through the Adobe Notifications area. You must use the Unified Shell experience to be able to see notifications in the Adobe Notifications area. 
->
->To use the Unified Shell Experience, including the Adobe Notifications area, click the Try New Fusion UI in Unified Experience button near the top of the page. This button is only available if your organization has moved to the Unified Shell.
->
-<!--
->For more information, see [Access your notifications](/help/quicksilver/workfront-fusion/fusion-in-admin-console/fusion-unified-experience.md#access-your-notifications) in [!DNL Adobe Unified Experience] for [!DNL Workfront Fusion].
--->
+When in Workfront Fusion, you receive notifications through the Adobe Notifications area. You can choose the notifications a team receives. Notifications are set on the team level.
 
 ## Access requirements
 
@@ -101,7 +89,7 @@ Email notification options are set on the team level.
 </tbody>
 </table>
 
-Changes to notification options save automatically
+Changes to notification options save automatically.
 
 
 

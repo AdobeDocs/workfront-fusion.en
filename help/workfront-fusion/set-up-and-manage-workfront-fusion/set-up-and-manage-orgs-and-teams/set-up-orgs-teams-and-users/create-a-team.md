@@ -6,8 +6,6 @@ feature: Workfront Fusion
 ---
 # Create a team
 
-<!--Affected by IMS-->
-
 Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
 
 Organizations may have as many teams as they need, and users may belong to one or more teams.
