@@ -11,8 +11,6 @@ feature: Workfront Fusion
 ---
 # Platform-based administration differences (Adobe Workfront Fusion/Adobe Admin Console)
 
-<!--Affected by IMS-->
-
 If your organization has been onboarded to the Adobe Admin Console, your users use the Adobe Admin Console to access Adobe Workfront Fusion. This means that:
 
 * User management is largely done through the Adobe Admin Console
@@ -41,3 +39,4 @@ The following table lists the procedures that must be handled differently, and l
 
 <!--| Change profile settings | [Change profile settings](../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md)  | [Fusion in Unified Shell|-->
 
+ 

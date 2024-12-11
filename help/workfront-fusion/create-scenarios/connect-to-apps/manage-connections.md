@@ -9,8 +9,6 @@ feature: Workfront Fusion
 ---
 # Manage connections
 
-<!--affected by unified shell-->
-
 A connection represents the authorization and permissions that Fusion uses to access the application. You can create one or more connections for each application, and can use the same connection in multiple modules or scenarios. 
 
 You can manage these connections in the Connections area.
@@ -54,7 +52,7 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -68,13 +66,7 @@ You can manage all connections from the Connections area.
 >
 >Connections are owned by teams. If you cannot find the connection you are looking for, check that you are viewing the correct team.
 >
->To select a new team:
->
->* Click the team name in the left navigation and select a new team.
->
->    Or
->
->* Click Team overview in the left navigation, then click the dropdown arrow next to the team name near the top of the page. Select a new team.
+>To select a new team, click the team name in the left navigation and select a new team.
 
 1. To open the Connections area, click **Connections** ![Connections icon](assets/connections-icon.png) in the left navigation.
 1. Locate the connection you want to manage, then perform one or more of the following steps in the line for that connection.

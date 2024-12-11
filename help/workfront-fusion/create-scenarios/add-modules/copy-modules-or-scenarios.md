@@ -6,10 +6,6 @@ feature: Workfront Fusion
 ---
 # Copy modules or scenarios
 
-<!--EDIT ME-->
-
-<!--This is not working as of Nov 1, 2024-->
-
 You can copy modules, groups of modules, or entire scenarios in Adobe Workfront Fusion. This ability allows you to reuse scenarios or parts of scenarios without having to build them again.
 
 ## Access requirements
@@ -49,7 +45,7 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -144,3 +140,7 @@ A scenario blueprint represents the entire scenario. If you want to copy only ce
 You can create templates as a starting point for your [!DNL Workfront Fusion] scenarios. When you create a scenario from a template, you can modify the scenario without modifying the template. Field values are not saved in templates.
 
 For more information on creating a scenario using a template, see [Create scenarios with templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md).
+
+## Troubleshooting
+
+If you are copying and pasting modules as described in [Copy a module or a group of modules](#copy-a-module-or-a-group-of-modules) and nothing appears when you paste, check your browser's site settings to ensure that pasting from the clipboard is allowed.

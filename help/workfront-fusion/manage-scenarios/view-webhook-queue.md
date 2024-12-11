@@ -6,10 +6,7 @@ feature: Workfront Fusion
 ---
 # View a webhook's queue
 
-<!--audited 11/2024-->
-
 Many services provide webhooks to deliver instant notifications whenever a certain change occurs in the service. Instant triggers, also known as webhooks, can use these events to begin scenarios. The events go into the webhook's queue while they are awaiting processing, such as when the scenario is already running. You can view the webhook's queue.
-
 
 Incoming webhook data is always stored in the queue regardless of how you have set the Data is confidential option in the scenario settings panel. After the data is processed in a scenario, it is permanently deleted from the queue.
 
@@ -52,7 +49,7 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
