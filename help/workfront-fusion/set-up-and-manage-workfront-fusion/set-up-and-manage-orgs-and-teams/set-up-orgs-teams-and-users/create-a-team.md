@@ -6,8 +6,6 @@ feature: Workfront Fusion
 ---
 # Create a team
 
-<!--Affected by IMS-->
-
 Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
 
 Organizations may have as many teams as they need, and users may belong to one or more teams.
@@ -62,7 +60,7 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 

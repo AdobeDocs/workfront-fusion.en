@@ -6,11 +6,9 @@ feature: Workfront Fusion
 ---
 # Add a user to a team
 
-<!--Affected by IMS-->
-
-<!--check for non-IMS-->
-
 Your users are assigned to teams when you create them. If an existing user needs to be added to a team, you can add them on the team's Users page.
+
+To add a user to Fusion, see [Add users to Adobe Workfront Fusion through the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md).
 
 Adding a user to a team is handled from the page for that team.
 

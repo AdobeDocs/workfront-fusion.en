@@ -63,21 +63,13 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-<!--
-## Access the Workfront Fusion Devtool
-
-Accessing the Devtool differs based on whether you are using Fusion in the [!DNL Adobe Unified Experience].
-
-* [Access the Devtool in the [!DNL Adobe Unified Experience]](#access-the-devtool-in-the-adobe-unified-experience)
-* [Access the Devtool in the classic [!DNL Fusion] experience](#access-the-devtool-in-the-classic-fusion-experience)-->
-
-### Access the Devtool in the [!DNL Adobe Unified Experience] or the new Fusion experience
+## Access the Devtool
 
 If you use Fusion in the Adobe Unified Shell, or have updated to the new Fusion experience, you can access the Devtool from the Scenario editor.
 
@@ -91,56 +83,6 @@ Or:
 
 1. Right click in an empty area of the page (not on a module).
 1. Select **Open Devtool**.
-
-<!--
-
-### Access the Devtool in the classic [!DNL Fusion] experience
-
-To use the Devtool in the classic [!DNL Fusion] experience, you must install a [!DNL Chrome] extension. You can then use this extension from the [!DNL Chrome] Developer Tools.
-
-* [Install the Install the [!DNL Chrome] Devtool extension](#install-the-chrome-devtool-extension)
-* [Locate the [!DNL Workfront Fusion] Devtool](#locate-the-workfront-fusion-devtool)
-
-#### Install the [!DNL Chrome] Devtool extension
-
-You can add the [!DNL Workfront Fusion] Devtool to [!DNL Chrome] through the [!UICONTROL [!DNL Chrome] Web Store].
-
-1. Click [this link](https://chromewebstore.google.com/u/1/detail/workfront-fusion-devtool/hkimbmkkmmejdnhbhoaefggkpkndfjnn) to go to the [!DNL Workfront Fusion] Devtool on the [!UICONTROL [!DNL Chrome] Web Store].
-1. Click **[!UICONTROL Add to [!DNL Chrome]]**.
-1. In the window that opens, examine permissions. If you agree with the permissions, click **[!UICONTROL Add Extension]**.
-
-The [!DNL Workfront Fusion] Devtool extension is added to your [!DNL Chrome] extensions.
-
-
-#### Locate the [!DNL Workfront Fusion] Devtool
-
-To use the [!DNL Workfront Fusion] Devtool, you must add the [!DNL Workfront Fusion] Devtool extension to your [!DNL Chrome] browser, as described in [Install the Chrome Devtool extension](#install-the-chrome-Devtool-extension).
-
-1. Open your [!DNL Workfront Fusion] scenario.
-1. Open [!DNL Chrome Developer Tools]:
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader">[!DNL Mac]</td> 
-      <td>Command + Option + I</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!DNL Windows]</td> 
-      <td> <p>Control + Shift + I</p> <p> Or </p> <p>F12</p> </td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-   >[!TIP]
-   >
-   >We recommend docking the [!DNL Chrome Developer Console] to the bottom to maintain a better view of your modules.
-
-1. Click the **[!DNL Workfront Fusion]** tab in [!DNL Chrome Dev Tools].
-
--->
 
 ## Use the [!DNL Workfront Fusion] Devtool
 

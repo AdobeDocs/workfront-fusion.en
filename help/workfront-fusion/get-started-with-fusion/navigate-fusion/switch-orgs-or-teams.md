@@ -7,10 +7,6 @@ feature: Workfront Fusion
 
 # Switch between orgs and teams
 
-<!--Affected by IMS-->
-
-<!-- May need to be somewhere else -- navigation?-->
-
 If you are a member of more than one organization or team, you can switch between them without logging out of Fusion.
 
 ## Access requirements
@@ -59,7 +55,7 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -76,6 +72,6 @@ You can switch organizations within the Adobe Unified Experience by clicking the
 
 You may be part of more than one team in Fusion. Since teams do not share resources, you may need to switch teams to access specific scenarios or other resources.
 
-If your organization is not on the Adobe Unified Experience, you can switch teams by clicking the team name in the left navigation, then selecting a team from the dropdown.
+To switch between teams, select a new team by clicking on the team name in the header, then selecting a team from the dropdown. 
 
-If your team is on the Adobe Unified Experience, you can select a new team by clicking on the team name in the header, then selecting a team from the dropdown. This option is available from all pages that are specific to a certain team, such as a scenario page or the Connections page.
+This option is available on all pages reached by clicking an item in the left navigation (with the exception of Org overview), such as the Scenarios page or the Connections page.

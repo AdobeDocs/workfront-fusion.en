@@ -9,14 +9,6 @@ recommendations: noDisplay, noCatalog
 
 # Delete users through the [!DNL Adobe Admin Console]
 
->[!IMPORTANT]
->
->The functionality in this article is available only if your organization's instance of [!DNL Adobe Workfront Fusion] has been onboarded to the [!DNL Adobe Business Platform].
->
->For a list of procedures that differ based on whether your organization has been onboarded to the [!DNL Adobe Business Platform], see [Platform-based administration differences ([!DNL Adobe Workfront Fusion]/[!DNL Adobe Business Platform])](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/fusion-adobe-admin-console.md).
-
-<!--Check this note - when all are moved to Adobe Admin Console, remove-->
-
 You can remove a user from [!DNL Adobe Workfront Fusion] only, leaving access to any other [!DNL Adobe] product profiles, or you can remove the user from the [!DNL Adobe Admin Console] entirely.
 
 ## Access requirements
@@ -62,7 +54,7 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/access-level-requirements-in-documentation.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
@@ -91,7 +83,15 @@ In [!DNL Workfront Fusion], the deactivation affects the user in one of the foll
 
 * If the user is in only one organization, the user is deactivated.
 * If the user is in more than one organization, the user is removed from the organization that the user was modified in on the [!DNL Adobe Admin Console].
-* For other considerations when deleting a user in [!DNL Workfront Fusion], see [Considerations when deleting a user in [!DNL Workfront Fusion]](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-in-fusion.md#considerations-when-deleting-a-user-in-workfront-fusion)
+* Consider the following when deleting a user.
+
+### Considerations when deleting a user in Workfront Fusion
+
+Consider the following when deleting a user.
+
+* When a user is deleted, the user's connections, keys, and webhooks are removed. 
+* Any scenarios belonging to the user are transferred to the organization Owner. The connections in these scenarios must be updated, because the connections belonging to the user are no longer valid.
+* If the deleted user owns any applications or public templates, the applications or public templates are transferred to the organization Owner. If there is not an organization Owner, the applications or public templates are transferred to another user.
 
 
 
