@@ -14,52 +14,9 @@ Enhanced data transfer capabilities are now available in Workfront Fusion, enabl
 
 To handle larger files, your scenarios must be updated.  
 
-
-<!-- do we need access table since this isn't a procedure but is available only to ultimate
-
-## Access requirements
-
-+++ Expand to view access requirements for the functionality in this article.
-
-You must have the following access to use the functionality in this article:
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td>
-   <td> <p>New: Ultmate</p> <p>Or</p> <p>Current: Not available</p></td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: Not available</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Product</td> 
-   <td>
-   <p>New: [!DNL Workfront Fusion] is included in the Ultimate Workfront plan.</p> <p>Or</p>
-   <p>Current: Not available</p>
-   </td> 
-  </tr>
- </tbody> 
-</table>
-
-For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).
-
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
-
-+++
-
--->
+>[!NOTE]
+>
+>This functionality is available only to users on the Ultimate Workfront package.
 
 ## Connectors that support large files
 

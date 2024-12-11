@@ -34,9 +34,5 @@ The following table lists the procedures that must be handled differently, and l
 | Edit user roles | [View or edit user roles ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)  | To make a user an admin, see [Change a user's role to admin](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md#change-a-users-role-to-admin) in the article Add a user through the Adobe Admin Console. <br> For other roles, see [View or edit user roles ](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md) |
 | Deactivate a user |[Delete a user in Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-in-fusion.md) | [Delete users through the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md) |
 
-{style="table-layout:auto"}
-
-
-<!--| Change profile settings | [Change profile settings](../../workfront-fusion/workfront-fusion-basics/change-profile-settings.md)  | [Fusion in Unified Shell|-->
 
  
