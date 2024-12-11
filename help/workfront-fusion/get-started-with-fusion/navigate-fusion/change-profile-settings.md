@@ -1,13 +1,12 @@
 ---
-title: Switch between orgs or teams
-description: Email notification options are set on the team level.
+title: Change profile settings
+description: You can change information in your [!DNL Adobe Workfront Fusion] account profile.
 author: Becky
 feature: Workfront Fusion
 ---
+# Change profile settings
 
-# Switch between orgs or teams
-
-If you are a member of more than one organization or team, you can switch between them without logging out of Fusion.
+You can change information in your [!DNL Adobe Workfront Fusion] account profile.
 
 ## Access requirements
 
@@ -62,16 +61,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 +++
 
 
-## Switch between organizations
+## Change profile settings
 
-You may be part of more than one organization in Fusion. Resources are not shared between organizations.
+You can access your profile and preference options by clicking your profile picture in the top navigation area.
 
-You can switch organizations within the Adobe Unified Experience by clicking the organization name in the upper-right corner and selecting the new organization from the dropdown. Only organizations that have a Fusion account will appear in the dropdown, even if you are a member of other organizations in Adobe.
+This menu allows you to:
 
-## Switch between teams
-
-You may be part of more than one team in Fusion. Since teams do not share resources, you may need to switch teams to access specific scenarios or other resources.
-
-To switch between teams, select a new team by clicking on the team name in the header, then selecting a team from the dropdown. 
-
-This option is available on all pages reached by clicking an item in the left navigation (with the exception of Org overview), such as the Scenarios page or the Connections page.
+* Choose **[!UICONTROL Dark theme]** formatting for [!DNL Adobe Experience Cloud].
+* Set **[!UICONTROL Preferences]** for [!DNL Adobe Experience Cloud], including primary and secondary language preferences.
+* Access your **[!UICONTROL [!DNL Workfront] Profile]**. Once you are on the profile, click the **[!UICONTROL More]** menu and select **[!UICONTROL Edit]**. For more information about the profile, see [Configure My Settings](/help/quicksilver/workfront-basics/manage-your-account-and-profile/configuring-your-user-profile/configure-my-settings.md).
+* **[!UICONTROL Sign out]** of Adobe Experience Cloud.
