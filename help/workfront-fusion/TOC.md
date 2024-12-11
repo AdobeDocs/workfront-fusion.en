@@ -123,7 +123,6 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Licensing and operations overviews](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
         * [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
         * [Operations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        * [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
     * Set up and manage orgs and teams {#set-up-and-manage-orgs-and-teams}
         * [Set up and manage organizations and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
         * Set up organizations and teams {#set-up-orgs-teams-and-users}
