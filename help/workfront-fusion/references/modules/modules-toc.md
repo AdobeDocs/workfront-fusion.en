@@ -12,4 +12,5 @@ recommendations: noDisplay, noCatalog
 * [Aggregator modules](/help/workfront-fusion/references/modules/aggregator-module.md)
 * [Iterator modules](/help/workfront-fusion/references/modules/iterator-module.md)
 * [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md)
+* [Keys](/help/workfront-fusion/references/modules/keys.md)
 

@@ -1,15 +1,10 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: functions
-title: Tokens for date and time parsing in Adobe Workfront Fusion
+title: Tokens for date and time parsing
 description: The following tokens for date and time parsing are available in the [!DNL Adobe Workfront Fusion mapping] panel.
 author: Becky
 feature: Workfront Fusion
-exl-id: f5a92ccb-cdc6-4f7d-8373-31fd17d314d3
 ---
-# Tokens for date and time parsing in [!DNL Adobe Workfront Fusion]
+# Tokens for date and time parsing
 
 ## Access requirements
 
@@ -38,7 +33,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
    <p>Or</p>
    <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
    </td> 
@@ -48,7 +43,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## Year, month, and day tokens
 

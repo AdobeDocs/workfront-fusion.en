@@ -2,19 +2,61 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: 'se a function to update a project in a basic scenario in [!DNL Adobe Workfront Fusion]'
+title: 'se a function to update a project in a basic scenario'
 description: Learn how to add a function to update a work item in Workfront.
 author: Becky
 feature: Workfront Fusion
-exl-id: f4588063-024f-4520-986e-45342a6b6777
 ---
-# Use a function to update a project in a basic scenario in [!DNL Adobe Workfront Fusion]
+# Use a function to update a project in a basic scenario
 
 Updating a Workfront work item is a common use case for Workfront Fusion. In this example, you will use a function to change the name of a project to be in uppercase letters.
 
-Fusion includes many types of functions that allow you to transform and perform conditional logic on your data. <!--For more information on using functions, see [Map information from one module to another in Adobe Workfront Fusion](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).-->
+Fusion includes many types of functions that allow you to transform and perform conditional logic on your data. For more information on using functions, see [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
 
 This example modifies the scenario created in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
+
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+You must have the following access to use the functionality in this article:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td> <p>Any</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
+   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td>
+   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Or</p>
+   <p>Legacy: Any </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -73,6 +115,6 @@ When this scenario converts a request to a project, the project's name is the sa
    >
    >Save often as you hone and test a scenario.
 
-<!--## Resources-->
+## Resources
 
-<!--* [Map items using functions in [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md)-->
+[Map items using functions](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

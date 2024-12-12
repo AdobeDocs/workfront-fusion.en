@@ -1,16 +1,16 @@
 ---
-title: Organization roles in [!DNL Adobe Workfront Fusion]
+title: Organization roles
 description: This article includes information about the access and permissions of the roles in [!DNL Adobe] Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 ---
-# Organization and team roles in [!DNL Adobe Workfront Fusion]
+# Organization and team roles
 
 This article describes the access and functionality available to the different team and organization roles in [!DNL Workfront Fusion].
 
 >[!NOTE]
 >
->Organization roles are separate from team roles in [!DNL Workfront Fusion]. For more information on organization and team roles, see [Organizations and teams overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-and-teams/org-and-team-overview.md).
+>Organization roles are separate from team roles in [!DNL Workfront Fusion]. For more information on organization and team roles, see [Organizations and teams overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Organization roles
 
@@ -57,24 +57,7 @@ This article describes the access and functionality available to the different t
    <td>✓ </td> 
    <td>✓ </td> 
    <td>✓ </td> 
-  </tr> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
-    <td> <p>Process payments</p> </td> 
-    <td>✓ </td> 
-    <td>✓ </td> 
-    <td> </td> 
-    <td> </td> 
-   </tr>
-  --> <!--
-   <tr data-mc-conditions="QuicksilverOrClassic.Draft mode"> 
-    <td> <p>List payments</p> </td> 
-    <td>✓ </td> 
-    <td>✓ </td> 
-    <td> </td> 
-    <td> </td> 
-   </tr>
-  --> 
-  <tr> 
+    <tr> 
    <td> <p>Add team</p> </td> 
    <td>✓ </td> 
    <td>✓ </td> 

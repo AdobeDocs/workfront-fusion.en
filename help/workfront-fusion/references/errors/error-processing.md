@@ -1,11 +1,11 @@
 ---
 content-type: reference
-title: Error types in [!DNL Adobe Workfront Fusion]
+title: Error types
 description: Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to a service or if a validation fails. This article discusses the common errors that you may encounter.
 author: Becky
 feature: Workfront Fusion
 ---
-# Error types in [!DNL Adobe Workfront Fusion]
+# Error types
 
 Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to the service, or if a validation fails. 
 
@@ -22,7 +22,7 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
    <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -40,7 +40,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
    <p>Or</p>
    <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -51,7 +51,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->-->
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,10 +66,10 @@ Connection errors are one of the most common errors. They are usually caused by 
 
     * If this option is enabled, the execution of the scenario is moved to the [!UICONTROL Incomplete executions] folder where [!DNL Workfront Fusion] repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, the execution will remain in the Incomplete executions folder awaiting manual resolution by the user.
 
-      <!--For more information on incomplete executions, see [View and resolve incomplete executions in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).-->
+      For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
     * If this option is disabled, the execution of the scenario ends with an error followed by a rollback phase. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
 
-    <!--For more information on the Allow storing incomplete executions setting, see [Allow storing incomplete executions](/) in the article Scenario settings panel.-->
+   For more information on the Allow storing incomplete executions setting, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) in the article Configure scenario settings.
 
 ### Increasing time intervals
 
@@ -83,11 +83,13 @@ The algorithm for increasing time intervals between attempts when an error occur
 
 The increasing time intervals help prevent frequently executed scenarios from using operations on repeatedly failing attempts.
 
->[!INFO]
->
->**Example:**
->
->A scenario contains the [!DNL Google Sheets] trigger [!UICONTROL Watch Rows]. [!DNL Google Sheets] is unavailable for 30 minutes due to maintenance when [!DNL Workfront Fusion] starts the scenario, so it is unable to retrieve new rows. The scenario stops and tries again in 10 minutes. Because [!DNL Google Sheets] is still unavailable, [!DNL Workfront Fusion] is still unable to get information about new rows. The next run of the scenario is scheduled in 1 hour. [!DNL Google Sheets] is available again at this time, and the scenario runs successfully.
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+A scenario contains the [!DNL Google Sheets] trigger [!UICONTROL Watch Rows]. [!DNL Google Sheets] is unavailable for 30 minutes due to maintenance when [!DNL Workfront Fusion] starts the scenario, so it is unable to retrieve new rows. The scenario stops and tries again in 10 minutes. Because [!DNL Google Sheets] is still unavailable, [!DNL Workfront Fusion] is still unable to get information about new rows. The next run of the scenario is scheduled in 1 hour. [!DNL Google Sheets] is available again at this time, and the scenario runs successfully.
+
+>[!ENDSHADEBOX]
 
 ## Data error
 
@@ -132,13 +134,15 @@ An incomplete data error occurs only with triggers. This error is generated if a
 
 If a scenario terminates with the `IncompleteDataError`, its further behavior will depend on its setting of [!UICONTROL Max number of consecutive errors]. 
 
-<!--For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article The scenario settings panel in Adobe Workfront Fusion.-->
+For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number) in the article Configure scenario settings.
 
->[!INFO]
->
->**Example:** 
->
->A scenario has the [!DNL Workfront] trigger [!UICONTROL Watch Record] set to watch for documents. The scenario executes while you are uploading a large document, such as a long video. Because [!UICONTROL Workfront Fusion] tries to download the video while it is still uploading to Workfront, the scenario terminates with the `IncompleteDataError`.
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+A scenario has the [!DNL Workfront] trigger [!UICONTROL Watch Record] set to watch for documents. The scenario executes while you are uploading a large document, such as a long video. Because [!UICONTROL Workfront Fusion] tries to download the video while it is still uploading to Workfront, the scenario terminates with the `IncompleteDataError`.
+
+>[!ENDSHADEBOX]
 
 ## Runtime error
 
@@ -148,12 +152,13 @@ Any error that appears during scenario execution and is not one of these error t
 
 If a scenario terminates with the `RuntimeError`, its further behavior depends on the [!UICONTROL Max number of consecutive errors] setting. 
 
-<!--For more information, see [Number of consecutive errors](../../workfront-fusion/scenarios/scenario-settings-panel.md#number) in the article The scenario settings panel in Adobe Workfront Fusion.-->
+For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errorsnumber) in the article Configure scenario settings.
+
 
 >[!NOTE]
 >
 >If a scenario starts with an instant trigger and encounters this error, the setting of [!UICONTROL Max number of consecutive errors] is ignored, and the scenario is deactivated immediately.
-<!-- For more information, see [Instant triggers](../../workfront-fusion/modules/module-types.md#instant) in the article [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+>For more information, see [Instant triggers](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers) in the article Modules overview.
 
 ## Inconsistency Error
 
@@ -171,14 +176,14 @@ For example, a warning can appear when the maximum allowed file size is exceeded
 
 ## Resources
 
-<!--For more information on mapping, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+For more information on mapping, see [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
 
-For information about incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](../../workfront-fusion/scenarios/view-and-resolve-incomplete-executions.md).
+For information about incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-For information about the scenario setting panel, see [The scenario settings panel in Adobe Workfront Fusion](../../workfront-fusion/scenarios/scenario-settings-panel.md).
+For information about the scenario settings panel, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-For information about schedules, see [Schedule a scenario in Adobe Workfront Fusion](../../workfront-fusion/scenarios/schedule-a-scenario.md).-->
+For information about schedules, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
-For information about scenario phases, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+For information about scenario phases, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-<!--For information on the Enable data loss option, see [Enable data loss](../../workfront-fusion/scenarios/scenario-settings-panel.md#enable) in the article The scenario settings panel in Adobe Workfront Fusion.-->
+For information on the Enable data loss option, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable) in the article Configure scenario settings.

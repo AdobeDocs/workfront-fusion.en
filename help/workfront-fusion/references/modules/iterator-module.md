@@ -1,21 +1,12 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: modules
-title: Iterator module in Adobe Workfront Fusion
+title: Iterator module
 description: An Iterator module is a special type of module that converts an array into a series of bundles. Each array item is outputted as a separate bundle.
 author: Becky
 feature: Workfront Fusion
-exl-id: d356276d-e5d9-496f-85cd-cb60a8f8f377
 ---
-# [!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]
-
-<!--audited: 09/2024-->
+# [!UICONTROL Iterator] module
 
 An [!UICONTROL Iterator] is a type of module that converts an array into a series of bundles. Each array item is outputted as a separate bundle.
-
-<!--For more information, see [Types of modules](../../workfront-fusion/modules/module-types.md) and [Map an array in Adobe Workfront Fusion](../../workfront-fusion/mapping/map-an-array.md).-->
 
 ## Access requirements
 
@@ -28,7 +19,7 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
    <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -46,7 +37,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
    <p>Or</p>
    <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -57,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->-->
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -71,18 +62,19 @@ Other connectors may include iterator modules specific to that iterator. These c
 
 ![](assets/specialized-iterators.jpg)
 
-<!--For more information, see [Configure a module's settings in Adobe Workfront Fusion](../../workfront-fusion/modules/configure-a-modules-settings.md).-->
+For more information, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
->[!INFO]
->
->**Examples:** 
->
->* The below scenario shows how to retrieve emails with attachments and save the attachments as single files in a selected [!DNL Dropbox] folder.
->
->   Emails can contain an array of attachments. The [!UICONTROL Iterator] module after the first module enables the scenario to handle each attachment separately. The [!UICONTROL Iterator] module splits the array of attachments into single bundles. Each bundle, with one attachment, is then saved one at a time in a selected [!DNL Dropbox] folder. The [!UICONTROL Iterator] module set-up is shown above: the [!UICONTROL Array] field should contain the `Attachments` array.
->
->   ![](assets/attachments-array.jpg)
+>[!BEGINSHADEBOX]
 
+**Examples:** 
+
+* The below scenario shows how to retrieve emails with attachments and save the attachments as single files in a selected [!DNL Dropbox] folder.
+
+   Emails can contain an array of attachments. The [!UICONTROL Iterator] module after the first module enables the scenario to handle each attachment separately. The [!UICONTROL Iterator] module splits the array of attachments into single bundles. Each bundle, with one attachment, is then saved one at a time in a selected [!DNL Dropbox] folder. The [!UICONTROL Iterator] module set-up is shown above: the [!UICONTROL Array] field should contain the `Attachments` array.
+
+   ![](assets/attachments-array.jpg)
+
+>[!ENDSHADEBOX]
 
 
 ## Troubleshooting

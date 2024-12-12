@@ -1,15 +1,10 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: functions
-title: Array functions in Adobe Workfront Fusion
+title: Array functions
 description: The following array functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
-exl-id: bf065d00-5d84-47e1-8169-bf9e01e2429d
 ---
-# Array functions in [!DNL Adobe Workfront Fusion]
+# Array functions
 
 ## Access requirements 
 
@@ -20,7 +15,7 @@ You must have the following access to use the functionality in this article:
  <col>  
  <tbody>  
   <tr>  
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td>  
+   <td role="rowheader">[!DNL Adobe Workfront] package</td>  
    <td> <p>Any</p> </td>  
   </tr>  
   <tr data-mc-conditions="">  
@@ -46,9 +41,9 @@ You must have the following access to use the functionality in this article:
  </tbody>  
 </table>  
 
-<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).--> 
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md). 
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).--> 
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md). 
 
 ## Functions
 
@@ -107,19 +102,21 @@ Adds values specified in parameters to an array and returns that array.
 
 Returns a primitive array containing values of a complex array. This function allows filtering values. Use raw variable names for keys.
 
-  >[!INFO]
-  >
-  >**Examples:**
-  >
-  >* `map(Emails[];email)`
-  >
-  >  Returns a primitive array with emails
-  >
-  >* `map(Emails[];email;label;work;home)`
-  >
-  >  Returns a primitive array with emails having a label equal to work or home
+>[!BEGINSHADEBOX]
+  
+**Examples:**
+  
+* `map(Emails[];email)`
+  
+  Returns a primitive array with emails
+  
+* `map(Emails[];email;label;work;home)`
+  
+  Returns a primitive array with emails having a label equal to work or home
 
-<!--For more information, see [Map information from one module to another in [!UICONTROL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).-->
+>[!ENDSHADEBOX]
+
+For more information, see [Map an array or array element](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).
 
 ### shuffle
 
@@ -151,25 +148,27 @@ To access nested properties, use dot notation.
 
 The first item in an array is index 1.
 
-  >[!INFO]
-  >
-  >**Examples:**
-  >
-  >* `sort(Contacts[];name)`
-  >
-  >    Sorts an array of contacts by the "name" property in default ascending order
-  >
-  >* `sort(Contacts[];desc;name)`
-  >
-  >   Sorts an array of contacts by the "name" property in descending order
-  >
-  >* `sort(Contacts[];asc ci;name)`
-  >
-  >    Sorts an array of contacts by the "name" property in case-insensitive ascending order
-  >
-  >* `sort(Emails[];sender.name)`
-  >
-  >    Sorts an array of emails by the "sender.name" property
+>[!BEGINSHADEBOX]
+  
+**Examples:**
+  
+* `sort(Contacts[];name)`
+  
+     Sorts an array of contacts by the "name" property in default ascending order
+  
+* `sort(Contacts[];desc;name)`
+  
+     Sorts an array of contacts by the "name" property in descending order
+  
+* `sort(Contacts[];asc ci;name)`
+  
+    Sorts an array of contacts by the "name" property in case-insensitive ascending order
+  
+* `sort(Emails[];sender.name)`
+  
+    Sorts an array of emails by the "sender.name" property
+
+>[!ENDSHADEBOX]
 
 ### [!UICONTROL reverse (array)]
 
@@ -183,11 +182,13 @@ Creates a new array with all sub-array elements concatenated into it, recursivel
 
 Removes duplicates inside an array. Use the "[!UICONTROL key]" argument to access properties inside complex objects. To access nested properties, use dot notation. The first item in an array is index 1.
 
-  >[!INFO]
-  >
-  >**Example:** `distinct(Contacts[];name)` 
-  >
-  >Removes duplicates inside an array of contacts by comparing the "name" property
+>[!BEGINSHADEBOX]
+  
+**Example:** `distinct(Contacts[];name)` 
+  
+Removes duplicates inside an array of contacts by comparing the "name" property
+
+>[!ENDSHADEBOX]
 
 ### toCollection
 
@@ -195,21 +196,23 @@ Removes duplicates inside an array. Use the "[!UICONTROL key]" argument to acces
 
 This function converts a collection into an array of key-value pairs.
 
->[!INFO]
->
->**Examples:**
->
->Given the collection 
->
->`{ key1: "value1", key2: "value2:}`
->
->The function
->
->`toArray({ key1: "value1", key2: "value2:})`
->
->Returns the array of key-value pairs
->
->`[{ key1: "value1"}, { key2: "value2"}]`
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+Given the collection 
+
+`{ key1: "value1", key2: "value2:}`
+
+The function
+
+`toArray({ key1: "value1", key2: "value2:})`
+
+Returns the array of key-value pairs
+
+`[{ key1: "value1"}, { key2: "value2"}]`
+
+>[!ENDSHADEBOX]
 
 ### [!UICONTROL arrayDifference [array1, array2, mode]]
 
@@ -223,31 +226,33 @@ Enter one of the following values for the `mode` parameter.
 
    In other words, the function returns an array that contains all of the elements of `array1` that do not exist in `array2`, and all of the elements of `array2` that do not exist in `array1`.
 
-  >[!INFO]
-  >
-  >**Examples:** 
-  >
-  >Given the following arrays:
-  >
-  >```
-  >myArray = [1,2,3,4,5]
-  >```
-  >
-  >```
-  >yourArray = [3,4,5,6,7]
-  >```
-  >
-  >* `arrayDifference [myArray, yourArray, classic]`
-  >
-  >    Returns `[1,2]`
-  >
-  >* `arrayDifference [yourArray, myArray, classic]`
-  >
-  >    Returns `[6,7]`
-  >
-  >* `arrayDifference [myArray, yourArray, symmetric]`
-  >
-  >    Returns `[1,2,6,7]`
+>[!BEGINSHADEBOX]
+  
+**Examples:** 
+  
+Given the following arrays:
+  
+```
+myArray = [1,2,3,4,5]
+```
+  
+```
+yourArray = [3,4,5,6,7]
+```
+
+* `arrayDifference [myArray, yourArray, classic]`
+  
+  Returns `[1,2]`
+  
+* `arrayDifference [yourArray, myArray, classic]`
+  
+    Returns `[6,7]`
+  
+* `arrayDifference [myArray, yourArray, symmetric]`
+  
+    Returns `[1,2,6,7]`
+
+>[!ENDSHADEBOX]
 
 ### deDuplicate
 

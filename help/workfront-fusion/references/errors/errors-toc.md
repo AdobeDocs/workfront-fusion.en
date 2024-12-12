@@ -7,8 +7,8 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 ---
 
-# Errors in Adobe Workfront Fusion
+# Error references: article index
 
-* [Error processing](/help/workfront-fusion/references/errors/error-processing.md)
+* [Error types](/help/workfront-fusion/references/errors/error-processing.md)
 * [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
 

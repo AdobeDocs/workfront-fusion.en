@@ -8,22 +8,6 @@ feature: Workfront Fusion
 
 [!DNL Adobe Workfront Fusion] administrators can manage user details inside [!DNL Workfront Fusion].
 
-<!--
-
->[!IMPORTANT]
->
->The procedure described on this page applies only to organizations that have not yet been onboarded to the Admin Console. If your organization has been onboarded to the Adobe Admin Console, you must perform this action through the Adobe Admin Console.
->
->For instructions on adding a user in the Adobe Admin Console:
->
->* See [Add a user to an organization in Adobe Workfront Fusion](../../workfront-fusion/organizations/add-user-to-an-organization.md#create)
->* See the section "Add users" in the article [Manage users individually](https://helpx.adobe.com/enterprise/using/manage-users-individually.html)
->* Contact your Adobe Admin Console Administrator.
->
->For a list of procedures that differ based on whether your organization has been onboarded to the Adobe Admin Console, see [Platform-based administration differences (Adobe Workfront Fusion/Adobe Business Platform)](../../workfront-fusion/fusion-in-admin-console/fusion-adobe-admin-console.md).
-
--->
-
 >[!NOTE]
 >
 >If your organization is currently in the process of moving to the Adobe Admin Console, you cannot manage users in Workfront (adding or deleting users.) You can perform these actions in the Adobe Admin Console after your migration is complete.
@@ -39,7 +23,7 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
    <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -57,7 +41,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
    <p>Or</p>
    <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -74,9 +58,9 @@ You must have the following access to use the functionality in this article:
  </tbody> 
 </table>
 
-<!--<!--For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md).-->-->
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-<!--<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->-->
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

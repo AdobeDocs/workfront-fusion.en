@@ -1,21 +1,12 @@
 ---
-content-type: reference
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: modules
-title: Aggregator module in Adobe Workfront Fusion
+title: Aggregator module
 description: An aggregator module is a type of module designed to merge several bundles of data into a single bundle.
 author: Becky
 feature: Workfront Fusion
-exl-id: cdc32842-8717-4e05-ab19-2661ee14c12c
 ---
-# [!UICONTROL Aggregator] module in [!DNL Adobe Workfront Fusion]
+# [!UICONTROL Aggregator] module
 
-<!--audited: 09/2024-->
-
-An aggregator module is a module that merges several bundles of data into a single bundle. 
-
-<!--For more information about module types, see [Types of modules](../../workfront-fusion/modules/module-types.md).-->
+An aggregator module is a module that merges several bundles of data into a single bundle.
 
 ## Access requirements
 
@@ -28,7 +19,7 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
+    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
    <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -46,7 +37,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
    <p>Or</p>
    <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
    </td> 
@@ -57,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->-->
+For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -79,7 +70,8 @@ The following image shows a typical setup of the [!UICONTROL Aggregator] module 
   <tr> 
    <td> <p>[!UICONTROL Source Module]</p> </td> 
    <td> <p>The module where the bundle aggregation starts. The source module is usually an iterator or a search module that outputs a series of bundles.</p><p>When you setup the aggregator's source module (and close the aggregator's setup), the route between the source module and the aggregator module are wrapped in a grey area, so that you can see clearly the start and the end of the aggregation. 
-   <!--</p> <p>For more information on iterators, see <a href="../../workfront-fusion/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module in [!DNL Adobe Workfront Fusion]</a></p> <p>For more information on search modules see Search modules in <a href="../../workfront-fusion/modules/module-types.md" class="MCXref xref">Types of modules</a>.</p>--> </td> 
+   </p> <p>For more information on iterators, see <a href="/help/workfront-fusion/references/modules/iterator-module.md" class="MCXref xref">[!UICONTROL Iterator] module</a></p> 
+   <p>For more information on search modules see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#search-modules" class="MCXref xref">Search modules</a> in Module Overview.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Target structure type]</p><p>(Applicable only for the [!UICONTROL Array aggregator] module.)</p> </td> 

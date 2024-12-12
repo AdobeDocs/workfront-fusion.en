@@ -12,4 +12,5 @@ recommendations: noDisplay, noCatalog
 * [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
 * [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
 * [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)
+* [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md)
 

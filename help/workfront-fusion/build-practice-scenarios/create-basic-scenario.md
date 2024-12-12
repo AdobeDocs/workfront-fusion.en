@@ -2,19 +2,20 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: Create a basic scenario in [!DNL Adobe Workfront Fusion]
+title: Create a basic scenario
 description: Learn how to create a simple automation scenario with Adobe Workfront Fusion. Automation scenarios automate Workfront processes, including data manipulation and transformation. This example takes you through the process of creating a scenario that searches for a [!DNL Workfront] task in Workfront and the converts it to a project.
 author: Becky
 feature: Workfront Fusion
-exl-id: 06fa7e15-b8dc-4fe1-9703-c160d580ef79
 ---
-# Create a basic scenario in [!DNL Adobe Workfront Fusion]
+# Create a basic scenario
 
 The role of [!DNL Adobe Workfront Fusion] is to automate your processes so that you can concentrate on new tasks rather than repeating the same tasks again and again. It works by linking actions within and between apps and services to create a scenario that transfers and transforms your data automatically. The scenario you create watches for data in an app or service and processes that data to provide the result you want.
 
 This example takes you through the process of creating a scenario that searches for a [!DNL Workfront] task in Workfront and the converts it to a project.
 
-<!--# Access requirements
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:
 
@@ -23,36 +24,39 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!DNL Pro] or higher</p> </td> 
+   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
+   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Any </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
 
-<!--For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
--->
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+
 
 ## Create a practice scenario
 
@@ -60,11 +64,9 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
 1. In the **Scenarios** area, click **Create a new scenario**.
 
-    <!--To locate the Scenarios area, see navigation article-->
+   To locate the Scenarios area, see [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md).
 
    The scenario editor displays, containing an empty module in the center.
-
-   <!--picture?-->
 
 1. Select the **[!UICONTROL New scenario]** placeholder name in the upper-left corner, then enter a name.
 1. Continue with [Add and configure the first module](#add-and-configure-the-first-module) below.
@@ -85,7 +87,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
 1. In the [!UICONTROL Connection] box, select your Workfront connection. 
 
-   <!--If you do not have a Workfront connection, see [Create a connection to [!DNL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/connections/connect-to-fusion-general.md)-->
+   If you do not have a Workfront connection, see [Create a connection](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 1. In the [!UICONTROL Record Type] box, select **[!UICONTROL Task]**. This sets the module to search only tasks.
 
    You can find **[!UICONTROL Task]** in the list if you start typing the word "[!UICONTROL task]."
@@ -135,7 +137,7 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
    A panel opens that allows you to select what to use as the ID of the task you want to convert to a project. Because you enabled mapping, the panel includes output from any previous modules. You selected ID as an output of the previous module, so it is now available in the panel.
 
-   This panel is called the mapping panel. <!--For more information on the mapping panel, see [Map information from one module to another](/help/quicksilver/workfront-fusion/mapping/map-information-between-modules.md).-->
+   This panel is called the mapping panel. For more information on the mapping panel, see [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
 1. Select **ID** in the mapping panel.
 
    An ID block appears in the ID field. It shows the number of the module it is mapped from, and the field that is mapped.
@@ -162,8 +164,8 @@ For this scenario, a successful test would result in locating the new task and c
 
    For more information about the data in the inspection bubbles, see:
 
-   * For general information, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * For information about processed bundles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * For general information, see [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
+   * For information about processed bundles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 1. In [!DNL Workfront Fusion], click **[!UICONTROL Save]** near the lower-left corner to save your progress on the scenario.
 
@@ -193,9 +195,9 @@ The last step in creating a scenario is activating it.
 
 Because this scenario is searching for a specific task, there is no need to activate it. Activating a scenario causes it to run on a schedule or when a specific action occurs in an application. After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
 
-<!--For more information about activating scenarios, see [Activate or deactivate a scenario in [!UICONTROL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/activate-or-inactivate-scenario.md).-->
+For more information about activating scenarios, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
-<!--For information about schedules, see [Schedule a scenario in [!UICONTROL Adobe Workfront Fusion]](/help/quicksilver/workfront-fusion/scenarios/schedule-a-scenario.md).-->
+For information about schedules, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
 ## Next steps
 
