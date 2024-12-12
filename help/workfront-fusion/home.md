@@ -5,9 +5,9 @@ description: This is the guide home page. Edit.
 
 # [!DNL Workfront] documentation
 
-<!--UPDATE THIS
+UPDATE THIS
 
-Welcome to the Adobe Workfront product and technical documentation home page. Use the following Adobe Workfront links, help articles, and additional resources to learn how to implement and effectively use Adobe Workfront in your organization.
+Welcome to the Adobe Workfront Fusion product and technical documentation home page. Use the following links, help articles, and additional resources to learn how to implement and effectively use Adobe Workfront Fusion in your organization.
 
 ## What's new
 
