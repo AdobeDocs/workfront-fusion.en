@@ -46,11 +46,9 @@ Searching documentation can be more efficient with a few strategic approaches. H
 * **Table of Contents**: Start with the table of contents on the left of the page to get an overview of available topics and narrow down to specific topics by the expanding sections.
 * **Search bar**: Use the search bar near the top of the page to find documentation. Enter specific terms related to your issue or topic. Instead of general terms like "scenario," use "add a filter" or "Workfront connector."
 
-![](assets/exl-site-nav.png)
-
 ### Explore Learning and Training Sections
 
-* **Live instructor-led training sessions** Adobe offers live three-day training sesstions for Fusion. See [Manage Connections and Workflows in Adobe Workfront Fusion](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) for details and available sessions.
+* **Live instructor-led training sessions** Adobe offers live three-day training sessions for Fusion. See [Manage Connections and Workflows in Adobe Workfront Fusion](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html) for details and available sessions.
 * **Training Materials**: Navigate to the [Introduction and tech strategy](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion training page to begin a series of lessons and exercises designed to help you better understand how to best use Fusion.
 
 ### Find answers in Community Forums
