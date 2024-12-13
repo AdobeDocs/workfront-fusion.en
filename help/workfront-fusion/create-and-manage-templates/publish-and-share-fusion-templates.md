@@ -10,6 +10,8 @@ exl-id: aaa59a1e-aa16-41f5-9f56-ce0615c1b685
 ---
 # Publish and share [!DNL Adobe Workfront Fusion] templates
 
+<!--EDIT ME-->
+
 When you create a template, your template becomes available for all your team members. If you want to share the template with someone outside of your team, you must publish it first.
 
 For information on creating a template, see [Create new templates in Adobe Workfront Fusion](../../../workfront-fusion/scenarios/templates/create-new-fusion-templates.md).

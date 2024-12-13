@@ -113,7 +113,7 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
 1. Click the **[!UICONTROL History]** tab in the right panel.
 1. (Optional) For detailed information about a selected scenario run, click on the execution in the right panel.
 
-   <!--For more information on processing bundles, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-flow.md).-->
+   For more information on processing bundles, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
 
    >[!NOTE]
    >

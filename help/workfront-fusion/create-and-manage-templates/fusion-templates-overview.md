@@ -10,6 +10,8 @@ exl-id: 02c10997-28bd-46b4-bbcc-0c907cdaeb7b
 ---
 # [!DNL Adobe Workfront Fusion] templates overview
 
+<!--EDIT ME-->
+
 [!DNL Workfront Fusion] templates feature allows you to create and use existing templates as a starting point for your [!DNL Workfront Fusion] scenarios. Templates represent common use cases that you can configure and modify to meet the needs of your organization and specific use case.
 
 For a list of currently available Fusion templates, see [Currently available Adobe Workfront Fusion templates](/help/quicksilver/workfront-fusion/scenarios/templates/currently-available-fusion-templates.md).

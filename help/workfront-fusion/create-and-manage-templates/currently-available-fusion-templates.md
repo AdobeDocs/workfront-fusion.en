@@ -1,12 +1,8 @@
 ---
-product-previous: workfront-fusion
-product-area: workfront-integrations
-navigation-topic: scenarios
 title: Currently available Adobe Workfront Fusion templates
 description: The following public templates are currently available in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
-exl-id: 29d95b93-ab54-416d-b0d5-ff12634951b2
 ---
 # Currently available Adobe Workfront Fusion templates
 

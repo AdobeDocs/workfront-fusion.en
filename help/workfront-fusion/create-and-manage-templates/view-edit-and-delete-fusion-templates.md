@@ -10,6 +10,8 @@ exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
 ---
 # View, edit, and delete [!DNL Adobe Workfront Fusion] templates
 
+<!--EDIT ME-->
+
 [!DNL Adobe Workfront Fusion] requires an Adobe Workfront Fusion license in addition to an [!DNL Adobe Workfront license].
 
 ## Access requirements
