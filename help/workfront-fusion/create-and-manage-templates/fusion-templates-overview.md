@@ -2,19 +2,17 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: scenarios
-title: Adobe Workfront Fusion templates overview
-description: Workfront Fusion templates feature allows you to create and use existing templates as a starting point for your [!DNL Workfront Fusion] scenarios.
+title: View and select templates
+description: Workfront Fusion templates feature allows you to create and use existing templates as a starting point for your Workfront Fusion scenarios.
 author: Becky
 feature: Workfront Fusion
 exl-id: 02c10997-28bd-46b4-bbcc-0c907cdaeb7b
 ---
-# [!DNL Adobe Workfront Fusion] templates overview
+# View and select templates
 
-<!--EDIT ME-->
+[!DNL Workfront Fusion] templates feature allows you to create and use existing templates as a starting point for your Workfront Fusion scenarios. Templates represent common use cases that you can configure and modify to meet the needs of your organization and specific use case.
 
-[!DNL Workfront Fusion] templates feature allows you to create and use existing templates as a starting point for your [!DNL Workfront Fusion] scenarios. Templates represent common use cases that you can configure and modify to meet the needs of your organization and specific use case.
-
-For a list of currently available Fusion templates, see [Currently available Adobe Workfront Fusion templates](/help/quicksilver/workfront-fusion/scenarios/templates/currently-available-fusion-templates.md).
+For a list of currently available Fusion templates, see [Currently available Adobe Workfront Fusion templates](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md).
 
 ## Access requirements 
 
@@ -70,12 +68,12 @@ In the Templates area, you can view available templates, the applications they i
    >
    >If you do not see the expected templates under the Team Templates tab, check the left navigation or the header to ensure that you are currently viewing the correct team. 
 1. (Optional) To search for a specific application or name, begin typing in the Search for app or name box, then select the term when it appears in the dropdown.
-1. (Optional and conditional) If you use Fusion on the Adobe Unified Shell, filter for a specific category of use case by clicking the category in the By Category section on the right.
-1. (Optionaland conditional) If you use Fusion on the Adobe Unified Shell, view the scenario template's structure by hovering over the template's card.
+1. (Optional) Filter for a specific category of use case by clicking the category in the By Category section on the right.
+1. (Optional) View the scenario template's structure by hovering over the template's card.
 1. Click on the template that you want to use to create a scenario.
   
    A diagram of the template displays. 
 
 1. To begin creating a scenario from the template, click **Create new scenario from template** in the lower-left corner.
 
-For instructions on creating a scenario from a template, see [Create scenarios with [!DNL Adobe Workfront Fusion] templates](/help/quicksilver/workfront-fusion/scenarios/templates/create-scenarios-with-fusion-templates.md).
+For instructions on creating a scenario from a template, see [Create scenarios with templates](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md).
