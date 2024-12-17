@@ -59,7 +59,7 @@ You must create a template before you can use it.
 
 1. Click the **[!UICONTROL Templates]** icon ![](assets/fusion-template-icon.png) in the left navigation panel.
 <!--1. Click on the tab that contains the template you want to use (**[!UICONTROL Public templates]** or **[!UICONTROL Team templates]**).-->
-1. Click the **Public templates** tab.
+1. Click the tab that contains the template you want to use (Public templates or Team templates).
 1. Click the template you want to use to start creating a scenario. You can use the search box in the upper-right corner to find the template by its name or the name of the app included in it.
 1. (Conditional) If you are a member of more than one organization or team, select which organization or team you want to create your scenario for and click **[!UICONTROL Continue]**.
 1. (Conditional) If the template was configured with [!UICONTROL Wizard], follow the prompts to configure the scenario. Click **[!UICONTROL Continue]** on each prompt to confirm it.
