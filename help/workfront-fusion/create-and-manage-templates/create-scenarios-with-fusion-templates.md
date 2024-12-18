@@ -1,5 +1,5 @@
 ---
-title: Create scenarios with [!DNL Adobe Workfront Fusion] templates
+title: Create scenarios with templates
 description: Adobe Workfront FusionTemplates feature allow you to create and use existing templates as a starting point for your Workfront Fusion scenarios.
 author: Becky
 feature: Workfront Fusion
@@ -57,7 +57,7 @@ You must create a template before you can use it.
 
 ## Create a scenario from a template
 
-1. Click the **[!UICONTROL Templates]** icon ![](assets/fusion-template-icon.png) in the left navigation panel.
+1. Click the **[!UICONTROL Templates]** icon ![](assets/templates-icon.png) in the left navigation panel.
 <!--1. Click on the tab that contains the template you want to use (**[!UICONTROL Public templates]** or **[!UICONTROL Team templates]**).-->
 1. Click the tab that contains the template you want to use (Public templates or Team templates).
 1. Click the template you want to use to start creating a scenario. You can use the search box in the upper-right corner to find the template by its name or the name of the app included in it.

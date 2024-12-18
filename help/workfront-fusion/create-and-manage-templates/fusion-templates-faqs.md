@@ -75,6 +75,6 @@ Contact your Fusion administrator. The template you created may have been rename
 
 **Answer**:
 
-There are no strict rules about approval timing. Your template must be approved by your administrator. Your administrator is not notified about receiving the template to review by email. If the approval is urgent, contact the administrator directly.
+There are no strict rules about approval timing. 
 
-<!--so is it approved by WF or by the admin??-->
+

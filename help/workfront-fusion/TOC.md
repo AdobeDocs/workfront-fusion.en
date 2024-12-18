@@ -210,6 +210,12 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Add a webhook to a basic scenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
 * Create and manage templates {#create-and-manage-templates}
     * [Create and manage templates](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md)
+    * [Create new templates](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)
+    * [Create scenarios with templates](/help/workfront-fusion/create-and-manage-templates/create-scenarios-with-fusion-templates.md)
+    * [View, edit, and delete templates](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
+    * [Publish and share templates](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
+    * [Currently available Adobe Workfront Fusion templates](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+    * [[!DNL Adobe Workfront Fusion] templates FAQs](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * References {#references}
     * [References](/help/workfront-fusion/references/references-toc.md)
     * Licenses and roles {#licenses-and-roles}
