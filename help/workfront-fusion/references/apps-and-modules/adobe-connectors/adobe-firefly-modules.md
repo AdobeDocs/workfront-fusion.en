@@ -3,6 +3,7 @@ title: Adobe Firefly modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Adobe Firefly], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
 ---
 # [!DNL Adobe Firefly] modules
 

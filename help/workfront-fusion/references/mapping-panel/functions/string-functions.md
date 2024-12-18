@@ -3,6 +3,7 @@ title: String functions
 description: The following string functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
 ---
 # String functions
 

@@ -3,6 +3,7 @@ title: Fusion organizations and teams overview
 description: Adobe Workfront Fusion's Organization and Teams features make it possible for enterprises to control access to scenarios and other features within Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
 ---
 # [!DNL Adobe Workfront Fusion] organizations and teams overview
 
@@ -61,4 +62,3 @@ A user has one of the following roles in each of their teams:
 * **[!UICONTROL Team Restricted Member]**: Functionality for this role is currently unavailable, and will be made available in the near future. We do not recommend assigning users to this role at this time.
 
 For information on specific actions available to users in each team role, see [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
-

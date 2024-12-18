@@ -3,6 +3,7 @@ title: Array functions
 description: The following array functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
 ---
 # Array functions
 

@@ -1,12 +1,12 @@
 ---
 content-type: reference
-title: "Create scenarios: article index"
+title: 'Create scenarios: article index'
 description: This section contains articles related to creating scenarios in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: 433e0730-1955-4582-984a-94b98e8366b5
 ---
-
 # Create scenarios: article index
 
 * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)

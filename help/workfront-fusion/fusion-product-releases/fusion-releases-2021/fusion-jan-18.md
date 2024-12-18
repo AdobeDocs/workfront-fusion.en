@@ -9,6 +9,7 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
+exl-id: 9a76a3d1-66b9-4fcd-848e-3d762e4af0f9
 ---
 # Workfront Fusion release activity:&nbsp;Week of January 18, 2021
 
@@ -53,4 +54,3 @@ You can now use Workfront Fusion 2.0 to connect to your Qualtrics account. With 
 * Create a new survey distribution for SMS.
 * Distribute a survey via email.
 * Perform a custom API call.
-

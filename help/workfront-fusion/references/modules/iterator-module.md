@@ -3,6 +3,7 @@ title: Iterator module
 description: An Iterator module is a special type of module that converts an array into a series of bundles. Each array item is outputted as a separate bundle.
 author: Becky
 feature: Workfront Fusion
+exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
 ---
 # [!UICONTROL Iterator] module
 

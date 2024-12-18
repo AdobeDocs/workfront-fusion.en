@@ -3,6 +3,7 @@ title: Microsoft SQL Server modules
 description: You can use [!DNL Adobe Workfront Fusion] to connect to Microsoft SQL Server.
 author: Becky
 feature: Workfront Fusion
+exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
 ---
 # [!DNL Microsoft SQL Server] modules
 

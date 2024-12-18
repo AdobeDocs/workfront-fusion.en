@@ -3,6 +3,7 @@ title: HTTP &gt; Make a Basic Authorization request module
 description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
 author: Becky
 feature: Workfront Fusion
+exl-id: e544768e-7023-473f-8d51-631b04183743
 ---
 # [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] module
 

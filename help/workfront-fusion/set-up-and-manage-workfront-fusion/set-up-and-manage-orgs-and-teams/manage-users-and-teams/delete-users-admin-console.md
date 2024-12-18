@@ -1,12 +1,12 @@
 ---
 content-type: reference
-title: "Set up and managing organizations and teams: article index"
+title: 'Set up and managing organizations and teams: article index'
 description: This section contains articles related to setting up and managing organizations and teams in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
 ---
-
 # Delete users through the [!DNL Adobe Admin Console]
 
 You can remove a user from [!DNL Adobe Workfront Fusion] only, leaving access to any other [!DNL Adobe] product profiles, or you can remove the user from the [!DNL Adobe Admin Console] entirely.
@@ -92,6 +92,3 @@ Consider the following when deleting a user.
 * When a user is deleted, the user's connections, keys, and webhooks are removed. 
 * Any scenarios belonging to the user are transferred to the organization Owner. The connections in these scenarios must be updated, because the connections belonging to the user are no longer valid.
 * If the deleted user owns any applications or public templates, the applications or public templates are transferred to the organization Owner. If there is not an organization Owner, the applications or public templates are transferred to another user.
-
-
-

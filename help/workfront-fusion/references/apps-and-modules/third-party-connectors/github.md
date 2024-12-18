@@ -3,6 +3,7 @@ title: GitHub modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use GitHub, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
 ---
 # [!DNL GitHub] modules
 

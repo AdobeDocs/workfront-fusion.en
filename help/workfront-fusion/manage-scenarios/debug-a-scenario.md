@@ -3,6 +3,7 @@ title: Debug a scenario
 description: The Adobe Workfront Fusion Devtool allows you to understand and troubleshoot scenarios. The Devtool adds an extra panel to the Chrome Developer Tools. Using this debugger panel, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario.
 author: Becky
 feature: Workfront Fusion
+exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
 ---
 # Debug a scenario
 

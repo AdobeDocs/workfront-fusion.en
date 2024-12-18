@@ -3,6 +3,7 @@ title: Tools
 description: The [!DNL Adobe Workfront Fusion Tools] section includes several useful modules that can enhance your scenario.
 author: Becky
 feature: Workfront Fusion
+exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
 ---
 # [!UICONTROL Tools]
 

@@ -3,6 +3,7 @@ title: Mapping overview
 description: Mapping is the process of assigning a module's outputs, structured into items, to another module's input fields.
 author: Becky
 feature: Workfront Fusion
+exl-id: 9208ce20-0757-427a-9669-ce4274d05522
 ---
 # Mapping overview
 

@@ -1,12 +1,12 @@
 ---
 content-type: reference
-title: "Manage scenarios: article index"
+title: 'Manage scenarios: article index'
 description: This section contains articles related to managing scenarios in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 ---
-
 # Manage scenarios: article index
 
 * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)

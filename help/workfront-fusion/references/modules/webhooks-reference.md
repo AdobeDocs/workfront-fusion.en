@@ -3,6 +3,7 @@ title: Instant triggers (webhooks)
 description: Many services provide webhooks to deliver instant notifications whenever a certain change occurs in the service. To process these notifications, we recommend that you use instant triggers. This article describes the use and functionality of instant triggers in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 ---
 # Instant triggers (webhooks)
 
@@ -99,7 +100,3 @@ You can create your own webhooks. For more information, see [Webhooks](/help/wor
 ## Resources
 
 For more information on cycles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
-
-
-
-

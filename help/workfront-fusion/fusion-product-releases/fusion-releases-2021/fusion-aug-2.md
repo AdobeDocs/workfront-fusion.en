@@ -6,6 +6,7 @@ draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
+exl-id: 90659af3-622c-4685-ae09-f117ea81db7d
 ---
 # Workfront Fusion release activity:&nbsp;Week of August 2, 2021
 
@@ -32,4 +33,3 @@ Two new functions are now available in the mapping panel.
 
    * An array of elements of one array that aren't contained in the other
    * An array of elements that are contained in one array or the other, but not both.
-

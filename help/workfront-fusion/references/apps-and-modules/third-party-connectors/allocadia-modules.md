@@ -3,6 +3,7 @@ title: Allocadia modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Allocadia, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 9a6fccd6-6eee-42dc-a678-c1f34280d139
 ---
 # [!DNL Allocadia] modules
 

@@ -3,6 +3,7 @@ title: Adobe Lightroom modules
 description: With the Adobe Lightroom modules, you can start an Adobe Workfront Fusion scenario based on events in your Adobe Lightroom account.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
 ---
 # [!DNL Adobe Lightroom] modules
 

@@ -3,6 +3,7 @@ title: Azure DevOps modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Azure DevOps], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
 ---
 # [!DNL Azure DevOps] modules
 

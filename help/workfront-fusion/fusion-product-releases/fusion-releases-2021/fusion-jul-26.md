@@ -6,6 +6,7 @@ draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
+exl-id: b19fcd56-39e2-4f2d-9e84-37441d61acf7
 ---
 # Workfront Fusion release activity:&nbsp;Week of July 26, 2021
 
@@ -26,4 +27,3 @@ Functionality of existing scenarios using the previously available modules will 
 ## More clearly see details of account access when giving consent to Adobe Workfront Fusion connectors
 
 The consent screens for connections to Adobe Workfront Fusion are now updated. Now, you can see the specific actions and areas that the connections have access to, so that you can better understand what you are allowing the application to access.
-

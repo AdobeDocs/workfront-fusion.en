@@ -1,12 +1,12 @@
 ---
 content-type: reference
-title: "Connect to applications: article index"
+title: 'Connect to applications: article index'
 description: This section contains articles related to connecting to applications in Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: ed636305-d79d-4d8e-b0d7-33fe5ddd2c53
 ---
-
 # Connect to applications: article index
 
 * [Create connections](/help/workfront-fusion/create-scenarios/connect-to-apps/connection-instruction-toc.md)
@@ -16,5 +16,3 @@ recommendations: noDisplay, noCatalog
 * [Connect Adobe Workfront Fusion to Google Services using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)
 * [Call the MS Graph REST API](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md)
 * [Manage connections](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md)
-
-

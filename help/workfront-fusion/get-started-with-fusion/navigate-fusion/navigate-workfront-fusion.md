@@ -3,6 +3,7 @@ title: Navigate Workfront Fusion
 description: When you open Fusion, you have many options for actions. This article helps you understand where to go from here.
 author: Becky
 feature: Workfront Fusion
+exl-id: 427ec131-d68d-4401-b620-998d3d5162da
 ---
 # Navigate Adobe Workfront Fusion
 
@@ -25,5 +26,3 @@ This article introduces these areas, and provides links to more information abou
 >[!NOTE]
 >
 >All of the areas under the Team heading are owned by individual teams. To see the page belonging to a different team (such as a different team's Scenarios page), Click the Team dropdown near the top of the page, and select another team.
-
-

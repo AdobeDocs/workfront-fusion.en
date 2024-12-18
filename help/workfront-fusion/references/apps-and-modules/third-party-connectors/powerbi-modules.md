@@ -3,6 +3,7 @@ title: Power BI modules
 description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
 author: Becky
 feature: Workfront Fusion
+exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
 ---
 # [!DNL Power BI] Modules
 

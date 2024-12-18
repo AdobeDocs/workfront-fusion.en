@@ -9,6 +9,7 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
+exl-id: d9203aa7-f9c4-421c-ae0b-4481d05d5b6f
 ---
 # Workfront Fusion release activity:&nbsp;Week of June 21, 2021
 
@@ -21,4 +22,3 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 ## See schedule information in Scenario editor
 
 The Schedule setting icon now shows your scenario's current schedule setting. Now, when you're in the scenario editor, you can see at a glance when your scenario is set to run. The functionality of the Schedule setting icon has not changed.
-

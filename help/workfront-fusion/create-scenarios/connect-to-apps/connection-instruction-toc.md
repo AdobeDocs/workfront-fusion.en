@@ -3,6 +3,7 @@ title: Create connections
 description: A connection must adhere to the requirements set by the API of the app or web service it connects to. For this reason, instructions for setting up a connection vary based on the app or web service. This article can help you identify and locate the instructions for connecting [!DNL Adobe Workfront Fusion] to your chosen app or web service.
 author: Becky
 feature: Workfront Fusion
+exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
 ---
 # Create connections
 
@@ -93,5 +94,3 @@ For more information see:
 Some apps and services do not follow the basic configuration for [!DNL Workfront Fusion] connections. You can find instructions for connecting these apps in the article for that app.
 
 For specific instructions, see [the article for the connector](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications).
-
-

@@ -6,6 +6,7 @@ title: Create a basic scenario
 description: Learn how to create a simple automation scenario with Adobe Workfront Fusion. Automation scenarios automate Workfront processes, including data manipulation and transformation. This example takes you through the process of creating a scenario that searches for a [!DNL Workfront] task in Workfront and the converts it to a project.
 author: Becky
 feature: Workfront Fusion
+exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
 ---
 # Create a basic scenario
 

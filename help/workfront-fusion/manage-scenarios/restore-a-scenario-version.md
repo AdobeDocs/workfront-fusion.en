@@ -3,6 +3,7 @@ title: Restore a scenario version
 description: You can restore a previous version of a scenario. This allows you to make changes to a scenario, then easily revert those changes if you prefer the previous functionality.
 author: Becky
 feature: Workfront Fusion
+exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 ---
 # Restore a scenario version
 

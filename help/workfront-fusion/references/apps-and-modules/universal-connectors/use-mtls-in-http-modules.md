@@ -3,6 +3,7 @@ title: Use Mutual TLS in HTTP modules in Adobe Workfront Fusion
 description: You can use Mutual TLS in your Adobe Workfront Fusion HTTP modules, allowing both sides of the information transaction to verify the other's identity.
 author: Becky
 feature: Workfront Fusion
+exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 ---
 # Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]
 

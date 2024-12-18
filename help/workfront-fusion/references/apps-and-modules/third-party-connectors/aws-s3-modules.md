@@ -3,6 +3,7 @@ title: AWS S3 modules
 description: The [!DNL Adobe Workfront Fusion AWS] S3 modules let you perform operations on your S3 buckets.
 author: Becky
 feature: Workfront Fusion
+exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
 ---
 # AWS S3 modules
 

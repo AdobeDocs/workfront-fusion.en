@@ -3,6 +3,7 @@ title: Keys in Adobe Workfront Fusion
 description: The keychain in [!DNL Adobe Workfront Fusion] will help you to administer public and private keys. Keys are used, for example, by the Encryptor app for encrypting or decrypting PGP messages.
 author: Becky
 feature: Workfront Fusion
+exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
 ---
 # Keys in Adobe Workfront Fusion
 
@@ -18,4 +19,4 @@ Similar to connections, keys are added to invidual modules, and are then availab
 
    Click **Add** next to the key field, then enter a name for the key and the key itself, then click **Create a key**. 
 
-To view existing keys, click the **Keys** area in the left navigation. 
+To view existing keys, click the **Keys** area in the left navigation.

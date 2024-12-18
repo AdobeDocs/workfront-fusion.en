@@ -1,12 +1,12 @@
 ---
 content-type: reference
-title: "Functions references: article index"
+title: 'Functions references: article index'
 description: This section contains reference material related to functions in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: df545246-637c-4ea3-9ddf-9217ce5c5b21
 ---
-
 # Functions references: article index
 
 This section contains the following articles:

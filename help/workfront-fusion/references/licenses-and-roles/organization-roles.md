@@ -3,6 +3,7 @@ title: Organization roles
 description: This article includes information about the access and permissions of the roles in [!DNL Adobe] Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
 ---
 # Organization and team roles
 
@@ -546,7 +547,3 @@ This article describes the access and functionality available to the different t
   </tr> 
  </tbody> 
 </table>
-
-
-
-

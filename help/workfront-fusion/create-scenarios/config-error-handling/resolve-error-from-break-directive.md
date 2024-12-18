@@ -3,6 +3,7 @@ title: Resolve errors handled by the Break directive
 description: Sometimes, it is useful to re-execute a failing module if there is a chance that the reason for the failure might resolve quickly.
 author: Becky
 feature: Workfront Fusion
+exl-id: d568942c-2cd5-430c-bdbf-e1496da25b50
 ---
 # Resolve errors handled by the Break directive
 
@@ -42,5 +43,3 @@ There are some exceptions to executions being stored under Incomplete Executions
 ## Resources
 
 For more information, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) in the article Configure scenario settings.
-
-

@@ -8,6 +8,7 @@ description: Adobe Workfront Fusion connects your apps and web services seamless
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 ---
 # Adobe Workfront Fusion release activity overview
 

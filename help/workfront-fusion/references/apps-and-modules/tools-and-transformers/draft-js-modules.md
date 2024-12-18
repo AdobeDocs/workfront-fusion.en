@@ -3,6 +3,7 @@ title: Draft.js modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can use the Draft.js modules to convert Draft.js to HTML and HTML to Draft.js.
 author: Becky
 feature: Workfront Fusion
+exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
 ---
 # [!UICONTROL Draft.js] modules
 

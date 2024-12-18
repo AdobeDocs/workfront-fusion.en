@@ -4,6 +4,7 @@ description: The [!DNL Adobe Workfront Fusion DocuSign] modules enable you to mo
 author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
 ---
 # DocuSign modules
 

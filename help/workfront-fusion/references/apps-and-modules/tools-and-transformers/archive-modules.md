@@ -3,6 +3,7 @@ title: Archive modules
 description: In a [!DNL Adobe Workfront Fusion] scenario, you can connect an archive, such as a zipped file, to multiple third-party applications and services. For example, you can configure a scenario that
 author: Becky
 feature: Workfront Fusion
+exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
 ---
 # [!UICONTROL Archive] modules
 

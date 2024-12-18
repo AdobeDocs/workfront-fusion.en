@@ -3,6 +3,7 @@ title: Cvent modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Cvent, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: b7e16180-1db8-4aff-bb7b-69ca98194b00
 ---
 # [!DNL Cvent] modules
 

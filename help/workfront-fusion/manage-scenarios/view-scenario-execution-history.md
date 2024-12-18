@@ -3,6 +3,7 @@ title: View and resolve incomplete executions
 description: The [!UICONTROL Incomplete executions] folder stores scenario executions that were not successfully finalized due to an error. Each stored incomplete execution can be resolved either manually or automatically.
 author: Becky
 feature: Workfront Fusion
+exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
 ---
 # View a scenario's execution history
 
@@ -113,7 +114,7 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
 1. Click the **[!UICONTROL History]** tab in the right panel.
 1. (Optional) For detailed information about a selected scenario run, click on the execution in the right panel.
 
-   <!--For more information on processing bundles, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/scenario-execution-flow.md).-->
+   For more information on processing bundles, see [Scenario execution flow in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
 
    >[!NOTE]
    >

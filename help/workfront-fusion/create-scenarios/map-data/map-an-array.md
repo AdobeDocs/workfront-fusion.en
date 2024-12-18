@@ -3,6 +3,7 @@ title: Map arrays and array elements
 description: You can map an array or individual array elements to a module field in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
 ---
 # Map an array or array element
 
@@ -181,4 +182,3 @@ For more information about the `get()` function, see [General functions](/help/w
 Arrays can be converted to a series of bundles using the [!UICONTROL Iterator] module. For more information, see [[!UICONTROL Iterator] module](/help/workfront-fusion/references/modules/iterator-module.md).
 
 ![](assets/series-of-bundles.png)
-

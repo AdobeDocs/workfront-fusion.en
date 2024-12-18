@@ -7,6 +7,7 @@ title: Configure throw error workaround
 description: In some cases you may want to forcibly stop the scenario execution followed by Rollback or Commit phase or to stop the processing of a route and optionally store it in the queue of View and resolve incomplete executions in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
 ---
 # Configure `throw` error workaround
 

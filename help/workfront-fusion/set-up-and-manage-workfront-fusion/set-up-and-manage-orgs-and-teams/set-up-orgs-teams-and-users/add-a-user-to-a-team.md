@@ -3,6 +3,7 @@ title: Add a user to a team
 description: Your users are assigned to teams when you create them. If an existing user needs to be added to a team, you can add them on the team's Users page.
 author: Becky
 feature: Workfront Fusion
+exl-id: c972a9f0-5195-4d80-8a19-4251d8ec57de
 ---
 # Add a user to a team
 
@@ -23,5 +24,3 @@ Adding a user to a team is handled from the page for that team.
 1. Click **None** to the right of the user's name, then select the role you want them to have on the team.
 
     The user is added to the team, with the role you selected.
-
-

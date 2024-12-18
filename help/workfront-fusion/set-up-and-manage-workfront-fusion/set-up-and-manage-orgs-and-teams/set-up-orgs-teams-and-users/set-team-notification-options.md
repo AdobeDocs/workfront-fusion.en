@@ -3,8 +3,8 @@ title: Set Team Notification Options
 description: Email notification options are set on the team level.
 author: Becky
 feature: Workfront Fusion
+exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
 ---
-
 # Set Team Notification Options
 
 When in Workfront Fusion, you receive notifications through the Adobe Notifications area. You can choose the notifications a team receives. Notifications are set on the team level.
@@ -90,6 +90,3 @@ Email notification options are set on the team level.
 </table>
 
 Changes to notification options save automatically.
-
-
-

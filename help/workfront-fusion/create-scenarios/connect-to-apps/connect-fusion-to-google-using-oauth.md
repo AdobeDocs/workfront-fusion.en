@@ -3,6 +3,7 @@ title: Connect Adobe Workfront Fusion to Google Services using a custom OAuth cl
 description: You can use Adobe Workfront Fusion to connect to Google Services using a custom OAuth client. This procedure requires an existing Google account.
 author: Becky
 feature: Workfront Fusion
+exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
 ---
 # Connect Adobe Workfront Fusion to Google Services using a custom OAuth client
 

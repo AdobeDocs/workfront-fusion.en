@@ -4,6 +4,7 @@ description: Adobe PDF Services
 author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
 ---
 # [!DNL Adobe PDF Services]
 
@@ -854,4 +855,3 @@ This action module a custom HTTP request to the PDF Services API.
   </tr> 
  </tbody> 
 </table>
-

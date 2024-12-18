@@ -1,12 +1,12 @@
 ---
 content-type: reference
-title: "Fusion applications and their modules references: article index"
+title: 'Fusion applications and their modules references: article index'
 description: This section contains reference material related to configuring specific modules in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
 ---
-
 # Fusion applications and their modules references: article index
 
 >[!IMPORTANT]
@@ -128,7 +128,3 @@ These modules allow you to perform actions on your data, but do not require conn
 * [Text parser modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Tools modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
 * [XML modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
-
-
-
-

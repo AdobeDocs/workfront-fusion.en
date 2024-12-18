@@ -3,6 +3,7 @@ title: Adobe Workfront Fusion Performance Guardrails
 description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
 author: Becky
 feature: Workfront Fusion
+exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 ---
 # [!DNL Adobe Workfront Fusion] performance guardrails
 
@@ -73,4 +74,3 @@ For more information, see [Working with large files in Adobe Workfront Fusion](/
 ## Retries
 
 * When using the Break module and specifying the Retry directive, if a scenario fails consecutively 10 times within a 2-minute timeframe, the scenario will be automatically deactivated.
- 

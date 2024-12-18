@@ -3,6 +3,7 @@ title: Type coercion
 description: This document describes how [!DNL Adobe Workfront Fusion] behaves in situations when it receives values in expected and unexpected data formats.
 author: Becky
 feature: Workfront Fusion
+exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
 ---
 # Type coercion
 

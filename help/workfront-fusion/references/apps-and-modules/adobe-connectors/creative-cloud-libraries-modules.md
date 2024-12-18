@@ -3,6 +3,7 @@ title: Adobe Creative Cloud Libraries modules
 description: With the [!DNL Adobe Workfront Fusion Adobe Creative Cloud] Libraries modules, you can start a scenario when an element or library is created or updated. You can also upload, retrieve, archive, or list elements, or make a call to the [!DNL Adobe Creative Cloud Libraries] API.
 author: Becky
 feature: Workfront Fusion
+exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
 ---
 # Adobe Creative Cloud Libraries Modules
 

@@ -3,6 +3,7 @@ title: View a webhook's queue
 description: Many services provide webhooks to deliver instant notifications whenever a certain change occurs in the service. Instant triggers, also known as webhooks, can use these events to begin scenarios. The events go into the webhook's queue while they are awaiting processing, such as when the scenario is already running. You can view the webhook's queue.
 author: Becky
 feature: Workfront Fusion
+exl-id: 04aed0cb-e837-4c81-8eb1-113075d2ada8
 ---
 # View a webhook's queue
 
@@ -66,6 +67,3 @@ All messages from incoming webhooks are stored in the webhook's queue.
    ![Webhook queue](assets/webhook-queue.png)
    
 1. Click the button to view details about events in the queue.
-
-
-   
