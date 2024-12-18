@@ -18,8 +18,8 @@ Scenarios are built to meet the needs of your organization, with applications an
 6. [Configure routing](#6-configure-routing)
 7. [Configure error handling](#7-configure-error-handling)
 8. [Configure scenario settings](#8-configure-scenario-settings)
-9. Test and revise
-10. Activate
+9. [Test and revise](#9-test-and-revise)
+10. [Activate the scenario](#10-activate-the-scenario)
 
 Keyboard shortcuts
 
@@ -113,3 +113,35 @@ This example scenario does not have a trigger module. If this were a scenario yo
 For more information about activating scenarios, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
 For information about schedules, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
+
+## Workfront Fusion scenario keyboard shortcuts
+
+You can use the following keyboard shortcuts when creating or editing a scenario:
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <thead> 
+  <tr> 
+   <th> <p>Action</p> </th> 
+   <th>[!DNL Windows]</th> 
+   <th> <p>[!DNL MacOS]</p> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Save] </td> 
+   <td>Ctrl+Shift+S</td> 
+   <td><span style="font-weight: normal;">Cmd+Shift+S</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Run Once]</td> 
+   <td>Ctrl+Shift+Enter</td> 
+   <td><span style="font-weight: normal;">Cmd+Shift+Enter</span> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+
