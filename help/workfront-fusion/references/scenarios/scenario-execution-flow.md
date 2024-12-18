@@ -4,6 +4,7 @@ title: Scenario Execution Flow
 description: This article explains how a scenario executes and how data flows through it. It also explains where you can find information about your processed data and how to read it.
 author: Becky
 feature: Workfront Fusion
+exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 ---
 # Scenario execution flow
 
@@ -90,7 +91,3 @@ An error might occur during the scenario run. For example, if you have deleted t
 * For more information on activating a scenario, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 * For more information on scheduling a scenario, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 * For more information on modules, see [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
-
-
-
-

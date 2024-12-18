@@ -3,6 +3,7 @@ title: Call the MS Graph REST API
 description: Call the MS Graph REST API via the Adobe Workfront Fusion HTTP &gt; Make an OAuth 2.0 request module
 author: Becky
 feature: Workfront Fusion
+exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
 ---
 # Call the MS Graph REST API
 

@@ -3,6 +3,7 @@ title: Workflow for creating a scenario
 description: Follow this general workflow to create a scenario
 author: Becky
 feature: Workfront Fusion
+exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
 ---
 # Workflow for creating a scenario
 

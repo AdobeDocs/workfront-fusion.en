@@ -4,6 +4,7 @@ description: Adobe Workfront Fusion documentation how-to articles contain a tabl
 author: Becky
 feature: System Setup and Administration
 role: Admin
+exl-id: 823aa376-fbfe-4750-82dc-4f34224c1a48
 ---
 # Access requirements in documentation
 

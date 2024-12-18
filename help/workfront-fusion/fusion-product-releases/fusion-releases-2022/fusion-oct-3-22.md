@@ -9,6 +9,7 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
+exl-id: 0dcd5fd6-f4d3-4ab8-99f4-305ef5f94ca5
 ---
 # Workfront Fusion release activity: Week of October 3, 2022
 
@@ -23,4 +24,4 @@ We've added some new operators to the event filter. Now, you can use any of the 
 * Greater than
 * Less than
 
-We've also added the ability to select whether you want the filter to apply to the old state of the field or the new state. For example, if you have selected to watch the old state of a field and set the filter to watch for statuses that are In Progress, the module will trigger when a status changes from In Progress to a new status. 
+We've also added the ability to select whether you want the filter to apply to the old state of the field or the new state. For example, if you have selected to watch the old state of a field and set the filter to watch for statuses that are In Progress, the module will trigger when a status changes from In Progress to a new status.

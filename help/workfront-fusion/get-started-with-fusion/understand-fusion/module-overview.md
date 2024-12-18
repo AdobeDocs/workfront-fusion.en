@@ -3,6 +3,7 @@ title: Module overview
 description: 'Adobe Workfront Fusion distinguishes five types of modules: action modules, search modules, trigger modules, aggregators, and iterators. Aggregators and Iterators are for advanced scenarios.'
 author: Becky
 feature: Workfront Fusion
+exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
 ---
 # Module overview
 

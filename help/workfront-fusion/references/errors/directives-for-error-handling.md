@@ -4,6 +4,7 @@ title: Directives for Error Handling
 description: This article describes directives that you can use for error handling in your [!DNL Adobe Workfront Fusion] scenarios.
 author: Becky
 feature: Workfront Fusion
+exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
 ---
 # Directives for error handling
 
@@ -99,7 +100,3 @@ The following error handling directives are available in Workfront Fusion.
 
 * For information on rollback and the Rollback phase, see [Rollback](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback) in the article Scenario execution, cycles, and phases.
 * For information on the Commit phase, see [Commit](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#commit) in the article Scenario execution, cycles, and phases.
-
-
-
-

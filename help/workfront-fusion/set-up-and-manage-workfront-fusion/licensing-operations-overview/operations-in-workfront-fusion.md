@@ -3,6 +3,7 @@ title: Operations
 description: An operation in Adobe Workfront Fusion is a task performed by a module. For tracking purposes, any successful action performed by a module is an operation.
 author: Becky
 feature: Workfront Fusion
+exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
 ---
 # Operations
 
@@ -32,4 +33,4 @@ You can see a graphs showing the number of operations performed. These graphs ar
 
 * **Organization dashboard**: Operations used by the entire organization
 * **Team dashboard**: Operations used by scenarios owned by this team
-* **Scenario details page**: Operations used by this scenario 
+* **Scenario details page**: Operations used by this scenario

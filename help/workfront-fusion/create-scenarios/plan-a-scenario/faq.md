@@ -3,6 +3,7 @@ title: Scenario planning FAQ
 description: The information in this article may be useful as you begin creating scenarios in Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
 ---
 # Scenario planning FAQ
 

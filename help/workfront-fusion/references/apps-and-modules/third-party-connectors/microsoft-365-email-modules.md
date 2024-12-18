@@ -3,6 +3,7 @@ title: Microsoft Office 365 Email
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Microsoft Office 365 Email, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
 ---
 # [!DNL Microsoft Office 365 Email] modules
 

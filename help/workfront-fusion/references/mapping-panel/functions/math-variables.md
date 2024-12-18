@@ -3,6 +3,7 @@ title: Math variables
 description: The following math variables are available in the [!DNL Adobe Workfront Fusion mapping] panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: b309f035-4d46-473b-b915-6938587b0bcf
 ---
 # Math variables
 

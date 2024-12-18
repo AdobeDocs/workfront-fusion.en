@@ -3,6 +3,7 @@ title: View and resolve incomplete executions
 description: The [!UICONTROL Incomplete executions] folder stores scenario executions that were not successfully finalized due to an error. Each stored incomplete execution can be resolved either manually or automatically.
 author: Becky
 feature: Workfront Fusion
+exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
 ---
 # View and resolve incomplete executions
 

@@ -3,6 +3,7 @@ title: Microsoft Office 365 Calendar
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Microsoft Office 365 Calendar, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
 ---
 # [!DNL Microsoft Office 365 Calendar] 
 

@@ -3,6 +3,7 @@ title: Choose where a trigger module starts
 description: Some trigger modules allow you to select the first bundle from which you want the retrieving of bundles to start.
 author: Becky
 feature: Workfront Fusion
+exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
 ---
 # Choose where a trigger module starts
 

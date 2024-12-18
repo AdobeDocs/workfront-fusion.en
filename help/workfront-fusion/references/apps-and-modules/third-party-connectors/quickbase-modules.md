@@ -3,6 +3,7 @@ title: Quickbase modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Quickbase, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 808fbb54-6b60-4c1f-aef3-b0db9a350dfd
 ---
 # [!DNL Quickbase] modules
 

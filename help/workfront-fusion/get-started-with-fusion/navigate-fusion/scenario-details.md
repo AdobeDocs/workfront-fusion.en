@@ -3,8 +3,8 @@ title: Scenario details overview
 description: Scenario details in [!DNL Adobe Workfront Fusion]
 author: Becky
 feature: Workfront Fusion
+exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
 ---
-
 # Scenario details overview
 
 The scenario detail page is the homepage of a specific scenario. It provides access to specific information for the scenario that is represented on the page.

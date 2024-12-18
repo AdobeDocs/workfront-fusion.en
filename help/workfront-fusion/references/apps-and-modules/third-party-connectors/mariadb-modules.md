@@ -4,6 +4,7 @@ description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate work
 author: Becky
 draft: Probably
 feature: Workfront Fusion
+exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
 ---
 # [!DNL MariaDB] modules
 

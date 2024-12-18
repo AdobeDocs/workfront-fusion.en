@@ -3,6 +3,7 @@ title: Figma modules
 description: With the [!DNL Adobe Workfront Fusion] Figma modules, you can retrieve lists of comments, files, file versions, or projects. You can also post a comment or make a call to the Figma API.
 author: Becky
 feature: Workfront Fusion
+exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
 ---
 # [!DNL Figma] Modules
 

@@ -3,6 +3,7 @@ title: Run the Scenario Scoring Expert
 description: The Scenario Scoring Expert can help you ensure that your scenario is configured in a way that follows best practices. It checks your scenario and gives recommendations for its structure and organization.
 author: Becky
 feature: Workfront Fusion
+exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
 ---
 # Run the Scenario Scoring Expert
 
@@ -89,4 +90,3 @@ The Scenario Scoring Expert uses the following checks:
 * If a Workfront instant trigger module is used, it must be filtered.
    
    For instructions, see [Event subscription filters in the [!DNL Workfront] > [!UICONTROL Watch Events] module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules).
-

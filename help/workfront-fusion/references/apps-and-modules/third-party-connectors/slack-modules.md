@@ -3,6 +3,7 @@ title: Slack modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Slack, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
 ---
 # [!DNL Slack] modules
 
@@ -1546,7 +1547,3 @@ The following terminology may be useful when configuring [!DNL Slack] modules:
 * **Private Channel**: formerly [!UICONTROL Group]
 * **Direct Message**: formerly [!UICONTROL IM]
 * **Channel**: [!UICONTROL Conversation] in the API documentation, [!UICONTROL channel] in the [!DNL Slack] app.
-
-
-
-

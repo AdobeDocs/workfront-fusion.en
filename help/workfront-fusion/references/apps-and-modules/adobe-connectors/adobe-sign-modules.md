@@ -3,6 +3,7 @@ title: Adobe Acrobat Sign modules
 description: With the [!DNL Adobe Acrobat Sign] modules, you can start an [!DNL Adobe Workfront Fusion] scenario based on events in your [!DNL Adobe] Acrobat Sign account, create, read, or update agreements and other records, search for records using criteria you set, and upload documents.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
 ---
 # [!DNL Adobe Acrobat Sign] modules
 

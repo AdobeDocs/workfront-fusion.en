@@ -3,6 +3,7 @@ title: Scenario overview
 description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
 author: Becky
 feature: Workfront Fusion
+exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
 ---
 # Scenario overview
 
@@ -103,4 +104,3 @@ For a list of dedicated connectors, see [Fusion applications and their modules r
 * For information on creating and managing scenarios, see the articles listed under:
    * [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * [Manage scenarios](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
-   

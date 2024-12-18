@@ -3,8 +3,8 @@ title: GitLab modules
 description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
 author: Becky
 feature: Workfront Fusion
+exl-id: fabbadce-5669-4363-834e-6d7428520f62
 ---
-
 # [!UICONTROL GitLab] modules
 
 Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.

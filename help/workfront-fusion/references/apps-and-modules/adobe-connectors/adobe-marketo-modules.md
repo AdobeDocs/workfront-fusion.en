@@ -3,6 +3,7 @@ title: Marketo modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Marketo], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
 ---
 # [!DNL Marketo] modules
 

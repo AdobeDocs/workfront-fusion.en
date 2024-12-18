@@ -3,6 +3,7 @@ title: Add error handling
 description: When errors occur during the execution of a scenario, it's usually because a service is unavailable due to a failure, a service responds with unexpected data, or the validation of input data fails.
 author: Becky
 feature: Workfront Fusion
+exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
 ---
 # Add error handling
 
@@ -124,7 +125,3 @@ For more information on error handling, see:
 
 * [Directives for error handling in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md)
 * [Add filtering and nesting to error handling routes](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)
-
-
-
-

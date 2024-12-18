@@ -6,6 +6,7 @@ title: Add a filter to a basic scenario
 description: Filters allow you to ensure that your scenario progresses only if certain conditions are met.
 author: Becky
 feature: Workfront Fusion
+exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
 ---
 # Add a filter to a basic scenario 
 

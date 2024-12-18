@@ -1,13 +1,12 @@
 ---
-
 content-type: reference
-title: "Build practice scenarios: article index"
+title: 'Build practice scenarios: article index'
 description: This section contains articles that take you through the process of building simple scenarios.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: 8e2779c3-dd54-44f8-9b38-5b308fc26bed
 ---
-
 # Build practice scenarios: article index
 
 This section contains the following articles:
@@ -17,4 +16,3 @@ This section contains the following articles:
 * [Use a function to update a project in a basic scenario](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md)
 * [Add a filter to a basic scenario](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md)
 * [Add a webhook to a basic scenario](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md)
-

@@ -3,6 +3,7 @@ title: Encryptor
 description: Adobe Workfront Fusion Encryptor modules allow you to encrypt any text data. They currently support message encryption via AES256 and PGP (OpenPGP).
 author: Becky
 feature: Workfront Fusion
+exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
 ---
 # Encryptor
 

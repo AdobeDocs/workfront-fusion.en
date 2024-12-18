@@ -3,6 +3,7 @@ title: Create a team
 description: Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
 author: Becky
 feature: Workfront Fusion
+exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
 ---
 # Create a team
 
@@ -79,4 +80,3 @@ To create a team:
 1. Click **[!UICONTROL Add a new team]**. 
    ![Create a team](assets/create-new-team-button.png)
 1. Enter a name for the new team, and click **Add**.
-

@@ -3,6 +3,7 @@ title: Adobe Workfront Fusion licenses
 description: Adobe Workfront Fusion offers two different licenses that determine the functionality you are able to access. Your organization chose one of these licenses when it purchased Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
 ---
 # Adobe Workfront Fusion licenses
 

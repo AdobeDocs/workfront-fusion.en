@@ -3,7 +3,7 @@ title: The scenario editor in [!DNL Adobe] Workfront Fusion
 description: The scenario editor allows you to create and edit scenarios in a visual interface.
 author: Becky
 feature: Workfront Fusion
-
+exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 ---
 # The scenario editor in [!DNL Adobe Workfront Fusion]
 
@@ -117,5 +117,3 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 You can use the Favorites icon to add modules you use often.
 
 ![Favorites panel](assets/favorites-scenario-editor.png)
-
-

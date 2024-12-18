@@ -3,6 +3,7 @@ title: Configure IP Addresses for Fusion in your organization's allowlist
 description: Fusion uses specific IP addresses and domains for web communication. These must be added to your organization's allowlist before you can use Workfront in your organization.
 author: Becky
 feature: Workfront Fusion
+exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
 ---
 # Configure IP Addresses for Fusion in your organization's allowlist
 
@@ -131,4 +132,3 @@ Also, if your organization uses outbound network filtering, add the following do
 >[!NOTE]
 >
 >Outbound network filtering is uncommon. Check with your network administrator to see if you need to update your allowlist to accommodate for it.
-

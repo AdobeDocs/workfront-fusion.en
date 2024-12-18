@@ -4,6 +4,7 @@ title: Add notes to a scenario
 description: We recommend the optional but useful practice of adding notes about each module.
 author: Becky
 feature: Workfront Fusion
+exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
 ---
 # Add notes to a scenario
 
@@ -19,4 +20,3 @@ We recommend the optional but useful practice of adding notes about each module.
      After you add a note to a scenario, an orange dot displays on the **[!UICONTROL Notes]** icon ![](assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
 
 1. Click the **[!UICONTROL Notes]** icon ![](assets/notes-icon-w-dot.png) to view your notes.
-

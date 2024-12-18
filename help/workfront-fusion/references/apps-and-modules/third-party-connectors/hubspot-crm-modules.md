@@ -3,6 +3,7 @@ title: HubSpot CRM modules
 description: The [!DNL Adobe Workfront Fusion] HubSpot CRM modules enable you to monitor events, records, contacts, engagements, file and form submissions, or create, retrieve, update and delete records, contacts, engagements, events, or files in your [!DNL HubSpot CRM] account.
 author: Becky
 feature: Workfront Fusion
+exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
 ---
 # [!DNL HubSpot CRM] modules
 

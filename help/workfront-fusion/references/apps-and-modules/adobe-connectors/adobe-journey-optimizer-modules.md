@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Adobe Journey Optimizer], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
 ---
 # [!DNL Adobe Journey Optimizer] modules
 

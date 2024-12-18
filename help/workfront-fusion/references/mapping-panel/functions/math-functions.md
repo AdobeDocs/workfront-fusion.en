@@ -3,6 +3,7 @@ title: Math functions
 description: The following math functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: 3d08b09d-b395-4226-b7e3-d5650c428a59
 ---
 # Math functions
 

@@ -3,6 +3,7 @@ title: Google Forms modules
 description: The [!DNL Adobe Workfront Fusion Google Forms] modules allow you to monitor, select, add, update or delete responses on your Google Forms.
 author: Becky
 feature: Workfront Fusion
+exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
 ---
 # [!DNL Google Forms] modules
 

@@ -3,6 +3,7 @@ title: Adobe Workfront Fusion overview
 description: The role of [!DNL Adobe Workfront Fusion] is to automate your processes so that you can concentrate on new tasks rather than repeating the same tasks again and again. It works by linking actions within and between apps and services to create a scenario that transfers and transforms your data automatically. The scenario you create watches for data in an app or service and processes that data to provide the result you want.
 author: Becky
 feature: Workfront Fusion
+exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
 ---
 # [!DNL Adobe Workfront Fusion] overview
 
@@ -32,4 +33,3 @@ As you begin working with Workfront Fusion, you may find the following resources
 * For overviews of other areas of Fusion, see the articles under [Understand Fusion: article index](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md).
 
 * To begin creating practice scenarios, see [Build practice scenarios: article index](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md).
-

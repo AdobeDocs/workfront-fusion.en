@@ -3,6 +3,7 @@ title: Generate a scenario segment using AI
 description: You can use AI to enter a text prompt describing what you need a segment of your scenario to do. Fusion then generates one or more modules that perform those actions, which you can use in your scenario.
 author: Becky
 feature: Workfront Fusion
+exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
 ---
 # Generate a scenario segment using AI 
 

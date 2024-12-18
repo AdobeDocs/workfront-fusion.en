@@ -3,6 +3,7 @@ title: HTTP request methods
 description: When you are configuring an API call in a module, you must select the HTTP request method. This article describes the available methods, and why you would select each one.
 author: Becky
 feature: Workfront Fusion
+exl-id: 481131c9-356a-4c62-a653-d6bba9be5be8
 ---
 # HTTP request methods
 

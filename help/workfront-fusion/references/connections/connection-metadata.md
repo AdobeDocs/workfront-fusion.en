@@ -1,8 +1,9 @@
 ---
 title: Connection metadata
-description: Fusion uses metadata to identify important attributes of a connection. 
+description: Fusion uses metadata to identify important attributes of a connection.
 author: Becky
 feature: Workfront Fusion
+exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
 ---
 # Connection metadata
 
@@ -33,6 +34,3 @@ For more information on authentication types, please see [Authentication](https:
 ## Resources
 
 * For instructions on managing connection metadata, see [Manage connections](/help/workfront-fusion/create-scenarios/connect-to-apps/manage-connections.md).
-
-
-

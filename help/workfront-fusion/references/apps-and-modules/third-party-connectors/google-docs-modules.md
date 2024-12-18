@@ -3,6 +3,7 @@ title: Google Docs modules
 description: The Adobe Workfront Fusion [!DNL Google Docs] modules enable you to monitor, create, edit and retrieve documents in your [!DNL Google Docs] and [!DNL Google Docs] (for [!DNL Google Workspace] users).
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
 ---
 # [!DNL Google Docs] modules
 

@@ -3,6 +3,7 @@ title: Markdown modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can use the Markdown modules to convert Markdown to HTML and HTML to Markdown.
 author: Becky
 feature: Workfront Fusion
+exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
 ---
 # [!UICONTROL Markdown] modules
 

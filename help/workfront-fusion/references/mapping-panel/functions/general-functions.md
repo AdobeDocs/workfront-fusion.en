@@ -3,6 +3,7 @@ title: General functions
 description: The following general functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
 ---
 # General functions
 

@@ -3,6 +3,7 @@ title: Map information from one module to another
 description: Mapping is the process of assigning a module's outputs, structured into items, to another module's input fields.
 author: Becky
 feature: Workfront Fusion
+exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
 ---
 # Map information from one module to another
 
@@ -131,4 +132,3 @@ To execute the single module:
 1. When the module finishes running, click the bubble above the module to explore its full output.
 
    The mapping panel for later modules now contains all of the items in the module's output.
-

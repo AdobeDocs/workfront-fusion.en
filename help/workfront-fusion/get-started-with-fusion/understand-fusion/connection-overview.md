@@ -3,6 +3,7 @@ title: Connection overview
 description: For most apps, it is necessary to create a connection, through which [!DNL Adobe Workfront Fusion] can communicate with the given third-party service according to the settings of the specific scenario.
 author: Becky
 feature: Workfront Fusion
+exl-id: 01132df7-4cc0-4ff3-b4d7-607a06558735
 ---
 # Connection overview
 

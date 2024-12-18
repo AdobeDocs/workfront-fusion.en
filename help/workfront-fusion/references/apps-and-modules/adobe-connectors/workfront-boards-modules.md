@@ -3,6 +3,7 @@ title: Adobe Workfront Boards modules
 description: You can use the Adobe Workfront Boards connector to automate your processes within Workfront Boards and connect it to third-party apps and services.
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
+exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
 ---
 # [!DNL Adobe Workfront] Boards modules
 

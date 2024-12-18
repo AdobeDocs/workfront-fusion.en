@@ -3,6 +3,7 @@ title: Adobe I/O Events modules
 description: With the Adobe I/O Events modules, you can start an Adobe Workfront Fusion scenario based on events in your Adobe applications.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
 ---
 # Adobe I/O Events modules
 

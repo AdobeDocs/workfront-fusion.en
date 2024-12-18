@@ -1,8 +1,9 @@
 ---
 title: Add a module to a scenario
-description: This article describes the basic process of adding a module to a scenario. 
+description: This article describes the basic process of adding a module to a scenario.
 author: Becky
 feature: Workfront Fusion
+exl-id: f3757468-3e11-4862-a83e-ed447805545b
 ---
 # Add a module to a scenario
 
@@ -103,4 +104,3 @@ The list of connectors opens, showing any connectors already used in the scenari
 1. Configure the module.
 
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
-

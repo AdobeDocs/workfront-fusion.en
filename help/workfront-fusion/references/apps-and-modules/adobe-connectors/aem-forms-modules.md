@@ -3,6 +3,7 @@ title: Adobe Experience Manager Forms modules
 description: With the [!DNL Adobe Experience Manager Forms] connector for [!DNL Adobe Workfront Fusion], you can start a scenario based on events in your [!DNL Adobe Experience Manager Forms] account, create, upload, and update assets, and copy or move folders and assets.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
 ---
 # [!DNL Adobe Experience Manager Forms] modules
 
