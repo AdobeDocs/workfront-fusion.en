@@ -3,6 +3,7 @@ title: Currently available Adobe Workfront Fusion templates
 description: The following public templates are currently available in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
 ---
 # Currently available Adobe Workfront Fusion templates
 

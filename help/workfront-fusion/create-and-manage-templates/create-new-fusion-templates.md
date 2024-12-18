@@ -3,6 +3,7 @@ title: Create new templates
 description: You can create new scenario templates in [!DNL Adobe] Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
 ---
 # Create new templates
 

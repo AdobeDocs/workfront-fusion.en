@@ -3,6 +3,7 @@ title: Adobe Workfront Fusion templates FAQs
 description: This article addresses common questions about [!DNL Adobe Workfront Fusion scenario] templates.
 author: Becky
 feature: Workfront Fusion
+exl-id: 479b1ee5-5bde-465e-a269-61a49640699e
 ---
 # [!DNL Adobe Workfront Fusion] templates FAQs
 
@@ -75,6 +76,4 @@ Contact your Fusion administrator. The template you created may have been rename
 
 **Answer**:
 
-There are no strict rules about approval timing. 
-
-
+There are no strict rules about approval timing.

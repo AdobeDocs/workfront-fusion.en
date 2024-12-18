@@ -3,6 +3,7 @@ title: Publish and share templates
 description: When you create a template, your template becomes available for all your team members. If you want to share the template with someone outside of your team, you must publish it first.
 author: Becky
 feature: Workfront Fusion
+exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
 ---
 # Publish and share templates
 
