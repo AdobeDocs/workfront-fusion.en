@@ -73,3 +73,4 @@ You must create a template before you can use it.
    For information on building a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
 1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png) to save your scenario. The scenario saves to the Scenario area of Workfront Fusion.
+
