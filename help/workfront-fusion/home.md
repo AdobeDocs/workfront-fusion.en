@@ -54,3 +54,4 @@ Searching documentation can be more efficient with a few strategic approaches. H
 ### Find answers in Community Forums
 
 * **Ask Questions**: If the documentation doesn't answer your question, try posting in the [Workfront Fusion Community forums](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2) where other users and experts can offer assistance.
+
