@@ -107,7 +107,7 @@ For instructions on creating a scenario from a template, see [Create scenarios w
 
 You can edit any templates that are available in the [!UICONTROL Team templates] tab.
 
-1. Click the **[!UICONTROL Templates]** icon ![](assets/fusion-template-icon.png) in the side navigation menu.
+1. Click the **[!UICONTROL Templates]** icon ![](assets/templates-icon.png) in the side navigation menu.
 1. Click the **[!UICONTROL Team templates]** tab.
 1. Click the **[!UICONTROL Private]** tab.
 1. Click the template you want to edit.

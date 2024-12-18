@@ -64,7 +64,7 @@ You can build a template in a process similar to building a scenario. Fusion adm
 
 ### Build a template
 
-1. Click **[!UICONTROL Templates]** ![](assets/fusion-template-icon.png) in the left navigation panel.
+1. Click **[!UICONTROL Templates]** ![](assets/templates-icon.png) in the left navigation panel.
 1. Click **[!UICONTROL Create a new template]** in the upper-right corner.
 1. (Optional) Rename the template by replacing the default **[!UICONTROL New template name]** in the upper-left corner.
 1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) and select the language from the Language drop-down.
@@ -106,13 +106,13 @@ For information on publishing templates, see [Publish and share [!DNL Adobe Work
    
    The scenario is copied into a New template page.
 1. (Optional) Rename the template by replacing the default **[!UICONTROL New template name]** in the upper-left corner.
-1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png) and select the language from the Language drop-down.
+1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) and select the language from the Language drop-down.
 
    >[!IMPORTANT]
    >
    >The Languages selection corresponds to the languages available in the system settings and concerns only the name of the public template and its description. You can't change a template language once the template has been saved.
 
-1. (Optional) To enter a description of the template, click **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png) and enter the description.
+1. (Optional) To enter a description of the template, click **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) and enter the description.
 1. Edit apps, modules, and tools as desired, using the same processes as adding modules to a scenario.
 
    For instructions, see the articles under [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
