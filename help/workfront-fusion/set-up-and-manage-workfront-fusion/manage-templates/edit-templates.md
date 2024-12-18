@@ -83,7 +83,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >[!NOTE]
    >
    >If your template includes modules that require adding the connection, credentials, or other privacy-sensitive information, this information is not shared with the template users.
-1. (Optional)In the [!UICONTROL Options] in the top-right corner, there is one additional option: the SVG diagram that provides you with the SVG code. Also, the publishing process is the same as in the case of a standard user, refer to the Publishing and sharing templates section for more details. 
+
 1. (Optional) Click **[!UICONTROL Run once]** to test the template.
 1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png).
 
@@ -98,6 +98,8 @@ The [!DNL Workfront Fusion template] [!UICONTROL Wizard] allows you to provide f
 1. (Optional) To allow users to see this text when using the template, enable **[!UICONTROL Use as default value]**.
 1. Repeat steps 2-4 for each field that you want to provide information for.
 1. Click **[!UICONTROL OK]** to save changes and close the module.
+
+The publishing process is the same as in the case of a standard user. For information, see [Publishing and sharing templates](/help/workfront-fusion/create-and-manage-templates/) section for more details. 
 
 ## Template statuses
 
@@ -116,3 +118,13 @@ You can also check the status from the [!UICONTROL Team templates] tab. If a tem
 * **Green checkmark icon**: The template is available in the Public templates tab and is visible for any Workfront Fusion user. It is also still visible in the [!UICONTROL Team templates] tab. The template author or their team member can still edit it.
 
 Templates without icons have [!UICONTROL Private] status. They are not published and are visible only to the team.
+
+## Locate a template's SVG information
+
+1. Click **[!UICONTROL Administration]** in the left navigation panel to open the [!UICONTROL Administration] area.
+1. Click **[!UICONTROL Templates]** in the left navigation panel.
+1. Click the template that you want to locate information for.
+1. Click **Options** in the top-right corner.
+1. Select *SVG Diagram*.
+
+Here you can view the SVG diagram and the SVG code. 
