@@ -3,7 +3,7 @@ title: Activate or deactivate a scenario
 description: This article describes why active or deactivated scenarios are useful in different situations, and how to activate or deactivate a scenario.
 author: Becky
 feature: Workfront Fusion
-
+exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
 ---
 # Activate or deactivate a scenario
 
@@ -75,7 +75,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Prerequisites
 
-You must create a scenario before you can activate it. <!--link to create scenario article-->
+You must create a scenario before you can activate it. 
+
+For instructions on creating a scenario, see [Workflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
 
 ## Activate or deactivate a scenario:
 

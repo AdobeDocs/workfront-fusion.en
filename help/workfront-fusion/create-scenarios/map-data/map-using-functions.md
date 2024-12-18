@@ -3,6 +3,7 @@ title: Map items using functions
 description: When you map items, you can use functions to create simple or complex formulas.
 author: Becky
 feature: Workfront Fusion
+exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 ---
 # Map an item using functions
 

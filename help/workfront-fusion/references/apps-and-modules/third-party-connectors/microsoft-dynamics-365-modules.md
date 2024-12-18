@@ -3,6 +3,7 @@ title: Microsoft Dynamics 365 modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Microsoft Dynamics 365, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
 ---
 # [!DNL Microsoft Dynamics 365 modules]
 

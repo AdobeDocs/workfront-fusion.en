@@ -3,6 +3,7 @@ title: Microsoft OneDrive for Business modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Microsoft OneDrive for Business], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 657bea46-064e-4333-8e86-81678bb1c3bd
 ---
 # [!DNL Microsoft OneDrive for Business] modules
 

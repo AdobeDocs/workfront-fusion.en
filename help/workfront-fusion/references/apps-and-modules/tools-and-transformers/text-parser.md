@@ -3,6 +3,7 @@ title: Text parser
 description: You can use the Text parser tool to parse text for use in other [!DNL Adobe Workfront Fusion] scenario modules. The Text parser does not require a connection.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
 ---
 # [!UICONTROL Text parser]
 

@@ -3,6 +3,7 @@ title: Copy modules or scenario
 description: You can copy modules, groups of modules, or entire scenarios in Adobe Workfront Fusion. This ability allows you to reuse scenarios or parts of scenarios without having to build them again.
 author: Becky
 feature: Workfront Fusion
+exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
 ---
 # Copy modules or scenarios
 

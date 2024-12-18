@@ -3,6 +3,7 @@ title: Configure a module
 description: You must configure settings for every module you create.
 author: Becky
 feature: Workfront Fusion
+exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
 ---
 # Configure a module
 

@@ -3,6 +3,7 @@ title: Box modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Box, as well as connect it to multiple third-party applications and services. monitors a specified folder to check for file changes, to modify and delete existing files, or to upload new files to a folder.
 author: Becky
 feature: Workfront Fusion
+exl-id: 9e741dce-05a6-4e13-8d58-fbe3b4900d7e
 ---
 # Box modules
 

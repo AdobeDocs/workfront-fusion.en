@@ -9,6 +9,7 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
+exl-id: d5732b6c-b039-4bf7-a7e6-e59b6e8f1a63
 ---
 # Workfront Fusion release activity:&nbsp;Week of January 11, 2021
 
@@ -116,4 +117,3 @@ To help you customize and simplify formulas in your modules, we've added some ne
   ```
 
   function is a string function that escapes all Markdown tags in a text.
-

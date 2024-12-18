@@ -5,8 +5,8 @@ description: By default, a scenario runs every 15 minutes. You can change this b
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: 9b74af0d-e7ff-4bf5-974e-0651d0d51f71
 ---
-
 # Schedule a scenario
 
 By default, a scenario runs every 15 minutes. You can change this by defining when and how often an activated scenario runs. Fusion scenarios can be scheduled to run as often as every 5 minutes.

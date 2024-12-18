@@ -3,6 +3,7 @@ title: Tokens for date and time formatting
 description: The following tokens for date and time formatting are available in the [!DNL Adobe Workfront Fusion mapping] panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
 ---
 # Tokens for date and time formatting
 

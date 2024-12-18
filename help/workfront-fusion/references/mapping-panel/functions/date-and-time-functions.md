@@ -3,6 +3,7 @@ title: Date and time functions
 description: The following date and time functions are available in the Adobe Workfront Fusion mapping panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 ---
 # Date and time functions
 

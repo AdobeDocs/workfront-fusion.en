@@ -3,6 +3,7 @@ title: Math
 description: In an Adobe Workfront Fusion scenario, you can use the math module to calculate math expressions.
 author: Becky
 feature: Workfront Fusion
+exl-id: ebbe74ea-d274-481d-8584-a71ddb1d959b
 ---
 # [!UICONTROL Math]
 

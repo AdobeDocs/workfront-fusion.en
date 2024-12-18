@@ -3,6 +3,7 @@ title: Manage connections
 description: You can view and manage your teams connections in the Connections area.
 author: Becky
 feature: Workfront Fusion
+exl-id: b7e4d3ac-ccbe-4ee2-ba73-b37032980696
 ---
 # Manage connections
 

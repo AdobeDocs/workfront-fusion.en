@@ -3,6 +3,7 @@ title: About mapping files in [!DNL Adobe Workfront Fusion]
 description: Some modules have the capability to process files. These modules can either return an output file to be sent for further processing or require a file to be passed to them for processing. Before these modules can work together to process files, they have to be mapped to each other.
 author: Becky
 feature: Workfront Fusion
+exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
 ---
 # Map a file between modules
 
@@ -92,4 +93,3 @@ To map a file:
    ![](assets/use-the-map-option.png)
 
 1. Continue configuring the module, or click **OK**.
-

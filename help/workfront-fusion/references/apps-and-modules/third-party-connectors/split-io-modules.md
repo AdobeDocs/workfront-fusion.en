@@ -3,6 +3,7 @@ title: Split.io modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Split.io], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 7d738a96-5424-4c30-831f-82e1d4c6f9d2
 ---
 # [!DNL Split.io] modules
 

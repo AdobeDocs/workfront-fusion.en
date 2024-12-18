@@ -8,8 +8,8 @@ description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license i
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
 ---
-
 # Set up and manage Workfront Fusion: article index
 
 * [Licensing and operations overviews](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)

@@ -3,6 +3,7 @@ title: Manage [!DNL Adobe Workfront Fusion] users in your organization
 description: Manage [!DNL Adobe Workfront Fusion] users in your organization
 author: Becky
 feature: Workfront Fusion
+exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
 ---
 # View or edit user roles 
 
@@ -82,5 +83,3 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Click **[!UICONTROL Details]** in the row of the user that you want to view.
 1. Click the Teams icon in the **[!DNL Role]** column in the row of the organization that contains the team where you want to view or edit the user's role.
 1. (Optional) To update the role of the user in a team, click the dropdown in the **[!DNL Role]** column in the row of the team where you want to change the user's role, then select the new role.
-
-

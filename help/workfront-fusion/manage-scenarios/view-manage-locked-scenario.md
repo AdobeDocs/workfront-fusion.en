@@ -6,6 +6,7 @@ title: Manage locked scenarios
 description: Manage locked scenarios in [!DNL Adobe Workfront Fusion]
 author: Becky
 feature: Workfront Fusion
+exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
 ---
 # Manage locked scenarios
 
@@ -86,6 +87,3 @@ To manually unlock a locked scenario:
 1. Select **[!UICONTROL Unlock execution]**.
 1. Click **[!UICONTROL Unlock]**.
     ![](assets/unlock-scenario.png)
-
-
-    

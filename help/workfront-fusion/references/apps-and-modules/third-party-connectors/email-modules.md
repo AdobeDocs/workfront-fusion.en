@@ -3,6 +3,7 @@ title: Email modules
 description: In a [!DNL Adobe Workfront Fusion] scenario, you can connect your Email account to multiple third-party applications and services.This allows you to download emails via IMAP, send emails via SMTP, create new drafts, move and copy emails from one folder to another folder, mark emails as read or unread, and delete emails.
 author: Becky
 feature: Workfront Fusion
+exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
 ---
 # Email modules
 

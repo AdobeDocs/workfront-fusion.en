@@ -3,6 +3,7 @@ title: Microsoft Word Template modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use MIcrosoft Word Templates, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
 ---
 # [!DNL Microsoft Word Template] modules
 

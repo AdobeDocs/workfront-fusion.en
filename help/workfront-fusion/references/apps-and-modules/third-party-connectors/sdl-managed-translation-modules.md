@@ -3,6 +3,7 @@ title: SDL Managed Translation modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can connect your SDL Managed Translation account to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 41953b04-9011-4ddb-9f53-cdf11e807e04
 ---
 # [!DNL SDL Managed Translation] modules
 

@@ -9,6 +9,7 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 hidefromtoc: yes
+exl-id: eb4b2371-f423-4efc-9e04-ca4be55767d2
 ---
 # Workfront Fusion release activity:&nbsp;Week of June 20, 2022
 
@@ -33,4 +34,3 @@ Now you can use Adobe Workfront Fusion to connect to your Adobe AEM Assets accou
 *   Move records from one folder to another
     
 *   Make a custom API call
-    

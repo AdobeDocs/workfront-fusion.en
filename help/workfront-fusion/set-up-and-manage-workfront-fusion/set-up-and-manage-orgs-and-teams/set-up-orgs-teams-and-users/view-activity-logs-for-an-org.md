@@ -3,6 +3,7 @@ title: View activity logs for an organization
 description: You can view a log of activities, such as scenario creation or activation, for your organization.
 author: Becky
 feature: Workfront Fusion
+exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
 ---
 # View activity logs for an organization in Adobe Workfront Fusion
 
@@ -99,4 +100,3 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Select the date range from the from the calendar, and (optional) enter times.
 1. Select whether to export an Excel file or a CSV file.
 1. Click **Apply**.
-

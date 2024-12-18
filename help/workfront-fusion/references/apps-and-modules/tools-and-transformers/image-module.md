@@ -3,6 +3,7 @@ title: Image modules
 description: Adobe Workfront Fusion Image modules allow you get information about a specific image (dimensions, type, and so on), convert an image to another file format, and directly change the size of the image.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
 ---
 # Image modules
 

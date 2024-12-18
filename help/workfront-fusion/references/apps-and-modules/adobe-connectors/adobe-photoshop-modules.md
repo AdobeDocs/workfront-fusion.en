@@ -3,6 +3,7 @@ title: Adobe Photoshop modules
 description: With the Adobe Photoshop modules, you can start an Adobe Workfront Fusion scenario based on events in your Adobe Photoshop account, create, read, or update agreements and other records, search for records using criteria you set, and upload documents.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 ---
 # [!DNL Adobe Photoshop] modules
 
@@ -1316,18 +1317,3 @@ This action module adds a watermark to the selected image.
     </tr>
     </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,6 +3,7 @@ title: Manage [!DNL Adobe Workfront Fusion] users in your organization
 description: Manage [!DNL Adobe Workfront Fusion] users in your organization
 author: Becky
 feature: Workfront Fusion
+exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
 ---
 # View or edit user details
 

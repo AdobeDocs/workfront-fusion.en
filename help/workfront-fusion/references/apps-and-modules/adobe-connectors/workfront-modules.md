@@ -3,6 +3,7 @@ title: Adobe Workfront modules
 description: You can use the Adobe Workfront Fusion Adobe Workfront connector to automate your processes within Workfront. If you have a Workfront Fusion for Work Automation and Integration license, you can also use it to connect to third-party apps and services.
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
+exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 ---
 # [!DNL Adobe Workfront] modules
 
@@ -2069,4 +2070,3 @@ For more information on Workfront event subscriptions, see [FAQs - Event Subscri
 For more information on webhooks, see [Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
 For more information on filters in scenarios, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
- 

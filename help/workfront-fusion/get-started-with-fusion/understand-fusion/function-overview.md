@@ -3,6 +3,7 @@ title: Function overview
 description: When you map items, you can use functions to create simple or complex formulas.
 author: Becky
 feature: Workfront Fusion
+exl-id: e07730cb-52be-46db-a365-93cdbed1021c
 ---
 # Function overview
 
@@ -25,8 +26,3 @@ The mapping panel includes the following tabs. Each tab includes functions and k
 |**Functions for working with arrays**<br> ![](assets/toolbar-icon-functions-for-arrays.png)|[Array functions](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md)|
 
 ![](assets/functions-toolbar-350x189.png)
-
-
-
-
-

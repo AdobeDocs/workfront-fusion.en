@@ -3,6 +3,7 @@ title: Configure retry error handling workaround
 description: Sometimes, it is useful to re-execute a failing module if there is a chance that the reason for the failure might resolve quickly.
 author: Becky
 feature: Workfront Fusion
+exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
 ---
 # Configure `retry` error handling workaround
 

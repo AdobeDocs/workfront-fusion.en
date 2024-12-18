@@ -3,6 +3,7 @@ title: Workfront Proof modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Workfront Proof], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
+exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
 ---
 # [!DNL Workfront Proof] modules
 

@@ -3,6 +3,7 @@ title: Connect Adobe Workfront Fusion to a web service that uses API token autho
 description: Some services do not allow integration solutions such as Adobe Workfront Fusion to create an app that you can easily use in your scenario.
 author: Becky
 feature: Workfront Fusion
+exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
 ---
 # Connect Adobe Workfront Fusion to a web service that uses API token authorization
 

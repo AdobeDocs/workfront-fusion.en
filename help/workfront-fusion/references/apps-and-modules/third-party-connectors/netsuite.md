@@ -3,6 +3,7 @@ title: NetSuite modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL NetSuite], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 9bf67fc4-d93b-4868-ad1a-021c98637905
 ---
 # [!DNL NetSuite] modules
 

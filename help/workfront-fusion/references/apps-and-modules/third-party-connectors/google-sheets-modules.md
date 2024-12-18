@@ -3,6 +3,7 @@ title: Google Sheets modules
 description: In order to use [!DNL Google Sheets] with [!DNL Adobe Workfront Fusion],you need the [!UICONTROL Workfront Fusion Google Sheets] extension (optional, but required for instant triggers).
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
 ---
 # [!DNL Google Sheets] modules
 

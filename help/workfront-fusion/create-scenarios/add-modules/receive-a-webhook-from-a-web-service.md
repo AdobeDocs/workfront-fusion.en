@@ -3,6 +3,7 @@ title: Configure a webhook for a web service without a connector
 description: If a web service does not currently have a dedicated connector in Workfront Fusion, but it supports sending webhooks, you can add the service to a scenario using the Custom webhook module as an instant trigger.
 author: Becky
 feature: Workfront Fusion
+exl-id: 51ef13fb-2978-4927-8d5f-7d83995f11e0
 ---
 # Configure a webhook for a web service without a connector
 

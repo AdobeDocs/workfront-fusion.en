@@ -3,6 +3,7 @@ title: Azure Active Directory modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Azure] Active Directory, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
 ---
 # [!DNL Azure Active Directory] modules
 

@@ -3,6 +3,7 @@ title: Change profile settings
 description: You can change information in your [!DNL Adobe Workfront Fusion] account profile.
 author: Becky
 feature: Workfront Fusion
+exl-id: f7d561d8-5189-4c7a-811d-8a2509638f75
 ---
 # Change profile settings
 

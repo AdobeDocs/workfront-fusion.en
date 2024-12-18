@@ -3,6 +3,7 @@ title: SharePoint modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use SharePoint, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
 ---
 # [!DNL SharePoint] modules
 
@@ -757,4 +758,3 @@ This instant trigger module starts a scenario when an item is added, updated, or
   </tr> 
  </tbody> 
 </table>
-

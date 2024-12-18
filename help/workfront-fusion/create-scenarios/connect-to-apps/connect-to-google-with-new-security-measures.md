@@ -3,6 +3,7 @@ title: Connect Adobe Workfront Fusion to Google Services with updated security m
 description: Google has introduced restrictions on how users can use their API. This article describes how to connect Adobe Workfront Fusion to Google, accounting for these update security measures.
 author: Becky
 feature: Workfront Fusion
+exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
 ---
 # Connect Adobe Workfront Fusion to Google Services with updated security measures
 

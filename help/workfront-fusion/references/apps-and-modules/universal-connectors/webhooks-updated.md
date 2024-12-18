@@ -3,6 +3,7 @@ title: Webhooks
 description: A webhook is an HTTP call that is triggered by an event. You can use webhooks to activate instant trigger modules. Any application that is connected to the Internet and allows HTTP requests can send webhooks to Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
 ---
 # Webhooks
 

@@ -4,8 +4,8 @@ title: Configure scenario settings
 description: You can configure specific settings for scenarios in the scenario settings panel.
 author: Becky
 feature: Workfront Fusion
+exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
 ---
-
 # Configure scenario settings
 
 You can configure specific settings for scenarios in the scenario settings panel. 

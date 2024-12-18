@@ -3,6 +3,7 @@ title: ServiceNow modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL ServiceNow], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 7b236869-bd83-4db5-a363-d6570f6e4aff
 ---
 # [!DNL ServiceNow] modules
 

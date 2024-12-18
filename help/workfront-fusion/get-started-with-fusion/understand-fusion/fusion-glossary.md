@@ -3,6 +3,7 @@ title: Adobe Workfront Fusion Glossary
 description: The following glossary explains some common terms in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
 ---
 # Adobe Workfront Fusion glossary
 

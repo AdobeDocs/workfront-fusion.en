@@ -3,6 +3,7 @@ title: Salesforce modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Salesforce, as well as connect it to to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 ---
 # [!DNL Salesforce] modules
 

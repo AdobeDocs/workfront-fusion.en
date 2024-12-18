@@ -3,6 +3,7 @@ title: Google Drive modules
 description: The [!DNL Adobe Workfront Fusion Google Drive] modules enable you to monitor, search, create, update, delete, and manage your files, folder, or shared drives in your [!DNL Google Drive].
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
+exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
 ---
 # [!DNL Google Drive] modules
 

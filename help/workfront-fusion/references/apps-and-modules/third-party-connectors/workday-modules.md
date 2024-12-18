@@ -4,6 +4,7 @@ title: Workday modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Workday], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
 ---
 # [!DNL Workday] modules
 
