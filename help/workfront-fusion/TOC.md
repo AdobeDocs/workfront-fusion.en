@@ -141,7 +141,10 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [View or edit user details](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-details.md)
             * [View or edit user roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md)
             * [Delete users in the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/delete-users-admin-console.md)
-        * [Manage templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
+        * Manage Templates {#manage-templates-admin}
+            * [Manage templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
+            * [Approve or disapprove templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
+            * [Edit templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
 * Create scenarios {#create-scenarios}
     * [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
     * Plan a scenario {#plan-a-scenario}
