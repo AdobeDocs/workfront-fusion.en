@@ -64,10 +64,10 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 ## Edit [!DNL Workfront Fusion] templates as an administrator
 
 1. Click **[!UICONTROL Administration]** in the left navigation panel to open the [!UICONTROL Administration] area.
-1. Click **[!UICONTROL Templates]** in the left navigation panel.
+1. Click **[!UICONTROL All Templates]** in the left navigation panel.
 1. Click **[!UICONTROL Detail]** to the right of the template you want to edit. 
-1. (Optional) Rename the template by replacing the default **[!UICONTROL New template name]** in the upper-left corner.
-1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png), and select the language from the Language drop-down.
+1. (Optional) Rename the template by clicking **Options** in the upper-right corner and selecting **Rename**.
+1. (Optional) To change the language of your template, click **[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png), and select the language from the Language drop-down.
 
    >[!IMPORTANT]
    >
@@ -86,7 +86,6 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. (Optional)In the [!UICONTROL Options] in the top-right corner, there is one additional option: the SVG diagram that provides you with the SVG code. Also, the publishing process is the same as in the case of a standard user, refer to the Publishing and sharing templates section for more details. 
 1. (Optional) Click **[!UICONTROL Run once]** to test the template.
 1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png).
-1. Click the **[!UICONTROL Publish]** button in the upper-right corner of the screen.<!-- - if admin does this, does it need to be approved?-->
 
 
 ## Set up [!UICONTROL Wizard] functionality
