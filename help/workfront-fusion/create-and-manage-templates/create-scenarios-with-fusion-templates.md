@@ -1,5 +1,5 @@
 ---
-title: Create scenarios with [!DNL Adobe Workfront Fusion] templates
+title: Create scenarios with templates
 description: Adobe Workfront FusionTemplates feature allow you to create and use existing templates as a starting point for your Workfront Fusion scenarios.
 author: Becky
 feature: Workfront Fusion
