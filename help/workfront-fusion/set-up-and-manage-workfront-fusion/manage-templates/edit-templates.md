@@ -93,13 +93,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 The [!DNL Workfront Fusion template] [!UICONTROL Wizard] allows you to provide future users of your template with instructions or information related to the specific fields used in modules.
 
 1. Click the module added to the template to see the module's fields.
-1. Locate the field where you want to add [!UICONTROL Wizard] information, and enable **[!UICONTROL Use in Wizard]** for that field.
+1. Locate the field where you want to add [!UICONTROL Wizard] information, and enable **[!UICONTROL Use in Wizard]** below that field.
 1. Enter the information you want to make visible for users into the [!UICONTROL Help] field.
 1. (Optional) To allow users to see this text when using the template, enable **[!UICONTROL Use as default value]**.
 1. Repeat steps 2-4 for each field that you want to provide information for.
 1. Click **[!UICONTROL OK]** to save changes and close the module.
 
-The publishing process is the same as in the case of a standard user. For information, see [Publishing and sharing templates](/help/workfront-fusion/create-and-manage-templates/) section for more details. 
+The publishing process is the same as in the case of a standard user. For information, see [Publish and share templates](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md) section for more details.
 
 ## Template statuses
 
@@ -113,7 +113,7 @@ The following statuses are available:
 
 You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 
-* **Eye icon**: The template is published; it is visible only for the team; and an approval request was not sent.
+* **Eye icon**: The template is published; it is visible for the team.
 * **Yellow checkmark icon**: The template is published; it is visible only for the team; and it is pending approval to be added to the Public templates tab.
 * **Green checkmark icon**: The template is available in the Public templates tab and is visible for any Workfront Fusion user. It is also still visible in the [!UICONTROL Team templates] tab. The template author or their team member can still edit it.
 
