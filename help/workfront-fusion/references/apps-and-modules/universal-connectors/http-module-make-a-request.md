@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
 ---
-# [!UICONTROL HTTP] >[!UICONTROL Make a request] module
+# [!UICONTROL HTTP] > [!UICONTROL Make a request] module
 
 >[!NOTE]
 >

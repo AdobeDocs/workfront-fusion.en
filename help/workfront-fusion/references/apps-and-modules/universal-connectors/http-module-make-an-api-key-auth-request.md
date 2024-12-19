@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
 ---
-# HTTP >[!UICONTROL Make an API Key Authorization request]
+# HTTP > [!UICONTROL Make an API Key Authorization request]
 
 >[!NOTE]
 >
