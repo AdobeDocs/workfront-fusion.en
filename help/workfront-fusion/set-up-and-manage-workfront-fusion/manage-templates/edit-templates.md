@@ -1,12 +1,12 @@
 ---
 content-type: reference
 title: Edit templates
-description: This article describes how to edit Fusion templates. 
+description: This article describes how to edit Fusion templates.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
 ---
-
 # Edit templates
 
 Adobe Workfront Fusion templates are pre-built scenarios designed to automate and streamline various workflows. These templates can help you quickly set up integrations and automations without needing to build everything from scratch.
@@ -127,4 +127,4 @@ Templates without icons have [!UICONTROL Private] status. They are not published
 1. Click **Options** in the top-right corner.
 1. Select *SVG Diagram*.
 
-Here you can view the SVG diagram and the SVG code. 
+Here you can view the SVG diagram and the SVG code.

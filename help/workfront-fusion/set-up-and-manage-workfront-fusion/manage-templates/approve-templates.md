@@ -1,12 +1,12 @@
 ---
 content-type: reference
 title: Approve or disapprove templates
-description: This article describes how to approve or disapprove Fusion templates. 
+description: This article describes how to approve or disapprove Fusion templates.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
 ---
-
 # Approve or disapprove templates for the Public tab
 
 Adobe Workfront Fusion templates are pre-built scenarios designed to automate and streamline various workflows. These templates can help users quickly set up integrations and automations without needing to build everything from scratch.

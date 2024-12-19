@@ -3,6 +3,7 @@ title: JSONata modules
 description: The Adobe Workfront Fusion JSONata connector provides a module to process data in JSON format so that Adobe Workfront Fusion can further work with the data content.
 author: Becky
 feature: Workfront Fusion
+exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
 ---
 # [!UICONTROL JSONata] modules
 
