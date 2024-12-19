@@ -121,6 +121,7 @@ These modules allow you to perform actions on your data, but do not require conn
 * [Flow control modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md)
 * [Image modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/image-module.md)
 * [JSON modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
+* [JSONata modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
 * [JWT modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
 * [Markdown modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Math module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
