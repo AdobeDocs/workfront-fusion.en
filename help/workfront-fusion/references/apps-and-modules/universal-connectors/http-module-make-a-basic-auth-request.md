@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e544768e-7023-473f-8d51-631b04183743
 ---
-# [!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] module
+# [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] module
 
 This [!DNL Adobe Workfront Fusion] module enables you to configure an HTTP request with HTTP basic authorization and submit it to a server. The received HTTP response is then contained in the output bundle.
 
