@@ -10,6 +10,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2024 {#fusion-releases-2024}
+        * [Workfront Fusion release activity: Week of December 16, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
         * [Workfront Fusion release activity: Week of December 2, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
         * [Workfront Fusion release activity: Week of November 25, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-25.md)
         * [Workfront Fusion release activity: Week of November 11, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-11-11.md)
@@ -159,6 +160,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
         * [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
         * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
+        * [Use cURL to add an HTTP module](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
         * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
         * [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)
         * [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)
@@ -359,6 +361,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Flow control modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md)
             * [Image modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/image-module.md)
             * [JSON modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
+            * [JSONata modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
             * [JWT modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
             * [Markdown modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
             * [Math module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
