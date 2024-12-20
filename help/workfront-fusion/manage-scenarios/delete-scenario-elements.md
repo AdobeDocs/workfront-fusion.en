@@ -3,6 +3,7 @@ title: Delete scenario elements
 description: You can view and manage your teams connections in the Connections area.
 author: Becky
 feature: Workfront Fusion
+exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
 ---
 # Delete scenario elements
 
