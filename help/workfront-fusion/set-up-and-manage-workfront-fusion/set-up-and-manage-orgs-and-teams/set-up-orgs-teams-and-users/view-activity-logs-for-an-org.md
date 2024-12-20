@@ -5,7 +5,7 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
 ---
-# View activity logs for an organization in Adobe Workfront Fusion
+# View activity logs for an organization
 
 You can view a log of activities, such as creating a scenario or inviting a user, for your organization.
 
