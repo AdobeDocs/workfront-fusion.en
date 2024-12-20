@@ -19,3 +19,4 @@ exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
 * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
+* [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
