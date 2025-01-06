@@ -5,17 +5,15 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 ---
-# [!DNL Adobe Workfront] modules
+# Adobe Workfront modules
 
-You can use the [!DNL Adobe Workfront Fusion] [!DNL Adobe Workfront] connector to automate your processes within [!DNL Workfront]. If you have a [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] license, you can also use it to connect to third-party apps and services.
-
-The [!DNL Workfront] connector does not count against the number of active apps available to your organization. All scenarios, even if they use only the [!DNL Workfront] app, do count against your organization's total scenario count.
-
-For more information on your organization's available apps and scenarios, see [Organizations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md#organiza2) in [[!DNL Adobe Workfront Fusion] organizations and teams](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-orgs-and-teams.md).
+You can use the Adobe Workfront Fusion Adobe Workfront connector to automate your processes within Workfront. You can also connect Workfront to other applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
 
 ## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:
 
@@ -24,42 +22,48 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Legacy: Any </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Connect [!DNL Workfront] to [!DNL Workfront Fusion] 
 
-The [!DNL Workfront] connector uses OAuth 2.0 to connect to [!DNL Workfront].
+>[!NOTE]
+>
+>* If your organization uses the legacy licensing package (based on connectors), it must have a Workfront Fusion for Work Automation and Integration license to connect to third-party apps and services. The Workfront connector does not count against the number of active apps available to your organization. All scenarios, even if they use only the Workfront app, do count against your organization's total scenario count.
 
-You can create a connection to your [!DNL Workfront] account directly from inside a [!DNL Workfront Fusion] module.
++++
+
+## Connect Workfront to Workfront Fusion 
+
+The Workfront connector uses OAuth 2.0 to connect to Workfront.
+
+You can create a connection to your Workfront account directly from inside a Workfront Fusion module.
 
 1. In any Adobe Workfront module, click **Add** next to the Connection field.
 1. Fill in the following fields:
@@ -90,11 +94,11 @@ You can create a connection to your [!DNL Workfront] account directly from insid
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Enter your [!DNL Workfront] Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. Open the specific application you are connecting to to see the Client ID.</td>
+        <td>Enter your Workfront Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. Open the specific application you are connecting to to see the Client ID.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Enter your [!DNL Workfront] Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. Open the specific application you are connecting to to see the Client ID.</td>
+        <td>Enter your Workfront Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. If you do not have a Client Secret for your OAuth2 application in Workfront, you can generate another. For instructions, see the Workfront documentation.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
@@ -109,31 +113,16 @@ You can create a connection to your [!DNL Workfront] account directly from insid
 
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
+   If you are not logged in to Workfront, you are directed to a login screen. After you log in, you can allow the connection.
 
+>[!NOTE]
+>
+>* OAuth 2.0 connections to the Workfront API no longer rely on API keys. 
+>* To create a connection to a Workfront Sandbox environment, you must create an OAuth2 application in that environment, and then use the Client ID and Client Secret generated by that application in your connection. 
 
+## Workfront modules and their fields
 
-<!--1. Enter the name of your instance into the URL. Example: `https://<your instance>.my.workfront.com`.
-1. Click **[!UICONTROL Next]**.
-1. Click **[!UICONTROL SAML log in]** to create the connection and go back to the module.
-
-   Or
-
-   Enter your Username and Password, then click **[!UICONTROL Log in]** to create the connection and go back to the module.-->
-
-   >[!NOTE]
-   >
-   >* If you do not see a SAML log in button, your organization has not enabled Single Sign-On (SSO). You can log in with your Username and Password.
-   >   
-   >   <!--For more information on SSO, see [Overview of single sign-on in [!DNL Adobe Workfront]]()-->
-   >   
-   >* OAuth 2.0 connections to the [!DNL Workfront] API no longer rely on API keys. 
-   >* To create a connection to a Workfront Sandbox environment, you must create an OAuth2 application in that environment, and then use the Client ID and Client Secret generated by that application in your connection. 
-   >
-   ><!--   For instructions on creating an OAuth2 application in Workfront, see [Create an OAuth2 application using user credentials (Authorization code flow)](/help/quicksilver/administration-and-setup/configure-integrations/create-oauth-application.md#create-an-oauth2-application-using-user-credentials-authorization-code-flow) in the article Create OAuth2 applications for Workfront integrations.-->
-
-## [!DNL Workfront] modules and their fields
-
-When you configure [!DNL Workfront] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Workfront] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure Workfront modules, Workfront Fusion displays the fields listed below. Along with these, additional Workfront fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -167,23 +156,21 @@ The module returns any standard fields associated with the record, along with an
 
 1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
 
-   When you are configuring this module, the following fields display.
-
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
      <tr> 
       <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
+      <td>Enter a name for the webhook</td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Connection]</td> 
-      <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+      <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Record Type]</td> 
-      <td>Select the type of [!DNL Workfront] record that you want the module to watch.</td> 
+      <td>Select the type of Workfront record that you want the module to watch.</td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL State]</td> 
@@ -191,30 +178,33 @@ The module returns any standard fields associated with the record, along with an
      </tr> 
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
-      <td> <p>You can set filters to watch for only records that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND rules.</p> <p>Note: You cannot edit filters in existing [!DNL Workfront] webhooks. To set up different filters for [!DNL Workfront] event subscriptions, remove the current webhook and create a new one.</p> <p>For more information on event filters, see <a href="#event-subscription-filters-in-the-workfront-watch-events-modules" class="MCXref xref">Event subscription filters in the [!DNL Workfront] &gt; [!UICONTROL Watch Events] modules</a> in this article.</p> </td> 
+      <td> <p>You can set filters to watch for only records that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND rules.</p> <p><b>NOTE</b>: You cannot edit filters in existing Workfront webhooks. To set up different filters for Workfront event subscriptions, remove the current webhook and create a new one.</p> <p>For more information on event filters, see <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Event subscription filters in the Workfront &gt; [!UICONTROL Watch Events] modules</a> in this article.</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.<p><b>NOTE</b>The Assignment record type does not include this option.</p></td> 
+      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.<p><b>NOTE</b>: The Assignment record type does not include this option.</p></td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL Record Origin]</td> 
-      <td> <p>Choose whether you want the scenario to watch <strong>[!UICONTROL New Records Only]</strong>, <strong>[!UICONTROL Updated Records Only]</strong>, <strong>[!UICONTROL New and Updated Records]</strong>, or <strong>[!DNL Deleted Records Only]</strong>.</p> <p>Note: If you choose <strong>[!UICONTROL New and Updated Records]</strong>, the webhook creation creates 2 event subscriptions (for the same webhook address).</p> </td> 
+      <td>
+       <p>Choose whether you want the scenario to watch [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], [!UICONTROL New and Updated Records], or [!DNL Deleted Records Only].</p>
+       <p><b>NOTE</b>: If you choose [!UICONTROL New and Updated Records], the webhook creation creates 2 event subscriptions (for the same webhook address).</p>
+       </td> 
      </tr> 
     </tbody> 
    </table>
 
 After the webhook is created, you can view the address of the endpoint that events are sent to.
 
-<!--For more information, see the section [Examples of Event Payloads](event-subs-api.md#examples-of-event-payloads) in the [!DNL Workfront] Help article [Event Subscription API](wf-api/general/event-subs-api.md).
+For more information, see the section [Examples of Event Payloads](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) in the article Event Subscription API in the Workfront documentation.
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
 +++ **[!UICONTROL Watch Field]**
 
-This trigger module executes a scenario when a field that you specify is updated. The module returns both the old and the new value of the field you specify. You can map this information in subsequent modules in the scenario.
+This trigger module executes a scenario when a field that you specify is updated. The module returns both the old and the new value of the specified field. You can map this information in subsequent modules in the scenario.
 
 When you are configuring this module, the following fields display.
 
@@ -224,19 +214,19 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to watch.</p> <p>For example, select [!UICONTROL Task] if you want to start executing the scenario each time a record field is updated in a task.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to watch.</p> <p>For example, select [!UICONTROL Task] if you want to start executing the scenario each time a record field is updated in a task.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
-   <td>Select the field that you want the module to watch for updates. These fields reflect the fields that your [!DNL Workfront] administrator has set up for tracking.</td> 
+   <td>Select the field that you want the module to watch for updates. These fields reflect the fields that your Workfront administrator has set up for tracking.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Outputs]</td> 
-   <td>Select the information you want included in the output bundle for this module.</td> 
+   <td>Select the object fields that you want included in the output bundle for this module.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -245,15 +235,17 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
 +++ **[!UICONTROL Watch Record]**
 
-This trigger module executes a scenario when objects of a specific type are added, updated, or both. The module returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario. In the output, the module indicates whether each record is new or updated.
+This trigger module executes a scenario when objects of a specific type are added, updated, or both. The module returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario. 
 
-Records that were both added and updated in the given time period are returned as new records.
+In the output, the module indicates whether each record is new or updated.
+
+Records that were both added and updated since the last time the scenario ran are returned as new records.
 
 When you are configuring this module, the following fields display.
 
@@ -263,19 +255,27 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Filter]</td> 
-   <td> <p>Choose whether you want the scenario to watch <strong>[!UICONTROL New Records Only]</strong>, <strong>[!UICONTROL Updated Records Only]</strong>, or <strong>[!UICONTROL New and Updated Records]</strong>.</p> </td> 
+   <td> <p>Choose whether you want the scenario to watch [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], or [!UICONTROL New and Updated Records].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>(Displays after you choose a <strong>Filter</strong>.) Select the type of [!DNL Workfront] record that you want the module to watch.</p> <p>For example, if you want to start the scenario each time a new Project is created, select [!UICONTROL Project]</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to watch.</p> <p>For example, if you want to start the scenario each time a new Project is created, select [!UICONTROL Project]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
+   <td> <p>Select the fields that you want included in the output bundle for this module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Reference]</td> 
+   <td> <p>Select the reference fields that you want included in the output bundle for this module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td> <p>Select the collection fields that you want included in the output bundle for this module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Optional Filter]</td> 
@@ -288,7 +288,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -326,7 +326,7 @@ This action module makes one of the following conversions:
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Object type]</td> 
@@ -367,13 +367,13 @@ This action module makes one of the following conversions:
 
 +++ **[!UICONTROL Create a record (attaching custom forms)]** 
 
-This action module creates an object, such as a project, task, or issue in [!DNL Workfront], and allows you to add a custom form to the new object. The module allows you to select which of the object's fields are available in the module.
+This action module creates an object, such as a project, task, or issue in Workfront, and allows you to add a custom form to the new object. The module allows you to select which of the object's fields are available in the module.
 
 You specify the ID of the record.
 
 The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-You could use this module, for example, to create a task in [!DNL Workfront] when a client adds a new row in a [!DNL Google Sheets] list of tasks that need to be done.
+You could use this module, for example, to create a task in Workfront when a client adds a new row in a [!DNL Google Sheets] list of tasks that need to be done.
 
 When you are configuring this module, the following fields display.
 
@@ -387,11 +387,11 @@ Make sure you provide the minimum number of input fields. For example, if you wa
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list and then make sure that you have access to data (from previous modules in the scenario) that will populate the project.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list and then make sure that you have access to data (from previous modules in the scenario) that will populate the project.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -404,7 +404,7 @@ Make sure you provide the minimum number of input fields. For example, if you wa
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -422,7 +422,7 @@ You specify the ID of the record.
 
 The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-You could use this module, for example, to create a task in [!DNL Workfront] when a client adds a new row in a Google Sheets list of tasks that need to be done.
+You could use this module, for example, to create a task in Workfront when a client adds a new row in a Google Sheets list of tasks that need to be done.
 
 When you are configuring this module, the following fields display.
 
@@ -436,11 +436,11 @@ Make sure you provide the minimum number of input fields. For example, if you wa
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list and then make sure that you have access to data (from previous modules in the scenario) that will populate the project.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list and then make sure that you have access to data (from previous modules in the scenario) that will populate the project.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -449,7 +449,7 @@ Make sure you provide the minimum number of input fields. For example, if you wa
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -460,7 +460,7 @@ See a list of the [!DNL Workfront] object types for which you can use this modul
 
 +++ **[!UICONTROL Custom API Call]**
 
-This action module lets you make a custom authenticated call to the [!DNL Workfront] API. This way, you can create a data flow automation that can't be accomplished by the other [!DNL Workfront] modules.
+This action module lets you make a custom authenticated call to the Workfront API. This way, you can create a data flow automation that can't be accomplished by the other Workfront modules.
 
 The module returns the following information:
 
@@ -481,7 +481,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
@@ -489,15 +489,15 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
-   <td>Select the version of the [!DNL Workfront] API that you want the module to use.</td> 
+   <td>Select the version of the Workfront API that you want the module to use.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object. This determines the content type of the request.</p> <p>For example,<code> {"Content-type":"application/json"}</code></p> <p>Note: If you're getting errors and it's difficult to determine their origin, consider modifying headers based on the [!DNL Workfront] documentation. If your Custom API Call returns a 422 HTTP Request Error, try using a <code>"Content-Type":"text/plain"</code> header.</p> </td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object. This determines the content type of the request.</p> <p>For example,<code> {"Content-type":"application/json"}</code></p> <p>Note: If you're getting errors and it's difficult to determine their origin, consider modifying headers based on the Workfront documentation. If your Custom API Call returns a 422 HTTP Request Error, try using a <code>"Content-Type":"text/plain"</code> header.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -513,7 +513,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -533,24 +533,24 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Force delete]</td> 
-   <td>Enable this option to ensure that the record is deleted, even if the [!DNL Workfront] UI would request confirmation of the deletion.</td> 
+   <td>Enable this option to ensure that the record is deleted, even if the Workfront UI would request confirmation of the deletion.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>ID</td> 
-   <td> <p>Enter the unique [!DNL Workfront] ID of the record that you want the module to delete.</p> <p>To get the ID, open the [!DNL Workfront] object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to delete.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td>Select the type of [!DNL Workfront] record that you want the module to delete.</td> 
+   <td>Select the type of Workfront record that you want the module to delete.</td> 
   </tr> 
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -578,16 +578,16 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Document ID]</td> 
-   <td> <p>Map or manually enter the unique [!DNL Workfront] ID of the document that you want the module to download.</p> <p>To get the ID, open the [!DNL Workfront] object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Map or manually enter the unique Workfront ID of the document that you want the module to download.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -607,17 +607,17 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to interact with.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to interact with.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Action]</td> 
    <td> <p>Select the action you want the module to perform.</p> <p>You may need to fill out additional fields, depending on the [!UICONTROL Record Type] and [!UICONTROL Action] you choose. Some combinations of these two settings may require only a record ID, while others (such as Project for the <strong>[!UICONTROL Record Type]</strong> and [!UICONTROL Attach Template] for the <strong>[!UICONTROL Action]</strong>) require additional information (such as an Object ID and a Template ID).</p><p>For options available to some actions, see <a href="#misc-action-options" class="MCXref xref">Misc action options</a> in this article.</p> <p>For details about individual fields, see the <a href="http://developer.workfront.com/">Workfront developer documentation</a>. <p><strong>Note</strong>: The developer documentation site includes information only through API version 14, but still contains valuable information for API calls. </p> 
     <ol> 
-     <li value="1"> <p>Select the record type from the left navigation on the [!DNL Workfront] developer documentation page. The following types have their own pages:</p> 
+     <li value="1"> <p>Select the record type from the left navigation on the Workfront developer documentation page. The following types have their own pages:</p> 
       <ul> 
        <li> <p>[!UICONTROL Projects]</p> </li> 
        <li> <p>[!UICONTROL Tasks]</p> </li> 
@@ -627,16 +627,16 @@ When you are configuring this module, the following fields display.
       </ul> <p>For all other record types, select <b>[!UICONTROL Other objects and endpoints]</b>, and locate the record type on the alphabetically sorted pages.</p> </li> 
      <li value="2"> <p>On the page of the appropriate record type, search (Ctrl-F or Cmd-F) for the action.</p> </li> 
      <li value="3"> <p>View descriptions for available fields under the selected action.</p> </li> 
-    </ol> <p>Note:  <p>When creating a proof through the [!DNL Workfront] [!UICONTROL Misc Action] module, best practice is to create a proof without any advanced options, then update the proof using the [!DNL Workfront Proof] SOAP API.</p><p>For more information on creating a proof with the [!DNL Workfront] API (which this module uses), see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Add advanced proofing options when creating a proof through the [!DNL Adobe Workfront] API</a></p> </p> </td> 
+    </ol> <p>Note:  <p>When creating a proof through the Workfront [!UICONTROL Misc Action] module, best practice is to create a proof without any advanced options, then update the proof using the [!DNL Workfront Proof] SOAP API.</p><p>For more information on creating a proof with the Workfront API (which this module uses), see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">Add advanced proofing options when creating a proof through the Adobe Workfront API</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td>Enter or map the unique [!DNL Workfront] ID of the record that you want the module to interact with.<p>To get the ID, open the [!DNL Workfront] object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
+   <td>Enter or map the unique Workfront ID of the record that you want the module to interact with.<p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
   </tr> 
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 #### Misc action options
 
@@ -809,12 +809,12 @@ When you are configuring this module, the following fields display.
   <tr> 
     <td>[!UICONTROL Connection]</td>
  
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
   
-   <td>Choose the [!DNL Workfront] object type that you want the module to read.</td> 
+   <td>Choose the Workfront object type that you want the module to read.</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Outputs]</td>
@@ -831,12 +831,12 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
     <td>[!UICONTROL ID]</td>
-   <td> <p>Enter the unique [!DNL Workfront] ID of the record that you want the module to read.</p> <p>To get the ID, open the [!DNL Workfront] object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to read.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -858,15 +858,15 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>Enter the unique [!DNL Workfront] ID of the record that you want the module to update.</p> <p>To get the ID, open the [!DNL Workfront] object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to update.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to update.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to update.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Select fields to map]</td> 
@@ -875,7 +875,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 >[!NOTE]
 >
@@ -886,7 +886,7 @@ See a list of the [!DNL Workfront] object types for which you can use this modul
 
 +++ **[!UICONTROL Upload Document]**
 
-This action module uploads a document to a [!DNL Workfront] object, such as a project, task, or issue. This module uploads the document in chunks, which makes the upload process smoother for Workfront. 
+This action module uploads a document to a Workfront object, such as a project, task, or issue. This module uploads the document in chunks, which makes the upload process smoother for Workfront. 
 
 You specify the location for the document, the file you want to upload, and an optional new name for the file.
 
@@ -900,15 +900,15 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Related Record ID]</td> 
-   <td>Enter the unique [!DNL Workfront] ID of the record to which you want to upload the document.</td> 
+   <td>Enter the unique Workfront ID of the record to which you want to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Related Record Type]</td> 
-   <td>Select the type of [!DNL Workfront] record where you want the module to upload the document.</td> 
+   <td>Select the type of Workfront record where you want the module to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder ID]</td> 
@@ -921,13 +921,13 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
 +++ **[!UICONTROL Upload Document (Legacy)]**
 
-This action module uploads a document to a [!DNL Workfront] object, such as a project, task, or issue. It uploads the entire document at once. 
+This action module uploads a document to a Workfront object, such as a project, task, or issue. It uploads the entire document at once. 
 
 You specify the location for the document, the file you want to upload, and an optional new name for the file.
 
@@ -941,15 +941,15 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Related Record ID]</td> 
-   <td>Enter the unique [!DNL Workfront] ID of the record to which you want to upload the document.</td> 
+   <td>Enter the unique Workfront ID of the record to which you want to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Related Record Type]</td> 
-   <td>Select the type of [!DNL Workfront] record where you want the module to upload the document.</td> 
+   <td>Select the type of Workfront record where you want the module to upload the document.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder ID]</td> 
@@ -962,7 +962,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
 
@@ -987,15 +987,15 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of the parent record (Workfront object) whose associated records you want to read.</p> <p>See a list of the [!DNL Workfront] object types for which you can use this module in <a href="#object-types-available-for-each-workfront-search-module" class="MCXref xref">[!DNL Workfront] object types available for each [!DNL Workfront] module</a> in this article.</p> </td> 
+   <td> <p>Select the type of the parent record (Workfront object) whose associated records you want to read.</p> <p>See a list of the Workfront object types for which you can use this module in <a href="#object-types-available-for-each-workfront-search-module" class="MCXref xref">Workfront object types available for each Workfront module</a> in this article.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Parent Record ID]</td> 
-   <td> <p>Enter or map the ID of the parent record whose associated records you want to read.</p> <p>To get the ID, open the [!DNL Workfront] object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>Enter or map the ID of the parent record whose associated records you want to read.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Collections]</td> 
@@ -1012,7 +1012,7 @@ When you are configuring this module, the following fields display.
 
 +++ **[!UICONTROL Search]**
 
-This search module looks for records in an object in [!DNL Workfront] that match the search query you specify.
+This search module looks for records in an object in Workfront that match the search query you specify.
 
 You can map this information in subsequent modules in the scenario.
 
@@ -1024,11 +1024,11 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to search for.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to search for.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Result Set]</td> 
@@ -1044,7 +1044,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Search criteria]</td> 
-   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to [!DNL Workfront] logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
+   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to Workfront logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Outputs]</td> 
@@ -1063,9 +1063,11 @@ When you are configuring this module, the following fields display.
 
 +++
 
+<!--not visible Jan 6, 2025
+
 +++ **[!UICONTROL Search (Legacy)]**
 
-This search module looks for records in an object in [!DNL Workfront] that match the search query you specify.
+This search module looks for records in an object in Workfront that match the search query you specify.
 
 You can map this information in subsequent modules in the scenario.
 
@@ -1077,11 +1079,11 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect [!DNL Workfront] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of [!DNL Workfront] record that you want the module to search for.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to search for.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Result Set]</td> 
@@ -1093,7 +1095,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Search criteria]</td> 
-   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to [!DNL Workfront] logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
+   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to Workfront logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Outputs]</td> 
@@ -1110,17 +1112,17 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-See a list of the [!DNL Workfront] object types for which you can use this module in [[!DNL Workfront] object types available for each [!DNL Workfront] module](#workfront-object-types-available-for-each-workfront-module).
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
++++-->               
 
-## [!DNL Workfront] object types available for each [!DNL Workfront] module
+## Workfront object types available for each Workfront module
 
 <!-- [Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module) 
 * [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
 * [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)-->
 
-+++**Object types available for each [!DNL Workfront] trigger module**
++++**Object types available for each Workfront trigger module**
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1387,11 +1389,11 @@ See a list of the [!DNL Workfront] object types for which you can use this modul
 
 +++
 
-+++**Object types available for each [!DNL Workfront] action module**
++++**Object types available for each Workfront action module**
 
 >[!NOTE]
 >
->The [!UICONTROL Download Document] module is not included in this table because [!DNL Workfront] object types are not part of its configuration.
+>The [!UICONTROL Download Document] module is not included in this table because Workfront object types are not part of its configuration.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1810,7 +1812,7 @@ See a list of the [!DNL Workfront] object types for which you can use this modul
 
 +++
 
-+++**Object types available for each [!DNL Workfront] search module**
++++**Object types available for each Workfront search module**
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2011,17 +2013,17 @@ See a list of the [!DNL Workfront] object types for which you can use this modul
 
 +++
 
-## Event subscription filters in the [!DNL Workfront] > [!UICONTROL Watch Events] modules 
+## Event subscription filters in the Workfront > [!UICONTROL Watch Events] modules 
 
 >[!NOTE]
 >
 >We highly recommend using event subscription filters in your [!UICONTROL Watch Events] modules.
 
-The [!DNL Workfront] [!UICONTROL Watch Events] module triggers scenarios based on a webhook that creates an event subscription in the [!DNL Workfront] API. The event subscription is a set of data that determines which events are sent to the webhook. For example, if you set up a [!UICONTROL Watch Events] module that is watching for issues, then the event subscription sends only events related to issues.
+The Workfront [!UICONTROL Watch Events] module triggers scenarios based on a webhook that creates an event subscription in the Workfront API. The event subscription is a set of data that determines which events are sent to the webhook. For example, if you set up a [!UICONTROL Watch Events] module that is watching for issues, then the event subscription sends only events related to issues.
 
-By using event subscription filters, Fusion users can create event subscriptions that are a better fit for their use cases. For example, you can set up an event subscription in the [!DNL Workfront] API to send only issues that are in a specific project to the webhook, ensuring that the [!UICONTROL Watch Events] module will only trigger for issues in that project. The ability to create narrower triggers improves scenario design by reducing the number of irrelevant triggers.
+By using event subscription filters, Fusion users can create event subscriptions that are a better fit for their use cases. For example, you can set up an event subscription in the Workfront API to send only issues that are in a specific project to the webhook, ensuring that the [!UICONTROL Watch Events] module will only trigger for issues in that project. The ability to create narrower triggers improves scenario design by reducing the number of irrelevant triggers.
 
-This is different from setting up a filter in the [!DNL Workfront Fusion] scenario. Without an event subscription filter, your webhook receives all events related to the object type you select. Most of these events would be irrelevant to the scenario, and must be filtered out before the scenario can continue.
+This is different from setting up a filter in the Workfront Fusion scenario. Without an event subscription filter, your webhook receives all events related to the object type you select. Most of these events would be irrelevant to the scenario, and must be filtered out before the scenario can continue.
 
 The following operators are available in the Workfront > Watch events filter:
 
@@ -2043,7 +2045,7 @@ The following operators are available in the Workfront > Watch events filter:
 
 >[!IMPORTANT]
 >
->You cannot edit filters in existing [!DNL Workfront] webhooks. To set up different filters for [!DNL Workfront] event subscriptions, remove the current webhook and create a new one.
+>You cannot edit filters in existing Workfront webhooks. To set up different filters for Workfront event subscriptions, remove the current webhook and create a new one.
 
 >[!INFO]
 >
@@ -2067,6 +2069,6 @@ The following operators are available in the Workfront > Watch events filter:
 
 For more information on Workfront event subscriptions, see [FAQs - Event Subscriptions](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq).
 
-For more information on webhooks, see [Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/modules/webhooks-reference.md)
+For more information on webhooks, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
 For more information on filters in scenarios, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
