@@ -18,7 +18,7 @@ Welcome to the Adobe Workfront Fusion product and technical documentation home p
  
   <tr>
     <td style="text-align: center;"><img src="assets/admin-icon.png" style="width: 80px; height: 80px;"><p><b>Administrators</b></p></td>
-    <td colspan="2" style="text-align: center;"><img src="assets/users-icon.png" style="width: 75px; height: 75px;"><p><b>Users</b></p></td>
+    <td style="text-align: center;"><img src="assets/users-icon.png" style="width: 75px; height: 75px;"><p><b>Users</b></p></td>
   </tr>
   <tr>
     <td>
