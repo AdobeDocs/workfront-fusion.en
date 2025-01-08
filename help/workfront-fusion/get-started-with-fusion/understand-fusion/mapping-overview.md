@@ -40,7 +40,7 @@ Function with multiple items and text
 >[!ENDSHADEBOX]
 
 
-For instructions on mapping, see the articles under [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
+For instructions on mapping, see the articles under [Map data: article index](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md).
 
 >[!NOTE]
 >
