@@ -99,7 +99,7 @@ The Fusion AI can currently generate modules that connect to the following appli
 1. (Conditional) If this is the first time using AI to add a scenario segment, read the Agreement that appears and click **Agree**.
 1. Enter a text prompt into the box. 
 
-   For tips on prompts, see [Tips for creating prompts for scenario segments](#tips-for-creating-text-prompts) in this article.
+   For tips on prompts, see [Tips for creating prompts for scenario segments](#tips-for-creating-prompts-for-scenario-segments) in this article.
 
    AI Assistant generates the module or set of modules.
 1. (Conditional) If necessary, add your API token for the application into the modules. 
