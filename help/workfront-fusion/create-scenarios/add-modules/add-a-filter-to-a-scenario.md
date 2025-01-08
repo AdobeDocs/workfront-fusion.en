@@ -1,5 +1,5 @@
 ---
-title: Add a filter to a scenario in [!DNL Adobe] Workfront Fusion
+title: Add a filter to a scenario
 description: In some scenarios, you need to work only with bundles that meet specific criteria. Filters allow you to select those bundles.
 author: Becky
 feature: Workfront Fusion
