@@ -1,11 +1,11 @@
 ---
-title: The scenario editor in [!DNL Adobe] Workfront Fusion
+title: The scenario editor
 description: The scenario editor allows you to create and edit scenarios in a visual interface.
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 ---
-# The scenario editor in [!DNL Adobe Workfront Fusion]
+# The scenario editor
 
 The scenario editor allows you to create and edit scenarios in a visual interface.
 
@@ -66,7 +66,6 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 ## Open the scenario editor and add a module:
 
 1. Click **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) in the left panel.
-1. Click the question 
 1. Click the question mark icon ![question icon](assets/question-mark-full-size.png), then find and click the app or service that you want to start with. For detailed information about configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Available scenario editor actions
@@ -105,7 +104,6 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 | Action | Details |
 |----------|----------|
-| Generate with AI    | Should we even put this here?    |
 | Flow control    | Configure settings to control the way data flows through it. For more information, [see link needed].  |
 | Tools    | The tools section contains several useful modules that can enhance your scenarios. For more information, [see link needed]. |
 | Text parser    | Use the Text parser tool to parse text for use in other scenario modules. The Text parser does not require a connection. For more information, [see link needed].   |

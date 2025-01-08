@@ -65,7 +65,7 @@ You must add both modules to a scenario before you can add a filter between them
 
 ## Add a filter between two modules:
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the wrench icon ![Wrench icon](assets/wrench-icon.png) between the modules where you want to add a filter and select **Set up a filter**.
@@ -97,7 +97,7 @@ Currently, the scenario editor does include a feature for copying a filter.
 
 To copy a filter without copying modules, you can use the Fusion DevTool
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Open the Fusion DevTool by clicking on the DevTool icon ![DevTool icon](assets/debugger-icon.png) near the bottom of the screen.

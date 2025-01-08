@@ -116,7 +116,7 @@ Instant triggers enable a service to notify [!DNL Workfront Fusion] about a chan
 
 For instructions, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
-For ifor details on how the incoming data is handled by an instant trigger, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md) for details on how the incoming data is handled.
+For details on how the incoming data is handled by an instant trigger, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 >[!BEGINSHADEBOX]
 

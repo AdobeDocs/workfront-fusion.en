@@ -80,4 +80,4 @@ Public templates are available with no prerequisites.
 
 1. Click the **Save** icon ![](assets/save-icon.png) near the bottom of the screen to save your scenario.
 
-   The scenario saves to the Scenario area of Workfront Fusion.
+   The scenario saves to the Scenarios area of Workfront Fusion.

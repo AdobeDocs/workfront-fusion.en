@@ -9,7 +9,9 @@ exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
 
 The scenario detail page is the homepage of a specific scenario. It provides access to specific information for the scenario that is represented on the page.
 
-It also provides you access to the [The scenario editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md), where you can edit the scenario.
+It also provides you access to the The scenario editor, where you can edit the scenario.
+
+For information on the Scenario editor, see [The Scenario editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
 
 ## Access requirements
 
@@ -115,11 +117,11 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Edit]</td> 
-      <td>Open the scenario editor to make changes to your scenario.</td> 
+      <td>Click the scenario diagram to open the scenario editor and make changes to your scenario.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Options]</td> 
-      <td> <p>This menu provides you with extra options without having to open up the scenario editor. These include:</p> 
+      <td> <p>This menu provides you with extra options without having to open the scenario editor. These include:</p> 
        <ul> 
         <li>[!UICONTROL Scheduling]</li> 
         <li>[!UICONTROL Rename]</li> 

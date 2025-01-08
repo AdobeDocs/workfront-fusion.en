@@ -17,7 +17,7 @@ You can resolve the error manually by updating the scenario (if needed) and runn
 
 You can also configure the scenario to automatically process an incomplete execution by re-executing the scenario. To configure the module to process incomplete executions:
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add the workaround.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the **Flow Control** icon ![Flow control](assets/flow-control-icon.png) and select **Break**.

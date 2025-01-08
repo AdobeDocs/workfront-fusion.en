@@ -60,7 +60,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Configure a module's settings
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Add a new module to a scenario.

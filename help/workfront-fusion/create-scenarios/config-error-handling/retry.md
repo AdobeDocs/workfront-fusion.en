@@ -82,7 +82,7 @@ The Repeater module workaround is more complex, but more customizable.
 
 #### Configure the error handler route
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add the workaround.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the **Flow Control** icon ![Flow control](assets/flow-control-icon.png) and select **Repeater**.

@@ -86,7 +86,7 @@ The Fusion AI can currently generate modules that connect to the following appli
 
 ## Generate modules
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a module.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the Generate with AI icon ![Generate with AI](assets/generate-with-ai-icon-beta.png) near the bottom of the scenario editor page.
@@ -99,7 +99,7 @@ The Fusion AI can currently generate modules that connect to the following appli
 1. (Conditional) If this is the first time using AI to add a scenario segment, read the Agreement that appears and click **Agree**.
 1. Enter a text prompt into the box. 
 
-   For tips on prompts, see [Tips for creating prompts for scenario segments](#tips-for-creating-text-prompts) in this article.
+   For tips on prompts, see [Tips for creating prompts for scenario segments](#tips-for-creating-prompts-for-scenario-segments) in this article.
 
    AI Assistant generates the module or set of modules.
 1. (Conditional) If necessary, add your API token for the application into the modules. 

@@ -92,11 +92,11 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario segment</p> </td> 
-   <td> <p> A scenario segments is a section of a scenario consisting of a series of modules that all connect to the same application. Scenario segments often represent a short workflow in the application.</p> </td> 
+   <td> <p> A scenario segment is a section of a scenario consisting of a series of modules that all connect to the same application. Scenario segments often represent a short workflow in the application.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Trigger</p> </td> 
-   <td> <p>A trigger is a kind of module that watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant trigger or webhook).</p> <p>For more information, see <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant triggers (webhooks)</a>.</p> </td> 
+   <td> <p>A trigger is a kind of module that watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant trigger or webhook).</p> <p>For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Triggers</a> in the Module overview article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Webhook</p> </td> 

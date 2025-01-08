@@ -100,7 +100,7 @@ For information on publishing templates, see [Publish and share [!DNL Adobe Work
 >
 >You must be a Fusion administrator to create a template from a scenario. 
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario that you want to create a template from.
 1. Click the **Admin** drop down near the upper-right corner of the page.
 1. Select **Clone as template**.

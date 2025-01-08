@@ -63,7 +63,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Run the Scenario Scoring Expert
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to run the Scenario Scoring Expert.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the Scenario Scoring Expert icon ![Scenario scoring expert](assets/scoring-expert-icon.png) near the bottom of the screen.
