@@ -59,7 +59,7 @@ To create an HTTP module using cURL:
 
 1. Create the text of the cURL request outside of Fusion, such as in a text editor.
 1. Copy the cURL request to your clipboard.
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to create the module.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Right click on any white space in the scenario editor and select **Paste**.

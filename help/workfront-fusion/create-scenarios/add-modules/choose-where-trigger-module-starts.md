@@ -58,7 +58,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Choose where a trigger module starts
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to choose where the trigger starts.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Configure and save a trigger module.

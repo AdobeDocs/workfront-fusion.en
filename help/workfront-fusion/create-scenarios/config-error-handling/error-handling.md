@@ -71,7 +71,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 To add an error handler to a module:
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add an error handling route.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Right click the module after which you want to add an error handler route, and select **[!UICONTROL Add error handler]**:

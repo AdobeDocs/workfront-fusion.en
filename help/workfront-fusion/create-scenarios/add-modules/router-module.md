@@ -59,7 +59,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 You must add a Router module before configuring routes.
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a router.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. In the scenario editor, Click on the right handle of the module after which you want to add the router.
@@ -91,7 +91,7 @@ You can put a filter on a route after the Router module to filter bundles. Only 
 
 If data passes the filter of more than one route, the data is handled by both routes. The top route handles the data first.
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the wrench icon ![Wrench](assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.
@@ -111,7 +111,7 @@ The fallback route is the route that executes on any bundles that do not pass an
 
 You can enable a fallback route in the filter panel.
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a fallback route.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the wrench icon ![Wrench](assets/wrench-icon.png) on the path where you want to set a filter. This is the path between the router module and the first module of the route.

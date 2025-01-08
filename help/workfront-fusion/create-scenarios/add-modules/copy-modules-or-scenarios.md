@@ -1,5 +1,5 @@
 ---
-title: Copy modules or scenario
+title: Copy modules or scenarios
 description: You can copy modules, groups of modules, or entire scenarios in Adobe Workfront Fusion. This ability allows you to reuse scenarios or parts of scenarios without having to build them again.
 author: Becky
 feature: Workfront Fusion
@@ -71,7 +71,7 @@ Consider the following when pasting modules into a different scenario:
 
 Copying a group of modules is similar to copying a single module.
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to copy a module.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Right-click on the module that you want to copy.
@@ -113,7 +113,7 @@ A scenario blueprint represents the entire scenario. If you want to copy only ce
 
 ### Export a scenario blueprint
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to export a blueprint.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. In the scenario, click the **[!UICONTROL More]** menu in the scenario settings area.

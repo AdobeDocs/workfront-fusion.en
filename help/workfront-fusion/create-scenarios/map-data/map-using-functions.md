@@ -68,7 +68,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 To insert a function into a field:
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to map data.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click the field where you want to insert a function.

@@ -80,7 +80,7 @@ You can also enter this name and data manually, or map it from previous modules.
 
 To map a file:
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to map a file.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. In the target module, which is the target you are mapping to, locate the **Source file** area.
