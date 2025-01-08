@@ -56,7 +56,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 To create a connection to the Microsoft Graph REST API, you must first register Adobe Workfront Fusion.
 
-1. Begin registering a new application as described in [Register your app](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) in the Microsoft documentation.
+1. Begin registering a new application as described in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) in the Microsoft documentation.
 
    As part of the registration, Microsoft requires the following information:
 
@@ -77,9 +77,9 @@ To create a connection to the Microsoft Graph REST API, you must first register 
    >
    >You will need the Application ID to set up your connection in Workfront Fusion.
 
-1. Generate a Cliebt Secret. Make note of this secret.
+1. Generate a Client Secret. Make note of this secret.
 
-   For instructions, see [Register your app](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) in the Microsoft documentation.
+   For instructions, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) in the Microsoft documentation.
 
    >[!IMPORTANT]
    >
@@ -149,7 +149,7 @@ After you register Workfront Fusion as discussed in [Register Workfront Fusion i
      </tr> 
      <tr> 
       <td role="rowheader">Scope</td> 
-      <td> <p>Enter the permissions that you selected in step 4 of <a href="#register-workfront-fusion-in-the-microsoft-application-registration-portal" class="MCXref xref">Register Workfront Fusion in the Microsoft Application Registration Portal</a>.</p> <p>For each scope, click <b>Add</b> and type in the permission.</p> <p>Example: <code>offline_access</code>.</p> </td> 
+      <td> <p>Enter the permissions that you selected in when registering, as discussed in <a href="#register-workfront-fusion-in-the-microsoft-application-registration-portal" class="MCXref xref">Register Workfront Fusion in the Microsoft Application Registration Portal</a>.</p> <p>For each scope, click <b>Add</b> and type in the permission.</p> <p>Example: <code>offline_access</code>.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">Scope separator</td> 
