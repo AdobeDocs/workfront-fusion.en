@@ -1,5 +1,5 @@
 ---
-title: Router module in Adobe Workfront Fusion
+title: Router module
 description: The Router module allows you to branch your flow into several routes and process the data within each route differently. Once a Router module receives a bundle, it forwards it to each connected route in the order the routes were attached to the Router module.
 author: Becky
 feature: Workfront Fusion
