@@ -56,8 +56,8 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 There are two kinds of filtering that can take place on an error handler route.
 
-* [Add a filter to the error handler route](#adding-a-filter-to-the-error-handler-route)
-* [Add a Router followed by filters to the error handler route](#adding-a-router-followed-by-filters-to-the-error-handler)
+* [Add a filter to the error handler route](#add-a-filter-to-the-error-handler-route)
+* [Add a Router followed by filters to the error handler route](#add-a-router-followed-by-filters-to-the-error-handler)
 
 ### Add a filter to the error handler route 
 

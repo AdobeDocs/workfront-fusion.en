@@ -1,15 +1,11 @@
 ---
-title: Adobe Workfront Fusion Performance Guardrails
-description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
+title: Fusion Performance Guardrails
+description: Work automation requires rapid processing, so [!DNL Adobe Workfront Fusion] is designed for high performance. Because long-running scenarios can slow down the pace of your work, we've designed [!DNL Workfront Fusion] with performance-preserving guardrails that limit execution time, data size, and other scenario parameters. [!DNL Workfront Fusion] designers should be aware of these guardrails and incorporate them into their design practices.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 ---
-# [!DNL Adobe Workfront Fusion] performance guardrails
-
->[!NOTE]
->
->[!DNL Adobe Workfront Fusion] requires an [!DNL Adobe Workfront Fusion] license in addition to an [!DNL Adobe Workfront license].
+# Fusion performance guardrails
 
 Work automation requires rapid processing, so [!DNL Adobe Workfront Fusion] is designed for high performance. Because long-running scenarios can slow down the pace of your work, we've designed [!DNL Workfront Fusion] with performance-preserving guardrails that limit execution time, data size, and other scenario parameters. [!DNL Workfront Fusion] designers should be aware of these guardrails and incorporate them into their design practices.
 

@@ -11,6 +11,8 @@ You can use Adobe Workfront Fusion to connect to Google Services using a custom 
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -47,6 +49,8 @@ You must have the following access to use the functionality in this article:
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -114,7 +118,7 @@ To create a project on Google Cloud Platform:
 1. Under Authorized domains, click **Add domain**, and enter `workfrontfusion.com`.
 1. Add the following scopes:
 
-<table style="table-layout:auto">
+   <table style="table-layout:auto">
     <col> 
     <col> 
     <thead> 
@@ -135,7 +139,7 @@ To create a project on Google Cloud Platform:
     </tbody> 
    </table>
 
-You may need to expand the list or go to the next page of the list to see them all.
+   You may need to expand the list or go to the next page of the list to see them all.
 
 1. (Optional) Add any test users to the project.
 1. Examine your information for accuracy, then click **Back to dashboard**.
@@ -150,7 +154,7 @@ You may need to expand the list or go to the next page of the list to see them a
 
 1. Begin creating OAuth cliet ID credentials.
 
-   For instructions, see [Create access credentials](https://developers.google.com/workspace/guides/create-credentials).
+   For instructions, see [Create access credentials](https://developers.google.com/workspace/guides/create-credentials) in the Google documentation.
 
    >[!NOTE]
    >
@@ -213,7 +217,7 @@ The process of creating a connection to Google differs depending on whether you 
 
 #### Connect to Google in the HTTP > Make an OAuth2.0 request module {#connect-to-google-in-the-http--make-an-oauth20-request-module}
 
-For instructions on connecting to Google in the HTTP > Make an OAuth2.0 request module, see [Instructions for creating a connection to Google in the HTTP > Make an OAuth 2.0 request module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module) in [HTTP > Make an OAuth 2.0 request module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md).
+For instructions on connecting to Google in the HTTP > Make an OAuth2.0 request module, see [Instructions for creating a connection to Google in the HTTP > Make an OAuth 2.0 request module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module) in the article HTTP > Make an OAuth 2.0 request module.
 
 ## Possible error message:[403 Access Not Configured]
 

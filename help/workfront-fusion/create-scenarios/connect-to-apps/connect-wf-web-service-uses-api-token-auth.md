@@ -123,7 +123,7 @@ To connect a web service to your Workfront Fusion scenario, you need to use the 
      </tr> 
      <tr> 
       <td role="rowheader"> <p> Request Content</p> </td> 
-      <td> <p>Enter the  Body request content in the JSON format. You can use the  JSON > Create JSON module as explained in <a href="#map-the-json-body-using-the-json--create-json-module" class="MCXref xref">Map the JSON body using the JSON > Create JSON module</a> in this article. Or you can enter the JSON content manually, as explained in <a href="#json-body-entered-manually" class="MCXref xref">Enter the JSON body manually</a> in this article.</p> <p>See the web service's API documentation for the required parameters for that web service.</p> </td> 
+      <td> <p>Enter the  Body request content in the JSON format. You can use the  JSON > Create JSON module as explained in <a href="#map-the-json-body-using-the-json--create-json-module" class="MCXref xref">Map the JSON body using the JSON > Create JSON module</a> in this article. Or you can enter the JSON content manually, as explained in <a href="#enter-the-json-body-manually" class="MCXref xref">Enter the JSON body manually</a> in this article.</p> <p>See the web service's API documentation for the required parameters for that web service.</p> </td> 
 
      </tr> 
     </tbody> 

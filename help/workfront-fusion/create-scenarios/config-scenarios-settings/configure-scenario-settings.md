@@ -164,14 +164,14 @@ A [!UICONTROL more cycles] setting is applied only when you schedule your scenar
 
 ![](assets/max-number-cycles-1-350x201.png)
 
-The [!UICONTROL Maximum number of returned files] in the [!UICONTROL Workfront] >[!UICONTROL Watch records] module is set to `10`.
-If 100 requests are submitted to [!DNL Workfront], and the [!UICONTROL Limit] field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
+The Max number of cycles in the Workfront > Watch records module is set to `10`.
+If 100 requests are submitted to [!DNL Workfront], and the Max number of cycles field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
 
 #### Max number of cycles is set to 10
 
-The [!UICONTROL Maximum number of returned files] in the [!UICONTROL Dropbox] >[!UICONTROL Watch files] module is set to `10`.
+The Max number of cycles in the Workfront > Watch records module is set to `10`.
 
-If 100 files are added to the Dropbox folder and the [!UICONTROL Maximum number of returned files] option is set to 10, then 10 files are processed during the first cycle, the next 10 files in the second cycle, the next 10 files in the third cycle and so on, until all files are processed.
+If 100 files are added to the Dropbox folder and the Max number of cycles option is set to 10, then 10 files are processed during the first cycle, the next 10 files in the second cycle, the next 10 files in the third cycle and so on, until all files are processed.
 
 All files are processed within 1 scenario run.
 
@@ -185,7 +185,7 @@ For more information about this page, see [Scenario details](/help/workfront-fus
 
 ### Number of consecutive errors
 
-Defines the maximum number of consecutive execution attempts before the execution of a scenario is deactivated (excluding [!UICONTROL DataError], [!UICONTROL DuplicateDataError] and [!UICONTROL ConnectionError]).
+Defines the maximum number of consecutive execution attempts before the execution of a scenario is deactivated (excluding `DataError`, `DuplicateDataError` and `ConnectionError`).
 
 For more information on errors, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 

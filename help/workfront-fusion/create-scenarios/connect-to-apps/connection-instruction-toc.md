@@ -70,7 +70,7 @@ For specific instructions, see [the article for the connector](/help/workfront-f
 
 Most of the [!DNL Microsoft] apps in [!DNL Workfront Fusion] allow you to create a connection with no extra information.
 
-The following circumstances do require extra steps in creating a connection:
+The following circumstances require extra steps in creating a connection:
 
 * Using Microsoft Dynamics 365 modules.
 

@@ -94,7 +94,7 @@ To add an error handler to a module:
 
     For more information on directives, see [Error handling directives](#error-handling-directives) in this article.
 
-1. (Optional) Add a filter to the error handling route. For instructions, see [Add a filter to an error handling route](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+1. (Optional) Add a filter to the error handling route. For instructions, see [Add filtering and nesting to error handling routes](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ To add an error handler to a module:
 
 ## Error handling directives
 
-The directives are briefly explained below. For more information, see [Directives for error handling in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+The directives are briefly explained below. For more information, see [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 There are five directives, which can be grouped into the following categories based on whether a scenario execution continues after the error.
 
@@ -112,7 +112,7 @@ The following directives ensure that a scenario execution continues:
 * **[!UICONTROL Ignore]**: ignores the error. The scenario execution status is marked as success.
 * **[!UICONTROL Break]**: Stores the input to the queue of incomplete executions. The scenario execution status is marked as warning. 
 
-For more information, see [View and resolve incomplete executions in Adobe Workfront Fusion](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
+  For more information, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 If a scenario execution should stop when an error occurs, use one of the following directives:
 

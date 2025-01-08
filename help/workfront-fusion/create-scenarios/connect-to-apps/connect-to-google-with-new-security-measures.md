@@ -66,8 +66,8 @@ To access restricted scopes, the connected service (Adobe Workfront Fusion or an
 
 There are a few exceptions that make it possible to send data to an unapproved third-party service that doesn't have the Letter of Assessment without violating any of the new restrictions. They differ based on Google Workspace with the Workfront Fusion OAuth client, Google Workspace with another OAuth client, or @gmail.com and @googlemail.com.
 
-* [Google Workspace with Workfront Fusion OAuth client](#g-suite-with-workfront-fusion-oauth-client)
-* [Google Workspace with another OAuth client](#g-suite-with-another-oauth-client)
+* [Google Workspace with Workfront Fusion OAuth client](#google-workspace-with-workfront-fusion-oauth-client)
+* [Google Workspace with another OAuth client](#google-workspace-with-another-oauth-client)
 * [@gmail.com and @googlemail.com](#gmailcom-and-googlemailcom)
 
 ### Google Workspace with Workfront Fusion OAuth client
