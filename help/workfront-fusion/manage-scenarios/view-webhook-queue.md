@@ -62,7 +62,7 @@ All messages from incoming webhooks are stored in the webhook's queue.
 
 If a scenario currently has a queue, a banner displays in that scenario:
 
-![Queue banner](assets/queue%20banner.png)
+![Queue banner](assets/queue-banner.png)
 
 To view a webhook's queue:
 
