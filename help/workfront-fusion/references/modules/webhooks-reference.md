@@ -39,7 +39,7 @@ Select `Immediately` to run the scenario immediately when [!DNL Workfront Fusion
 
 When the scenario executes, the total amount of pending events waiting in the queue is counted, and the scenario performs as many cycles as there are pending events, processing one event per cycle.
 
-For more information on cycles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md.)
+For more information on cycles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 >[!NOTE]
 >
