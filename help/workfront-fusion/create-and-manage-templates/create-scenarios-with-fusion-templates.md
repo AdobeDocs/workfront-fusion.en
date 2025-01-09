@@ -59,7 +59,6 @@ You must create a template before you can use it.
 ## Create a scenario from a template
 
 1. Click the **[!UICONTROL Templates]** icon ![](assets/templates-icon.png) in the left navigation panel.
-<!--1. Click on the tab that contains the template you want to use (**[!UICONTROL Public templates]** or **[!UICONTROL Team templates]**).-->
 1. Click the tab that contains the template you want to use (Public templates or Team templates).
 1. Click the template you want to use to start creating a scenario. You can use the search box in the upper-right corner to find the template by its name or the name of the app included in it.
 1. (Conditional) If you are a member of more than one organization or team, select which organization or team you want to create your scenario for and click **[!UICONTROL Continue]**.
@@ -71,6 +70,6 @@ You must create a template before you can use it.
 
 1. When you have configured all the settings required for the template, you receive a notification that your template is ready to go, and the standard scenario options appear at the bottom of the screen. You can now continue building your scenario.
 
-   For information on building a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
+   For information on building a scenario, see [orkflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
 1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png) to save your scenario. The scenario saves to the Scenario area of Workfront Fusion.
