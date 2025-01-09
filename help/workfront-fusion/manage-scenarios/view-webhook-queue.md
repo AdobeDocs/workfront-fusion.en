@@ -1,5 +1,5 @@
 ---
-title: View a webhook's queue
+title: k's queue
 description: Many services provide webhooks to deliver instant notifications whenever a certain change occurs in the service. Instant triggers, also known as webhooks, can use these events to begin scenarios. The events go into the webhook's queue while they are awaiting processing, such as when the scenario is already running. You can view the webhook's queue.
 author: Becky
 feature: Workfront Fusion
@@ -59,6 +59,12 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 ## View a webhook's queue
 
 All messages from incoming webhooks are stored in the webhook's queue.
+
+If a scenario currently has a queue, a banner displays in that scenario:
+
+![Queue banner](assets/queue-banner.png)
+
+To view a webhook's queue:
 
 1. Click **[!UICONTROL Webhooks]** in the menu on left.
 1. Locate the Webhook for which you want to view the queue.
