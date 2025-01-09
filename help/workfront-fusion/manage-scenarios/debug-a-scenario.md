@@ -80,7 +80,7 @@ Or:
 
 1. Go to the Scenario editor for the scenario you want to debug. 
   
-   To locate the Scenario editor, see [Scenario editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
+   To locate the Scenario editor, see [The scenario editor](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md).
 
 1. Right click in an empty area of the page (not on a module).
 1. Select **Open Devtool**.

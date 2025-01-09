@@ -68,7 +68,7 @@ For more information on signing the agreement, see [Sign the Adobe Gen AI agreem
 
 ## Get information from AI Assistant
 
-To get information or instructions from the Workfront Documentation using AI Assistant:
+To get information or instructions from the Workfront Fusion documentation using AI Assistant:
 
 1. Click the **AI Assistant** icon ![AI Assistant icon](assets/ai-assistant-icon.png) near the upper-right corner of the screen.
 1. In the AI Assistant panel, enter your prompt in the text area near the bottom of the panel.

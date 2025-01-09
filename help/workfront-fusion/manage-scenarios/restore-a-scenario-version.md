@@ -65,8 +65,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Click the [!UICONTROL More] icon ![](assets/more-icon.png) at the bottom of the screen, then click **[!UICONTROL Previous Versions]**.
 
 1. Click the **[!UICONTROL Pick the version]**, then click the version you would like to restore.
-1. Click **[!UICONTROL OK]**:
-1. The selected scenario version will be restored.
+1. Click **[!UICONTROL OK]**.
+
+   The selected scenario version is restored.
 
 >[!NOTE]
 >
