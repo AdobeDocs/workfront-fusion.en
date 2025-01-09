@@ -10,7 +10,7 @@ exl-id: cd8ac958-b7a6-4536-89d8-c79a2f8940a6
 ---
 # Add a trigger module to a basic scenario
 
-Trigger modules are placed at the beginning of a scenario. These modules begin a scenario execution when specific criteria when there has been a change in a given service. The change can be a creation of new records, deletion of a records, update of a records, and so on. 
+Trigger modules are placed at the beginning of a scenario. These modules begin a scenario execution when there has been a change in a given service. The change can be a creation of new records, deletion of a records, update of a records, and so on. You specify the criteria for the changes that begin the sceneario.
 
 Polling modules check the service at a set time interval and return information about changes that occurred during that time interval. If there have been no changes, the trigger does not execute the scenario.
 
@@ -77,6 +77,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 1. Click the blank module, and select **Adobe Workfront** from the list of apps.
 1. Select **Watch Record**.
 1. Make sure that the module uses the same connection as the rest of the modules in the scenario.
+1. In the Record Type field, select **Issue**.
 1. In the Filter field, select **New Records Only**.
 1. In the Outputs box, select `ID`, `Name`, and `Project ID`.
 1. Click **OK** to save the module settings.
@@ -120,4 +121,4 @@ Because the first module has been replaced, the second module must be mapped to 
 
 ## Resources
 
-* For more information on webhooks, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
+* For more information on trigger modules, see [Trigger modules](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules) in the article Modules overview.

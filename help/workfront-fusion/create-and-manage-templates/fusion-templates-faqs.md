@@ -58,7 +58,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 The saved template is automatically shared with your team members. If you want to share it with users that are not members of your team, you must publish it. You can then share it with a link, or ask the administrator tomaking the template public.
 
-For more information, see [Publish and share [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
+For more information, see [Publish and share [!DNL Adobe Workfront Fusion templates]](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md).
 
 ## How can I edit or delete a public template?
 

@@ -9,7 +9,7 @@ exl-id: 99a1227d-bff9-479f-b8b9-efcf7cea3708
 
 When you create a template, your template becomes available for all your team members. If you want to share the template with someone outside of your team, you must publish it first.
 
-For information on creating a template, see [Create new](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
+For information on creating a template, see [Create a new template](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
 
 ## Access requirements
 
@@ -81,7 +81,7 @@ After you have published a template, you can share it.
 
    >[!NOTE]
    >
-   >Althought you can share this link, the template itself stays in the [!UICONTROL Team templates] tab and is not public.
+   >Although you can share this link, the template itself stays in the [!UICONTROL Team templates] tab and is not public.
 
 1. (Conditional) If you want the template to become public, send it to your administrator for approval by clicking **[!UICONTROL Request Approval]**.
 

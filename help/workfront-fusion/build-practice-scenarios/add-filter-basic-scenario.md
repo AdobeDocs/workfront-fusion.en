@@ -71,7 +71,8 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
 ### Prepare to add the filter
 
-1. Open the first scenario.
+1. Open the scenario.
+1. Click the first module to open it.
 1. In the **Outputs** area, select `Project`. 
    You should now have `ID`, `Name`, and `Project` selected.
 1. Click OK to save the module settings.
@@ -86,7 +87,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
 ### Add and configure the filter
 
-1. Open the scenario in the scenario editor.
+1. Return to the scenario in the scenario editor.
 1. Click the wrench icon ![Wrench icon](assets/wrench-icon.png) between the first and second module, and select **Set up a filter**.
 1. In the Label field, enter a label for this filter, such as "Filter for request queue."
 1. In the **Condition** area, in the top field, map the `projectID` from the first module.
@@ -102,7 +103,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 1. Click **[!UICONTROL Run once]** in the lower-left corner of the scenario editor.
 1. Examine the output to ensure that the scenario ran as expected.
 
-   Both issues should appear in the output of the first scenario, but only the issue in the specified project should appear as input into the second scenario,
+   Both issues should appear in the output of the first module, but only the issue in the specified project should appear as input into the second module.
 1. When you are satisfied that the scenario is working as expected, click the **Scheduling** toggle in the lower-left of the screen to **On**.
 
    This activates the scenario. 

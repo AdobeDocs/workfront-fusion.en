@@ -81,7 +81,7 @@ You can build a template in a process similar to building a scenario. Fusion adm
 
    To add contextual help to the modules, see [Set up Wizard functionality](#set-up-wizard-functionality) in this article.
 
-   For more information on building a scenario, see [Create a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
+   For more information on building a scenario, see [Workflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
    >[!NOTE]
    >
