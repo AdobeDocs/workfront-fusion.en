@@ -98,7 +98,7 @@ You can also check the status from the [!UICONTROL Team templates] tab. If a tem
 Templates without icons have [!UICONTROL Private] status. They are not published and are visible only to the team.
 
 
-
+<!--
 
 ## Questions about how this works
 
@@ -116,3 +116,5 @@ What does "Approving" mean?
 If an admin edits a template, do they have to publish again? ... Do they have to approve again?
 Does a user have to submit for approval to share on the Public tab or can admin go through and approve/reject which ones they want? 
 What is the admin approving? Does a user have to submit it for approval?
+
+-->

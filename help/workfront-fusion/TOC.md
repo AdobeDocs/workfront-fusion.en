@@ -226,7 +226,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [References](/help/workfront-fusion/references/references-toc.md)
     * Licenses and roles {#licenses-and-roles}
         * [Licenses and roles references: article index](/help/workfront-fusion/references/licenses-and-roles/licenses-and-roles-index.md)
-        * [Access requirements in Workfront Fusion documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
+        * [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
         * [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
     * Scenarios {#scenarios}
         * [Scenarios: article index](/help/workfront-fusion/references/scenarios/scenarios-toc.md)

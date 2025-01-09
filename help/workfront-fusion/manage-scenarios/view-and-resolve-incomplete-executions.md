@@ -77,7 +77,7 @@ If a module encounters an error during its operation, a new incomplete execution
 
 -->
 
-For more information, see [Errors resulting into incomplete executions](#errors-resulting-into-incomplete-executions)
+For more information, see [Errors resulting into incomplete executions](#errors-resulting-into-incomplete-executions) in this article.
 
 >[!NOTE]
 >
@@ -85,14 +85,14 @@ For more information, see [Errors resulting into incomplete executions](#errors-
 >
 >`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
 >
->For more information, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable) in the article Configure scenario settings.
+>For more information, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) in the article Configure scenario settings.
 
 
 ## Resolve incomplete executions from the Incomplete Executions tab
 
 When a new incomplete execution is stored, you can resolve it as follows:
 
-1. Open a Scenario. 
+1. Open the affected scenario. 
 1. Click the **[!UICONTROL Incomplete Executions]** tab.
 1. Locate the incomplete execution you would like to resolve, and click **[!UICONTROL Details]**.
 
@@ -101,7 +101,7 @@ When a new incomplete execution is stored, you can resolve it as follows:
 
 If you want to see the log of all module's operations before you attempt to resolve the incomplete execution, you can resolve the incomplete execution from the [!UICONTROL History] folder:
 
-1. Open a Scenario. 
+1. Open The affected scenario. 
 1. Click the **[!UICONTROL History]** tab.
 1. Locate the scenario's failed execution, and click **[!UICONTROL Details]**.
 1. Open the module's log where all the module's operations are shown.

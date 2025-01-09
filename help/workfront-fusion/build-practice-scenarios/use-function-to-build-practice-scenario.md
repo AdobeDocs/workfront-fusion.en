@@ -2,7 +2,7 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: se a function to update a project in a basic scenario
+title: Use a function to update a project in a basic scenario
 description: Learn how to add a function to update a work item in Workfront.
 author: Becky
 feature: Workfront Fusion
