@@ -68,9 +68,9 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 ### Add the Update Record module to your scenario
 
 1. Open the scenario in the scenario editor.
-1. Hover over the partial circle to the right of the of the module, then click **[!UICONTROL Add another module]**. 
+1. Hover over the partial circle to the right of the of the second module, then click **[!UICONTROL Add another module]**. 
 1. Select [!DNL Adobe Workfront] from the list of applications, then choose the module **[!UICONTROL Update Record]**.
-1. in the ID field, select the ID block that is under the Convert object module. This is the ID of the project that was output by that module. 
+1. In the ID field, select the ID block that is under the Convert object module. This is the ID of the project that was output by that module. 
 
    ![ID from Convert object](assets/id-convert-object.png)
 
@@ -78,6 +78,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 1. In the Select Fields to Map area, select Name. 
 
     A Name field will open.
+1. Continue to [Map the function for the name update](#map-the-function-for-the-name-update).
 
 ### Map the function for the name update
 
@@ -94,14 +95,14 @@ When this scenario converts a request to a project, the project's name is the sa
    The input for this example is the name of the issue the project was converted from.
 
 1. Move your cursor between the parentheses, because this is where the input will go.
-1. In the mapping panel, click the **module output** icon. ![Module output icon](assets/toolbar-icon-functions-you-map-from-other-modules.png) 
+1. In the mapping panel, click the **Module output** icon. ![Module output icon](assets/toolbar-icon-functions-you-map-from-other-modules.png) 
 1. Select the name block that was output by your first module.
 
    The name block appears in the function.
 
    ![Name block in function](assets/map-name.png)
 
-1. Click OK to save the module settings.
+1. Click **OK** to save the module settings.
 
 ### Test and activate
 
@@ -118,4 +119,4 @@ When this scenario converts a request to a project, the project's name is the sa
 
 ## Resources
 
-[Map items using functions](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [Map items using functions](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)

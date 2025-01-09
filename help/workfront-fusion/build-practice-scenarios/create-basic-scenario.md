@@ -12,7 +12,7 @@ exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
 
 The role of [!DNL Adobe Workfront Fusion] is to automate your processes so that you can concentrate on new tasks rather than repeating the same tasks again and again. It works by linking actions within and between apps and services to create a scenario that transfers and transforms your data automatically. The scenario you create watches for data in an app or service and processes that data to provide the result you want.
 
-This example takes you through the process of creating a scenario that searches for a [!DNL Workfront] task in Workfront and the converts it to a project.
+This example takes you through the process of creating a scenario that searches for a request in Workfront and the converts it to a project.
 
 ## Access requirements
 
@@ -70,7 +70,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    The scenario editor displays, containing an empty module in the center.
 
 1. Select the **[!UICONTROL New scenario]** placeholder name in the upper-left corner, then enter a name.
-1. Continue with [Add and configure the first module](#add-and-configure-the-first-module) below.
+1. Continue with [Add and configure the first module](#add-and-configure-the-first-module).
 
 ### Add and configure the first module
 
@@ -89,9 +89,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. In the [!UICONTROL Connection] box, select your Workfront connection. 
 
    If you do not have a Workfront connection, see [Create a connection](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-1. In the [!UICONTROL Record Type] box, select **[!UICONTROL Task]**. This sets the module to search only tasks.
+1. In the [!UICONTROL Record Type] box, select **[!UICONTROL Issue]**. This sets the module to search only issues, which include requests.
 
-   You can find **[!UICONTROL Task]** in the list if you start typing the word "[!UICONTROL task]."
+   You can find **[!UICONTROL Issue]** in the list if you start typing the word "[!UICONTROL Issue]."
 
 1. In the **[!UICONTROL Result Set]** box, select **[!UICONTROL First Matching Record]**. 
 
@@ -114,7 +114,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 1. Click **[!UICONTROL OK]** to save the module configuration.
 
-1. Right-click the module, click **[!UICONTROL Rename]**, then type a name the describes what you want the module to do (such as "Search for task)," then click **[!UICONTROL OK]**.
+1. Right-click the module, click **[!UICONTROL Rename]**, then type a name the describes what you want the module to do (such as "Search for requests)," then click **[!UICONTROL OK]**.
 
    The name appears just below the module. Below that, [!DNL Workfront Fusion] includes a brief description of the type of action performed by the module.
 
@@ -127,7 +127,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Hover over the partial circle to the right of the of the module, then click **[!UICONTROL Add another module]**. 
 1. Select [!DNL Adobe Workfront] from the list of applications, then choose the module **[!UICONTROL Convert object]**.
 1. In the [!UICONTROL Connection] field, select  the same Workfront connection that you used in the previous module . 
-1. In the **[!UICONTROL Record type]** field, select **[!UICONTROL Task]**, because the module will convert a task.
+1. In the **[!UICONTROL Record type]** field, select **[!UICONTROL issue]**, because the module will convert an issue.
 1. In the **[!UICONTROL Convert to]** field, select **Project**. 
 1. Next to the Task ID field, click the map toggle to enable it. 
 
@@ -156,12 +156,12 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 Before you activate your scenario, it's important to test it by running it at least once and viewing the results. This helps you understand how data flows through the scenario and find any errors.
 
-For this scenario, a successful test would result in locating the new task and converting it to a project.
+For this scenario, a successful test would result in locating the request and converting it to a project.
 
 1. Click **[!UICONTROL Run once]** in the lower-left corner of the scenario editor.
-1. After the scenario finishes running, click the bubble above the first module to can view information about the bundle of data that the module processed, including data pulled from the task that the module returned.
+1. After the scenario finishes running, click the bubble above the first module to can view information about the bundle of data that the module processed, including data pulled from the request that the module returned.
 
-1. Click the execution inspector bubble above the second module to see the input (the task) and the output (the converted project).
+1. Click the execution inspector bubble above the second module to see the input (the request) and the output (the converted project).
 
    For more information about the data in the inspection bubbles, see:
 
@@ -178,7 +178,7 @@ For this scenario, a successful test would result in locating the new task and c
 >
 >We recommend the optional but useful practice of adding notes about each module.
 >
->1. Right-click a [!DNL Workfront] module, then click **[!UICONTROL Add a note]**.
+>1. Right-click a module, then select **[!UICONTROL Add a note]**.
 >1. In the note that displays, type an overview for the module.
 >
 >    You can add multiple notes for a module.
@@ -194,7 +194,7 @@ For this scenario, a successful test would result in locating the new task and c
 
 The last step in creating a scenario is activating it.
 
-Because this scenario is searching for a specific task, there is no need to activate it. Activating a scenario causes it to run on a schedule or when a specific action occurs in an application. After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
+Because this scenario is searching for a specific issue, there is no need to activate it. Activating a scenario causes it to run on a schedule or when a specific action occurs in an application. After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
 
 For more information about activating scenarios, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 
@@ -203,7 +203,6 @@ For information about schedules, see [Schedule a scenario](/help/workfront-fusio
 ## Next steps
 
 * [Add a trigger module](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md) to allow the scenario to periodically look for new requests and convert them to projects.
-* Add a webhook to allow the scenario to execute every time a request is entered.
-* Add a filter to ensure that only certain requests are converted to projects.
-* Add a function that customizes the name of the new project.
-* Add error handling to ensure that the scenario is resilient against errors.
+* [Add a webhook](/help/workfront-fusion/build-practice-scenarios/add-a-webhook-to-basic-scenario.md) to allow the scenario to execute every time a request is entered.
+* [Add a filter](/help/workfront-fusion/build-practice-scenarios/add-filter-basic-scenario.md) to ensure that only certain requests are converted to projects.
+* [Add a function](/help/workfront-fusion/build-practice-scenarios/use-function-to-build-practice-scenario.md) that customizes the name of the new project.
