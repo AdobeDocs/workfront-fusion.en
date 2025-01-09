@@ -11,6 +11,12 @@ Many services provide webhooks to deliver instant notifications whenever a certa
 
 ![](assets/instant.png)
 
+>[!TIP]
+>
+>You can check the list of modules in a connector to see if it has an instant trigger, or you can check that's connector's documentation under [Fusion applications and their modules references](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+>
+>For Adobe Workfront instant trigger documentation, see [Triggers](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers) in the article Workfront modules.
+
 If a connector does not include a webhook, you can do one of the following:
 
 * Create a custom webhook using the Webhook module.
@@ -29,9 +35,11 @@ When you configure an instant trigger, you are prompted to select when it runs.
 
 ![](assets/schedule-setting.png)
 
-Select `Immediately` to run the scenario immediately when [!DNL Workfront Fusion] receives new events from the service. These events go into a queue, and are then processed in the scenario one at a time.
+Select `Immediately` to run the scenario immediately when [!DNL Workfront Fusion] receives new events from the service. These events are immediately sent into a queue, and are then processed in the scenario one at a time, in the same order that data is received.
 
 When the scenario executes, the total amount of pending events waiting in the queue is counted, and the scenario performs as many cycles as there are pending events, processing one event per cycle.
+
+For more information on cycles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md.)
 
 >[!NOTE]
 >
