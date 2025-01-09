@@ -229,7 +229,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)
         * [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)
     * Scenarios {#scenarios}
-        * [Scenarios: article index](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
+        * [Scenarios](/help/workfront-fusion/references/scenarios/scenarios-toc.md)
         * [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)
         * [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)
         * [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)

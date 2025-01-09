@@ -1,5 +1,5 @@
 ---
-title: Access Requirements in Workfront Documentation
+title: Access Requirements in Documentation
 description: Adobe Workfront Fusion documentation how-to articles contain a table that explains the access and permissions requirements needed for that procedure. This Access requirements table allows you to understand whether you can perform a certain action in Fusion, or why you might not be able to. This article explains each element of the Access requirements table, and provides troubleshooting tips and links to more in-depth information.
 author: Becky
 feature: System Setup and Administration
@@ -16,7 +16,7 @@ Some rows contain information labeled "New" and "Current." This is because Workf
 
 >[!NOTE]
 >
->If you have questions about how any of the fields in this table apply to you, contact your Workfront administrator.
+>If you have questions about how any of the fields in this table apply to you, contact your Workfront Fusion administrator.
 
 ## The Access requirements table
 
@@ -28,7 +28,7 @@ Some rows contain information labeled "New" and "Current." This is because Workf
    <td role="rowheader">Adobe Workfront package 
    <td> Adobe Workfront packages refer to the set of features that your organization has purchased. Most Fusion functionality is available in all plans, but there are some exceptions that are only available to organizations with an Ultimate Workfront package. 
    <ul><li>To find out what Adobe Workfront package your organization uses, including whether your organization is under the new or current packaging model, contact your Workfront administrator.</li>
-   <li>For instructions on how a Workfront administrator can locate your organization's Workfront plan, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">View your organization's cluster and Workfront plan</a> in the Workfront documentation.</li><li>For more information on the new Workfront plans, see <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront pricing and packaging</a>.</li></ul> </td> 
+   <li>For instructions on how a Workfront administrator can locate your organization's Workfront package, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">View your organization's cluster and Workfront plan</a> in the Workfront documentation.</li><li>For more information on the new Workfront packages, see <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront pricing and packaging</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront license</td> 
