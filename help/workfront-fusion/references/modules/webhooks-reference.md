@@ -63,7 +63,7 @@ Events remaining in the queue will be processed next time the scenario is run, u
 
 ## Webhook guardrails
 
-To ensure good performance, Workfront Fusion has the following guardrails in place for webhooks:
+To ensure good performance, Workfront Fusion has the following guardrails in place for webhooks.
 
 ### Rate limits
 
