@@ -265,8 +265,6 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * Connections {#connections}
         * [Connection reference: article index](/help/workfront-fusion/references/connections/connection-reference-toc.md)
         * [Connection metadata](/help/workfront-fusion/references/connections/connection-metadata.md)
-    * Navigation {#navigation}
-        * [Navigation](/help/workfront-fusion/references/navigation/navigation-toc.md)
     * Apps and their modules {#apps-and-their-modules}
         * [Apps and their modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
         * Universal connectors {#universal-connectors}

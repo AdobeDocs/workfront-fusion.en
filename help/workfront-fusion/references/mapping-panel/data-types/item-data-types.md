@@ -7,47 +7,6 @@ exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
 ---
 # Item data types
 
-## Access requirements
-
-You must have the following access to use the functionality in this article:
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!DNL Pro] or higher</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Product</td> 
-   <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
-
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-## Item data types
-
 You can contain the types of items listed below in a bundle.
 
 For information on which types of items [!DNL Workfront Fusion] allows for conversion between one other, see [Type coercion](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
@@ -94,7 +53,7 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validation</p> </td> 
-   <td> <p>[!DNL Workfront Fusion] might perform validation on each type of item. If an item does not pass the validation, the module will stop processing because of a data error. For more information, see <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Error processing </a>. </p> </td> 
+   <td> <p>[!DNL Workfront Fusion] might perform validation on each type of item. If an item does not pass the validation, the module will stop processing because of a data error. For more information, see <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Error types </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

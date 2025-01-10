@@ -135,7 +135,7 @@ An incomplete data error occurs only with triggers. This error is generated if a
 
 If a scenario terminates with the `IncompleteDataError`, its further behavior will depend on its setting of [!UICONTROL Max number of consecutive errors]. 
 
-For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number) in the article Configure scenario settings.
+For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors) in the article Configure scenario settings.
 
 >[!BEGINSHADEBOX]
 
@@ -153,7 +153,7 @@ Any error that appears during scenario execution and is not one of these error t
 
 If a scenario terminates with the `RuntimeError`, its further behavior depends on the [!UICONTROL Max number of consecutive errors] setting. 
 
-For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errorsnumber) in the article Configure scenario settings.
+For more information, see [Number of consecutive errors](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors) in the article Configure scenario settings.
 
 
 >[!NOTE]
@@ -187,4 +187,4 @@ For information about schedules, see [Schedule a scenario](/help/workfront-fusio
 
 For information about scenario phases, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-For information on the Enable data loss option, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable) in the article Configure scenario settings.
+For information on the Enable data loss option, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) in the article Configure scenario settings.

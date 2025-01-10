@@ -7,7 +7,7 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 20fbbcd6-6c97-4b8c-9d97-7d98b632dc99
 ---
-# Mapping panel references: article indes
+# Mapping panel references: article index
 
 * [Data types](/help/workfront-fusion/references/mapping-panel/data-types/data-types-toc.md)
 * [Functions](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)

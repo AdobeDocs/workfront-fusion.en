@@ -71,7 +71,7 @@ For more information, see [Configure a module](/help/workfront-fusion/create-sce
 
 * The below scenario shows how to retrieve emails with attachments and save the attachments as single files in a selected [!DNL Dropbox] folder.
 
-   Emails can contain an array of attachments. The [!UICONTROL Iterator] module after the first module enables the scenario to handle each attachment separately. The [!UICONTROL Iterator] module splits the array of attachments into single bundles. Each bundle, with one attachment, is then saved one at a time in a selected [!DNL Dropbox] folder. The [!UICONTROL Iterator] module set-up is shown above: the [!UICONTROL Array] field should contain the `Attachments` array.
+   Emails can contain an array of attachments. The [!UICONTROL Iterator] module after the first module enables the scenario to handle each attachment separately. The [!UICONTROL Iterator] module splits the array of attachments into single bundles. Each bundle, with one attachment, is then saved one at a time in a selected [!DNL Dropbox] folder. The [!UICONTROL Array] field in the Iterator module should contain the `Attachments` array.
 
    ![](assets/attachments-array.jpg)
 
@@ -82,7 +82,7 @@ For more information, see [Configure a module](/help/workfront-fusion/create-sce
 
 ### Problem: Mapping panel does not display mappable items under [!UICONTROL Iterator] module
 
-When an [!UICONTROL Iterator] module does not have information about the structure of the array's items, the mapping panel in the modules following the [!UICONTROL Iterator] module displays only two items under the [!UICONTROL Iterator] module :`Total number of bundles` and `Bundle order position`.
+When an [!UICONTROL Iterator] module does not have information about the structure of the array's items, the mapping panel in the modules following the [!UICONTROL Iterator] module displays only two items under the [!UICONTROL Iterator] module: `Total number of bundles` and `Bundle order position`.
 
 ![](assets/mapping-panel-doesnt-display.png)
 

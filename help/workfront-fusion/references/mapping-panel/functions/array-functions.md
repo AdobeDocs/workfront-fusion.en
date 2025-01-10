@@ -7,60 +7,39 @@ exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
 ---
 # Array functions
 
-## Functions
-
-* [join](#join-array-separator)
-* [length](#length-array)
-* [keys](#keys-object)
-* [slice](#slice-array-start-end)
-* [merge](#merge-array1-array2)
-* [contains](#contains-array-value)
-* [remove](#remove-array-value1-value2)
-* [add](#add-array-value1-value2)
-* [map](#map-complex-array-keykey-for-filteringpossible-values-for-filtering)
-* [shuffle]
-* [sort](#sort-array-order-key)
-* [reverse](#reverse-array)
-* [flatten](#flatten-array)
-* [distinct](#distinct-array-key)
-* [toCollection]
-* [toArray](#toarray)
-* [arrayDifference](#arraydifference-array1-array2-mode)
-* [deduplicate]
-
-### [!UICONTROL join (array; separator)]
+## [!UICONTROL join (array; separator)]
 
 Concatenates all of the items of an array into a string, using the specified separator between each item.
 
-### [!UICONTROL length (array)]
+## [!UICONTROL length (array)]
 
 Returns the number of items in an array.
 
-### [!UICONTROL keys (object)]
+## [!UICONTROL keys (object)]
 
 Returns an array of the properties of a given object or array.
 
-### [!UICONTROL slice (array; start; [end])]
+## [!UICONTROL slice (array; start; [end])]
 
 Returns a new array containing only selected items.
 
-### [!UICONTROL merge (array1; array2; ...)]
+## [!UICONTROL merge (array1; array2; ...)]
 
 Merges one or more arrays into one array.
 
-### [!UICONTROL contains (array; value)]
+## [!UICONTROL contains (array; value)]
 
 Verifies if an array contains the value.
 
-### [!UICONTROL remove (array; value1; value2; ...)]
+## [!UICONTROL remove (array; value1; value2; ...)]
 
 Removes values specified in the parameters of an array. This function is effective only on primitive arrays of text or numbers.
 
-### [!UICONTROL add (array; value1; value2; ...)]
+## [!UICONTROL add (array; value1; value2; ...)]
 
 Adds values specified in parameters to an array and returns that array.
 
-### [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
+## [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
 
 Returns a primitive array containing values of a complex array. This function allows filtering values. Use raw variable names for keys.
 
@@ -80,9 +59,9 @@ Returns a primitive array containing values of a complex array. This function al
 
 For more information, see [Map an array or array element](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).
 
-### shuffle
+## shuffle
 
-### [!UICONTROL sort (array; [order]; [key])]
+## [!UICONTROL sort (array; [order]; [key])]
 
 Sorts values of an array. The valid values of the `order` parameter are:
 
@@ -132,15 +111,15 @@ The first item in an array is index 1.
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL reverse (array)]
+## [!UICONTROL reverse (array)]
 
 The first element of the array becomes the last element, the second becomes the next-to-last, and so on.
 
-### [!UICONTROL flatten (array)]
+## [!UICONTROL flatten (array)]
 
 Creates a new array with all sub-array elements concatenated into it, recursively, up to the specified depth.
 
-### [!UICONTROL distinct (array; [key])]
+## [!UICONTROL distinct (array; [key])]
 
 Removes duplicates inside an array. Use the "[!UICONTROL key]" argument to access properties inside complex objects. To access nested properties, use dot notation. The first item in an array is index 1.
 
@@ -152,9 +131,9 @@ Removes duplicates inside an array of contacts by comparing the "name" property
 
 >[!ENDSHADEBOX]
 
-### toCollection
+## toCollection
 
-### toArray
+## toArray
 
 This function converts a collection into an array of key-value pairs.
 
@@ -176,7 +155,7 @@ Returns the array of key-value pairs
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL arrayDifference [array1, array2, mode]]
+## [!UICONTROL arrayDifference [array1, array2, mode]]
 
 Returns the difference between two arrays.
 
@@ -216,8 +195,8 @@ yourArray = [3,4,5,6,7]
 
 >[!ENDSHADEBOX]
 
-### deDuplicate
+## deDuplicate
 
 ## Keywords
 
-### emptyarray
+## emptyarray
