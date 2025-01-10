@@ -373,11 +373,9 @@ You specify the ID of the record.
 
 The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-You could use this module, for example, to create a task in Workfront when a client adds a new row in a [!DNL Google Sheets] list of tasks that need to be done.
+Make sure you provide the minimum number of input fields. For example, if you want to create an issue, you need to provide a valid parent project ID in the Project ID field to indicate where the issue should live in Workfront. You can use the mapping panel to map this information from another module in your scenario, or you can enter it manually by typing in the name and then selecting it from the list.
 
 When you are configuring this module, the following fields display.
-
-Make sure you provide the minimum number of input fields. For example, if you want to create an issue, you need to provide a valid parent project ID in the Project ID field to indicate where the issue should live in Workfront. You can use the mapping panel to map this information from another module in your scenario, or you can enter it manually by typing in the name and then selecting it from the list.
 
 <table style="table-layout:auto">
  <col> 
@@ -391,15 +389,15 @@ Make sure you provide the minimum number of input fields. For example, if you wa
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list and then make sure that you have access to data (from previous modules in the scenario) that will populate the project.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
-   <td> <p>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need.</p> <p>For fields in custom forms, use the <b>[!UICONTROL Attach Custom Form]</b> field.</p> </td> 
+   <td> <p>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need. You can then enter or map data into these fields.</p> <p>For fields in custom forms, use the <b>[!UICONTROL Attach Custom Form]</b> field.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Attach Custom Form]</td> 
-   <td>Select any custom forms that you want to add to the new object, then enter values for those fields.</td> 
+   <td>Select any custom forms that you want to add to the new object, then enter or map values for those fields.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -422,11 +420,11 @@ You specify the ID of the record.
 
 The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-You could use this module, for example, to create a task in Workfront when a client adds a new row in a Google Sheets list of tasks that need to be done.
+Make sure you provide the minimum number of input fields. For example, if you want to create an issue, you need to provide a valid parent project ID in the Project ID field to indicate where the issue should live in Workfront. You can use the mapping panel to map this information from another module in your scenario, or you can enter it manually by typing in the name and then selecting it from the list.
+
+This module does not attach custom forms when creating the object. To attach custom forms while creating an object, use the [!UICONTROL Create a record (attaching custom forms)] module.
 
 When you are configuring this module, the following fields display.
-
-Make sure you provide the minimum number of input fields. For example, if you want to create an issue, you need to provide a valid parent project ID in the Project ID field to indicate where the issue should live in Workfront. You can use the mapping panel to map this information from another module in your scenario, or you can enter it manually by typing in the name and then selecting it from the list.
 
 <table style="table-layout:auto">
  <col> 
@@ -440,7 +438,7 @@ Make sure you provide the minimum number of input fields. For example, if you wa
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list and then make sure that you have access to data (from previous modules in the scenario) that will populate the project.</p> </td> 
+   <td> <p>Select the type of Workfront record that you want the module to create.</p> <p>For example, if you want to create a Project, select [!UICONTROL Project] from the dropdown list.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Select fields to map]</td> 
@@ -538,6 +536,10 @@ When you are configuring this module, the following fields display.
   <tr> 
    <td>[!UICONTROL Force delete]</td> 
    <td>Enable this option to ensure that the record is deleted, even if the Workfront UI would request confirmation of the deletion.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Async delete]</td> 
+   <td>Enable this option to allow the module to delete asynchronously.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>ID</td> 
@@ -798,7 +800,7 @@ You specify the ID of the record. You can also specify which related records you
 
 For example, if the record that the module is reading is a project, you can specify that you want the project's tasks read.
 
-The module returns an array of data from the standard fields for the output you specified.
+The module returns an array of data from the output fields you specified.
 
 When you are configuring this module, the following fields display.
 
@@ -870,7 +872,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Select fields to map]</td> 
-   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need.</td> 
+   <td>Select the fields that you want available for data input. This allows you to use these fields without having to scroll through the ones you don't need. You can then enter or map data into these fields.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -887,6 +889,8 @@ See a list of the Workfront object types for which you can use this module in [W
 +++ **[!UICONTROL Upload Document]**
 
 This action module uploads a document to a Workfront object, such as a project, task, or issue. This module uploads the document in chunks, which makes the upload process smoother for Workfront. 
+
+This module can handle larger files than the legacy module, and is part of a phased rollout to organizations with an Ultimate Workfront package.
 
 You specify the location for the document, the file you want to upload, and an optional new name for the file.
 
@@ -1127,8 +1131,7 @@ See a list of the Workfront object types for which you can use this module in [W
 <table style="table-layout:auto"> 
  <col> 
  <col> 
- <col> 
- <col> 
+ <col>         
  <thead> 
   <tr> 
    <th> </th> 
