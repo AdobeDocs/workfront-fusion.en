@@ -1,5 +1,5 @@
 ---
-title: Map arrays and array elements
+title: Map an array or array element
 description: You can map an array or individual array elements to a module field in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion

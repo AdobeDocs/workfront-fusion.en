@@ -209,7 +209,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>time </td> 
    <td>text </td> 
-   <td> <p>[!DNL Workfront Fusion] will try to convert time to the hours:minutes:seconds format. If the conversion fails, it will return a validation error.</p> </td> 
+   <td> <p>[!DNL Workfront Fusion] will try to convert time to the <code>hours:minutes:seconds</code> format. If the conversion fails, it will return a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>time </td> 
