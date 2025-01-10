@@ -9,48 +9,52 @@ exl-id: 361e6c9c-1497-4f47-85bb-503619744968
 
 With the [!DNL Adobe Experience Manager Assets] connector for [!DNL Adobe Workfront Fusion], you can create, upload, and update assets, and copy or move folders and assets.
 
-For an introduction to the Adobe Experience Manager Assets connector, see:
+For a video introduction to the Adobe Experience Manager Assets connector, see:
 
 * [Adobe Experience Manager Assets](https://video.tv.adobe.com/v/3427034/){target=_blank}
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -97,7 +101,7 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
 
    For [!DNL AEM Assets as a Cloud Service], see [Configure the connection for [!DNL AEM Assets as a Cloud Service]](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
-   For [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), see [Configure the connection for [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aem-assets-basic).
+   For [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), see [Configure the connection for [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
 4. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
@@ -161,11 +165,15 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
                   <td role="rowheader">[!UICONTROL Private key]</td>
                   <td>Enter the Private Key generated win the [!UICONTROL Server-to-server] setup. To extract the private key, click [!UICONTROL Extract], then enter the file to extract and the password for the file.</td>
               </tr>
+              <tr>
+                  <td role="rowheader">[!UICONTROL Authentication URL]</td>
+                  <td>Enter authentication URL for this account.</td>
+              </tr>
           </tbody>
       </table>
 
 
-### Configure the connection for [!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])
+### Configure the connection for AEM Assets Basic (Adobe Managed Services)
 
 <table style="table-layout:auto"> 
         <col/>
@@ -227,7 +235,7 @@ This action module copies a folder or asset to another location in your Adobe Ex
    <td> <p>Select whether you want to copy a folder or an asset.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset selection]</td> 
+   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
    <td>Select or map the folder or asset that you want to copy.</td> 
   </tr> 
   <tr> 
@@ -240,7 +248,7 @@ This action module copies a folder or asset to another location in your Adobe Ex
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy children]</td> 
-   <td>Enable this option to copy any subfolders or assets within the folder.</td> 
+   <td>If copying a folder, enable this option to copy any subfolders or assets within the folder.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Overwrite]</td> 
@@ -391,7 +399,7 @@ This action module moves the asset or folder at the given path to a new location
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Overwrite]</td> 
-   <td>Enable this option to overwrite any folder or asset in the destination location that has the same name as the folder or asset being copied.</td> 
+   <td>Enable this option to overwrite any folder or asset in the destination location that has the same name as the folder or asset being moved.</td> 
   </tr> 
  </tbody> 
 </table>

@@ -15,47 +15,46 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-      <td>
-        <p>[!UICONTROL Pro] or higher</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td>
-      <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Product</td>
-      <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -128,7 +127,7 @@ This action module deletes a single comment from a file.
       <td>Enter or map the File ID of the file that you want to add a delete a comment from. </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Comment]</td>
+      <td role="rowheader">[!UICONTROL Comment ID]</td>
       <td>Enter the text of the comment you want to delete.</td>
     </tr>
   </tbody>
@@ -161,7 +160,7 @@ This search module lists all of the comments attached to a single file in [!DNL 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td>
       <td>Enter or map the maximum number of comments you want the module to return during each scenario execution cycle.</td>
     </tr>
   </tbody>
@@ -234,25 +233,25 @@ This action module retrieves a single file or image from a Figma library
             <p><b>[!UICONTROL File]</b>
             </p>
             <p>The module returns the document referred to by [!UICONTROL Key] as a JSON object. The file key can be parsed from any Figma file URL.</p>
-            <p>For fields, see <a href="#Get2" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>.</p>
+            <p>For fields, see <a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL Get a file or image: File]</a>.</p>
           </li>
           <li>
             <p><b>[!UICONTROL File nodes]</b>
             </p>
             <p>Returns the nodes referenced to by IDs as a JSON object. The nodes are retrieved from the [!DNL Figma] file referenced to by [!UICONTROL Key].</p>
-            <p>For fields, see <a href="#Get3" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>.</p>
+            <p>For fields, see <a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL Get a file or image: File nodes]</a>.</p>
           </li>
           <li>
             <p><b>[!UICONTROL Image]</b>
             </p>
             <p>The module renders images from a file.</p>
-            <p>For fields, see <a href="#Get4" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>.</p>
+            <p>For fields, see <a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL Get a file or image: Image]</a>.</p>
           </li>
           <li>
             <p><b>[!UICONTROL Image fills]</b>
             </p>
             <p>The module returns download links for all images present in image fills in a document. Image fills are how [!DNL Figma] represents any user-supplied images. When you drag an image into [!DNL Figma], [!DNL Figma] creates a rectangle with a single fill that represents the image, and the user is able to transform the rectangle (and properties on the fill).</p>
-            <p>For fields, see <a href="#Get5" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>.</p>
+            <p>For fields, see <a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL Get a file or image: Image fills]</a>.</p>
           </li>
         </ul>
       </td>
@@ -261,7 +260,7 @@ This action module retrieves a single file or image from a Figma library
 </table>
 
 
-##### [!UICONTROL Get a file or image: File]
+##### Get a file or image: File
 
 <table style="table-layout:auto"> 
   <col/>
@@ -314,7 +313,7 @@ This action module retrieves a single file or image from a Figma library
   </tbody>
 </table>
 
-##### [!UICONTROL Get a file or image: File nodes]
+##### Get a file or image: File nodes
 
 <table style="table-layout:auto"> 
   <col/>
@@ -418,7 +417,7 @@ This action module retrieves a single file or image from a Figma library
       <td>Enable this option to use the full dimensions of the node regardless of whether or not it is cropped or the space around it is empty. Use this to export text nodes without cropping. Default: [!UICONTROL false].</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Version ID]</td>
+      <td role="rowheader">[!UICONTROL Version]</td>
       <td>Enter or map the version of the file you want the module to return. For the current module, leave this field blank.</td>
     </tr>
   </tbody>
@@ -462,7 +461,7 @@ This search module returns the version history of a single file in [!UICONTROL F
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL Maximum number of returned files]</td>
       <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td>
     </tr>
   </tbody>
@@ -492,7 +491,7 @@ This search module returns a list of all files in the specified project.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL Maximum number of returned files]</td>
       <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td>
     </tr>
   </tbody>
@@ -515,7 +514,7 @@ This search module returns a list of all projects within the specified team.
       <td>Enter or map the Project ID of the project that you want to retrieve files for. The team ID can be found in the URL of the team's page in Figma</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Limit]</td>
+      <td role="rowheader">[!UICONTROL Maximum number of returned projects]</td>
       <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td>
     </tr>
   </tbody>
@@ -537,21 +536,25 @@ This action module retrieves a single style or component, or a set of styles or 
       <td> <p>For instructions about connecting your [!DNL Figma] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions.</a></p>
     </tr>
     <tr>
+      <td role="rowheader">Object> type</td>
+      <td>Select the type of object that you want to retrieve.</td>
+    </tr>
+    <tr>
       <td role="rowheader">&lt;[!UICONTROL Object> key]</td>
       <td>Enter the key (unique identifier) of the object you want to retrieve.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Team ID]</td>
-      <td>Enter or map the ID of the team that the record or records are associated with.</td>
+      <td>If retrieving a team component or team component set, enter or map the ID of the team that the record or records are associated with.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Page Size]</td>
-      <td>Enter or map the number or results to return per page. Default: 30.</td>
+      <td>If retrieving a team component or team component set, enter or map the number or results to return per page. Default: 30.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL After]</td>
       <td>
-        <p>Enter or map the number of the result after which to start retrieving results. This can be combined with the [!UICONTROL Page Size] field to paginate results.</p>
+        <p>If retrieving a team component or team component set, enter or map the number of the result after which to start retrieving results. This can be combined with the [!UICONTROL Page Size] field to paginate results.</p>
         <p>This value does not correspond to object IDs.</p>
         <p>This field cannot be used in combination with the [!UICONTROL Before] field.</p>
       </td>
@@ -559,7 +562,7 @@ This action module retrieves a single style or component, or a set of styles or 
     <tr>
       <td role="rowheader">[!UICONTROL Before]</td>
       <td>
-        <p>Enter or map the number of the result before which to start retrieving results. This can be combined with the [!UICONTROL Page Size] field to paginate results.</p>
+        <p>If retrieving a team component or team component set, enter or map the number of the result before which to start retrieving results. This can be combined with the [!UICONTROL Page Size] field to paginate results.</p>
         <p>This value does not correspond to object IDs.</p>
         <p>This field cannot be used in combination with the [!UICONTROL After] field.</p>
       </td>
@@ -624,7 +627,7 @@ This action module lets you make a custom authenticated call to the Figma API wi
 
 #### [!UICONTROL Watch events]
 
-This trigger module starts a scenario when one of the following events occur for a specific team in your [!DNL Figma] team space
+This trigger module starts a scenario when one of the following events occur for a specific team in your [!DNL Figma] team space:
 
 * File update
 
@@ -646,22 +649,28 @@ This trigger module starts a scenario when one of the following events occur for
         <p>Select the webhook that the module watches.</p>
         <p>To add a new webhook:</p>
         <ol>
-          <li value="1">
+          <li>
             <p>Click <b>[!UICONTROL Add]</b> next to the [!UICONTROL Webhook] field.</p>
           </li>
-          <li value="2">
+          <li>
+            <p>Enter a name for the webhook.</p>
+          </li>
+          <li>
             <p>Select the connection you want to use for this webhook. For instructions about connecting your [!DNL Figma] account to [!UICONTROL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!UICONTROL Adobe Workfront Fusion] - Basic instructions.</a></p>
           </li>
-          <li value="3">
+          <li>
             <p>Select the event type that you want the module to watch.</p>
           </li>
-          <li value="4">
+          <li>
             <p>Enter the ID of the team whose events you want the webhook to watch.</p>
           </li>
-          <li value="5">
-            <p>Enter the [!UICONTROL Status] or [!UICONTROL Description] of events that you want the webhook to watch.</p>
+          <li>
+            <p>Select whether you want the webhook to be active or paused.</p>
           </li>
-          <li value="6">
+          <li>
+            <p>Enter a description for the webhook.</p>
+          </li>
+          <li>
             <p>Click <b>[!UICONTROL Save]</b> to save the webhook and return to the module.</p>
           </li>
         </ol>
