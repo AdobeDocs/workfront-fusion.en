@@ -11,7 +11,11 @@ exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 
 ### now
 
+Gets the current time in YYYY-MM-DD-hh:mm:ss format.
+
 ### timestamp
+
+Gets the current time as a Unix timestamp.
 
 ## Functions
 
