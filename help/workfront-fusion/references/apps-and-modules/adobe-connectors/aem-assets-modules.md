@@ -101,7 +101,7 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
 
    For [!DNL AEM Assets as a Cloud Service], see [Configure the connection for [!DNL AEM Assets as a Cloud Service]](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
-   For [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), see [Configure the connection for [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aem-assets-basic).
+   For [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), see [Configure the connection for [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
 4. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
@@ -173,7 +173,7 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
       </table>
 
 
-### Configure the connection for [!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])
+### Configure the connection for AEM Assets Basic (Adobe Managed Services)
 
 <table style="table-layout:auto"> 
         <col/>
@@ -235,7 +235,7 @@ This action module copies a folder or asset to another location in your Adobe Ex
    <td> <p>Select whether you want to copy a folder or an asset.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset selection]</td> 
+   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
    <td>Select or map the folder or asset that you want to copy.</td> 
   </tr> 
   <tr> 
@@ -248,7 +248,7 @@ This action module copies a folder or asset to another location in your Adobe Ex
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy children]</td> 
-   <td>Enable this option to copy any subfolders or assets within the folder.</td> 
+   <td>If copying a folder, enable this option to copy any subfolders or assets within the folder.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Overwrite]</td> 
@@ -399,7 +399,7 @@ This action module moves the asset or folder at the given path to a new location
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Overwrite]</td> 
-   <td>Enable this option to overwrite any folder or asset in the destination location that has the same name as the folder or asset being copied.</td> 
+   <td>Enable this option to overwrite any folder or asset in the destination location that has the same name as the folder or asset being moved.</td> 
   </tr> 
  </tbody> 
 </table>
