@@ -108,7 +108,7 @@ If you access Fusion through `experience.adobe.com`, you can check the network t
  </tbody> 
 </table>
 
-Also, if your organization uses outbound network filtering, add the following domain to your allowlist to enable your system to access Workfront Fusion.
+Also, if your organization uses outbound network filtering, add the following domain to your allowlist to enable your system to access Workfront Fusion. These are used for webhooks
 
 <table style="table-layout:auto">
  <col> 

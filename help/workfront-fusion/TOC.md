@@ -9,6 +9,8 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 * [Adobe Workfront Fusion Documentation](home.md)
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
+    * Fusion releases - 2025 {#fusion-releases-2025}
+        * [Workfront Fusion release activity: Week of January 6, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
     * Fusion releases - 2024 {#fusion-releases-2024}
         * [Workfront Fusion release activity: Week of December 16, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-16.md)
         * [Workfront Fusion release activity: Week of December 2, 2024](/help/workfront-fusion/fusion-product-releases/fusion-releases-2024/fusion-2024-12-2.md)
@@ -295,6 +297,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe PDF Services modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
             * [Adobe Photoshop modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
             * [Adobe Target modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
+            * [Adobe User Management modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
             * [Adobe Workfront modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
             * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
             * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
