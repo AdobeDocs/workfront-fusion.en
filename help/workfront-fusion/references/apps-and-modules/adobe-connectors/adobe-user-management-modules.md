@@ -119,7 +119,6 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-![](assets/)
 
 * [Searches](#searches)
 * [User actions](#user-actions)
