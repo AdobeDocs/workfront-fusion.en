@@ -27,6 +27,9 @@ For the initial release, the following connectors support large files.
 * Adobe Experience Manager Assets > Upload document
 * Workfront Proof > Upload File
 * Adobe Authenticator > Make a Custom API Call
+* SharePoint > Create a file and SharePoint > Get a file
+* Salesforce > Upload File
+* AWS S3 > Upload File and AWS S3 > Get File
 * HTTP
 
 Other connectors will be supported in future releases.
