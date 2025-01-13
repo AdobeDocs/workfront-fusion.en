@@ -139,6 +139,18 @@ This trigger module starts a scenario when a record, record type, or workspace i
       <td role="rowheader">[!UICONTROL Object type]</td>
       <td>Select whether you want to watch records, record types, or workspaces.</td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL State]</td>
+      <td>Select whether you want to watch the old state or the new state.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Trigger a scenario when the record changes <b>to</b> a given value.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Trigger a scenario when the record changes <b>from</b> a given value.</p></li></ul></td> 
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>If watching records, select the Workspace you want to watch for records.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Record type]</td>
+      <td>If watching records, select the type of record you want to watch for.</td>
+    </tr>
+    </tr>
      <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
       <td> <p>You can set filters to watch for only records that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND rules.</p> <p>Note: You cannot edit filters in existing [!DNL Workfront] webhooks. To set up different filters for [!DNL Workfront] event subscriptions, remove the current webhook and create a new one.</p> <p>For more information on event filters, see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Event subscription filters in the [!DNL Workfront] &gt; [!UICONTROL Watch Events] modules</a> in the Workfront modules article.</p> </td> 
