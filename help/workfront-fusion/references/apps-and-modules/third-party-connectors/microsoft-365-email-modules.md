@@ -9,50 +9,48 @@ exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
 
 In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!UICONTROL Microsoft Office 365 Email], as well as connect it to multiple third-party applications and services.
 
-In order to use [!UICONTROL Office 365 Email] with [!DNL Adobe Workfront Fusion], it is necessary to have an [!UICONTROL Office 365 account]. You can create one at www.office.com.
-
-For instructions about connecting your [!UICONTROL Office 365] account to [!DNL Workfront Fusion], see [Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-
-After you grant consent, you are redirected back to the [!UICONTROL Workfront Fusion] administration page where you can continue creating your scenario.
-
 ## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -80,8 +78,6 @@ The Microsoft Office 365 Email connector uses the following:
   </tr>
  </tbody> 
  </table>
-
-
 
 ## Connecting the [!DNL Office 365 Email] service to [!DNL Workfront Fusion]
 
@@ -119,7 +115,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 #### [!UICONTROL Create and Send a Message (legacy)]
 
-Creates and sends an email message.
+This action module creates and sends an email message.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -132,10 +128,6 @@ Creates and sends an email message.
   <tr> 
    <td role="rowheader">[!UICONTROL Subject]</td> 
    <td> <p>Enter or map the subject line of the message.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Body Content Type]</td> 
-   <td>Select whether the body content of the message is HTML or Text.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
@@ -152,132 +144,49 @@ Creates and sends an email message.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
-   <td> <p>Add the email address to which you want to send the messages:</p> 
+   <td> <p>For each recipient that you want to send the email to, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
-   <td> <p>Add the recipients that you want to receive a copy of the message:</p> 
+   <td> <p><p>For each recipient that you want to send a copy of the email to, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
-   <td> <p>Add the recipients that you want to copy on the message, without allowing other recipients to see their names or email addresses:</p> 
+   <td> <p>For each recipient that you want to send a copy of the email to, without allowing other recipients to see their names or email addresses, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
-   <td> <p>Add the attachments to the email:</p> 
+   <td> <p>For each attachment that you want to add to the email, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Enter the file name. Example: <code>sample.doc</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Enter the file data to the field or map the source of the file.</p> </li> 
+     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Select a source file from a previous module, or map the source file's name and data.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Internet Message Headers]</td> 
-   <td> <p>Add the message headers for the email.</p> 
+   <td> <p>For each header that you want to add to the email, click <b>Add item</b> and enter the following:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the header</p> </li> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter a value for the header.</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter a value for the header.</p> </li> 
     </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create and Send a Message]
-
-Creates and sends an email message.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Subject]</td> 
-   <td> <p>Enter or map the subject line of the message.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Body Content Type]</td> 
-   <td>Select whether the body content of the message is HTML or Text.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td> <p>Enter or map the message body text of the email.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Importance]</td> 
-   <td> <p>Select the importance of the email</p> 
-    <ul> 
-     <li>[!UICONTROL Low]</li> 
-     <li>[!UICONTROL Normal]</li> 
-     <li>[!UICONTROL High]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
-   <td> <p>Add the email address to which you want to send the messages:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
-   <td> <p>Add the recipients that you want to receive a copy of the message:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
-   <td> <p>Add the recipients that you want to copy on the message, without allowing other recipients to see their names or email addresses:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
-   <td> <p>Add the attachments to the email:</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Enter the file name. Example: <code>sample.doc</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Enter the file data to the field or map the source of the file.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Internet Message Headers]</td> 
-   <td> <p>Add the message headers for the email.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the header</p> </li> 
-     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter a value for the header.</p> </li> 
-    </ul> </td> 
-  </tr> 
-   <td role="rowheader">[!UICONTROL From email address]</td> 
-   <td> <p> To use a shared email address, enter the address here. The user whose credentials are used in the connection used for this module must have access to the shared folder.<p>Leave this field blank to use connection owner's own email address.</p></p> </td> 
-  </tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Delete a Message]
 
-Deletes an existing email message.
+This action module deletes an existing email message.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -300,7 +209,7 @@ Deletes an existing email message.
 
 #### [!UICONTROL Get a message]
 
-Gets the metadata of a specific message
+This action module gets the metadata of a specific message
 
 <table style="table-layout:auto"> 
  <col> 
@@ -327,7 +236,7 @@ Gets the metadata of a specific message
 
 #### [!UICONTROL Move a Message]
 
-Moves an email message to a selected folder in the mailbox.
+This action module moves an email message to a selected folder in the mailbox.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -350,7 +259,7 @@ Moves an email message to a selected folder in the mailbox.
 
 #### [!UICONTROL Search messages]
 
-Searches for messages based on specific criteria.
+This search module searches for messages based on specific criteria.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -391,7 +300,7 @@ Searches for messages based on specific criteria.
 
 #### [!UICONTROL Watch Messages]
 
-Triggers when a new email message is sent or received.
+This trigger module starts a scenario when a new email message is sent or received.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -416,7 +325,7 @@ Triggers when a new email message is sent or received.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search]</td> 
-   <td>Enter your search query. For information on how to write a search query, see the [!DNL Microsoft] support article <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
+   <td>Enter your search query. The module returns messages that match this query. For information on how to write a search query, see the [!DNL Microsoft] support article <a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">Search Mail and People in [!DNL Outlook.com]</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
@@ -433,7 +342,7 @@ Triggers when a new email message is sent or received.
 
 #### [!UICONTROL Create a Draft Message] 
 
-Creates a new email message.
+This action module creates a new email message as a draft.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -453,7 +362,7 @@ Creates a new email message.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td> <p>Enter the message body text of the email.</p> </td> 
+   <td> <p>Enter or map the message body text of the email.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Importance]</td> 
@@ -466,34 +375,33 @@ Creates a new email message.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
-   <td> <p>Add the recipients to which you want to send the messages:</p> 
+   <td> <p>For each recipient that you want to send the email to, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
-   <td> <p>Add the recipients The you want to receive a copy of the message:</p> 
+   <td> <p><p>For each recipient that you want to send a copy of the email to, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>Name</strong> </p> <p>Enter the name of the contact</p> </li> 
-     <li> <p><strong>Email Address</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Bcc Recipients</p> </td> 
-   <td> <p>Add the recipients that you want to copy on the message, without allowing other recipients to see their names or email addresses:</p> 
+   <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
+   <td> <p>For each recipient that you want to send a copy of the email to, without allowing other recipients to see their names or email addresses, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
-   <td> <p>Add the attachments to the email:</p> 
+   <td> <p>For each attachment that you want to add to the email, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Enter the file name. Example: <code>sample.doc</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Enter the file data to the field or map the source of the file.</p> </li> 
+     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Select a source file from a previous module, or map the source file's name and data.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -505,7 +413,7 @@ Creates a new email message.
 
 #### [!UICONTROL Send a Draft Message]
 
-Sends an email message that is currently in draft.
+This action module sends an email message that is currently in draft.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -528,7 +436,7 @@ Sends an email message that is currently in draft.
 
 #### [!UICONTROL Update a Message]
 
-Updates an existing message.
+This action module updates an existing message.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -569,34 +477,33 @@ Updates an existing message.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
-   <td> <p>Add the email address to which you want to send the messages:</p> 
+   <td> <p>For each recipient that you want to send the email to, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
-   <td> <p>Add the recipients The you want to receive a copy of the message:</p> 
+   <td> <p><p>For each recipient that you want to send a copy of the email to, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
-   <td> <p>Add the recipients that you want to copy on the message, without allowing other recipients to see their names or email addresses:</p> 
+   <td> <p>For each recipient that you want to send a copy of the email to, without allowing other recipients to see their names or email addresses, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact</p> </li> 
      <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
-   <td> <p>Add the attachments to the email:</p> 
+   <td> <p>For each attachment that you want to add to the email, click <b>Add item</b> and enter the following:</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL File name]</strong> </p> <p>Enter the file name. Example: <code>sample.doc</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Data]</strong> </p> <p>Enter the file data to the field or map the source of the file.</p> </li> 
+     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Select a source file from a previous module, or map the source file's name and data.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -633,7 +540,7 @@ This module downloads the specified attachment.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Attachment ID]</td> 
-   <td> <p>Enter or map the ID of the attachment you want to download.</p> </td> 
+   <td> <p>Enter or map the ID of the attachment you want to download. You can locate this idea using the List Attachments module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -668,7 +575,7 @@ This module retrieves a list of attachments belonging to the specified message.
 ### Other
 
 * [[!UICONTROL Add an Attachment]](#add-an-attachment)
-<!--Create and send a message-->
+* [Create and send a message](#create-and-send-a-message)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
 
 #### [!UICONTROL Add an Attachment]
@@ -694,6 +601,82 @@ This module adds a large attachment to a message.
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p>Select a file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Create and Send a Message]
+
+This action module creates and sends an email message.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subject]</td> 
+   <td> <p>Enter or map the subject line of the message.</p> </td> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Body content]</td> 
+   <td> <p>Enter or map the message body text of the email.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Importance]</td> 
+   <td> <p>Select the importance of the email</p> 
+    <ul> 
+     <li>[!UICONTROL Low]</li> 
+     <li>[!UICONTROL Normal]</li> 
+     <li>[!UICONTROL High]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL To Recipients]</p> </td> 
+   <td> <p>For each recipient that you want to send the email to, click <b>Add item</b> and enter the following:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL CC Recipients]</p> </td> 
+   <td> <p><p>For each recipient that you want to send a copy of the email to, click <b>Add item</b> and enter the following:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Bcc Recipients]</p> </td> 
+   <td> <p>For each recipient that you want to send a copy of the email to, without allowing other recipients to see their names or email addresses, click <b>Add item</b> and enter the following:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter the email address of the contact.</p> </li> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the contact.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attachments]</p> </td> 
+   <td> <p>For each attachment that you want to add to the email, click <b>Add item</b> and enter the following:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Source file]</strong> </p> <p>Select a source file from a previous module, or map the source file's name and data.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Internet Message Headers]</td> 
+   <td> <p>Add the message headers for the email.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the name of the header</p> </li> 
+     <li> <p><strong>[!UICONTROL Email Address]</strong> </p> <p>Enter a value for the header.</p> </li> 
+    </ul> </td> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL From email address]</td> 
+   <td> <p> To use a shared email address, enter the address here. The user whose credentials are used in the connection used for this module must have access to the shared folder.<p>Leave this field blank to use connection owner's own email address.</p></p> </td> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
