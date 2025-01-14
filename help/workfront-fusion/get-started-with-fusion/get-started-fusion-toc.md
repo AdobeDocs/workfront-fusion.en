@@ -2,6 +2,7 @@
 content-type: reference
 title: 'Get started with Workfront Fusion: article index'
 description: This section contains articles related to getting started in Adobe Workfront Fusion.
+short-description: Review these areas to get an understanding of the basics of Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
