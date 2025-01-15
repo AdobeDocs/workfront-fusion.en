@@ -552,7 +552,7 @@ For more information on the [!UICONTROL [!DNL Adobe PDF Services] Generate docum
 
 >[!NOTE]
 >
->For a discussion of Microsoft Word templates, see [Microsoft Word Template modules](/help/workfront-fusion/references/apps-and-modules/microsoft-word-templates-modules.md). 
+>For a discussion of Microsoft Word templates, see [Microsoft Word Template modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md). 
 >
 >You do not need to use Microsoft Word template modules to use a Microsoft Word template with the PDF Services Generate document module.
 
