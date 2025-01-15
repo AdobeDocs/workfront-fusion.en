@@ -70,6 +70,10 @@ This action module queries a JSON object and returns an array.
    <td role="rowheader">[!UICONTROL Data] </td> 
    <td> Enter the JSON object to evaluate.  </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Stringify output] </td> 
+   <td> Enable this option to convert output to a string.  </td> 
+  </tr> 
   </tbody>
   </table>
 
