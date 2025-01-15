@@ -79,7 +79,7 @@ To create a connection for your [!DNL DocuSign] modules:
 1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box when you begin configuring the first [!DNL DocuSign] module.
 1. Enter the following:
 
-<table style="table-layout:auto">
+   <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 

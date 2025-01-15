@@ -105,6 +105,8 @@ To create a connection for your [!DNL ServiceNow] modules:
     </tbody> 
    </table>
 
+   <!--Markdown placeholder-->
+
 ## [!UICONTROL ServiceNow] modules and their fields
 
 When you configure [!DNL ServiceNow] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL ServiceNow] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
