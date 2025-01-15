@@ -74,20 +74,43 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    The options displayed depend on the possibilities of a given service. They may include the following:
 
    <table style="table-layout:auto">
-        <tr>
-            <td>[!UICONTROL From now on] (default)</td>
-            <td>Retrieves all bundles added or updated (depending on settings) after this option is selected</td>
-        </tr>
-        <tr>
-            <td>[!UICONTROL Since specific date]</td>
-            <td>Retrieves all bundles added or updated (depending on settings) after a specified date and time</td>
-        </tr>
-        <tr>
-            <td>[!UICONTROL All]</td>
-            <td>Retrieves all available bundles</td>
-        </tr>
-        <tr>
-            <td>[!UICONTROL Choose manually]</td>
-            <td>Allows you to select the first bundle from which the retrieval of bundles is to start</td>
-        </tr>
+    <col> 
+    <col> 
+    <tbody>
+    <tr>
+    <td>[!UICONTROL From now on] (default)</td>
+    <td>Retrieves all bundles added or updated (depending on settings) after this option is selected</td>
+    </tr>
+     <tr>
+    <td>[!UICONTROL Since specific date]</td>
+    <td>Retrieves all bundles added or updated (depending on settings) after a specified date and time</td>
+      </tr>
+      <tr>
+    <td>[!UICONTROL All]</td>
+    <td>Retrieves all available bundles</td>
+     </tr>
+      <tr>
+    <td>[!UICONTROL Choose manually]</td>
+    <td>Allows you to select the first bundle from which the retrieval of bundles is to start</td>
+     </tr>
+     </tbody>
    </table>
+
+
+
+   <table style="table-layout:auto">
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>Enter a name for the new [!DNL DocuSign] connection</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Account type]</td> 
+      <td>Select whether you the account you want to connect to is a production account or a demo account.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+   <!--Markdown 0032 placeholder-->

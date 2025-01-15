@@ -134,6 +134,10 @@ You can create a connection in any Adobe Journey Optimizer module.
       </tbody>
     </table>
 
+    
+
+   <!--Markdown 0032 placeholder-->
+
    
 ## [!DNL Adobe Journey Optimizer] modules and their fields
 
