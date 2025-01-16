@@ -18,21 +18,6 @@ For information on the API used for PDF Services, see [Adobe Document Generation
 
 ## Security considerations when using [!DNL Adobe PDF Services]
 
-<!--
-
-* [You do not need an [!DNL Adobe] account](#you-do-not-need-an-adobe-account) 
-* [[!DNL Workfront Fusion] does not store your files](#workfront-fusion-does-not-store-your-files)
-
-### You do not need an [!DNL Adobe] account 
-
-Because [!DNL Workfront Fusion] is part of the [!DNL Adobe] product suite, you don't need a separate [!DNL Adobe] account to use these tools. Each tool accesses [!DNL Adobe] PDF functionality without using a connection.
-
-Although [!DNL Workfront Fusion] does not require an [!DNL Adobe] account to use the PDF Services, the modules do require a connection. There are no credentials involved in this connection, and you provide only a name for the connection itself.
-
-### [!DNL Workfront Fusion] does not store your files 
-
--->
-
 The [!DNL Adobe PDF Services] can read, convert, or modify your files, but neither [!DNL Adobe] nor [!DNL Workfront Fusion] store your files or data. This means that:
 
 * You maintain control over your files, including their security
@@ -40,46 +25,50 @@ The [!DNL Adobe PDF Services] can read, convert, or modify your files, but neith
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
+
 ## Prerequisites
 
-To create an OAuth Server-to-Server, you must add the Adobe PDF Services API in your Adobe Developers Console. When adding the API, select the OAuth Server-to-Server option.
+To create an OAuth Server-to-Server connection, you must add the Adobe PDF Services API in your Adobe Developers Console. When adding the API, select the OAuth Server-to-Server option.
 
 For instructions, see [Add API to project using OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/) In the Adobe developer documentation.
 
@@ -150,6 +139,30 @@ To create a connection for your [!DNL Adobe PDF Services] modules:
             Enter any meta scopes needed for the connection.
           </td>
         </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Private key]</td>
+        <td>
+          <p>If you have selected a JWT connection, enter the private key that was generated when your credentials were created in the [!DNL Adobe Developer Console]. </p>
+          <p>To extract your private key or certificate:</p>
+          <ol>
+            <li value="1">
+              <p>Click <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Select the type of file you are extracting.</p>
+            </li>
+            <li value="3">
+              <p>Select the file that contains the private key or certificate.</p>
+            </li>
+            <li value="4">
+              <p>Enter the password for the file.</p>
+            </li>
+            <li value="5">
+              <p>Click <b>[!UICONTROL Save]</b> to extract the file and return to the connection setup.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
        </tbody>
     </table>
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
@@ -173,6 +186,7 @@ If you see the map button above a field or function, you can use it to set varia
 * [[!UICONTROL Extract Text / Table]](#extract-text--table) 
 * [[!UICONTROL Generate document]](#generate-document) 
 * [[!UICONTROL Linearize a PDF file]](#linearize-a-pdf-file) 
+* [Make a custom API call](#make-a-custom-api-call)
 * [[!UICONTROL OCR for PDF file]](#ocr-for-pdf-file) 
 * [[!UICONTROL Page manipulation]](#page-manipulation) 
 * [[!UICONTROL PDF accessibility auto-tag]](#pdf-accessibility-auto-tag)
@@ -407,12 +421,55 @@ This tool converts a PDF file to a document. You can select one of the following
      <li> <p>RTF</p> </li> 
     </ul> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Language]</td> 
+   <td> <p>Select the default language for the source document. This allows the module to select an appropriate font, if not font is included in the source file.</p> <p>Select from the following languages:</p> 
+    <ul> 
+     <li> <p>en-US (Default): English (United States of America)</p> </li> 
+     <li> <p>ca-ES: Catalan (Spain)</p> </li> 
+     <li> <p>cs-CZ: Czech (Czech Republic)</p> </li> 
+     <li> <p>da-DK: Danish (Denmark)</p> </li> 
+     <li> <p>de-DE: German (Germany)</p> </li> 
+     <li> <p>en-AE: English (United Arab Emirates)</p> </li> 
+     <li> <p>en-GB: English (United Kingdom)</p> </li> 
+     <li> <p>en-IL: English (Israel)</p> </li> 
+     <li> <p>en-US: English (United States of America)</p> </li> 
+     <li> <p>es-ES: Spanish (Spain)</p> </li> 
+     <li> <p>es-MX: Spanish (Mexico)</p> </li> 
+     <li> <p>eu-ES: Basque (Spain)</p> </li> 
+     <li> <p>fi-FI: Finnish (Finland)</p> </li> 
+     <li> <p>fr-CA: French (Canada)</p> </li> 
+     <li> <p>fr-FR: French (France)</p> </li> 
+     <li> <p>fr-MA: French (Morocco)</p> </li> 
+     <li> <p>hr-HR: Croatian (Croatia)</p> </li> 
+     <li> <p>hu-HU: Hungarian (Hungary)</p> </li> 
+     <li> <p>it-IT: Italian (Italy)</p> </li> 
+     <li> <p>ja-JP: Japanese (Japan)</p> </li> 
+     <li> <p>kr-KR: Korean (South Korea)</p> </li> 
+     <li> <p>nb-NO: Norwegian Bokmål (Norway)</p> </li> 
+     <li> <p>nl-NL: Dutch (Netherlands)</p> </li> 
+     <li> <p>pl-PL: Polish (Poland)</p> </li> 
+     <li> <p>pt-BR: Portuguese (Brazil)</p> </li> 
+     <li> <p>pt-PT: Portuguese (Portugal)</p> </li> 
+     <li> <p>ro-RO: Romanian (Romania)</p> </li> 
+     <li> <p>ru-RU: Russian (Russia)</p> </li> 
+     <li> <p>sk-SK: Slovak (Slovakia)</p> </li> 
+     <li> <p>sl-SI: Slovenian (Slovenia)</p> </li> 
+     <li> <p>sv-SE: Swedish (Sweden)</p> </li> 
+     <li> <p>tr-TR: Turkish (Turkey)</p> </li> 
+     <li> <p>uk-UA: Ukrainian (Ukraine)</p> </li> 
+     <li> <p>zh-CN: Chinese (Mainland China)</p> </li> 
+     <li> <p>zh-TW: Chinese (Taiwan)</p> </li> 
+    </ul> </td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### [!UICONTROL Convert PDF to image]
 
-This tool converts a PDF to an image in PNG or JPEG format., which is then output as a ZIP. The PDF is converted into one image per page, and each image ends with the page number. The image files are then combined into a ZIP file.
+This tool converts a PDF to an image in PNG or JPEG format., which is then output as a list or combined into a ZIP. 
+
+If output as a ZIP, the PDF is converted into one image per page, and each image ends with the page number. The image files are then combined into a ZIP file.
 
 For example, a file called "TestFile" with 8 pages would produce 8 images, named "TestFile_1" through "TestFile_8." The module's output is a ZIP file containing the 8 images.
 
@@ -438,6 +495,11 @@ For example, a file called "TestFile" with 8 pages would produce 8 images, named
      <li>JPEG</li> 
     </ul> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output type]</td> 
+   <td> <p>Select whether you want the files output as a list of files or as a ZIP file.</td> 
+  </tr> 
+  <tr> 
  </tbody> 
 </table>
 
@@ -487,13 +549,13 @@ For more information on the [!UICONTROL [!DNL Adobe PDF Services] Generate docum
 
 #### Use the [!UICONTROL Generate document] module with a [!DNL Microsoft Word] template 
 
-<!--
+
 >[!NOTE]
 >
->For a discussion of Microsoft Word templates, see [Microsoft Word Template modules](/help/workfront-fusion/references/apps-and-modules/microsoft-word-templates-modules.md). 
+>For a discussion of Microsoft Word templates, see [Microsoft Word Template modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md). 
 >
 >You do not need to use Microsoft Word template modules to use a Microsoft Word template with the PDF Services Generate document module.
--->
+
 
 To use the [!UICONTROL Generate document] module with a [!UICONTROL Microsoft Word] template, you must first create the template. For instructions, search for "Create a template" in the [!DNL Microsoft Office] documentation.
 
@@ -509,7 +571,7 @@ Fill in the [!UICONTROL Generate document] module fields as follows:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> <p>This source file is the [!DNL Microsoft Word ]template that the module uses to generate the new PDF.</p> <p>We recommend creating a project in [!DNL Workfront] for the [!DNL Microsoft Word] templates that you use in [!DNL Workfront Fusion]. You can then use the [!DNL Workfront] &gt; [!UICONTROL Download document] module to pull the appropriate template into your scenario.</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> <p>This source file is the [!DNL Microsoft Word] template that the module uses to generate the new PDF.</p> <p>We recommend creating a project in [!DNL Workfront] for the [!DNL Microsoft Word] templates that you use in [!DNL Workfront Fusion]. You can then use the [!DNL Workfront] &gt; [!UICONTROL Download document] module to pull the appropriate template into your scenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 
@@ -583,6 +645,45 @@ This tool linearizes a PDF document to create a web-optimized PDF document. A li
  </tbody> 
 </table>
 
+## Make a custom API call
+
+This action module a custom HTTP request to the PDF Services API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Select the connection to use for this module.</p> For instructions on creating a connection to [!DNL Adobe PDF Services], see <a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >Create a connection to [!DNL Adobe PDF Services]</a> in this article. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td> Enter a relative path or a URL. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion adds the authorization headers automatically.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>For each field that you want to add to the API call, click <b>Add item</b> and enter the field's key and optional value.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
 ### [!UICONTROL OCR for PDF file]
 
 This tool performs Optical Character Recognition (OCR) on a file and produces a PDF. 
@@ -602,16 +703,16 @@ This tool performs Optical Character Recognition (OCR) on a file and produces a 
    <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Language]</td> 
+   <td>Select the language of this document.<p>For language options, see <a href="#convert-document-to-pdf-file" class="MCXref xref" >Convert document to PDF file</a> in this article. </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL OCR type]</td> 
    <td> 
     <ul> 
      <li> <p>[!UICONTROL Modified original image] type ensures that text is searchable and selectable, but modifies the original image during the cleanup process (for example, deskews it) before placing an invisible text layer over it. This type removes unwanted artifacts and may result in a more readable document in some scenarios. </p> </li> 
      <li> <p>[!UICONTROL Unchanged original image] type also overlays a searchable text layer over the original image, but in this case, the original image is unchanged. This type produces maximum fidelity to the original image.</p> </li> 
     </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Language]</td> 
-   <td>Select the language of this document.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -638,7 +739,10 @@ This module allows you to selectively rotate or delete pages in a PDF document. 
    <td role="rowheader">[!UICONTROL Action]</td> 
    <td> <p>Select the action you want to perform on the file.</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL Delete]</b> </p> <p>Select this option to delete pages from the document.</p> </li> 
+     <li> <p><b>[!UICONTROL Delete]</b> </p> <p>Select this option to delete pages from the document.</p><p>For each page range you want to delete, click <strong>[!UICONTROL Add]</strong> and then enter the page range's first and last page. </p> <p>Note:   
+     <ul> 
+      <li> <p>You can use negative numbers to count back from the end of the document. The last page of a document is -1, the second to the last page is -2, and so on.</p> </li> 
+      <li> <p>To delete a single page, set the same page number as both the start and end of the range.</p></ul> </li> 
      <li> <p><b>[!UICONTROL Rotate]</b> </p> <p>Select this option to rotate pages, then enter the angle, in degrees clockwise, that you want to rotate the document pages relative to their starting orientation.</p> <p>To rotate from portrait to landscape or vice versa, rotate the page 90 or 270 degrees.</p> <p>If a page is upside down, rotate it 180 degrees.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -678,9 +782,10 @@ This action module creates a PDF that is tagged for accessibility use cases. It 
   <tr> 
    <td role="rowheader">[!UICONTROL Shift Headings]</td> 
    <td> <p>Enable this option to shift headings on the document.</p> 
-    <ul> 
-     <li> <p><b>[!UICONTROL Generate Report]</b> </p> <p>Enable this option to generate a report that lists accessibility problems in the PDF along with their location, and gives suggestions on how to fix these problems.</p> </li> 
-    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generate Report]</td> 
+   <td> <p>Enable this option to generate a report that lists accessibility problems in the PDF along with their location, and gives suggestions on how to fix these problems.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -712,7 +817,7 @@ This tool extracts basic information about the document, such as:
  </tbody> 
 </table>
 
-### [!UICONTROL Protect PDF file]
+### [!UICONTROL Protect a PDF file]
 
 This tool secures a PDF document with a user or owner password. It also sets restrictions on certain features like printing, editing, and copying in the PDF document. You select the type of content to be encrypted and the encryption algorithm.
 
@@ -734,8 +839,8 @@ This tool secures a PDF document with a user or owner password. It also sets res
    <td role="rowheader">[!UICONTROL Password Protection Type]</td> 
    <td> <p>Enable this option to use passwords to encrypt the input PDF document. If you enable this option, you must specify and enter a value for one or both of the following: </p> 
     <ul> 
-     <li> <p>[!UICONTROL userPassword]</p> </li> 
-     <li> <p>[!UICONTROL ownerPassword] </p> </li> 
+     <li> <p>[!UICONTROL User Password]</p> </li> 
+     <li> <p>[!UICONTROL Owner Password] </p> </li> 
     </ul> <p>Each password can be up to 128 characters in length.</p> </td> 
   </tr> 
   <tr> 
@@ -757,7 +862,7 @@ This tool secures a PDF document with a user or owner password. It also sets res
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Permissions]</td> 
-   <td> <p>Select any permissions you want to include to allow printing, editing, or content copying.</p> <p>Permissions settings are only used if the [!UICONTROL ownerPassword] is set in the [!UICONTROL Password Protection Type] field.</p> </td> 
+   <td> <p>Select any permissions you want to include to allow printing, editing, or content copying.</p> <p>Permissions settings are only used if the [!UICONTROL Owner Password] is set in the [!UICONTROL Password Protection Type] field.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -811,47 +916,9 @@ This action module splits a PDF document into multiple smaller documents. You sp
    <ul>
    <li><p><b>Page Ranges</b></p><p>For each page range that you want to split into a separate document, click <b>Add</b> and enter the page on which you want to start and the page on which you want to end.</p></li>
    <li><p><b>Page Count</b></p><p>Enter the number of pages that you want to include in the new documents.</p></li>
-   <li><p><b>Number of files</b></p><p>Enter the number of evenly sized files that you want to split the document into.</p></li>
+   <li><p><b>File Ccount</b></p><p>Enter the number of evenly sized files that you want to split the document into.</p></li>
    </ul>
    </td> 
-  </tr> 
- </tbody> 
-</table>
-
-## Make a custom API call
-
-This action module a custom HTTP request to the PDF Services API.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Select the connection to use for this module.</p> For instructions on creating a connection to [!DNL Adobe PDF Services], see <a href="#create-a-connection-to-adobe-pdf-services" class="MCXref xref" >Create a connection to [!DNL Adobe PDF Services]</a> in this article. </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> Enter a relative path or a URL. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion adds the authorization headers automatically.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Fields]</td> 
-   <td> <p>For each field that you want to add to the API call, click <b>Add item</b> and enter the field's key and optional value.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
   </tr> 
  </tbody> 
 </table>

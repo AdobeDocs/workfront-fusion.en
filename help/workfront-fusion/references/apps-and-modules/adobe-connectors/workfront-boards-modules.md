@@ -627,11 +627,7 @@ This action module makes a custom call to the Workfront Boards API.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Add the body content for the API call in the form of a JSON embedded Graphql </p> <p>Example:</p><p>This example updates a column name. You can include the <code>boardId</code> and <code>columnId</code> as GUIDs either hard coded or mapped from a previous module.<p><pre>{
-
-  "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"
-
-}</pre><p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+   <td> <p>Add the body content for the API call in the form of a JSON embedded Graphql </p> <p>Example:</p><p>This example updates a column name. You can include the <code>boardId</code> and <code>columnId</code> as GUIDs either hard coded or mapped from a previous module.<p><pre>{<br>  "query": "mutation { updateColumn(boardId: \"\", columnId: \"\", updateColumnInput: { name: \"\" }) { id name }}"<br>}</pre><p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

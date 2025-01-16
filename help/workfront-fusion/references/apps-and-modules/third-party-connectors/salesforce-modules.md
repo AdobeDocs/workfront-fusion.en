@@ -228,6 +228,7 @@ This trigger module starts a scenario when a field is updated in [!DNL Salesforc
 * [[!UICONTROL Custom API Call]](#custom-api-call) 
 * [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument) 
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [Upload File](#upload-file)
 
 #### [!UICONTROL Create a Record]
 
@@ -492,6 +493,41 @@ When you are configuring this module, the following fields display.
   </tr> 
  </tbody> 
 </table>
+
+#### Upload File
+
+This action module uploads a single file to Salesforce.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to[!DNL  Adobe Workfront Fusion] - Basic instructions</a></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td>Select whether to apply a content document link.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL linkedEntityId]</td> 
+   <td>If using document linking, enter or map the ID of the linked object.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ShareType]</td> 
+   <td>If using document linking, select permissions for the file.<ul><li><b>Viewer permission</b><p>The user can view the file.</p></li><li><b>Collaborator permission</b><p>The user can view and edit the file.</p></li><li><b>Inferred permissions</b><p>Permissions are based on the user's permissions to the related record, such as a library.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td>If using document linking, enter or map the document's visiblity.<ul><li><b>AllUsers</b><p>Available to all users with permissions</p></li><li><b>InternalUsers</b><p>Available to internal users with permissions.</p></li><li><b>SharedUsers</b><p>Available to users that can see the feed to which the file is posted.</p></li></ul></td> 
+  </tr> 
 
 ### Searches
 

@@ -79,9 +79,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    1. When creating a client, enter the appropriate URL in the `[!UICONTROL Redirect URL]` or `[!UICONTROL Callback URL]` field:
 
-      | Americas / APAC | https://app.workfrontfusion.com/oauth/cb/oauth2 |
+      | Americas / APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
       |---|---|
-      | EMEA | https://app-eu.workfrontfusion.com/oauth/cb/oauth2 |
+      | EMEA | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
    1. After you create the client, the given service displays 2 keys: `[!UICONTROL Client ID]` and `[!UICONTROL Client Secret]`. Some services call these `[!UICONTROL App Key]` and `[!UICONTROL App Secret]` . Save the key and secret in a secure location, so you can provide them when creating the connection in Workfront Fusion.
 

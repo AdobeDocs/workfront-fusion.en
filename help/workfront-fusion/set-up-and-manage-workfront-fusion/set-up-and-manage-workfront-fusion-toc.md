@@ -5,6 +5,7 @@ keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
 title: 'Set up and manage Workfront Fusion: article index'
 description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license in addition to an Adobe Workfront license.
+short-description: Find the information you need to configure and manage Adone Workfront Fusion for your organization.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
