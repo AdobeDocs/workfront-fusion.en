@@ -19,6 +19,8 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -26,35 +28,37 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Workfront Proof information
 
@@ -94,11 +98,11 @@ You can create a connection to your [!DNL Workfront Proof] account directly from
                 <td>Enter a name for the connection</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL connections.environmentType]</td>
+                <td  role="rowheader">[!UICONTROL Environment]</td>
                 <td>Select whether this is a Production environment, or a non-production environment such as Preview or Sandbox.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL connections.authenticationType]</td>
+                <td role="rowheader">[!UICONTROL Type]</td>
                 <td>Select whether this is a Service account or a Personal account.</td>
             </tr>
             <tr>
@@ -119,7 +123,7 @@ You can create a connection to your [!DNL Workfront Proof] account directly from
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Production, Preview, or Custom Environment]</td>
-                <td>Select a connection to a production, preview, or a custom environment.</td>
+                <td>The production, preview, or custom environment that you want to connect to.</td>
             </tr>
         </tbody>
     </table>
@@ -141,9 +145,61 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Triggers 
 
-* [Watch Proofs](#watch-proofs)
 * [Watch for PDF Summary](#watch-for-pdf-summary)
 * [[!UICONTROL Watch Proof Activity]](#watch-proof-activity)
+* [Watch Proofs](#watch-proofs)
+
+#### [!UICONTROL Watch for PDF Summary]
+
+This instant trigger module executes a scenario when someone creates a PDF summary for a proof.
+
+A webhook is required in this module.
+
+The module returns all standard fields associated with the proof, along with any custom fields and values that the connection accesses. It also creates a new event subscription for PDF summaries and outputs the content from the `pdf_url` attribute sent in the payload. You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Webhook name]</td> 
+   <td>Enter or map a name for the new webhook</td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Workfront Proof] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Proof Activity]
+
+This trigger module executes a scenario whena specified activity occurs on a proof proof.
+
+The module returns all standard fields associated with the proof, along with any custom fields and values that the connection accesses. It also creates a new event subscription for PDF summaries and outputs the content from the `pdf_url` attribute sent in the payload. You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!DNL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Workfront Proof] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Activity type]</td> 
+   <td>Select whether you want to watch any new decision (including proof status changes), or overall proof status changes only.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch Proofs]
 
@@ -167,71 +223,15 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">Record Type</td> 
-   <td>Select the type of [!DNL Workfront Proof] record that you want the module to watch.</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Outputs</td> 
-   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
+   <td>Select whether you want to watch for new proofs, or for new overall proof decisions.</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Limit</td> 
    <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch for PDF Summary]
-
-This instant trigger module executes a scenario when someone creates a PDF summary for a proof.
-
-A webhook is required in this module.
-
-The module returns all standard fields associated with the proof, along with any custom fields and values that the connection accesses. It also creates a new event subscription for PDF summaries and outputs the content from the "pdf_url" attribute sent in the payload. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront Proof] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Webhook]</td> 
-   <td>You can select an existing webhook or create a new one. For more information, see <!--<a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->" class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Proof Activity]
-
-This trigger module executes a scenario whena specified activity occurs on a proof proof.
-
-The module returns all standard fields associated with the proof, along with any custom fields and values that the connection accesses. It also creates a new event subscription for PDF summaries and outputs the content from the `pdf_url` attribute sent in the payload. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront Proof] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Activity type]</td> 
-   <td>Select whether you want to watch any new decision (including [!UICONTROL proof] status changes), or overall proof status changes only.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Items Per Page</td> 
+   <td> <p>To paginate results, enter or map the number of returned results that should appear on each page of results. This number must be less than or equal to 100.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -248,11 +248,13 @@ When you are configuring this module, the following fields display.
 
 #### [!UICONTROL Create Proof]
 
+<!--Cannot test Jan 2025-->
+
 This action module creates a new proof or a new version of a proof in [!DNL Workfront Proof].
 
-You specify the parameters for the new proof and the source proof if you are creating a new version.
+You specify the parameters for the new proof, and the source proof if you are creating a new version.
 
-The module returns the ID of the new proof or proof version.You can map this information in subsequent modules in the scenario.
+The module returns the ID of the new proof or proof version. You can map this information in subsequent modules in the scenario.
 
 When you are configuring this module, the following fields display.
 
@@ -366,7 +368,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Specify whether you want the proof that is created to require a login. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Specify whether you want the proof that is created to require a login. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Resolution ID]</td> 
@@ -394,6 +396,8 @@ When you are configuring this module, the following fields display.
   </tr> 
  </tbody> 
 </table>
+
+
 
 #### [!UICONTROL Custom API Call]
 
@@ -453,7 +457,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p>--> </td> 
+   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page.  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -551,11 +555,11 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Proof ID]</td> 
-   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page. <!--For more information, see <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/manage-proof-details.md" class="MCXref xref" data-mc-variable-override="">Manage Proof Details in [!DNL Workfront Proof]</a>.</p> --></td> 
+   <td> <p>Type the unique ID of the proof, found on the [!UICONTROL Proof Details] page. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Deadline]</td> 
-   <td> <p>Specify the deadline you want for the proof that is created. Use the following date format:</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
+   <td> <p>Specify the deadline you want for the proof that is created. Use the date format <code>YYYY-MM-DD hh:mm</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Default email notifications for subscribers]</td> 
@@ -579,7 +583,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions]</td> 
-   <td>Select whether people who are not participants are allowed to subscribe to the proof.<br>If you select this option, you can also select the [!UICONTROL Default Role] for subscribers, as described in this table.</td> 
+   <td>Select whether people who are not participants are allowed to subscribe to the proof.<br>If you select this option, you can also select an option in the [!UICONTROL Default Role] field.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Enable Subscriptions Validation]</td> 
@@ -607,7 +611,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Require login]</td> 
-   <td> <p>Specify whether you want the proof that is created to require a login. </p> <!--<p>This is the same as the [!UICONTROL Login Required] setting explained in <a href="workfront-proof/wp-work-proofsfiles/manage-your-work/configure-proof-settings.md" class="MCXref xref">[!UICONTROL Configure Proof Settings] in [!DNL Workfront Proof]</a></p>--> </td> 
+   <td> <p>Specify whether you want the proof that is created to require a login. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Show Versions Like]</td> 
@@ -712,25 +716,3 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Workflow Templates]
-
-This search module lists all available workflow templates.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!DNL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Workfront Proof] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Outputs]</td> 
-   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>Enter or map the maximum number of templates you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
