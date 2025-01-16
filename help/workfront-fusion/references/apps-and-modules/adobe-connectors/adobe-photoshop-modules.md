@@ -137,7 +137,7 @@ To create a connection for your [!DNL Adobe Photoshop] modules:
               <p>Enter the password for the file.</p>
             </li>
             <li value="5">
-              <p>Click <b>Save</b> to extract the file and return to th[!UICONTROL ]e connection setup.</p>
+              <p>Click <b>Save</b> to extract the file and return to the connection setup.</p>
             </li>
           </ol>
         </td>
