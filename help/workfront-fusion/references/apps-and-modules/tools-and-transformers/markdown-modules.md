@@ -68,7 +68,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Enable this option to convert the GitHub Flavored Markdown to HTML.</p> <p>For more information, see the Mar[!DNL ]kdown cheatsheet in the [!DNL GitHub] documentation.</p> </td> 
+   <td> <p>Enable this option to convert the GitHub Flavored Markdown to HTML.</p> <p>For more information, see the Markdown cheatsheet in the [!DNL GitHub] documentation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 

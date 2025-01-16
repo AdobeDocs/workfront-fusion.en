@@ -450,8 +450,8 @@ This search module returns all accessible records of the selected type.
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>Select or map the ID of the Model that contains the [!DNL line] items you want to retrieve.</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>Select or map the ID of the Workspace and Model ID that contain the Model lists you want to retrieve.</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>Select or map the ID of the Workspace that contains the Model calendar you want to retrieve.</p> </li> 
-       <li> <p><b>Model versions</b> </p> </li> 
-       <li> <p>Select or map [!UICONTROL ]the ID of the Model that contains the Model versions you want to retrieve.</p> </li> 
+       <li> <p><b>[!UICONTROL Model versions]</b> </p> </li> 
+       <li> <p>Select or map the ID of the Model that contains the Model versions you want to retrieve.</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>Select whether you want to choose the view by Module or by Model, then select or map the ID of the Module or Model that contains the view you want to retrieve.</p> </li> 
       </ul> 

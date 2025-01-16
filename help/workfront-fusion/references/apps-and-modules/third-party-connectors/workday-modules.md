@@ -160,7 +160,7 @@ This action module creates a single record in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xre[!DNL ]f" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
+            <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -189,7 +189,7 @@ This action module deletes a single record in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>For instructions about connecting your [!DNL Workday] account to [!DNL Workfront Fusion], see <a href="#Connect" class="MCXref xre[!DNL ]f" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
+            <td>For instructions about connecting your [!DNL Workday] account to [!DNL Workfront Fusion], see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -225,7 +225,7 @@ The module returns the a status code, along with the headers and body of the API
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>For instructions about connecting your [!DNL Workday] account to [!DNL Workfront Fusion], see <a href="#Connect" class="MCXref xre[!DNL ]f" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
+            <td>For instructions about connecting your [!DNL Workday] account to [!DNL Workfront Fusion], see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -266,8 +266,8 @@ This action module updates a single record in [!DNL Workday].
             <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xref" >[!UICONTROL Connect [!DNL Workday] to Workfront Fusion]</a></td>
         </tr>
         <tr>
-            <td  role="rowheader">Record Type</td>
-            <td>Select the type of record t[!UICONTROL ]hat you want to update.</td>
+            <td  role="rowheader">[!UICONTROL Record Type]</td>
+            <td>Select the type of record that you want to update.</td>
         </tr>
         <tr>
             <td role="rowheader">[!UICONTROL ID] </td>

@@ -100,7 +100,7 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
      </tr> 
      <tr data-mc-conditions=""> 
       <td role="rowheader">[!UICONTROL Body type]</td> 
-      <td> <p>[!UICONTROL Raw]</p> </td> [!UICONTROL ]
+      <td> <p>[!UICONTROL Raw]</p> </td>
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Content type]</td> 
