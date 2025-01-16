@@ -690,8 +690,8 @@ When you are configuring this module, the following fields display.
    <td> <p>For instructions about connecting your [!DNL Workfront Proof] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>Search for</td> 
-   <td> <p>Se[!UICONTROL ]lect the type of record you want the module to search for.</p> 
+   <td>[!UICONTROL Search for]</td> 
+   <td> <p>Select the type of record you want the module to search for.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>Enter the Proof Name of the proof you want to search for.</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>Enter the email address of the recipient you want to search for.</p> </li> 
