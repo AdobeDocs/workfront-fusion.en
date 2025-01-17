@@ -9,50 +9,54 @@ exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
 
 In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Jira Software], as well as connect it to multiple third-party applications and services.
 
+These instructions apply to both Jira Cloud and Jira Server modules.
+
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
 
-<!-- Bob Fix this compared to original -->
-
 ## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -104,10 +108,10 @@ To connect [!DNL Jira Software] to [!DNL Workfront Fusion], you must create an A
 
 #### Create an API token in [!DNL Jira] 
 
-1. Go to [https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens) and log in.
-1. Click **[!UICONTROL Create API token]**.
-1. Type a name for the token, such as *Workfront Fusion*.
-1. Copy the token using the **[!UICONTROL Copy to clipboard]** button.
+1. Create an API token in Jira.
+
+   For instructions, we recomments searching for "Create an API token" in the Jira documentation.
+1. After creating the token, copy the token to a secure location.
 
    >[!IMPORTANT]
    >
@@ -117,9 +121,11 @@ To connect [!DNL Jira Software] to [!DNL Workfront Fusion], you must create an A
 
 #### Configure the [!DNL Jira] API token in [!DNL Workfront Fusion] 
 
-1. In [!DNL Workfront Fusion], add a [!DNL Jira] module to a scenario to open the **[!UICONTROL Create a connection]** box.
+1. In any [!DNL Jira Cloud] module in [!DNL Workfront Fusion], click **[!UICONTROL Add]** next to the [!UICONTROL connection] field.
 1. Specify the following information:
 
+   * **Environment**
+   * **Type**
    * **[!UICONTROL Service URL]:** This is the base URL that you use to access your Jira account. Example: `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
    * **[!UICONTROL API token]:**&nbsp;This is the API token you created in the [Create an API token in [!DNL Jira]](#create-an-api-token-in-jira) section of this article.
@@ -128,11 +134,7 @@ To connect [!DNL Jira Software] to [!DNL Workfront Fusion], you must create an A
 
 ### Connect [!DNL Jira Server] to [!DNL Workfront Fusion]
 
-<!--
-<p style="color: #ff1493;">Becky: Find out and document how to find these things</p>
--->
-
-To authorize a connection between [!DNL Workfront Fusion] and [!DNL Jira Server], you need your Consumer Key, Private Key, And Service URL. You might need to contact your [!DNL Jira] administrator for this information.
+To authorize a connection between [!DNL Workfront Fusion] and [!DNL Jira Server], you need your Consumer Key, Private Key, And Service URL. You may need to contact your [!DNL Jira] administrator for this information.
 
 * [Generate Public and Private keys for your [!DNL Jira] connection](#generate-public-and-private-keys-for-your-jira-connection)
 * [Configure the client app as a consumer in [!DNL Jira]](#configure-the-client-app-as-a-consumer-in-jira)
@@ -154,8 +156,7 @@ To acquire a private key for your [!DNL Workfront Fusion Jira] connection, you n
 
    * `openssl pkcs8 -topk8 -nocrypt -in jira_privatekey.pem -out jira_privatekey.pcks8`
 
-      This command extracts the private key (PKCS8 format) to the `jira_privatekey.pcks8`
-file.
+      This command extracts the private key (PKCS8 format) to the `jira_privatekey.pcks8` file.
 
    * `openssl x509 -pubkey -noout -in jira_publickey.cer  > jira_publickey.pem`
 
@@ -163,13 +164,13 @@ file.
 
       >[!NOTE]
       >
-      >If you are using Windows, you might need to save the public key to the `jira_publickey.pem` file manually:
+      >If you are using Windows, you may need to save the public key to the `jira_publickey.pem` file manually:
       >
       >1. In your terminal, run the following command:
       >   
       >   `openssl x509 -pubkey -noout -in jira_publickey.cer`
       >   
-      >1. Copy the terminal output (including `-------BEGIN PUBLIC KEY--------` and `-------END PUBLIC KEY--------`
+      >1. Copy the terminal output, including `-------BEGIN PUBLIC KEY--------` and `-------END PUBLIC KEY--------`.
       >   
       >1. Paste the terminal output into a file named `jira_publickey.pem`.
 
@@ -245,6 +246,14 @@ file.
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>Enter a name for the connection</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td> <p>Select whther you are using a production or non-production environment.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td> <p>Select whether you are using a service account or a personal account.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Consumer Key]</td> 
@@ -334,7 +343,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>Add an Issue ID or Key for each issue you want to add to the sprint.</td> 
+   <td>For each issue or key that you want to see the experience, click <b>[!UICONTROL Add item]</b> and enter the issue ID or key. You can enter up to 50 in one module.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -357,7 +366,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>Select the type of record you want the module to create. When you select a record type, other fields specific to that record type appear in the module.</p> 
+   <td> <p>Select the type of record you want the module to create, then fill in the other fields specific to that record type appear in the module.</p> 
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
@@ -372,7 +381,7 @@ When you are configuring this module, the following fields display.
 
 #### [!UICONTROL Custom API Call]
 
-This action module lets you make a custom authenticated call to the [!DNL Jira Software] API. This way, you can create a data flow automation that can't be accomplished by the other [!DNL Jira Software] modules.
+This action module lets you make a custom authenticated call to the [!DNL Jira Software] API. Use this module to create a data flow automation that can't be accomplished by the other [!DNL Jira Software] modules.
 
 When you are configuring this module, the following fields display.
 
@@ -410,7 +419,7 @@ When you are configuring this module, the following fields display.
 
 #### [!UICONTROL Delete a record]
 
-This action module deletes a particular record.
+This action module deletes the specified record.
 
 You specify the ID of the record.
 
@@ -536,7 +545,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID or Key]</td> 
-   <td>Enter or map the ID or Key of the record you want to update.</td> 
+   <td>Enter or map the ID or Key of the record you want to update, then fill in the other fields specific to that record type appear in the module..</td> 
   </tr> 
  </tbody> 
 </table>
