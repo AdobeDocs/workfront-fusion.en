@@ -21,15 +21,26 @@ To handle larger files, your scenarios must be updated.
 
 ## Connectors that support large files
 
-For the initial release, the following connectors support large files. 
+Currently, the following connectors support large files. 
 
-* Workfront > Upload document
-* Adobe Experience Manager Assets > Upload document
-* Workfront Proof > Upload File
-* Adobe Authenticator > Make a Custom API Call
-* SharePoint > Create a file and SharePoint > Get a file
-* Salesforce > Upload File
-* AWS S3 > Upload File and AWS S3 > Get File
+* Workfront
+   * Upload Document
+   * Download Document
+* Adobe Experience Manager Assets
+   * Upload document
+* Workfront Proof
+   * Upload File
+   * Download Proof
+* Adobe Authenticator
+   * Make a Custom API Call
+* SharePoint
+   * Create a file
+   * Get a file
+* Salesforce
+   * Upload File
+* AWS S3
+   * Upload File
+   * Get File
 * HTTP
 
 Other connectors will be supported in future releases.
@@ -68,7 +79,7 @@ No, the number of operations executed by a module are the same.
 
 ### When will Fusion's UI be updated to display file transfer data? 
 
-We are actively working on updates to Fusion's UI for file transfer on the dashboard and scenario execution detail page, with a targeted release in Q1 2025. 
+This feature has already been completed and deployed to production. 
 
 ### What are some ways to think about the new file processing limits that will help me design scenarios?  
 
