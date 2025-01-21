@@ -58,9 +58,9 @@ Before you can use the [!DNL Adobe Firefly] connector, you must ensure that the 
 
 * You must have an active [!DNL Adobe Firefly] account.
 
-## Adobe Campaign API information
+## Adobe Firefly API information
 
-The Adobe Campaign connector uses the following:
+The Adobe Firefly connector uses the following:
 
 <table style="table-layout:auto"> 
  <col> 
@@ -103,11 +103,11 @@ To create a connection for your [!DNL Adobe Firefly] modules:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Enter your [!UICONTROL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
+        <td>Enter your [!UICONTROL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
+        <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console].</td>
         </tr>
       </tbody>
     </table>
