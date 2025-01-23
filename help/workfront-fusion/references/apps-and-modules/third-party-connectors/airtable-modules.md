@@ -441,7 +441,7 @@ The webhook URL needs to be generated in Workfront Fusion and then added to form
 1. Add the Watch New Responses module to your Workfront Fusion scenario.
 1. Generate and copy the webhook URL.
 
-   <!--For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
+   <!--For instructions, see [ (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
 
 1. Log in to your Airtable account.
 1. Open the Base and the table you want to use for the form and create a Form view.
@@ -480,7 +480,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">Method</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Headers</td> 
