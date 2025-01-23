@@ -30,44 +30,48 @@ For more information on OAuth 2.0 authentication, see [The OAuth 2.0 Authorizati
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto">  
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!UICONTROL Pro] or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## Creating a connection for an [!DNL OAuth] request 
++++
+
+## Create a connection for an [!DNL OAuth] request 
 
 * [General instructions for creating a connection in the HTTP > Make an OAuth 2.0 request module](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
 * [Instructions for creating a connection to Google in the HTTP >[!UICONTROL Make] an OAuth 2.0 request module](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
@@ -81,9 +85,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
       | Americas / APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
       |---|---|
-      | EMEA | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
+      | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
-   1. After you create the client, the given service displays 2 keys: `[!UICONTROL Client ID]` and `[!UICONTROL Client Secret]`. Some services call these `[!UICONTROL App Key]` and `[!UICONTROL App Secret]` . Save the key and secret in a secure location, so you can provide them when creating the connection in Workfront Fusion.
+   1. After you create the client, the given service displays 2 keys: `[!UICONTROL Client ID]` and `[!UICONTROL Client Secret]`. Some services call these `[!UICONTROL App Key]` and `[!UICONTROL App Secret]`. Save the key and secret in a secure location, so you can provide them when creating the connection in Workfront Fusion.
 
 1. Find the `[!UICONTROL Authorize URI]` and `[!UICONTROL Token URI]` in the API documentation of the given service. These are URL addresses through which [!DNL Workfront Fusion] communicates with the [!DNL target] service. The addresses serve for OAuth authorization.
 
@@ -91,20 +95,22 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >
    >If the service uses Implicit flow, you will need only the `[!UICONTROL Authorize URI]`.
 
-   >[!INFO]
-   >
-   >**Example:** Yahoo addresses:
-   >
-   >* Authorize URI:
-   >
-   >`https://api.login.yahoo.com/oauth2/request_auth`
-   >
-   >* Token URI:
-   >
-   >`https://api.login.yahoo.com/oauth2/get_token`
+   >[!BEGINSHADEBOX]
+   
+   **Example:** Yahoo addresses:
+   
+   * Authorize URI:
+   
+     `https://api.login.yahoo.com/oauth2/request_auth`
+   
+   * Token URI:
+   
+      `https://api.login.yahoo.com/oauth2/get_token`
+
+   >[!ENDSHADEBOX]
 
 1. (Conditional) If the target service uses scopes (access rights), check how the service separates individual scopes and make sure you set the separator in the advanced settings accordingly. If the separator is not set correctly, [!DNL Workfront Fusion] fails to create the connection, and you receive an invalid scope error.
-1. After you complete the steps above, you can start to create the OAuth connection in [!DNL Workfront Fusion]. Add the OAuth 2.0 HTTP(S) request and response processing module to your scenario.
+1. After you complete the steps above, you can start to create the OAuth connection in [!DNL Workfront Fusion]. Add the HTTP > Make an OAuth 2 request module to your scenario.
 1. In the module's Connection field, click **[!UICONTROL Add]**.
 
 1. Fill in the following fields to create a connection:
@@ -116,6 +122,14 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name] </td> 
       <td> <p>Enter the name of the connection.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td> <p>Select whether you are using a production or non-production environment.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td> <p>Select whether you are using a service account or a personal account.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
@@ -218,15 +232,15 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
     </tbody> 
    </table>
 
-1. Click **[!UICONTROL Continue]** to save connection settings.
-1. Continue to [OAuth 2.0 request module setup](#oauth-20-request-module-setup).
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+1. Continue to [Configure the Make an OAuth 2.0 request module](#configure-the-make-an-oauth-20-request-module).
 
 ### Instructions for creating a connection to [!DNL Google] in the [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]  
 
 The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] request module to connect to [!DNL Google].
 
-1. Ensure that you have created a project, configured OAuth settings, and generated your credentials as described in [Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
-1. Open the [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request] module.
+1. Ensure that you have created a project, configured OAuth settings, and generated your credentials as described in the article[Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
+1. Open the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module.
 1. Click **[!UICONTROL Add]** next to the connection box.
 1. Enter the following values:
 
@@ -236,7 +250,15 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name] </td> 
-      <td> <p>Enter the name of the connection.</p> </td> 
+      <td> <p>Enter a name for the connection.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td> <p>Select whether you are using a production or non-production environment.</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td> <p>Select whether you are using a service account or a personal account.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
@@ -260,11 +282,11 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client ID] </td> 
-      <td> <p>Enter your [!DNL Google] Client ID. </p> <p>To create a client ID, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Create OAuth Credentials</a> in <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client</a>.</p> </td> 
+      <td> <p>Enter your [!DNL Google] Client ID. </p> <p>To create a client ID, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Create OAuth Credentials</a> in the article [!DNL Connect Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client</a>.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client Secret]</td> 
-      <td> <p>Enter your [!DNL Google] Client Secret. </p> <p>To create a client secret, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">Create OAuth Credentials</a> in <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion] to [!DNL Google] Services using a custom OAuth client</a>.</p> </td> 
+      <td> <p>Enter your [!DNL Google] Client Secret. </p> <p>To create a client secret, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">Create OAuth Credentials</a> in the article [!DNL Connect Adobe Workfront Fusion] to [!DNL Google] Services using a custom OAuth client</a>.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
@@ -274,23 +296,17 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
    </table>
 
 1. Click **[!UICONTROL Continue]** to save connection settings.
-1. Continue to [OAuth 2.0 request module setup](#oauth-20-request-module-setup).
+1. Continue to [Configure the Make an OAuth 2.0 request module](#configure-the-make-an-oauth-20-request-module).
 
-<!--### Instructions for connecting to [!DNL Microsoft Graph API] via the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module 
+## Configure the Make an OAuth 2.0 request module  
 
-For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Graph REST API] via the [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md).-->
+After you have established an OAuth 2.0 connection, continue setting up the module as desired. All authorization tokens are automatically included in this request, and in any other request that uses the same connection.
 
-## OAuth 2.0 request module setup 
-
-When you have established an [!DNL Oauth 2].0 connection as described in [Creating a connection for an [!DNL OAuth] request](#creating-a-connection-for-an-oauth-request), continue setting up the module as desired. All authorization tokens are automatically included in this request, and in any other request that uses the same connection.
-
-When you configure the [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request] module, [!DNL Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
+When you configure the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module, [!DNL Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-<!--
-<img src="" style="width: 350;height: 74;">
--->
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto">  
  <col> 
@@ -298,11 +314,11 @@ If you see the map button above a field or function, you can use it to set varia
  <tbody> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For information on setting up a connection, see <a href="#creating-a-connection-for-an-oauth-request" class="MCXref xref">Creating a connection for an OAuth request</a> in this article.</p> </td> 
+   <td> <p>For information on setting up a connection, see <a href="#create-a-connection-for-an-oauth-request" class="MCXref xref">Create a connection for an OAuth request</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx]) </td> 
-   <td> <p>Use this option to set up error handling.</p> <p>For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Error handling in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
+   <td> <p>Use this option to set up error handling.</p> <p>For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">Error handling</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -310,7 +326,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
@@ -334,7 +350,7 @@ If you see the map button above a field or function, you can use it to set varia
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>The [!UICONTROL Multipart/form-data] is an HTTP multipart request used to send files and data. It is commonly used to upload files to the server.</p> <p>Add fields to be sent in the request. Each field must contain a key-value pair.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Enter the key and value to be sent within the request body.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] >[!UICONTROL Get a File] or [!UICONTROL Google Drive] >[!UICONTROL Download a File)], or enter the file name and file data manually.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] >[!UICONTROL Get a File]), or enter the file name and file data manually.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -352,7 +368,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Upload your certificate if you want to use TLS using your self-signed certificate.</p> </td> 
+   <td> <p>To use a self-signed certificate or private key for TLS, click <b>Extract</b> and provide the certificate or private key's file and password.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
