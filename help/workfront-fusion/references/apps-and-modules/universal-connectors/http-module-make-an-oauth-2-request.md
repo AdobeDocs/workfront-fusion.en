@@ -95,20 +95,6 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >
    >If the service uses Implicit flow, you will need only the `[!UICONTROL Authorize URI]`.
 
-   >[!BEGINSHADEBOX]
-   
-   **Example:** Yahoo addresses:
-   
-   * Authorize URI:
-   
-     `https://api.login.yahoo.com/oauth2/request_auth`
-   
-   * Token URI:
-   
-      `https://api.login.yahoo.com/oauth2/get_token`
-
-   >[!ENDSHADEBOX]
-
 1. (Conditional) If the target service uses scopes (access rights), check how the service separates individual scopes and make sure you set the separator in the advanced settings accordingly. If the separator is not set correctly, [!DNL Workfront Fusion] fails to create the connection, and you receive an invalid scope error.
 1. After you complete the steps above, you can start to create the OAuth connection in [!DNL Workfront Fusion]. Add the HTTP > Make an OAuth 2 request module to your scenario.
 1. In the module's Connection field, click **[!UICONTROL Add]**.
