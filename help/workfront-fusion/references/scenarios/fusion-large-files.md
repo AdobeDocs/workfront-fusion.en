@@ -9,15 +9,11 @@ exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
 
 >[!IMPORTANT]
 >
->Large file capability is available only to Workfront Ultimate customers, and is a phased rollout. All Fusion organizations with a Workfront Ultimate plan will have large file capability by January 2025.
+>Large file capability is available only to organizations on the Workfront Ultimate package.
 
 Enhanced data transfer capabilities are now available in Workfront Fusion, enabling scenarios to process significantly larger files. 
 
 To handle larger files, your scenarios must be updated.  
-
->[!NOTE]
->
->This functionality is available only to users on the Ultimate Workfront package.
 
 ## Connectors that support large files
 
