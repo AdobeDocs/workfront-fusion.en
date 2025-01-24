@@ -80,7 +80,7 @@ The Salesforce connector uses the following:
   </tr> 
   <tr> 
    <td role="rowheader">API version</td> 
-   <td> v46.0 </td> 
+   <td> v62.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API tag</td> 
@@ -98,6 +98,60 @@ When searching for objects, you can either enter individual search words or crea
 * Use the quotation marks operator (" ") to find an exact phrase match. For example: "Monday meeting"
 
 For more information about search possibilities, see the [!DNL Salesforce] developer documentation about SOQL and SOSL.
+
+## Create a connection to [!DNL Salesforce]
+
+To create a connection for your [!DNL Salesforce] modules:
+
+1. In any [!DNL Salesforce] module, click **[!UICONTROL Add]** next to the Connection box.
+
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Enter a name for the new connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>Select whether are connecting to a production or non-production environment.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>Select whether you are connecting to a service account or a personal account.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Enter your Salesforce Client ID.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Enter your Salesforce Client secret. </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td>Enable this option if this is a Sandbox environment.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td>Enter the version of the Salesforce API that you want to use. The default version is 62.0.</td>
+      </tr>
+    </tbody>
+    </table>
+
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+
 
 ## [!DNL Salesforce] modules and their fields
 
