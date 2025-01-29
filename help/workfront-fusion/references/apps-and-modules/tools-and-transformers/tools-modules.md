@@ -73,7 +73,7 @@ You can use this module, for example, for contacts or any other list that is sch
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>Create custom bundles by adding array items. The array consists of the name - value pairs.</p> </td> 
+   <td> <p>Create custom bundles by adding array items. For each item you want to add to the bundle, click <b>Add item</b> and enter the item's name and value.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -96,11 +96,7 @@ This module can read variables that were set anywhere in the scenario, even if t
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>Add the variables that you want the module to get.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>For each variable you add, map the name of the variable you want to get.</td>
+        <td>For each variable that you want the module to get, click <b>Add item</b> and enter the variable name.</td>
     </tr>
 </table>
 
