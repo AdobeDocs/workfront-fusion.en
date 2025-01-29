@@ -73,7 +73,7 @@ You can use this module, for example, for contacts or any other list that is sch
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>Create custom bundles by adding array items. The array consists of the name - value pairs.</p> </td> 
+   <td> <p>Create custom bundles by adding array items. For each item you want to add to the bundle, click <b>Add item</b> and enter the item's name and value.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -91,32 +91,30 @@ You can use this module, for example, for contacts or any other list that is sch
 
 This module retrieves values that were previously created by the [!UICONTROL Set Variable] or [!UICONTROL Set Multiple Variables] module.
 
-This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Multiple Variables] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] module. For more information on the order in which modules are executed, see [Router module in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Multiple Variables] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variable] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Multiple Variables] module. For more information on the order in which modules are executed, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>Add the variables that you want the module to get.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>For each variable you add, map the name of the variable you want to get.</td>
+        <td>For each variable that you want the module to get, click <b>Add item</b> and enter the name of the variable.</td>
     </tr>
 </table>
 
->[!INFO]
->
->**Examples:**  The following are possible uses of the [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] modules:
->
->* To store a calculated value for later use, even in a different route. This is useful in cases when the value is used in multiple modules and the formula to calculate the value is overly complex.
->* To debug a formula. If a formula used in a module does not seemingly provide a correct result, copy the formula and paste it into a [!UICONTROL Set Variable] module that you insert before the relevant module. Disconnect the module(s) after the [!UICONTROL Set Variable] module and execute the scenario. Verify the [!UICONTROL Set Variable] module's output, adjust or simplify the formula, execute the scenario again, and continue to do so until the issue has been resolved.
+>[!BEGINSHADEBOX]
+
+**Examples:**  The following are possible uses of the [!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)] modules:
+
+* To store a calculated value for later use, even in a different route. This is useful in cases when the value is used in multiple modules and the formula to calculate the value is overly complex.
+* To debug a formula. If a formula used in a module does not seemingly provide a correct result, copy the formula and paste it into a [!UICONTROL Set Variable] module that you insert before the relevant module. Disconnect the module(s) after the [!UICONTROL Set Variable] module and execute the scenario. Verify the [!UICONTROL Set Variable] module's output, adjust or simplify the formula, execute the scenario again, and continue to do so until the issue has been resolved.
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 This module retrieves a value that was previously created by the [!UICONTROL Set Variable] or [!UICONTROL Set Multiple Variables] module.
 
-This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Variable] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Variable] module. For more information on the order in which modules are executed, see [Router module in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
+This module can read variables that were set anywhere in the scenario, even if the variable was set in a different route than where the [!UICONTROL Get Variable] module is located. The only requirement is that the [!UICONTROL Tools] > [!UICONTROL Set Variable] or [!UICONTROL Tools] > [!UICONTROL Set Multiple Variables] module is executed before the [!UICONTROL Tools] > [!UICONTROL Get Variable] module. For more information on the order in which modules are executed, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -131,7 +129,7 @@ This module can read variables that were set anywhere in the scenario, even if t
 
 #### [!UICONTROL Increment function]
 
-This module returns a value incremented by 1 after each module's operation.
+This module returns a value incremented by 1 after each cycle or each scenario run.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -139,7 +137,7 @@ This module returns a value incremented by 1 after each module's operation.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>Select when you want the module to increment the value. </p> 
+   <td> <p>Select when you want the module to reset the value. This is when you want the value to start over at the first value.</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -149,27 +147,30 @@ This module returns a value incremented by 1 after each module's operation.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Example:**
->
->One of the module's uses is to implement a "round robin" assignment of tasks, leads, emails, and so on, to users in a group. The algorithm chooses the assignees from a group in some rational order, usually going from the top to the bottom of a list. When the algorithm reaches the end of the list, it would then give the next assignment to the user at the top of the list and continue to make assignments down the list.
->
->The following scenario sends an email to the first recipient after every odd-numbered scenario run, and to the second recipient after every even-numbered scenario run.
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. To create this scenario:
->1. Set the module's **[!UICONTROL Reset a value]** field to Never.
->1. Set the route for odd values. Set the filter for this route using the modulus math function that equals `1`:
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **Note**: Do not forget to change the [!UICONTROL Equal to] operator from the default [!UICONTROL Text] operator to the [!UICONTROL Numeric] operator.
->
->1. Set the route for even values using the modulus math function that equals `0`:
->
->The increment function adds one every time the scenario runs. The filters check the increment and act on its value, ensuring that the emails are evenly distributed.
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+This module can be used to implement a "round robin" assignment of tasks, leads, emails, and so on, to users in a group. The algorithm chooses the assignees from a group in some rational order, usually going from the top to the bottom of a list. When the algorithm reaches the end of the list, it would then give the next assignment to the user at the top of the list and continue to make assignments down the list.
+
+The following scenario sends an email to the first recipient after every odd-numbered scenario run, and to the second recipient after every even-numbered scenario run.
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+To create this scenario:
+
+1. Set the module's **[!UICONTROL Reset a value]** field to Never.
+1. Set the route for odd values. Set the filter for this route using the modulus math function that equals `1`:
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+  **Note**: Do not forget to change the [!UICONTROL Equal to] operator from the default [!UICONTROL Text] operator to the [!UICONTROL Numeric] operator.
+
+1. Set the route for even values using the modulus math function that equals `0`:
+
+The increment function adds one every time the scenario runs. The filters check the increment and act on its value, ensuring that the emails are evenly distributed.
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -181,21 +182,13 @@ This module creates variables that can be mapped by other modules in the route. 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>Add the variables that you want the module to set.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>For each variable, enter the variable name. This name will be displayed when mapping the variable in other modules. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>For each variable, enter the value for the variable. </td> 
+   <td>For each variable that you want to add, click <b>Add item</b> and enter the variable's name and value.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>Select how long you want the variables to remain valid (keep the same value).</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>: The variable is valid for one cycle. Useful when multiple webhooks in one scenario run are received (more webhooks = more cycles). </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>: The variable is valid for one cycle. This is useful when multiple webhooks in one scenario run are received, because more webhooks create more cycles. </li> 
      <li><strong>[!UICONTROL One execution]</strong>: The variable is valid for one scenario execution. One execution can contain one or more cycles.</li> 
     </ul> </td> 
   </tr> 
@@ -248,7 +241,7 @@ This function can be useful, for example, if you want to lower the [!DNL target]
 
 >[!TIP]
 >
->If you want to pause the flow for longer periods of time, we suggest to split your scenario into two scenarios:
+>If you want to pause the flow for longer periods of time, we recommend that you split your scenario into two scenarios:
 >
 >* The first scenario would contain the part before the pause.
 >* The second scenario would contain the part after it.
@@ -352,19 +345,21 @@ This module merges values from the selected fields of received bundles into a si
    <td> <p>Define an expression containing one or more mapped items. The aggregated data is separated under Groups with the same expression's value. Each Group outputs as a separate bundle containing a Key with the evaluated expression and the aggregated text. By doing this, you can use the Key as a filter in subsequent modules.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> Enter or map the text that you want the module to aggregate.</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>Select this option to stop the scenario when there are no results.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> Enter or map the text that you want the module to aggregate.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Example:** You can use the text aggregator to insert more values (for example, customer names or notes)into a single bundle and send an email containing all the values in the email body or the email subject.
+>[!BEGINSHADEBOX]
+
+**Example:** You can use the text aggregator to insert more values (for example, customer names or notes)into a single bundle and send an email containing all the values in the email body or the email subject.
+
+>[!ENDSHADEBOX]
 
 ### Transformers
 
@@ -374,7 +369,7 @@ This module merges values from the selected fields of received bundles into a si
 
 #### [!UICONTROL Compose a string]
 
-Converts any value to a string data type (text). It makes the mapping easier when mapping, for example, binary data.
+Converts any value to a string data type (text). This makes mapping easier when mapping, for example, binary data.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -437,7 +432,7 @@ Checks the input value for a match with the provided list of values. Returns out
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>If the input contains a value entered to the [!UICONTROL Pattern] field, then the value entered to the [!UICONTROL Output] field is returned.</p> <p>If the input does not match any of the values that you have set in a [!UICONTROL Pattern] field, then one of the following occurs:</p> 
+   <td> For each case you want to add, click <b>Add item</b> and enter the item's pattern and output. <p>If the input contains a value entered to the [!UICONTROL Pattern] field, then the value entered to the [!UICONTROL Output] field is returned.</p> <p>If the input does not match any of the values that you have set in a [!UICONTROL Pattern] field, then one of the following occurs:</p> 
     <ul> 
      <li>The value from the [!UICONTROL Else] field is returned</li> 
      <li>If there is no value in the [!UICONTROL Else] field, no output is returned.</li> 
