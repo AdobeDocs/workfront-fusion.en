@@ -15,6 +15,8 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -22,35 +24,37 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -98,6 +102,7 @@ The Azure DevOps connector uses the following:
         </tr>
     </table>
 
+1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
 1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.
 
 ## [!UICONTROL Azure DevOps] modules and their fields
@@ -128,7 +133,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Select or add a webhook for the module.</p> <!--<p>For more information on webhooks in trigger modules, see <a href="For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/)." class="MCXref xref">Instant triggers (webhooks) in [!DNL Adobe Workfront Fusion]</a>.</p> <p>For information on how to create a webhook, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.--></p> </td> 
+   <td> <p>Select or add a webhook for the module.</p> <p>For more information on webhooks in trigger modules, see <a href="/help/workfront-fusion/references/modules/webhooks-reference.md" class="MCXref xref">Instant triggers (webhooks)</a>.</p> <p>For information on how to create a webhook, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md" class="MCXref xref">Webhooks</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -142,6 +147,43 @@ When you are configuring this module, the following fields display.
 * [Read record](#read-record)
 * [Update a work item](#update-a-work-item)
 * [[!UICONTROL Upload an attachment]](#upload-an-attachment)
+
+#### [!UICONTROL Create a record] 
+
+This action module creates a new project or work item.
+
+The module outputs the object ID for the newly created work item, or the URL and status code of a newly created project.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Azure DevOps] account to [!DNL Workfront Fusion], see <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connect [!DNL Azure DevOps] to [!UICONTROL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td> <p>Select whether you want to create a work item or a project.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>Fill in the following fields:</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Name]</strong>: Enter or map a name for the new project.</p> </li> 
+       <li> <p><strong>[!UICONTROL Description]</strong>: Enter or map a description for the new project. </p> </li> 
+       <li> <p><strong>[!UICONTROL Visibility]</strong>: Select whether you want your project to be public or private. Users must be signed into your organization and must have been granted access to the project in order to interact with a private project. Public projects are visible to users who are not signed in to your organization.</p> </li> 
+       <li> <p><strong>[!UICONTROL Version control]</strong>: Select whether you want the project to use [!DNL Git] or [!UICONTROL Team Foundation Version Control (TFCV)] for version control.</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item process]</strong>: Select the work process that you want to use for the project. Options are [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)], and [!UICONTROL Agile].</p> <p>For more information on [!DNL Azure DevOps] processes, see <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Default processes and process templates</a> in the [!DNL Azure DevOps] Documentation.</p> </li> 
+      </ul> </li> 
+     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Fill in the following fields:</p> 
+      <ul> 
+       <li> <p><strong>[!UICONTROL Project]</strong>: Select the project where you want to create the work item.</p> </li> 
+       <li> <p><strong>[!UICONTROL Work item type]</strong>: Select the type of work item you want to create.</p> </li> 
+       <li> <p><strong>[!UICONTROL Other fields]</strong>: In these fields, enter the value that you want the work item to have for a given property. Available fields depend on the work item type.</p> </li> 
+      </ul> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call] 
 
@@ -163,7 +205,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Relative URL]</td> 
-   <td> <p>Enter the relative URL that you want to connect to for this API call.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
+   <td> <p>Enter the relative URL that you want to connect to for this API call.</p> <p><b>Example: </b><code>{organization}/_apis[/{area}]/{resource}</code> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
@@ -187,43 +229,6 @@ When you are configuring this module, the following fields display.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a record] 
-
-This action module creates a new project or work item.
-
-The module outputs the object ID for the newly created work item, or the URL and status code of a newly created project.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure DevOps] account to [!DNL Workfront Fusion], see <a href="#connect-azure-devops-to-workfront-fusion" class="MCXref xref">Connect [!DNL Azure DevOps] to [!UICONTROL Workfront Fusion]</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
-   <td> <p>Select whether you want to create a work item or a project.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Project]</strong> </p> <p>Fill in the following fields:</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Name]</strong>:Enter or map a name for the new project.</p> </li> 
-       <li> <p><strong>[!UICONTROL Description]</strong>:Enter or map a description for the new project. </p> </li> 
-       <li> <p><strong>[!UICONTROL Visibility]</strong>: Select whether you want your project to be public or private. Users must be signed into your organization and must have been granted access to the project in order to interact with a private project. Public projects are visible to users who are not signed in to your organization.</p> </li> 
-       <li> <p><strong>[!UICONTROL Version control]</strong>: Select whether you want the project to use [!DNL Git] or [!UICONTROL Team Foundation Version Control (TFCV)] for version control.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item process]</strong>: Select the work process that you want to use for the project. Options are [!UICONTROL Basic], [!UICONTROL Scrum], [!UICONTROL Capability Maturity Model Integration (CMMI)], and [!UICONTROL Agile].</p> <p>For more information on [!DNL Azure DevOps] processes, see <a href="https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&amp;tabs=basic-process">Choose a Process</a> in the [!DNL Azure DevOps] Documentation.</p> </li> 
-      </ul> </li> 
-     <li> <p><strong>[!UICONTROL Work item]</strong> </p> <p>Fill in the following fields:</p> 
-      <ul> 
-       <li> <p><strong>[!UICONTROL Project]</strong>: Select the project where you want to create the work item.</p> </li> 
-       <li> <p><strong>[!UICONTROL Work item type]</strong>: Select the type of work item you want to create.</p> </li> 
-       <li> <p><strong>[!UICONTROL Other fields]</strong>:In these fields, enter the value that you want the work item to have for a given property. Available fields depend on the work item type.</p> </li> 
-      </ul> </li> 
-    </ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -253,10 +258,6 @@ The module returns the file content of the attachment.
 
 This action module links two work items and defines the relationship between them.
 
-The module returns the ID of the main work item and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -275,7 +276,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Link Type]</td> 
-   <td> <p>Define the relationship between the work items that you want to link.</p> <p>For more information, see <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Link Type Reference</a> in the [!UICONTROL Azure DevOps] Documentation.</p> </td> 
+   <td> <p>Define the relationship between the work items that you want to link.</p> <p>For more information, see <a href="https://docs.microsoft.com/en-us/azure/devops/boards/queries/link-type-reference?view=azure-devops">Reference guide for link types</a> in the [!UICONTROL Azure DevOps] Documentation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment]</td> 
@@ -306,7 +307,7 @@ When you are configuring this module, the following fields display.
    <td role="rowheader">[!UICONTROL Record type]</td> 
    <td> <p>Select whether you want to read a project or a work item</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Project]</strong>: Select the project that you want to read..</p> </li> 
+     <li> <p><strong>[!UICONTROL Project]</strong>: Select the project that you want to read.</p> </li> 
      <li> <p><strong>[!UICONTROL Work item]</strong>: Select the project that contains the work item you want to read, then select the work item type.</p> </li> 
     </ul> </td> 
   </tr> 
