@@ -83,7 +83,7 @@ The SharePoint connector uses the following:
  </tbody> 
  </table>
 
-## Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] {"#connect-microsoft-sharepoint-online-to-workfront-fusion}
+## Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] {#connect-microsoft-sharepoint-online-to-workfront-fusion}
 
 * [Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using a [!DNL Microsoft] account](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using advanced settings](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
@@ -243,7 +243,7 @@ This trigger module starts a scenario when an item is updated in a folder you se
 * [[!UICONTROL Watch Items] (Scheduled)](#watch-items-scheduled)
 
 
-#### [!UICONTROL Copy Item]
+#### [!UICONTROL Copy an Item]
 
 This action module copies an existing item in a SharePoint list.
 
@@ -296,7 +296,7 @@ This action module creates a new item in a SharePoint list.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields]</td> 
-   <td>For each field that you want to set for the new item, enter the field's key (which identifies the field), and the value that you want the new item to have for that field.</td> 
+   <td>For each field that you want to set for the new item, click <b>Add item</b> and enter the field's key (which identifies the field) and the value that you want the new item to have for that field.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -340,7 +340,7 @@ This action module returns the data of a specified item.
    <td role="rowheader">[!UICONTROL Get an Item]</td> 
    <td> <p>Select how you want to identify the site and list that contain the item you want to get.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Item ID]</strong> in the fields that appear.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Item ID]</strong> of the item that you want to return data for.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the list you want to retrieve an item from, then select the list, then select the item. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -363,7 +363,7 @@ This action module retrieves a list of all items in a specified list.
    <td role="rowheader">[!UICONTROL List Items]</td> 
    <td> <p>Select how you want to identify the list that you want to retrieve items from.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> and <strong>[!UICONTROL List ID]</strong> in the fields that appear.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> and <strong>[!UICONTROL List ID]</strong> for the list that you want to list items for.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the list you want to retrieve items from, then select the list. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -390,7 +390,7 @@ This action module copies an existing item in a SharePoint list.
    <td role="rowheader">Enter Site, Drive, and Folder IDs</td> 
    <td> <p>Select how you want to identify the site and list that contain the item you want to move.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Item ID]</strong> in the fields that appear.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Item ID]</strong> for the item that you want to move.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from list that you follow]</strong> </p> <p>In the Item Type field, select whether you are moving a field or a folder. Select the site that contains the item you want to copy, then select the list, then select the item. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -421,13 +421,13 @@ This action module updates an existing item in a SharePoint list.
    <td role="rowheader">[!UICONTROL Update an Item]</td> 
    <td> <p>Select how you want to identify the site and list that contain the item you want to update.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Item ID]</strong> in the fields that appear.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Item ID]</strong> of the item you want to update.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the item you want to update, then select the list, then select the item. </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields]</td> 
-   <td>For each field that you want to update for the new item, enter the field's key (identifies the field), and the new value that you want the item to have for that field.</td> 
+   <td>For each field that you want to update for the new item, click <b>Add item</b> and enter the field's key (which identifies the field) and the new value that you want the item to have for that field.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -452,7 +452,7 @@ This trigger module starts a scenario when an item is created or modified.
    <td role="rowheader">[!UICONTROL Enter Site and List ID]</td> 
    <td> <p>Select how you want to identify the site and list that you want to watch.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> and <strong>[!UICONTROL List ID]</strong> in the fields that appear.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> and <strong>[!UICONTROL List ID]</strong> that you want to watch.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Select the site that you want to watch, then select the list. These drop-downs only retrieve followed sites.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -484,7 +484,7 @@ This action module creates a new list in SharePoint.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter a Site ID]</td> 
-   <td> <p>Select how you want to identify the site and list where you want to create a list.</p> 
+   <td> <p>Select how you want to identify the site where you want to create a list.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> where you want to create a list.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site where you want to create a list. </p> </li> 
@@ -500,7 +500,7 @@ This action module creates a new list in SharePoint.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>For each column that you want to set for the new list, enter a <strong>[!UICONTROL Name]</strong> for the field, and select the <strong>[!UICONTROL Type]</strong> of value that you want the new column to have.</td> 
+   <td>For each column that you want to set for the new list, click <b>Add item </b>, enter a <strong>[!UICONTROL Name]</strong> for the field, and select the <strong>[!UICONTROL Type]</strong> of value that you want the new column to have.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -521,7 +521,7 @@ This action module returns the data of a specified list.
    <td role="rowheader">[!UICONTROL Get a List]</td> 
    <td> <p>Select how you want to identify the site and list that contain the item you want to get.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> and <strong>List ID</strong> in the fields that appear.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> and <strong>List ID</strong> that you want to return.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the list you want to retrieve, then select the list. </p> </li> 
     </ul> </td> 
   </tr> 
@@ -530,7 +530,7 @@ This action module returns the data of a specified list.
 
 #### [!UICONTROL List Lists]
 
-This action module retrieves a list of all items in a specified list.
+This action module retrieves a list of all items in a specified site.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -544,7 +544,7 @@ This action module retrieves a list of all items in a specified list.
    <td role="rowheader">[!UICONTROL List Lists]</td> 
    <td> <p>Select how you want to identify the site that you want to retrieve lists from.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> that contains the lists you want to return.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the lists you want to retrieve. The drop-down retrieves only sites you follow.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -572,10 +572,10 @@ This trigger module starts a scenario when a list is created or modified.
    <td>Select whether you want to watch lists by creation time (new items) or by modification time (updated items).</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter Site and List ID]</td> 
-   <td> <p>Select how you want to identify the site and list that you want to watch.</p> 
+   <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
+   <td> <p>Select how you want to identify the site that you want to watch for lists.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> where the list you want to watch is located.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> where you want to watch lists.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Select the site that you want to watch. The drop-down only retrieves site you follow.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -686,7 +686,7 @@ This module retrieves additions, updates, and deletions made in the SharePoint f
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
-   <td> <p>Select how you want to identify the site and list that contain the item you want to update.</p> 
+   <td> <p>Select how you want to identify the site and drive that contain the item you want to update.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong>, and <strong>[!UICONTROL Folder ID]</strong> in the fields that appear.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the item you want to update, then select the drive, then select the folder. </p> </li> 
@@ -757,7 +757,7 @@ This instant trigger module starts a scenario when an item is added, updated, or
   -->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Select an existing webhook, or click Add to create a new webhook.</p> 
+   <td> <p>Select an existing webhook, or click Add and enter the connection to create a new webhook.</p> 
    </td> 
   </tr> 
  </tbody> 
