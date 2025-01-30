@@ -261,21 +261,21 @@ This regular expression would normally result in a full match.
 
 However, implementing this expression in your text parser does not result in a match:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![No match](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 The reason for this is that the "i" shows only the number of matches per match so in this case, we have 2 matches, threfore after the "i" there is a numerical value 1 and 2. The use case for this is that should you ever need to match or pass data through a filter only the second matched value you can specify which value that is represented by the numerical value.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![Match](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 To be able to get the match values that you require to add brackets to the part that you want to parse (for example, to extract from "filename.docx" - "docx" only), then, according to the regex expression we are using for this case scenario, the brackets should be applied on &#92;.(.+)
 
 This captures the DOCX, places it in a group, and leave the "." out of it.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![Get matches](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 In the output shown in the picture below, the capturing group will match any character (except for line terminators).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![Output](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 Another workaround that also incorporates regex is using the replace function
 

@@ -78,11 +78,11 @@ You can use a [!DNL Microsoft Word Template] module to merge data from multiple 
 
 For example, you could use this [!DNL Microsoft Word] template:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
+![Word template before](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)
 
 To create this document:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
+![Word template filled](/help/workfront-fusion/references/apps-and-modules/assets/word-template-exampled-filled-350x85.png)
 
 ## About value tags
 
@@ -104,7 +104,7 @@ A simple value tag is simply replaced with a corresponding value. The tag's name
 
 To do this, you would set up the module as follows:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
+![Word template simple value](/help/workfront-fusion/references/apps-and-modules/assets/word-template-simple-value-350x286.png)
 
 ### Condition tag {#condition-tag}
 
@@ -119,7 +119,7 @@ You can use a condition tag to wrap text that should be rendered only when certa
 
 To do this, you would set up the module as follows:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
+![Word template conditional](/help/workfront-fusion/references/apps-and-modules/assets/word-template-conditional-350x501.png)
 
 In the document, the phone number would appear as follows:
 
@@ -142,7 +142,7 @@ You can use a loop tag, also known as a section tag, to repeat a section of text
 To do this, you would set up the module as follows:
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
+![Fill out a document](/help/workfront-fusion/references/apps-and-modules/assets/word-template-fill-out-a-document-350x732.png)
 
 The module would create the following document:
 

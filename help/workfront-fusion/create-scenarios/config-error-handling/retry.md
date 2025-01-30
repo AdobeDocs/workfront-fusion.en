@@ -118,7 +118,7 @@ The Repeater module workaround is more complex, but more customizable.
 
 In this sample scenario, the [!UICONTROL HTTP] > [!UICONTROL Make a request] module represents the potentially failing module:
 
-![](assets/http-make-request.png)
+![HTTP Make a request](assets/http-make-request.png)
 
 >[!ENDSHADEBOX]
 

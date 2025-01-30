@@ -179,7 +179,7 @@ For more information about the JSON modules, see [JSON modules](/help/workfront-
 
 1. Enter or map the values you want to create JSON from.
 
-   ![](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png) 
+   ![JSON values](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png) 
 
 1. Connect the  JSON > Create JSON module to the HTTP > Make a Request module.
 1. Map the JSON string from the Create JSON module to the  Request content field in the  HTTP > Make a Request module.

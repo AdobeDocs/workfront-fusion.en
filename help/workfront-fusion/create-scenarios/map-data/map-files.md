@@ -86,10 +86,10 @@ To map a file:
 1. In the target module, which is the target you are mapping to, locate the **Source file** area.
 1. To map a file output by a previous module, select the module that output the file.
 
-   ![](assets/wf-download-document.png)
+   ![Workfront download document](assets/wf-download-document.png)
 
 1. To map the name and data manually, select Map, then enter or map the file's name and data.
 
-   ![](assets/use-the-map-option.png)
+   ![Use the map option](assets/use-the-map-option.png)
 
 1. Continue configuring the module, or click **OK**.

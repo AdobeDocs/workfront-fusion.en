@@ -65,13 +65,13 @@ You must add a Router module before configuring routes.
 1. In the scenario editor, Click on the right handle of the module after which you want to add the router.
 1. Select **[!UICONTROL Flow Control]** > **Router** in the list of modules that displays.
 
-   ![](assets/connect-the-router-350x108.png)
+   ![Connect the route](assets/connect-the-router-350x108.png)
 
     Or
  
    To insert the Router module between two modules, click on the wrench icon below the route connecting the two modules and select **[!UICONTROL Add a router]** from the menu.
 
-   ![](assets/insert-router-350x191.png)
+   ![Insert router](assets/insert-router-350x191.png)
 1. Add the first route to the router by clicking on the right handle of the router and adding a module, similar to adding any module. 
 1. To add another route, click the router module. A route appears. Add modules to this route as desired.
 
@@ -119,13 +119,13 @@ You can enable a fallback route in the filter panel.
 1. In the label field of the panel that displays, add a label. This label displays in the scenario.
 1. Enable the fallback route checkbox.
 
-   ![](assets/fallback-route-350x260.png)
+   ![Fallback route](assets/fallback-route-350x260.png)
 
 1. Click **[!UICONTROL OK]** to save the filter setup.
 
 The Fallback route is marked with a different arrow in the Router module:
 
-![](assets/arrow-sign-in-router-module-350x361.png)
+![Arrow sign in router](assets/arrow-sign-in-router-module-350x361.png)
 
 ## Example: `if/else` use case
 
@@ -135,10 +135,10 @@ A typical use case of the fallback route is to continue the flow with one route 
 
 In this example, the first route is configured with a filter. This represents the `if` component. 
 
-   ![](assets/set-up-a-filter-2-350x242.png)
+   ![Set up a filter in route](assets/set-up-a-filter-2-350x242.png)
 
 The second route is configured as a fallback route. This represents the `else` component.
 
-   ![](assets/enable-fallback-route-option-350x238.png)
+   ![Enable fallback option](assets/enable-fallback-route-option-350x238.png)
 
 >[!ENDSHADEBOX]

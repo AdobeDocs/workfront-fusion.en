@@ -327,7 +327,7 @@ The `formatDate` function returns a text representation of the given Date value 
 
 **Examples:** The Scenario and Web timezone were both set to `Europe/Prague` in these examples.
 
-![](assets/date&time-functions-examples-350x61.png)
+![Date time function example](assets/date&time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -457,7 +457,7 @@ This section is adapted for [!DNL Workfront Fusion] from the [!DNL Exceljet] web
 
 If you need to calculate a date corresponding to n-th day of week in month (for example, first Tuesday, third Friday, and so on), you can use the following formula:
 
-![](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calculate nth day](assets/date&time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -504,7 +504,7 @@ In case you want to calculate only one specific case, for example, every second 
 * `1.dow` = `3`
 * `1.date` = `now`
 
-![](assets/nth-day-variable-value-350x33.png)
+![Nth day variable value](assets/nth-day-variable-value-350x33.png)
 
 #### Explanation:
 
@@ -515,7 +515,7 @@ In case you want to calculate only one specific case, for example, every second 
 
 One possibility is to employ the following expression:
 
-![](assets/calculate-days-between-dates-350x68.png)
+![Calculate days between dates](assets/calculate-days-between-dates-350x68.png)
 
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
@@ -535,7 +535,7 @@ When you specify a date range, for example in a search module, if the range span
 
 The formula below shows one way how to calculate last day of the previous month:
 
-![](assets/last-day-prev-month.png)
+![Last day of previous month](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
@@ -547,7 +547,7 @@ In some cases, you need to calculate not only the last day of month, but literal
 
 This formula shows one way how to calculate last millisecond of the previous month:
 
-![](assets/last-millisecond-prev-month-350x45.png)
+![Last millisecond of previous month](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
@@ -555,7 +555,7 @@ This formula shows one way how to calculate last millisecond of the previous mon
 
 If you need the result to use your timezone setting, omit the UTC argument:
 
-![](assets/omit-utc-argument-350x45.png)
+![Omit UTC](assets/omit-utc-argument-350x45.png)
 
 `{{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD") - 1; "x")}}`
 

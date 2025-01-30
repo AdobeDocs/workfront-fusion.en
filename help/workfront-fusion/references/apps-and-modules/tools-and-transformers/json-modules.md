@@ -85,7 +85,7 @@ If the JSON string field contains a collection `{ ... }`, The output is a single
 ```
 
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+![JSON collection](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
 
 >[!ENDSHADEBOX]
 
@@ -109,7 +109,7 @@ If the JSON string field contains an array `[ ... ]`, the output is a series of 
 ]
 ```
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+![JSON array](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
 
 >[!ENDSHADEBOX]
 
@@ -297,6 +297,6 @@ When using conditional statements such as `if` in your JSON, put the quotation m
 
 **Example:**  
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+![Quotes in JSON](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
 
 >[!ENDSHADEBOX]

@@ -71,11 +71,11 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    Or
 
-   If you are working on the scenario in the scenario editor, click the left arrow ![](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+   If you are working on the scenario in the scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. On the page that displays, you can review the elements listed in the table below:
 
-   ![](assets/scenario-detail-350x207.png)
+   ![Scenario detail](assets/scenario-detail-350x207.png)
 
    <table style="table-layout:auto"> 
     <col> 

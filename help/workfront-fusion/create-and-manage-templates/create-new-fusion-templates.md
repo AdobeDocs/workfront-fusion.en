@@ -65,16 +65,16 @@ You can build a template in a process similar to building a scenario. Fusion adm
 
 ### Build a template
 
-1. Click **[!UICONTROL Templates]** ![](assets/templates-icon.png) in the left navigation panel.
+1. Click **[!UICONTROL Templates]** ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Click **[!UICONTROL Create a new template]** in the upper-right corner.
 1. (Optional) Rename the template by replacing the default **[!UICONTROL New template name]** in the upper-left corner.
-1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) and select the language from the Language drop-down.
+1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![Scenario settings icon](assets/scenario-settings-icon.png) and select the language from the Language drop-down.
 
    >[!IMPORTANT]
    >
    >The Languages selection corresponds to the languages available in the system settings and concerns only the name of the public template and its description. You can't change a template language once the template has been saved.
 
-1. (Optional) To enter a description of the template, click **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png ) and enter the description.
+1. (Optional) To enter a description of the template, click **[!UICONTROL Set up a template]** ![Scenario settings icon](assets/scenario-settings-icon.png) and enter the description.
 1. Add apps, modules, and tools, using the same processes as adding modules to a scenario.
 
    For instructions, see the articles under [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -88,7 +88,7 @@ You can build a template in a process similar to building a scenario. Fusion adm
    >If your template includes modules that require adding the connection, credentials, or other privacy-sensitive information, this information is not shared with the template users.
 
 1. (Optional) Click **[!UICONTROL Run once]** to test your template.
-1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png) to save the template.
+1. Click the **[!UICONTROL Save]** icon ![Save icon](assets/save-icon.png) to save the template.
 
 When you save your template, it becomes visible to your team members. If you want your template to be accessible outside of your team, you must submit a request to have it approved and published. The request is sent to the Adobe Workfront Fusion team for approval. After it is approved, the template is accessible by others outside of your team.
 
@@ -107,13 +107,13 @@ For information on publishing templates, see [Publish and share [!DNL Adobe Work
    
    The scenario is copied into a New template page.
 1. (Optional) Rename the template by replacing the default **[!UICONTROL New template name]** in the upper-left corner.
-1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) and select the language from the Language drop-down.
+1. (Optional) To change the language of your template, click **[!UICONTROL Set up a template]** ![Scenario settings icon](assets/scenario-settings-icon.png) and select the language from the Language drop-down.
 
    >[!IMPORTANT]
    >
    >The Languages selection corresponds to the languages available in the system settings and concerns only the name of the public template and its description. You can't change a template language once the template has been saved.
 
-1. (Optional) To enter a description of the template, click **[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png) and enter the description.
+1. (Optional) To enter a description of the template, click **[!UICONTROL Set up a template]** ![Scenario settings icon](assets/scenario-settings-icon.png) and enter the description.
 1. Edit apps, modules, and tools as desired, using the same processes as adding modules to a scenario.
 
    For instructions, see the articles under [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md).
@@ -125,7 +125,7 @@ For information on publishing templates, see [Publish and share [!DNL Adobe Work
    >If your template includes modules that require adding the connection, credentials, or other privacy-sensitive information, this information is not shared with the template users.
 
 1. (Optional) Click **[!UICONTROL Run once]** to test your template.
-1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png).
+1. Click the **[!UICONTROL Save]** icon ![Save icon](assets/save-icon.png).
 
 ## Set up [!UICONTROL Wizard] functionality {#set-up-wizard-functionality}
 

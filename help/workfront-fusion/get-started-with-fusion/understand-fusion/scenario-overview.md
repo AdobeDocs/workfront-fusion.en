@@ -68,7 +68,7 @@ Workfront Fusion enables you to automate simple or complex workflows within Work
 
 In this example, the scenario triggers when a specified field changes in a Task or Issue in [!DNL Workfront]. When triggered, the scenario gets information in the related project and creates a tailored update for a person assigned to a specific role on the project.
 
-![](assets/fusion-template-example.png)
+![Template example](assets/fusion-template-example.png)
 
 +++
 
@@ -84,7 +84,7 @@ Many applications have dedicated [!DNL Workfront Fusion] connectors. If there is
 
 In this example, the scenario triggers when a user is added to an [!DNL Excel] spreadsheet. The scenario checks whether the user is in [!DNL Workfront]. If not, the scenario creates the user in [!DNL Workfront] and adds their Workfront user ID back to the spreadsheet.
 
-![](assets/fusion-integration-example.png)
+![Integration example](assets/fusion-integration-example.png)
 
 For a list of dedicated connectors, see [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 

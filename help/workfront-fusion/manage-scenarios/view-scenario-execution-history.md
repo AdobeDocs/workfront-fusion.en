@@ -80,7 +80,7 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
 
    Or
 
-   If you are working on the scenario in the Scenario editor, click the left arrow ![](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. Click **History** near the name of the scenario.
     ![history tab](assets/history-tab.png)
@@ -109,7 +109,7 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
 
    Or
 
-   If you are working on the scenario in the Scenario editor, click the left arrow ![](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. Click the **[!UICONTROL History]** tab in the right panel.
 1. (Optional) For detailed information about a selected scenario run, click on the execution in the right panel.
@@ -127,7 +127,7 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
 You can filter the execution history to view only executions with the specified values.
 
 1. Open the full-page history for a scenario as described in [View scenario execution history on the [!UICONTROL History] tab](#view-scenario-history-on-the-history-tab) in this article.
-1. Click the [!UICONTROL filter] icon ![](assets/fusion-scenario-filter-icon.png) in the header of the column you want to filter by.
+1. Click the [!UICONTROL filter] icon ![Scenario filter icon](assets/fusion-scenario-filter-icon.png) in the header of the column you want to filter by.
 1. In the [!UICONTROL filter] dialog, enter the values that you want to filter by.
 1. Click **[!UICONTROL Save]**.
 

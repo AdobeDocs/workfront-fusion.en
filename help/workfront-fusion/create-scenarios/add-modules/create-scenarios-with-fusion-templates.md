@@ -60,7 +60,7 @@ Public templates are available with no prerequisites.
 
 ## Create a scenario from a template
 
-1. Click the **Templates** tab ![](assets/templates-icon.png) in the left navigation panel.
+1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Click on the tab that contains the template you want to use (**Public templates** or **Team templates**).
 1. Search for a specific template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
 1. Click the template you want to use to create a scenario.
@@ -78,6 +78,6 @@ Public templates are available with no prerequisites.
 
 1. When you have configured all the settings required for the template, you receive a notification that your template is ready to go, and the standard scenario options appear at the bottom of the screen. You can now continue building your scenario.
 
-1. Click the **Save** icon ![](assets/save-icon.png) near the bottom of the screen to save your scenario.
+1. Click the **Save** icon ![Save icon](assets/save-icon.png) near the bottom of the screen to save your scenario.
 
    The scenario saves to the Scenarios area of Workfront Fusion.

@@ -57,11 +57,11 @@ For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfron
 
 The general Iterator module has a single field, The [!UICONTROL Array] field. This field contains the array to be converted or split into separate bundles.
 
-![](assets/set-up-iterator.jpg)
+![Set up iterator](assets/set-up-iterator.jpg)
 
 Other connectors may include iterator modules specific to that iterator. These contain a Source module field, which allows you to select that module that outputs the array that you want to iterate.
 
-![](assets/specialized-iterators.jpg)
+![Specialized iterators](assets/specialized-iterators.jpg)
 
 For more information, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
@@ -73,7 +73,7 @@ For more information, see [Configure a module](/help/workfront-fusion/create-sce
 
    Emails can contain an array of attachments. The [!UICONTROL Iterator] module after the first module enables the scenario to handle each attachment separately. The [!UICONTROL Iterator] module splits the array of attachments into single bundles. Each bundle, with one attachment, is then saved one at a time in a selected [!DNL Dropbox] folder. The [!UICONTROL Array] field in the Iterator module should contain the `Attachments` array.
 
-   ![](assets/attachments-array.jpg)
+   ![Attachments array](assets/attachments-array.jpg)
 
 >[!ENDSHADEBOX]
 
@@ -84,7 +84,7 @@ For more information, see [Configure a module](/help/workfront-fusion/create-sce
 
 When an [!UICONTROL Iterator] module does not have information about the structure of the array's items, the mapping panel in the modules following the [!UICONTROL Iterator] module displays only two items under the [!UICONTROL Iterator] module: `Total number of bundles` and `Bundle order position`.
 
-![](assets/mapping-panel-doesnt-display.png)
+![Mapping panel doesn't display](assets/mapping-panel-doesnt-display.png)
 
 This is because each module is responsible for providing information about items it outputs, so that these items can be properly displayed in the mapping panel in the subsequent modules. However, several modules might be unable to provide this information in some cases. For example, [!UICONTROL JSON] > [!UICONTROL Parse JSON] or [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] modules with missing Data structure would not provide the information.
 
@@ -94,11 +94,11 @@ The solution is to manually execute the scenario. This forces the module to crea
 
 For example, a scenario includes a [!UICONTROL JSON] > [!UICONTROL Parse JSON] module without a Data structure.
 
-![](assets/json-parse-json.png)
+![Parse JSON](assets/json-parse-json.png)
 
 An [!UICONTROL Iterator] module connected to this JSON module cannot map the output of the module to the Array field in the setup panel of the [!UICONTROL Iterator] module.
 
-![](assets/connect-iterator-module.png)
+![Connect iterator module](assets/connect-iterator-module.png)
 
 To resolve this: 
 
@@ -114,8 +114,8 @@ Manually start the scenario in the scenario editor.
 
 After the [!UICONTROL JSON] > [!UICONTROL Parse JSON] executes, it can then provide information about its outputs to all the subsequent modules, including the Iterator module. The mapping panel in the Iterator's setup then displays the items:
 
-![](assets/mapping-panel-displays-items.png)
+![Mapping panel displays items](assets/mapping-panel-displays-items.png)
 
 in addition, the mapping panel in the modules that are connected after the [!UICONTROL Iterator] module display the items contained in the array:
 
-![](assets/items-contained-in-array.png)
+![Items contained in array](assets/items-contained-in-array.png)

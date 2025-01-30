@@ -720,7 +720,7 @@ Use the [!UICONTROL Search Rows (Advanced)] module & use this formula to get the
 1. Execute the scenario.
 1. In Google Sheets, choose **[!UICONTROL Insert]** > **[!UICONTROL Drawing]**... from the main menu bar.
 
-1. In the [!UICONTROL Drawing] window, Click the **[!UICONTROL Text box]** icon ![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) near the top of the window.
+1. In the [!UICONTROL Drawing] window, Click the **[!UICONTROL Text box]** icon ![Text box](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png) near the top of the window.
 1. Design a button and click the **[!UICONTROL Save and Close]** button in the top-right corner:
 1. The button will be placed in your worksheet. Click the three vertical dots in the button's top-right corner:
 1. Choose **[!UICONTROL Assign script..].** from the menu.
@@ -744,7 +744,7 @@ Use the [!UICONTROL Search Rows (Advanced)] module & use this formula to get the
 
 If you store a Date value in a spreadsheet without any formatting, it will appear in the spreadsheet as text in ISO 8601 format. However, [!DNL Google Sheets] formulas or functions that work with dates that do not understand this text (Example: formula `=A1+10`) will display the following error:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![Error](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 To help allow [!DNL Google Sheets] to understand the date, format it with the [[!UICONTROL formatDate] (date; format; [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda) function. The correct format passed to the function as the second argument depends on the spreadsheet's locale settings.
 
@@ -758,7 +758,7 @@ To determine the correct format:
 
 **Example:** The use of `MM/DD/YYYY HH:mm:ss` format for the United States locale:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![Locale time formula](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## Exploiting [!DNL Google Sheets] functions
 

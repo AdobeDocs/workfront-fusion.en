@@ -163,7 +163,7 @@ If you see the map button above a field or function, you can use it to set varia
 >
 >**Example:** This example shows how to set up the module to submit a [!UICONTROL POST] request with JSON payload:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>![Make a request example](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
 >[!NOTE]
 >

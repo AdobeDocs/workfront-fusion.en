@@ -62,7 +62,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 ## Restore a scenario version
 
 1. Open your scenario.
-1. Click the [!UICONTROL More] icon ![](assets/more-icon.png) at the bottom of the screen, then click **[!UICONTROL Previous Versions]**.
+1. Click the [!UICONTROL More] icon ![More icon](assets/more-icon.png) at the bottom of the screen, then click **[!UICONTROL Previous Versions]**.
 
 1. Click the **[!UICONTROL Pick the version]**, then click the version you would like to restore.
 1. Click **[!UICONTROL OK]**.

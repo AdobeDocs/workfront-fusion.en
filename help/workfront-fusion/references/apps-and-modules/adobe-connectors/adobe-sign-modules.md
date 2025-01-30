@@ -76,7 +76,7 @@ New users to [!DNL Adobe Sign] should pay close attention some of the constraint
 
 [!DNL Adobe Sign] agreements need a field to work with. There are some options for doing this but the easiest and most common is uploading a transient document and then mapping that document to your agreement.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Sign recommendations](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign] modules and their fields
 
@@ -935,11 +935,11 @@ Upload a transient document. A transient document is available for 7 days after 
 
 **Example:** In this workflow, the document to sign (previously downloaded from Workfront) is uploaded as a transient document.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+(/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 The [!UICONTROL Upload document] module gives the document an [!DNL Adobe Acrobat Sign] ID that can be referenced in later modules. When the agreement is created, the uploaded document's ID is included in the [!UICONTROL Files to send] field.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![Sign example](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

@@ -2062,7 +2062,7 @@ The following operators are available in the Workfront > Watch events filter:
 >
 >Using the event filter, you can set up the webhook to trigger the scenario when an issue is assigned to Ana when the issue is created. Ana has the userID b378489d8f7cd3cee0539260720a84b7.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![Event filter](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
 >If 100 issues are created in a day, but only two of them are assigned to Ana, the scenario would execute twice.
 >
@@ -2070,7 +2070,7 @@ The following operators are available in the Workfront > Watch events filter:
 >
 >To filter events so that only issues assigned to Ana are processed, you could create a filter after the [!UICONTROL Watch Events] module.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![Without event filter](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
 >If 100 issues are created in a day, but only two of them are assigned to Ana, the scenario would execute 100 times. 98 of the executions would stop at the filter, but the trigger module is still consuming data and performing operations in all of the executions.
 

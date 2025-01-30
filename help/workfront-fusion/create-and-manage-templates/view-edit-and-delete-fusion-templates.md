@@ -111,7 +111,7 @@ For instructions on creating a scenario from a template, see [Create scenarios w
 
 You can edit any templates that are available in the [!UICONTROL Team templates] tab.
 
-1. Click the **[!UICONTROL Templates]** icon ![](assets/templates-icon.png) in the side navigation menu.
+1. Click the **[!UICONTROL Templates]** icon ![Templates icon](assets/templates-icon.png) in the side navigation menu.
 1. Click the **[!UICONTROL Team templates]** tab.
 1. Click the **[!UICONTROL Private]** tab.
 1. Click the template you want to edit.
@@ -122,7 +122,7 @@ You can edit any templates that are available in the [!UICONTROL Team templates]
    Click the template diagram.
 
 1. Make changes in the template. You can access all options that were available when creating the template. To see these options, see [Create new templates](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md).
-1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png).
+1. Click the **[!UICONTROL Save]** icon ![Save icon](assets/save-icon.png).
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ You can only delete templates that are not yet approved. If you want to delete a
 
 Please note that after you delete a template, it cannot be restored. Team templates are available for all members of your team, so before deleting a template we recommend that you check with your teams to ensure that the template is not needed.
 
-1. Click the **[!UICONTROL Templates]** icon ![](assets/templates-icon.png) in the side navigation menu.
+1. Click the **[!UICONTROL Templates]** icon ![Templates icon](assets/templates-icon.png) in the side navigation menu.
 1. Click the **[!UICONTROL Team templates]** tab.
 1. Click **[!UICONTROL Delete]** next to the template name
 

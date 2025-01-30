@@ -9,7 +9,7 @@ exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 
 The scenario editor allows you to create and edit scenarios in a visual interface.
 
-![](assets/scenario-editor.jpg)
+![Scenario editor](assets/scenario-editor.jpg)
 
 ## Access requirements
 
@@ -65,7 +65,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Open the scenario editor and add a module:
 
-1. Click **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) in the left panel.
+1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel.
 1. Click the question mark icon ![question icon](assets/question-mark-full-size.png), then find and click the app or service that you want to start with. For detailed information about configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
 ## Available scenario editor actions

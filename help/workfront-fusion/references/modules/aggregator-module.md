@@ -62,7 +62,7 @@ When an [!UICONTROL Aggregator] module executes, it does the following:
 
 The following image shows a typical setup of the [!UICONTROL Aggregator] module :
 
-![](assets/array-aggregator.png)
+![Array aggregator](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -107,7 +107,7 @@ The following image shows a typical setup of the [!UICONTROL Aggregator] module 
 
 This example scenario shows how to zip all email attachments and uploading the ZIP to [!DNL Dropbox].
 
-![](assets/dropbox-archive.png)
+![Dropbox archive example](assets/dropbox-archive.png)
 
 The scenario below shows how to:
 
@@ -123,4 +123,4 @@ The scenario below shows how to:
 
 Below is a sample setup of the [!UICONTROL Archive] > [!UICONTROL Create an archive] aggregator:
 
-![](assets/archive-create-an-archive.png)
+![Create an archive](assets/archive-create-an-archive.png)

@@ -28,19 +28,19 @@ Keyboard shortcuts
 ## Create and name the scenario
 
 1. Sign into your [!DNL Workfront Fusion] account.
-1. Click **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) in the left panel.
+1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel.
 
    >[!NOTE]
    >
    >If you do not see the left navigation panel or its icons, click the Menu ![Menu](assets/main-menu-icon-left-nav.png) icon.
 
-1. (Optional)In the [!UICONTROL **Folders**] panel, click the **[!UICONTROL Add folder]** icon ![](assets/add-folder-icon.png), then type a name like "Practice scenarios" for your first folder.
+1. (Optional)In the [!UICONTROL **Folders**] panel, click the **[!UICONTROL Add folder]** icon ![Add folder icon](assets/add-folder-icon.png), then type a name like "Practice scenarios" for your first folder.
 
 1. (Optional) Open the folder, then click **[!UICONTROL Create a new scenario]** in the upper-right corner of the page.
 
 1. Select the **[!UICONTROL New scenario]** placeholder name in the upper-left corner, then type a name such as "Practice scenario 1."
 
-   ![](assets/name-the-scenario.png)
+   ![Name the scenario](assets/name-the-scenario.png)
 
 1. Continue with [Connect the first module](#2-connect-the-first-module) below.
 
@@ -100,7 +100,7 @@ Testing your scenario enables you to determine if your scenario is working as in
    * For general information on reading scenario execution information, see [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
    * For information about processed bundles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. In [!DNL Workfront Fusion], click **[!UICONTROL Save]** ![](assets/save-icon.png) near the lower-left corner to save your progress on the scenario.
+1. In [!DNL Workfront Fusion], click **[!UICONTROL Save]** ![Save icon](assets/save-icon.png) near the lower-left corner to save your progress on the scenario.
 
    >[!IMPORTANT]
    >

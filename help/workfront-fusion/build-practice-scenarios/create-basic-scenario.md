@@ -118,7 +118,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    The name appears just below the module. Below that, [!DNL Workfront Fusion] includes a brief description of the type of action performed by the module.
 
-   ![](assets/module-renamed-wf.png)
+   ![Renamed module](assets/module-renamed-wf.png)
 
 1. Continue with [Add and configure the second module](#add-and-configure-the-second-module).
 
@@ -185,9 +185,9 @@ For this scenario, a successful test would result in locating the request and co
 >
 >1. Close the **[!UICONTROL Notes]** area.
 >
->     After you add a note to a scenario, an orange dot displays on the **[!UICONTROL Notes]** icon ![](assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
+>     After you add a note to a scenario, an orange dot displays on the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
 >
->1. Click the **[!UICONTROL Notes]** icon ![](assets/notes-icon-w-dot.png) to view your notes.
+>1. Click the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) to view your notes.
 >
 
 ## Activate the scenario

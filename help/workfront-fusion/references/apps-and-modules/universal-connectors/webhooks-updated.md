@@ -114,7 +114,7 @@ Or, you can send the sample data via the [!UICONTROL HTTP] > [!UICONTROL Make a 
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![New scneario setup](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Open the scenario with the [!UICONTROL Webhooks] module in a separate browser tab or window.
 1. In the webhooks module, click **[!UICONTROL Redetermine data structure]**.
@@ -126,7 +126,7 @@ Or, you can send the sample data via the [!UICONTROL HTTP] > [!UICONTROL Make a 
 
    A "[!UICONTROL Successfully determined]" message means that the module has successfully determined the data structure.
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![Successfully determined](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. Click **[!UICONTROL OK]** to save the data structure.
 
@@ -235,7 +235,7 @@ You can extract a particular header value with the combination of `map()` and `g
 >
 >The example below shows a formula that extracts the value of the `authorization` header from the `Headers[]` array. The formula is used in a filter that compares the extracted value with the given text to pass only webhooks if there is a match.
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![Set up a filter](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >For further information on obtaining an array's element with a given key, see [Map an array's element with a given key](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key) in the article Map an array.
 
@@ -305,11 +305,11 @@ Timeout for sending a response is 40 seconds. If the response is not available w
 > </tbody> 
 ></table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![Custom headers](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >This will produce an HTML response that displays in a web browser:
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![HEML response](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### Redirect example 
 
@@ -336,7 +336,7 @@ Timeout for sending a response is 40 seconds. If the response is not available w
 > </tbody> 
 ></table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Webhook response](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Webhook deactivation
 
@@ -354,6 +354,6 @@ Deactivated webhooks are deleted and unregistered automatically if they are not 
 
 If some items are missing in the mapping panel in the setup of the modules following the [!UICONTROL Webhooks] > [!UICONTROL Custom Webhook] module, click on the **[!UICONTROL Webhooks] > [!UICONTROL Custom Webhook]** module to open its setup and click **[!UICONTROL Re-determine data structure]**:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![Redetermine data structure](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Then follow the steps described in the section [Configure the webhook's data structure](#configure-the-webhook-s-data-structure) in this article.

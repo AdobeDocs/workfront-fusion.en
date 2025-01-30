@@ -81,7 +81,7 @@ When you configure [!DNL Azure Active Directory] modules, [!DNL Workfront Fusion
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](assets/map-toggle-350x74.png)
 
 * [Triggers](#triggers)
 * [Actions](#actions)
