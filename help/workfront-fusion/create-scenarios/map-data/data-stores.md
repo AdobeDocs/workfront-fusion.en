@@ -191,8 +191,8 @@ You can edit the properties and contents of an existing data store in the [!UICO
 
 The properties of a data store include the data structure that the data store uses, as well as the data store's size.
 
-1. Click **[!UICONTROL Data stores]** ![](assets/data-store-icon.png) in the left navigation panel to open the [!UICONTROL Data stores] area.
-1. Click **[!UICONTROL Edit]** ![](assets/data-store-edit.png) next to the data store that you want to edit.
+1. Click **[!UICONTROL Data stores]** ![Data store icon](assets/data-store-icon.png) in the left navigation panel to open the [!UICONTROL Data stores] area.
+1. Click **[!UICONTROL Edit]** ![Edit data store](assets/data-store-edit.png) next to the data store that you want to edit.
 1. (Optional) If you want to change the data structure used by this data store to another existing data structure, select it from the **[!UICONTROL Data structure]** drop-down.
 
    Or
@@ -204,7 +204,7 @@ The properties of a data store include the data structure that the data store us
 
 ### Edit the contents of a data store 
 
-1. Click the **[!UICONTROL Data Store]** icon ![](assets/data-store-icon.png) in the left navigation panel to open the [!UICONTROL Data Store] area.
+1. Click the **[!UICONTROL Data Store]** icon ![Data store icon](assets/data-store-icon.png) in the left navigation panel to open the [!UICONTROL Data Store] area.
 1. Click **[!UICONTROL Browse]**  next to the data store that you want to edit.
 1. (Optional) Reorder columns by dragging them to the desired location.
 1. (Optional) [!UICONTROL Edit] a single cell by clicking the **[!UICONTROL Edit]** icon in that cell, then entering the desired value.

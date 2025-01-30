@@ -89,7 +89,7 @@ The [!UICONTROL XML] > [!UICONTROL Parse XML] module parses an XML formatted tex
 >
 >   **URL**: URL of the XML file (e.g. `https://siftrss.com/f/rqLy05ayMBJ`)
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
+>   ![URL of XML file example](/help/workfront-fusion/references/apps-and-modules/assets/url-of-xml-file-350x184.png)
 >
 >1. Click **[!UICONTROL OK]**&#x200B;to save and close the module's configuration.
 >1. Add [!UICONTROL XML] > [!UICONTROL Parse XML] module, connect it after the [!UICONTROL HTTP] > [!UICONTROL Get a file] module and configure it as follows:
@@ -137,7 +137,7 @@ By default, the [!UICONTROL XML] > [!UICONTROL Parse XML] module puts attributes
 
 is converted into this bundle:
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
+![XML converted to bundle](/help/workfront-fusion/references/apps-and-modules/assets/xml-converted-to-bundle.png)
 
 ## Create XML
 
@@ -192,7 +192,7 @@ The [!UICONTROL XML] > [!UICONTROL Create XML] module converts a bundle to an XM
 >
 >1. Click the **[!UICONTROL Generator]** button and paste your XML sample to the [!UICONTROL Sample data] field:
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
+>   ![Samle data field](/help/workfront-fusion/references/apps-and-modules/assets/sample-data-field-350x146.png)
 >
 >1. Click **[!UICONTROL Save]**. The Specification field in the Data structure now contains the generated structure.
 >1. Change the name of your Data structure to something more specific and click **[!UICONTROL Save]**. A field corresponding to the root array attribute appears as a mappable field in the JSON module's setup.

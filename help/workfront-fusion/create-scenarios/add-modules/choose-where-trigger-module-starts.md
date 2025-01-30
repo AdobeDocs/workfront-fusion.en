@@ -67,7 +67,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
    Right-click the icon for the trigger module, and select **Choose where to start**.
 
-   ![](assets/choose-where-to-start.png)
+   ![Choose where to start](assets/choose-where-to-start.png)
 
 1. Select an option in the **[!UICONTROL Choose where to start]** box that appears.
 

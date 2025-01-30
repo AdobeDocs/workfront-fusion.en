@@ -86,4 +86,4 @@ To manually unlock a locked scenario:
 1. Click **[!UICONTROL Options]** in the upper-right corner of the screen.
 1. Select **[!UICONTROL Unlock execution]**.
 1. Click **[!UICONTROL Unlock]**.
-    ![](assets/unlock-scenario.png)
+    ![Unlock scenario](assets/unlock-scenario.png)

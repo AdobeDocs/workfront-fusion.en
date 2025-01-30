@@ -9,7 +9,7 @@ exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
 
 The [!DNL Adobe Workfront Fusion Tools] section includes several useful modules that can enhance your scenario.
 
-[!UICONTROL Tools] modules are available from the list of apps, or from the [!UICONTROL Tools] icon ![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) at the bottom of the screen.
+[!UICONTROL Tools] modules are available from the list of apps, or from the [!UICONTROL Tools] icon ![Tools icon](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png) at the bottom of the screen.
 
 ## Access requirements
 
@@ -155,14 +155,14 @@ This module can be used to implement a "round robin" assignment of tasks, leads,
 
 The following scenario sends an email to the first recipient after every odd-numbered scenario run, and to the second recipient after every even-numbered scenario run.
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![Example email](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 To create this scenario:
 
 1. Set the module's **[!UICONTROL Reset a value]** field to Never.
 1. Set the route for odd values. Set the filter for this route using the modulus math function that equals `1`:
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![Odd numbers](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
   **Note**: Do not forget to change the [!UICONTROL Equal to] operator from the default [!UICONTROL Text] operator to the [!UICONTROL Numeric] operator.
 

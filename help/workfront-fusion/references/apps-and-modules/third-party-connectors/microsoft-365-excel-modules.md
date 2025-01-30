@@ -420,7 +420,7 @@ This trigger starts a scenario when a new row is added to a table.
 >
 >The table here refers to the embedded table element in the Workbook. Not the entire table (workbook/sheet).
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![Embedded table](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 

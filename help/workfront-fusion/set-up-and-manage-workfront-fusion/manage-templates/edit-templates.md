@@ -67,13 +67,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Click **[!UICONTROL All Templates]** in the left navigation panel.
 1. Click **[!UICONTROL Detail]** to the right of the template you want to edit. 
 1. (Optional) Rename the template by clicking **Options** in the upper-right corner and selecting **Rename**.
-1. (Optional) To change the language of your template, click **[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png), and select the language from the Language drop-down.
+1. (Optional) To change the language of your template, click **[!UICONTROL Create a new template]** ![Scenario settings icon](assets/fusion-scenario-settings-icon.png), and select the language from the Language drop-down.
 
    >[!IMPORTANT]
    >
    >The Languages selection corresponds to the languages available in the system settings and concerns only the name of the public template and its description. You can't change a template language once the template has been saved.
 
-1. (Optional) To edit the template description, click **[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png), and enter the description.
+1. (Optional) To edit the template description, click **[!UICONTROL Set up a template]** ![Scenario settings icon](assets/fusion-scenario-settings-icon.png), and enter the description.
 1. Add or edit apps, modules, and tools in the same way as you would do when creating a standard scenario.
 
    To add contextual help to the modules, see [Set up [!UICONTROL Wizard] functionality](#set-up-wizard-functionality) in this article.
@@ -85,7 +85,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >If your template includes modules that require adding the connection, credentials, or other privacy-sensitive information, this information is not shared with the template users.
 
 1. (Optional) Click **[!UICONTROL Run once]** to test the template.
-1. Click the **[!UICONTROL Save]** icon ![](assets/save-icon.png).
+1. Click the **[!UICONTROL Save]** icon ![Save icon](assets/save-icon.png).
 
 
 ## Set up [!UICONTROL Wizard] functionality

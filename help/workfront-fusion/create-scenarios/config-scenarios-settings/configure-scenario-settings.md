@@ -69,7 +69,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Click anywhere on the scenario to enter the scenario editor.
 1. Click the gear icon near the lower-left corner of the page.
 
-   ![](assets/scenario-settings-350x221.png)
+   ![Scenario settings](assets/scenario-settings-350x221.png)
 
    In the [!UICONTROL Scenario settings] panel that displays, you can configure various advanced settings for the scenario.
 1. Enable or disable the Scenario settings as needed. See [Scenario settings options](#scenario-settings-options) below.
@@ -156,13 +156,13 @@ Setting more cycles can be useful when you want to prevent connection interrupti
 
 **Examples:**  [!DNL Workfront] > [!UICONTROL Watch record] watches for new issues that come in, and [!DNL Workfront] >[!UICONTROL Convert object] converts the new request into a project and assigns it the appropriate template.
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![Scenario settings](assets/scenario-settings-ex-1-350x157.png)
 
 A [!UICONTROL more cycles] setting is applied only when you schedule your scenario execution. When you use the [!UICONTROL Run once] button, cycle settings are taken into account.
 
 #### Max number of cycles is set to 1 (default)
 
-![](assets/max-number-cycles-1-350x201.png)
+![Maximum number of cycles](assets/max-number-cycles-1-350x201.png)
 
 The Max number of cycles in the Workfront > Watch records module is set to `10`.
 If 100 requests are submitted to [!DNL Workfront], and the Max number of cycles field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
@@ -177,7 +177,7 @@ All files are processed within 1 scenario run.
 
 You can see the already-run cycles in the Scenario details:
 
-![](assets/scenario-detail-350x207.png)
+![Scenario detail](assets/scenario-detail-350x207.png)
 
 For more information about this page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 

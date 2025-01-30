@@ -81,7 +81,7 @@ For instructions on creating a scenario, see [Workflow for creating a scenario](
 
 ## Activate or deactivate a scenario:
 
-1. Click **[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png) in the left panel, then click the scenario to open it.
+1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel, then click the scenario to open it.
 1. Click the On/Off toggle in the upper-right corner of the Scenario details page.
 
    ![Details activation toggle](assets/active-toggle-details-page.png)
@@ -90,4 +90,4 @@ For instructions on creating a scenario, see [Workflow for creating a scenario](
 
    Click the diagram to enter the Scenario editor, then click the **[!UICONTROL On/Off]** toggle in the lower-left corner of the window.
 
-   ![](assets/on-off-switch.jpg)
+   ![On off switch](assets/on-off-switch.jpg)

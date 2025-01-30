@@ -113,7 +113,7 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. Open a new web browser window or tab.
 1. Paste the WSDL URL into the web browser's address bar and fetch the XML file.
@@ -123,7 +123,7 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
 1. If the WSDL file does not display directly in the web browser, open the downloaded file in a text editor.
 1. Search for the `<service>` or `<wsdl:service>` tag:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Once located, copy the URL from the `location` attribute.
 1. In [!DNL Workfront Fusion], paste the URL into the HTTP module's URL field.
@@ -135,7 +135,7 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
 1. In [!UICONTROL Workfront Fusion], paste the copied content to the module's URL field.
 1. Provide values for selected parameters by replacing the question marks with actual values:
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. Close the module's configuration by clicking **[!UICONTROL OK]**.
 1. Execute the scenario or module.

@@ -73,7 +73,7 @@ If a module encounters an error during its operation, a new incomplete execution
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -107,7 +107,7 @@ If you want to see the log of all module's operations before you attempt to reso
 1. Open the module's log where all the module's operations are shown.
 1. Locate the failed operation and click **[!UICONTROL Resolve]**:
 
-   ![](assets/resolve-btn-350x188.png)
+   ![Resolve button](assets/resolve-btn-350x188.png)
 
 ## Options related to incomplete executions
 

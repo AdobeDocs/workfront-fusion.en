@@ -79,4 +79,4 @@ You can then attach one of the error handling directives to the error handling r
 
 The following example shows the use of the [!DNL Rollback] directive:
 
-![](assets/rollback-directive.png)
+![Rollback directive](assets/rollback-directive.png)

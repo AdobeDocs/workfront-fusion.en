@@ -83,11 +83,11 @@ This example scenario shows how these filters work for error handling.
 
 If you use the Dropbox > Create a folder module, and a folder with the same name already exists, the module throws a DataError:
 
-![](assets/dropbox.png)
+![Error in Dropbox](assets/dropbox.png)
 
 The complete scenario functions as follows:
 
-![](assets/dropbox-scenario.png)
+![Dropbox scenario](assets/dropbox-scenario.png)
 
 1. The Tools > Set Variable module contains the folder name
 1. The HTTP > Get a file module fetches the file that needs to be uploaded to the folder
@@ -105,19 +105,19 @@ Below is a detailed explanation of the DataError route.
 
 To use the existing folder in your subsequent modules, such as Upload a file, you must add an error handler route to the module and fetch the folder path to be mapped into the Resume directive module that follows:
 
-![](assets/add-error-handler-route.png)
+![Add error handler route](assets/add-error-handler-route.png)
 
 The filter on the first route is set to only handle the particular error (DataError) that appears when a folder with the same name already exists:
 
-![](assets/condition.png)
+![Condition](assets/condition.png)
 
 The Dropbox > List all files in a folder module is configured to return all the folders in the target folder. The following filter only passes on the one we were originally trying to create. (The folder name is stored in the 33. Folder Name item.)
 
-![](assets/condition2.png)
+![Condition](assets/condition2.png)
 
 The Resume directive then supplies the Folder path as the output for the failed module. Note that the Folder ID has been left blank since it is not needed by the Upload a file module.
 
-![](assets/flow-control.png)
+![Flow control](assets/flow-control.png)
 
 >[!ENDSHADEBOX]
 
@@ -131,7 +131,7 @@ Example:
 
 A nested error handler route with filters:
 
-![](assets/nested-error-handling-route.png)
+![Nested error handling route](assets/nested-error-handling-route.png)
 
 In this scenario, the second error handler route is nested under the first error handler route. 
 

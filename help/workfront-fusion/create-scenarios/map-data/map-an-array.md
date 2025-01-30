@@ -100,7 +100,7 @@ To add elements to the array:
 
 Array elements display as a number in square brackets after the array name. You can map an individual element of an array into a field by using this index number.
 
-![](assets/map-array-1st-element.png)
+![Map first element](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ To map an array element:
 
 1. To map a different element of the array, click on the [1] and enter the index number of the array element that you want to map.
 
-   ![](assets/access-another-element.png)
+   ![Access another element](assets/access-another-element.png)
 
 ### Map an array's element with a given key
 
@@ -132,13 +132,13 @@ Some arrays contain collections with key-value items such as metadata, attribute
 
 The following example shows the output of the [!DNL Jira] App.
 
-![](assets/output-of-jira-app-350x100.png)
+![Output of Jira module](assets/output-of-jira-app-350x100.png)
 
 This example gets a file name from an array of attachments, for the specific attachment with an ID of 10108.
 
 This example generates the following output:
 
-![](assets/output-from-jira-350x261.png)
+![Output of Jira module](assets/output-from-jira-350x261.png)
 
 The formula can be explained as follows:
 
@@ -147,7 +147,7 @@ The formula can be explained as follows:
     1. The first parameter of the `map()` function is the whole array item.
     1. The second parameter is the raw name of the value item. To obtain the raw name, hover over the item in the [!UICONTROL mapping] panel:
 
-       ![](assets/obtain-raw-name-350x124.png)
+       ![Obtain raw name](assets/obtain-raw-name-350x124.png)
 
        >[!NOTE]
        >
@@ -155,7 +155,7 @@ The formula can be explained as follows:
 
     1. The third parameter is the raw name of the key item:
 
-       ![](assets/3rd-parameter-350x166.png)
+       ![Third parameter](assets/3rd-parameter-350x166.png)
 
     1. The fourth parameter is the given key value.
 
@@ -169,7 +169,7 @@ The formula can be explained as follows:
 
 This example generates the following output:
 
-![](assets/output-from-jira-350x261.png)
+![Output from Jira module](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -181,4 +181,4 @@ For more information about the `get()` function, see [General functions](/help/w
 
 Arrays can be converted to a series of bundles using the [!UICONTROL Iterator] module. For more information, see [[!UICONTROL Iterator] module](/help/workfront-fusion/references/modules/iterator-module.md).
 
-![](assets/series-of-bundles.png)
+![Series of bundles](assets/series-of-bundles.png)

@@ -81,7 +81,7 @@ You must add both modules to a scenario before you can add a filter between them
 
    For example, if you wanted the filter to pass files in [!DNL Adobe Workfront] ending with XML, you would enter **[!UICONTROL File name]** in the first box and .**[!UICONTROL xml]** in the second box. In the drop-down menu between them, you would select **[!UICONTROL Ends with (case insensitive)]**. This filter would apply to incoming bundles from the first module (Workfront). Only bundles containing XML files would pass on to the next module.
 
-   ![](assets/set-up-filter-box.png)
+   ![Set up a filter](assets/set-up-filter-box.png)
 
 1. Click **[!DNL OK]**.
 
@@ -104,7 +104,7 @@ To copy a filter without copying modules, you can use the Fusion DevTool
    
    If you do not see the DevTool icon, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) for instructions on opening the DevTool.
    
-1. Click the **[!UICONTROL Tools]** icon ![](assets/devtools-tools-icon.png) in the left side bar.
+1. Click the **[!UICONTROL Tools]** icon ![DevTool tools](assets/devtools-tools-icon.png) in the left side bar.
 
 1. Click **[!UICONTROL Copy Filter]**, then configure the **[!UICONTROL Copy Filter]** tool in the right side panel:
 
