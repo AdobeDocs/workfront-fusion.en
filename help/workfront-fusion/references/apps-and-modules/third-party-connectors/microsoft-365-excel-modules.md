@@ -15,42 +15,46 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
-   </td>  
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -106,9 +110,59 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Workbook 
 
-* [Watch Workbooks](#watch-workbooks)
-* [Search Workbooks](#search-workbooks)
 * [Download a Workbook](#download-a-workbook)
+* [Search Workbooks](#search-workbooks)
+* [Watch Workbooks](#watch-workbooks)
+
+#### [!UICONTROL Download a Workbook]
+
+This action module downloads the content of the specified Excel workbook.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
+   <td> <p>Select how you want to identify the workbook for the module to download.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>In the [!UICONTROL Workbook ID] field, enter or map the ID of the specific workbook that you want the module to download.</p> </li> 
+     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>In the [!UICONTROL Workbook] field, select the workbook that you want the module to download, including its path if it is not in the root folder.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+
+#### [!UICONTROL Search Workbooks]
+
+This action module searches for [!DNL Excel] workbooks.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder that you want to search for workbooks.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>You can set a filter to search for only workbooks that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Enter or map the maximum number of worksheets you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+</table>
 
 #### [!UICONTROL Watch Workbooks]
 
@@ -137,73 +191,46 @@ This trigger module starts a scenario when a workbook is created.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search Workbooks]
-
-This action module searches for [!DNL Excel] workbooks.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
-   <td> <p>Select the folder that you want to search for workbooks.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
-   <td> <p>You can set a filter to search for only workbooks that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Enter or map the maximum number of worksheets you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download a Workbook]
-
-This action module downloads the content of the specified Excel workbook.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
-   <td> <p>Select how you want to identify the workbook for the module to download.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL By entering an ID manually]</strong> </p> <p>In the [!UICONTROL Workbook ID] field, enter or map the ID of the specific workbook that you want the module to download.</p> </li> 
-     <li> <p><strong>[!UICONTROL By selecting from the path]</strong> </p> <p>In the [!UICONTROL Workbook] field, select the workbook that you want the module to download.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### Worksheet
 
-* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
-* [[!UICONTROL List Worksheets]](#list-worksheets)
-* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
 * [[!UICONTROL Add a Worksheet]](#add-a-worksheet)
 * [[!UICONTROL Add a Worksheet Row]](#add-a-worksheet-row)
-* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
 * [[!UICONTROL Delete a Worksheet Row]](#delete-a-worksheet-row)
+* [[!UICONTROL List Worksheet Rows]](#list-worksheet-rows)
+* [[!UICONTROL List Worksheets]](#list-worksheets)
+* [[!UICONTROL Update a Worksheet Row]](#update-a-worksheet-row)
+* [[!UICONTROL Watch Worksheet Rows]](#watch-worksheet-rows)
 
-#### [!UICONTROL Watch Worksheet Rows]
+#### [!UICONTROL Add a Worksheet]
 
-This trigger module starts a scenario when a new row is added to the sheet.
+This action module creates a new worksheet within the selected workbook.
 
 <table style="table-layout:auto"> 
- <col> 
- <col> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Select the workbook where you want to add a worksheet, including the path if the workbook is not in the root directory.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Name] </td>
+   <td> <p>Enter or map a name for the new worksheet.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Add a Worksheet Row]
+
+This action module adds a new row to the selected worksheet.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -211,11 +238,74 @@ This trigger module starts a scenario when a new row is added to the sheet.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Select the workbook that contains the worksheet you want to watch for new rows.</p> </td> 
+   <td> <p>Select the workbook that contains the worksheet where you want to add a row, including the path if the workbook is not in the root directory.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Select the worksheet where you want to add a row.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
+   <td> <p>Select the type of value to be entered into the worksheet. </p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel tries to evaluate the specified expression. The names of functions in a formula are in English. Example: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel tries to evaluate the specified expression. The function names are in the language of your Excel application. Example: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel does not evaluate the value. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row]</td>
+    <td>For each column, enter the value you want the column to have in the new row.</td>
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Worksheet Row]
+
+This action module deletes a row from a worksheet.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Select the workbook that contains the worksheet that includes the row you want to delete.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet]</td>
+   <td> <p> Select the worksheet that contains the row you want to delete.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Row ID]</td>
+   <td>Enter or map the ID of the row you want to delete.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Worksheet Rows]
+
+This action module retrieves a list of rows in the specified worksheet.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Select the workbook that contains the worksheet that includes the rows you want to list, including the path if the workbook is not in the root directory.</p> </td> 
+  </tr> 
+  <tr> 
     <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Select the Excel sheet that you want to watch for new rows.</p> </td> 
+   <td> <p>Select the worksheet that contains the rows you want to list.</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
@@ -243,92 +333,6 @@ This action module retrieves a list of worksheets in the specified workbook.
   <tr> 
     <td role="rowheader" >[!UICONTROL Limit]</td>
    <td> <p>Enter or map the maximum number of worksheets you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Worksheet Rows]
-
-This action module retrieves a list of rows in the specified worksheet.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Select the workbook that contains the worksheet that includes the rows you want to list.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Select the worksheet that contains the rows you want to list.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Enter or map the maximum number of worksheet rows you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet]
-
-This action module creates a new worksheet within the selected workbook.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Select the workbook where you want to add a worksheet.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Name] </td>
-   <td> <p>Enter or map a name for the new worksheet.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a Worksheet Row]
-
-This action module adds a new row to the selected worksheet.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Select the workbook that contains the worksheet where you want to add a row.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Select the worksheet where you want to add a row.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type of values being entered]</p> </td> 
-   <td> <p>Select the type of value to be entered into the worksheet. </p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Formulas]</strong> </p> <p> Excel tries to evaluate the specified expression. The names of functions in a formula are in English. Example: <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Formulas local]</strong> </p> <p>Excel tries to evaluate the specified expression. The function names are in the language of your Excel application. Example: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Excel does not evaluate the value. </p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row]</td>
-    <td>For each column, enter the value you want the column to have in the new row.</td>
   </tr> 
  </tbody> 
 </table>
@@ -369,18 +373,17 @@ This action module updates an existing worksheet row.
   <tr> 
     <td role="rowheader" >[!UICONTROL Row]</td>
     <td>For each column, enter the value you want the column to have in the new row.</td>
-   --> 
-  </tr> 
+    </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Worksheet Row]
+#### [!UICONTROL Watch Worksheet Rows]
 
-This action module deletes a row from a worksheet.
+This trigger module starts a scenario when a new row is added to the sheet.
 
 <table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
+ <col> 
+ <col> 
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
@@ -388,151 +391,33 @@ This action module deletes a row from a worksheet.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Select the workbook that contains the worksheet that includes the row you want to delete.</p> </td> 
+   <td> <p>Select the workbook that contains the worksheet you want to watch for new rows.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Select the Excel sheet that you want to watch for new rows.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Skip Empty Rows] </td>
+   <td> <p>Enable this option to not return bundles for empty rows in the worksheet.</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet]</td>
-   <td> <p> Select the worksheet that contains the row you want to delete.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Row ID]</td>
-   <td>Enter or map the ID of the row you want to delete.</td> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Enter or map the maximum number of worksheet rows you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Table
 
-* [[!UICONTROL Watch table rows]](#watch-table-rows)
-* [[!UICONTROL List tables]](#list-tables)
-* [[!UICONTROL List table rows]](#list-table-rows)
-* [[!UICONTROL Get a Table]](#get-a-table)
 * [[!UICONTROL Add a table]](#add-a-table)
 * [[!UICONTROL Add a table row]](#add-a-table-row)
-* [[!UICONTROL Update a table]](#update-a-table)
 * [[!UICONTROL Delete a table]](#delete-a-table)
-
-#### [!UICONTROL Watch table rows]
-
-This trigger starts a scenario when a new row is added to a table.
-
->[!NOTE]
->
->The table here refers to the embedded table element in the Workbook. Not the entire table (workbook/sheet).
-
-![Embedded table](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
-   <td> <p>Select the workbook that contains the table you want to watch.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p> Select the worksheet that contains the table you want to watch.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
-   <td> <p>Select the table you want to watch.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Enter or map the maximum number of rows you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List tables]
-
-This search module retrieves a list of all table objects.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr>
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Select the workbook that contains the tables you want to list.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Select the worksheet that contains the tables you want to list</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Enter or map the maximum number of tables you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List table rows]
-
-This search module retrieves a list of all table rows in a workbook.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Workbook] </td>
-   <td> <p>Select the workbook that contains the table that includes the rows you want to list.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Worksheet] </td>
-   <td> <p>Select the worksheet that contains the table that includes the rows you want to list</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Table] </td>
-   <td> <p>Select the table that contains the rows you want to list.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Limit]</td>
-   <td> <p>Enter or map the maximum number of table rows you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Table]
-
-This action module retrieves metadata for the specified table.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> 
-     <p >[!UICONTROL Connection]</p>
-   </td> 
-   <td> 
-     <p>For instructions about connecting your Office 365 account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p>
-    --> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Select how you want to identify the table that you want to retrieve.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the [!UICONTROL Workbook ID] field, enter or map the ID of the workbook that contains the table you want to retrieve.</p> <p>In the [!UICONTROL Table Name] field, enter or map the name of the table you want to retrieve.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the workbook and worksheet that contain the table you want to retrieve, then select the table.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Get a Table]](#get-a-table)
+* [[!UICONTROL List table rows]](#list-table-rows)
+* [[!UICONTROL List tables]](#list-tables)
+* [[!UICONTROL Update a table]](#update-a-table)
+* [[!UICONTROL Watch table rows]](#watch-table-rows)
 
 #### [!UICONTROL Add a table]
 
@@ -600,6 +485,114 @@ This action module modifies an existing table.
  </tbody> 
 </table>
 
+#### [!UICONTROL Delete a table]
+
+This action module deletes the specified table from an [!DNL Excel] worksheet.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Delete a table]</td> 
+   <td> <p>Select how you want to identify the table that you want to delete.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the ID of the workbook that contains the table you want to delete, then enter or map the ID of the worksheet that contains the table.</p> <p>In the [!UICONTROL Table Name] field, enter or map the name of the table you want to delete.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the workbook and worksheet that contain the table you want to delete, then select the table.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Table]
+
+This action module retrieves metadata for the specified table.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> 
+     <p >[!UICONTROL Connection]</p>
+   </td> 
+   <td> 
+     <p>For instructions about connecting your Office 365 account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p>
+    --> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Get a table]</td> 
+   <td> <p>Select how you want to identify the table that you want to retrieve.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the ID of the workbook that contains the table you want to retrieve, then enter or map the ID of the worksheet that contains the table.</p> <p>In the [!UICONTROL Table Name] field, enter or map the name of the table you want to retrieve.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the workbook and worksheet that contain the table you want to retrieve, then select the table.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List table rows]
+
+This search module retrieves a list of all table rows in a workbook.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Select the workbook that contains the table that includes the rows you want to list.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Select the worksheet that contains the table that includes the rows you want to list</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Table] </td>
+   <td> <p>Select the table that contains the rows you want to list.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Enter or map the maximum number of table rows you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List tables]
+
+This search module retrieves a list of all table objects.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr>
+    <td role="rowheader" >[!UICONTROL Workbook] </td>
+   <td> <p>Select the workbook that contains the tables you want to list.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p>Select the worksheet that contains the tables you want to list</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Enter or map the maximum number of tables you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Update a table]
 
 This action module updates an existing table.
@@ -621,10 +614,6 @@ This action module updates an existing table.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table] </td> 
-   <td> <p>Select the table you want to update.</p> </td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td> <p>If you want to rename the table, enter or map a new name for the table.</p> </td> 
   </tr> 
@@ -643,9 +632,15 @@ This action module updates an existing table.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a table]
+#### [!UICONTROL Watch table rows]
 
-This action module deletes the specified table from an [!DNL Excel] worksheet.
+This trigger starts a scenario when a new row is added to a table.
+
+>[!NOTE]
+>
+>The table here refers to the embedded table element in the Workbook. Not the entire table (workbook/sheet).
+
+![Embedded table](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -656,47 +651,28 @@ This action module deletes the specified table from an [!DNL Excel] worksheet.
    <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Get a table]</td> 
-   <td> <p>Select how you want to identify the table that you want to delete.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the [!UICONTROL Workbook ID] field, enter or map the ID of the workbook that contains the table you want to delete.</p> <p>In the [!UICONTROL Table Name] field, enter or map the name of the table you want to delete.</p> </li> 
-     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the workbook and worksheet that contain the table you want to delete, then select the table.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Workbook]</p> </td> 
+   <td> <p>Select the workbook that contains the table you want to watch.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Worksheet] </td>
+   <td> <p> Select the worksheet that contains the table you want to watch.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Table]</p> </td> 
+   <td> <p>Select the table you want to watch.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Limit]</td>
+   <td> <p>Enter or map the maximum number of rows you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Other
 
-* [[!UICONTROL Retrieve data]](#retrieve-data)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
-
-#### [!UICONTROL Retrieve data]
-
-This action retrieves data from the defined worksheet range, and returns a bundle for each row.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
-   <td> <p>Select the workbook that contains the data you want to retrieve.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Worksheet] </td> 
-   <td> <p>Select the worksheet that contains the data you want to retrieve.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Range] </td> 
-   <td> <p>Specify the area of the sheet you want to retrieve data from by indicating the top left and bottom right cells. Example: <code>A1:D10</code></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Retrieve data]](#retrieve-data)
 
 #### [!UICONTROL Make an API Call]
 
@@ -732,6 +708,33 @@ This action module allows you to make a custom API call.
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Retrieve data]
+
+This action retrieves data from the defined worksheet range, and returns a bundle for each row.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td> <p>Select the workbook that contains the data you want to retrieve.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Worksheet] </td> 
+   <td> <p>Select the worksheet that contains the data you want to retrieve.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Range] </td> 
+   <td> <p>Specify the area of the sheet you want to retrieve data from by indicating the top left and bottom right cells. Example: <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
