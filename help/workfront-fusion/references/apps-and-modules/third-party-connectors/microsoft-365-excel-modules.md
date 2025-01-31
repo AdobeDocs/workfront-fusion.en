@@ -614,10 +614,6 @@ This action module updates an existing table.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table] </td> 
-   <td> <p>Select the table you want to update.</p> </td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Name]</td> 
    <td> <p>If you want to rename the table, enter or map a new name for the table.</p> </td> 
   </tr> 
@@ -675,35 +671,8 @@ This trigger starts a scenario when a new row is added to a table.
 
 ### Other
 
-* [[!UICONTROL Retrieve data]](#retrieve-data)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
-
-#### [!UICONTROL Retrieve data]
-
-This action retrieves data from the defined worksheet range, and returns a bundle for each row.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workbook] </td> 
-   <td> <p>Select the workbook that contains the data you want to retrieve.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Worksheet] </td> 
-   <td> <p>Select the worksheet that contains the data you want to retrieve.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Range] </td> 
-   <td> <p>Specify the area of the sheet you want to retrieve data from by indicating the top left and bottom right cells. Example: <code>A1:D10</code></p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Retrieve data]](#retrieve-data)
 
 #### [!UICONTROL Make an API Call]
 
@@ -739,6 +708,33 @@ This action module allows you to make a custom API call.
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Retrieve data]
+
+This action retrieves data from the defined worksheet range, and returns a bundle for each row.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workbook] </td> 
+   <td> <p>Select the workbook that contains the data you want to retrieve.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Worksheet] </td> 
+   <td> <p>Select the worksheet that contains the data you want to retrieve.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Range] </td> 
+   <td> <p>Specify the area of the sheet you want to retrieve data from by indicating the top left and bottom right cells. Example: <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
