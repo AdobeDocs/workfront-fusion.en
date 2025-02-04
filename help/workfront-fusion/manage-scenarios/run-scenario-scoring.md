@@ -7,6 +7,10 @@ exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
 ---
 # Run the Scenario Scoring Expert
 
+>[!IMPORTANT]
+>
+>The Scenario Scoring Expert has been temporarily disabled.
+
 The Scenario Scoring Expert can help you ensure that your scenario is configured in a way that follows best practices. It checks your scenario and gives recommendations for its structure and organization.
 
 ## Access requirements
