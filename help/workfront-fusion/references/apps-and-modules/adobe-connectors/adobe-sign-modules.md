@@ -223,7 +223,7 @@ This action module creates a new record of the selected type.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>Add the headers of the request in the form of a standard JSON object.For example, <code>{"Content-type":"application/json"}</code></td> 
+   <td>Add the headers of the request in the form of a standard JSON object. For example, <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -355,7 +355,7 @@ This action module creates an agreement, sends it out for signature, and returns
 <td>For instructions about connecting your [!DNL Adobe Acrobat Sign] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>Add the headers of the request in the form of a standard JSON object.For example, <code>{"Content-type":"application/json"}</code></td> 
+   <td>Add the headers of the request in the form of a standard JSON object. For example, <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Files to send]</td> 

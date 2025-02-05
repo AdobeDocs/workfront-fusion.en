@@ -84,7 +84,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.For example, <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object. For example, <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
