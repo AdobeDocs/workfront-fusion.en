@@ -140,6 +140,26 @@ You can use the following keyboard shortcuts when creating or editing a scenario
    <td>Ctrl+Shift+Enter</td> 
    <td><span style="font-weight: normal;">Cmd+Shift+Enter</span> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
+   <td>F12</td> 
+   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl+C</td> 
+   <td><span style="font-weight: normal;">Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl+V</td> 
+   <td><span style="font-weight: normal;">Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
+   <td>Shift+Drag</td> 
+   <td><span style="font-weight: normal;">Shift+Drag</span> </td> 
+  </tr> 
  </tbody> 
 </table>
 
