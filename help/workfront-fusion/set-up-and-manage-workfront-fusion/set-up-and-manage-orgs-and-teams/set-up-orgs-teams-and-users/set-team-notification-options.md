@@ -83,7 +83,7 @@ Email notification options are set on the team level.
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Scenario deactivation]</p> </td> 
-      <td><p>Receive an email when a scenario deactivates.</p><p><b>Note:</b> You are notified about scenario deactivation only when the scenario has been automatically deactivated due to errors. You do not receive notifications about scenarios that are deactivated manually.</p><p>In some cases, a scenario might be deactivated by the [!DNL Workfront Fusion] engineering team because the scenario is causing performance or other issues. In these cases, you do not receive notifications in [!DNL Workfront Fusion]. </p></td>
+      <td><p>Receive an email when a scenario deactivates.</p><p>In some cases, a scenario might be deactivated by the [!DNL Workfront Fusion] engineering team because the scenario is causing performance or other issues. In these cases, you do not receive notifications in [!DNL Workfront Fusion]. </p></td>
 
 </tr>
 </tbody>
