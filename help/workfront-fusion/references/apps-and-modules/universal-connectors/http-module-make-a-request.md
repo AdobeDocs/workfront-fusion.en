@@ -7,10 +7,6 @@ exl-id: 42f6176e-86e0-489e-868b-66823a932daf
 ---
 # [!UICONTROL HTTP] > [!UICONTROL Make a request] module
 
->[!NOTE]
->
->Adobe Workfront Fusion requires an [!DNL Adobe Workfront Fusion] license in addition to an [!DNL Adobe Workfront] license.
-
 The [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request module] is a universal module that enables you to configure an HTTP request and submit it to a server. The received HTTP response is then contained in the output bundle.
 
 >[!NOTE]
@@ -21,50 +17,48 @@ The [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
-   <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>No Workfront Fusion license requirement.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a request] module configuration
++++
 
-When you configure the [!UICONTROL HTTP] >[!UICONTROL Make a request] module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
+## [!UICONTROL HTTP] > [!UICONTROL Make a request] module configuration
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
-
-![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a request] module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -76,7 +70,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
-   <td> <p>Enter the URL you want to send a request to, such as an API endpoint, website, etc.</p> </td> 
+   <td> <p>Enter the URL you want to send a request to, such as an API endpoint, or website.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
@@ -84,7 +78,7 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.For example, <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object. For example, <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -104,13 +98,13 @@ If you see the map button above a field or function, you can use it to set varia
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>The[!UICONTROL  Multipart/form-data] is an HTTP multipart request used to send files and data. It is commonly used to upload files to the server.</p> <p>Add fields to be sent in the request. Each field must contain Key-Value pair.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Enter the key and value to be sent within the request body.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] >[!UICONTROL Get a File] or [!UICONTROL Google Drive] >[!UICONTROL Download a File)], or enter the file name and file data manually.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] >[!UICONTROL Get a File] or [!UICONTROL Google Drive] > Download a File), or enter the file name and file data manually.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>Enable this option to automatically parse responses and convert JSON and XML responses so you don't need to use [!UICONTROL JSON] > [!UICONTROL Parse JSON] or [!UICONTROL XML] > [!UICONTROL Parse XML] modules.</p> <p>Before you can use parsed JSON or XML content, run the module once manually so that the module can recognize the response content and allow you to map it in subsequent modules.</p> </td> 
+   <td> <p>Enable this option to automatically parse responses and convert JSON and XML responses.</p> <p>Before you can use parsed JSON or XML content, run the module once manually so that the module can recognize the response content and allow you to map it in subsequent modules.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL User name]</p> </td> 
@@ -130,7 +124,25 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> Upload your certificate if you want to use TLS using your self-signed certificate.</p> </td> 
+   <td> <p>To add a self-signed certificate:</p>
+          <ol>
+            <li value="1">
+              <p>Click <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li value="2">
+              <p>Select the type of file you are extracting.</p>
+            </li>
+            <li value="3">
+              <p>Select the file that contains the or certificate.</p>
+            </li>
+            <li value="4">
+              <p>Enter the password for the file.</p>
+            </li>
+            <li value="5">
+              <p>Click <b>[!UICONTROL Save]</b> to extract the file and return to the module setup.</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -154,19 +166,17 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>Enable this option to use Mutual TLS in the HTTP request.</p> <p>For more information on Mutual TLS, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Enable this option to use Mutual TLS in the HTTP request.</p> <p>For more information on Mutual TLS, see <a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">Use Mutual TLS in HTTP modules</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Example:** This example shows how to set up the module to submit a [!UICONTROL POST] request with JSON payload:
->
->![Make a request example](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>[!BEGINSHADEBOX]
 
->[!NOTE]
->
->To make sure your [!UICONTROL JSON] is valid, you can use one of the available online services such as [https://jsonlint.com/](https://jsonlint.com/). You can also use [!UICONTROL JSON] >[!UICONTROL Create JSON module] to create the JSON dynamically and take care of all the necessary escaping.
->
->Mixing JSON pieces with expressions and items directly in the [!UICONTROL Request content] field is not recommended as it can result in invalid JSON.
+**Example:** This example shows how to set up the module to submit a [!UICONTROL POST] request with JSON payload:
+
+![Make a request example](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+
+We do not recommend mixing JSON pieces with expressions and items directly in the [!UICONTROL Request content] field, because it can result in invalid JSON.
+
+>[!ENDSHADEBOX]
