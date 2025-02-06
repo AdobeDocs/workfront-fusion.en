@@ -78,7 +78,7 @@ To create a project on Google Cloud Platform:
 
 1. Begin creating a project on Google Cloud Platform.
 
-   For instructions, see [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project) in the Gogle documentation.
+   For instructions, see [Create a Google Cloud project](https://developers.google.com/workspace/guides/create-project) in the Google documentation.
 1. When enabling APIs, you must enable Google Drive API as well as the API of all Google apps you want to use (such as Google Sheets API).
 1. Finish creating the project.
 1. Continue to the section [Configure OAuth consent settings](#configure-oauth-consent-settings) in this article.

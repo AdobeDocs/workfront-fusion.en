@@ -17,42 +17,46 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Google Drive API information
 
@@ -81,7 +85,7 @@ The Google Drive connector uses the following:
 
 ## Connecting [!DNL Google Drive] to [!DNL Workfront Fusion]
 
-If you are [!DNL @gmail.com] or [!DNL @googlemail.com] user you need to create an OAuth client on [the [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project) in order to obtain [!UICONTROL Client ID] and [!UICONTROL Client Secret].
+If you use [!DNL @gmail.com] or [!DNL @googlemail.com] user you must create an OAuth client on the [!DNL Google Cloud Platform] to obtain your [!UICONTROL Client ID] and [!UICONTROL Client Secret]. 
 
 For step-by-step instructions on how to create the OAuth client (and obtain [!UICONTROL Client ID] and [!UICONTROL Client Secret]), see [Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 
@@ -102,14 +106,91 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Triggers
 
-* [[!UICONTROL Watch Files In Folder]](#watch-files-in-folder)
-* [[!UICONTROL Watch All Files]](#watch-all-files)
+* [[!UICONTROL Watch all files]](#watch-all-files)
+* [[!UICONTROL Watch comments]](#watch-comments)
+* [[!UICONTROL Watch files in folder]](#watch-files-in-folder)
 * [[!UICONTROL Watch shared files]](#watch-shared-files)
-* [[!UICONTROL Watch Comments]](#watch-comments)
 
-#### [!UICONTROL Watch Files In Folder]
+#### [!UICONTROL Watch all files]
 
-Retrieves file details when a file is added or modified in the specified folder.
+This trigger module starts a scenarion when a file in your [!DNL Google Drive] is added or modified.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL What files to watch]</td> 
+   <td> <p>Select which type of files you want to watch.</p> 
+    <ul> 
+     <li>[!UICONTROL All]</li> 
+     <li>[!DNL Google Documents]</li> 
+     <li>[!DNL Google Spreadsheets]</li> 
+     <li>[!DNL Google Slides]</li> 
+     <li>[!DNL Google Drawings]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+    <td >[!UICONTROL Convert [!DNL Google Documents] files to format]</td>
+    <td>Select the file format that you want to convert [!DNL Google Documents] to.</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
+    <td>Select the file format that you want to convert [!DNL Google Spreadsheets] to.</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
+    <td>Select the file format that you want to convert [!DNL Google Slides] to.</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td>
+    <td>Select the file format that you want to convert [!DNL Google Drawings] to.</td>
+  </tr>  
+  <tr> 
+   <td>[!UICONTROL Watch]</td> 
+   <td>Select whether you want to watch new files and all changes, or only new files.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum number of downloaded files]</td> 
+   <td>Set the maximum number of results that [!DNL Workfront Fusion] will download during one cycle (the number of repetitions per scenario run).</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Comments]
+
+This trigger module starts a scenario when a comment is added or modified on the selected file.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL File]</td> 
+   <td>Select the file that you want to watch for comments.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Watch]</td> 
+   <td>Select whether you want to watch for all changes or for new comments only</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum number of returned comments]</td> 
+   <td>Set the maximum number of comments that [!DNL Workfront Fusion] will return during one cycle (the number of repetitions per scenario run).</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch files in folder]
+
+This trigger module starts a scenario when a file is added or modified in the specified folder.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -157,56 +238,6 @@ Retrieves file details when a file is added or modified in the specified folder.
   <tr> 
     <td>[!UICONTROL Maximum number of downloaded files]</td>
     <td>Set the maximum number of results that [!DNL Workfront Fusion] will download during one cycle (the number of repetitions per scenario run).</td>
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch All Files]
-
-Retrieves file details when a file in your [!DNL Google Drive] is added or modified.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL What files to watch]</td> 
-   <td> <p>Select which type of files you want to watch.</p> 
-    <ul> 
-     <li>[!UICONTROL All]</li> 
-     <li>[!DNL Google Documents]</li> 
-     <li>[!DNL Google Spreadsheets]</li> 
-     <li>[!DNL Google Slides]</li> 
-     <li>[!DNL Google Drawings]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-    <td >[!UICONTROL Convert [!DNL Google Documents] files to format]</td>
-    <td>Select the file format that you want to convert [!DNL Google Documents] to.</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Convert [!DNL Google Spreadsheets] files to format]</td>
-    <td>Select the file format that you want to convert [!DNL Google Spreadsheets] to.</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Convert [!DNL Google Slides] files to format]</td>
-    <td>Select the file format that you want to convert [!DNL Google Slides] to.</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Convert [!DNL Google Drawings] files to format]</td>
-    <td>Select the file format that you want to convert [!DNL Google Drawings] to.</td>
-  </tr>  
-  <tr> 
-   <td>[!UICONTROL Watch]</td> 
-   <td>Select whether you want to watch new files and all changes, or only new files.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Maximum number of downloaded files]</td> 
-   <td>Set the maximum number of results that [!DNL Workfront Fusion] will download during one cycle (the number of repetitions per scenario run).</td> 
   </tr> 
  </tbody> 
 </table>
@@ -265,95 +296,21 @@ Triggers when a new file is shared to you, or an existing shared file is updated
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Comments]
-
-Triggers when a comment is added or modified on the selected file.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File]</td> 
-   <td>Select the file that you want to watch for comments.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Watch]</td> 
-   <td>Select whether you want to watch for all changes or for new comments only</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Maximum number of returned comments]</td> 
-   <td>Set the maximum number of comments that [!DNL Workfront Fusion] will return during one cycle (the number of repetitions per scenario run).</td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### Actions
 
-* [[!UICONTROL Upload a File]](#upload-a-file)
-* [[!UICONTROL Update a File]](#update-a-file)
-* [[!UICONTROL Copy a File]](#copy-a-file)
-* [[!UICONTROL Delete a File]](#delete-a-file)
-* [[!UICONTROL Move a File/Folder to Trash]](#move-a-filefolder-to-trash)
+* [[!UICONTROL Copy a file]](#copy-a-file)
+* [[!UICONTROL Create a fFolder]](#create-a-folder)
+* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Get a file]](#get-a-file)
-* [[!UICONTROL Search for Files/Folders]](#search-for-filesfolders)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
 * [[!UICONTROL Get a share link]](#get-a-share-link)
+* [[!UICONTROL Move a file to trash]](#move-a-filefolder-to-trash)
+* [[!UICONTROL Search for Files/Folders]](#search-for-filesfolders)
+* [[!UICONTROL Update a File]](#update-a-file)
+* [[!UICONTROL Upload a File]](#upload-a-file)
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL Copy a file]
 
-Uploads a file to your [!DNL Google Drive].
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!DNL Destination]</td> 
-   <td> <p>Select the destination that you want to upload a file to.</p> 
-    <ul> 
-     <li>[!DNL My Drive]</li> 
-     <li>[!DNL Shared with Me]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Target folder]</td> 
-   <td>Select the folder that you want to upload a file to. </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Source file]</td> 
-   <td>Select whether you want to use a file passed in from a previous module, or if you want to map the file manually.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File name]</td> 
-   <td>Select the file name. This option is available if you select "[!UICONTROL Map]" in the [!UICONTROL source file] field.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Data]</td> 
-   <td>Select the data file that you want to upload. This option is available if you select "[!UICONTROL Map]" in the [!UICONTROL source file] field.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Title]</td> 
-   <td>Enter a title for the new file.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Convert a file]</td> 
-   <td>Enabling this option allows the module to convert files to the corresponding [!DNL Google] format.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update a File]
-
-Updates a file's metadata or content.
+This action module copies a file to the new location.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -365,58 +322,7 @@ Updates a file's metadata or content.
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
-   <td> <p>Select the destination that you want to upload a file to.</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared with Me]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Move to a folder]</td> 
-   <td>If you want to move the file to a different folder, select the folder that you want to move the file into.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File ID]</td> 
-   <td>Map the ID of the file that you want to update.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Title]</td> 
-   <td>Enter a title for the updated file.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Change a file content]</td> 
-   <td>Select whether you want to replace the content of the file.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Source file]</td> 
-   <td>Select whether you want to use a file passed in from a previous module, or if you want to map the file manually. This field is available if you selected to change the file's content in the previous field.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File name]</td> 
-   <td>Select the file name. This option is available if you select "[!UICONTROL Map]" in the [!UICONTROL source file] field.</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Data]</td> 
-   <td>Select the data file that you want to upload. This option is available if you select "[!UICONTROL Map]" in the [!UICONTROL source file] field.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Copy a File]
-
-Copies a file to the new location.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Destination]</td> 
-   <td> <p>Select the destination that you want to upload a file to.</p> 
+   <td> <p>Select the destination that you want to copy a file to.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared with Me]</li> 
@@ -424,11 +330,11 @@ Copies a file to the new location.
   </tr> 
   <tr> 
    <td>[!UICONTROL Target folder]</td> 
-   <td>Select the folder where the file you want to copy is located/</td> 
+   <td>Select the folder that contains the file you want to copy.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL File ID]</td> 
-   <td>Map the ID of the file that you want to update.</td> 
+   <td>Map the ID of the file that you want to copy.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL The name of the copy]</td> 
@@ -437,9 +343,44 @@ Copies a file to the new location.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File]
+#### [!UICONTROL Create a folder]
 
-Permanently deletes a file or folder.
+This action module creates a folder in the specified location.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Destination]</td> 
+   <td> <p>Select the destination where you want to create a folder.</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared with Me]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL New folder location]</td> 
+   <td>Navigate to the location where you want to create a new folder.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL The name of the new folder]</td> 
+   <td>Enter a name for the folder that you are creating.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Share folder]</td> 
+   <td>Select this option if you want to share the folder with anyone with the [!UICONTROL Share] link. Otherwise, the share link is for the owner only.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a file]
+
+This action module permanently deletes a file or folder.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -456,28 +397,9 @@ Permanently deletes a file or folder.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File/Folder to Trash]
-
-Moves a file or folder to the trash.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL File ID]</td> 
-   <td>Map the ID of the file that you want to move to the trash.</td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Get a file]
 
-Retrieves the file with the ID specified.
+This action module retrieves the file with the ID specified.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -510,9 +432,47 @@ Retrieves the file with the ID specified.
  </tbody> 
 </table>
 
+#### [!UICONTROL Get a share link]
+
+This action module retrieves the share link for a file in Google Drive.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL File ID]</td> 
+   <td>Map the ID of the file that you want to get the share link for.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Move a file to trash]
+
+This action module moves a file or folder to the trash.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL File ID]</td> 
+   <td>Map the ID of the file that you want to move to the trash.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Search for Files/Folders]
 
-Searches for files or folders based on search criteria.
+This search module searches for files or folders based on search criteria.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -524,7 +484,7 @@ Searches for files or folders based on search criteria.
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
-   <td> <p>Select the destination that you want to search.</p> 
+   <td> <p>Select the destination drive that you want to search.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared with Me]</li> 
@@ -569,9 +529,9 @@ Searches for files or folders based on search criteria.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Folder]
+#### [!UICONTROL Update a File]
 
-Creates a folder in the specified location.
+This action module updates a file's metadata or content.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -583,30 +543,42 @@ Creates a folder in the specified location.
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination]</td> 
-   <td> <p>Select the destination that you want to upload a file to.</p> 
+   <td> <p>Select the destination that contains the file you want to update.</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared with Me]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New folder location]</td> 
-   <td>Navigate to the location where you want to create a new folder.</td> 
+   <td>[!UICONTROL Move to a folder]</td> 
+   <td>If you want to move the file to a specific folder, select the folder that you want to move the file into.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL The name of the new folder]</td> 
-   <td>Enter a name for the folder that you are creating.</td> 
+   <td>[!UICONTROL File ID]</td> 
+   <td>Map the ID of the file that you want to update.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Share folder]</td> 
-   <td>Select this option if you want to share the folder with anyone with the [!UICONTROL Share] link. Otherwise, the share link is for the owner only.</td> 
+   <td>[!UICONTROL Title]</td> 
+   <td>Enter a title for the updated file.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Change a file content]</td> 
+   <td>Select whether you want to replace the content of the file.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td>If you are replacing the content, select a source file from a previous module, or map the source file's name and data.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Conver a file]</td> 
+   <td>Enable this option to convert the file to the corresponding Google file format.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a share link]
+#### [!UICONTROL Upload a File]
 
-Retrieves the share link for a file in Google Drive.
+Uploads a file to your [!DNL Google Drive].
 
 <table style="table-layout:auto"> 
  <col> 
@@ -617,8 +589,28 @@ Retrieves the share link for a file in Google Drive.
    <td> <p>For instructions about connecting your [!DNL Google Drive] account to [!DNL Workfront Fusion], see <a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">Connecting [!DNL Google Drive] to [!UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File ID]</td> 
-   <td>Map the ID of the file that you want to get the share link for.</td> 
+   <td>[!DNL Destination]</td> 
+   <td> <p>Select the destination that you want to upload a file to.</p> 
+    <ul> 
+     <li>[!DNL My Drive]</li> 
+     <li>[!DNL Shared with Me]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Target folder]</td> 
+   <td>Select the folder that you want to upload a file to. </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td>Select a source file from a previous module, or map the source file's name and data.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Title]</td> 
+   <td>Enter a title for the new file.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Convert a file]</td> 
+   <td>Enabling this option allows the module to convert files to the corresponding [!DNL Google] format.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -627,10 +619,12 @@ Retrieves the share link for a file in Google Drive.
 
 ### Unable to upload or update a file
 
-There are several situations when uploading or updating a file fails:
+There are several reasons that uploading or updating a file fails:
 
-* The uploaded file is too big and exceeds the maximum file size limit allowed for your [!DNL Google Drive] plan or you have exceeded your [!DNL Google Drive] storage limit. You can either upgrade your storage plan or delete existing files from the [!DNL Google Drive] service.
-* The selected folder where the file was to be uploaded to no longer exists. The scenario stops and it is then necessary to select a target folder again.
+* The uploaded file is too big and exceeds the maximum file size limit allowed for your [!DNL Google Drive] plan, or you have exceeded your [!DNL Google Drive] storage limit. You can either upgrade your storage plan or delete existing files from the [!DNL Google Drive] service.
+* The selected folder where the file was to be uploaded to no longer exists. In this case, the scenario stops and you must select a different target folder in the module.
+
+<!-- Not present February 2025
 
 ## Search for files
 
@@ -897,3 +891,5 @@ All examples on this page show the unencoded `<q>q</q>` parameter, where `title 
    <pre>properties has { key='additionalID' and value='8e8aceg2af2ge72e78' and visibility='PRIVATE' }</pre>
 
 Source of this guide is [[!DNL Google Drive] documentation](https://developers.google.com/drive/api/v2/search-shareddrives).
+
+-->
