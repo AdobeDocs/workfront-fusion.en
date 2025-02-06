@@ -20,6 +20,7 @@ Scenarios are built to meet the needs of your organization, with applications an
 * [Configure scenario settings](#onfigure-scenario-settings)
 * [Test and revise](#test-and-revise)
 * [Activate the scenario](#activate-the-scenario)
+* [Workfront Fusion scenario keyboard shortcuts](#workfront-fusion-scenario-keyboard-shortcuts)
 
 Keyboard shortcuts
 
