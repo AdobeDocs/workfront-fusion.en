@@ -133,35 +133,41 @@ You can use the following keyboard shortcuts when creating or editing a scenario
   <tr> 
    <td role="rowheader">[!UICONTROL Save] </td> 
    <td>Ctrl+Shift+S</td> 
-   <td><span style="font-weight: normal;">Cmd+Shift+S</span> </td> 
+   <td>Cmd+Shift+S</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Run Once]</td> 
    <td>Ctrl+Shift+Enter</td> 
-   <td><span style="font-weight: normal;">Cmd+Shift+Enter</span> </td> 
+   <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
-   <td><span style="font-weight: normal;">Ctrl+Fn+F12</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Copy]</td> 
-   <td>Ctrl+C</td> 
-   <td><span style="font-weight: normal;">Cmd+C</span> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
-   <td>Ctrl+V</td> 
-   <td><span style="font-weight: normal;">Cmd+V</span> </td> 
+   <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
    <td>Shift+Drag</td> 
-   <td><span style="font-weight: normal;">Shift+Drag</span> </td> 
+   <td>Shift+Drag</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Copy]</td> 
+   <td>Ctrl+C</td> 
+   <td>Cmd+C</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td>Ctrl+V</td> 
+   <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Paste cURL into scenario to create HTTP module</td> 
+   <td colspan="2">Copy cURL, then paste anywhere in the scenario editor.<p>For more information, see <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Use cURL to add an HTTP module</a>.</td> 
   </tr> 
  </tbody> 
 </table>
+
+
 
 
 
