@@ -62,6 +62,15 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 +++
 
+## Prerequisites
+
+Your organization must meet the following prerequisites to use this functionality:
+
+* Your organization must have participated in the Workfront AI Assistant Beta program.
+* Adobe must have a signed Adobe Gen AI agreement on file for your organization.
+
+   For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
+
 ## Currently supported AI module applications
 
 The Fusion AI can currently generate modules that connect to the following applications:
@@ -89,15 +98,8 @@ The Fusion AI can currently generate modules that connect to the following appli
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a module.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Click the Generate with AI icon ![Generate with AI](assets/generate-with-ai-icon-beta.png) near the bottom of the scenario editor page.
-
-   Or
-
-   Begin adding a module and select **Generate with AI** from the list of applications. This option does not appear when adding the first (trigger) module to a scenario.
-
-   The AI Assistant panel opens.
-1. (Conditional) If this is the first time using AI to add a scenario segment, read the Agreement that appears and click **Agree**.
-1. Enter a text prompt into the box. 
+1. Click the **AI Assistant** icon ![AI Assistant icon](assets/ai-assistant-icon.png) near the upper-right corner of the screen.
+1. Enter a text prompt into the AI Assistant panel. 
 
    For tips on prompts, see [Tips for creating prompts for scenario segments](#tips-for-creating-prompts-for-scenario-segments) in this article.
 
