@@ -9,50 +9,48 @@ exl-id: fdecf740-e735-4569-b1a2-7c25c751ba42
 
 In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Microsoft Office 365 Calendar], as well as connect it to multiple third-party applications and services.
 
-In order to use [!DNL Office 365 Calendar] with [!DNL Adobe Workfront Fusion], it is necessary to have an [!DNL Office 365 Excel] account. You can create one at [www.office.com](https://www.office.com/).
-
-For instructions about connecting your Office 365 account to [!DNL Workfront Fusion], see [Create a connection to Adobe [!DNL Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
-
-After you grant consent, you are redirected back to the [!UICONTROL Workfront Fusion] administration page where you can continue creating your scenario.
-
 ## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -105,12 +103,106 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Event 
 
-* [[!UICONTROL Watch Events]](#watch-events)
-* [[!UICONTROL Search Events]](#search-events)
-* [[!UICONTROL Get an Event]](#get-an-event)
 * [[!UICONTROL Create an Event]](#create-an-event)
-* [[!UICONTROL Update an Event]](#update-an-event)
 * [[!UICONTROL Delete an Event]](#delete-an-event)
+* [[!UICONTROL Get an Event]](#get-an-event)
+* [[!UICONTROL Search Events]](#search-events)
+* [[!UICONTROL Update an Event]](#update-an-event)
+* [[!UICONTROL Watch Events]](#watch-events)
+
+#### [!UICONTROL Create an Event]
+
+This action module creates a new event.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Subject]</td> 
+   <td> <p>Enter or map a title for the created event.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Start date]</td> 
+   <td> Enter a single point of time when the event starts in a combined date and time representation. Use the format <code>{date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL End date]</td> 
+   <td> Enter a single point of time when the event ends in a combined date and time representation. Use the format <code>{date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Reminder on]</td> 
+   <td>Select whether you want to activate a reminder for this event.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Reminder]</td> 
+   <td>Enter or map he number of minutes before the start of the event when the reminder should trigger.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Importance]</td> 
+   <td> <p>Select the importance of this event.</p> 
+    <ul> 
+     <li>[!UICONTROL Low]</li> 
+     <li>[!UICONTROL Medium]</li> 
+     <li>[!UICONTROL High]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sensitivity] </td> 
+   <td> <p>Select the sensitivity of this event.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Normal]</strong> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>The recipient sees a "[!UICONTROL Please treat this as Personal]" message.</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>The recipient sees a "[!UICONTROL Please treat this as Private]" message. This event isn't forwarded or redirected by the recipient's inbox rules.</p> </li> 
+     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>The recipient sees a "[!UICONTROL Please treat this as Confidential]" message. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body content type]</td> 
+   <td>Select whether the body content is plain text or HTML.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body content]</td> 
+   <td>Enter or map the body of the message associated with the event. It can be in HTML or text format (as specified in the [!UICONTROL Body Content Type] field above).</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Location]</td> 
+   <td> <p>Enter or map the event location details.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Response requested]</td> 
+   <td>Select <strong>[!UICONTROL Yes]</strong> to request the invitee to send a response to the event invitation.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Show as]</td> 
+   <td> <p>Select how you want the event to appear to people who view your calendar.</p> 
+    <ul> 
+     <li>[!UICONTROL Free]</li> 
+     <li>[!UICONTROL Tentative]</li> 
+     <li>[!UICONTROL Busy]</li> 
+     <li>[!UICONTROL Out of office]</li> 
+     <li>[!UICONTROL Working elsewhere]</li> 
+     <li>[!UICONTROL Unknown]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attendees]</p> </td> 
+   <td> <p>For each attendee that you want to invide, click <b>Add item</b> and enter the following:</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter or map the attendee's name.</p> </li> 
+     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Enter or map the attendee's email address.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Categories]</td> 
+   <td>For each category that you want the event to display as on the calendar, click <b>Add item</b> and enter or map the category.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch Events]
 
@@ -220,101 +312,6 @@ This action module retrieves details of the specified event.
   <tr> 
    <td role="rowheader">[!UICONTROL Event ID]</td> 
    <td> <p>Enter or map the ID of the event you want to retrieve details about.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create an Event]
-
-This action module creates a new event.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Office 365] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Subject]</td> 
-   <td> <p>Enter or map a title for the created event.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> Enter a single point of time when the event starts in a combined date and time representation. Use the format <code>({date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> Enter a single point of time when the event ends in a combined date and time representation. Use the format <code>{date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Reminder on]</td> 
-   <td>Select whether you want to activate a reminder for this event.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Reminder]</td> 
-   <td>Enter or map he number of minutes before the start of the event when the reminder should trigger.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Importance]</td> 
-   <td> <p>Select the importance of this event.</p> 
-    <ul> 
-     <li>[!UICONTROL Low]</li> 
-     <li>[!UICONTROL Medium]</li> 
-     <li>[!UICONTROL High]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Sensitivity] </td> 
-   <td> <p>Select the sensitivity of this event.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>The recipient sees a "[!UICONTROL Please treat this as Personal]" message.</p> </li> 
-     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>The recipient sees a "[!UICONTROL Please treat this as Private]" message. This event isn't forwarded or redirected by the recipient's inbox rules.</p> </li> 
-     <li> <p><strong>[!UICONTROL Confidential]</strong> </p> <p>The recipient sees a "[!UICONTROL Please treat this as Confidential]" message. </p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body content type]</td> 
-   <td>Select whether the body content is plain text or HTML.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body content]</td> 
-   <td>Enter or map the body of the message associated with the event. It can be in HTML or text format (as specified in the [!UICONTROL Body Content Type] field above).</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Location]</td> 
-   <td> <p>Enter the event location details.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Response requested]</td> 
-   <td>Select <strong>[!UICONTROL Yes]</strong> to request the invitee to send a response to the event invitation.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Show as]</td> 
-   <td> <p>Select how you want the event to appear to people who view your calendar.</p> 
-    <ul> 
-     <li>[!UICONTROL Free]</li> 
-     <li>[!UICONTROL Tentative]</li> 
-     <li>[!UICONTROL Busy]</li> 
-     <li>[!UICONTROL Out of office]</li> 
-     <li>[!UICONTROL Working elsewhere]</li> 
-     <li>[!UICONTROL Unknown]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attendees]</p> </td> 
-   <td> <p>Add attendees of the event.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Name]</strong> </p> <p>Enter the attendee's name.</p> </li> 
-     <li> <p><strong>[!UICONTROL Email]</strong> </p> <p>Enter the attendee's email address.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Category]</td> 
-   <td>Enter or map the categories that you want the event to display as on the calendar.</td> 
   </tr> 
  </tbody> 
 </table>
