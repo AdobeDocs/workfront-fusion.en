@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 
 The HTTP app provides various modules for communication based on Hypertext Transfer Protocol (HTTP) protocol. HTTP is the foundation of data communication for the World Wide Web. You can use the modules to download web pages and files, call webhooks and API endpoints, and so on.
 
-The right choice of the module depends on the authentication/ authorization mechanism that the resource you want to access employs. 
+The right choice of the module depends on the authentication/ authorization mechanism used by the resource you want to access. 
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ The right choice of the module depends on the authentication/ authorization mech
 
 See the following articles for specific module instructions:
 
-* [HTTP >[!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
+* [http > [!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] module](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)
