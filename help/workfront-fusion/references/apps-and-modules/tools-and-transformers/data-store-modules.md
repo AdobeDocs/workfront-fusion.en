@@ -19,6 +19,8 @@ For a video introduction to data stores in Workfront Fusion, see:
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -26,60 +28,61 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>No Workfront Fusion license requirement.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
 To use [!UICONTROL Data Store] modules, you must first create a data store.
 
-<!--For information on creating data stores, see [Data Stores in [!UICONTROL Adobe Workfront Fusion]]()-->
+For information on creating data stores, see [Create and manage data stores](/help/workfront-fusion/create-scenarios/map-data/data-stores.md).
 
-## [!UICONTROL Data Store] modules and their fields
+## [!UICONTROL Data store] modules and their fields
 
 When you configure Data Store modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional Data Store fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+
+You do not need to create a connection to use data stores.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-All [!UICONTROL Data Store] modules are Action type modules.
 
 * [Add/Replace a Record](#addreplace-a-record)
-* [Update a Record](#update-a-record)
-* [Get a Record](#get-a-record)
 * [Check the Existence of a Record](#check-the-existence-of-a-record)
+* [Count Records](#count-records)
 * [Delete a Record](#delete-a-record)
 * [Delete All Records](#delete-all-records)
+* [Get a Record](#get-a-record)
 * [Search Records](#search-records)
-* [Count Records](#count-records)
+* [Update a Record](#update-a-record)
 
 ### [!UICONTROL Add/Replace a Record] 
 
@@ -91,7 +94,7 @@ The module returns the ID of the record and any associated fields, along with an
 
 >[!NOTE]
 >
->The module throws an error when you try to add the record which is already in the data store under the same name and the [!UICONTROL Overwrite an existing record] option is disabled.
+>The module throws an error when you try to add a record which is already in the data store under the same name, and the [!UICONTROL Overwrite an existing record] option is disabled.
 
 When you are configuring this module, the following fields display.
 
@@ -118,62 +121,6 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-### [!UICONTROL Update a Record]
-
-This action module updates a record.
-
-You specify the data store and the record's key.
-
-The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> Select or add the data store where you want to create a record. </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>Enter the unique key of the record you want the module to update.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
-   <td> <p>Enable this option to create a new record if the record with the specified key doesn't already exist.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record]</td> 
-   <td> <p> Enter the desired values to the record's fields that you want to update.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Get a Record] 
-
-This action module retrieves a record.
-
-You specify the data store and the record's key.
-
-The module returns the ID of the record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data store]</td> 
-   <td> <p> Select the data store you want to retrieve a record from</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Key] </td> 
-   <td> <p>Enter the unique key of the record you want the module to retrieve.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### [!UICONTROL Check the Existence of a Record]
 
 This action module specifies whether a particular record exists.
@@ -191,6 +138,25 @@ You specify the data store and the record's key.
   <tr> 
    <td>[!UICONTROL Key] </td> 
    <td> <p>Enter the unique key of the record you want the module to check for existence.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Count Records]
+
+This action module numbers the records in a data store.
+
+You specify the data store.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store] </td> 
+   <td> <p>Select the data store that contains the records you want to count.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -235,6 +201,29 @@ You specify the data store.
  </tbody> 
 </table>
 
+### [!UICONTROL Get a Record] 
+
+This action module retrieves a record.
+
+You specify the data store and the record's key.
+
+The module returns the ID of the record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> Select the data store you want to retrieve a record from</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>Enter the unique key of the record you want the module to retrieve.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### [!UICONTROL Search Records]
 
 This search module looks for records in an object in Data Store that match the search query you specify.
@@ -270,21 +259,35 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-### [!UICONTROL Count Records]
+### [!UICONTROL Update a Record]
 
-This action module numbers the records in a data store.
+This action module updates a record.
 
-You specify the data store.
+You specify the data store and the record's key.
+
+The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
 When you are configuring this module, the following fields display.
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Data store] </td> 
-   <td> <p>Select the data store that contains the records you want to count.</p> </td> 
+   <td>[!UICONTROL Data store]</td> 
+   <td> <p> Select or add the data store where you want to create a record. </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Key] </td> 
+   <td> <p>Enter the unique key of the record you want the module to update.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Insert missing record] </td> 
+   <td> <p>Enable this option to create a new record if the record with the specified key doesn't already exist.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record]</td> 
+   <td> <p> Enter the desired values to the record's fields that you want to update.</p> </td> 
   </tr> 
  </tbody> 
 </table>

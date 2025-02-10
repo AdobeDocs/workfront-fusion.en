@@ -77,7 +77,7 @@ The Airtable connector uses the following:
 -->
 1. Open Workfront Fusion and the **Create a connection** dialog of the desired module.
 1. Enter a name for the connection.
-1. (Optional) Click Show advancet settings, and enter your Airtable Client ID and Client Secret.
+1. (Optional) Click Show advanced settings, and enter your Airtable Client ID and Client Secret.
 1. Click the **Continue** button to create the connection and return to the module.
 
 ## Airtable modules and their fields
