@@ -74,7 +74,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 ## Create a connection for an [!DNL OAuth] request 
 
 * [General instructions for creating a connection in the HTTP > Make an OAuth 2.0 request module](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
-* [Instructions for creating a connection to Google in the HTTP >[!UICONTROL Make] an OAuth 2.0 request module](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
+* [Instructions for creating a connection to Google in the http > [!UICONTROL Make] an OAuth 2.0 request module](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
 * [Instructions for connecting to Microsoft Graph API via the HTTP > Make an OAuth 2.0 request module](#instructions-for-connecting-to-microsoft-graph-api-via-the-http--make-an-oauth-20-request-module)
 
 ### General instructions for creating a connection in the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module 

@@ -17,7 +17,7 @@ exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
 
 These connectors allow you to connect to any app or web service that has a public API. 
 
-* [HTTP >[!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [http > [!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
