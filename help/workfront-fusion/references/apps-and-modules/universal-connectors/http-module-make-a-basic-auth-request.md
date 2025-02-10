@@ -54,9 +54,9 @@ To find out what plan, license type, or access you have, contact your [!DNL Work
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
 
-## [!UICONTROLHTTP] > [!UICONTROL Make a Basic Authorization request] module configuration
+## [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] module configuration
 
-When you configure the [!UICONTROLHTTP] > [!UICONTROL Make a Basic Authorization request] module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
+When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
