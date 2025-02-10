@@ -13,7 +13,7 @@ recommendations: noDisplay, noCatalog
 
 The HTTP app provides various modules for communication based on Hypertext Transfer Protocol (HTTP) protocol. HTTP is the foundation of data communication for the World Wide Web. You can use the modules to download web pages and files, call webhooks and API endpoints, and so on.
 
-The right choice of the module depends on the authentication/ authorization mechanism that the resource you want to access employs. 
+The right choice of the module depends on the authentication/ authorization mechanism used by the resource you want to access. 
 
 >[!NOTE]
 >
