@@ -77,6 +77,10 @@ The Bynder connector uses the following:
 
 ## Connect [!DNL Bynder] to Workfront Fusion  {#connect-bynder-to-workfront-fusion}
 
+>[!NOTE]
+>
+>Bynder uses the Authorization code / refresh token grant type. This is the only grant type that the Fusion Bynder connector uses.
+
 * [Create a connection to [!DNL Bynder] from [!DNL Workfront Fusion]](#create-a-connection-to-bynder-from-workfront-fusion)
 * [Generate a [!UICONTROL Client ID] and [!UICONTROL Client Secret] in [!DNL Bynder] (Optional)](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
@@ -101,9 +105,10 @@ For instructions for creating an app in [!DNL Bynder], see [Oauth 2.0 Apps](http
 
 >[!NOTE]
 >
->When creating the app in [!DNL Bynder], enter the following as the `redirect uri`:
+>* When creating the app in [!DNL Bynder], enter the following as the `redirect uri`:
 >
->`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>* Bynder uses the Authorization code / refresh token grant type. This is the only grant type that the Fusion Bynder connector uses.
 
 ## [!DNL Bynder] modules and their fields
 
