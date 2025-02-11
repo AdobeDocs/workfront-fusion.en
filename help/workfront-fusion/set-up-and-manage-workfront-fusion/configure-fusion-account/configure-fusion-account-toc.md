@@ -5,6 +5,8 @@ description: This section contains articles related to configuring your account 
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
+hide: yes
+hidefromtoc: yes
 ---
 
 # Configuring your Fusion account: article index

@@ -1,6 +1,6 @@
 ---
-title: HTTP &gt; Make a request module
-description: The Adobe Workfront Fusion HTTP &gt; Make a request module is a universal module that enables you to configure an HTTP request and submit it to a server. The received HTTP response is then contained in the output bundle.
+title: "HTTP > Make a request module"
+description: "The Adobe Workfront Fusion HTTP > Make a request module is a universal module that enables you to configure an HTTP request and submit it to a server. The received HTTP response is then contained in the output bundle."
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
@@ -98,7 +98,7 @@ When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a request] module, [
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>The[!UICONTROL  Multipart/form-data] is an HTTP multipart request used to send files and data. It is commonly used to upload files to the server.</p> <p>Add fields to be sent in the request. Each field must contain Key-Value pair.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Enter the key and value to be sent within the request body.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] >[!UICONTROL Get a File] or [!UICONTROL Google Drive] > Download a File), or enter the file name and file data manually.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] > [!UICONTROL Get a File] or [!UICONTROL Google Drive] > Download a File), or enter the file name and file data manually.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

@@ -1,5 +1,5 @@
 ---
-title: HTTP &gt; Make an OAuth 2.0 request module
+title: "HTTP > Make an OAuth 2.0 request module"
 description: In order to make an [!DNL Adobe Workfront Fusion] HTTP(S) request to servers that require an OAuth 2.0 authorization, you first need to create an OAuth connection. [!DNL Adobe Workfront Fusion] ensures that all calls made with this connection have the appropriate authorization headers and automatically refresh associated tokens when required.
 author: Becky
 feature: Workfront Fusion
@@ -221,7 +221,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 1. Continue to [Configure the Make an OAuth 2.0 request module](#configure-the-make-an-oauth-20-request-module).
 
-### Instructions for creating a connection to [!DNL Google] in the [!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]  
+### Instructions for creating a connection to [!DNL Google] in the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]  
 
 The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0] request module to connect to [!DNL Google].
 
@@ -336,7 +336,7 @@ If you see the map button above a field or function, you can use it to set varia
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>The [!UICONTROL Multipart/form-data] is an HTTP multipart request used to send files and data. It is commonly used to upload files to the server.</p> <p>Add fields to be sent in the request. Each field must contain a key-value pair.</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>Enter the key and value to be sent within the request body.</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] >[!UICONTROL Get a File]), or enter the file name and file data manually.</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Enter the key and specify the source file you want to send in the request body.</p> <p>Map the file you want to upload from the previous module (such as [!UICONTROL HTTP] > [!UICONTROL Get a File]), or enter the file name and file data manually.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

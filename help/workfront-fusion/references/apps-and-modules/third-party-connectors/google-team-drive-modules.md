@@ -156,7 +156,7 @@ Uploads a file to the specified shared drive.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Specify the file you want to upload to the shared drive.</p> <p>Map the file you want to upload from the previous module (e.g. [!UICONTROL HTTP] >[!UICONTROL Get a File] or [!UICONTROL Dropbox] >[!UICONTROL Get a file)], or enter the file name and file data manually.</p> </td> 
+   <td> <p>Specify the file you want to upload to the shared drive.</p> <p>Map the file you want to upload from the previous module (e.g. [!UICONTROL HTTP] > [!UICONTROL Get a File] or [!UICONTROL Dropbox] >[!UICONTROL Get a file)], or enter the file name and file data manually.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Title]</td> 
