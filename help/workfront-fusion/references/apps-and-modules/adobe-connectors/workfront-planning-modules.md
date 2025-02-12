@@ -11,42 +11,54 @@ With the [!DNL Adobe Workfront Planning] modules, you can trigger a scenario whe
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
-   </td>  
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## Prerequisites
+
+You must have the following to access Workfront Planning:
+
+* A new Workfront package and license. Workfront Planning is not available for legacy Workfront packages or licenses.
+* A Workfront Planning package.
+* Your organization's instance of Workfront must be onboarded to the Adobe Unified Experience.
 
 ## Adobe Workfront Planning API information
 
@@ -104,7 +116,7 @@ You can create a connection to your [!DNL Workfront Planning] account directly f
           <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]<p>(Optional)</p></td>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
           <td>Enter the URL that your instance of Workfront will use to authenticate this connection. <p>The default value is <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
         </tr>
         <tr>
@@ -113,9 +125,22 @@ You can create a connection to your [!DNL Workfront Planning] account directly f
         </tr>
       </tbody>
     </table>
+
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
 ## [!DNL Adobe Workfront Planning] modules and their fields
+
+When you configure Workfront modules, Workfront Fusion displays the fields listed below. Along with these, additional Workfront fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [Triggers](#triggers)
+* [Actions](#actions)
+* [Searches](#searches)
+* [Uncategorized](#uncategorized)
 
 ### Triggers
 
@@ -193,7 +218,7 @@ This action module deletes a single record type in Workfront Planning by its ID.
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
-      <td>Enter or map the ID of the field you want to delete.</td> 
+      <td>Enter or map the ID of the record type you want to delete.</td> 
       </tr>
   </tbody>
 </table>
@@ -247,14 +272,54 @@ This module makes a custom API call to the [!DNL Adobe Workfront Planning] API.
   </tbody>
 </table>
 
-<!--
+
 ### Searches
 
 #### Search records
 
 This action module retrieves a list of records based on criteria you specify.
 
--->
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Enter or map the Workspace that contains the records that you want to search.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to search.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record Fields]</p>
+      </td>
+      <td>For each field that you want to use in your search, locate that field, select the opertor, and enter or map the value that you want to search for. Field are available based on the record type selected.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Condition for filters]</p>
+      </td>
+      <td>Select the condition for your filters:<ul><li><b>AND</b><p>The module returns records that meet <b>all</b> of the field values you selected.</p></li><li><b>OR</b><p>The module returns records that meet <b>any</b> of the field values you selected.</p></li></ul></td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Limit]</p>
+      </td>
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
+      </tr>
+  </tbody>
+</table>
+
 
 ### Uncategorized
 
@@ -281,7 +346,7 @@ This action creates a single record in Workfront Planning.
       <td role="rowheader">
         <p>Other fields</p>
       </td>
-      <td>These fields are based on the record type you selected.</td> 
+      <td>Enter the values that you want the new record to have. These fields are based on the record type you selected.</td> 
       </tr>
      <tr>
   </tbody>
@@ -307,31 +372,6 @@ This action module deletes the specified record in Workfront Planning.
       </tr>
   </tbody>
 </table>
-
-<!--
-
-### Get all records
-
-This action module retrieves all records from an [!DNL Adobe Workfront Planning] account.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned records]</p>
-      </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
--->
 
 ### Get a record
 
@@ -372,11 +412,11 @@ This action module retrieves all records of the specified type.
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>Select the type of record that you want to retrieve.</td>
     </tr>
-     <tr>
+     <!--<tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
   </tbody>
 </table>
 
@@ -391,6 +431,10 @@ This action module retrieves a list of record types in an [!DNL Adobe Workfront 
     <tr>
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td>Select or map the workspace that contains the record types you want to retrieve.</td>
     </tr>
   </tbody>
 </table>
@@ -417,7 +461,7 @@ This action updates a single record in Workfront Planning.
       <td role="rowheader">
         <p>Other fields</p>
       </td>
-      <td>These fields are based on the record type you selected.</td> 
+      <td>Enter the new values that you want the record to have. These fields are based on the record type you selected.</td> 
       </tr>
      <tr>
   </tbody>
