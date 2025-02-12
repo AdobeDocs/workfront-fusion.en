@@ -128,11 +128,11 @@ This action module archives an element from a library.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Select the library that contains the element you want to archive.</td>
+      <td >Select or map the library that contains the element you want to archive.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Element ID]</td>
-      <td>Select the element that you want to archive.</td>
+      <td>Select or map the element that you want to archive.</td>
     </tr>
   </tbody>
 </table>
@@ -151,7 +151,7 @@ This action module returns a single element from a library.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Select the library that contains the element you want to retrieve.</td>
+      <td>Select or map the library that contains the element you want to retrieve.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Element ID]</td>
@@ -197,15 +197,15 @@ This action module retrieves a list of elements in a library.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Select the library that you want to list elements from.</td>
+      <td >Select or map the library that you want to list elements from.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Order by]</td>
-      <td>Select whether you want to order results by name or by the last date the element was modified.</td>
+      <td>Select whether you want to order results by name, or by the last date the element was modified.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Type]</td>
-      <td >Enter a MIME type to limit results to elements identified with the specified MIME type. Example: <code>string</code>.</td>
+      <td >Enter or map a MIME type to limit results to elements identified with the specified MIME type. Example: <code>string</code>.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Selector]</td>
@@ -233,57 +233,6 @@ This action module retrieves a list of elements in a library.
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td>
-    </tr>
-  </tbody>
-</table>
-
-#### [!UICONTROL Upload an Element]
-
-This action module uploads a small file asset to an existing library. Maximum file size is 1 GB.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>Select an existing Creative Cloud Libraries connection. Connection creation is currently not available in the Creative Cloud Libraries connector. Existing connections work as expected.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >Select the library that you want to list elements from.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
-      <td>
-        <p>Select the processing mode to invoke this request process with.</p>
-        <ul>
-          <li>
-            <p><b>[!UICONTROL sync]</b>
-            </p>
-            <p>The API call is processed synchronously. The response is delivered when processing is complete (unless the call times out.)</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL async]</b>
-            </p>
-            <p>The async monitor response is immediately returned, and request processing occurs asynchronously. The calling is responsible for polling the endpoint until completion.</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL sync,async]</b> (Default)</p>
-            <p>Synchronous processing of the request is attempted. When the processing extends past 5000 ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.</p>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Type File]</td>
-      <td >Enter or map the MIME type of the uploaded file.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Source File]</td>
-      <td>
-        <p>Select a source file from a previous module, or map the source file's name and data.</p>
-      </td>
     </tr>
   </tbody>
 </table>
@@ -382,6 +331,9 @@ This trigger module starts a scenario when an existing library is updated.
 
 ### Other
 
+* [Make an API Call](#make-an-api-call)
+* [Upload an Asset](#upload-an-asset)
+
 #### [!UICONTROL Make an API Call]
 
 This module makes a custom API call to the [!DNL Adobe Creative Cloud Libraries] API.
@@ -438,6 +390,66 @@ This module makes a custom API call to the [!DNL Adobe Creative Cloud Libraries]
       <p>Select a source file from a previous module, or map the source file's name and data.</p>
     </td>
     </tr>
-
 </tbody>
 </table>
+
+
+#### [!UICONTROL Upload an Asset]
+
+This action module uploads a small file asset to an existing library. Maximum file size is 1 GB.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>Select an existing Creative Cloud Libraries connection. Connection creation is currently not available in the Creative Cloud Libraries connector. Existing connections work as expected.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td >Select the library that you want to upload an asset to.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
+      <td>
+        <p>Select the processing mode to invoke this request process with.</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL sync]</b>
+            </p>
+            <p>The API call is processed synchronously. The response is delivered when processing is complete (unless the call times out.)</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL async]</b>
+            </p>
+            <p>The async monitor response is immediately returned, and request processing occurs asynchronously. The calling is responsible for polling the endpoint until completion.</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL sync,async]</b> (Default)</p>
+            <p>Synchronous processing of the request is attempted. When the processing extends past 5000 ms, the async monitor response is returned. The monitor URL should be polled until the request is complete.</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td >Select the type of element that you want to upload</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td >Enter or map the MIME type of the uploaded file.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source File]</td>
+      <td>
+        <p>Select a source file from a previous module, or map the source file's name and data.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
