@@ -12,6 +12,8 @@ In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that us
 >[!NOTE]
 >
 >The [!DNL Microsoft Dynamics 365] connector does not support [!DNL Dynamics Finance and Operations].
+>
+>For information about the [!DNL Microsoft Dynamics 365 Finance and Operations] connector, see [[!DNL Microsoft Dynamics 365 Finance and Operations] modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md).
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -19,42 +21,46 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -71,8 +77,48 @@ You can create a connection to your [!DNL Microsoft Dynamics 365] account direct
 >For example, if a user has "Read table" permissions granted via the Excel connector and then creates a connection in the Outlook connector to read emails, the permissions consent screen will show both the already granted "Read table" permission and the newly required "Write email" permission.
 
 1. In any [!DNL Microsoft Dynamics 365] module, click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
-1. Enter a name for the connection.
-1. In the **[!UICONTROL Resource]** field, enter the address of your [!DNL Dynamics 365] account, without `https://`.
+
+
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>Enter a name for this connection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td>Select whether you are connecting to a production or non-production environment.</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Type]</td>
+          <td>Select whether you care connecting to a service account or a personal account.</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]<p>(Optional)</p></td>
+          <td>Enter your [!DNL Microsoft Dynamics] [!UICONTROL Client ID].</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]<p>(Optional)</p></td>
+          <td>Enter your [!DNL Microsoft Dynamics] [!UICONTROL Client Secret].
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td>Enter the URL that your instance of Workfront will use to authenticate this connection. <p>The default value is <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Resource]</td>
+          <td>enter the address of your [!DNL Dynamics 365] account, without <code>>https://</code>.</p>
+        </tr>
+      </tbody>
+    </table>
 1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
 
 >[!NOTE]
@@ -90,53 +136,16 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [Triggers](#triggers)
+* [Actions](#actions)
+* [Searches](#searches)
+
+### Triggers
+
 * [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
-* [[!UICONTROL Search Records]](#search-records)
+* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
 
-### [!UICONTROL Watch Records (Scheduled)]
-
-This scheduled trigger module executes a scenario when a record in the object you specify is created or updated after the last scheduled run in [!DNL Dynamics 365].
-
-The module's output indicates whether the record that it found is new or updated (if it was both added and updated in the time period, it's marked as new). You can map this information in subsequent modules in the scenario.
-
-This happens on a regularly scheduled interval that you specify.
-
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>Select whether you want the module to watch <strong>[!UICONTROL Only new records]</strong>, <strong>[!UICONTROL Updated records only]</strong>, or <strong>[!UICONTROL New records and all changes]</strong>.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td>Choose the [!UICONTROL Microsoft Dynamics 365] record type that you want the scenario to watch.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
-   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL Watch Records (Real Time)]
 
 This instant trigger module executes a scenario when a record (object) you specify is created or updated in [!DNL Dynamics 365].
 
@@ -157,9 +166,55 @@ A webhook is required in this module.
     </ol> </td> 
   </tr> 
  </tbody> 
+</table> 
+
+#### [!UICONTROL Watch Records (Scheduled)]
+
+This scheduled trigger module executes a scenario when a record in the object you specify is created or updated after the last scheduled run of this scenario.
+
+The module's output indicates whether the record that it found is new or updated. If the record was both added and updated in the time period, it is returned as a new record.
+
+This happens on a regularly scheduled interval that you specify.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> ``
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Include]</td> 
+   <td>Select whether you want the module to watch <strong>[!UICONTROL New Records Only]</strong>, <strong>[!UICONTROL Updated Records Only]</strong>, or <strong>[!UICONTROL New and Updated Records]</strong>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td>Choose the [!UICONTROL Microsoft Dynamics 365] record type that you want the scenario to watch.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td> <p>Select the information you want included in the output bundle for this module. Fields are available based on the selected entity type.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
 </table>
 
-### [!UICONTROL Create Record]
+### Actions
+
+* [[!UICONTROL Create Record]](#create-record)
+* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Delete Record]](#delete-record)
+* [[!UICONTROL Read Records]](#read-records)
+* [[!UICONTROL Update Record]](#update-record)
+
+
+#### [!UICONTROL Create Record]
 
 This action module creates an entity, such as an appointment or task,.
 
@@ -192,7 +247,36 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-### [!UICONTROL Make an API Call]
+#### [!UICONTROL Delete Record]
+
+This action module deletes an entity.
+
+You specify the ID of the entity.
+
+The module returns the ID of the  entity and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td> <p>Select the type of entity that you want the module to delete.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td> <p>Enter or map the unique [!DNL Microsoft Dynamics 365] ID of the record that you want the module to delete.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Make an API Call]
 
 This action module lets you make a custom authenticated call to the [!DNL Microsoft Dynamics 365] API. This way, you can create a data flow automation that can't be accomplished by the other [!DNL Microsoft Dynamics 365] modules.
 
@@ -236,36 +320,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete Record]
-
-This action module deletes an entity.
-
-You specify the ID of the entity.
-
-The module returns the ID of the  entity and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td> <p>Select the type of entity that you want the module to delete.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td> <p>Enter or map the unique [!DNL Microsoft Dynamics 365] ID of the record that you want the module to delete.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Read Records]
+#### [!UICONTROL Read Records]
 
 This action module reads data from a single entity in [!DNL Microsoft Dynamics 365].
 
@@ -298,7 +353,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-### [!UICONTROL Update Record]
+#### [!UICONTROL Update Record]
 
 This action module updates an entity.
 
@@ -335,7 +390,9 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### Searches
+
+#### [!UICONTROL Search Records]
 
 This search module looks for records in an object in [!DNL Microsoft Dynamics 365] that match the search query you specify. You can map this information in subsequent modules in the scenario.
 
