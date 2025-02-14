@@ -15,6 +15,8 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -22,35 +24,37 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -125,6 +129,10 @@ To create a connection for your [!DNL Dropbox] modules:
         <td role="rowheader">[!UICONTROL Account Type]</td>
         <td>Select whether you are connecting to a personal Dropbox account or a business (Dropbox Business) account.</td>
         </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Exclude dropbox-api-path-root header]</td>
+        <td>Enable this option to exclude dropbox-api-path-root header for Dropbox Apps with App Folder access</td>
+        </tr>
       </tbody>
     </table>
     
@@ -174,52 +182,11 @@ This Trigger type module returns file details when the file in a specified folde
 
 ### Modules for getting [!DNL Dropbox] files and folders 
 
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 * [[!UICONTROL Download a File]](#download-a-file)
 * [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
 * [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
 * [[!UICONTROL List File Revisions]](#list-file-revisions)
-
-#### [!UICONTROL Search Files/Folders] 
-
-This search module looks for records in an object in [!DNL Dropbox] that match the search query you specify.
-
-You can map this information in subsequent modules in the scenario.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search] </td> 
-   <td> <p>Enter the search term.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Select the folder you want to search. This module searches the entire [!DNL Dropbox] if you do not select a folder.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>File Status</td> 
-   <td> <p> Select the file status to restrict the search to the selected file status.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>File Categories</td> 
-   <td> <p> Select the file categories to restrict the search to the selected categories.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>File extensions</td> 
-   <td> <p> Choose the file extensions you want to search for.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Limit </td> 
-   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 
 #### [!UICONTROL Download a File]
 
@@ -339,11 +306,52 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td> <p>File Path / File</p> </td> 
-   <td> <p style="font-weight: bold;">File Path</p> <p>Enter or map the target path to the file.</p> <p style="font-weight: bold;">File</p> <p>Select the file from the menu.</p> </td> 
+   <td> <p><b>File Path</b></p> <p>Enter or map the target path to the file.</p> <p><b>File</b></p> <p>Select the file from the menu.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>Limit</p> </td> 
    <td> <p>Enter or map the maximum number of records you want the module to list during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Search Files/Folders] 
+
+This search module looks for records in an object in [!DNL Dropbox] that match the search query you specify.
+
+You can map this information in subsequent modules in the scenario.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search] </td> 
+   <td> <p>Enter the search term.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Select the folder you want to search. This module searches the entire [!DNL Dropbox] if you do not select a folder.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>File Status</td> 
+   <td> <p> Select the file status to restrict the search to the selected file status.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>File Categories</td> 
+   <td> <p> Select the file categories to restrict the search to the selected categories.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>File extensions</td> 
+   <td> <p> Choose the file extensions you want to search for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Limit </td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
