@@ -15,6 +15,8 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -22,35 +24,37 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -125,6 +129,10 @@ To create a connection for your [!DNL Dropbox] modules:
         <td role="rowheader">[!UICONTROL Account Type]</td>
         <td>Select whether you are connecting to a personal Dropbox account or a business (Dropbox Business) account.</td>
         </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Exclude dropbox-api-path-root header]</td>
+        <td>Enable this option to exclude dropbox-api-path-root header for Dropbox Apps with App Folder access</td>
+        </tr>
       </tbody>
     </table>
     
@@ -174,52 +182,11 @@ This Trigger type module returns file details when the file in a specified folde
 
 ### Modules for getting [!DNL Dropbox] files and folders 
 
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 * [[!UICONTROL Download a File]](#download-a-file)
 * [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
 * [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
 * [[!UICONTROL List File Revisions]](#list-file-revisions)
-
-#### [!UICONTROL Search Files/Folders] 
-
-This search module looks for records in an object in [!DNL Dropbox] that match the search query you specify.
-
-You can map this information in subsequent modules in the scenario.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search] </td> 
-   <td> <p>Enter the search term.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Select the folder you want to search. This module searches the entire [!DNL Dropbox] if you do not select a folder.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>File Status</td> 
-   <td> <p> Select the file status to restrict the search to the selected file status.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>File Categories</td> 
-   <td> <p> Select the file categories to restrict the search to the selected categories.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>File extensions</td> 
-   <td> <p> Choose the file extensions you want to search for.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>Limit </td> 
-   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 
 #### [!UICONTROL Download a File]
 
@@ -339,7 +306,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td> <p>File Path / File</p> </td> 
-   <td> <p style="font-weight: bold;">File Path</p> <p>Enter or map the target path to the file.</p> <p style="font-weight: bold;">File</p> <p>Select the file from the menu.</p> </td> 
+   <td> <p><b>File Path</b></p> <p>Enter or map the target path to the file.</p> <p><b>File</b></p> <p>Select the file from the menu.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>Limit</p> </td> 
@@ -348,28 +315,13 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-### Modules for creating and editing [!DNL Dropbox] files and folders 
+#### [!UICONTROL Search Files/Folders] 
 
-* [[!UICONTROL Upload] a File](#upload-a-file)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
-* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
-* [[!UICONTROL Restore a File]](#restore-a-file)
-* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
-* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
-* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+This search module looks for records in an object in [!DNL Dropbox] that match the search query you specify.
 
-#### [!UICONTROL Upload a File]
+You can map this information in subsequent modules in the scenario.
 
-This action module uploads a file to a folder.
-
-You specify information such as the location for the file, the file you want to upload, and an optional new name for the file.
-
-The module returns the ID of the  file and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
@@ -378,19 +330,42 @@ When you are configuring this module, the following fields display.
    <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td> <p> Select the folder of your [!DNL Dropbox] you want to upload the file to.</p> </td> 
+   <td>[!UICONTROL Search] </td> 
+   <td> <p>Enter the search term.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Enter or map the file you want to add to the [!DNL Dropbox] folder selected above.</p> <p style="font-weight: bold;">[!UICONTROL File name]</p> <p>Enter or map the file name, including the file extension.</p> <p style="font-weight: bold;">[!UICONTROL File data]</p> <p>Enter or map the file data (from previous module such as [!UICONTROL Google Drive] >[!UICONTROL Get a File)].</p> <p>Note: The maximum size of the uploaded file is 150 MB.</p> </td> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>Select the folder you want to search. This module searches the entire [!DNL Dropbox]account if you do not select a folder.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing file]</td> 
-   <td> <p> Enable this option to replace the existing file with the new file. If this option is left disabled, the uploaded file is renamed.</p> </td> 
+   <td>File Status</td> 
+   <td> <p> Select the file status That you want to include in the search.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>File Categories</td> 
+   <td> <p> Select the file categories that you want to include in the search.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>File extensions</td> 
+   <td> <p>For each file extension that you want to include in the search, click <b>Add item</b> and enter or map the file extension.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Limit </td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### Modules for creating and editing [!DNL Dropbox] files and folders 
+
+* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
+* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
+* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
+* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
+* [[!UICONTROL Restore a File]](#restore-a-file)
+* [[!UICONTROL Upload] a File](#upload-a-file)
 
 #### [!UICONTROL Create a Folder]
 
@@ -416,7 +391,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
-   <td> <p>Enter or map the path where you want to create a new folder.</p> <p>Note:   <p>If you are using a [!DNL Dropbox Business] account (with team spaces), you must remove the slash <code>/</code>, or do not click <strong>[!UICONTROL Click here] to choose folder</strong> to create a team folder in the root.</p> <p>If the slash is not removed an error <code>[409] path/malformed_path/..</code> is returned.</p> </p> </td> 
+   <td> <p>Enter or map the path where you want to create a new folder.</p> <p>Note:   <p>If you are using a [!DNL Dropbox Business] account (with team spaces), you must remove the slash <code>/</code>, or do not click <strong>Click here to choose folder</strong> to create a team folder in the root.</p> <p>If the slash is not removed an error <code>[409] path/malformed_path/..</code> is returned.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Auto rename]</td> 
@@ -427,11 +402,9 @@ When you are configuring this module, the following fields display.
 
 #### [!UICONTROL Create/Overwrite a Text File]
 
-This action module creates a DOC file or overwrites the content of an existing one.
+This action module creates a DOC file, or overwrites the content of an existing one.
 
 You specify the source file and the folder.
-
-The module returns the ID of the  folder and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
 When you are configuring this module, the following fields display.
 
@@ -445,15 +418,11 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
-   <td> <p> Select whether you want to create or overwrite a DOC file.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>Select the target location where you want to create a file.</p> </td> 
+   <td> <p> Select whether you want to create or overwrite a DOC file.</p><ul><li><b>Create</b></p>Select the folder where you want to create a file.</li><li><b>Overwrite</b><p>Select how you want to choose the file to overwrite, then map the file path or select the file. </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>Enter or map the file you want to add to the [!DNL Dropbox] folder.</p> <p style="font-weight: bold;">File name</p> <p>Enter the file name for the new DOC file (without an extension).</p> <p style="font-weight: bold;">File Content</p> <p>Enter the text content of the DOC file.</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's content. </p> <p>If you are creating a file, select <b>Empty</b>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -482,30 +451,31 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path / File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Enter or map the target path to the file.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Select the file from the menu.</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Enter or map the path to the target file.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Select the target file.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>Select whether the link is public, for team, or password restricted.</p> <p>Note: [!UICONTROL Team only] and [!UICONTROL Access with password] options are only available to users who have [!DNL Dropbox Pro] or higher version.</p> </td> 
+   <td> <p>Select whether the link is public, for team, or password restricted.</p> <p><b>Note:</b></p><p> [!UICONTROL Team only] is available only to Dropbox Business accounts. [!UICONTROL Access with password] is only available to [!DNL Dropbox Pro] or Dropbox Business accounts.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
-   <td> <p> Enter the date and time when the link will expire and will be no longer accessible. If this field is left empty, the link will not expire. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> <p>Note: [!UICONTROL Team only] and [!UICONTROL Access with password] options are only available to users who have [!UICONTROL Dropbox Pro] or higher versions.</p> </td> 
+   <td> <p> Enter the date and time when the link will expire and will be no longer accessible. If this field is left empty, the link will not expire. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercion</a>.</p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>Set the permission for the link recipient.</p> <p><strong>[!UICONTROL Viewer]</strong> Users who use the link can view and comment on the content.</p> <p><strong>[!UICONTROL Editor]</strong> Users who use the link can edit, view, and comment on the content.</p> <p><strong>[!UICONTROL Max]</strong> Users who use the link receive the maximum access level you can set the link to.</p> </td> 
+   <td> <p>Set the permission for the link recipient.</p> <ul><li><strong>[!UICONTROL Viewer]</strong> <p>Users who use the link can view and comment on the content.</p> </li><li><strong>[!UICONTROL Editor]</strong><p> Users who use the link can edit, view, and comment on the content. This access level is available only for cloud-based documents.</p> </li><li><strong>[!UICONTROL Max]</strong> <p>Users who use the link receive the maximum access level you can set the link to.</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Restore a File] 
 
-This action module restores a previous version of a file.
+#### [!UICONTROL Delete a File/Folder]
 
-You specify the file and the number of the revision you want.
+This action module deletes a file or folder.
 
-The module returns the ID of the  version and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+You specify the file or folder.
+
+The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
 When you are configuring this module, the following fields display.
 
@@ -522,12 +492,8 @@ When you are configuring this module, the following fields display.
    <td> <p> Select whether you want to map or enter the file path, or select the file manually.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>Enter or map the target path to the file.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Select the file from the menu.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Revision]</p> </td> 
-   <td> <p>Enter or map the revision number of the revision you want to restore.</p> </td> 
+   <td> <p>[!UICONTROL File or Folder Path] / [!UICONTROL File or Folder]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Enter or map the target path to the file or folder.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Select the file or folder from the menu.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -551,12 +517,12 @@ When you are configuring this module, the following fields display.
    <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files] </td> 
-   <td> <p>Select whether you want to map or enter the file path, or select the file manually.</p> </td> 
+   <td>[!UICONTROL Way of selecting files / folders] </td> 
+   <td> <p>Select whether you want to map or enter the file or folder path, or select the file or folder manually.</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File/Folder Path] / [!UICONTROL File/Folder]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Enter or map the target path to the file or folder.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Select the file or folder from the menu.</p> </td> 
+   <td> <p>[!UICONTROL File / Folder Path] /</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>Enter or map the target path to the file or folder.</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>Select whether you are moving a file or folder, then the file or folder.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL To Folder]</p> </td> 
@@ -601,22 +567,23 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td> <p>File/Folder Path / File/Folder</p> </td> 
-   <td> <p style="font-weight: bold;">File/Folder Path</p> <p>Enter or map the target path to the file or folder.</p> <p style="font-weight: bold;">File/Folder</p> <p>Select the file or folder from the menu.</p> </td> 
+   <td> <p style="font-weight: bold;">File/Folder Path</p> <p>Enter or map the target path to the file or folder.</p> <p style="font-weight: bold;">File/Folder</p> <p>Select whether you are moving a file or folder, then the file or folder.</p> </td> 
   </tr> 
   <tr> 
    <td>Rename </td> 
-   <td> <p>Enter the [!UICONTROL target name] for the file, including the file extension.</p> </td> 
+   <td> <p>Enter the new name for the file, including the file extension.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File/Folder]
 
-This action module deletes a file or folder.
+#### [!UICONTROL Restore a File] 
 
-You specify the file or folder.
+This action module restores a previous version of a file.
 
-The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+You specify the file and the number of the revision you want.
+
+The module returns the ID of the  version and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
 When you are configuring this module, the following fields display.
 
@@ -634,10 +601,48 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>Enter or map the target path to the file.</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>Select the file from the menu.</p> </td> 
+   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>Enter or map the target path to the file.</p> <p><strong>[!UICONTROL File]</strong> </p> <p>Select the file from the menu.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Revision]</p> </td> 
+   <td> <p>Enter or map the revision number of the revision you want to restore.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Upload a File]
+
+This action module uploads a file to a folder.
+
+You specify information such as the location for the file, the file you want to upload, and an optional new name for the file.
+
+The module returns the ID of the  file and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td> <p> Select the folder of your [!DNL Dropbox] you want to upload the file to.</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> <p><b>Note:</b></p><p> The maximum size of the uploaded file is 150 MB.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Overwrite an existing file]</td> 
+   <td> <p> Enable this option to replace the existing file with the new file. If this option is left disabled, the uploaded file is renamed.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
 ### Other modules
 
@@ -657,7 +662,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Enter a path relative to Enter a path relative to <code>https://api.dropboxapi.com</code>. For example, <code>/2/files/list_folder</code></p> <p>Note: For the list of available endpoints, see the <a href="https://www.dropbox.com/developers/documentation/http/documentation">Dropbox API v2 Documentation</a>.</p> </td> 
+   <td> <p>Enter a path relative to Enter a path relative to <code>https://api.dropboxapi.com</code>. For example, <code>/2/files/list_folder</code></p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Method]</p> </td> 
@@ -681,29 +686,30 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Example:** The following API call returns the first 10 files from the [!DNL /Text files] folder in your [!DNL Dropbox] account:
->
->URL: `/2/files/list_folder`
->
->Body:
-> 
->`{`
->
->`"path": "/Text files",`
->
->`"limit": 10,`
->
->`"recursive": false,`
->
->`"include_deleted": false`
->
->`}`
->
->Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > entries.
->
->In our example, 10 tickets were returned:
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+The following API call returns the first 10 files from the [!DNL /Text files] folder in your [!DNL Dropbox] account:
+
+URL: `/2/files/list_folder`
+
+Body:
+
+```
+{
+"path": "/Text files",
+"limit": 10,
+"recursive": false,
+"include_deleted": false
+}
+```
+
+Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > entries.
+
+In our example, 10 tickets were returned.
+
+>[!ENDSHADEBOX]
 
 ## Common problems
 
@@ -712,7 +718,7 @@ When you are configuring this module, the following fields display.
 
 ### Unable to upload or update a file 
 
-There are several situations when uploading or updating a file fails:
+The following may be reasons that uploading or updating a file fails:
 
 * The uploaded file is too big and exceeds the maximum file size allowed for your [!DNL Dropbox] plan, or you have used all of your [!DNL Dropbox] account's storage quota. You must delete existing files from your [!DNL Dropbox] account or upgrade your plan.
 * The previously selected folder, to which the file is being uploaded to, no longer exists. The scenario stops and you must select the target folder again.
