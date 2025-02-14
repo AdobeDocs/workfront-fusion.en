@@ -243,35 +243,31 @@ This action module sends an invitation grant a new user access to a specific ESM
   </tr> 
   <tr> 
    <td role="rowheader">Notification type</td> 
-   <td></td> 
+   <td>Enter or map the Adobe notification type that you want to use to notify the user about the invitation. If this is left empty, the notification type is based on the asset's mimetype.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Template name</td> 
-   <td>Enter or map the ID of the store you want to discard.</td> 
+   <td>Enter or map the Adobe Post Office ID of the template you want to use for the invitation email.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Locale</td> 
-   <td>Enter the locale of the user. This determines the language of the UI. </td> 
+   <td>Enter the locale of the user in the form of a language code and country code. <p>Example: <code>en-us</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">External</td> 
-   <td></td> 
+   <td>Set this option to true if you want to send notifications using a system external to the Adobe Invitations Service. External notification is supported only when acceptance is not required.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Asset type</td> 
-   <td></td> 
+   <td>Enter or map the type of asset.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Message</td> 
-   <td></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Store ID</td> 
-   <td></td> 
+   <td>Enter or map a message to include in the invitation email.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Target URL</td> 
-   <td></td> 
+   <td>Enter or map the URL that the invitee can use to view the asset.</td> 
   </tr> 
  </tbody> 
 </table>
