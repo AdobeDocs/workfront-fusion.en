@@ -8,7 +8,7 @@ description: In an [!DNL Adobe Workfront Fusion] scenario, you to create and man
 author: Becky
 feature: Workfront Fusion
 ---
-# Adobe User Management modules
+# Adobe Storage modules
 
 In an [!DNL Adobe Workfront Fusion] scenario, you to create and manage projects in the Adobe Admin Console. 
 
@@ -61,6 +61,50 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Create a connection to Adobe Storage
 
+Creating a connection to Adobe Storage requires some configuration in the Adobe Developer Console as well as in Fusion.
+
+### Configure the project in the Adobe Developer Console
+
+You must add the API to your project in the Adobe Developer Console.
+
+1. Open your project in the Adobe Developer Console.
+1. Click **Add to project**, and select **API**.
+1. From the list of available APIs, select **Adobe Cloud Platform and Collaboration API**.
+1. On the Select authentication type screen, select **User Authentication** and click **Next**.
+1. On the Add a user authentication credential screen, select **OAuth Web App** and click **Next**.
+1. On the Configure OAuth Web App credential screen, enter the following:
+
+    <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Default redirect URI</td> 
+       <td><code>https://app.workfrontfusion.com/oauth/cb/adobe-acpc</code></td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Redirect URI pattern</td> 
+       <td><code>https://app\.workfrontfusion\.com/oauth/cb/adobe-acpc</code></td> 
+      </tr> 
+     </tbody> 
+    </table>
+  
+1. Click **Next**, then click **Save configured API**.
+1. Make note of the provided credentials, which you will use when configuring the connection in Workfront Fusion.
+1. Continue to [Create the connection in Workfront Fusion](#create-the-connection-in-workfront-fusion).
+
+>[!IMPORTANT]
+>
+>When configuring the project on the Adobe Developer console remember to:
+>
+>* Select the **User Authentication** type
+>* Enter the following URIs:
+>  
+>   * Default redirect URI: `https://app.workfrontfusion.com/oauth/cb/adobe-acpc`
+>   * Redirect URI pattern: `https://app\.workfrontfusion\.com/oauth/cb/adobe-acpc`
+
+### Create the connection in Workfront Fusion
+
 To create a connection for your [!DNL Adobe Storage] modules:
 
 1. Click **[!UICONTROL Add]** next to the Connection box.
@@ -89,11 +133,11 @@ To create a connection for your [!DNL Adobe Storage] modules:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Enter your [!UICONTROL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
+        <td>Enter your [!UICONTROL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credential details] section of the project in the [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
+        <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credential details] section of the project in the [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
