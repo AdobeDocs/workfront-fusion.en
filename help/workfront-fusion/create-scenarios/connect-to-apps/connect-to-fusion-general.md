@@ -66,6 +66,8 @@ To create a connection inside a [!DNL Workfront Fusion] module:
 
 1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box to open the **[!UICONTROL Create a connection]** panel.
 1. (Optional) Change the default **[!UICONTROL Connection name]**.
+1. In the Environment field, select whether this is a production or non-production environment. This information appears in the Connections area of Fusion.
+1. In the Type field, select whether this is a service or personal account. This information appears in the Connections area of Fusion.
 1. (Conditional) If the app requires advanced connection settings, such as an ID, key, or [!UICONTROL secret], enter that information.
 
    You might need to click **[!UICONTROL Show advanced settings]** to display the fields where you can enter this kind of information.
