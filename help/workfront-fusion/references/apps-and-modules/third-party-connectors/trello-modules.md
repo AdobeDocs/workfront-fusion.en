@@ -15,42 +15,46 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -101,9 +105,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Boards 
 
-+++ **[!UICONTROL Watch Boards]**
++++ **[!UICONTROL Archive or Unarchive a Board]**
 
-This trigger module begins a scenario when a new board is added.
+This action module closes (archives) or re-opens (unarchives) a board that you specify.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -114,8 +118,50 @@ This trigger module begins a scenario when a new board is added.
    <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>The maximum number of boards [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Enter or map the ID of the board you want to close or re-open.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Select whether you want to close (archive) or re-open (unarchive) the board.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+This action module assigns a member to a board that you specify .
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Board ID]</td> 
+   <td> <p> Select the board where you want to add a member.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Email address]</td> 
+   <td> <p> Enter or map the email address of the member you want to add to the board.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
+   <td> <p>Select the type of member that you want the new member to be.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL Admin]</strong>: A board administrator can perform any board action on the board.</li> 
+     <li><strong>[!UICONTROL Normal]</strong>: A normal member is simply a member of the board.</li> 
+     <li><strong>[!UICONTROL Observer]</strong>: An observer is a member with read-only access to the board. <br>Observers are only available to teams with [!UICONTROL Trello Business Class].</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Full name]</td> 
+   <td> <p> Enter or map the full name of the user you want to add to the board.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -144,18 +190,18 @@ This action module creates a new board with the selected settings.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Enter or map the ID of the organization. The Organization ID can be retrieved by using another module, such as the Watch Activities module.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/id-of-org.png"> </p> </td> 
+   <td> <p>Enter or map the ID of the organization. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
-   <td> <p>Boards have different voting and commenting rules for each permission level. For example: if your board is [!UICONTROL Private] and you set the voting and commenting rules as [!UICONTROL All], you receive an error. </p> <p>Voting and commenting is limited to the following groups for each permission level:</p> 
+   <td> <p>Boards have different voting and commenting rules for each permission level. For example, if your board is [!UICONTROL Private] and you set the voting and commenting rules as [!UICONTROL All], you receive an error. </p> <p>Voting and commenting is limited to the following groups for each permission level:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      -->Members, Members and Observers</li> 
+      Members, Members and Observers</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      -->Members, Members and Observers, Organization Members</li> 
+      Members, Members and Observers, Organization Members</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      -->Members, Members and Observers, Organization Members, All</li> 
+      Members, Members and Observers, Organization Members, All</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -195,11 +241,15 @@ This action module creates a new board with the selected settings.
    <td> <p>Select the color of the background or the custom background.</p> <p>Note: Custom backgrounds are available only to [!UICONTROL Trello Gold and Business Class] subscribers.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Background ID]</td> 
+   <td> <p> If you have selected to use a custom background in the [!UICONTROL Background] field, enter or map the ID of the background you want to use.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Select between two modes of card aging. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: Cards become progressively more transparent as they age. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: Cards will tear, yellow, and crack like an old pirate map as they age.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: Cards will tear, yellow, and crack like an old pirate map as they age.</li> 
+     <li><strong>[!UICONTROL Regular mode ]</strong>: Cards become progressively more transparent as they age. </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -211,7 +261,9 @@ This action module creates a new board with the selected settings.
 
 This action module edits the settings of an existing board.
 
-<table style="table-layout:auto"> 
+>[!SUCCESS]
+>
+><table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
@@ -229,26 +281,26 @@ This action module edits the settings of an existing board.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL New description]</td> 
-   <td> <p> Enter or map a new board description if needed.</p> </td> 
+   <td> <p> Enter or map a new board description.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Organization ID]</p> </td> 
-   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to edit. You can retrieve the Board ID using another module, such as the [!DNL Watch Activities] module.</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/org-id.png"> </p> </td> 
+   <td> <p>Enter or map the unique [!UICONTROL Trello] ID of the board that you want the module to edit.  </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Subscribe] </td> 
-   <td> <p>Select an option to specify whether the acting user is subscribed to the board.</p> </td> 
+   <td> <p>Select an option to specify whether the user that owns the connection used by this module is subscribed to the board.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Permission level]</p> </td> 
    <td> <p>Boards have different voting and commenting rules for each permission level. For example: if your board is [!UICONTROL Private] and you set the voting and commenting rules as [!UICONTROL All], you receive an error. </p> <p>Voting and commenting is limited to the following groups for each permission level:</p> 
     <ul> 
      <li><strong>[!UICONTROL Private]</strong>: 
-      -->Members, Members and Observers</li> 
+      Members, Members and Observers</li> 
      <li><strong>[!UICONTROL For organization]</strong>: 
-      -->Members, Members and Observers, Organization Members</li> 
+      Members, Members and Observers, Organization Members</li> 
      <li><strong>[!UICONTROL Public]</strong>: 
-      -->Members, Members and Observers, Organization Members, All</li> 
+      Members, Members and Observers, Organization Members, All</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -277,30 +329,19 @@ This action module edits the settings of an existing board.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Background ID]</td> 
-   <td> <p> If you have selected to use a custom background in the [!UICONTROL Background] field, enter or map the ID of the background you want to use..</p> </td> 
+   <td> <p> If you have selected to use a custom background in the [!UICONTROL Background] field, enter or map the ID of the background you want to use.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Card aging]</p> </td> 
    <td> <p>Select between two modes of card aging. </p> 
     <ul> 
-     <li><strong>[!UICONTROL Regular]</strong>: Cards become progressively more transparent as they age. </li> 
-     <li><strong>[!UICONTROL Pirate]</strong>: Cards will tear, yellow, and crack like an old pirate map as they age.</li> 
+     <li><strong>[!UICONTROL Pirate mode]</strong>: Cards will tear, yellow, and crack like an old pirate map as they age.</li> 
+     <li><strong>[!UICONTROL Regular mode]</strong>: Cards become progressively more transparent as they age. </li> 
     </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
-   <td> <p> Select whether the calendar feed is enabled or not.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL &lt;Color> label name]</td> 
-   <td> <p> Assign a name to the desired color label.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive] </td> 
-   <td> <p>Select an option to indicate whether you want to archive (close) the board. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
 
 +++
 
@@ -358,69 +399,6 @@ This search module retrieves information about a board that you specify.
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Board]**
-
-This action module closes or re-opens a board that you specify .
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Enter or map the ID of the board you want to close or re-open.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Select whether you want to close (archive) or re-open (unarchive) the board.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-This action module assigns a member to a board that you specify .
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Board ID]</td> 
-   <td> <p> Select the board where you want to add a member.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Email address]</td> 
-   <td> <p> Enter or map the email address of the member you want to add to the board.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Member type]</p> </td> 
-   <td> <p>Select the type of member you want to add to the board.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Admin]</strong>: A board administrator can perform any board action on the board.</li> 
-     <li><strong>[!UICONTROL Normal]</strong>: A normal member is simply a member of the board.</li> 
-     <li><strong>[!UICONTROL Observer]</strong>: An observer is a member with read-only access to the board. <br>Observers are only available to teams with [!UICONTROL Trello Business Class].</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Full name]</td> 
-   <td> <p> Enter the full name of the user you want to add to the board.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Unassign a Member from a Board]**
 
 This action module removes a member from a board.
@@ -446,11 +424,9 @@ This action module removes a member from a board.
 
 +++
 
-### Lists
++++ **[!UICONTROL Watch Boards]**
 
-+++ **[!UICONTROL Watch cards moved to a list]**
-
-This trigger module activates when a card is moved to a specific list.
+This trigger module begins a scenario when a new board is added.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -461,21 +437,15 @@ This trigger module activates when a card is moved to a specific list.
    <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Board]</td> 
-   <td>Select the board that contains the list that you want to watch for cards.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL List]</td> 
-   <td>Select the list that you want to watch for cards.</td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>The maximum number of cards [!DNL Workfront Fusion] will return during one execution cycle.</p>  </td> 
+   <td> <p>Enter or map the maximum number of boards you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++
+
+### Lists
 
 +++ **[!UICONTROL Create a List]**
 
@@ -572,11 +542,9 @@ This action module retrieves details about a specific list.
 
 +++
 
-### Cards
++++ **[!UICONTROL Watch cards moved to a list]**
 
-+++ **[!UICONTROL Watch cards]**
-
-This trigger module activated when a new card is added.
+This trigger module activates when a card is moved to a specific list.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -587,17 +555,76 @@ This trigger module activated when a new card is added.
    <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Select the location you want to watch for cards.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards]</strong> </li> 
-     <li> <p><strong>Cards on specific board</strong> </p> <p>Select the board that you want to watch for cards</p> </li> 
-     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Select the board that contains the list you want to watch for cards, then select the list.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Board]</td> 
+   <td>Select the board that contains the list that you want to watch for cards.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List]</td> 
+   <td>Select the list that you want to watch for cards.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>The maximum number of cards [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>The maximum number of cards [!DNL Workfront Fusion] will return during one execution cycle.</p>  </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
+### Cards
+
++++ **[!UICONTROL Add an Attachment]**
+
+This action module adds an attachment to the selected card.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
+   <td> <p> Select how you want to enter the ID of the card you want to retrieve details about.</p> 
+    <ul> 
+     <li> <p><strong>Enter manually</strong> </p> <p>In the <strong>[!UICONTROL Card ID]</strong> field, enter or map the ID of the card you want to retrieve details about.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the card you want to retrieve details about, then select the list that contains the card, then select the card.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
+   <td> <p>Select whether you want to upload the file directly or provide a URL to the file.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Select a source file from a previous module, or map the source file's name and data.</p> </li> 
+     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Enter the URL to the file, and provide a name for the attachment.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Archive or Unarchive a Card]**
+
+This action module archives or sends a card back to the board.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Card ID]</td> 
+   <td> <p> Enter or map the ID of the card you want to archive or send back to the board.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
+   <td> <p> Select whether you want to close the card (archive) or send it back to the board (unarchive).</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -829,34 +856,9 @@ This action module returns cards that match the search query.
 
 +++
 
-+++ **[!UICONTROL Archive or Unarchive a Card]**
++++ **[!UICONTROL Watch cards]**
 
-This action module archives or sends a card back to the board.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Card ID]</td> 
-   <td> <p> Enter or map the ID of the card you want to archive or send back to the board.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Archive or unarchive]</td> 
-   <td> <p> Select whether you want to close the card (archive) or send it back to the board (unarchive).</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Add an Attachment]**
-
-This action module adds an attachment to the selected card.
+This trigger module activated when a new card is added.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -867,20 +869,17 @@ This action module adds an attachment to the selected card.
    <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Enter card ID]</td> 
-   <td> <p> Select how you want to enter the ID of the card you want to retrieve details about.</p> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Select the location you want to watch for cards.</p> 
     <ul> 
-     <li> <p><strong>Enter manually</strong> </p> <p>In the <strong>[!UICONTROL Card ID]</strong> field, enter or map the ID of the card you want to retrieve details about.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the card you want to retrieve details about, then select the list that contains the card, then select the card.</p> </li> 
+     <li><strong>[!UICONTROL All cards]</strong> </li> 
+     <li> <p><strong>Cards on specific board</strong> </p> <p>Select the board that you want to watch for cards</p> </li> 
+     <li> <p><strong>[!UICONTROL Cards on specific list]</strong> </p> <p>Select the board that contains the list you want to watch for cards, then select the list.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Attachment type]</p> </td> 
-   <td> <p>Select whether you want to upload the file directly or provide a URL to the file.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL File]</strong> </p> <p>Select a source file from a previous module, or map the source file's name and data.</p> </li> 
-     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>Enter the URL to the file, and provide a name for the attachment.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>The maximum number of cards [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -888,18 +887,6 @@ This action module adds an attachment to the selected card.
 +++
 
 ### Members
-
-+++ **[!UICONTROL Assign a Member to a Board]**
-
-See "[!UICONTROL Assign a Member to a Board]" under [Boards](#boards).
-
-+++
-
-+++ **[!UICONTROL Unassign a Member from a Board]**
-
-See "[!UICONTROL Unassign a Member from a Board]" under [Boards](#boards).
-
-+++
 
 +++ **[!UICONTROL Add a Member to a Card]**
 
@@ -923,6 +910,12 @@ This action module adds the specified member to the specified card.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Assign a Member to a Board]**
+
+See "[!UICONTROL Assign a Member to a Board]" under [Boards](#boards).
 
 +++
 
@@ -952,6 +945,12 @@ This action module retrieves information about [!UICONTROL Trello] members.
   </tr> 
  </tbody> 
 </table>
+
++++
+
++++ **[!UICONTROL Unassign a Member from a Board]**
+
+See "[!UICONTROL Unassign a Member from a Board]" under [Boards](#boards).
 
 +++
 
@@ -1101,38 +1100,6 @@ This action module adds a label to a selected card.
 
 ### Comments 
 
-+++ **[!UICONTROL Watch Comments]**
-
-Retrieves comment details when there is a new comment in a specified location.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Watched object]</td> 
-   <td> <p>Select the location you want to watch for comments.</p> 
-    <ul> 
-     <li><strong>[!UICONTROL All cards] everywhere</strong> </li> 
-     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Select the board that you want to watch for comments</p> </li> 
-     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Select the board that contains the list you want to watch for comments, then select the list.</p> </li> 
-     <li><strong>[!UICONTROL Card]</strong> </li> 
-     <li>Select the board that contains the card you want to watch for comments, then select the list that contains the card, then select the card.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>The maximum number of comments [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Create a Comment in a Card]**
 
 This action module adds a comment to a selected card.
@@ -1191,6 +1158,38 @@ This action module adds a comment to a selected card.
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
    <td> <p>Set the end date of the period in which the comment was created. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
+
++++ **[!UICONTROL Watch Comments]**
+
+Retrieves comment details when there is a new comment in a specified location.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Trello] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Watched object]</td> 
+   <td> <p>Select the location you want to watch for comments.</p> 
+    <ul> 
+     <li><strong>[!UICONTROL All cards] everywhere</strong> </li> 
+     <li> <p><strong>[!UICONTROL Board]</strong> </p> <p>Select the board that you want to watch for comments</p> </li> 
+     <li> <p><strong>[!UICONTROL List]</strong> </p> <p>Select the board that contains the list you want to watch for comments, then select the list.</p> </li> 
+     <li><strong>[!UICONTROL Card]</strong> </li> 
+     <li>Select the board that contains the card you want to watch for comments, then select the list that contains the card, then select the card.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>The maximum number of comments [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
