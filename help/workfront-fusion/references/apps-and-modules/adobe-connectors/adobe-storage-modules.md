@@ -74,20 +74,12 @@ You must add the API to your project in the Adobe Developer Console.
 1. On the Add a user authentication credential screen, select **OAuth Web App** and click **Next**.
 1. On the Configure OAuth Web App credential screen, enter the following:
 
-    <table style="table-layout:auto"> 
-     <col> 
-     <col> 
-     <tbody> 
-      <tr> 
-       <td role="rowheader">Default redirect URI</td> 
-       <td><code>https://app.workfrontfusion.com/oauth/cb/adobe-acpc</code></td> 
-      </tr> 
-      <tr> 
-       <td role="rowheader">Redirect URI pattern</td> 
-       <td><code>https://app\.workfrontfusion\.com/oauth/cb/adobe-acpc</code></td> 
-      </tr> 
-     </tbody> 
-    </table>
+| Cluster | Default redirect URI | Redirect URI pattern|
+|---|---|---|
+| US Cluster | `https://app.workfrontfusion.com` | `https://app\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
+| EzU Cluster | `https://app-eu.workfrontfusion.com` | `https://app-eu\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
+| US Cluster | `https://app-az.workfrontfusion.com` | `https://app-az\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
+
   
 1. Click **Next**, then click **Save configured API**.
 1. Make note of the provided credentials, which you will use when configuring the connection in Workfront Fusion.
