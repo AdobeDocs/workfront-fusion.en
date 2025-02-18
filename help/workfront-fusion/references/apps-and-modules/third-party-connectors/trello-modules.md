@@ -339,6 +339,18 @@ This action module edits the settings of an existing board.
      <li><strong>[!UICONTROL Regular mode]</strong>: Cards become progressively more transparent as they age. </li> 
     </ul> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Calendar feed enabled]</td> 
+   <td> <p> Select whether the calendar feed is enabled or not.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL &lt;Color> label name]</td> 
+   <td> <p> Assign a name to the desired color label.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Archive] </td> 
+   <td> <p>Select an option to indicate whether you want to archive (close) the board. </p> </td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -473,7 +485,7 @@ This action module creates a list on a board that you specify .
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy list]</td> 
-   <td> <p> Select how you want to enter the ID of the list you want to copy.</p> 
+   <td> <p> If you are copying a list, select how you want to enter the ID of the list you want to copy.</p> 
     <ul> 
      <li> <p><strong>Enter manually</strong> </p> <p>In the <strong>[!UICONTROL List ID]</strong> field, enter or map the ID of the list you want to copy.<br></p> </li> 
      <li> <p><strong>Select</strong> </p> <p>Select the board that contains the list you want to copy, then select the list.</p> </li> 
@@ -564,7 +576,7 @@ This trigger module activates when a card is moved to a specific list.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>The maximum number of cards [!DNL Workfront Fusion] will return during one execution cycle.</p>  </td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -587,10 +599,10 @@ This action module adds an attachment to the selected card.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter card ID]</td> 
-   <td> <p> Select how you want to enter the ID of the card you want to retrieve details about.</p> 
+   <td> <p> Select how you want to enter the ID of the card you want to add an attachment to.</p> 
     <ul> 
-     <li> <p><strong>Enter manually</strong> </p> <p>In the <strong>[!UICONTROL Card ID]</strong> field, enter or map the ID of the card you want to retrieve details about.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the card you want to retrieve details about, then select the list that contains the card, then select the card.</p> </li> 
+     <li> <p><strong>Enter manually</strong> </p> <p>In the <strong>[!UICONTROL Card ID]</strong> field, enter or map the ID of the card you want to add an attachment to.<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the card you want to add an attachment to, then select the list that contains the card, then select the card.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -648,16 +660,16 @@ This action module creates a card in a selected list.
    <td> <p> Select how you want to enter the ID of the list where you want to add a card.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL List ID]</strong> field, enter or map the ID of the list where you want to add a card.<br></p> </li> 
-     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the list you want to copy, then select the list.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the list where you want to add a card, then select the list.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>For each label that you want to add to the card, enter the ID of the label. The ID can be retrieved, for example, using the [!UICONTROL Retrieve Labels] module.</p> </td> 
+   <td> <p>For each label that you want to add to the card, click <b>Add item</b> and enter the ID of the label.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members]</td> 
-   <td>For each member that you want to add to the card, enter the ID of the member. </td> 
+   <td>For each member that you want to add to the card, click <b>Add item</b> and enter the ID of the member. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -669,7 +681,7 @@ This action module creates a card in a selected list.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Select whether you want to add the card to the top or [!UICONTROL append] the card to the bottom of the list.</p> </td> 
+   <td> <p>Select whether you want to add the card to the top or append the card to the bottom of the list.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
@@ -677,7 +689,7 @@ This action module creates a card in a selected list.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> Enable this option to mark the card is complete on the due date.</p> </td> 
+   <td> <p> Enable this option to mark the card as complete on the due date.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File URL]</td> 
@@ -685,18 +697,14 @@ This action module creates a card in a selected list.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
-   <td> <p>Enter or map information for a file you to want to add as an attachment to the card.</p> 
-    <ul> 
-     <li>[!UICONTROL File name]: Enter or map the file name, including the file extension.</li> 
-     <li> 
-     <p>Select a file from a previous module, or map the file's name and data</p> 
+   <td> <p>Enter or map information for a file you to want to add as an attachment to the card. Select a file from a previous module, or map the file's name and data</p> 
      <p>Note: There is a 10 MB file upload limit per attachment. However, [!UICONTROL Business Class] and [!UICONTROL Trello Gold] members have a 250 MB file upload limit per attachment.</p> 
      </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Copy card]</td> 
-   <td> <p> Select how you want to enter the ID of the card you want to copy.</p> 
+   <td> <p> If you are creating a new card as a copy of an existing card, select how you want to enter the ID of the card you want to copy.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Card ID]</strong> field, enter or map the ID of the card you want to copy.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the card you want to copy, then select the list that contains the card, then select the card.</p> </li> 
@@ -741,7 +749,7 @@ This action module edits an existing card.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Labels] </td> 
-   <td> <p>Add the IDs of any labels you want to add to the card. </p> </td> 
+   <td> <p>For each label that you want to add to the card, click <b>Add item</b> and enter the ID of the label.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
@@ -753,11 +761,11 @@ This action module edits an existing card.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
-   <td> <p> If this option is enabled the card is marked complete on the due date.</p> </td> 
+   <td> <p> Enable this option to mark the card as complete on the due date.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Members] </td> 
-   <td> <p>Add or map the ID of any members you want to add to the card.</p> </td> 
+   <td> <p>For each member that you want to add to the card, click <b>Add item</b> and enter or map the member's ID.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Attachment cover ID]</p> </td> 
@@ -834,14 +842,14 @@ This action module returns cards that match the search query.
      <li><code><strong>due:day</strong></code> <p>Returns cards due within 24 hours. The <code>due:</code> operator can also be used with other timeframes, such as <code>due:week</code>, <code>due:month</code>, or <code>due:overdue</code>. You can also search for a specific day range. For example, adding <code>due:14</code> to search includes cards due in the next 14 days.</p> </li> 
      <li><code><strong>created:day</strong></code> <p>Returns cards created in the last 24 hours. The<code> created:</code> operator can also be used with other timeframes such as <code>created:week</code> or <code>created:month</code>. You can also search for a specific day range. For example, adding <code>created:14</code> to the search includes cards created in the last 14 days.</p> </li> 
      <li><code><strong>edited:day</strong></code> <p>Returns cards edited in the last 24 hours. The <code>edited:</code> operator can also be used with other timeframes, such as <code>edited:week</code> or <code>edited:month</code>. You can also search for a specific day range. For example, adding <code>edited:21</code> to the search includes cards edited in the last 21 days.</p> </li> 
-     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Returns cards matching the text of card descriptions, checklists, comments, or names. For example, comment:"FIX IT" will return cards with "FIX IT" in a comment.</p> </li> 
+     <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>Returns cards matching the text of card descriptions, checklists, comments, or names. For example, <code>comment:"FIX IT"</code> will return cards with "FIX IT" in a comment.</p> </li> 
      <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>Returns cards that are open or archived. If neither is specified, [!UICONTROL Trello] returns both types.</p> </li> 
      <li><code><strong>is:starred</strong> </code> <p>Only includes cards on starred boards.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned cards]</td> 
-   <td> <p> The maximum number of cards [!DNL Workfront Fusion] will return during one execution cycle. This value must be less than or equal to 1000.</p> </td> 
+   <td> <p> Enter or map the maximum number of cards you want [!DNL Workfront Fusion] to return during one execution cycle. This value must be less than or equal to 1000.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -849,7 +857,7 @@ This action module returns cards that match the search query.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Cards] </td> 
-   <td> <p>Add any cards you want to specifically search for.</p> </td> 
+   <td> <p>To search specific cards, click <b>Add item</b> and add the card's ID.</p> </td> 
   </tr> 
  </tbody> 
 </table>
