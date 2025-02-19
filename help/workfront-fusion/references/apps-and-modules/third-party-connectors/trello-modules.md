@@ -866,7 +866,7 @@ This action module returns cards that match the search query.
 
 +++ **[!UICONTROL Watch cards]**
 
-This trigger module activated when a new card is added.
+This trigger module starts a scenario when a new card is added.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -887,7 +887,7 @@ This trigger module activated when a new card is added.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>The maximum number of cards [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -941,7 +941,7 @@ This action module retrieves information about [!UICONTROL Trello] members.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>Enter the full name or username of the user you want to find.</p> </td> 
+   <td> <p>Enter the name or username of the user you want to find.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -949,7 +949,7 @@ This action module retrieves information about [!UICONTROL Trello] members.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> The maximum number of members [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -990,11 +990,11 @@ This action module creates a checklist on the selected card.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>Select whether you want to add the checklist to the top or [!UICONTROL append the] checklist to the bottom of the card.</p> </td> 
+   <td> <p>Select whether you want to add the checklist to the top or append the checklist to the bottom of the card.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>Enter or map the ID of a source checklist that you want to copy into the new one.</p> </td> 
+   <td> <p>If you are creating the checklist by copying an existing checklist, enter or map the ID of a source checklist that you want to copy into the new one.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1015,7 +1015,7 @@ This action module adds an item to a specific checklist.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> Select how you want to enter the ID of the checklist where you want to add an item.</p> 
+   <td> <p> If you are creating a new checklist by copying an existing checklist, select how you want to enter the ID of the checklist where you want to add an item.</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Checklist ID]</strong> field, enter or map the ID of the card where you want to add a checklist.<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>Select the board that contains the card where you want to add a checklist, then select the list that contains the card, then select the card, then select the checklist.</p> </li> 
@@ -1130,7 +1130,7 @@ This action module adds a comment to a selected card.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>Enter the comment that you want to add to the selected card.</p> </td> 
+   <td> <p>Enter or map the comment that you want to add to the selected card.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1174,7 +1174,7 @@ This action module adds a comment to a selected card.
 
 +++ **[!UICONTROL Watch Comments]**
 
-Retrieves comment details when there is a new comment in a specified location.
+This trigger module starts a scenario when a comment is added.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1197,7 +1197,7 @@ Retrieves comment details when there is a new comment in a specified location.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>The maximum number of comments [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter or map the maximum number of comments you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1217,4 +1217,4 @@ If you want to edit a card or create a new comment, you need to know the ID of t
 
 ### How to find IDs of other objects in [!DNL Trello] 
 
-Board, list and comment IDs can only be obtained using triggers. The [!DNL trello.com] website does not show these IDs.
+Board, list and comment IDs can only be obtained using triggers. The [!DNL `trello.com`] website does not show these IDs.
