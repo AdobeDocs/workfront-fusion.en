@@ -11,42 +11,46 @@ The [!DNL Adobe Workfront Fusion] [!DNL HubSpot CRM] modules enable you to monit
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -101,19 +105,17 @@ If you see the map button above a field or function, you can use it to set varia
 * [Forms](#forms)
 * [Social Media (Broadcast)](#social-media-broadcast)
 * [Blog Posts](#blog-posts)
-<!--* [Workflows]-->
+<!--* [Workflows]()-->
 * [Subscriptions](#subscriptions)
-<!--* [Associations](#associations)-->
+<!--* [Associations]()-->
 * [Other](#other)
-
-+++**CRM objects**
 
 ### CRM objects
 
-* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)
+<!--* [Search for CRM objects](#search-for-crm-objects)
+* [Watch CRM objects](#watch-crm-objects)-->
 
-#### [!UICONTROL Search for CRM Objects]
++++ **[!UICONTROL Search for CRM Objects]**
 
 This search module searches for CRM objects by custom properties or by query. To search for products or line items, use a special connection with a required custom scope.
 
@@ -160,7 +162,9 @@ This search module searches for CRM objects by custom properties or by query. To
  </tbody> 
 </table>
 
-#### Watch CRM objects
++++
+
++++ **Watch CRM objects**
 
 This trigger module starts a scenario when a CRM object is created or updated.
 
@@ -197,20 +201,18 @@ This trigger module starts a scenario when a CRM object is created or updated.
 
 +++
 
-+++**Records (Deals, Contacts, and Companies)**
-
 ### Records (Deals, Contacts, and Companies) 
 
-* [Create a Record](#create-a-record)
+<!--* [Create a Record](#create-a-record)
 * [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
 * [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Get a Record]](#get-a-record)
 * [[!UICONTROL Get a Record Property]](#get-a-record-property)
 * [List Records](#list-records)
 * [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)
+* [[!UICONTROL Watch Records]](#watch-records)-->
 
-#### Create a record
++++ **Create a record**
 
 This action module creates a contact, a company, or a deal.
 
@@ -233,7 +235,9 @@ This action module creates a contact, a company, or a deal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record (Legacy)]
++++
+
++++ **[!UICONTROL Create a Record (Legacy)]**
 
 This action module creates contact, a company, or a deal.
 
@@ -256,7 +260,9 @@ This action module creates contact, a company, or a deal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
++++
+
++++ **[!UICONTROL Delete a Record]**
 
 This action module deletes a contact, a company, or a deal.
 
@@ -279,7 +285,9 @@ This action module deletes a contact, a company, or a deal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record]
++++
+
++++ [!UICONTROL Get a Record]
 
 This action module gets details of a contact, a company, or a deal.
 
@@ -315,7 +323,9 @@ This action module gets details of a contact, a company, or a deal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record Property]
++++
+
++++ **[!UICONTROL Get a Record Property]**
 
 This action module gets metadata for a specific record property by its (internal) name.
 
@@ -342,7 +352,9 @@ This action module gets metadata for a specific record property by its (internal
  </tbody> 
 </table>
 
-#### List Records
++++
+
++++ **List Records**
 
 This search module returns a list of contacts, companies or deals. Output is limited to 5000 contacts, 12,500 companies, or 12,500 deals.
 
@@ -366,11 +378,12 @@ This search module returns a list of contacts, companies or deals. Output is lim
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
-
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Record]
++++
+
++++ **[!UICONTROL Update a Record]**
 
 This action module updates a contact, a company, or a deal.
 
@@ -409,7 +422,9 @@ This action module updates a contact, a company, or a deal.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records]
++++
+
++++ **[!UICONTROL Watch Records]**
 
 This trigger module starts a scenario when a contact, company, or deal has been modified or created within the last 30 days. Output is limited to 10,000 records.
 
@@ -442,11 +457,9 @@ This trigger module starts a scenario when a contact, company, or deal has been 
 
 +++
 
-+++**Contacts**
-
 ### Contacts
 
-* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
+<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
 * [Create/Update a contact](#createupdate-a-contact)
 * [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
 * [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
@@ -455,9 +468,9 @@ This trigger module starts a scenario when a contact, company, or deal has been 
 * [[!UICONTROL Merge contacts]](#merge-contacts)
 * [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)
+* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-#### [!UICONTROL Add Contacts to a List]
++++ **[!UICONTROL Add Contacts to a List]**
 
 This module adds contact records that have already been created in the system to a contact list.
 
@@ -484,7 +497,9 @@ This module adds contact records that have already been created in the system to
  </tbody> 
 </table>
 
-#### Create/Update a Contact
++++
+
++++ **Create/Update a Contact**
 
 This action module creates a contact if it doesn't exist in a portal. If the contact does exist in the portal, this module updates it with the provided values.
 
@@ -503,7 +518,9 @@ This action module creates a contact if it doesn't exist in a portal. If the con
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Contact (Legacy)]
++++
+
++++ **[!UICONTROL Create/Update a Contact (Legacy)]**
 
 Creates a contact if it doesn't exist in a portal already, or updates it with the latest property values if it does exist in a portal.
 
@@ -522,7 +539,9 @@ Creates a contact if it doesn't exist in a portal already, or updates it with th
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Group of Contacts] 
++++
+
++++ **[!UICONTROL Create/Update a Group of Contacts]** 
 
 Creates a group of contacts or updates them if they already exist. Performance is best when batch size is limited to 100 contacts or fewer. Changes made through this endpoint are processed asynchronously, so it can take several minutes for changes to be applied to contact records.
 
@@ -549,7 +568,9 @@ Creates a group of contacts or updates them if they already exist. Performance i
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts]
++++
+
++++ **[!UICONTROL List Contacts]**
 
 Returns all contacts that have been created in the portal. The output is limited to 5000 contacts. To list previous or next contacts, you can use the [!UICONTROL advanced] parameter to offset the list.
 
@@ -576,7 +597,9 @@ Returns all contacts that have been created in the portal. The output is limited
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts of a Company]
++++
+
++++ **[!UICONTROL List Contacts of a Company]**
 
 Retrieves a list of contacts in the company. The output is limited to 5000 contacts. To list previous or next contacts, you can use the [!UICONTROL advanced] parameter to offset the list.
 
@@ -603,7 +626,9 @@ Retrieves a list of contacts in the company. The output is limited to 5000 conta
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge contacts]
++++
+
++++ **[!UICONTROL Merge contacts]**
 
 This action module merges contacts
 
@@ -626,7 +651,9 @@ This action module merges contacts
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a Contact from a List]
++++
+
++++ **[!UICONTROL Remove a Contact from a List]**
 
 Removes a contact from a contact list.
 
@@ -653,7 +680,9 @@ Removes a contact from a contact list.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Contacts]
++++
+
++++ **[!UICONTROL Search for Contacts]**
 
 Retrieves a list of contacts using the search query.
 
@@ -676,7 +705,9 @@ Retrieves a list of contacts using the search query.
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch contacts added to a list]
++++
+
++++ **[!UICONTROL Watch contacts added to a list]**
 
 This trigger module starts a scenario when a new contact is added to a list. This is available only to users with a paid Marketing account.
 
@@ -705,14 +736,12 @@ This trigger module starts a scenario when a new contact is added to a list. Thi
 
 +++
 
-+++**Deals**
-
 ### Deals
 
-* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)
+<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
+* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-#### [!UICONTROL Get a Deal's CRM Pipeline]
++++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 Returns a specific deal pipeline..
 
@@ -735,7 +764,9 @@ Returns a specific deal pipeline..
  </tbody> 
 </table>
 
-#### [!UICONTROL List Deal/Ticket Pipelines]
++++
+
++++ **[!UICONTROL List Deal/Ticket Pipelines]**
 
 Returns all deal and ticket pipelines for a given portal.
 
@@ -756,11 +787,9 @@ Returns all deal and ticket pipelines for a given portal.
 
 +++
 
-+++**Companies**
-
 ### Companies
 
-#### [!UICONTROL Search for Companies by domain]
++++ **[!UICONTROL Search for Companies by domain]**
 
 Retrieves a list of companies based on an exact match to the domain property.
 
@@ -789,16 +818,14 @@ Retrieves a list of companies based on an exact match to the domain property.
 
 +++
 
-+++**Engagements**
-
 ### Engagements
 
-* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
+<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
 * [Create an Engagement](#create-an-engagement)
 * [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)
+* [Watch Engagements](#watch-engagements)-->
 
-#### Associate an Engagement with a CRM object
++++ **Associate an Engagement with a CRM object**
 
 This action module associates an engagement with a contact, company, or deal.
 
@@ -825,7 +852,9 @@ This action module associates an engagement with a contact, company, or deal.
  </tbody> 
 </table>
 
-#### Create an Engagement
++++
+
++++ **Create an Engagement**
 
 This action module creates an engagement (such as a note, task, or activity) with a CRM object in HubSpot. Engagements are any interaction with a contact that should be logged in the CRM.
 
@@ -892,7 +921,7 @@ This action module creates an engagement (such as a note, task, or activity) wit
  </tbody> 
 </table>
 
-##### Email metadata
+#### Email metadata
 
 <table style="table-layout:auto"> 
  <col> 
@@ -938,7 +967,7 @@ This action module creates an engagement (such as a note, task, or activity) wit
  </tbody> 
 </table>
 
-##### Call metadata
+#### Call metadata
 
 <table style="table-layout:auto"> 
  <col> 
@@ -980,7 +1009,7 @@ This action module creates an engagement (such as a note, task, or activity) wit
  </tbody> 
 </table>
 
-##### Meeting fields
+#### Meeting fields
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1006,7 +1035,7 @@ This action module creates an engagement (such as a note, task, or activity) wit
  </tbody> 
 </table>
 
-##### Task fields
+#### Task fields
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1032,7 +1061,9 @@ This action module creates an engagement (such as a note, task, or activity) wit
  </tbody> 
 </table>
 
-#### Delete an Engagement
++++
+
++++ **Delete an Engagement**
 
 This action module deletes an engagement by its ID.
 
@@ -1051,7 +1082,9 @@ This action module deletes an engagement by its ID.
  </tbody> 
 </table>
 
-#### Watch Engagements
++++
+
++++ **Watch Engagements**
 
 This trigger module starts a scenario when a new engagement is created in a portal. This module only returns records created in the last 30 days, or the 10,000 most recently created records.
 
@@ -1076,16 +1109,14 @@ This trigger module starts a scenario when a new engagement is created in a port
 
 +++
 
-+++**Events and Notifications**
-
 ### Events and Notifications
 
-* [Create / Update a Timeline Event](#create--update-a-timeline-event)
+<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
 * [List Timeline Event Types](#list-timeline-event-types)
 * [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)
+* [Watch Notifications](#watch-notifications)-->
 
-#### Create / Update a Timeline Event
++++ **Create / Update a Timeline Event**
 
 This action module creates or updates a timeline event. This module can be used only with a developer connection that includes your user identifier, your HubSpot API key, Client ID, and Client Secret. 
 
@@ -1128,7 +1159,9 @@ This action module creates or updates a timeline event. This module can be used 
  </tbody> 
 </table>
 
-#### List Timeline Event Types
++++
+
++++ **List Timeline Event Types**
 
 This search module returns a list of all timeline events for a specific application. This module can be used only with a developer connection that includes your user identifier, your HubSpot API key, Client ID, and Client Secret. 
 
@@ -1147,7 +1180,9 @@ This search module returns a list of all timeline events for a specific applicat
  </tbody> 
 </table>
 
-#### Watch Calendar Events
++++
+
++++ **Watch Calendar Events**
 
 This trigger module starts a scenario when a new event is added to a calendar. It includes up to 500 tasks in the interval between the start and end date. This module can be used only with a developer connection that includes your user identifier, your HubSpot API key, Client ID, and Client Secret. 
 
@@ -1178,7 +1213,9 @@ This trigger module starts a scenario when a new event is added to a calendar. I
  </tbody> 
 </table>
 
-#### Watch Notifications
++++
+
++++ **Watch Notifications**
 
 This trigger module starts a scenario when a new notification about changes is sent.  It includes up to 500 tasks in the interval between the start and end date. This module can be used only with a developer connection that includes your user identifier, your HubSpot API key, Client ID, and Client Secret. You can have only one webhook URL per developer application in HubSpot.
 
@@ -1209,19 +1246,17 @@ To create a webhook for this module, click **Add** next to the webhook field and
 
 +++
 
-+++**Files**
-
 ### Files
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
+<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
 * [Delete a File](#delete-a-file)
 * [[!UICONTROL Delete a Folder]](#delete-a-folder)
 * [List Files](#list-files)
 * [[!UICONTROL Move a File]](#move-a-file)
 * [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)
+* [Watch files](#watch-files)-->
 
-#### [!UICONTROL Create a Folder]
++++ **[!UICONTROL Create a Folder]**
 
 This module creates a folder.
 
@@ -1244,7 +1279,9 @@ This module creates a folder.
  </tbody> 
 </table>
 
-#### Delete a File
++++
+
++++ **Delete a File**
 
 This action module permanently deletes a file and all related data and thumbnails from the file manager.
 
@@ -1263,7 +1300,9 @@ This action module permanently deletes a file and all related data and thumbnail
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Folder]
++++
+
++++ **[!UICONTROL Delete a Folder]**
 
 Marks a folder as deleted.
 
@@ -1282,7 +1321,9 @@ Marks a folder as deleted.
  </tbody> 
 </table>
 
-#### List Files 
++++
+
++++ **List Files** 
 
 This search module returns a list of files stored in the file manager.
 
@@ -1309,7 +1350,9 @@ This search module returns a list of files stored in the file manager.
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
++++
+
++++ **[!UICONTROL Move a File]**
 
 Moves a file to a different folder.
 
@@ -1336,7 +1379,9 @@ Moves a file to a different folder.
  </tbody> 
 </table>
 
-#### Upload a File 
++++
+
++++ **Upload a File** 
 
 This action module uploads a file to the file manager.
 
@@ -1367,7 +1412,9 @@ This action module uploads a file to the file manager.
  </tbody> 
 </table>
 
-### Watch Files
++++
+
++++ **Watch Files**
 
 This trigger module starts a scenario when a new file is saved to the file manager.
 
@@ -1396,15 +1443,13 @@ This trigger module starts a scenario when a new file is saved to the file manag
 
 +++
 
-+++**Tasks**
-
 ### Tasks
 
-* [Create a Calendar Task](#create-a-calendar-task)
+<!--* [Create a Calendar Task](#create-a-calendar-task)
 * [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)
+* [Watch Task Events](#watch-task-events)-->
 
-#### Create a Calendar task
++++ **Create a Calendar task**
 
 This action module creates a new task for a calendar. The connection used in this module must use the credentials of a user with a paid Marketing account.
 
@@ -1447,7 +1492,9 @@ This action module creates a new task for a calendar. The connection used in thi
  </tbody> 
 </table>
 
-#### Delete a Calendar Task
++++
+
++++ **Delete a Calendar Task**
 
 This action module deletes a calendar task. The connection used in this module must use the credentials of a user with a paid Marketing account.
 
@@ -1466,7 +1513,9 @@ This action module deletes a calendar task. The connection used in this module m
  </tbody> 
 </table>
 
-#### Watch Task Events
++++
+
++++ **Watch Task Events**
 
 This trigger module starts a scenario when there is a new task event in a calendar. The connection used in this module must use the credentials of a user with a paid Marketing account. The module returns up to 500 events.
 
@@ -1495,14 +1544,12 @@ This trigger module starts a scenario when there is a new task event in a calend
 
 +++
 
-+++**Users**
-
 ### Users
 
-* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)
+<!--* [Get an Owner](#get-an-owner)
+* [List Owners](#list-owners)-->
 
-#### Get an Owner
++++ **Get an Owner**
 
 This action module returns details of an owner.
 
@@ -1521,7 +1568,9 @@ This action module returns details of an owner.
  </tbody> 
 </table>
 
-#### List Owners
++++
+
++++ **List Owners**
 
 This search module returns a list of all of the owners in a HubSpot account.
 
@@ -1538,12 +1587,10 @@ This search module returns a list of all of the owners in a HubSpot account.
 
 +++
 
-+++**Tickets**
-
 ### Tickets
 
 <!--* [Create a Ticket]-->
-* [Delete a Ticket](#delete-a-ticket)
+<!--* [Delete a Ticket](#delete-a-ticket)-->
 <!--* [Create a Ticket]-->
 <!--* [Create a Ticket]-->
 <!--* [Create a Ticket]-->
@@ -1551,7 +1598,7 @@ This search module returns a list of all of the owners in a HubSpot account.
 
 <!-- Create a Ticket Need to find a working connection-->
 
-#### [!UICONTROL Delete a Ticket]
++++ **[!UICONTROL Delete a Ticket]**
 
 Deletes an existing ticket by its ID.
 
@@ -1570,6 +1617,8 @@ Deletes an existing ticket by its ID.
  </tbody> 
 </table>
 
++++
+
 <!-- Get a Ticket  Need to find a working connection-->
 
 <!-- List Tickets  Need to find a working connection-->
@@ -1578,18 +1627,14 @@ Deletes an existing ticket by its ID.
 
 <!-- Watch Tickets Need to find a working connection-->
 
-+++
-
-+++**Forms**
-
 ### Forms
 
-* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)
+<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
+* [List Forms](#list-forms)-->
 <!--* [Submit Data to a Form]-->
 <!--* [Watch Submissions for a Form]-->
 
-#### Get a File Uploaded via Form
++++ **Get a File Uploaded via Form**
 
 This action module returns a file that was uploaded through a form.
 
@@ -1608,7 +1653,9 @@ This action module returns a file that was uploaded through a form.
  </tbody> 
 </table>
 
-#### List Forms
++++
+
++++ **List Forms**
 
 This action module returns all forms that have been created in the account associated with the connection used for this module.
 
@@ -1627,23 +1674,21 @@ This action module returns all forms that have been created in the account assoc
  </tbody> 
 </table>
 
++++
+
 <!--#### Submit Data to a Form Need to find a working connection-->
 
 
 
 <!--#### Watch Submissions for a Form--Need to find a working connection>-->
 
-+++
-
-+++**Social Media (Broadcast)**
-
 ### Social Media (Broadcast)
 
-* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
+<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
 * [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)
+* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
-#### Cancel a Broadcast Message
++++ **Cancel a Broadcast Message**
 
 This action module cancels a scheduled broadcast, such as a tweet or a Facebook post.
 
@@ -1662,7 +1707,9 @@ This action module cancels a scheduled broadcast, such as a tweet or a Facebook 
  </tbody> 
 </table>
 
-#### Create a Broadcast Message
++++
+
++++ **Create a Broadcast Message**
 
 This action module creates and immediately publishes a message on the specified social media channel.
 
@@ -1701,7 +1748,9 @@ This action module creates and immediately publishes a message on the specified 
  </tbody> 
 </table>
 
-#### Watch Broadcast Messages
++++
+
++++ **Watch Broadcast Messages**
 
 This trigger module starts a scenario when a message is posted from HubSpot to the specified social media channel.
 
@@ -1734,14 +1783,12 @@ This trigger module starts a scenario when a message is posted from HubSpot to t
 
 +++
 
-+++**Blog Posts**
-
 ### Blog posts 
 
 <!--* [Create a Blog Post]-->
-* [Delete a Blog Post](#delete-a-blog-post)
+<!--* [Delete a Blog Post](#delete-a-blog-post)-->
 <!--* [List Blog Posts]-->
-* [Publish/Unpublish a Blog Post](#publish--unpublish-a-blog-post)
+<!--* [Publish/Unpublish a Blog Post](#publish--unpublish-a-blog-post)-->
 <!--* [Watch Blog Posts]-->
 
 <!--
@@ -1749,7 +1796,7 @@ This trigger module starts a scenario when a message is posted from HubSpot to t
 -->
 
 
-#### Delete a Blog Post
++++ **Delete a Blog Post**
 
 This action module deletes a single blog post.
 
@@ -1768,11 +1815,13 @@ This action module deletes a single blog post.
  </tbody> 
 </table>
 
++++
+
 <!--#### List Blog Posts May need connection
 
 This search module retrieves posts from a HubSpot blog.-->
 
-#### Publish / Unpublish a Blog Post
++++ **Publish / Unpublish a Blog Post**
 
 This action module schedules or cancels publishing of a blog post.
 
@@ -1795,9 +1844,9 @@ This action module schedules or cancels publishing of a blog post.
  </tbody> 
 </table>
 
-<!--#### Watch Blog PostsMay need connection-->
-
 +++
+
+<!--#### Watch Blog PostsMay need connection-->
 
 <!--+++**Workflows**>
 
@@ -1812,14 +1861,12 @@ This action module schedules or cancels publishing of a blog post.
 
 <!--+++-->
 
-+++**Subscriptions**
-
 ### Subscriptions
 
-* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)
+<!--* [Update Email Subscription](#update-email-subscription)
+* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
-#### Update Email Subscription
++++ **Update Email Subscription**
 
 This action module updates an email subscription in HubSpot.
 
@@ -1850,7 +1897,9 @@ This action module updates an email subscription in HubSpot.
  </tbody> 
 </table>
 
-#### Watch Subscriptions Timeline for a Portal
++++
+
++++ **Watch Subscriptions Timeline for a Portal**
 
 This trigger module starts a scenario when a new email timeline subscription is added to the portal.
 
@@ -1903,11 +1952,9 @@ This action module associates two CRM objects.-->
 
 <!--+++-->
 
-+++**Other**
-
 ### Other
 
-#### [!UICONTROL Make an API Call]
++++ **[!UICONTROL Make an API Call]**
 
 Allows you to perform a custom API call.
 
