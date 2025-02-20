@@ -111,7 +111,9 @@ For instructions for creating an app in [!DNL Bynder], see [Oauth 2.0 Apps](http
 >
 >* When creating the app in [!DNL Bynder], enter the following as the `redirect uri`:
 >
->   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * US cluster: `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * EU cluster: `https://app-eu.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Azure cluster: `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bynder uses the Authorization code / refresh token grant type. This is the only grant type that the Fusion Bynder connector uses.
 
 ## [!DNL Bynder] modules and their fields
