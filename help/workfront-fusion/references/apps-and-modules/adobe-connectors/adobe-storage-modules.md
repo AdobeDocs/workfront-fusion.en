@@ -77,7 +77,7 @@ You must add the API to your project in the Adobe Developer Console.
 | Cluster | Default redirect URI | Redirect URI pattern|
 |---|---|---|
 | US Cluster | `https://app.workfrontfusion.com` | `https://app\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
-| EzU Cluster | `https://app-eu.workfrontfusion.com` | `https://app-eu\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
+| EU Cluster | `https://app-eu.workfrontfusion.com` | `https://app-eu\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
 | US Cluster | `https://app-az.workfrontfusion.com` | `https://app-az\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
 
   
