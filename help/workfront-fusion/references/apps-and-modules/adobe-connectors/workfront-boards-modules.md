@@ -19,6 +19,8 @@ You can use the Adobe Workfront Boards modules to read or update records, make a
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -26,29 +28,29 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td>
-  <td> <p>Any</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td>
-   <td> <p>New: Standard</p><p>Or</p><p>Current: [!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -56,6 +58,7 @@ For more detail about the information in this table, see [Access requirements in
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
++++
 
 ## Prerequisites
 
@@ -142,51 +145,6 @@ If you see the map button above a field or function, you can use it to set varia
 * [Tags](#tags)
 * [Comments](#comments)
 * [Other](#other)
-
-<!--
-
-### Watch
-
-#### Watch events
-
-This trigger module starts a scenario when an event occurs on a board.
-
-1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
-
-1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
-
-   When you are configuring this module, the following fields display.
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Object type]</td> 
-      <td>Select the type of [!DNL Workfront] object that you want the module to watch.</td> 
-     </tr> 
-     <tr> 
-      <td> <p>[!UICONTROL Objects to watch]</p> </td> 
-      <td> Select whether you want to trigger a scenario when there is a new object, an updated object, a new or updated object, or a deleted object. </td> 
-     </tr> 
-     <tr data-mc-conditions=""> 
-      <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-After the webhook is created, you can view the address of the endpoint that events are sent to.
-
--->
 
 ### Cards
 
@@ -276,7 +234,7 @@ This action module creates a new card on a Workfront board.
 
 #### Move a card
 
-This action module move a card to a different column on the same board.
+This action module moves a card to a different column on the same board.
 
 <table style="table-layout:auto">
  <col> 
@@ -292,7 +250,7 @@ This action module move a card to a different column on the same board.
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Enter or map the ID of the board that contains the card you want to move.<p>You can find the card ID in the URL when viewing the card in Workfront.</p></td> 
+   <td>Enter or map the ID of the board that contains the card you want to move.<p>You can find the board ID in the URL when viewing the board in Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination column ID]</td> 
@@ -321,6 +279,10 @@ This action module retrieves information about a specific card.
    <td>[!UICONTROL Card ID]</td> 
    <td>Enter or map the ID of the card you want to read.<p>You can find the card ID in the URL when viewing the card in Workfront.</p></td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL Card ID]</td> 
+   <td>Enter or map the ID of the board that contains the card you want to read.<p>You can find the board ID in the URL when viewing the board in Workfront.</p></td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -342,15 +304,29 @@ This action module updates information for a card you specify.
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>Enter or map the ID of the board that contains the card you want to update.<p>You can find the card ID in the URL when viewing the card in Workfront.</p></td> 
+   <td>Enter or map the ID of the board that contains the card you want to update.<p>You can find the board ID in the URL when viewing the board in Workfront.</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Name]</td> 
    <td>Enter or map a new name for the card.</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>Enter or map a new description for the card.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Estimation]</td> 
+   <td>Enter or map an estimation of the time needed to complete this card.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Due date]</td> 
+   <td>Enter or map the due date for this card.</p>
+   <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Status]</td> 
+   <td>Select a new status for the card.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -377,8 +353,8 @@ This action module creates a board in Workfront. You can specify the type of boa
    <td>Enter or map a name for the new board.</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td>Select the type of board you want to create.</td> 
+   <td>[!UICONTROL Template]</td> 
+   <td>Select the template for the type of board you want to create.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -432,10 +408,6 @@ This action module creates a new column on the specified board.
    <td>[!UICONTROL Column name]</td> 
    <td>Enter or map a new name for the column.</td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
-   <td>Enter or map a new WIP limit for the column.</td> 
-  </tr> 
  </tbody> 
 </table>
 
@@ -482,12 +454,16 @@ This action module updates the name or WIP limit of the specified column.
    <td>[!UICONTROL Column Name]</td> 
    <td>Enter or map the name of the column you want to retrieve.</td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL WIP Limit]</td> 
+   <td>Enter or map a new WIP limit for the column.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### Tags
 
-* [Add a tag to a card](#add-card-tag)
+* [Add a tag to a card](#add-a-tag-to-a-card)
 * [Create a tag](#create-a-tag)
 
 #### Add a tag to a card
@@ -632,5 +608,45 @@ This action module makes a custom call to the Workfront Boards API.
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+
+#### Make a custom GraphQL API call
+
+This action module makes a custom GraphQL request to the Workfront Boards API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the method for this call. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td> <p>Enter a name for this operation. This can make tracing and debugging the call easier.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td> <p>Select whether the variables will be from a form or from a collection.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td> <p>For each variable that you want to add, click <b>Add item</b> and enter the variable's key and value.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   </tr> 
  </tbody> 
 </table>
