@@ -381,7 +381,7 @@ This action module uploads a single asset.
 ### Searches 
 
 * [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search for assets]](#search-for-assets)
+* [[!UICONTROL Search Assets]](#search-assets)
 
 #### [!UICONTROL List record] 
 
@@ -415,7 +415,7 @@ This search module retrieves all items of a specific type.
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for assets]
+#### [!UICONTROL Search Assets]
 
 This search module searches for assets base on criteria you supply.
 
@@ -428,12 +428,12 @@ This search module searches for assets base on criteria you supply.
    <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Criteria]</td> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
    <td> <p>Enter the search criteria. </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>Select the field that you want to use in your search</p> </li> 
      <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>Select the operator that you want to use in your search.</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter or map the value to look for in the selected field. The value type should be the same as the data type of the selected field. </p> <p>For more information on data types, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item data types in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>Enter or map the value to look for in the selected field. The value type should be the same as the data type of the selected field. </p> <p>For more information on data types, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">Item data types</a>.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -473,21 +473,17 @@ This trigger module starts a scenario when an asset is created or updated.
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
   </tr> 
-  <tr> <!--
+  <tr> 
     <td role="rowheader">Event type</td>
-   --> <!--
     <td>Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
-   --> 
   </tr> 
   <tr>
      <td role="rowheader">[!UICONTROL Collections]</td>
    <td> <p>Select the collection that you want to watch for new assets. To watch all collections, leave this field empty.</p> </td> 
   </tr> 
-  <tr> <!--
+  <tr> 
     <td role="rowheader">Outputs</td>
-   --> <!--
     <td>Select the fields that you want to include in the output.</td>
-   --> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Limit]</td>
