@@ -142,7 +142,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 #### [!UICONTROL Add a tag to assets] 
 
-Add a tag to one or more assets
+This action module adds a tag to one or more assets
 
 <table style="table-layout:auto">
  <col> 
@@ -161,6 +161,7 @@ Add a tag to one or more assets
    <td> <p>For each asset you want to tag, click <strong>[!UICONTROL Add item]</strong>, then enter or map the asset ID.</p> </td> 
   </tr> 
  </tbody> 
+ </table>
 
 #### [!UICONTROL Add assets to a collection] 
 
@@ -207,7 +208,7 @@ The module returns a status code, along with the headers and body of the API cal
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -275,7 +276,7 @@ This action module reads the metadata of an asset.
 
 #### [!UICONTROL Remove a tag from assets]
 
-Remove a tag from one or more assets
+This action module removes a tag from one or more assets
 
 <table style="table-layout:auto">
  <col> 
@@ -369,6 +370,10 @@ This action module uploads a single asset.
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td>Select a source file from a previous module, or map the source file's name and data.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td>Enable this option when uploading large files. This prevents large files from blocking scenario execution.</td> 
   </tr> 
  </tbody> 
 </table>
