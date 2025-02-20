@@ -130,15 +130,60 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [[!UICONTROL Remove a tag] from assets](#remove-a-tag-from-assets)
+* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Download asset]](#download-asset)
+* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
+* [[!UICONTROL Remove a tag] from assets](#remove-a-tag-from-assets)
+* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
+* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
 * [[!UICONTROL Upload asset]](#upload-asset)
+
+#### [!UICONTROL Add a tag to assets] 
+
+Add a tag to one or more assets
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>Enter or map the ID of the tag that you want to add to assets.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>For each asset you want to tag, click <strong>[!UICONTROL Add item]</strong>, then enter or map the asset ID.</p> </td> 
+  </tr> 
+ </tbody> 
+
+#### [!UICONTROL Add assets to a collection] 
+
+This action module adds one or more assets to a collection.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Enter or map the ID of the collection where you want to add assets.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>For each asset you want to add to the collection, click <strong>[!UICONTROL Add item]</strong>, then enter or map the asset ID.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call] 
 
@@ -182,6 +227,29 @@ The module returns a status code, along with the headers and body of the API cal
  </tbody> 
 </table>
 
+#### [!UICONTROL Download asset]
+
+This action module downloads a single asset.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td>Enter or map the ID of the asset you want to download.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset version]</td> 
+   <td> <p>Enter or map the version of the asset that you want to download. To download the latest version of the asset, leave the field empty.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Read asset metadata]
 
 This action module reads the metadata of an asset.
@@ -201,102 +269,6 @@ This action module reads the metadata of an asset.
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update asset metadata]
-
-This action module updates the metadata of an existing asset.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td>Enter or map the ID of the asset that you want to update metadata for.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Fields]</td> 
-   <td> <p>Select the fields that you want to enter information for, then enter or map the information that you want to update the metadata with into those fields. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Metaproperties]</p> </td> 
-   <td>Select the options that you want to update, then enter or map the information into those properties. Metaproperties are information about the asset that do not represent specific fields in the asset.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add assets to a collection] 
-
-This action module adds one or more assets to a collection.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Enter or map the ID of the collection where you want to add assets.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>For each asset you want to add to the collection, click <strong>[!UICONTROL Add item]</strong>, then enter or map the asset ID.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection] 
-
-This action module removes one or more assets from a collection.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>Enter or map the ID of the collection where you want to remove assets.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>For each asset you want to remove from the collection, click <strong>[!UICONTROL Add item]</strong>, then enter or map the asset ID.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a tag to assets] 
-
-Add a tag to one or more assets
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>Enter or map the ID of the tag that you want to add to assets.</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>For each asset you want to tag, click <strong>[!UICONTROL Add item]</strong>, then enter or map the asset ID.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -324,9 +296,32 @@ Remove a tag from one or more assets
  </tbody> 
 </table>
 
-#### [!UICONTROL Download asset]
+#### [!UICONTROL Remove assets from collection] 
 
-This action module downloads a single asset.
+This action module removes one or more assets from a collection.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>Enter or map the ID of the collection where you want to remove assets.</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>For each asset you want to remove from the collection, click <strong>[!UICONTROL Add item]</strong>, then enter or map the asset ID.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Update asset metadata]
+
+This action module updates the metadata of an existing asset.
 
 <table style="table-layout:auto">
  <col> 
@@ -338,11 +333,15 @@ This action module downloads a single asset.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td>Enter or map the ID of the asset you want to download.</td> 
+   <td>Enter or map the ID of the asset that you want to update metadata for.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset version]</td> 
-   <td> <p>Enter or map the version of the asset that you want to download. To download the latest version of the asset, leave the field empty.</p> </td> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>Select the fields that you want to enter information for, then enter or map the information that you want to update the metadata with into those fields. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Metaproperties]</p> </td> 
+   <td>Select the options that you want to update, then enter or map the information into those properties. Metaproperties are information about the asset that do not represent specific fields in the asset.</td> 
   </tr> 
  </tbody> 
 </table>
