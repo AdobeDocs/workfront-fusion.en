@@ -18,7 +18,7 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 
 ### February 2025
 
-* [Workfront Fusion release activity: Week of February 17, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-20.md)
+* [Workfront Fusion release activity: Week of February 17, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
 * [Workfront Fusion release activity: Week of February 10, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-10.md)
 
 ### January 2025
