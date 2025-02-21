@@ -123,6 +123,8 @@ A typical use case is to transform data from a [!DNL Google] >spreadsheet into X
 
     The resulting XML can be saved to [!DNL Dropbox], sent as an attachment via email, uploaded via FTP to a server, and so on.
 
+>[!ENDSHADEBOX]
+
 ### Adding XML attributes
 
 If you want to add attributes to a complex node (a node that will contain other nodes), you must add a collection with the name `_attributes` for the complex note in your custom data structure. This collection will be mapped to node attributes. If you want to add attributes to a text node (for example: `<node attr="1">abc</node>`), you must add a collection `_attributes` for attributes and a text property `_value` for the node value for this node in your custom data structure.
@@ -225,7 +227,7 @@ To download an XML file from a URL and parse its content:
     </tbody> 
    </table>
 
-   >[!ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 ### [!UICONTROL Parsing XML attributes]
 
