@@ -96,18 +96,18 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Presentation 
 
-* [[!UICONTROL Watch Presentations]](#watch-presentations) 
-* [[!UICONTROL List Presentations]](#list-presentations) 
-* [[!UICONTROL Get a Presentation]](#get-a-presentation) 
-* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail) 
-* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template) 
-* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation) 
-* [[!UICONTROL Refresh a Chart]](#refresh-a-chart) 
 * [[!UICONTROL Add/Delete a Slide]](#adddelete-a-slide)
+* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template) 
+* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail) 
+* [[!UICONTROL Get a Presentation]](#get-a-presentation) 
+* [[!UICONTROL List Presentations]](#list-presentations) 
+* [[!UICONTROL Refresh a Chart]](#refresh-a-chart) 
+* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation) 
+* [[!UICONTROL Watch Presentations]](#watch-presentations) 
 
-#### [!UICONTROL Watch Presentations]
+#### [!UICONTROL Add/Delete a Slide] 
 
-Triggers when a new presentation is created or updated.
+This action module creates a slide or deletes an existing slide on the specified presentation.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -118,110 +118,48 @@ Triggers when a new presentation is created or updated.
    <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watch] </td> 
-   <td> <p>Select the option to watch the presentations:</p> 
+   <td role="rowheader">[!UICONTROL Select the method]</td> 
+   <td> <p>Choose whether you want to add a new slide or delete a slide.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Enter a Slide ID]</td> 
+   <td> <p>If you are deleting a slide, select whether you want to enter the slide ID manually or select the slide from a list.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Presentation ID]</td> 
+   <td> <p>Select the presentation or map the Presentation ID of the presentationfor which you want to add or delete a slide.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Slide Object ID]</td> 
+   <td> <p>If you are deleting a slide and chose to enter the slide manually, enter or map the slide ID. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
+   <td> <p> Select the predefined slide layout that you want your added slide to use. Specify values for any additional fields (such as [!UICONTROL Title]).</p> 
     <ul> 
-     <li> <p>[!UICONTROL Created Date]</p> </li> 
-     <li> <p>[!UICONTROL Modified Date]</p> </li> 
-    </ul> </td> 
+     <li>[!UICONTROL Blank layout, with no placeholders]</li> 
+     <li>[!UICONTROL Layout with a caption at the bottom]</li> 
+     <li>[!UICONTROL Layout with a title and subtitle]</li> 
+     <li>[!UICONTROL Layout with a title and body]</li> 
+     <li>[!UICONTROL Layout with a title and two columns]</li> 
+     <li>[!UICONTROL Layout with only a title]</li> 
+     <li>[!UICONTROL Layout with a section title]</li> 
+     <li>[!UICONTROL Layout with a title and subtitle on one side and description on the other]</li> 
+     <li>[!UICONTROL Layout with one title and one body, arranged in a single column]</li> 
+     <li>[!UICONTROL Layout with a main point]</li> 
+     <li>[!DNL Layout with a big number heading]</li> 
+    </ul> <p>This field is available if you selected to add a slide.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>The maximum number of presentations Workfront Fusion should return during one scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Presentations]
-
-Retrieves a list of all presentations.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
-   <td> <p>Select the [!DNL Google Drive] where the presentations you want to list are located:</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
-   <td> <p>Choose the folder location of the presentations you want to list.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>The maximum number of presentations [!DNL Workfront Fusion] should return during one scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Presentation]
-
-Gets the latest version of a specified presentation.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>Select the [!DNL Google Drive] where the presentations you want to list are located:</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> Select the presentation that you want to retrieve.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Page/Thumbnail]
-
-Gets the latest version of the specified page or of the thumbnail of a page in the presentation.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> Select the Presentation ID that you want to retrieve.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Page Object ID]</td> 
-   <td> <p> Select the slide for which you want to view the page object details.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Show Page Thumbnail]</td> 
-   <td> <p> Select the checkbox if you want to view the page thumbnail information.</p> </td> 
+   <td role="rowheader">[!DNL Content]</td> 
+   <td> <p>Enter or map the text content for the slide. Fields are available based on the template you selected.</p> <p>This field is available if you selected to add a slide.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Create a Presentation From a Template]
 
-Creates a new presentation by replacing all tags like `{{Name}}`, `{{Email}}` in a template with provided data.
+This action module creates a new presentation by copying a presentation and replacing all tags like `{{Name}}`, `{{Email}}` in with provided data.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -258,14 +196,14 @@ Creates a new presentation by replacing all tags like `{{Name}}`, `{{Email}}` in
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> Select the Presentation ID of the presentation you want to use as a template.</p> </td> 
+   <td> <p> Select the presentation or enter or map the Presentation ID of the presentation you want to use as a template.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values] </td> 
    <td> <p>Add the values:</p> 
     <ul> 
      <li><strong>[!UICONTROL Tag]</strong>: Enter the tag you want to replace in the presentation. For example, <code>&#123;&#123;Name&#125;&#125;</code></li> 
-     <li><strong>[!UICONTROL Replaced Value]</strong>: Enter the value with which the existing tag is to be replaced. For example, if a string <code>&#123;&#123;Name&#125;&#125;/code> in the presentation and the replaced value is Sample, then the <code>&#123;&#123;Name&#125;&#125;</code> will be replaced by <code>Sample</code>.</li> 
+     <li><strong>[!UICONTROL Replaced Value]</strong>: Enter the value with which the existing tag is to be replaced. For example, if a string <code>&#123;&#123;Name&#125;&#125;</code> in the presentation and the replaced value is Sample, then the <code>&#123;&#123;Name&#125;&#125;</code> is replaced by <code>Sample</code>.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -287,7 +225,134 @@ Creates a new presentation by replacing all tags like `{{Name}}`, `{{Email}}` in
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Sharing with Other's Email Address]</td> 
-   <td> <p> Enter the email address with whom you want to share the presentation. If you are not entering an email address and selecting only shared field, the presentation is shareable to anyone.</p> </td> 
+   <td> <p> Enter the email address with whom you want to share the presentation. If you enable the Shared option without entering an email in this field, the presentation is shareable to anyone.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Page/Thumbnail]
+
+This action module gets the latest version of the specified page or of the thumbnail of a page in the presentation.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter a Presentation and Page ID]</td> 
+   <td> <p> Choose whether to enter a Presentation and Page ID manually, or select them from a list.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p> Select the Presentation ID that you want to retrieve.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Page Object ID]</td> 
+   <td> <p> Select the slide for which you want to view the page object details.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Show Page Thumbnail]</td> 
+   <td> <p> Select the checkbox if you want to view the page thumbnail information.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Presentation]
+
+This action module gets the latest version of a specified presentation.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td> <p>Select the [!DNL Google Drive] where the presentations you want to list are located:</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p> Select the presentation that you want to retrieve.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Presentations]
+
+This module retrieves a list of all presentations in the given location.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
+   <td> <p>Select the [!DNL Google Drive] where the presentations you want to list are located:</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder ID]</td> 
+   <td> <p>Choose the folder location of the presentations you want to list.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Enter or map the maximum number of presentations that you want the module to return during one scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Refresh a Chart] 
+
+THis action module refreshes the chart data stored in a presentation specified by ID.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter a Presentation ID]</td> 
+   <td> <p> Choose whether to enter a Presentation ID manually, or select it from a list.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td> <p>If selecting the presentation from a list, select the [!DNL Google Drive] where the presentations you want to list are located:</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p>Select the presentation or enter or map the Presentation ID of the presentation that includes the chart you want to refresh.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Chart Object ID]</td> 
+   <td> <p> If entering data manually, Enter or map the ID of the chart you want to refresh.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -314,31 +379,32 @@ Uploads an image with provided data.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>Select the [!DNL Google Drive] where the presentations you want to list are located:</p> 
+   <td> <p>If choosing from a dropdown, select the [!DNL Google Drive] where the presentation you want to add an image to is located:</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
      <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
-    </ul> <p>This field appears if you are creating the presentation [!UICONTROL By Dropdown].</p> </td> 
+    </ul>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Presentation ID]</td> 
    <td> <p> Select the Presentation ID of the presentation that you are uploading an image to.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
-   <td> <p>Values Add the values:</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Tag]</strong>: Enter the tag to which you want to add the URL.</li> 
-     <li><strong>[!UICONTROL Image URL]</strong>: Enter the path or URL to the image you want to upload.</li> 
-    </ul> <p>Note: The images must be less than 50MB in size, cannot exceed 25 megapixels, and must be in PNG, JPEG, or GIF format.</p> </td> 
+   <td role="rowheader">[!UICONTROL Select the Method]</td> 
+   <td> <p> Select how you want to replace the image.</p>
+   <ul>
+   <li><p><b>Upload an image by replacing text tag</b></p><p>In the Values field, for each image you want to upload, click <b>Add item</b> and enter the image's tag and the URL of the new image.</p></li>
+   <li><p><b>Upload an image by replacing image</b></p><p>In the Values field, for each image you want to upload, click <b>Add item</b> and enter the image's object ID, replace method, and the URL of the new image.</p></li>
+   </ul>
+  <p>Note: The images must be less than 50MB in size, cannot exceed 25 megapixels, and must be in PNG, JPEG, or GIF format.</p>   </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Refresh a Chart] 
+#### [!UICONTROL Watch Presentations]
 
-Refreshes the chart data stored in a presentation specified by ID.
+This trigger module starts a scenario when when a new presentation is created or updated.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -349,123 +415,24 @@ Refreshes the chart data stored in a presentation specified by ID.
    <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>Select the [!DNL Google Drive] where the presentations you want to list are located:</p> 
+   <td role="rowheader">[!UICONTROL Watch] </td> 
+   <td> <p>Select the option to watch the presentations:</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li> <p>[!UICONTROL Created Date]</p> </li> 
+     <li> <p>[!UICONTROL Modified Date]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p>Select the Presentation ID of the presentation that includes chart you want to refresh.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Chart Object ID]</td> 
-   <td> <p> Select the Chart you want to refresh.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add/Delete a Slide] 
-
-Creates an empty slide or deletes an existing slide on the specified presentation.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Select the method]</td> 
-   <td> <p>Choose whether you want to add a new slide or delete a slide.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Presentation ID]</td> 
-   <td> <p>Select the Presentation ID of the presentation for which you want to add or delete a slide.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
-   <td> <p> Select the predefined slide layout that you want your added slide to use. Specify values for any additional fields (such as [!UICONTROL Title]).</p> 
-    <ul> 
-     <li>[!UICONTROL Blank layout, with no placeholders]</li> 
-     <li>[!UICONTROL Layout with a caption at the bottom]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle]</li> 
-     <li>[!UICONTROL Layout with a title and body]</li> 
-     <li>[!UICONTROL Layout with a title and two columns]</li> 
-     <li>[!UICONTROL Layout with only a title]</li> 
-     <li>[!UICONTROL Layout with a section title]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle on one side and description on the other]</li> 
-     <li>[!UICONTROL Layout with one title and one body, arranged in a single column]</li> 
-     <li>[!UICONTROL Layout with a main point]</li> 
-     <li>[!DNL Layout with a big number heading]</li> 
-    </ul> <p>This field is available if you selected to add a slide.</p> </td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Enter or map the maximum number of presentations Workfront Fusion should return during one scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Other
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call) 
 * [[!UICONTROL Insert Links in a Presentation]](#insert-links-in-a-presentation)
-
-#### [!UICONTROL Make an API Call]
-
-Performs an arbitrary authorized API call.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p>Enter a path relative to https://developers.google.com/slides/. E.g. Presentation.</p> <p>For the list of available endpoints, refer to the <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API Documentation</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Enter the desired request headers. You don't need to add authorization headers.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p> Enter the request query string.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
->[!INFO]
->
->**Example:** Using an API call you can get the presentation details for the presentation ID you have entered. You can find the presentation ID in the URL when you the open the presentation in [!DNL Google Slides].
->
->![API call example](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
->
->The following API call returns the presentation details:
->
->![Presentation details](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
->
->Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId].
->
->In our example, the requested presentation details were returned:
->
->![Presentatin details](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+* [[!UICONTROL Make an API Call]](#make-an-api-call) 
 
 #### [!UICONTROL Insert Links in a Presentation]
 
@@ -506,7 +473,63 @@ This module makes all links in a presentation clickable, or inserts a link into 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text Inputs]</td> 
-   <td>For each text item that you want to add a link for, add the item as well as its associated link to the list. Every time the item appears in the presentation, it will automatically be linked to the specified site.</td> 
+   <td>If you are inserting a link, for each text item that you want to add a link for, click <b>Add item</b> and enter the text and its associated link. Every time the item appears in the presentation, it is automatically linked to the specified site.</td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Make an API Call]
+
+Performs an arbitrary authorized API call.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Google Slides] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td> <p>Enter a path relative to <code>https://developers.google.com/slides/</code>. E.g. Presentation.</p> <p>For the list of available endpoints, refer to the <a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API Documentation</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Enter the desired request headers. You don't need to add authorization headers.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p> Enter the request query string.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+>[!BEGINSHADEBOX]
+
+**Example:** Using an API call you can get the presentation details for the presentation ID you have entered. You can find the presentation ID in the URL when you the open the presentation in [!DNL Google Slides].
+
+![API call example](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+
+The following API call returns the presentation details:
+
+![Presentation details](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+
+Matches of the search can be found in the module's Output under [!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId].
+
+In our example, the requested presentation details were returned:
+
+![Presentatin details](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+
+>[!ENDSHADEBOX]
