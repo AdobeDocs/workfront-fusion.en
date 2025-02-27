@@ -70,30 +70,30 @@ You must add the API to your project in the Adobe Developer Console.
 1. Open your project in the Adobe Developer Console.
 1. Click **Add to project**, and select **API**.
 1. From the list of available APIs, select **Adobe Cloud Platform and Collaboration API**.
-1. On the Select authentication type screen, select **User Authentication** and click **Next**.
-1. On the Add a user authentication credential screen, select **OAuth Web App** and click **Next**.
-1. On the Configure OAuth Web App credential screen, enter the following:
-
-| Cluster | Default redirect URI | Redirect URI pattern|
-|---|---|---|
-| US Cluster | `https://app.workfrontfusion.com` | `https://app\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
-| EU Cluster | `https://app-eu.workfrontfusion.com` | `https://app-eu\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
-| US Cluster | `https://app-az.workfrontfusion.com` | `https://app-az\.workfrontfusion\.com/oauth/cb/adobe-acpc` |
-
-  
+1. On the Select authentication type screen, select **OAuth Server-to-Server** and click **Next**.
+1. Add a name for the crendential.
 1. Click **Next**, then click **Save configured API**.
 1. Make note of the provided credentials, which you will use when configuring the connection in Workfront Fusion.
-1. Continue to [Create the connection in Workfront Fusion](#create-the-connection-in-workfront-fusion).
+1. Continue to [Make your technical account an admin in the Adobe Admin Console](#make-your-technical-account-an-admin-in-the-adobe-admin-console).
 
->[!IMPORTANT]
->
->When configuring the project on the Adobe Developer console remember to:
->
->* Select the **User Authentication** type
->* Enter the following URIs:
->  
->   * Default redirect URI: `https://app.workfrontfusion.com/oauth/cb/adobe-acpc`
->   * Redirect URI pattern: `https://app\.workfrontfusion\.com/oauth/cb/adobe-acpc`
+### Make your technical account an admin in the Adobe Admin Console
+
+From the Adobe Admin Console page, select the Products tab in the top navigation bar, and then select Workfront Fusion
+
+1. Locate and copy the email address of the technical account user in your organization.
+1. If a list displays, select the link at the top.
+1. This is your Production instance where your users work.
+1. In the list that displays, with the Product Profiles tab selected, click the name of the Workfront Product Profile link.
+
+   This list includes all users that are already assigned to your Production instance of Workfront.
+
+1. Select the **Admins** tab above the list of users.
+1. Select **Add Admin**.
+1. In the Add product profile administrators box, enter the email addresses of the technical account, then select **Save**.
+
+   The technical account is made an administrator.
+
+1. Continue to [Create the connection in Workfront Fusion](#create-the-connection-in-workfront-fusion).
 
 ### Create the connection in Workfront Fusion
 
