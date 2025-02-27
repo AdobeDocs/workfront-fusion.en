@@ -130,6 +130,8 @@ If you see the map button above a field or function, you can use it to set varia
 
 This action module expands an image, optionally with content from a prompt you provide.
 
+This module works with the Firefly API V3 Async. The prevoius version of this module has been deprecated and will be removed in the near future.
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -147,29 +149,43 @@ This action module expands an image, optionally with content from a prompt you p
    <td>Enter a number between 1-4. The module will generate this number of expanded image variations.</td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Source]</td> 
+   <td>Select how you are providing the source file:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Expanded image format]</td> 
    <td>Select the file format that the expanded image will be saved as.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Select a source file from a previous module, or map the source file's Image file name and Image file (data).</p> </td> 
+   <td role="rowheader">[!UICONTROL Expand by]</td> 
+   <td>  <p>Select whether you want to expand the image by using image placement or by using a mask.</p> 
+   <ul>
+   <li><b>Placement</b><p>Enter the horizontal and vertial alignment, and the inset of the placed image from the edges.</p></li>
+   <li><b>Mask</b><p>Select the source file for the mask, and whether the mask should be inverted.</p></li>
+   </ul>
+</td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
-   <td>Select the size that you want the expanded image to be.</td> 
+   <td>Select the height and width that you want the expanded image to be.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>For each seed you want to use, click <b>Add item</b> and enter or map an integer. You can use this same seed in another Expand an image module to generate a similar image with different styles. </td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>For each image that the module will generate, click <b>Add item</b> and enter or map an integer. You can use this same seed in another Expand an image module to generate a similar image with different styles. The number of seeds you add must be equal to the Number of variations field.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Fill an image
+### Expand an image (deprecated)
 
-This action module fills the masked area of an image, optionally with content from a prompt you provide.   
+This module has been deprecated and will be removed in the near future. Use the Expand an image module instead.
 
+### Fill an image
+
+This action module fills the masked area of an image, optionally with content from a prompt you provide.
+
+This module works with the Firefly API V3 Async. The prevoius version of this module has been deprecated and will be removed in the near future.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -178,6 +194,14 @@ This action module fills the masked area of an image, optionally with content fr
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>For instructions on creating a connection to [!DNL Adobe Campaign], see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to [!DNL Adobe Firefly]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td>Select how you are providing the image source file:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Mask > Source]</td> 
+   <td>Select how you are providing the mask source file:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
@@ -191,30 +215,31 @@ This action module fills the masked area of an image, optionally with content fr
    <td role="rowheader">[!UICONTROL Filled image format]</td> 
    <td>Select the file format that the filled image will be saved as.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> For each image you want to fill, click <b>Add an image</b>, then select a source file from a previous module or map the source file's Image file name and Image data.</p> </td> 
-</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p>  For each mask you want to use, click <b>Add a mask</b>. Select a source file from a previous module, or map the source file's Mask file name and Mask data. The Mask file represents the custom mask that will be filled with generated content.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>For each image that the module will generate, click <b>Add item</b> and enter or map an integer. You can use this same seed in another Expand an image module to generate a similar image with different styles. The number of seeds you add must be equal to the Number of variations field.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Select the size that you want the filled image to be.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seeds]</td> 
-   <td>For each image that the module will generate, click <b>Add item<b> and enter or map an integer. You can use this same seed in another Expand an image module to generate a similar image with different styles. The number of seeds you add must be equal to the Number of variations field.</td> 
+   <td role="rowheader">[!UICONTROL Locale]</td> 
+   <td>If a locale is provided, the module generates content more relevant to the specified locale. <p>Locale must be provided in ISO 639-1 language code and ISO 3166-1 region.</p><p> Example: <code>en-US</code></p></td> 
   </tr> 
  </tbody> 
 </table>
 
+### Fill an image (deprecated)
+
+This module has been deprecated and will be removed in the near future. Use the Fill an image module instead.
+
 ## Generate an image
 
 This action module generates and image based on a prompt you provide. You can also provide an optional reference image, and the generated image will match the style of the reference image.
+
+This module works with the Firefly API V3 Async. The prevoius version of this module has been deprecated and will be removed in the near future.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -226,7 +251,7 @@ This action module generates and image based on a prompt you provide. You can al
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
-   <td>Enter or map a prompt for the image you want to create. More detail in the prompt will allow you more control over what appears in the image.</td> 
+   <td>Enter or map a prompt for the image you want to generate. More detail in the prompt will allow you more control over what appears in the image.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
@@ -237,12 +262,23 @@ This action module generates and image based on a prompt you provide. You can al
    <td>Select the file format that the expanded image will be saved as. If you select default, the file format will be JPEG if no reference image is provided. If a reference image is provided, the file format of the generated image will be the same as the reference image.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>Select a source file from a previous module, or map the source file's Reference image file name and Reference image file (data). The generated image will be created to match the reference image's style.</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Structure > Image reference]</td> 
+    <td>Select how you are providing the source file for the new image's structure:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presets]</td> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Enter a number between 0 and 100 to control how strictly Firefly follows the source image's structure. Higher numbers mean that Firefly follows the image more strictly.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Select how you are providing the source file for the new image's style:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Enter a number between 0 and 100 to control how strictly Firefly follows the source image's style. Higher numbers mean that Firefly follows the image more strictly.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
    <td>If you want to use a preset style, click Add item and enter or map the style that you want to use.<p>For a list of preset styles, see <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Image Model Styles</a> in the Adobe developer documentation.</td> 
   </tr> 
   <tr> 
@@ -255,17 +291,13 @@ This action module generates and image based on a prompt you provide. You can al
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>Enter or map an integer. You can use this same seed in another Expand an image module to generate a similar image with different styles. </td> 
+   <td>For each image that the module will generate, click <b>Add item</b> and enter or map an integer. You can use this same seed in another Expand an image module to generate a similar image with different styles. The number of seeds you add must be equal to the Number of variations field.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>Select the size that you want the generated image to be.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Strength]</td> 
-   <td>Enter or map an integer that represents the intensity with which the generated image will match the style of the preset style or reference image. </td> 
-  </tr> 
-  <tr> 
+   <tr> 
    <td role="rowheader">[!UICONTROL Visual intensity]</td> 
    <td>Enter or map an integer that represents the overall intensity of the photo's existing visual characteristics. </td> 
   </tr> 
@@ -273,9 +305,110 @@ This action module generates and image based on a prompt you provide. You can al
    <td role="rowheader">[!UICONTROL Locale]</td> 
    <td>If a locale is provided, the module generates content more relevant to the specified locale. <p>Locale must be provided in ISO 639-1 language code and ISO 3166-1 region.</p><p> Example: <code>en-US</code></p></td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Enable this option to generate an image that can be repeated infinitely in every direction.</td> 
+  </tr> 
  </tbody> 
 </table>
 
+### Generate an image (deprecated)
+
+This module has been deprecated and will be removed in the near future. Use the Generate an image module instead.
+
+### Generate an object composite
+
+This action module combines images generated by Firefly to create an image composite.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>For instructions on creating a connection to [!DNL Adobe Campaign], see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to [!DNL Adobe Firefly]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>Enter or map a prompt for the image you want to generate. More detail in the prompt will allow you more control over what appears in the image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Enter a number between 1-4. The module will generate this number of image variations.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Content classs]</td> 
+   <td>Select whether you want the generated image to be more like a photo or like art.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Select how you are providing the source file for the new image's structure:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Select the file format that the expanded image will be saved as. If you select default, the file format will be JPEG if no reference image is provided. If a reference image is provided, the file format of the generated image will be the same as the reference image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Select how you are providing the source file for the new image's style:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>Enter a number between 0 and 100 to control how strictly Firefly follows the source image's style. Higher numbers mean that Firefly follows the image more strictly.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td>If you want to use a preset style, click Add item and enter or map the style that you want to use.<p>For a list of preset styles, see <a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >Image Model Styles</a> in the Adobe developer documentation.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Select the size that you want the generated composite to be. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Generate similar images
+
+This action module generates images similar to the source image you specify.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>For instructions on creating a connection to [!DNL Adobe Campaign], see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to [!DNL Adobe Firefly]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>Enter a number between 1-4. The module will generate this number of image variations.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>Select the file format that the expanded image will be saved as. If you select default, the file format will be JPEG if no reference image is provided. If a reference image is provided, the file format of the generated image will be the same as the reference image.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>Select how you are providing the source file for the new image's structure:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>Select how you are providing the source file for the new image's style:<ul><li><p><b>File</b></p><p>Select a source file from a previous module, or map the source file's Reference image file name and reference image file.</p></li><li><p><b>Presigned URL</b></p><p>Enter or map the URL of the source image.</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>Select the size that you want the generated composite to be. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>For each image that the module will generate, click <b>Add item</b> and enter or map an integer. You can use this same seed in another Expand an image module to generate a similar image with different styles. The number of seeds you add must be equal to the Number of variations field.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>Enable this option to generate an image that can be repeated infinitely in every direction.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 ### Make a custom API call
