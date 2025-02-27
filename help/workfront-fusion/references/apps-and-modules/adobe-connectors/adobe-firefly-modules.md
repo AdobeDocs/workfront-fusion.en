@@ -130,7 +130,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 This action module expands an image, optionally with content from a prompt you provide.
 
-This module works with the Firefly API V3 Async. The prevoius version of this module has been deprecated and will be removed in the near future.
+This module works with the Firefly API V3 Async. The previous version of this module has been deprecated and will be removed in the near future.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -185,7 +185,7 @@ This module has been deprecated and will be removed in the near future. Use the 
 
 This action module fills the masked area of an image, optionally with content from a prompt you provide.
 
-This module works with the Firefly API V3 Async. The prevoius version of this module has been deprecated and will be removed in the near future.
+This module works with the Firefly API V3 Async. The previous version of this module has been deprecated and will be removed in the near future.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -239,7 +239,7 @@ This module has been deprecated and will be removed in the near future. Use the 
 
 This action module generates and image based on a prompt you provide. You can also provide an optional reference image, and the generated image will match the style of the reference image.
 
-This module works with the Firefly API V3 Async. The prevoius version of this module has been deprecated and will be removed in the near future.
+This module works with the Firefly API V3 Async. The previous version of this module has been deprecated and will be removed in the near future.
 
 <table style="table-layout:auto"> 
  <col> 
