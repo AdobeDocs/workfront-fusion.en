@@ -62,6 +62,43 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 +++
 
+## SOAP module and its fields
+
+When you configure SOAP modules, [!DNL Workfront Fusion] displays the fields listed below.  A bolded title in a module indicates a required field.
+
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+### Execute SOAP action
+
+This action module executes a SOAP action, based on WSDL you specify.
+
+<table style="table-layout:auto">
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL WSDL]</td> 
+   <td> Select the WSDL that you want the module to use. To create a WSDL, click <b>Add</b> next to the field and fill in the fields. </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL HTTP headers]</td> 
+   <td> For each HTTP header that you want to add, click <b>Add item</b> and enter the header's name and value.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL SOAP headers]</td> 
+   <td> For each SOAP header that you want to add, click <b>Add item</b> and enter the header's name, value, namespace, and XMLNS.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td> Enable this option to configure headers for SOAP 1.2. </td> 
+  </tr> 
+  </tbody> 
+</table>
+
 ## Limitations of the [!UICONTROL SOAP] module
 
 >[!NOTE]
