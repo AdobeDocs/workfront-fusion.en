@@ -494,7 +494,7 @@ This action module retrieves assets owned by the by the user whose credentials a
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>Set the maximum number of assets that [!DNL Workfront Fusion] will return during one execution cycle. This number must be less than or equal to 100.</p>
+        <p>Enter the maximum number of records you want the module to return during each scenario execution cycle.</p>
       </td>
     </tr>
     <tr>
