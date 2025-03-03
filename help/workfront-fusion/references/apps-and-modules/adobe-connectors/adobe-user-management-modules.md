@@ -523,12 +523,14 @@ This action module updates an existing user group.
    <td>Enter or map the updated description of the group.</td> 
   </tr> 
  </tbody> 
+ </table>
 
 ### Other
 
-This action module makes a custom call to the Adobe User Management API.
 
 #### Make a custom API call
+
+This action module makes a custom call to the Adobe User Management API.
 
 <table style="table-layout:auto"> 
   <col/>
