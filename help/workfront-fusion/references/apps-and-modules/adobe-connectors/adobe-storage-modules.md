@@ -9,6 +9,7 @@ author: Becky
 feature: Workfront Fusion
 hide: yes
 hidefromtoc: yes
+exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
 ---
 # Adobe Storage modules
 
@@ -355,6 +356,3 @@ This action module makes a custom HTTP request to the Adobe Storage API.
      </div> </p> </td>     </tr>
   </tbody>
 </table>
-
-
-
