@@ -7,6 +7,8 @@ title: Adobe Storage modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you to create and manage projects in the Adobe Admin Console.
 author: Becky
 feature: Workfront Fusion
+hide: yes
+hidefromtoc: yes
 ---
 # Adobe Storage modules
 
@@ -110,30 +112,25 @@ To create a connection for your [!DNL Adobe Storage] modules:
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>Select <code>Server to server</code>.</td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Enter a name for this connection.</p>
         </td>
         </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>Select whether you are connecting to a production or non-production environment.</td>
-        </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>Select whether you are connecting to a service account or a personal account.</td>
-        </tr>
-        <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Enter your [!UICONTROL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credential details] section of the project in the [!DNL Adobe Developer Console]</td>
+        <td>Enter your [!UICONTROL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credential details] section of the project in the [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credential details] section of the project in the [!DNL Adobe Developer Console]</td>
+        <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credential details] section of the project in the [!DNL Adobe Developer Console].</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>Enter an authentication URL. The default is <code>https://ims-na1.adobelogin.com</code>. </td>
+        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td>Enter or map your Adobe IMS Organization ID. This is a string with the form <code> 123abc@AdobeOrg</code>, where the section before the @ is a hexadecimal number. You can find this value as part of the URL path for your organization in the Adobe Admin Console, or in the Adobe.IO console for your user management integration.</td>
         </tr>
       </tbody>
     </table>
