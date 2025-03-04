@@ -81,7 +81,7 @@ The Adobe Firefly connector uses the following:
 
 To create a connection for your [!DNL Adobe Firefly] modules:
 
-1. Click **[!UICONTROL Add]** next to the Connection box.
+1. In any module, click **[!UICONTROL Add]** next to the Connection box.
     
 1. Fill in the following fields:
     

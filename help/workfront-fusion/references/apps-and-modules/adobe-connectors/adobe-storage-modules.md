@@ -100,7 +100,7 @@ From the Adobe Admin Console page, select the Products tab in the top navigation
 
 To create a connection for your [!DNL Adobe Storage] modules:
 
-1. Click **[!UICONTROL Add]** next to the Connection box.
+1. In any module, click **[!UICONTROL Add]** next to the Connection box.
     
 1. Fill in the following fields:
     

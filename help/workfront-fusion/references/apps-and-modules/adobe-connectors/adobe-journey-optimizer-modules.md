@@ -91,7 +91,7 @@ The Adobe Journey Optimizer connector uses the following:
 
 You can create a connection in any Adobe Journey Optimizer module.
 
-1. Click **[!UICONTROL Add]** next to the Connection box.
+1. In any module, click **[!UICONTROL Add]** next to the Connection box.
     
 1. Fill in the following fields:
     

@@ -227,7 +227,7 @@ The following example shows how to use the [!UICONTROL HTTP] > [!UICONTROL Make 
 
 1. Ensure that you have created a project, configured OAuth settings, and generated your credentials as described in the article[Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] using a custom OAuth client](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md).
 1. Open the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module.
-1. Click **[!UICONTROL Add]** next to the connection box.
+1. In any module, click **[!UICONTROL Add]** next to the Connection box.
 1. Enter the following values:
 
    <table style="table-layout:auto">  

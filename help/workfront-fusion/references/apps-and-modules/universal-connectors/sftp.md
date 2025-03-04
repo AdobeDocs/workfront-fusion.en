@@ -183,7 +183,7 @@ Returns folders with details when a folder is created or changed in a specified 
 
 #### [!UICONTROL Create a folder]
 
-Creates a new folder in the specified location.
+This action module creates a new folder in the specified location.
 
 >[!NOTE]
 >
