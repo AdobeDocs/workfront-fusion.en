@@ -91,7 +91,7 @@ The Adobe Target connector uses the following:
 
 To create a connection for your [!DNL Adobe Target] modules:
 
-1. Click **[!UICONTROL Add]** next to the Connection box.
+1. In any module, click **[!UICONTROL Add]** next to the Connection box.
 
 1. Fill in the following fields:
 

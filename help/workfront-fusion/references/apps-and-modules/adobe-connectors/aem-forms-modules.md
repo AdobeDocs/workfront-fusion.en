@@ -73,7 +73,7 @@ The Adobe Experience Manager Assets connector uses the following:
 
 To create a connection for your [!DNL Adobe Experience Manager Forms] modules:
 
-1. Click **[!UICONTROL Add]** next to the Connection box.
+1. In any module, click **[!UICONTROL Add]** next to the Connection box.
 
 1. Fill in the following fields:
 

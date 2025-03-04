@@ -64,7 +64,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 To create a connection for your [!DNL Adobe User Management] modules:
 
-1. Click **[!UICONTROL Add]** next to the Connection box.
+1. In any module, click **[!UICONTROL Add]** next to the Connection box.
     
 1. Fill in the following fields:
     
