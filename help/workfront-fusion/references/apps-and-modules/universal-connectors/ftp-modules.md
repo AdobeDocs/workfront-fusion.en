@@ -54,7 +54,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Prerequisites
 
-In order to use [Fusion App] with [!DNL Workfront Fusion], you must have an FTP account.
+In order to use FTP modules, you must have an FTP account.
 
 ## Create a connection in an FTP module {#create-a-connection}
 
