@@ -114,6 +114,8 @@ In order to use FTP modules, you must have an account with an FTP service.
    </tbody> 
    </table>
 
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+
 ## FTP modules and their fields
 
 * [Triggers](#triggers)

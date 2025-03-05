@@ -731,7 +731,7 @@ This search module retrieves a list of datasets.
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>
-        <p>Enter or map the maximum number of records you want the module to [action] during each scenario execution cycle.</p>
+        <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p>
       </td>
     </tr>
   </tbody>

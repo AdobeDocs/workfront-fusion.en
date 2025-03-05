@@ -449,7 +449,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr>
     <td>[!UICONTROL Record Type]</td>
-    <td>Select the type of [!DNL Salesforce] record that you want the module to [action].read.</td>
+    <td>Select the type of [!DNL Salesforce] record that you want the module to read.</td>
   </tr> 
   <tr>
     <td>[!UICONTROL Record Fields]</td>

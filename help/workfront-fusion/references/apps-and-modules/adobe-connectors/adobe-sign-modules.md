@@ -686,7 +686,7 @@ This action module lists all records of the selected type that the account has a
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned records]</td> 
-   <td> <p>Enter or map the maximum number of records you want the module to [action] during each scenario execution cycle.</p> <p>Note: This field is combined with the [!UICONTROL Cursor] or [!UICONTROL Start Index] field for pagination. For example, if the [!UICONTROL Maximum number of returned events] is 100, and the [!UICONTROL Start index] is 101, the module returns records 101-200, or the second page of results.</p> </td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> <p>Note: This field is combined with the [!UICONTROL Cursor] or [!UICONTROL Start Index] field for pagination. For example, if the [!UICONTROL Maximum number of returned events] is 100, and the [!UICONTROL Start index] is 101, the module returns records 101-200, or the second page of results.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent domain URLs]</td> 
@@ -1039,7 +1039,7 @@ This search module searches for agreements based on criteria you provide.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned results]</td> 
-   <td> <p>Enter or map the maximum number of records you want the module to [action] during each scenario execution cycle.</p> </td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
