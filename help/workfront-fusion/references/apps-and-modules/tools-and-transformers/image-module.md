@@ -11,50 +11,93 @@ exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>No Workfront Fusion license requirement.</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## [!UICONTROL Image] modules and their fields
 
 When you are configuring this module, the following fields display. A bolded title in a module indicates a required field.
 
-* [[!UICONTROL Resize]](#resize)
 * [[!UICONTROL Convert a format]](#convert-a-format)
 * [[!UICONTROL Extract metadata]](#extract-metadata)
+* [[!UICONTROL Resize]](#resize)
+
+### [!UICONTROL Convert a format] 
+
+This transformer module changes the format of an image file. This module is compatible the following formats:
+
+* PNG
+* JPG
+* GIF
+* BMP
+
+Both the source file and the output must be in one of these formats. For example, the [!UICONTROL Image] >[!UICONTROL Convert a format] module can transform a PNG file into a BMP file, or a BMP into a JPG.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output format]</td> 
+   <td>Select the format that you want the module to convert the source file to. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Extract metadata]
+
+This transformer module returns basic information about a module.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### [!UICONTROL Resize] 
 
@@ -66,15 +109,7 @@ This transformer module changes an image's height and width according to criteri
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Select the source of the image you want to convert. You can select output from a previous module or map the data file and filename. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>Map the file that you want to convert. This field is available if you selected [!UICONTROL Map] in the [!UICONTROL Source file] field.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Enter a name for the converted file. This field is available if you selected [!UICONTROL Map] in the [!UICONTROL Source file] field.</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL I want to]</td> 
@@ -101,72 +136,19 @@ This transformer module changes an image's height and width according to criteri
    <td role="rowheader">[!UICONTROL Height]</td> 
    <td>Enter or map the desired height of the resized image in pixels.</td> 
   </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Convert a format] 
-
-This transformer module changes the format of an image file. This module is compatible the following formats:
-
-* PNG
-* JPG
-* GIF
-* BMP
-
-Both the source file and the output must be in one of these formats. For example, the [!UICONTROL Image] >[!UICONTROL Convert a format] module can transform a PNG file into a BMP file, or a BMP into a JPG.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Select the source of the image you want to convert. You can select output from a previous module or map the data file and filename. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>Map the file that you want to convert. This field is available if you selected [!UICONTROL Map] in the [!UICONTROL Source file] field.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Enter a name for the converted file. This field is available if you selected [!UICONTROL Map] in the [!UICONTROL Source file] field.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Output format]</td> 
-   <td>Select the format that you want the module to convert the source file to. </td> 
+   <td role="rowheader">[!UICONTROL Change by percentage]</td> 
+   <td>If you have chosen to change the image by percentage, enter or map the percentage that you want to change the image by.</td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Extract metadata]
-
-This transformer module returns basic information about a module.
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Select the source of the image you want to convert. You can select output from a previous module or map the data file and filename. </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Data]</td> 
-   <td>Map the file that you want to convert. This field is available if you selected Map in the [!UICONTROL Source file] field.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL File name]</td> 
-   <td>Enter a name for the converted file. This field is available if you selected Map in the [!UICONTROL Source file] field.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-## Possible problems
+## Troubleshooting
 
 ### Action terminated with an error
 
-There are three cases when an action can terminate with an error:
+ an action can terminate with an error because of one of the following causes :
 
-* Received data was not in the JPG/GIF/PNG/BMP format
-* The maximum width/height limit had been exceeded while changing the image dimensions. The image size must not exceed 3840 px width and 2160 px height
-* The maximum allowable size of an image had been exceeded while changing the dimensions or format of the image.
+* Received data is not in the JPG/GIF/PNG/BMP format
+* The maximum width/height limit was exceeded while changing the image dimensions. The image size must not exceed 3840 px width and 2160 px height
+* The maximum allowable size of an image was exceeded while changing the dimensions or format of the image.
