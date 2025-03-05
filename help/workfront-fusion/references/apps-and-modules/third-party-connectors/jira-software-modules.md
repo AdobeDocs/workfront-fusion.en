@@ -142,7 +142,7 @@ To authorize a connection between [!DNL Workfront Fusion] and [!DNL Jira Server]
 
 #### Generate Public and Private keys for your [!DNL Jira] connection 
 
-To acquire a private key for your [!DNL Workfront Fusion Jira] connection, you need to generate public and private keys.
+To acquire a private key for your [!DNL Workfront Fusion Jira] connection, you need to generate public and private keys. This is done through your computer's terminal. You can locate your terminal by searching for terminal in your start menu or computer search bar (not your browser search bar.)
 
 1. In your terminal, run the following `openssl` commands.
 
