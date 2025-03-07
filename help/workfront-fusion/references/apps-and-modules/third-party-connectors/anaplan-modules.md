@@ -199,6 +199,9 @@ This trigger module starts a scenario when a record of the chosen type is create
 ### Actions 
 
 * [[!UICONTROL Create a list item]](#create-a-list-item)
+* [Delete a record](#delete-a-record)
+* [Export data](#export-data)
+* [Import data](#import-data)
 * [[!UICONTROL Make a custom API Call]](#make-a-custom-api-call)
 * [[!UICONTROL Read a record]](#read-a-record)
 * [[!UICONTROL Run an action]](#run-an-action)
@@ -280,6 +283,64 @@ This action module deletes an existing record.
  </tbody> 
 </table>
 
+
+
+#### [!UICONTROL Export data]  
+
+This action module retrieves data from Anaplan using Export Definitions .
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>For instructions on creating a connection to [!DNL Anaplan], see <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connect [!DNL Anaplan] to [!DNL Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Select or map the ID of the Anaplan Workspace that contains the data you want to export.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Enter or map the ID of the Model that contains the data you want to export.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Export definition ID</td> 
+   <td> <p>Enter or map the ID of the Anaplan Export definition that you want to use.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Import data
+
+This action module imports data into Anaplan.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>For instructions on creating a connection to [!DNL Anaplan], see <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connect [!DNL Anaplan] to [!DNL Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td>Select or map the ID of the Anaplan Workspace where you want to import the data.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model ID]</td> 
+   <td>Enter or map the ID of the Model where you want to import the data.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Export definition ID</td> 
+   <td> <p>Enter or map the ID of the Anaplan Import definition that you want to use.</p> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Make a custom API Call]
 
 This module allows you to perform a custom API call to the [!DNL Anaplan] API.
@@ -318,38 +379,6 @@ This module allows you to perform a custom API call to the [!DNL Anaplan] API.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a record]  
-
-This action module deletes an existing record.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>For instructions on creating a connection to [!DNL Anaplan], see <a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">Connect [!DNL Anaplan] to [!DNL Workfront Fusion]</a> in this article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
-   <td>Select or map the ID of the Anaplan Workspace that contains the object you want to delete.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Model ID]</td> 
-   <td>Enter or map the ID of the Model that contains the object you want to delete.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Delete</td> 
-   <td> <p>Select the type of object to delete.</p> 
-    <ul> 
-     <li> <p><b>Action</b> </p> <p>Select or map the action to delete.</p> </li> 
-     <li> <p><b>List item</b> </p> <p>Select the list that you want to delete an item from, then enter or map the ID or the code of the item that you want to delete</p>  </li> 
-     <li> <p><b>[!UICONTROL File]</b> </p> <p>Select or map the file to delete.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Read a record]  
 
 This action module reads a single record.
@@ -371,6 +400,7 @@ This action module reads a single record.
      <li> <p><b>Model version</b> </p> <p>Select or map the ID of the Model you want to read.</p> </li> 
      <li> <p><b>User</b> </p> <p>Select whether you want to return data about the owner of the account being used, or another user. If you select another user, select the name of the user.</p> </li> 
      <li> <p><b>Workspace</b> </p> <p>Select or map the ID of the Workspace you want to read.</p> </li> 
+     <li> <p><b>View</b> </p> <p>Select or map the ID of the Model that contains the view you want to read.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -478,9 +508,9 @@ This action module updates a single record in [!UICONTROL Anaplan].
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a file]
+#### [!UICONTROL Upload file for action]
 
-This action module uploads a file to Anaplan. The file must have already been uploaded to Anaplan. You can use this module to upload it to additional locations within Anaplan.
+This action module uploads an existing file in Anaplan to additional locations within Anaplan.
 <table style="table-layout:auto">
 <col>
 <col>
