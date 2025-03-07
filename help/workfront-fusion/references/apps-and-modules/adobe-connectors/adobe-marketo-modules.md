@@ -126,10 +126,11 @@ You can create a connection to your [!DNL Marketo] account directly from inside 
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Enter your Marketo Client  ecret. For instructions on locating these, see [Authentication](https://developers.marketo.com/rest-api/authentication/) in the [!DNL Marketo] documentation.</td>
+        <td>Enter your Marketo Client Secret. For instructions on locating these, see [Authentication](https://developers.marketo.com/rest-api/authentication/) in the [!DNL Marketo] documentation.</td>
       </tr>
      </tbody>
     </table>
+    
 1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
 
 ## [!DNL Marketo] Modules and their fields

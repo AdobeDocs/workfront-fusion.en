@@ -11,7 +11,7 @@ exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
 ---
 # Adobe Storage modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you to create and manage projects in the Adobe Admin Console. 
+In an [!DNL Adobe Workfront Fusion] scenario, you can create and manage projects in the Adobe Admin Console. 
 
 If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
