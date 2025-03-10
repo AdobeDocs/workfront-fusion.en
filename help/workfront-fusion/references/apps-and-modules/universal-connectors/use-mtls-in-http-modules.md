@@ -76,7 +76,25 @@ For instructions on uploading the [!DNL Adobe Workfront Fusion] public certifica
 >
 >You may need to provide other information in addition to the certificate. For information on what a web service requires, see the web service's API documentation.
 
-You can use the following links to download the Workfront Fusion public certificates:
+You can use the following links to download the Workfront Fusion public certificates. To locate your datacenter, see [Identify your datacenter](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) in the article Configure IP Addresses for Fusion in your organization's allowlist. 
+
+### Certificates for <!--x-->
+
+>[!IMPORTANT]
+>
+>* These [!DNL Workfront Fusion] public certificates expire on <!--X-->. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
+>
+>   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
+>   * Bookmark this page to easily find the new certificates.
+>
+>* These are non-wildcard mTLS certificates.
+
+| Datacenter | Download link |
+|---|---|
+| US Datacenter | [Download [!DNL Workfront Fusion] US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) |
+| EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pemm) |
+| Azure Cluster | [Download [!DNL Workfront Fusion] Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) |
+
 
 ### Certificates for April 23, 2024-May 7, 2025
 
