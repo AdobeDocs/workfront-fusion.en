@@ -201,8 +201,6 @@ This action module copies a file into a new folder location
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL Create a Folder]
 
 This action module creates a new folder in the specified drive.
@@ -225,12 +223,12 @@ This action module creates a new folder in the specified drive.
        <li> <p><b>[!UICONTROL No]</b> </p> </li> 
       </ul> </li> 
      <li> <p><b>[!UICONTROL Site's Drive]</b> </p> <p>Select the [!DNL SharePoint] Site where you want to create a folder. Available Sites are Sites followed by the signed-in user.</p> </li> 
-     <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Select the group that owns the drivewhere you want to create a folder.</p> </li> 
+     <li> <p><b>[!UICONTROL Group's Drive]</b> </p> <p>Select the group that owns the drive where you want to create a folder.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Drive ID]</td> 
-   <td> <p>Select the drive that where you want to create a folder. This field is not available if you selected [!UICONTROL No] in the [!UICONTROL Enable to Enter a Drive ID] field.</p> </td> 
+   <td> <p>Select the drive where you want to create a folder. This field is not available if you selected [!UICONTROL No] in the [!UICONTROL Enable to Enter a Drive ID] field.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder]</td> 
@@ -249,7 +247,7 @@ This action module creates a new folder in the specified drive.
 
 #### [!UICONTROL Delete a File/Folder]
 
-This action module deletes the selected file.
+This action module deletes the selected file or folder.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -724,7 +722,7 @@ This module performs a custom API call.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
