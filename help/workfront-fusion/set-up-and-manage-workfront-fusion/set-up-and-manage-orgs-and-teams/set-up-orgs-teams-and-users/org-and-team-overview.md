@@ -13,6 +13,8 @@ An organization is the largest entity in Adobe Workfront Fusion. For example, yo
 
 Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. 
 
+For instructions on creating a team, see [Create a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md).
+
 ## Organizations
 
 [!DNL Workfront Fusion] users belong to an organization. 
