@@ -64,23 +64,155 @@ When you are configuring [!UICONTROL Encryptor] modules, the following fields di
 
 ### AES Decrypt (advanced)
 
-
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Key]</td>
+        <td>Select the key that you want the module to use. To create a key, click <b>Add</b> and enter the key's name, key, and encoding type.</td>
+    </tr>
+    <tr>
+        <td>Bits</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Input encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Data</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Output encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cipher algorithm</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Initialization vector encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Authentication tag encoding</td>
+        <td></td>
+    </tr>
+</table>
 
 ### AES Decrypt (simple)
 
-
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Key]</td>
+        <td>Select the key that you want the module to use. To create a key, click <b>Add</b> and enter the key's name, key, and encoding type.</td>
+    </tr>
+   <tr>
+        <td>Input encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Data</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Output encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Secret key</td>
+        <td></td>
+    </tr>
+</table>
 
 ### AES Encrypt (advanced)
 
-
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Key]</td>
+        <td>Select the key that you want the module to use. To create a key, click <b>Add</b> and enter the key's name, key, and encoding type.</td>
+    </tr>
+    <tr>
+        <td>Bits</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Input encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Data</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Output encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Cipher algorithm</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Initialization vector encoding</td>
+        <td></td>
+    </tr>
+</table>
 
 ### AES Encrypt (simple)
 
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Key]</td>
+        <td>Select the key that you want the module to use. To create a key, click <b>Add</b> and enter the key's name, key, and encoding type.</td>
+    </tr>
+   <tr>
+        <td>Input encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Data</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Output encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Secret key</td>
+        <td></td>
+    </tr>
+</table>
 
 
 ### Create digital signature
 
+This module allows you to decrypt a message using public and private keys.
 
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Private key]</td>
+        <td>Enter the recipient's private key.</td>
+    </tr>
+    <tr>
+        <td>Algorithm </td>
+        <td></td>
+    </tr>
+   <tr>
+        <td>Input encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Output encoding</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Secret key</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Data</td>
+        <td></td>
+    </tr>
+</table>
 
 ### Decrypt a PGP message
 
