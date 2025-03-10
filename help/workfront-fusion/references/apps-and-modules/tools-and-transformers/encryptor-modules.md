@@ -11,70 +11,78 @@ exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration],  [!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Message encryption and decryption using PGP
 
 When encrypting and decrypting via PGP, it is necessary to use a keychain and to create a private or public key (or both).
 
-For more information on public and private keys, see [Adobe Workfront Fusion glossary](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md). <!--For more information on keychains, see [Keys in [!DNL Adobe Workfront Fusion]]().-->
+For more information on public and private keys, see [Adobe Workfront Fusion glossary](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md).
+
+For more information on keys, see [Keys](/help/workfront-fusion/references/modules/keys.md).
 
 ## [!UICONTROL Encryptor] modules and their fields
 
 When you are configuring [!UICONTROL Encryptor] modules, the following fields display. A bolded title in a module indicates a required field.
 
-### Encrypt a PGP message
+### AES Decrypt (advanced)
 
-This module allows you to encrypt a message using public and private keys.
 
-<table style="table-layout:auto">
-    <tr>
-        <td>[!UICONTROL Private key]</td>
-        <td>Enter the sender's private key. This can authenticate the sender's identity.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Public key]</td>
-        <td>Enter the recipient's public key.</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Message]</td>
-        <td>Enter the message that you want to encrypt.</td>
-    </tr>
+
+### AES Decrypt (simple)
+
+
+
+### AES Encrypt (advanced)
+
+
+
+### AES Encrypt (simple)
+
+
+
+### Create digital signature
+
+
 
 ### Decrypt a PGP message
 
@@ -94,3 +102,22 @@ This module allows you to decrypt a message using public and private keys.
         <td>Map the message that you want to decrypt.</td>
     </tr>
 </table>
+
+### Encrypt a PGP message
+
+This module allows you to encrypt a message using public and private keys.
+
+<table style="table-layout:auto">
+    <tr>
+        <td>[!UICONTROL Private key]</td>
+        <td>Enter the sender's private key. This can authenticate the sender's identity.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Public key]</td>
+        <td>Enter the recipient's public key.</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Message]</td>
+        <td>Enter the message that you want to encrypt.</td>
+    </tr>
+    </table>
