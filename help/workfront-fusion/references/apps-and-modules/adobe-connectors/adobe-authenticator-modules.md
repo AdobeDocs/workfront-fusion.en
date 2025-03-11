@@ -240,17 +240,29 @@ This module was made available on November 14, 2024. Any Adobe Authenticator > M
       <td role="rowheader">[!UICONTROL Body Type]</td>
    <td> Select the body type for this API request:
    <ul>
-   <li>application/x-www-form-urlencoded</li>
    <li>Raw</li>
+   <li>application/x-www-form-urlencoded</li>
    <li>multipart/form-data</li>
    </ul>
       </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Request content]  </td>
+      <td>
+        <p>Enter the content of the request. This option is available if you selected the <code>Raw</code> body type</p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Fields]  </td>
       <td>
-        <p>For each file that you want to add to the APU request, click <b>Add item</b> and enter the text of the file (for raw data), or enter the key <code>uploadedFile</code> and map the file's data.</p>
+        <p>For each file that you want to add to the API request, click <b>Add item</b> and enter the text of the file (for raw data), or enter the key <code>uploadedFile</code> and map the file's data.This option is available if you selected the <code>application</code> or <code>multipart</code> body type.</p>
       </td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output Type]  </td>
+      <td>
+        <p>Select the type of data that you want the module to output. If you do not select a type, the module selects a type automatically.</p>
+      </td>
     </tr>
   </tbody>
 </table>
