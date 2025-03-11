@@ -9,6 +9,8 @@ exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
 
 [!DNL Adobe Workfront Fusion] [!UICONTROL Encryptor] modules allow you to encrypt any text data. They currently support message encryption via AES256 and PGP ([!UICONTROL OpenPGP]).
 
+These modules require some familiarity with encryption processes.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -71,31 +73,62 @@ When you are configuring [!UICONTROL Encryptor] modules, the following fields di
     </tr>
     <tr>
         <td>Bits</td>
-        <td></td>
+        <td>Select whether you want the module to use 128 bit or 256 bit encryption.</td>
     </tr>
     <tr>
         <td>Input encoding</td>
-        <td></td>
+        <td>Select the type of input encoding you want to use:
+        <ul>
+        <li>Binary</li>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Data</td>
-        <td></td>
+        <td>Enter or map the data that you want to decrypt.</td>
     </tr>
     <tr>
         <td>Output encoding</td>
-        <td></td>
+        <td>Select the type of output encoding you want to use:
+        <ul>
+        <li>ASCII</li>
+        <li>Binary</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Cipher algorithm</td>
-        <td></td>
+        <td>Select the cypher algorithm you want to use:
+        <ul>
+        <li>CBC</li>
+        <li>GCM</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Initialization vector encoding</td>
-        <td></td>
+        <td>Select the initialization vector encoding you want to use:
+        <ul>
+        <li>UTF-8</li>
+        <li>Binary</li>
+        <li>Base 64</li>
+        <li>Hexaadecimal</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Authentication tag encoding</td>
-        <td></td>
+        <td>Select the authentication tag encoding you want to use:
+        <ul>
+        <li>UTF-8</li>
+        <li>Binary</li>
+        <li>Base 64</li>
+        <li>Hexaadecimal</li>
+        </ul>
+        </td>
     </tr>
 </table>
 
@@ -108,19 +141,31 @@ When you are configuring [!UICONTROL Encryptor] modules, the following fields di
     </tr>
    <tr>
         <td>Input encoding</td>
-        <td></td>
+        <td>Select the type of input encoding you want to use:
+        <ul>
+        <li>Binary</li>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Data</td>
-        <td></td>
+        <td>Enter or map the data that you want to decrypt.</td>
     </tr>
     <tr>
         <td>Output encoding</td>
-        <td></td>
-    </tr>
+        <td>Select the type of output encoding you want to use:
+        <ul>
+        <li>ASCII</li>
+        <li>Binary</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
+     </tr>
     <tr>
         <td>Secret key</td>
-        <td></td>
+        <td>Enter or map the secret key that you want to use.</td>
     </tr>
 </table>
 
@@ -133,27 +178,51 @@ When you are configuring [!UICONTROL Encryptor] modules, the following fields di
     </tr>
     <tr>
         <td>Bits</td>
-        <td></td>
+        <td>Select whether you want the module to use 128 bit or 256 bit encryption.</td>
     </tr>
     <tr>
         <td>Input encoding</td>
-        <td></td>
+        <td>Select the type of input encoding you want to use:
+        <ul>
+        <li>Binary</li>
+        <li>ASCII</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Data</td>
-        <td></td>
+        <td>Enter or map the data that you want to encrypt.</td>
     </tr>
     <tr>
         <td>Output encoding</td>
-        <td></td>
+        <td>Select the type of output encoding you want to use:
+        <ul>
+        <li>ASCII</li>
+        <li>Binary</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Cipher algorithm</td>
-        <td></td>
+        <td>Select the cypher algorithm you want to use:
+        <ul>
+        <li>CBC</li>
+        <li>GCM</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Initialization vector encoding</td>
-        <td></td>
+        <td>Select the authentication tag encoding you want to use:
+        <ul>
+        <li>UTF-8</li>
+        <li>Binary</li>
+        <li>Base 64</li>
+        <li>Hexaadecimal</li>
+        </ul>
+        </td>
     </tr>
 </table>
 
@@ -166,19 +235,31 @@ When you are configuring [!UICONTROL Encryptor] modules, the following fields di
     </tr>
    <tr>
         <td>Input encoding</td>
-        <td></td>
+        <td>Select the type of input encoding you want to use:
+        <ul>
+        <li>Binary</li>
+        <li>ASCII</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Data</td>
-        <td></td>
+        <td>Enter or map the data that you want to encrypt.</td>
     </tr>
     <tr>
         <td>Output encoding</td>
-        <td></td>
+        <td>Select the type of output encoding you want to use:
+        <ul>
+        <li>Base 64</li>
+        <li>Binary</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Secret key</td>
-        <td></td>
+        <td>Enter or map the secret key that you want to use.</td>
     </tr>
 </table>
 
@@ -190,27 +271,34 @@ This module allows you to decrypt a message using public and private keys.
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Private key]</td>
-        <td>Enter the recipient's private key.</td>
+        <td>Select the private key to use for this signature. To add a private key, click <b>Add</b> and enter the key's name, key text, and passphrase.</td>
     </tr>
     <tr>
         <td>Algorithm </td>
-        <td></td>
+        <td>Select whether you want to use RSA-SHA1 or RSA-SHA256. </td>
     </tr>
    <tr>
         <td>Input encoding</td>
-        <td></td>
+        <td>Select the type of input encoding you want to use:
+        <ul>
+        <li>ASCII</li>
+        <li>Binary</li>
+        <li>UTF-8</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Output encoding</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>Secret key</td>
-        <td></td>
+        <td>Select the type of output encoding you want to use:
+        <ul>
+        <li>Base 64</li>
+        <li>Hexadecimal</li>
+        </ul>
+        </td>
     </tr>
     <tr>
         <td>Data</td>
-        <td></td>
+        <td>Enter or map the data from which you want to create the signature.</td>
     </tr>
 </table>
 
@@ -221,11 +309,11 @@ This module allows you to decrypt a message using public and private keys.
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Private key]</td>
-        <td>Enter the recipient's private key.</td>
+        <td>Select the recipient's private key to use for this message. To add a private key, click <b>Add</b> and enter the key's name, key text, and passphrase.</td>
     </tr>
     <tr>
         <td>[!UICONTROL Public key]</td>
-        <td>Enter the recipient's public key. This can authenticate the sender's identity.</td>
+        <td>Enter the sender's public key. This can authenticate the sender's identity.</td>
     </tr>
     <tr>
         <td>[!UICONTROL Message]</td>
