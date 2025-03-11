@@ -9,6 +9,10 @@ exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
 
 These videos are available to help familiarize you with some of the functionality of Adobe Workfront Fusion.
 
+## Navigation
+
+* [Workfront Fusion on the Adobe Unified Shell](https://video.tv.adobe.com/v/3412392/){target=_blank}
+
 ## Basics
 
 * [Intro to Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
