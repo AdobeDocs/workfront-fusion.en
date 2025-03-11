@@ -7,7 +7,9 @@ exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
 ---
 # Set Team Notification Options
 
-When in Workfront Fusion, you receive notifications through the Adobe Notifications area. You can choose the notifications a team receives. Notifications are set on the team level.
+In your organization uses the Adobe Unified Shell, you receive notifications through the Adobe Notifications area. 
+
+If your organization has not been migrated to the Adobe Unified Shell, you can choose the notifications a team receives. Notifications are set on the team level.
 
 ## Access requirements
 
@@ -62,6 +64,8 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 +++
 
 ## Set notification options
+
+If your organization is not on the Adobe Unified Shell, you can set notification settings directly in Fusion.
 
 Email notification options are set on the team level.
 
