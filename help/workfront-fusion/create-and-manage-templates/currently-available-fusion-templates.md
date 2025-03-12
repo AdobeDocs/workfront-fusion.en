@@ -17,13 +17,17 @@ To view available templates, click the **Templates** icon ![Templates icon](asse
 
 These templates automate Workfront processes and workflows.
 
-### [!BADGE New! ]{type=Informative} Workfront Boards > Create a standard Checklist based on Boards Column
+### [!BADGE New! ]{type=Informative} Workfront Boards - Delete Archived Cards from Designated Column (On Demand)
+
+<!--New March 12, 2025-->
+
+Delete Archived Cards from a designated column on a designated board on demand.
+
+### Workfront Boards > Create a standard Checklist based on Boards Column
 
 This Fusion Template creates a standard checklist for all cards that enter a specific column on a specific board on a timed basis.
 
-### [!BADGE New! ]{type=Informative} Workfront > Workfront Boards - Create a board off a custom configuration
-
-<!--new Aug 1. 2024-->
+### Workfront > Workfront Boards - Create a board off a custom configuration
 
 This scenario is triggered by a new project being created. With this scenario, you can create a board named after the project, rename or creates columns based on your needs, create custom tags, and associate an intake column filter with the originating project.  Thousands of additional changes could be made, but starting here will allow you to see the possibilities in creating a starting point for your organization's board standardization.
 
@@ -90,6 +94,12 @@ Once a month, review your project templates using your own policy with this easy
 ## Workfront - Workfront Proof templates
 
 These templates automate workflows that combine Workfront with Workfront Proof.
+
+### [!BADGE New! ]{type=Informative} Workfront > Workfront Proof - Change Proof user Role to Read Only and lock Proof upon project closure
+
+<!--New March 12, 2025-->
+
+This template watches for projects updating to statuses that equate with rejected, completed, or dead. Then, it changes any users with Pending Proof decisions to Read Only. Finally, it locks the Proofs and sends an update to the documents.
 
 ### Workfront Proof > Workfront - Project Update on Proof Decision
 
