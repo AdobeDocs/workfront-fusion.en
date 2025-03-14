@@ -99,6 +99,8 @@ When you are configuring this module, the following fields display.
 
 ![Example Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
+>[!ENDSHADEBOX]
+
 ## Transformers
 
 * [[!UICONTROL Deflate]](#deflate)
