@@ -66,7 +66,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Enter the Draft.js text.</p> </td> 
+   <td> <p>Enter or map the Draft.js text that you want to convert to HTML.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -81,7 +81,7 @@ This module converts HTML code to Draft.js.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Enter the HTML code that you want to convert to Draft.js.</p> </td> 
+   <td> <p>Enter or map the HTML code that you want to convert to Draft.js.</p> </td> 
   </tr> 
  </tbody> 
 </table>
