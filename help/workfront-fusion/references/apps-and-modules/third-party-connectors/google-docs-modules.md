@@ -17,42 +17,46 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -91,116 +95,17 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Document
 
-* [[!UICONTROL Watch Documents]](#watch-documents) 
-* [[!UICONTROL List Documents]](#list-documents) 
-* [[!UICONTROL Get Content of a Document]](#get-content-of-a-document) 
 * [[!UICONTROL Create a Document]](#create-a-document) 
 * [[!UICONTROL Create a Document From a Template]](#create-a-document-from-a-template) 
+* [[!UICONTROL Delete a Document]](#delete-a-document)
+* [[!UICONTROL Download a Document]](#download-a-document) 
+* [[!UICONTROL Get Content of a Document]](#get-content-of-a-document) 
 * [[!UICONTROL Insert a Paragraph to a Document]](#insert-a-paragraph-to-a-document) 
 * [[!UICONTROL Insert an Image to a Document]](#insert-an-image-to-a-document) 
-* [[!UICONTROL Replace an Image with a New Image]](#replace-an-image-with-a-new-image) 
+* [[!UICONTROL List Documents]](#list-documents) 
 * [[!UICONTROL Replace Text in a Document]](#replace-text-in-a-document) 
-* [[!UICONTROL Download a Document]](#download-a-document) 
-* [[!UICONTROL Delete a Document]](#delete-a-document)
-
-#### [!UICONTROL Watch Documents]
-
-This trigger module returns document details when a new document is created or modified in the selected folder.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Watch Documents]</td> 
-   <td> <p style="color: #000000;">Select whether you want to watch created ([!UICONTROL By Created Date]) or modified ([!UICONTROL By Modified Date]) documents.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Select the type of drive you want to monitor.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder you want to watch for created or modified documents.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder you want to watch for created or modified documents.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive you want to watch.</p> <p>Note: If you have selected the [!DNL Google Shared Drive] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of documents Workfront Fusion returns in one execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Documents]
-
-This action module retrieves a list of documents from the selected folder.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Select the type of drive you want to list documents from.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder you want to list documents from.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder you want to list documents from.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive you want to list documents from.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of documents [!DNL Workfront Fusion] returns in one execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get Content of a Document]
-
-This action module retrieves a specified document.
-
-You may need to extend your permissions.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Get Content of a Document]</td> 
-   <td> <p>Select whether you want to map the document ID of the document or select the document from the drop-down menu manually.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Select the type of drive that contains the document you want to retrieve.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder that contains the document you want to retrieve.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder that contains the document you want to retrieve.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive that contains the document you want to retrieve.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
-   <td> <p>Select the object you want to be returned in the module's output.</p> 
-    <ul> 
-     <li>[!UICONTROL Image] (default)</li> 
-     <li>[!UICONTROL Drawing]</li> 
-     <li>[!UICONTROL Chart]</li> 
-    </ul> <p>Note:  <p>For further mapping of these objects, please use the [!UICONTROL Inline Objects Array] value in this module's output (instead of [!UICONTROL inlineObjects]).</p> <p>The [!UICONTROL Inline Objects Array] objects are sorted in the same order they appear in the document. It will make any further processing easier.</p> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Replace an Image with a New Image]](#replace-an-image-with-a-new-image) 
+* [[!UICONTROL Watch Documents]](#watch-documents) 
 
 #### [!UICONTROL Create a Document]
 
@@ -216,18 +121,18 @@ This action module allows you to create a new document in the selected folder.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
-   <td> <p>Enter the name of the document.</p> </td> 
+   <td> <p>Enter a name for the document.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Content]</td> 
-   <td> <p>Enter the content of the document. HTML is supported.</p> </td> 
+   <td> <p>Enter the content of the document. You can include HTML to format the document.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
    <td> <p>Select the type of drive where you want to create a document.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where you want to create a document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where you want to create a document.</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>In the New Document's Location field, select the folder where you want to create a document.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>In the New Document's Location field, select the folder where you want to create a document.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where you want to create a document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -266,14 +171,18 @@ This action module creates a copy of an existing template document and replaces 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
    <td> <p>Select the type of drive where your template is located. This option is available if you selected [!UICONTROL By Dropdown] in the previous field.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where your template is located.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where your template is located.</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p>  </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where your template is located.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Map the ID of the template if you have selected to By Mapping , or select the path to the template and the template.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Values]</p> </td> 
-   <td> <p>Enter the values that will be entered instead of the variables to the new document.</p> 
+   <td> <p>For each tag that you want to enter a value for, click <b>Add item</b>, enter the tag, and enter the value that will be entered instead of the tag in the new document.</p> 
     <ul> 
      <li><strong>[!UICONTROL Tags]</strong> <br>Enter the tags that are contained in the document template. Do not use <code>&#123;&#123;&#125;&#125;</code>. Example: use <code>name</code> instead of <code>&#123;&#123;name&#125;&#125;</code>.</li> 
      <li><strong>[!UICONTROL Replaced Value]</strong><br>Enter the value of the tag.</li> 
@@ -281,7 +190,7 @@ This action module creates a copy of an existing template document and replaces 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Images Replacement]</p> </td> 
-   <td> <p>Enter the link to the [!UICONTROL Image Object ID] and [!UICONTROL Image URL] that will replace the current image.</p> <p>Note:  You can retrieve the image IDs by using [!UICONTROL Get a Document] module, where the IDs are contained in the array [!UICONTROL Inline Object Array].</p> <p>We recommend that you add ALT text to images in your [!DNL Google] document. </p> <p>To add an ALT Text to the [!DNL Google Docs] image:</p> 
+   <td> <p>>For each tag that you want to enter a value for, click <b>Add item</b>, then enter the link to the [!UICONTROL Image Object ID] and [!UICONTROL Image URL] that will replace the current image.</p> <p>Note:  You can retrieve the image IDs by using [!UICONTROL Get a Document] module, where the IDs are contained in the array [!UICONTROL Inline Object Array].</p> <p>We recommend that you add ALT text to images in your [!DNL Google] document. </p> <p>To add an ALT Text to the [!DNL Google Docs] image:</p> 
     <ol> 
      <li value="1">Right click on the image.</li> 
      <li value="2">Select the [!UICONTROL ALT text] option.</li> 
@@ -300,6 +209,109 @@ This action module creates a copy of an existing template document and replaces 
      <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where you want the document to be created.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where you want the document to be created.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Delete a Document]
+
+This action module deletes a document.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>Select the type of drive where the document you want to delete is located.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to delete is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to delete is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to delete is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
+   <td> <p>Select the drive that contains the document you want to download, then select a document. This option is available if you have selected [!DNL My Drive] in the [!UICONTROL Choose a Drive] field.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p> Select or map the document you want to delete.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download a Document]
+
+This action module converts and downloads the selected document.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>Select the type of drive where the document you want to download is located.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>In the Document ID field, select the folder where the document you want to download is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>In the Document ID field, select the folder where the document you want to download is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to download is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Type] </p> </td> 
+   <td> <p>Select the target file format of the downloaded document.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get Content of a Document]
+
+This action module retrieves a specified document.
+
+You may need to extend your permissions.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Get Content of a Document]</td> 
+   <td> <p>Select whether you want to map the document ID of the document or select the document from the drop-down menu manually.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>Select the type of drive that contains the document you want to retrieve.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder that contains the document you want to retrieve.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder that contains the document you want to retrieve.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive that contains the document you want to retrieve.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Enter or select the document you want to retrieve.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Filter]</p> </td> 
+   <td> <p>Select the object you want to be returned in the module's output.</p> 
+    <ul> 
+     <li>[!UICONTROL Image] (default)</li> 
+     <li>[!UICONTROL Drawing]</li> 
+     <li>[!UICONTROL Chart]</li> 
+    </ul> <p>Note:  <p>For further mapping of these objects, please use the [!UICONTROL Inline Objects Array] value in this module's output (instead of [!UICONTROL inlineObjects]).</p> <p>The [!UICONTROL Inline Objects Array] objects are sorted in the same order they appear in the document. It will make any further processing easier.</p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -328,10 +340,14 @@ This action module appends or inserts a new paragraph to an existing document.
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
    <td> <p>Select the type of drive where the document you want to add a paragraph to is located. This option is available if you selected [!UICONTROL By Dropdown] in the previous field.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to add a paragraph to is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to add a paragraph to is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to add a paragraph to is located.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to add a paragraph to is located.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to add a paragraph to is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
     </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Map or select the document where you want to insert text.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Insert a Paragraph]</p> </td> 
@@ -341,7 +357,7 @@ This action module appends or inserts a new paragraph to an existing document.
       <ul> 
        <li> <p><strong>[!UICONTROL By index]</strong> </p> 
         <ul> 
-         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>Enter the Index number where you would like to insert your text. You can use the [!UICONTROL Get a Document] module retrieve Index number.</p> <p>To display all characters (including hidden) in the document, you can use the [!UICONTROL Show] add-on. You can find the add-on under [!UICONTROL Add-ons] &gt; [!UICONTROL Get add-ons]. Search for [!UICONTROL Show] and install the [!UICONTROL Show] add-on.</p> </li> 
+         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>Enter the Index number where you would like to insert your text. You can use the [!UICONTROL Get a Document] module to retrieve Index number.</p> </li> 
          <li> <p><strong>[!UICONTROL Inserted text]</strong> </p> <p>Enter the text you want to insert to the document.</p> </li> 
         </ul> </li> 
        <li> <p><strong>[!UICONTROL By segment ID]</strong> </p> <p>Select the header and footer you want to insert the text content to and enter the text you want to insert to the corresponding fields.</p> <p>If the header or footer already contains text, the new text will be added before the existing text.</p> </li> 
@@ -383,10 +399,14 @@ This action module inserts an image from the URL to the document.
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
    <td> <p>Select the type of drive where the document you want to add an image to is located. This option is available if you selected [!UICONTROL By Dropdown] in the previous field.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to add an image to is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to add an image to is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to add an image to is located.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to add an image to is located.</p> </li> 
      <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to add an image to is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
     </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Map or select the document where you want to insert an image.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Insert an Image]</p> </td> 
@@ -396,8 +416,8 @@ This action module inserts an image from the URL to the document.
       <ul> 
        <li> <p><strong>[!UICONTROL By index]</strong> </p> 
         <ul> 
-         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>Enter the Index number where you would like to insert your image. You can use the [!UICONTROL Get a Document] module retrieve [!UICONTROL Index number].</p> <p>To display all characters (including hidden) in the document, you can use the [!UICONTROL Show] add-on. You can find the add-on under [!UICONTROL Add-ons] &gt; [!UICONTROL Get add-ons]. Search for [!UICONTROL Show] and install the [!UICONTROL Show] add-on.</p> </li> 
-         <li> <p><strong>[!UICONTROL Image URL]</strong> </p> <p>Enter the URL of the image you want to insert to the document.</p> <p>The maximum image size is 50 MB. Must not exceed 25 megapixels. Only PNG, JPEG or GIF format is supported.</p> </li> 
+         <li> <p><strong>[!UICONTROL Index]</strong> </p> <p>Enter the Index number where you would like to insert your image. You can use the [!UICONTROL Get a Document] module retrieve [!UICONTROL Index number].</p>  </li> 
+         <li> <p><strong>[!UICONTROL Image URL]</strong> </p> <p>Enter the URL of the image you want to insert to the document.</p> <p>The maximum image size is 50 MB. Must not exceed 25 megapixels. Only PNG, JPEG, or GIF format is supported.</p> </li> 
         </ul> </li> 
        <li> <p><strong>[!UICONTROL By segment ID]</strong> </p> <p>Select the header and footer you want to insert the image to and enter the image URL to the corresponding fields.</p> <p>The maximum image size is 50 MB. The image must not exceed 25 megapixels. Only PNG, JPEG, or GIF format is supported.</p> </li> 
       </ul> </li> 
@@ -409,14 +429,14 @@ This action module inserts an image from the URL to the document.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Height Magnitude in Points/Width Magnitude in Points]</p> </td> 
-   <td> <p>Define the size of the inserted image. The aspect ratio will be kept.</p> </td> 
+   <td> <p>Define the height or width of the inserted image. The aspect ratio will be kept.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace an Image with a New Image]
+#### [!UICONTROL List Documents]
 
-This action module replaces an existing image. The aspect ratio of the original image will be maintained.
+This action module retrieves a list of documents from the selected folder.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -427,25 +447,17 @@ This action module replaces an existing image. The aspect ratio of the original 
    <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Select a Document]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>Select this option to map the document template.</li> 
-     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Select this option to choose the document from the drop-down menu.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Select the type of drive where the document you want to replace an image is located. This option is available if you selected [!UICONTROL By Dropdown] in the previous field.</p> 
+   <td> <p>Select the type of drive you want to list documents from.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to replace an image is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to replace an image is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to replace an image is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder you want to list documents from.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder you want to list documents from.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive you want to list documents from.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Image URL]</p> </td> 
-   <td> <p>Enter or map the URL of the new image that will replace the existing image.</p> <p>Images are listed in the order they appear in the document. For example, <code>Body: Image No. 1</code> is the first image in the document.</p> </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Set the maximum number of documents [!DNL Workfront Fusion] returns in one execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,11 +500,11 @@ This action module replaces text in a document.
     </ul> </td> 
   </tr> 
  </tbody> 
-</table>
+ </table>
 
-#### [!UICONTROL Download a Document]
+#### [!UICONTROL Replace an Image with a New Image]
 
-This action module converts and downloads the selected document.
+This action module replaces an existing image. The aspect ratio of the original image will be maintained.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -503,24 +515,33 @@ This action module converts and downloads the selected document.
    <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Select the type of drive where the document you want to download is located.</p> 
+   <td role="rowheader"> <p>[!UICONTROL Select a Document]</p> </td> 
+   <td> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to download is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to download is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to download is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>Select this option to map the document template.</li> 
+     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Select this option to choose the document from the drop-down menu.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Type] </p> </td> 
-   <td> <p>Select the target file format of the downloaded document.</p> </td> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>Select the type of drive where the document you want to replace an image is located. This option is available if you selected [!UICONTROL By Dropdown] in the previous field.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to replace an image is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to replace an image is located, then select the document.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to replace an image is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Image URL]</p> </td> 
+   <td> <p>Enter or map the URL of the new image that will replace the existing image.</p> <p>Images are listed in the order they appear in the document. For example, <code>Body: Image No. 1</code> is the first image in the document.</p> </td> 
   </tr> 
  </tbody> 
 </table>
+</table>
 
-#### [!UICONTROL Delete a Document]
+#### [!UICONTROL Watch Documents]
 
-This action module deletes a document.
+This trigger module returns document details when a new document is created or modified in the selected folder.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -531,21 +552,21 @@ This action module deletes a document.
    <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Watch Documents]</td> 
+   <td> <p style="color: #000000;">Select whether you want to watch created ([!UICONTROL By Created Date]) or modified ([!UICONTROL By Modified Date]) documents.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Select the type of drive where the document you want to delete is located.</p> 
+   <td> <p>Select the type of drive you want to monitor.</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to delete is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to delete is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to delete is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder you want to watch for created or modified documents.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder you want to watch for created or modified documents.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive you want to watch.</p> <p>Note: If you have selected the [!DNL Google Shared Drive] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>Select the drive that contains the document you want to download, then select a document. This option is available if you have selected [!DNL Google Docs] in the [!UICONTROL Choose a Drive] field.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p> Select or map the document you want to replace one or more images in.</p> </td> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Set the maximum number of documents Workfront Fusion returns in one execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -640,7 +661,7 @@ This action module finds all links in the document and makes them clickable.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>Select the drive that contains the document you want to update links in, then select a document. This option is available if you have selected [!DNL Google Docs] in the [!UICONTROL Choose a Drive field].</p> </td> 
+   <td> <p>Select the drive that contains the document you want to update links in, then select a document. This option is available if you have selected [!DNL My Drive] in the [!UICONTROL Choose a Drive field].</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Document ID]</td> 
