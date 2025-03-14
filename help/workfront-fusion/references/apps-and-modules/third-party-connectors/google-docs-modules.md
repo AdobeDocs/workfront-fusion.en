@@ -492,8 +492,12 @@ This action module replaces text in a document.
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Map or select the document where you want to replace text.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Replace a Text]</p> </td> 
-   <td> <p>Add each text that you want to replace.</p> 
+   <td> <p>For each piece of text you want to replace, click <b>Add item</b> and enter the following:</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Old text to be replaced]</strong> </p> <p>Enter the text you want to replace.</p> </li> 
      <li> <p><strong>[!UICONTROL New text to be inserted]</strong> </p> <p>Enter the new text.</p> </li> 
@@ -532,8 +536,12 @@ This action module replaces an existing image. The aspect ratio of the original 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Image URL]</p> </td> 
-   <td> <p>Enter or map the URL of the new image that will replace the existing image.</p> <p>Images are listed in the order they appear in the document. For example, <code>Body: Image No. 1</code> is the first image in the document.</p> </td> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p>Map or select the document where you want to replace an image.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Images replacement]</p> </td> 
+   <td> For each image you want to replace, click <b>Add item</b> and enter the existing image ID, then enter or map the URL of the new image that will replace the existing image. <p>Images are listed in the order they appear in the document. For example, <code>Body: Image No. 1</code> is the first image in the document.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -573,8 +581,48 @@ This trigger module returns document details when a new document is created or m
 
 ### Other
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call) 
 * [[!UICONTROL Make All Links in a Document Clickable]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL Make an API Call]](#make-an-api-call) 
+
+#### [!UICONTROL Make All Links in a Document Clickable] 
+
+This action module finds all links in the document and makes them clickable.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[!UICONTROL By Mapping]</strong> <br>Select this option to map the document template.</li> 
+     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Select this option to choose the document from the drop-down menu.</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
+   <td> <p>Select the type of drive where the document you want to make links clickable in is located. This option is available if you selected [!UICONTROL By Dropdown] in the previous field.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to make links clickable in is located.</p> </li> 
+     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to make links clickable in is located.</p> </li> 
+     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to make links clickable in is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
+   <td> <p>Select the drive that contains the document you want to update links in, then select a document. This option is available if you have selected [!DNL My Drive] in the [!UICONTROL Choose a Drive field].</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document ID]</td> 
+   <td> <p> Select or map the document you want to update the links in.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Make an API Call]
 
@@ -614,6 +662,8 @@ This action module allows you to perform a custom API call.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **Example:** The following API call retrieves the details for the specified document in your Google Docs:
 
 **URL:**
@@ -630,42 +680,4 @@ Details of the retrieved document can be found in the module's Output under [!UI
 
 ![API call output](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL Make All Links in a Document Clickable] 
-
-This action module finds all links in the document and makes them clickable.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Google] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Make All Links in a Document]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[!UICONTROL By Mapping]</strong> <br>Select this option to map the document template.</li> 
-     <li><strong>[!UICONTROL By Dropdown]</strong> <br> Select this option to choose the document from the drop-down menu.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a Drive]</td> 
-   <td> <p>Select the type of drive where the document you want to make links clickable in is located. This option is available if you selected [!UICONTROL By Dropdown] in the previous field.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL My Drive]</strong> </p> <p>Select the folder where the document you want to make links clickable in is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL Shared With Me]</strong> </p> <p>Select the folder where the document you want to make links clickable in is located, then select the document.</p> </li> 
-     <li> <p><strong>[!UICONTROL [!DNL Google] Shared Drive]</strong> (available for [!DNL Google Workspace] users only)</p> <p>Select whether you want to [!UICONTROL Use Domain Admin Access]. Selecting [!UICONTROL Yes] issues the request as a domain administrator, and all shared drives in which the requester is an administrator are returned.</p> <p>Select the shared drive where the document you want to make links clickable in is located, then select the document.</p> <p>Note: If you have selected the [!DNL Google Docs] option in this field and you are not a [!DNL Google Workspace] user, the error <code>[400] Invalid Value</code> is returned.</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Shared Drive]</td> 
-   <td> <p>Select the drive that contains the document you want to update links in, then select a document. This option is available if you have selected [!DNL My Drive] in the [!UICONTROL Choose a Drive field].</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Document ID]</td> 
-   <td> <p> Select or map the document you want to update the links in.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]

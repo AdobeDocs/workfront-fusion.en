@@ -70,3 +70,17 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
 ## Retries
 
 * When using the Break module and specifying the Retry directive, if a scenario fails consecutively 10 times within a 2-minute timeframe, the scenario will be automatically deactivated.
+
+## Recursion
+
+Recursion occurs when a scenario triggers a new execution of itself, which triggers a new execution, and so on in an infinite loop. 
+
+For example, a scenario is triggered when a task is created, and that scenario creates a task. The newly created task triggers the scenario again, which creates another task. Every time a task is created, the scenario is triggered, and every time the scenario runs, a task is created.
+
+Recursion can cause performance issues for both the organization that owns the recursive scenario, and to other organizations.
+
+Consider the following regarding recursion:
+
+* **When a scenario is causing recursion, it is deactivated by the Fusion engineering team to prevent further performance issues.**
+* Because recursion is a result of scenario design, you must design your scenarios in a way that ensures tjat the scenario does not include actions that trigger the scenario.
+
