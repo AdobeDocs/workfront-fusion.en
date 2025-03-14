@@ -19,12 +19,13 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Extract an archive]](#extract-an-archive)
-* [[!UICONTROL Create an archive]](#create-an-archive)
-* [[!UICONTROL Inflate]](#inflate)
-* [[!UICONTROL Deflate]](#deflate)
+* [Actions](#actions)
+* [Aggregators](#aggregators)
+* [Transformers](#transformers)
 
-## [!UICONTROL Extract an archive] 
+## Actions
+
+### [!UICONTROL Extract an archive] 
 
 This action module extracts a file you identify from an archive.
 
@@ -36,20 +37,24 @@ The module returns the ID of the  file and any associated fields, along with any
  <tbody> 
   <tr> 
    <td>[!UICONTROL Source file]</td> 
-   <td> <p> Select the file you want to extract. This file can be mapped from a previous module (such as the [!DNL Workfront] >[!UICONTROL Download a document] module).</p>  </td> 
+   <td> <p>  <p>Select a source file from a previous module, or map the source data.</p></p>  </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**Example:** Get the ZIP file from the defined [!DNL Dropbox] folder (for example, Archives), extract it using the [!UICONTROL Archive] module and send extracted files to the desired email address as attachments with the [!UICONTROL Email] or [!DNL Gmail] module.
->
->![Example Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Create an archive] 
+**Example:** Get the ZIP file from the defined [!DNL Dropbox] folder (for example, Archives), extract it using the [!UICONTROL Archive] module and send extracted files to the desired email address as attachments with the [!UICONTROL Email] or [!DNL Gmail] module.
 
-This aggregator module adds the desired files to a [!UICONTROL ZIP] or [!UICONTROL TAR] archive.
+![Example Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+
+>[!ENDSHADEBOX]
+
+## Aggregators
+
+### [!UICONTROL Create an archive] 
+
+This aggregator module adds the desired files to a [!UICONTROL ZIP], GZIP, or [!UICONTROL TAR] archive.
 
 When you are configuring this module, the following fields display.
 
@@ -63,7 +68,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
-   <td> <p>Select whether you want to add files to a [!UICONTROL ZIP] archive or a [!UICONTROL TAR] archive.</p> </td> 
+   <td> <p>Select whether you want to add files to a [!UICONTROL ZIP], GZIP, or a [!UICONTROL TAR] archive.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Comment]</td> 
@@ -88,28 +93,20 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Example:** Watch incoming emails using the [!DNL Gmail] >[!UICONTROL Watch emails] module. If an email is received, its attachments are iterated into individual bundles then archived to the [!DNL ZIP] file and saved to the defined Dropbox folder.
->
->![Example Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>[!BEGINSHADEBOX]
 
-## [!UICONTROL Inflate] 
+**Example:** Watch incoming emails using the [!DNL Gmail] >[!UICONTROL Watch emails] module. If an email is received, its attachments are iterated into individual bundles then archived to the [!DNL ZIP] file and saved to the defined Dropbox folder.
 
-This transformer module decompresses binary data using an inflation algorithm.
+![Example Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Data] </td> 
-   <td> <p>Enter or map the data you want to decompress using the inflate function.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]
 
-## [!UICONTROL Deflate] 
+## Transformers
+
+* [[!UICONTROL Deflate]](#deflate)
+* [[!UICONTROL Inflate]](#inflate)
+
+### [!UICONTROL Deflate] 
 
 This transformer module compresses binary data using a deflation algorithm.
 
@@ -120,6 +117,21 @@ This transformer module compresses binary data using a deflation algorithm.
   <tr> 
    <td>[!UICONTROL Data] </td> 
    <td> <p>Enter or map the data you want to compress using the deflate function.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### [!UICONTROL Inflate] 
+
+This transformer module decompresses binary data using an inflation algorithm.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Data] </td> 
+   <td> <p>Enter or map the data you want to decompress using the inflate function.</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -38,7 +38,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current: No Workfront Fusion license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement</p>
    <p>Or</p>
    <p>Legacy: Any </p>
    </td> 

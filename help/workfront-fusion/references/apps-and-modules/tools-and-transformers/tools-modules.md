@@ -32,7 +32,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>No Workfront Fusion license requirement.</p>
+   <p>No Workfront Fusion license requirement</p>
    </td> 
   </tr> 
   <tr> 
