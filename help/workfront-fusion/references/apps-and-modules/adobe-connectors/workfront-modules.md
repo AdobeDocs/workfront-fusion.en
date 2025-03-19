@@ -814,8 +814,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
- 
-   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+    <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -843,6 +842,30 @@ When you are configuring this module, the following fields display.
 </table>
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **Update Events Payload Version**
+
+Workfront recently released a new version of its event subscription service. The new version is not a change to the Workfront API, but rather a change to the event subscription functionality. This action module updates the event payload version used for this scenario.
+
+For more information on the new event subscription version, see [Event subscription versioning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in the Workfront documentation
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Version]</td> 
+   <td> Select the version of the event subscription that you want to use for this payload. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
 +++
 
