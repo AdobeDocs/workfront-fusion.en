@@ -160,7 +160,7 @@ This action module adds tags to the specified object.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Object Name]</td> 
-   <td>Enter or map the name of the object you want to add tags to,</td> 
+   <td>Enter or map the name of the object you want to add tags to.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Object Type]</td> 
@@ -238,19 +238,19 @@ This action module configures a split definition for a specific environment.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Rules]</td> 
-   <td> <p>For each targeting rule you want to add to the definition, click <b>[!UICONTROL Add item]</b>, then enter or map the rule.</p> <p>For more information on targeting rules, see <a href="https://docs.split.io/reference#create-split-definition-in-environment">Create split definition in an environment</a> in the [!DNL Split.io] documentation.</p> </td> 
+   <td> <p>For each targeting rule you want to add to the definition, click <b>[!UICONTROL Add item]</b>, then enter or map the rule. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Default rule]</td> 
-   <td> <p>Enter or map the rule that you want the split to use for the traffic that does not meet specifications for the other rules.</p> <p>For more information on targeting rules, see <a href="https://docs.split.io/reference#create-split-definition-in-environment">Create split definition in an environment</a> in the [!DNL Split.io] documentation.</p> </td> 
+   <td> <p>Enter or map the rule that you want the split to use for the traffic that does not meet specifications for the other rules.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Default treatment]</td> 
-   <td> <p>Enter or map the treatment that you want the split to use if the split is killed or the customer is not included in traffic allocation.</p> <p>For more information on treatments, see <a href="https://docs.split.io/reference#create-split-definition-in-environment">Create split definition in an environment</a> in the [!DNL Split.io] documentation.</p> </td> 
+   <td> <p>Enter or map the treatment that you want the split to use if the split is killed or the customer is not included in traffic allocation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Treatments]</td> 
-   <td> <p>For each treatment you want to add to the definition, click <b>[!UICONTROL Add item]</b>, then enter or map the treatment.</p> <p>For more information on treatments, see <a href="https://docs.split.io/reference#create-split-definition-in-environment">Create split definition in an environment</a> in the [!DNL Split.io] documentation.</p> </td> 
+   <td> <p>For each treatment you want to add to the definition, click <b>[!UICONTROL Add item]</b>, then enter or map the treatment and size.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -396,7 +396,7 @@ This action module updates a split definition for a specific environment.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Update content]</td> 
-   <td> <p>For each attribute of the split that you want to update, click <b>[!UICONTROL Add item]</b> and enter or map the desired changes.</p> <p>For more information, see <a href="https://docs.split.io/reference#partial-update-split-definition-in-environment">Partial Update Split Definition in Environment</a> in the [!DNL Split.io] documentation.</p> </td> 
+   <td> <p>For each attribute of the split that you want to update, click <b>[!UICONTROL Add item]</b> and enter or map the desired changes.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comments]</td> 
