@@ -179,15 +179,15 @@ This trigger module starts a scenario when a field is updated in [!DNL Salesforc
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
-   <td> <p>Select the type of record that contains the field you want the module to watch. You must choose a record type that has [!UICONTROL Field History] turned on in [!DNL Salesforce] setup. For more information, see <a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">Field History Tracking</a> in the [!DNL Salesforce] documentation. </p> </td> 
+   <td> <p>Select the type of record that contains the field you want the module to watch. You must choose a record type that has [!UICONTROL Field History] turned on in [!DNL Salesforce] setup. For more information, see <a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&type=5">Field History Tracking</a> in the [!DNL Salesforce] documentation. </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Field]</td> 
-   <td> <p>Select the fields that you want the module to watch for changes.</p> </td> 
+   <td> <p>Select the fields that you want the module to watch for changes. Available fields depend on the selected record type.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
@@ -208,7 +208,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type] </td> 
@@ -233,7 +233,12 @@ When you are configuring this module, the following fields display.
 
 This trigger module executes a scenario when someone sends a message. The module returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
-This module requires some extra setup:
+This module requires some extra setup. There must be a Flow configured for outbound messages.
+
+* For instructions on Flows in Salesforce, see [Automate Tasks with Flows](https://help.salesforce.com/s/articleView?id=platform.flow.htm) in the Salesforce documentation.
+* For information on configuring an outbound message in Salesforce, see [Send an Outbound Message from Your Record-Triggered Flow](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm) in the Salesforce documentation
+
+<!--
 
 1. Go to the [!DNL Salesforce] setup page.
 
@@ -256,6 +261,8 @@ This module requires some extra setup:
 
 1. Click the **</>** icon in the bottom right and copy the provided URL.
 1. Return to the **[!UICONTROL Workflow Rules]** page, locate the newly created rule, then click **[!UICONTROL Activate]**.
+
+-->
 
 When you are configuring this module, the following fields display.
 
@@ -294,7 +301,7 @@ This action module creates a new record in an object.
 
 The module allows you to select which of the object's fields are available in the module. This reduces the number of fields you must scroll through when setting up the module.
 
-The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+The module returns the ID of the record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
 When you are configuring this module, the following fields display.
 
@@ -304,7 +311,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Record Type] </p> </td> 
@@ -338,15 +345,15 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Enter a path relative to<code> &lt;Instance URL&gt;/services/data/v46.0/</code>.</p> <p>For the list of available endpoints, refer to the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API Developer Guide</a>.</p> </td> 
+   <td> <p>Enter a path relative to<code> &lt;Instance URL&gt;/services/data/v62.0/</code>.</p> <p>For the list of available endpoints, refer to the <a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API Developer Guide</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -366,6 +373,28 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
+**Example:** The following API call returns the list of all users in your [!DNL Salesforce] account:
+
+* **URL**: `query`
+
+* **Method**: [!UICONTROL GET]
+
+* **Query String**:
+
+* **Key**: `q`
+
+* **Value**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+
+Matches of the search can be found in the module's Output under **[!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL records]**.
+
+In our example, 6 users were returned:
+
+![Matches for the search](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
+>[!ENDSHADEBOX]
+
 #### [!UICONTROL Delete a Record]
 
 This action module deletes an existing record in an object.
@@ -382,7 +411,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Record Type] </td> 
@@ -411,7 +440,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Type of Download]</td>
@@ -445,7 +474,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr>
     <td>[!UICONTROL Connection]</td>
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr>
     <td>[!UICONTROL Record Type]</td>
@@ -453,7 +482,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr>
     <td>[!UICONTROL Record Fields]</td>
-    <td>Select the fields that you want the module to read. You must select at least one field.</td>
+    <td>Select the fields that you want the module to read. You must select at least one field. Available fields depend on the type of record.</td>
   </tr> 
   <tr>
     <td>[!UICONTROL ID]</td>
@@ -461,26 +490,6 @@ When you are configuring this module, the following fields display.
   </tr> 
  </tbody> 
 </table>
-
->[!INFO]
->
->**Example:** The following API call returns the list of all users in your [!DNL Salesforce] account:
->
->* **URL**: `query`
->
->* **Method**: [!UICONTROL GET]
->
->* **Query String**:
->
->* **Key**: `q`
->
->* **Value**: `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->Matches of the search can be found in the module's Output under **[!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL records]**.
->
->In our example, 6 users were returned:
->
->![Matches for the search](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL Update a Record]
@@ -499,7 +508,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
@@ -531,7 +540,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Type of Upload]</td> 
@@ -543,7 +552,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder]</td> 
-   <td>Select the folder containing the file you want the module to upload. </td> 
+   <td>Select the folder where you want to upload a document. </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Source File]</td> 
@@ -555,8 +564,6 @@ When you are configuring this module, the following fields display.
 #### Upload File
 
 This action module uploads a single file to Salesforce.
-
-
 
 <table style="table-layout:auto"> 
  <col> 
@@ -586,46 +593,13 @@ This action module uploads a single file to Salesforce.
    <td role="rowheader">[!UICONTROL Visibility]</td> 
    <td>If using document linking, enter or map the document's visiblity.<ul><li><b>AllUsers</b><p>Available to all users with permissions</p></li><li><b>InternalUsers</b><p>Available to internal users with permissions.</p></li><li><b>SharedUsers</b><p>Available to users that can see the feed to which the file is posted.</p></li></ul></td> 
   </tr> 
+ </tbody> 
+</table>
 
 ### Searches
 
-#### [!UICONTROL Search with Query]
-
-This search module looks for records in an object in [!DNL Salesforce] that match the search query you specify. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search Type]</td> 
-   <td> <p>Select the type of search you want the module to perform:</p> 
-    <ul> 
-     <li> <p>[!UICONTROL Simple]</p> </li> 
-     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
-     <li> <p>[!UICONTROL Using SOQL (Salesforce Object Query Language)]</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Type] </p> </td> 
-   <td> <p>If you selected the Simple search type, choose the type of [!DNL Salesforce] record that you want the module to search for.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
-   <td> <p>Enter the query that you want to search by.</p> <p>For more information on SOSL, see <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> in the [!DNL Salesforce] documentation.</p> <p>For more information on SOQL, see <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> in the [!DNL Salesforce] documentation.</p> <p>Note: Please note that the value of the parameter <code>RETURNING </code>influences the output of the module. If you use <code>LIMIT</code>, [!DNL Fusion] will ignore the settings in the [!UICONTROL Maximal count of records] field. If you don't set any limit, Fusion will insert the value [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Maximal count of records]</td> 
-   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [Search](#search)
+* [Search with Query](#search-with-query)
 
 #### [!UICONTROL Search]
 
@@ -649,7 +623,7 @@ This action module retrieves all records meeting a given criteria.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the fields that you want to include in the module's output.</td> 
+   <td>Select the fields that you want to include in the module's output. Fields are available based on the record type.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Result set]</td> 
@@ -658,6 +632,44 @@ This action module retrieves all records meeting a given criteria.
   <tr> 
    <td role="rowheader">[!UICONTROL Maximal]</td> 
    <td>Enter or map the maximum number of records you want the module to retrieve during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Search with Query]
+
+This search module looks for records in an object in [!DNL Salesforce] that match the search query you specify. You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Salesforce] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-salesforce">Create a connection to Salesforce</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search Type]</td> 
+   <td> <p>Select the type of search you want the module to perform:</p> 
+    <ul> 
+     <li> <p>[!UICONTROL Simple]</p> </li> 
+     <li> <p>[!UICONTROL Using SOSL (Salesforce Object Search Language)]</p> </li> 
+     <li> <p>[!UICONTROL Using SOQL (Salesforce Object Query Language)]</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Type] </p> </td> 
+   <td> <p>If you selected the Simple search type, choose the type of [!DNL Salesforce] record that you want the module to search for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Query] / [!UICONTROL SOSL Query] / [!UICONTROL SOQL Query]</td> 
+   <td> <p>Enter the query that you want to search by.</p> <p>For more information on SOSL, see <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce Object Search Language (SOSL)</a> in the [!DNL Salesforce] documentation.</p> <p>For more information on SOQL, see <a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce Object Query Language (SOQL)</a> in the [!DNL Salesforce] documentation.</p> <p>Note: Please note that the value of the parameter <code>RETURNING </code>influences the output of the module. If you use <code>LIMIT</code>, [!DNL Fusion] will ignore the settings in the [!UICONTROL Maximal count of records] field. If you don't set any limit, Fusion will insert the value [!UICONTROL LIMIT = Maximal count of records].</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal count of records]</td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
