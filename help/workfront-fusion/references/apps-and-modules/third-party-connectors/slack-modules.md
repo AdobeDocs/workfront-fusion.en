@@ -180,6 +180,9 @@ This action module creates a new message.
  </tbody> 
 </table>
 
+<!--Becky start here-->
+
+
 #### [!UICONTROL Delete a Message]
 
 This action module deletes a specified message.
