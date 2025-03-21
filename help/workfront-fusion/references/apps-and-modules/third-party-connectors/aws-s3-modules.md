@@ -11,6 +11,8 @@ The [!DNL Adobe Workfront Fusion AWS] S3 modules let you perform operations on y
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -18,35 +20,37 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -105,10 +109,12 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [[!UICONTROL Create Bucket]](#create-bucket)
 * [[!UICONTROL Get File]](#get-file)
-* [[!UICONTROL Upload File]](#upload-file)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Upload File]](#upload-file)
 
 #### [!UICONTROL Create Bucket]
+
+This action module creates a bucket in AWS.
 
 <table style="table-layout:auto">
  <col> 
@@ -124,14 +130,14 @@ If you see the map button above a field or function, you can use it to set varia
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Select your regional endpoint. For more information, see the discussion of <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regional endpoints</a> in the AWS documentation.</p> </td> 
+   <td> <p>Select your regional endpoint. For more information, see <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regional endpoints</a> in the AWS documentation.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Get File] 
 
-Downloads a file from a bucket.
+This action module downloads a file from a bucket.
 
 <table style="table-layout:auto">
  <col> 
@@ -143,7 +149,7 @@ Downloads a file from a bucket.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Select your regional endpoint. For more information, see the discussion of <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
+   <td> <p>Select your regional endpoint. For more information, see <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
@@ -156,36 +162,9 @@ Downloads a file from a bucket.
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload File] 
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Select your regional endpoint. For more information, see the discussion of <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Folder] (optional) </p> </td> 
-   <td> <p>Specify the target folder that you want to upload a file to.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Headers] (optional)</p> </td> 
-   <td> <p> Insert request headers. Available headers can be found in the <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">[!DNL AWS S3] documentation - [!UICONTROL PUT] object</a>.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Make an API Call] 
+
+This action module makes a custom call to the AWS S3 API. 
 
 For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!UICONTROL REST] API Introduction](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html).
 
@@ -199,11 +178,11 @@ For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!U
   </tr> 
   <tr> 
    <td>[!UICONTROL Region] </td> 
-   <td> <p>Select your regional endpoint. For more information, see the discussion of <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
+   <td> <p>Select your regional endpoint. For more information, see <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL URL]</td> 
-   <td> <p>URL Enter a host URL. The path must be relative to<code> https://s3.&lt;selected-region>.amazonaws.com/</code>.</p> </td> 
+   <td> <p>Enter a host URL. The path must be relative to<code> https://s3.&lt;selected-region>.amazonaws.com/</code>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
@@ -211,7 +190,7 @@ For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!U
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>Add a request header. You can use the following common request headers. For more request headers refer to <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API Documentation</a>.</p> <p>[!DNL Workfront Fusion] adds authorization headers automatically.</p> 
+   <td> <p>Add a request header. For each header you want to add, click <b>Add item</b> and enter the header. You can use the following common request headers. For more request headers refer to <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API Documentation</a>.</p> <p>[!DNL Workfront Fusion] adds authorization headers automatically.</p> 
     <table style="table-layout:auto">
      <col> 
      <col> 
@@ -232,7 +211,7 @@ For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!U
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Content-MD5]</p> </td> 
-       <td> <p>The base64 encoded 128-bit MD5 digest of the message (without the headers) according to RFC 1864. This header can be used as a message integrity check to verify that the data is the same data that was originally sent. Although it is optional, we recommend using the [!UICONTROL Content-MD5] mechanism as an end-to-end integrity check. For more information about [!UICONTROL REST] request authentication, go to <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html?r=1821">[!UICONTROL REST] Authentication</a> in the <i>[!DNL Amazon] Simple Storage Service Developer Guide</i>.</p> </td> 
+       <td> <p>The base64 encoded 128-bit MD5 digest of the message (without the headers) according to RFC 1864. This header can be used as a message integrity check to verify that the data is the same data that was originally sent. Although it is optional, we recommend using the [!UICONTROL Content-MD5] mechanism as an end-to-end integrity check. For more information about [!UICONTROL REST] request authentication, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html?r=1821">Signing and authenticating REST requests</a> in the AWS documentation.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Date]</p> </td> 
@@ -244,11 +223,11 @@ For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!U
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 
-       <td> <p>For path-style requests, the value is <code>s3.amazonaws.com</code>. For virtual-style requests, the value is <code>BucketName.s3.amazonaws.com</code>. For more information, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html">Virtual Hosting</a> in the <i>[!DNL Amazon] Simple Storage Service Developer Guide</i>.</p> <p>This header is required for HTTP 1.1 (most toolkits add this header automatically); optional for HTTP/1.0 requests.</p> </td> 
+       <td> <p>For path-style requests, the value is <code>s3.amazonaws.com</code>. For virtual-style requests, the value is <code>BucketName.s3.amazonaws.com</code>. For more information, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html">Virtual Hosting</a> in the AWS documentation.</p> <p>This header is required for HTTP 1.1 (most toolkits add this header automatically); optional for HTTP/1.0 requests.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL x-amz-content-sha256]</p> </td> 
-       <td> <p>When using signature version 4 to authenticate the request, this header provides a hash of the request payload. When uploading an object in chunks, set the value to <code>STREAMING-AWS4-HMAC-SHA256-PAYLOAD</code> to indicate that the signature covers only headers and that there is no payload. For more information, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-streaming.html">Signature Calculations for the Authorization Header: Transferring Payload in Multiple Chunks (Chunked Upload) ([!DNL AWS] Signature Version 4)</a>.</p> </td> 
+       <td> <p>When using signature version 4 to authenticate the request, this header provides a hash of the request payload. When uploading an object in chunks, set the value to <code>STREAMING-AWS4-HMAC-SHA256-PAYLOAD</code> to indicate that the signature covers only headers and that there is no payload. For more information, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-streaming.html">Signature Calculations for the Authorization Header</a> in the AWS documentation.</p> </td> 
       </tr> 
       <tr> 
        <td role="rowheader"> <p>[!UICONTROL x-amz-date]</p> </td> 
@@ -279,6 +258,37 @@ For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!U
  </tbody> 
 </table>
 
+#### [!UICONTROL Upload File] 
+
+This action module uploads a file to an AWS S3 bucket.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Region] </td> 
+   <td> <p>Select your regional endpoint. For more information, see <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Folder] </p> </td> 
+   <td> <p>Specify the target folder that you want to upload a file to.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Headers] (optional)</p> </td> 
+   <td> <p> For each header you want to add, click <b>Add item</b> and enter the header's key and value.</p><p> For available headers, see <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html">PutObject</a> in the AWS documentation.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Searches 
 
 * [[!UICONTROL List Files]](#list-files)
@@ -298,15 +308,15 @@ Returns a list of files from a specified location.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Select your regional endpoint. For more information, see the discussion of <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
+   <td> <p>Select your regional endpoint. For more information, see <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
    <td> <p>Select the [!DNL Amazon S3] bucket you want to search for files.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Prefix] (optional)</p> </td> 
-   <td> <p> Path to a folder to look up files in, e.g. <code>workfrontfusion/work.</code></p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Prefix]</p> </td> 
+   <td> <p> Enter a path to a folder to look up files in, such as <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -325,7 +335,7 @@ Returns a list of folders from a specified location.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
-   <td> <p>Select your regional endpoint. For more information, see the discussion of <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html">regional endpoints</a> in the AWS documentation.</p> </td> 
+   <td> <p>Select your regional endpoint. For more information, see <a href="https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints">regional endpoints</a> in the [!DNL AWS] documentation.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bucket] </td> 
@@ -333,7 +343,7 @@ Returns a list of folders from a specified location.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Prefix] (optional)</p> </td> 
-   <td> <p> Path to a folder to look up folders in, e.g. <code>workfrontfusion/work.</code></p> </td> 
+   <td> <p> Path to a folder to look up folders in, such as <code>workfrontfusion/work.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
