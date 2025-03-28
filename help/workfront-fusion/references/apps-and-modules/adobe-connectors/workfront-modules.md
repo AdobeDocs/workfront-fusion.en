@@ -827,6 +827,59 @@ When you are configuring this module, the following fields display.
    <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
   </tr> 
   <tr> 
+    <td>[!UICONTROL Output Custom Form]</td>
+     <td> <p>Select the custom forms that you want included in the output bundle for this module, then select the specific fields from those custom forms that you want included in the output.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL References]</td>
+   <td>Select any reference fields that you want to include in the output.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Collections]</td>
+   <td>Select any reference fields that you want to include in the output.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to read.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **[!UICONTROL Read a Record (Legacy)]**
+
+This action module retrieves data from a single record.
+
+You specify the ID of the record. You can also specify which related records you want the module to read.
+
+For example, if the record that the module is reading is a project, you can specify that you want the project's tasks read.
+
+The module returns an array of data from the output fields you specified.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL Connection]</td>
+    <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Record Type]</td>
+  
+   <td>Choose the Workfront object type that you want the module to read.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Outputs]</td>
+  
+   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
+  </tr> 
+  <tr> 
     <td>[!UICONTROL References]</td>
    <td>Select any reference fields that you want to include in the output.</td> 
   </tr> 
