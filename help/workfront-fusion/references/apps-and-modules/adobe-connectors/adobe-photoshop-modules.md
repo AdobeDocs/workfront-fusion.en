@@ -62,7 +62,8 @@ You must have the following access to use the functionality in this article:
 Before you can use the [!DNL Adobe Photoshop] connector, you must ensure that the following prerequisites are met:
 
 * You must have an active [!DNL Adobe Photoshop] account.
-* You must have a Client ID and Client Secret. You can aquire these from the Adobe Developer Console.
+* You must have a Firefly Services license.
+* You must have a Client ID and Client Secret. You can acquire these from the Adobe Developer Console.
 
 ## Adobe Photoshop API information
 
