@@ -369,7 +369,7 @@ This action module makes one of the following conversions:
 
 +++
 
-+++ **[!UICONTROL Create a record (attaching custom forms)]** 
++++ **[!UICONTROL Create a record]** 
 
 This action module creates an object, such as a project, task, or issue in Workfront, and allows you to add a custom form to the new object. The module allows you to select which of the object's fields are available in the module.
 
@@ -416,7 +416,12 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-+++ **[!UICONTROL Create Record]**
++++ **[!UICONTROL Create Record (Legacy)]**
+
+>[!IMPORTANT]
+>
+>This module has been replaced with the Create a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
 This action module creates an object, such as a project, task, or issue in Workfront. The module allows you to select which of the object's fields are available in the module.
 
@@ -814,8 +819,65 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
     <td>[!UICONTROL Connection]</td>
- 
-   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+    <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Record Type]</td>
+  
+   <td>Choose the Workfront object type that you want the module to read.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Outputs]</td>
+  
+   <td> <p>Select the information you want included in the output bundle for this module.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Output Custom Form]</td>
+     <td> <p>Select the custom forms that you want included in the output bundle for this module, then select the specific fields from those custom forms that you want included in the output.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL References]</td>
+   <td>Select any reference fields that you want to include in the output.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Collections]</td>
+   <td>Select any reference fields that you want to include in the output.</td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL ID]</td>
+   <td> <p>Enter the unique Workfront ID of the record that you want the module to read.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
+
++++
+
++++ **[!UICONTROL Read a Record (Legacy)]**
+
+>[!IMPORTANT]
+>
+>This module has been replaced with the Read a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
+
+This action module retrieves data from a single record.
+
+You specify the ID of the record. You can also specify which related records you want the module to read.
+
+For example, if the record that the module is reading is a project, you can specify that you want the project's tasks read.
+
+The module returns an array of data from the output fields you specified.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[!UICONTROL Connection]</td>
+    <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL Record Type]</td>
@@ -870,7 +932,12 @@ For more information on the new event subscription version, see [Event subscript
 
 +++
 
-+++ **Update a record (With attaching custom forms)**
++++ **Update a record**
+
+>[!IMPORTANT]
+>
+>This module has been replaced with the Update a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
 
 This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
@@ -919,7 +986,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-+++ **[!UICONTROL Update Record]**
++++ **[!UICONTROL Update Record (Legacy)]**
 
 This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
 
@@ -1089,9 +1156,69 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
++++ **[!UICONTROL Search records]**
+
+This search module looks for records in an object in Workfront that match the search query you specify.
+
+You can map this information in subsequent modules in the scenario.
+
+When you are configuring this module, the following fields display.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type]</td> 
+   <td> <p>Select the type of Workfront record that you want the module to search for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Custom forms list]</td> 
+   <td> <p>Select at least one custom form. Fields from these custom forms will be available for the search query.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Result Set]</td> 
+   <td>Select an option to specify whether you want the module to get the first result that matches your search criteria or all the results that match it.</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximal]</td> 
+   <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria fields]</td> 
+   <td> <p>Select the fields that you want to use for your search criteria. These fields will then be available in the Search criteria dropdown.</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Search criteria]</td> 
+   <td> <p>Enter the field that you want to search by, the operator you want to use in your query, and the value that you are searching for in the field.</p> <p>Note: Do not use <code>username </code>in your search criteria. Including <code>username </code>in an API query to Workfront logs the user into Workfront, and the search will not be successful.</p> <p>Note: <code>In</code> and <code>NotIn</code>work with arrays. The inputs should be in array format.</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Outputs]</td> 
+   <td> <p>Select the fields that you want to include in the output for this module.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL References]</td> 
+   <td>Select any reference fields that you want to include in the search.</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!UICONTROL Collections]</td> 
+   <td>Select any collections that you want to add to the search.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL Search]**
++++ **[!UICONTROL Search (Legacy)]**
+
+>[!IMPORTANT]
+>
+>This module has been replaced with the Search records module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
 This search module looks for records in an object in Workfront that match the search query you specify.
 
