@@ -369,7 +369,7 @@ This action module makes one of the following conversions:
 
 +++
 
-+++ **[!UICONTROL Create a record (attaching custom forms)]** 
++++ **[!UICONTROL Create a record]** 
 
 This action module creates an object, such as a project, task, or issue in Workfront, and allows you to add a custom form to the new object. The module allows you to select which of the object's fields are available in the module.
 
@@ -416,7 +416,12 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-+++ **[!UICONTROL Create Record]**
++++ **[!UICONTROL Create Record (Legacy)]**
+
+>[!IMPORTANT]
+>
+>This module has been replaced with the Create a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
 This action module creates an object, such as a project, task, or issue in Workfront. The module allows you to select which of the object's fields are available in the module.
 
@@ -854,7 +859,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >[!IMPORTANT]
 >
 >This module has been replaced with the Read a record module. We recommend using that module in new scenarios.
->Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
 This action module retrieves data from a single record.
 
@@ -927,7 +932,12 @@ For more information on the new event subscription version, see [Event subscript
 
 +++
 
-+++ **Update a record (With attaching custom forms)**
++++ **Update a record**
+
+>[!IMPORTANT]
+>
+>This module has been replaced with the Update a record module. We recommend using that module in new scenarios.
+>Existing scenarios that use this module will continue to function as expected. This module will be removed from the module selector in May 2025.
 
 
 This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
@@ -976,7 +986,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-+++ **[!UICONTROL Update Record]**
++++ **[!UICONTROL Update Record (Legacy)]**
 
 This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
 
