@@ -180,8 +180,6 @@ This action module creates a new message.
  </tbody> 
 </table>
 
-<!--Becky start here-->
-
 
 #### [!UICONTROL Delete a Message]
 
@@ -201,7 +199,11 @@ This action module deletes a specified message.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to delete.</p> <p>Note: The time stamp can be retrieved using another module, such as the Watch Private Channel Module.</p> </td> 
+   <td> <p> Enter or map the time stamp of the message you want to delete.</p> <p>Note: The time stamp can be retrieved using another module, such as the Watch Private Channel Messages Module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL As user]</td> 
+   <td> <p> Enable this option to delete the message as the user with the credentials used in the connection.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -224,14 +226,14 @@ This action module retrieves the details of a message from a selected channel.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
-   <td> <p> Enter or map the message time stamp of the message you want to retrieve information about.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
+   <td> <p> Enter or map the message time stamp of the message you want to retrieve information about.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel Messages] module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Get a Public Channel Message]**
 
-This action module returns a message with a given ID from a specified public channel..
+This action module returns a message with a given ID from a specified public channel.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -247,7 +249,7 @@ This action module returns a message with a given ID from a specified public cha
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> Enter or map the message time stamp of the message you want to retrieve information about.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
+   <td> <p> Enter or map the message time stamp of the message you want to retrieve information about.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel Messages] module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -264,21 +266,33 @@ This action module allows you to edit an existing message.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>For instructions about connecting your [!DNL Slack] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
-  <tr> 
+<!--  <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
    <td> <p>Choose how you want to select the message you want to .</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message. .</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel, then select the message.</p> </li> 
     </ul> </td> 
+  </tr> -->
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
+   <td> <p>Enter or map the ID of the channel that contains the message you want to update.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
+   <td> <p> Enter or map the message time stamp of the message you want to retrieve information about.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel Messages] module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Text]</p> </td> 
    <td> <p>Enter the new text content of the message you want to update.</p> <p>For more information, see <a href="https://api.slack.com/docs/formatting">Formatting text for app surfaces</a> in the [!DNL Slack] documentation.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Blocks]</td> 
-   <td>Blocks are reusable components that you can use to customize and organize your messages. For more information on blocks, see <a href="https://api.slack.com/block-kit">Block Kit</a> in the [!DNL Slack] documentation.</td> 
+   <td role="rowheader">[!UICONTROL As user]</td> 
+   <td>Enable this option to update the message as the user that owns the credentials used by the connection for this module.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Attachments]</td> 
+   <td>For each item that you want to attach to the message, click <b>Add item</b> and fill in the item's details.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Link names]</p> </td> 
@@ -403,14 +417,14 @@ This search module returns a list of users in the selected channel.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>For instructions about connecting your [!DNL Slack] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Channel type]</td> 
-   <td>Select the type of channel that contains the list of members you want to list.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private Channel]</td> 
-   <td>Select the channel that you want to list members of.</td> 
-  </tr> 
+<tr> 
+   <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
+   <td> <p>Choose how you want to select the message you want to .</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that you want to list the users from.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel.</p> </li> 
+    </ul> </td> 
+  </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
    <td> <p>Set the maximum number of members [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
@@ -459,6 +473,10 @@ This action module lets you make a custom authenticated call to the [!DNL Slack]
   <tr> 
    <td role="rowheader">[!UICONTROL Base URL]</td> 
    <td>Select the base URL that you want to use for the API call.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Send access token]</td> 
+   <td>Select whether you want to send the access token as a header or as a query parameter.</td> 
   </tr> 
  </tbody> 
 </table>
