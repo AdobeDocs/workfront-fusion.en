@@ -9,6 +9,13 @@ exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
 
 The [!DNL Adobe Workfront Fusion] [!DNL Frame.io] modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] account.
 
+Workfront offers two Frame.io connectors, based on the version of Frame.io that you are connecting to.
+
+| Connector | Frame.io version |
+|---|---|
+| Frame.io (Beta) | V4 |
+| Frame.io (Legacy) | V3 |
+
 For a video introduction to the Frame.io connector, see:
 
 * [Frame.io](https://video.tv.adobe.com/v/3427032/){target=_blank}
