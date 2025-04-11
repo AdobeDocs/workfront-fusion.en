@@ -10,6 +10,8 @@ exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 
 This article explains how a scenario executes and how data flows through it, and how to view the data processed by each module.
 
+To view how data is flowing through an active scenario, see [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
+
 ## Scenario execution flow
 
 After a scenario is set up correctly and activated, it executes according to its defined schedule.
