@@ -328,7 +328,7 @@ This action module adds a new comment or reply to the asset.
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Comment]
+#### [!UICONTROL Delete a comment]
 
 This action module deletes an existing comment.
 
@@ -351,7 +351,7 @@ This action module deletes an existing comment.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Comment]
+#### [!UICONTROL Get a comment]
 
 This action module retrieves details of the specified comment.
 
@@ -364,20 +364,8 @@ This action module retrieves details of the specified comment.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the folder you want to retrieve assets from..</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Select the project that contains the folder you want to retrieve assets from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder you want to list assets from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Select the asset that contains the comment you want to retrieve.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains comment that you want to retrieve details about.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -386,7 +374,7 @@ This action module retrieves details of the specified comment.
  </tbody> 
 </table>
 
-#### [!UICONTROL List Comments]
+#### [!UICONTROL List comments]
 
 This search module retrieves all comments of the specified asset.
 
@@ -399,29 +387,29 @@ This search module retrieves all comments of the specified asset.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the folder you want to retrieve comments from.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the asset that you want to retrieve comments from.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select or map the workspace that contains the asset that you want to retrieve comments from.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Select the project that contains the folder you want to retrieve comments from.</p> </td> 
+   <td> <p>Select the project that contains the asset you want to retrieve comments from.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder that contains the asset you want to list comments from.</p> </td> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Select the the path that leads to the asset you want to list comments from.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Select the asset you want to list comments for.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned comments] </td> 
    <td> <p>Enter or map the maximum number of comments you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a Comment]
+#### [!UICONTROL Update a comment]
 
 This action module edits an existing comment.
 
@@ -434,20 +422,8 @@ This action module edits an existing comment.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the asset you want to update a comment on.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Select the project \ that contains the asset you want to update a comment on.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder that contains the asset you want to update a comment on.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Select the asset you want to update a comment on.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the project that contains the asset you want to update a comment on.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -461,66 +437,81 @@ This action module edits an existing comment.
    <td role="rowheader">[!UICONTROL Timestamp] </td> 
    <td> <p>Enter the frame number in the video the comment is linked to.</p> </td> 
   </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Comment Updated]
-
-This trigger module starts a scenario when a comment is edited.
-
-Because this is an instant trigger, you must select or create a webhook for the module to use. 
-
-If adding a webhook, enter the following information.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Webhook name] </td> 
-   <td> <p>Enter the name of the webhook, e.g. Comment Edited.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select the team this webhook is created for.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch New Comment]
-
-This trigger module starts a scenario when a new comment or reply is created.
-
-Because this is an instant trigger, you must select or create a webhook for the module to use. 
-
-If adding a webhook, enter the following information.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Webhook name] </td> 
-   <td> <p>Enter the name of the webhook, e.g. New Comment.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select the team this webhook is created for.</p> </td> 
+   <td role="rowheader">[!UICONTROL Page] </td> 
+   <td> <p>If the asset is a PDF, enter or map the page that the comment is attached to.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Folders
 
+#### Create a folder
+
+This action module creates a new folder in Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account where you want to create a folder.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select or map the workspace where you want to create a folder.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Select the where you want to create a folder.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Select the the path where you want to create a folder.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name </td> 
+   <td> <p>Enter or map a name for the new folder.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Projects
+
+#### Create a project
+
+This action module creates a new project in Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account where you want to create a project.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select or map the workspace where you want to create a project.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name </td> 
+   <td> <p>Enter or map a name for the new project.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--Becky start here-->
+
 
 #### [!UICONTROL List Projects]
 

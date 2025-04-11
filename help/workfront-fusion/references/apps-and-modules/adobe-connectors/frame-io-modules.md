@@ -635,7 +635,7 @@ This action module edits an existing comment.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Select the project \ that contains the asset you want to update a comment on.</p> </td> 
+   <td> <p>Select the project that contains the asset you want to update a comment on.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID] </td> 
