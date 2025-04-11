@@ -3,7 +3,6 @@ title: View data flow in a scenario
 description: You can watch a running scenario to see how data flows through it.
 author: Becky
 feature: Workfront Fusion
-exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
 ---
 # View data flow in a running scenario
 
