@@ -5,13 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
 ---
-# [!DNL Frame.io] Legacy modules
+# [!DNL Frame.io] Beta (V4) modules
 
 >[!IMPORTANT]
 >
->This article describes the legacy version of the Frame.io connector. This connector is used to connect to Frame.io version 3.
+>This article describes the new (beta) version of the Frame.io connector. This connector is used to connect to Frame.io version 4.
 >
->For instructions on the new (beta) version of the Frame.io connector, see [Frame.io Beta connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+>For instructions on the legacy version of the Frame.io connector, see [Frame.io Legacy connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
 The [!DNL Adobe Workfront Fusion] [!DNL Frame.io] modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] account.
 
@@ -22,7 +22,8 @@ Workfront offers two Frame.io connectors, based on the version of Frame.io that 
 | Frame.io (Beta) | V4 |
 | Frame.io (Legacy) | V3 |
 
-For instructions on the new (beta) version of the Frame.io connector, see [Frame.io Beta connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+For instructions on the legacy version of the Frame.io connector, see [Frame.io Legacy connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
+
 
 For a video introduction to the Frame.io connector, see:
 
@@ -100,64 +101,41 @@ The Frame.io connector uses the following:
 
 ## Connect [!DNL Frame.io] to [!UICONTROL Adobe Workfront Fusion] 
 
-You can connect to [!DNL Frame.io] using an API token, or by using OAuth 2.0.
+The connection process differs based on whether you are using the Legacy Frame.io connector or the Beta Frame.io connector.
 
-[Connect to [!DNL Frame.io] using an API token](#connect-to-frameio-using-an-api-token)
+1. In any  Frame.io Beta module, click **[!UICONTROL Add]** next to the Connection box.
 
-[Connect to [!DNL Frame.io] using OAuth 2.0 PKCE](#connect-to-frameio-using-oauth-20-pkce)
+1. Fill in the following fields:
 
-### Connect to [!DNL Frame.io] using an API token
-
-To connect your [!DNL Frame.io] account to [!DNL Workfront Fusion] using an API token, you must create the API token in your [!DNL Frame.io] account and insert it to the [!DNL Workfront Fusion] [!DNL Frame.io] [!UICONTROL Create a connection] dialog.
-
-1. Log in to your [!DNL Frame.io] account.
-1. Go to the **[!UICONTROL Tokens]** page in the [!DNL Frame.io] Developer.
-1. Click **[!UICONTROL New]**.
-1. Enter the name of the token, select the scopes you want to use, and click **[!UICONTROL Create]**.
-1. Copy the provided token.
-1. Go to [!DNL Workfront Fusion] and open the [!DNL Frame.io] module's **[!UICONTROL Create a connection]** dialog.
-1. In the **[!UICONTROL Connection type]** field, select **[!DNL Frame.io]**.
-1. Enter the token you have copied in step 5 to the **[!UICONTROL Your [!DNL Frame.io] API Key]** field
-1. Click **[!UICONTROL Continue]** to establish the connection and return to the module.
-
-### Connect to [!DNL Frame.io] using OAuth 2.0 PKCE 
-
-You can create an connection to [!DNL Frame.io] using OAuth 2.0 PKCE with an optional Client ID. If you want to include a Client ID in your connection, you must create an OAuth 2.0 app in your [!DNL Frame.io] account.
-
-* [Connect to [!DNL Frame.io] using using OAuth 2.0 PKCE (without Client ID)](#connect-to-frameio-using-using-oauth-20-pkce-without-client-id)
-* [Connect to [!DNL Frame.io] using using OAuth 2.0 PKCE (with Client ID)](#connect-to-frameio-using-using-oauth-20-pkce-with-client-id)
-
-#### Connect to [!DNL Frame.io] using using OAuth 2.0 PKCE (without Client ID) 
-
-1. Go to [!DNL Workfront Fusion] and open the [!DNL Frame.io] module's **[!UICONTROL Create a connection]** dialog.
-1. In the **[!UICONTROL Connection type]** field, select **[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**.
-1. Enter a name for the new connection in the **[!UICONTROL Connection name]** field.
-1. Click **[!UICONTROL Continue]** to establish the connection and return to the module.
-
-#### Connect to [!DNL Frame.io] using using OAuth 2.0 PKCE (with Client ID) 
-
-1. Create an OAuth 2.0 app in [!DNL Frame.io]. For instructions, see the [!DNL Frame.io] documentation on [!UICONTROL OAuth 2.0 Code Authorization Flow].
-
-   >[!IMPORTANT]
-   >
-   >When creating the OAuth 2.0 app in [!DNL Frame.io]:
-   >
-   >* Enter the following as the redirect URI:
-   >   
-   >     * **Americas / APAC**:  `https://app.workfrontfusion.com/oauth/cb/frame-io5`
-   >
-   >     * **EMEA**:  `https://app-eu.workfrontfusion.com/oauth/cb/frame-io5`
-   >
-   >* Enable the PCKE option.
-
-
-1. Copy the provided `client_id`.
-1. Go to [!DNL Workfront Fusion] and open the [!DNL Frame.io] module's **[!UICONTROL Create a connection]** dialog.
-1. In the **[!UICONTROL Connection type]** field, select **[!UICONTROL [!DNL Frame.io] OAuth 2.0 PKCE]**.
-1. Enter a name for the new connection in the **[!UICONTROL Connection name]** field.
-1. Click **[!UICONTROL Show advanced settings]**.
-1. Enter the `client_id` you copied in step 2 to the **[!UICONTROL Client ID]** field.
-1. Click **[!UICONTROL Continue]** to establish the connection and return to the module.
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection type]</td>
+          <td>
+            <p>Select whether you want to create an IMD User authentication connection or an IMS Server to Server connection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>Enter a name for this connection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]</td>
+          <td>Enter your [!DNL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions locating credentials, see <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credentials</a> in the Adobe developer documentation.</p></td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]</td>
+          <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions locating credentials, see <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/#credentials" class="MCXref xref" >Credentials</a> in the Adobe developer documentation.</p>
+        </tr>
+       </tbody>
+    </table>
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
 ## [!DNL Frame.io] modules and their fields
 
@@ -169,21 +147,19 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Assets](#assets)
 * [Comments](#comments)
+* [Folders](#folders)
 * [Projects](#projects)
 * [Other](#other)
 
 ### Assets 
 
-* [[!UICONTROL Create an Asset]](#create-an-asset)
-* [[!UICONTROL Delete an Asset]](#delete-an-asset)
-* [[!UICONTROL Get an Asset]](#get-an-asset)
-* [[!UICONTROL List Assets]](#list-assets)
-* [[!UICONTROL Update an Asset]](#update-an-asset)
-* [[!UICONTROL Watch Asset Deleted]](#watch-asset-deleted)
-* [[!UICONTROL Watch Asset Label Updated]](#watch-asset-label-updated)
-* [[!UICONTROL Watch New Asset]](#watch-new-asset)
+* [[!UICONTROL Create an asset]](#create-an-asset)
+* [[!UICONTROL Delete an asset]](#delete-an-asset)
+* [[!UICONTROL Get an asset]](#get-an-asset)
+* [[!UICONTROL List assets]](#list-assets)
+* [[!UICONTROL Update an asset]](#update-an-asset)
 
-#### [!UICONTROL Create an Asset]
+#### [!UICONTROL Create an asset] <!--different for v4-->
 
 This action module creates a new asset.
 
@@ -196,51 +172,41 @@ This action module creates a new asset.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that you want to create an asset for.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains the project that you want to create an asset for.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select the workspace or map the ID of the workspace that contains the project that you want to create an asset for.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
    <td> <p>Select the project or map the ID of the project that you want to create an asset for.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder or map the ID of the folder you want to create an asset in.</p> </td> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Select the path where you want to create an asset.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type] </td> 
-   <td> <p>Select whether to create a folder or file.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Name] </td> 
-   <td> <p>Enter the name of the new file or folder.</p> </td> 
-  </tr> <!--
-   <tr> 
-    <td role="rowheader">File Type </td> 
-    <td> <p>Select the type of file you want to upload.</p> </td> 
-   </tr>
-  --> <!--
-   <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr>
+    <tr> 
     <td role="rowheader">File Size </td> 
-    <td> <p>The file size in bytes.</p> </td> 
+    <td> <p>Enter or map the file size in bytes.</p> </td> 
    </tr>
-  --> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source URL] </td> 
    <td> <p>If creating a file, enter the URL of the file you want to upload.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Description] </td> 
-   <td> <p>If creating a file, enter a brief description of the asset.</p> </td> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Label] </td> 
-   <td> <p>If creating a file, select whether the file is in progress, needs review, or is approved.</p> </td> 
-  </tr> 
- </tbody> 
+  </tbody> 
 </table>
 
-#### [!UICONTROL Delete an Asset]
+#### [!UICONTROL Delete an asset] 
 
 This action module deletes a specified asset.
 
@@ -253,16 +219,8 @@ This action module deletes a specified asset.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the asset you want to delete.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
-   <td> <p> Select the project or that contains the asset you want to delete.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder that contains the asset you want to delete</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains the asset that you want to delete.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID] </td> 
@@ -271,7 +229,7 @@ This action module deletes a specified asset.
  </tbody> 
 </table>
 
-#### [!UICONTROL Get an Asset]
+#### [!UICONTROL Get an asset]
 
 This action module retrieves asset details.
 
@@ -284,25 +242,17 @@ This action module retrieves asset details.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the asset you want to retrieve details about.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
-   <td> <p> Select the project that contains the asset you want to retrieve details about.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder that contains the asset you want to retrieve details about.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains the asset that you want to retrieve.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Select the asset or map the ID of the asset you want to retrieve details about.</p> </td> 
+   <td> <p>Select or map the asset you want to retrieve.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List Assets]
+#### [!UICONTROL List assets]
 
 This search module retrieves all assets in the specified project's folder.
 
@@ -317,140 +267,12 @@ This search module retrieves all assets in the specified project's folder.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the folder you want to retrieve assets from.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains the assets that you want to list.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
-   <td> <p> Select the project that contains the folder you want to retrieve assets from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder you want to list assets from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned assets] </td> 
    <td> <p>Enter or map the maximum number of assets you want the module to return during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Update an Asset]
-
-This action module allows you to update an existing asset's name, description, or custom fields.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that you want to update an asset for.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Project ID] </td> 
-   <td> <p>Select the project or map the ID of the project that you want to update an asset for.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder or map the ID of the folder you want to update an asset in.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Enter or map the ID of the asset that you want to update.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Name] </td> 
-   <td> <p>Enter the name of the updated file.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Description] </td> 
-   <td> <p>Enter a brief description of the updated asset.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Asset Deleted]
-
-This trigger module starts a scenario when an asset belinging to the specified team is deleted.
-
-Because this is an instant trigger, you must select or create a webhook for the module to use. 
-
-If adding a webhook, enter the following information.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Webhook name]</td> 
-   <td> <p> Enter a name for the webhook, such as "Asset deleted."</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select the team this webhook is created for.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch Asset Label Updated]
-
-This trigger module starts a scenario when an the label for an asset owned by the specified team set, changed, or removed.
-
-Because this is an instant trigger, you must select or create a webhook for the module to use. 
-
-If adding a webhook, enter the following information.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Webhook name]</td> 
-   <td> <p> Enter a name for the webhook, such as "Asset status updated."</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select the team this webhook is created for.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Watch New Asset]
-
-This trigger module starts a scenario when a new asset is created for the specified team.
-
-Because this is an instant trigger, you must select or create a webhook for the module to use. 
-
-If adding a webhook, enter the following information.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Webhook name]</td> 
-   <td> <p> Enter a name for the webhook, such as "Asset created."</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select the team this webhook is created for.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -462,10 +284,8 @@ If adding a webhook, enter the following information.
 * [[!UICONTROL Get a Comment]](#get-a-comment)
 * [[!UICONTROL List Comments]](#list-comments)
 * [[!UICONTROL Update a Comment]](#update-a-comment)
-* [[!UICONTROL Watch Comment Updated]](#watch-comment-updated)
-* [[!UICONTROL Watch New Comment]](#watch-new-comment)
 
-#### [!UICONTROL Create a Comment]
+#### [!UICONTROL Create a comment]
 
 This action module adds a new comment or reply to the asset.
 
@@ -478,28 +298,20 @@ This action module adds a new comment or reply to the asset.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type] </td> 
-   <td> <p>Select whether you want to create a comment or reply to a comment.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains the asset you want to add a comment to.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the asset you want to add a comment to.</p> </td> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select the account or map the ID of the workspace that contains the asset you want to add a comment to.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 
    <td> <p>Select the project or map the ID of the project that contains the asset you want to add a comment to.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID] </td> 
-   <td> <p>Select the folder or map the ID of the folder that contains the asset you want to add a comment to.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Select or map the asset you want to add a comment to.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Comment ID] </td> 
-   <td> <p>Select or map the comment you want to add a reply to.</p> </td> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Select the path to the asset that you want to add a comment to.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text]</td> 
@@ -508,6 +320,10 @@ This action module adds a new comment or reply to the asset.
   <tr> 
    <td role="rowheader">[!UICONTROL Timestamp] </td> 
    <td> <p>Enter the frame number in the video the comment should be linked to.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Page] </td> 
+   <td> <p>If the asset is a PDF, enter or map the page that the comment should be attached to.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -525,20 +341,8 @@ This action module deletes an existing comment.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID]</td> 
-   <td> <p> Select or map the team that owns the project that contains the asset you want to delete a comment from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Project ID]</td> 
-   <td> <p> Select the project or map the ID of the project that contains the asset you want to delete a comment from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
-   <td> <p> Select the folder that contains the asset you want to delete a comment from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID] </td> 
-   <td> <p>Enter or map the ID of asset that contains the comment you want to delete.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains comment that you want to delete.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment ID] </td> 
@@ -713,6 +517,8 @@ If adding a webhook, enter the following information.
   </tr> 
  </tbody> 
 </table>
+
+### Folders
 
 ### Projects
 
