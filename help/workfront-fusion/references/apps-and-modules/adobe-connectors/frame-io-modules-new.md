@@ -149,6 +149,8 @@ If you see the map button above a field or function, you can use it to set varia
 * [Comments](#comments)
 * [Folders](#folders)
 * [Projects](#projects)
+* [Shares](#shares)
+* [Workspaces](#workspaces)
 * [Other](#other)
 
 ### Assets 
@@ -483,6 +485,9 @@ This action module creates a new folder in Frame.io.
 
 ### Projects
 
+ * [Create a project](#create-a-project)
+ * [List projects](#list-projects)
+
 #### Create a project
 
 This action module creates a new project in Frame.io.
@@ -510,9 +515,6 @@ This action module creates a new project in Frame.io.
  </tbody> 
 </table>
 
-<!--Becky start here-->
-
-
 #### [!UICONTROL List Projects]
 
 This search module retrieves all projects for the specified team.
@@ -526,19 +528,156 @@ This search module retrieves all projects for the specified team.
    <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team you want to retrieve projects for.</p> </td> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the asset that you want to retrieve projects from.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Enter or map the maximum number of projects you want the module to return during each scenario execution cycle.</p> </td> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select or map the workspace that contains the asset that you want to retrieve projects from.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned projects] </td> 
+   <td> <p>Enter or map the maximum number of projects
+   you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Shares
+
+* [Add an asset to a share link](#add-an-asset-to-a-share-link)
+* [Create a share link](#create-a-share-link)
+
+#### Add an asset to a share link
+
+This action modules adds an asset to a share link in Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the share link that you want to add an asset to.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Share link ID] </td> 
+   <td> <p>Select or map the share link that you want to add an asset to.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID] </td> 
+   <td> <p>Enter or map ID of the asset that you want to add to the share link.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Create a share link
+
+ This action module creates a new share link in Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account where you want to create a share link.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select or map the workspace where you want to create a share link.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Select or map the project where you want to create a share link.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Access </td> 
+   <td> <p>Select whether this link has public or restricted access.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Assets </td> 
+   <td> <p>For each asset that you want to add to the share link, click <b>Add item</b> and enter the asset's ID.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Description </td> 
+   <td> <p>Enter or map a description for the share link.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name </td> 
+   <td> <p>Enter or map the expiration date for the share link.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name </td> 
+   <td> <p>Enter or map a name for the new share link.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name </td> 
+   <td> <p>Enter or map a passphrase for the share link.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Workspaces
+
+#### Create a workspace
+
+This action module creates a new workspace in Frame.io
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account where you want to create a workspace.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Name] </td> 
+   <td> <p>Enter or map a new name for the workspace.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### List workspaces
+
+This module lists all workspaces in an account.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the asset that you want to retrieve workspaces from.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
+   <td> <p>Enter or map the maximum number of workspaces
+   you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Other
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL Make a custom API call]
 
 This module allows you to perform a custom API call.
 
@@ -552,7 +691,7 @@ This module allows you to perform a custom API call.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Enter a path relative to <code>https://api.frame.io</code>. Example: <code> /v2/teams</code></p> <p>Note: For the list of available endpoints, refer to the [!DNL Frame.io] API Reference.</p> </td> 
+   <td> <p>Enter a path relative to <code>https://api.frame.io</code>. Example: <code> /v4/me</code></p> <p>Note: For the list of available endpoints, refer to the [!DNL Frame.io] API Reference.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
@@ -563,7 +702,7 @@ This module allows you to perform a custom API call.
    <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] adds authorization headers automatically.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String] </td> 
+   <td role="rowheader">[!UICONTROL Query string] </td> 
    <td> <p>Enter the request query string. For each parameter that you want to include in the query string, click <b>[!UICONTROL Add item]</b> and enter the field's name and the desired value.</p> </td> 
   </tr> 
   <tr> 
