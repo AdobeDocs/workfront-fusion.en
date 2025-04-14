@@ -3,6 +3,7 @@ title: View data flow in a scenario
 description: You can watch a running scenario to see how data flows through it.
 author: Becky
 feature: Workfront Fusion
+exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
 ---
 # View data flow in a running scenario
 
@@ -80,5 +81,3 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. Select the execution that you want to view in the Currently Running section of the execution history panel.
 
   ![Currently running](assets/currently-running.png)
-
-
