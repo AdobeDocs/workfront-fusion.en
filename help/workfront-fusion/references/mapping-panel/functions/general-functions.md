@@ -7,6 +7,13 @@ exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
 ---
 # General functions
 
+## Variables
+
+There are two general variables that you can use to identify details about an execution:
+
+* `executionID`: the ID of this scenario execution
+* `triggerTimestamp`: The time at which this execution was triggered
+
 ## [!UICONTROL get (object or array; path)]
 
 Returns the value path of an object or array. To access nested objects, use dot notation. The first item in an array is index 1.
