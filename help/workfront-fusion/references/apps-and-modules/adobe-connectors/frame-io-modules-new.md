@@ -3,6 +3,7 @@ title: Frame.io modules
 description: The [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] account.
 author: Becky
 feature: Workfront Fusion
+exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 ---
 # [!DNL Frame.io] Beta (V4) modules
 
