@@ -3,7 +3,6 @@ title: Frame.io modules
 description: The [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] account.
 author: Becky
 feature: Workfront Fusion
-exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
 ---
 # [!DNL Frame.io] Beta (V4) modules
 
@@ -485,8 +484,8 @@ This action module creates a new folder in Frame.io.
 
 ### Projects
 
- * [Create a project](#create-a-project)
- * [List projects](#list-projects)
+* [Create a project](#create-a-project)
+* [List projects](#list-projects)
 
 #### Create a project
 
