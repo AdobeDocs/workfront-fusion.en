@@ -5,7 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 ---
-# Restore a scenario version
+# View and manage scenario versions
+
+You can view, restore, or rename previous versions of a scenario.
 
 ## Access requirements
 
@@ -59,16 +61,20 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 +++
 
-## Restore a scenario version
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. Open your scenario.
+## View and manage a scenario's version history
+
+1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel, then click the scenario to open it.
 1. Click the [!UICONTROL More] icon ![More icon](assets/more-icon.png) at the bottom of the screen, then click **[!UICONTROL Previous Versions]**.
 
-1. Click the **[!UICONTROL Pick the version]**, then click the version you would like to restore.
-1. Click **[!UICONTROL OK]**.
+   A list of previous versions displays.
+1. (Optional) To rename the version, click the More menu ![More menu](assets/more-icon-vertical.png) on the line for that version, select **Edit**, and enter a name into the field. Click **Save** to save the new name.
 
-   The selected scenario version is restored.
+   We recommend giving a name that describes changes made for this version.
+1. (Optional) To restore the version, click restore ![More menu](assets/more-icon-vertical.png) on the line for that version
 
->[!NOTE]
->
->The restored version of the scenario is not automatically saved. If you want to save the restored version of the scenario, you must save it manually.
+
+   >[!NOTE]
+   >
+   >The restored version of the scenario is not automatically saved. If you want to save the restored version of the scenario, you must save it manually.
