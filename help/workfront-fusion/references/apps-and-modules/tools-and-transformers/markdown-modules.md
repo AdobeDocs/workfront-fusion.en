@@ -15,42 +15,63 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td>
+   <p>No Workfront Fusion license requirement</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
+
+## [!UICONTROL HTML to Markdown]
+
+This module converts HTML code to Markdown.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">[!UICONTROL Markdown]</td> 
+   <td> <p>Enter the HTML code that you want to convert to Markdown.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
-   </td> 
+   <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
+   <td> <p>Enable this option to convert the HTML to [!DNL GitHub Flavored Markdown].</p> <p>For more information, see the Markdown cheatsheet in the [!DNL GitHub] documentation.</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Product</td> 
-   <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
-   </td> 
-  </tr>
  </tbody> 
 </table>
-
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
-
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## [!UICONTROL Markdown to HTML]
 
@@ -73,25 +94,6 @@ When you are configuring this module, the following fields display.
   <tr> 
    <td role="rowheader">[!UICONTROL Sanitize]</td> 
    <td>Select an option to indicate whether you want to strip HTML tags from the text or escape HTML.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-## [!UICONTROL HTML to Markdown]
-
-This module converts HTML code to Markdown.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Markdown]</td> 
-   <td> <p>Enter the HTML code that you want to convert to Markdown.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL GitHub Flavored Markdown] </td> 
-   <td> <p>Enable this option to convert the HTML to [!DNL GitHub Flavored Markdown].</p> <p>For more information, see the Markdown cheatsheet in the [!DNL GitHub] documentation.</p> </td> 
   </tr> 
  </tbody> 
 </table>
