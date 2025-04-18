@@ -1156,7 +1156,9 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-+++ **[!UICONTROL Search records]**
++++
+
++++ **[!UICONTROL Search]**
 
 This search module looks for records in an object in Workfront that match the search query you specify.
 
