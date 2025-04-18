@@ -102,24 +102,28 @@ You can create a connection to your [!DNL Datadog] account directly from inside 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Connection Type]</td> 
-      <td> <p> Select the [!UICONTROL [!DNL Datadog] Application] option to get full access to [!DNL Datadog] API.</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">[!UICONTROL Connection Name]</td> 
       <td> <p> Enter a name for the connection.</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>Select whether this connection is for a production or non-production environment.</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>Select whether you are connecting to a service account or a personal account.</td>
+        </tr>
      <tr> 
       <td role="rowheader">[!UICONTROL Domain] </td> 
       <td> <p>Select the domain you want to connect to (US or EU).</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API Key]</td> 
-      <td> <p> Enter your [!DNL Datadog] API key. </p> <p>For instructions on retrieving the API key, see <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Retrieve your API key and application key</a> in this article.</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key Location] </td> 
+      <td> <p>Select whether to include the API key in the header or in the query string.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Application Key]</td> 
-      <td> <p> Enter your [!DNL Datadog] application key. </p> <p>For instructions on retrieving the application key, see <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Retrieve your API key and application key</a> in this article.</p> </td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
+      <td> <p> Enter your [!DNL Datadog] API key. </p> <p>For instructions on retrieving the API key, see <a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">Retrieve your API key and application key</a> in this article.</p> </td> 
      </tr> 
     </tbody> 
    </table>
@@ -211,18 +215,28 @@ The limit for compressed payloads is 3.2 megabytes (3200000), and 62 megabytes (
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Type]</td> 
-   <td> Select the type of metric you want to use. </td> 
+   <td> Select the type of metric you want to use. 
+   <ul>
+   <li>Gauge</li>
+   <li>Rate</li>
+   <li>Count</li>
+   </ul>
+   </td> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Interval]</td> 
+   <td> If the type of the metric is rate or count, define the corresponding interval.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>Add time series you want to submit to [!DNL Datadog].</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>Enter the name of the timeseries.</p> </li> 
-     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>Select the type of the metric.</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> If the type of the metric is rate or count, define the corresponding interval.</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>Add points relating to a metric.</p> <p>This is a JSON array of points. Each point has the format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Note:  <p>The timestamp must be in seconds.</p> <p>The timestamp must be current. Current is defined as not more than 10 minutes in the future or more than 1 hour in the past.</p> <p> The numeric value format should be a float value.</p> </p> <p>This field must contain at least 1 item.</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Enter the name of the host that produced the metric.</p> </li> 
-    </ul> </td> 
+   <td role="rowheader">[!UICONTROL Points]</td> 
+   <td><p>Add points relating to a metric.</p> <p>This is a JSON array of points. Each point has the format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Note:  <p>The timestamp must be in seconds.</p> <p>The timestamp must be current. Current is defined as not more than 10 minutes in the future or more than 1 hour in the past.</p> <p> The numeric value format should be a float value.</p> </p> <p>This field must contain at least 1 item.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Host]</td> 
+   <td>Enter the name of the host that produced the metric. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tags]</td> 
+   <td> For each tag that you want to add to the metric, click <b>Add item</b> and enter the tag's value.</td> 
   </tr> 
  </tbody> 
 </table>
