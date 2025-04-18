@@ -15,6 +15,8 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -22,35 +24,37 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -93,7 +97,7 @@ You can create a connection to your [!DNL Datadog] account directly from inside 
 1. In any [!UICONTROL Datadog] module, click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
 1. Fill the module's fields as follows:
 
-<table style="table-layout:auto">
+    <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 
@@ -132,36 +136,8 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
-* [[!UICONTROL Post Timeseries Points]](#post-timeseries-points)
 * [[!UICONTROL Make an API Call]](#make-an-api-call)
-
-#### [!UICONTROL Post Timeseries Points]
-
-The module allows you to post time-series data that can be graphed on [!DNL Datadog]'s dashboards.
-
-The limit for compressed payloads is 3.2 megabytes (3200000), and 62 megabytes (62914560) for decompressed payloads.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Datadog] account to [!DNL Workfront Fusion], see <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connect [!DNL Datadog] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Series]</td> 
-   <td> <p>Add time series you want to submit to [!DNL Datadog].</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>Enter the name of the timeseries.</p> </li> 
-     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>Select the type of the metric.</p> </li> 
-     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> If the type of the metric is rate or count, define the corresponding interval.</p> </li> 
-     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>Add points relating to a metric.</p> <p>This is a JSON array of points. Each point has the format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Note:  <p>The timestamp must be in seconds.</p> <p>The timestamp must be current. Current is defined as not more than 10 minutes in the future or more than 1 hour in the past.</p> <p> The numeric value format should be a float value.</p> </p> <p>This field must contain at least 1 item.</p> </li> 
-     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Enter the name of the host that produced the metric.</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Post Timeseries Points]](#post-timeseries-points)
 
 #### [!UICONTROL Make an API Call]
 
@@ -174,6 +150,10 @@ This action module allows you to perform a custom API call.
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your [!DNL Datadog] account to [!DNL Workfront Fusion], see <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connect [!DNL Datadog] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Use Dedicated Domain]</td> 
+   <td>Some of Datadog API endpoints which expect a lot of incoming traffic are running on thier dedicated domains. Check this box to use the dedicated domain for your API call.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -214,3 +194,35 @@ The result can be found in the module's Output under Bundle > Body > dashboards.
 In our example, 3 dashboards were returned:
 
 ![Datadog API response](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+
+#### [!UICONTROL Post Timeseries Points]
+
+The module allows you to post time-series data that can be graphed on [!DNL Datadog]'s dashboards.
+
+The limit for compressed payloads is 3.2 megabytes (3200000), and 62 megabytes (62914560) for decompressed payloads.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Datadog] account to [!DNL Workfront Fusion], see <a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">Connect [!DNL Datadog] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td> Select the type of metric you want to use. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Series]</td> 
+   <td> <p>Add time series you want to submit to [!DNL Datadog].</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Metric]</strong> </p> <p>Enter the name of the timeseries.</p> </li> 
+     <li> <p><strong>[!UICONTROL Type]</strong> </p> <p>Select the type of the metric.</p> </li> 
+     <li> <p><strong>[!UICONTROL Interval]</strong> </p> <p> If the type of the metric is rate or count, define the corresponding interval.</p> </li> 
+     <li> <p><strong>[!UICONTROL Points]</strong> </p> <p>Add points relating to a metric.</p> <p>This is a JSON array of points. Each point has the format: <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>Note:  <p>The timestamp must be in seconds.</p> <p>The timestamp must be current. Current is defined as not more than 10 minutes in the future or more than 1 hour in the past.</p> <p> The numeric value format should be a float value.</p> </p> <p>This field must contain at least 1 item.</p> </li> 
+     <li> <p><strong>[!UICONTROL Host]</strong> </p> <p>Enter the name of the host that produced the metric.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
