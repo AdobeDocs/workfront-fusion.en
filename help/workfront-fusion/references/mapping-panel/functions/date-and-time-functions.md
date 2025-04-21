@@ -143,7 +143,7 @@ If you need to specify a number outside the range, we recommend that you use[!UI
 
     Returns 2015-10-07T11:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
     Returns 2015-10-07T11:37:01.138Z
 
