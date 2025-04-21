@@ -1791,10 +1791,91 @@ This trigger module starts a scenario when a message is posted from HubSpot to t
 <!--* [Publish/Unpublish a Blog Post](#publish--unpublish-a-blog-post)-->
 <!--* [Watch Blog Posts]-->
 
-<!--
-#### Create a Blog Post May need connection
--->
 
++++ **Create a Blog Post** 
+
+This action module creates a new blog post.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL HubSpot CRM] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Enter or map the post title (the internal name of the post)</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post Body</td> 
+   <td>Enter or map the main body of the post in HTML format.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post Summary</td> 
+   <td>Enter or map a summary of the post. This summary appears on the main listing page.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Blog Author ID</td> 
+   <td>Enter or map the ID of the author associated with the post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Content Group ID</td> 
+   <td>Enter or map the ID of the blog that this post belongs to.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Footer HTML</td> 
+   <td>Enter or map the HTML for embed codes or javascript that should be placed before the tag of the page.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Head HTML</td> 
+   <td>Enter or map the HTML for embed codes or javascript that should be placed at the top.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campaign ID</td> 
+   <td>Enter or map the ID of the campaign that this post is associated with.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Featured image</td> 
+   <td>Enter or map the URL of the image that this post will use as the featured image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Keyword</td> 
+   <td>For each keyword that you want to add to this post, click <b>Add item</b> and enter the keyword and keyword GUID.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Meta Description</td> 
+   <td>Enter or map the text for the <code>meta</code> tag on the page.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Publish Date</td> 
+   <td>Enter or map the date when the blog post is to be published. <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Enable this option to publish the blog post immediately when it is created. If set to Yes, this option ignores the Publish Date field.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Enter or map the slug for the post. The slug is appended to the end of the domain to form the URL for the blog post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Topic IDs</td> 
+   <td>For each topic that you want to add to the post, click <b>Add item</b> and enter the topic ID.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Use Featured Image</td> 
+   <td>Enable this option to use the featured image for the blog post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Widgets</td> 
+   <td>Enter or map a data structure containing the date for all the modules for this blog post. This refers to the blog post's modules, not Fusion modules.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Delete a Blog Post**
 
