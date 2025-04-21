@@ -133,6 +133,39 @@ Removes duplicates inside an array of contacts by comparing the "name" property
 
 ## toCollection
 
+* This function takes an array containing key-value pairs and converts it to a collection. There are 3 arguments to the function:
+
+* (array) containing keyvalue pairs
+* (string) the name of the field to use as key
+* (string) the name of the field to use as value
+
+>[!BEGINSHADEBOX]
+
+Example: 
+
+Given an array:
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+and arguments
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+the function returns
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[ENDSHADEBOX]
+
 ## toArray
 
 This function converts a collection into an array of key-value pairs.
