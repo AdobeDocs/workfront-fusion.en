@@ -16,42 +16,46 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -81,6 +85,7 @@ The Widen connector uses the following:
 You can create a connection to your [!DNL Widen] account directly from inside a [!DNL Widen] module.
 
 1. In any [!DNL Widen] module, click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
+1. Select the environment and type of account you are connecting to. This is for information only, and appears in the Connections area of Fusion.
 1. Select the [!DNL Widen] domain that you want to connect to.
 1. Enter the token for your [!DNL Widen] account. For instructions on locating this token, see the [[!DNL Widen] API FAQs](https://community.widen.com/collective/s/article/API-FAQs).
 1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
@@ -132,13 +137,42 @@ This trigger module starts a scenario when an asset is created or updated.
 
 ### Action Modules
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset info]](#read-asset-info)
 * [[!UICONTROL Add assets to collections]](#add-assets-to-collections)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL Download File]](#download-file)
+* [[!UICONTROL Read asset info]](#read-asset-info)
 * [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Download File]](#download-file)
-* [[!UICONTROL Upload] a file](#upload-a-file)
+* [[!UICONTROL Upload a file]](#upload-a-file)
+
+#### [!UICONTROL Add assets to collections]
+
+This action module adds one or more assets to collections.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collections ID]</td> 
+   <td>For each collection that you want to add the assets to, click <strong>[Collections ID]</strong> and enter or map the [!UICONTROL Collection ID].</li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> For each asset that you want to add to a collection, click <strong>[!UICONTROL Assets ID]</strong> and enter or map the Asset ID.</p> </li> 
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Enter or map the maximum number of assets you want the module to work with during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -184,6 +218,25 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
+#### [!UICONTROL Download File]
+
+This action module downloads an asset from your [!DNL Widen] account.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td> <p>Enter or map the ID of the asset you want to download.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Read asset info]
 
 This action module retrieves an individual asset by its unique ID.
@@ -211,43 +264,6 @@ This action module retrieves an individual asset by its unique ID.
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to collections]
-
-This action module adds one or more assets to collections.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>For each collection that you want to add the assets to:</p> 
-    <ol> 
-     <li value="1"> <p> Click <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Enter or map the [!UICONTROL Collection ID].</p> </li> 
-     <li value="3"> <p>Click <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Assets ID]</td> 
-   <td> <p>For each asset that you want to add to a collection:</p> 
-    <ol> 
-     <li value="1"> <p> Click <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Enter or map the Asset ID.</p> </li> 
-     <li value="3"> <p>Click <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Enter or map the maximum number of assets you want the module to work with during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Remove assets from collection]
 
 This action module removes one or more assets from collections.
@@ -261,22 +277,15 @@ This action module removes one or more assets from collections.
   <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
   </tr> 
   <tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Collections ID]</td> 
-   <td> <p>For each collection that you want to remove the assets from:</p> 
-    <ol> 
-     <li value="1"> <p> Click <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Enter or map the Collection ID.</p> </li> 
-     <li value="3"> <p>Click <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+   <td>For each collection that you want to remove assets from, click <strong>[Collections ID]</strong> and enter or map the [!UICONTROL Collection ID].</li> 
+   </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Assets ID</td> 
-   <td> <p>For each asset that you want to remove from a collection:</p> 
-    <ol> 
-     <li value="1"> <p> Click <strong>[!UICONTROL Add]</strong>.</p> </li> 
-     <li value="2"> <p>Enter or map the Asset ID.</p> </li> 
-     <li value="3"> <p>Click <strong>[!UICONTROL Add item]</strong>.</p> </li> 
-    </ol> </td> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> For each asset that you want to remove from a collection, click <strong>[!UICONTROL Assets ID]</strong> and enter or map the Asset ID.</p> </li> 
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -312,25 +321,6 @@ This action module updates the metadata fields of an asset.
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>Enter or map the maximum number of assets you want the module to work with during each scenario execution cycle.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download File]
-
-This action module downloads an asset from your [!DNL Widen] account.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td> <p>Enter or map the ID of the asset you want to download.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -452,7 +442,7 @@ This search module retrieves a list of assets that match the specific search cri
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search document text]</td> 
-   <td>Enable this option to include document text in your search, or false to include only assets for which the title matches the search criteria.</td> 
+   <td>Enable this option to include document text in your search, or set to false to include only assets for which the title matches the search criteria.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
