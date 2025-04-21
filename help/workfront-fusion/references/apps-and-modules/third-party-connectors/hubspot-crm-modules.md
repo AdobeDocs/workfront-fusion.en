@@ -112,9 +112,6 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### CRM objects
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL Search for CRM Objects]**
 
 This search module searches for CRM objects by custom properties or by query. To search for products or line items, use a special connection with a required custom scope.
@@ -202,15 +199,6 @@ This trigger module starts a scenario when a CRM object is created or updated.
 +++
 
 ### Records (Deals, Contacts, and Companies) 
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **Create a record**
 
@@ -458,17 +446,6 @@ This trigger module starts a scenario when a contact, company, or deal has been 
 +++
 
 ### Contacts
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL Add Contacts to a List]**
 
@@ -738,9 +715,6 @@ This trigger module starts a scenario when a new contact is added to a list. Thi
 
 ### Deals
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 Returns a specific deal pipeline..
@@ -819,11 +793,6 @@ Retrieves a list of companies based on an exact match to the domain property.
 +++
 
 ### Engagements
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **Associate an Engagement with a CRM object**
 
@@ -1111,11 +1080,6 @@ This trigger module starts a scenario when a new engagement is created in a port
 
 ### Events and Notifications
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **Create / Update a Timeline Event**
 
 This action module creates or updates a timeline event. This module can be used only with a developer connection that includes your user identifier, your HubSpot API key, Client ID, and Client Secret. 
@@ -1247,14 +1211,6 @@ To create a webhook for this module, click **Add** next to the webhook field and
 +++
 
 ### Files
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL Create a Folder]**
 
@@ -1445,10 +1401,6 @@ This trigger module starts a scenario when a new file is saved to the file manag
 
 ### Tasks
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **Create a Calendar task**
 
 This action module creates a new task for a calendar. The connection used in this module must use the credentials of a user with a paid Marketing account.
@@ -1546,9 +1498,6 @@ This trigger module starts a scenario when there is a new task event in a calend
 
 ### Users
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **Get an Owner**
 
 This action module returns details of an owner.
@@ -1589,13 +1538,6 @@ This search module returns a list of all of the owners in a HubSpot account.
 
 ### Tickets
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL Delete a Ticket]**
@@ -1628,11 +1570,6 @@ Deletes an existing ticket by its ID.
 <!-- Watch Tickets Need to find a working connection-->
 
 ### Forms
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **Get a File Uploaded via Form**
 
@@ -1683,10 +1620,6 @@ This action module returns all forms that have been created in the account assoc
 <!--#### Watch Submissions for a Form--Need to find a working connection>-->
 
 ### Social Media (Broadcast)
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **Cancel a Broadcast Message**
 
@@ -1785,16 +1718,90 @@ This trigger module starts a scenario when a message is posted from HubSpot to t
 
 ### Blog posts 
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-<!--* [Publish/Unpublish a Blog Post](#publish--unpublish-a-blog-post)-->
-<!--* [Watch Blog Posts]-->
++++ **Create a Blog Post** 
 
-<!--
-#### Create a Blog Post May need connection
--->
+This action module creates a new blog post.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL HubSpot CRM] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Enter or map the post title (the internal name of the post).</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post Body</td> 
+   <td>Enter or map the main body of the post in HTML format.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Post Summary</td> 
+   <td>Enter or map a summary of the post. This summary appears on the main listing page.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Blog Author ID</td> 
+   <td>Enter or map the ID of the author associated with the post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Content Group ID</td> 
+   <td>Enter or map the ID of the blog that this post belongs to.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Footer HTML</td> 
+   <td>Enter or map the HTML for embed codes or javascript that should be placed before the tag of the page.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Head HTML</td> 
+   <td>Enter or map the HTML for embed codes or javascript that should be placed at the top.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campaign ID</td> 
+   <td>Enter or map the ID of the campaign that this post is associated with.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Featured image</td> 
+   <td>Enter or map the URL of the image that this post will use as the featured image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Keyword</td> 
+   <td>For each keyword that you want to add to this post, click <b>Add item</b> and enter the keyword and keyword GUID.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Meta Description</td> 
+   <td>Enter or map the text for the <code>meta</code> tag on the page.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Publish Date</td> 
+   <td>Enter or map the date when the blog post is to be published. <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Enable this option to publish the blog post immediately when it is created. If set to Yes, this option ignores the Publish Date field.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Enter or map the slug for the post. The slug is appended to the end of the domain to form the URL for the blog post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Topic IDs</td> 
+   <td>For each topic that you want to add to the post, click <b>Add item</b> and enter the topic ID.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Use Featured Image</td> 
+   <td>Enable this option to use the featured image for the blog post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Widgets</td> 
+   <td>Enter or map a data structure containing the date for all the modules for this blog post. This refers to the blog post's modules, not Fusion modules.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Delete a Blog Post**
 
@@ -1817,9 +1824,70 @@ This action module deletes a single blog post.
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **List Blog Posts** 
 
-This search module retrieves posts from a HubSpot blog.-->
+This search module retrieves posts from a HubSpot blog.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL HubSpot CRM] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limit</td> 
+   <td>Enter or map the maximum number of blog post to return in one execution cycle.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archived</td> 
+   <td>Enable this option to include archived posts in your results.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Blog Author ID</td> 
+   <td>Enter or map the ID of an author to return posts associated with that author.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campaign ID</td> 
+   <td>Enter or map the ID of a campaign to return posts associated with that campaign.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Content Group ID</td> 
+   <td>Enter or map the ID of a blog to return posts associated with that blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Enter a post name to return only posts with that name.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter by Created</td> 
+   <td>Select Filter to return posts by the created time value.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter by Updated</td> 
+   <td>Select Filter to return posts by the updated time value.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter by Deleted</td> 
+   <td>Select Filter to return posts by the deleted time value.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Enter or map a slug to return posts that match the slug. The slug is appended to the end of the domain to form the URL for the blog post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">State</td> 
+   <td>Select a state (Draft, Published, or Scheduled) to inlcude only results in that state.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order by Publish Date</td> 
+   <td>Select whether to sort the results ascending or descending by publish date.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **Publish / Unpublish a Blog Post**
 
@@ -1846,7 +1914,70 @@ This action module schedules or cancels publishing of a blog post.
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **Watch Blog Posts**
+
+This trigger module starts a scenario when a blog post that matches criteria you set is created, updates, or deleted.
+
+
+
+This search module retrieves posts from a HubSpot blog.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL HubSpot CRM] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limit</td> 
+   <td>Enter or map the maximum number of blog post to return in one execution cycle.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Archived</td> 
+   <td>Enable this option to include archived posts in your results.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Blog Author ID</td> 
+   <td>Enter or map the ID of an author to return posts associated with that author.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Campaign ID</td> 
+   <td>Enter or map the ID of a campaign to return posts associated with that campaign.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Content Group ID</td> 
+   <td>Enter or map the ID of a blog to return posts associated with that blog.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Enter a post name to return only posts with that name.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter by Created</td> 
+   <td>Select Filter to return posts by the created time value.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter by Updated</td> 
+   <td>Select Filter to return posts by the updated time value.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter by Deleted</td> 
+   <td>Select Filter to return posts by the deleted time value.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Slug</td> 
+   <td>Enter or map a slug to return posts that match the slug. The slug is appended to the end of the domain to form the URL for the blog post.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">State</td> 
+   <td>Select a state (Draft, Published, or Scheduled) to inlcude only results in that state.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1862,9 +1993,6 @@ This action module schedules or cancels publishing of a blog post.
 <!--+++-->
 
 ### Subscriptions
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **Update Email Subscription**
 
