@@ -164,7 +164,7 @@ the function returns
 }
 ```
 
->[ENDSHADEBOX]
+>[!ENDSHADEBOX]
 
 ## toArray
 
