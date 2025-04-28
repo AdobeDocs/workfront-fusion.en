@@ -19,3 +19,4 @@ Use cases
 
 How to think about parent and child scenarios
 
+You'll probably also want to update the data structure article
