@@ -16,6 +16,8 @@ Supported data types are described in the [Data types](/help/workfront-fusion/re
 
 ## Data structure generator
 
-Data structures don't always have to be created. You can make it easier by using a template from our built-in generator. By providing a data sample, the generator will automatically create a data structure based on the data sample you entered. The created data structure can then be manually modified.
+You don't always need to create data structures. Workfront Fusion can generate data structures from existing data. You provide a data sample, and then the generator automatically creates a data structure based on that data sample. You can then manually modify the created data structure if necessary.
+
+To generate a data structure, see [Set up the data structure](/help/workfront-fusion/create-scenarios/map-data/data-stores.md#set-up-the-data-structure) in the article Data stores.
 
 ![Data structure generator](assets/data-structure-generator-350x341.jpg)
