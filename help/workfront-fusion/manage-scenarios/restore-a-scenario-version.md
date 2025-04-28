@@ -1,13 +1,13 @@
 ---
-title: Restore a scenario version
-description: You can restore a previous version of a scenario. This allows you to make changes to a scenario, then easily revert those changes if you prefer the previous functionality.
+title: View and manage scenario versions
+description: You can view, restore, rename, or download blueprints for previous versions of a scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 ---
 # View and manage scenario versions
 
-You can view, restore, or rename previous versions of a scenario.
+You can view, restore, rename, or download blueprints for previous versions of a scenario.
 
 ## Access requirements
 
