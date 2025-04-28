@@ -9,3 +9,13 @@ feature: Workfront Fusion
 
 For instructions on configuring Chain modules, see [Chain modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
+Define parent and child
+
+talk about data structures
+
+As of right now, all chains will require a response 
+
+Use cases
+
+How to think about parent and child scenarios
+
