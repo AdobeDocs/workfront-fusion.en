@@ -117,6 +117,7 @@ Fusion offers connectors for many third-party applications.
 These modules allow you to perform actions on your data, but do not require connecting to any service outside of Fusion.
 
 * [Archive modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+* [Chain modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
 * [CSV modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
 * [Data store modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
 * [Draft.js modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)
