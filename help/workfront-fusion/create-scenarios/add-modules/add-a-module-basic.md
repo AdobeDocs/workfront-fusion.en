@@ -79,7 +79,6 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 ## Add another module to a scenario
 
 1. If you are not in the scenario editor of the scenario where you want to add a module, Click the **[!UICONTROL Scenarios]** tab in the left panel.
-1. Select the scenario where you want to export a blueprint.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. To add a module to another module, hover over the right handle of the module after which you want to add a module, then click **Add another module** when it appears.
 
@@ -93,7 +92,6 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 ## Insert a module between existing modules in a scenario
 
 1. If you are not in the scenario editor of the scenario where you want to add a module, Click the **[!UICONTROL Scenarios]** tab in the left panel.
-1. Select the scenario where you want to export a blueprint.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Click on the dotted path between the modules where you want to insert a module.
 1. In the menu that appears, select **Add a module**.

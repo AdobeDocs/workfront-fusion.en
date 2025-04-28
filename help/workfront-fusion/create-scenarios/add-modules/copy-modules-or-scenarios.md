@@ -121,6 +121,10 @@ A scenario blueprint represents the entire scenario. If you want to copy only ce
 
    A JSON file is created and downloads to your computer. You can locate this file in your [!DNL Downloads] folder.
 
+>[!NOTE]
+>
+>To export the blueprint for a previous version of a scenario, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
+
 ### Import a blueprint
 
 >[!IMPORTANT]

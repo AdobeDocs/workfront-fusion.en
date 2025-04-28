@@ -72,7 +72,8 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. (Optional) To rename the version, click the More menu ![More menu](assets/more-icon-vertical.png) on the line for that version, select **Edit**, and enter a name into the field. Click **Save** to save the new name.
 
    We recommend giving a name that describes changes made for this version.
-1. (Optional) To restore the version, click restore ![More menu](assets/more-icon-vertical.png) on the line for that version
+1. (Optional) To download the blueprint for a previous version, click the More menu ![More menu](assets/more-icon-vertical.png) on the line for that version, then select **Download**.
+1. (Optional) To restore the version, click **Restore** on the line for that version
 
 
    >[!NOTE]
