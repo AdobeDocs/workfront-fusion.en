@@ -159,12 +159,6 @@ This trigger module starts a scenario when a new file is added or an existing fi
 
 This action module deletes a file.
 
-You specify the ID of the file.
-
-The module returns the ID of the  file and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -174,7 +168,7 @@ When you are configuring this module, the following fields display.
    <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Enter or map the unique ID of the file that you want the module to update.</td> 
+   <td>Enter or map the unique ID of the file that you want the module to delete.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -185,13 +179,9 @@ This action module downloads a file.
 
 You specify the ID of the file.
 
-The module returns the ID of the file and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
 >[!NOTE]
 >
 >This module is useful for providing files to subsequent modules.
-
-When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -202,7 +192,7 @@ When you are configuring this module, the following fields display.
    <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
-   <td>Enter or map the unique ID of the file that you want the module to update.</td> 
+   <td>Enter or map the unique ID of the file that you want the module to retrieve.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -212,10 +202,6 @@ When you are configuring this module, the following fields display.
 This action module updates a file.
 
 You specify the ID of the file.
-
-The module returns the ID of the  file and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
 
 <table style="table-layout:auto">
  <col> 
@@ -241,10 +227,6 @@ This action module uploads a file.
 
 You specify the file. You can also provide a new filename for the file.
 
-The module returns the ID of the  file and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
-
-When you are configuring this module, the following fields display.
-
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -252,6 +234,10 @@ When you are configuring this module, the following fields display.
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder where you want to upload the file.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
@@ -266,23 +252,3 @@ When you are configuring this module, the following fields display.
 >
 >* The size of the file might exceed the maximum file size limit for your [!DNL Box] plan, or you may have used all of your [!DNL Box] account's storage quota. To get more storage space, delete existing files from [!DNL Box] or upgrade your [!DNL Box] account.
 >* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.
-
-<!--
-<h2>Possible problems</h2>
-
-<p style="color: #ff1493;">This is drafted out because we don't have a download module for Box yet</p>
-
-
-<h3>Watch files trigger module doesn't download a file contained in the folder.</h3>
-
-<p>There are several situations when downloading a file fails:</p>
-
-
-
-  <li>The current file lock setting does not allow the file to be downloaded or the downloading of the file is disabled. In this case, the file is ignored.</li>
-
-
-
-  <li>When the scenario started, the file was being uploaded to the server and was not ready to be downloaded. The scenario run gets stopped and Workfront Fusion tries downloading the file again during the next execution of the scenario.</li>
-  
--->
