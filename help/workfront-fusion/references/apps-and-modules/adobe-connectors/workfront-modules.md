@@ -967,7 +967,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>Select the custom forms that you want to attach to the new record. After you select the form, enter the data for the fields on that form.</td> 
+   <td>Select the custom forms that you want to provide field values for on the new record. After you select the form, enter the data for the fields on that form.<p> To provide field values for a form that you are attaching in this module, include the custom form ID in the fields to map section.</td> 
   </tr> 
  </tbody> 
 </table>
