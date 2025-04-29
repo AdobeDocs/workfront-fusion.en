@@ -60,16 +60,19 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 #### Add Receiver
 
-This is a trigger in the child scenario. It's called by the Add ChainCaller module in the parent scenario. You can push data to the child scenario and map that data in the child scenario.
+This module is the trigger module in the child scenario, and is triggered by the Add ChainCaller module in the parent scenario. It receives data from the parent scenario, which can be processed in the child scenario.
 
 ### Actions
 
 #### Add ChainCaller
 
-This is in the parent scenario. The fields reflect the data structure set in the Add Reciever module in the child scenario.
+This module is located in the parent scenario. The fields reflect the data structure set in the Add Receiver module in the child scenario.
 
 Can create child scenario here by clicking Add and setting the input data structure (Receiver) and output data structure (Respond). Can create data structure when creating child scenario.
 
 #### Add Respond
 
 This is in the child scenario, and sends data in the selected structure to the parent scenario. You can map this data in later modules in the parent scenario.
+
+
+
