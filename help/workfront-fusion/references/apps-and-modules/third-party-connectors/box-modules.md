@@ -92,15 +92,17 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Triggers](#triggers)
 * [Actions](#actions)
+* [Searches](#searches)
 
 ### Triggers
 
-* [[!UICONTROL New event]](#new-event)
-* [[!UICONTROL Watch files]](#watch-files)
+* [[!UICONTROL New File Event]](#new-file-event)
+* [New Folder Event](#new-folder-event)
+* [[!UICONTROL Watch Files]](#watch-files)
 
-#### [!UICONTROL New event] 
+#### [!UICONTROL New File Event] 
 
-This instant trigger module starts a scenario when a file is added, moved, copied, deleted, locked, or unlocked.
+This instant trigger module starts a scenario when a the selected action occurs on a file..
 
 <table style="table-layout:auto">
  <col> 
@@ -108,16 +110,27 @@ This instant trigger module starts a scenario when a file is added, moved, copie
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>Select the webhook that you want to use to watch outgoing messages. To add a webhook, click <strong>[!UICONTROL Add]</strong> and enter the webhook's name and connection.</p> <p> For instructions about connecting your [!UICONTROL Box] account to [!UICONTROL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Connect to a service - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Maximum number of returned events]</p> </td> 
-   <td> <p>Enter the highest number of events you want the module to return during each scenario execution cycle.</p> </td> 
+   <td> <p>Select the webhook that you want to use to watch outgoing messages, or add a webhook. </p><p>To add a webhook, click <strong>[!UICONTROL Add]</strong> and enter the webhook's name and connection, the file that you want to watch, and the triggers that you want to watch for.</p> <p> For instructions about connecting your [!UICONTROL Box] account to [!UICONTROL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Connect to a service - Basic instructions</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch files] 
+#### New Folder Event
+
+This instant trigger module starts a scenario when the selection action occurs in the folder.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook]</td> 
+   <td> <p>Select the webhook that you want to use to watch outgoing messages, or add a webhook. </p><p>To add a webhook, click <strong>[!UICONTROL Add]</strong> and enter the webhook's name and connection, the folder that you want to watch, and the triggers that you want to watch for.</p> <p> For instructions about connecting your [!UICONTROL Box] account to [!UICONTROL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Connect to a service - Basic instructions</a>.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Watch Files] 
 
 This trigger module starts a scenario when a new file is added or an existing file is updated in a folder being watched.
 
@@ -129,7 +142,7 @@ This trigger module starts a scenario when a new file is added or an existing fi
    <td role="rowheader">Connection</td> 
    <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   <tr> 
-   <td role="rowheader">Folder</td> 
+   <td role="rowheader">Watch in folder</td> 
    <td> <p>Select the folder you want to watch. A scenario can watch a single folder.</p> 
    </td> 
   </tr> 
@@ -150,12 +163,17 @@ This trigger module starts a scenario when a new file is added or an existing fi
 
 ### Actions
 
-* [[!UICONTROL Delete a file]](#delete-a-file)
+<!--* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Update a file]](#update-a-file)
-* [[!UICONTROL Upload] a file](#upload-a-file)
+* [[!UICONTROL Upload] a file](#upload-a-file)-->
+* [Create a Folder](#create-a-folder)
+* [Get a Folder](#get-a-folder)
+* [Get Folder Metadata](#get-folder-metadata)
+* [Make an API Call](#make-an-api-call)
+* [Update Folder Metadata](#update-folder-metadata)
 
-#### [!UICONTROL Delete a file] 
+<!--#### [!UICONTROL Delete a file] 
 
 This action module deletes a file.
 
@@ -251,4 +269,224 @@ You specify the file. You can also provide a new filename for the file.
 >If this module is not successful, consider the following:
 >
 >* The size of the file might exceed the maximum file size limit for your [!DNL Box] plan, or you may have used all of your [!DNL Box] account's storage quota. To get more storage space, delete existing files from [!DNL Box] or upgrade your [!DNL Box] account.
->* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.
+>* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.-->
+
+#### Create a Folder
+
+This action module creates a new empty folder inside the specified parent folder.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Name]</td> 
+   <td> <p>Enter or map a name for the new folder.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Parent Folder]</td> 
+   <td> <p>Select the folder where you want to create the new folder.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder Upload Email Access]</td> 
+   <td> <p>When this parameter has been set, users can email files to the email address that has been automatically created for this folder. The collaborators options allows only registered emails for collaborators.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Synchronization State]</td> 
+   <td> <p>Specifies whether a folder should be synced to a user's device or not. This is used by Box Sync (discontinued) and is not used by Box Drive.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Get a Folder
+
+This action module retrieves details for a folder, including the first 100 entries in the folder.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder that you want to retrieve details for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Get Folder Metadata
+
+This action module retrieves folder metadata by folder ID.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>Select the scope that you want to use for this metadata retrieval.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder that you want to retrieve metadata for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Make an API Call
+
+This action module makes a custom call to the Box API.
+
+
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Bynder] account to [!DNL Workfront Fusion], see <a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">Connect [!DNL Bynder] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Enter a path relative to <code>https://api.box.com</code>. <p>Example: <code>/2.0/users/me</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example: <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion adds the authorization headers for you.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Update Folder Metadata
+
+This action module creates or updates the metadata of a folder.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>Select the scope that you want to use for this metadata update.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td> <p>Select the folder that you want to update metadata for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+### Searches
+
+#### Search for Content
+
+This search module searches for items that are available to the user or to the emtire enterprise.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Box] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>Enter or map the string to search for. This query is matched against item names, descriptions, text content of files, and various other fields of the different item types.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Scope]</td> 
+   <td> <p>Select whether you are searching for content associated with the user whose credentials are used for the connection used in this module, or searching for content associated with the entire enterprise.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Type]</td> 
+   <td> <p>Select whether you are searching for files, folders, or web links.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sort]</td> 
+   <td> <p>Select whether you want to sort by relevance or by modified date.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Trash Content]</td> 
+   <td> <p>Select whether you want to search trashed content or content that hasn't been trashed.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Parent Folder IDs]</td> 
+   <td> <p>To search in a specific folder, for each folder you want to search, click <b>Add item</b> and enter the ID of the folder. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Created From]</td> 
+   <td> <p>To search for assets created in a certain date range, enter the earliest date in the range.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Created to]</td> 
+   <td> <p>To search for assets created in a certain date range, enter the latest date in the range.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Updated From]</td> 
+   <td> <p>To search for assets updated in a certain date range, enter the earliest date in the range.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Updated to]</td> 
+   <td> <p>To search for assets updated in a certain date range, enter the latest date in the range.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>For each attribute that you want to return in the module's response, click <b>Add item</b> and enter the field.</p><p>This can be used to request fields that are not normally returned in a standard response. Be aware that specifying this parameter will have the effect that none of the standard fields are returned in the response unless explicitly specified. </p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File Extensions]</td> 
+   <td> <p>To limit the search to specific file extensions, enter a comma-separated list of file extensions.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size From]</td> 
+   <td> <p>To search for assets in a specific size range, enter the small end of the range, in bytes.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size To]</td> 
+   <td> <p>To search for assets in a specific size range, enter the large end of the range, in bytes.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Owner User ID]</td> 
+   <td> <p>To search for assets owned by specific users, enter a comma-separated list of owner IDs.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Enter or map the maximum number of results that you want the module to return in each execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
