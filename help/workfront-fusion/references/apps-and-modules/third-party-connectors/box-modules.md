@@ -92,15 +92,17 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Triggers](#triggers)
 * [Actions](#actions)
+* [Searches](#searches)
 
 ### Triggers
 
-* [[!UICONTROL New event]](#new-event)
-* [[!UICONTROL Watch files]](#watch-files)
+* [[!UICONTROL New File Event]](#new-file-event)
+* [New Folder Event](#new-folder-event)
+* [[!UICONTROL Watch Files]](#watch-files)
 
-#### [!UICONTROL New event] 
+#### [!UICONTROL New File Event] 
 
-This instant trigger module starts a scenario when a file is added, moved, copied, deleted, locked, or unlocked.
+<!--This instant trigger module starts a scenario when a file is added, moved, copied, deleted, locked, or unlocked.
 
 <table style="table-layout:auto">
  <col> 
@@ -115,9 +117,11 @@ This instant trigger module starts a scenario when a file is added, moved, copie
    <td> <p>Enter the highest number of events you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
-</table>
+</table>-->
 
-#### [!UICONTROL Watch files] 
+#### New Folder Event
+
+#### [!UICONTROL Watch Files] 
 
 This trigger module starts a scenario when a new file is added or an existing file is updated in a folder being watched.
 
@@ -150,12 +154,17 @@ This trigger module starts a scenario when a new file is added or an existing fi
 
 ### Actions
 
-* [[!UICONTROL Delete a file]](#delete-a-file)
+<!--* [[!UICONTROL Delete a file]](#delete-a-file)
 * [[!UICONTROL Get a file]](#get-a-file)
 * [[!UICONTROL Update a file]](#update-a-file)
-* [[!UICONTROL Upload] a file](#upload-a-file)
+* [[!UICONTROL Upload] a file](#upload-a-file)-->
+* [Create a Folder](#create-a-folder)
+* [Get a Folder](#get-a-folder)
+* [Get Folder Metadata](#get-folder-metadata)
+* [Make an API Call](#make-an-api-call)
+* [Update Folder Metadata](#update-folder-metadata)
 
-#### [!UICONTROL Delete a file] 
+<!--#### [!UICONTROL Delete a file] 
 
 This action module deletes a file.
 
@@ -251,4 +260,28 @@ You specify the file. You can also provide a new filename for the file.
 >If this module is not successful, consider the following:
 >
 >* The size of the file might exceed the maximum file size limit for your [!DNL Box] plan, or you may have used all of your [!DNL Box] account's storage quota. To get more storage space, delete existing files from [!DNL Box] or upgrade your [!DNL Box] account.
->* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.
+>* [!DNL Box] does not upload more than one files with the same name to a single folder. If the destination folder contains a file with the same name as the file being uploaded, the scenario run terminates with an error. To avoid this, rename the file. If you want to update the file, use the **[!UICONTROL Update a file]** module.-->
+
+#### Create a Folder
+
+
+
+#### Get a Folder
+
+
+
+#### Get Folder Metadata
+
+
+
+#### Make an API Call
+
+
+
+#### Update Folder Metadata
+
+
+### Searches
+
+#### Search for Content
+
