@@ -9,8 +9,6 @@ exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
 
 In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Azure Active Directory], as well as connect it to multiple third-party applications and services.
 
-<!--
-
 If you need instructions on creating a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md). For information about modules, see [Modules in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/modules.md).
 
 ## Access requirements
@@ -276,5 +274,3 @@ This search module looks for records in [!DNL Azure AD] that have been created, 
   </tr> 
  </tbody> 
 </table>
-
--->
