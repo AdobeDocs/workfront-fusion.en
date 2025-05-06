@@ -444,5 +444,9 @@ This module allows you to upload a file to the SFTP server.
    <td> <p>[!UICONTROL Permissions]</p> </td> 
    <td> <p>Set the desired permissions for the file or folder. Use chmod parameters. For example, <code>777</code> or <code>-rwxrwxrwx</code>.</p> <p>These permissions must match the pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>For more information about chmod, see the <a href="https://ss64.com/bash/chmod.html">chmod documentation</a>.</p> </td> 
   </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Buffer size (B)]</p> </td> 
+   <td> <p>Set the size (in bytes) of each chunk when uploading the file. This is useful for large files or when server memory limits require smaller uploads. If this value is not set, the file is written in a single operation.</p> </td> 
+  </tr> 
  </tbody> 
 </table>
