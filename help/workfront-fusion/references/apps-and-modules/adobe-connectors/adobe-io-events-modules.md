@@ -98,6 +98,12 @@ To create a connection for your Adobe I/O Events modules:
         </td>
       </tr>
       <tr>
+        <td role="rowheader">Environment</td>
+        <td>
+          <p>Select whether you want to connect to production or non-production environment.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">Type</td>
         <td>
           <p>Select whether you want to connect to a service account or a personal account.</p>
@@ -154,6 +160,8 @@ If you see the map button above a field or function, you can use it to set varia
 * [Searches](#searches)
 
 ### Triggers
+
+<!--Becky start here-->
 
 #### Create an event registration
 

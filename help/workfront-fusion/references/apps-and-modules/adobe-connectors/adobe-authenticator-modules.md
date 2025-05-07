@@ -15,40 +15,46 @@ To see a list of available Adobe APIs, see [Adobe APIs](https://developer.adobe.
 
 ## Access requirements
 
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] package</td>
-      <td>
-        <p>New: Any</p><p>Or</p><p>Current: [!UICONTROL Pro] or higher</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] license</td>
-      <td>
-        <p>New: Standard</p><p>Or</p><p>Current: [!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] license</td>
-      <td>
-   <p>Current Fusion license requirement: No [!DNL Workfront Fusion] license requirement.</p>
++++ Expand to view access requirements for the functionality in this article.
+
+You must have the following access to use the functionality in this article:
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td>
+   <p>Current: No Workfront Fusion license requirement</p>
    <p>Or</p>
-   <p>Legacy Fusion license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Product</td>
-      <td>
-   <p>New Workfront plan: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Current Workfront plan: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -104,7 +110,7 @@ To create a connection:
       <tr>
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
-          <p>Select whether you want to create an OAuth Server-to-Server connection, or a service account (JWT) connection.</p>
+          <p>Select whether you want to create an OAuth Server-to-Server connection, or a service account (JWT) connection. We highly recommend creating OAuth connections.</p>
         </td>
       </tr>
       <tr>
@@ -127,7 +133,7 @@ To create a connection:
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Enter your [!DNL Adobe] Technical account ID. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].
+        <td>If you have selected a JWT connection, enter your [!DNL Adobe] Technical account ID. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
@@ -168,14 +174,6 @@ To create a connection:
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
         <td>Leave this blank to use the standard Adobe IMS authentication URL of <code>https://ims-na1.adobelogin.com</code>. If you do not use Adobe IMS for authentication, enter the URL to use for authentication.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>Select whether you are connecting to a production or non-production environment.</td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>Select whether you are connecting to a service account or a personal account.</td>
       </tr>
     </tbody>
     </table>
@@ -247,18 +245,6 @@ This module was made available on November 14, 2024. Any Adobe Authenticator > M
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Request content]  </td>
-      <td>
-        <p>Enter the content of the request. This option is available if you selected the <code>Raw</code> body type</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Fields]  </td>
-      <td>
-        <p>For each file that you want to add to the API request, click <b>Add item</b> and enter the text of the file (for raw data), or enter the key <code>uploadedFile</code> and map the file's data.This option is available if you selected the <code>application</code> or <code>multipart</code> body type.</p>
-      </td>
-    </tr>
-    <tr>
       <td role="rowheader">[!UICONTROL Output Type]  </td>
       <td>
         <p>Select the type of data that you want the module to output. If you do not select a type, the module selects a type automatically.</p>
@@ -320,11 +306,5 @@ This action module allows you to make a call to any Adobe API.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
-     <tr>
-      <td role="rowheader">[!UICONTROL Limit]  </td>
-      <td>
-        <p>Enter the maximum number of results that you want the module to return in one execution cycle.</p>
-      </td>
-    </tr>
   </tbody>
 </table>
