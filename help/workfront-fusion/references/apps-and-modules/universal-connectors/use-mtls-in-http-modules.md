@@ -95,6 +95,7 @@ You can use the following links to download the Workfront Fusion public certific
 | EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
 | Azure Cluster | [Download [!DNL Workfront Fusion] Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025|
 
+<!--
 
 ### Certificates for 2024
 
@@ -112,6 +113,8 @@ You can use the following links to download the Workfront Fusion public certific
 |---|---|---|
 | US Datacenter | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
 | EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+
+-->
 
 ## Enabling Mutual TLS&nbsp;in [!DNL Workfront Fusion] HTTP modules
 
