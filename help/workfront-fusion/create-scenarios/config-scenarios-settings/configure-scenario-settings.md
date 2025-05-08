@@ -192,3 +192,14 @@ For more information on errors, see [Error types](/help/workfront-fusion/referen
 >[!NOTE]
 >
 >If a scenario starts with an instant trigger, the setting is ignored and the scenario is deactivated immediately once the first error has occurred.
+
+### Worker pool
+
+>[!NOTE]
+>
+>This setting is visible only if the following two conditions are met:
+>
+>* You are an organization admin or owner
+>* More than one worker pool is associated with your organization.
+
+This setting allows you to assign the scenario to a specific worker pool associated with your organization.
