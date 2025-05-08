@@ -215,9 +215,12 @@ To create a webhook:
 
 ### Actions
 
-#### Get all events from a journal
+* [Get provider and event IDs](#get-provider-and-event-ids)
+* [Make a custom API call](#make-a-custom-api-call)
 
-This search module retrieves all events for a registration from a journal.
+#### Get provider and event IDs
+
+This search module gets the Adobe I/O Events IDs for the specified provider and events.
 
    <table>
      <col/>
@@ -229,44 +232,23 @@ This search module retrieves all events for a registration from a journal.
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Registration ID]
+           [!UICONTROL Event provider]
          </td>
          <td>
-           Select the registration that you want to retrieve events for.
+           Select the provider that you want to retrieve the ID for.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned records]
+           [!UICONTROL Event type]
          </td>
          <td>
-              Enter or map the maximum number of records you want the module to return during each scenario execution cycle. 
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Return events that occur after]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Seek]
-         </td>
-         <td>
-         </td>
-       </tr>
-       <tr>
-         <td role="rowheader">
-           [!UICONTROL Latest]
-         </td>
-         <td>
-         Enable this option to return the latest event.
+              Select the events that you want to provide IDs for. Events are available based on the event provider. 
          </td>
        </tr>
      </tbody>
    </table>
+
 
 #### Make a custom API call
 
@@ -321,9 +303,9 @@ This action module makes a custom API call to the [!DNL Adobe I/O Events] API
 
 ### Searches
 
-#### Get provider and event IDs
+#### Get all events from a journal
 
-This search module gets the Adobe I/O Events IDs for the specified provider and events.
+This search module retrieves all events for a registration from a journal.
 
    <table>
      <col/>
@@ -335,23 +317,44 @@ This search module gets the Adobe I/O Events IDs for the specified provider and 
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event provider]
+           [!UICONTROL Registration ID]
          </td>
          <td>
-           Select the provider that you want to retrieve the ID for.
+           Select the registration that you want to retrieve events for.
         </td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Event type]
+           [!UICONTROL Maximum number of returned events]
          </td>
          <td>
-              Select the events that you want to provide IDs for. Events are available based on the event provider. 
+              Enter or map the maximum number of records you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Return events that occur after]
+         </td>
+         <td>Enter or map a date. The module returns events that occurred after this date.
+         </td>
+       </tr>
+<!--       <tr>
+         <td role="rowheader">
+           [!UICONTROL Seek]
+         </td>
+         <td>
+         </td>
+       </tr>-->
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Latest]
+         </td>
+         <td>
+         Enable this option to return the latest event.
          </td>
        </tr>
      </tbody>
    </table>
-
 <!--
 
 Watch Events
