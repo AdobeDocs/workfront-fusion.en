@@ -117,6 +117,8 @@ To create a connection for your [!DNL ServiceNow] modules:
     </tbody> 
    </table>
 
+1. Click **Continue** to save the connection and return to the module.
+
    <!--Markdown placeholder-->
 
 ## [!UICONTROL ServiceNow] modules and their fields

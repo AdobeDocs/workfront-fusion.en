@@ -83,11 +83,11 @@ The Azure DevOps connector uses the following:
 
 1. Add an [!DNL Azure DevOps] module to your scenario.
 1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
-1. In the [!UICONTROL Connection Type] field, select **[!DNL Azure DevOps]**.
+1. In the [!UICONTROL Connection Type] field, select the type of connection that you want to use.
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >The [!UICONTROL [!DNL Azure DevOps] (Request All Scopes)] connection type will be deprecated in the near future. Therefore, we do not recommend using it.
+   >The [!UICONTROL [!DNL Azure DevOps] (EntraApp)] allows you to request all scopes for the connection.
 
 1. Fill out the following fields:
 
@@ -100,7 +100,19 @@ The Azure DevOps connector uses the following:
             <td>[!UICONTROL Organization]</td>
             <td>Enter the name of the organization under which you created your [!DNL Azure DevOps] application.</td>
         </tr>
-    </table>
+        <tr>
+            <td>[!UICONTROL App ID]</td>
+            <td>Enter the ID of the DevOps application that you are connecting to.</td>
+        </tr>
+      <tr>
+            <td>[!UICONTROL Client Secret]</td>
+            <td>Enter the client secret for the DevOps applications that you are connecting to.</td>
+        </tr>
+      <tr>
+            <td>[!UICONTROL Request All Scopes]</td>
+            <td>If you are using the [!DNL Azure DevOps] (EntraApp) connection type, enable this option to request all scopes for the connection.</td>
+        </tr>
+  </table>
 
 1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
 1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.

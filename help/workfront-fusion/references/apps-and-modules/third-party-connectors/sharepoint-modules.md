@@ -94,7 +94,50 @@ You can use your [!DNL Microsoft] account to create a connection to Microsoft Sh
 
 ### Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using advanced settings
 
-To connect Microsoft SharePoint Online to [!DNL Workfront Fusion] without a [!DNL Microsoft] account, you need a Client ID, Client Secret, and Tenant ID.
+To include credentials in the connection, enable the Show advanced settings option. For this type of connection,  you need a Client ID, Client Secret, and Tenant ID.
+
+1. In any SharePoint module, click **[!UICONTROL Add]** near the Connection field to open the **[!UICONTROL Create a connection]** box.
+1. Click **[!UICONTROL Show advanced settings]**.
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
+      <td>To use client credentials, select <b>Microsoft 365 Email</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>Enter a name for the connection.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
+      <td>Enter the client ID for the SharePoint app you are connecting to. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client secret]</p> </td> 
+      <td>Enter the client secret for the SharePoint app you are connecting to.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Tenant ID]</p> </td> 
+      <td>Enter the tenant ID of the SharePoint app you are connecting to.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
+      <td> <p>Enter the address of your [!DNL ServiceNow] account without <code>https://</code> (usually <code>&lt;company>.service-now.com</code>).</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Click **Continue** to save the connection and return to the module.
+
+### Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using certiicate authorization
+
+You can use certificate authorization to connect to SharePoint.
+
+To use certificate authorization, you must first create an app in Microsoft Entra and upload the certificate there.
 
 1. Click **[!UICONTROL Add]** near the top of the **Microsoft SharePoint Online** box to open the **[!UICONTROL Create a connection]** box.
 
@@ -104,9 +147,7 @@ To connect Microsoft SharePoint Online to [!DNL Workfront Fusion] without a [!DN
 
 1. Click **[!UICONTROL Continue]**.
 1. In the sign-in window that displays, enter your credentials to log in to the app if you haven't already done so.
-1. (Conditional) If an **[!UICONTROL Allow]** button displays, click the button to connect the app to [!DNL Workfront Fusion].
-
-## Microsoft SharePoint Online modules and their fields
+1. (Conditional) If an **[!UICONTROL Allow]** button displays, click the button to connect the app to [!DNL Workfront Fusion].## Microsoft SharePoint Online modules and their fields
 
 When you configure Microsoft SharePoint Online modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional Microsoft SharePoint Online fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
