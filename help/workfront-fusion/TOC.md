@@ -11,6 +11,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2025 {#fusion-releases-2025}
         * [Workfront Fusion release activity: Week of May 5, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-5-5.md)
+        * [Workfront Fusion release activity: Week of April 28, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-28.md)
         * [Workfront Fusion release activity: Week of April 21, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-21.md)
         * [Workfront Fusion release activity: Week of April 14, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-4-14.md)
         * [Workfront Fusion release activity: Week of March 31, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-31.md)
@@ -202,7 +203,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Configure retry error handling workaround](/help/workfront-fusion/create-scenarios/config-error-handling/retry.md)
         * [Resolve errors handled by the Break directive](/help/workfront-fusion/create-scenarios/config-error-handling/resolve-error-from-break-directive.md)
     * Configure scenario settings {#configure-scenario-settings}
-        * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+        * [Configure scenario settings: article index](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
         * [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
         * [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)
         * [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)
