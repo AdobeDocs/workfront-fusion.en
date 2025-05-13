@@ -62,9 +62,11 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 >[!IMPORTANT]
 >
->Dropbox must approve applications with more than 50 users. 
->
->For more information, search for "Production approval" in the Dropbox developer guide.
+>* To use the Dropbox connector, you must first create an application in Dropbox.
+>   For more information, search for "Create an application" in the Dropbox developer guide.
+>* When creating the application, use the following redirect URI: `https://app.workfrontfusion.com/oauth/cb/dropbox`
+>* Dropbox must approve applications with more than 50 users. 
+>   For more information, search for "Production approval" in the Dropbox developer guide.
 
 ## Dropbox API information
 
