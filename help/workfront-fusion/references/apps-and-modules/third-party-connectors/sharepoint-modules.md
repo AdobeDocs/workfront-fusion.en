@@ -87,6 +87,7 @@ The SharePoint connector uses the following:
 
 * [Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using a [!DNL Microsoft] account](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using advanced settings](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
+* [Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using certificate authorization](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
 
 ### Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using a [!DNL Microsoft] account 
 
@@ -94,19 +95,111 @@ You can use your [!DNL Microsoft] account to create a connection to Microsoft Sh
 
 ### Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using advanced settings
 
-To connect Microsoft SharePoint Online to [!DNL Workfront Fusion] without a [!DNL Microsoft] account, you need a Client ID, Client Secret, and Tenant ID.
+To include credentials in the connection, enable the Show advanced settings option. For this type of connection,  you need a Client ID, Client Secret, and Tenant ID.
 
-1. Click **[!UICONTROL Add]** near the top of the **Microsoft SharePoint Online** box to open the **[!UICONTROL Create a connection]** box.
-
-1. (Optional) Change the default **[!UICONTROL Connection name]**.
+1. In any SharePoint module, click **[!UICONTROL Add]** near the Connection field to open the **[!UICONTROL Create a connection]** box.
 1. Click **[!UICONTROL Show advanced settings]**.
-1. Enter the Microsoft SharePoint Online **[!UICONTROL Client ID]** and **[!UICONTROL Client Secret]**.
+1. Fill in the following fields:
 
-1. Click **[!UICONTROL Continue]**.
-1. In the sign-in window that displays, enter your credentials to log in to the app if you haven't already done so.
-1. (Conditional) If an **[!UICONTROL Allow]** button displays, click the button to connect the app to [!DNL Workfront Fusion].
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
+      <td>To use client credentials, select <b>Microsoft 365 Email</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>Enter a name for the connection.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
+      <td>Enter the client ID for the SharePoint app you are connecting to. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client secret]</p> </td> 
+      <td>Enter the client secret for the SharePoint app you are connecting to.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Tenant ID]</p> </td> 
+      <td>Enter the tenant ID of the SharePoint app you are connecting to.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
+      <td> <p>Enter the address of your [!DNL ServiceNow] account without <code>https://</code> (usually <code>&lt;company>.service-now.com</code>).</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-## Microsoft SharePoint Online modules and their fields
+1. Click **Continue** to save the connection and return to the module.
+
+### Connect Microsoft SharePoint Online to [!DNL Workfront Fusion] using certificate authorization
+
+You can use certificate authorization to connect to SharePoint.
+
+>[!IMPORTANT]
+>
+>To use certificate authorization, you must first create an app in Microsoft Entra and upload the certificate there.
+>
+>For instructions, see [How to configure certificate authorities for Microsoft Entra certificate-based authentication](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-configure-certificate-authorities) in the Microsoft documentation.
+
+1. In any SharePoint module, click **[!UICONTROL Add]** near the Connection field to open the **[!UICONTROL Create a connection]** box.
+1. Click **[!UICONTROL Show advanced settings]**.
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection type]</p> </td> 
+      <td>To use certificate authorization, select <b>Microsoft SharePoint Online (Cert Auth)</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>Enter a name for the connection.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Client ID]</p> </td> 
+      <td>Enter the client ID for the SharePoint app you are connecting to. </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Thumbprint]</p> </td> 
+      <td>Enter the thumbprint for the SharePoint app you are connecting to.</td> 
+     </tr> 
+      <tr>
+        <td role="rowheader">[!UICONTROL Private key]</td>
+        <td>
+          <p>Enter the certificate or  private key that was generated when your credentials were created in Microsoft. </p>
+          <p>To extract your private key or certificate:</p>
+          <ol>
+            <li>
+              <p>Click <b>[!UICONTROL Extract]</b>.</p>
+            </li>
+            <li>
+            <p>Select whether you are extracting a certificate or a private key.</li>
+            <li>
+              <p>Select the type of file you are extracting.</p>
+            </li>
+            <li>
+              <p>Select the file that contains the private key or certificate.</p>
+            </li>
+            <li>
+              <p>Enter the password for the file.</p>
+            </li>
+            <li>
+              <p>Click <b>[!UICONTROL Save]</b> to extract the file and return to the connection setup.</p>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </tbody> 
+   </table>
+
+1. Click **Continue** to save the connection and return to the module.
+
+## Microsoft SharePoint modules and their fields
 
 When you configure Microsoft SharePoint Online modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional Microsoft SharePoint Online fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
