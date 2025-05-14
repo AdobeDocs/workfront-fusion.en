@@ -163,6 +163,7 @@ If you see the map button above a field or function, you can use it to set varia
 * [Create a mask](#create-a-mask)
 * [Create a new PSD](#create-a-new-psd)
 * [Edit text layers](#edit-text-layers)
+* [Edit text layers (Legacy)](#edit-text-layers-legacy)
 * [Execute Depth Blur](#execute-depth-blur)
 * [Execute Photoshop actions](#execute-photoshop-actions)
 * [Execute Photoshop actions(JSON)](#execute-photoshop-actions-json)
@@ -171,6 +172,7 @@ If you see the map button above a field or function, you can use it to set varia
 * [Make a custom API call](#make-a-custom-api-call)
 * [Remove background](#remove-background)
 * [Replace a Smart Object](#replace-a-smart-object)
+* [Replace a Smart Object (Legacy)](#replace-a-smart-object-legacy)
 * [Resize an image](#resize-an-image)
 * [Watermark an image](#watermark-an-image)
 
@@ -1167,6 +1169,8 @@ This action module identifies the main subject of your image and removes the bac
 
 This action module replaces a Smart Object within a PSD layer, and generates new renditions.
 
+This module uses Smart Object API version 2.
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1191,7 +1195,80 @@ This action module replaces a Smart Object within a PSD layer, and generates new
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advances settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each new rendition you want the module to produce, click Add item and fill in the following fields. You can have a maximum of 25 output files.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Width]</p>
+      </td>
+   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned results]</p>
+      </td>
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+    </tr>
+    </tbody>
+</table>
+
+
+
+### Replace a smart object (Legacy)
+
+This action module replaces a Smart Object within a PSD layer, and generates new renditions.
+
+This module uses the legacy version of Smart Objects.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the Smart Object is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the Smart Object. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layers]</p>
+      </td>
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
