@@ -1328,17 +1328,8 @@ This module uses the legacy version of Smart Objects.
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
       </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-    </tr>
     </tbody>
 </table>
-
-
 
 ### Resize an image
 
@@ -1371,16 +1362,23 @@ This action resizes an image, using the same aspect ratio.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Type]</p>
+    <tr>
+      <td role="rowheader">[!UICONTROL Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
       </td>
-   <td>Select the file type that you want to convert the file to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
     </tr>
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL Width]</p>
       </td>
-   <td>Enter a number that represents the width, in pixels, of the resized image. Aspect ratio will be preserved.</td> 
+   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1416,49 +1414,49 @@ This action module adds a watermark to the selected image.
       <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (Base / Input) Storage]</td>
+      <td role="rowheader">[!UICONTROL (Base > Input) Storage]</td>
       <td>
         <p>Select the file service where the file you want to add a watermark to is stored.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Base / Input) File location]</p>
+        <p>[!UICONTROL (Base > Input) File location]</p>
       </td>
    <td> Enter or map the URL or path of the file that you want to add a watermark to. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (Watermark / Input) Storage]</td>
+      <td role="rowheader">[!UICONTROL (Watermark > Input) Storage]</td>
       <td>
         <p>Select the file service where the watermark you want to add is stored.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL (Watermark / Input) Storage]</td>
+      <td role="rowheader">[!UICONTROL (Watermark > Input) Storage]</td>
       <td>
         <p>Select the file service where the watermark you want to add is stored.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Watermark / Bounds) Height]</p>
+        <p>[!UICONTROL (Watermark > Bounds) Height]</p>
       </td>
    <td>Enter or map the desired height of the watermark in pixels.</td> 
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Watermark / Bounds) Width]</p>
+        <p>[!UICONTROL (Watermark > Bounds) Width]</p>
       </td>
    <td> Enter or map the desired width of the watermark in pixels. </td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Watermark / Bounds) Left]</p>
+        <p>[!UICONTROL (Watermark > Bounds) Left]</p>
       </td>
    <td> Enter or map the distance in pixels from the left side of the image that the watermark should be.</td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Watermark / Bounds) Top]</p>
+        <p>[!UICONTROL (Watermark > Bounds) Top]</p>
       </td>
    <td> Enter or map the distance in pixels from the top of the image that the watermark should be.</td> 
     </tr>  
@@ -1491,12 +1489,5 @@ This action module adds a watermark to the selected image.
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
       </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-    </tr>
     </tbody>
 </table>
