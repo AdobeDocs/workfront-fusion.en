@@ -311,8 +311,6 @@ This action module applies a variety of document and layer level edits.
     </tbody>
 </table>
 
-
-
 ### Auto color correct an image
 
 This action module auto color corrects the specified image.
@@ -500,7 +498,106 @@ This action module returns a PNG file with a mask applied around the subject.
 
 This action module creates a new PSD with optional layers, and generates renditions or saves as a PSD.
 
-For fields related to this module, see [Create a new PSD](https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/) in the Adobe Photoshop documentation.
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Image size) Height]</p>
+      </td>
+      <td> Enter or map the height of the image in pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Image size) Width]</p>
+      </td>
+      <td> Enter or map the width of the image in pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Resolution]</p>
+      </td>
+   <td> Enter or map, in pixels per inch, the resolution for the image. This must be between 72 and 300. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Mode]</p>
+      </td>
+   <td> Select the mode for the image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Fill]</p>
+      </td>
+   <td> Select whether you want the fill for the background layer to be transparent, white, or the background color of the image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Depth]</p>
+      </td>
+   <td> Select the bit depth of the image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Layers]</p>
+      </td>
+   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Create PSD</a> in the Adobe Photoshop documentation.  </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Global font]</p>
+      </td>
+   <td> Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> For each font that the document needs, click Add item and enter the font's storage location and file location. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Manage missing fonts]</p>
+      </td>
+   <td> Select the action to take if there are one or more missing fonts in the document. <ul><li><code>fail</code>: The job will not succeed and the status will be set to failed, with the details of the error provided in the details section in the status.</li><li><code>useDefault</code>: The job will succeed, and all the missing fonts will be replaced with ArialMT.</li></ul></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each file you want to create, click Add item and enter the storage, location, and type as listed in this table.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Select the file type that you want to convert the file to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
+      <td>
+        <p><p>For details about output options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Create PSD</a> in the Adobe Photoshop documentation.  </p>
+      </td>
+    </tr>
+    </tbody>
+</table>
 
 ### Edit text layers
 
