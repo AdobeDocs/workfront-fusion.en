@@ -636,42 +636,40 @@ This action module edits text layers on a Photoshop file. You can enter separate
       </td>
     </tr>
     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Enter the font's storage location and file location. </td> 
+    </tr>
+    <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
    <td> <p>For each text layer that you want to edit, click <b>Add item</b> and enter the layer options.<p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Edit text</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Output file storage]</td>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
         <p>Select the file service where the you want the edited file to be stored.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file URL]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Enter or map the URL or path of where the edited file will be stored. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file type]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td> Select the file type for the edited file. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
-      </td>
-   <td> Select the compression level for the output file. </td> 
-    </tr>
   </tbody>
 </table>
-
-
 
 ### Edit text layers (Legacy)
 
@@ -712,6 +710,12 @@ To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
       </td>
     </tr>
     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Enter the font's storage location and file location. </td> 
+    </tr>
+    <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
    <td> <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Edit text layer</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
     <tr>
@@ -721,28 +725,28 @@ To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
       </td>
     </tr>
     <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p>
+      </td>
+    </tr>
+    <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file URL]</p>
+        <p>[!UICONTROL (Output) File location]</p>
       </td>
    <td> Enter or map the URL or path of where the edited file will be stored. </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file type]</p>
+        <p>[!UICONTROL (Output) Type]</p>
       </td>
    <td> Select the file type for the edited file. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
       </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
-      </td>
-   <td> Select the compression level for the output file. </td> 
     </tr>
   </tbody>
 </table>
@@ -791,70 +795,35 @@ This action module executes Photoshop actions using JSON commands.
    <td> Enter or map the URL or path of the file that you want to use. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Outputs file storage]</td>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each file you want to create, click Add item and enter the storage, location, type, and overwrite option as listed in this table.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
       <td>
         <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file URL]</p>
+        <p>[!UICONTROL (Outputs) File URL]</p>
       </td>
    <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file type]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> Select the file type for the edited file. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
       </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
-      </td>
-   <td> Select the compression level for the output file. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each converted file you want to create, click Add item and enter the storage, location, and type as listed in this table.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Select the file type that you want to convert the file to. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
     </tr>
       </tbody>
 </table>
