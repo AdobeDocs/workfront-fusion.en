@@ -16,44 +16,44 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
-+++**Expand to view access requirements for the functionality in this article.**
++++ Expand to view access requirements for the functionality in this article.
 
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-      <td>
-        <p>[!UICONTROL Pro] or higher</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td>
-      <td >
-        <p>[!UICONTROL Workfront Fusion for Work Automation and Integration]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Product</td>
-      <td>Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td>
+   <p>Current: No Workfront Fusion license requirement</p>
+   <p>Or</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
-
-&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -99,6 +99,12 @@ To create a connection for your [!DNL Adobe Photoshop] modules:
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Select whether you want to use a JWT connection or a server-to-server connection.</p>
+        </td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Enter a name for this connection.</p>
@@ -114,16 +120,16 @@ To create a connection for your [!DNL Adobe Photoshop] modules:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Technical account ID]</td>
-        <td>Enter your [!DNL Adobe] [!UICONTROL Technical account ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
+        <td>If you are using a JWT connection, enter your [!DNL Adobe] [!UICONTROL Technical account ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Organization ID]</td>
-        <td>Enter your [!DNL Adobe] [!UICONTROL Organization ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
+        <td>If you are using a JWT connection, enter your [!DNL Adobe] [!UICONTROL Organization ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Private key]</td>
         <td>
-          <p>Enter the private key that was generated when your credentials were created in the [!DNL Adobe Developer Console]. </p>
+          <p>If you are using a JWT connection, enter the private key that was generated when your credentials were created in the [!DNL Adobe Developer Console]. </p>
           <p>To extract your private key or certificate:</p>
           <ol>
             <li value="1">
@@ -164,9 +170,9 @@ If you see the map button above a field or function, you can use it to set varia
 * [Create a new PSD](#create-a-new-psd)
 * [Edit text layers](#edit-text-layers)
 * [Edit text layers (Legacy)](#edit-text-layers-legacy)
+* [Execute an action JSON](#execute-an-action-json)
 * [Execute Depth Blur](#execute-depth-blur)
 * [Execute Photoshop actions](#execute-photoshop-actions)
-* [Execute Photoshop actions(JSON)](#execute-photoshop-actions-json)
 * [Execute Product Crop](#execute-product-crop)
 * [Get layer info](#get-layer-info)
 * [Make a custom API call](#make-a-custom-api-call)
@@ -258,7 +264,7 @@ This action module applies a variety of document and layer level edits.
       <td role="rowheader">
         <p>[!UICONTROL (Options) Manage missing fonts]</p>
       </td>
-   <td> Select the action to take if there are one or more missing fonts in the document. <ul><li><code>fail</code>: The job will not succeed and the status will be set to failed, with the details of the error provided in the details section in the status.</li><li><code>useDefault</code>: The job will succeed, however, by default all the missing fonts will be replaced with ArialMT.</li></ul></td> 
+   <td> Select the action to take if there are one or more missing fonts in the document. <ul><li><code>fail</code>: The job will not succeed and the status will be set to failed, with the details of the error provided in the details section in the status.</li><li><code>useDefault</code>: The job will succeed, and all the missing fonts will be replaced with ArialMT.</li></ul></td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -269,7 +275,7 @@ This action module applies a variety of document and layer level edits.
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>For each converted file you want to create, click Add item and enter the storage, location, and type as listed in this table.</p>
+        <p>For each edited file you want to create, click Add item and enter the storage, location, and type as listed in this table.</p>
       </td>
     </tr>
     <tr>
@@ -298,9 +304,9 @@ This action module applies a variety of document and layer level edits.
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
+        <p>[!UICONTROL (Output) Trim to Canvas]</p>
       </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td>Select whether the renditions must be of Canvas size. True trims the renditions to Canvas size, while False makes the renditions layer Size</td> 
     </tr>
     </tbody>
 </table>
@@ -355,15 +361,8 @@ This action module auto color corrects the specified image.
         <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
       </td>
     </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-    </tr>
     </tbody>
 </table>
-
 
 ### Convert image format
 
@@ -419,20 +418,12 @@ This action module converts a file to JPEG, PNG, PSD or TIFF.
         <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
       </td>
     </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-    </tr>
     </tbody>
 </table>
 
-
-
 ### Create a mask
 
-This action module returns a PNG file with a mast applied around the subject.
+This action module returns a PNG file with a mask applied around the subject.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -494,7 +485,7 @@ This action module returns a PNG file with a mast applied around the subject.
       <td role="rowheader">
         <p>[!UICONTROL Post process]</p>
       </td>
-   <td></td> 
+   <td>Select whether to enable post processing.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -502,12 +493,6 @@ This action module returns a PNG file with a mast applied around the subject.
       </td>
    <td>Default is 4.0</td> 
     </tr> 
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-    </tr>
     </tbody>
 </table>
 
@@ -515,7 +500,7 @@ This action module returns a PNG file with a mast applied around the subject.
 
 This action module creates a new PSD with optional layers, and generates renditions or saves as a PSD.
 
-For fields related to this module, see [Create a new PSD](https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/documentCreate) in the Adobe Photoshop documentation.
+For fields related to this module, see [Create a new PSD](https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/) in the Adobe Photoshop documentation.
 
 ### Edit text layers
 
@@ -666,7 +651,7 @@ To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
 </table>
 
 
-### Execute Photoshop actions (JSON)
+### Execute an action JSON
 
 This action module executes Photoshop actions using JSON commands.
 
