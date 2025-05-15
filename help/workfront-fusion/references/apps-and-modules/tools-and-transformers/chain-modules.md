@@ -62,17 +62,47 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 This module is the trigger module in the child scenario, and is triggered by the Add ChainCaller module in the parent scenario. It receives data from the parent scenario, which can be processed in the child scenario.
 
+To configure the Add Receiver module:
+
+1. (Optional) To use an existing data structure, in the Data structure field, select the data structure that will be used for the scenario's input data. 
+1. (Optional) To create a new data structure to use as the scenario's input data, click **Add** next to the Data structure field and create the data structure.
+
+   For instructions on creating a data structure, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+
+1. Click **OK** to save the module.
+
 ### Actions
 
 #### Add ChainCaller
 
 This module is located in the parent scenario. The fields reflect the data structure set in the Add Receiver module in the child scenario.
 
-Can create child scenario here by clicking Add and setting the input data structure (Receiver) and output data structure (Respond). Can create data structure when creating child scenario.
+>[!NOTE]
+>
+>* You can select an existing child scenario, or create a new one through this module.
+>* You can create the data structure when creating child scenario.
+
+To configure the Add ChainCaller module
+
+1. Add the Add ChainCaller module to your scenario.
+1. (Optional) To use an existing scenario, in the Chain field, select the child scenario that you want to call.
+1. (Optional) To use a new scenario, click Add next to the Chain field. For instructions on configuring the child scenario, see []().
+
+   The fields configured in the trigger module of the child scenario appear in the Add ChainCaller module.
+
+1. Enter or map the information to be passed to the child scenario into the Add ChainCaller module.
+1. Click **OK** to save the module.
 
 #### Add Respond
 
 This is in the child scenario, and sends data in the selected structure to the parent scenario. You can map this data in later modules in the parent scenario.
 
+To configure the Add Responder module:
 
+1. (Optional) To use an existing data structure, in the Data structure field, select the data structure that will be used for the scenario's input data. 
+1. (Optional) To create a new data structure to use as the scenario's input data, click **Add** next to the Data structure field and create the data structure.
+
+   For instructions on creating a data structure, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+
+1. Click **OK** to save the module.
 
