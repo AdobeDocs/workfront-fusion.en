@@ -93,6 +93,10 @@ To configure the Add ChainCaller module
 1. Enter or map the information to be passed to the child scenario into the Add ChainCaller module.
 1. Click **OK** to save the module.
 
+>[!NOTE]
+>
+>If you create a new child scenario for this module, the child scenario opens in a separate browser window, allowing you to see and configure both the parent and child scenarios at the same time.
+
 #### Add Respond
 
 This is in the child scenario, and sends data in the selected structure to the parent scenario. You can map this data in later modules in the parent scenario.
