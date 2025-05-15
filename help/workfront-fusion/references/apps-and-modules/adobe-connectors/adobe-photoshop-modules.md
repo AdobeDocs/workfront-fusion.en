@@ -853,40 +853,34 @@ This action module executes Depth Blur on the selected file.
    <td> Enter or map the URL or path of the file that you want to edit. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Output file storage]</td>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
       <td>
-        <p>Select the file service where the you want the edited file to be stored.</p>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file URL]</p>
+        <p>[!UICONTROL (Outputs) File URL]</p>
       </td>
-   <td> Enter or map the URL or path of where the edited file will be stored. </td> 
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file type]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> Select the file type for the edited file. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Other fields]</td>
-      <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Photoshop/operation/depthBlur">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
-   <td> Select the compression level for the output file. </td> 
     </tr>
   </tbody>
 </table>
@@ -946,34 +940,34 @@ This action module executes a Photoshop action on the selected image.
    <td> Enter or map the URL or path of the file that you want to use. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Output file storage]</td>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
       <td>
-        <p>Select the file service where the you want the edited file to be stored.</p>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file URL]</p>
+        <p>[!UICONTROL (Outputs) File URL]</p>
       </td>
-   <td> Enter or map the URL or path of where the edited file will be stored. </td> 
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file type]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> Select the file type for the edited file. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
-   <td> Select the compression level for the output file. </td> 
     </tr>
   </tbody>
 </table>
@@ -1021,34 +1015,34 @@ This action module executes Product Crop on the selected image.
    <td> Enter or map amount of height padding you want to add. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Output file storage]</td>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
       <td>
-        <p>Select the file service where the you want the edited file to be stored.</p>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file URL]</p>
+        <p>[!UICONTROL (Outputs) File URL]</p>
       </td>
-   <td> Enter or map the URL or path of where the edited file will be stored. </td> 
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Output file type]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
    <td> Select the file type for the edited file. </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
       <td>
         <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
       </td>
     </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Compression]</p>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
-   <td> Select the compression level for the output file. </td> 
     </tr>
   </tbody>
 </table>
@@ -1081,7 +1075,7 @@ This action module retrieves layer information from the specified PSD file.
       <td role="rowheader">
         <p>[!UICONTROL Thumbnails]</p>
       </td>
-   <td> </td> 
+   <td> Select the type of file that you want the thumbnails to be. Thumbnails are small previews for any renderable layer.</td> 
     </tr>
   </tbody>
 </table>
@@ -1197,7 +1191,7 @@ This action module identifies the main subject of your image and removes the bac
       <td role="rowheader">
         <p>[!UICONTROL Post process]</p>
       </td>
-   <td></td> 
+   <td>Select whether to enable post processing.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1205,16 +1199,8 @@ This action module identifies the main subject of your image and removes the bac
       </td>
    <td>Default is 4.0</td> 
     </tr> 
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-    </tr>
     </tbody>
 </table>
-
-
 
 ### Replace a smart object
 
@@ -1249,6 +1235,12 @@ This module uses Smart Object API version 2.
    <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
     </tr>
     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resize image during place]</p>
+      </td>
+   <td> Select whether you want to resize the image.</td> 
+    </tr>
+    <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
         <p>For each new rendition you want the module to produce, click Add item and fill in the following fields. You can have a maximum of 25 output files.</p>
@@ -1268,26 +1260,12 @@ This module uses Smart Object API version 2.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Output) Width]</p>
+        <p>[!UICONTROL (Outputs) Type]</p>
       </td>
-   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
+   <td> Select the file type for the edited file. </td> 
     </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned results]</p>
-      </td>
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-    </tr>
-    </tbody>
+     </tbody>
 </table>
-
-
 
 ### Replace a smart object (Legacy)
 
