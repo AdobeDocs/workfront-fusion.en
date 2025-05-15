@@ -235,7 +235,7 @@ This module works with the Firefly API V3 Async. The previous version of this mo
 
 This module has been deprecated and will be removed in the near future. Use the Fill an image module instead.
 
-## Generate an image
+### Generate an image
 
 This action module generates and image based on a prompt you provide. You can also provide an optional reference image, and the generated image will match the style of the reference image.
 
@@ -252,6 +252,10 @@ This module works with the Firefly API V3 Async. The previous version of this mo
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
    <td>Enter or map a prompt for the image you want to generate. More detail in the prompt will allow you more control over what appears in the image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Select the Firefly model version that you want to use to generate the image.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
@@ -382,6 +386,10 @@ This action module generates images similar to the source image you specify.
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
    <td>Enter a number between 1-4. The module will generate this number of image variations.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Model version]</td> 
+   <td>Select the Firefly model version that you want to use to generate the images.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generated image format]</td> 
