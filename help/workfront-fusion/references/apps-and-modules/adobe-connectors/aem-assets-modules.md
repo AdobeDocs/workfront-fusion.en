@@ -126,7 +126,7 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
               <tr>
                   <td role="rowheader">[!UICONTROL Connection name]</td>
                   <td>
-                      <p>Enter a name for this connection</p>
+                      <p>Enter a name for this connection.</p>
                   </td>
               </tr>
               <tr>
@@ -182,7 +182,7 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
             <tr>
                 <td role="rowheader">[!UICONTROL Connection name]</td>
                 <td>
-                    <p>Enter a name for this connection</p>
+                    <p>Enter a name for this connection.</p>
                 </td>
             </tr>
             <tr>

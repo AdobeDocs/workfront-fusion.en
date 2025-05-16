@@ -16,6 +16,8 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
@@ -23,35 +25,37 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ## Prerequisites
 
@@ -85,7 +89,15 @@ To create a connection for your [!DNL DocuSign] modules:
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Enter a name for the new [!DNL DocuSign] connection</td> 
+      <td>Enter a name for the new [!DNL DocuSign] connection.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td>Select whether you are connecting to a production on non-production environment.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td>Select whether you are connecting to a service account or a personal account.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Account type]</td> 
@@ -94,7 +106,7 @@ To create a connection for your [!DNL DocuSign] modules:
     </tbody> 
    </table>
 
-1. Continue as described in [Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md#connect).
+1. Click **Continue** to save the connection and return to the module.
 
 ## [!DNL DocuSign] modules and their fields
 
@@ -119,7 +131,7 @@ This trigger module starts a scenario when an envelope is sent, delivered, signe
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connect Docusign to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Account] </td> 
@@ -137,7 +149,7 @@ This trigger module starts a scenario when an envelope is sent, delivered, signe
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Output fields]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Outputs]</p> </td> 
    <td> <p>Select the fields that you want to include in the module output.</p> </td> 
   </tr> 
   <tr> 
@@ -149,15 +161,156 @@ This trigger module starts a scenario when an envelope is sent, delivered, signe
 
 ### Actions 
 
+* [[!UICONTROL Add a custom field]](#add-a-custom-field)
+* [[!UICONTROL Add Recipient to Envelope]](#add-recipient-to-envelope)
+* [[!UICONTROL Create a new envelope]](#create-a-new-envelope)
 * [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Download a document]](#download-a-document)
-* [[!UICONTROL Read an envelope]](#read-an-envelope)
-* [[!UICONTROL Upload a file to an envelope]](#upload-a-file-to-an-envelope)
-* [[!UICONTROL Create a new envelope]](#create-a-new-envelope)
-* [[!UICONTROL Add Recipient to Envelope]](#add-recipient-to-envelope)
-* [[!UICONTROL Add custom field]](#add-custom-field)
 * [[!UICONTROL Modify custom field]](#modify-custom-field)
+* [[!UICONTROL Read an envelope]](#read-an-envelope)
 * [[!UICONTROL Send envelope]](#send-envelope)
+* [[!UICONTROL Upload a file to an envelope]](#upload-a-file-to-an-envelope)
+
+#### [!UICONTROL Add a custom field]
+
+This action module adds a custom field to the document
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connect [!DNL DocuSign] to [!DNL Workfront Fusion]</a> in this article.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account] </td> 
+   <td> <p>Select the account that contains the document where you want to add a custom field.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Envelope ID]</td> 
+   <td> <p> Enter or map the ID of the envelope that contains the document where you want to add a custom field.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Field name]</td> 
+   <td>Enter or map a name for the new field that you want to add.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Required]</td> 
+   <td>Enable this option if you want the added field to be a required field.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Show field]</td> 
+   <td>Enable this option if you want the field to be visible.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Value]</td> 
+   <td>Enter or map the value (contents) of the added field. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Add Recipient to Envelope]
+
+This action module adds one or more recipients to an existing envelope. If the envelope has already been sent, the recipient is sent an email. This module is not valid for envelopes that have already been completed.
+
+<table style="table-layout:auto">
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr data-mc-conditions=""> 
+    <td>[!UICONTROL Connection] </td>
+   <td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions="">
+    <td>[!UICONTROL Account] </td>
+   <td> <p>Select the account that contains the envelope where you want add recipients.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Envelope ID]</td>
+    <td>Select the or map the ID of the envelope where you want to add the recipient.</td>
+  </tr> 
+  <tr data-mc-conditions="">
+    <td role="rowheader">[!UICONTROL Recipient type]</td>
+   <td> <p> Select the type of recipient that you want to add to the envelope.</p> 
+    <ul> 
+     <li> <p>[!UICONTROL Agent]</p> </li> 
+     <li> <p>[!UICONTROL Carbon copy]</p> </li> 
+     <li> <p>[!UICONTROL Certified delivery]</p> </li> 
+     <li> <p>[!UICONTROL In-person signer]</p> </li> 
+     <li> <p>[!UICONTROL Intermediary]</p> </li> 
+     <li> <p>[!UICONTROL Signer]</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Email]</td>
+   <td> <p>Enter or map the email address of the recipient you want to add to the envelope.</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[!UICONTROL Name]</td>
+   <td>Enter or map the name of the recipient you want to add to the envelope.</td> 
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Routing order]</td>
+   <td> <p>Enter or map the routing number for the recipient. Routing number determines the order in which recipients receive and sign your documents.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Email body]</td>
+   <td>Enter or map the body (content) of the email is sent to the recipent.</td> 
+  </tr> 
+  <tr>
+    <td role="rowheader">[!UICONTROL Email subject]</td>
+   <td>Enter or map the subject of the email that is sent to the recipient.</td> 
+  </tr> 
+    <td role="rowheader">[!UICONTROL Private message]</td>
+   <td> <li> <p>Only the selected recipient sees the private message, as well as the general message. The private message is limited to 1000 characters.</p> </li> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Authentication]</td> 
+   <td> <p>Select the authentication method that you want to use to confirm the recipient's identity.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL None]</strong> </p> </li> 
+     <li> <p><strong>[!UICONTROL Access code]</strong> </p> <p>Enter or map the access code.</p> </li> 
+     <li> <p><strong>[!UICONTROL Phone]</strong> </p> <p>Enter or map the phone number</p> </li> 
+     <li> <p><strong>[!UICONTROL SMS]</strong> </p> <p>Enter or map the phone number</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Create a new envelope]
+
+This action module creates a new envelope from a template. It returns the new envelope's ID, as well as the status of the new envelope.
+
+<table style="table-layout:auto">
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td>
+
+<td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see the articles under <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Account] </td>
+   <td> <p>Select the account that contains the envelope where you want to upload a file.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Template]</td>
+   <td> <p> Select the template that you want to create the new envelope from. Templates are available based on the [!UICONTROL Account] you selected.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL After creation]
+   </td> 
+   <td> <p>Select whether you want to save the envelope as a draft or send it for signing.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader" >[!UICONTROL Template recipients]</td>
+    <td>Select the recipient of this envelope</td>
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call] 
 
@@ -282,201 +435,6 @@ This action module downloads a single document.
  </tbody> 
 </table>
 
-#### [!UICONTROL Read an envelope]
-
-This action module reads information about an envelope in [!DNL DocuSign] using the envelope ID.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connect [!DNL DocuSign] to [!DNL Workfront Fusion]</a> in this article.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Account] </td> 
-   <td> <p>Select the account that contains the document you want to read information from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Envelope ID]</td> 
-   <td> <p> Enter or map the ID contains the document you want to read information from.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the properties that you want to appear in the module's output. </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Upload a file to an envelope]
-
-This module uploads a specified file to an existing envelope in DocuSign.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connect [!DNL DocuSign] to [!DNL Workfront Fusion]</a> in this article.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Account] </td> 
-   <td> <p>Select the account that contains the envelope where you want to upload a file.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Envelope ID]</td> 
-   <td> <p> Enter or map the ID of the envelope where you want to upload a file.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>Select a source file from a previous module, or enter the source file's name and data.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Create a new envelope]
-
-This action module creates a new envelope from a template. It returns the new envelope's ID, as well as the status of the new envelope.
-
-<table style="table-layout:auto">
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Connection] </td>
-
-<td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see the articles under <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Account] </td>
-   <td> <p>Select the account that contains the envelope where you want to upload a file.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Template]</td>
-   <td> <p> Select the template that you want to create the new envelope from. Templates are available based on the [!UICONTROL Account] you selected.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">
-     [!UICONTROL After creation]
-   </td> 
-   <td> <p>Select whether you want to save the envelope as a draft or send it for signing.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader" >[!UICONTROL Template recipients]</td>
-    <td>Select the recipient of this envelope</td>
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add Recipient to Envelope]
-
-This action module adds one or more recipients to an existing envelope. If the envelope has already been sent, the recipient is sent an email. This module is not valid for envelopes that have already been completed.
-
-<table style="table-layout:auto">
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr data-mc-conditions=""> 
-    <td>[!UICONTROL Connection] </td>
-   <td> <p>For instructions about connecting your DocuSign account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions="">
-    <td>[!UICONTROL Account] </td>
-   <td> <p>Select the account that contains the envelope where you want add recipients.</p> </td> 
-  </tr> 
-  <tr> 
-    <td>[!UICONTROL Envelope ID]</td>
-    <td>Select the or map the ID of the envelope where you want to add the recipient.</td>
-  </tr> 
-  <tr data-mc-conditions="">
-    <td role="rowheader">[!UICONTROL Recipient type]</td>
-   <td> <p> Select the type of recipient that you want to add to the envelope.</p> 
-    <ul> 
-     <li> <p>[!UICONTROL Agent]</p> </li> 
-     <li> <p>[!UICONTROL Carbon copy]</p> </li> 
-     <li> <p>[!UICONTROL Certified delivery]</p> </li> 
-     <li> <p>[!UICONTROL In-person signer]</p> </li> 
-     <li> <p>[!UICONTROL Intermediary]</p> </li> 
-     <li> <p>[!UICONTROL Signer]</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-    <td>[!UICONTROL Email]</td>
-   <td> <p>Enter or map the email address of the recipient you want to add to the envelope.</p> </td> 
-  </tr> 
-  <tr> 
-    <td>[!UICONTROL Name]</td>
-   <td>Enter or map the name of the recipient you want to add to the envelope.</td> 
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Routing order]</td>
-   <td> <p>Enter or map the routing number for the recipient. Routing number determines the order in which recipients receive and sign your documents.</p> </td> 
-  </tr> 
-  <tr> 
-    <td role="rowheader">[!UICONTROL Email body]</td>
-   <td>Enter or map the body (content) of the email is sent to the recipent.</td> 
-  </tr> 
-  <tr>
-    <td role="rowheader">[!UICONTROL Email subject]</td>
-   <td>Enter or map the subject of the email that is sent to the recipient.</td> 
-  </tr> 
-    <td role="rowheader">[!UICONTROL Private message]</td>
-   <td> <li> <p>Only the selected recipient sees the private message, as well as the general message. The private message is limited to 1000 characters.</p> </li> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Authentication]</td> 
-   <td> <p>Select the authentication method that you want to use to confirm the recipient's identity.</p> 
-    <ul> 
-     <li> <p><strong>[!UICONTROL None]</strong> </p> </li> 
-     <li> <p><strong>[!UICONTROL Access code]</strong> </p> <p>Enter or map the access code.</p> </li> 
-     <li> <p><strong>[!UICONTROL Phone]</strong> </p> <p>Enter or map the phone number</p> </li> 
-     <li> <p><strong>[!UICONTROL SMS]</strong> </p> <p>Enter or map the phone number</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add custom field]
-
-This action module adds a custom field to the document
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connect [!DNL DocuSign] to [!DNL Workfront Fusion]</a> in this article.</p> </td>
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Account] </td> 
-   <td> <p>Select the account that contains the document where you want to add a custom field.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Envelope ID]</td> 
-   <td> <p> Enter or map the ID of the envelope that contains the document where you want to add a custom field.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Field name]</td> 
-   <td>Enter or map a name for the new field that you want to add.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Required]</td> 
-   <td>Enable this option if you want the added field to be a required field.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Show field]</td> 
-   <td>Enable this option if you want the field to be visible.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Value]</td> 
-   <td>Enter or map the value (contents) of the added field. </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Modify custom field]
 
 This action module modifies a custom field using the field name.
@@ -520,6 +478,33 @@ This action module modifies a custom field using the field name.
  </tbody> 
 </table>
 
+#### [!UICONTROL Read an envelope]
+
+This action module reads information about an envelope in [!DNL DocuSign] using the envelope ID.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connect [!DNL DocuSign] to [!DNL Workfront Fusion]</a> in this article.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account] </td> 
+   <td> <p>Select the account that contains the document you want to read information from.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Envelope ID]</td> 
+   <td> <p> Enter or map the ID contains the document you want to read information from.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td>Select the properties that you want to appear in the module's output. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### [!UICONTROL Send envelope]
 
 This action module sends a draft envelope to its recipients.
@@ -539,6 +524,33 @@ This action module sends a draft envelope to its recipients.
   <tr> 
    <td role="rowheader">[!UICONTROL Envelope ID]</td> 
    <td> <p> Enter or map the ID of the draft envelope that you want to send to its recipients.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Upload a file to an envelope]
+
+This module uploads a specified file to an existing envelope in DocuSign.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL DocuSign] account to [!DNL Workfront Fusion], see <a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">Connect [!DNL DocuSign] to [!DNL Workfront Fusion]</a> in this article.</p> </td>
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account] </td> 
+   <td> <p>Select the account that contains the envelope where you want to upload a file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Envelope ID]</td> 
+   <td> <p> Enter or map the ID of the envelope where you want to upload a file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td>Select a source file from a previous module, or enter the source file's name and data.</td> 
   </tr> 
  </tbody> 
 </table>

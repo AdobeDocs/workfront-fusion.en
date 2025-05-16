@@ -245,7 +245,7 @@ To acquire a private key for your [!DNL Workfront Fusion Jira] connection, you n
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td> <p>Enter a name for the connection</p> </td> 
+      <td> <p>Enter a name for the connection.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 

@@ -95,22 +95,3 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Enter a name for the new [!DNL DocuSign] connection</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>Select whether you the account you want to connect to is a production account or a demo account.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-   

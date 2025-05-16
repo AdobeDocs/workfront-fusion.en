@@ -95,7 +95,7 @@ You can create a connection to your [!DNL Workfront Proof] account directly from
                 <td role="rowheader">
                     <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
-                <td>Enter a name for the connection</td>
+                <td>Enter a name for the connection.</td>
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Environment]</td>

@@ -98,7 +98,7 @@ The Workday connector uses the following:
                 <td role="rowheader">
                     <p role="rowheader">[!UICONTROL Connection name]</p>
                 </td>
-                <td>Enter a name for the connection</td>
+                <td>Enter a name for the connection.</td>
             </tr>
             <tr>
                 <td  role="rowheader">[!UICONTROL Workday host]</td>
