@@ -398,7 +398,7 @@ This action module allows you to perform a custom API call.
   </tr> 
   <tr> 
    <td>[!UICONTROL URL]</td> 
-   <td> <p>Type the address on the web server that you want the module to interact with.</p> <p>You can type a relative URL, which means that you don't have to include the protocol (such as <code>http://</code>) at the beginning. This suggests to the web server that the interaction is occurring on the server.</p> <p>For example: <code>[!DNL /api/conversations].create</code></p>  </td> 
+   <td> <p>Enter or map a path relative to <code>https://&lt;BASE_URI>/v2/accounts/&lt;ACCOUNT_ID>.</code></p>  </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
@@ -426,31 +426,33 @@ This action module allows you to perform a custom API call.
  </tbody> 
 </table>
 
->[!INFO]
->
->**Example:** List Envelopes
->
->The following API call returns envelopes from the specified date in your [!DNL DocuSign] account:
->
->**URL**: `/v2.1/accounts/{accountId}/envelopes/`
->
->**Method**: `GET`
->
->**Query String**:
->
->* **Key**: `from_date`
->
->* **Value**: `YYYY-MM-DD`
->
->Specifies when the request begins checking for status changes for envelopes in the account.
->
->![Example Docusign setup](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
->
->The result can be found in the module's Output under Bundle > Body > envelopes.
->
->In our example, 6 envelopes were returned:
->
->![Example docusign output](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+>[!BEGINSHADEBOX]
+
+**Example:** List Envelopes
+
+The following API call returns envelopes from the specified date in your [!DNL DocuSign] account:
+
+**URL**: `/v2.1/accounts/{accountId}/envelopes/`
+
+**Method**: `GET`
+
+**Query String**:
+
+* **Key**: `from_date`
+
+* **Value**: `YYYY-MM-DD`
+
+Specifies when the request begins checking for status changes for envelopes in the account.
+
+![Example Docusign setup](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
+
+The result can be found in the module's Output under Bundle > Body > envelopes.
+
+In our example, 6 envelopes were returned:
+
+![Example docusign output](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Download a document]
 
