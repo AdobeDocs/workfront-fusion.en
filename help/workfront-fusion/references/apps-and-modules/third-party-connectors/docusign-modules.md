@@ -256,14 +256,14 @@ This action module adds one or more recipients to an existing envelope. If the e
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Email body]</td>
-   <td>Enter or map the body (content) of the email is sent to the recipent.</td> 
+   <td>Enter or map the body (content) of the email that is sent to the recipent.</td> 
   </tr> 
   <tr>
     <td role="rowheader">[!UICONTROL Email subject]</td>
    <td>Enter or map the subject of the email that is sent to the recipient.</td> 
   </tr> 
     <td role="rowheader">[!UICONTROL Private message]</td>
-   <td> <li> <p>Only the selected recipient sees the private message, as well as the general message. The private message is limited to 1000 characters.</p> </li> </td> 
+   <td> If you want to send a private message to the recipient, enter or map the text of the message. <p>Only the selected recipient sees the private message, as well as the general message. The private message is limited to 1000 characters.</p>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Authentication]</td> 
@@ -271,8 +271,8 @@ This action module adds one or more recipients to an existing envelope. If the e
     <ul> 
      <li> <p><strong>[!UICONTROL None]</strong> </p> </li> 
      <li> <p><strong>[!UICONTROL Access code]</strong> </p> <p>Enter or map the access code.</p> </li> 
-     <li> <p><strong>[!UICONTROL Phone]</strong> </p> <p>Enter or map the phone number</p> </li> 
-     <li> <p><strong>[!UICONTROL SMS]</strong> </p> <p>Enter or map the phone number</p> </li> 
+     <li> <p><strong>[!UICONTROL Phone]</strong> </p> <p>Enter or map the phone number.</p> </li> 
+     <li> <p><strong>[!UICONTROL SMS]</strong> </p> <p>Enter or map the phone number.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -307,7 +307,75 @@ This action module creates a new envelope from a template. It returns the new en
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL Template recipients]</td>
-    <td>Select the recipient of this envelope</td>
+    <td>For each recipient that you want to add to this envelope, click <b>Add item</b> and enter the following details:
+    <ul>
+    <li><b>Access code</b><p>Enter or map the code that the recipient uses to access the envelope.<p></li>
+    <li><b>Email</b><p>Enter or map the email address of the recipient.<p></li>
+    <li><b>Name</b><p>Enter or map the name of the recipient.<p></li>
+    <li><b>Role name</b><p>Enter or map the role name of the recipient.<p></li>
+    <li><b>Routing order</b><p>Enter or map the routing number for the recipient. Routing number determines the order in which recipients receive and sign your documents.<p></li>
+    </ul>
+    </td>
+    </tr>
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Allow Print and Sign]
+   </td> 
+   <td> <p>Enable this option to allow the recipient to print the document and sign the paper.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Allow Reassign]
+   </td> 
+   <td> <p>Enable this option if you want the recipient to be able to reassign the documents to another user.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Allow Recipient Recursion]
+   </td> 
+   <td> <p>Enable this option to allow recipient recursion.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Authoritative copy]
+   </td> 
+   <td> <p>Enable this option to mark the documents in this envelope as authoritative copies.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Auto Navigation]
+   </td> 
+   <td> <p>Enable this option to set auto navigation for the recipient.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Brand ID]
+   </td> 
+   <td> <p>Enter or map the ID of the brand.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Markup Enabled]
+   </td> 
+   <td> <p>Enable this option to enable Document Markup.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Expire Enabled]
+   </td> 
+   <td> <p>Enable this option to set an expiration for this envelope. If you enable this option, fill in the following fields:<ul><li><b>Expire After</b><p>Enter or map the number of days after which this envelope expires.</p></li><li><b>Expire Warning</b><p>Enter or map the number of days before expiration that a reminder email is sent to the recipient.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Body]
+   </td> 
+   <td> <p>Enter or map the body (content) of the email that accompanies this envelope.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">
+     [!UICONTROL Subject]
+   </td> 
+   <td> <p>Enter or map the subject of the email that accompanies this envelope.</p> </td> 
   </tr> 
  </tbody> 
 </table>
