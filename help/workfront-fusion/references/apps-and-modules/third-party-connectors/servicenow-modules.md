@@ -92,7 +92,7 @@ To create a connection for your [!DNL ServiceNow] modules:
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>Enter a name for the new [!DNL ServiceNow] connection</td> 
+      <td>Enter a name for the new [!DNL ServiceNow] connection.</td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
