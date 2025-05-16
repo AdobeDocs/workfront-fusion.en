@@ -480,15 +480,15 @@ This action module downloads a single document.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Certificate]</td> 
-   <td>Select <strong>[!UICONTROL Yes]</strong> if you want to include the envelope signing certificate in the download.</td> 
+   <td>Enable this option to include the envelope signing certificate in the download.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Documents by User ID]</td> 
-   <td>Select <strong>[!UICONTROL Yes]</strong> if you want to allow recipients to retrieve documents by User ID. For example, if a user is included in two different routing orders with different visibilities, using this option returns all of the documents from both routings.</td> 
+   <td>Enable this option to allow recipients to retrieve documents by User ID. For example, if a user is included in two different routing orders with different visibilities, using this option returns all of the documents from both routings.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Encrypt]</td> 
-   <td>Select <strong>[!UICONTROL Yes]</strong> if you want the PDF bytes returned in the response to be encrypted for all the key managers configured on your [!DNL DocuSign] account.</td> 
+   <td>Enable this option if you want the PDF bytes returned in the response to be encrypted for all the key managers configured on your [!DNL DocuSign] account.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Language]</td> 
@@ -496,11 +496,11 @@ This action module downloads a single document.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Show Changes]</td> 
-   <td>When set to <strong>[!UICONTROL Yes]</strong>, any changed fields for the returned PDF are highlighted in yellow and optional signatures or initials are outlined in red.</td> 
+   <td>Enable this option to highlight any changed fields for the returned PDF are highlighted in yellow, and outline optional signatures or initials in red.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Watermark]</td> 
-   <td> <p>Select <strong>[!UICONTROL No]</strong> to remove the watermark from the PDF documents.</p> </td> 
+   <td> <p>Enable this option to enable the watermark feature. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -566,7 +566,7 @@ This action module reads information about an envelope in [!DNL DocuSign] using 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Envelope ID]</td> 
-   <td> <p> Enter or map the ID contains the document you want to read information from.</p> </td> 
+   <td> <p> Enter or map the ID of the envelope that contains the document you want to read information from.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
