@@ -52,5 +52,32 @@ For information on data structures, see [Data structures](/help/workfront-fusion
 
 ### Error handling
 
-If the child scenario errors out, that may affect getting data back to your parent 
+If the child scenario errors out, that may affect getting data back to your parent. 
+
+We recommend configuring error handling in the child scenario to ensure that if something goes wrong in the child scenario, the parent scenario is not stuck waiting for the response from the child scenario.
+
+## Best Practices
+
+### Avoid recursion when chaining scenarios
+
+Recursion occurs when a scenario triggers a new execution of itself, which triggers a new execution, and so on in an infinite loop.
+
+Recursion can cause performance issues for both the organization that owns the recursive scenario, and to other organizations.
+
+When chaining scenarios, follow these practices to avoid recursion:
+
+* Ensure that **child scenarios cannot trigger the parent scenario**. For example, if a parent scenario is triggered when a request is created, ensure that the child scenarios do not create requests.
+* Ensure that **child scenarios do not call each other**. For example, If child scenario A calls child scenario B, ensure that child scenario B does not call child scenario A.
+* Ensure that **a scenario cannot call itself**. For example, a scenario is triggered when a task is created, and that scenario creates two tasks. The newly created tasks both trigger the scenario again, which create four new tasks. Every time a task is created, the scenario is triggered, and every time the scenario runs, the number of tasks doubles. The number of tasks grows exponentially.
+
+>[!IMPORTANT]
+>
+>* **When a scenario is causing recursion, it is deactivated by the Fusion engineering team to prevent further performance issues.**
+>* Because recursion is a result of scenario design, you must design your scenarios in a way that ensures that the scenario does not include actions that trigger the scenario.
+
+### Use error handling to ensure a response
+
+Because the parent scenario is waiting for a response from the child scenario before it can continue, you must ensure that the child scenario is built so that it will provide a response even if it encounters an error.
+
+We recommend the following when configuring error handling for a child scenario.
 

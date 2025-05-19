@@ -95,6 +95,11 @@ When a new incomplete execution is stored, you can resolve it as follows:
 1. Open the affected scenario. 
 1. Click the **[!UICONTROL Incomplete Executions]** tab.
 1. Locate the incomplete execution you would like to resolve, and click **[!UICONTROL Details]**.
+1. Open the module's log where all the module's operations are shown.
+1. Locate the failed operation and click **[!UICONTROL Resolve]**:
+
+   ![Resolve button](assets/resolve-btn-350x188.png)
+
 
 
 ## Resolve incomplete executions from the History tab
@@ -130,6 +135,20 @@ If an error occurs on the first module in the scenario, the execution stops imme
 
 If an error occurs on any other module and there is no error handler route attached, one of the following occurs:
 
-* If the error type is `ConnectionError`, `RateLimitError`, `OutOfSpaceError` or `ModuleTimeoutError`, an incomplete execution record with auto-retry is stored.
-* If the error type is `DataError`, `InvalidConfigurationError`, `InvalidAccessTokenError`, `UnexpectedError`, `MaxFileSizeExceededError`, or `MaxResultsExceededError`, an incomplete execution record without auto-retry is stored.
+* An incomplete execution record with auto-retry is stored for the following error types:
+
+   * `ConnectionError`
+   * `RateLimitError`
+   * `OutOfSpaceError`
+   * `ModuleTimeoutError`
+
+* An incomplete execution record without auto-retry is stored for the following error types:
+
+   * `DataError`
+   * `InvalidConfigurationError`
+   * `InvalidAccessTokenError`
+   * `UnexpectedError`
+   * `MaxFileSizeExceededError`
+   * `MaxResultsExceededError`
+   
 * If the error type is anything other than the above, the execution fails.
