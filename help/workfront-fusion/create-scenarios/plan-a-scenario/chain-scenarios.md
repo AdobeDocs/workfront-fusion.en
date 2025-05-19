@@ -50,3 +50,7 @@ For information on data structures, see [Data structures](/help/workfront-fusion
 
 ## Errors and incomplete executions
 
+### Error handling
+
+If the child scenario errors out, that may affect getting data back to your parent 
+
