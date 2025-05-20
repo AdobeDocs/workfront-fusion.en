@@ -99,6 +99,8 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
    >The scenario history displays a **Processing** badge next to scenarios that have recently executed, while the execution details are written to storage. Processing occurs immediately after the scenario executes. and should last no more than a few minutes. Details of the scenario execution may not be visible while the execution is processing.
    
 1. To view details for a specific scenario execution, click **Details** in the far right. The [!UICONTROL details] link is visible only if the execution has details available.
+
+   For more information on viewing scenario execution details, see [View a specific scenario execution](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
 1. To view events, toggle **Show events** on.
 
 
