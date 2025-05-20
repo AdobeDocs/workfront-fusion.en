@@ -227,7 +227,7 @@ This action module retrieves metadata from a catalog in Adobe Lightroom. A catal
 
 ### Assets
 
-* [Create an asset original file](#create-an-asset-external-xmp-develop-setting-file)
+* [Create an asset original file](#create-an-asset-original-file)
 * [Create an asset](#create-an-asset)
 * [Create an asset external XMP develop setting file](#create-an-asset-external-xmp-develop-setting-file)
 * [Generate renditions for an original file](#generate-renditions-for-an-original-file)
@@ -240,6 +240,7 @@ This action module retrieves metadata from a catalog in Adobe Lightroom. A catal
 
 This action module creates and uploads an original file for an asset.
 
+<!--BECKY START HERE-->
 
 <table style="table-layout:auto"> 
   <col/>
