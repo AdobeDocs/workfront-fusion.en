@@ -64,7 +64,18 @@ You can view an execution from the scenario's scenario history.
     ![history tab](assets/history-tab.png)
 
 
-1. To view details for a specific scenario execution, click **Details** in the far right. The [!UICONTROL details] link is visible only if the execution has details available.
+1. Locate the execution you want to view, and click **Details** in the far right on the line for that execution. The [!UICONTROL details] link is visible only if the execution has details available.
 
+   The scenario diagram opens, with the execution details panel open on the right.
 
+   Modules that produced output for this execution are marked with green titles.
 
+   Modules that did not run are dimmed.
+
+1. To view output from a module, click the output details bubble near the module. The number in the bubble represents the number of bundles that the module output.
+
+   ![Output bubble near a module](assets/output-bubble.png)
+
+1. To view the bundles that passed through a filter, click the filter. The number near the filter represents the number of bundles that passed through the filter.
+1. To search for a specific module or event in the execution panel, enter the search term into the **Search execution events** box. Results appear as you type.
+1. To limit execution panel search results by status such as Success or Warning, click the **Status Filter** dropdown and select the status.
