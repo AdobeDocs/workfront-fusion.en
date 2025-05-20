@@ -1,6 +1,6 @@
 ---
 title: View a specific scenario execution
-description: 
+description: You can view details of a specific scenario execution, including filtering and searching for scenario events.
 author: Becky
 feature: Workfront Fusion
 ---
