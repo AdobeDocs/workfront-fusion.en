@@ -15,48 +15,53 @@ For information about modules, see the articles under [Modules: article index](/
 
 ## Access requirements
 
++++ Expand to view access requirements for the functionality in this article.
+
 You must have the following access to use the functionality in this article:
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-      <td>
-        <p>[!UICONTROL Pro] or higher</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-      <td>
-        <p>[!UICONTROL Plan], [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td>
-      <td >
-        <p>[!UICONTROL Workfront Fusion for Work Automation and Integration]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Product</td>
-      <td>Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</td>
-    </tr>
-    </tr>
-  </tbody>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td>
+   <p>Current: No Workfront Fusion license requirement</p>
+   <p>Or</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-&#42;To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
-&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [!DNL [Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
++++
 
 ## Prerequisites
 
 Before you can use the [!DNL Adobe Lightroom] connector, you must ensure that the following prerequisites are met:
 
 * You must have an active [!DNL Adobe Lightroom] account.
+* You must have an OAuth Web App configured in the Adobe Admin Console. For details see [Configure an OAuth application in the Adobe Admin Console](#configure-an-oauth-application-in-the-adobe-admin-console) in this article.
 
 ## Adobe Lightroom API information
 
@@ -81,9 +86,49 @@ The Adobe Lightroom connector uses the following:
 
 ## Create a connection to Adobe Lightroom
 
+To connect to Adobe Lightroom, you must first configure an OAuth app in the Adobe Admin Console. After this app is configured, you can create connections from Workfront Fusion.
+
+### Configure an OAuth application in the Adobe Admin Console
+
+1. Begin configuring an OAuth Web App in the Adobe Admin Console.
+
+   For instrtuctions, see [User Authentication Implementation Guide](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/implementation) in the Adobe developer documentation.
+1. When configuring the OAuth Web App, enter the following values:
+
+    <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>
+          <ul>
+            <li>AdobeID</li>
+            <li>lr_partner_rendition_apis</li>
+            <li>openid</li>
+            <li>offline_access</li>
+            <li>lr_partner_apis</li>
+          </ul>
+        </td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Redirect URI]</td>
+        <td><code>https://app.workfrontfusion.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Redirect URI pattern]</td>
+        <td><code>https://app\.workfrontfusion\.com/oauth/cb/adobe-lightroom5</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+### Create a connection to Adobe Lightroom from Workfront Fusion
+
 To create a connection for your [!DNL Adobe Lightroom] modules:
 
-1. In any module, click **[!UICONTROL Add]** next to the Connection box.
+1. In any Adobe Lightroom module, click **[!UICONTROL Add]** next to the Connection box.
     
 1. Fill in the following fields:
     
@@ -121,8 +166,6 @@ To create a connection for your [!DNL Adobe Lightroom] modules:
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
     
 
-
-
 ## Adobe Lightroom modules and their fields
 
 When you configure [!DNL Adobe Lightroom] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Adobe Lightroom] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
@@ -155,13 +198,15 @@ This action module retrieves a Lightroom server version ID, proving whether the 
     <tr>
       <td role="rowheader">[!UICONTROL Credentials]</td>
       <td>
-        <p>If you want to supply specific credentials to ensure that a specific server is running, click Add item and enter the credentials.</p><p>Authorization headers are added automatically.</p>
+        <p>If you want to supply specific credentials to ensure that a specific server is running, click <b>Add item</b> and enter the credentials.</p><p>Authorization headers are added automatically.</p>
       </td>
     </tr>
   </tbody>
 </table>
 
 #### Retrieve user catalog metadata
+
+This action module retrieves metadata from a catalog in Adobe Lightroom. A catalog contains assets, albums, or other resources.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -225,7 +270,7 @@ This action module creates and uploads an original file for an asset.
     <tr>
       <td role="rowheader">[!UICONTROL Byte range]</td>
       <td>
-        <p>Enter or map the byte range for the request, including first and last bytes and entity length as defined in RFC 2616. Should be included only when the data is too large to be uploaded in a single call.</p>
+        <p>Enter or map the byte range for the request, including first and last bytes and entity length as defined in RFC 2616. This information should be included only when the data is too large to be uploaded in a single call.</p>
       </td>
     </tr>
     <tr>
