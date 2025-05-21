@@ -358,7 +358,7 @@ This action module creates a new asset with initial metadata and import informat
 
 #### Create an asset external XMP develop setting file
 
-This action module supports two workflows. The first workflow is to upload the external XMP develop settings file for the asset. The second workflow is to create an external XMP develop settings file by copying from another asset's external xmp develop setting file. 
+This action module supports two workflows: uploading the external XMP develop settings file for the asset, or creating an external XMP develop settings file by copying from another asset's external xmp develop setting file. 
 
 <table style="table-layout:auto"> 
   <col/>
@@ -369,7 +369,7 @@ This action module supports two workflows. The first workflow is to upload the e
       <td>For instructions on creating a connection to [!DNL Adobe Lightroom], see <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Create a connection to [!DNL Adobe Lightroom]</a> in this article.</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Length of content in bytes]</td>
+      <td role="rowheader">[!UICONTROL Content Length in Bytes]</td>
       <td>
         <p>Enter or map the length of the content in bytes.</p>
       </td>
@@ -383,7 +383,7 @@ This action module supports two workflows. The first workflow is to upload the e
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Enter or map the ID of the catalog that contains the asset.</p>
+        <p>Enter or map the ID of the catalog where you want to create the asset.</p>
       </td>
     </tr>
     <tr>
@@ -428,7 +428,7 @@ This action module asynchronously generate renditions for an original file.
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Enter or map the ID of the catalog that contains the asset.</p>
+        <p>Enter or map the ID of the catalog where you want to generate the renditions.</p>
       </td>
     </tr>
     <tr>
@@ -483,7 +483,7 @@ This action module retrieves the most recent asset external XMP setting file.
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Enter or map the ID of the catalog that contains the asset.</p>
+        <p>Enter or map the ID of the catalog that contains the asset associated with the XMP develop setting file.</p>
       </td>
     </tr>
     <tr>
@@ -495,7 +495,7 @@ This action module retrieves the most recent asset external XMP setting file.
   </tbody>
 </table> 
 
-#### Get the latest asset rendition
+#### Get latest asset rendition
 
 This action module retrieves the latest asset rendition of the specified type.
 
@@ -510,13 +510,13 @@ This action module retrieves the latest asset rendition of the specified type.
     <tr>
       <td role="rowheader">[!UICONTROL Catalog ID]</td>
       <td>
-        <p>Enter or map the ID of the catalog that contains the asset.</p>
+        <p>Enter or map the ID of the catalog that contains the asset that you want to retrieve a rendition for.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset ID]</td>
       <td>
-        <p>Enter or map the ID of the asset associated with the XMP develop setting file.</p>
+        <p>Enter or map the ID of the asset that you want to retrieve a rendition for.</p>
       </td>
     </tr>
     <tr>
@@ -553,9 +553,15 @@ This action module retrieves assets owned by the by the user whose credentials a
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Return assets captured before]</td>
+      <td role="rowheader">[!UICONTROL Return assets captured before given time]</td>
       <td>
-        <p>Enter a date with the format <code>YYYY-MM-DDT00:00:00</code>. The module returns results captured before this date.</p><p> This field cannot be used with the field <code>Return assets captured after</code>.</p>
+        <p>Enter a date with the format <code>YYYY-MM-DDT00:00:00</code>. The module returns results captured before this date.</p><p> This field cannot be used with the field <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Return assets captured after given time]</td>
+      <td>
+        <p>Enter a date with the format <code>YYYY-MM-DDT00:00:00</code>. The module returns results captured before this date.</p><p> This field cannot be used with the field <code>Return assets captured before given time</code>.</p>
       </td>
     </tr>
     <tr>
@@ -567,19 +573,19 @@ This action module retrieves assets owned by the by the user whose credentials a
     <tr>
       <td role="rowheader">[!UICONTROL SHA256 Hash value of original file]</td>
       <td>
-        <p></p>
+        <p>Enter or map the hash value of the original file. Assets with a matching hash are returned.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
       <td>
-        <p></p>
+        <p>Select Yes to hide assets inside stacks (assets inside stacks are not returned). Select No to include assets inside stacks in results.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Asset subtype values]</td>
       <td>
-        <p></p>
+        <p>Enter or map a semicolon-separated list of subtype values to return.</p>
       </td>
     </tr>
     <tr>
@@ -596,24 +602,26 @@ This action module retrieves assets owned by the by the user whose credentials a
     <tr>
       <td role="rowheader">[!UICONTROL Group values]</td>
       <td>
-        <p></p>
+        <p>Enter or map a semicolon-separated list of group values.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Name values]</td>
       <td>
-        <p></p>
+        <p>Enter or map a semicolon-separated list of name values.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Favorite status]</td>
       <td>
-        <p></p>
+        <p>Enter or map the favorite status that you want to return results for.</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table> 
+
+<!--BECKY START HERE-->
 
 ### Albums
 
