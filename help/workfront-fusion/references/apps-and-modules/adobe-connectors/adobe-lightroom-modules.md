@@ -240,8 +240,6 @@ This action module retrieves metadata from a catalog in Adobe Lightroom. A catal
 
 This action module creates and uploads an original file for an asset.
 
-<!--BECKY START HERE-->
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -287,7 +285,6 @@ This action module creates and uploads an original file for an asset.
 
 This action module creates a new asset with initial metadata and import information.
 
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -329,7 +326,7 @@ This action module creates a new asset with initial metadata and import informat
     <tr>
       <td role="rowheader">[!UICONTROL Date captured]</td>
       <td>
-        <p>Enter or map a date with the format <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
+        <p>Enter or map the capture date of the asset with the format <code>YYYY-MM-DDT00:00:00-00:00</code>.</p>
       </td>
     </tr>
   </tbody>
