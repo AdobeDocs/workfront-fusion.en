@@ -621,8 +621,6 @@ This action module retrieves assets owned by the by the user whose credentials a
   </tbody>
 </table> 
 
-<!--BECKY START HERE-->
-
 ### Albums
 
 * [Add assets to an album](#add-assets-to-an-album)
@@ -675,10 +673,10 @@ This action module adds one or more assets to the specified album. You can add u
     <tr>
       <td role="rowheader">[!UICONTROL Order]</td>
       <td>
-        <p></p>
+        <p>Specify the order of the asset.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Metadata]</td>
+      <td role="rowheader">[!UICONTROL Service Payload]</td>
       <td>
         <p>Enter or map any metadata you want to include with the asset. This must be a single text string with a maximum length of 1-24 characters.</p>
       </td>
@@ -721,32 +719,46 @@ This action module creates a new album in Lightroom.
         <p>Select the subtype for the album.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL API key]</td>
+      <td role="rowheader">[!UICONTROL Service ID]</td>
       <td>
         <p>Enter the API key of the service that is creating the album.</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user created]</td>
+      <td role="rowheader">[!UICONTROL Date User Created]</td>
       <td>
         <p>Enter or map a date with the format <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Datetime user updated]</td>
+      <td role="rowheader">[!UICONTROL Date User Updated]</td>
       <td>
         <p>Enter or map a date with the format <code>YYYY-MM-DDT00:00:00-00:00Z</code>.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Album name]</td>
+      <td role="rowheader">[!UICONTROL Album Name]</td>
       <td>
         <p>Enter or map a name for the new album.</p>
       </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Cover ID]</td>
       <td>
         <p>Enter or map the ID of an asset to use as the cover of this album.</p>
       </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Parent ID]</td>
+      <td>
+        <p>Enter or map the ID of the parent for this album.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Service Payload]</td>
+      <td>
+        <p>Enter or map album metadata as a string.</p>
+      </td>
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Remote ID]</td>
       <td>
@@ -822,7 +834,7 @@ The deleted album must have been created by the same client app that is now dele
 
 ### Get an album
 
-This action module retrieves the specified album
+This action module retrieves the specified album.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -851,7 +863,100 @@ This action module retrieves the specified album
 
 This action module retrieves a list of assets in the specified album.
 
-
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Lightroom], see <a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >Create a connection to [!DNL Adobe Lightroom]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Catalog ID]</td>
+      <td>
+        <p>Enter or map the ID of the catalog that contains the album.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Album ID]</td>
+      <td>
+        <p>Enter or map the ID of the album for which you want to list assets.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capture Assets Before Time]</td>
+      <td>
+        <p>Enter a date with the format <code>YYYY-MM-DDT00:00:00</code>. The module returns results captured before this date.</p><p> This field cannot be used with the field <code>Return assets captured after given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Capture Assets After Time]</td>
+      <td>
+        <p>Enter a date with the format <code>YYYY-MM-DDT00:00:00</code>. The module returns results captured before this date.</p><p> This field cannot be used with the field <code>Return assets captured before given time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Ending Asset Order Value]</td>
+      <td>
+        <p>Enter or map the order value of the ending asset.</p><p> This field can only be used with the field <code>Capture Assets After Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Starting Asset Order Value]</td>
+      <td>
+        <p>Enter or map the order value of the starting asset.</p><p> This field can only be used with the field <code>Capture Assets BEfore Time</code>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Number of Assets to Return (1-500)]</td>
+      <td>
+        <p>Enter the maximum number of records you want the module to return during each scenario execution cycle. This number must be between 1-500.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Hide assets that are inside stacks?"]</td>
+      <td>
+        <p>Select Yes to hide assets inside stacks (assets inside stacks are not returned). Select No to include assets inside stacks in results.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Subtype Values (semi-colon separated)]</td>
+      <td>
+        <p>Enter or map a semicolon-separated list of subtype values to return.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Flag Values (semi-colon separated)]</td>
+      <td>
+        <p>Enter or map a semicolon-separated list of flag values to return.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Additional Data Fields to Include (semi-colon separated)]</td>
+      <td>
+        <p>If asset is included, all fields are included, otherwise, only id and self href link are returned.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Types of assets to exclude]</td>
+      <td>
+        <p>Select if you want to exclude complete or incomplete assets. To include all assets, leave this field blank.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Asset IDs]</td>
+      <td>
+        <p>Enter or map up to 100 asset IDs, separated by commas.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Filter out album assets based on presentation filters]</td>
+      <td>
+        <p>When this field is set to 'true', it filters out all the album assets based on the presentation filters set on the album. With this parameter, rejected assets always get filtered out irrespective of settings in presentation filters. Presentation filters are not applied when any value other than 'true' is set for album_filters. Default behavior is to display all assets. This parameter cannot be used along with flag parameter. </p>
+      </td>
+    </tr>
+  </tbody>
+</table> 
 
 #### Retrieve albums
 
@@ -874,7 +979,7 @@ This action module retrieves a list of albums in the specified catalog.
     <tr>
       <td role="rowheader">[!UICONTROL Subtypes]</td>
       <td>
-        <p>Enter or map the ID of the album you want to retrieve.</p>
+        <p>Enter or map a semicolon-separated list of subtype values to return.</p>
       </td>
     </tr>
     <tr>
@@ -884,7 +989,7 @@ This action module retrieves a list of albums in the specified catalog.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Maximum number of returned albums]</td>
+      <td role="rowheader">[!UICONTROL Number of Albums to Return]</td>
       <td>
         <p>Set the maximum number of assets that [!DNL Workfront Fusion] will return during one execution cycle. The default value for this field is 100.This module may return more albums than this limit if multiple albums at the limit boundary have the same <code>name_after</code> value.</p>
       </td>
