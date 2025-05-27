@@ -914,6 +914,8 @@ Workfront recently released a new version of its event subscription service. The
 
 For more information on the new event subscription version, see [Event subscription versioning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in the Workfront documentation
 
+For resources on preserving your Workfront Fusion scenarios during the event subscription upgrade,  including a webinar recording, see [Preserving Your Fusion Scenarios During the Event Subscriptions V2 Upgrade(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
+
 <table style="table-layout:auto">
  <col> 
  <col> 
@@ -2226,7 +2228,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!NOTE]
 >
->We highly recommend using event subscription filters in your [!UICONTROL Watch Events] modules.
+>* We highly recommend using event subscription filters in your [!UICONTROL Watch Events] modules.
+>
+>* Workfront recently released a new version of its event subscription service. The new version is not a change to the Workfront API, but rather a change to the event subscription functionality. This action module updates the event payload version used for this scenario.
+>
+>   For more information on the new event subscription version, see [Event subscription versioning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in the Workfront documentation
+>
+>   For resources on preserving your Workfront Fusion scenarios during the event subscription upgrade,  including a webinar recording, see [Preserving Your Fusion Scenarios During the Event Subscriptions V2 Upgrade(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
 
 The Workfront [!UICONTROL Watch Events] module triggers scenarios based on a webhook that creates an event subscription in the Workfront API. The event subscription is a set of data that determines which events are sent to the webhook. For example, if you set up a [!UICONTROL Watch Events] module that is watching for issues, then the event subscription sends only events related to issues.
 
