@@ -414,6 +414,27 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 >
 
+
+
+>[!NOTE]
+>
+>Users are created in Deactivated and Pending Approval status. If your organization has been migrated to the Adobe Admin Console, and the Pending Approval badge is not removed within a few minutes, you can approve the user.
+>
+>*  **Resolve individual users**
+>
+>      You can resolve individual users in the Users list.
+>
+>      1. Select the user or users in the Users list.
+>      1. Click the three-dot menu in the list header.
+>      1. Select **Approve**.
+>      1. After a few minutes, refresh the page.
+>
+>* **Resolve users added in a large batch**
+>
+>   To resolve users that were added in a large batch, you can add the batch of users to the Adobe Admin Console directly.
+>
+>   For instructions, see [Manage multiple users | Bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) in the Adobe documentation.
+
 +++
 
 +++ **[!UICONTROL Create Record (Legacy)]**
