@@ -434,6 +434,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >   To resolve users that were added in a large batch, you can add the batch of users to the Adobe Admin Console directly.
 >
 >   For instructions, see [Manage multiple users | Bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) in the Adobe documentation.
+
 +++
 
 +++ **[!UICONTROL Create Record (Legacy)]**
