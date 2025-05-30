@@ -54,8 +54,11 @@ Consider the following example use cases for chaining scenarios:
 
 * **Search for and create a record**:  For example, you could create a scenario that searches for a user. If they exist, the scehario adds them as approver with access they need to review and approve. If they don't exist, the scenario creates a request for the admin to onboard a new user.
 
+<!--
 
 ## Planning your parent and child scenarios
+
+-->
 
 ## Errors and incomplete executions
 
@@ -89,6 +92,3 @@ When chaining scenarios, follow these practices to avoid recursion:
 ### Use error handling to ensure a response
 
 Because the parent scenario is waiting for a response from the child scenario before it can continue, you must ensure that the child scenario is built so that it will provide a response even if it encounters an error.
-
-We recommend the following when configuring error handling for a child scenario.
-
