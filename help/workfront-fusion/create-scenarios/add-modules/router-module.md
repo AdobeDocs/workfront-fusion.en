@@ -83,6 +83,8 @@ You must add a Router module before configuring routes.
 
 1. (Optional) To change route order, unlink the routes by right clicking on the path from the router and selecting Unlink, then dragging them to the router module in the desired order. The first route attached will be the first route to execute (the top route).
 
+   ![Order route](assets/order-routes.png)
+
 1. Continue to [Add a filter to a route](#add-a-filter-to-a-route).
 
 ## Add a filter to a route
