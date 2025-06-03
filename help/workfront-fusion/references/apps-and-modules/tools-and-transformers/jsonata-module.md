@@ -52,7 +52,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 +++
 
-## JSONata module and its fields
+## JSONata modules and their fields
 
 ### Evaluate
 
@@ -99,3 +99,11 @@ The goal is to return an array of names from the following JSON object:
 The module returns an array of names pulled from the JSON object.
 
 >[!ENDSHADEBOX]
+
+
+
+### JSONata MCP
+
+This action module generates JSONata expressions by analyzing provided input and output JSON structures.
+
+
