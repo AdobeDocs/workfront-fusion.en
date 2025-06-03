@@ -466,3 +466,20 @@ This action updates a single record in Workfront Planning.
      <tr>
   </tbody>
 </table>
+
+
+## Use JSONata for readable `record-types` breakdown
+
+The following JSONata expression creates a human-readable output of the Planning query that gives you the record-types breakdown. This makes the record type name, field names, and field option names (where applicable) human readable by a name, and keeps the rest of the structure intact. 
+
+```
+(
+    $s0 := ({"data":$ ~> | fields | {"options":(options){name:$}} |});
+    $s1 := ({"data":$s0.data ~> | **.fields | {"options_name":(options.*){displayName:$}} | });
+    $s2 := $s1 ~> | data | {"fields":(fields){displayName:$}} |; 
+    $s2.data{displayName:$}
+)
+```
+
+For information on using JSONata modules, see [JSONata modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
+
