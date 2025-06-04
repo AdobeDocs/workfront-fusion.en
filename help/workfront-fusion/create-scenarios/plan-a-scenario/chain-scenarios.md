@@ -13,6 +13,8 @@ You can call multiple child scenarios from a parent scenario, and you can call a
 
 When a parent scenario is waiting for a child scenario to return data, that time does not count against the parent scenario's timeout. For example, a parent scenario calls 5 child scenarios, each of which takes 10 minutes to run, for a total of 50 minutes. The modules in the parent scenario itself take 15 minutes to run. The parent scenario does not time out, even though a total of 65 minutes has passed, which is over the timeout limit of 40 minutes.
 
+For more information on Fusion's performance guardrails, including timeouts, see [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
+
 For instructions on configuring Chain modules, see [Chain modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
 ## Parent and child scenarios
@@ -54,11 +56,13 @@ Consider the following example use cases for chaining scenarios:
 
 * **Search for and create a record**:  For example, you could create a scenario that searches for a user. If they exist, the scehario adds them as approver with access they need to review and approve. If they don't exist, the scenario creates a request for the admin to onboard a new user.
 
-<!--
+## Viewing execution history for chained scenarios
 
-## Planning your parent and child scenarios
+You can view execution history for chained scenarios by viewing the history of each scenario included in the chain. For example, the parent scenario's execution history would include information about modules and data processed directly in the parent scenario. To view execution history for modules and data processed in a child scenario, open the child scenario and view the execution history there.
 
--->
+We recommend using the **Go to the child scenario** button in the Call a child scenario module to quickly go to the child scenario, where you can view its execution history.
+
+![Go to the child scenario button](assets/go-to-the-child-button.png)
 
 ## Errors and incomplete executions
 

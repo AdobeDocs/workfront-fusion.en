@@ -60,7 +60,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 #### Receive data from parent
 
-This module is the trigger module in the child scenario, and is triggered by the Add ChainCaller module in the parent scenario. It receives data from the parent scenario, which can be processed in the child scenario.
+This module is the trigger module in the child scenario, and is triggered by the Call a child scenario module in the parent scenario. It receives data from the parent scenario, which can be processed in the child scenario.
 
 To configure the Receive data from parent module:
 
