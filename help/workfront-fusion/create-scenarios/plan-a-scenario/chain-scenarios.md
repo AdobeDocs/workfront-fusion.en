@@ -60,7 +60,7 @@ Consider the following example use cases for chaining scenarios:
 
 You can view execution history for chained scenarios by viewing the history of each scenario included in the chain. For example, the parent scenario's execution history would include information about modules and data processed directly in the parent scenario. To view execution history for modules and data processed in a child scenario, open the child scenario and view the execution history there.
 
-We recommend using the **Go to the child scenario** button in the Call a child scenario module to quickly go to the child scenario, where you can view its execution history.
+We recommend using the **Go to the child scenario** button in the Call a child scenario module to quickly go to the child scenario, where you can view its execution history. The child scenario opens in another browser window, allowing you to see parent and child scenarios at the same time.
 
 ![Go to the child scenario button](assets/go-to-the-child-button.png)
 
