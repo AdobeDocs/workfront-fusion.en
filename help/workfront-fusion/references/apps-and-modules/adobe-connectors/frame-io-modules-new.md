@@ -101,7 +101,155 @@ The Frame.io connector uses the following:
 
 ## Connect [!DNL Frame.io] to [!UICONTROL Adobe Workfront Fusion] 
 
-The connection process differs based on whether you are using the Legacy Frame.io connector or the Beta Frame.io connector.
+You can connect automatically with user credentials, manually create a user credential connection, or create a server-to-server connection.
+
+* [Connect automatically with user credentials](#connect-automatically-with-user-credentials#)
+* [Create a user credentials connection manually](#create-a-user-credentials-connection-manually)
+* [Create a server-to-server connection](#create-a-server-to-server-connection)
+
+### Connect automatically with user credentials
+
+This method creates a connection automatically if you are logged in to Frame.io, or connects you to the Frame.io login page so you can log in.
+
+1. In any Frame.io Beta module, click **[!UICONTROL Add]** next to the Connection box.
+1. Enter a name for the connection.
+1. Click **Continue**.
+1. If you are prompted to log in to your Frame.io account, do so.
+1. If you are part of more than one Frame.io organization, select the organization that you want to use for this connection.
+
+The connection is created.
+
+### Create a user credentials connection manually
+
+You can create a user credentials connection by logging into Frame.io, or by providing a Client ID or Client Secret.
+
+To create a server-to-server connection, you must first configure an application in the Adobe Developer Console.
+
+* [Create user credentials in the Adobe Developer Console](#create-user-credentials-in-the-adobe-developer-console)
+* [Configure a user authentication connection](#configure-a-user-authentication-connection)
+
+#### Create user credentials in the Adobe Developer Console
+
+If you do not already have server-to-server credentials on an Adobe Developer Console project, you can create them.
+
+1. Open the [Adobe Developer Console](https://developer.adobe.com/).
+1. Select an existing project in the Adobe Developer Console to use for this connection
+
+   Or
+   
+   Create a new project in the Adobe Developer Console. For instructions, see [Create an empty project](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. On the Project overview page or the Get started with your new project page, click **Add API**.
+1. On the page that opens, locate and click **Frame.io API**.
+1. On the Select authentication type page, select **User Authentication** and click **Next**.
+1. On the Add a user authentication credential page, select **OAuth Web App** and click **Next**.
+1. On the Configure OAuth Web App credential page, enter the following:   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Default redirect URI]</td>
+          <td>
+            <p><code>https://oauth.app.workfrontfusion.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Redirect URI pattern]</td>
+          <td>
+            <p><code>https://oauth\.app\.workfrontfusion\.com/oauth/cb/frame-io2</code></p>
+          </td>
+        </tr>
+       </tbody>
+    </table>
+1. Click **Next**.
+1. Click **Save configured API**.
+1. On the product page, click the card for the credentials you just created. 
+
+   Here, you can find your Client ID and Client Secret.
+
+>[!NOTE]
+>
+> We recommend leaving this window open as you begin configuring your connection in Adobe Workfront Fusion. You can copy the Client ID, and retrieve and copy Client Secret from this page to paste into the connection fields. 
+
+
+#### Configure a user authentication connection
+
+1. In any  Frame.io Beta module, click **[!UICONTROL Add]** next to the Connection box.
+1. In the Create a connection box, click **Show advanced settings**.
+
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection type]</td>
+          <td>
+            <p>Select <b>IMS User authentication</b>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>Enter a name for this connection.</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]</td>
+          <td>Enter your [!DNL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions on creating credentials, see <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Create user credentials in the Adobe Developer Console</a> in this article.</p></td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]</td>
+          <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions on creating credentials, see <a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">Create user credentials in the Adobe Developer Console</a> in this article.</p>
+        </tr>
+       </tbody>
+    </table>
+1. If you are prompted to log in to your Frame.io account, do so.
+1. If you are part of more than one Frame.io organization, select the organization that you want to use for this connection.
+
+The connection is created.
+
+
+### Create a server-to-server connection
+
+To create a server-to-server connection, you must first configure an application in the Adobe Developer Console.
+
+* [Create server-to-server credentials in the Adobe Developer Console](#create-server-to-server-credentials-in-the-adobe-developer-console)
+* [Configure a server-to-server connection](#configure-a-server-to-server-connection)
+
+#### Create server-to-server credentials in the Adobe Developer Console
+
+If you do not already have server-to-server credentials on an Adobe Developer Console project, you can create them.
+
+1. Open the [Adobe Developer Console](https://developer.adobe.com/).
+1. Select an existing project in the Adobe Developer Console to use for this connection
+
+   Or
+   
+   Create a new project in the Adobe Developer Console. For instructions, see [Create an empty project](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty).
+
+1. On the Project overview page or the Get started with your new project page, click **Add API**.
+1. On the page that opens, locate and click **Frame.io API**.
+1. On the Select authentication type page, select **Server-to-Server Authentication** and click **Next**.
+1. Enter a name for the credentials. This allows you to identify the credentials later in the API Credentials area of the Adobe Admin Console.
+1. Click **Next**.
+1. On the Select product profiles page, select the product profile that includes the Frame.io account that you want to connect to.
+1. Click **Save configured API**.
+1. On the product page, click the card for the credentials you just created. 
+
+   Here, you can find your Client ID and Client Secret.
+
+>[!NOTE]
+>
+> We recommend leaving this window open as you begin configuring your connection in Adobe Workfront Fusion. You can copy the Client ID, and retrieve and copy Client Secret from this page to paste into the connection fields. 
+
+
+#### Configure a server-to-server connection
 
 1. In any  Frame.io Beta module, click **[!UICONTROL Add]** next to the Connection box.
 
@@ -116,7 +264,7 @@ The connection process differs based on whether you are using the Legacy Frame.i
         <tr>
           <td role="rowheader">[!UICONTROL Connection type]</td>
           <td>
-            <p>Select whether you want to create an IMD User authentication connection or an IMS Server to Server connection.</p>
+            <p>Select <b>IMS Server to Server</b>.</p>
           </td>
         </tr>
         <tr>
@@ -127,15 +275,18 @@ The connection process differs based on whether you are using the Legacy Frame.i
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]</td>
-          <td>Enter your [!DNL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions locating credentials, see <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credentials</a> in the Adobe developer documentation.</p></td>
+          <td>Enter your [!DNL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions on creating credentials, see <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Create server-to-server credentials in the Adobe Developer Console</a> in this article.</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client Secret]</td>
-          <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions locating credentials, see <a href="https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication#credentials" class="MCXref xref" >Credentials</a> in the Adobe developer documentation.</p>
+          <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].<p>For instructions on creating credentials, see <a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">Create server-to-server credentials in the Adobe Developer Console</a> in this article.</p>
         </tr>
        </tbody>
     </table>
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+
+
+
 
 ## [!DNL Frame.io] modules and their fields
 
