@@ -106,4 +106,45 @@ The module returns an array of names pulled from the JSON object.
 
 This action module generates JSONata expressions by analyzing provided input and output JSON structures.
 
+The system knows what the data looks like before and after the transformation. It can generate JSONata expressions automatically at runtime based on the scenario, allowing you to customize or fine-tune those expressions without deep technical knowledge.
 
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>Select the connection that you use to connect to the large language model (LLM) that you want to use for this module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Input schema]</td> 
+   <td> <p>Enter or map the input schema to use for this JSON expression.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output schema]</td> 
+   <td> <p>Enter or map the output schema to use for this JSON expression.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--
+
+What is JSONata, and what are input/output schemas?
+JSONata is a tool used to transform and query JSON data (which is the standard format for structured information in APIs, apps, etc.).
+What problem does JSONata solve?
+Previously, users had to manually write JSONata expressions to transform their data. For example, if you wanted to extract just the email subjects or reformat data before sending it to Slack, you had to write the exact logic yourself.
+Now, the MCP server provides both the input and output schemas (in JSON format). This means:
+The system knows what the data looks like before and after the transformation.
+It can generate JSONata expressions automatically at runtime based on the scenario.
+Users can easily customize or fine-tune those expressions without deep technical knowledge.
+Why is this useful?
+With this feature, customers can now design automation scenarios more easily. They can manipulate the data flowing between services without writing complex code. JSONata becomes a powerful but simple way to:
+Format messages
+Filter data
+Merge fields
+Customize outputs for downstream tools
+In short, JSONata makes it easy for users to shape their data exactly how they need it, right inside the MCP-powered workflow.
+If you have any questions or would like to schedule a call to go over things in more detail, feel free to reach out—happy to talk anytime. Thanks so much for taking the time to review this!
+
+-->
