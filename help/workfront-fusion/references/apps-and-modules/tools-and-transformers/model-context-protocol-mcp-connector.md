@@ -6,7 +6,11 @@ feature: Workfront Fusion
 ---
 # Model Context Protocol (MCP) modules
 
-The Model Context Protocol (MCP) module allows you to process a user prompt using MCP.
+Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
+
+For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
+
+The Model Context Protocol (MCP) module allows you to process a user prompt using a language model and MCP servers.
 
 ## Access requirements
 
@@ -53,7 +57,27 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ## Model Context Protocol module and its fields
 
-When you configure the [!UICONTROL Text parser] module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
+When you configure the MCP module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
 ### Process User Prompt
 
+This action module processes a prompt, using the language model and MCP servers you specify.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Large language model (LLM) key]</td> 
+   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL MCP servers]</td> 
+   <td> <p>For each MCP server that you want to make available for this prompt, click <b>Add item</b> and enter the server's name and host. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter your prompt]</td> 
+   <td> <p>Enter or map the prompt for the large lanugage model. </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
