@@ -69,7 +69,7 @@ This action module processes a prompt, using the language model and MCP servers 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Large language model (LLM) key]</td> 
-   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> </td> 
+   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> <p>Currently, only the Anthropic API key is supported.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL MCP servers]</td> 
