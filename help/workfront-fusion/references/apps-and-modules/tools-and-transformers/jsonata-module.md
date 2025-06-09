@@ -107,13 +107,15 @@ The module returns an array of names pulled from the JSON object.
 This action module generates JSONata expressions by analyzing the specified input and output schemas. You provide the schemas, which Model Context Protocol (MCP) uses to generate the expression that transforms the input to the output. 
 
 
+
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>Select the connection that you use to connect to the large language model (LLM) that you want to use for this module.</p> </td> 
+   <td> <p>Select the connection that you use to connect to the large language model (LLM) that you want to use for this module.</p> <p>Currently, only the Anthropic API key is supported.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Input schema]</td> 
