@@ -3,6 +3,8 @@ title: Chain Modules
 description: Using these modules, you can chain scenarios together, making one call another.
 author: Becky
 feature: Workfront Fusion
+hide: yes
+hidefromtoc: yes
 ---
 # Chain modules
 

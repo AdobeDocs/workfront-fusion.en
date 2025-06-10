@@ -3,6 +3,8 @@ title: Chain Multiple Scenarios Together
 description: You can chain scenarios together, allowing one scenario to trigger another, and returning the data output by the second scenario to the first.
 author: Becky
 feature: Workfront Fusion
+hide: yes
+hidefromtoc: yes
 ---
 
 # Chain multiple scenarios together
