@@ -16,6 +16,8 @@ Work automation requires rapid processing, so [!DNL Adobe Workfront Fusion] is d
 ## Scenarios
 
 * The default scenario execution timeout is **40 minutes**. When the execution reaches this timeout, [!DNL Workfront Fusion] interrupts scenario execution after the next cycle or operation, depending on the scenario. This forces the scenario to stop shortly after the 40 minute limit is reached
+
+   Chaining scenarios does not count toward scenario execution timeout. A parent scenario does not accrue time while waiting for a child scenario to execute.
 * The maximum size of a scenario blueprint is **5 MB**, but we recommend keeping scenario size under **3 MB**.
 
   App modules that create or update data with large numbers of fields can cause very large blueprints.

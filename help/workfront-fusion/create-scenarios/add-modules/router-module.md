@@ -83,6 +83,8 @@ You must add a Router module before configuring routes.
 
 1. (Optional) To change route order, right click on the Router module and select **Order routes** Drag and drop the routes in the order you want them to execute in. Routes are marked by the first module that follows the router (the first module of the route).
 
+   ![Order route](assets/order-routes.png)
+
 1. Continue to [Add a filter to a route](#add-a-filter-to-a-route).
 
 ## Add a filter to a route
