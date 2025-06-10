@@ -60,7 +60,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 To use Microsoft Teams modules, you must have a Microsoft Teams account able to perform the action in the module.
 
-## Connecting the [!DNL Teams] service to [!DNL Workfront Fusion]
+## Connecting the [!DNL Teams] service to Workfront Fusion
 
 For instructions about connecting your [!DNL Teams] account to [!UICONTROL Workfront Fusion], see [Create a connection to [!UICONTROL Adobe Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
@@ -72,7 +72,7 @@ For instructions about connecting your [!DNL Teams] account to [!UICONTROL Workf
 
 ## [!DNL Microsoft Teams] modules and their fields
 
-When you configure [!DNL Teams] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Teams] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Teams] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Teams] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -106,7 +106,7 @@ This action module creates a Team from an existing Microsoft Office 365 Group an
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Group ID</td> 
@@ -185,7 +185,7 @@ This action module creates a Group in Microsoft Office 365.
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Display name</td> 
@@ -228,7 +228,7 @@ This action module deletes the specified Team or Group.
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Group ID</td> 
@@ -247,7 +247,7 @@ This module retrieves properties and relationships for the specified Microsoft T
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Group ID</td> 
@@ -266,7 +266,7 @@ This module lists all Microsoft Teams and Office 365 Groups associated with the 
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Filter</td> 
@@ -274,7 +274,7 @@ This module lists all Microsoft Teams and Office 365 Groups associated with the 
    </tr> 
   <tr> 
    <td>Maximum number of returned results</td> 
-   <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
+   <td>Set the maximum number of Teams or Groups Workfront Fusion will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -290,11 +290,11 @@ This action module lists the teams that have been joined by the user associated 
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Maximum number of returned results</td> 
-   <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
+   <td>Set the maximum number of Teams or Groups Workfront Fusion will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -309,7 +309,7 @@ This action module updates the properties of the specified Microsoft Team or Off
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Display name</td> 
@@ -344,7 +344,7 @@ This trigger module starts a scenario when a Team or Group is created or updated
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Filter</td> 
@@ -352,7 +352,7 @@ This trigger module starts a scenario when a Team or Group is created or updated
    </tr> 
   <tr> 
    <td>Maximum number of returned results</td> 
-   <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
+   <td>Set the maximum number of Teams or Groups Workfront Fusion will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -369,11 +369,11 @@ This action module creates a new channel for the specified team.
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Enter or map the ID of the Microsoft Team that you want to create a channel for.</p> </td> 
+   <td> <p>Select the Microsoft Team that you want to create a channel for.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel name</td> 
@@ -396,11 +396,11 @@ This action module deletes the specified channel from a Microsoft Team.
  <tbody> 
   <tr> 
    <td role="rowheader">Connection </td> 
-   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Enter or map the ID of the Microsoft Team that you want to create a channel for.</p> </td> 
+   <td> <p>Enter or map the ID of the Microsoft Team that you want to delete a channel from.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel ID</td> 
@@ -411,9 +411,76 @@ This action module deletes the specified channel from a Microsoft Team.
 
 #### Get a channel
 
+This module retrieves the properties and relationships of a channel.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>Enter or map the ID of the Microsoft Team that owns the channel you want to retrieve details for.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel ID</td> 
+   <td>Enter or map the ID of the channel you want to retrieve details for.</td> 
+  </tr> 
+  </tbody> 
+</table>
+
 #### List channels
 
+This modules lists channels owned by the specified Microsoft Team.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>Select the Microsoft Team that you want to list channels for.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Maximum number of returned results</td> 
+   <td>Set the maximum number of channels Workfront Fusion will return during one execution cycle.</td> 
+  </tr> 
+  </tbody> 
+</table>
+
 #### Update a channel
+
+This action module updates the description of the specified channel.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>Select the Microsoft Team that owns the channel you want to update.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel name</td> 
+   <td>Enter or map the name of the channel that you want to update.</td> 
+  </tr> 
+  <tr> 
+   <td>Description</td> 
+   <td>Enter or map the new description for the channel.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Message
 
