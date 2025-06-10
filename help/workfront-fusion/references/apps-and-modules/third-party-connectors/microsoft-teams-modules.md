@@ -273,7 +273,7 @@ This module lists all Microsoft Teams and Office 365 Groups associated with the 
    <td> <p>You can set a filter to return only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
    </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>Maximum number of returned results</td> 
    <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
@@ -293,7 +293,7 @@ This action module lists the teams that have been joined by the user associated 
    <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>Maximum number of returned results</td> 
    <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
@@ -351,7 +351,7 @@ This trigger module starts a scenario when a Team or Group is created or updated
    <td> <p>You can set a filter to watch for only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
    </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>Maximum number of returned results</td> 
    <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
@@ -361,7 +361,53 @@ This trigger module starts a scenario when a Team or Group is created or updated
 
 #### Create a channel
 
+This action module creates a new channel for the specified team.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>Enter or map the ID of the Microsoft Team that you want to create a channel for.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel name</td> 
+   <td>Enter or map a name for the new channel.</td> 
+  </tr> 
+  <tr> 
+   <td>Descriptione</td> 
+   <td>Enter or map a description for the new channel.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Delete a channel
+
+This action module deletes the specified channel from a Microsoft Team.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>Enter or map the ID of the Microsoft Team that you want to create a channel for.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel ID</td> 
+   <td>Enter or map the ID of the channel you want to delete.</td> 
+  </tr> 
+  </tbody> 
+</table>
 
 #### Get a channel
 
