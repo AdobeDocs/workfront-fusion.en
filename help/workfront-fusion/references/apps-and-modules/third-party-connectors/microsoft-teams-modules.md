@@ -87,18 +87,18 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Team
 
-* [Create a team from a group](#create-a-team-from-a-group)
-* [Create an Office 365 group](#create-an-office-365-group)
-* [Delete a team or group](#delete-a-team-or-group)
-* [Get a team](#get-a-team)
-* [List all teams and groups](#list-all-teams-and-groups)
-* [List joined teams](#list-joined-teams)
-* [Update a team](#update-a-team)
-* [Watch teams](#watch-teams)
+* [Create a Team from a Group](#create-a-team-from-a-group)
+* [Create an Office 365 Group](#create-an-office-365-group)
+* [Delete a Team or Group](#delete-a-team-or-group)
+* [Get a Team](#get-a-team)
+* [List all Teams and Groups](#list-all-teams-and-Groups)
+* [List joined Teams](#list-joined-teams)
+* [Update a Team](#update-a-team)
+* [Watch Teams](#watch-teams)
 
-#### Create a team from a group
+#### Create a Team from a Group
 
-This action module creates a team from an existingMicrosoft Office 365 group and configures settings for the new team.
+This action module creates a Team from an existing Microsoft Office 365 Group and configures settings for the new team.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -110,7 +110,7 @@ This action module creates a team from an existingMicrosoft Office 365 group and
   </tr> 
   <tr> 
    <td role="rowheader">Group ID</td> 
-   <td> <p>Select the group that you want to create a team from.</p> 
+   <td> <p>Select the Group that you want to create a Team from.</p> 
    </tr> 
   <tr> 
    <td role="rowheader">Allow members to create and update channels</td> 
@@ -154,7 +154,7 @@ This action module creates a team from an existingMicrosoft Office 365 group and
   </tr> 
   <tr> 
    <td role="rowheader">Allow Giphy</td> 
-   <td>Select whether you want to allow Giphy use for this team.</td> 
+   <td>Select whether you want to allow Giphy use for this Team.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Allow stickers and memes</td> 
@@ -175,19 +175,137 @@ This action module creates a team from an existingMicrosoft Office 365 group and
  </tbody> 
 </table>
 
-#### Create an Office 365 group
+#### Create an Office 365 Group
 
-#### Delete a team or group
+This action module creates a Group in Microsoft Office 365.
 
-#### Get a team
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Display name</td> 
+   <td> <p>Enter or map the name that this Group displays in its address book.</p> 
+   </tr> 
+  <tr> 
+   <td role="rowheader">Alias for Group</td> 
+   <td>Enter or map the email alias for this Group. You can include lowercase letters, numbers, and underscores. For the Office 365 Group type, this will be the Group's email alias ([Alias]@[Your Domain].onmicrosoft.com). For Security Group type, the alias functions as a nickname.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Group type</td> 
+   <td>Enable <b>Unified</b> if you are creating an Office 365 Group.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Description</td> 
+   <td>Enter or map a description for this Group.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Security enabled</td> 
+   <td>Enable this option if you want the Group to be security enabled.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Owners</td> 
+   <td>Select the owners for this Group.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Members</td> 
+   <td>Select the members for this Group.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
-#### List all teams and groups
+#### Delete a Team or Group
 
-#### List joined teams
+This action module deletes the specified Team or Group.
 
-#### Update a team
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Group ID</td> 
+   <td> <p>Enter or map the ID of the Group you want to delete.</p> 
+   </tr> 
+ </tbody> 
+</table>
 
-#### Watch teams
+#### Get a Team
+
+This module retrieves properties and relationships for the specified Microsoft Team or Office 365 Group.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Group ID</td> 
+   <td> <p>Enter or map the ID of the Group you want to retrieve details for.</p> 
+   </tr> 
+ </tbody> 
+</table>
+
+#### List all Teams and Groups
+
+This module lists all Microsoft Teams and Office 365 Groups associated with the organization. You can filter to return only results that meet criteria you specify.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter</td> 
+   <td> <p>You can set a filter to watch for only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### List joined Teams
+
+This action module lists the teams that have been joined by the user associated with the connection used in this module.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Update a Team
+
+This action module updates the properties of the specified Microsoft Team or Office 365 Group.
+
+
+
+#### Watch Teams
 
 ### Channel
 
@@ -217,7 +335,7 @@ This action module creates a team from an existingMicrosoft Office 365 group and
 
 #### Add a memner
 
-#### Add a member to a group
+#### Add a member to a Group
 
 ### Online meeting
 
