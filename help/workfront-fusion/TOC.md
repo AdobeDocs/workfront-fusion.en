@@ -161,7 +161,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Create scenarios](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
     * Plan a scenario {#plan-a-scenario}
         * [Plan a scenario: article index](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
-        * [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
+        * [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
         * [Scenario planning FAQ](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
         * [Video overviews](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
         * [Workflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
