@@ -135,6 +135,7 @@ This action module downloads the content of the specified Excel workbook.
     </ul> </td> 
   </tr> 
  </tbody> 
+</table>
 
 #### [!UICONTROL Search Workbooks]
 
