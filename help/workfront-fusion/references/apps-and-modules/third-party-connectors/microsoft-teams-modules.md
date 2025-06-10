@@ -79,21 +79,22 @@ If you see the map button above a field or function, you can use it to set varia
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [Team](#team)
-* [Channel]()
-* [Message]()
-* [Member]()
-* [Online meeting]()
-* [Other]()
+* [Channel](#channel)
+* [Message](#message)
+* [Member](#member)
+* [Online meeting](#online-meeting)
+* [Other](#other)
 
 ### Team
 
 * [Create a team from a group](#create-a-team-from-a-group)
-* [Create an office 365 group]()
-* [Delete a team or group]()
-* [Get a team]()
-* [List all teams and groups]()
-* [List joined teams]()
-* [Update a team]()
+* [Create an Office 365 group](#create-an-office-365-group)
+* [Delete a team or group](#delete-a-team-or-group)
+* [Get a team](#get-a-team)
+* [List all teams and groups](#list-all-teams-and-groups)
+* [List joined teams](#list-joined-teams)
+* [Update a team](#update-a-team)
+* [Watch teams](#watch-teams)
 
 #### Create a team from a group
 
@@ -152,28 +153,89 @@ This action module creates a team from an existingMicrosoft Office 365 group and
    <td>Select whether you want to allow @channel mentions.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">field name</td> 
-   <td>Select whether you want to allow members to .</td> 
+   <td role="rowheader">Allow Giphy</td> 
+   <td>Select whether you want to allow Giphy use for this team.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">field name</td> 
-   <td>Select whether you want to allow members to .</td> 
+   <td role="rowheader">Allow stickers and memes</td> 
+   <td>Select whether you want to allow users to include stickers and memes.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">field name</td> 
-   <td>Select whether you want to allow members to .</td> 
+   <td role="rowheader">Allow custom memes</td> 
+   <td>Select whether you want to allow users to include custom memes.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">field name</td> 
-   <td>Select whether you want to allow members to .</td> 
+   <td role="rowheader">Allow guests to create and update channels</td> 
+   <td>Select whether you want to allow guests to create and update channels.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">field name</td> 
-   <td>Select whether you want to allow members to .</td> 
+   <td role="rowheader">Allow guests to delete channels</td> 
+   <td>Select whether you want to allow guests to delete channels.</td> 
   </tr> 
  </tbody> 
 </table>
 
+#### Create an Office 365 group
+
+#### Delete a team or group
+
+#### Get a team
+
+#### List all teams and groups
+
+#### List joined teams
+
+#### Update a team
+
+#### Watch teams
+
+### Channel
+
+#### Create a channel
+
+#### Delete a channel
+
+#### Get a channel
+
+#### List channels
+
+#### Update a channel
+
+### Message
+
+#### Reply to a channel message
+
+#### Send a message
+
+#### Watch messages
+
+#### Watch messages (deprecated)
+
+#### Watch new replies
+
+### Member
+
+#### Add a memner
+
+#### Add a member to a group
+
+### Online meeting
+
+#### Create an online meeting
+
+#### Delete an online meeting
+
+#### Get an online meeting
+
+#### Update an online meeting
+
+### Other
+
+#### Get a user's presence
+
+#### Make an API call
+
+#### Search users
 
 
 
