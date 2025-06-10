@@ -270,7 +270,7 @@ This module lists all Microsoft Teams and Office 365 Groups associated with the 
   </tr> 
   <tr> 
    <td role="rowheader">Filter</td> 
-   <td> <p>You can set a filter to watch for only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
+   <td> <p>You can set a filter to return only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
    </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned results]</td> 
@@ -303,9 +303,59 @@ This action module lists the teams that have been joined by the user associated 
 
 This action module updates the properties of the specified Microsoft Team or Office 365 Group.
 
-
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Display name</td> 
+   <td> <p>Enter or map the name that this Group displays in its address book.</p> 
+   </tr> 
+  <tr> 
+   <td role="rowheader">Alias for Group</td> 
+   <td>Enter or map the email alias for this Group. You can include lowercase letters, numbers, and underscores. For the Office 365 Group type, this will be the Group's email alias ([Alias]@[Your Domain].onmicrosoft.com). For Security Group type, the alias functions as a nickname.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Description</td> 
+   <td>Enter or map a description for this Group.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Security enabled</td> 
+   <td>Enable this option if you want the Group to be security enabled.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Visibility</td> 
+   <td>Specify the visibility of the Office 365 Group.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Watch Teams
+
+This trigger module starts a scenario when a Team or Group is created or updated.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter</td> 
+   <td> <p>You can set a filter to watch for only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>Set the maximum number of Teams or Groups [!DNL Workfront Fusion] will return during one execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Channel
 
