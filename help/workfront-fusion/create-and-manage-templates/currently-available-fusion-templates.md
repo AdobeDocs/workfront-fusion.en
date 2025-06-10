@@ -17,6 +17,16 @@ To view available templates, click the **Templates** icon ![Templates icon](asse
 
 These templates automate Workfront processes and workflows.
 
+### [!BADGE New! ]{type=Informative} Workfront – Automatically Adjust Project Timeline When Tasks Are Completed Early
+
+<!--New June 10, 2025-->
+
+This template is designed to support organizations that follow a more flexible, "plan-as-you-go" approach rather than strict PMI-based methodology for Project Management.
+
+If your team struggles to maintain momentum because project timelines don't adjust dynamically, this solution is for you. Often, when tasks are completed ahead of schedule, it makes sense to accelerate the overall timeline — but manually updating dates can be tedious.
+
+This Fusion template automates that process. When a task is completed early, all dependent (successor) tasks are automatically rescheduled to start sooner, helping your team move faster and stay agile.
+
 ### [!BADGE New! ]{type=Informative} Workfront Boards - Delete Archived Cards from Designated Column (On Demand)
 
 <!--New March 12, 2025-->
