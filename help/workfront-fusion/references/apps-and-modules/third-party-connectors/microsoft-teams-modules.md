@@ -562,6 +562,8 @@ This action module sends a message to a team's channel or to a chat.
 
 #### Watch messages
 
+This trigger module starts a scenario when a message is sent to a team's channel or to a chat.
+
 #### Watch messages (deprecated)
 
 #### Watch new replies
