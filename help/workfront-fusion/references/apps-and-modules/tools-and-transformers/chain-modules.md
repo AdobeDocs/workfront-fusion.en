@@ -94,7 +94,7 @@ To configure the Call a child scenario module
 
    Or
 
-   To create a new child scenario, click Add next to the Chain field. For instructions on configuring the child scenario, see []().
+   To create a new child scenario, click Add next to the Chain field. The child scenario appears in a separate window, with the Receive data from parent and Return response from parent modules in place.
 
    The fields configured in the trigger module of the child scenario appear in the Call a child scenario module.
 
