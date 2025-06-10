@@ -486,7 +486,79 @@ This action module updates the description of the specified channel.
 
 #### Reply to a channel message
 
+This action module creates a reply to a message in the specified channel.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>Select the Microsoft Team that owns the channel that contains the message you want to reply to.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel ID</td> 
+   <td>Select the channel that contains the message you want to reply to.</td> 
+  </tr> 
+  <tr> 
+   <td>Message ID</td> 
+   <td>Enter or map the ID of the message you want to reply to.</td> 
+  </tr> 
+  <tr> 
+   <td>Content type</td> 
+   <td>Select whether you want to send the message in plain text or HTML format.</td> 
+  </tr> 
+  <tr> 
+   <td>Reply message</td> 
+   <td>Enter or map the body of the reply message you want to send.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Send a message
+
+This action module sends a message to a team's channel or to a chat.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Message type/td> 
+   <td> <p>Select whether you are sending a channel message or a chat message.</p> </td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>If you are sending a message to a channel, enter or map the ID of the Microsoft Team that owns the channel that you want to send a message to.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel ID</td> 
+   <td>If you are sending a message to a channel, enter or map the ID of the channel that you want to send a message to.</td> 
+  </tr> 
+  <tr> 
+   <td>Create a new chat</td> 
+   <td>If you are sending a chat message, select whether you want to create a new chat.
+   <ul><li><b>Yes</b><p>Select whether you want a one-on-one chat or a group chat, and select the member that you want to include in the chat. You must select the user associated with the connection this module uses, and a one-on-one chat must contain only that user and one other user.</p><p>If you are creating a group chat, you can set a topin in the Topic field.</p>
+   <li><b>No</b><p>Enter or map the ID of the team that owns the channel you want to send a message to, then enter or map the ID of the channel.</td> 
+  </tr> 
+  <tr> 
+   <td>Message</td> 
+   <td>Enter or map the body of the  message you want to send.</td> 
+  </tr> 
+  <tr> 
+   <td>Content type</td> 
+   <td>Select whether you want to send the message in plain text or HTML format.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Watch messages
 
