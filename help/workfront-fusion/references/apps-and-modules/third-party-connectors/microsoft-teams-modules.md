@@ -87,18 +87,18 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Team
 
-* [Create a Team from a Group](#create-a-team-from-a-group)
-* [Create an Office 365 Group](#create-an-office-365-group)
-* [Delete a Team or Group](#delete-a-team-or-group)
-* [Get a Team](#get-a-team)
-* [List all Teams and Groups](#list-all-teams-and-Groups)
-* [List joined Teams](#list-joined-teams)
-* [Update a Team](#update-a-team)
-* [Watch Teams](#watch-teams)
+* [Create a team from a group](#create-a-team-from-a-group)
+* [Create an Office 365 group](#create-an-office-365-group)
+* [Delete a team or group](#delete-a-team-or-group)
+* [Get a team](#get-a-team)
+* [List all teams and groups](#list-all-teams-and-groups)
+* [List joined teams](#list-joined-teams)
+* [Update a team](#update-a-team)
+* [Watch teams](#watch-teams)
 
-#### Create a Team from a Group
+#### Create a team from a group
 
-This action module creates a Team from an existing Microsoft Office 365 Group and configures settings for the new team.
+This action module creates a team from an existing Microsoft Office 365 group and configures settings for the new team.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -110,7 +110,7 @@ This action module creates a Team from an existing Microsoft Office 365 Group an
   </tr> 
   <tr> 
    <td role="rowheader">Group ID</td> 
-   <td> <p>Select the Group that you want to create a Team from.</p> 
+   <td> <p>Select the group that you want to create a team from.</p> 
    </tr> 
   <tr> 
    <td role="rowheader">Allow members to create and update channels</td> 
@@ -175,9 +175,9 @@ This action module creates a Team from an existing Microsoft Office 365 Group an
  </tbody> 
 </table>
 
-#### Create an Office 365 Group
+#### Create an Office 365 group
 
-This action module creates a Group in Microsoft Office 365.
+This action module creates a group in Microsoft Office 365.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -189,38 +189,38 @@ This action module creates a Group in Microsoft Office 365.
   </tr> 
   <tr> 
    <td role="rowheader">Display name</td> 
-   <td> <p>Enter or map the name that this Group displays in its address book.</p> 
+   <td> <p>Enter or map the name that this group displays in its address book.</p> 
    </tr> 
   <tr> 
    <td role="rowheader">Alias for Group</td> 
-   <td>Enter or map the email alias for this Group. You can include lowercase letters, numbers, and underscores. For the Office 365 Group type, this will be the Group's email alias ([Alias]@[Your Domain].onmicrosoft.com). For Security Group type, the alias functions as a nickname.</td> 
+   <td>Enter or map the email alias for this group. You can include lowercase letters, numbers, and underscores. For the Office 365 group type, this will be the group's email alias ([Alias]@[Your Domain].onmicrosoft.com). For Security Group type, the alias functions as a nickname.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Group type</td> 
-   <td>Enable <b>Unified</b> if you are creating an Office 365 Group.</td> 
+   <td>Enable <b>Unified</b> if you are creating an Office 365 group.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Description</td> 
-   <td>Enter or map a description for this Group.</td> 
+   <td>Enter or map a description for this group.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Security enabled</td> 
-   <td>Enable this option if you want the Group to be security enabled.</td> 
+   <td>Enable this option if you want the group to be security enabled.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Owners</td> 
-   <td>Select the owners for this Group.</td> 
+   <td>Select the owners for this group.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Members</td> 
-   <td>Select the members for this Group.</td> 
+   <td>Select the members for this group.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Delete a Team or Group
 
-This action module deletes the specified Team or Group.
+This action module deletes the specified team or group.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -232,14 +232,14 @@ This action module deletes the specified Team or Group.
   </tr> 
   <tr> 
    <td role="rowheader">Group ID</td> 
-   <td> <p>Enter or map the ID of the Group you want to delete.</p> 
+   <td> <p>Enter or map the ID of the group you want to delete.</p> 
    </tr> 
  </tbody> 
 </table>
 
 #### Get a Team
 
-This module retrieves properties and relationships for the specified Microsoft Team or Office 365 Group.
+This module retrieves properties and relationships for the specified Microsoft team or Office 365 group.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -251,14 +251,14 @@ This module retrieves properties and relationships for the specified Microsoft T
   </tr> 
   <tr> 
    <td role="rowheader">Group ID</td> 
-   <td> <p>Enter or map the ID of the Group you want to retrieve details for.</p> 
+   <td> <p>Enter or map the ID of the group you want to retrieve details for.</p> 
    </tr> 
  </tbody> 
 </table>
 
-#### List all Teams and Groups
+#### List all teams and groups
 
-This module lists all Microsoft Teams and Office 365 Groups associated with the organization. You can filter to return only results that meet criteria you specify.
+This module lists all teams in Microsoft Teams and Office 365 groups associated with the organization. You can filter to return only results that meet criteria you specify.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -270,11 +270,11 @@ This module lists all Microsoft Teams and Office 365 Groups associated with the 
   </tr> 
   <tr> 
    <td role="rowheader">Filter</td> 
-   <td> <p>You can set a filter to return only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
+   <td> <p>You can set a filter to return only teams and groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
    </tr> 
   <tr> 
    <td>Maximum number of returned results</td> 
-   <td>Set the maximum number of Teams or Groups Workfront Fusion will return during one execution cycle.</td> 
+   <td>Set the maximum number of teams or groups Workfront Fusion will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -294,14 +294,14 @@ This action module lists the teams that have been joined by the user associated 
   </tr> 
   <tr> 
    <td>Maximum number of returned results</td> 
-   <td>Set the maximum number of Teams or Groups Workfront Fusion will return during one execution cycle.</td> 
+   <td>Set the maximum number of teams or groups Workfront Fusion will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Update a Team
 
-This action module updates the properties of the specified Microsoft Team or Office 365 Group.
+This action module updates the properties of the specified teams in Microsoft Teams or Office 365 group.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -313,30 +313,30 @@ This action module updates the properties of the specified Microsoft Team or Off
   </tr> 
   <tr> 
    <td role="rowheader">Display name</td> 
-   <td> <p>Enter or map the name that this Group displays in its address book.</p> 
+   <td> <p>Enter or map the name that this group displays in its address book.</p> 
    </tr> 
   <tr> 
    <td role="rowheader">Alias for Group</td> 
-   <td>Enter or map the email alias for this Group. You can include lowercase letters, numbers, and underscores. For the Office 365 Group type, this will be the Group's email alias ([Alias]@[Your Domain].onmicrosoft.com). For Security Group type, the alias functions as a nickname.</td> 
+   <td>Enter or map the email alias for this group. You can include lowercase letters, numbers, and underscores. For the Office 365 group type, this will be the group's email alias ([Alias]@[Your Domain].onmicrosoft.com). For Security group type, the alias functions as a nickname.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Description</td> 
-   <td>Enter or map a description for this Group.</td> 
+   <td>Enter or map a description for this group.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Security enabled</td> 
-   <td>Enable this option if you want the Group to be security enabled.</td> 
+   <td>Enable this option if you want the group to be security enabled.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Visibility</td> 
-   <td>Specify the visibility of the Office 365 Group.</td> 
+   <td>Specify the visibility of the Office 365 group.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Watch Teams
 
-This trigger module starts a scenario when a Team or Group is created or updated.
+This trigger module starts a scenario when a Team or group is created or updated.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -348,11 +348,11 @@ This trigger module starts a scenario when a Team or Group is created or updated
   </tr> 
   <tr> 
    <td role="rowheader">Filter</td> 
-   <td> <p>You can set a filter to watch for only Teams and Groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
+   <td> <p>You can set a filter to watch for only teams and groups that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
    </tr> 
   <tr> 
    <td>Maximum number of returned results</td> 
-   <td>Set the maximum number of Teams or Groups Workfront Fusion will return during one execution cycle.</td> 
+   <td>Set the maximum number of teams or groups Workfront Fusion will return during one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -379,7 +379,7 @@ This action module creates a new channel for the specified team.
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Select the Microsoft Team that you want to create a channel for.</p> </td> 
+   <td> <p>Select the team in Microsoft Teams that you want to create a channel for.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel name</td> 
@@ -406,7 +406,7 @@ This action module deletes the specified channel from a Microsoft Team.
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Enter or map the ID of the Microsoft Team that you want to delete a channel from.</p> </td> 
+   <td> <p>Enter or map the ID of the team in Microsoft Teams that you want to delete a channel from.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel ID</td> 
@@ -429,7 +429,7 @@ This module retrieves the properties and relationships of a channel.
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Enter or map the ID of the Microsoft Team that owns the channel you want to retrieve details for.</p> </td> 
+   <td> <p>Enter or map the ID of the team in Microsoft Teams that owns the channel you want to retrieve details for.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel ID</td> 
@@ -440,7 +440,7 @@ This module retrieves the properties and relationships of a channel.
 
 #### List channels
 
-This modules lists channels owned by the specified Microsoft Team.
+This modules lists channels owned by the specified team inMicrosoft Teams.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -452,7 +452,7 @@ This modules lists channels owned by the specified Microsoft Team.
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Select the Microsoft Team that you want to list channels for.</p> </td> 
+   <td> <p>Select the team in Microsoft Teams that you want to list channels for.</p> </td> 
    </tr> 
   <tr> 
    <td>Maximum number of returned results</td> 
@@ -475,7 +475,7 @@ This action module updates the description of the specified channel.
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Select the Microsoft Team that owns the channel you want to update.</p> </td> 
+   <td> <p>Select the team in Microsoft Teams that owns the channel you want to update.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel name</td> 
@@ -509,7 +509,7 @@ This action module creates a reply to a message in the specified channel.
   </tr> 
   <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Select the Microsoft Team that owns the channel that contains the message you want to reply to.</p> </td> 
+   <td> <p>Select the team in Microsoft Teams that owns the channel that contains the message you want to reply to.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel ID</td> 
@@ -548,7 +548,7 @@ This action module sends a message to a team's channel or to a chat.
    </tr> 
    <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>If you are sending a message to a channel, enter or map the ID of the Microsoft Team that owns the channel that you want to send a message to.</p> </td> 
+   <td> <p>If you are sending a message to a channel, enter or map the ID of the team in Microsoft Teams that owns the channel that you want to send a message to.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel ID</td> 
@@ -589,7 +589,7 @@ This trigger module starts a scenario when a message is sent to a team's channel
    </tr> 
    <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>If you are watching channel messages, select the Microsoft Team that owns the channel that you watch for messages.</p> </td> 
+   <td> <p>If you are watching channel messages, select the team in Microsoft Teams that owns the channel that you watch for messages.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel ID</td> 
@@ -614,7 +614,7 @@ This trigger module starts a scenario when a message is sent to a team's channel
 
 This trigger module starts a scenario when a new reply is received by the specified message.
 
-This module is not available for Personal accounts.
+This module is not available for personal accounts.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -626,7 +626,7 @@ This module is not available for Personal accounts.
   </tr> 
    <tr> 
    <td role="rowheader">Team ID</td> 
-   <td> <p>Select the Microsoft Team that owns the channel that you watch for replies.</p> </td> 
+   <td> <p>Select the team in Microsoft Teams that owns the channel that you watch for replies.</p> </td> 
    </tr> 
   <tr> 
    <td>Channel ID</td> 
@@ -921,13 +921,66 @@ This module does not support personal accounts.
  </tbody> 
 </table>
 
-#### Make an API call
+#### Make a custom API call
+
+This action module makes a custom request to the Microsoft Teams API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>For instructions about connecting your [!DNL OneDrive] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td>Enter a path relative to <code>https://graph.microsoft.com</code>. Example:<code> /v1.0/groups</code></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion adds the authorization headers for you.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Search users
 
+This module searches for users using criteria you specify.
 
-
-
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter</td> 
+   <td> <p>You can set a filter to return only users that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND or OR rules.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Maximum number of returned results</td> 
+   <td>Set the maximum number of teams or groups Workfront Fusion will return during one execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 
