@@ -714,31 +714,31 @@ This action module creates a standalone meeting that is not associated with an e
    </tr> 
    <tr> 
    <td role="rowheader">End date and time</td> 
-   <td></td> 
+   <td>Enter or map the date and time that you want the meeting to end. For a list of supported date formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Allowed Presenters</td> 
+   <td>Select the group that is allowed to present in this meeting.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Attendiees</td> 
+   <td>For each attendee that you want to add to the meeting, click <b>Add item</b> and select the attendee's name and role.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Allow attendees to enable their cameras</td> 
+   <td>Select whether you want to allow attendees to enable their own cameras.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Allow attendees to enable their microphones</td> 
+   <td>Select whether you want to allow attendees to enable their own microphones.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Allow meeting chat</td> 
+   <td>Select whether you want the meeting chat to be enabled, disabled, or limited to the duration of the meeting call</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Allow Teams reactions</td> 
+   <td>Select whether you want to enable Teams reactions for this meeting.</td> 
    </tr> 
    <tr> 
    <td role="rowheader"></td> 
