@@ -902,6 +902,25 @@ This action module updates the online meeting withthe specified ID.
 
 #### Get a user's presence
 
+This action modules checks whether the selected users are present on Microsoft Teams.
+
+This module does not support personal accounts.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">User IDs</td> 
+   <td> <p>Select the users for which you want to check presence.</p> </td> 
+   </tr> 
+ </tbody> 
+</table>
+
 #### Make an API call
 
 #### Search users
