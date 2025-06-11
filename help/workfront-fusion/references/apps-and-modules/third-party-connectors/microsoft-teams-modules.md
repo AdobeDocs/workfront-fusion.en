@@ -1,13 +1,13 @@
 ---
 title: Microsoft Teams modules
-description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Teams, as well as connect it to multiple third-party applications and services.
+description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Teams, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
 ---
-# [!DNL Microsoft Teams] modules
+# Microsoft Teams modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Teams], as well as connect it to multiple third-party applications and services.
+In an Adobe Workfront Fusion scenario, you can automate workflows that use Microsoft Teams, as well as connect it to multiple third-party applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -52,7 +52,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -60,9 +60,9 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 To use Microsoft Teams modules, you must have a Microsoft Teams account able to perform the action in the module.
 
-## Connecting the [!DNL Teams] service to Workfront Fusion
+## Connecting the Microsoft Teams service to Workfront Fusion
 
-For instructions about connecting your [!DNL Teams] account to [!UICONTROL Workfront Fusion], see [Create a connection to [!UICONTROL Adobe Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+For instructions about connecting your Microsoft Teams account to Workfront Fusion, see [Create a connection to Adobe Workfront Fusion - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
 >[!NOTE]
 >
@@ -70,9 +70,9 @@ For instructions about connecting your [!DNL Teams] account to [!UICONTROL Workf
 >
 >For example, if a user has "Read table" permissions granted via the Excel connector and then creates a connection in the Outlook connector to read emails, the permissions consent screen will show both the already granted "Read table" permission and the newly required "Write email" permission.
 
-## [!DNL Microsoft Teams] modules and their fields
+## Microsoft Teams modules and their fields
 
-When you configure [!DNL Teams] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Teams] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure Microsoft Teams modules, Workfront Fusion displays the fields listed below. Along with these, additional Microsoft Teams fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -931,7 +931,7 @@ This action module makes a custom request to the Microsoft Teams API.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>For instructions about connecting your [!DNL OneDrive] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a></td> 
+   <td>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
