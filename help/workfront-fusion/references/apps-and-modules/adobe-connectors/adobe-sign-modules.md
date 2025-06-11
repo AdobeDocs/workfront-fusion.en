@@ -258,7 +258,7 @@ This action module creates a new record of the selected type.
      <li> <p><b>[!UICONTROL Sharing mode]</b> </p> <p>Specify who should have access to the library document.</p> </li> 
      <li> <p><b>[!UICONTROL Library document state]</b> </p> <p>Select whether the document is in authoring state or active.</p> </li> 
      <li> <p><b>[!UICONTROL Library template type]</b> </p> <p>For each library template type you want to use, click <b>[!UICONTROL Add item]</b> and select the template type.</p> </li> 
-     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Enter the last date that an event occurred on the library document.</p> <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+     <li> <p><b>[!UICONTROL Last event date]</b> </p> <p>Enter the last date that an event occurred on the library document.</p> <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </li> 
      <li> <p><b>[!UICONTROL Library document status]</b> </p> <p>Select the status of the library document.</p> </li> 
     </ul> </td> 
   </tr> 
@@ -589,7 +589,7 @@ This action module creates records linked to a module you select.
         <ul> 
          <li> <p><b>[!UICONTROL Email]</b> </p> <p>Enter the email address of the person who receives the newly created web form</p> </li> 
          <li> <p><b>[!UICONTROL Comment]</b> </p> <p>Enter a comment describing how the API caller established the signer's identity. This information appears in the [!DNL Adobe Acrobat Sign] audit trail.</p> </li> 
-         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Enter an expiration date for the personalization of this web form. </p> <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> </li> 
+         <li> <p><b>[!UICONTROL Expiration]</b> </p> <p>Enter an expiration date for the personalization of this web form. </p> <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercion</a>.</p> </li> 
          <li> <p><b>[!UICONTROL Reusable]</b> </p> <p>Select <b>[!UICONTROL Yes]</b> if you want the intended signer to be able to sign the form more than once.</p> </li> 
         </ul> </li> 
       </ul> </li> 

@@ -709,11 +709,11 @@ This action module creates a standalone meeting that is not associated with an e
    <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Start date and time</td> 
+   <td>Enter or map the date and time that you want the meeting to start. For a list of supported date formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
+   <td role="rowheader">End date and time</td> 
    <td></td> 
    </tr> 
    <tr> 

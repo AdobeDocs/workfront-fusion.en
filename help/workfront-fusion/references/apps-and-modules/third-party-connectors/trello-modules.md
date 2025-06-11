@@ -685,7 +685,7 @@ This action module creates a card in a selected list.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> Enter a due date for the card. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p> Enter a due date for the card. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -757,7 +757,7 @@ This action module edits an existing card.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due date]</td> 
-   <td> <p> Enter a due date for the card. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p> Enter a due date for the card. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Due complete]</td> 
@@ -1161,11 +1161,11 @@ This action module adds a comment to a selected card.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since] </td> 
-   <td> <p>Set the start date of the period in which the comment was created. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Set the start date of the period in which the comment was created. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Before] </td> 
-   <td> <p>Set the end date of the period in which the comment was created. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Set the end date of the period in which the comment was created. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>

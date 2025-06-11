@@ -901,14 +901,14 @@ This search module retrieves a list of records of the selected type.
       <td role="rowheader">[!UICONTROL Starts At]</td>
       <td>
         <p>Enter the earliest date that you want to retrieve records for. </p>
-        <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p>
+        <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Ends At]</td>
       <td>
         <p>Enter the latest date that you want to retrieve records for. </p>
-        <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p>
+        <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p>
       </td>
     </tr>
   </tbody>
