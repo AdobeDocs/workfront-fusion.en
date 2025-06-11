@@ -709,6 +709,10 @@ This action module creates a standalone meeting that is not associated with an e
    <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
   </tr> 
    <tr> 
+   <td role="rowheader">Subject</td> 
+   <td>Enter or map a subject for this meeting.</td> 
+   </tr> 
+   <tr> 
    <td role="rowheader">Start date and time</td> 
    <td>Enter or map the date and time that you want the meeting to start. For a list of supported date formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
    </tr> 
@@ -773,9 +777,126 @@ This action module creates a standalone meeting that is not associated with an e
 
 #### Delete an online meeting
 
+This action module deletes the online meeting with the specified ID.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Meeting ID</td> 
+   <td> <p>Enter or map the ID of the meeting that you want to delete.</p> </td> 
+   </tr> 
+ </tbody> 
+</table>
+
 #### Get an online meeting
 
+This action module retrieves details of the online meeting with the specified ID.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Meeting ID</td> 
+   <td> <p>Enter or map the ID of the meeting that you want to retrieve details for.</p> </td> 
+   </tr> 
+ </tbody> 
+</table>
+
 #### Update an online meeting
+
+This action module updates the online meeting withthe specified ID.
+
+
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Meeting ID</td> 
+   <td>Enter or map the ID of the meeting that you want to update.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Subject</td> 
+   <td>Enter or map a subject for this meeting.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Start date and time</td> 
+   <td>Enter or map the date and time that you want the meeting to start. For a list of supported date formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">End date and time</td> 
+   <td>Enter or map the date and time that you want the meeting to end. For a list of supported date formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Allowed Presenters</td> 
+   <td>Select the group that is allowed to present in this meeting.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Attendiees</td> 
+   <td>For each attendee that you want to add to the meeting, click <b>Add item</b> and select the attendee's name and role.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Allow attendees to enable their cameras</td> 
+   <td>Select whether you want to allow attendees to enable their own cameras.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Allow attendees to enable their microphones</td> 
+   <td>Select whether you want to allow attendees to enable their own microphones.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Allow meeting chat</td> 
+   <td>Select whether you want the meeting chat to be enabled, disabled, or limited to the duration of the meeting call</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Allow Teams reactions</td> 
+   <td>Select whether you want to enable Teams reactions for this meeting.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Thread ID</td> 
+   <td>Enter or map the ID of a thread associated with this meeting.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Message ID</td> 
+   <td>Enter or map the ID of a message associated with this meeting.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Reply chain message ID</td> 
+   <td>Enter or map the ID of the reply chain associated with this meeting.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Announce entry and exit</td> 
+   <td>Select whether you want the meeting to announce when attendees enter or exit.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Scope</td> 
+   <td>Select the group of attendees that can bypass waiting in the lobby. These attendees will join the meeting directly.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Enable dial-in users to bypass lobby</td> 
+   <td>Select whether to enable dial-in users to bypass the lobby.</td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Record automatically</td> 
+   <td>Select whether you want to record the meeting automatically.</td> 
+   </tr> 
+   </tbody> 
+</table>
 
 ### Other
 
