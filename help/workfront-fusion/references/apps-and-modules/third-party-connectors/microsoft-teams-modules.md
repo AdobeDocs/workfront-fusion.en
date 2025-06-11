@@ -359,6 +359,12 @@ This trigger module starts a scenario when a Team or Group is created or updated
 
 ### Channel
 
+* [Create a channel](#create-a-channel)
+* [Delete a channel](#delete-a-channel)
+* [Get a channel](#get-a-channel)
+* [List channels](#list-channels)
+* [Update a channel](#update-a-channel)
+
 #### Create a channel
 
 This action module creates a new channel for the specified team.
@@ -484,6 +490,11 @@ This action module updates the description of the specified channel.
 
 ### Message
 
+* [Reply to a channel message](#reply-to-a-channel-message)
+* [Send a message](#send-a-message)
+* [Watch messages](#watch-messages)
+* [Watch new replies](#watch-new-replies)
+
 #### Reply to a channel message
 
 This action module creates a reply to a message in the specified channel.
@@ -546,7 +557,7 @@ This action module sends a message to a team's channel or to a chat.
   <tr> 
    <td>Create a new chat</td> 
    <td>If you are sending a chat message, select whether you want to create a new chat.
-   <ul><li><b>Yes</b><p>Select whether you want a one-on-one chat or a group chat, and select the member that you want to include in the chat. You must select the user associated with the connection this module uses, and a one-on-one chat must contain only that user and one other user.</p><p>If you are creating a group chat, you can set a topin in the Topic field.</p>
+   <ul><li><b>Yes</b><p>Select whether you want a one-on-one chat or a group chat, and select the member that you want to include in the chat. You must select the user associated with the connection this module uses, and a one-on-one chat must contain only that user and one other user.</p><p>If you are creating a group chat, you can set a topic in the Topic field.</p>
    <li><b>No</b><p>Enter or map the ID of the team that owns the channel you want to send a message to, then enter or map the ID of the channel.</td> 
   </tr> 
   <tr> 
@@ -564,19 +575,205 @@ This action module sends a message to a team's channel or to a chat.
 
 This trigger module starts a scenario when a message is sent to a team's channel or to a chat.
 
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type of messages to watch</td> 
+   <td> <p>Select whether you want to watch channel messages or chat messages.</p> </td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>If you are watching channel messages, select the Microsoft Team that owns the channel that you watch for messages.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel ID</td> 
+   <td>If you are watching channel messages, select the channel that you want to watch for messages.</td> 
+  </tr> 
+  <tr> 
+   <td>Chat ID</td> 
+   <td>If you are watching chat messages, select the chat that you want to watch for messages.</td> 
+  </tr> 
+  <tr> 
+   <td>Maximum number of returned messages</td> 
+   <td>Set the maximum number of messages Workfront Fusion will return during one execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Watch messages (deprecated)
+
+<!--Check on this-->
 
 #### Watch new replies
 
+This trigger module starts a scenario when a new reply is received by the specified message.
+
+This module is not available for Personal accounts.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> <p>Select the Microsoft Team that owns the channel that you watch for replies.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Channel ID</td> 
+   <td>Select the channel that you want to watch for replies.</td> 
+  </tr> 
+  <tr> 
+   <td>Message ID</td> 
+   <td>Select the chat that you want to watch for replies.</td> 
+  </tr> 
+  <tr> 
+   <td>Maximum number of returned replies</td> 
+   <td>Set the maximum number of replies Workfront Fusion will return during one execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Member
 
-#### Add a memner
+* [Add a member](#add-a-member)
+* [Add a member to a group](#add-a-member-to-a-group)
+
+#### Add a member
+
+This action module adds a member to Microsoft Teams.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Member name</td> 
+   <td> <p>Enter or map the name of the member that you want to add to Microsoft Teams.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Password</td> 
+   <td>Enter or map the password for the member.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Add a member to a Group
+
+This action module adds a member to an Office 365 Group.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Group ID</td> 
+   <td> <p>Select the group that you want to add a member to.</p> </td> 
+   </tr> 
+  <tr> 
+   <td>Member ID</td> 
+   <td>Select the member that you want to add to the group.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Online meeting
 
 #### Create an online meeting
+
+This action module creates a standalone meeting that is not associated with an event on the user's calendar. This meeting will not appear on the user's calendar.
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Microsoft Teams account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader"></td> 
+   <td></td> 
+   </tr> 
+ </tbody> 
+</table>
 
 #### Delete an online meeting
 
