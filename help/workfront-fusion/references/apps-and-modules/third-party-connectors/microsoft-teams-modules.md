@@ -741,38 +741,34 @@ This action module creates a standalone meeting that is not associated with an e
    <td>Select whether you want to enable Teams reactions for this meeting.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Thread ID</td> 
+   <td>Enter or map the ID of a thread associated with this meeting.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Message ID</td> 
+   <td>Enter or map the ID of a message associated with this meeting.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Reply chain message ID</td> 
+   <td>Enter or map the ID of the reply chain associated with this meeting.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Announce entry and exit</td> 
+   <td>Select whether you want the meeting to announce when attendees enter or exit.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Scope</td> 
+   <td>Select the group of attendees that can bypass waiting in the lobby. These attendees will join the meeting directly.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Enable dial-in users to bypass lobby</td> 
+   <td>Select whether to enable dial-in users to bypass the lobby.</td> 
    </tr> 
    <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Record automatically</td> 
+   <td>Select whether you want to record the meeting automatically.</td> 
    </tr> 
-   <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
-   </tr> 
- </tbody> 
+   </tbody> 
 </table>
 
 #### Delete an online meeting
