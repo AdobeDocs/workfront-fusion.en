@@ -671,7 +671,7 @@ This action module adds a member to Microsoft Teams.
  </tbody> 
 </table>
 
-#### Add a member to a Group
+#### Add a member to a group
 
 This action module adds a member to an Office 365 Group.
 
@@ -695,6 +695,11 @@ This action module adds a member to an Office 365 Group.
 </table>
 
 ### Online meeting
+
+* [Create an online meeting](#create-an-online-meeting)
+* [Delete an online meeting](#delete-an-online-meeting)
+* [Get an online meeting](#get-an-online-meeting)
+* [Update an online meeting](#update-an-online-meeting)
 
 #### Create an online meeting
 
@@ -900,7 +905,11 @@ This action module updates the online meeting withthe specified ID.
 
 ### Other
 
-#### Get a user's presence
+* [Check presence of users](#check-presence-of-users)
+* [Make a custom API call](#make-a-custom-api-call)
+* [Search users](#search-users)
+
+#### Check presence of users
 
 This action modules checks whether the selected users are present on Microsoft Teams.
 
