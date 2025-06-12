@@ -127,6 +127,7 @@ These modules allow you to perform actions on your data, but do not require conn
 * [JSON modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
 * [JSONata modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
 * [JWT modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
+* [Lexical modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Markdown modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Math module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
 * [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
