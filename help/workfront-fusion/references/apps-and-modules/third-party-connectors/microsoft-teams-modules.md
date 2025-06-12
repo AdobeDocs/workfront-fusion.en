@@ -197,7 +197,7 @@ This action module creates a group in Microsoft Office 365.
   </tr> 
   <tr> 
    <td role="rowheader">Group type</td> 
-   <td>Enable <b>Unified</b> if you are creating an Office 365 group.</td> 
+   <td>Select whether yoy are creating an Office 365 group or a Security group.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Description</td> 
@@ -334,9 +334,9 @@ This action module updates the properties of the specified teams in Microsoft Te
  </tbody> 
 </table>
 
-#### Watch Teams
+#### Watch teams
 
-This trigger module starts a scenario when a Team or group is created or updated.
+This trigger module starts a scenario when a team  is created.
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -605,10 +605,6 @@ This trigger module starts a scenario when a message is sent to a team's channel
   </tr> 
  </tbody> 
 </table>
-
-#### Watch messages (deprecated)
-
-<!--Check on this-->
 
 #### Watch new replies
 
