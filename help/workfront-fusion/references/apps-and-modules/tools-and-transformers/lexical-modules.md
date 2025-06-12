@@ -6,7 +6,7 @@ feature: Workfront Fusion
 ---
 # Lexical modules
 
-In an Adobe Workfront Fusion scenario, you can use the Lexical modules to convert Lexical to HTML and HTML to Lexical. 
+In an Adobe Workfront Fusion scenario, you can use the Lexical modules to convert Lexical to HTML and HTML to Lexical.  You can use this in combination with Workfront modules to add rich text to or read rich text from Workfront fields.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -85,3 +85,4 @@ When you are configuring this module, the following fields display.
   </tr> 
  </tbody> 
 </table>
+
