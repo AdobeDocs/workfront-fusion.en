@@ -10,7 +10,7 @@ hidefromtoc: yes
 
 There are no MCP modules available at this time.
 
-<!--
+<!-- SET UP REDIRECTS
 
 Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
 
