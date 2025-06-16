@@ -7,6 +7,8 @@ exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
 ---
 # Microsoft Teams modules
 
+<!-- ADD REDIRECTS -->
+
 In an Adobe Workfront Fusion scenario, you can automate workflows that use Microsoft Teams, as well as connect it to multiple third-party applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
