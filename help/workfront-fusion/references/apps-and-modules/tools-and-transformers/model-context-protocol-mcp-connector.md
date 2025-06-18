@@ -5,6 +5,7 @@ author: Becky
 feature: Workfront Fusion
 hide: yes
 hidefromtoc: yes
+exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 ---
 # Model Context Protocol (MCP) module
 

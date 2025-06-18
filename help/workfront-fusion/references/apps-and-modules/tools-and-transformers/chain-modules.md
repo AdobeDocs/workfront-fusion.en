@@ -5,6 +5,7 @@ author: Becky
 feature: Workfront Fusion
 hide: yes
 hidefromtoc: yes
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 ---
 # Chain modules
 
@@ -122,4 +123,3 @@ To configure the Add Responder module:
    For instructions on creating a data structure, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 
 1. Click **OK** to save the module.
-
