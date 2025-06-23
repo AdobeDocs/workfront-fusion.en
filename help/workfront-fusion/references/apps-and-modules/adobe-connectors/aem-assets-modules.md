@@ -225,6 +225,12 @@ If you see the map button above a field or function, you can use it to set varia
 * [Initiate upload]()
 * [Upload an asset](#upload-an-asset)
 
+#### Complete upload
+
+#### Get presigned storage
+
+This action module creates a temporary presigned URL to securely upload or download files from AEM without requiring direct credentials.
+
 #### [!UICONTROL Upload an asset]
 
 This action module uploads an asset to your [!DNL Adobe Experience Manager Assets] account.
