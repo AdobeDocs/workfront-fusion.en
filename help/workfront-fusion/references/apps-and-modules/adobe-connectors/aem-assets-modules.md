@@ -209,7 +209,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Files operations]()
+* [Files operations](#)
 * [Other]()
 * [Assets (Author API)]()
 * [Events (Author API)]()
@@ -220,7 +220,10 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Files operations
 
-
+* [Complete upload]()
+* [Get presigned storage]()
+* [Initiate upload]()
+* [Upload an asset](#upload-an-asset)
 
 #### [!UICONTROL Upload an asset]
 
@@ -248,6 +251,13 @@ This action module uploads an asset to your [!DNL Adobe Experience Manager Asset
 ### Other
 
 
+* [Copy a folder or asset](#copy-a-folder-or-asset)
+* [Create a record](#create-a-record)
+* [Delete a folder, asset, or rendition](#delete-a-folder-asset-or-rendition)
+* [Get a folder listing](#get-a-folder-listing)
+* [Make a custom API call](#make-a-custom-api-call)
+* [Move a folder or asset](#move-a-folder-or-asset)
+* [Update a record](#update-a-record)
 
 
 
@@ -472,26 +482,43 @@ This action module updates an existing record.
 
 ### Assets (Author API)
 
-
+* [Delete asset]()
+* [Get assets job status]()
 
 ### Events (Author API)
 
+* [AEM Assets events]()
 
 
 ### Metadata (Author API)
 
+* [Get asset metadata]()
+* [Update asset metadata]()
 
 
 ### Import (Author API)
 
+* [Get import job results]()
+* [Get import job status]()
+* [Upload an asset from URL]()
 
 
 ### Relations (Author API)
 
+* [Create asset relations]()
+* [Delete asset relation]()
+* [Get asset relation types]()
+* [Get asset relations]()
 
 
 ### Folders (Folders API)
 
+* [Create folders]()
+* [Delete a folder by ID]()
+* [Delete folders by path]()
+* [Get folders job results]()
+* [Get folders job status]()
+* [List folders]()
 
 
 
