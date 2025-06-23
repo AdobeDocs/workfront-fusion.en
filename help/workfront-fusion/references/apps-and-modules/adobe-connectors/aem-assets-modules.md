@@ -209,16 +209,49 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Copy a folder or asset](#copy-a-folder-or-asset)
-* [Create a record](#create-a-record)
-* [Delete a folder, asset, or rendition](#delete-a-folder-asset-or-rendition)
-* [Get a folder listing](#get-a-folder-listing)
-* [Make a custom API call](#make-a-custom-api-call)
-* [Move a folder or asset](#move-a-folder-or-asset)
-* [Update a record](#update-a-record)
-* [Upload an asset](#upload-an-asset)
+* [Files operations]()
+* [Other]()
+* [Assets (Author API)]()
+* [Events (Author API)]()
+* [Metadata (Author API)]()
+* [Import (Author API)]()
+* [Relations (Author API)]()
+* [Folders (Folders API)]()
 
-### [!UICONTROL Copy a folder or asset]
+### Files operations
+
+
+
+#### [!UICONTROL Upload an asset]
+
+This action module uploads an asset to your [!DNL Adobe Experience Manager Assets] account.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Destination]</td> 
+   <td> <p>Select the folder where you want to upload an asset.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td>Enter or map the source file's name and data.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Other
+
+
+
+
+
+#### [!UICONTROL Copy a folder or asset]
 
 This action module copies a folder or asset to another location in your Adobe Experience Manager Assets account.
 
@@ -257,7 +290,9 @@ This action module copies a folder or asset to another location in your Adobe Ex
  </tbody> 
 </table>
 
-### [!UICONTROL Create a record]
+
+
+#### [!UICONTROL Create a record]
 
 This action module creates a folder or an asset comment.
 
@@ -288,7 +323,7 @@ This action module creates a folder or an asset comment.
  </tbody> 
 </table>
 
-### [!UICONTROL Delete a folder, asset, or rendition]
+#### [!UICONTROL Delete a folder, asset, or rendition]
 
 This action module deletes a folder, asset, or rendition.
 
@@ -312,7 +347,7 @@ This action module deletes a folder, asset, or rendition.
  </tbody> 
 </table>
 
-### [!UICONTROL Get a folder listing]
+#### [!UICONTROL Get a folder listing]
 
 This action module retrieves a representation of an existing folder and of its child entities (folders or assets).
 
@@ -331,7 +366,7 @@ This action module retrieves a representation of an existing folder and of its c
  </tbody> 
 </table>
 
-### [!UICONTROL Make a custom API call]
+#### [!UICONTROL Make a custom API call]
 
 This action module makes a custom API call to the [!DNL Adobe Experience Manager Assets] API.
 
@@ -369,7 +404,7 @@ This action module makes a custom API call to the [!DNL Adobe Experience Manager
  </tbody> 
 </table>
 
-### [!UICONTROL Move a folder or asset]
+#### [!UICONTROL Move a folder or asset]
 
 This action module moves the asset or folder at the given path to a new location.
 
@@ -404,7 +439,7 @@ This action module moves the asset or folder at the given path to a new location
  </tbody> 
 </table>
 
-### [!UICONTROL Update a record]
+#### [!UICONTROL Update a record]
 
 This action module updates an existing record.
 
@@ -435,25 +470,82 @@ This action module updates an existing record.
  </tbody> 
 </table>
 
-### [!UICONTROL Upload an asset]
+### Assets (Author API)
 
-This action module uploads an asset to your [!DNL Adobe Experience Manager Assets] account.
 
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Destination]</td> 
-   <td> <p>Select the folder where you want to upload an asset.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>Enter or map the source file's name and data.</td> 
-  </tr> 
- </tbody> 
-</table>
+
+### Events (Author API)
+
+
+
+### Metadata (Author API)
+
+
+
+### Import (Author API)
+
+
+
+### Relations (Author API)
+
+
+
+### Folders (Folders API)
+
+
+
+
+
+
+<!--
+i! I added a lot of modules to the AEM Assets connector and we need new documentation for them. The connector is available in the QA environment. Heres the added modules and a brief description of them, more info about them can be found in the Assets Author Api docs and the Folders Api docs. Im not fully confident that i kept all the best practices for naming things :sweat_smile:, i hope you can take a look at that as well. Let me know if theres anything i can tell about the modules and thanks again in advance!
+Author API
+Assets
+Delete Asset
+Deletes an asset when provided an Asset ID, There is a force parameter that when toggled will delete the folder regardless if it's referenced.
+Return either nothing if the deletion takes less than a few seconds or a job ID which can be used in another module to track the job of deleting the folder.
+Get assets job status
+Given an assets job ID will return the state that the job is currently in (PROCESSING, COMPLETED, etc.)
+Events
+AEM Assets events
+The costumer can create a web hook in this module and register it in the Adobe admin console
+Metadata
+Get asset metadata
+Given asset ID returns assets metadata.
+Update asset metadata
+Given asset ID, there are 6 patch operations that can be done with the metadata. The operations are visible in the module as well as the documentation.
+Import
+Get import job results
+Given Job ID returns it's result.
+Get import job status
+Given Job ID returns its status.
+Upload an asset from url
+Takes global metadata which applies to all the assets and local ones which apply individually.In both it is also possible to specify custom metadata.
+Also takes the folder path or folder ID to place the assets there and url-s of the assets.
+Relations
+Create asset relation
+Given asset ID and a list of related asset ID as well as the relation types creates those relationships.
+Delete asset relations
+Given asset ID and relation type deletes all relations of that type. Can also specify a related asset to target only that.
+ there is a checkbox that is checked by default and when unchecked reveals a field where the user can specify the related user ID.
+Get asset relation types
+Given asset ID returns all the relation types that the asset has.
+Get asset relations
+Given asset ID returns all relations. Can also specify a specific type of relation.
+Folders API
+Create folders
+Given a list of folders with their path, name, title, creates them.
+Delete a folder by ID
+Given Folder ID deletes the folder. There is also a way to specify if it should delete folders recursively and if it should be forced.
+Return either nothing if the deletion takes less than a few seconds or a job ID which can be used in another module to track the job of deleting the folder.
+Delete folders by path
+Given a list of paths, deletes everything in them. There is also a way to specify if it should delete folders recursively and if it should be forced.
+Return either nothing if the deletion takes less than a few seconds or a job ID which can be used in another module to track the job of deleting the folder.
+Get folders job results
+Given job ID returns its result.
+Get folders job status
+Given job ID returns its status.
+List Folders
+List folders under the given folder. In the module you can choose the root folder either by ID or by Path.
+-->
+
