@@ -488,8 +488,50 @@ This action module updates an existing record.
 
 ### Assets (Author API)
 
-* [Delete asset]()
+* [Delete asset](#delete-asset)
 * [Get assets job status]()
+
+#### Delete asset
+
+This action module deletes a single asset by its ID.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td> <p>Enter or map the ID of the asset that you want to delete.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Force]</td> 
+   <td>Enable this option to force the asset to delete, even if it is referenced.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Get job status
+
+This action module gets the current status of an async job.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td> <p>Enter or map the ID of the asset that you want to get the status for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Events (Author API)
 
