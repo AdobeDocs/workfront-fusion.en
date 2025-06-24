@@ -528,20 +528,69 @@ This action module gets the current status of an async job.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Job ID]</td> 
-   <td> <p>Enter or map the ID of the asset that you want to get the status for.</p> </td> 
+   <td> <p>Enter or map the ID of the job that you want to get the status for.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Events (Author API)
 
-* [AEM Assets events]()
+#### Watch events
+
+This trigger module starts a scenario when an event occurs in AEM Assets.
+
+The module contains a single field: Webhook. Select an existing webhook to use for these events, or create a new one.
+
+To create a new webhook:
+
+1. Click **Add** next to the Webhook field.
+1. Fill in the following fields:
+
+   <table>
+     <col/>
+     <col/>
+     <tbody>
+       <tr>
+         <td role="rowheader">[!UICONTROL Webhook name]</td>
+        <td>Enter a name for this webhook.</td>
+       </tr>
+       <tr>
+         <td role="rowheader">[!UICONTROL Connection]</td>
+        <td>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</td>
+       </tr>
+     </tbody>
+   </table>
+
+1. Click Save to save the webhook and return to the module.
 
 
 ### Metadata (Author API)
 
-* [Get asset metadata]()
+* [Get asset metadata](#get-asset-metadata)
 * [Update asset metadata]()
+
+#### Get asset metadata
+
+This action module retrieves metadata about the specified asset.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td> <p>Enter or map the ID of the asset that you want to get the metadata for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Update asset metadata
+
+
 
 
 ### Import (Author API)
