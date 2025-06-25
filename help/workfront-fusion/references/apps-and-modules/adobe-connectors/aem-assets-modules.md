@@ -567,7 +567,7 @@ To create a new webhook:
 ### Metadata (Author API)
 
 * [Get asset metadata](#get-asset-metadata)
-* [Update asset metadata]()
+* [Update asset metadata](#update-asset-metadata)
 
 #### Get asset metadata
 
@@ -590,7 +590,26 @@ This action module retrieves metadata about the specified asset.
 
 #### Update asset metadata
 
+This action module updates metadata for the specified asset.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td> <p>Enter or map the ID of the asset that you want to update the metadata for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Updates]</td> 
+   <td> <p>For each metadata item that you want to update, click <b>Add item</b> and select the operation. Other fields in the Add item box depend on the operation selected.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 ### Import (Author API)
