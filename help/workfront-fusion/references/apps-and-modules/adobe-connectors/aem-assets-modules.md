@@ -618,6 +618,18 @@ This action module updates metadata for the specified asset.
 * [Get import job status]()
 * [Upload an asset from URL]()
 
+#### Get import job results
+
+
+
+#### Get import job status
+
+
+
+#### Upload an asset from a URL
+
+
+
 
 ### Relations (Author API)
 
@@ -625,6 +637,22 @@ This action module updates metadata for the specified asset.
 * [Delete asset relation]()
 * [Get asset relation types]()
 * [Get asset relations]()
+
+#### Create asset relations
+
+
+
+#### Delete asset relation
+
+
+
+#### Get asset relation types
+
+
+
+#### Get asset relations
+
+
 
 
 ### Folders (Folders API)
@@ -635,6 +663,28 @@ This action module updates metadata for the specified asset.
 * [Get folders job results]()
 * [Get folders job status]()
 * [List folders]()
+
+#### Create folders
+
+
+
+#### Delete a folder by ID
+
+
+
+#### Delete folders by path
+
+
+
+#### Get folders job results
+
+
+
+#### Get folders job status
+
+
+
+#### List folders
 
 
 
