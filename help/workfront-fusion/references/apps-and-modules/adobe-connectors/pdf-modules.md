@@ -70,7 +70,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 To create an OAuth Server-to-Server connection, you must add the Adobe PDF Services API in your Adobe Developers Console. When adding the API, select the OAuth Server-to-Server option.
 
-For instructions, see [Add API to project using OAuth](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth/) In the Adobe developer documentation.
+For instructions, see [Add API to project using OAuth User authentication credentials](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-user-authentication) In the Adobe developer documentation.
 
 ## Adobe PDF Services API information
 
