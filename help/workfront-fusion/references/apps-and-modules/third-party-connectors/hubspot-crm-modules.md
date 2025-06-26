@@ -1427,7 +1427,7 @@ This action module creates a new task for a calendar. The connection used in thi
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event Date]</td> 
-   <td>Enter or map the date for this task.<p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Enter or map the date for this task.<p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Category]</td> 
@@ -1676,7 +1676,7 @@ This action module creates and immediately publishes a message on the specified 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Trigger at]</td> 
-   <td>Enter or map the date and time that you want the broadcast to be sent. If this is left blank, the broadcast is sent immediately.<p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Enter or map the date and time that you want the broadcast to be sent. If this is left blank, the broadcast is sent immediately.<p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1776,7 +1776,7 @@ This action module creates a new blog post.
   </tr> 
   <tr> 
    <td role="rowheader">Publish Date</td> 
-   <td>Enter or map the date when the blog post is to be published. <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p></td> 
+   <td>Enter or map the date when the blog post is to be published. <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p></td> 
   </tr> 
   <tr> 
    <td role="rowheader">Name</td> 

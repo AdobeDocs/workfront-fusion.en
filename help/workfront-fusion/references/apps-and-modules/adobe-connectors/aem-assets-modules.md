@@ -489,7 +489,7 @@ This action module updates an existing record.
 ### Assets (Author API)
 
 * [Delete asset](#delete-asset)
-* [Get assets job status]()
+* [Get job status](#get-job-status)
 
 #### Delete asset
 
@@ -620,16 +620,92 @@ This action module updates metadata for the specified asset.
 
 #### Get import job results
 
+This action module retrieves results for the specified import job.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Import job ID]</td> 
+   <td> <p>Enter or map the ID of the job that you want to retrieve results for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Get import job status
 
+This action module retrieves the status of the specified import job.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Import job ID]</td> 
+   <td> <p>Enter or map the ID of the job that you want to retrieve the status of.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Upload an asset from a URL
 
+This action module uploads a new asset by importing files from the specified URLs.
 
-
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Title</td> 
+   <td> <p>Enter or map a title for the asset.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Description</td> 
+   <td> <p>Enter or map a description for the asset.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Subject</td> 
+   <td> <p>Enter or map a subject for the asset.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Creator</td> 
+   <td> <p>Enter or map the creator of the asset.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Expiration date</td> 
+   <td> <p>Enter or map the experation date for the asset.</p><p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Custom metadata</td> 
+   <td> <p>For each item of custom metadata that you want to add to the asset, click <b>Add item</b> and enter the metadata's name and value.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Folder path or ID</td> 
+   <td> <p>Select whether you want to specify the destination folder by its path or ID, then select the path or enter the ID.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Files to import</td> 
+   <td> <p>For each file that you want to import, click <b>Add item</> and fill in the details for the file. <code>Title</code> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"></td> 
+   <td> <p></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Relations (Author API)
 
@@ -639,6 +715,9 @@ This action module updates metadata for the specified asset.
 * [Get asset relations]()
 
 #### Create asset relations
+
+This action module creates new asset relations for the selected asset.
+
 
 
 
