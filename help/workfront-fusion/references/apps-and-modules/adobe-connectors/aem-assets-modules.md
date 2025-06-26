@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager Assets modules
-description: With the [!DNL Adobe Experience Manager Assets] connector for [!DNL Adobe Workfront Fusion], you can create, upload, and update assets, and copy or move folders and assets.
+description: With the Adobe Experience Manager Assets connector for Adobe Workfront Fusion, you can create, upload, and update assets, and copy or move folders and assets.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
 ---
-# [!DNL Adobe Experience Manager Assets] modules
+# Adobe Experience Manager Assets modules
 
-With the [!DNL Adobe Experience Manager Assets] connector for [!DNL Adobe Workfront Fusion], you can create, upload, and update assets, and copy or move folders and assets.
+With the Adobe Experience Manager Assets connector for Adobe Workfront Fusion, you can create, upload, and update assets, and copy or move folders and assets.
 
 For a video introduction to the Adobe Experience Manager Assets connector, see:
 
@@ -52,16 +52,16 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Prerequisites
 
-* You must have an [!DNL Adobe Experience Manager Assets] account to use these modules.
-* You must set up [!UICONTROL Server-to-server] flow in the [!DNL Adobe Developer console].
+* You must have an Adobe Experience Manager Assets account to use these modules.
+* You must set up Server-to-server] flow in the Adobe Developer console.
 
-   For instructions on setting up [!UICONTROL Server-to-server] flow in the [!DNL Adobe Developer console], see [Generating Access Tokens for Server Side APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+   For instructions on setting up Server-to-server] flow in the Adobe Developer console, see [Generating Access Tokens for Server Side APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * Your Adobe Experience Manager technical account must have write permissions.
 
    For instructions on adding write permissions to your Adobe Experience Manager technical account, see [Service credentials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in the Adobe Experience Manager documentation.
@@ -81,38 +81,38 @@ The Adobe Experience Manager Assets connector uses the following:
  </tbody> 
  </table>
 
-## Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion] {#connect-adobe-experience-manager-assets-to-workfront-fusion}
+## Connect Adobe Experience Manager Assets to  Workfront Fusion {#connect-adobe-experience-manager-assets-to-workfront-fusion}
 
-To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
+To create a connection for your Adobe Experience Manager Assets modules:
 
-1. Click [!UICONTROL Add] next to the [!UICONTROL Connection] box.
+1. Click Add] next to the Connection] box.
 
 2. Select the type of connection that you are creating:
 
-   * **[!DNL AEM Assets as a Cloud Service]**
+   * **AEM Assets as a Cloud Service**
 
-      This configuration requires information from the [!DNL Adobe Admin Console].
+      This configuration requires information from the Adobe Admin Console.
 
-   * **[!DNL AEM Assets Basic] ([!DNL Adobe Managed Services])**
+   * **AEM Assets Basic (Adobe Managed Services)**
 
       This configuration requires a username and password.
 
 3. Fill in the fields for the type of connection that you are creating.
 
-   For [!DNL AEM Assets as a Cloud Service], see [Configure the connection for [!DNL AEM Assets as a Cloud Service]](#configure-the-connection-for-aem-assets-as-a-cloud-service).
+   For AEM Assets as a Cloud Service, see [Configure the connection for AEM Assets as a Cloud Service](#configure-the-connection-for-aem-assets-as-a-cloud-service).
 
-   For [!UICONTROL AEM Assets Basic] ([!DNL Adobe Managed Services]), see [Configure the connection for [!UICONTROL AEM Assets Basic]](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
+   For AEM Assets Basic (Adobe Managed Services), see [Configure the connection for AEM Assets Basic](#configure-the-connection-for-aemassets-basic-adobe-managed-services).
 
-4. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+4. Click **Continue** to save the connection and return to the module.
 
 
-### Configure the connection for [!DNL AEM Assets as a Cloud Service]
+### Configure the connection for AEM Assets as a Cloud Service
 
 >[!NOTE]
 >
->* The information for these fields is generated as part of setting up [!UICONTROL Server-to-server] flow on the [!DNL Adobe Developer Console]. You can find these values in the service credentials JSON file generated as part of that setup.
+>* The information for these fields is generated as part of setting up Server-to-server flow on the Adobe Developer Console. You can find these values in the service credentials JSON file generated as part of that setup.
 >
->   For instructions on setting up [!UICONTROL Server-to-server] flow on the [!UICONTROL Adobe Developer Console], see [Generating Access Tokens for Server Side APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+>   For instructions on setting up Server-to-server flow on the Adobe Developer Console, see [Generating Access Tokens for Server Side APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 >
 >* Your Adobe Experience Manager technical account must have write permissions.
 >
@@ -124,49 +124,49 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
           <col/>
           <tbody>
               <tr>
-                  <td role="rowheader">[!UICONTROL Connection name]</td>
+                  <td role="rowheader">Connection name</td>
                   <td>
                       <p>Enter a name for this connection.</p>
                   </td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Instance URL without a trailing slash]</td>
-                  <td>Enter the URL for your [!DNL Adobe Experience Manager] instance. Do not include a slash <code>/</code> at the end of the URL.</td>
+                  <td role="rowheader">Instance URL without a trailing slash</td>
+                  <td>Enter the URL for your Adobe Experience Manager instance. Do not include a slash <code>/</code> at the end of the URL.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Account details fill options]</td>
+                  <td role="rowheader">Account details fill options</td>
                   <td>Select whether you want to provide JSON describing your account details, or if you want to enter details manually.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Technical account details in JSON format]</td>
+                  <td role="rowheader">Technical account details in JSON format</td>
                   <td>If providing JSON, enter or paste the JSON describing your account details.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Client ID]</td>
-                  <td>If entering details manually, enter the Client ID generated in the [!UICONTROL Server-to-server] setup.</td>
+                  <td role="rowheader">Client ID</td>
+                  <td>If entering details manually, enter the Client ID generated in the Server-to-server setup.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Client Secret]</td>
-                  <td>If entering details manually, enter the Client Secret generated in the [!UICONTROL Server-to-server] setup.</td>
+                  <td role="rowheader">Client Secret</td>
+                  <td>If entering details manually, enter the Client Secret generated in the Server-to-server setup.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Technical account ID]</td>
-                  <td>If entering details manually, enter the ID of the technical account. This is the "[!UICONTROL id]" field in the client credentials JSON file.</td>
+                  <td role="rowheader">Technical account ID</td>
+                  <td>If entering details manually, enter the ID of the technical account. This is the "id" field in the client credentials JSON file.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Org ID]</td>
-                  <td class="">If entering details manually, enter the ID of your organization. This is the "[!UICONTROL org]" field in the client credentials JSON file.</td>
+                  <td role="rowheader">Org ID</td>
+                  <td class="">If entering details manually, enter the ID of your organization. This is the "org" field in the client credentials JSON file.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Meta Scopes]</td>
-                  <td>Enter the Meta Scopes generated in the [!UICONTROL Server-to-server] setup.</td>
+                  <td role="rowheader">Meta Scopes</td>
+                  <td>Enter the Meta Scopes generated in the Server-to-server setup.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Private key]</td>
-                  <td>Enter the Private Key generated win the [!UICONTROL Server-to-server] setup. To extract the private key, click [!UICONTROL Extract], then enter the file to extract and the password for the file.</td>
+                  <td role="rowheader">Private key</td>
+                  <td>Enter the Private Key generated win the Server-to-server setup. To extract the private key, click Extract, then enter the file to extract and the password for the file.</td>
               </tr>
               <tr>
-                  <td role="rowheader">[!UICONTROL Authentication URL]</td>
+                  <td role="rowheader">Authentication URL</td>
                   <td>Enter authentication URL for this account.</td>
               </tr>
           </tbody>
@@ -180,30 +180,30 @@ To create a connection for your [!DNL Adobe Experience Manager Assets] modules:
         <col />
         <tbody>
             <tr>
-                <td role="rowheader">[!UICONTROL Connection name]</td>
+                <td role="rowheader">Connection name</td>
                 <td>
                     <p>Enter a name for this connection.</p>
                 </td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Instance URL without a trailing slash]</td>
-                <td>Enter the URL for your [!DNL Adobe Experience Manager] instance. Do not include a slash <code>/</code> at the end of the URL.</td>
+                <td role="rowheader">Instance URL without a trailing slash</td>
+                <td>Enter the URL for your Adobe Experience Manager instance. Do not include a slash <code>/</code> at the end of the URL.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Username]</td>
-                <td>Enter the username for the [!DNL AEM Assets] account that this connection uses.</td>
+                <td role="rowheader">Username</td>
+                <td>Enter the username for the AEM Assets account that this connection uses.</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL Password]</td>
-                <td>Enter the password for the [!DNL AEM Assets] account that this connection uses.</td>
+                <td role="rowheader">Password</td>
+                <td>Enter the password for the AEM Assets account that this connection uses.</td>
             </tr>
         </tbody>
     </table>
 
 
-## [!DNL Adobe Experience Manager Assets] modules and their fields
+## Adobe Experience Manager Assets modules and their fields
 
-When you configure [!DNL Adobe Experience Manager Essentials] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Adobe Experience Manager Essentials] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure Adobe Experience Manager Assets modules,  Workfront Fusion displays the fields listed below. Along with these, additional Adobe Experience Manager Assets fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -221,7 +221,7 @@ If you see the map button above a field or function, you can use it to set varia
 ### Files operations
 
 * [Complete upload]()
-* [Get presigned storage]()
+* [Get presigned storage()
 * [Initiate upload]()
 * [Upload an asset](#upload-an-asset)
 
@@ -231,24 +231,24 @@ If you see the map button above a field or function, you can use it to set varia
 
 This action module creates a temporary presigned URL to securely upload or download files from AEM without requiring direct credentials.
 
-#### [!UICONTROL Upload an asset]
+#### Upload an asset
 
-This action module uploads an asset to your [!DNL Adobe Experience Manager Assets] account.
+This action module uploads an asset to your Adobe Experience Manager Assets account.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination]</td> 
+   <td role="rowheader">Destination</td> 
    <td> <p>Select the folder where you want to upload an asset.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">Source file</td> 
    <td>Enter or map the source file's name and data.</td> 
   </tr> 
  </tbody> 
@@ -267,7 +267,7 @@ This action module uploads an asset to your [!DNL Adobe Experience Manager Asset
 
 
 
-#### [!UICONTROL Copy a folder or asset]
+#### Copy a folder or asset
 
 This action module copies a folder or asset to another location in your Adobe Experience Manager Assets account.
 
@@ -276,31 +276,31 @@ This action module copies a folder or asset to another location in your Adobe Ex
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">Record type</td> 
    <td> <p>Select whether you want to copy a folder or an asset.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
+   <td role="rowheader">Folder / Asset</td> 
    <td>Select or map the folder or asset that you want to copy.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination path]</td> 
+   <td role="rowheader">Destination path</td> 
    <td>Select or map the path to the location for the new folder or asset.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of copied folder] / [!UICONTROL asset]</td> 
-   <td>Enter a name for the new folder or asset. The folder name that displays in [!DNL Adobe Experience Manager Assets] is the same as the original name. The name entered here appears in the URL of the new folder or asset.</td> 
+   <td role="rowheader">Name of copied folder / asset</td> 
+   <td>Enter a name for the new folder or asset. The folder name that displays in Adobe Experience Manager Assets is the same as the original name. The name entered here appears in the URL of the new folder or asset.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Copy children]</td> 
+   <td role="rowheader">Copy children</td> 
    <td>If copying a folder, enable this option to copy any subfolders or assets within the folder.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Overwrite]</td> 
+   <td role="rowheader">Overwrite</td> 
    <td>Enable this option to overwrite any folder or asset in the destination location that has the same name as the folder or asset being copied.</td> 
   </tr> 
  </tbody> 
@@ -308,7 +308,7 @@ This action module copies a folder or asset to another location in your Adobe Ex
 
 
 
-#### [!UICONTROL Create a record]
+#### Create a record
 
 This action module creates a folder or an asset comment.
 
@@ -317,29 +317,29 @@ This action module creates a folder or an asset comment.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Object type]</td> 
+   <td role="rowheader">Object type</td> 
    <td> <p>Select whether you want to create a folder or a comment on an asset.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Folder]</p> <p>Fill in the following fields:</p> 
+     <li> <p>Folder</p> <p>Fill in the following fields:</p> 
       <ul> 
-       <li> <p>[!UICONTROL Name]</p> <p>Enter a name for the folder. This name will appear in the file path, so it must not include spaces or other characters. </p> </li> 
-       <li> <p>[!UICONTROL Title]</p> <p>Enter a title for the folder, which can be displayed instead of the name.</p> </li> 
+       <li> <p>Name</p> <p>Enter a name for the folder. This name will appear in the file path, so it must not include spaces or other characters. </p> </li> 
+       <li> <p>Title</p> <p>Enter a title for the folder, which can be displayed instead of the name.</p> </li> 
       </ul> </li> 
-     <li> <p>[!UICONTROL Asset comment]</p> <p>Fill in the following fields:</p> 
+     <li> <p>Asset comment</p> <p>Fill in the following fields:</p> 
       <ul> 
-       <li> <p>[!UICONTROL Asset selection]</p> <p>Select or map the ID of the asset you want to add a comment to.</p> </li> 
-       <li> <p>[!UICONTROL Comment]</p> <p>Enter the text of the comment.</p> </li> 
+       <li> <p>Asset selection</p> <p>Select or map the ID of the asset you want to add a comment to.</p> </li> 
+       <li> <p>Comment</p> <p>Enter the text of the comment.</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder, asset, or rendition]
+#### Delete a folder, asset, or rendition
 
 This action module deletes a folder, asset, or rendition.
 
@@ -348,22 +348,22 @@ This action module deletes a folder, asset, or rendition.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">Record type</td> 
    <td> <p>Select whether you want to delete a folder, asset, or rendition.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Folder]</p> <p>Select the folder to delete by selecting the folders in its path.</p> </li> 
-     <li> <p>[!UICONTROL Asset] </p> <p>Select the asset by selecting the folders in its path, then the asset you want to delete.</p> </li> 
-     <li> <p>[!UICONTROL Rendition]</p> <p>Select the rendition by selecting the folders in its path.</p> <p>Enter or map the name of the rendition.</p> </li> 
+     <li> <p>Folder</p> <p>Select the folder to delete by selecting the folders in its path.</p> </li> 
+     <li> <p>Asset</p> <p>Select the asset by selecting the folders in its path, then the asset you want to delete.</p> </li> 
+     <li> <p>Rendition</p> <p>Select the rendition by selecting the folders in its path.</p> <p>Enter or map the name of the rendition.</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a folder listing]
+#### Get a folder listing
 
 This action module retrieves a representation of an existing folder and of its child entities (folders or assets).
 
@@ -372,46 +372,46 @@ This action module retrieves a representation of an existing folder and of its c
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder]</td> 
+   <td role="rowheader">Folder</td> 
    <td>Select or map the folder that you want to retrieve. To add subfolders to the path, click the plus icon and select the subfolder.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Make a custom API call]
+#### Make a custom API call
 
-This action module makes a custom API call to the [!DNL Adobe Experience Manager Assets] API.
+This action module makes a custom API call to the Adobe Experience Manager Assets API.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>Enter a path relative to your [!DNL Adobe Experience Manager] base URL.</p> </td> 
+   <td role="rowheader"> <p>URL</p> </td> 
+   <td> <p>Enter a path relative to your Adobe Experience Manager base URL.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>Method</p> </td> 
    <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] adds authorization headers automatically.</p> </td> 
+   <td role="rowheader">Headers</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion adds authorization headers automatically.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String] </td> 
-   <td> <p>Enter the request query string. For Each Key/Value pair, click <b>[!UICONTROL Add item]</b> and enter the [!UICONTROL Key] and [!UICONTROL Value].</p> </td> 
+   <td role="rowheader">Query String</td> 
+   <td> <p>Enter the request query string. For Each Key/Value pair, click <b>Add item</b> and enter the Key and Value.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">Body</td> 
    <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -420,7 +420,7 @@ This action module makes a custom API call to the [!DNL Adobe Experience Manager
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a folder or asset]
+#### Move a folder or asset
 
 This action module moves the asset or folder at the given path to a new location.
 
@@ -429,33 +429,33 @@ This action module moves the asset or folder at the given path to a new location
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">Record type</td> 
    <td> <p>Select whether you want to move a folder or an asset.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Folder] / [!UICONTROL Asset]</td> 
+   <td role="rowheader">Folder / Asset</td> 
    <td>Select or map the folder or asset that you want to move.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Destination path]</td> 
+   <td role="rowheader">Destination path</td> 
    <td>Select or map the path to the location that you want to move the folder or asset to.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Name of moved folder] / [!UICONTROL asset]</td> 
-   <td>Enter a new name for the moved folder or asset. The folder name that displays in [!DNL Adobe Experience Manager Assets] is the same as the original name. The name entered here appears in the URL of the moved folder or asset.</td> 
+   <td role="rowheader">Name of moved folder / asset</td> 
+   <td>Enter a new name for the moved folder or asset. The folder name that displays in Adobe Experience Manager Assets is the same as the original name. The name entered here appears in the URL of the moved folder or asset.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Overwrite]</td> 
+   <td role="rowheader">Overwrite</td> 
    <td>Enable this option to overwrite any folder or asset in the destination location that has the same name as the folder or asset being moved.</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update a record]
+#### Update a record
 
 This action module updates an existing record.
 
@@ -464,19 +464,19 @@ This action module updates an existing record.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record type]</td> 
+   <td role="rowheader">Record type</td> 
    <td> <p>Select whether you want to delete asset metadata or an asset rendition.</p> 
     <ul> 
-     <li> <p>[!UICONTROL Asset metadata]</p> 
+     <li> <p>Asset metadata</p> 
       <ul> 
        <li> <p>Select the asset that you want to update metadata for.</p> </li> 
        <li> <p>Enter the new title of the asset.</p> </li> 
       </ul> </li> 
-     <li> <p>[!UICONTROL Asset rendition]</p> 
+     <li> <p>Asset rendition</p> 
       <ul> 
        <li> <p>Select the asset that you want to update the rendition for.</p> </li> 
        <li> <p>Select a source file from a previous module, or map the source file's name and data.</p> </li> 
@@ -500,15 +500,15 @@ This action module deletes a single asset by its ID.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">Asset ID</td> 
    <td> <p>Enter or map the ID of the asset that you want to delete.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Force]</td> 
+   <td role="rowheader">Force</td> 
    <td>Enable this option to force the asset to delete, even if it is referenced.</td> 
   </tr> 
  </tbody> 
@@ -523,11 +523,11 @@ This action module gets the current status of an async job.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td role="rowheader">Job ID</td> 
    <td> <p>Enter or map the ID of the job that you want to get the status for.</p> </td> 
   </tr> 
  </tbody> 
@@ -551,12 +551,12 @@ To create a new webhook:
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Webhook name]</td>
+         <td role="rowheader">Webhook name</td>
         <td>Enter a name for this webhook.</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</td>
+         <td role="rowheader">Connection</td>
+        <td>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</td>
        </tr>
      </tbody>
    </table>
@@ -578,11 +578,11 @@ This action module retrieves metadata about the specified asset.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">Asset ID</td> 
    <td> <p>Enter or map the ID of the asset that you want to get the metadata for.</p> </td> 
   </tr> 
  </tbody> 
@@ -597,15 +597,15 @@ This action module updates metadata for the specified asset.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td role="rowheader">Asset ID</td> 
    <td> <p>Enter or map the ID of the asset that you want to update the metadata for.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Updates]</td> 
+   <td role="rowheader">Updates</td> 
    <td> <p>For each metadata item that you want to update, click <b>Add item</b> and select the operation. Other fields in the Add item box depend on the operation selected.</p> </td> 
   </tr> 
  </tbody> 
@@ -614,9 +614,9 @@ This action module updates metadata for the specified asset.
 
 ### Import (Author API)
 
-* [Get import job results]()
-* [Get import job status]()
-* [Upload an asset from URL]()
+* [Get import job results](#get-import-job-results)
+* [Get import job status](#get-import-job-status)
+* [Upload an asset from a URL](#upload-an-asset-from-a-url)
 
 #### Get import job results
 
@@ -627,11 +627,11 @@ This action module retrieves results for the specified import job.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Import job ID]</td> 
+   <td role="rowheader">Import job ID</td> 
    <td> <p>Enter or map the ID of the job that you want to retrieve results for.</p> </td> 
   </tr> 
  </tbody> 
@@ -646,11 +646,11 @@ This action module retrieves the status of the specified import job.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Import job ID]</td> 
+   <td role="rowheader">Import job ID</td> 
    <td> <p>Enter or map the ID of the job that you want to retrieve the status of.</p> </td> 
   </tr> 
  </tbody> 
@@ -665,8 +665,8 @@ This action module uploads a new asset by importing files from the specified URL
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Adobe Experience Manager Assets] account to [!DNL Workfront Fusion], see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect [!DNL Adobe Experience Manager Assets] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Title</td> 
@@ -709,7 +709,7 @@ This action module uploads a new asset by importing files from the specified URL
 
 ### Relations (Author API)
 
-* [Create asset relations]()
+* [Create asset relations](#create-asset-relations)
 * [Delete asset relation]()
 * [Get asset relation types]()
 * [Get asset relations]()
@@ -718,19 +718,98 @@ This action module uploads a new asset by importing files from the specified URL
 
 This action module creates new asset relations for the selected asset.
 
-
-
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Asset ID</td> 
+   <td> <p>Enter or map the ID asset that you want to relate other assets to.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Related assets</td> 
+   <td> <p>For each asset that you want to relate to the selected asset, click <b>Add item</b> and enter or map the asset's ID and the relation type.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Delete asset relation
 
+This action module delete an asset relation for an asset.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Asset ID</td> 
+   <td> <p>Enter or map the ID asset that you want to delete a relation from.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Related assets</td> 
+   <td> <p>Enter or map the type of relation that you want to delete.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Provide specific ID of the related asset to be deleted</td> 
+   <td> <p>Check this box if you want to delete one specific relation. If this box is not checked, all relations of the selected type are deleted.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Related asset ID</td> 
+   <td> <p>If you are deleting a specific relation, enter or map the ID of relation that you want to delete.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 #### Get asset relation types
 
+This module lists the asset relation types that exist for the specified asset.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Asset ID</td> 
+   <td> <p>Enter or map the ID asset that you want to list relation types for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Get asset relations
 
+This module lists the asset relations for the specified asset.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Asset ID</td> 
+   <td> <p>Enter or map the ID asset that you want to list relations for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Relation types</td> 
+   <td> <p>Specify the relation types that you want to list the relations for.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 
 
