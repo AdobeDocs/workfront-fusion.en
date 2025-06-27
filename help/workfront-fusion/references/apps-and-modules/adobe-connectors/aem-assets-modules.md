@@ -59,9 +59,9 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 ## Prerequisites
 
 * You must have an Adobe Experience Manager Assets account to use these modules.
-* You must set up Server-to-server] flow in the Adobe Developer console.
+* You must set up Server-to-server flow in the Adobe Developer console.
 
-   For instructions on setting up Server-to-server] flow in the Adobe Developer console, see [Generating Access Tokens for Server Side APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
+   For instructions on setting up Server-to-server flow in the Adobe Developer console, see [Generating Access Tokens for Server Side APIs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow).
 * Your Adobe Experience Manager technical account must have write permissions.
 
    For instructions on adding write permissions to your Adobe Experience Manager technical account, see [Service credentials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials) in the Adobe Experience Manager documentation.
@@ -85,7 +85,7 @@ The Adobe Experience Manager Assets connector uses the following:
 
 To create a connection for your Adobe Experience Manager Assets modules:
 
-1. Click Add] next to the Connection] box.
+1. Click Add next to the Connection box.
 
 2. Select the type of connection that you are creating:
 
@@ -209,27 +209,108 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Files operations](#)
-* [Other]()
-* [Assets (Author API)]()
-* [Events (Author API)]()
-* [Metadata (Author API)]()
-* [Import (Author API)]()
-* [Relations (Author API)]()
-* [Folders (Folders API)]()
+* [Files operations](#files-operations)
+* [Other](#other)
+* [Assets (Author API)](#assets-author-api)
+* [Events (Author API)](#events-author-api)
+* [Metadata (Author API)](#metadata-author-api)
+* [Import (Author API)](#import-author-api)
+* [Relations (Author API)](#relations-author-api)
+* [Folders (Folders API)](#folders-folders-api)
 
 ### Files operations
 
-* [Complete upload]()
-* [Get presigned storage()
+* [Complete upload](#complete-upload)
+* [Get presigned storage]()
 * [Initiate upload]()
 * [Upload an asset](#upload-an-asset)
 
 #### Complete upload
 
+This action module completes an initiated upload, after all parts of the file are uploaded.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File name</td> 
+   <td> <p>Enter or map a name for the uploaded file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Upload token</td> 
+   <td>Enter or map the upload token for the binary, as provided by the initiation.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">MIME type</td> 
+   <td>Enter or map the MIME type for the completed file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Complete URI</td> 
+   <td>Enter or map the complete URI for the file.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
 #### Get presigned storage
 
 This action module creates a temporary presigned URL to securely upload or download files from AEM without requiring direct credentials.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Lookup typee</td> 
+   <td> <p>Select whether you want to look up the asset by its path or its ID.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Asset</td> 
+   <td>Select the path to the asset.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">UDID</td> 
+   <td>Enter or map the UDID for the asset.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Initiate upload
+
+This action module initiates an upload.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Destination</td> 
+   <td> <p>Select the folder where you want to upload a file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File name</td> 
+   <td> <p>Enter or map a name for the uploaded file</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Max file size</td> 
+   <td>Enter or map the size, in bytes, of the uploaded file.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
 #### Upload an asset
 
@@ -815,12 +896,12 @@ This module lists the asset relations for the specified asset.
 
 ### Folders (Folders API)
 
-* [Create folders]()
-* [Delete a folder by ID]()
-* [Delete folders by path]()
-* [Get folders job results]()
-* [Get folders job status]()
-* [List folders]()
+* [Create folders](#create-folders)
+* [Delete a folder by ID](#delete-a-folder-by-id)
+* [Delete folders by path](#delete-folders-by-path)
+* [Get folders job results](#get-folders-job-results)
+* [Get folders job status](#get-folders-job-status)
+* [List folders](#list-folders)
 
 #### Create folders
 
