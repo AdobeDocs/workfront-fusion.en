@@ -221,8 +221,8 @@ If you see the map button above a field or function, you can use it to set varia
 ### Files operations
 
 * [Complete upload](#complete-upload)
-* [Get presigned storage]()
-* [Initiate upload]()
+* [Get presigned storage](#get-presigned-storage)
+* [Initiate upload](#initiate-upload)
 * [Upload an asset](#upload-an-asset)
 
 #### Complete upload
