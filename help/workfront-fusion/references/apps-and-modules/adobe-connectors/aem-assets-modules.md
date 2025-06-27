@@ -710,9 +710,9 @@ This action module uploads a new asset by importing files from the specified URL
 ### Relations (Author API)
 
 * [Create asset relations](#create-asset-relations)
-* [Delete asset relation]()
-* [Get asset relation types]()
-* [Get asset relations]()
+* [Delete asset relation](#create-asset-relations)
+* [Get asset relation types](#get-asset-relation-types)
+* [Get asset relations](#get-asset-relations)
 
 #### Create asset relations
 
@@ -824,29 +824,141 @@ This module lists the asset relations for the specified asset.
 
 #### Create folders
 
+This action module creates a new folder in Adobe Experience Manager Assets.
 
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Folders to create</td> 
+   <td> <p>For each folder that you want to create, click <b>Add item</b> and enter the following information:</p>
+   <ul>
+   <li><b>New folder location</b><p>Select the path to the location where you want to create the new folder.</p></li>
+       <li> <b>Name</b> <p>Enter a name for the folder. This name will appear in the file path, so it must not include spaces or other characters. </p> </li> 
+       <li> <b>Title</b> <p>Enter a title for the folder, which can be displayed instead of the name.</p> </li> 
+   </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Delete a folder by ID
 
+This action module deletes the Adobe Experience Manager Assets folder with the specified ID.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Folder ID</td> 
+   <td> Enter or map the ID of the folder that you want to delete.</td>
+  </tr> 
+ <tr> 
+   <td role="rowheader">Delete subfolders</td> 
+   <td> Enable this option to delete the folder and all of its subfolders.</td>
+  </tr> 
+ <tr> 
+   <td role="rowheader">Force</td> 
+   <td> Enable this option to force the folders to delete, even if it is referenced.</td>
+  </tr> 
+ </tbody> 
+</table>
 
 #### Delete folders by path
 
+This action module deletes the Adobe Experience Manager Assets folders at the specified paths.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Folder Paths</td> 
+   <td>For each folder that you want to delete, click <b>Add item</b> and select the folder's path.</td>
+  </tr> 
+ <tr> 
+   <td role="rowheader">Delete subfolders</td> 
+   <td> Enable this option to delete the folder and all of its subfolders.</td>
+  </tr> 
+ <tr> 
+   <td role="rowheader">Force</td> 
+   <td> Enable this option to force the asset to delete, even if it is referenced.</td>
+  </tr> 
+ </tbody> 
+</table>
 
 #### Get folders job results
 
+This module retrieves the results of an async job created by the Adobe Experience Manager Assets folder API.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Job ID</td> 
+   <td> Enter or map the ID of the job that you want to retrieve results for.</td>
+  </tr> 
+ </tbody> 
+</table>
 
 #### Get folders job status
 
+This module retrieves the status of an async job created by the Adobe Experience Manager Assets folder API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Job ID</td> 
+   <td> Enter or map the ID of the job that you want to retrieve the status for.</td>
+  </tr> 
+ </tbody> 
+</table>
 
 
 #### List folders
 
+This module lists subfolders of the specified folder.
 
-
-
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Adobe Experience Manager Assets account to  Workfront Fusion, see <a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">Connect Adobe Experience Manager Assets to  Workfront Fusion</a> in this article.</p> </td> 
+   </tr> 
+   <tr> 
+   <td role="rowheader">Folder path or ID</td> 
+   <td> <p>Select whether you want to specify the destination folder by its path or ID, then select the path or enter the ID.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 <!--
 i! I added a lot of modules to the AEM Assets connector and we need new documentation for them. The connector is available in the QA environment. Heres the added modules and a brief description of them, more info about them can be found in the Assets Author Api docs and the Folders Api docs. Im not fully confident that i kept all the best practices for naming things :sweat_smile:, i hope you can take a look at that as well. Let me know if theres anything i can tell about the modules and thanks again in advance!
