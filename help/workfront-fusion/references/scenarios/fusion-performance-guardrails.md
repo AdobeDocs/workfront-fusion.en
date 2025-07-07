@@ -86,3 +86,7 @@ Consider the following regarding recursion:
 * **When a scenario is causing recursion, it is deactivated by the Fusion engineering team to prevent further performance issues.**
 * Because recursion is a result of scenario design, you must design your scenarios in a way that ensures that the scenario does not include actions that trigger the scenario.
 
+## TLS
+
+* Fusion currently supports TLS version 1.2 by default.
+* Organizations can request that TLS version 1.3 be enabled for their Fusion instance.
