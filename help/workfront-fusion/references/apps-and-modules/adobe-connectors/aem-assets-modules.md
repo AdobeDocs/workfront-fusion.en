@@ -887,7 +887,7 @@ This module lists the asset relations for the specified asset.
   </tr> 
   <tr> 
    <td role="rowheader">Relation types</td> 
-   <td> <p>Enter or map a comma-separaated list for the relation types that you want to list the relations for.</p> </td> 
+   <td> <p>Enter or map a comma-separaated list of the relation types that you want to list the relations for.</p> </td> 
   </tr> 
  </tbody> 
 </table>
