@@ -125,10 +125,6 @@ To include credentials in the connection, enable the Show advanced settings opti
       <td role="rowheader"> <p>[!UICONTROL Tenant ID]</p> </td> 
       <td>Enter the tenant ID of the SharePoint app you are connecting to.</td> 
      </tr> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Instance]</p> </td> 
-      <td> <p>Enter the address of your [!DNL ServiceNow] account without <code>https://</code> (usually <code>&lt;company>.service-now.com</code>).</p> </td> 
-     </tr> 
     </tbody> 
    </table>
 
