@@ -89,4 +89,9 @@ Consider the following regarding recursion:
 ## TLS
 
 * Fusion currently supports TLS version 1.2 by default.
+* Fusion can use TLS 1.3 for outbound HTTPS requests if TLS 1.3 is enabled for the destination service. 
 * Organizations can request that TLS version 1.3 be enabled for their Fusion instance.
+
+>[!NOTE]
+>
+> If you are connecting to Workfront, be aware that this TLS functionality is enabled in Workfront for calls to domains that have the format `https://<domain>.my.workfront.com`. 
