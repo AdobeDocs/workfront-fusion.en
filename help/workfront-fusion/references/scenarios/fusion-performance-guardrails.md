@@ -90,6 +90,7 @@ Consider the following regarding recursion:
 
 * Fusion currently supports TLS version 1.2 by default.
 * Fusion can use TLS 1.3 for outbound HTTPS requests if TLS 1.3 is enabled for the destination service. 
+* Fusion supports both TLS 1.2 and TLS 1.3 for incoming HTTPS requests to Webhooks.
 * Organizations can request that TLS version 1.3 be enabled for their Fusion instance.
 
 >[!NOTE]
