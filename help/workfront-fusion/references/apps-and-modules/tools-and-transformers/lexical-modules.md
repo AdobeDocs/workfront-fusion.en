@@ -1,13 +1,14 @@
 ---
-title: Draft.js modules
-description: In an [!DNL Adobe Workfront Fusion] scenario, you can use the Draft.js modules to convert Draft.js to HTML and HTML to Draft.js.
+title: Lexical modules
+description: In an Adobe Workfront Fusion scenario, you can use the Lexical modules to convert Lexical to HTML and HTML to Lexical.
 author: Becky
 feature: Workfront Fusion
-exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
 ---
-# [!UICONTROL Draft.js] modules
+# Lexical modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can use the [!UICONTROL Draft.js] modules to convert Draft.js to HTML and HTML to Draft.js. You can use this in combination with Workfront modules to add rich text to or read rich text from Workfront fields.
+<!-- ADD REDIRECTS -->
+
+In an Adobe Workfront Fusion scenario, you can use the Lexical modules to convert Lexical to HTML and HTML to Lexical.  You can use this in combination with Workfront modules to add rich text to or read rich text from Workfront fields.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -50,13 +51,29 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## [!UICONTROL Draft.js to HTML]
+## HTML to Lexical
 
-This module converts Draft.js to HTML.
+This module converts HTML code to Lexical.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">HTML</td> 
+   <td> <p>Enter or map the HTML code that you want to convert to Lexical.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+## Lexical to HTML
+
+This module converts Lexical to HTML.
 
 When you are configuring this module, the following fields display.
 
@@ -65,23 +82,9 @@ When you are configuring this module, the following fields display.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>Enter or map the Draft.js text that you want to convert to HTML.</p> </td> 
+   <td role="rowheader">Lexical</td> 
+   <td> <p>Enter or map the Lexical text that you want to convert to HTML.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML to Draft.js]
-
-This module converts HTML code to Draft.js.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL HTML]</td> 
-   <td> <p>Enter or map the HTML code that you want to convert to Draft.js.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
