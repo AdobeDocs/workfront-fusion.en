@@ -311,11 +311,11 @@ This action module updates an existing event.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Start date]</td> 
-   <td> Enter a single point of time when the event starts in a combined date and time representation. Use the format <code>{date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Enter a single point of time when the event starts in a combined date and time representation. Use the format <code>{date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL End date]</td> 
-   <td> Enter a single point of time when the event ends in a combined date and time representation. Use the format <code>({date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td> Enter a single point of time when the event ends in a combined date and time representation. Use the format <code>({date}T{time}</code>; for example, <code>2017-08-29T04:00:00.0000000</code>. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reminder on]</td> 

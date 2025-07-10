@@ -321,7 +321,7 @@ This action module updates information for a card you specify.
   <tr> 
    <td>[!UICONTROL Due date]</td> 
    <td>Enter or map the due date for this card.</p>
-   <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</p>
+   <p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p>
    </td> 
   </tr> 
   <tr> 

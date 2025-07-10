@@ -415,7 +415,7 @@ This module lists all comments on the specified issue.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Since]</td> 
-   <td>The module will return comments created after this date. For a list of supported date formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td>The module will return comments created after this date. For a list of supported date formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned comments]</td> 
