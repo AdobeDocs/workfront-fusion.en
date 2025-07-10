@@ -386,6 +386,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [JSON modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
             * [JSONata modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
             * [JWT modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
+            * [Lexical modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
             * [Markdown modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
             * [Math module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
             * [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
