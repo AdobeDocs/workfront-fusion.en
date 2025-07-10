@@ -67,7 +67,7 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
 
 ## Incomplete executions
 
-* Incomplete executions are limited to a total size of *10 MB** per scenario. If the 10 MB limit is reached, no more incomplete executions will be stored for that scenario.
+* Incomplete executions are limited to a total size of **10 MB** per scenario. If the 10 MB limit is reached, no more incomplete executions will be stored for that scenario.
 * Incomplete executions are limited to a total size of **500 MB** per team. If the 500 MB limit is reached, no more incomplete executions will be stored for that team.
 
 ## Retries
