@@ -3,6 +3,7 @@ title: Microsoft Teams modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Teams, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: d3a37c06-8f92-4065-bc00-c35f84b03f82
 ---
 # Microsoft Teams modules
 
@@ -987,6 +988,3 @@ This module searches for users using criteria you specify.
   </tr> 
  </tbody> 
 </table>
-
-
-
