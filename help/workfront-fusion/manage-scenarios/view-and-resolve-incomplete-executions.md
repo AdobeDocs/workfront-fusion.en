@@ -81,9 +81,11 @@ For more information, see [Errors resulting into incomplete executions](#errors-
 
 >[!NOTE]
 >
->The current size limit of the unresolved incomplete executions folder per organization is 500 MB. If your organization exceeds this limit, you may see the following error:
+>The current size limit of the unresolved incomplete executions folder per scenario is 10 MB. If your scenario exceeds this limit, you may see the following error:
 >
->`"There is NOT ENOUGH SPACE to add a bundle to the IEQ. The reason is: Too many incomplete executions."`
+>`DLQ limit per scenario has been exceeded`
+>
+>Teams are limited to a total of 500 MB for all unresolved incomplete executions.
 >
 >For more information, see [Enable data loss](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#enable-data-loss) in the article Configure scenario settings.
 
