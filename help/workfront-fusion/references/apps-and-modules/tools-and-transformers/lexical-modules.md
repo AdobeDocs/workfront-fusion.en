@@ -3,6 +3,7 @@ title: Lexical modules
 description: In an Adobe Workfront Fusion scenario, you can use the Lexical modules to convert Lexical to HTML and HTML to Lexical.
 author: Becky
 feature: Workfront Fusion
+exl-id: a8b8a1f3-d0f4-40bf-b5c1-dd0fb8100ec0
 ---
 # Lexical modules
 
@@ -87,4 +88,3 @@ When you are configuring this module, the following fields display.
   </tr> 
  </tbody> 
 </table>
-
