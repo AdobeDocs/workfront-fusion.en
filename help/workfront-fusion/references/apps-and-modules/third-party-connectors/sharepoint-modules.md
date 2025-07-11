@@ -749,14 +749,14 @@ This trigger module starts a scenario when a list is created or modified.
 
 ### Page (Beta)
 
-* [Get a Page](#get-a-page)
-* [List Pages]()
-* [Publish a Page]()
-* [Watch Pages]()
-
 >[!NOTE]
 >
 >APIs in the `beta` version in [!DNL Microsoft Graph] are subject to change. The use of these APIs in production applications is not supported.
+
+* [Get a Page](#get-a-page)
+* [List Pages](#list-pages)
+* [Publish a Page](#publish-a-page)
+* [Watch Pages]()
 
 #### [!UICONTROL Get a Page]
 
@@ -777,6 +777,83 @@ This action module returns the data of a specified page.
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>and <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the page you want to retrieve, then select the page.</p> </li> 
     </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### List Pages
+
+This module retrieves a list of all pages.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL List Pages]</td> 
+   <td> <p>Select how you want to identify the pages that you want to list.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> of the site that contains the pages you want to list.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the pages you want to list.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Enter or map the maximum number of pages you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Publish a Page
+
+This action module publishes the latest version of the selected page.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Publish a page]</td> 
+   <td> <p>Select how you want to identify the page that you want to publish.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>and <strong>[!UICONTROL Page ID]</strong>.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the site that contains the page you want to publish, then select the page.</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Watch Pages
+
+This trigger module starts a scenario when a page is modified on the specified site.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site ID]</td> 
+   <td> <p>Select how you want to identify the pages that you want to list.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong> of the site that contains the pages you want to watch.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Select the site that contains the pages you want to watch.</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>Enter or map the maximum number of pages you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
