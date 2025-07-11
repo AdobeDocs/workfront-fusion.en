@@ -378,7 +378,7 @@ This trigger module starts a scenario when an item is updated in a folder you se
 * [[!UICONTROL Create an item]](#create-an-item)
 * [[!UICONTROL Delete an item]](#delete-an-item)
 * [[!UICONTROL Get an Item]](#get-an-item)
-* [Get Details]()
+* [Get Details](#get-details)
 * [[!UICONTROL List Items]](#list-items)
 * [[!UICONTROL Move an Item]](#move-an-item)
 * [[!UICONTROL Update an Item]](#update-an-item)
@@ -487,6 +487,25 @@ This action module returns the data of a specified item.
     </ul> </td> 
   </tr> 
  </tbody> 
+</table>
+
+#### Get details
+
+This module gets item details from the specified URL.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Web URL</td> 
+   <td> Enter or map the URL of the item that you want to retrieve details for. </td> 
+  </tr> 
+</tbody> 
 </table>
 
 #### [!UICONTROL List Items]
