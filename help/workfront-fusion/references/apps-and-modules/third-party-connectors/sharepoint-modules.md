@@ -215,6 +215,8 @@ If you see the map button above a field or function, you can use it to set varia
 * [Create a file](#create-a-file)
 * [Create a folder](#create-a-folder)
 * [Get a file](#get-a-file)
+* [Get a folder]()
+* [Update a folder or a file]()
 * [Watch folder items](#watch-folder-items)
 
 #### Create a file
@@ -326,9 +328,10 @@ This trigger module starts a scenario when an item is updated in a folder you se
 * [[!UICONTROL Create an item]](#create-an-item)
 * [[!UICONTROL Delete an item]](#delete-an-item)
 * [[!UICONTROL Get an Item]](#get-an-item)
+* [Get Details]()
 * [[!UICONTROL List Items]](#list-items)
-* [[!UICONTROL Move Item]](#move-an-item)
-* [[!UICONTROL Update an item]](#update-an-item)
+* [[!UICONTROL Move an Item]](#move-an-item)
+* [[!UICONTROL Update an Item]](#update-an-item)
 * [[!UICONTROL Watch Items] (Scheduled)](#watch-items-scheduled)
 
 
@@ -676,6 +679,11 @@ This trigger module starts a scenario when a list is created or modified.
 </table>
 
 ### Page (Beta)
+
+* [Get a Page](#get-a-page)
+* [List Pages]()
+* [Publish a Page]()
+* [Watch Pages]()
 
 >[!NOTE]
 >
