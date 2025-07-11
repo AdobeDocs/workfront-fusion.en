@@ -756,7 +756,7 @@ This trigger module starts a scenario when a list is created or modified.
 * [Get a Page](#get-a-page)
 * [List Pages](#list-pages)
 * [Publish a Page](#publish-a-page)
-* [Watch Pages]()
+* [Watch Pages](#watch-pages)
 
 #### [!UICONTROL Get a Page]
 
