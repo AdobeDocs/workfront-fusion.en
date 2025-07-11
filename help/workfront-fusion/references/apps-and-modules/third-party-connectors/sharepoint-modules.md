@@ -215,8 +215,8 @@ If you see the map button above a field or function, you can use it to set varia
 * [Create a file](#create-a-file)
 * [Create a folder](#create-a-folder)
 * [Get a file](#get-a-file)
-* [Get a folder]()
-* [Update a folder or a file]()
+* [Get a folder](#get-a-folder)
+* [Update a folder or a file](#update-a-folder-or-a-file)
 * [Watch folder items](#watch-folder-items)
 
 #### Create a file
@@ -292,6 +292,56 @@ This action module retrieves the specified SharePoint file.
      <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Select the location of the file. </p> </li> 
     </ul> </td> 
   </tr> 
+</tbody> 
+</table>
+
+#### Get a folder
+
+This module retrieved details about the specified folder
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site, Drive, and File                IDs]</td> 
+   <td> <p>Select how you want to identify the location of the file you want to get.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Folder path]</strong> for the folder that you want to retrieve.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Select the location of the folder. </p> </li> 
+    </ul> </td> 
+  </tr> 
+</tbody> 
+</table>
+
+#### Update a folder or a file
+
+This action module updates the metadata of a folder or a file
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site, Drive, and File                IDs]</td> 
+   <td> <p>Select how you want to identify the location of the file you want to get.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL List ID]</strong>, and <strong>[!UICONTROL Folder or item ID]</strong> for the folder or file that you want to retrieve.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Select the location of the folder. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  </tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td>For each metadata field that you want to update, click <b>Add item</b> and enter the field's path and value.</td> 
+  <tr>
 </tbody> 
 </table>
 
