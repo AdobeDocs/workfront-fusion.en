@@ -39,6 +39,8 @@ Work automation requires rapid processing, so [!DNL Adobe Workfront Fusion] is d
 
 * Fusion's total processing capacity for files is **1 GB**. The limit is based on a total memory cost. Every operation contributes to that cost. If a single file of 400 MB is downloaded and uploaded then the total cost to the file capacity would be 800 MB.
 * Organizations on the Workfront Ultimate plan have access to increased file processing beyond 1 GB. The Fusion platform can support individual files up to 15GB for a single action (e.g. upload file), but there are other factors that affect data transfer. The file size limit of single action depends on the web service Fusion connects to. Data transfer is the total processing for a single execution. This means multiple actions in a single execution contribute to the total data transfer. Fusion will process files until the execution limit of 40 minutes is reached. 
+* If a file is downloaded using a module that supports large files and then passed to a module that does not support large files, that module does not successfully process the file. Large files must be handled exclusively with supported modules throughout the workflow.
+* Modules that do not support large files can process files up to **200 MB** in size.
 
 For more information, see [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
