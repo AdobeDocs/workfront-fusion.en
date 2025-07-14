@@ -19,6 +19,11 @@ To handle larger files, your scenarios must be updated.
 
 Currently, the following connectors support large files. 
 
+>[!NOTE]
+>
+>* If a file is downloaded using a module that supports large files and then passed to a module that does not support large files, that module does not successfully process the file. Large files must be handled exclusively with supported modules throughout the workflow.
+>* Modules that do not support large files can process files up to 200 MB in size.
+
 * Workfront
    * Upload Document
    * Download Document
