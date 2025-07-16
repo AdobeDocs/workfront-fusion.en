@@ -27,6 +27,13 @@ Your organization may have a monthly operations limit. This is based on the [!DN
 
 If your organization has a monthly limit, you will be notified when your organization is near the limit. If your organization goes over the limit, [!DNL Workfront] will contact your organization to ensure that your plan meets your needs.
 
+Workfront Fusion sends a notification when your organization reaches the following percentages of the organization's monthly limit:
+
+* 50%
+* 75%
+* 90%
+* 100%
+
 ## View the number of operations performed in the last 30 days
 
 You can see a graphs showing the number of operations performed. These graphs are available in the following locations:
