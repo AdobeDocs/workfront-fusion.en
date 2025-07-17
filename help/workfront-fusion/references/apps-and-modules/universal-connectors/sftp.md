@@ -105,6 +105,46 @@ To connect your SFTP account to [!DNL Workfront Fusion] you need create a connec
 
 After entering the connection information, click **[!UICONTROL Continue]** to establish a connection.
 
+### Supported connection options
+
+The SFTP connector supports the following when creating a connection:
+
+#### Key Exchange Algorithms (KEX)
+
+* `ecdh-sha2-nistp256`
+* `ecdh-sha2-nistp384`
+* `ecdh-sha2-nistp521`
+* `diffie-hellman-group-exchange-sha256`
+* `diffie-hellman-group14-sha256`
+* `diffie-hellman-group16-sha512`
+* `diffie-hellman-group18-sha512`
+* `diffie-hellman-group14-sha1`
+
+#### Ciphers
+
+* `aes256-gcm@openssh.com`
+* `aes256-gcm`
+* `aes128-gcm@openssh.com`
+* `aes128-gcm`
+* `aes256-ctr`
+* `aes192-ctr`
+* `aes128-ctr`
+* `aes256-cbc`
+* `aes192-cbc`
+* `aes128-cbc`
+* `blowfish-cbc`
+
+#### Server Host Key Formats
+
+* `ssh-ed25519`
+* `ecdsa-sha2-nistp256`
+* `ecdsa-sha2-nistp384`
+* `ecdsa-sha2-nistp521`
+* `ssh-rsa`
+* `ssh-dss`
+* `rsa-sha2-256`
+* `rsa-sha2-512`
+
 ## [!UICONTROL SFTP] modules and their fields
 
 When you configure [!UICONTROL SFTP] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!UICONTROL SFTP] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
