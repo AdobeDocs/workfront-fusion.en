@@ -66,6 +66,7 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
 
 * Execution history logs are limited to a size of **100 MB**. If the execution history exceeds this size, only the first 100 MB will be shown.
 * If a scenario has multiple concurrent executions. only 5 executions display in the Executions area of the scenario details page. This is true even when more than 5 executions are running.
+* Workfront Fusion allows up to 5 failures per minute.
 
 ## Incomplete executions
 
