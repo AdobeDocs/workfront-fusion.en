@@ -142,8 +142,10 @@ The SFTP connector supports the following when creating a connection:
 * `ecdsa-sha2-nistp521`
 * `ssh-rsa`
 * `ssh-dss`
+<!--
 * `rsa-sha2-256`
 * `rsa-sha2-512`
+-->
 
 ## [!UICONTROL SFTP] modules and their fields
 
