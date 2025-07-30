@@ -492,8 +492,8 @@ Select the webhook that you want to use for this module, or click Add next to th
 * [[!UICONTROL Get a Comment]](#get-a-comment)
 * [[!UICONTROL List Comments]](#list-comments)
 * [[!UICONTROL Update a Comment]](#update-a-comment)
-* [Watch comment updated]()
-* [Watch new comment]()
+* [Watch comment updated](#watch-comment-updated)
+* [Watch new comment](#watch-new-comment)
 
 #### [!UICONTROL Create a comment]
 
@@ -650,6 +650,60 @@ This action module edits an existing comment.
   <tr> 
    <td role="rowheader">[!UICONTROL Page] </td> 
    <td> <p>If the asset is a PDF, enter or map the page that the comment is attached to.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Watch comment updated
+
+This trigger module starts a scenario when a comment is updated.
+
+Select the webhook that you want to use for this module, or click Add next to the Webhook field and enter the following information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Enter a name for the new webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account you want to watch for updated comments.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Watch new comment
+
+This trigger module starts a scenario when a comment is created.
+
+Select the webhook that you want to use for this module, or click Add next to the Webhook field and enter the following information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Enter a name for the new webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account you want to watch for new comments.</p> </td> 
   </tr> 
  </tbody> 
 </table>
