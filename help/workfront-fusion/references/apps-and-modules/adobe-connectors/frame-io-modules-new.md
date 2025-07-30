@@ -5,11 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 ---
-# [!DNL Frame.io] Beta (V4) modules
+# [!DNL Frame.io] V4 modules
 
 >[!IMPORTANT]
 >
->This article describes the new (beta) version of the Frame.io connector. This connector is used to connect to Frame.io version 4.
+>This article describes the new version of the Frame.io connector. This connector is used to connect to Frame.io version 4.
 >
 >For instructions on the legacy version of the Frame.io connector, see [Frame.io Legacy connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
 
@@ -19,7 +19,7 @@ Workfront offers two Frame.io connectors, based on the version of Frame.io that 
 
 | Connector | Frame.io version |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io (Legacy) | V3 |
 
 For instructions on the legacy version of the Frame.io connector, see [Frame.io Legacy connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md).
