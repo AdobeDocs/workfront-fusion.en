@@ -748,7 +748,7 @@ This action module creates a new folder in Frame.io.
 ### Projects
 
 * [Create a project](#create-a-project)
-* [Invite users to Frame.io Project]()
+* [Invite users to Frame.io Project](#invite-users-to-frameio-project)
 * [List projects](#list-projects)
 
 #### Create a project
@@ -774,6 +774,38 @@ This action module creates a new project in Frame.io.
    <tr> 
    <td role="rowheader">Name </td> 
    <td> <p>Enter or map a name for the new project.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Invite users to Frame.io Project
+
+This action module invites users to the specified Frame.io project.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the project you want to invite a user to.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select or map the workspace contains the project you want to invite a user to.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Project ID </td> 
+   <td> <p>Select or map the project that you want to invite a  user to.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">User ID </td> 
+   <td> <p>Select or map the user that you want to invite to the project.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -941,7 +973,7 @@ This module lists all workspaces in an account.
 ### Other
 
 * [Make a custom API call](#make-a-custom-api-call)
-* [Watch metadata value updated]()
+* [Watch metadata value updated](#watch-metadata-value-updated)
 
 
 #### [!UICONTROL Make a custom API call]
@@ -978,6 +1010,33 @@ This module allows you to perform a custom API call.
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Watch metadata value updated
+
+This trigger module starts a scenario when a comment is updated.
+
+Select the webhook that you want to use for this module, or click Add next to the Webhook field and enter the following information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Enter a name for the new webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account you want to watch for updated metadata values.</p> </td> 
   </tr> 
  </tbody> 
 </table>
