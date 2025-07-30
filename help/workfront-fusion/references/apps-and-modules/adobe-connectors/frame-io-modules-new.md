@@ -310,7 +310,8 @@ If you see the map button above a field or function, you can use it to set varia
 * [[!UICONTROL Delete an asset]](#delete-an-asset)
 * [[!UICONTROL Get an asset]](#get-an-asset)
 * [[!UICONTROL List assets]](#list-assets)
-* [[!UICONTROL Update an asset]](#update-an-asset)
+* [Watch asset deleted](#watch-asset-deleted)
+* [Watch new asset](#watch-new-asset)
 
 #### [!UICONTROL Create an asset] <!--different for v4-->
 
@@ -430,6 +431,60 @@ This search module retrieves all assets in the specified project's folder.
  </tbody> 
 </table>
 
+#### Watch asset deleted
+
+This trigger module starts a scenario when an asset is deleted.
+
+Select the webhook that you want to use for this module, or click Add next to the Webhook field and enter the following information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Enter a name for the new webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account you want to watch for deleted assets.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Watch new asset
+
+This trigger module starts a scenario when a new asset is created.
+
+Select the webhook that you want to use for this module, or click Add next to the Webhook field and enter the following information:
+
+<table style="table-layout:auto"> 
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Webhook name] </td> 
+   <td> <p>Enter a name for the new webhook.</p> </td> 
+  </tr> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to [!DNL Adobe Workfront Fusion]</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account you want to watch for new assets.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Comments 
 
 * [[!UICONTROL Create a Comment]](#create-a-comment)
@@ -437,6 +492,8 @@ This search module retrieves all assets in the specified project's folder.
 * [[!UICONTROL Get a Comment]](#get-a-comment)
 * [[!UICONTROL List Comments]](#list-comments)
 * [[!UICONTROL Update a Comment]](#update-a-comment)
+* [Watch comment updated]()
+* [Watch new comment]()
 
 #### [!UICONTROL Create a comment]
 
@@ -637,6 +694,7 @@ This action module creates a new folder in Frame.io.
 ### Projects
 
 * [Create a project](#create-a-project)
+* [Invite users to Frame.io Project]()
 * [List projects](#list-projects)
 
 #### Create a project
@@ -827,6 +885,10 @@ This module lists all workspaces in an account.
 </table>
 
 ### Other
+
+* [Make a custom API call](#make-a-custom-api-call)
+* [Watch metadata value updated]()
+
 
 #### [!UICONTROL Make a custom API call]
 
