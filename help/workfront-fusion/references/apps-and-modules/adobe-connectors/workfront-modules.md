@@ -420,7 +420,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >Users are created in Deactivated and Pending Approval status. If your organization has been migrated to the Adobe Admin Console, and the Pending Approval badge is not removed within a few minutes, you can approve the user.
 >
->*  **Resolve individual users**
+>  **Resolve individual users**
 >
 >      You can resolve individual users in the Users list.
 >
