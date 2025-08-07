@@ -13,12 +13,53 @@ Adobe workfront Fusion offers templates that can automate common workflows betwe
 
 ## Access requirements
 
-License of Jira Cloud, Workfront and Fusion.
-Workfront: System Admin permissions to create users, create custom forms and custom fields.
-Jira: System Admin permissions to create users, create custom fields, modify screens and modify Webhooks.
-Fusion: A Team Member (at least) able to develop, test, execute, and facilitate error resolution in scenarios.
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td> <p>Any</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
+   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td>
+   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Or</p>
+   <p>Legacy: Any </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <ul><li>Workfront Fusion<ul><p>New:</p><ul> <li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included. </ul><p>Or</p></li>
+  <li>   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p></li></ul><li>You must have a license to Jira Cloud</li></ul>
+   </td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Access level configurations</td> 
+   <td> <p>Workfront: permission to create users, custom forms, and custom fields.</p> <p>Jira: Permissions to creat users and custom fields, and to modify screens and webhooks.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+
++++
 
 ### Assumptions
+
+These modules assume the following:
 
 * Workfront is the source of truth of the overall Marketing campaign project
 * Jira is being used by technical teams, fulfilling part of a project that started in Workfront.
@@ -27,18 +68,20 @@ Fusion: A Team Member (at least) able to develop, test, execute, and facilitate 
 
 ## Data Model (Field Mappings)
 
-Workfront    Jira    Direction    Notes
-ObjId    WF ID    WF->Jira    Upon Jira Issue Creation
-Jira Key    Issue Key    Jira->WF    Upon Jira Issue Creation
-Jira Link    -    Jira->WF    User Clickable link in WF to Jira
-(-)    WF Link    WF->Jira    User Clickable link in Jira to WF
-Name    Summary    WF->Jira    
-Description    Description    WF->Jira    
-Status    WF Status    WF->Jira    WF Status
-Jira Status    Status    Jira->WF    Jira Status
-Planned Completion Date    Due Date    WF->Jira    Planned Completion Date
-Notes    Comments    WF<->Jira    Bidirectional copy
-Document    Attachment    WF-> Jira    As attachments on issue creation and comments on new documents after creation.
+
+|Workfront  |  Jira  |  Direction  |  Notes|
+|---|---|---|---|
+|ObjId  | WF ID   | WF &rarr; Jira  |  Upon Jira Issue Creation|
+|Jira Key |   Issue Key  |  Jira &rarr; WF |   Upon Jira Issue Creation|
+|Jira Link  |  -  |  Jira &rarr; WF  |  User Clickable link in WF to Jira|
+|-  |  WF Link  |  WF &rarr; Jira  |  User Clickable link in Jira to WF|
+|Name |   Summary   | WF &rarr; Jira  |  |
+|Description  |  Description |   WF &rarr; Jira |   |
+|Status  |  WF Status |   WF &rarr; Jira  |  WF Status|
+|Jira Status |   Status  |  Jira &rarr; WF  |  Jira Status|
+|Planned Completion Date   | Due Date |   WF &rarr; Jira  |  Planned Completion Date|
+|Notes  |  Comments   | WF &harr; Jira |   Bidirectional copy|
+|Document  |  Attachment |   WF &rarr; Jira  |  As attachments on issue creation and comments on new documents after creation.|
 
 
 ## Configure Jira
@@ -109,7 +152,7 @@ To use these modules, the following must be created in Jira:
 >
 >For instructions, see []().
 
-## List of scenarios
+## Scenarios
 
 Eight ready-to-use templates for Jira will be available by August to help replicate common workflows and accelerate implementation. Templates are fully customizable to meet specific business needs and can be extended as requirements evolve. 
 
@@ -122,3 +165,29 @@ Eight ready-to-use templates for Jira will be available by August to help replic
 * WF-to-Jira New Notes (Tasks and Issues)
 * WF-to-Jira Remove Notes (Tasks and Issues)
 
+>[!NOTE]
+>
+>When configuring these templates, use the following values:
+>
+>* **JiraBaseURL**: The base url for the Jira instance. Example: `https://myjira.atlassian.net/`
+>* **wfBaseURL**: The base url for the Workfront instance.  Usually: `https://<domain>.my.workfront.com` where `<domain>` is your particular Workfront domain name.
+
+ 
+### Scenario 1: WF-Jira Initial Assignment (Tasks and Issues)
+
+This scenario creates a Jira issue when a Workfront Task or Issue is assigned to the System Integration User.
+
+This will create the issue in Jira, completing the summary, Description, Due Date and WF Status and WF ID fields. After the  issue is created, this scenario also uploads the list of attachments and the history of notes related to the original task or issue in Workfront.
+
+If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Issue is assigned, the Jira issue is a Bug.
+
+To configure the WF-Jira Initial Assignment (Tasks and Issues) scenario:
+
+1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
+1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
+1. Click the **WF-Jira Initial Assignment (Tasks and Issues)** template.
+ 
+   A view of the template opens, showing information and an animation of data flow.
+1. In the first module, begin adding a webhook.
+1. Select a connection that uses the credentials for the System Integration user, or create a connection with the System Integration credentials.
+1. 
