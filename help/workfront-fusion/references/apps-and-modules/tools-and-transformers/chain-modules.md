@@ -100,6 +100,7 @@ To configure the Call a child scenario module
    The fields configured in the trigger module of the child scenario appear in the Call a child scenario module.
 
 1. Enter or map the information to be passed to the child scenario into the Call a child scenario module.
+1. (Conditional) If you want the parent scenario to continue its execution without waiting for a response from the child scenario, enable the **Fire and Forget** option.
 1. Click **OK** to save the module.
 
 >[!NOTE]
