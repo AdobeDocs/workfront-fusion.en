@@ -305,11 +305,11 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|---|
-   |(Updates on tasks)||| 
+   |---|---|---|
+   |(Updates on tasks)| | | 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
-   |WF ID|Exists||
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |WF ID|Exists| |
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
@@ -345,10 +345,10 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|---|
+   |---|---|---|
    |(Updates on issues)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
    |WF ID|Exists||
 
 1. Enable the **Exclude updates made by this connection** option.
@@ -385,10 +385,10 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|---|
+   |---|---|---|
    |(Create and Updates on Notes.)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
@@ -427,10 +427,10 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|---|
+   |---|---|---|
    |(Delete on Notes.)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
    |WF ID|Exists||
 
 1. Enable the **Exclude updates made by this connection** option.
@@ -467,10 +467,10 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|---|
+   |---|---|---|
    |(Create on Document.)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. In the second module, set the following variables.
 
@@ -490,13 +490,13 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 
 
 
-### Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)
+### Scenario 8: WF-to-Jira Remove Attachments (Tasks and Issues)
 
-+++**Expand to view instructions for configuring Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)**
++++**Expand to view instructions for configuring Scenario 8: WF-to-Jira Remove Attachments (Tasks and Issues)**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)** template.
+1. Click the **Scenario 8: WF-to-Jira Remove Attachments (Tasks and Issues)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
@@ -506,10 +506,10 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|---|
+   |---|---|---|
    |(Delete on Document)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. In the second module, set the following variables.
 
