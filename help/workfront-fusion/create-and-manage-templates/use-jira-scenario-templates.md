@@ -83,20 +83,26 @@ These modules assume the following:
 |Notes  |  Comments   | WF &harr; Jira |   Bidirectional copy|
 |Document  |  Attachment |   WF &rarr; Jira  |  As attachments on issue creation and comments on new documents after creation.|
 
-## Required configurations in Workfront and Jira
+## Configure prerequisites in Workfront, Jira, and Workfront Fusion
 
-## Configure Jira
+To use the Jira integration templates, you must perform the following configurations:
+
+* [Configure Jira](#configure-jira)
+* [Configure Workfront](#configure-workfront)
+* [Configure connections in Workfront Fusion]()
+
+### Configure Jira
 
 To use these modules, the following must be created in Jira:
 
 * A System Integration User
 * Three specific custom fields
 
-### Create a System Integration User in Jira
+#### Create a System Integration User in Jira
 
 1. In Jira, create a specific user called System Integration User. This user should only by used by Workfront Fusion, and should not represent a human user. This user's credentials will be used by Workfront Fusion connections. 
 
-### Create necessary custom fields in Jira
+#### Create necessary custom fields in Jira
 
 This integration expects three specific fields in the Jira account it connects to. Without these fields, the integration will be unsuccessful
 
@@ -117,20 +123,20 @@ This integration expects three specific fields in the Jira account it connects t
    For information on screens in Jira, see the Jira documentation on setting up work item screens.
 
 
-## Configure Workfront
+### Configure Workfront
 
 To use these modules, the following must be created in Jira:
 
 * A System Integration User
 * A specific custom form
 
-### Create a System Integration User in Workfront
+#### Create a System Integration User in Workfront
 
 1. In Workfront, create a System Integration user. This user is only used by Workfront Fusion, and does not represent a human user. Tasks assigned to this user will trigger the scenario that syncs Workfront with Jira.
 
    For instructions, see [Create a user]().
 
-### Create a custom form in Workfront
+#### Create a custom form in Workfront
 
 1. In Workfront, begin creating a custom form. 
 
@@ -152,6 +158,18 @@ To use these modules, the following must be created in Jira:
 >We recommend restricting this form from edits by other users. 
 >
 >For instructions, see []().
+
+### Configure connections in Workfront Fusion
+
+You must have created the System Integration users in Jira and Workfront before you can create connections.
+
+When creating these connections, be sure to use the credentials of the created system Integration users.
+
+If desired, you can create these connections as part of configuring the templates.
+
+* For instructions on creating a connection to Workfront, see [Connect Workfront to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) in the article Workfront modules.
+* For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.
+
 
 ## Scenarios
 
@@ -190,9 +208,7 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. Select a connection that uses the credentials for the System Integration user, or create a connection to Workfront with the System Integration credentials.
-
-   For instructions on creating a connection to Workfront, see [Connect Workfront to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) in the article Workfront modules.
+1. Select the Workfront connection that you created in [Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion). 
 1. In the **Record Type** field, select `Assignment`.
 1. In the **State** field, select `New state`.
 1. Configure the filter with the following operations, using the **And** option:
@@ -208,13 +224,8 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 #### Connect template modules to Workfront and Jira
 
-1. In **each** Workfront module, in the Connection field, select the same connection that you used for the trigger module, then click **OK** to save the connection to that module.
-1. (Conditional) If you do not have a Jira connection that uses the credentials for the System Integration user, create that connection in any Jira module.
-
-   For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.
-1. In **each** Jira module, in the Connection field, select the Jira connection that you want to use, then click **OK** to save the connection to that module. 
-
-   You must select the same connection for each Jira module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that you created in [Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion), then click **OK** to save the connection to that module.
+1. In **each** Jira module, in the Connection field, select the Workfront connection that you created in [Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion), then click **OK** to save the connection to that module. 
 1. Continue to [Update the General Parameters module]().
 
 #### Update the Set Environment Details module
