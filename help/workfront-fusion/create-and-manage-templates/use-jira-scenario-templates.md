@@ -207,9 +207,25 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 #### Connect template modules to Workfront and Jira
 
-1. In each Workfront module, in the Connection field, select the same connection that you used for the trigger module, then click **OK** to save the connection to that module.
+1. In **each** Workfront module, in the Connection field, select the same connection that you used for the trigger module, then click **OK** to save the connection to that module.
 1. (Conditional) If you do not have a Jira connection that uses the credentials for the System Integration user, create that connection in any Jira module.
 
    For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.
-1. In each Jira modulein the Connection field, select the Jira connection that you want to use, then click **OK** to save the connection to that module. You **must** select the same connection for each Jira module.
+1. In **each** Jira module, in the Connection field, select the Jira connection that you want to use, then click **OK** to save the connection to that module. 
+
+   You must select the same connection for each Jira module.
+1. Continue to [Update the General Parameters module]().
+
+#### Update the Set Environment Details module
+
+1. In the second module of the template (Set Environment Details), for each of the following variables, click **Add item** and enter the variable's name and value
+
+   |Variable name | Variable value|
+   |---|---|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
+   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
+   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+
+1. Continue to [Map custom fields in Jira]()
+
 
