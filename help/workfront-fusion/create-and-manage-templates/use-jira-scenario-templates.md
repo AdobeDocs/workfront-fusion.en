@@ -181,7 +181,7 @@ This will create the issue in Jira, completing the summary, Description, Due Dat
 
 If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Issue is assigned, the Jira issue is a Bug.
 
-To configure the WF-Jira Initial Assignment (Tasks and Issues) scenario:
+#### Configure the trigger module
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
@@ -189,5 +189,27 @@ To configure the WF-Jira Initial Assignment (Tasks and Issues) scenario:
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. Select a connection that uses the credentials for the System Integration user, or create a connection with the System Integration credentials.
-1. 
+1. Select a connection that uses the credentials for the System Integration user, or create a connection to Workfront with the System Integration credentials.
+
+   For instructions on creating a connection to Workfront, see [Connect Workfront to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) in the article Workfront modules.
+1. In the **Record Type** field, select `Assignment`.
+1. In the **State** field, select `New state`.
+1. Configure the filter with the following operations, using the **And** option:
+
+   |Field|Operator|Value|
+   |---|---|---|
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+
+1. Enable the **Exclude updates made by this connection** option.
+1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
+1. Continue to [Connect template modules to Workfront and Jira]()
+
+#### Connect template modules to Workfront and Jira
+
+1. In each Workfront module, in the Connection field, select the same connection that you used for the trigger module, then click **OK** to save the connection to that module.
+1. (Conditional) If you do not have a Jira connection that uses the credentials for the System Integration user, create that connection in any Jira module.
+
+   For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.
+1. In each Jira modulein the Connection field, select the Jira connection that you want to use, then click **OK** to save the connection to that module. You **must** select the same connection for each Jira module.
+
