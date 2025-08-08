@@ -83,6 +83,7 @@ These modules assume the following:
 |Notes  |  Comments   | WF &harr; Jira |   Bidirectional copy|
 |Document  |  Attachment |   WF &rarr; Jira  |  As attachments on issue creation and comments on new documents after creation.|
 
+## Required configurations in Workfront and Jira
 
 ## Configure Jira
 
@@ -175,11 +176,11 @@ Eight ready-to-use templates for Jira will be available by August to help replic
  
 ### Scenario 1: WF-Jira Initial Assignment (Tasks and Issues)
 
-This scenario creates a Jira issue when a Workfront Task or Issue is assigned to the System Integration User.
-
-This will create the issue in Jira, completing the summary, Description, Due Date and WF Status and WF ID fields. After the  issue is created, this scenario also uploads the list of attachments and the history of notes related to the original task or issue in Workfront.
+This scenario creates a Jira issue when a Workfront Task or Issue is assigned to the System Integration User. The scenario fill in the Summary, Description, Due Date, WF Status and WF ID fields. After the  issue is created, this scenario also uploads the list of attachments and the history of notes related to the original task or issue in Workfront.
 
 If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Issue is assigned, the Jira issue is a Bug.
+
++++**Expand to view instructions for configuring Scenario 1: WF-Jira Initial Assignment (Tasks and Issues)**
 
 #### Configure the trigger module
 
@@ -228,4 +229,129 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 1. Continue to [Map custom fields in Jira]()
 
+#### Map custom fields in Jira. 
+
+<!--Awaiting feedback-->
+
++++
+
+### Scenario 2: Jira to Workfront integration (tasks and issues)
+
+This scenario creates a Workfront task or issue when an issue is created in Jira.
+
++++**Jira to Workfront integration (tasks and issues)**
+
+
+
+1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
+1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
+1. Click the **WF-Jira Initial Assignment (Tasks and Issues)** template.
+ 
+   A view of the template opens, showing information and an animation of data flow.
+1. In the first module, begin adding a webhook.
+1. Select a connection that uses the credentials for the System Integration user, or create a connection to Jira with the System Integration credentials.
+
+   For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.
+
+1. Continue to [Configure a webhook in Jira]()
+
+#### Configure a webhook in Jira
+
+1. In Jira, create a webhook.
+
+   For instructions see the information on webhooks in the Jira documentation.
+
+1. When configuring the webhook, use the following values:
+ 
+   * **JQL**: project = "yourProjectName" (where yourProjectName = your JIRA project's name)
+   * **Issue**: created,updated
+   * **Comment**: created, deleted
+
+
+1. Continue to [Connect template modules to Workfront and Jira (Module 2)]()
+
+#### Connect template modules to Workfront and Jira (Module 2)
+
+1. In **each** Jira module, in the Connection field, select the same connection that you used for the trigger module, then click **OK** to save the connection to that module.
+1. (Conditional) If you do not have a Workfront connection that uses the credentials for the System Integration user, create that connection in any Workfront module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that you want to use, or create a connection to Workfront with the System Integration credentials.
+
+   You **must** use the same connection to Workfront in all Workfront modules.
+
+   For instructions on creating a connection to Workfront, see [Connect Workfront to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) in the article 
+
+<!--#### Map custom fields-->
+
++++
+
+Format for all others
+
+1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
+1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
+1. Click the **TEMPLATE GOES HERE** template.
+ 
+   A view of the template opens, showing information and an animation of data flow.
+1. In the first module, begin adding a webhook.
+1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In the trigger module, configure the filter with the following operations, using the **And** option:
+
+   |Field|Operator|Value|
+   |---|---|---|
+   ||||
+   ||||
+1. In the second module, set the following variables.
+
+   |Variable name | Variable value|
+   |---|---|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
+   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
+   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+
+
+
+
+Scenario 3: WF-to-Jira Changes (Tasks)
+Create a new Webhook that triggers on:
+-    Updates on tasks.
+-    Tasks under the designated project.
+-    Tasks that WF ID field have value.
+-    Exclude updates done by the integration user.
+Be sure to associate the Jira and WF modules with the correct Connections.
+
+Scenario 4: WF-to-Jira Changes (Issues)
+Create a new Webhook that triggers on:
+-    Updates on Issues.
+-    Issues under the designated project.
+-    Issues that WF ID field have value.
+-    Exclude updates done by the integration user.
+Be sure to associate the Jira and WF modules with the correct Connections.
+
+Scenario 5: WF-to-Jira New notes (Tasks and Issues)
+Create a new Webhook that triggers on:
+-    Create and Updates on Notes.
+-    Tasks or issues under the designated project.
+-    Exclude updates done by the integration user.
+Be sure to associate the Jira and WF modules to the correct Connections.
+
+Scenario 6: WF-to-Jira Remove notes (Tasks and Issues)
+Create a new Webhook that triggers on:
+-    Delete on Notes.
+-    Tasks or issues under the designated project.
+-    Exclude updates done by the integration user.
+Be sure to associate the Jira and WF modules with the correct Connections.
+
+Scenario 7: WF-to-Jira New Attachments (Tasks and Issues)
+Create a new Webhook that triggers on:
+-    Create on Document.
+-    Tasks or issues under the designated project.
+-    Exclude updates done by the integration user.
+Be sure to associate the Jira and WF modules with the correct Connections.
+
+Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)
+Create a new Webhook that triggers on:
+-    Delete on Document.
+-    Tasks or issues under the designated project.
+-    Exclude updates done by the integration user.
+Be sure to associate the Jira and WF modules with the correct Connections.
 
