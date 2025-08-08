@@ -27,6 +27,12 @@ If your team struggles to maintain momentum because project timelines don't adju
 
 This Fusion template automates that process. When a task is completed early, all dependent (successor) tasks are automatically rescheduled to start sooner, helping your team move faster and stay agile.
 
+### [!BADGE New! ]{type=Informative} HTTP>CSV>WF - Create list of event subs by domain and tier and export to CSV
+
+Download event subscription information, create a CSV file, and upload the file to Workfront.
+
+<!--New August 8, 2025-->
+
 ### [!BADGE New! ]{type=Informative} Workfront Boards - Delete Archived Cards from Designated Column (On Demand)
 
 <!--New March 12, 2025-->
