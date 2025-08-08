@@ -250,7 +250,7 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 This scenario creates a Workfront task or issue when an issue is created in Jira.
 
-+++**Jira to Workfront integration (tasks and issues)**
++++**Expand to view instructions for configuring Scenario 2:Jira to Workfront integration (tasks and issues)**
 
 
 
@@ -289,22 +289,28 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 
 +++
 
-Format for all others
+### Scenario 3: WF-to-Jira Changes (Tasks)
+
++++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **TEMPLATE GOES HERE** template.
+1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In the trigger module, configure the filter with the following operations, using the **And** option:
+1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
+1. In the **Record Type** field, select `??`.
+1. In the **State** field, select `New state`.
+1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|
-   ||||
-   ||||
+   |---|---|---|---|
+   |(Updates on tasks)||| 
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   |WF ID|Exists||
+
 1. In the second module, set the following variables.
 
    |Variable name | Variable value|
@@ -313,31 +319,38 @@ Format for all others
    |JiraBaseURL| The base URL of the Jira account you are connecting to.|
    |wfBaseURL| The base URL of the Workfront account you are connecting to.|
 
+1. Enable the **Exclude updates made by this connection** option.
+1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
+
+
++++
 
 
 
-Scenario 3: WF-to-Jira Changes (Tasks)
-Create a new Webhook that triggers on:
--    Updates on tasks.
--    Tasks under the designated project.
--    Tasks that WF ID field have value.
--    Exclude updates done by the integration user.
-Be sure to associate the Jira and WF modules with the correct Connections.Format for all others
+### Scenario 4: WF-to-Jira Changes (Issues)
+
++++**Expand to view instructions for configuring Scenario 4: WF-to-Jira Changes (Issues)**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **TEMPLATE GOES HERE** template.
+1. Click the **Scenario 4: WF-to-Jira Changes (Issues)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In the trigger module, configure the filter with the following operations, using the **And** option:
+1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
+1. In the **Record Type** field, select `??`.
+1. In the **State** field, select `New state`.
+1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|
-   ||||
-   ||||
+   |---|---|---|---|
+   |(Updates on tasks)||| 
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   |WF ID|Exists||
+
 1. In the second module, set the following variables.
 
    |Variable name | Variable value|
@@ -346,38 +359,13 @@ Be sure to associate the Jira and WF modules with the correct Connections.Format
    |JiraBaseURL| The base URL of the Jira account you are connecting to.|
    |wfBaseURL| The base URL of the Workfront account you are connecting to.|
 
+1. Enable the **Exclude updates made by this connection** option.
+1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
 
-Scenario 4: WF-to-Jira Changes (Issues)
-Create a new Webhook that triggers on:
--    Updates on Issues.
--    Issues under the designated project.
--    Issues that WF ID field have value.
--    Exclude updates done by the integration user.
-Be sure to associate the Jira and WF modules with the correct Connections.Format for all others
-
-1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
-1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **TEMPLATE GOES HERE** template.
- 
-   A view of the template opens, showing information and an animation of data flow.
-1. In the first module, begin adding a webhook.
-1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In the trigger module, configure the filter with the following operations, using the **And** option:
-
-   |Field|Operator|Value|
-   |---|---|---|
-   ||||
-   ||||
-1. In the second module, set the following variables.
-
-   |Variable name | Variable value|
-   |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
-
++++
 
 
 Scenario 5: WF-to-Jira New notes (Tasks and Issues)
@@ -387,20 +375,31 @@ Create a new Webhook that triggers on:
 -    Exclude updates done by the integration user.
 Be sure to associate the Jira and WF modules to the correct Connections.Format for all others
 
+
+
+
+### Scenario 3: WF-to-Jira Changes (Tasks)
+
++++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
+
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **TEMPLATE GOES HERE** template.
+1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In the trigger module, configure the filter with the following operations, using the **And** option:
+1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
+1. In the **Record Type** field, select `??`.
+1. In the **State** field, select `New state`.
+1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|
-   ||||
-   ||||
+   |---|---|---|---|
+   |(Updates on tasks)||| 
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   |WF ID|Exists||
+
 1. In the second module, set the following variables.
 
    |Variable name | Variable value|
@@ -409,7 +408,13 @@ Be sure to associate the Jira and WF modules to the correct Connections.Format f
    |JiraBaseURL| The base URL of the Jira account you are connecting to.|
    |wfBaseURL| The base URL of the Workfront account you are connecting to.|
 
+1. Enable the **Exclude updates made by this connection** option.
+1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
+
++++
 
 Scenario 6: WF-to-Jira Remove notes (Tasks and Issues)
 Create a new Webhook that triggers on:
@@ -418,20 +423,30 @@ Create a new Webhook that triggers on:
 -    Exclude updates done by the integration user.
 Be sure to associate the Jira and WF modules with the correct Connections.Format for all others
 
+
+
+### Scenario 3: WF-to-Jira Changes (Tasks)
+
++++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
+
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **TEMPLATE GOES HERE** template.
+1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In the trigger module, configure the filter with the following operations, using the **And** option:
+1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
+1. In the **Record Type** field, select `??`.
+1. In the **State** field, select `New state`.
+1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|
-   ||||
-   ||||
+   |---|---|---|---|
+   |(Updates on tasks)||| 
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   |WF ID|Exists||
+
 1. In the second module, set the following variables.
 
    |Variable name | Variable value|
@@ -440,6 +455,13 @@ Be sure to associate the Jira and WF modules with the correct Connections.Format
    |JiraBaseURL| The base URL of the Jira account you are connecting to.|
    |wfBaseURL| The base URL of the Workfront account you are connecting to.|
 
+1. Enable the **Exclude updates made by this connection** option.
+1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
+
+
++++
 
 
 Scenario 7: WF-to-Jira New Attachments (Tasks and Issues)
@@ -449,20 +471,30 @@ Create a new Webhook that triggers on:
 -    Exclude updates done by the integration user.
 Be sure to associate the Jira and WF modules with the correct Connections.Format for all others
 
+
+
+### Scenario 3: WF-to-Jira Changes (Tasks)
+
++++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
+
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **TEMPLATE GOES HERE** template.
+1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In the trigger module, configure the filter with the following operations, using the **And** option:
+1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
+1. In the **Record Type** field, select `??`.
+1. In the **State** field, select `New state`.
+1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|
-   ||||
-   ||||
+   |---|---|---|---|
+   |(Updates on tasks)||| 
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   |WF ID|Exists||
+
 1. In the second module, set the following variables.
 
    |Variable name | Variable value|
@@ -471,6 +503,13 @@ Be sure to associate the Jira and WF modules with the correct Connections.Format
    |JiraBaseURL| The base URL of the Jira account you are connecting to.|
    |wfBaseURL| The base URL of the Workfront account you are connecting to.|
 
+1. Enable the **Exclude updates made by this connection** option.
+1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
+
+
++++
 
 
 Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)
@@ -480,20 +519,31 @@ Create a new Webhook that triggers on:
 -    Exclude updates done by the integration user.
 Be sure to associate the Jira and WF modules with the correct Connections.Format for all others
 
+
+
+
+### Scenario 3: WF-to-Jira Changes (Tasks)
+
++++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
+
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **TEMPLATE GOES HERE** template.
+1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
-1. In each Workfront module, In **each** Jira module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In each Jira module, In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
-1. In the trigger module, configure the filter with the following operations, using the **And** option:
+1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
+1. In the **Record Type** field, select `??`.
+1. In the **State** field, select `New state`.
+1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
-   |---|---|---|
-   ||||
-   ||||
+   |---|---|---|---|
+   |(Updates on tasks)||| 
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
+   |WF ID|Exists||
+
 1. In the second module, set the following variables.
 
    |Variable name | Variable value|
@@ -502,5 +552,11 @@ Be sure to associate the Jira and WF modules with the correct Connections.Format
    |JiraBaseURL| The base URL of the Jira account you are connecting to.|
    |wfBaseURL| The base URL of the Workfront account you are connecting to.|
 
+1. Enable the **Exclude updates made by this connection** option.
+1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
+1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
+1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
+
++++
 
