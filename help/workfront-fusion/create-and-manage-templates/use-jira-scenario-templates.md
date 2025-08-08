@@ -411,13 +411,13 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 
 
 
-### WF-to-Jira Remove notes (Tasks and Issues)
+### Scenario 6: WF-to-Jira Remove notes (Tasks and Issues)
 
-+++**Expand to view instructions for configuring WF-to-Jira Remove notes (Tasks and Issues)**
++++**Expand to view instructions for configuring Scenario 6:WF-to-Jira Remove notes (Tasks and Issues)**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **WF-to-Jira Remove notes (Tasks and Issues)** template.
+1. Click the **Scenario 6: WF-to-Jira Remove notes (Tasks and Issues)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
@@ -429,12 +429,13 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
    |Field|Operator|Value|
    |---|---|---|---|
    |(Delete on Notes.)||| 
+   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
    |WF ID|Exists||
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
-1. In the second module, set the following variables, hten click **OK** to save the module.
+1. In the second module, set the following variables, then click **OK** to save the module.
 
    |Variable name | Variable value|
    |---|---|
@@ -449,22 +450,14 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 +++
 
 
-Scenario 7: WF-to-Jira New Attachments (Tasks and Issues)
-Create a new Webhook that triggers on:
--    Create on Document.
--    Tasks or issues under the designated project.
--    Exclude updates done by the integration user.
-Be sure to associate the Jira and WF modules with the correct Connections.Format for all others
 
+### Scenario 7: WF-to-Jira New Attachments (Tasks and Issues)
 
-
-### Scenario 3: WF-to-Jira Changes (Tasks)
-
-+++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
++++**Expand to view instructions for configuring SScenario 7: WF-to-Jira New Attachments (Tasks and Issues)**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
+1. Click the **Scenario 7: WF-to-Jira New Attachments (Tasks and Issues)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
@@ -475,10 +468,9 @@ Be sure to associate the Jira and WF modules with the correct Connections.Format
 
    |Field|Operator|Value|
    |---|---|---|---|
-   |(Updates on tasks)||| 
+   |(Create on Document.)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
-   |WF ID|Exists||
 
 1. In the second module, set the following variables.
 
@@ -497,23 +489,14 @@ Be sure to associate the Jira and WF modules with the correct Connections.Format
 +++
 
 
-Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)
-Create a new Webhook that triggers on:
--    Delete on Document.
--    Tasks or issues under the designated project.
--    Exclude updates done by the integration user.
-Be sure to associate the Jira and WF modules with the correct Connections.Format for all others
 
+### Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)
 
-
-
-### Scenario 3: WF-to-Jira Changes (Tasks)
-
-+++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
++++**Expand to view instructions for configuring Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
+1. Click the **Scenario 7: WF-to-Jira Remove Attachments (Tasks and Issues)** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
@@ -524,10 +507,9 @@ Be sure to associate the Jira and WF modules with the correct Connections.Format
 
    |Field|Operator|Value|
    |---|---|---|---|
-   |(Updates on tasks)||| 
+   |(Delete on Document)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|||||
-   |WF ID|Exists||
 
 1. In the second module, set the following variables.
 
