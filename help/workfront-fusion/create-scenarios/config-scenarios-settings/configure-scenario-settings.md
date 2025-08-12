@@ -185,7 +185,7 @@ For more information about this page, see [Scenario details](/help/workfront-fus
 
 ### Number of consecutive errors
 
-Defines the maximum number of consecutive execution attempts before the execution of a scenario is deactivated (excluding `DataError`, `DuplicateDataError` and `ConnectionError`).
+Defines the maximum number of consecutive execution attempts before the execution of a scenario is deactivated (excluding `DataError`, `DuplicateDataError`, `ModuleTimeoutError`, and `ConnectionError`).
 
 For more information on errors, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
