@@ -3,17 +3,16 @@ title: Jira Software modules
 description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Jira] Software, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
 ---
 # [!DNL Jira Software] modules
 
 >[!NOTE]
 >
->These instructions apply to the legacy Jira Cloud and Jira Server connectors. For instructions about the new version of the Jira connector, which is simply labeled Jira, see [Jira modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md).
+>These instructions apply to the new version of the Jira connector, which is simply labeled Jira. For instructions about the legacy Jira Cloud and Jira Server connectors, see [Jira software modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md).
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Jira Software], as well as connect it to multiple third-party applications and services.
+In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Jira], as well as connect it to multiple third-party applications and services.
 
-These instructions apply to both Jira Cloud and Jira Server modules.
+The Jira connector can be used for both Jira Cloud and Jira Data Server.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
