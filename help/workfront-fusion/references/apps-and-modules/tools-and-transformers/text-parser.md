@@ -123,7 +123,7 @@ Parses elements from text based on the given pattern.
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>Select the pattern that reflects the elements you want to parse from the text.</p> </td> 
+   <td> <p>Select the pattern that reflects the elements you want to parse from the text.</p> <p>To enter a custom regular expressions, select Custom from the list, the enter the custom expression in the Custom regex field.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
