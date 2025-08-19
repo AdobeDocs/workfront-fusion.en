@@ -102,3 +102,14 @@ The list of connectors opens, showing any connectors already used in the scenari
 1. Configure the module.
 
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>To create a link to a specific module, add `?moduleId=<module-id>` to the URL when viewing the following pages:
+>
+>* Scenario edit page (URL ends in `/edit`)
+>* A specific scenarion execution (URL ends in `/logs/<log-id>`)
+>
+>`<module-id>` refers to the number next to the module label when viewing the scenario.
+>
+>This can be useful when debugging scenarios or copying module configuration.
