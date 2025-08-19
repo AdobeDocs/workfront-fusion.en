@@ -65,184 +65,70 @@ For information on  Adobe Workfront Fusion licenses, see [ Adobe Workfront Fusio
 
 To use Jira modules you must have a Jira account.
 
-## Connect Jira to Workfront Fusion
+## Connect Jira to Workfront Fusion 
 
-Your connection method is based on whether you are using Jira Cloud or Jira Server.
+You can create a connection to your Jira account directly from inside a Jira module.
 
-* [Connect Jira Cloud to Workfront Fusion](#connect-jira-cloud-to-workfront-fusion)
-* [Connect Jira Server to Workfront Fusion](#connect-jira-server-to-workfront-fusion)
-
-### Connect Jira Cloud to Workfront Fusion
-
-Connect Jira Cloud to Workfront Fusion
-
-To connect Jira to Workfront Fusion, you must create an API token and insert it together with your Service URL and Username to the Create a connection field in Workfront Fusion.
-
-#### Create an API token in Jira 
-
-1. Create an API token in Jira.
-
-   For instructions, we recomments searching for "Create an API token" in the Jira documentation.
-1. After creating the token, copy the token to a secure location.
-
-   >[!IMPORTANT]
-   >
-   >You can't view the token again after closing this dialog.
-1. Store the generated token in a safe place.
-1. Continue with [Configure the Jira API token in Workfront Fusion](#configure-the-jira-api-token-in-workfront-fusion).
-
-#### Configure the Jira API token in Workfront Fusion 
-
-1. In any Jira Cloud module in Workfront Fusion, click **Add** next to the connection field.
-1. Specify the following information:
-
-   * **Environment**
-   * **Type**
-   * **Service URL:** This is the base URL that you use to access your Jira account. Example: `yourorganization.atlassian.net`
-   * **Username**
-   * **API token:**&nbsp;This is the API token you created in the [Create an API token in Jira](#create-an-api-token-in-jira) section of this article.
-
-1. Click Continue to create the connection and return to the module.
-
-### Connect Jira Server to Workfront Fusion
-
-To authorize a connection between Workfront Fusion and Jira Server, you need your Consumer Key, Private Key, And Service URL. You may need to contact your Jira administrator for this information.
-
-* [Generate Public and Private keys for your Jira connection](#generate-public-and-private-keys-for-your-jira-connection)
-* [Configure the client app as a consumer in Jira](#configure-the-client-app-as-a-consumer-in-jira)
-* [Create a connection to Jira Server or Jira Data Center in] Workfront Fusion(#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
-
-#### Generate Public and Private keys for your Jira connection 
-
-To acquire a private key for your Workfront Fusion Jira connection, you need to generate public and private keys. This is done through your computer's terminal. You can locate your terminal by searching for terminal in your start menu or computer search bar (not your browser search bar.)
-
-1. In your terminal, run the following `openssl` commands.
-
-   * `openssl genrsa -out jira_privatekey.pem 1024`
-
-      This command generates a 1024 bit private key.
-
-   * `openssl req -newkey rsa:1024 -x509 -key jira_privatekey.pem -out jira_publickey.cer -days 365`
-
-      This command creates an X509 certificate.
-
-   * `openssl pkcs8 -topk8 -nocrypt -in jira_privatekey.pem -out jira_privatekey.pcks8`
-
-      This command extracts the private key (PKCS8 format) to the `jira_privatekey.pcks8` file.
-
-   * `openssl x509 -pubkey -noout -in jira_publickey.cer  > jira_publickey.pem`
-
-      This command extracts the public key from the certificate to the `jira_publickey.pem` file.
-
-      >[!NOTE]
-      >
-      >If you are using Windows, you may need to save the public key to the `jira_publickey.pem` file manually:
-      >
-      >1. In your terminal, run the following command:
-      >   
-      >   `openssl x509 -pubkey -noout -in jira_publickey.cer`
-      >   
-      >1. Copy the terminal output, including `-------BEGIN PUBLIC KEY--------` and `-------END PUBLIC KEY--------`.
-      >   
-      >1. Paste the terminal output into a file named `jira_publickey.pem`.
-
-
-1. Continue to [Configure the client app as a consumer in Jira](#configure-the-client-app-as-a-consumer-in-jira)
-
-#### Configure the client app as a consumer in Jira 
-
-1. Log in to your Jira instance.
-1. In the left navigation panel, click **Jira Settings** ![Jira settings icon](/help/workfront-fusion/references/apps-and-modules/assets/jira-settings-icon.png) > **Applications**> **Application links**.
-1. In the **Enter the URL of the application you want to link** field, enter
-
-   ```
-   https://app.workfrontfusion.com/oauth/cb/workfront-jiraserver-oauth1
-   ```
-
-1. Click **Create new link**. Ignore the "No response was received from the URL you entered" error message.
-1. In the **Link applications** window, enter values into the **Consumer key** and **Shared secret** fields.
-
-   You can choose the values for these fields.
-
-1. Copy the values of the **Consumer key** and **Shared secret** fields to a secure location.
-
-   You will require these values later in the configuration process.
-
-1. Fill in the URL fields as follows:
-
-   | Field | Description |
-   |---|---|
-   | Request Token URL | `<Jira base url>/plugins/servlet/oauth/request-token` |
-   | Authorization URL | `<Jira base url>/plugins/servlet/oauth/authorize` |
-   | Access Token URL | `<Jira base url>/plugins/servlet/oauth/access-token` |
-
-1. Select the **Create incoming link** checkbox.
-1. Click **Continue**.
-1. In the **Link applications** window, fill in the following fields:
-
-   <table style="table-layout:auto"> 
-    <col data-mc-conditions=""> 
-    <col data-mc-conditions=""> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>Consumer Key</p> </td> 
-      <td> Paste in the consumer key that you copied to a secure location.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Consumer name</td> 
-      <td>Enter a name of your choice. This name is for your own reference.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Public key</td> 
-      <td>Paste in the public key from your <code> jira_publickey.pem</code> file.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-1. Click **Continue**.
-1. Continue to [Create a connection to Jira Server or Jira Data Center in Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)
-
-#### Create a connection to Jira Server or Jira Data Center in Workfront Fusion 
-
->[!NOTE]
+>[!IMPORTANT]
 >
->Use the Jira Server app to connect to Jira Server or Jira Data Center.
+>* To create a basic connection to Jira Data Center, you will need a Jira Personal Access Token.
+>* To create a basic connection to Jira Cloud, you will need a Jira API token
+>* To create an OAuth 2 connection to Jira Cloud or Jira Data Center, you will need a Jira Client ID and Client Secret.
+>
+>For instructions on creating any of these, see the Jira documentation.
 
-1. In any Jira Server module in Workfront Fusion, click **Add** next to the connection field.
-1. In the Create a connection panel, fill in the following fields:
+1. In any Jira module, click **Add** next to the Connection field.
+1. Configure the following fields:
 
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>Connection type</p> </td> 
+      <td> <p>Select whether you are creating a basic connection or an OAuth 2 connection.</p> </td> 
+     </tr> 
      <tr> 
       <td role="rowheader"> <p>Connection name</p> </td> 
-      <td> <p>Enter a name for the connection.</p> </td> 
+      <td> <p>Enter a name for the new connection.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">Service URL</td>
+      <td>Enter your Jira instance URL. This is the URL you use to access Jira.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira account type</td>
+       <td>Select whether you are connecting to Jira Cloud or Jira Data Center.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">Client ID</td> 
+      <td> <p>If you are creating an OAuth 2 connection, enter your Jira Client ID</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>Environment</p> </td> 
-      <td> <p>Select whther you are using a production or non-production environment.</p> </td> 
+      <td role="rowheader">Client Secret</td> 
+      <td> <p>If you are creating an OAuth 2 connection, enter your Jira Client Secret</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>Type</p> </td> 
-      <td> <p>Select whether you are using a service account or a personal account.</p> </td> 
+      <td role="rowheader">Email</td> 
+      <td>If you are creating a basic connection to Jira Cloud, enter your email address.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">Consumer Key</td> 
-      <td>Paste in the consumer key that you copied to a secure location in <a href="#configure-the-client-app-as-a-consumer-in-jira" class="MCXref xref">Configure the client app as a consumer in Jira</a></td> 
+      <td role="rowheader">API Token</td> 
+      <td>If you are creating a basic connection to Jira Cloud, enter your API Token.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> Private Key</td> 
-      <td>Paste in the private key from the <code> jira_privatekey.pcks8</code> file you created in <a href="#generate-public-and-private-keys-for-your-jira-connection" class="MCXref xref">Generate Public and Private keys for your Jira connection</a>.</td> 
+      <td role="rowheader">Personal Access Token</td> 
+      <td>If you are creating a basic connection to Jira Data Center, enter your Personal Access Token.</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> Service URL</td> 
-      <td>Enter your Jira instance URL. Example: <code>yourorganization.atlassian.net</code></td> 
+      <td role="rowheader">API version</td> 
+      <td>Select the Jira API version that you want this connection to connect to.</td> 
      </tr> 
     </tbody> 
    </table>
 
-1. Click **Continue** to create the connection and go back to the module.
+1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
+
 
 ## Jira modules and their fields
 
