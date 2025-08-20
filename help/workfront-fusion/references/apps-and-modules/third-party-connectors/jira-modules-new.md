@@ -68,15 +68,50 @@ To use Jira modules you must have a Jira account.
 
 ## Connect Jira to Workfront Fusion 
 
-You can create a connection to your Jira account directly from inside a Jira module.
+### Create needed credentials
 
->[!IMPORTANT]
->
->* To create a basic connection to Jira Data Center, you will need a Jira Personal Access Token.
->* To create a basic connection to Jira Cloud, you will need a Jira API token
->* To create an OAuth 2 connection to Jira Cloud or Jira Data Center, you will need a Jira Client ID and Client Secret.
->
->For instructions on creating any of these, see the Jira documentation.
+To create connections to Jira, you will need the following:
+
+| Connection type | Account type | Credentials needed |
+|---|---|---|
+|OAuth 2|Any|Client ID and Client Secret|
+|Basic|Jira Cloud|Jira API token|
+|Basic|Jira Data Center|Jira Personal Access Token (PAT)|
+
+For instructions on creating any of these, see the Jira documentation.
+
+When creating these credentials, you will need the following information:
+
+* For OAuth 2:
+
+   |Fusion datacenter|Redirect URL|
+   |---|---|
+   |US|`https://app.workfrontfusion.com/oauth/cb/workfront-jira2`|
+   |EU|`https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2`|
+   |Azure|`https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2`|
+
+   
+
+* For Personal Access Tokens (PATs):
+
+   |Fusion datacenter|Redirect URL|
+   |---|---|
+   |US|`https://app.workfrontfusion.com/oauth/cb/workfront-jira`|
+   |EU|`https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira`|
+   |Azure|`https://app-az.workfrontfusion.com/oauth/cb/workfront-jira`|
+
+   >[!IMPORTANT]
+   >
+   >To use a PAT, you must enable the following in the files `jira/bin/WEB-INF/classes`, in the file `jira-config.properties`:
+   >
+   >* `jira.rest.auth.allow.basic = true`
+   >* `jira.rest.csrf.disabled = true`
+   >
+   >If this file does not exist, you must create it.
+
+### Create the connection to Jira in Workfront Fusion
+
+To create the connection in Workfront Fusion:
 
 1. In any Jira module, click **Add** next to the Connection field.
 1. Configure the following fields:
