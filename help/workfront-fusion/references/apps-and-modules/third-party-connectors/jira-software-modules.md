@@ -7,6 +7,10 @@ exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
 ---
 # [!DNL Jira Software] modules
 
+>[!NOTE]
+>
+>These instructions apply to the legacy Jira Cloud and Jira Server connectors. For instructions about the new version of the Jira connector, which is simply labeled Jira, see [Jira modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md).
+
 In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Jira Software], as well as connect it to multiple third-party applications and services.
 
 These instructions apply to both Jira Cloud and Jira Server modules.
