@@ -3,6 +3,7 @@ title: Jira modules
 description: In an  Adobe Workfront Fusion scenario, you can automate workflows that use Jira Software, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
 ---
 # Jira modules
 
