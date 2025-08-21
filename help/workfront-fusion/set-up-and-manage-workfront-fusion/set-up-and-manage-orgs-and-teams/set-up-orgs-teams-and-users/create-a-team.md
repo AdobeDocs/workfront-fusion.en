@@ -89,3 +89,4 @@ You can edit the name of a team.
 1. Select the **[!UICONTROL Teams]** tab.
 1. Locate the team that you want to edit the name of, then click **Edit** in the line for that team.
 1. Enter a new name for the team, then click **Save**.
+
