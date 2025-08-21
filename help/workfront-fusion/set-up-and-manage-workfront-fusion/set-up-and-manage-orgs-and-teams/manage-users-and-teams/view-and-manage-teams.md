@@ -1,19 +1,24 @@
 ---
-title: Create a team
-description: Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
+title: View and manage teams
+description: You can view a list of your organization's teams and edit the team names.
 author: Becky
 feature: Workfront Fusion
-exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
 ---
-# Create a team
+# View and manage teams
 
-Teams are smaller groups within the organization, and share Fusion resources such as scenarios, connections, and templates. You can create as many teams as you want.
+Teams are groups of users that share access to specific resources. These resources may include:
 
-Organizations may have as many teams as they need, and users may belong to one or more teams.
+* Scenarios
+* Connections
+* Webhooks
+* Keys
+* Data stores
+* Data structures
+* Email notification settings
 
->[!NOTE]
->
->Because teams share resources, it is sometimes useful for a team to have only one member. For example, users in training may create connections to their individual [!DNL Workfront] accounts. Any team members would also be able to connect to the individual [!DNL Workfront] account. In this case we recommend that the user be the only member of a training team.
+You can view a list of your organization's teams, and edit the names of the teams.
+
+To add users to teams, see [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Access requirements
 
@@ -67,25 +72,17 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 +++
 
+## View and manage teams from the Teams area
+
+1. In the left navigation, click **Org overview** in the upper-left corner of the screen.
+1. Select the **Teams** tab.
+
+   The Teams list opens.
+
+1. (Optional) To sort the Teams list by any column, click the **Sort** icon ![Sort icon](assets/sort-icon.png) for that column.
+1. (Optional) To hide or display columns, click the **Columns** icon ![Columns icon](assets/columns-icon.png) near the upper-right corner of the list, then enable or disable columns.
+1. (Optional) To filter the list, begin typing into the search bar. The list filters to include only teams that include your search term.
+1. (Optional) To rename a team, click **Edit** in the line for that team, then enter the new team name and click **Save**.
 
 
-## Create a team 
 
-Organization owners and administrators are able to create teams. Teams are created by adding a new team to an organization.
-
-To create a team:
-
-1. In the left navigation panel, click **[!UICONTROL Org overview]**
-1. Select the **[!UICONTROL Teams]** tab.
-1. Click **[!UICONTROL Add a new team]**. 
-   ![Create a team](assets/create-new-team-button.png)
-1. Enter a name for the new team, and click **Add**.
-
-## Edit a team
-
-You can edit the name of a team.
-
-1. In the left navigation panel, click **[!UICONTROL Org overview]**
-1. Select the **[!UICONTROL Teams]** tab.
-1. Locate the team that you want to edit the name of, then click **Edit** in the line for that team.
-1. Enter a new name for the team, then click **Save**.
