@@ -1,13 +1,13 @@
 ---
 title: SDL Managed Translation modules
-description: In an [!DNL Adobe Workfront Fusion] scenario, you can connect your SDL Managed Translation account to multiple third-party applications and services.
+description: In an Adobe Workfront Fusion scenario, you can connect your SDL Managed Translation account to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
 exl-id: 41953b04-9011-4ddb-9f53-cdf11e807e04
 ---
 # [!DNL SDL Managed Translation] modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can connect your [!DNL SDL Managed Translation] account to multiple third-party applications and services.
+In an Adobe Workfront Fusion scenario, you can connect your [!DNL SDL Managed Translation] account to multiple third-party applications and services.
 
 ## Access requirements
 
@@ -18,35 +18,35 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
+   <td role="rowheader">Adobe Workfront plan*</td>
   <td> <p>[!UICONTROL Pro] or higher</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
+   <td role="rowheader">Adobe Workfront license*</td>
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current license requirement: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy license requirement: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] Plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] Adobe Workfront Plan, your organization must purchase Adobe Workfront Fusion as well as Adobe Workfront to use functionality described in this article. Workfront Fusion is included in the [!UICONTROL Ultimate] Workfront plan.</p>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Legacy product requirement: Your organization must purchase Adobe Workfront Fusion as well as Adobe Workfront to use functionality described in this article.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+To find out what plan, license type, or access you have, contact your Workfront administrator.
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 ## SDL Managed Translation API information
 

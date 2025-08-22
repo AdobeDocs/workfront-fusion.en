@@ -7,7 +7,7 @@ exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
 ---
 # CSV
 
-The [!DNL Adobe Workfront Fusion] [!UICONTROL CSV] modules let you create CSV files and parse CSV text from a received text value or a file.
+The Adobe Workfront Fusion [!UICONTROL CSV] modules let you create CSV files and parse CSV text from a received text value or a file.
 
 Because this is a transformer, these modules do not require a connection.
 
@@ -48,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

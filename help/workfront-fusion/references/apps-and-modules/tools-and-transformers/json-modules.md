@@ -7,7 +7,7 @@ exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
 ---
 # [!UICONTROL JSON] modules
 
-The [!DNL Adobe Workfront Fusion] [!UICONTROL JSON] app provides modules to process data in JSON format so that [!DNL Adobe Workfront Fusion] can further work with the data content, or create new JSON content.
+The Adobe Workfront Fusion [!UICONTROL JSON] app provides modules to process data in JSON format so that Adobe Workfront Fusion can further work with the data content, or create new JSON content.
 
 ## Access requirements
 
@@ -48,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -59,11 +59,11 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 ### Data structure
 
-The Data structure describes how the JSON data is organized and enables the mapping of individual JSON items to other modules in your scenario. If you don't provide the Data structure, you may manually execute the module and [!DNL Workfront Fusion] will build the structure from the provided JSON:
+The Data structure describes how the JSON data is organized and enables the mapping of individual JSON items to other modules in your scenario. If you don't provide the Data structure, you may manually execute the module and Workfront Fusion will build the structure from the provided JSON:
 
 1. Add the [!UICONTROL Parse JSON] module to a scenario.
 1. In the **[!UICONTROL JSON String]** field, enter the JSON from which you want to build a data structure.
-1. Do not connect other modules to the [!UICONTROL Parse JSON] module yet. Because [!DNL Workfront Fusion] does not yet know the structure of the JSON data, it is not yet possible to map data from the [!UICONTROL Parse JSON] module to other modules in your scenario.
+1. Do not connect other modules to the [!UICONTROL Parse JSON] module yet. Because Workfront Fusion does not yet know the structure of the JSON data, it is not yet possible to map data from the [!UICONTROL Parse JSON] module to other modules in your scenario.
 1. Manually run the scenario. This allows the [!UICONTROL Parse JSON] module to identify the JSON structure from the JSON you have provided.
 1. You can now connect following modules. The items from the Parse JSON module are now available for mapping.
 
@@ -115,7 +115,7 @@ If the JSON string field contains an array `[ ... ]`, the output is a series of 
 
 ## [!UICONTROL JSON] modules and their fields
 
-When you configure [!DNL JSON] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional JSON fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL JSON] modules, Workfront Fusion displays the fields listed below. Along with these, additional JSON fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

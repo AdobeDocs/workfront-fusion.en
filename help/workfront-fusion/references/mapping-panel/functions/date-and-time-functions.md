@@ -453,7 +453,7 @@ If no unit is specified, the function returns the difference in milliseconds.
 
 #### How to calculate n-th day of week in month
 
-This section is adapted for [!DNL Workfront Fusion] from the [!DNL Exceljet] web page that explains how to get the nth day of week in a month.
+This section is adapted for Workfront Fusion from the [!DNL Exceljet] web page that explains how to get the nth day of week in a month.
 
 If you need to calculate a date corresponding to n-th day of week in month (for example, first Tuesday, third Friday, and so on), you can use the following formula:
 

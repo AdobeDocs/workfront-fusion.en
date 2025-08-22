@@ -66,7 +66,7 @@ Expand the following sections to view example scenarios and their explanations.
 
 Workfront Fusion enables you to automate simple or complex workflows within Workfront, saving time and ensuring that the process is executed consistently.
 
-In this example, the scenario triggers when a specified field changes in a Task or Issue in [!DNL Workfront]. When triggered, the scenario gets information in the related project and creates a tailored update for a person assigned to a specific role on the project.
+In this example, the scenario triggers when a specified field changes in a Task or Issue in Workfront. When triggered, the scenario gets information in the related project and creates a tailored update for a person assigned to a specific role on the project.
 
 ![Template example](assets/fusion-template-example.png)
 
@@ -80,9 +80,9 @@ In this example, the scenario triggers when a specified field changes in a Task 
 
 Workfront Fusion can connect to other applications and web services. You can access, import, manipulate, or export data from other applications, integrating them with Workfront or with each other.
 
-Many applications have dedicated [!DNL Workfront Fusion] connectors. If there is no dedicated connector for the application you want to access, you can use Workfront Fusion's HTTP or SOAP modules to connect to the application through its API.
+Many applications have dedicated Workfront Fusion connectors. If there is no dedicated connector for the application you want to access, you can use Workfront Fusion's HTTP or SOAP modules to connect to the application through its API.
 
-In this example, the scenario triggers when a user is added to an [!DNL Excel] spreadsheet. The scenario checks whether the user is in [!DNL Workfront]. If not, the scenario creates the user in [!DNL Workfront] and adds their Workfront user ID back to the spreadsheet.
+In this example, the scenario triggers when a user is added to an [!DNL Excel] spreadsheet. The scenario checks whether the user is in Workfront. If not, the scenario creates the user in Workfront and adds their Workfront user ID back to the spreadsheet.
 
 ![Integration example](assets/fusion-integration-example.png)
 
@@ -91,7 +91,7 @@ For a list of dedicated connectors, see [Fusion applications and their modules r
 
 >[!IMPORTANT]
 >
->[!DNL Adobe Workfront Fusion] can connect to almost any web service. If the app you want to work with does not have a dedicated [!DNL Workfront Fusion] connector, you use universal connectors to connect to the app or service.
+>Adobe Workfront Fusion can connect to almost any web service. If the app you want to work with does not have a dedicated Workfront Fusion connector, you use universal connectors to connect to the app or service.
 >
 >For a list of universal connectors, see [Universal connectors](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

@@ -27,7 +27,7 @@ Although there is no limit to the number of modules in a scenario, more than 150
 
 Fore more information on modules, see [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md).
 
-## Can [!DNL Workfront Fusion] work with files?
+## Can Workfront Fusion work with files?
 
 ### Answer
 
@@ -63,7 +63,7 @@ Data transfer refers to the amount of data transferred through your scenario. Fo
 
 ### Answer
 
-A connection is the link between your [!DNL Workfront Fusion] account and the third-party service you want to use. The connection can be  created when editing a scenario. 
+A connection is the link between your Workfront Fusion account and the third-party service you want to use. The connection can be  created when editing a scenario. 
 
 For more information, see [Connection overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md).
 
@@ -75,7 +75,7 @@ An [!UICONTROL Aggregator] merges data into one single collection. An example of
 
 For more information, see [[!UICONTROL Aggregator] module](/help/workfront-fusion/references/modules/aggregator-module.md).
 
-## What happens if I let [!DNL Workfront Fusion] process an email containing more than one attachment?
+## What happens if I let Workfront Fusion process an email containing more than one attachment?
 
 ### Answer
 

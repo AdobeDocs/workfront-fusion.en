@@ -1,13 +1,13 @@
 ---
 title: Create connections
-description: A connection must adhere to the requirements set by the API of the app or web service it connects to. For this reason, instructions for setting up a connection vary based on the app or web service. This article can help you identify and locate the instructions for connecting [!DNL Adobe Workfront Fusion] to your chosen app or web service.
+description: A connection must adhere to the requirements set by the API of the app or web service it connects to. For this reason, instructions for setting up a connection vary based on the app or web service. This article can help you identify and locate the instructions for connecting Adobe Workfront Fusion to your chosen app or web service.
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
 ---
 # Create connections
 
-A connection must adhere to the requirements set by the API of the app or web service it connects to. For this reason, instructions for setting up a connection vary based on the app or web service. This article can help you identify and locate the instructions for connecting [!DNL Adobe Workfront Fusion] to your chosen app or web service.
+A connection must adhere to the requirements set by the API of the app or web service it connects to. For this reason, instructions for setting up a connection vary based on the app or web service. This article can help you identify and locate the instructions for connecting Adobe Workfront Fusion to your chosen app or web service.
 
 ## Access requirements
 
@@ -54,7 +54,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 ## Connect to an app or web service that does not require configuration
 
-In most cases, you can use the module to create a connection with little or no extra information. [!DNL Workfront Fusion] handles the authentication automatically.
+In most cases, you can use the module to create a connection with little or no extra information. Workfront Fusion handles the authentication automatically.
 
 For instructions on creating a connection with no special considerations, see [Create a connection - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
 
@@ -68,7 +68,7 @@ For specific instructions, see [the article for the connector](/help/workfront-f
 
 ## Connect to a [!DNL Microsoft] app or web service
 
-Most of the [!DNL Microsoft] apps in [!DNL Workfront Fusion] allow you to create a connection with no extra information.
+Most of the [!DNL Microsoft] apps in Workfront Fusion allow you to create a connection with no extra information.
 
 The following circumstances require extra steps in creating a connection:
 
@@ -82,7 +82,7 @@ The following circumstances require extra steps in creating a connection:
 
 ## Connect to a [!DNL Google] app or web service
 
-The process for connecting to [!DNL Google] apps may differ based on what kind of [!DNL Google] account you are using. In addition, [!DNL Google] security measures may require extra configuration when you are connecting to [!DNL Workfront Fusion].
+The process for connecting to [!DNL Google] apps may differ based on what kind of [!DNL Google] account you are using. In addition, [!DNL Google] security measures may require extra configuration when you are connecting to Workfront Fusion.
 
 For more information see:
 
@@ -91,6 +91,6 @@ For more information see:
 
 ## Other apps that require additional configuration
 
-Some apps and services do not follow the basic configuration for [!DNL Workfront Fusion] connections. You can find instructions for connecting these apps in the article for that app.
+Some apps and services do not follow the basic configuration for Workfront Fusion connections. You can find instructions for connecting these apps in the article for that app.
 
 For specific instructions, see [the article for the connector](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications).

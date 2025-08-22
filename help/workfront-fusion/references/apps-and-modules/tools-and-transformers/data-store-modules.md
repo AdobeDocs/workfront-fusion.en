@@ -1,17 +1,17 @@
 ---
 title: Data store modules
-description: An [!DNL Adobe Workfront Fusion] data store, similar to a database or a simple table, can store data from scenarios, making it possible to transfer data between individual scenarios or scenario runs. You can use a data store to store new data from various systems during synchronization.
+description: An Adobe Workfront Fusion data store, similar to a database or a simple table, can store data from scenarios, making it possible to transfer data between individual scenarios or scenario runs. You can use a data store to store new data from various systems during synchronization.
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
 ---
 # [!UICONTROL Data store] modules
 
-An [!DNL Adobe Workfront Fusion] data store, similar to a database or a simple table, can store data from scenarios, making it possible to transfer data between individual scenarios or scenario runs. You can use a data store to store new data from various systems during synchronization.
+An Adobe Workfront Fusion data store, similar to a database or a simple table, can store data from scenarios, making it possible to transfer data between individual scenarios or scenario runs. You can use a data store to store new data from various systems during synchronization.
 
-The data store modules enable you to add, replace, update, retrieve, delete, search, or count records in your [!DNL Adobe Workfront Fusion] data store.
+The data store modules enable you to add, replace, update, retrieve, delete, search, or count records in your Adobe Workfront Fusion data store.
 
-<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 For a video introduction to data stores in Workfront Fusion, see:
 
@@ -54,7 +54,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -66,7 +66,7 @@ For information on creating data stores, see [Create and manage data stores](/he
 
 ## [!UICONTROL Data store] modules and their fields
 
-When you configure Data Store modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional Data Store fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure Data Store modules, Workfront Fusion displays the fields listed below. Along with these, additional Data Store fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 You do not need to create a connection to use data stores.
 
@@ -250,7 +250,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Limit]</td> 
-   <td> <p> Set the maximum number of search results [!DNL Workfront Fusion] returns during one execution cycle.</p> </td> 
+   <td> <p> Set the maximum number of search results Workfront Fusion returns during one execution cycle.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 

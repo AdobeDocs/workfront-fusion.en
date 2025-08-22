@@ -1,13 +1,13 @@
 ---
 title: Fusion Performance Guardrails
-description: Work automation requires rapid processing, so [!DNL Adobe Workfront Fusion] is designed for high performance. Because long-running scenarios can slow down the pace of your work, we've designed [!DNL Workfront Fusion] with performance-preserving guardrails that limit execution time, data size, and other scenario parameters. [!DNL Workfront Fusion] designers should be aware of these guardrails and incorporate them into their design practices.
+description: Work automation requires rapid processing, so Adobe Workfront Fusion is designed for high performance. Because long-running scenarios can slow down the pace of your work, we've designed Workfront Fusion with performance-preserving guardrails that limit execution time, data size, and other scenario parameters. Workfront Fusion designers should be aware of these guardrails and incorporate them into their design practices.
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 ---
 # Fusion performance guardrails
 
-Work automation requires rapid processing, so [!DNL Adobe Workfront Fusion] is designed for high performance. Because long-running scenarios can slow down the pace of your work, we've designed [!DNL Workfront Fusion] with performance-preserving guardrails that limit execution time, data size, and other scenario parameters. [!DNL Workfront Fusion] designers should be aware of these guardrails and incorporate them into their design practices.
+Work automation requires rapid processing, so Adobe Workfront Fusion is designed for high performance. Because long-running scenarios can slow down the pace of your work, we've designed Workfront Fusion with performance-preserving guardrails that limit execution time, data size, and other scenario parameters. Workfront Fusion designers should be aware of these guardrails and incorporate them into their design practices.
 
 ## Browsers
 
@@ -15,17 +15,17 @@ Work automation requires rapid processing, so [!DNL Adobe Workfront Fusion] is d
 
 ## Scenarios
 
-* The default scenario execution timeout is **40 minutes**. When the execution reaches this timeout, [!DNL Workfront Fusion] interrupts scenario execution after the next cycle or operation, depending on the scenario. This forces the scenario to stop shortly after the 40 minute limit is reached
+* The default scenario execution timeout is **40 minutes**. When the execution reaches this timeout, Workfront Fusion interrupts scenario execution after the next cycle or operation, depending on the scenario. This forces the scenario to stop shortly after the 40 minute limit is reached
 
    Chaining scenarios does not count toward scenario execution timeout. A parent scenario does not accrue time while waiting for a child scenario to execute.
 * The maximum size of a scenario blueprint is **5 MB**, but we recommend keeping scenario size under **3 MB**.
 
   App modules that create or update data with large numbers of fields can cause very large blueprints.
 
-  * When using the [!DNL Workfront] app, be sure to only select fields needed for your create or update use cases. 
+  * When using the Workfront app, be sure to only select fields needed for your create or update use cases. 
   * When using other apps, use custom API modules to interact with any record type that has a large number of fields.
 
-* While there is no cap for the number of modules in a scenario, scenarios with more than 150 modules negatively impact the performance of your [!DNL Workfront Fusion] system. For this reason, we do not recommend creating scenarios with over 150 modules.
+* While there is no cap for the number of modules in a scenario, scenarios with more than 150 modules negatively impact the performance of your Workfront Fusion system. For this reason, we do not recommend creating scenarios with over 150 modules.
 
 ## Operations
 
@@ -54,7 +54,7 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
 
 * The default maximum size of a payload is **5 MB**.
 * Webhooks are limited to **100 requests per second**. When this limit is reached, Workfront Fusion sends a 429 ([!UICONTROL Too Many Requests]) status.
-* [!DNL Workfront Fusion] stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was received results in the error "[!UICONTROL Failed to read file from storage.]"
+* Workfront Fusion stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was received results in the error "[!UICONTROL Failed to read file from storage.]"
 * Webhooks are deactivated automatically if either of the following applies:
 
   * The webhook has not been connected to any scenario for more than 5 days

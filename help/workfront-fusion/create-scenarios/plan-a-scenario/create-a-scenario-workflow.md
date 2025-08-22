@@ -28,7 +28,7 @@ Keyboard shortcuts
 
 ## Create and name the scenario
 
-1. Sign into your [!DNL Workfront Fusion] account.
+1. Sign into your Workfront Fusion account.
 1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel.
 
    >[!NOTE]
@@ -99,9 +99,9 @@ Testing your scenario enables you to determine if your scenario is working as in
 1. After the scenario finishes running, click the execution inspector bubble above the each module to see the input of information and the output of that module.
 
    * For general information on reading scenario execution information, see [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
-   * For information about processed bundles, see [Scenario execution, cycles, and phases in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+   * For information about processed bundles, see [Scenario execution, cycles, and phases in Adobe Workfront Fusion](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
-1. In [!DNL Workfront Fusion], click **[!UICONTROL Save]** ![Save icon](assets/save-icon.png) near the lower-left corner to save your progress on the scenario.
+1. In Workfront Fusion, click **[!UICONTROL Save]** ![Save icon](assets/save-icon.png) near the lower-left corner to save your progress on the scenario.
 
    >[!IMPORTANT]
    >

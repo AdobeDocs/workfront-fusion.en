@@ -22,11 +22,11 @@ If the trigger module returns any bundles of data, those bundles pass on to the 
 
 If the bundles process correctly through all of the modules, the scenario is marked as a success in the scenario details page.
 
-### Example: [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### Example: [!UICONTROL Workfront Fusion for Work Automation]
 
 >[!BEGINSHADEBOX]
 
-**Example:** In this scenario that watches for incoming requests in [!DNL Workfront] and then converts them to [!DNL Workfront] projects, data would flow as follows:
+**Example:** In this scenario that watches for incoming requests in Workfront and then converts them to Workfront projects, data would flow as follows:
 
 The scenario's first step, performed by the first module, is to watch for requests. Each request that it finds is considered one bundle. If the module runs without finding any bundles, the scenario ends after the first module.
 
@@ -36,11 +36,11 @@ If the first module returns a bundle, the bundle passes through the rest of the 
 
 >[!ENDSHADEBOX]
 
-### Example: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### Example: [!UICONTROL Workfront Fusion for Work Automation and Integration]
 
 >[!BEGINSHADEBOX]
 
-**Example:** In This scenario that downloads documents from [!DNL Adobe Workfront] and sends them to a folder in [!DNL Dropbox], data would flow as follows:
+**Example:** In This scenario that downloads documents from Adobe Workfront and sends them to a folder in [!DNL Dropbox], data would flow as follows:
 
 The scenario's first step, performed by the first module, is to watch for documents in Workfront.. Each document that it finds is considered one bundle. If the module runs without finding any bundles, the scenario ends after the first module.
 

@@ -23,9 +23,9 @@ An operation in Adobe Workfront Fusion is a task performed by a module. For trac
 
 ## Operation limits
 
-Your organization may have a monthly operations limit. This is based on the [!DNL Workfront] plan that your organization purchased. The [!UICONTROL Ultimate] [!DNL Workfront] plan offers unlimited operations.
+Your organization may have a monthly operations limit. This is based on the Workfront plan that your organization purchased. The [!UICONTROL Ultimate] Workfront plan offers unlimited operations.
 
-If your organization has a monthly limit, you will be notified when your organization is near the limit. If your organization goes over the limit, [!DNL Workfront] will contact your organization to ensure that your plan meets your needs.
+If your organization has a monthly limit, you will be notified when your organization is near the limit. If your organization goes over the limit, Workfront will contact your organization to ensure that your plan meets your needs.
 
 Workfront Fusion sends a notification when your organization reaches the following percentages of the organization's monthly limit:
 

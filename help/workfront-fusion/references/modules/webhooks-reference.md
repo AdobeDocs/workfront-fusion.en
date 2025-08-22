@@ -35,7 +35,7 @@ When you configure an instant trigger, you are prompted to select when it runs.
 
 ![Schedule setting](assets/schedule-setting.png)
 
-Select `Immediately` to run the scenario immediately when [!DNL Workfront Fusion] receives new events from the service. These events are immediately sent into a queue, and are then processed in the scenario one at a time, in the same order that data is received.
+Select `Immediately` to run the scenario immediately when Workfront Fusion receives new events from the service. These events are immediately sent into a queue, and are then processed in the scenario one at a time, in the same order that data is received.
 
 When the scenario executes, the total amount of pending events waiting in the queue is counted, and the scenario performs as many cycles as there are pending events, processing one event per cycle.
 
@@ -75,7 +75,7 @@ A webhook that has not been assigned to any scenario for more than 120 hours is 
 
 ### Webhook payloads
 
-[!DNL Workfront Fusion] stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was created results in the error [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was created results in the error [!UICONTROL `Failed to read file from storage.`]
 
 ### Error handling
 
