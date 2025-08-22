@@ -3,6 +3,7 @@ title: View and manage teams
 description: You can view a list of your organization's teams and edit the team names.
 author: Becky
 feature: Workfront Fusion
+exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
 ---
 # View and manage teams
 
@@ -83,6 +84,3 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. (Optional) To hide or display columns, click the **Columns** icon ![Columns icon](assets/columns-icon.png) near the upper-right corner of the list, then enable or disable columns.
 1. (Optional) To filter the list, begin typing into the search bar. The list filters to include only teams that include your search term.
 1. (Optional) To rename a team, click **Edit** in the line for that team, then enter the new team name and click **Save**.
-
-
-

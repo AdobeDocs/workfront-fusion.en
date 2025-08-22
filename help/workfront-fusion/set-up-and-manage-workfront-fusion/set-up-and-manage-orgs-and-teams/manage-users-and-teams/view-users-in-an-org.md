@@ -3,6 +3,7 @@ title: View users in an organization
 description: You can view a list of your organization's users
 author: Becky
 feature: Workfront Fusion
+exl-id: 8c6d6e01-b76c-4f1c-a310-e2b7fd48d1b2
 ---
 # View users in an organization
 
@@ -70,5 +71,3 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. (Optional) To sort the Users list by any column, click the **Sort** icon ![Sort icon](assets/sort-icon.png) for that column.
 1. (Optional) To hide or display columns, click the **Columns** icon ![Columns icon](assets/columns-icon.png) near the upper-right corner of the list, then enable or disable columns.
 1. (Optional) To filter the list, begin typing into the search bar. The list filters to include only teams that include your search term.
-
-
