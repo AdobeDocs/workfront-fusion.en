@@ -11,9 +11,9 @@ exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
 ---
 # Add users to Adobe Workfront Fusion through the Adobe Admin Console
 
-You can add a user to the [!DNL Adobe Admin Console] and assign them to [!DNL Adobe Workfront Fusion], or assign an existing user in the [!DNL Adobe Admin Console] to [!DNL Workfront Fusion].
+You can add a user to the [!DNL Adobe Admin Console] and assign them to Adobe Workfront Fusion, or assign an existing user in the [!DNL Adobe Admin Console] to Workfront Fusion.
 
-For a video describing [!DNL Workfront Fusion] in the [!DNL Adobe Admin Console], including how to add users, see [[!DNL Fusion] on Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}.
+For a video describing Workfront Fusion in the [!DNL Adobe Admin Console], including how to add users, see [[!DNL Fusion] on Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}.
 
 
 
@@ -24,27 +24,27 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
+   <td role="rowheader">Adobe Workfront plan*</td> 
    <td> <p>[!UICONTROL Pro] or higher</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
+   <td role="rowheader">Adobe Workfront license*</td> 
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current license requirement: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy license requirement: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] Adobe Workfront plan, your organization must purchase Adobe Workfront Fusion as well as Adobe Workfront to use functionality described in this article. Workfront Fusion is included in the [!UICONTROL Ultimate] Workfront plan.</p>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Legacy product requirement: Your organization must purchase Adobe Workfront Fusion as well as Adobe Workfront to use functionality described in this article.</p>
    </td> 
   </tr>
    <tr> 
@@ -54,9 +54,9 @@ You must have the following access to use the functionality in this article:
   </tbody> 
 </table>
 
-&#42;To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+&#42;To find out what plan, license type, or access you have, contact your Workfront administrator.
 
-&#42;&#42;For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+&#42;&#42;For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 
 
@@ -71,17 +71,17 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
+   <td role="rowheader">Adobe Workfront package</td> 
    <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current: No Workfront Fusion license requirement.</p>
    <p>Or</p>
    <p>Legacy: Any </p>
    </td> 
@@ -89,16 +89,16 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
+   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] Workfront plan: Your organization must purchase Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront plan: Workfront Fusion is included.</li></ul>
    <p>Or</p>
-   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">Access level configurations*</td> 
    <td> 
-     <p>You must be a [!DNL Workfront Fusion] administrator for your organization.</p>
-     <p>You must be a [!DNL Workfront Fusion] administrator for your team.</p>
+     <p>You must be a Workfront Fusion administrator for your organization.</p>
+     <p>You must be a Workfront Fusion administrator for your team.</p>
    </td> 
   </tr> 
    </td> 
@@ -108,14 +108,14 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 
 ## Prerequisites
 
-Before using the [!DNL Admin Console] for [!DNL Workfront], you should receive a receive an email inviting you to the console.
+Before using the [!DNL Admin Console] for Workfront, you should receive a receive an email inviting you to the console.
 
 1. If you are new to [!DNL Adobe] and you have received an email telling you that you now have administer rights to manage [!DNL Adobe] software and services for your organization, click the button in the email to create an [!DNL Adobe] account and open the [!DNL Admin Console].
     
@@ -124,9 +124,9 @@ Before using the [!DNL Admin Console] for [!DNL Workfront], you should receive a
     If you already have an Adobe account, go to the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com).
     
 
-## Add a new user to the [!DNL Adobe Admin Console] and [!DNL Workfront Fusion]
+## Add a new user to the [!DNL Adobe Admin Console] and Workfront Fusion
 
-1. From the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com/), select the **[!UICONTROL Products]** tab in the top navigation bar, and then select the **[!DNL Workfront Fusion]** product tile.
+1. From the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com/), select the **[!UICONTROL Products]** tab in the top navigation bar, and then select the **Workfront Fusion** product tile.
     
     ![Fusion in Admin Console](assets/fusion-product-admin-console.png)
     
@@ -134,7 +134,7 @@ Before using the [!DNL Admin Console] for [!DNL Workfront], you should receive a
     
     ![Fusion instance in Admin Console](assets/fusion-instances-admin-console.png)
     
-1. In the list that displays, with the **[!UICONTROL Product Profiles]** tab selected, click the name of the [!DNL Workfront Fusion] [!UICONTROL Product Profile] link.
+1. In the list that displays, with the **[!UICONTROL Product Profiles]** tab selected, click the name of the Workfront Fusion [!UICONTROL Product Profile] link.
      
     >[!IMPORTANT]
     >
@@ -146,9 +146,9 @@ Before using the [!DNL Admin Console] for [!DNL Workfront], you should receive a
 
 1. Click **[!UICONTROL Save]**.
     
-    The user is created in [!DNL Workfront Fusion].
+    The user is created in Workfront Fusion.
     
-1. (Optional) Continue to [Change a user's access level in [!DNL Workfront Fusion]](#change-a-users-access-level-in-workfront-fusion)
+1. (Optional) Continue to [Change a user's access level in Workfront Fusion](#change-a-users-access-level-in-workfront-fusion)
 
 ## Change a user's access level in Workfront Fusion
 
@@ -159,7 +159,7 @@ Before using the [!DNL Admin Console] for [!DNL Workfront], you should receive a
 
 Giving a user an Admin role must be done in the [!DNL Adobe Admin Console]. 
 
-1. On the [!DNL Workfront Fusion] [!UICONTROL Product Profile] page where you added the user, select the **[!UICONTROL Admins]** tab.
+1. On the Workfront Fusion [!UICONTROL Product Profile] page where you added the user, select the **[!UICONTROL Admins]** tab.
 
 1. Click **[!UICONTROL Add Admin]**.
 
@@ -167,7 +167,7 @@ Giving a user an Admin role must be done in the [!DNL Adobe Admin Console].
 
 1. Click **[!UICONTROL Save]**.
 
-   The user is now an Administrator in [!DNL Workfront Fusion].
+   The user is now an Administrator in Workfront Fusion.
 
 ### Change a user's role to Member, Accountant, or App Developer
     
@@ -175,7 +175,7 @@ Member, Accountant, and App Developer roles are handled inside Workfront Fusion.
 
 For instructions, see [View or edit user roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-or-edit-user-roles.md).
     
-## Assign an existing user in the [!DNL Adobe Admin Console] to [!DNL Workfront Fusion]
+## Assign an existing user in the [!DNL Adobe Admin Console] to Workfront Fusion
 
 You can add an existing user to a team in Fusion. This is handled inside Fusion.
 

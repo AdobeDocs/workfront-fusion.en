@@ -1,13 +1,13 @@
 ---
 title: Microsoft Dynamics 365 modules
-description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Microsoft Dynamics 365, as well as connect it to multiple third-party applications and services.
+description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Microsoft Dynamics 365, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
 ---
 # [!DNL Microsoft Dynamics 365 modules]
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Microsoft Dynamics 365], as well as connect it to multiple third-party applications and services.
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Microsoft Dynamics 365], as well as connect it to multiple third-party applications and services.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -123,14 +123,14 @@ You can create a connection to your [!DNL Microsoft Dynamics 365] account direct
 
 >[!NOTE]
 >
->When registering [!DNL Workfront Fusion] in your [!DNL Microsoft Azure] portal, use the following redirect URI:
+>When registering Workfront Fusion in your [!DNL Microsoft Azure] portal, use the following redirect URI:
 >
 >* `https://app.workfrontfusion.com/oauth/cb/workfront-microsoft-dynamics2` 
 
 
 ## [!DNL Microsoft Dynamics 365] modules and their fields
 
-When you configure [!DNL Microsoft Dynamics 365] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Microsoft Dynamics 365] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Microsoft Dynamics 365] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Microsoft Dynamics 365] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -161,7 +161,7 @@ A webhook is required in this module.
     <ol> 
      <li value="1"> <p>Click <strong>[!UICONTROL Add]</strong> to the right of the Webhook field</p> </li> 
      <li value="2"> <p>In the <strong>[!UICONTROL Webhook]</strong> name field, type a descriptive name for the webhook.</p> </li> 
-     <li value="3"> <p>In the <strong>[!UICONTROL Connection]</strong> field, select the Connection that you want to use selected</p> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </li> 
+     <li value="3"> <p>In the <strong>[!UICONTROL Connection]</strong> field, select the Connection that you want to use selected</p> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </li> 
      <li value="4"> <p>Click <strong>[!UICONTROL Save]</strong> to save your webhook and return to the module.</p> </li> 
     </ol> </td> 
   </tr> 
@@ -184,7 +184,7 @@ When you are configuring this module, the following fields display.
  <tbody> ``
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Include]</td> 
@@ -230,7 +230,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -263,7 +263,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -292,7 +292,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -304,7 +304,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] adds the authorization headers for you.</p> </td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion adds the authorization headers for you.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -336,7 +336,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -369,7 +369,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 
@@ -404,7 +404,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to [!DNL Workfront Fusion], see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to [!DNL Workfront Fusion]</a> in this article. </p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Microsoft Dynamics 365] account to Workfront Fusion, see <a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">Connect [!DNL Microsoft Dynamics 365] to Workfront Fusion</a> in this article. </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Entity Type]</td> 

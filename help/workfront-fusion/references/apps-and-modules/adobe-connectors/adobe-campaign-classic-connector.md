@@ -1,13 +1,13 @@
 ---
 title: Adobe Campaign v7/v8 modules
-description: With the [!DNL Adobe Campaign] modules, you can start an [!DNL Adobe Workfront Fusion] scenario based on events in your [!DNL Adobe Campaign] account, create, read, or update agreements and other records, search for records using criteria you set, and upload documents.
+description: With the [!DNL Adobe Campaign] modules, you can start an Adobe Workfront Fusion scenario based on events in your [!DNL Adobe Campaign] account, create, read, or update agreements and other records, search for records using criteria you set, and upload documents.
 author: Becky
 feature: Workfront Fusion
 exl-id: 9fdff26c-c7c0-4eb8-a36f-4aeaf432b333
 ---
 # [!DNL Adobe Campaign] modules
 
-With the [!DNL Adobe Campaign] modules, you can start an [!DNL Adobe Workfront Fusion] scenario based on events in your [!DNL Adobe Campaign v7/v8] account, create, read, or update records, search for records using criteria you set, and perform custom API calls.
+With the [!DNL Adobe Campaign] modules, you can start an Adobe Workfront Fusion scenario based on events in your [!DNL Adobe Campaign v7/v8] account, create, read, or update records, search for records using criteria you set, and perform custom API calls.
 
 ## Access requirements
 
@@ -48,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -74,7 +74,7 @@ The Adobe Campaign connector uses the following:
  </tbody> 
  </table>
 
-## Connect [!DNL Adobe Campaign] to [!DNL Adobe Workfront Fusion]
+## Connect [!DNL Adobe Campaign] to Adobe Workfront Fusion
 
 >[!IMPORTANT]
 >
@@ -128,7 +128,7 @@ The Adobe Campaign connector uses the following:
 
 ## [!DNL Adobe Campaign] modules and their fields
 
-When you configure [!DNL Adobe Campaign] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Adobe Campaign] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Adobe Campaign] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Adobe Campaign] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -263,7 +263,7 @@ This module makes a custom API call to the [!DNL Adobe Campaign] API
       <td>
         <p>Add the headers of the request in the form of a standard JSON object.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] adds the [!UICONTROL x-security] token header automatically.</p>
+        <p>Workfront Fusion adds the [!UICONTROL x-security] token header automatically.</p>
       </td>
     </tr>
     <tr>

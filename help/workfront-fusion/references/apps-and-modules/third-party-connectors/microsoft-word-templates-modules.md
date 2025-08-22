@@ -7,7 +7,7 @@ exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
 ---
 # [!DNL Microsoft Word Template] modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Microsoft Word Templates], as well as connect it to multiple third-party applications and services.
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Microsoft Word Templates], as well as connect it to multiple third-party applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -52,17 +52,17 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## Prerequisites
 
-In order to use [!DNL Miscrosoft Word Templates] with [!DNL Adobe Workfront Fusion], it is necessary to have an [!DNL Office 365] account. You can create one at `www.office.com`.
+In order to use [!DNL Miscrosoft Word Templates] with Adobe Workfront Fusion, it is necessary to have an [!DNL Office 365] account. You can create one at `www.office.com`.
 
 
 
-## Connecting the [!DNL Office] service to [!DNL Workfront Fusion]
+## Connecting the [!DNL Office] service to Workfront Fusion
 
 For instructions about connecting your [!DNL Office] account to [!UICONTROL Workfront Fusion], see [Create a connection to [!UICONTROL Adobe Workfront Fusion] - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 

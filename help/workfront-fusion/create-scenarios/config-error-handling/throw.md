@@ -19,7 +19,7 @@ You can use the following workaround to mimic `throw` error functionality.
 
 For information on incomplete executions, see [View and resolve incomplete executions in Adobe Workfront Fusion](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
-For information on error handling directives, see [Directives for error handling in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+For information on error handling directives, see [Directives for error handling in Adobe Workfront Fusion](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
 ## Access requirements
 

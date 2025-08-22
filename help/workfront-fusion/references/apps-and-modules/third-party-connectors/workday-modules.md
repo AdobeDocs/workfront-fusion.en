@@ -8,7 +8,7 @@ exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
 ---
 # [!DNL Workday] modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Workday], as well as connect it to multiple third-party applications and services.
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Workday], as well as connect it to multiple third-party applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -53,7 +53,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -84,9 +84,9 @@ The Workday connector uses the following:
  </tbody> 
  </table>
 
-## Connect [!DNL Workday] to [!DNL Workfront Fusion]
+## Connect [!DNL Workday] to Workfront Fusion
 
-1. In any [!DNL Workfront Fusion] module, click [!UICONTROL Add] next to the [!UICONTROL Connection] field
+1. In any Workfront Fusion module, click [!UICONTROL Add] next to the [!UICONTROL Connection] field
 
 2. Fill in the following fields:
 
@@ -132,7 +132,7 @@ The Workday connector uses the following:
 
 ## [!DNL Workday] modules and their fields
 
-When you configure [!DNL Workday] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Workday] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Workday] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Workday] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -164,7 +164,7 @@ This action module creates a single record in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
+            <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to Workfront Fusion</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record Type]</td>
@@ -193,7 +193,7 @@ This action module deletes a single record in [!DNL Workday].
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL Connection]</td>
-            <td>For instructions about connecting your [!DNL Workday] account to [!DNL Workfront Fusion], see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
+            <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to Workfront Fusion</a>.</td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL Record type]</td>
@@ -229,7 +229,7 @@ The module returns the a status code, along with the headers and body of the API
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!DNL Connection]</p> </td> 
-            <td>For instructions about connecting your [!DNL Workday] account to [!DNL Workfront Fusion], see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a>.</td>
+            <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to Workfront Fusion</a>.</td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -330,7 +330,7 @@ This search module retrieves a list of records of the specified type.
       <tbody>
           <tr>
               <td role="rowheader">[!UICONTROL Connection]</td>
-              <td>For instructions about connecting your [!DNL Workday] account to [!DNL Workfront Fusion], see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to [!DNL Workfront Fusion]</a></td>
+              <td>For instructions about connecting your [!DNL Workday] account to Workfront Fusion, see <a href="#Connect" class="MCXref xref" >Connect [!DNL Workday] to Workfront Fusion</a></td>
           </tr>
           <tr>
               <td  role="rowheader">[!UICONTROL Record Type]</td>

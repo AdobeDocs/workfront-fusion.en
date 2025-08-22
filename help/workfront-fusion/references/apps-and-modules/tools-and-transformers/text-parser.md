@@ -1,13 +1,13 @@
 ---
 title: Text parser
-description: You can use the Text parser tool to parse text for use in other [!DNL Adobe Workfront Fusion] scenario modules. The Text parser does not require a connection.
+description: You can use the Text parser tool to parse text for use in other Adobe Workfront Fusion scenario modules. The Text parser does not require a connection.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
 ---
 # [!UICONTROL Text parser]
 
-You can use the [!UICONTROL Text parser tool] to parse text for use in other [!DNL Adobe Workfront Fusion] scenario modules. The [!UICONTROL Text parser] does not require a connection.
+You can use the [!UICONTROL Text parser tool] to parse text for use in other Adobe Workfront Fusion scenario modules. The [!UICONTROL Text parser] does not require a connection.
 
 ## Access requirements
 
@@ -46,7 +46,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -67,7 +67,7 @@ The Text parser connector uses the following:
 
 ## [!UICONTROL Text parser] modules and their fields
 
-When you configure [!UICONTROL Text parser] modules, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
+When you configure [!UICONTROL Text parser] modules, Adobe Workfront Fusion displays the fields listed below. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 

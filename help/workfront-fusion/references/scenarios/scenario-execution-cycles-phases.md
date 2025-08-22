@@ -1,6 +1,6 @@
 ---
 title: Scenario Execution, Cycles, and Phases
-description: This article describes events that occur while an [!DNL Adobe Workfront Fusion] scenario is running, such as initialization, operations, commits, and rollbacks.
+description: This article describes events that occur while an Adobe Workfront Fusion scenario is running, such as initialization, operations, commits, and rollbacks.
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
@@ -47,11 +47,11 @@ You can set the maximum number of cycles in the [!UICONTROL scenario settings] p
 During the operation phase, a reading or writing operation is performed:
 
 * A reading operation consists of obtaining data from a service that is then processed by other modules according to a predefined scenario. For example, the [!UICONTROL Workfront] >[!UICONTROL Watch records] module returns new bundles (records) created since the last scenario execution.
-* A writing operation consists of sending data to a given service for further processing. For example, the [!DNL Workfront] >[!UICONTROL Upload Document] module uploads a file to Workfront.
+* A writing operation consists of sending data to a given service for further processing. For example, the Workfront >[!UICONTROL Upload Document] module uploads a file to Workfront.
 
 #### Commit
 
-If the operation phase is successful, the commit phase begins during which all operations performed by the modules are committed. This means that [!DNL Workfront Fusion] sends information to all the services involved in the operation phase about its success.
+If the operation phase is successful, the commit phase begins during which all operations performed by the modules are committed. This means that Workfront Fusion sends information to all the services involved in the operation phase about its success.
 
 ### Rollback
 
@@ -59,7 +59,7 @@ If an error occurs during the operation or commit phase on any module, the phase
 
 >[!IMPORTANT]
 >
->All [!DNL Workfront Fusion] modules that support rollback (also known as transactionality) are marked with the ACID tag.
+>All Workfront Fusion modules that support rollback (also known as transactionality) are marked with the ACID tag.
 >
 >![Acid modules](assets/acid-modules.png)
 >

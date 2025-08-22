@@ -34,9 +34,9 @@ To find out what type of Workfront Fusion license your organization has, contact
 
 #### Benefits of Workfront Fusion for Work Automation 
 
-A Workfront Fusion for Work Automation license allows you to automate your [!DNL Workfront] workflows. By using Workfront Fusion for Work Automation, you can create scenarios to automate your organization's unique work processes. 
+A Workfront Fusion for Work Automation license allows you to automate your Workfront workflows. By using Workfront Fusion for Work Automation, you can create scenarios to automate your organization's unique work processes. 
 
-Benefits to automating your [!DNL Workfront] processes include the following:
+Benefits to automating your Workfront processes include the following:
 
 * Automation is quicker and less prone to error.
 * Workflows that don't require any decisions, or that have decisions are based on simple logic such as if/then, are good candidates for automation.
@@ -99,8 +99,8 @@ For a list of available dedicated connectors, see [Fusion applications and their
 The following example shows a workflow that:
 
 1. Watches a spreadsheet for new users
-1. Checks to see if the user exists in [!DNL Workfront]
-1. Creates the user in [!DNL Workfront] if the user did not exist
-1. Uploads the [!DNL Workfront] user ID back to the spreadsheet.
+1. Checks to see if the user exists in Workfront
+1. Creates the user in Workfront if the user did not exist
+1. Uploads the Workfront user ID back to the spreadsheet.
 
 ![Example automation scenario](assets/fusion-integration-example.png)

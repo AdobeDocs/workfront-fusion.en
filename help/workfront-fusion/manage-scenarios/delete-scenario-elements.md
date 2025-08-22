@@ -7,7 +7,7 @@ exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
 ---
 # Delete scenario elements
 
-You can store and delete scenario elements in the following areas in your [!DNL Adobe Workfront Fusion] account:
+You can store and delete scenario elements in the following areas in your Adobe Workfront Fusion account:
 
 * [!UICONTROL Scenario]
 * [!UICONTROL Connections]

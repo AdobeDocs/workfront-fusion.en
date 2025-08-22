@@ -7,7 +7,7 @@ exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
 ---
 # Data structures
 
-A data structure is a document or pattern that describes in detail the format of the data being processed in [!DNL Adobe Workfront Fusion]. Based on this document, the scenario editor is able to figure out which module returns or receives which kind of data. The data structure documents are most commonly used for serializing/parsing data formats such as JSON, XML, CSV and others.
+A data structure is a document or pattern that describes in detail the format of the data being processed in Adobe Workfront Fusion. Based on this document, the scenario editor is able to figure out which module returns or receives which kind of data. The data structure documents are most commonly used for serializing/parsing data formats such as JSON, XML, CSV and others.
 
 You can create a data structure by clicking the [!UICONTROL Create a new data structure] button in the [!UICONTROL Data structure overview] section or in the settings of the module that requires data structure specification.
 

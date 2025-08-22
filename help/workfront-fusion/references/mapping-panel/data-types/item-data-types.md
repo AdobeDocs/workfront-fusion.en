@@ -1,6 +1,6 @@
 ---
 title: Item data types
-description: Your [!DNL Adobe Workfront Fusion] scenarios can contain the types of items listed below in a bundle.
+description: Your Adobe Workfront Fusion scenarios can contain the types of items listed below in a bundle.
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
@@ -9,7 +9,7 @@ exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
 
 You can contain the types of items listed below in a bundle.
 
-For information on which types of items [!DNL Workfront Fusion] allows for conversion between one other, see [Type coercion](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
+For information on which types of items Workfront Fusion allows for conversion between one other, see [Type coercion](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md).
 
 <table style="table-layout:auto">
  <col> 
@@ -17,11 +17,11 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Text</p> </td> 
-   <td> <p>The most common item type. For some text items, [!DNL Adobe Workfront Fusion] checks whether the maximum or minimum allowed length is met or whether the item performs format validation (email, URL or file name).</p> </td> 
+   <td> <p>The most common item type. For some text items, Adobe Workfront Fusion checks whether the maximum or minimum allowed length is met or whether the item performs format validation (email, URL or file name).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Number</p> </td> 
-   <td> <p>For some numerical items, [!DNL Workfront Fusion] may validate the input for a specified range (the minimum or maximum allowed value).</p> </td> 
+   <td> <p>For some numerical items, Workfront Fusion may validate the input for a specified range (the minimum or maximum allowed value).</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Boolean (Yes/No)</p> </td> 
@@ -37,7 +37,7 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Buffer (binary data)</p> </td> 
-   <td> <p>File content is usually sent as Buffer type content (image content, video file, and others). In some cases, text data is included in this type (for example, a text file). [!DNL Workfront Fusion] is able to automatically convert text data in binary code to text and text to text data in binary code. For more information, see <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Map files</a>.</p> </td> 
+   <td> <p>File content is usually sent as Buffer type content (image content, video file, and others). In some cases, text data is included in this type (for example, a text file). Workfront Fusion is able to automatically convert text data in binary code to text and text to text data in binary code. For more information, see <a href="/help/workfront-fusion/create-scenarios/map-data/map-files.md" class="MCXref xref">Map files</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Collection</p> </td> 
@@ -53,7 +53,7 @@ For information on which types of items [!DNL Workfront Fusion] allows for conve
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Validation</p> </td> 
-   <td> <p>[!DNL Workfront Fusion] might perform validation on each type of item. If an item does not pass the validation, the module will stop processing because of a data error. For more information, see <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Error types </a>. </p> </td> 
+   <td> <p>Workfront Fusion might perform validation on each type of item. If an item does not pass the validation, the module will stop processing because of a data error. For more information, see <a href="/help/workfront-fusion/references/errors/error-processing.md" class="MCXref xref">Error types </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

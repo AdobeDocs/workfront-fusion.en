@@ -7,7 +7,7 @@ exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
 ---
 # [!DNL Adobe Lightroom] modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Adobe Lightroom], as well as connect it to multiple third-party applications and services. 
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Lightroom], as well as connect it to multiple third-party applications and services. 
 
 If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -52,7 +52,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -168,7 +168,7 @@ To create a connection for your [!DNL Adobe Lightroom] modules:
 
 ## Adobe Lightroom modules and their fields
 
-When you configure [!DNL Adobe Lightroom] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Adobe Lightroom] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Adobe Lightroom] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Adobe Lightroom] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -991,7 +991,7 @@ This action module retrieves a list of albums in the specified catalog.
     <tr>
       <td role="rowheader">[!UICONTROL Number of Albums to Return]</td>
       <td>
-        <p>Set the maximum number of assets that [!DNL Workfront Fusion] will return during one execution cycle. The default value for this field is 100.This module may return more albums than this limit if multiple albums at the limit boundary have the same <code>name_after</code> value.</p>
+        <p>Set the maximum number of assets that Workfront Fusion will return during one execution cycle. The default value for this field is 100.This module may return more albums than this limit if multiple albums at the limit boundary have the same <code>name_after</code> value.</p>
       </td>
     </tr>
   </tbody>

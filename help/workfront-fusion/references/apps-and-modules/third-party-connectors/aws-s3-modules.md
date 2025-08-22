@@ -48,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -75,9 +75,9 @@ The AWS S3 connector uses the following:
  </tbody> 
  </table>
 
-## Connect [!DNL AWS] to [!DNL Workfront Fusion] {#connect-aws-to-workfront-fusion}
+## Connect [!DNL AWS] to Workfront Fusion {#connect-aws-to-workfront-fusion}
 
-To connect [!DNL AWS S3] to [!DNL Workfront Fusion] you must connect your [!DNL AWS] account to [!DNL Workfront Fusion]. To do so, you'll first need to create an API user in [!DNL AWS] [!UICONTROL IAM].
+To connect [!DNL AWS S3] to Workfront Fusion you must connect your [!DNL AWS] account to Workfront Fusion. To do so, you'll first need to create an API user in [!DNL AWS] [!UICONTROL IAM].
 
 1. Sign in to your [!DNL AWS] [!UICONTROL IAM] account.
 1. Navigate to **[!UICONTROL Identity and Access Management]** > **[!UICONTROL Access Management]** > **[!UICONTROL Users]**.
@@ -89,14 +89,14 @@ To connect [!DNL AWS S3] to [!DNL Workfront Fusion] you must connect your [!DNL 
 1. Proceed through the other dialog screens, then click **[!UICONTROL Create User]**.
 1. Copy the provided **[!UICONTROL Access key ID]** and **[!UICONTROL Secret access key]**.
 
-1. Go to [!DNL Workfront Fusion] and open the [!DNL AWS S3] module's **[!UICONTROL Create a connection]** dialog.
+1. Go to Workfront Fusion and open the [!DNL AWS S3] module's **[!UICONTROL Create a connection]** dialog.
 1. Enter the [!UICONTROL Access key ID] and [!UICONTROL Secret access key] from step 7 to the respective fields and click **[!UICONTROL Continue]** to establish the connection.
 
 The connection has been established. You can proceed with setting up the module.
 
 ## [!DNL AWS S3] modules and their fields
 
-When you configure [!DNL AWS S3] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL AWS S3] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL AWS S3] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL AWS S3] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -122,7 +122,7 @@ This action module creates a bucket in AWS.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL AWS] account to Workfront Fusion, see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
@@ -145,7 +145,7 @@ This action module downloads a file from a bucket.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL AWS] account to Workfront Fusion, see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
@@ -174,7 +174,7 @@ For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!U
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL AWS] account to Workfront Fusion, see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Region] </td> 
@@ -186,11 +186,11 @@ For a detailed discussion of the [!DNL Amazon S3] API, see [[!DNL Amazon S3] [!U
   </tr> 
   <tr> 
    <td>[!UICONTROL Method]</td> 
-   <td> <p>Select the [!UICONTROL HTTP] request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] request methods in [!DNL Adobe Workfront Fusion]</a>.</p> </td> 
+   <td> <p>Select the [!UICONTROL HTTP] request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">[!UICONTROL HTTP] request methods in Adobe Workfront Fusion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers]</td> 
-   <td> <p>Add a request header. For each header you want to add, click <b>Add item</b> and enter the header. You can use the following common request headers. For more request headers refer to <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API Documentation</a>.</p> <p>[!DNL Workfront Fusion] adds authorization headers automatically.</p> 
+   <td> <p>Add a request header. For each header you want to add, click <b>Add item</b> and enter the header. You can use the following common request headers. For more request headers refer to <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html">[!DNL AWS S3] API Documentation</a>.</p> <p>Workfront Fusion adds authorization headers automatically.</p> 
     <table style="table-layout:auto">
      <col> 
      <col> 
@@ -268,7 +268,7 @@ This action module uploads a file to an AWS S3 bucket.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL AWS] account to Workfront Fusion, see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
@@ -304,7 +304,7 @@ Returns a list of files from a specified location.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL AWS] account to Workfront Fusion, see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 
@@ -331,7 +331,7 @@ Returns a list of folders from a specified location.
  <tbody> 
   <tr> 
     <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL AWS] account to [!DNL Workfront Fusion], see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to [!DNL Workfront Fusion]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL AWS] account to Workfront Fusion, see <a href="#connect-aws-to-workfront-fusion" class="MCXref xref">Connect [!DNL AWS] to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Region] </td> 

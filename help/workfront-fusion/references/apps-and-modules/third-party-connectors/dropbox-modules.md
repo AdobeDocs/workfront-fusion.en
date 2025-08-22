@@ -1,13 +1,13 @@
 ---
 title: Dropbox modules
-description: In a [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use Dropbox, as well as connect it to multiple third-party applications and services.This allows you to automate activities such as monitoring, searching, retrieving, listing, creating, and editing files and folders in your Dropbox.
+description: In a Adobe Workfront Fusion scenario, you can automate workflows that use Dropbox, as well as connect it to multiple third-party applications and services.This allows you to automate activities such as monitoring, searching, retrieving, listing, creating, and editing files and folders in your Dropbox.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
 ---
 # [!DNL Dropbox] modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!UICONTROL Dropbox] or [!DNL Dropbox Business], as well as connect it to multiple third-party applications and services.This allows you to automate activities such as monitoring, searching, retrieving, listing, creating, and editing files and folders in your [!UICONTROL Dropbox].
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!UICONTROL Dropbox] or [!DNL Dropbox Business], as well as connect it to multiple third-party applications and services.This allows you to automate activities such as monitoring, searching, retrieving, listing, creating, and editing files and folders in your [!UICONTROL Dropbox].
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -52,7 +52,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -141,7 +141,7 @@ To create a connection for your [!DNL Dropbox] modules:
 
 ## [!DNL Dropbox] modules and their fields
 
-When you configure [!DNL Dropbox] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Dropbox] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Dropbox] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Dropbox] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -164,7 +164,7 @@ This Trigger type module returns file details when the file in a specified folde
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder] </td> 
@@ -209,7 +209,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>Way of selecting files</td> 
@@ -238,7 +238,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>Shared Folder ID</td> 
@@ -263,7 +263,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>List </td> 
@@ -299,7 +299,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>Way of selecting files</td> 
@@ -328,7 +328,7 @@ You can map this information in subsequent modules in the scenario.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Search] </td> 
@@ -384,7 +384,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder Name] </td> 
@@ -415,7 +415,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
@@ -444,7 +444,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files]</td> 
@@ -486,7 +486,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files]</td> 
@@ -515,7 +515,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files / folders] </td> 
@@ -560,7 +560,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>Way of selecting files</td> 
@@ -594,7 +594,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Way of selecting files]</td> 
@@ -627,7 +627,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Folder]</td> 
@@ -659,7 +659,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Dropbox] account to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Dropbox] account to Workfront Fusion, see <a href="#create-a-connection-to-dropbox" class="MCXref xref">Create a connection to [!DNL Dropbox]</a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
@@ -671,7 +671,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td>[!UICONTROL Headers] </td> 
-   <td> <p>Enter the desired request headers. [!DNL Workfront Fusion] adds authorization headers automatically.</p> </td> 
+   <td> <p>Enter the desired request headers. Workfront Fusion adds authorization headers automatically.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Query String]</td> 
@@ -728,7 +728,7 @@ The following may be reasons that uploading or updating a file fails:
 
 The URL returned by the [!UICONTROL Dropbox] >[!UICONTROL Create a shared link] does not link directly to an image, but to a [!DNL Dropbox] page. To force the image to download, replace the trailing `?dl=0` with `?dl=1`. To force the image to render (for example, in a Web browser or in Facebook Messenger), append `&raw=1` to the URL.
 
-If you need to get the direct or raw link of your image for your website or for other [!DNL Workfront Fusion] modules, you must modify the initial shared URL in the following way:
+If you need to get the direct or raw link of your image for your website or for other Workfront Fusion modules, you must modify the initial shared URL in the following way:
 
 Original URL:
 

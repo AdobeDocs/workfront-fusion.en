@@ -48,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
  
@@ -109,7 +109,7 @@ In order to use FTP modules, you must have an account with an FTP service.
     </tr> 
     <tr> 
      <td> <p>[!UICONTROL Self-signed certificate]</p> </td> 
-     <td> <p>Click the <b>[!UICONTROL Extract]</b> button to open the upload dialog.</p> <p>Upload the certificate to use the TLS with your self-signed certificate. [!DNL Workfront Fusion] does not retain or store any data you provide, such as files and passwords. File and password are used only to extract the certificate.</p> </td> 
+     <td> <p>Click the <b>[!UICONTROL Extract]</b> button to open the upload dialog.</p> <p>Upload the certificate to use the TLS with your self-signed certificate. Workfront Fusion does not retain or store any data you provide, such as files and passwords. File and password are used only to extract the certificate.</p> </td> 
     </tr> 
    </tbody> 
    </table>
@@ -141,7 +141,7 @@ In order to use FTP modules, you must have an account with an FTP service.
   </tr> 
   <tr> 
    <td>[!UICONTROL Maximum number of returned files] </td> 
-   <td> <p>Set the maximum number of results that you want the module to work with during one cycle. If the value is set too high, the connection may be interrupted on the side of the FTP server. [!DNL Workfront Fusion] has no influence on this. We recommend that you set a lower value and either define a higher value for the maximum number of cycles or run the scenario more frequently.</p> </td> 
+   <td> <p>Set the maximum number of results that you want the module to work with during one cycle. If the value is set too high, the connection may be interrupted on the side of the FTP server. Workfront Fusion has no influence on this. We recommend that you set a lower value and either define a higher value for the maximum number of cycles or run the scenario more frequently.</p> </td> 
   </tr> 
  </tbody> 
 </table>

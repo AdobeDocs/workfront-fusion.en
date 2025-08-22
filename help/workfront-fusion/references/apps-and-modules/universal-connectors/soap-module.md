@@ -58,13 +58,13 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## SOAP module and its fields
 
-When you configure SOAP modules, [!DNL Workfront Fusion] displays the fields listed below.  A bolded title in a module indicates a required field.
+When you configure SOAP modules, Workfront Fusion displays the fields listed below.  A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -139,7 +139,7 @@ This example includes the `soapenc:Array`, `soapenc:arrayType` and `wsdl:arrayTy
 
 If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws various errors in the module's configuration, you may try using the universal **[!UICONTROL HTTP] > [!UICONTROL Make a request]** module instead:
 
-1. In [!DNL Workfront Fusion], create a new scenario.
+1. In Workfront Fusion, create a new scenario.
 1. Insert the **[!UICONTROL HTTP] > [!UICONTROL Make a request]** module in the scenario.
 1. Open the module's configuration and fill in the following fields:
 
@@ -179,7 +179,7 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Once located, copy the URL from the `location` attribute.
-1. In [!DNL Workfront Fusion], paste the URL into the HTTP module's URL field.
+1. In Workfront Fusion, paste the URL into the HTTP module's URL field.
 1. Open the [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) in a new web browser window/tab.
 1. Paste the WSDL URL into the WSDL URL field.
 1. Click **[!UICONTROL Browse]**.

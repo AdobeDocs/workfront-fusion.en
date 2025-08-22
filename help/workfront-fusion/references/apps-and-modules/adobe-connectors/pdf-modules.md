@@ -8,7 +8,7 @@ exl-id: e6fbbc20-4315-4668-9e11-af7cfa82ae66
 ---
 # [!DNL Adobe PDF Services]
 
-With the [!DNL Adobe Workfront Fusion] [!DNL Adobe PDF Services], you can extract data from a PDF file, or generate a new PDF file from data you supply. In addition, you can convert a variety of file types to PDFs, or PDFs to other file types. PDF Services also allow you to combine, compress, or read metadata for a PDF file, as well as control password protection on the file.
+With the Adobe Workfront Fusion [!DNL Adobe PDF Services], you can extract data from a PDF file, or generate a new PDF file from data you supply. In addition, you can convert a variety of file types to PDFs, or PDFs to other file types. PDF Services also allow you to combine, compress, or read metadata for a PDF file, as well as control password protection on the file.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -18,7 +18,7 @@ For information on the API used for PDF Services, see [Adobe Document Generation
 
 ## Security considerations when using [!DNL Adobe PDF Services]
 
-The [!DNL Adobe PDF Services] can read, convert, or modify your files, but neither [!DNL Adobe] nor [!DNL Workfront Fusion] store your files or data. This means that:
+The [!DNL Adobe PDF Services] can read, convert, or modify your files, but neither [!DNL Adobe] nor Workfront Fusion store your files or data. This means that:
 
 * You maintain control over your files, including their security
 * You do not need to have an [!UICONTROL Adobe] storage or cloud storage account to use the PDF Services.
@@ -62,7 +62,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -170,7 +170,7 @@ To create a connection for your [!DNL Adobe PDF Services] modules:
 
 ## [!DNL Adobe PDF Services] modules and their fields
 
-When you configure [!DNL PDF Services], [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional fields might display, depending on factors such as your access level in the app or service. A bold title in a module indicates a required field.
+When you configure [!DNL PDF Services], Workfront Fusion displays the fields listed below. Along with these, additional fields might display, depending on factors such as your access level in the app or service. A bold title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -571,7 +571,7 @@ Fill in the [!UICONTROL Generate document] module fields as follows:
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source File]</td> 
-   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> <p>This source file is the [!DNL Microsoft Word] template that the module uses to generate the new PDF.</p> <p>We recommend creating a project in [!DNL Workfront] for the [!DNL Microsoft Word] templates that you use in [!DNL Workfront Fusion]. You can then use the [!DNL Workfront] &gt; [!UICONTROL Download document] module to pull the appropriate template into your scenario.</p> </td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name and data.</p> <p>This source file is the [!DNL Microsoft Word] template that the module uses to generate the new PDF.</p> <p>We recommend creating a project in Workfront for the [!DNL Microsoft Word] templates that you use in Workfront Fusion. You can then use the Workfront &gt; [!UICONTROL Download document] module to pull the appropriate template into your scenario.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Output Format]</td> 

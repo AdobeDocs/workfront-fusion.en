@@ -29,7 +29,7 @@ Scenarios can contain an unlimited number of action modules, although large numb
 
 **Examples:** 
 
-* **[!DNL Workfront] > [!UICONTROL Upload a file]** sends a file to [!DNL Workfront] and returns its identifier.
+* **Workfront > [!UICONTROL Upload a file]** sends a file to Workfront and returns its identifier.
 * **[!UICONTROL Image] > [!UICONTROL Resize]** receives an image, resizes it to specified dimensions, and passes the resized image on to the next action.
 
 >[!ENDSHADEBOX]
@@ -74,7 +74,7 @@ Scenarios can contain an unlimited number of Search modules, although large numb
 
 **Example:**
 
-**[!DNL Workfront] > [!UICONTROL Read Related Records]**  reads records that match the search query you specify, in a particular parent object.
+**Workfront > [!UICONTROL Read Related Records]**  reads records that match the search query you specify, in a particular parent object.
 
 >[!ENDSHADEBOX]
 
@@ -88,7 +88,7 @@ Because Triggers cause scenarios to begin execution, they can be placed only at 
 
 Each scenario can contain only one Trigger.
 
-[!DNL Workfront Fusion] uses two types of triggers: Polling triggers and Instant triggers.
+Workfront Fusion uses two types of triggers: Polling triggers and Instant triggers.
 
 ### Polling triggers
 
@@ -104,7 +104,7 @@ For more information, see [Choose where a trigger module starts](/help/workfront
 
 **Examples:** 
 
-* **[!DNL Workfront] > [!UICONTROL Watch records]** returns records that were newly added after the last time the scenario was run.
+* **Workfront > [!UICONTROL Watch records]** returns records that were newly added after the last time the scenario was run.
 
 * **[!DNL Google Sheets] > [!UICONTROL Watch Rows]** returns new rows added after the last time the scenario was run.
 
@@ -112,7 +112,7 @@ For more information, see [Choose where a trigger module starts](/help/workfront
 
 ### Instant triggers
 
-Instant triggers enable a service to notify [!DNL Workfront Fusion] about a change immediately after it occurs. We recommend that you schedule a scenario containing an instant trigger to run immediately. 
+Instant triggers enable a service to notify Workfront Fusion about a change immediately after it occurs. We recommend that you schedule a scenario containing an instant trigger to run immediately. 
 
 For instructions, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
 
@@ -122,7 +122,7 @@ For details on how the incoming data is handled by an instant trigger, see [Inst
 
 **Examples:** 
 
-* **[!DNL Workfront] > [!UICONTROL Watch Events]** returns information when a certain type of event occurs in Workfront, such as the creation of a task.
+* **Workfront > [!UICONTROL Watch Events]** returns information when a certain type of event occurs in Workfront, such as the creation of a task.
 * **[!DNL Google Sheets] > [!UICONTROL Watch Changes]** returns information whenever a cell is updated.
 
 >[!ENDSHADEBOX]

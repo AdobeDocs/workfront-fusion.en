@@ -7,7 +7,7 @@ exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
 ---
 # Image modules
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL Image] modules allow you get information about a specific image (dimensions, type, and so on), convert an image to another file format, and directly change the size of the image.
+Adobe Workfront Fusion [!UICONTROL Image] modules allow you get information about a specific image (dimensions, type, and so on), convert an image to another file format, and directly change the size of the image.
 
 ## Access requirements
 
@@ -46,7 +46,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

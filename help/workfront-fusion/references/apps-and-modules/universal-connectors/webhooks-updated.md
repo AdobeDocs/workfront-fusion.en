@@ -52,17 +52,17 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## Use a webhook in [!DNL Workfront Fusion]
+## Use a webhook in Workfront Fusion
 
 >[!NOTE]
 >
 >To call a third party webhook (an outgoing webhook) use one of the HTTP modules. For more information, see [HTTP modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-To use a webhook to connect an app to [!DNL Workfront Fusion]:
+To use a webhook to connect an app to Workfront Fusion:
 
 1. Add the **[!UICONTROL Webhooks]** >**[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
 
@@ -79,7 +79,7 @@ After you create a webhook, a unique URL displays. This is the address where the
 
 ### Configure the webhook's data structure {#configure-the-webhook-s-data-structure}
 
-To recognize the data structure of the incoming payload, [!DNL Workfront Fusion] parses sample data that you send to the displayed address. You can supply the sample data by making a change in the service or app that will make that service or app call the webhook. For example, you could remove a file.
+To recognize the data structure of the incoming payload, Workfront Fusion parses sample data that you send to the displayed address. You can supply the sample data by making a change in the service or app that will make that service or app call the webhook. For example, you could remove a file.
 
 Or, you can send the sample data via the [!UICONTROL HTTP] > [!UICONTROL Make a request] module:
 
@@ -142,11 +142,11 @@ If a webhook receives data and there is not an active scenario that is expecting
 
 ## Supported incoming data formats
 
-[!DNL Workfront Fusion] supports 3 incoming data formats: [!UICONTROL Query String], [!UICONTROL Form Data] and [!UICONTROL JSON].
+Workfront Fusion supports 3 incoming data formats: [!UICONTROL Query String], [!UICONTROL Form Data] and [!UICONTROL JSON].
 
-[!DNL Workfront Fusion] validates all incoming data against the selected data structure. Then, depending on the scenario's settings, the data is either stored in the queue for processing, or it is processed immediately.
+Workfront Fusion validates all incoming data against the selected data structure. Then, depending on the scenario's settings, the data is either stored in the queue for processing, or it is processed immediately.
 
-If any part of the data does not pass the validation, [!DNL Workfront Fusion] returns a 400 HTTP status code and specifies, in the body of the HTTP response, the reason why the incoming data failed the validation checks. If the validation of the incoming data succeeds, Workfront Fusion returns a "[!UICONTROL 200 Accepted]" status.
+If any part of the data does not pass the validation, Workfront Fusion returns a 400 HTTP status code and specifies, in the body of the HTTP response, the reason why the incoming data failed the validation checks. If the validation of the incoming data succeeds, Workfront Fusion returns a "[!UICONTROL 200 Accepted]" status.
 
 * [[!UICONTROL Query String]](#query-string) 
 * [[!UICONTROL Form Data]](#form-data) 

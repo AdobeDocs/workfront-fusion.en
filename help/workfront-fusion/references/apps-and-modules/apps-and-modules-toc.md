@@ -26,7 +26,7 @@ These connectors allow you to connect to any app or web service that has a publi
 * [SOAP module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
 * [FTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
 * [SFTP modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
-* [Use Mutual TLS in HTTP modules in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+* [Use Mutual TLS in HTTP modules in Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
 
 ## Connectors for Adobe products
 
