@@ -1,5 +1,5 @@
 ---
-title: Manage [!DNL Adobe Workfront Fusion] users in your organization
+title: View or edit user details
 description: Manage [!DNL Adobe Workfront Fusion] users in your organization
 author: Becky
 feature: Workfront Fusion
