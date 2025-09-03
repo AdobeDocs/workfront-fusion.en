@@ -13,34 +13,29 @@ In a Adobe Workfront Fusion scenario, you can connect your Email account to mult
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Current: No Workfront Fusion license requirement</p>
-   <p>Or</p>
-   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
