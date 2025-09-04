@@ -13,48 +13,31 @@ You can view a log of activities, such as creating a scenario or inviting a user
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront plan</td>
-   <td> <p>New: Ultimate</p> <p>Or</p> <p>Current: Not available</p></td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Adobe Workfront Workflow Ultimate and Adobe Workfront Automation and Integration Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current: Not available</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p></td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
-   <td>
-   <p>Current: No Workfront Fusion license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
-  </tr> 
-   <tr> 
+  <tr data-mc-conditions=""> 
    <td role="rowheader">Access level configurations</td> 
-   <td> <p>You must be a Fusion administrator to use the Activity Log.</p></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Product</td> 
-   <td>
-   <p>This functionality is available only to organizations with the Ultimate Workfront plan, which includes Workfront Fusion. No additional product purchase is necessary.</p>
+   <td> 
+     <p>You must be a Workfront Fusion administrator for your organization.</p>
+     <p>You must be a Workfront Fusion administrator for your team.</p>
    </td> 
-  </tr>
+  </tr> 
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
-
-
 
 ## View the Activity Logs
 
