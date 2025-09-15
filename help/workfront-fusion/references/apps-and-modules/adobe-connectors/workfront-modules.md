@@ -401,7 +401,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Attach Custom Form]</td> 
-   <td>Select any custom forms that you want to add to the new object, then enter or map values for those fields.</td> 
+   <td>Select any custom forms that you want to add to the new object, select the fields that you want to enter values for,  then enter or map values for those fields.</td> 
   </tr> 
  </tbody> 
 </table>
