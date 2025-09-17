@@ -65,6 +65,9 @@ The Workfront connector uses OAuth 2.0 to connect to Workfront.
 
 You can create a connection to your Workfront account directly from inside a Workfront Fusion module.
 
+* [Connect to Workfront using Client ID and Client secret](#connect-to-workfront-using-client-id-and-client-secret)
+* [Connect to Workfront using a Server-to-Server connection](#connect-to-workfront-using-a-server-to-server-connection)
+
 ### Connect to Workfront using Client ID and Client secret
 
 1. In any Adobe Workfront module, click **Add** next to the Connection field.
@@ -97,8 +100,8 @@ You can create a connection to your Workfront account directly from inside a Wor
         <td>Enter your Workfront Client secret. This can be found in the OAuth2 Applications area of the Setup area in Workfront. If you do not have a Client Secret for your OAuth2 application in Workfront, you can generate another. For instructions, see the Workfront documentation.</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Scopes]</td>
-        <td>Enter any applicable scopes for this connection.</td>
+        <td role="rowheader">[!UICONTROL Authentication URL]</td>
+        <td>This can remain the default value, or you can enter the URL of your Workfront instance, followed by <code>/integrations/oauth2</code>. <p>Example: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host prefix]</td>
