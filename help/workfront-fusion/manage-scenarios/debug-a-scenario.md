@@ -145,6 +145,12 @@ Live Stream displays what is happening in the background when you click Run once
 
 ### Scenario Debugger 
 
+>[!NOTE]
+>
+>To quickly go to the debugger from a scenario that has errored out, you can click **Get details** in the error message in the module output.
+>
+>![Get details in module output](assets/go-to-debugger.png)
+
 The Scenario Debugger is useful for more complex scenarios. It displays the history of the scenario runs and enables you to search modules by their name or ID.
 
 1. Click the **[!UICONTROL Scenario Debugger]** icon ![Debugger icon](assets/scenario-debugger-icon.png) to open the Scenario Debugger.
