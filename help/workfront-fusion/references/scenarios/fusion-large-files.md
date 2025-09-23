@@ -58,9 +58,13 @@ If you plan on working with larger files, we recommend replacing the legacy modu
 
 ### What is the new file size limit? 
 
-Users can now process files exceeding the previous 1 GB limit, enhancing efficiency and productivity.  Although the platform can support individual files up to 15 GB for a single action (such as uploading a file), there are other factors that affect data transfer. The file size limit of single action ultimately depends on the web service that Fusion connects to. Data transfer is the total processing for a single execution. This means multiple actions in a single execution contribute to the total data transfer. 
+Users can now process files exceeding the previous 1 GB limit, enhancing efficiency and productivity.  Although there is no defined file size limit for the Workfront Fusion platform, there are other factors that affect data transfer. The file size limitations ultimately depend on the web service that Fusion connects to.  
 
-Fusion processes files until the execution limit of 40 minutes is reached. Large files may take some time to upload, download, or process in your Fusion scenario. While there is no limit on individual file size, there is a 40 minute limit on scenario execution time. Therefore, if large files cause the execution to take more than 40 minutes, the scenario fails. Scenario execution time can also be affected by scenario size, module complexity, and network speed. Therefore, we recommend that you consider these aspects of your scenarios when using large files.  
+Fusion processes files of any size until the execution limit of 40 minutes is reached. Large files may take some time to upload, download, or process in your Fusion scenario. If large files cause the execution to take more than 40 minutes, the scenario fails. Scenario execution time can also be affected by scenario size, module complexity, and network speed. Therefore, we recommend that you consider these aspects of your scenarios when using large files. 
+
+>[!NOTE]
+>
+>As a best practice, we recommend limiting file size to 15 GB.
 
 ### How does Fusion's new file transfer work? 
 
