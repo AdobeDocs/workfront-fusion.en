@@ -144,6 +144,39 @@ This module deletes a single document, binder, or template.
 
 #### Export documents
 
+This module exports documents you specify, including sources, renditions, and text.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to delete a document, bunder, or template.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p></p> </td> 
+   <td> <p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p></p> </td> 
+   <td> <p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p></p> </td> 
+   <td> <p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p></p> </td> 
+   <td> <p></td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Get single document
 
 #### Initiate user action
