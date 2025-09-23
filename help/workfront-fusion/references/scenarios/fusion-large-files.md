@@ -58,9 +58,11 @@ If you plan on working with larger files, we recommend replacing the legacy modu
 
 ### What is the new file size limit? 
 
-Users can now process files exceeding the previous 1 GB limit, enhancing efficiency and productivity.  Although there is no defined file size limit for the Workfront Fusion platform, there are other factors that affect data transfer. The file size limitations ultimately depend on the web service that Fusion connects to.  
+Users can now process files exceeding the previous 1 GB limit, enhancing efficiency and productivity.  Although there is no defined file size limit for the Workfront Fusion platform, there are other factors that may affect the use of large files:
 
-Fusion processes files of any size until the execution limit of 40 minutes is reached. Large files may take some time to upload, download, or process in your Fusion scenario. If large files cause the execution to take more than 40 minutes, the scenario fails. Scenario execution time can also be affected by scenario size, module complexity, and network speed. Therefore, we recommend that you consider these aspects of your scenarios when using large files. 
+* **File size limitations of the service that Fusion is connecting to**: If the service limits file size, Workfront Fusion does not overcome that limitation. The file size limitations ultimately depend on the web service that Fusion connects to.  
+
+* **Scenario execution time**: Fusion processes files of any size until the execution limit of 40 minutes is reached. Large files may take some time to upload, download, or process in your Fusion scenario. If large files cause the execution to take more than 40 minutes, the scenario fails. Scenario execution time can also be affected by scenario size, module complexity, and network speed. Therefore, we recommend that you consider these aspects of your scenarios when using large files. 
 
 >[!NOTE]
 >
