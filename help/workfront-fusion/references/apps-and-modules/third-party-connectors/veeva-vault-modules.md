@@ -109,7 +109,7 @@ This module creates a single document, binder, or template.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Type</p> </td> 
-   <td> <p>Select whether you want to create a document, bunder, or template.</p> </td> 
+   <td> <p>Select whether you want to create a document, binder, or template.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">  <p>Select fields</p> </td> 
@@ -156,7 +156,7 @@ This module exports documents you specify, including sources, renditions, and te
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Type</p> </td> 
-   <td> <p>Select whether you want to delete a document, bunder, or template.</p> </td> 
+   <td> <p>Select whether you want to delete a document, binder, or template.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><p>Source</p> </td> 
@@ -233,17 +233,162 @@ This module initiates actions on documents and binder, such as sending a documen
 
 #### Make a custom API call
 
+This action module makes a custom call to the Veeva Vault API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td>Enter a path relative to <code>baseurl/api/v</code>.  For example: <code>/objects/documents</code>. Do not include <code>baseurl/api/v/</code>, as it is already included.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion] adds the authorization headers for you.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Retrieve document export results
+
+This module returns the results of a previously requested document export.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Job ID</p> </td> 
+   <td> <p>Enter or map the ID of the job that you want to return results for. </p> </td> 
+  </tr> 
+  </tbody> 
+</table>
 
 #### Update multiple documents
 
-#### Update single document
+This module updates multiple documents or templates using a CSV file.
 
-#### VQL query
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to create templates or documents</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">  <p>File data</p> </td> 
+   <td> <p>Map the CSV file that will be used to create the documents.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Update a single document
+
+This module updates a single document, binder, or template.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to create a document, binder, or template.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID / Name</p> </td> 
+   <td> <p>If you are updating a template, enter a new name for the template.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>New template Name</p> </td> 
+   <td> <p>Enter or map the ID or name of the object that you want to update.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">  <p>Select fields</p> </td> 
+   <td> <p>Select the fields that you want to enter data for, then enter the data into those fields.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Make a VQL query
+
+This module makes a query using Vault Query Language (VQL).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to create templates or documents</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">  <p>File data</p> </td> 
+   <td> <p>Map the CSV file that will be used to create the documents.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Searches
 
 #### List documents
+
+This module lists all documents of the selected type.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to list documents, binders, or templates.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### List objects
 
