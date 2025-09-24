@@ -767,7 +767,7 @@ This action module uploads a new asset by importing files from the specified URL
   </tr> 
   <tr> 
    <td role="rowheader">Expiration date</td> 
-   <td> <p>Enter or map the experation date for the asset.</p><p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
+   <td> <p>Enter or map the expiration date for the asset.</p><p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Custom metadata</td> 

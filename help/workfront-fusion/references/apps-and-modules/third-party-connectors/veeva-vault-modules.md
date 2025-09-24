@@ -392,5 +392,60 @@ This module lists all documents of the selected type.
 
 #### List objects
 
+This module retrieves all Vault objects in the authenticated Vault.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Retrieve localized labels</p> </td> 
+   <td> <p>Select Yes to retrieve localized (translated) strings for the label and label_plural object fields.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Read logs
+
+This module returns data from audit trails
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Audit type</p> </td> 
+   <td> <p>Select the audit type that you want to retrieve data for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Start date</p> </td> 
+   <td> <p>Enter or map the start date for the audits that you want to retrieve.</p><p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>End date</p> </td> 
+   <td> <p>Enter or map the end date for the audits that you want to retrieve.</p><p>For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">Type coercion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Result URL </p> </td> 
+   <td> <p>Select CSV if you want to get URL to download a CSV of the result.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
