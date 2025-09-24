@@ -67,8 +67,8 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Actions]()
-* [Searches]()
+* [Actions](#actions)
+* [Searches](#searches)
 
 ### Actions
 
@@ -132,11 +132,11 @@ This module deletes a single document, binder, or template.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Type</p> </td> 
-   <td> <p>Select whether you want to delete a document, bunder, or template.</p> </td> 
+   <td> <p>Select whether you want to delete a document, binder, or template.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><p>Document ID / Binder ID / Template name</p> </td> 
-   <td> <p>Select the fields that you want to enter data for, then enter the data into those fields.</td> 
+   <td> <p>Select the fields that you want to delete.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -158,28 +158,78 @@ This module exports documents you specify, including sources, renditions, and te
    <td role="rowheader"> <p>Type</p> </td> 
    <td> <p>Select whether you want to delete a document, bunder, or template.</p> </td> 
   </tr> 
-  <tr> <!--Becky start here-->
-   <td role="rowheader"><p></p> </td> 
-   <td> <p></td> 
+  <tr> 
+   <td role="rowheader"><p>Source</p> </td> 
+   <td> <p>Enable this option to include source files in the export.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p></p> </td> 
-   <td> <p></td> 
+   <td role="rowheader"><p>Renditions</p> </td> 
+   <td> <p>Enable this option to include renditions files in the export.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p></p> </td> 
-   <td> <p></td> 
+   <td role="rowheader"><p>All versions</p> </td> 
+   <td> <p>Enable this option to include all versions of the document files in the export.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p></p> </td> 
-   <td> <p></td> 
+   <td role="rowheader"><p>Text</p> </td> 
+   <td> <p>Enable this option to include source document text in the export.</p></td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Get single document
 
+This module retrieves metadata for a single document, binder, or template.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to retrieve data for a document, binder, or template.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Document ID / Binder ID / Template name</p> </td> 
+   <td> <p>Select the fields that you want to retrieve data for.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Initiate user action
+
+This module initiates actions on documents and binder, such as sending a document for review or changing its state.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!UICONTROL Veeva Vault] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to perform an action on a document or a binder.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Document / Binder</p> </td> 
+   <td> <p>Select the document or binder that you want to perform the action on.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Document version/ Binder version</p> </td> 
+   <td> <p>Select the document or binder that you want to perform the action on.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Action</p> </td> 
+   <td> <p>Select the action to perform on the document or binder.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Make a custom API call
 
