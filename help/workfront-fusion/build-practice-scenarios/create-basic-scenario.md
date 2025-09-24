@@ -185,9 +185,9 @@ For this scenario, a successful test would result in locating the request and co
 >
 >1. Close the **[!UICONTROL Notes]** area.
 >
->     After you add a note to a scenario, an orange dot displays on the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
+>     After you add a note to a scenario, a dot displays on the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
 >
->1. Click the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) to view your notes.
+>1. Click the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) to view your notes. When notes are open, a circle appears around the Notes icon.
 >
 
 ## Activate the scenario
