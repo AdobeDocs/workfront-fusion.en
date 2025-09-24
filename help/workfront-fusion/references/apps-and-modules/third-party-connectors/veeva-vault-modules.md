@@ -158,7 +158,7 @@ This module exports documents you specify, including sources, renditions, and te
    <td role="rowheader"> <p>Type</p> </td> 
    <td> <p>Select whether you want to delete a document, bunder, or template.</p> </td> 
   </tr> 
-  <tr> 
+  <tr> <!--Becky start here-->
    <td role="rowheader"><p></p> </td> 
    <td> <p></td> 
   </tr> 
