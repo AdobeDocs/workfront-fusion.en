@@ -92,7 +92,7 @@ This feature has already been completed and deployed to production.
 
 Designing a scenario to work within the 40 minutes execution limit can seem complicated. We recommend keeping the following in mind when designing a scenario:
 
-* **Understand your business requirements for execution time**: Fusion's platform limit for execution time is 40 minutes, but most business process automations are expected to execute much faster. For example, user-initiated automations with result-dependent continuationwould be expected to complete well under the 40-minute limit.  
+* **Understand your business requirements for execution time**: Fusion's platform limit for execution time is 40 minutes, but most business process automations are expected to execute much faster. For example, user-initiated automations with result-dependent continuation would be expected to complete well under the 40-minute limit.  
 * **Consider execution time when designing**:  When designing your scenario, it is essential to understand the module execution time for individual file actions, such as uploads and downloads. This knowledge helps you plan scenarios that involve multiple file actions.  To ensure accuracy in your design, we recommend rounding the module's execution time up to include a buffer.
    For example, if Fusion downloads a document in 144 seconds (2.4 minutes), you can anticipate that a single execution can perform similar actions multiple times. In this example, the module execution takes 144 seconds to execute, and you should plan for 3 minutes execution time for download. If your requirements include both an upload and a download, the expected execution time would be approximately 6 minutes. Note that Fusion execution times are capped at 40 minutes. 
 
