@@ -19,3 +19,7 @@ We recommend the optional but useful practice of adding notes to your scenario. 
      After you add a note to a scenario, a blue dot displays on the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) at the bottom of the scenario editor.
 
 1. To view or hide all notes, click the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png). 
+   
+   When notes are open, a circle appears around the Notes icon.
+
+   ![Notes icon with circle](assets/notes-icon-with-circle.png)
