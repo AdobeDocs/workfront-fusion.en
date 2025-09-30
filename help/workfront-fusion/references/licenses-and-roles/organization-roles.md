@@ -48,7 +48,7 @@ This article describes the access and functionality available to the different t
   <tr> 
    <td> <p>Manage organization users</p> </td> 
    <td>✓ </td> 
-   <td>✓</td> 
+   <td>✓<p>Can manage users on Adobe Admin Console if org is on Adobe IMS. Can only invite users to other orgs.</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
