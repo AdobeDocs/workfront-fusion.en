@@ -74,9 +74,10 @@ You can manage all connections from the Connections area.
 1. (Optional) Assign an environment and connection type by clicking the **Environment** and **Type** dropdowns and selecting an option.
 1. (Optional) To view which permissions were given to Workfront Fusion for the connection, click the View icon ![View connection permissions](assets/view-connection-permissions.png) for that connection.
 1. (Optional) To rename a connection, highlight the connection name and type the new name.
-1. (Optional) To reauthorize a connection, click **Reauthorize**.
-1. (Optional) To delete a connection, click **Delete**, then click **Really?**.
-1. (Optional) To verify that the connection to the service was established successfully, click **Verify**.
+1. (Optional) To reauthorize a connection, check the checkbox next to the connection, then click **Reauthorize** near the bottom of the screen.
+1. (Optional) To delete a connection, check the checkbox next to the connection, click **Delete** near the bottom of the screen, then click **Really?**.
+1. (Optional) To verify that the connection to the service was established successfully, check the checkbox next to the connection, then click **Verify** near the bottom of the screen.
+1. To view active scenarios that use this connection, check the checkbox next to the connection, then click **Fetch Active Scenarios**. You can then click a scenario in the Active scenarios list to go to that scenario.
 
 ## Renew a connection
 
@@ -86,7 +87,7 @@ To renew a connection:
 
 1. To open the Connections area, click **Connections** ![Connections icon](assets/connections-icon.png) in the left navigation.
 1. Locate the connection you want to renew.
-1. In the line for that connection, click the **[!UICONTROL Reauthorize]** button in the **[!UICONTROL Connections]** area.
+1. In the line for that connection, check the checkbox next to the connection, then click **Reauthorize** near the bottom of the screen.
 
 ## Resources
 
