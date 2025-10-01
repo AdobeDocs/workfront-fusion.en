@@ -15,7 +15,7 @@ A scenario event is a modification to the scenario, such as editing, activating,
 
 >[!NOTE]
 >
->A scenario's history displays all of a scenario's events and executions for the last 30 days.
+>A scenario's history displays all of a scenario's executions for the last 30 days.
 
 ## Access requirements
 
