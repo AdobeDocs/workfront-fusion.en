@@ -77,7 +77,7 @@ You can manage all connections from the Connections area.
 1. (Optional) To reauthorize a connection, check the checkbox next to the connection, then click **Reauthorize** near the bottom of the screen.
 1. (Optional) To delete a connection, check the checkbox next to the connection, click **Delete** near the bottom of the screen, then click **Really?**.
 1. (Optional) To verify that the connection to the service was established successfully, check the checkbox next to the connection, then click **Verify** near the bottom of the screen.
-1. To view active scenarios that use this connection, check the checkbox next to the connection, then click **Fetch Active Scenarios**. You can then click a scenario in the Active scenarios list to go to that scenario.
+1. (Optional) To view active scenarios that use this connection, check the checkbox next to the connection, then click **Fetch Active Scenarios**. You can then click a scenario in the Active scenarios list to go to that scenario.
 
 ## Renew a connection
 
