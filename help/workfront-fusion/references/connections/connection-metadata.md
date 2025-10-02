@@ -13,9 +13,11 @@ Connection metadata can be set when creating a new connection. These attributes 
 
 ![Connection metadata](assets/connection-metadata-setup.png)
 
-Fusion users can view and edit connections from the Connections area.  
+Fusion users can view and edit connections from the Connections area. You can reach the Connections area by clicking Connections in the left navigation. 
 
-![Connection metadata in Connections area](assets/connections-area-metadata.png)
+![Connections area in left navigation](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## Environment Type 
 
