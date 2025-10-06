@@ -179,7 +179,7 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Once located, copy the URL from the `location` attribute.
-1. In Workfront Fusion, paste the URL into the HTTP module's URL field.
+1. In Workfront Fusion, paste the URL into the HTTP module's **Request content** field.
 1. Provide values for selected parameters by replacing the question marks with actual values.
 
    >[!NOTE]
