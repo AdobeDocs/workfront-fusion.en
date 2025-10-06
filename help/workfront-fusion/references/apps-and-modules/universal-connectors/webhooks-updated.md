@@ -272,7 +272,7 @@ The configuration of the module contains two fields: [!UICONTROL Status] and [!U
   >
   >We recommend setting the `Content-Type` header to the corresponding MIME type: `text/plain` for plain text, `text/html` for HTML, `application/json` for JSON, `application/xml` for XML, and so on. For more information on MIME types, see [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md).
 
-Timeout for sending a response is 40 seconds. If the response is not available within that period, Workfront Fusion returns a '200 Accepted' status.
+Timeout for sending a response is 5 minutes. If the response is not available within that period, Workfront Fusion returns a '200 Accepted' status.
 
 ### HTML Response example 
 
