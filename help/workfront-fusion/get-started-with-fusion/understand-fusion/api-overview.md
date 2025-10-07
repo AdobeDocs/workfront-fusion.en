@@ -32,8 +32,8 @@ A common cause for breaking changes is deprecation, when an API owner removes pa
 Because your Fusion scenarios are configured with your specific data, you may need to update your scenarios.
 
 * If the changes were related to authentication or authorization, you may need to update the connections for that application.
-* If the changes were related to a specific action (endpoint) in the API, you may need to update modules related to that action to a new version of the module.
-* If the entire API version used by Fusion is deprecated, you may need to update all modules of that connector to a new version of a connector.
+* If the changes were related to a specific action (endpoint) in the API, you may need to update any module related to that action to a new version of the module.
+* If the entire API version used by Fusion is deprecated, you may need to update all modules of that connector to a new version of the connector.
 
 In many cases, you can upgrade to the new version of a module without needing to reconfigure that module. 
 
