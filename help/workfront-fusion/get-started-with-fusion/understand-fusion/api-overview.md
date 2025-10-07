@@ -6,6 +6,8 @@ feature: Workfront Fusion
 ---
 # Overview of APIs in Fusion
 
+<!--Add me to TOCs-->
+
 Application Programming Interfaces (APIs) are a way for applications and services to communicate with one another. Fusion uses APIs to communicate with the applications that you are connecting to. 
 
 APIs are created and controlled by the owners of the application. For example, the Workfront API is owned by the Workfront team at Adobe, and the Microsoft Graph API is owned by Microsoft. The owner of the API defines which actions are available through the API.
@@ -33,6 +35,6 @@ Because your Fusion scenarios are configured with your specific data, you may ne
 * If the changes were related to a specific action (endpoint) in the API, you may need to update modules related to that action to a new version of the module.
 * If the entire API version used by Fusion is deprecated, you may need to update all modules of that connector to a new version of a connector.
 
-In many cases, Fusion can automatically upgrade a module to the new version, while preserving the module configuration. 
+In many cases, you can upgrade to the new version of a module without needing to reconfigure that module. 
 
 For information and instructions on upgrading a module, see [Upgrade a module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md).
