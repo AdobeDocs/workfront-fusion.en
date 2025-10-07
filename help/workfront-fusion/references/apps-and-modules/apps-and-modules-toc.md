@@ -110,6 +110,7 @@ Fusion offers connectors for many third-party applications.
 * [Slack modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Split.io modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [Trello modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
+* [Veeva Vault modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
 * [Widen modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
 * [Workday modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
 

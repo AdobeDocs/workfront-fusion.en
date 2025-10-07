@@ -385,6 +385,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Split.io modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
             * [Trello modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
             * [Widen modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
+            * [Veeva Vault modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
             * [Workday modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
         * Tools and transformers {#tools-and-transformers}
             * [Archive modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
