@@ -16,3 +16,4 @@ exl-id: 5cfced51-b1f1-4dce-a61d-2bf92f04ce38
 * [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
 * [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
 * [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+* [Overview of APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)

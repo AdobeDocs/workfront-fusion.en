@@ -139,6 +139,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
         * [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
         * [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+        * [Overview of APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
     * Navigate Workfront Fusion {#navigate-workfront-fusion}
         * [Navigate Workfront Fusion: article index](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
         * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
