@@ -7,7 +7,7 @@ exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
 ---
 # Upgrade a module to a new version
 
-Because the applications that Workfront Fusion connects to may update or release new version, it is occasionally necessary for Fusion to release updated modules for those applications. 
+Because the applications that Workfront Fusion connects to may update or release new versions, it is occasionally necessary for Fusion to release updated modules for those applications. 
 
 If you see a green Upgrade module icon on a module in a scenario, Workfront Fusion has released a new version of that module. 
 

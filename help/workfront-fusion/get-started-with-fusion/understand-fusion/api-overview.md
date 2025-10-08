@@ -18,7 +18,7 @@ The fact that APIs are defined by their owners and not by Fusion leads to some i
 
 * **You can use Fusion to connect to any app or service that has a public API**, whether or not Fusion offers a dedicated connector to that app or service. You can use Fusion's universal connectors to bring these apps or services into your scenarios.
 
-   For a list of universal connectors, see [Universal connectors](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
+   For a list of universal connectors, see [Universal connectors](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
 * **Changes made to an application's API by its owner can affect Fusion functionality.** If the changes are severe enough, Fusion may need to update modules or connection types, or in extreme cases may create a new connector for the application.
 
