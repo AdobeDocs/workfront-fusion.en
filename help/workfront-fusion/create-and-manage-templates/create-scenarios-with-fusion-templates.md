@@ -70,6 +70,6 @@ You must create a template before you can use it.
 
 1. When you have configured all the settings required for the template, you receive a notification that your template is ready to go, and the standard scenario options appear at the bottom of the screen. You can now continue building your scenario.
 
-   For information on building a scenario, see [orkflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
+   For information on building a scenario, see [Workflow for creating a scenario](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md).
 
 1. Click the **[!UICONTROL Save]** icon ![Save icon](assets/save-icon.png) to save your scenario. The scenario saves to the Scenario area of Workfront Fusion.
