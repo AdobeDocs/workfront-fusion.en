@@ -7,6 +7,23 @@ exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 ---
 # Adobe Workfront modules
 
+
+
+>[!IMPORTANT]
+>
+>This article contains instructions for the new version of the Workfront connector, released on October 22, 2025. This new connector reflects changes made to the Workfront API.
+>
+>The new connector is labeled as "Workfront," and the previously available connector is labeled as "Workfront (Legacy)."  
+>
+>We recommend:
+>
+>* Using the new connector when creating or updating a scenario.
+>* Upgrading existing modules to the new connector. 
+>
+>For instructions on upgrading existing modules, see [Upgrade a Workfront module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md) in the article Upgrade a module to a new version.
+>
+>For information on why a new connector is sometimes necessary, see [Overview of APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
+
 You can use the Adobe Workfront Fusion Adobe Workfront connector to automate your processes within Workfront. You can also connect Workfront to other applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
