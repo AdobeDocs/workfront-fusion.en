@@ -7,8 +7,6 @@ exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 ---
 # Adobe Workfront modules
 
-
-
 >[!IMPORTANT]
 >
 >This article contains instructions for the new version of the Workfront connector, released on October 22, 2025. This new connector reflects changes made to the Workfront API.
@@ -516,6 +514,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Create Record (Legacy)]**
 
 >[!IMPORTANT]
@@ -564,6 +564,8 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL Custom API Call]**
 
@@ -701,6 +703,29 @@ When you are configuring this module, the following fields display.
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
+
+### **Get a presigned file URL**
+
+This action module gets presigned file URLs that can later be used by other APIs.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Document ID]</td> 
+   <td> <p>Map or manually enter the unique Workfront ID of the document that you want to get a presigned URL for.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Time to URL expiration]</td> 
+   <td> <p>Enter or map the number of minutes that this URL will exist before it expires. The default is 1 minute.</p><p>To change this value, you must have this parameter enabled by the Workfront Fusion team. If it is not enabled, the value will remain 1 minute regardless of the number you enter.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 +++ **[!UICONTROL Misc Action]**
 
@@ -954,6 +979,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Read a Record (Legacy)]**
 
 >[!IMPORTANT]
@@ -1007,6 +1034,8 @@ When you are configuring this module, the following fields display.
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
+
+-->
 
 +++ **Update Events Payload Version**
 
@@ -1083,6 +1112,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Update Record (Legacy)]**
 
 >[!IMPORTANT]
@@ -1132,6 +1163,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+-->
+
 +++ **[!UICONTROL Upload Document]**
 
 This action module uploads a document to a Workfront object, such as a project, task, or issue. This module uploads the document in chunks, which makes the upload process smoother for Workfront. 
@@ -1175,6 +1208,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Upload Document (Legacy)]**
 
 This action module uploads a document to a Workfront object, such as a project, task, or issue. It uploads the entire document at once. 
@@ -1214,7 +1249,9 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
+
 +++
+-->
 
 ### Searches
 
