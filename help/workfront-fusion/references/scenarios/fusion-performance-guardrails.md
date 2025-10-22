@@ -61,6 +61,7 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
   * The webhook is used only in inactive scenarios, which have been inactive for more than 30 days.
 
 * Deactivated webhooks are deleted and unregistered automatically if they are not connected to any scenarios and have been in deactivated status for over 30 days.
+* Timeout for a webhook response is 5 minutes.
 
 ## Execution history
 
