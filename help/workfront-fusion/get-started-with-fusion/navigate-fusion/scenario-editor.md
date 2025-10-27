@@ -94,7 +94,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 | Scenario settings    | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).    |
 | Notes    | Make notes about the scenario. Other users can view these notes when they are in the scenario.   |
 | Auto-align    | Auto-align the modules in your scenario.  |
-| Explain flow    | View an animation showing how data flows through the scenario.   |
+| Explain flow    | View an animation where moving dots show how data flows through the scenario.   |
 | Dev tools   | Using the Devtool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md).   |
 | More    | In the More menu, you can import or export blueprints and restore the scenario back to previous versions.  |
 
