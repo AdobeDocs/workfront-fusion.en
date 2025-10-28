@@ -312,7 +312,7 @@ This module updates a single document, binder, or template.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Type</p> </td> 
-   <td> <p>Select whether you want to create a document, binder, or template.</p> </td> 
+   <td> <p>Select whether you want to create a document, document version, binder, or template.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID / Name</p> </td> 
