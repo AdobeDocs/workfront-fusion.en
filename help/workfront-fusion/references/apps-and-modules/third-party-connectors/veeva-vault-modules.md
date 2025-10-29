@@ -58,7 +58,7 @@ To use Veeva Vault modules, you must have a Veeva Vault account.
 
 You can create a connection to your Veeva Vault account directly from inside a Veeva Vault module.
 
-1. In any Veeva Vault module, click **[!UICONTROL Add]** next to the Connection field.
+1. In any Veeva Vault module, click **Add** next to the Connection field.
 1. Fill in the following fields.
 
     <table style="table-layout:auto"> 
@@ -88,7 +88,7 @@ You can create a connection to your Veeva Vault account directly from inside a V
         </td>
       </tr>
       <tr>
-        <td role="rowheader">Type</td>
+        <td role="rowheader">Password</td>
         <td>
           <p>Enter the password for the Veeva Vault account.</p>
         </td>
