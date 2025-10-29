@@ -54,6 +54,56 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 To use Veeva Vault modules, you must have a Veeva Vault account.
 
+## Connect Veeva Vault to Workfront Fusion  
+
+You can create a connection to your Veeva Vault account directly from inside a Veeva Vault module.
+
+1. In any Veeva Vault module, click **[!UICONTROL Add]** next to the Connection field.
+1. Fill in the following fields.
+
+    <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Connection name</td> 
+       <td> <p>Enter a name for the connection.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Environment</td>
+        <td>
+          <p>Select whether are connecting to a production or non-production environment.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Type</td>
+        <td>
+          <p>Select whether you are connecting to a service account or a personal account.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Username</td>
+        <td>
+          <p>Enter the username for the Veeva Vault account.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Type</td>
+        <td>
+          <p>Enter the password for the Veeva Vault account.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">Vault DNS</td> 
+       <td>Enter your Veeva Vault DNS (domain name).</p><p>To locate your Veeva Vault DNS, examine the URL that you use to access Veeva Vault.</p>For example, in the URL <code>https://my-dns.veevavault.com</code>, the DNS is <code>my-dns</code>. You do not need to enter the entire URL.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
+
+
+
 ## Veeva Vault modules and their fields
 
 When you configure Veeva Vault modules, Workfront Fusion displays the fields listed below. Along with these, additional Veeva Vault fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
