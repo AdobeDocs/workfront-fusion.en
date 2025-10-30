@@ -71,7 +71,7 @@ To use a webhook to connect an app to Workfront Fusion:
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
 1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
 
-   FOr information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+   For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 1. In the **Credentials** field, you can enter credentials to be used for authorization. To enter credentials, click **Add** and enter the credential information.
 1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
