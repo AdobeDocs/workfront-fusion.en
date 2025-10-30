@@ -64,18 +64,23 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 To use a webhook to connect an app to Workfront Fusion:
 
-1. Add the **[!UICONTROL Webhooks]** >**[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
+1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
 
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
+
+   FOr information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. In the **Credentials** field, you can enter credentials to be used for authorization. To enter credentials, click **Add** and enter the credential information.
+1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
 
 After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
 
 >[!NOTE]
 >
->Once you create a webhook, you can use it in more than one scenario at a time.
+>After you create a webhook, you can use it in more than one scenario at a time.
 
 ### Configure the webhook's data structure {#configure-the-webhook-s-data-structure}
 

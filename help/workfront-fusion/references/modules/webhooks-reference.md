@@ -29,6 +29,25 @@ For a video introduction to webhooks in Workfront Fusion, see:
 * [Intro to Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Intermediate Webhooks](https://video.tv.adobe.com/v/3427030/){target=_blank}
 
+## View webhook details
+
+You can view a list of webhooks in the Webhooks area.
+
+1. To open the Webhooks area, click the Webhooks icon ![Webhooks](assets/webhooks-icon.png) in the left navigation.
+
+   Here, you can see a list of webhooks.
+
+   ![Webhook list](assets/list-of-webhooks.png)
+
+1. To search for a specific webhook, enter your search term into the Search box. 
+1. To copy a webhook, click the Copy icon ![Copy webhook icon](assets/copy-webhook-icon.png) near the URL in the row for that webhook.
+1. To disable or enable a webhook, disable or enable the toggle in the Status column in the row for that webhook.
+1. To see whether a webhooks queue is full, check the Full Queue column. The number in this column is the number of items currently in the queue.
+1. To view operations handled by a webhook, click **Operations** in the Full Queue column for that webhook.
+1. To view the scenario where a webhook is used, click the **Scenario** button in the Scenario column for that webhook. 
+1. To view the connection used for this webhook, click the **Connection** button in the Connection column for that webhook.
+1. To hide columns or show previously hidden columns, click the **Columns** icon ![Columns icon](assets/glist-column.png) and check or uncheck column names.
+
 ## Schedule instant triggers
 
 When you configure an instant trigger, you are prompted to select when it runs.
