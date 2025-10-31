@@ -10,6 +10,37 @@ exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
 
 We recommend the optional but useful practice of adding notes to your scenario. Notes are attached to individual modules, and are displayed in the scenario editor. You can toggle notes on and off, and can add multiple notes to a module.
 
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Add notes
+
 1. Right-click a Workfront module, then click **[!UICONTROL Add a note]**.
 1. In the note that appears, click the Edit icon ![Edit icon](assets/edit-note.png).
 1. Enter the text of your note.
