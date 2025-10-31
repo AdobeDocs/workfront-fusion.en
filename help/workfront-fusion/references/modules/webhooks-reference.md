@@ -44,6 +44,7 @@ You can view a list of webhooks in the Webhooks area.
 1. To disable or enable a webhook, disable or enable the toggle in the Status column in the row for that webhook.
 1. To see whether a webhooks queue is full, check the Full Queue column. The number in this column is the number of items currently in the queue.
 1. To view operations handled by a webhook, click **Operations** in the Full Queue column for that webhook.
+1. To see whether a webhook has expired, check the Expired column. Expired webhooks are not attached to any scenario, or have not received any events for 120 hours.
 1. To view the scenario where a webhook is used, click the **Scenario** button in the Scenario column for that webhook. 
 1. To view the connection used for this webhook, click the **Connection** button in the Connection column for that webhook.
 1. To hide columns or show previously hidden columns, click the **Columns** icon ![Columns icon](assets/glist-column.png) and check or uncheck column names.
