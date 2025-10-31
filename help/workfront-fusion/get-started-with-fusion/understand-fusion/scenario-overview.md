@@ -91,7 +91,7 @@ For a list of dedicated connectors, see [Fusion applications and their modules r
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion can connect to almost any web service. If the app you want to work with does not have a dedicated Workfront Fusion connector, you use universal connectors to connect to the app or service.
+>Adobe Workfront Fusion can connect to almost any web service. If the app you want to work with does not have a dedicated Workfront Fusion connector, you can use universal connectors to connect to the app or service.
 >
 >For a list of universal connectors, see [Universal connectors](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 

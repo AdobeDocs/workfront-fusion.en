@@ -26,7 +26,7 @@ Users must be added to an organization before they are added to a team.
 A user has one of the following roles in an organization:
 
 * **[!UICONTROL Owner]**: The owner has all permissions available in the organization.
-* **[!UICONTROL Admin]**: Admins can create and manage teams and users for the organization, and can approve templates.
+* **[!UICONTROL Admin]**: Admins can manage users on the Adobe Admin Console if the organization is enabled for Adobe Identity Management System (IMS), or can invite new users for organizations not on IMS. They can also approve templates.
 * **[!UICONTROL Member]**: Members are able to use Workfront Fusion but are unable to make organizational changes.
 * **[!UICONTROL Accountant]**: Accountants can see license information on the organization dashboard, but cannot perform any actions.
 * **[!UICONTROL App Developer]**: Functionality for this role is currently unavailable, and will be made available in the near future. We do not recommend assigning users to this role at this time.

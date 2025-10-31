@@ -5,13 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
 ---
-# Update a module to a new version
+# Upgrade a module to a new version
 
-Because the applications that Workfront Fusion connects to may update or release new version, it is occasionally necessary for Fusion to release updated modules for those applications. 
+Because the applications that Workfront Fusion connects to may update or release new versions, it is occasionally necessary for Fusion to release updated modules for those applications. 
 
 If you see a green Upgrade module icon on a module in a scenario, Workfront Fusion has released a new version of that module. 
 
-![Update icon](assets/update-indicator.png)
+![Update icon](assets/update-indicator-workfront.png)
 
 You can update the module without creating a new scenario.
 
@@ -67,12 +67,29 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 +++
 
-## Update a module to a new version
+## Upgrade a Workfront module to a new version
+
+1. Click the **Upgrade module** icon ![Upgrade icon](assets/upgrade-icon.png) on the module you want to upgrade to a new version.
+    ![Update icon](assets/update-indicator-workfront.png)
+1. Choose one of the following:
+
+   * To select a new module to replace this module (instead of upgrading the module), click **Choose new**, then proceed as described in [Upgrade a non-Workfront module to a new version](#upgrade-a-non-workfront-module-to-a-new-version).
+   * To upgrade only this module, preserving module configuration, click **Upgrade**.
+   * To upgrade all Workfront modules in the scenario, click **Upgrade all**.
+
+1. Save the scenario.
+
+>[!NOTE]
+>
+>If you have upgraded Workfront modules, we recommend opening them and checking the module configuration. 
+
+## Upgrade a non-Workfront module to a new version
 
 1. Click the **Upgrade module** icon ![Upgrade icon](assets/upgrade-icon.png) on the module you want to upgrade to a new version.
     ![Update icon](assets/update-indicator.png)
-1. Click **Show me new modules**.
-1. Select the new module that matches the existing module.
+1. Click **Choose new**.
+1. Select the module that you want to replace the previous module.
 1. Configure the module with the same settings as the existing module.
 1. Connect the new module to the scenario in the same place as the existing module.
 1. Delete the old module.
+1. Save the scenario.

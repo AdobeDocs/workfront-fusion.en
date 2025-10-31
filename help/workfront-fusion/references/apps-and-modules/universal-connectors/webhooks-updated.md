@@ -59,18 +59,23 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 To use a webhook to connect an app to Workfront Fusion:
 
-1. Add the **[!UICONTROL Webhooks]** >**[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
+1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
 
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
+
+   For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. In the **Credentials** field, you can enter credentials to be used for authorization. To enter credentials, click **Add** and enter the credential information.
+1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
 
 After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
 
 >[!NOTE]
 >
->Once you create a webhook, you can use it in more than one scenario at a time.
+>After you create a webhook, you can use it in more than one scenario at a time.
 
 ### Configure the webhook's data structure {#configure-the-webhook-s-data-structure}
 
@@ -267,7 +272,7 @@ The configuration of the module contains two fields: [!UICONTROL Status] and [!U
   >
   >We recommend setting the `Content-Type` header to the corresponding MIME type: `text/plain` for plain text, `text/html` for HTML, `application/json` for JSON, `application/xml` for XML, and so on. For more information on MIME types, see [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md).
 
-Timeout for sending a response is 40 seconds. If the response is not available within that period, Workfront Fusion returns a '200 Accepted' status.
+Timeout for sending a response is 5 minutes. If the response is not available within that period, Workfront Fusion returns a '200 Accepted' status.
 
 ### HTML Response example 
 

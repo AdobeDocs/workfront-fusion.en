@@ -51,9 +51,9 @@ Returns a primitive array containing values of a complex array. This function al
   
   Returns a primitive array with emails
   
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
   
-  Returns a primitive array with emails having a label equal to work or home
+  Returns a primitive array with emails having a label equal to work
 
 >[!ENDSHADEBOX]
 

@@ -174,14 +174,12 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Once located, copy the URL from the `location` attribute.
-1. In Workfront Fusion, paste the URL into the HTTP module's URL field.
-1. Open the [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) in a new web browser window/tab.
-1. Paste the WSDL URL into the WSDL URL field.
-1. Click **[!UICONTROL Browse]**.
-1. Pick from the list of functions to the left, for example `getLanguages`.
-1. Copy the content of the [!UICONTROL Request XML] text area.
-1. In [!UICONTROL Workfront Fusion], paste the copied content to the module's URL field.
-1. Provide values for selected parameters by replacing the question marks with actual values:
+1. In Workfront Fusion, paste the URL into the HTTP module's **Request content** field.
+1. Provide values for selected parameters by replacing the question marks with actual values.
+
+   >[!NOTE]
+   >
+   > To get specific values from the WSDL file, use an online WSDL viewer.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 

@@ -107,7 +107,7 @@ You can create a connection to your [!DNL Split.io] account directly from inside
       </tr>
       <tr> 
        <td role="rowheader">[!UICONTROL API key]</td> 
-       <td>SEnter your [!DNL Split.io] API key.<p>For more information on [!DNL Split.io] API keys, see <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">API keys</a> in the [!DNL Split.io] documentation.</p></td> 
+       <td>Enter your [!DNL Split.io] API key.<p>For more information on [!DNL Split.io] API keys, see <a href="https://help.split.io/hc/en-us/articles/360019916211-API-keys">API keys</a> in the [!DNL Split.io] documentation.</p></td> 
       </tr> 
      </tbody> 
     </table>

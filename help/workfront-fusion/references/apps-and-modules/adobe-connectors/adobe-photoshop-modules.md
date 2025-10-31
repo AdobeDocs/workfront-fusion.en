@@ -265,7 +265,7 @@ This action module applies a variety of document and layer level edits.
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">Apply PSD Edits</a> in the Adobe Photoshop documentation.  </td> 
+   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Apply PSD Edits</a> in the Adobe Photoshop documentation.  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
@@ -541,7 +541,7 @@ This action module creates a new PSD with optional layers, and generates renditi
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Create PSD</a> in the Adobe Photoshop documentation.  </td> 
+   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -588,7 +588,7 @@ This action module creates a new PSD with optional layers, and generates renditi
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
       <td>
-        <p><p>For details about output options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Create PSD</a> in the Adobe Photoshop documentation.  </p>
+        <p><p>For details about output options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </p>
       </td>
     </tr>
     </tbody>
@@ -638,7 +638,7 @@ This action module edits text layers on a Photoshop file. You can enter separate
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>For each text layer that you want to edit, click <b>Add item</b> and enter the layer options.<p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Edit text</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
+   <td> <p>For each text layer that you want to edit, click <b>Add item</b> and enter the layer options.<p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
@@ -712,7 +712,7 @@ To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Edit text layer</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
+   <td> <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text layer</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Output file storage]</td>
       <td>
@@ -874,7 +874,7 @@ This action module executes Depth Blur on the selected file.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
     </tr>
   </tbody>
@@ -961,7 +961,7 @@ This action module executes a Photoshop action on the selected image.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
     </tr>
   </tbody>
@@ -1036,7 +1036,7 @@ This action module executes Product Crop on the selected image.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
     </tr>
   </tbody>
@@ -1227,7 +1227,7 @@ This module uses Smart Object API version 2.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1292,7 +1292,7 @@ This module uses the legacy version of Smart Objects.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>

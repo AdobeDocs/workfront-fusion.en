@@ -10,6 +10,13 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2025 {#fusion-releases-2025}
+        * [Workfront Fusion release activity: Week of October 20, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
+        * [Workfront Fusion release activity: Week of October 27, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
+        * [Workfront Fusion release activity: Week of October 13, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
+        * [Workfront Fusion release activity: Week of October 6, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-6.md)
+        * [Workfront Fusion release activity: Week of September 29, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-22.md)
+        * [Workfront Fusion release activity: Week of September 22, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
+        * [Workfront Fusion release activity: Week of September 15, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-15.md)
         * [Workfront Fusion release activity: Week of August 18, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
         * [Workfront Fusion release activity: Week of July 31, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
         * [Workfront Fusion release activity: Week of July 7, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
@@ -135,6 +142,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Module overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
         * [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
         * [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+        * [Overview of APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
     * Navigate Workfront Fusion {#navigate-workfront-fusion}
         * [Navigate Workfront Fusion: article index](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
         * [Navigate Adobe Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)
@@ -382,6 +390,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Split.io modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
             * [Trello modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
             * [Widen modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
+            * [Veeva Vault modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
             * [Workday modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
         * Tools and transformers {#tools-and-transformers}
             * [Archive modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
