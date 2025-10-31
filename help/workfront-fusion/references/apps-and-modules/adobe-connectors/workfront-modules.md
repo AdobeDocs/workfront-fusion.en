@@ -11,12 +11,14 @@ exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 >
 >This article contains instructions for the new version of the Workfront connector, released on October 22, 2025. This new connector reflects changes made to the Workfront API.
 >
->The new connector is labeled as "Workfront," and the previously available connector is labeled as "Workfront (Legacy)."  
+>The new connector is labeled as "Workfront," and the previously available connector is labeled as "Workfront (Legacy)." 
 >
 >We recommend:
 >
 >* Using the new connector when creating or updating a scenario.
 >* Upgrading existing modules to the new connector. 
+>
+>The legacy Workfront connector uses Workfront API version 20, which is scheduled to be deprecated with the 28.4 release (April 2028). Modules in the legacy connector will continue to work until that time.
 >
 >For instructions on upgrading existing modules, see [Upgrade a Workfront module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md) in the article Upgrade a module to a new version.
 >
