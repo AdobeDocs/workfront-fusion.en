@@ -75,7 +75,7 @@ Fusion instances on the Select or Prime packages receive:-->
 
    For example, an organization with 600K operations receives 110 MB. 
 
-Your organization can have up to 50 data stores. The combined size of these data stores cannot exceed your organization's total data store size.
+Each team in your organization can have up to 50 data stores. The combined size of these data stores cannot exceed your organization's total data store size.
 
 ## Create a data store in Workfront Fusion
 
