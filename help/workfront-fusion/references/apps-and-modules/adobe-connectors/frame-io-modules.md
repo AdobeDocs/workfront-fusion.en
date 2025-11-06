@@ -11,7 +11,7 @@ exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
 >
 >This article describes the legacy version of the Frame.io connector. This connector is used to connect to Frame.io version 3.
 >
->For instructions on the new (beta) version of the Frame.io connector, see [Frame.io Beta connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+>For instructions on the new (beta) version of the Frame.io connector, see [Frame.io connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 The Adobe Workfront Fusion [!DNL Frame.io] modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] account.
 
@@ -19,10 +19,10 @@ Workfront offers two Frame.io connectors, based on the version of Frame.io that 
 
 | Connector | Frame.io version |
 |---|---|
-| Frame.io (Beta) | V4 |
+| Frame.io | V4 |
 | Frame.io (Legacy) | V3 |
 
-For instructions on the new version of the Frame.io connector, see [Frame.io Beta connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
+For instructions on the new version of the Frame.io connector, see [Frame.io connector](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md).
 
 For a video introduction to the Frame.io connector, see:
 
