@@ -1,5 +1,5 @@
 ---
-title: "Frame.io (Beta) modules"
+title: "Frame.io modules"
 description: The [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] account.
 author: Becky
 feature: Workfront Fusion
@@ -106,7 +106,7 @@ You can connect automatically with user credentials, manually create a user cred
 
 This method creates a connection automatically if you are logged in to Frame.io, or connects you to the Frame.io login page so you can log in.
 
-1. In any Frame.io Beta module, click **[!UICONTROL Add]** next to the Connection box.
+1. In any Frame.io module, click **[!UICONTROL Add]** next to the Connection box.
 1. Enter a name for the connection.
 1. Click **Continue**.
 1. If you are prompted to log in to your Frame.io account, do so.
@@ -171,7 +171,7 @@ If you do not already have server-to-server credentials on an Adobe Developer Co
 
 #### Configure a user authentication connection
 
-1. In any  Frame.io Beta module, click **[!UICONTROL Add]** next to the Connection box.
+1. In any  Frame.io module, click **[!UICONTROL Add]** next to the Connection box.
 1. In the Create a connection box, click **Show advanced settings**.
 
 1. Fill in the following fields:
@@ -246,7 +246,7 @@ If you do not already have server-to-server credentials on an Adobe Developer Co
 
 #### Configure a server-to-server connection
 
-1. In any  Frame.io Beta module, click **[!UICONTROL Add]** next to the Connection box.
+1. In any  Frame.io module, click **[!UICONTROL Add]** next to the Connection box.
 
 1. Fill in the following fields:
 
