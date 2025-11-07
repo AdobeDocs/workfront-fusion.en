@@ -297,6 +297,7 @@ If you see the map button above a field or function, you can use it to set varia
 * [Projects](#projects)
 * [Shares](#shares)
 * [Workspaces](#workspaces)
+* [Metadata](#metadata)
 * [Other](#other)
 
 ### Assets 
@@ -309,6 +310,61 @@ If you see the map button above a field or function, you can use it to set varia
 * [Watch new asset](#watch-new-asset)
 
 #### [!UICONTROL Create an asset] <!--different for v4-->
+
+This action module creates a new asset. You can upload a local file or provide the URL for a remote file to create the asset from.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select the account or map the ID of the account that contains the project that you want to create an asset for.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select the workspace or map the ID of the workspace that contains the project that you want to create an asset for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Select the project or map the ID of the project that you want to create an asset for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Path] </td> 
+   <td> <p>Select the path where you want to create an asset.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL File Name] </td> 
+   <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
+  </tr> -->
+    <tr> 
+    <td role="rowheader">Upload type </td> 
+    <td> <p>Select whether you are creating an asset from a local file or a remote life.</p> </td> 
+   </tr>
+    <tr> 
+    <td role="rowheader">File Size </td> 
+    <td> <p>If you are uploading a local file, enter or map the file size in bytes.</p> </td> 
+   </tr>
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source URL] </td> 
+   <td> <p>If creating the asset from a remote file, enter the URL of the file you want to upload.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source file]</td> 
+   <td> <p>Select a source file from a previous module, or map the source file's name.</p> </td> 
+  </tr> 
+<!--  <tr> 
+   <td role="rowheader">[!UICONTROL Media type] </td> 
+   <td> <p>Select the media type for this asset.</p> </td> 
+  </tr> -->
+  </tbody> 
+</table>
+
+#### [!UICONTROL Create an asset (Legacy)] <!--different for v4-->
 
 This action module creates a new asset.
 
@@ -961,6 +1017,183 @@ This module lists all workspaces in an account.
    <td role="rowheader">[!UICONTROL Maximum number of returned workspaces] </td> 
    <td> <p>Enter or map the maximum number of workspaces
    you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Metadata
+
+* [Create an account level field](#create-an-account-level-field)
+* [Delete an account level field](#delete-an-account-level-field)
+* [Get metadata](#get-metadata)
+* [List account level fields](#list-account-level-fields)
+* [Update an account level field definition](#update-an-account-level-field-definition)
+* [Update metadata across multiple files](#update-metadata-across-multiple-files)
+
+#### Create an account level field
+
+This action module creates and configures a new account level metadata field.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account where you want to create the metadata.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Field type </td> 
+   <td> <p>Select the type of metadata field that you want to create, then configure the options for that field.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name </td> 
+   <td> <p>Enter or map a name for the new field.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Delete an account level field
+
+This action module deletes a single account level metadata field.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the metadata field you want to delete.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Field definition ID </td> 
+   <td> <p>Enter or map the ID of the field that you want to delete. You can find field IDs with the List account level fields module.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Get metadata
+
+This action module retrieves the metadata for a file in Frame.io.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains file you want to retrieve metadata for.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">File ID </td> 
+   <td> <p>Enter or map the ID of the file that you want to retrieve metadata for.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Show null </td> 
+   <td> <p>Enable this option to include fields with a value of null in the output.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### List account level fields
+
+This module retrieves a list of account level metadata fields for the specified account.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that you want to list fields from.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Maximum number of returned agreements]</td> 
+   <td> <p>Enter or map the maximum number of fields you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Update an account level field definition
+
+This module updates the definition of a single existing metadata field.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account where you want to create the metadata.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Field definition ID </td> 
+   <td> <p>Enter or map the ID of the field that you want to update. You can find field IDs with the List account level fields module.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Field type </td> 
+   <td> <p>If you want to change the field type of the field, select the type of metadata field that you want to create, then configure the options for that field.</p> </td> 
+  </tr> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name </td> 
+   <td> <p>Enter or map a new name for the field.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Update metadata across multiple files
+
+This module updates metadata fields on one or more files with values you specify.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Account ID] </td> 
+   <td> <p>Select or map the account that contains the files you want to update metadata for.</p> </td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">[!UICONTROL Workspace ID] </td> 
+   <td> <p>Select the workspace or map the ID of the workspace that contains the project that you want to create an asset for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Project ID] </td> 
+   <td> <p>Select the project or map the ID of the project that you want to create an asset for.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL File IDs] </td> 
+   <td> <p>For each file that you want to update the metadata for, click <b>Add item</b> and enter or map the ID of the file.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td> <p>For each field that you want to update the metadata for, click <b>Add item</b> and enter or map the ID of the field definition, and the value that you want to put in that field. All files specified in the File IDs field are updated with this field value.</p> </td> 
   </tr> 
  </tbody> 
 </table>
