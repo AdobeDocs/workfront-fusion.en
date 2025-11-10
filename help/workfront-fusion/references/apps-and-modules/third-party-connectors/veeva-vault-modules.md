@@ -112,18 +112,23 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Document](#document)
+* [Object](#object)
+* [Other](#other)
+
 ### Document
 
 * [Create a single document](#create-a-single-document)
 * [Create multiple documents](#create-multiple-documents)
 * [Delete a single document](#delete-a-single-document)
+* [Download a file](#download-file)
 * [Export documents](#export-documents)
 * [Get a single document](#get-a-single-document)
 * [Initiate user action](#initiate-user-action)
 * [List documents](#list-documents)
 * [Retrieve document export results](#retrieve-document-export-results)
-* [Update multiple documents](#update-multiple-documents)
 * [Update a single document](#update-a-single-document)
+* [Update multiple documents](#update-multiple-documents)
 
 #### Create a single document
 
@@ -190,6 +195,41 @@ This module deletes a single document, binder, or template.
   <tr> 
    <td role="rowheader"><p>Document ID / Binder ID / Template name</p> </td> 
    <td> <p>Select the fields that you want to delete.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Download file
+
+This module downloads a document, documene version, or template from Veeva Vault.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether you want to download a document or template.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Download Type</p> </td> 
+   <td> <p>Select whether you want to download a document or document version.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Document ID / Template name</p> </td> 
+   <td> <p>Enter or map the ID of the document or the name of the template you want to download.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Check out document</p> </td> 
+   <td> <p>If you are downloading a document, enable this option to check out the document before you download it.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>If you are downloading a document version, select the version to download.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -381,9 +421,106 @@ This module updates a single document, binder, or template.
 
 ### Object
 
+* [Create a single object record](#create-a-single-object-record)
+* [Delete a single object record](#delete-a-single-object-record)
+* [Get a single object](#get-a-single-object)
+* [List objects records](#list-objects-records)
+* [Update a single object record](#update-a-single-object-record)
 
+#### Create a single object record
 
-#### List objects
+This module creates, copies, or deep copies a single object record.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether to create or copy a record, or whether to deep copy a record.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Migration mode</td> 
+   <td>If creating or copying a record, enable this option to create or update object records in a noninitial state and with minimal validation, create inactive records, and set standard and system-managed fields such as <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">No triggers</td> 
+   <td>If set to true and migration mode is enabled, the module bypasses all system, standard, custom SDK triggers, and Action Triggers.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Object name</td> 
+   <td>Enter or map the object name__v field value, such as <code>product__v</code>, <code>country__v</code>, or <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record ID</td> 
+   <td>If you are deep copying a record, select the record to copy.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record fields</td> 
+   <td>If you are deep copying a record, select the fields that you want to provide values for, then provide those values.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Delete a single object record
+
+This module deletes or cascade deletes a single object record. Cascade deleting a record deletes the record and all its child objects.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether to delete a record, or cascade delete a record.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Object name</td> 
+   <td>Select the object that you want to delete.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record ID</td> 
+   <td>Select the ID of the record you want to delete.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">External ID</td> 
+   <td>Instead of Record ID, you can use this user-defined document external ID.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Get a single object  
+
+This module retrieves metadata configured on a specific object record in your Vault.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Object name</td> 
+   <td>Select the object that you want to retrive metadata for.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record ID</td> 
+   <td>Select the ID of the record you want to retrieve metadata for.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### List objects records
 
 This module retrieves all Vault objects in the authenticated Vault.
 
@@ -402,6 +539,55 @@ This module retrieves all Vault objects in the authenticated Vault.
   <tr> 
    <td role="rowheader">Maximum number of returned results</td> 
    <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+This module updates fields in an existing object record.
+
+This module creates, copies, or deep copies a single object record.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Select whether to create or copy a record, or whether to deep copy a record.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Migration mode</td> 
+   <td>Enable this option to create or update object records in a noninitial state and with minimal validation, create inactive records, and set standard and system-managed fields such as <code>createdby_v</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">No triggers</td> 
+   <td>If migration mode is enabled, you can enable this option to bypass all system, standard, custom SDK triggers, and Action Triggers.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Object name</td> 
+   <td>Enter or map the object name__v field value, such as <code>product__v</code>, <code>country__v</code>, or <code>custom_object__c</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record ID</td> 
+   <td>Select the ID of the record to update.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">State</td> 
+   <td>Specify the lifecycle state of the record when <code>X-VaultAPI-MigrationMode</code> is set to true.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">State label</td> 
+   <td>Specify the lifecycle state type of the record when <code>X-VaultAPI-MigrationMode</code> is set to true. Use the format <code>base:object_lifecycle:</code> followed by the object state type.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record fields</td> 
+   <td>If you are deep copying a record, select the fields that you want to provide values for, then provide those values.</td> 
   </tr> 
  </tbody> 
 </table>
