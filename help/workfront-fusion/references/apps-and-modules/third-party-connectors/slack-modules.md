@@ -7,11 +7,15 @@ exl-id: c9c68a4c-f592-42d1-b15f-a525b9aa3944
 ---
 # [!DNL Slack] modules (Legacy)
 
+<!--
+
 >[!IMPORTANT]
 >
->This article describes modules available in the legacy Slack connector. 
+>This article describes modules available in the legacy Slack connector, which is no longer available. This article will be removed in the near future. 
 >
 >For information on the new Slack connector, released on November 14, 2025, see [[!DNL Slack] modules (Legacy)](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md).
+
+-->
 
 In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Slack], as well as connect it to multiple third-party applications and services.
 
