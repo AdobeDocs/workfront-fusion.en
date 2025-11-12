@@ -131,8 +131,8 @@ This action module creates a new message.
    <td>Blocks are reusable components that you can use to customize and organize your messages. For more information on blocks, see <a href="https://api.slack.com/block-kit">Block Kit</a> in the [!DNL Slack] documentation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Thread message ID (time stamp)]</td> 
-   <td>If the new message is a reply, enter the time stamp of the message you want to reply to. Do not enter the time stamp of a message that is already a reply.</td> 
+   <td role="rowheader">[!UICONTROL Thread message ID (timestamp)]</td> 
+   <td>If the new message is a reply, enter the timestamp of the message you want to reply to. Do not enter the timestamp of a message that is already a reply.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reply broadcast]</td> 
@@ -184,8 +184,8 @@ This action module deletes a specified message.
    <td> <p>Enter or map the Channel ID.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to delete.</p> <p>Note: The time stamp can be retrieved using another module, such as the Watch Private Channel Module.</p> </td> 
+   <td role="rowheader">[!UICONTROL Message ID (timestamp)]</td> 
+   <td> <p> Enter or map the timestamp of the message you want to delete.</p> <p>Note: The timestamp can be retrieved using another module, such as the Watch Private Channel Module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -205,12 +205,12 @@ This action module retrieves the details of a message from a selected channel.
    <td> <p>For instructions about connecting your [!DNL Slack] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
-   <td> <p>Enter (map) the Channel ID.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Channel]</p> </td> 
+   <td> <p>Select the channel that contains the message.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Message ID (Time stamp)]</p> </td> 
-   <td> <p> Enter or map the message time stamp of the message you want to retrieve information about.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
+   <td> <p> Enter or map the message timestamp of the message you want to retrieve information about.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -231,11 +231,11 @@ This action module returns a message with a given ID from a specified public cha
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
-   <td> <p>Enter or map the Channel ID.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </td> 
+   <td> <p>Select the channel that contains the message.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> Enter or map the message time stamp of the message you want to retrieve information about.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
+   <td> <p> Enter or map the message timestamp of the message you want to retrieve information about.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -260,7 +260,7 @@ This action module retrieves a thread of messages posted to a conversation.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Parent message ID (Time stamp)]</td> 
-   <td> <p> Enter or map the message time stamp of the message you want to retrieve replies for.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
+   <td> <p> Enter or map the message timestamp of the message you want to retrieve replies for.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Public Channel] module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
@@ -289,7 +289,15 @@ This search module returns messages matching a search query.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of messages [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Sort by] </td> 
+   <td> <p>Select whether you want to sort returned messages by their score or their timestamp.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit] </td> 
+   <td> <p>Select whether you want to sort messages by ascending or descending.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -355,7 +363,7 @@ This trigger module starts the scenario when a new message is added to a direct 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of messages [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter the maximum number of messages you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -380,7 +388,7 @@ This trigger module starts the scenario when a new message is added to a multipa
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of messages [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter the maximum number of messages you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -405,7 +413,7 @@ This trigger module starts the scenario when a new message is added to a private
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of messages [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter the maximum number of messages you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -430,7 +438,7 @@ This trigger module starts the scenario when a new message is added to a public 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of messages [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Enter the maximum number of messages you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -465,10 +473,10 @@ This action module creates a text file.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Thread ID (timestamp)]</td> 
-   <td> <p>If you are uploading the file as a reply, enter or map the time stamp of the message you want to reply to.</p> <p>Note: The time stamp can be retrieved using another module, such as the[!UICONTROL  Watch Private Channel] module.</p> </td> 
+   <td> <p>If you are uploading the file as a reply, enter or map the timestamp of the message you want to reply to.</p> <p>Note: The timestamp can be retrieved using another module, such as the[!UICONTROL  Watch Private Channel] module.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Initial Comment]</td> 
+   <td role="rowheader">[!UICONTROL Initial comment]</td> 
    <td> <p>Enter or map the text of the message that introduces the file.</p> </td> 
   </tr> 
  </tbody> 
@@ -540,7 +548,7 @@ This action module returns a list of files based on the specified filter.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Created by]</td> 
-   <td> <p>Select a user to return only files created by that user.</p> </td> 
+   <td> <p>Select a user to return only files created by the specified user.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Date from]</td> 
@@ -610,7 +618,7 @@ This action module creates or uploads a file to [!DNL Slack]
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Thread ID (timestamp)]</td> 
-   <td> <p>If you are uploading the file as a reply, enter or map the time stamp of the message you want to reply to.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
+   <td> <p>If you are uploading the file as a reply, enter or map the timestamp of the message you want to reply to.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Initial Comment]</td> 
@@ -642,6 +650,10 @@ This trigger module starts a scenario when a new file is added.
    <td> <p>Select the type of channel you want to watch for files, then select the channel.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Created by]</td> 
+   <td> <p>Select a user to return only files created by the specified user.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
    <td> <p>Enter or map the maximum number of files you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
@@ -651,6 +663,27 @@ This trigger module starts a scenario when a new file is added.
 +++
 
 ### Channels
+
++++ **[!UICONTROL Archive a Channel]**
+
+This action module archives a  channel.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>For instructions about connecting your [!DNL Slack] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
+   <td> <p>Enter or map the ID of the channel that you want to archive.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **[!UICONTROL Create a Channel]**
 
@@ -671,27 +704,6 @@ This action module creates a new channel.
   <tr> 
    <td role="rowheader">[!UICONTROL Is private]</td> 
    <td>Enable this option to set the new channel as private.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
-+++ **[!UICONTROL Archive a Channel]**
-
-This action module archives a  channel.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Slack] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
-   <td> <p>Enter or map the ID of the channel that you want to archive.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -783,7 +795,7 @@ This search module returns a list of all channels in a workspace.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of channels [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Set the maximum number of channels you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -804,7 +816,7 @@ This search module returns a list of users in the selected channel.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Channel type]</td> 
-   <td>Select the type of channel that contains the list of members you want to list.</td> 
+   <td>Select the type of channel that contains the members you want to list.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private Channel]</td> 
@@ -812,7 +824,7 @@ This search module returns a list of users in the selected channel.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of members [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Set the maximum number of members you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -836,8 +848,7 @@ This action module changes the purpose of a channel
    <td>Select the type of channel that you want to change the purpose for.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL Multiple IM Channel] / User</td> 
-
+   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / User / [!UICONTROL Multiple IM Channel]</td> 
    <td>Select the channel or user that you want to change the purpose for.</td> 
   </tr> 
   <tr> 
@@ -866,7 +877,7 @@ This action module changes the topic of a channel
    <td>Select the type of channel that you want to change the topic for.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL Multiple IM Channel] / [!UICONTROL User]</td> 
+   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL User] / [!UICONTROL Multiple IM Channel]</td> 
    <td>Select the channel or user that you want to change the topic for.</td> 
   </tr> 
   <tr> 
@@ -918,12 +929,12 @@ This action module adds a reaction to an item.
    <td>Select the type of channel that you want to add a reaction to.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL Multiple IM channel] / [!UICONTROL User]</td> 
+   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL User] / [!UICONTROL Multiple IM channel]</td> 
    <td>Select the channel or user that you want to add a reaction to.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to add a reaction to.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
+   <td role="rowheader">[!UICONTROL Message ID (timestamp)]</td> 
+   <td> <p> Enter or map the timestamp of the message you want to add a reaction to.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reaction (emoji) name]</td> 
@@ -961,7 +972,7 @@ This action module returns reactions that a user made.
 
 +++ **[!UICONTROL Remove a reaction]**
 
-This action module adds a reaction to an item.
+This action module removes a reaction from an item.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -976,12 +987,12 @@ This action module adds a reaction to an item.
    <td>Select the type of channel that you want to remove a reaction from.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL Multiple IM channel] / [!UICONTROL User]</td> 
-   <td>Select the channel or user that you want to add a reaction from.</td> 
+   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL User] / [!UICONTROL Multiple IM channel]</td> 
+   <td>Select the channel or user that you want to remove a reaction from.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to add a reaction to.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
+   <td> <p> Enter or map the timestamp of the message you want to remove a reaction from.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reaction (emoji) name]</td> 
@@ -1011,7 +1022,7 @@ This action module makes a channel a starred channel.
    <td>Select the type of channel that you want to add a star to.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL IM] / [!UICONTROL Multiple IM channel]</td> 
+   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL User] / [!UICONTROL Multiple IM channel]</td> 
    <td>Select the channel or user that you want to add a star to.</td> 
   </tr> 
  </tbody> 
@@ -1021,7 +1032,7 @@ This action module makes a channel a starred channel.
 
 +++ **[!UICONTROL Remove a star]**
 
-This action module removed the star from a starred channel.
+This action module removes the star from a starred channel.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1036,7 +1047,7 @@ This action module removed the star from a starred channel.
    <td>Select the type of channel that you want to add a star to.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL IM] / [!UICONTROL Multiple IM channel]</td> 
+   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL User] / [!UICONTROL Multiple IM channel]</td> 
    <td>Select the channel or user that you want to add a star to.</td> 
   </tr> 
  </tbody> 
@@ -1048,7 +1059,7 @@ This action module removed the star from a starred channel.
 
 +++ **[!UICONTROL Remove Saved Item]**
 
-This action module adds an item to saved items.
+This action module removes an item from saved items.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1060,7 +1071,7 @@ This action module adds an item to saved items.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to remove from saved items.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
+   <td> <p> Enter or map the timestamp of the message you want to remove from saved items.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
@@ -1085,7 +1096,7 @@ This action module adds an item to saved items.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID (Time stamp)]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to save.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
+   <td> <p> Enter or map the timestamp of the message you want to save.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
@@ -1100,7 +1111,7 @@ This action module adds an item to saved items.
 
 +++ **[!UICONTROL Pin an Item]**
 
-This action module pins an item, such as a file or file comment, to a channel.
+This action module pins an item to a channel.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1120,7 +1131,7 @@ This action module pins an item, such as a file or file comment, to a channel.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to pin.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
+   <td> <p> Enter or map the timestamp of the message you want to pin.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1129,7 +1140,7 @@ This action module pins an item, such as a file or file comment, to a channel.
 
 +++ **[!UICONTROL Unpin an Item]**
 
-This action module unpins an item from a channel. You can unpin files, file comments, channel messages, or group messages.
+This action module unpins an item from a channel.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1149,7 +1160,7 @@ This action module unpins an item from a channel. You can unpin files, file comm
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Message ID]</td> 
-   <td> <p> Enter or map the time stamp of the message you want to unpin.</p> <p>Note: The time stamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
+   <td> <p> Enter or map the timestamp of the message you want to unpin.</p> <p>Note: The timestamp can be retrieved using another module, such as the [!UICONTROL Watch Private Channel] module.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1196,8 +1207,8 @@ This action module invites 1-30 users to a public or private channel.
    <td>Select the type of channel that you want invite users to.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private] / [!UICONTROL Multiple IM channel] / [!UICONTROL User]</td> 
-   <td>Select the channel or user that you want to invite users to.</td> 
+   <td role="rowheader">[!UICONTROL Public] / [!UICONTROL Private channel]</td> 
+   <td>Select the channel that you want to invite users to.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Users]</td> 
@@ -1293,7 +1304,7 @@ This trigger module starts the scenario when a new user is added to the [!DNL Sl
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>Set the maximum number of users [!DNL Workfront Fusion] will return during one execution cycle.</p> </td> 
+   <td> <p>Set the maximum number of users you want the module to return during each scenario execution cycle.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1302,7 +1313,7 @@ This trigger module starts the scenario when a new user is added to the [!DNL Sl
 
 ### Reminders
 
-<!-->
+<!--
 
 +++ **[!UICONTROL List Reminders]**
 
@@ -1478,12 +1489,12 @@ This action module updates a user's current status.
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Status Emoji]</td> 
+   <td role="rowheader">[!UICONTROL Status emoji]</td> 
    <td> <p>Enter or map the emoji that you want to use to represent your status. Use the format <code>:emojiname:</code>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Status expiration]</td> 
-   <td>Enter or map the date and time you want the status to expire. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercion in [!DNL Adobe Workfront Fusion]</a>.</td> 
+   <td>Enter or map the date and time you want the status to expire. For a list of supported date and time formats, see <a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">Type coercion</a>.</td> 
   </tr> 
  </tbody> 
 </table>
