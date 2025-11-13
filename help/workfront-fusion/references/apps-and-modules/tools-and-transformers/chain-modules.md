@@ -3,11 +3,13 @@ title: Chain Modules
 description: Using these modules, you can chain scenarios together, making one call another.
 author: Becky
 feature: Workfront Fusion
-hide: yes
-hidefromtoc: yes
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 ---
 # Chain modules
+
+>[!NOTE]
+>
+>This feature is currently in Beta.
 
 Using the Chain modules, you can connect one scenario to another.
 
