@@ -449,43 +449,6 @@ This trigger module starts the scenario when a new message is added to a public 
 
 ### Files 
 
-+++ **[!UICONTROL Create a Text File]**
-
-This action module creates a text file.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>For instructions about connecting your [!DNL Slack] account to [!DNL Workfront Fusion], see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Channels]</td> 
-   <td> <p>For each channel you want to upload the file to, click <b>[!UICONTROL Add item]</b>, then select the channel type and channel.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>Select a source file from a previous module, or map the source file's name and data.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Title]</td> 
-   <td>Enter a title for the file you want to upload</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Thread ID (timestamp)]</td> 
-   <td> <p>If you are uploading the file as a reply, enter or map the timestamp of the message you want to reply to.</p> <p>Note: The timestamp can be retrieved using another module, such as the[!UICONTROL  Watch Private Channel] module.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Initial comment]</td> 
-   <td> <p>Enter or map the text of the message that introduces the file.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-+++
-
 +++ **[!UICONTROL Delete a File]**
 
 This action module returns deletes the specified file.
