@@ -333,6 +333,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
             * [Adobe PDF Services modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
             * [Adobe Photoshop modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+            * [Adobe Substance modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)
             * [Adobe Storage modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
             * [Adobe Target modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
             * [Adobe User Management modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)

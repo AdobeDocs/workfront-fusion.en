@@ -7,7 +7,7 @@ exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
 ---
 # [!DNL Adobe Target] Modules
 
-In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target] modules allow you to ,reate, read, update, or delete records,list all records of a given type, search records based on criteria you specify, or perform a custom API call to the [!DNL Adobe Target] API.
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Target], as well as connect it to multiple third-party applications and services. [!DNL Adobe Target] modules allow you to create, read, update, or delete records,list all records of a given type, search records based on criteria you specify, or perform a custom API call to the [!DNL Adobe Target] API.
 
 
 If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
