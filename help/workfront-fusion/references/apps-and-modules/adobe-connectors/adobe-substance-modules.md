@@ -75,6 +75,51 @@ If you see the map button above a field or function, you can use it to set varia
 
 #### Generate 3D object composite
 
+This action module generates content for a 3D composite that includes the selected hero asset.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions on connecting your [!DNL Adobe Substance] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Camera name</td> 
+   <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project name</td> 
+   <td>Enter or map a name for the new project.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project name</td> 
+   <td>Enter or map a name for the new project.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project name</td> 
+   <td>Enter or map a name for the new project.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project name</td> 
+   <td>Enter or map a name for the new project.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project name</td> 
+   <td>Enter or map a name for the new project.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project name</td> 
+   <td>Enter or map a name for the new project.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project name</td> 
+   <td>Enter or map a name for the new project.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### Scenes
 
 * [Convert 3D files](#convert-3d-files)
