@@ -56,3 +56,45 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 Before you can use the [!DNL Adobe Substance] connector, you must ensure that the following prerequisites are met:
 
 * You must have an active [!DNL Adobe Substance] account.
+
+
+
+## [!DNL Adobe Substance] modules and their fields
+
+When you configure [!DNL Adobe Substance] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Adobe Substance] fields might display, depending on factors such as your access level in the app or service. An asterisk next to the field name in a module indicates a required field.
+
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [Composites](#composites)
+* [Scenes](#scenes)
+* [Spaces](#spaces)
+
+### Composites
+
+#### Generate 3D object composite
+
+### Scenes
+
+* [Convert 3D files](#convert-3d-files)
+* [Create 3D scene](#create-3d-scene)
+* [Describe 3D scene](#describe-3d-scene)
+* [Render 3D object](#render-3d-object)
+* [Render 3D object (basic version)](#render-3d-object-basic-version)
+
+#### Convert 3D files
+
+#### Create 3D scene
+
+#### Describe 3D scene
+
+#### Render 3D object
+
+#### Render 3D object (basic version)
+
+### Spaces
+
+#### Create space
+
+
