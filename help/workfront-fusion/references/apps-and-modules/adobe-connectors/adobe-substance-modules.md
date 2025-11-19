@@ -180,17 +180,9 @@ This action module creates a scene using assets you specify.
    <td role="rowheader">Scene file</td> 
    <td>Enter or map the path to the scene file that you want to describe.</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">File base name</td> 
-   <td>Enter or map a name for the output file.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Other fields</td> 
-   <td>Configure other fields as desired. For details of fields, see the <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/assemble">Adobe Substance API documentation</a>.</td> 
-  </tr> 
    <tr> 
    <td role="rowheader">Sources</td> 
-   <td>For each file that you want to convert, click <b> Add item</b> and enter the file information.</td> 
+   <td>For each file that you want to describe, click <b> Add item</b> and enter the file information.</td> 
   </tr> 
  </tbody> 
 </table>
