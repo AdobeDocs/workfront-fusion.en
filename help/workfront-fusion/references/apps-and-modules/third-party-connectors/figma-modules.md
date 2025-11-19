@@ -80,6 +80,11 @@ The Figma connector uses the following:
 
 ## Create a connection to Figma
 
+>[!IMPORTANT]
+>
+>* Figma changed their authentication requrements in January 2025. The `Figma` connection type meets the new requirements. The `Figma (Legacy)` connection type has been deprecated and will be removed in the near future.
+>* If you are using a redirect, URL, use `https://oauth.app.workfrontfusion.com/oauth/cb/figma3`.
+
 To create a connection for your Figma modules:
 
 1. In any Figma module, click **[!UICONTROL Add]** next to the Connection box.
@@ -95,7 +100,7 @@ To create a connection for your Figma modules:
         <tr>
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
-          <p> For new connections, select <code>Figma</code> without the Legacy tag. </p><p>Figma changed their authentication requrements in January 2025. The <code>Figma</code> connection type meets the new requirements. The <code>Figma (Legacy)</code> connection type will be removed in the future.</p>
+          <p> Select <code>Figma</code> without the Legacy tag. </p><p>Figma changed their authentication requrements in January 2025. The <code>Figma</code> connection type meets the new requirements. The <code>Figma (Legacy)</code> connection type has been deprecated and will be removed in the future.</p>
         </td>
         </tr>
         <tr>
@@ -106,7 +111,7 @@ To create a connection for your Figma modules:
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Enter your [!UICONTROL Figme] [!UICONTROL Client ID].</td>
+        <td>Enter your [!UICONTROL Figma] [!UICONTROL Client ID].</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
