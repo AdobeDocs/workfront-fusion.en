@@ -20,26 +20,17 @@ Adobe workfront Fusion offers templates that can automate common workflows betwe
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
-   <td> <p>Any</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>[!UICONTROL Standard]</p><p>[!UICONTROL Work] or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <ul><li>Workfront Fusion<ul><p></p><ul> <li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included. </ul><p>Or</p></li>
-  <li>   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p></li></ul><li>You must have a license to Jira Cloud</li></ul>
+   <p>Workfront: If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</p><p>Jira: You must have a license to Jira Cloud</p>
    </td> 
   </tr>
   <tr> 
@@ -51,11 +42,15 @@ Adobe workfront Fusion offers templates that can automate common workflows betwe
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
 
-### Assumptions
+## Prerequisites
+
+You must have a technical account on the Adobe Developer Console.
+
+For information and instructions, see [Technical account setup](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) in the Adobe documentation.
+
+## Assumptions
 
 These modules assume the following:
 
@@ -63,6 +58,7 @@ These modules assume the following:
 * Jira is being used by technical teams, fulfilling part of a project that started in Workfront.
 * Not all Jira users have access to Workfront or vice-versa. 
 * Workfront and Jira are hosted in the cloud.
+* The Workfront connection used for these module has administrator access and permissions in Workfront.
 
 ## Data Model (Field Mappings)
 
