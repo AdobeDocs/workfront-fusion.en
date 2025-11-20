@@ -57,6 +57,14 @@ For more detail about the information in this table, see [Access requirements in
 
 ### Jira 
 
+If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at the https://developer.atlassian.com/console. For information and instructions, see the Jira documentation.
+
+When configuring this application, you will need the following scopes:
+
+* `read:jira-work` 
+* `read:jira-user`
+* `write:jira-work`
+
 ## Assumptions
 
 These modules assume the following:
