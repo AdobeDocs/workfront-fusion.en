@@ -9,6 +9,8 @@ exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
 
 You can view a log of activities, such as creating a scenario or inviting a user, for your organization.
 
+Activity logs show three months of data. Data older than 3 months can be exported.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
