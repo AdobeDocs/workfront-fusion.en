@@ -46,9 +46,16 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Prerequisites
 
-You must have a technical account on the Adobe Developer Console.
+### Workfront
 
-For information and instructions, see [Technical account setup](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) in the Adobe documentation.
+* You must have a technical account on the Adobe Developer Console.
+
+   For information and instructions, see [Technical account setup](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup) in the Adobe documentation.
+* You must apply System Administrator permissions to the technical account in the Adobe Admin Console Product Profiles area.
+
+   For information and instructions, see [Create system administrators in Workfront with the Adobe Admin Console](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+
+### Jira 
 
 ## Assumptions
 
@@ -58,7 +65,6 @@ These modules assume the following:
 * Jira is being used by technical teams, fulfilling part of a project that started in Workfront.
 * Not all Jira users have access to Workfront or vice-versa. 
 * Workfront and Jira are hosted in the cloud.
-* The Workfront connection used for these module has administrator access and permissions in Workfront.
 
 ## Data Model (Field Mappings)
 
