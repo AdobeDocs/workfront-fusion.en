@@ -13,8 +13,6 @@ Adobe workfront Fusion offers templates that can automate common workflows betwe
 
 ## Access requirements
 
-## Access requirements
-
 +++ Expand to view access requirements for the functionality in this article.
 
 <table style="table-layout:auto">
@@ -27,7 +25,7 @@ Adobe workfront Fusion offers templates that can automate common workflows betwe
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
+   <td> <p>[!UICONTROL Standard]</p><p>[!UICONTROL Work] or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
@@ -40,7 +38,7 @@ Adobe workfront Fusion offers templates that can automate common workflows betwe
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <ul><li>Workfront Fusion<ul><p>New:</p><ul> <li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included. </ul><p>Or</p></li>
+   <ul><li>Workfront Fusion<ul><p></p><ul> <li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included. </ul><p>Or</p></li>
   <li>   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p></li></ul><li>You must have a license to Jira Cloud</li></ul>
    </td> 
   </tr>
