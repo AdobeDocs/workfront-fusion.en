@@ -169,6 +169,8 @@ This action module creates a scene using assets you specify.
 
 #### Describe 3D scene
 
+This action module retrieves information about 3D scene content.
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -189,10 +191,70 @@ This action module creates a scene using assets you specify.
 
 #### Render 3D object
 
+This action module renders an image of a scene.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions on connecting your [!DNL Adobe Substance] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">Other fields</td> 
+   <td>Configure other fields as desired. For details of fields, see the <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render">Adobe Substance API documentation</a>.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Sources</td> 
+   <td>For each file that you want to use, click <b> Add item</b> and enter the file information.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Render 3D object (basic version)
+
+This action module renders an image of a scene, but has fewer options that the Render 3D object module.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions on connecting your [!DNL Adobe Substance] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">Other fields</td> 
+   <td>Configure other fields as desired. For details of fields, see the <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render">Adobe Substance API documentation</a>.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Sources</td> 
+   <td>For each file that you want to use, click <b> Add item</b> and enter the file information.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Spaces
 
 #### Create space
 
+This action module allows you to upload and temporarily store files.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions on connecting your [!DNL Adobe Substance] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+   <td role="rowheader">File name</td> 
+   <td>Enter or map the name of the file that is being uploaded.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">File data</td> 
+   <td>Enter or map the binary data of the file.</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">Name</td> 
+   <td>Enter or map a name for the multipart form value.</td> 
+  </tr> 
+ </tbody> 
+</table>
