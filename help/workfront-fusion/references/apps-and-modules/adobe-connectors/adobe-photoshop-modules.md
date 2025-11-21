@@ -181,6 +181,8 @@ If you see the map button above a field or function, you can use it to set varia
 
 This action module applies a variety of document and layer level edits. 
 
+This module supports large files. For more information on large files, see [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>

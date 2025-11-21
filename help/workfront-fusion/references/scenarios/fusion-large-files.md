@@ -34,6 +34,8 @@ Currently, the following connectors support large files.
    * Download Proof
 * Adobe Authenticator
    * Make a Custom API Call
+* Adobe Photoshop
+   * Apply PSD Edits
 * SharePoint
    * Create a file
    * Get a file
