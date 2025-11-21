@@ -58,7 +58,10 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 ## Prerequisites
 
-To use [!DNL Slack] modules, you must have a [!DNL Slack] account.
+* To use [!DNL Slack] modules, you must have a [!DNL Slack] account.
+* If you are creating OAuth@ connections, you must add the following URLs to your organization's allowlist:
+   * bot token: `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
+   * user token:` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
 ## Slack API information
 
