@@ -41,6 +41,10 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Performance dashboard components
 
+>[!NOTE]
+>
+>Metrics are shown by worker pool. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view metrics for.
+
 In the Fusion performance dashboard, you can see the following metrics.
 
 * Executions waiting to be processed
