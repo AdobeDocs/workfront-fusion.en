@@ -1,9 +1,8 @@
 ---
 title: Adobe Substance modules
-description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Substance], as well as connect it to multiple third-party applications and services. [!DNL Adobe Substance] modules allow you to create, read, update, or delete records, list all records of a given type, search records based on criteria you specify, or perform a custom API call to the [!DNL Adobe Substance] API.
+description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Substance], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
-exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
 ---
 # [!DNL Adobe Substance] Modules
 
