@@ -222,7 +222,7 @@ This action module renders an image of a scene, but has fewer options that the R
    <td role="rowheader">Connection</td> 
    <td> <p>For instructions on connecting your [!DNL Adobe Substance] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
    <td role="rowheader">Other fields</td> 
-   <td>Configure other fields as desired. For details of fields, see the <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render">Adobe Substance API documentation</a>.</td> 
+   <td>Configure other fields as desired. For details of fields, see the <a href="https://s3d.adobe.io/docs#/operations/v1/scenes/render-basic">Adobe Substance API documentation</a>.</td> 
   </tr> 
    <tr> 
    <td role="rowheader">Sources</td> 
