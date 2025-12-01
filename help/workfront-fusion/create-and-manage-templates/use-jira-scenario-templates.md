@@ -57,7 +57,7 @@ For more detail about the information in this table, see [Access requirements in
 
 ### Jira 
 
-If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at the https://developer.atlassian.com/console. For information and instructions, see the Jira documentation.
+If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at https://developer.atlassian.com/console. For information and instructions, see the Jira documentation.
 
 When configuring this application, you will need the following scopes:
 
@@ -79,17 +79,19 @@ These modules assume the following:
 
 |Workfront  |  Jira  |  Direction  |  Notes|
 |---|---|---|---|
-|ObjId  | WF ID   | WF &rarr; Jira  |  Upon Jira Issue Creation|
-|Jira Key |   Issue Key  |  Jira &rarr; WF |   Upon Jira Issue Creation|
-|Jira Link  |  -  |  Jira &rarr; WF  |  User Clickable link in WF to Jira|
-|-  |  WF Link  |  WF &rarr; Jira  |  User Clickable link in Jira to WF|
+|ObjId  | WF ID *  | WF &rarr; Jira  |  Upon Jira Issue Creation|
+|Jira Key * |   Issue Key  |  Jira &rarr; WF |   Upon Jira Issue Creation|
+|Jira URL *  |  -  |  Jira &rarr; WF  |  User Clickable link in WF to Jira|
+|-  |  WF Link *  |  WF &rarr; Jira  |  User Clickable link in Jira to WF|
 |Name |   Summary   | WF &rarr; Jira  |  |
 |Description  |  Description |   WF &rarr; Jira |   |
 |Status  |  WF Status |   WF &rarr; Jira  |  WF Status|
-|Jira Status |   Status  |  Jira &rarr; WF  |  Jira Status|
+|Jira Status * |   Status  |  Jira &rarr; WF  |  Jira Status|
 |Planned Completion Date   | Due Date |   WF &rarr; Jira  |  Planned Completion Date|
 |Notes  |  Comments   | WF &harr; Jira |   Bidirectional copy|
 |Document  |  Attachment |   WF &rarr; Jira  |  As attachments on issue creation and comments on new documents after creation.|
+
+\* These fields are configured as part of this integration setup. For instructions, see [Configure prerequisites in Workfront, Jira, and Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#configure-prerequisites-in-workfront-jira-and-workfront-fusion).
 
 ## Configure prerequisites in Workfront, Jira, and Workfront Fusion
 
@@ -133,7 +135,7 @@ This integration expects three specific fields in the Jira account it connects t
 
 ### Configure Workfront
 
-To use these modules, the following must be created in Jira:
+To use these modules, the following must be created in Workfront:
 
 * A System Integration User
 * A specific custom form
@@ -142,13 +144,13 @@ To use these modules, the following must be created in Jira:
 
 1. In Workfront, create a System Integration user. This user is only used by Workfront Fusion, and does not represent a human user. Tasks assigned to this user will trigger the scenario that syncs Workfront with Jira.
 
-   For instructions, see [Create a user]().
+   For instructions, see [Add users](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users) in the Workfront documentation.
 
 #### Create a custom form in Workfront
 
 1. In Workfront, begin creating a custom form. 
 
-   For instructions, see []().
+   For instructions, see [reate a custom form](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) in the Workfront documentation.
 1. Name the form "**JIRA Fields**".
 1. Include the following fields on the custom form:
 
@@ -156,22 +158,22 @@ To use these modules, the following must be created in Jira:
    |---|---|
    |Jira Key|Single line text field|
    |Jira URL|Single line text field|
-   |JIRA status|Single line text field|
+   |Jira status|Single line text field|
 
 1. Add any additional fields that you will want to map between Jira and Workfront.
 1. Save the custom form.
 
 >[!NOTE]
 >
->We recommend restricting this form from edits by other users. 
+>We recommend restricting this form from edits by other users. You can accomplish this by ensuring that any users added to the custom form have View access only. 
 >
->For instructions, see []().
+>For instructions, see [Share a custom form](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form) in the Workfront documentation.
 
 ### Configure connections in Workfront Fusion
 
 You must have created the System Integration users in Jira and Workfront before you can create connections.
 
-When creating these connections, be sure to use the credentials of the created system Integration users.
+When creating these connections, be sure to use the credentials of the created System Integration users.
 
 If desired, you can create these connections as part of configuring the templates.
 
@@ -181,38 +183,49 @@ If desired, you can create these connections as part of configuring the template
 
 ## Scenarios
 
-Eight ready-to-use templates for Jira will be available by August to help replicate common workflows and accelerate implementation. Templates are fully customizable to meet specific business needs and can be extended as requirements evolve. 
+Eight ready-to-use templates for Jira are to help replicate common workflows and accelerate implementation. Templates are fully customizable to meet specific business needs and can be extended as requirements evolve. 
 
-* **WF-to-Jira Initial Assignment (Tasks and Issues)** (Required)
-* **Jira-to-WF Integration (Tasks and Issues)** (Required)
-* WF-to-Jira Changes (Issues)
-* WF-to-Jira Changes (Tasks)
-* WF-to-Jira New Attachments (Tasks and Issues)
-* WF-to-Jira Remove Attachments (Tasks and Issues)
-* WF-to-Jira New Notes (Tasks and Issues)
-* WF-to-Jira Remove Notes (Tasks and Issues)
+You do not need to implement all scenarios. The minimal implementation would require Scenario 1, which would create a single-direction integration to a JIRA issue from an assignment in Workfront.  You can add the additional scenarios to add robustness and more bidirectional interconnectivity between Workfront and JIRA.  You can also create additional scenarios to handle cases such as project to epic integration or JIRA issue to Workfront issue or tasks.  
 
->[!NOTE]
->
->When configuring these templates, use the following values:
->
->* **JiraBaseURL**: The base url for the Jira instance. Example: `https://myjira.atlassian.net/`
->* **wfBaseURL**: The base url for the Workfront instance.  Usually: `https://<domain>.my.workfront.com` where `<domain>` is your particular Workfront domain name.
+Any use of these templates or extensions of these templates is considered custom configuration, and we recommend utilizing Adobe Professional Services or an Adobe partner for support and implementation. 
+
+* **Workfront to Jira: Create JIRA issue from Workfront task or issue assignment** 
+* JIRA to Workfront: issue and comment updates to Workfront task or issue 
+* Workfront to Jira: Changes to Workfront task to JIRA issue
+* Workfront to Jira: Changes to Workfront issue to JIRA issue
+* Workfront to Jira: Create comment in JIRA when new note on Workfront task or issue
+* Workfront to Jira: Create comment in JIRA on deleted note on Workfront task or issue
+* Workfront to Jira: Create comment in JIRA when new document on Workfront task or issue
+* Workfront to Jira: Create comment in JIRA on deleted document on Workfront task or issue
+
+### General parameters
+
+When configuring these templates, use the following general parameters:
+
+* **JiraBaseURL**: The base url for the Jira instance. Example: `https://myjira.atlassian.net/`
+* **wfBaseURL**: The base url for the Workfront instance.  Usually: `https://<domain>.my.workfront.com` where `<domain>` is your particular Workfront domain name.
+* **defaultJIRAReporterID**: The ID for the user in JIRA that creates issues. (Example: `557058:5aedf933-2312-40bc-b328-0c21314167f0`)
+   You can get this ID by doing one of the following:
+   * Click on the profile of the user in JIRA and check the URL in your browser. 
+(Example`https://myjira.atlassian.net/jira/people/<JiraUserID>`)
+   * Run the following API call on your JIRA instance to get the ID for the specific Account in JIRA: 
+`GET /rest/api/3/user/search?query=email@example.com`
+
 
  
-### Scenario 1: WF-Jira Initial Assignment (Tasks and Issues)
+### Scenario 1: Workfront to Jira: Create JIRA issue from Workfront task or issue assignment
 
 This scenario creates a Jira issue when a Workfront Task or Issue is assigned to the System Integration User. The scenario fill in the Summary, Description, Due Date, WF Status and WF ID fields. After the  issue is created, this scenario also uploads the list of attachments and the history of notes related to the original task or issue in Workfront.
 
 If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Issue is assigned, the Jira issue is a Bug.
 
-+++**Expand to view instructions for configuring Scenario 1: WF-Jira Initial Assignment (Tasks and Issues)**
++++**Expand to view instructions for configuring Scenario 1:Workfront to Jira: Create JIRA issue from Workfront task or issue assignment**
 
 #### Configure the trigger module
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **WF-Jira Initial Assignment (Tasks and Issues)** template.
+1. Click the **Workfront to Jira: Create JIRA issue from Workfront task or issue assignment** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
@@ -224,6 +237,7 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
    |Field|Operator|Value|
    |---|---|---|
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   |TaskID |Exists||
    | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. Enable the **Exclude updates made by this connection** option.
@@ -234,9 +248,9 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that you created in [Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion), then click **OK** to save the connection to that module.
 1. In **each** Jira module, in the Connection field, select the Workfront connection that you created in [Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion), then click **OK** to save the connection to that module. 
-1. Continue to [Update the General Parameters module]().
+1. Continue to [Update the General Parameters module](#update-the-general-parameters-module).
 
-#### Update the Set Environment Details module
+#### Update the General Parameters module
 
 1. In the second module of the template (Set Environment Details), for each of the following variables, click **Add item** and enter the variable's name and value
 
@@ -254,17 +268,22 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 +++
 
-### Scenario 2: Jira to Workfront integration (tasks and issues)
+### Scenario 2: JIRA to Workfront: issue and comment updates to Workfront task or issue
 
 This scenario creates a Workfront task or issue when an issue is created in Jira.
 
-+++**Expand to view instructions for configuring Scenario 2:Jira to Workfront integration (tasks and issues)**
+>[!NOTE]
+>
+>This scenario requires an OAuth2 connection for Jira. 
+>If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at https://developer.atlassian.com/console. For information and instructions, see the Jira documentation.
+
++++**Expand to view instructions for configuring Scenario 2: JIRA to Workfront: issue and comment updates to Workfront task or issue**
 
 
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **WF-Jira Initial Assignment (Tasks and Issues)** template.
+1. Click the **JIRA to Workfront: issue and comment updates to Workfront task or issue** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
