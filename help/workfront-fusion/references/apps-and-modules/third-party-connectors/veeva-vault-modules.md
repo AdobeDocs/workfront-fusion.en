@@ -58,7 +58,12 @@ To use Veeva Vault modules, you must have a Veeva Vault account.
 
 You can create a connection to your Veeva Vault account directly from inside a Veeva Vault module.
 
+When creating a connection, you can select whether to use a password, or whether to use OAuth2 authentication.
+
+### Connect to Veeva Vault using a username and password
+
 1. In any Veeva Vault module, click **Add** next to the Connection field.
+1. In the **Connection type** field, select `Veeva Username Password`.
 1. Fill in the following fields.
 
     <table style="table-layout:auto"> 
@@ -69,18 +74,6 @@ You can create a connection to your Veeva Vault account directly from inside a V
        <td role="rowheader">Connection name</td> 
        <td> <p>Enter a name for the connection.</p> </td> 
       </tr> 
-      <tr>
-        <td role="rowheader">Environment</td>
-        <td>
-          <p>Select whether are connecting to a production or non-production environment.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Type</td>
-        <td>
-          <p>Select whether you are connecting to a service account or a personal account.</p>
-        </td>
-      </tr>
       <tr>
         <td role="rowheader">Username</td>
         <td>
@@ -102,6 +95,58 @@ You can create a connection to your Veeva Vault account directly from inside a V
 
 1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
 
+### Connect to Veeva Vault using OAuth2 authentication
+
+1. In any Veeva Vault module, click **Add** next to the Connection field.
+1. In the **Connection type** field, select `Veeva Oauth 2`.
+1. Fill in the following fields.
+
+    <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">Connection name</td> 
+       <td> <p>Enter a name for the connection.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Client ID</td>
+        <td>
+          <p>Enter the Client ID for the Veeva Vault application that this connection will use.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Client Secret</td>
+        <td>
+          <p>Enter the Client Secret for the Veeva Vault application that this connection will use.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Scope</td>
+        <td>
+          <p>Enter the scope for this connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Tenant ID</td>
+        <td>
+          <p>Enter the tenant ID for this connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Profile ID</td>
+        <td>
+          <p>Enter the ID of you OAuth2 / Copen ID Connect profile.</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">Vault DNS</td> 
+       <td>Enter your Veeva Vault DNS (domain name).</p><p>To locate your Veeva Vault DNS, examine the URL that you use to access Veeva Vault.</p>For example, in the URL <code>https://my-dns.veevavault.com</code>, the DNS is <code>my-dns</code>. You do not need to enter the entire URL.</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
 
 
 ## Veeva Vault modules and their fields
