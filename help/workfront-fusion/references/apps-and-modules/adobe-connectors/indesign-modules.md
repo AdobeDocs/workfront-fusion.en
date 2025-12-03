@@ -325,6 +325,7 @@ This module retrieves the data merge tags from a document.
     <tr>
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
     <tr>
       <td role="rowheader">
         <p>Assets</p>
@@ -349,15 +350,88 @@ This module retrieves the data merge tags from a document.
 
 This module retrieves comprehensive information about INDD/IDML documents and returns data based on the enabled information types specified in the request.
 
-
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Assets</p>
+      </td>
+      <td>For each asset that you want to add to the module:<ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Target document</td>
+      <td>Enter or map the document that you want to retrieve information from.</td>
+    </tr>
+     <tr>
+      <td role="rowheader">Other fields</td>
+   <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
 
 #### Remap links
 
+This module replaces file-based links in InDesign documents with Adobe Experience Manager (AEM) URLs. This can be useful for working with Adobe Experience Manager using Adobe Asset Link.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">AEM Token</td>
+      <td>Enter or map the bearer token generated for the AEM technical account, without the bearer keyword.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Assets</p>
+      </td>
+      <td>For each asset that you want to add to the module:<ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Target document</td>
+      <td>Enter or map the document in which you want to remap links.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Data source</td>
+      <td>Enter or map the source files to be used for extracting and matching tags.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Other fields</td>
+   <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
+
 #### List custom scripts
 
+This module retrieves details of the latest version of all registered custom scripts, including version, download link, registration date, and script name. Results are paginated based on list length.
 
-
-
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Page number</td>
+      <td>Enter or map the page number that you want to start from.</td>
+    </tr>
+  <tr> 
+   <td>Maximum number of returned results</td> 
+   <td>Set the maximum number of teams or groups Workfront Fusion will return during one execution cycle.</td> 
+  </tr> 
+  </tbody>
+</table>
 
 
 
