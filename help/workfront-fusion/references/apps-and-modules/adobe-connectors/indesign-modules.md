@@ -110,10 +110,6 @@ To create a connection for your Adobe InDesign modules:
 
 ## InDesign modules and their fields
 
->[!NOTE]
->
->The Adobe InDesign API is continuing to evolve. As updates are released to the API, the Workfront Fusion Adobe InDesign connector will also be updated.
-
 When you configure Adobe InDesign modules, Workfront Fusion displays the fields listed below. Along with these, additional Adobe InDesign fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in Adobe Workfront Fusion](../../workfront-fusion/mapping/map-information-between-modules.md).
@@ -122,9 +118,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
-#### Create Rendition
+#### Create rendition
 
-This action module creates and returns a JPEG, PNG, or PDF rendition of a specific InDesign document. For the structure of StatusCompletedRespons/output/data refer to RenditionOutputData. Also for the list of possible error codes in FailedEvent refer to RenditionFailedData.
+This action module creates and returns a JPEG, PNG, or PDF rendition of a specific InDesign document. For the structure of `StatusCompletedRespons/output/data` refer to `RenditionOutputData`. Also for the list of possible error codes in FailedEvent refer to `RenditionFailedData`.
 
 <table>
   <col/>
@@ -150,7 +146,7 @@ This action module creates and returns a JPEG, PNG, or PDF rendition of a specif
     </tr>
     <tr>
       <td role="rowheader">Target document</td>
-      <td>The target document is an InDesign document that contains placeholders for data, as well as any other material or text that remain the same in every rendition of the document.</td>
+      <td>Enter or map the document that will be processed and rendered. Currently, only one document at a time is supported.</td>
     </tr>
     <tr>
       <td role="rowheader">Other fields</td>
@@ -175,7 +171,7 @@ This module makes a custom API call to the Adobe InDesign API
         <p>Path</p>
       </td>
       <td>
-        <p>Enter a path relative to <code>https://indesign.adobe.io/api</code>.</p><p> Example: <code>/v1/capability/</code></p>
+        <p>Enter a path relative to <code>https://indesign.adobe.io/v3</code>.</p><p> Example: <code>/create-rendition</code></p>
       </td>
     </tr>
     <tr>
@@ -183,7 +179,7 @@ This module makes a custom API call to the Adobe InDesign API
         <p>Method</p>
       </td>
       <td>
-        <p>Select the HTTP request method you need to configure the API call. For more information, see HTTP request methods.</p>
+        <p>Select the HTTP request method you need to configure the API call. For more information, see [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md).</p>
       </td>
     </tr>
     <tr>
@@ -191,7 +187,7 @@ This module makes a custom API call to the Adobe InDesign API
       <td>
         <p>Add the headers of the request in the form of a standard JSON object.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion adds authorization headers and x-api-key headers automatically.</p>
+        <p>Workfront Fusion adds authorization headers automatically.</p>
       </td>
     </tr>
     <tr>
@@ -210,6 +206,32 @@ This module makes a custom API call to the Adobe InDesign API
 </table>
 
 #### Custom Script Execution Request
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    </tr>
+       <tr>
+      <td role="rowheader">
+        <p>Script ID</p>
+      </td>
+      <td>Enter or map the ID of the custom script.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Assets</p>
+      </td>
+      <td>For each asset that you want submit an executionr request for, <ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Other fields</td>
+   <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
 
 #### Delete a Custom Script
 
