@@ -120,7 +120,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 #### Create rendition
 
-This action module creates and returns a JPEG, PNG, or PDF rendition of a specific InDesign document. For the structure of `StatusCompletedRespons/output/data` refer to `RenditionOutputData`. Also for the list of possible error codes in FailedEvent refer to `RenditionFailedData`.
+This action module creates and returns a JPEG, PNG, or PDF rendition of a specific InDesign document. For the structure of `StatusCompletedRespons/output/data` refer to `RenditionOutputData`. Also for the list of possible error codes in `FailedEvent` refer to `RenditionFailedData`.
 
 <table>
   <col/>
@@ -207,6 +207,8 @@ This module makes a custom API call to the Adobe InDesign API
 
 #### Custom Script Execution Request
 
+This action module submits an execution request for a custom script. You define the input assets and parameters that the custom script will use during the execution.
+
 <table>
   <col/>
   <col/>
@@ -235,17 +237,119 @@ This module makes a custom API call to the Adobe InDesign API
 
 #### Delete a Custom Script
 
+This action module deletes a single registered custom script. All versions of the script will be permanently removed.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    </tr>
+       <tr>
+      <td role="rowheader">
+        <p>Script name</p>
+      </td>
+      <td>Enter or map the name of the script you want to delete.</td>
+    </tr>
+  </tbody>
+</table>
+
 ### Searches
 
 #### Get Custom Script Details
 
+This search module retrieves details of a single registered custom script, including version, download link, registration date, and script name.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    </tr>
+       <tr>
+      <td role="rowheader">
+        <p>Script name</p>
+      </td>
+      <td>Enter or map the name of the script you want to retrieve details for.</td>
+    </tr>
+  </tbody>
+</table>
+
+
 ### Uncategorized
 
-#### Data merge
+#### Merge data
+
+This module creates InDesign documents or PDFs by merging CSV data with InDesign templates. Output formats include JPEG, PNG, PDF, and InDesign documents.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Assets</p>
+      </td>
+      <td>For each asset that you want to add to the data merge:<ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Target document</td>
+      <td>Enter or map the document that will be used as a template for merging.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Data source</td>
+      <td>Enter or map the source files to be used.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Other fields</td>
+   <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
 
 #### Get data merge tags
 
+This module retrieves the data merge tags from a document.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    <tr>
+      <td role="rowheader">
+        <p>Assets</p>
+      </td>
+      <td>For each asset that you want to add to the module:<ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Target document</td>
+      <td>Enter or map the document that you want to retrieve tags from.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Data source</td>
+      <td>Enter or map the source files to be used for extracting and matching tags.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Other fields</td>
+   <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
+
 #### Get document information
+
+This module retrieves comprehensive information about INDD/IDML documents and returns data based on the enabled information types specified in the request.
+
+
 
 #### Remap links
 
