@@ -206,7 +206,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 +++ **[!UICONTROL Watch Events]**
 
-This trigger module executes a scenario in real time when objects of a specific type are added, updated, or deleted in Workfront
+This trigger module executes a scenario in real time when objects of a specific type are added, updated, or deleted in Workfront.
+
+The module displays all event subscriptions related to the webhook. This includes event subscriptions created through Fusion as well as event subscriptions created directly through the API. This event subscription view is not available in the legacy version of the Watch Events module.
 
 The module returns any standard fields associated with the record, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
