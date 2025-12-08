@@ -114,9 +114,15 @@ When you configure Adobe InDesign modules, Workfront Fusion displays the fields 
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in Adobe Workfront Fusion](../../workfront-fusion/mapping/map-information-between-modules.md).
 
-![](assets/map-toggle-350x74.png)
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 ### Actions
+
+* [Create rendition](#create-rendition)
+* [Delete a custom script](#delete-a-custom-script)
+* [Merge data](#merge-data)
+* [Remap links](#remap-links)
+* [Submit a custom script execution request](#submit-a-custom-script-execution-request)
 
 #### Create rendition
 
@@ -154,87 +160,6 @@ This action module creates and returns a JPEG, PNG, or PDF rendition of a specif
   </tbody>
 </table>
 
-#### Make a custom API call
-
-This module makes a custom API call to the Adobe InDesign API
-
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
-    </tr>
-       <tr>
-      <td role="rowheader">
-        <p>Path</p>
-      </td>
-      <td>
-        <p>Enter a path relative to <code>https://indesign.adobe.io/v3</code>.</p><p> Example: <code>/create-rendition</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Method</p>
-      </td>
-      <td>
-        <p>Select the HTTP request method you need to configure the API call. For more information, see [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md).</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Headers</td>
-      <td>
-        <p>Add the headers of the request in the form of a standard JSON object.</p>
-        <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion adds authorization headers automatically.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Query String  </td>
-      <td>
-        <p>Enter the request query string.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">Body</td>
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td>     </tr>
-  </tbody>
-</table>
-
-#### Custom Script Execution Request
-
-This action module submits an execution request for a custom script. You define the input assets and parameters that the custom script will use during the execution.
-
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
-    </tr>
-       <tr>
-      <td role="rowheader">
-        <p>Script ID</p>
-      </td>
-      <td>Enter or map the ID of the custom script.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Assets</p>
-      </td>
-      <td>For each asset that you want submit an executionr request for, <ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">Other fields</td>
-   <td>For other fields, see information included in the module.</td>     </tr>
-  </tbody>
-</table>
-
 #### Delete a Custom Script
 
 This action module deletes a single registered custom script. All versions of the script will be permanently removed.
@@ -255,32 +180,6 @@ This action module deletes a single registered custom script. All versions of th
     </tr>
   </tbody>
 </table>
-
-### Searches
-
-#### Get Custom Script Details
-
-This search module retrieves details of a single registered custom script, including version, download link, registration date, and script name.
-
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
-    </tr>
-       <tr>
-      <td role="rowheader">
-        <p>Script name</p>
-      </td>
-      <td>Enter or map the name of the script you want to retrieve details for.</td>
-    </tr>
-  </tbody>
-</table>
-
-
-### Uncategorized
 
 #### Merge data
 
@@ -311,6 +210,100 @@ This module creates InDesign documents or PDFs by merging CSV data with InDesign
     <tr>
       <td role="rowheader">Other fields</td>
    <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
+
+#### Remap links
+
+This module replaces file-based links in InDesign documents with Adobe Experience Manager (AEM) URLs. This can be useful for working with Adobe Experience Manager using Adobe Asset Link.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">AEM Token</td>
+      <td>Enter or map the bearer token generated for the AEM technical account, without the bearer keyword.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Assets</p>
+      </td>
+      <td>For each asset that you want to add to the module:<ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Target document</td>
+      <td>Enter or map the document in which you want to remap links.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Data source</td>
+      <td>Enter or map the source files to be used for extracting and matching tags.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Other fields</td>
+   <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
+
+#### Submit a custom script execution request
+
+This action module submits an execution request for a custom script. You define the input assets and parameters that the custom script will use during the execution.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    </tr>
+       <tr>
+      <td role="rowheader">
+        <p>Script ID</p>
+      </td>
+      <td>Enter or map the ID of the custom script.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Assets</p>
+      </td>
+      <td>For each asset that you want submit an executionr request for, <ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">Other fields</td>
+   <td>For other fields, see information included in the module.</td>     </tr>
+  </tbody>
+</table>
+
+### Searches
+
+* [Get custom script details](#get-custom-script-details)
+* [Get data merge tags](#get-data-merge-tags)
+* [Get document information](#get-document-information)
+* [List custom scripts](#list-custom-scripts)
+
+#### Get custom script details
+
+This search module retrieves details of a single registered custom script, including version, download link, registration date, and script name.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    </tr>
+       <tr>
+      <td role="rowheader">
+        <p>Script name</p>
+      </td>
+      <td>Enter or map the name of the script you want to retrieve details for.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -374,42 +367,6 @@ This module retrieves comprehensive information about INDD/IDML documents and re
   </tbody>
 </table>
 
-#### Remap links
-
-This module replaces file-based links in InDesign documents with Adobe Experience Manager (AEM) URLs. This can be useful for working with Adobe Experience Manager using Adobe Asset Link.
-
-<table>
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
-      </tr>
-    <tr>
-      <td role="rowheader">AEM Token</td>
-      <td>Enter or map the bearer token generated for the AEM technical account, without the bearer keyword.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Assets</p>
-      </td>
-      <td>For each asset that you want to add to the module:<ol><li>Click <b>Add item</b>.</li><li>Select or map the source of the asset.</li><li>Enter a destination. The destination is  a path relative to a temporary base directory (working directory) where the resource is downloaded. This identifies the assets within the parameters. It cannot go up using '..' or '/'. There should be a valid file name.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">Target document</td>
-      <td>Enter or map the document in which you want to remap links.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">Data source</td>
-      <td>Enter or map the source files to be used for extracting and matching tags.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">Other fields</td>
-   <td>For other fields, see information included in the module.</td>     </tr>
-  </tbody>
-</table>
-
 #### List custom scripts
 
 This module retrieves details of the latest version of all registered custom scripts, including version, download link, registration date, and script name. Results are paginated based on list length.
@@ -434,6 +391,55 @@ This module retrieves details of the latest version of all registered custom scr
 </table>
 
 
+### Others
 
+#### Make a custom API call
 
+This module makes a custom API call to the Adobe InDesign API
 
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+    </tr>
+       <tr>
+      <td role="rowheader">
+        <p>Path</p>
+      </td>
+      <td>
+        <p>Enter a path relative to <code>https://indesign.adobe.io/v3</code>.</p><p> Example: <code>/create-rendition</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Method</p>
+      </td>
+      <td>
+        <p>Select the HTTP request method you need to configure the API call. For more information, see [HTTP request methods](/help/workfront-fusion/references/modules/http-request-methods.md).</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">Headers</td>
+      <td>
+        <p>Add the headers of the request in the form of a standard JSON object.</p>
+        <p>For example, <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion adds authorization headers automatically.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">Query String  </td>
+      <td>
+        <p>Enter the request query string.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">Body</td>
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>

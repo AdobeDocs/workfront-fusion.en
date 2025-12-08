@@ -11,6 +11,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2025 {#fusion-releases-2025}
         * [Workfront Fusion release activity: Week of November 17, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+        * [Workfront Fusion release activity: Week of December 8, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
         * [Workfront Fusion release activity: Week of December 1, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
         * [Workfront Fusion release activity: Week of November 10, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
         * [Workfront Fusion release activity: Week of November 3, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
