@@ -189,9 +189,9 @@ You do not need to implement all scenarios. The minimal implementation would req
 
 Any use of these templates or extensions of these templates is considered custom configuration, and we recommend utilizing Adobe Professional Services or an Adobe partner for support and implementation. 
 
-* **Workfront to Jira: Create JIRA issue from Workfront task or issue assignment** 
-* JIRA to Workfront: issue and comment updates to Workfront task or issue 
-* Workfront to Jira: Changes to Workfront task to JIRA issue
+* **[Workfront to Jira: Create JIRA issue from Workfront task or issue assignment](#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)** 
+* [JIRA to Workfront: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira](#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfront to Jira: Changes to Workfront task to JIRA issue](#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
 * Workfront to Jira: Changes to Workfront issue to JIRA issue
 * Workfront to Jira: Create comment in JIRA when new note on Workfront task or issue
 * Workfront to Jira: Create comment in JIRA on deleted note on Workfront task or issue
@@ -211,7 +211,7 @@ When configuring these templates, use the following general parameters:
    * Run the following API call on your JIRA instance to get the ID for the specific Account in JIRA: 
 `GET /rest/api/3/user/search?query=email@example.com`
 
-
+<!--
  
 ### Scenario 1: Workfront to Jira: Create JIRA issue from Workfront task or issue assignment
 
@@ -264,11 +264,11 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 #### Map custom fields in Jira. 
 
-<!--Awaiting feedback-->
+Awaiting feedback-->
 
 +++
 
-### Scenario 2: JIRA to Workfront: issue and comment updates to Workfront task or issue
+### Scenario 2: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira
 
 This scenario creates a Workfront task or issue when an issue is created in Jira.
 
@@ -277,19 +277,21 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 >This scenario requires an OAuth2 connection for Jira. 
 >If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at https://developer.atlassian.com/console. For information and instructions, see the Jira documentation.
 
-+++**Expand to view instructions for configuring Scenario 2: JIRA to Workfront: issue and comment updates to Workfront task or issue**
++++**Expand to view instructions for configuring Scenario 2: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira**
 
 
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **JIRA to Workfront: issue and comment updates to Workfront task or issue** template.
+1. Click the **Part 2: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira** template.
  
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
 1. Select a connection that uses the credentials for the System Integration user, or create a connection to Jira with the System Integration credentials.
 
-   For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.
+   For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.'
+
+1. Configure the webhook filter 
 
 1. Continue to [Configure a webhook in Jira]()
 
@@ -302,7 +304,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. When configuring the webhook, use the following values:
  
    * **JQL**: project = "yourProjectName" (where yourProjectName = your JIRA project's name)
-   * **Issue**: created,updated
+   * **Issue**: created, updated
    * **Comment**: created, deleted
 
 
@@ -316,29 +318,32 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 
 +++
 
-### Scenario 3: WF-to-Jira Changes (Tasks)
+### Scenario 3: Workfront to Jira: Changes to Workfront task to JIRA issue
 
 +++**Expand to view instructions for configuring Scenario 3: WF-to-Jira Changes (Tasks)**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
-1. Click the **Scenario 3: WF-to-Jira Changes (Tasks)** template.
+1. Click the **Part 3: Workfront to Jira: Changes to Workfront task to JIRA issue** template.
  
    A view of the template opens, showing information and an animation of data flow.
+
+1. Click the template to enter the editor.
+1. Select the organization and team that will own this scenario.
 1. In the first module, begin adding a webhook.
 1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
-1. In the **Record Type** field, select `??`.
+1. In the **Record Type** field, select `Task`.
 1. In the **State** field, select `New state`.
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Updates on tasks)| | | 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
-   |WF ID|Exists| |
+   |DE: Jira Key|Exists| |
 
 1. Enable the **Exclude updates made by this connection** option.
+1. In the **Record Origin** field, select `Updated record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In the second module, set the following variables, then click **OK** to save the module.
 
@@ -356,7 +361,9 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 
 
 
-### Scenario 4: WF-to-Jira Changes (Issues)
+### Scenario 4: Workfront to Jira: Changes to Workfront issue to JIRA issue
+
+This scenario sends updates from Workfront issues to previously connected JIRA issues.
 
 +++**Expand to view instructions for configuring Scenario 4: WF-to-Jira Changes (Issues)**
 
@@ -365,6 +372,9 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Click the **Scenario 4: WF-to-Jira Changes (Issues)** template.
  
    A view of the template opens, showing information and an animation of data flow.
+
+1. Click the template to enter the editor.
+1. Select the organization and team that will own this scenario.
 1. In the first module, begin adding a webhook.
 1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
 1. In the **Record Type** field, select `??`.
