@@ -77,6 +77,11 @@ You can view a list of webhooks in the Webhooks area.
 1. To view the scenario where a webhook is used, click the **Scenario** button in the Scenario column for that webhook. 
 1. To view the connection used for this webhook, click the **Connection** button in the Connection column for that webhook.
 1. To hide columns or show previously hidden columns, click the **Columns** icon ![Columns icon](assets/glist-column.png) and check or uncheck column names.
+1. To view event subscriptions associated with a Workfront webhook, check the box next to the webhook and select **Show Details** at the bottom of the page. 
+
+   >[!NOTE]
+   >
+   > Event subscription details are available only for Workfront webhooks created in the new Workfront connector. Webhook details are not currently available for other connectors.
 
 
 ## Schedule instant triggers

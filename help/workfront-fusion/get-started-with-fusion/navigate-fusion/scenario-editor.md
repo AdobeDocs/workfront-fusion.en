@@ -65,15 +65,20 @@ For more detail about the information in this table, see [Access requirements in
 
 ### Controls
 
+You may need to click on the three-dot icon in the Controls area to view some of these controls.
+
 | Action | Details |
 |----------|----------|
-| Save    | After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are only available for 60 days.   |
-| Scenario settings    | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).    |
-| Notes    | Make notes about the scenario. Other users can view these notes when they are in the scenario.   |
-| Auto-align    | Auto-align the modules in your scenario.  |
-| Explain flow    | View an animation where moving dots show how data flows through the scenario.   |
-| Dev tools   | Using the Devtool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md).   |
-| More    | In the More menu, you can import or export blueprints and restore the scenario back to previous versions.  |
+| Save <p>![Save icon](assets/save-icon.png)</p>  | After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are only available for 60 days.   |
+| Scenario settings <p>![Scenario settings icon](assets/scenario-settings-icon.png)</p>    | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).    |
+| Notes  <p>![Notes icon](assets/notes-icon.png)</p>  | Make notes about the scenario. Other users can view these notes when they are in the scenario.   |
+| Auto-align <p>![Auto-align icon](assets/auto-align-icon.png)</p>   | Auto-align the modules in your scenario.  |
+| Search modules ![Search modules](assets/search-modules-icon.png)  </p> | Enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application.   |
+| Explain flow  <p>![Explain Flow icon](assets/explain-flow-icon.png) </p> | View an animation where moving dots show how data flows through the scenario.   |
+| DevTool <p>![DevTool icon](assets/devtool-icon.png)</p>   | Using the DevTool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md).   |
+| Export Blueprint  <p>![Export Bluepring icon](assets/export-blueprint-icon.png) </p> | Export a blueprint of the current scenario.   |
+| Import Blueprint  <p>![Import Blueprint icon](assets/import-blueprint-icon.png) </p> | Import a previously exported scenario blueprint.   |
+| Previous Version  <p>![Previous version icon](assets//previous-version-icon.png) </p> | View previous versions of this scenario.   |
 
 ![controls panel](assets/controls-editor-scenario.png)
 
