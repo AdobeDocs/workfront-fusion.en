@@ -11,6 +11,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2025 {#fusion-releases-2025}
         * [Workfront Fusion release activity: Week of November 17, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+        * [Workfront Fusion release activity: Week of December 8, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
         * [Workfront Fusion release activity: Week of December 1, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
         * [Workfront Fusion release activity: Week of November 10, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
         * [Workfront Fusion release activity: Week of November 3, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
@@ -330,6 +331,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe Frame.io Beta (V4) modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
             * [Adobe Frame.io Legacy (V3) modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
             * [Adobe I/O Events modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
+            * [Adobe InDesign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/indesign-modules.md)
             * [Adobe Journey Optimizer modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
             * [Adobe Lightroom modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
             * [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
