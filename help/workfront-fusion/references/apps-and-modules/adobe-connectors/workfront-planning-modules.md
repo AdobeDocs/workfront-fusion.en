@@ -29,14 +29,16 @@ With the [!DNL Adobe Workfront Planning] modules, you can trigger a scenario whe
    <td role="rowheader">Product</td> 
    <td>
    <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
-   </td> 
+   </td>
   </tr>
  </tbody> 
 </table>
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Prerequisites
++++
+
+s## Prerequisites
 
 You must have the following to access Workfront Planning:
 
