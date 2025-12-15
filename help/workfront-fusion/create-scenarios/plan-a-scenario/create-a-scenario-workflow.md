@@ -162,6 +162,11 @@ You can use the following keyboard shortcuts when creating or editing a scenario
    <td>Cmd+V</span> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Search for modules]</td> 
+   <td>Ctrl+K</td> 
+   <td>Cmd+K</span> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">Paste cURL into scenario to create HTTP module</td> 
    <td colspan="2">Copy cURL, then paste anywhere in the scenario editor.<p>For more information, see <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Use cURL to add an HTTP module</a>.</td> 
   </tr> 
