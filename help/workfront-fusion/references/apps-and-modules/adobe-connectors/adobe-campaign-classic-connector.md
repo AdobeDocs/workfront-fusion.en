@@ -195,7 +195,7 @@ This action module creates a new record in [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to create.</td> 
+   <td>Select the type of [!DNL Adobe Campaign] record you want to create, or select **Custom Resource** and enter the resource details.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Fields] </td> 
@@ -222,7 +222,7 @@ This action module deletes a single record from [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of resource that you want to delete.</td> 
+   <td>Select the type of resource that you want to delete, or select **Custom Resource** and enter the resource details.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -283,6 +283,10 @@ For information on specific actions and fields, see [[!DNL Adobe Campaign] - API
    <td>For instructions on creating a connection to [!DNL Adobe Campaign], see <a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >Create a connection to [!DNL Adobe Campaign]</a> in this article.</td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Resource]</td> 
+   <td>Select the type of resource that you want to perform an action on, or select **Custom Resource** and enter the resource details.</td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Action]</td> 
    <td><p>Select the action to perform on the object.</p>
    <ul>
@@ -311,7 +315,7 @@ This action module reads a record from [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to read.</td> 
+   <td>Select the type of [!DNL Adobe Campaign] record you want to read, or select **Custom Resource** and enter the resource details.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -370,7 +374,7 @@ This action module updates a single record in [!DNL Adobe Campaign].
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to create.</td> 
+   <td>Select the type of [!DNL Adobe Campaign] record you want to update, or select **Custom Resource** and enter the resource details.</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -403,7 +407,7 @@ This search module returns records based on the specified criteria.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Resource]</td> 
-   <td>Select the type of [!DNL Adobe Campaign] record you want to create.</td> 
+   <td>Select the type of [!DNL Adobe Campaign] record you want to return, or select **Custom Resource** and enter the resource details.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search criteria]</td> 
