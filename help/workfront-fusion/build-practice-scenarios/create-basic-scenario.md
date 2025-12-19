@@ -156,7 +156,7 @@ For this scenario, a successful test would result in locating the request and co
 
    >[!IMPORTANT]
    >
-   >Save often as you hone and test a scenario.
+   >Save often as you hone and test a scenario. You may need to create a new issue in your Workfront account to trigger the scenario.
 
 >[!TIP]
 >
