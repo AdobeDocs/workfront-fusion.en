@@ -97,7 +97,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
    >[!IMPORTANT]
    >
-   >Save often as you hone and test a scenario.
+   >Save often as you hone and test a scenario. You may need to create a new issue in your Workfront account to trigger the scenario.
 
 ## Resources
 
