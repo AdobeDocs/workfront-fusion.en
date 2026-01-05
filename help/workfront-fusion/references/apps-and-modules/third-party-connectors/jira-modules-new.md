@@ -63,6 +63,8 @@ To use Jira modules you must have a Jira account.
 
 ## Connect Jira to Workfront Fusion 
 
+The procedure for creating a connection to Jira differs based on whether you are creating a basic connection or an OAuth2 connection.
+
 ### Create needed credentials
 
 To create connections to Jira, you will need the following:
