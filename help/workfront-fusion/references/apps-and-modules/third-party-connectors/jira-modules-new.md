@@ -65,6 +65,18 @@ To use Jira modules you must have a Jira account.
 
 The procedure for creating a connection to Jira differs based on whether you are creating a basic connection or an OAuth2 connection.
 
+* [Create an OAuth2 connection to Jira](#create-an-oauth2-connection-to-jira)
+* [Create a basic connection to Jira](#create-a-basic-connection-to-jira)
+
+### Create an OAuth2 connection to Jira
+
+>[!IMPORTANT]
+>
+>To create an OAuth2 connection to Jira, you must first create an application in Jira.
+>For instructions on creating an OAuth2 application in the Jira developer console.
+
+### Create a basic connection to Jira
+
 ### Create needed credentials
 
 To create connections to Jira, you will need the following:
