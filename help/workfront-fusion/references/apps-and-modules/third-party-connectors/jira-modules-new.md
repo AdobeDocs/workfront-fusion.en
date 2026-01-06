@@ -74,7 +74,7 @@ The procedure for creating a connection to Jira differs based on whether you are
 To create an OAuth2 connection to Jira, you must create an application in Jira before you can configure the connection in Fusion.
 
 * [Create an OAuth2 application in Jira](#create-an-oauth2-application-in-jira)
-* [Configure the OAutt2 connection in Fusion](#configure-the-oauth2-connection-in-fusion)
+* [Configure the OAuth2 connection in Fusion](#configure-the-oauth2-connection-in-fusion)
 
 #### Create an OAuth2 application in Jira
 
