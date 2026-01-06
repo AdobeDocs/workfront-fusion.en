@@ -159,46 +159,18 @@ To create an OAuth2 connection to Jira, you must create an application in Jira b
 
 ### Create a basic connection to Jira
 
-### Create needed credentials
+Creating a basic connection to Jira differs depending on whether you are creating a connection to Jira Cloud or Jira Data Center.
 
-To create connections to Jira, you will need the following:
+* [Create a basic connection to Jira Cloud](#create-a-basic-connection-to-jira-cloud)
+* [Create a basic connection to Jira Data Center](#create-a-basic-connection-to-jira-data-center)
 
-| Connection type | Account type | Credentials needed |
-|---|---|---|
-|OAuth 2|Any|Client ID and Client Secret|
-|Basic|Jira Cloud|Jira API token|
-|Basic|Jira Data Center|Jira Personal Access Token (PAT)|
+#### Create a basic connection to Jira Cloud
 
-For instructions on creating any of these, see the Jira documentation.
+>[!IMPORTANT]
+>
+> To create a basic connection to Jira Cloud, you must have a Jira API token.
+>For instructions on acquiring a Jira API token, see [Manage API tokens for your Atlassian account](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account) in the Atlassian documentation.
 
-When creating these credentials, you will need the following information:
-
-* For OAuth 2:
-
-
-
-   
-
-* For Personal Access Tokens (PATs):
-
-   |Fusion datacenter|Redirect URL|
-   |---|---|
-   |US|`https://app.workfrontfusion.com/oauth/cb/workfront-jira`|
-   |EU|`https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira`|
-   |Azure|`https://app-az.workfrontfusion.com/oauth/cb/workfront-jira`|
-
-   >[!IMPORTANT]
-   >
-   >To use a PAT, you must enable the following in the files `jira/bin/WEB-INF/classes`, in the file `jira-config.properties`:
-   >
-   >* `jira.rest.auth.allow.basic = true`
-   >* `jira.rest.csrf.disabled = true`
-   >
-   >If this file does not exist, you must create it.
-
-### Create the connection to Jira in Workfront Fusion
-
-To create the connection in Workfront Fusion:
 
 1. In any Jira module, click **Add** next to the Connection field.
 1. Configure the following fields:
@@ -224,24 +196,12 @@ To create the connection in Workfront Fusion:
        <td>Select whether you are connecting to Jira Cloud or Jira Data Center.</td>
      </tr>
      <tr> 
-      <td role="rowheader">Client ID</td> 
-      <td> <p>If you are creating an OAuth 2 connection, enter your Jira Client ID</p> </td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Client Secret</td> 
-      <td> <p>If you are creating an OAuth 2 connection, enter your Jira Client Secret</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">Email</td> 
-      <td>If you are creating a basic connection to Jira Cloud, enter your email address.</td> 
+      <td>Enter your email address.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">API Token</td> 
-      <td>If you are creating a basic connection to Jira Cloud, enter your API Token.</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">Personal Access Token</td> 
-      <td>If you are creating a basic connection to Jira Data Center, enter your Personal Access Token.</td> 
+      <td>Enter your API Token.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">API version</td> 
@@ -252,6 +212,74 @@ To create the connection in Workfront Fusion:
 
 1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
 
+#### Create a basic connection to Jira Data Center
+
+>[!IMPORTANT]
+>
+> To create a basic connection to Jira Data Center, you must have a Jira personal access token (PAT).
+>For instructions on acquiring a Jira personal access token, see [Manage API tokens for your Atlassian account](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) in the Atlassian documentation.
+>For considerations when creating the PAT, see [Configure your PAT](#configure-your-pat) in this article.
+
+1. In any Jira module, click **Add** next to the Connection field.
+1. Configure the following fields:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>Connection type</p> </td> 
+      <td> <p>Select whether you are creating a basic connection or an OAuth 2 connection.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>Connection name</p> </td> 
+      <td> <p>Enter a name for the new connection.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">Service URL</td>
+      <td>Enter your Jira instance URL. This is the URL you use to access Jira.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira account type</td>
+       <td>Select whether you are connecting to Jira Cloud or Jira Data Center.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">PAT (Personal access token)</td> 
+      <td>Enter your Jira personal access token.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API version</td> 
+      <td>Select the Jira API version that you want this connection to connect to.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
+
+##### Configure your PAT
+
+To create a basic connection to Jira Data Center, you must have a Jira personal access token (PAT).
+
+For instructions on acquiring a Jira personal access token, see [Manage API tokens for your Atlassian account](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) in the Atlassian documentation.
+
+You may need the following information when configuring your PAT
+
+* Redirect URLs
+
+   |Fusion datacenter|Redirect URL|
+   |---|---|
+   |US|`https://app.workfrontfusion.com/oauth/cb/workfront-jira`|
+   |EU|`https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira`|
+   |Azure|`https://app-az.workfrontfusion.com/oauth/cb/workfront-jira`|
+
+* File configurations
+
+To use a PAT, you must enable the following in the files `jira/bin/WEB-INF/classes`, in the file `jira-config.properties`:
+
+* `jira.rest.auth.allow.basic = true`
+* `jira.rest.csrf.disabled = true`
+
+If this file does not exist, you must create it.
 
 ## Jira modules and their fields
 
