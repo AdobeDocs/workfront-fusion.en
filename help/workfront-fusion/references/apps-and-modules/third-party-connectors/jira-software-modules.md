@@ -198,7 +198,7 @@ To acquire a private key for your [!DNL Workfront Fusion Jira] connection, you n
 1. Fill in the URL fields as follows:
 
    | Field | Description |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL Request Token URL] | `<Jira base url>/plugins/servlet/oauth/request-token` |
    | [!UICONTROL Authorization URL] | `<Jira base url>/plugins/servlet/oauth/authorize` |
    | [!UICONTROL Access Token URL] | `<Jira base url>/plugins/servlet/oauth/access-token` |
