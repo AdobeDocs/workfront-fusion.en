@@ -59,7 +59,8 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 ## Prerequisites
 
-To use Jira modules you must have a Jira account.
+* To use Jira modules you must have a Jira account.
+* You must have access to the Jira Developer Console to create an OAuth2 application in Jira.
 
 ## Connect Jira to Workfront Fusion 
 
@@ -70,10 +71,42 @@ The procedure for creating a connection to Jira differs based on whether you are
 
 ### Create an OAuth2 connection to Jira
 
+To create an OAuth2 connection to Jira, you must create an application in Jira before you can configure the connection in Fusion.
+
+* [Create an OAuth2 application in Jira](#create-an-oauth2-application-in-jira)
+* [Configure the OAutt2 connection in Fusion](#configure-the-oauth2-connection-in-fusion)
+
+#### Create an OAuth2 application in Jira
+
 >[!IMPORTANT]
 >
->To create an OAuth2 connection to Jira, you must first create an application in Jira.
->For instructions on creating an OAuth2 application in the Jira developer console.
+>You must have access to the Jira Developer Console to create and configure an OAuth2 application for your Jira connection.
+
+1. Go to the [Jira Developer Console](https://developer.atlassian.com/console.myapps/).
+1. In the My apps area, click **Create**, then select **OAuth 2.0 integration**.
+1. Enter a name for the integration, agree to the developer terms, and click **Create**.
+   
+   The application is created, and you are taken to the application configuration area.
+1. Click **Permissions** in the left navigation panel.
+1. In the Permissions area, locate the **Jira API** line.
+1. Click **Add** in the Jira API line, then click **Continue** in the same line.
+1. Enable the following scopes:
+
+   * View Jira issue data (`read:jira-work`)
+   * View user profiles (`read:jira-user`)
+   * Create and manage issues (`write:jira-work`)
+
+1. In the left navigation, click **Authorization**.
+1. Click **Add** in the line for the OAuth 2.0 authorization.
+1. In the **Callback URL** field, enter one of the following URLs, based on your Workfront Fusion data center:
+
+
+
+
+
+#### Configure the OAuth2 connection in Fusion
+
+
 
 ### Create a basic connection to Jira
 
