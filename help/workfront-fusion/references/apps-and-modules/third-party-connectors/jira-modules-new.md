@@ -100,13 +100,62 @@ To create an OAuth2 connection to Jira, you must create an application in Jira b
 1. Click **Add** in the line for the OAuth 2.0 authorization.
 1. In the **Callback URL** field, enter one of the following URLs, based on your Workfront Fusion data center:
 
+   |Fusion datacenter|Callback URL|
+   |---|---|
+   |US|`https://app.workfrontfusion.com/oauth/cb/workfront-jira2`|
+   |EU|`https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2`|
+   |Azure|`https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2`|
 
-
-
+1. In the left navigation, click **Settings**. 
+1. (Optional) Enter a description into the Description field, and click **Save changes** under that field.
+1. Copy the Client ID and Client Secret from the Settings area to a secure location, or leave this page open as you configure the connection in Fusion.
+1. Continue to [Configure the OAutt2 connection in Fusion](#configure-the-oauth2-connection-in-fusion)
 
 #### Configure the OAuth2 connection in Fusion
 
+1. In any Jira module, click **Add** next to the Connection field.
+1. Configure the following fields:
 
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>Connection type</p> </td> 
+      <td> <p>Select <b>OAuth 2</b>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>Connection name</p> </td> 
+      <td> <p>Enter a name for the new connection.</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">Service URL</td>
+      <td>Enter your Jira instance URL. This is the URL you use to access Jira.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira account type</td>
+       <td>Select whether you are connecting to Jira Cloud or Jira Data Center.</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">Client ID</td> 
+      <td> <p>Enter the Client ID of the Jira application you created in <a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Create an OAuth2 application in Jira</a>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Client Secret</td> 
+      <td> <p>Enter the Client Secret of the Jira application you created in <a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">Create an OAuth2 application in Jira</a>.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">Additional scopes</td> 
+      <td>Enter any additional scopes that you want to add to this connection.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API version</td> 
+      <td>Select the Jira API version that you want this connection to connect to.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Click **[!UICONTROL Continue]** to create the connection and go back to the module.
 
 ### Create a basic connection to Jira
 
@@ -126,11 +175,7 @@ When creating these credentials, you will need the following information:
 
 * For OAuth 2:
 
-   |Fusion datacenter|Redirect URL|
-   |---|---|
-   |US|`https://app.workfrontfusion.com/oauth/cb/workfront-jira2`|
-   |EU|`https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2`|
-   |Azure|`https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2`|
+
 
    
 
