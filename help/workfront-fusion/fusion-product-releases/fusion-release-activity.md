@@ -16,8 +16,39 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 
 ## Fusion releases in 2025
 
+### December 2025
+
+* [Workfront Fusion release activity: Week of December 15, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+* [Workfront Fusion release activity: Week of December 8, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Workfront Fusion release activity: Week of December 1, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+
+### November 2025
+
+* [Workfront Fusion release activity: Week of November 17, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Workfront Fusion release activity: Week of November 10, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Workfront Fusion release activity: Week of November 3, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+
+### October 2025
+
+* [Workfront Fusion release activity: Week of October 27, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
+* [Workfront Fusion release activity: Week of October 20, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
+* [Workfront Fusion release activity: Week of October 13, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
+* [Workfront Fusion release activity: Week of October 6, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-6.md)
+
+### September 2025
+
+* [Workfront Fusion release activity: Week of September 29, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-29.md)
+* [Workfront Fusion release activity: Week of September 22, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-22.md)
+* [Workfront Fusion release activity: Week of September 15, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-15.md)
+
+### August 2025
+
+* [Workfront Fusion release activity: Week of August 18, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+
+
 ### July 2025
 
+* [Workfront Fusion release activity: Week of July 31, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
 * [Workfront Fusion release activity: Week of July 7, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
 
 

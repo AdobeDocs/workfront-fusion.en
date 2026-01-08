@@ -1,18 +1,18 @@
 ---
 title: Create a connection - Basic instructions
-description: Many [!DNL Adobe Workfront Fusion] connectors do not require custom configuration when creating a connection. This article describes the default connection creation process.
+description: Many Adobe Workfront Fusion connectors do not require custom configuration when creating a connection. This article describes the default connection creation process.
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
 ---
 # Create a connection - Basic instructions
 
-Many [!DNL Adobe Workfront Fusion] connectors do not require custom configuration when creating a connection. This article describes the default connection creation process.
+Many Adobe Workfront Fusion connectors do not require custom configuration when creating a connection. This article describes the default connection creation process.
 
 >[!NOTE]
 >
 >
->If Adobe Workfront Fusion doesn't offer an app for the web service you would like to use in your scenario, you can connect to the web service using [!DNL Workfront Fusion] HTTP and Webhooks modules, as explained in the following articles:
+>If Adobe Workfront Fusion doesn't offer an app for the web service you would like to use in your scenario, you can connect to the web service using Workfront Fusion HTTP and Webhooks modules, as explained in the following articles:
 >
 >* [Connect Adobe Workfront Fusion to a web service that uses API token authorization](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
 >* [Configure a webhook for a web service without a connector](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -21,34 +21,29 @@ Many [!DNL Adobe Workfront Fusion] connectors do not require custom configuratio
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront package 
-   <td> <p>Any</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current: Work or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Current: No Workfront Fusion license requirement</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
+   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Connector-based (legacy): To connect to applications outside the Workfront family of products, you must have Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront Plan: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront Plan: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -64,7 +59,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 To create a connection to a given application, you must be in a module for that application. For example, to create a connection to Workfront, you must be in a Workfront module.
 
-To create a connection inside a [!DNL Workfront Fusion] module:
+To create a connection inside a Workfront Fusion module:
 
 1. In any module for the given application, click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box to open the **[!UICONTROL Create a connection]** panel.
 1. (Optional) Change the default **[!UICONTROL Connection name]**.
@@ -76,7 +71,7 @@ To create a connection inside a [!DNL Workfront Fusion] module:
 
 1. Click **[!UICONTROL Continue]**.
 1. In the sign-in window that displays, enter your credentials to log in to the app if you haven't already done so.
-1. (Conditional) If an **[!UICONTROL Allow]** button displays, examine the actions that the connector will be able to take, then click the button to connect the app to [!DNL Workfront Fusion].
+1. (Conditional) If an **[!UICONTROL Allow]** button displays, examine the actions that the connector will be able to take, then click the button to connect the app to Workfront Fusion.
 
    >[!NOTE]
    >

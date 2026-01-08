@@ -7,6 +7,23 @@ exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 ---
 # Adobe Workfront modules
 
+>[!IMPORTANT]
+>
+>This article contains instructions for the new version of the Workfront connector, released on October 22, 2025. This new connector reflects changes made to the Workfront API.
+>
+>The new connector is labeled as "Workfront," and the previously available connector is labeled as "Workfront (Legacy)." 
+>
+>We recommend:
+>
+>* Using the new connector when creating or updating a scenario.
+>* Upgrading existing modules to the new connector. 
+>
+>The legacy Workfront connector uses Workfront API version 20, which is scheduled to be deprecated with the 28.4 release (April 2028). Modules in the legacy connector will continue to work until that time.
+>
+>For instructions on upgrading existing modules, see [Upgrade a Workfront module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md) in the article Upgrade a module to a new version.
+>
+>For information on why a new connector is sometimes necessary, see [Overview of APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
+
 You can use the Adobe Workfront Fusion Adobe Workfront connector to automate your processes within Workfront. You can also connect Workfront to other applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md). For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
@@ -15,34 +32,22 @@ For instructions on creating a scenario, see the articles under [Create scenario
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
-   <td>
-   <p>Current: No Workfront Fusion license requirement</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -50,20 +55,16 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-
->[!NOTE]
->
->* If your organization uses the legacy licensing package (based on connectors), it must have a Workfront Fusion for Work Automation and Integration license to connect to third-party apps and services. The Workfront connector does not count against the number of active apps available to your organization. All scenarios, even if they use only the Workfront app, do count against your organization's total scenario count.
-
-+++
-
-## Connect Workfront to Workfront Fusion 
++++## Connect Workfront to Workfront Fusion 
 
 The Workfront connector uses OAuth 2.0 to connect to Workfront.
 
 You can create a connection to your Workfront account directly from inside a Workfront Fusion module.
+
+* [Connect to Workfront using Client ID and Client secret](#connect-to-workfront-using-client-id-and-client-secret)
+* [Connect to Workfront using a Server-to-Server connection](#connect-to-workfront-using-a-server-to-server-connection)
+
+### Connect to Workfront using Client ID and Client secret
 
 1. In any Adobe Workfront module, click **Add** next to the Connection field.
 1. Fill in the following fields:
@@ -75,21 +76,15 @@ You can create a connection to your Workfront account directly from inside a Wor
     </col>
     <tbody>
       <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Select <b>Adobe Workfront auth connection</b>.</p>
+        </td>
+      </tr>
+      <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>Enter a name for the new connection.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>
-          <p>Select whether are connecting to a production or non-production environment.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">[!UICONTROL Connection type]</td>
-        <td>
-          <p>Select whether you are connecting to a service account or a personal account.</p>
         </td>
       </tr>
       <tr>
@@ -103,6 +98,69 @@ You can create a connection to your Workfront account directly from inside a Wor
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>
         <td>This can remain the default value, or you can enter the URL of your Workfront instance, followed by <code>/integrations/oauth2</code>. <p>Example: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>In most cases, this value should be <code>origin</code>.
+      </tr>
+    </tbody>
+    </table>
+
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+
+   If you are not logged in to Workfront, you are directed to a login screen. After you log in, you can allow the connection.
+
+>[!NOTE]
+>
+>* OAuth 2.0 connections to the Workfront API no longer rely on API keys. 
+>* To create a connection to a Workfront Sandbox environment, you must create an OAuth2 application in that environment, and then use the Client ID and Client Secret generated by that application in your connection. 
+
+### Connect to Workfront using a Server-to-Server connection
+
+1. In any Adobe Workfront module, click **Add** next to the Connection field.
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Select <b>Adobe Workfront Server-to-Server connection</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Enter a name for the new connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>Enter the name of your instance, also known as your domain.</p><p>Example: if your URL is <code>https://example.my.workfront.com</code>, enter <code>example</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>Enter the environment type that this connection will connect to.</p><p>Example: if your URL is <code>https://example.my.workfront.com</code>, enter <code>my</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Enter your Workfront Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. Open the specific application you are connecting to to see the Client ID.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Enter your Workfront Client secret. This can be found in the OAuth2 Applications area of the Setup area in Workfront. If you do not have a Client Secret for your OAuth2 application in Workfront, you can generate another. For instructions, see the Workfront documentation.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>Enter any applicable scopes for this connection.</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Host prefix]</td>
@@ -148,7 +206,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 +++ **[!UICONTROL Watch Events]**
 
-This trigger module executes a scenario in real time when objects of a specific type are added, updated, or deleted in Workfront
+This trigger module executes a scenario in real time when objects of a specific type are added, updated, or deleted in Workfront.
+
+The module displays all event subscriptions related to the webhook. This includes event subscriptions created through Fusion as well as event subscriptions created directly through the API. This event subscription view is not available in the legacy version of the Watch Events module.
 
 The module returns any standard fields associated with the record, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
@@ -401,7 +461,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL Attach Custom Form]</td> 
-   <td>Select any custom forms that you want to add to the new object, then enter or map values for those fields.</td> 
+   <td>Select any custom forms that you want to add to the new object, select the fields that you want to enter values for,  then enter or map values for those fields.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -420,7 +480,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >Users are created in Deactivated and Pending Approval status. If your organization has been migrated to the Adobe Admin Console, and the Pending Approval badge is not removed within a few minutes, you can approve the user.
 >
->  **Resolve individual users**
+>* **Resolve individual users**
 >
 >      You can resolve individual users in the Users list.
 >
@@ -436,6 +496,8 @@ See a list of the Workfront object types for which you can use this module in [W
 >   For instructions, see [Manage multiple users | Bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) in the Adobe documentation.
 
 +++
+
+<!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
 
@@ -485,6 +547,8 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
 +++
+
+-->
 
 +++ **[!UICONTROL Custom API Call]**
 
@@ -622,6 +686,29 @@ When you are configuring this module, the following fields display.
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
+
+### **Get a presigned file URL**
+
+This action module gets presigned file URLs that can later be used by other APIs.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Document ID]</td> 
+   <td> <p>Map or manually enter the unique Workfront ID of the document that you want to get a presigned URL for.</p> <p>To get the ID, open the Workfront object in your browser and copy the text at the end of the URL after "ID=." For example: https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Time to URL expiration]</td> 
+   <td> <p>Enter or map the number of minutes that this URL will exist before it expires. The default is 1 minute.</p><p>To change this value, you must have this parameter enabled by the Workfront Fusion team. If it is not enabled, the value will remain 1 minute regardless of the number you enter.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 +++ **[!UICONTROL Misc Action]**
 
@@ -875,6 +962,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Read a Record (Legacy)]**
 
 >[!IMPORTANT]
@@ -928,6 +1017,8 @@ When you are configuring this module, the following fields display.
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
 +++
+
+-->
 
 +++ **Update Events Payload Version**
 
@@ -1004,6 +1095,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Update Record (Legacy)]**
 
 >[!IMPORTANT]
@@ -1053,6 +1146,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+-->
+
 +++ **[!UICONTROL Upload Document]**
 
 This action module uploads a document to a Workfront object, such as a project, task, or issue. This module uploads the document in chunks, which makes the upload process smoother for Workfront. 
@@ -1096,6 +1191,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
+<!--
+
 +++ **[!UICONTROL Upload Document (Legacy)]**
 
 This action module uploads a document to a Workfront object, such as a project, task, or issue. It uploads the entire document at once. 
@@ -1135,7 +1232,9 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
+
 +++
+-->
 
 ### Searches
 

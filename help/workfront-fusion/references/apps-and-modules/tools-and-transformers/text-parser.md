@@ -1,19 +1,17 @@
 ---
 title: Text parser
-description: You can use the Text parser tool to parse text for use in other [!DNL Adobe Workfront Fusion] scenario modules. The Text parser does not require a connection.
+description: You can use the Text parser tool to parse text for use in other Adobe Workfront Fusion scenario modules. The Text parser does not require a connection.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
 ---
 # [!UICONTROL Text parser]
 
-You can use the [!UICONTROL Text parser tool] to parse text for use in other [!DNL Adobe Workfront Fusion] scenario modules. The [!UICONTROL Text parser] does not require a connection.
+You can use the [!UICONTROL Text parser tool] to parse text for use in other Adobe Workfront Fusion scenario modules. The [!UICONTROL Text parser] does not require a connection.
 
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
-
-You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
  <col> 
@@ -21,24 +19,16 @@ You must have the following access to use the functionality in this article:
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
-   <td>
-   <p>No Workfront Fusion license requirement</p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -46,9 +36,9 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## Text parser API information
 
@@ -67,7 +57,7 @@ The Text parser connector uses the following:
 
 ## [!UICONTROL Text parser] modules and their fields
 
-When you configure [!UICONTROL Text parser] modules, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
+When you configure [!UICONTROL Text parser] modules, Adobe Workfront Fusion displays the fields listed below. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -123,7 +113,7 @@ Parses elements from text based on the given pattern.
   </tr> 
   <tr> 
    <td>[!UICONTROL Pattern]</td> 
-   <td> <p>Select the pattern that reflects the elements you want to parse from the text.</p> </td> 
+   <td> <p>Select the pattern that reflects the elements you want to parse from the text.</p> <p>To enter a custom regular expressions, select Custom from the list, the enter the custom expression in the Custom regex field.</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 

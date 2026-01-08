@@ -45,7 +45,7 @@ Converts the first character in a text string to uppercase.
 
 `capitalize( workfront )`
 
-Returns: [!DNL Workfront]  
+Returns: Workfront  
 
 >[!ENDSHADEBOX]
 
@@ -72,7 +72,7 @@ Removes all non-ascii characters from a text string.
 
 * `ascii(` `Wěošrčkřfžrýoáníté` `)`
 
-Returns: [!DNL Workfront]
+Returns: Workfront
 
 * `ascii(` `ěščřž` `;` `true` `)`
 

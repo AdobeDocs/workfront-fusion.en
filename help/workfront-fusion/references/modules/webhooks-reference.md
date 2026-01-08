@@ -29,13 +29,71 @@ For a video introduction to webhooks in Workfront Fusion, see:
 * [Intro to Webhooks](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [Intermediate Webhooks](https://video.tv.adobe.com/v/3427030/){target=_blank}
 
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## View webhook details
+
+You can view a list of webhooks in the Webhooks area.
+
+1. To open the Webhooks area, click the Webhooks icon ![Webhooks](assets/webhooks-icon.png) in the left navigation.
+
+   Here, you can see a list of webhooks.
+
+   ![Webhook list](assets/list-of-webhooks.png)
+
+1. To search for a specific webhook, enter your search term into the Search box. 
+1. To copy a webhook, click the Copy icon ![Copy webhook icon](assets/copy-webhook-icon.png) near the URL in the row for that webhook.
+1. To set priority for a webhook, click the dropdown in the Priority column and select the new priority.
+
+   Webhooks with higher priority will be handled first, which may be beneficial if a worker pool has many automations competing for resources. 
+1. To disable or enable a webhook, disable or enable the toggle in the Status column in the row for that webhook.
+1. To see whether a webhooks queue is full, check the Full Queue column. The number in this column is the number of items currently in the queue.
+1. To view operations handled by a webhook, click **Operations** in the Full Queue column for that webhook.
+1. To see whether a webhook has expired, check the Expired column. Expired webhooks are not attached to any scenario, or have not received any events for 120 hours.
+1. To view the scenario where a webhook is used, click the **Scenario** button in the Scenario column for that webhook. 
+1. To view the connection used for this webhook, click the **Connection** button in the Connection column for that webhook.
+1. To hide columns or show previously hidden columns, click the **Columns** icon ![Columns icon](assets/glist-column.png) and check or uncheck column names.
+1. To view event subscriptions associated with a Workfront webhook, check the box next to the webhook and select **Show Details** at the bottom of the page. 
+
+   >[!NOTE]
+   >
+   > Event subscription details are available only for Workfront webhooks created in the new Workfront connector. Webhook details are not currently available for other connectors.
+
+
 ## Schedule instant triggers
 
 When you configure an instant trigger, you are prompted to select when it runs.
 
 ![Schedule setting](assets/schedule-setting.png)
 
-Select `Immediately` to run the scenario immediately when [!DNL Workfront Fusion] receives new events from the service. These events are immediately sent into a queue, and are then processed in the scenario one at a time, in the same order that data is received.
+Select `Immediately` to run the scenario immediately when Workfront Fusion receives new events from the service. These events are immediately sent into a queue, and are then processed in the scenario one at a time, in the same order that data is received.
 
 When the scenario executes, the total amount of pending events waiting in the queue is counted, and the scenario performs as many cycles as there are pending events, processing one event per cycle.
 
@@ -75,7 +133,7 @@ A webhook that has not been assigned to any scenario for more than 120 hours is 
 
 ### Webhook payloads
 
-[!DNL Workfront Fusion] stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was created results in the error [!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was created results in the error [!UICONTROL `Failed to read file from storage.`]
 
 ### Error handling
 

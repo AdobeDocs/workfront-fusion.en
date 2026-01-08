@@ -10,65 +10,48 @@ exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
 
 Sometimes an error can occur during the execution of a scenario. This usually happens if a service is unavailable due to a failure to connect to the service, or if a validation fails. 
 
-[!DNL Adobe Workfront Fusion] distinguishes between several basic error types. The type of error determines your Fusion scenario's next actions.
+Adobe Workfront Fusion distinguishes between several basic error types. The type of error determines your Fusion scenario's next actions.
 
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
-
-You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] package</td> 
-   <td> <p>Any</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> New: Standard<p>Or</p><p>Current: Work or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license</td> 
-   <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
-
-For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
-+++
-
-## Connection Error 
++++## Connection Error 
 
 `ConnectionError`
 
 Connection errors are one of the most common errors. They are usually caused by unavailability of the third-party service for various reasons, such as overloading, maintenance, or outage. The default handling of this error depends on which module encountered the error.
 
-* If the error occurs on the first module, the execution of the scenario is terminated with a warning message. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
+* If the error occurs on the first module, the execution of the scenario is terminated with a warning message. Workfront Fusion then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, Workfront Fusion deactivates the scenario.
 * If the connection error occurs on another module than the first one, the subsequent steps depend on the Allow storing incomplete executions option in the scenario advanced settings:
 
-    * If this option is enabled, the execution of the scenario is moved to the [!UICONTROL Incomplete executions] folder where [!DNL Workfront Fusion] repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, the execution will remain in the Incomplete executions folder awaiting manual resolution by the user.
+    * If this option is enabled, the execution of the scenario is moved to the [!UICONTROL Incomplete executions] folder where Workfront Fusion repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, the execution will remain in the Incomplete executions folder awaiting manual resolution by the user.
 
       For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
-    * If this option is disabled, the execution of the scenario ends with an error followed by a rollback phase. [!DNL Workfront Fusion] then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, [!DNL Workfront Fusion] deactivates the scenario.
+    * If this option is disabled, the execution of the scenario ends with an error followed by a rollback phase. Workfront Fusion then repeatedly attempts to rerun the scenario at increasing time intervals. If all attempts fail, Workfront Fusion deactivates the scenario.
 
    For more information on the Allow storing incomplete executions setting, see [Allow storing incomplete executions](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions) in the article Configure scenario settings.
 
@@ -88,7 +71,7 @@ The increasing time intervals help prevent frequently executed scenarios from us
 
 **Example:**
 
-A scenario contains the [!DNL Google Sheets] trigger [!UICONTROL Watch Rows]. [!DNL Google Sheets] is unavailable for 30 minutes due to maintenance when [!DNL Workfront Fusion] starts the scenario, so it is unable to retrieve new rows. The scenario stops and tries again in 10 minutes. Because [!DNL Google Sheets] is still unavailable, [!DNL Workfront Fusion] is still unable to get information about new rows. The next run of the scenario is scheduled in 1 hour. [!DNL Google Sheets] is available again at this time, and the scenario runs successfully.
+A scenario contains the [!DNL Google Sheets] trigger [!UICONTROL Watch Rows]. [!DNL Google Sheets] is unavailable for 30 minutes due to maintenance when Workfront Fusion starts the scenario, so it is unable to retrieve new rows. The scenario stops and tries again in 10 minutes. Because [!DNL Google Sheets] is still unavailable, Workfront Fusion is still unable to get information about new rows. The next run of the scenario is scheduled in 1 hour. [!DNL Google Sheets] is available again at this time, and the scenario runs successfully.
 
 >[!ENDSHADEBOX]
 
@@ -96,7 +79,7 @@ A scenario contains the [!DNL Google Sheets] trigger [!UICONTROL Watch Rows]. [!
 
 `DataError`
 
-A data error is generated when an item is incorrectly mapped and does not pass the validation performed on either the [!DNL Workfront Fusion] side or on the side of the third-party service. 
+A data error is generated when an item is incorrectly mapped and does not pass the validation performed on either the Workfront Fusion side or on the side of the third-party service. 
 
 If this error occurs, the scenario, up to where the module failed, is moved to the incomplete executions folder, where you can troubleshoot the issue. However, the scenario does not stop, and continues to run according to its schedule. To stop the execution of the scenario when Data error appears, enable the Sequential processing option in the Scenario settings panel. 
 
@@ -106,7 +89,7 @@ If you have not enabled the [!UICONTROL Allow storing incomplete executions] opt
 
 `DuplicateDataError`
 
-If [!DNL Workfront Fusion] tries to insert the same bundle twice into a service that does not allow duplicate data, a duplicate data error is generated. If this error occurs, [!DNL Workfront Fusion] proceeds in the same way as as it does for the data error.
+If Workfront Fusion tries to insert the same bundle twice into a service that does not allow duplicate data, a duplicate data error is generated. If this error occurs, Workfront Fusion proceeds in the same way as as it does for the data error.
 
 For more information, see [Data Error](#data-error) in this article.
 
@@ -115,7 +98,7 @@ For more information, see [Data Error](#data-error) in this article.
 
 `InvalidAccessTokenError`
 
-An invalid access token error occurs when [!DNL Workfront Fusion] cannot access your account registered with a third-party service. This usually happens when you revoke access rights for [!DNL Workfront Fusion] in the administration of a given service, but scenarios that use that service continue running according to schedule.
+An invalid access token error occurs when Workfront Fusion cannot access your account registered with a third-party service. This usually happens when you revoke access rights for Workfront Fusion in the administration of a given service, but scenarios that use that service continue running according to schedule.
 
 If this error occurs, the scenario execution stops immediately. The rest of the scenario starting from the module where the error occurred moves to the incomplete executions folder.
 
@@ -123,7 +106,7 @@ If this error occurs, the scenario execution stops immediately. The rest of the 
 
 `RateLimitError`
 
-If a limit set by a given service is exceeded, a rate limit error is generated. If this error occurs, [!DNL Workfront Fusion] proceeds in the same way as it does for the Connection Error. 
+If a limit set by a given service is exceeded, a rate limit error is generated. If this error occurs, Workfront Fusion proceeds in the same way as it does for the Connection Error. 
 
 For more information, see [Connection Error](#connection-error) in this article.
 
@@ -141,7 +124,7 @@ For more information, see [Number of consecutive errors](/help/workfront-fusion/
 
 **Example:** 
 
-A scenario has the [!DNL Workfront] trigger [!UICONTROL Watch Record] set to watch for documents. The scenario executes while you are uploading a large document, such as a long video. Because [!UICONTROL Workfront Fusion] tries to download the video while it is still uploading to Workfront, the scenario terminates with the `IncompleteDataError`.
+A scenario has the Workfront trigger [!UICONTROL Watch Record] set to watch for documents. The scenario executes while you are uploading a large document, such as a long video. Because [!UICONTROL Workfront Fusion] tries to download the video while it is still uploading to Workfront, the scenario terminates with the `IncompleteDataError`.
 
 >[!ENDSHADEBOX]
 

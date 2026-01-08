@@ -1,5 +1,5 @@
 ---
-title: Data Stores in [!DNL Adobe Workfront Fusion]
+title: Data Stores in Adobe Workfront Fusion
 description: A data store, similar to a database or a simple table, can store data from scenarios, making it possible to transfer data between individual scenarios or scenario runs. You can use a data store to store new data from various systems during synchronization.
 author: Becky
 feature: Workfront Fusion
@@ -9,7 +9,7 @@ exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
 
 A data store, similar to a database or a simple table, can store data from scenarios, making it possible to transfer data between individual scenarios or scenario runs. You can use a data store to store new data from various systems during synchronization.
 
-The data store modules enable you to take the following actions on records in your [!DNL Adobe Workfront Fusion] data store:
+The data store modules enable you to take the following actions on records in your Adobe Workfront Fusion data store:
 
 * Add
 * Replace
@@ -29,42 +29,28 @@ For a video introduction to data stores in Workfront Fusion, see:
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
-   <td> <p>Any</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -89,29 +75,29 @@ Fusion instances on the Select or Prime packages receive:-->
 
    For example, an organization with 600K operations receives 110 MB. 
 
-Your organization can have up to 50 data stores. The combined size of these data stores cannot exceed your organization's total data store size.
+Each team in your organization can have up to 50 data stores. The combined size of these data stores cannot exceed your organization's total data store size.
 
-## Create a data store in [!DNL Workfront Fusion]
+## Create a data store in Workfront Fusion
 
 * [Set up the data store](#set-up-the-data-store)
 * [Set up the data structure](#set-up-the-data-structure)
 
 ### Set up the data store
 
-Before you can use a data store in a module, you must create the data store in [!DNL Workfront Fusion].
+Before you can use a data store in a module, you must create the data store in Workfront Fusion.
 
 >[!NOTE]
 >
->Your organization has a limited number of available data stores. If you attempt to create more data stores than you have available, [!DNL Workfront] returns a [!UICONTROL Maximum stores reached] error.
+>Your organization has a limited number of available data stores. If you attempt to create more data stores than you have available, Workfront returns a [!UICONTROL Maximum stores reached] error.
 >
 >For more information, see [Maximum stores reached error](#maximum-stores-reached-error) in this article.
 
-1. Log in to your [!DNL Workfront Fusion] account.
+1. Log in to your Workfront Fusion account.
 1. Click **[!UICONTROL Data stores]** in the left navigation panel.
 1. Click **[!UICONTROL Add data store]** in the upper-right corner of the screen.
 1. Enter settings for the new data store.
 
-   A bolded title on a field in a [!DNL Workfront Fusion] module indicates a required setting.
+   A bolded title on a field in a Workfront Fusion module indicates a required setting.
 
    <table style="table-layout:auto">
     <col> 
@@ -169,7 +155,7 @@ Before you can use a data store in a module, you must create the data store in [
           <p><code>&rbrace;</code> </p> 
           <p>The empty columns in the data store view:</p> 
           <p> <img src="assets/empty-columns-350x132.png" style="width: 350;height: 132;"> </p> 
-          <p>You can add values to the data store manually or by using the [!DNL Workfront Fusion] data store modules.</p> 
+          <p>You can add values to the data store manually or by using the Workfront Fusion data store modules.</p> 
          </div> </li> 
        </ul> </td> 
      </tr> 
@@ -182,7 +168,7 @@ Before you can use a data store in a module, you must create the data store in [
 
 ## Edit an existing data store
 
-You can edit the properties and contents of an existing data store in the [!UICONTROL Data stores] area of [!DNL Workfront Fusion].
+You can edit the properties and contents of an existing data store in the [!UICONTROL Data stores] area of Workfront Fusion.
 
 * [Edit the properties of a data store](#edit-the-properties-of-a-data-store)
 * [Edit the contents of a data store](#edit-the-contents-of-a-data-store)

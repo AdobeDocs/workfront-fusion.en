@@ -7,7 +7,7 @@ exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
 ---
 # Debug a scenario
 
-The [!DNL Adobe Workfront Fusion] Devtool helps you to understand and troubleshoot scenarios. Using the Devtool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario.
+The Adobe Workfront Fusion Devtool helps you to understand and troubleshoot scenarios. Using the Devtool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario.
 
 >[!NOTE]
 >
@@ -22,51 +22,28 @@ For a video introduction and walkthrough of the Fusion Devtool, see
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
-   <td> <p>Any</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Access level configurations*</td> 
-   <td> 
-     <p>You must be a [!DNL Workfront Fusion] administrator for your organization.</p>
-     <p>You must be a [!DNL Workfront Fusion] administrator for your team.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -85,7 +62,7 @@ Or:
 1. Right click in an empty area of the page (not on a module).
 1. Select **Open Devtool**.
 
-## Use the [!DNL Workfront Fusion] Devtool
+## Use the Workfront Fusion Devtool
 
 Workfront Fusion Devtool is divided into 3 main sections. You can find these in the left panel of your Devtool window.
 
@@ -118,15 +95,15 @@ Live Stream displays what is happening in the background when you click Run once
         <li> <p>Request Body</p> </li> 
         <li> <p>Response Headers</p> </li> 
         <li> <p>Response Body</p> </li> 
-       </ul> <p>To view this information, click the appropriate tab in the right panel of the [!DNL Workfront Fusion] Devtool.</p> </td> 
+       </ul> <p>To view this information, click the appropriate tab in the right panel of the Workfront Fusion Devtool.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Search events by content</p> </td> 
-      <td> <p>Enter the search term into the search field in the left panel of the [!DNL Workfront Fusion] Devtool to display only requests that contain the search term.</p> </td> 
+      <td> <p>Enter the search term into the search field in the left panel of the Workfront Fusion Devtool to display only requests that contain the search term.</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Clear list of requests </p> </td> 
-      <td> <p>Click the trash bin icon in the top-right corner of the Devtool's left panel to clear the list of requests recorded by the [!DNL Workfront Fusion] Devtool. </p> </td> 
+      <td> <p>Click the trash bin icon in the top-right corner of the Devtool's left panel to clear the list of requests recorded by the Workfront Fusion Devtool. </p> </td> 
      </tr> 
      <!--<tr> 
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
@@ -145,6 +122,12 @@ Live Stream displays what is happening in the background when you click Run once
 
 ### Scenario Debugger 
 
+>[!NOTE]
+>
+>To quickly go to the debugger from a scenario that has errored out, you can click **Get details** in the error message in the module output.
+>
+>![Get details in module output](assets/go-to-debugger.png)
+
 The Scenario Debugger is useful for more complex scenarios. It displays the history of the scenario runs and enables you to search modules by their name or ID.
 
 1. Click the **[!UICONTROL Scenario Debugger]** icon ![Debugger icon](assets/scenario-debugger-icon.png) to open the Scenario Debugger.
@@ -154,7 +137,7 @@ The Scenario Debugger is useful for more complex scenarios. It displays the hist
 
 ### Tools
 
-The [!DNL Workfront Fusion] Devtool features tools that make setting up your scenario easier.
+The Workfront Fusion Devtool features tools that make setting up your scenario easier.
 
 1. Click the **[!UICONTROL Tools]** icon ![Console tools icon](assets/console-tools-icon.png) to open the Tools. 
 1. Select the tool you want to use

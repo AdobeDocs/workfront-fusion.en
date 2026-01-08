@@ -9,10 +9,12 @@ exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
 
 ## Variables
 
-There are two general variables that you can use to identify details about an execution:
+You can use these general variables to identify details about an execution:
 
 * `executionID`: the ID of this scenario execution
 * `triggerTimestamp`: The time at which this execution was triggered
+* `scenarioID`: the ID of the currently opened scenario
+* `operationsConsumed`: the number of operations used at that point in the scenario.
 
 ## [!UICONTROL get (object or array; path)]
 

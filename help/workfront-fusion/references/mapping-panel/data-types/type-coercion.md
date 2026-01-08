@@ -1,6 +1,6 @@
 ---
 title: Type coercion
-description: This document describes how [!DNL Adobe Workfront Fusion] behaves in situations when it receives values in expected and unexpected data formats.
+description: This document describes how Adobe Workfront Fusion behaves in situations when it receives values in expected and unexpected data formats.
 author: Becky
 feature: Workfront Fusion
 exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
@@ -18,41 +18,41 @@ You must have the following access to use the functionality in this article:
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] plan*</td> 
+    <td role="rowheader">Adobe Workfront plan*</td> 
    <td> <p>[!DNL Pro] or higher</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td> 
+   <td role="rowheader">Adobe Workfront license*</td> 
    <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] license**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
+   <p>Current license requirement: No Workfront Fusion license requirement.</p>
    <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>Legacy license requirement: [!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
+   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] Adobe Workfront plan, your organization must purchase Adobe Workfront Fusion as well as Adobe Workfront to use functionality described in this article. Workfront Fusion is included in the [!UICONTROL Ultimate] Workfront plan.</p>
    <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>Legacy product requirement: Your organization must purchase Adobe Workfront Fusion as well as Adobe Workfront to use functionality described in this article.</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+To find out what plan, license type, or access you have, contact your Workfront administrator.
 
-For information about Adobe Workfront Fusion licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information about Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ### Type coercion
 
-This document describes how [!DNL Adobe Workfront Fusion] behaves in situations when it receives values in expected and unexpected data formats.
+This document describes how Adobe Workfront Fusion behaves in situations when it receives values in expected and unexpected data formats.
 
 <table style="table-layout:auto">
  <col> 
@@ -74,7 +74,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>array </td> 
    <td>other </td> 
-   <td> <p>If the received value is not of the array type, [!DNL Workfront Fusion] will create an array and the first (and the only) element will be the received value.</p> </td> 
+   <td> <p>If the received value is not of the array type, Workfront Fusion will create an array and the first (and the only) element will be the received value.</p> </td> 
   </tr> 
   <tr> 
    <td>boolean </td> 
@@ -99,7 +99,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>buffer </td> 
    <td>buffer </td> 
-   <td> <p>The value is handed over unchanged only if the codepage is as expected. If the codepage differs, [!DNL Workfront Fusion] will try to convert the received value to the requested codepage. If this conversion is not supported, [!DNL Workfront Fusion] will return a validation error.</p> </td> 
+   <td> <p>The value is handed over unchanged only if the codepage is as expected. If the codepage differs, Workfront Fusion will try to convert the received value to the requested codepage. If this conversion is not supported, Workfront Fusion will return a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>buffer </td> 
@@ -124,7 +124,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>buffer </td> 
    <td>other </td> 
-   <td> <p>[!DNL Workfront Fusion] returns a validation error.</p> </td> 
+   <td> <p>Workfront Fusion returns a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>collection </td> 
@@ -134,7 +134,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>collection </td> 
    <td>other </td> 
-   <td> <p>[!DNL Workfront Fusion] returns a validation error.</p> </td> 
+   <td> <p>Workfront Fusion returns a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>date </td> 
@@ -144,12 +144,12 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>date </td> 
    <td>text </td> 
-   <td> <p>[!DNL Workfront Fusion] will try to convert the text to a date. If the conversion fails, it will return a validation error. Date must contain day, month and year. Date may contain time and time zone. Default time zone is based on your settings. Examples:</p> <p><code>2016-06-20T17:26:44.356Z</code> </p> <p><code>2016-06-20 19:26:44 GMT+02:00</code> </p> <p><code>2016-06-20 19:26+0200</code> </p> <p><code>2016-06-20 17:26:44</code> </p> <p><code>2016-06-20</code> </p> <p><code>2016/06/20 17:26:44</code> </p> <p><code>2016/06/20 19:26:44+02:00</code> </p> <p><code>2016/06/20 17:26</code> </p> <p><code>2016/06/20 5:26 PM</code> </p> <p><code>2016/06/20</code> </p> <p><code>06/20/2016 17:26:44</code> </p> <p><code>06/20/2016 19:26:44+02:00</code> </p> <p><code>06/20/2016 17:26</code> </p> <p><code>06/20/2016 5:26 PM</code> </p> <p><code>06/20/2016</code> </p> <p><code>20.6.2016 17:26:44</code> </p> <p><code>20.6.2016 19:26:44+02:00</code> </p> <p><code>20.6.2016 17:26</code> </p> <p><code>20.6.2016</code> </p> </td> 
+   <td> <p>Workfront Fusion will try to convert the text to a date. If the conversion fails, it will return a validation error. Date must contain day, month and year. Date may contain time and time zone. Default time zone is based on your settings. Examples:</p> <p><code>2016-06-20T17:26:44.356Z</code> </p> <p><code>2016-06-20 19:26:44 GMT+02:00</code> </p> <p><code>2016-06-20 19:26+0200</code> </p> <p><code>2016-06-20 17:26:44</code> </p> <p><code>2016-06-20</code> </p> <p><code>2016/06/20 17:26:44</code> </p> <p><code>2016/06/20 19:26:44+02:00</code> </p> <p><code>2016/06/20 17:26</code> </p> <p><code>2016/06/20 5:26 PM</code> </p> <p><code>2016/06/20</code> </p> <p><code>06/20/2016 17:26:44</code> </p> <p><code>06/20/2016 19:26:44+02:00</code> </p> <p><code>06/20/2016 17:26</code> </p> <p><code>06/20/2016 5:26 PM</code> </p> <p><code>06/20/2016</code> </p> <p><code>20.6.2016 17:26:44</code> </p> <p><code>20.6.2016 19:26:44+02:00</code> </p> <p><code>20.6.2016 17:26</code> </p> <p><code>20.6.2016</code> </p> </td> 
   </tr> 
   <tr> 
    <td>date </td> 
    <td>other </td> 
-   <td> <p>[!DNL Workfront Fusion] returns a validation error.</p> </td> 
+   <td> <p>Workfront Fusion returns a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>number </td> 
@@ -159,12 +159,12 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>number </td> 
    <td>text </td> 
-   <td> <p>[!DNL Workfront Fusion] will try to convert the text to a number. If the conversion fails, it will return a validation error.</p> </td> 
+   <td> <p>Workfront Fusion will try to convert the text to a number. If the conversion fails, it will return a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>number </td> 
    <td>other </td> 
-   <td> <p>[!DNL Workfront Fusion] returns a validation error.</p> </td> 
+   <td> <p>Workfront Fusion returns a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>text </td> 
@@ -174,7 +174,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>text </td> 
    <td>array </td> 
-   <td> <p>If the given array supports conversion to text, the value will be converted. If not, [!DNL Workfront Fusion] will return a validation error.</p> </td> 
+   <td> <p>If the given array supports conversion to text, the value will be converted. If not, Workfront Fusion will return a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>text </td> 
@@ -184,7 +184,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>text </td> 
    <td>buffer </td> 
-   <td> <p>If text encoding is specified for binary data, the value will be converted to text. If not, [!DNL Workfront Fusion] will return a validation error.</p> </td> 
+   <td> <p>If text encoding is specified for binary data, the value will be converted to text. If not, Workfront Fusion will return a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>text </td> 
@@ -199,7 +199,7 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>text </td> 
    <td>other </td> 
-   <td> <p>[!DNL Workfront Fusion] returns a validation error.</p> </td> 
+   <td> <p>Workfront Fusion returns a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>time </td> 
@@ -209,12 +209,12 @@ This document describes how [!DNL Adobe Workfront Fusion] behaves in situations 
   <tr> 
    <td>time </td> 
    <td>text </td> 
-   <td> <p>[!DNL Workfront Fusion] will try to convert time to the <code>hours:minutes:seconds</code> format. If the conversion fails, it will return a validation error.</p> </td> 
+   <td> <p>Workfront Fusion will try to convert time to the <code>hours:minutes:seconds</code> format. If the conversion fails, it will return a validation error.</p> </td> 
   </tr> 
   <tr> 
    <td>time </td> 
    <td>other </td> 
-   <td> <p>[!DNL Workfront Fusion] returns a validation error.</p> </td> 
+   <td> <p>Workfront Fusion returns a validation error.</p> </td> 
   </tr> 
  </tbody> 
 </table>

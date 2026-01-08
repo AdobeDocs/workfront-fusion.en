@@ -7,7 +7,7 @@ exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 ---
 # [!DNL Adobe Photoshop] modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!DNL Adobe Photoshop], as well as connect it to multiple third-party applications and services. 
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Photoshop], as well as connect it to multiple third-party applications and services. 
 
 
 If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
@@ -18,34 +18,29 @@ For information about modules, see the articles under [Modules: article index](/
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Current: No Workfront Fusion license requirement</p>
-   <p>Or</p>
-   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -53,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -157,7 +152,7 @@ To create a connection for your [!DNL Adobe Photoshop] modules:
     
 ## [!DNL Adobe Photoshop] modules and their fields
 
-When you configure [!DNL Adobe Photoshop] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Adobe Photoshop] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Adobe Photoshop] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Adobe Photoshop] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -185,6 +180,8 @@ If you see the map button above a field or function, you can use it to set varia
 ### Apply PSD edits
 
 This action module applies a variety of document and layer level edits. 
+
+This module supports large files. For more information on large files, see [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
 <table style="table-layout:auto"> 
   <col/>
@@ -270,7 +267,7 @@ This action module applies a variety of document and layer level edits.
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_applyPsdEdits/">Apply PSD Edits</a> in the Adobe Photoshop documentation.  </td> 
+   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Apply PSD Edits</a> in the Adobe Photoshop documentation.  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
@@ -546,7 +543,7 @@ This action module creates a new PSD with optional layers, and generates renditi
       <td role="rowheader">
         <p>[!UICONTROL (Options) Layers]</p>
       </td>
-   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Create PSD</a> in the Adobe Photoshop documentation.  </td> 
+   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -593,7 +590,7 @@ This action module creates a new PSD with optional layers, and generates renditi
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
       <td>
-        <p><p>For details about output options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_createPsd/">Create PSD</a> in the Adobe Photoshop documentation.  </p>
+        <p><p>For details about output options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </p>
       </td>
     </tr>
     </tbody>
@@ -643,7 +640,7 @@ This action module edits text layers on a Photoshop file. You can enter separate
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>For each text layer that you want to edit, click <b>Add item</b> and enter the layer options.<p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Edit text</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
+   <td> <p>For each text layer that you want to edit, click <b>Add item</b> and enter the layer options.<p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL (Output) Storage]</td>
       <td>
@@ -717,7 +714,7 @@ To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_editText/">Edit text layer</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
+   <td> <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text layer</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Output file storage]</td>
       <td>
@@ -879,7 +876,7 @@ This action module executes Depth Blur on the selected file.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
     </tr>
   </tbody>
@@ -966,7 +963,7 @@ This action module executes a Photoshop action on the selected image.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
     </tr>
   </tbody>
@@ -1041,7 +1038,7 @@ This action module executes Product Crop on the selected image.
    <tr>
       <td role="rowheader">[!UICONTROL Other fields]</td>
       <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_depthBlur/">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
       </td>
     </tr>
   </tbody>
@@ -1109,7 +1106,7 @@ This action module makes a custom call to the Photoshop API.
       <td>
         <p>Add the headers of the request in the form of a standard JSON object.</p>
         <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] adds authorization headers automatically.</p>
+        <p>Workfront Fusion adds authorization headers automatically.</p>
       </td>
     </tr>
     <tr>
@@ -1232,7 +1229,7 @@ This module uses Smart Object API version 2.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1297,7 +1294,7 @@ This module uses the legacy version of Smart Objects.
       <td role="rowheader">
         <p>[!UICONTROL Layers]</p>
       </td>
-   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_replaceSmartObject/">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>

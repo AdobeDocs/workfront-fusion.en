@@ -3,7 +3,7 @@ title: Adobe Workfront Fusion
 description: Welcome to the Adobe Workfront Fusion product and technical documentation home page. Use the following links, help articles, and additional resources to learn how to implement and effectively use Adobe Workfront Fusion in your organization.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
 ---
-# [!DNL Workfront] Fusion documentation
+# Workfront Fusion documentation
 
 Welcome to the Adobe Workfront Fusion product and technical documentation home page. Use the following links, help articles, and additional resources to learn how to implement and effectively use Adobe Workfront Fusion in your organization.
 

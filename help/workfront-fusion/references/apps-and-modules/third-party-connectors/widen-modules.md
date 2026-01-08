@@ -1,6 +1,6 @@
 ---
 title: Widen modules
-description: In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!UICONTROL Widen], as well as connect it to multiple third-party applications and services.
+description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!UICONTROL Widen], as well as connect it to multiple third-party applications and services.
 author: Becky
 draft: Probably
 feature: Workfront Fusion
@@ -8,7 +8,7 @@ exl-id: 11376e58-a44b-4766-85dc-e2421b0112de
 ---
 # [!DNL Widen] modules
 
-In an [!DNL Adobe Workfront Fusion] scenario, you can automate workflows that use [!UICONTROL Widen], as well as connect it to multiple third-party applications and services.
+In an Adobe Workfront Fusion scenario, you can automate workflows that use [!UICONTROL Widen], as well as connect it to multiple third-party applications and services.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -18,34 +18,29 @@ For information about modules, see the articles under [Modules: article index](/
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Current: No Workfront Fusion license requirement</p>
-   <p>Or</p>
-   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -53,7 +48,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -80,7 +75,7 @@ The Widen connector uses the following:
  </tbody> 
  </table>
 
-## Connect [!DNL Widen] to [!DNL Workfront Fusion]  {#connect-widen-to-workfront-fusion}
+## Connect [!DNL Widen] to Workfront Fusion  {#connect-widen-to-workfront-fusion}
 
 You can create a connection to your [!DNL Widen] account directly from inside a [!DNL Widen] module.
 
@@ -92,7 +87,7 @@ You can create a connection to your [!DNL Widen] account directly from inside a 
 
 ## [!DNL Widen] modules and their fields
 
-When you configure [!DNL Widen] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Widen] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure [!DNL Widen] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Widen] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -114,7 +109,7 @@ This trigger module starts a scenario when an asset is created or updated.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Event type]</td> 
@@ -155,7 +150,7 @@ This action module adds one or more assets to collections.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collections ID]</td> 
@@ -186,7 +181,7 @@ When you are configuring this module, the following fields display.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL API Version]</td> 
@@ -228,7 +223,7 @@ This action module downloads an asset from your [!DNL Widen] account.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -247,7 +242,7 @@ This action module retrieves an individual asset by its unique ID.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -274,7 +269,7 @@ This action module removes one or more assets from collections.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
   <tr> 
@@ -304,7 +299,7 @@ This action module updates the metadata fields of an asset.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Asset ID]</td> 
@@ -335,7 +330,7 @@ This action module uploads a file into your [!DNL Widen] account.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Upload Profile]</td> 
@@ -379,7 +374,7 @@ This action module retrieves a list of assets within a collection.
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Collection ID]</td> 
@@ -418,7 +413,7 @@ This search module retrieves a list of assets that match the specific search cri
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>For instructions about connecting your [!DNL Widen] account to [!DNL Workfront Fusion], see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to [!DNL Workfront Fusion] </a> in this article.</p> </td> 
+  <td> <p>For instructions about connecting your [!DNL Widen] account to Workfront Fusion, see <a href="#connect-widen-to-workfront-fusion" class="MCXref xref">Connect [!DNL Widen] to Workfront Fusion </a> in this article.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Search query]</td> 

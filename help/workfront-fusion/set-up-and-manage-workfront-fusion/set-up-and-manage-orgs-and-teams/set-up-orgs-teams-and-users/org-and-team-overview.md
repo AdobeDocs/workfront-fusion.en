@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
 ---
-# [!DNL Adobe Workfront Fusion] organizations and teams overview
+# Adobe Workfront Fusion organizations and teams overview
 
-[!DNL Adobe Workfront Fusion]'s Organization and Teams features make it possible for enterprises to control access to scenarios and other features within Fusion.
+Adobe Workfront Fusion's Organization and Teams features make it possible for enterprises to control access to scenarios and other features within Fusion.
 
 An organization is the largest entity in Adobe Workfront Fusion. For example, your Fusion organization may represent the Fusion account for your entire company. 
 
@@ -17,7 +17,7 @@ For instructions on creating a team, see [Create a team](/help/workfront-fusion/
 
 ## Organizations
 
-[!DNL Workfront Fusion] users belong to an organization. 
+Workfront Fusion users belong to an organization. 
 
 Users must be added to an organization before they are added to a team. 
 
@@ -26,8 +26,8 @@ Users must be added to an organization before they are added to a team.
 A user has one of the following roles in an organization:
 
 * **[!UICONTROL Owner]**: The owner has all permissions available in the organization.
-* **[!UICONTROL Admin]**: Admins can create and manage teams and users for the organization, and can approve templates.
-* **[!UICONTROL Member]**: Members are able to use [!DNL Workfront Fusion] but are unable to make organizational changes.
+* **[!UICONTROL Admin]**: Admins can manage users on the Adobe Admin Console if the organization is enabled for Adobe Identity Management System (IMS), or can invite new users for organizations not on IMS. They can also approve templates.
+* **[!UICONTROL Member]**: Members are able to use Workfront Fusion but are unable to make organizational changes.
 * **[!UICONTROL Accountant]**: Accountants can see license information on the organization dashboard, but cannot perform any actions.
 * **[!UICONTROL App Developer]**: Functionality for this role is currently unavailable, and will be made available in the near future. We do not recommend assigning users to this role at this time.
 
@@ -47,7 +47,7 @@ Teams are groups of users that share access to specific resources. These resourc
 
 >[!NOTE]
 >
->Because teams share resources, it is sometimes useful for a team to have only one member. For example, users in training may create connections to their individual [!DNL Workfront] accounts. Any team members would also be able to connect to the individual [!DNL Workfront] account. In this case we recommend that the user be the only member of a training team.
+>Because teams share resources, it is sometimes useful for a team to have only one member. For example, users in training may create connections to their individual Workfront accounts. Any team members would also be able to connect to the individual Workfront account. In this case we recommend that the user be the only member of a training team.
 
 Organizations may have as many teams as they need, and users may belong to one or more teams.
 

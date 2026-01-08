@@ -26,6 +26,14 @@ This article addresses common questions about Adobe Workfront Fusion scenario te
    <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td>
+   <p>Current: No Workfront Fusion license requirement.</p>
+   <p>Or</p>
+   <p>Legacy: Any </p>
+   </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">Product</td> 
    <td>
    <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
@@ -35,6 +43,8 @@ This article addresses common questions about Adobe Workfront Fusion scenario te
 </table>
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 

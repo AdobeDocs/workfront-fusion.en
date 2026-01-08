@@ -55,7 +55,7 @@ A template must be created before it can be published or shared.
    
    Click the name of the template you want to publish, then click the **[!UICONTROL Publish]** button in the upper-right corner of the screen.
 
-## Share a [!DNL Workfront Fusion] template
+## Share a Workfront Fusion template
 
 After you have published a template, you can share it.
 
@@ -73,7 +73,7 @@ After you have published a template, you can share it.
 
    >[!NOTE]
    >
-   >* After the template is approved, it becomes public. [!UICONTROL Public templates] are visible in the [!UICONTROL Public templates] tab for all [!DNL Workfront Fusion] users, regardless of the organization or the team.
+   >* After the template is approved, it becomes public. [!UICONTROL Public templates] are visible in the [!UICONTROL Public templates] tab for all Workfront Fusion users, regardless of the organization or the team.
    >* Your administrator is not notified about receiving the template to review by email. If the approval is urgent, contact the administrator directly.
 
 

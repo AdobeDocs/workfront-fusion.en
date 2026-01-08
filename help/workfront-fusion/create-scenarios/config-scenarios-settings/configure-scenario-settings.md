@@ -14,51 +14,28 @@ You can configure specific settings for scenarios in the scenario settings panel
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan</td> 
-   <td> <p>Any</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
-   <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] Plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] Plan: [!DNL Workfront Fusion] is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Access level configurations*</td> 
-   <td> 
-     <p>You must be a [!DNL Workfront Fusion] administrator for your organization.</p>
-     <p>You must be a [!DNL Workfront Fusion] administrator for your team.</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
  </tbody> 
 </table>
 
-For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
-
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
@@ -113,15 +90,15 @@ Once a scenario has been executed, you can by default display information about 
 
 ### [!UICONTROL Allow storing incomplete executions]
 
-This option determines how [!DNL Adobe Workfront Fusion] proceeds if an error occurs during the execution of a scenario. With this option enabled, the scenario is paused and moved to the incomplete execustion folder. This gives you the possibility to fix the issue and continue executing from where the scenario was stopped. If this option is disabled, the scenario run stops and a rollback phase is started.
+This option determines how Adobe Workfront Fusion proceeds if an error occurs during the execution of a scenario. With this option enabled, the scenario is paused and moved to the incomplete execustion folder. This gives you the possibility to fix the issue and continue executing from where the scenario was stopped. If this option is disabled, the scenario run stops and a rollback phase is started.
 
 For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
 ### Enable data loss
 
-This option has to do with enabling data loss if [!DNL Workfront Fusion] fails to save a bundle to the queue of incomplete executions (for example, due to a lack of free space). With this option enabled, the data is lost in order to prevent interruptions in the overall scenario execution. This is useful for scenarios where the highest priority is continuous execution and the incoming erroneous data is not that important.
+This option has to do with enabling data loss if Workfront Fusion fails to save a bundle to the queue of incomplete executions (for example, due to a lack of free space). With this option enabled, the data is lost in order to prevent interruptions in the overall scenario execution. This is useful for scenarios where the highest priority is continuous execution and the incoming erroneous data is not that important.
 
-Beyond that, when executing a scenario, a module can sometimes encounter a file that is larger than the maximum allowed size. In this case, [!DNL Workfront Fusion] proceeds in accordance with the setting of the [!UICONTROL Enable data loss] option and a warning message is shown.
+Beyond that, when executing a scenario, a module can sometimes encounter a file that is larger than the maximum allowed size. In this case, Workfront Fusion proceeds in accordance with the setting of the [!UICONTROL Enable data loss] option and a warning message is shown.
 
 For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
 
@@ -154,7 +131,7 @@ Setting more cycles can be useful when you want to prevent connection interrupti
 
 >[!BEGINSHADEBOX]
 
-**Examples:**  [!DNL Workfront] > [!UICONTROL Watch record] watches for new issues that come in, and [!DNL Workfront] >[!UICONTROL Convert object] converts the new request into a project and assigns it the appropriate template.
+**Examples:**  Workfront > [!UICONTROL Watch record] watches for new issues that come in, and Workfront >[!UICONTROL Convert object] converts the new request into a project and assigns it the appropriate template.
 
 ![Scenario settings](assets/scenario-settings-ex-1-350x157.png)
 
@@ -165,7 +142,7 @@ A [!UICONTROL more cycles] setting is applied only when you schedule your scenar
 ![Maximum number of cycles](assets/max-number-cycles-1-350x201.png)
 
 The Max number of cycles in the Workfront > Watch records module is set to `10`.
-If 100 requests are submitted to [!DNL Workfront], and the Max number of cycles field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
+If 100 requests are submitted to Workfront, and the Max number of cycles field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
 
 #### Max number of cycles is set to 10
 
@@ -185,7 +162,7 @@ For more information about this page, see [Scenario details](/help/workfront-fus
 
 ### Number of consecutive errors
 
-Defines the maximum number of consecutive execution attempts before the execution of a scenario is deactivated (excluding `DataError`, `DuplicateDataError` and `ConnectionError`).
+Defines the maximum number of consecutive execution attempts before the execution of a scenario is deactivated (excluding `DataError`, `DuplicateDataError`, `ModuleTimeoutError`, and `ConnectionError`).
 
 For more information on errors, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 

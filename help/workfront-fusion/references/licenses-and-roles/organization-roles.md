@@ -7,11 +7,11 @@ exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
 ---
 # Organization and team roles
 
-This article describes the access and functionality available to the different team and organization roles in [!DNL Workfront Fusion].
+This article describes the access and functionality available to the different team and organization roles in Workfront Fusion.
 
 >[!NOTE]
 >
->Organization roles are separate from team roles in [!DNL Workfront Fusion]. For more information on organization and team roles, see [Organizations and teams overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
+>Organization roles are separate from team roles in Workfront Fusion. For more information on organization and team roles, see [Organizations and teams overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md).
 
 ## Organization roles
 
@@ -48,7 +48,7 @@ This article describes the access and functionality available to the different t
   <tr> 
    <td> <p>Manage organization users</p> </td> 
    <td>✓ </td> 
-   <td>✓</td> 
+   <td>✓<p>Can manage users on Adobe Admin Console if org is on Adobe IMS. Can only invite users to other orgs.</td> 
    <td> </td> 
    <td> </td> 
   </tr> 

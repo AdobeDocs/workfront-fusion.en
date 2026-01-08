@@ -23,34 +23,29 @@ This action module executes the specified SOAP action.
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Current: No Workfront Fusion license requirement</p>
-   <p>Or</p>
-   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
+   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -58,13 +53,13 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
 ## SOAP module and its fields
 
-When you configure SOAP modules, [!DNL Workfront Fusion] displays the fields listed below.  A bolded title in a module indicates a required field.
+When you configure SOAP modules, Workfront Fusion displays the fields listed below.  A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -139,7 +134,7 @@ This example includes the `soapenc:Array`, `soapenc:arrayType` and `wsdl:arrayTy
 
 If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws various errors in the module's configuration, you may try using the universal **[!UICONTROL HTTP] > [!UICONTROL Make a request]** module instead:
 
-1. In [!DNL Workfront Fusion], create a new scenario.
+1. In Workfront Fusion, create a new scenario.
 1. Insert the **[!UICONTROL HTTP] > [!UICONTROL Make a request]** module in the scenario.
 1. Open the module's configuration and fill in the following fields:
 
@@ -179,14 +174,12 @@ If the [!UICONTROL SOAP] module refuses to process the WSDL file or throws vario
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. Once located, copy the URL from the `location` attribute.
-1. In [!DNL Workfront Fusion], paste the URL into the HTTP module's URL field.
-1. Open the [Online [!UICONTROL SOAP] Client](https://wsdlbrowser.com/) in a new web browser window/tab.
-1. Paste the WSDL URL into the WSDL URL field.
-1. Click **[!UICONTROL Browse]**.
-1. Pick from the list of functions to the left, for example `getLanguages`.
-1. Copy the content of the [!UICONTROL Request XML] text area.
-1. In [!UICONTROL Workfront Fusion], paste the copied content to the module's URL field.
-1. Provide values for selected parameters by replacing the question marks with actual values:
+1. In Workfront Fusion, paste the URL into the HTTP module's **Request content** field.
+1. Provide values for selected parameters by replacing the question marks with actual values.
+
+   >[!NOTE]
+   >
+   > To get specific values from the WSDL file, use an online WSDL viewer.
 
    <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 

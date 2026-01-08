@@ -3,11 +3,13 @@ title: Chain Modules
 description: Using these modules, you can chain scenarios together, making one call another.
 author: Becky
 feature: Workfront Fusion
-hide: yes
-hidefromtoc: yes
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 ---
 # Chain modules
+
+>[!NOTE]
+>
+>This feature is currently in Beta.
 
 Using the Chain modules, you can connect one scenario to another.
 
@@ -20,32 +22,22 @@ For instructions on planning chained scenarios, see [Chain multiple scenarios to
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion license**</td> 
-   <td>
-   <p>No Workfront Fusion license requirement</p>
-   </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -53,9 +45,9 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
-
 +++
+
+
 
 ## Chain modules and their fields
 
@@ -100,6 +92,7 @@ To configure the Call a child scenario module
    The fields configured in the trigger module of the child scenario appear in the Call a child scenario module.
 
 1. Enter or map the information to be passed to the child scenario into the Call a child scenario module.
+1. (Conditional) If you want the parent scenario to continue its execution without waiting for a response from the child scenario, enable the **Fire and Forget** option.
 1. Click **OK** to save the module.
 
 >[!NOTE]

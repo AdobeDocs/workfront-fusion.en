@@ -3,7 +3,7 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: connections-annd-webhooks
 title: Manage connections
-description: For most apps, it is necessary to create a connection, through which [!DNL Adobe Workfront Fusion] can communicate with the given third-party service according to the settings of the specific scenario.
+description: For most apps, it is necessary to create a connection, through which Adobe Workfront Fusion can communicate with the given third-party service according to the settings of the specific scenario.
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
@@ -20,34 +20,29 @@ For more information on connections, see [Connection overview](/help/workfront-f
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] package</td> 
-   <td> <p>Any</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license</td> 
-   <td> <p>New: [!UICONTROL Standard]</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Current: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy: Any </p>
+   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Connector-based (legacy): To connect to applications outside the Workfront family of products, you must have Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] [!DNL Workfront] plan: Your organization must purchase [!DNL Adobe Workfront Fusion].</li><li>[!UICONTROL Ultimate] [!DNL Workfront] plan: [!DNL Workfront Fusion] is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase [!DNL Adobe Workfront Fusion].</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -55,7 +50,7 @@ You must have the following access to use the functionality in this article:
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
@@ -74,19 +69,20 @@ You can manage all connections from the Connections area.
 1. (Optional) Assign an environment and connection type by clicking the **Environment** and **Type** dropdowns and selecting an option.
 1. (Optional) To view which permissions were given to Workfront Fusion for the connection, click the View icon ![View connection permissions](assets/view-connection-permissions.png) for that connection.
 1. (Optional) To rename a connection, highlight the connection name and type the new name.
-1. (Optional) To reauthorize a connection, click **Reauthorize**.
-1. (Optional) To delete a connection, click **Delete**, then click **Really?**.
-1. (Optional) To verify that the connection to the service was established successfully, click **Verify**.
+1. (Optional) To reauthorize a connection, check the checkbox next to the connection, then click **Reauthorize** near the bottom of the screen.
+1. (Optional) To delete a connection, check the checkbox next to the connection, click **Delete** near the bottom of the screen, then click **Really?**.
+1. (Optional) To verify that the connection to the service was established successfully, check the checkbox next to the connection, then click **Verify** near the bottom of the screen.
+1. (Optional) To view active scenarios that use this connection, check the checkbox next to the connection, then click **Fetch Active Scenarios**. You can then click a scenario in the Active scenarios list to go to that scenario.
 
 ## Renew a connection
 
-[!DNL Workfront Fusion] usually obtains access rights to a given service for an unlimited period of time. Some applications require the access permission to be renewed after a certain period of time. In these cases, [!DNL Workfront Fusion] notifies you via email shortly before its access rights expire.
+Workfront Fusion usually obtains access rights to a given service for an unlimited period of time. Some applications require the access permission to be renewed after a certain period of time. In these cases, Workfront Fusion notifies you via email shortly before its access rights expire.
 
 To renew a connection:
 
 1. To open the Connections area, click **Connections** ![Connections icon](assets/connections-icon.png) in the left navigation.
 1. Locate the connection you want to renew.
-1. In the line for that connection, click the **[!UICONTROL Reauthorize]** button in the **[!UICONTROL Connections]** area.
+1. In the line for that connection, check the checkbox next to the connection, then click **Reauthorize** near the bottom of the screen.
 
 ## Resources
 
