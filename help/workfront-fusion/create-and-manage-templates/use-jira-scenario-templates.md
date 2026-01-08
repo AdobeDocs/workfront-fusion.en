@@ -182,7 +182,7 @@ When creating these connections, be sure to use the credentials of the created S
 If desired, you can create these connections as part of configuring the templates.
 
 * For instructions on creating a connection to Workfront, see [Connect Workfront to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) in the article Workfront modules.
-* For instructions on creating a connection to Jira Cloud, see [Connect Jira to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) in the article Jira Software modules.
+* For instructions on creating a connection to Jira, see [Connect Jira to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) in the article Jira Software modules.
 
 
 ## Scenarios
@@ -291,7 +291,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. In the first module, begin adding a webhook.
 1. Select a connection that uses the credentials for the System Integration user, or create a connection to Jira with the System Integration credentials.
 
-* For instructions on creating a connection to Jira Cloud, see [Connect Jira to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) in the article Jira Software modules.
+* For instructions on creating a connection to Jira, see [Connect Jira to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) in the article Jira Software modules.
 
 1. Configure the webhook filter 
 
