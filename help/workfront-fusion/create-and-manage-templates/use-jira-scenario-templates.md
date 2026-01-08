@@ -77,19 +77,19 @@ These modules assume the following:
 ## Data Model (Field Mappings)
 
 
-| Workfront | Jira | Direction | Notes |
-| --- | --- | --- | --- |
-| ObjId | WF ID * | WF &rarr; Jira | Upon Jira Issue Creation |
-| Jira Key * | Issue Key | Jira &rarr; WF | Upon Jira Issue Creation |
-| Jira URL * | - | Jira &rarr; WF | User Clickable link in WF to Jira |
-| - | WF Link * | WF &rarr; Jira | User Clickable link in Jira to WF |
-| Name | Summary | WF &rarr; Jira | |
-| Description | Description | WF &rarr; Jira | |
-| Status | WF Status | WF &rarr; Jira | WF Status |
-| Jira Status * | Status | Jira &rarr; WF | Jira Status |
-| Planned Completion Date | Due Date | WF &rarr; Jira | Planned Completion Date |
-| Notes | Comments | WF &harr; Jira | Bidirectional copy |
-| Document | Attachment | WF &rarr; Jira | As attachments on issue creation and comments on new documents after creation. |
+|Workfront|Jira|Direction|Notes|
+|---|---|---|---|
+|ObjId|WF ID *|WF &rarr; Jira|Upon Jira Issue Creation|
+|Jira Key *|Issue Key|Jira &rarr; WF|Upon Jira Issue Creation|
+|Jira URL *|-|Jira &rarr; WF|User Clickable link in WF to Jira|
+|-|WF Link *|WF &rarr; Jira|User Clickable link in Jira to WF|
+|Name|Summary|WF &rarr; Jira||
+|Description|Description|WF &rarr; Jira||
+|Status|WF Status|WF &rarr; Jira|WF Status|
+|Jira Status *|Status|Jira &rarr; WF|Jira Status|
+|Planned Completion Date|Due Date|WF &rarr; Jira|Planned Completion Date|
+|Notes|Comments|WF &harr; Jira|Bidirectional copy|
+|Document|Attachment|WF &rarr; Jira|As attachments on issue creation and comments on new documents after creation.|
 
 \* These fields are configured as part of this integration setup. For instructions, see [Configure prerequisites in Workfront, Jira, and Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#configure-prerequisites-in-workfront-jira-and-workfront-fusion).
 
@@ -121,11 +121,11 @@ This integration expects three specific fields in the Jira account it connects t
 1. In the upper-right corner of the screen, click **Create custom field.**
 1. Create the following fields:
 
-   |Field name|Field type|
-   |---|---|
-   |WF ID|Text field (single line)|
-   |WF Status|Text field (single line)|
-   |WF Link|URL field|
+  |Field name|Field type|
+  |---|---|
+  |WF ID|Text field (single line)|
+  |WF Status|Text field (single line)|
+  |WF Link|URL field|
 
    For information on creating links in Jira, see the Jira documentation on creating fields.
 1. Add the newly created fields to the screen associated with your Jira project. 
@@ -154,11 +154,11 @@ To use these modules, the following must be created in Workfront:
 1. Name the form "**JIRA Fields**".
 1. Include the following fields on the custom form:
 
-   |Field name|Field type|
-   |---|---|
-   |Jira Key|Single line text field|
-   |Jira URL|Single line text field|
-   |Jira status|Single line text field|
+  |Field name|Field type|
+  |---|---|
+  |Jira Key|Single line text field|
+  |Jira URL|Single line text field|
+  |Jira status|Single line text field|
 
 1. Add any additional fields that you will want to map between Jira and Workfront.
 1. Save the custom form.
@@ -211,7 +211,6 @@ When configuring these templates, use the following general parameters:
    * Run the following API call on your JIRA instance to get the ID for the specific Account in JIRA: 
 `GET /rest/api/3/user/search?query=email@example.com`
 
-<!--
  
 ### Scenario 1: Workfront to Jira: Create JIRA issue from Workfront task or issue assignment
 
@@ -237,8 +236,8 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
    |Field|Operator|Value|
    |---|---|---|
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   |TaskID |Exists||
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |TaskID|Exists||
+   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
@@ -254,17 +253,17 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 1. In the second module of the template (Set Environment Details), for each of the following variables, click **Add item** and enter the variable's name and value
 
-   |Variable name | Variable value|
+   |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
+   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. Continue to [Map custom fields in Jira]()
 
 #### Map custom fields in Jira. 
 
-Awaiting feedback-->
+<!--Awaiting feedback-->
 
 +++
 
@@ -383,7 +382,7 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Updates on issues)||| 
+   |(Updates on issues)|||
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
    |WF ID|Exists||
@@ -423,7 +422,7 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Create and Updates on Notes.)||| 
+   |(Create and Updates on Notes.)|||
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
@@ -465,7 +464,7 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Delete on Notes.)||| 
+   |(Delete on Notes.)|||
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
    |WF ID|Exists||
@@ -505,7 +504,7 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Create on Document.)||| 
+   |(Create on Document.)|||
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
@@ -544,7 +543,7 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Delete on Document)||| 
+   |(Delete on Document)|||
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
