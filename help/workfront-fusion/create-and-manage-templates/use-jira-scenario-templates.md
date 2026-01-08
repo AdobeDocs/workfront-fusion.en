@@ -35,7 +35,7 @@ Adobe workfront Fusion offers templates that can automate common workflows betwe
   </tr>
   <tr> 
    <td role="rowheader">Access level configurations</td> 
-   <td> <p>Workfront: permission to create users, custom forms, and custom fields.</p> <p>Jira: Permissions to creat users and custom fields, and to modify screens and webhooks.</td> 
+   <td> <p>Workfront: permission to create users, custom forms, and custom fields.</p> <p>Jira: Permissions to create users and custom fields, and to modify screens and webhooks.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -57,7 +57,7 @@ For more detail about the information in this table, see [Access requirements in
 
 ### Jira 
 
-If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at https://developer.atlassian.com/console. For information and instructions, see the Jira documentation.
+If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at [https://developer.atlassian.com/console](https://developer.atlassian.com/console). For information and instructions, see the Jira documentation.
 
 When configuring this application, you will need the following scopes:
 
@@ -77,19 +77,19 @@ These modules assume the following:
 ## Data Model (Field Mappings)
 
 
-|Workfront  |  Jira  |  Direction  |  Notes|
-|---|---|---|---|
-|ObjId  | WF ID *  | WF &rarr; Jira  |  Upon Jira Issue Creation|
-|Jira Key * |   Issue Key  |  Jira &rarr; WF |   Upon Jira Issue Creation|
-|Jira URL *  |  -  |  Jira &rarr; WF  |  User Clickable link in WF to Jira|
-|-  |  WF Link *  |  WF &rarr; Jira  |  User Clickable link in Jira to WF|
-|Name |   Summary   | WF &rarr; Jira  |  |
-|Description  |  Description |   WF &rarr; Jira |   |
-|Status  |  WF Status |   WF &rarr; Jira  |  WF Status|
-|Jira Status * |   Status  |  Jira &rarr; WF  |  Jira Status|
-|Planned Completion Date   | Due Date |   WF &rarr; Jira  |  Planned Completion Date|
-|Notes  |  Comments   | WF &harr; Jira |   Bidirectional copy|
-|Document  |  Attachment |   WF &rarr; Jira  |  As attachments on issue creation and comments on new documents after creation.|
+| Workfront | Jira | Direction | Notes |
+| --- | --- | --- | --- |
+| ObjId | WF ID * | WF &rarr; Jira | Upon Jira Issue Creation |
+| Jira Key * | Issue Key | Jira &rarr; WF | Upon Jira Issue Creation |
+| Jira URL * | - | Jira &rarr; WF | User Clickable link in WF to Jira |
+| - | WF Link * | WF &rarr; Jira | User Clickable link in Jira to WF |
+| Name | Summary | WF &rarr; Jira | |
+| Description | Description | WF &rarr; Jira | |
+| Status | WF Status | WF &rarr; Jira | WF Status |
+| Jira Status * | Status | Jira &rarr; WF | Jira Status |
+| Planned Completion Date | Due Date | WF &rarr; Jira | Planned Completion Date |
+| Notes | Comments | WF &harr; Jira | Bidirectional copy |
+| Document | Attachment | WF &rarr; Jira | As attachments on issue creation and comments on new documents after creation. |
 
 \* These fields are configured as part of this integration setup. For instructions, see [Configure prerequisites in Workfront, Jira, and Workfront Fusion](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#configure-prerequisites-in-workfront-jira-and-workfront-fusion).
 
@@ -99,7 +99,7 @@ To use the Jira integration templates, you must perform the following configurat
 
 * [Configure Jira](#configure-jira)
 * [Configure Workfront](#configure-workfront)
-* [Configure connections in Workfront Fusion]()
+* [Configure connections in Workfront Fusion](#configure-connections-in-workfront-fusion)
 
 ### Configure Jira
 
@@ -150,7 +150,7 @@ To use these modules, the following must be created in Workfront:
 
 1. In Workfront, begin creating a custom form. 
 
-   For instructions, see [reate a custom form](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) in the Workfront documentation.
+   For instructions, see [Create a custom form](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form) in the Workfront documentation.
 1. Name the form "**JIRA Fields**".
 1. Include the following fields on the custom form:
 
@@ -275,7 +275,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 >[!NOTE]
 >
 >This scenario requires an OAuth2 connection for Jira. 
->If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at https://developer.atlassian.com/console. For information and instructions, see the Jira documentation.
+>If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at [https://developer.atlassian.com/console](https://developer.atlassian.com/console). For information and instructions, see the Jira documentation.
 
 +++**Expand to view instructions for configuring Scenario 2: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira**
 
@@ -293,7 +293,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 
 1. Configure the webhook filter 
 
-1. Continue to [Configure a webhook in Jira]()
+1. Continue to [Configure a webhook in Jira](#configure-a-webhook-in-jira)
 
 #### Configure a webhook in Jira
 
@@ -308,7 +308,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
    * **Comment**: created, deleted
 
 
-1. Continue to [Connect template modules to Workfront and Jira (Module 2)]()
+1. Continue to [Connect template modules to Workfront and Jira (Module 2)](#connect-template-modules-to-workfront-and-jira-module-2)
 
 #### Connect template modules to Workfront and Jira (Module 2)
 
@@ -339,19 +339,19 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
    |Field|Operator|Value|
    |---|---|---|
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
-   |DE: Jira Key|Exists| |
+   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |DE: Jira Key|Exists||
 
 1. Enable the **Exclude updates made by this connection** option.
 1. In the **Record Origin** field, select `Updated record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In the second module, set the following variables, then click **OK** to save the module.
 
-   |Variable name | Variable value|
+   |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
+   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
@@ -385,18 +385,18 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |---|---|---|
    |(Updates on issues)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
    |WF ID|Exists||
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In the second module, set the following variables, then click **OK** to save the module.
 
-   |Variable name | Variable value|
+   |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
+   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
@@ -425,17 +425,17 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |---|---|---|
    |(Create and Updates on Notes.)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In the second module, set the following variables, then click **OK** to save the module.
 
-   |Variable name | Variable value|
+   |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
+   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
@@ -467,18 +467,18 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |---|---|---|
    |(Delete on Notes.)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
    |WF ID|Exists||
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In the second module, set the following variables, then click **OK** to save the module.
 
-   |Variable name | Variable value|
+   |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
+   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
@@ -507,15 +507,15 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |---|---|---|
    |(Create on Document.)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. In the second module, set the following variables.
 
-   |Variable name | Variable value|
+   |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
+   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
@@ -546,15 +546,15 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |---|---|---|
    |(Delete on Document)||| 
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   | projectID |Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. In the second module, set the following variables.
 
-   |Variable name | Variable value|
+   |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   |JiraBaseURL| The base URL of the Jira account you are connecting to.|
-   |wfBaseURL| The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
+   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
