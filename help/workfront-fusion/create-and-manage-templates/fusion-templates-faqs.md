@@ -13,19 +13,17 @@ This article addresses common questions about Adobe Workfront Fusion scenario te
 
 +++ Expand to view access requirements for the functionality in this article.
 
-You must have the following access to use the functionality in this article:
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront package</td> 
-   <td> <p>Any</p> </td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront license</td> 
-   <td> <p>New: Standard</p><p>Or</p><p>Current: [!UICONTROL Work] or higher</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license**</td> 
@@ -38,9 +36,7 @@ You must have the following access to use the functionality in this article:
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>New:</p> <ul><li>[!UICONTROL Select] or [!UICONTROL Prime] Workfront plan: Your organization must purchase Adobe Workfront Fusion.</li><li>[!UICONTROL Ultimate] Workfront plan: Workfront Fusion is included.</li></ul>
-   <p>Or</p>
-   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
