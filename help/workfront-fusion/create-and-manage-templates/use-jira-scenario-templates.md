@@ -121,11 +121,11 @@ This integration expects three specific fields in the Jira account it connects t
 1. In the upper-right corner of the screen, click **Create custom field.**
 1. Create the following fields:
 
-  |Field name|Field type|
-  |---|---|
-  |WF ID|Text field (single line)|
-  |WF Status|Text field (single line)|
-  |WF Link|URL field|
+   |Field name|Field type|
+   |---|---|
+   |WF ID|Text field (single line)|
+   |WF Status|Text field (single line)|
+   |WF Link|URL field|
 
    For information on creating links in Jira, see the Jira documentation on creating fields.
 1. Add the newly created fields to the screen associated with your Jira project. 
@@ -241,7 +241,7 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 1. Enable the **Exclude updates made by this connection** option.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
-1. Continue to [Connect template modules to Workfront and Jira]()
+1. Continue to [Connect template modules to Workfront and Jira](#connect-template-modules-to-workfront-and-jira)
 
 #### Connect template modules to Workfront and Jira
 
@@ -259,7 +259,7 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
    |JiraBaseURL|The base URL of the Jira account you are connecting to.|
    |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
-1. Continue to [Map custom fields in Jira]()
+1. Continue to [Map custom fields in Jira](#map-custom-fields-in-jira)
 
 #### Map custom fields in Jira. 
 
