@@ -57,13 +57,17 @@ For more detail about the information in this table, see [Access requirements in
 
 ### Jira 
 
-If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at [https://developer.atlassian.com/console](https://developer.atlassian.com/console). For information and instructions, see the Jira documentation.
+If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at [https://developer.atlassian.com/console](https://developer.atlassian.com/console). For information and instructions, see [Create an OAuth2 connection to Jira](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#create-an-oauth2-connection-to-jira) in the article Jira modules.
+
+<!--
 
 When configuring this application, you will need the following scopes:
 
 * `read:jira-work` 
 * `read:jira-user`
 * `write:jira-work`
+
+-->
 
 ## Assumptions
 
@@ -178,7 +182,7 @@ When creating these connections, be sure to use the credentials of the created S
 If desired, you can create these connections as part of configuring the templates.
 
 * For instructions on creating a connection to Workfront, see [Connect Workfront to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#connect-workfront-to-workfront-fusion) in the article Workfront modules.
-* For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.
+* For instructions on creating a connection to Jira Cloud, see [Connect Jira to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) in the article Jira Software modules.
 
 
 ## Scenarios
@@ -235,11 +239,12 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
    |Field|Operator|Value|
    |---|---|---|
-   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
+   |assignedToID|Equals|(Enter the Workfront ID of the System Integration user)|
    |TaskID|Exists||
-   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID|Equals|(Enter the ID of the project or projects that you want the webhook to watch)|
 
 1. Enable the **Exclude updates made by this connection** option.
+1. In the **Record Origin** field, select New Record Only.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. Continue to [Connect template modules to Workfront and Jira](#connect-template-modules-to-workfront-and-jira)
 
@@ -255,9 +260,9 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
    |Variable name|Variable value|
    |---|---|
-   |defaultJiraReporterID|This is the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
-   |JiraBaseURL|The base URL of the Jira account you are connecting to.|
-   |wfBaseURL|The base URL of the Workfront account you are connecting to.|
+   |defaultJiraReporterID|Enter the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
+   |JiraBaseURL|Ente the base URL of the Jira account you are connecting to.|
+   |wfBaseURL|Enter the base URL of the Workfront account you are connecting to.|
 
 1. Continue to [Map custom fields in Jira](#map-custom-fields-in-jira)
 
@@ -274,11 +279,9 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 >[!NOTE]
 >
 >This scenario requires an OAuth2 connection for Jira. 
->If you are using OAuth2 authorization for Jira (recommended), you must set up an OAuth2 application at [https://developer.atlassian.com/console](https://developer.atlassian.com/console). For information and instructions, see the Jira documentation.
+>To use OAuth2 authorization for Jira, you must set up an OAuth2 application at [https://developer.atlassian.com/console](https://developer.atlassian.com/console). For information and instructions, see the Jira documentation.
 
 +++**Expand to view instructions for configuring Scenario 2: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira**
-
-
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
@@ -288,7 +291,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. In the first module, begin adding a webhook.
 1. Select a connection that uses the credentials for the System Integration user, or create a connection to Jira with the System Integration credentials.
 
-   For instructions on creating a connection to Jira Cloud, see [Connect Jira Cloud to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md#connect-jira-cloud-to-workfront-fusion) in the article Jira Software modules.'
+* For instructions on creating a connection to Jira Cloud, see [Connect Jira to Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md#connect-jira-to-workfront-fusion) in the article Jira Software modules.
 
 1. Configure the webhook filter 
 
@@ -298,7 +301,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 
 1. In Jira, create a webhook.
 
-   For instructions see the information on webhooks in the Jira documentation.
+   For instructions see [Webhooks](https://developer.atlassian.com/server/jira/platform/webhooks/) in the Jira documentation.
 
 1. When configuring the webhook, use the following values:
  
