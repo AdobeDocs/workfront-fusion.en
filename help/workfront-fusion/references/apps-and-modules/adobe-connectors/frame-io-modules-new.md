@@ -1201,6 +1201,7 @@ This module updates metadata fields on one or more files with values you specify
 ### Other
 
 * [Make a custom API call](#make-a-custom-api-call)
+* [Watch Events](#watch-events)
 * [Watch metadata value updated](#watch-metadata-value-updated)
 
 
@@ -1241,6 +1242,48 @@ This module allows you to perform a custom API call.
   </tr> 
  </tbody> 
 </table>
+
+#### Watch Events
+
+This instant trigger module starts a scenario when the selected event occurs in Frame.io.
+
+You can use an existing webhook, or create a new one.
+
+To create a new webhook:
+
+1. Click **Add** next to the Webhook field.
+1. Fill in the following informaton:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+     <td role="rowheader">Webhook Name </td> 
+      <td> <p>Enter a name for the new webhook.</p> </td> 
+     </tr> 
+     <tr> 
+       <td role="rowheader">[!UICONTROL Connection] </td> 
+       <td>For instructions on creating a connection to [!DNL Frame.io], see <a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">Connect [!DNL Frame.io] to Adobe Workfront Fusion</a> in this article.</td> 
+     </tr> 
+     <tr> 
+     <td role="rowheader">[!UICONTROL Account ID] </td> 
+      <td> <p>Select or map the account that contains the workspace where you want to watch events.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+      <td> <p>Enter the ID of the workspace where you want to watch events.</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Events]</td> 
+      <td> <p>Select the events that you want to trigger this module</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Click **Save** to save the webhook and return to the module.
+1. Click **OK** in the Watch Events module to save the configuration.
+
 
 #### Watch metadata value updated
 
