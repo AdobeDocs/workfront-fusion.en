@@ -198,11 +198,11 @@ Any use of these templates or extensions of these templates is considered custom
 * **[Workfront to Jira: Create JIRA issue from Workfront task or issue assignment](#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)** 
 * [JIRA to Workfront: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira](#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
 * [Workfront to Jira: Changes to Workfront task to JIRA issue](#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
-* Workfront to Jira: Changes to Workfront issue to JIRA issue
-* Workfront to Jira: Create comment in JIRA when new note on Workfront task or issue
-* Workfront to Jira: Create comment in JIRA on deleted note on Workfront task or issue
-* Workfront to Jira: Create comment in JIRA when new document on Workfront task or issue
-* Workfront to Jira: Create comment in JIRA on deleted document on Workfront task or issue
+* [Workfront to Jira: Changes to Workfront issue to JIRA issue](#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront to Jira: Create comment in JIRA when new note on Workfront task or issue](#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront to Jira: Create comment in JIRA on deleted note on Workfront task or issue](#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront to Jira: Create comment in JIRA when new document on Workfront task or issue](#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront to Jira: Create comment in JIRA on deleted document on Workfront task or issue](#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 ### General parameters
 
@@ -263,14 +263,14 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
    |Variable name|Variable value|
    |---|---|
    |defaultJiraReporterID|Enter the ID of the default user when the Creator User doesn't exist in Jira. You can find this user ID by clicking on the profile of the user and checking the URL of the browser. Example: `https://myjira.atlassian.net/jira/people/<JiraUserID>`|
-   |JiraBaseURL|Ente the base URL of the Jira account you are connecting to.|
+   |JiraBaseURL|Enter the base URL of the Jira account you are connecting to.|
    |wfBaseURL|Enter the base URL of the Workfront account you are connecting to.|
 
 1. Continue to [Map custom fields in Jira](#map-custom-fields-in-jira)
 
-#### Map custom fields in Jira. 
+<!--#### Map custom fields in Jira. 
 
-<!--Awaiting feedback-->
+Awaiting feedback-->
 
 +++
 
@@ -349,7 +349,7 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. Enable the **Exclude updates made by this connection** option.
 1. In the **Record Origin** field, select `Updated record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
-1. In the second module, set the following variables, then click **OK** to save the module.
+1. In the **Set JIRA Variables** module, set the following variables, then click **OK** to save the module.
 
    |Variable name|Variable value|
    |---|---|
@@ -360,16 +360,13 @@ This scenario creates a Workfront task or issue when an issue is created in Jira
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
-
 +++
-
-
 
 ### Scenario 4: Workfront to Jira: Changes to Workfront issue to JIRA issue
 
 This scenario sends updates from Workfront issues to previously connected JIRA issues.
 
-+++**Expand to view instructions for configuring Scenario 4: WF-to-Jira Changes (Issues)**
++++**Expand to view instructions for configuring Scenario 4: Workfront to Jira: Changes to Workfront issue to JIRA issue**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
@@ -381,20 +378,20 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 1. Select the organization and team that will own this scenario.
 1. In the first module, begin adding a webhook.
 1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
-1. In the **Record Type** field, select `??`.
+1. In the **Record Type** field, select `Issues`.
 1. In the **State** field, select `New state`.
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Updates on issues)|||
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
-   |WF ID|Exists||
+   |DE: Jira Key|Exists||
 
 1. Enable the **Exclude updates made by this connection** option.
+1. In the **Record Origin** field, select `Updated record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
-1. In the second module, set the following variables, then click **OK** to save the module.
+1. In the **Set JIRA Variables** module, set the following variables, then click **OK** to save the module.
 
    |Variable name|Variable value|
    |---|---|
@@ -405,14 +402,11 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
-
 +++
 
+### Scenario 5: Workfront to Jira: Create comment in JIRA when new note on Workfront task or issue
 
-
-### Scenario 5: WF-to-Jira New notes (Tasks and Issues)
-
-+++**Expand to view instructions for configuring Scenario 5: WF-to-Jira New notes (Tasks and Issues)**
++++**Expand to view instructions for configuring Scenario 5: Workfront to Jira: Create comment in JIRA when new note on Workfront task or issue**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
@@ -421,19 +415,20 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
 1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
-1. In the **Record Type** field, select `??`.
+1. In the **Record Type** field, select `Note`.
 1. In the **State** field, select `New state`.
-1. Configure the filter with the following operations, using the **And** option:
+1. Configure the filter with the following operations:
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Create and Updates on Notes.)|||
-   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID<br>AND<br>TaskID|Equals<br><br>Exists|Enter the ID of the project or projects that you want the webhook to watch.|
+   |OR|||
+   |projectID<br>AND<br>OpTaskID|Equals<br><br>Exists|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. Enable the **Exclude updates made by this connection** option.
+1. In the **Record Origin** field, select `New record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
-1. In the second module, set the following variables, then click **OK** to save the module.
+1. In the **Set variables** module, set the following variables, then click **OK** to save the module.
 
    |Variable name|Variable value|
    |---|---|
@@ -441,20 +436,14 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |JiraBaseURL|The base URL of the Jira account you are connecting to.|
    |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
-1. Enable the **Exclude updates made by this connection** option.
-1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
-
 +++
 
+### Scenario 6: Workfront to Jira: Create comment in JIRA on deleted note on Workfront task or issue
 
-
-
-### Scenario 6: WF-to-Jira Remove notes (Tasks and Issues)
-
-+++**Expand to view instructions for configuring Scenario 6:WF-to-Jira Remove notes (Tasks and Issues)**
++++**Expand to view instructions for configuring Scenario 6: Workfront to Jira: Create comment in JIRA on deleted note on Workfront task or issue**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
@@ -463,18 +452,18 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
 1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
-1. In the **Record Type** field, select `??`.
+1. In the **Record Type** field, select `Note`.
 1. In the **State** field, select `New state`.
-1. Configure the filter with the following operations, using the **And** option:
+1. Configure the filter with the following operations:
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Delete on Notes.)|||
-   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
-   |WF ID|Exists||
+   |projectID<br>AND<br>TaskID|Equals<br><br>Exists|Enter the ID of the project or projects that you want the webhook to watch.|
+   |OR|||
+   |projectID<br>AND<br>OpTaskID|Equals<br><br>Exists|Enter the ID of the project or projects that you want the webhook to watch.|
 
 1. Enable the **Exclude updates made by this connection** option.
+1. In the **Record Origin** field, select `Deleted record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In the second module, set the following variables, then click **OK** to save the module.
 
@@ -487,14 +476,11 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
-
 +++
 
+### Scenario 7: Workfront to Jira: Create comment in JIRA when new document on Workfront task or issue
 
-
-### Scenario 7: WF-to-Jira New Attachments (Tasks and Issues)
-
-+++**Expand to view instructions for configuring SScenario 7: WF-to-Jira New Attachments (Tasks and Issues)**
++++**Expand to view instructions for configuring Scenario 7: Workfront to Jira: Create comment in JIRA when new document on Workfront task or issue**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
@@ -503,13 +489,12 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
 1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
-1. In the **Record Type** field, select `??`.
+1. In the **Record Type** field, select `Document`.
 1. In the **State** field, select `New state`.
 1. Configure the filter with the following operations, using the **And** option:
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Create on Document.)|||
    |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
    |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
 
@@ -522,18 +507,16 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. Enable the **Exclude updates made by this connection** option.
+1. In the **Record Origin** field, select `New record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
 
-
 +++
 
+### Scenario 8: Workfront to Jira: Create comment in JIRA on deleted document on Workfront task or issue
 
-
-### Scenario 8: WF-to-Jira Remove Attachments (Tasks and Issues)
-
-+++**Expand to view instructions for configuring Scenario 8: WF-to-Jira Remove Attachments (Tasks and Issues)**
++++**Expand to view instructions for configuring Scenario 8: Workfront to Jira: Create comment in JIRA on deleted document on Workfront task or issue**
 
 1. Click the **Templates** tab ![Templates icon](assets/templates-icon.png) in the left navigation panel.
 1. Search for the template by using the search bar near the upper-left corner of the screen. You can search by template name or included applications.
@@ -542,17 +525,17 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    A view of the template opens, showing information and an animation of data flow.
 1. In the first module, begin adding a webhook.
 1. In the Connection field, select the Workfront connection that uses the System Integration credentials.
-1. In the **Record Type** field, select `??`.
+1. In the **Record Type** field, select `Document`.
 1. In the **State** field, select `New state`.
-1. Configure the filter with the following operations, using the **And** option:
+1. Configure the filter with the following operations:
 
    |Field|Operator|Value|
    |---|---|---|
-   |(Delete on Document)|||
-   |assignedToID|Equals|Enter the Workfront ID of the System Integration user|
-   |projectID|Equals|Enter the ID of the project or projects that you want the webhook to watch.|
+   |projectID<br>AND<br>TaskID|Equals<br><br>Exists|Enter the ID of the project or projects that you want the webhook to watch.|
+   |OR|||
+   |projectID<br>AND<br>OpTaskID|Equals<br><br>Exists|Enter the ID of the project or projects that you want the webhook to watch.|
 
-1. In the second module, set the following variables.
+1. In the **Set variables** module, set the following variables.
 
    |Variable name|Variable value|
    |---|---|
@@ -561,6 +544,7 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
    |wfBaseURL|The base URL of the Workfront account you are connecting to.|
 
 1. Enable the **Exclude updates made by this connection** option.
+1. In the **Record Origin** field, select `Deleted record only`.
 1. Click **Save** to save the webhook, then click **OK** to save the trigger module.
 1. In **each** Workfront module, in the Connection field, select the Workfront connection that uses the System Integration credentials, then click **OK** to save the module.
 1. In **each** Jira module, in the Connection field, select the Jira connection that uses the System Integration credentials, then click **OK** to save the module.
