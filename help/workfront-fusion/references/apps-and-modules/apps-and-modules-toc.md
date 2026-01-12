@@ -136,6 +136,7 @@ These modules allow you to perform actions on your data, but do not require conn
 * [Lexical modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Markdown modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [Math module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
+* [MCP (Model Context Protocol) modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mcp.md)
 * [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
 * [Text parser modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [Tools modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
