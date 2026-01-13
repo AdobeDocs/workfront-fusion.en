@@ -109,6 +109,26 @@ When creating a connection, you can select whether to use a password, or whether
        <td role="rowheader">Connection name</td> 
        <td> <p>Enter a name for the connection.</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">Authorization Server Provider</td> 
+       <td> <p>Select the provider that you want to use for this authentication.</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Ping host</td> 
+       <td> <p>If you are using PingFederate, enter the ping host.</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">Scope</td>
+        <td>
+          <p>Enter the scope for this connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Tenant ID</td>
+        <td>
+          <p>If you are using Azure AD/Microsoft Entra ID for your authorization server provider, enter the tenant ID for this connection.</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">Client ID</td>
         <td>
@@ -122,18 +142,6 @@ When creating a connection, you can select whether to use a password, or whether
         </td>
       </tr>
       <tr>
-        <td role="rowheader">Scope</td>
-        <td>
-          <p>Enter the scope for this connection.</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">Tenant ID</td>
-        <td>
-          <p>Enter the tenant ID for this connection.</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">Profile ID</td>
         <td>
           <p>Enter the ID of you OAuth2 / Copen ID Connect profile.</p>
@@ -143,6 +151,12 @@ When creating a connection, you can select whether to use a password, or whether
        <td role="rowheader">Vault DNS</td> 
        <td>Enter your Veeva Vault DNS (domain name).</p><p>To locate your Veeva Vault DNS, examine the URL that you use to access Veeva Vault.</p>For example, in the URL <code>https://my-dns.veevavault.com</code>, the DNS is <code>my-dns</code>. You do not need to enter the entire URL.</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">Your session expiration time in minutes</td>
+        <td>
+          <p>Enter the expiration time of your session, in minutes..</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
