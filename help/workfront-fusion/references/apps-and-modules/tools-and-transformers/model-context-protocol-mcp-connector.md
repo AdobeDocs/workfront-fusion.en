@@ -70,7 +70,7 @@ This action module processes a prompt, using the language model and MCP servers 
        <li><b>LLM</b>: Select the large language model that this key is associated with.</li>
        <li><b>Key</b>: Enter or map your API key for the selected model.</li>
        <li><b>Model</b>: Select the LLM model that the key will use.</li>
-       <li><b>Max Tokens</b>: </li>
+       <li><b>Max Tokens</b>: Enter or map the maximum number of tokens that the LLM can generate in its response.<p>One token usually equals four characters, or .75 of a word in English. "Hello world" would equal two tokens, and "Authentication" would equal one to two tokens.</li>
       </ul>
     </td> 
   </tr> 
