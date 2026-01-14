@@ -65,54 +65,129 @@ The Adobe Workfront Planning connector uses the following:
  </tbody> 
  </table>
 
-## Create a connection to [!DNL Adobe Workfront Planning] {#create-a-connection-to-adobe-workfront-planning}
+## Connect Workfront Planning to Workfront Fusion 
 
-You can create a connection to your [!DNL Workfront Planning] account directly from inside a Workfront Fusion module.
+The Workfront Planning connector uses OAuth 2.0 to connect to Workfront Planning.
 
-1. In any [!DNL Adobe Workfront Planning] module, click **[!UICONTROL Add]** next to the Connection box.
+You can create a connection to your Workfront Planning account directly from inside a Workfront Planning Fusion module.
 
+* [Connect to Workfront Planning using Client ID and Client secret](#connect-to-workfront-planning-using-client-id-and-client-secret)
+* [Connect to Workfront Planning using a Server-to-Server connection](#connect-to-workfront--planning-using-a-server-to-server-connection)
+
+### Connect to Workfront Planning using Client ID and Client secret
+
+1. In any Adobe Workfront Planning module, click **Add** next to the Connection field.
 1. Fill in the following fields:
 
    <table style="table-layout:auto"> 
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
-      </col>
-      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
-      </col>
-      <tbody>
-        <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
-          <td>
-            <p>Enter a name for this connection.</p>
-          </td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
-          <td>Select whether you are connecting to a production or non-production environment.</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Select whether you care connecting to a service account or a personal account.</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>(Optional)</p></td>
-          <td>Enter your [!DNL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].</td>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>(Optional)</p></td>
-          <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials details] section of the [!DNL Adobe Developer Console].
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
-          <td>Enter the URL that your instance of Workfront will use to authenticate this connection. <p>The default value is <code>https://oauth.my.workfront.com/integrations/oauth2</code>.</p>
-        </tr>
-        <tr>
-          <td role="rowheader">[!UICONTROL Host prefix]</td>
-          <td>Enter your host prefix.<p>The default value is <code>origin-</code>.</p>
-        </tr>
-      </tbody>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Select <b>Adobe Workfront auth connection</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Enter a name for the new connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Enter your Workfront Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. Open the specific application you are connecting to to see the Client ID.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Enter your Workfront Client secret. This can be found in the OAuth2 Applications area of the Setup area in Workfront. If you do not have a Client Secret for your OAuth2 application in Workfront, you can generate another. For instructions, see the Workfront documentation.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Authentication URL]</td>
+        <td>This can remain the default value, or you can enter the URL of your Workfront instance, followed by <code>/integrations/oauth2</code>. <p>Example: <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>In most cases, this value should be <code>origin</code>.
+      </tr>
+    </tbody>
     </table>
 
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+
+   If you are not logged in to Workfront Planning, you are directed to a login screen. After you log in, you can allow the connection.
+
+>[!NOTE]
+>
+>* OAuth 2.0 connections to the Workfront API no longer rely on API keys. 
+>* To create a connection to a Workfront Sandbox environment, you must create an OAuth2 application in that environment, and then use the Client ID and Client Secret generated by that application in your connection. 
+
+### Connect to Workfront  Planning using a Server-to-Server connection
+
+1. In any Adobe Workfront Planning module, click **Add** next to the Connection field.
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Select <b>Adobe Workfront Server-to-Server connection</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Enter a name for the new connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>Enter the name of your instance, also known as your domain.</p><p>Example: if your URL is <code>https://example.my.workfront.com</code>, enter <code>example</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>Enter the environment type that this connection will connect to.</p><p>Example: if your URL is <code>https://example.my.workfront.com</code>, enter <code>my</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Enter your Workfront Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. Open the specific application you are connecting to to see the Client ID.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Enter your Workfront Client secret. This can be found in the OAuth2 Applications area of the Setup area in Workfront. If you do not have a Client Secret for your OAuth2 application in Workfront, you can generate another. For instructions, see the Workfront documentation.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>Enter any applicable scopes for this connection.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>In most cases, this value should be <code>origin</code>.
+      </tr>
+    </tbody>
+    </table>
+
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+
+   If you are not logged in to Workfront Planning, you are directed to a login screen. After you log in, you can allow the connection.
+
+>[!NOTE]
+>
+>* OAuth 2.0 connections to the Workfront API no longer rely on API keys. 
+>* To create a connection to a Workfront Sandbox environment, you must create an OAuth2 application in that environment, and then use the Client ID and Client Secret generated by that application in your connection. 
+
 
 ## [!DNL Adobe Workfront Planning] modules and their fields
 
