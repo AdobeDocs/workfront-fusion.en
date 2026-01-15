@@ -14,7 +14,14 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 
 Adobe Workfront Fusion connects your apps and web services seamlessly so that you can concentrate on new tasks rather than repeating the same tasks again and again.
 
+## Fusion releases in 2026
+
+* [Workfront Fusion release activity: Week of January 12, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
+
+
 ## Fusion releases in 2025
+
++++ **Click to open**
 
 ### December 2025
 
@@ -88,6 +95,8 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 * [Workfront Fusion release activity: Week of January 20, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-20.md)
 * [Workfront Fusion release activity: Week of January 13, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-13.md)
 * [Workfront Fusion release activity: Week of January 6, 2025](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-1-6.md)
+
++++
 
 ## Fusion releases in 2024
 
