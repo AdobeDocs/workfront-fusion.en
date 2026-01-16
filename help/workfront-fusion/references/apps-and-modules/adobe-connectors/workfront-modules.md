@@ -55,7 +55,9 @@ For instructions on creating a scenario, see the articles under [Create scenario
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Connect Workfront to Workfront Fusion 
++++
+
+## Connect Workfront to Workfront Fusion 
 
 The Workfront connector uses OAuth 2.0 to connect to Workfront.
 

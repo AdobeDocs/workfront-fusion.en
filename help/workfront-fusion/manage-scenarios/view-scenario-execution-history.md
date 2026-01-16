@@ -53,6 +53,10 @@ For more detail about the information in this table, see [Access requirements in
 
 The [!UICONTROL History] tab shows more detail than is available on the [!UICONTROL Scenario detail] page. You can also filter and sort the executions on the [!UICONTROL History] tab.
 
+>[!NOTE]
+>
+>If you view a scenario history while it is still running, Fusion displays a note that informs you that data is still being processes, and only partial scenario history displays until the processing is complete.
+
 1. Click the **[!UICONTROL Scenario]** tab in the left panel, then click the scenario.
 
    Or
