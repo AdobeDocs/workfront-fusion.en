@@ -46,7 +46,9 @@ As with anything generated from AI, we recommend that you double check and test 
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Prerequisites
++++
+
+## Prerequisites
 
 Your organization must meet the following prerequisites to use this functionality:
 
