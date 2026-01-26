@@ -17,7 +17,7 @@ To view available templates, click the **Templates** icon ![Templates icon](asse
 
 These templates automate Workfront processes and workflows.
 
-### [!BADGE New! ]{type=Informative} Workfront – Automatically Adjust Project Timeline When Tasks Are Completed Early
+### Workfront – Automatically Adjust Project Timeline When Tasks Are Completed Early
 
 <!--New June 10, 2025-->
 
@@ -33,7 +33,7 @@ Download event subscription information, create a CSV file, and upload the file 
 
 <!--New August 8, 2025-->
 
-### [!BADGE New! ]{type=Informative} Workfront Boards - Delete Archived Cards from Designated Column (On Demand)
+### Workfront Boards - Delete Archived Cards from Designated Column (On Demand)
 
 <!--New March 12, 2025-->
 
@@ -111,7 +111,7 @@ Once a month, review your project templates using your own policy with this easy
 
 These templates automate workflows that combine Workfront with Workfront Proof.
 
-### [!BADGE New! ]{type=Informative} Workfront > Workfront Proof - Change Proof user Role to Read Only and lock Proof upon project closure
+### Workfront > Workfront Proof - Change Proof user Role to Read Only and lock Proof upon project closure
 
 <!--New March 12, 2025-->
 
@@ -199,6 +199,21 @@ For more information on the Workfront-Anaplan integration, see [Adobe Workfront 
 
 * [Create an [!DNL Anaplan] list item from an Adobe Workfront campaign request](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
 * [Apply an [!DNL Anaplan] budget allocation to an Adobe Workfront campaign request or campaign project](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+
+## Workfront - Jira templates
+
+These templates represent common workflows between Workfront and Jira. 
+
+For detailed information on these templates, see [Use templates to connect Adobe Workfront Fusion and Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md).
+
+* [Workfront to Jira: Create JIRA issue from Workfront task or issue assignment](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment) 
+* [JIRA to Workfront: JIRA to Workfront: Send updates on issues and comments back to Workfront from Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfront to Jira: Changes to Workfront task to JIRA issue](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
+* [Workfront to Jira: Changes to Workfront issue to JIRA issue](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront to Jira: Create comment in JIRA when new note on Workfront task or issue](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront to Jira: Create comment in JIRA on deleted note on Workfront task or issue](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [Workfront to Jira: Create comment in JIRA when new document on Workfront task or issue](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [Workfront to Jira: Create comment in JIRA on deleted document on Workfront task or issue](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 
 <!--[!BADGE New!]{type=Informative} -->

@@ -13,4 +13,5 @@ exl-id: b25d1af2-c8c1-4cf4-8313-74f20b318599
 * [View, edit, and delete templates](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
 * [Publish and share templates](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
 * [Currently available Adobe Workfront Fusion templates](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+* [Use templates to connect Adobe Workfront Fusion and Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
 * [Adobe Workfront Fusion templates FAQs](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
