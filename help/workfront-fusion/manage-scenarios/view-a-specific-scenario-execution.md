@@ -43,7 +43,7 @@ For more detail about the information in this table, see [Access requirements in
 You can view an execution from the scenario's scenario history.
 
 
-1. Click the **[!UICONTROL Scenario]** tab in the left panel, then click the scenario.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel, then click the scenario.
 
    Or
 

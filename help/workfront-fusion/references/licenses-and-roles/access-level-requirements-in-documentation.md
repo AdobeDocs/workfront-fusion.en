@@ -48,7 +48,8 @@ Some rows contain information labeled "New" and "Current." This is because Workf
    <td>In some cases, Fusion must be purchased in addition to Workfront. If your organization has the Ultimate Workfront package, Fusion is included.
   <tr> 
    <td role="rowheader">Access level</td> 
-   <td> Access levels are sets of permissions for actions you can perform in Fusion. For example, some actions can only be perfomed by a Fusion Administrator. 
+   <td> Access levels are sets of permissions for actions you can perform in Fusion. For example, some actions can only be performed by a Fusion Administrator. 
+   </tr>
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>Adobe Workfront Fusion has a separate licensing model than Workfront. 
