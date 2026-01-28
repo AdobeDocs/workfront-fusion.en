@@ -44,9 +44,6 @@ For more detail about the information in this table, see [Access requirements in
 
 ## View and manage scenarios from the Scenarios area
 
-
-
-
 1. Click the **[!UICONTROL Scenario]** tab in the left panel.
 1. To search for a specific scenario, begin typing into the search bar. Scenarios are filtered as you type.
 1. To activate or deactivate a scenario, locate the scenario in the list, then switch the toggle in the **Status** column for that scenario.
