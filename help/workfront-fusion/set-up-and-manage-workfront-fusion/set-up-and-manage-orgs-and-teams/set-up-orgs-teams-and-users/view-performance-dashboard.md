@@ -45,9 +45,13 @@ For more detail about the information in this table, see [Access requirements in
 >
 >Metrics are shown by worker pool. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view metrics for.
 
+<!--
+
 >[!NOTE]
 >
 >Organizations can request provisioning for one additional worker pool (for a total of 2).
+
+-->
 
 In the Fusion performance dashboard, you can see the following metrics.
 
