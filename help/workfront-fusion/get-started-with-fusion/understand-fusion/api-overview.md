@@ -12,6 +12,11 @@ Application Programming Interfaces (APIs) are a way for applications and service
 
 APIs are created and controlled by the owners of the application. For example, the Workfront API is owned by the Workfront team at Adobe, and the Microsoft Graph API is owned by Microsoft. The owner of the API defines which actions are available through the API.
 
+>[!NOTE]
+>
+>Workfront Fusion has its own API that you can use to automate actions in Fusion, such as managing connections, hooks, scenarios, executions, logs, and other core automation resources. 
+>For documentation about the Workfront Fusion API see [Workfront Fusion API](https://developer.adobe.com/workfront-fusion-apis/).
+
 ## Considerations
 
 The fact that APIs are defined by their owners and not by Fusion leads to some important considerations:
