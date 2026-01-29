@@ -181,6 +181,10 @@ For more information on errors, see [Error types](/help/workfront-fusion/referen
 
 This setting assigns the scenario to a specific worker pool associated with your organization, allowing you to dedicate resources to high priority scenarios.
 
+<!--
+
 >[!NOTE]
 >
 >Organizations can request provisioning of one additional worker pool (for a total of 2).
+
+-->
