@@ -14,7 +14,8 @@ APIs are created and controlled by the owners of the application. For example, t
 
 >[!NOTE]
 >
->Workfront Fusion has its own API that you can use to automate actions in Fusion, such as managing connections, hooks, scenarios, executions, logs, and other core automation resources. 
+>Workfront Fusion has its own API that you can use to automate actions in Fusion.
+>The APIs are being released incrementally and are currently marked as experimental. The Fusion team is actively developing and expanding the APIs, and updates will be published as new functionality becomes available. 
 >For documentation about the Workfront Fusion API see [Workfront Fusion API](https://developer.adobe.com/workfront-fusion-apis/).
 
 ## Considerations
