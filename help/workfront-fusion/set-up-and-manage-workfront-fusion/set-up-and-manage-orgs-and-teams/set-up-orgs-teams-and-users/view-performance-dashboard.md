@@ -55,14 +55,22 @@ For more detail about the information in this table, see [Access requirements in
 
 In the Fusion performance dashboard, you can see the following metrics.
 
-* Executions waiting to be processed
-   This chart shows the number of executions waiting to be processed at a given point in time. 
-* Pool Utilization
+* **Executions waiting to be processed**
+   This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time. 
+
+   A high number of executions waiting to be processed may affect performance in your Fusion instance. You will receive a notification if your execution backlog reaches 5000 executions. We recommend identifying responsible scenarios and modifying or disabling them. If the high execution backlog persists, the Fusion team will protect the performance of your Fusion instance by disabling the responsible scenarios.
+* **Pool Utilization**
    This chart shows worker pool utilization over time. If this chart routinely shows worker pool utilization, you may want to assign some scenarios to another pool.
-* Executions per scenario
+
+   If a pool is nearing 100% utilization, other resources that use the same pool may be delayed or disrupted. If this occurs, we recommend reassigning a high-usage scenario to another worker pool, or modifying existing scenarios to be less resource intensive.
+* **Executions per scenario**
    This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
-* Duration of executions
+
+   You can use this chart to identify which scenarios may be causing an execution backlog or high worker pool utilization. 
+* **Duration of executions**
    This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
+
+   You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
 
 ## View the Fusion Performance Dashboard
 
