@@ -27,15 +27,11 @@ If your team struggles to maintain momentum because project timelines don't adju
 
 This Fusion template automates that process. When a task is completed early, all dependent (successor) tasks are automatically rescheduled to start sooner, helping your team move faster and stay agile.
 
-### [!BADGE New! ]{type=Informative} HTTP>CSV>WF - Create list of event subs by domain and tier and export to CSV
+### HTTP>CSV>WF - Create list of event subs by domain and tier and export to CSV
 
 Download event subscription information, create a CSV file, and upload the file to Workfront.
 
-<!--New August 8, 2025-->
-
 ### Workfront Boards - Delete Archived Cards from Designated Column (On Demand)
-
-<!--New March 12, 2025-->
 
 Delete Archived Cards from a designated column on a designated board on demand.
 
@@ -107,6 +103,52 @@ This template captures a project baseline on a weekly basis every Monday at 6am 
 
 Once a month, review your project templates using your own policy with this easy to manage template that notifies appropriate users on templates in violation of your policy.
 
+### Workfront - Copy custom form changes from source issue/request to resolving project or task
+
+Use this template to copy custom form changes from issues/requests to their resolving projects and/or tasks.
+
+### Workfront - Batch update project, task, or issue custom field data
+
+This template uses a CSV you prepare and provide in Workfront to update project, task, or issue custom field data. Please see Notes within modules 1 and 2 for considerations and limitations.
+
+### Workfront - Change project Status from Planning to Current if a task equals 100% complete
+
+This automation updates project Status from Planning to Current if a task equals 100% complete. Begins with a search and recommended to run once a day so users can still update projects in a Planning status as necessary.
+
+### Workfront - Find project templates not used in policy time and notify
+
+Once a month, review your project templates using your own policy with this easy to manage template that notifies appropriate users on templates in violation of your policy.
+
+### Workfront - Upon New Document Added - Get a Presigned URL passed back to the Document Owner
+
+Get a Pre-signed URL back for every new document as a user update
+
+### Workfront Event Subscription Monitoring (Daily) - Set Variables
+
+This scenario template wakes up on a daily basis to do a health check on the Event Subscription in my Workfront environment. It will identify any event subscription that was deactivated in the last 24 hours. When an eligible deactivated event subscription is found, the scenario generates an issue in a Workfront request queue that the customer identifies during installation of the scenario. They can also identify either a routing rules or a team/user resource to be assigned to the issue. We rely on an internal New Issue email to be sent to the recipient(s) to generate the notification. This approach should result in a single work item for each deactivation.
+
+### Workfront - Sequential Numbering Series
+
+#### Workfront - Sequential Numbering Series: Create Object Custom Form and Field
+
+This template creates a custom form and field to be used by the Workfront - Sequential Numbering Series templates.
+
+#### Workfront - Sequential Numbering Series: Portfolios
+
+This template numbers your portfolios sequentially. It assumes you created a custom form and field using the Workfront - Sequential Numbering Series: Create Object Custom Form and Field template but you can use an existing form and field.
+
+#### Workfront - Sequential Numbering Series: Programs
+
+This template numbers your programs sequentially. It assumes you created a custom form and field using the Workfront - Sequential Numbering Series: Create Object Custom Form and Field template but you can use an existing form and field.
+
+#### Workfront - Sequential Numbering Series: Projects
+
+This template numbers your projects sequentially. It assumes you created a custom form and field using the Workfront - Sequential Numbering Series: Create Object Custom Form and Field template but you can use an existing form and field.
+
+#### Workfront - Sequential Numbering Series: Issues
+
+This template numbers your issues sequentially. It assumes you created a custom form and field using the Workfront - Sequential Numbering Series: Create Object Custom Form and Field template but you can use an existing form and field.
+
 ## Workfront - Workfront Proof templates
 
 These templates automate workflows that combine Workfront with Workfront Proof.
@@ -124,6 +166,14 @@ When a decision is made on a Proof that is added directly to a project, this aut
 ### Workfront Proof > Workfront - Task Update and Completion (if Approved) on Proof Decision
 
 Where individual proofs are tied to individual tasks, this scenario closes the associated task when an approval decision on the proof is made. If approved, it completes the task and updates the project.
+
+### Workfront > Workfront Proof - New Proof - Notify if Proof approver has time off during deadline
+
+This automation watches for new document versions (within a specified portfolio) with a Proof. If an approver has personal time off in their profile on the deadline date, it sends a notification to the Proof owner and project owner.
+
+### Workfront > Workfront Proof - Remove (if possible) specified proof approver and add new approver
+
+This automation finds an approver's proofs and adds a new approver. The original approver is removed from the proof if possible. Additional actions occur if the original approver is the creator or owner. Read notes in Module 1 for details.
 
 ## HTTP - Workfront templates
 
