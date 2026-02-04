@@ -10,6 +10,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2025 {#fusion-releases-2025}
+        * [Workfront Fusion release activity: Week of February 2, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
         * [Workfront Fusion release activity: Week of January 26, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
         * [Workfront Fusion release activity: Week of January 19, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
         * [Workfront Fusion release activity: Week of January 12, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
@@ -252,6 +253,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
     * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
     * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
+    * [Manage scenarios from the Scenarios area](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
