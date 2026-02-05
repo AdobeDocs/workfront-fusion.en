@@ -77,6 +77,25 @@ You can use the following links to download the Workfront Fusion public certific
 
 >[!IMPORTANT]
 >
+>* These Workfront Fusion public certificates expire on **March 2, 2027** (US and EU) or **March 8, 2027** (Azure). After yours expires you will need to upload a new certificate to the web service. We recommend that you:
+>
+>   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
+>   * Bookmark this page to easily find the new certificates.
+>
+>* These are non-wildcard mTLS certificates.
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US Datacenter | [Download Workfront Fusion US Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| Azure Cluster | [Download Workfront Fusion Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | February 4, 2026 to March 8, 2027 |
+
+
+### Certificates for 2025
+
+>[!IMPORTANT]
+>
+>* We recommend installing the certificates for 2026, available above.
 >* These Workfront Fusion public certificates expire on **April 4, 2026** (US and EU) or **November 25, 2025** (Azure). After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
 >   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
@@ -85,10 +104,10 @@ You can use the following links to download the Workfront Fusion public certific
 >* These are non-wildcard mTLS certificates.
 
 | Datacenter | Download link | Dates valid |
-|---|---|---|
+| --- | --- | --- |
 | US Datacenter | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
 | EU Datacenter | [Download Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
-| Azure Cluster | [Download Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025|
+| Azure Cluster | [Download Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025 |
 
 <!--
 
