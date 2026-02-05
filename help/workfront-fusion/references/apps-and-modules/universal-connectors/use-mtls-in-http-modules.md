@@ -73,7 +73,7 @@ For instructions on uploading the Adobe Workfront Fusion public certificate to a
 
 You can use the following links to download the Workfront Fusion public certificates. To locate your datacenter, see [Identify your datacenter](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md) in the article Configure IP Addresses for Fusion in your organization's allowlist. 
 
-### Certificates for 2025
+### Certificates for 2026
 
 >[!IMPORTANT]
 >
