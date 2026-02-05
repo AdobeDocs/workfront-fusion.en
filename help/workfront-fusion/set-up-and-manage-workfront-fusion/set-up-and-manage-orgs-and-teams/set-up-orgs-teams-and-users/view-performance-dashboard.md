@@ -5,6 +5,7 @@ author: Becky
 feature: Workfront Fusion
 hide: yes
 hidefromtoc: yes
+exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 ---
 # View the performance dashboard for an organization
 
@@ -87,6 +88,3 @@ In the Fusion performance dashboard, you can see the following metrics.
 1. To change the time range of the dashboard, the Time Range field in the upper-right corner of the dashboard, then select a new time frame. The longest available time frame is 24 hours, and the shortest is 15 minutes.
 1. To refresh the charts, click the Refresh icon near the upper-right corner of the dashboard.
 1. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view.
-
-
-

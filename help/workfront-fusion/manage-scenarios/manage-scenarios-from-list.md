@@ -1,9 +1,10 @@
 ---
 content-type: reference
-title: 'Manage scenarios from the Scenarios area'
+title: Manage scenarios from the Scenarios area
 description: This section contains articles related to managing scenarios in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
 ---
 # Manage scenarios from the Scenarios area
 
@@ -55,4 +56,3 @@ For more detail about the information in this table, see [Access requirements in
 1. To assign one or more scenarios to a worker pool, click the checkbox next to each scenario that you want to assign to a pool, then click **Assign to Worker Pool** in the bar at the bottom of the screen. Select the worker pool that you want to assign the scenarios to.
 1. To delete a scenario, click the checkbox next to the scenario you want to delete, then click **Delete** in the bar at the bottom of the page.
 1. To hide list columns, click the **Columns** icon ![Columns icon](assets/glist-column.png) and check or uncheck the boxes next to the column names.
-

@@ -5,10 +5,10 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe InDesign modules
-description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Adobe InDesign, as well as connect it to multiple third-party applications and services. 
+description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Adobe InDesign, as well as connect it to multiple third-party applications and services.
 author: Becky
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
 ---
-
 # Adobe InDesign Modules
 
 In an Adobe Workfront Fusion scenario, you can automate workflows that use Adobe InDesign, as well as connect it to multiple third-party applications and services. 

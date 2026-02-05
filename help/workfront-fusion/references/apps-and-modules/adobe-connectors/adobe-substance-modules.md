@@ -3,6 +3,7 @@ title: Adobe Substance modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Substance], as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
 ---
 # [!DNL Adobe Substance] Modules
 

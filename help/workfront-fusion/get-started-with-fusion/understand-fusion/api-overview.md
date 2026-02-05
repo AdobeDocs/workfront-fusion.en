@@ -3,6 +3,7 @@ title: API overview
 description: Application Programming Interfaces (APIs) are a way for applications and services to communicate with one another. Fusion uses APIs to communicate with the application you are connecting to. Each application has a separate API.
 author: Becky
 feature: Workfront Fusion
+exl-id: 2629ff6e-2b76-44cd-8030-465724cc04bf
 ---
 # Overview of APIs in Fusion
 

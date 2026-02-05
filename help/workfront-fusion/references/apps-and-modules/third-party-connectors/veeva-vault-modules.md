@@ -3,6 +3,7 @@ title: Veeva Vault modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Veeva Vault, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion
+exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
 ---
 # Veeva Vault modules
 
@@ -752,5 +753,3 @@ This module returns data from audit trails
   </tr> 
  </tbody> 
 </table>
-
-

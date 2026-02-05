@@ -6,6 +6,7 @@ title: Use templates to connect Adobe Workfront Fusion and Jira
 description: Use these templates to automate workflows between Adobe Workfront Fusion and Jira.
 author: Becky
 feature: Workfront Fusion
+exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
 ---
 # Use templates to connect Adobe Workfront Fusion and Jira
 
@@ -549,4 +550,3 @@ This scenario sends updates from Workfront issues to previously connected JIRA i
 
 
 +++
-
