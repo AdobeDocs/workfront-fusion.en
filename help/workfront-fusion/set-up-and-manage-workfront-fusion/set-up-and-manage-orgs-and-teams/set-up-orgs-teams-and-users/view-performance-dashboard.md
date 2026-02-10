@@ -3,8 +3,6 @@ title: View the performance dashboard for an organization
 description: Fusion administrators can view a dashboard that shows execution metrics for an organization.
 author: Becky
 feature: Workfront Fusion
-hide: yes
-hidefromtoc: yes
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 ---
 # View the performance dashboard for an organization
