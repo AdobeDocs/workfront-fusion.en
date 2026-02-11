@@ -212,7 +212,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-        * [Map items using functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+        * [Map items using built-in functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
         * [Map arrays and array elements](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
         * [Map a file between modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
         * [Data stores](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)

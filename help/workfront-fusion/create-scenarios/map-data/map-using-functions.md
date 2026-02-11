@@ -1,16 +1,17 @@
 ---
-title: Map items using functions
+title: Map items using built-in functions
 description: When you map items, you can use functions to create simple or complex formulas.
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 ---
-# Map an item using functions
+# Map an item using built-in functions
 
-When you map items, you can use functions to create simple or complex formulas. The functions available are similar to functions in Excel and in some programming languages:
+Workfront Fusion includes built-in functions that allow you to create simple or complex formulas. These functions cover a wide variety of use cases, including functions for arrays, strings, numbers, and data from previous modules.
 
-* They evaluate general logic, math, text, dates, and arrays. 
-* They let you perform conditional logic and transformations of item values, such as converting a text to uppercase, trimming text, converting a date into a different format, and more. 
+In addition, you can create custom functions that your scenarios can then use to transform and manipulate data.
+
+For information and instructions on custom functions, see []().
 
 ## Access requirements
 
@@ -31,7 +32,7 @@ When you map items, you can use functions to create simple or complex formulas. 
   <tr> 
    <td role="rowheader">Product</td> 
    <td>
-   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
+   <p><ul><li>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li><li>You must have an Adobe App Builder license to use custom functions.</ul>
    </td> 
   </tr>
  </tbody> 
@@ -41,7 +42,14 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Insert functions into fields
+## Map data using built-in functions
+
+When you map items, you can use functions to create simple or complex formulas. The functions available are similar to functions in Excel and in some programming languages:
+
+* They evaluate general logic, math, text, dates, and arrays. 
+* They let you perform conditional logic and transformations of item values, such as converting a text to uppercase, trimming text, converting a date into a different format, and more. 
+
+### Insert functions into fields
 
 To insert a function into a field:
 
@@ -80,7 +88,7 @@ To insert a function into a field:
 
 >[!ENDSHADEBOX]
 
-## Nesting functions
+### Nesting functions
 
 You can nest functions within each other.
 
@@ -106,7 +114,7 @@ To nest a function:
 1. Continue configuring the function as desired.
 1. Continue configuring the module, or click **OK**.
 
-## Use [!DNL Google Sheets] functions
+### Use [!DNL Google Sheets] functions
 
 If Workfront Fusion does not feature a function you want to use, but it is featured by [!DNL Google Sheets], you can use it by following these steps:
 
