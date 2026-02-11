@@ -11,7 +11,7 @@ Workfront Fusion includes built-in functions that allow you to create simple or 
 
 In addition, you can create custom functions that your scenarios can then use to transform and manipulate data.
 
-For information and instructions on custom functions, see []().
+For information and instructions on custom functions, see [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
 
 ## Access requirements
 

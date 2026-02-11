@@ -39,4 +39,4 @@ You can create custom functions in the Functions area of Fusion. You then add th
 
 Because custom functions work through Adobe App Builder, your organization must have an Adobe App Builder license to use them.
 
-For information and instructions for custom functions, see []().
+For information and instructions for custom functions, see ap data using custom functions.

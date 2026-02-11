@@ -3,10 +3,8 @@ title: Map data using custom functions
 description: When you map items, you can use functions to create simple or complex formulas.
 author: Becky
 feature: Workfront Fusion
-exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 ---
 # Map data using custom functions
-
 
 You can create custom functions in the Functions area of Fusion. You then add these functions to your scenarios in the form of an Adobe App Builder module.
 
@@ -68,11 +66,12 @@ After your runtime environment is configured, you can begin creating custom func
 
 >[!IMPORTANT]
 >
+>* Your custom function **must** be a JavaScript function.
+>* Your custom function **must** return an object. 
 >* After you create a custom function, you cannot: 
 >
 >   * Change its name
 >   * View the default parameter values
->* Your custom function **must** return an object. 
 
 1. Click the **Functions** ![Functions icon](assets/functions-icon.png) tab in the left panel.
 1. Click **Add function**.
@@ -89,5 +88,5 @@ After your runtime environment is configured, you can begin creating custom func
 
 To add a custom function to a scenario, use the Adobe App Builder connector.
 
-For instructions, see []().
+For instructions, see [Adobe App Builder module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
 
