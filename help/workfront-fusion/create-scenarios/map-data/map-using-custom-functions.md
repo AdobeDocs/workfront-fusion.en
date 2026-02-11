@@ -12,6 +12,8 @@ You can create custom functions in the Functions area of Fusion. You then add th
 
 Because custom functions work through Adobe App Builder, your organization must have an Adobe App Builder license to use them.
 
+Custom functions, like most scenario elements, are owned by teams.
+
 Workfront Fusion also includes built-in functions that allow you to create simple or complex formulas. These functions cover a wide variety of use cases, including functions for arrays, strings, numbers, and data from previous modules.
 
 For information and instructions on built-in functions, see [Map an item using built-in functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
@@ -44,3 +46,48 @@ For information and instructions on built-in functions, see [Map an item using b
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
+
+## Configure a custom function
+
+Custom functions are configured in the Functions area of Workfront Fusion. After a function is configured, you can add it to a scenario using the Adobe App Builder connector.
+
+### Configure your runtime environment
+
+Before you can create custom functions, you must configure your runtime environment. This needs to be done only if your team does not have any custom functions.
+
+1. Click the **Functions** ![Functions icon](assets/functions-icon.png) tab in the left panel.
+
+   If you have not yet configured your runtime, you see the message "Runtime environment not configured."
+1. Click **Initialize runtime**.
+
+   After some time, a Functions list appears, with two sample functions.
+
+### Create a custom function
+
+After your runtime environment is configured, you can begin creating custom functions.
+
+>[!IMPORTANT]
+>
+>* After you create a custom function, you cannot: 
+>
+>   * Change its name
+>   * View the default parameter values
+>* Your custom function **must** return an object. 
+
+1. Click the **Functions** ![Functions icon](assets/functions-icon.png) tab in the left panel.
+1. Click **Add function**.
+1. Enter a name for the custom function. 
+
+   You will not be able to change this name later.
+1. Enter the code for the function.
+1. For each default parameter value you want to add, click **Add Parameter** and enter the parameter name and default value.
+
+   You can override default parameters when adding the function to a scenario.
+1. Click **Save**
+
+## Add a custom function to a scenario
+
+To add a custom function to a scenario, use the Adobe App Builder connector.
+
+For instructions, see []().
+
