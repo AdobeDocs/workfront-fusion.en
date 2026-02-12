@@ -3,6 +3,7 @@ title: Worker Pools
 description: A worker pool is a quantity of Workfront Fusion processing resources dedicated to one or more specific organizations. All Fusion operations and processing happen within the context of an organization's assigned worker pool.
 author: Becky
 feature: Workfront Fusion
+exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
 ---
 # Worker pools
 
