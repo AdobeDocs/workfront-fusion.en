@@ -49,9 +49,15 @@ For more detail about the information in this table, see [Access requirements in
 
 Custom functions are configured in the Functions area of Workfront Fusion. After a function is configured, you can add it to a scenario using the Adobe App Builder connector.
 
-### Configure your runtime environment
+### Initialize your runtime environment
 
-Before you can create custom functions, you must configure your runtime environment. This needs to be done only if your team does not have any custom functions.
+Before you can create custom functions, you must initialize your runtime environment. This needs to be done only if your team does not have any custom functions.
+
+>[!IMPORTANT]
+>
+>Initialization can be performed only be a user with access to Adobe App Builder, either a developer or a system administrator within the IMS organization.
+>
+>After initialization is complete, all users on the team where initialization was performed are able to create and use functions.
 
 1. Click the **Functions** ![Functions icon](assets/functions-icon.png) tab in the left panel.
 
