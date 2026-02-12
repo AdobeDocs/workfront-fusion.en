@@ -40,7 +40,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr>
    <td role="rowheader"> <p>Connection</p> </td> 
-   <td> <p>A connections represents a set of credentials to connect to a given service. You can configure connections inside any module, and then can use that connection in any other module. Every module must have a connection selected, so that Fusion can use those credentials to access the information that the module requires. </p><p>For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">Connection overview</a>.</p> </td> 
+   <td> <p>A connection represents a set of credentials to connect to a given service. You can configure connections inside any module, and then can use that connection in any other module. Every module must have a connection selected, so that Fusion can use those credentials to access the information that the module requires. </p><p>For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md" class="MCXref xref">Connection overview</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Connector</td> 
