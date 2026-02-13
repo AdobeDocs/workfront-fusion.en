@@ -38,6 +38,7 @@ Currently, the following connectors support large files.
    * Apply PSD Edits
 * SharePoint
    * Create a file
+   * Create a file (Legacy)
    * Get a file
 * Salesforce
    * Upload File

@@ -216,7 +216,37 @@ If you see the map button above a field or function, you can use it to set varia
 
 #### Create a file
 
-This module returns changes that have been made in SharePoint.
+This module returns creates a file in SharePoint. This module has better performance than the Create a file (Legacy) module.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter Site, Drive, and Folder IDs]</td> 
+   <td> <p>Select how you want to identify the location of the folder that you want to retrieve changes in.</p> 
+    <ul> 
+     <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>Enter or map the <strong>[!UICONTROL Site ID]</strong>, <strong>[!UICONTROL Drive ID]</strong>, and <strong>[!UICONTROL Folder ID]</strong> of the location where you want to create the file.</p> </li> 
+     <li> <p><strong>[!UICONTROL Select from the list that you follow]</strong> </p> <p>Select the location where you want to create the file. </p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file] </td>
+      <td><p>Select a source file from a previous module, or map the source file's name and data.</p></td>
+  </tr>  </tbody> 
+</table>
+
+
+
+#### Create a file (Legacy)
+
+This module creates a file in SharePoint. 
+
+For better performance, we recommend using the [Create a file](#create-a-file) module.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -236,7 +266,7 @@ This module returns changes that have been made in SharePoint.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Source file]</td> 
-      <p>Select a source file from a previous module, or map the source file's name and data.</p>
+      <td><p>Select a source file from a previous module, or map the source file's name and data.</p></td>
   </tr>  </tbody> 
 </table>
 
