@@ -39,7 +39,9 @@ Adobe Workfront Fusion distinguishes between several basic error types. The type
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Connection Error 
++++
+
+## Connection Error 
 
 `ConnectionError`
 

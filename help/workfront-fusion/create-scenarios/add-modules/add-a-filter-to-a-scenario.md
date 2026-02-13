@@ -43,7 +43,9 @@ You can add a filter between two modules and check whether bundles received from
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Prerequisites
++++
+
+## Prerequisites
 
 You must add both modules to a scenario before you can add a filter between them.
 

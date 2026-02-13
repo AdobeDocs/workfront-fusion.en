@@ -42,7 +42,9 @@ For example, the a Workfront > Upload document module requires you to specify th
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Configure a module's settings
++++
+
+## Configure a module's settings
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.

@@ -36,7 +36,9 @@ An [!UICONTROL Iterator] is a type of module that converts an array into a serie
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## [!UICONTROL Iterator] module configuration
++++
+
+## [!UICONTROL Iterator] module configuration
 
 The general Iterator module has a single field, The [!UICONTROL Array] field. This field contains the array to be converted or split into separate bundles.
 

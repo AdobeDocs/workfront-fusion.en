@@ -44,7 +44,9 @@ You can use the Adobe Workfront Boards modules to read or update records, make a
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Prerequisites
++++
+
+## Prerequisites
 
 You must have configured a board in Adobe Workfront before you can connect to it.
 
