@@ -3,7 +3,6 @@ title: Adobe App Builder module
 description: The Adobe App Builder connector allows you to use custom functions in your scenarios.
 author: Becky
 feature: Workfront Fusion
-exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 ---
 # Adobe App Builder module
 
