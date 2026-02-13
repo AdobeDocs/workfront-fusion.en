@@ -213,7 +213,8 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * Map data {#map-data}
         * [Map data](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-        * [Map items using functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+        * [Map items using built-in functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+        * [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
         * [Map arrays and array elements](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
         * [Map a file between modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
         * [Data stores](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
@@ -329,6 +330,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
             * [Use Mutual TLS in HTTP modules in Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
         * Adobe connectors {#adobe-connectors}
+            * [Adobe App Builder module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
             * [Adobe Acrobat Sign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
             * [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
             * [Adobe Campaign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)

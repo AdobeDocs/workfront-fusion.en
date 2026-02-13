@@ -105,4 +105,4 @@ When this scenario converts a request to a project, the project's name is the sa
 
 ## Resources
 
-* [Map items using functions](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+* [Map items using built-in functions](/help//workfront-fusion/create-scenarios/map-data/map-using-functions.md)
