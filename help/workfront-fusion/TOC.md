@@ -329,6 +329,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
             * [Use Mutual TLS in HTTP modules in Adobe Workfront Fusion](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
         * Adobe connectors {#adobe-connectors}
+            * [Adobe App Builder module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
             * [Adobe Acrobat Sign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
             * [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
             * [Adobe Campaign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
