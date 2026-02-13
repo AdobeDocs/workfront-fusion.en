@@ -44,7 +44,9 @@ For information about modules, see the articles under [Modules: article index](/
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Workfront Proof information
++++
+
+## Workfront Proof information
 
 The Workfront Proof connector uses the following:
 

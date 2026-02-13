@@ -40,7 +40,9 @@ For more information about trigger modules, see the section [Trigger modules](/h
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Choose where a trigger module starts
++++
+
+## Choose where a trigger module starts
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to choose where the trigger starts.

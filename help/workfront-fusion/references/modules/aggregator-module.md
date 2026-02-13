@@ -36,7 +36,9 @@ An aggregator module is a module that merges several bundles of data into a sing
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## [!UICONTROL Aggregator] module overview
++++
+
+## [!UICONTROL Aggregator] module overview
 
 When an [!UICONTROL Aggregator] module executes, it does the following:
 

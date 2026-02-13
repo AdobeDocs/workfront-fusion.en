@@ -37,7 +37,9 @@ Error handling directives allow you to choose what occurs when a scenario encoun
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Directives for error handling
++++
+
+## Directives for error handling
 
 The following error handling directives are available in Workfront Fusion.
 

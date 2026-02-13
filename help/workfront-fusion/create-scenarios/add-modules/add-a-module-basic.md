@@ -38,7 +38,9 @@ This article describes the basic process of adding a module to a scenario. For m
 
 For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-+++## Add the first module to a scenario
++++
+
+## Add the first module to a scenario
 
 The first module of a scenario is usually a trigger module.
 
