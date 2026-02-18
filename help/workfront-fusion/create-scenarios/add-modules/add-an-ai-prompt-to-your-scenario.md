@@ -3,6 +3,7 @@ title: Add an AI Prompt to Your Scenario
 description: You can include an AI prompt in your scenario that connects to your
 author: Becky
 feature: Workfront Fusion
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
 ---
 # Add an AI prompt to your scenario
 
