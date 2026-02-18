@@ -204,6 +204,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
         * [Add modules](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
         * [Add a module to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
         * [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+        * [Add an AI prompt to your scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
         * [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
         * [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
         * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
