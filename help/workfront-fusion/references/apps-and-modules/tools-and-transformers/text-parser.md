@@ -204,7 +204,7 @@ Searches the entered text for a specified value or regular expression and replac
   </tr> 
   <tr> 
    <td>[!UICONTROL New value]</td> 
-   <td> <p> Enter the value that yiou want to replace the search term.</p> </td> 
+   <td> <p> Enter the value that you want to replace the search term.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
