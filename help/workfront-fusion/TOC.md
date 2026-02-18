@@ -419,7 +419,6 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Markdown modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
             * [Math module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
             * [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-            * [MCP (Model Context Protocol) modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
             * [Model Context Protocol (MCP) module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
             * [Text parser modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
             * [Tools modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
