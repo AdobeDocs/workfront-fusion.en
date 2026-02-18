@@ -7,7 +7,7 @@ hide: yes
 hidefromtoc: yes
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 ---
-# Model Context Protocol (MCP) module
+# MCP Agent module
 
 <!--SET UP REDIRECTS-->
 
@@ -16,6 +16,8 @@ Model Context Protocol (MCP) is a way to securely connect AI language models wit
 For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
 
 The Model Context Protocol (MCP) module allows you to process a user prompt using a language model and MCP servers.
+
+For more information about MCP in Fusion scenarios, see [Add an AI prompt to your scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Access requirements
 
@@ -46,17 +48,20 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
+## Prerequisites
 
-
-
+* You must have configured any MCP servers that you intend to connect to.
+* You must have an LLM key to the selected LLM (Large Language Model).
 
 ## Model Context Protocol module and its fields
-
-When you configure the MCP module, Adobe Workfront Fusion displays the fields listed below. A bolded title in a module indicates a required field.
 
 ### Process User Prompt
 
 This action module processes a prompt, using the language model and MCP servers you specify.
+
+>[!NOTE]
+>
+>This module must return an object. It does not return output such as strings or numbers.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -88,7 +93,7 @@ This action module processes a prompt, using the language model and MCP servers 
   </tr> 
   <tr> 
    <td>Enter your prompt </td> 
-   <td> <p>Enter or map the prompt that you want to process..</p> </td> 
+   <td> <p>Enter or map the prompt that you want to process.</p> </td> 
   </tr> 
  </tbody> 
 </table>
