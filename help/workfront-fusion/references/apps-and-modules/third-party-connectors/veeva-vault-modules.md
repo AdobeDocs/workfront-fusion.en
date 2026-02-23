@@ -179,15 +179,24 @@ If you see the map button above a field or function, you can use it to set varia
 ### Document
 
 * [Create a single document](#create-a-single-document)
+* [Create a single document relationship](#create-a-single-document-relationship)
+* [Create multiple annotations]()
 * [Create multiple documents](#create-multiple-documents)
+* [Create multiple document relationships]()
 * [Delete a single document](#delete-a-single-document)
+* [Delete a single document relationship]()
+* [Delete multiple annotations]()
+* [Delete multiple document relationships]()
 * [Download a file](#download-file)
 * [Export documents](#export-documents)
 * [Get a single document](#get-a-single-document)
+* [Get document annotations]()
+* [Get document relationships]()
 * [Initiate user action](#initiate-user-action)
 * [List documents](#list-documents)
 * [Retrieve document export results](#retrieve-document-export-results)
 * [Update a single document](#update-a-single-document)
+* [Update multiple annotations]()
 * [Update multiple documents](#update-multiple-documents)
 
 #### Create a single document
@@ -213,6 +222,78 @@ This module creates a single document, binder, or template.
  </tbody> 
 </table>
 
+#### Create a single document relationship
+
+This action module creates a relationship between two documents
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Document ID</p> </td> 
+   <td> <p>Enter or map the ID of the document where you want the relationship to originate.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Target Document ID</p> </td> 
+   <td> <p>Enter the ID of the document that the relationship points to.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Target major version</p> </td> 
+   <td> <p>Enter the major version of the target document. This is the number before the point.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Target minor version</p> </td> 
+   <td> <p>Enter the major version of the target document. This is the number after the point.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Relationship type</p> </td> 
+   <td> <p>Enter or map the type of relationship that you want to create.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Create multiple annotations
+
+This action module allows you to create up to 500 annotations.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Annotations</p> </td> 
+   <td> <p>For each annotation you want to add, click <b>Add item</b> and fill in the data described in <a href="#annotation-fields" class="MCXref xref">Annotation fields</a> in this article.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### Annotation fields
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Annotation type </td> 
+   <td> <p>Select the type of annotation that you want to create.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Placemark</p> </td> 
+   <td> <p>For each annotation you want to add, click <b>Add item</b> and fill in the data described in </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
 #### Create multiple documents
 
 This module creates multiple documents or templates using a CSV file.
@@ -227,7 +308,7 @@ This module creates multiple documents or templates using a CSV file.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Type</p> </td> 
-   <td> <p>Select whether you want to create templates or documents</p> </td> 
+   <td> <p>Select whether you want to create templates or documents.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">  <p>File data</p> </td> 
@@ -235,6 +316,8 @@ This module creates multiple documents or templates using a CSV file.
   </tr> 
  </tbody> 
 </table>
+
+#### Create multiple document relationships
 
 #### Delete a single document
 
@@ -258,6 +341,12 @@ This module deletes a single document, binder, or template.
   </tr> 
  </tbody> 
 </table>
+
+#### Delete a single document relationship
+
+#### Delete multiple annotations
+
+#### Delete multiple document relationships
 
 #### Download file
 
@@ -352,6 +441,10 @@ This module retrieves metadata for a single document, binder, or template.
  </tbody> 
 </table>
 
+#### Get document annotations
+
+#### Get document relationships
+
 #### Initiate user action
 
 This module initiates actions on documents and binder, such as sending a document for review or changing its state.
@@ -424,6 +517,8 @@ This module returns the results of a previously requested document export.
   </tr> 
   </tbody> 
 </table>
+
+#### Update multiple annotations
 
 #### Update multiple documents
 
