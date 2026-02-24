@@ -182,10 +182,10 @@ If you see the map button above a field or function, you can use it to set varia
 * [Create a single document relationship](#create-a-single-document-relationship)
 * [Create multiple annotations](#create-multiple-annotations)
 * [Create multiple documents](#create-multiple-documents)
-* [Create multiple document relationships]()
+* [Create multiple document relationships](#create-multiple-document-relationships)
 * [Delete a single document](#delete-a-single-document)
-* [Delete a single document relationship]()
-* [Delete multiple annotations]()
+* [Delete a single document relationship](#delete-a-single-document-relationship)
+* [Delete multiple annotations](#delete-multiple-annotations)
 * [Delete multiple document relationships]()
 * [Download a file](#download-file)
 * [Export documents](#export-documents)
@@ -362,8 +362,37 @@ This action module configures multiple document relationships.
    <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Document ID</p> </td> 
+   <td role="rowheader"> <p>Input Type</p> </td> 
+   <td> <p>Select the type of input that you are providing to create these relationships.</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>File data</p> </td> 
+   <td> <p>If you are using a CSV file, enter or map the CSV file data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Relationships data</p> </td> 
+   <td> <p>For each relationship you want to add, click <b>Add item</b> and fill in the data described in <a href="#relationship-fields" class="MCXref xref">Relationship fields</a> in this article.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### Relationship fields
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Source document ID </td> 
    <td> <p>Enter or map the ID of the document where you want the relationship to originate.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Source major version</p> </td> 
+   <td> <p>Enter the major version of the source document. This is the number before the point.</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Source minor version</p> </td> 
+   <td> <p>Enter the major version of the source document. This is the number after the point.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Target Document ID</p> </td> 
@@ -402,14 +431,60 @@ This module deletes a single document, binder, or template.
   </tr> 
   <tr> 
    <td role="rowheader"><p>Document ID / Binder ID / Template name</p> </td> 
-   <td> <p>Select the fields that you want to delete.</td> 
+   <td> <p>Select the item that you want to delete.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Delete a single document relationship
 
+This action module deletes a relationship from a document
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Document ID</p> </td> 
+   <td> <p>Enter or map the ID of the source document for the relationship you want to delete.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Relationship ID</p> </td> 
+   <td> <p>Enter or map the ID of the relationship that you want to delete.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Delete multiple annotations
+
+This action module deletes annotations. The user must have permissions do delete annotations in Veeva Vault. You can delete up to 500 annotations.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Annotations</p> </td> 
+   <td> <p>For each annotation you want to delete, click <b>Add item</b> and enter the following fields.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID</p> </td> 
+   <td> <p>Enter or map the ID of the annotation that you want to delete.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Document version ID</p> </td> 
+   <td> <p>Enter or map the document's version number that contains the annotation that you want to delete.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Delete multiple document relationships
 
