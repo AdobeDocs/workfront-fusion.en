@@ -287,8 +287,40 @@ This action module allows you to create up to 500 annotations.
    <td> <p>Select the type of annotation that you want to create.</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>Placemark</p> </td> 
-   <td> <p>For each annotation you want to add, click <b>Add item</b> and fill in the data described in </p> </td> 
+   <td role="rowheader"> <p>Type</p> </td> 
+   <td> <p>Enter or map the type of placemark that you want to use for this annotation.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Page number</p> </td> 
+   <td> <p>Enter or map the page number where you want this annotation to appear.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>X coordinate</p> </td> 
+   <td> <p>Enter or map the X coordinate of the placemark.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Y coordinate</p> </td> 
+   <td> <p>Enter or map the Y coordinate of the placemark.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Width</p> </td> 
+   <td> <p>Enter or map the width of the placemark.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Height</p> </td> 
+   <td> <p>Enter or map the height of the placemark.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Style</p> </td> 
+   <td> <p>Enter or map the style of the placemark.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Reference</p> </td> 
+   <td> <p>A reference allows the annotation to refer to an external source. For each reference that you want to add to the annotation, click <b>Add item</b> and enter the reference's type, document version ID, and an annotation.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Select fields</p> </td> 
+   <td> <p>Select the fields that you want to provide values for, then enter the values in each field. Available fields depend on the annotation type.</p> </td> 
   </tr> 
  </tbody> 
 </table>
