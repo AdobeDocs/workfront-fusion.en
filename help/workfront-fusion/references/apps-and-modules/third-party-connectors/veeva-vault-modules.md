@@ -112,7 +112,9 @@ When creating a connection, you can select whether to use a password, or whether
       </tr> 
       <tr> 
        <td role="rowheader">Authorization Server Provider</td> 
-       <td> <p>Select the provider that you want to use for this authentication.</p> </td> 
+       <td> <p>Select the provider that you want to use for this authentication.</p> 
+       <p><b>NOTE:</b> The Veeva Vault uses Azure AD client credentials when Azure is selected as the Authorization Server Provider.</p>
+       </td> 
       </tr> 
       <tr> 
        <td role="rowheader">Ping host</td> 
@@ -121,7 +123,7 @@ When creating a connection, you can select whether to use a password, or whether
       <tr>
         <td role="rowheader">Scope</td>
         <td>
-          <p>Enter the scope for this connection.</p>
+          <p>Enter the scope for this connection. The scope must be formatted as <code>{Application ID URI}/.default</code>. The application ID URI must belong to the resource or app that is exposing permissions.</p>
         </td>
       </tr>
       <tr>
@@ -150,7 +152,7 @@ When creating a connection, you can select whether to use a password, or whether
       </tr>
       <tr> 
        <td role="rowheader">Vault DNS</td> 
-       <td>Enter your Veeva Vault DNS (domain name).</p><p>To locate your Veeva Vault DNS, examine the URL that you use to access Veeva Vault.</p>For example, in the URL <code>https://my-dns.veevavault.com</code>, the DNS is <code>my-dns</code>. You do not need to enter the entire URL.</td> 
+       <td>Enter your Veeva Vault DNS (domain name).</p><p>To locate your Veeva Vault DNS, examine the URL that you use to access Veeva Vault.</p>For example, in the URL <code>https://my-dns.veevavault.com</code>, the DNS is <code>my-dns.veevavault.com</code>. </td> 
       </tr> 
       <tr>
         <td role="rowheader">Your session expiration time in minutes</td>
