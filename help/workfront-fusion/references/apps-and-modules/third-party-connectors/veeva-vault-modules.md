@@ -145,7 +145,7 @@ When creating a connection, you can select whether to use a password, or whether
       <tr>
         <td role="rowheader">Profile ID</td>
         <td>
-          <p>Enter the ID of you OAuth2 / Copen ID Connect profile.</p>
+          <p>Enter the ID of your OAuth2 / Open ID Connect profile.</p>
         </td>
       </tr>
       <tr> 
@@ -186,17 +186,17 @@ If you see the map button above a field or function, you can use it to set varia
 * [Delete a single document](#delete-a-single-document)
 * [Delete a single document relationship](#delete-a-single-document-relationship)
 * [Delete multiple annotations](#delete-multiple-annotations)
-* [Delete multiple document relationships]()
+* [Delete multiple document relationships](#delete-multiple-document-relationships)
 * [Download a file](#download-file)
 * [Export documents](#export-documents)
 * [Get a single document](#get-a-single-document)
-* [Get document annotations]()
-* [Get document relationships]()
+* [Get document annotations](#get-document-annotations)
+* [Get document relationships](#get-document-relationships)
 * [Initiate user action](#initiate-user-action)
 * [List documents](#list-documents)
 * [Retrieve document export results](#retrieve-document-export-results)
 * [Update a single document](#update-a-single-document)
-* [Update multiple annotations]()
+* [Update multiple annotations](#update-multiple-annotations)
 * [Update multiple documents](#update-multiple-documents)
 
 #### Create a single document
@@ -237,6 +237,10 @@ This action module creates a relationship between two documents
   <tr> 
    <td role="rowheader"> <p>Document ID</p> </td> 
    <td> <p>Enter or map the ID of the document where you want the relationship to originate.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Select or map the ID of the version that you want to create a relationship for.</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Target Document ID</p> </td> 
@@ -371,7 +375,7 @@ This action module configures multiple document relationships.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Relationships data</p> </td> 
-   <td> <p>For each relationship you want to add, click <b>Add item</b> and fill in the data described in <a href="#relationship-fields" class="MCXref xref">Relationship fields</a> in this article.</p> </td> 
+   <td> <p>If you are using JSON, for each relationship you want to add, click <b>Add item</b> and fill in the data described in <a href="#relationship-fields" class="MCXref xref">Relationship fields</a> in this article.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -453,6 +457,10 @@ This action module deletes a relationship from a document
    <td> <p>Enter or map the ID of the source document for the relationship you want to delete.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Select or map the ID of the version that you want to delete a relationship for.</td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"><p>Relationship ID</p> </td> 
    <td> <p>Enter or map the ID of the relationship that you want to delete.</td> 
   </tr> 
@@ -488,9 +496,34 @@ This action module deletes annotations. The user must have permissions do delete
 
 #### Delete multiple document relationships
 
+This action module deletes relationships from multiple documents
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Input Type</p> </td> 
+   <td> <p>Select the type of input that you are providing to delete these relationships.</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>File data</p> </td> 
+   <td> <p>If you are using a CSV file, enter or map the CSV file data.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Relationships data</p> </td> 
+   <td> <p>If you are using JSON, for each relationship you want to add, click <b>Add item</b> and enter the relationship ID.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Download file
 
-This module downloads a document, documene version, or template from Veeva Vault.
+This module downloads a document, document version, or template from Veeva Vault.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -583,7 +616,57 @@ This module retrieves metadata for a single document, binder, or template.
 
 #### Get document annotations
 
+This module retrieves annotations from a specific document version. You can retrieve all annotations or choose to retrieve only certain annotation types.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Document ID</p> </td> 
+   <td> <p>Select or map the document that you want to retrieve annotations for. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Select or map the ID of the version that you want to retrieve annotations for.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned annotations</td> 
+   <td>Enter or map the maximum number of annotations you want the module to return during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 #### Get document relationships
+
+This module retrieves all relationships for a document.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Document ID</p> </td> 
+   <td> <p>Select or map the document that you want to retrieve relationships for. </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>Version</p> </td> 
+   <td> <p>Select or map the ID of the version that you want to retrieve relationships for.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned relationships</td> 
+   <td>Enter or map the maximum number of relationships you want the module to return during each scenario execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Initiate user action
 
@@ -659,6 +742,23 @@ This module returns the results of a previously requested document export.
 </table>
 
 #### Update multiple annotations
+
+This action module updates up to 500 annotations.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Annotations</p> </td> 
+   <td> <p>For each annotation you want to update, click <b>Add item</b> and fill in the data described in <a href="#annotation-fields" class="MCXref xref">Annotation fields</a> in this article.</p> </td> 
+  </tr> 
+  </tbody> 
+</table>
 
 #### Update multiple documents
 
@@ -806,7 +906,7 @@ This module retrieves metadata configured on a specific object record in your Va
   </tr> 
   <tr> 
    <td role="rowheader">Object name</td> 
-   <td>Select the object that you want to retrive metadata for.</td> 
+   <td>Select the object that you want to retrieve metadata for.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Record ID</td> 
