@@ -9,6 +9,8 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 * [Adobe Workfront Fusion Documentation](home.md)
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
+    * Fusion releases - 2026 {#fusion-releases-2026}
+        * [Workfront Fusion release activity: Week of February 23, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
     * Fusion releases - 2025 {#fusion-releases-2025}
         * [Workfront Fusion release activity: Week of February 16, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
         * [Workfront Fusion release activity: Week of February 9, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
