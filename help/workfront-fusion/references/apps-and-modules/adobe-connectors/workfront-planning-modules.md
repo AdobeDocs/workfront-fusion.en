@@ -38,7 +38,7 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-s## Prerequisites
+## Prerequisites
 
 You must have the following to access Workfront Planning:
 
