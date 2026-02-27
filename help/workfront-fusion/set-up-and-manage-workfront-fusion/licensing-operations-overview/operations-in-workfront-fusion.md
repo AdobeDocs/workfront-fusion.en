@@ -14,12 +14,17 @@ An operation in Adobe Workfront Fusion is a task performed by a module. For trac
 * In general, any successful action-step execution is considered an operation.
 * The first module in a scenario runs only once and is always counted as one operation, even if it does not return a bundle. 
 * The number of times the rest of the modules run depends on the number of bundles they must process.  One run of a module for one bundle is one operation. An exception is the aggregator module, which is counted as one operation per set of bundles being processed.
+* Operations may differ in value. Some will be smaller, simpler operations, and others will be more complex. Operations count toward your total regardless of how simple or complex they may be.
 * Operations are counted at the [!UICONTROL Finalization] stage of a scenario execution.
 * The following are **not** counted as operations:
   * Any filter steps.
   * Any action that errors or halts.
   * Any route that does not run because the route's rules were not met, such as fallback or disabled routes.
   * Any action that does not run, either because a filter didn't allow data through or because the scenario stopped due to an error.
+
+>[!NOTE]
+>
+>If your organization routinely attempts to use more operations than your Workfront Fusion package allows, we recommend considering upgrading to the Automation and Integration Ultimate package.
 
 ## Operation limits
 
