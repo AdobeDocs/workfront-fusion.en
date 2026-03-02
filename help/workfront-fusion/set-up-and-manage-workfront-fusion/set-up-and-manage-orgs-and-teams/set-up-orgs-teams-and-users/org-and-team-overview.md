@@ -21,6 +21,18 @@ Workfront Fusion users belong to an organization.
 
 Users must be added to an organization before they are added to a team. 
 
+### Organization resources
+
+The following resources affect the entire Fusion organization, and are therefore owned and handled on the organization level:
+
+* **Worker pools:**: A worker pool is a quantity of Workfront Fusion processing resources dedicated to a specific organization. 
+
+   For more information, see [Worker pools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md).
+
+* **Operations**: An operation in Adobe Workfront Fusion is a task performed by a module. 
+
+   For more information, see [Operations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md).
+
 ### Organization roles
 
 A user has one of the following roles in an organization:
