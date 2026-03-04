@@ -83,8 +83,10 @@ The Airtable connector uses the following:
 1. Open your account overview and generate the API key.
 -->
 1. Open Workfront Fusion and the **Create a connection** dialog of the desired module.
+1. Select whether you are using a Personal Access Token, or OAuth 2 authorization.
 1. Enter a name for the connection.
-1. (Optional) Click Show advanced settings, and enter your Airtable Client ID and Client Secret.
+1. (Conditional) If using a Personal Access Token, Click Show advanced settings, and enter your Personal Access Token.
+1. (Conditional) If using OAuth 2, click Show advanced settings, and enter your Airtable Client ID and Client Secret.
 1. Click the **Continue** button to create the connection and return to the module.
 
 ## Airtable modules and their fields
