@@ -177,7 +177,7 @@ For more information on errors, see [Error types](/help/workfront-fusion/referen
 >This setting is visible only if the following two conditions are met:
 >
 >* You are an organization admin or owner
->* More than one worker pool is associated with your organization.
+>* More than one worker pool is associated with your organization
 
 This setting assigns the scenario to a specific worker pool associated with your organization, allowing you to dedicate resources to high priority scenarios.
 
