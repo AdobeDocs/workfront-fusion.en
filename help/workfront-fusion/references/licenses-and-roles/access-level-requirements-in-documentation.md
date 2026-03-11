@@ -28,7 +28,7 @@ Some rows contain information labeled "New" and "Current." This is because Workf
    <td role="rowheader">Adobe Workfront package 
    <td> Adobe Workfront packages refer to the set of features that your organization has purchased. Most Fusion functionality is available in all plans, but there are some exceptions that are only available to organizations with an Ultimate Workfront package. 
    <ul><li>To find out what Adobe Workfront package your organization uses, including whether your organization is under the new or current packaging model, contact your Workfront administrator.</li>
-   <li>For instructions on how a Workfront administrator can locate your organization's Workfront package, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">View your organization's cluster and Workfront plan</a> in the Workfront documentation.</li><li>For more information on the new Workfront packages, see <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront pricing and packaging</a>.</li></ul> </td> 
+   <li>For instructions on how a Workfront administrator can locate your organization's Workfront package, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">View your organization's cluster and Workfront plan</a> in the article Firewall Overview.</li><li>For more information on the new Workfront packages, see <a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront pricing and packaging</a>.</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront license</td> 
@@ -39,7 +39,7 @@ Some rows contain information labeled "New" and "Current." This is because Workf
    <ul>
    <li>New: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">New licenses overview</a></li>
    <li>Current: <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">Licenses overview</a></li></ul></li>
-   <li>If you have the correct access level and still don't have access, ask your Workfront administrator if they set additional restrictions in your access level. For information on how a Workfront administrator can modify your access level, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">Create or modify custom access levels</a>.
+   <li>If you have the correct access level and still don't have access, ask your Workfront administrator if they set additional restrictions in your access level. For information on how a Workfront administrator can modify your access level, see <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">Create and modify custom access levels</a>.
    </ul>
       </p> </td> 
   </tr> 
