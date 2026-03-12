@@ -93,7 +93,7 @@ Consider the following example scenario:
 You can add an error handler to a module or to a route.
 
 * [Add an error handler to a module](#add-an-error-handler-to-a-module)
-* [Add an error handler to a route]()
+* [Add an error handler to a route](#add-an-error-handler-to-a-route)
 
 ### Add an error handler to a module
 
