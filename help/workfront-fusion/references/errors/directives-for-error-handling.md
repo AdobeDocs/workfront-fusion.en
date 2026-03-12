@@ -57,11 +57,11 @@ The following error handling directives are available in Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Resume</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>A substitute output is specified and supplied to the module that encounters an error.</p> </li><li><p>Subsequent modules are processed.</p></li><li> <p>The scenario execution status is marked as "success."</p></li></ul> </td> 
+   <td> <ul><li><p>A substitute output is specified and supplied to the module that encounters an error.</p> </li><li><p>Subsequent modules are processed.</p></li>If the error handler is on a router, the scenario proceeds through the routes as expected.<li></li><li> <p>The scenario execution status is marked as "success."</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignore</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>The error is ignored.</li><li> Subsequent modules are not processed.</p> </li><li><p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li><p>The scenario execution status is marked as "success."</p> </li></ul></td> 
+   <td><ul><li> <p>The error is ignored.</li><li> Subsequent modules are not processed.</p> </li><li><p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li>If the error handler is on a router, subsequent routes from that router are skipped.</li><li><p>The scenario execution status is marked as "success."</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Break</p> <p> <img src="assets/break.png"> </p> </td> 
