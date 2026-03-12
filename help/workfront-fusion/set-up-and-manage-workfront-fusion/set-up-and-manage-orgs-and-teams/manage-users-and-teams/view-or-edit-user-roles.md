@@ -58,6 +58,8 @@ Adobe Workfront Fusion administrators can view and update user roles for an orga
 1. Click **[!UICONTROL Details]** in the row of the user that you want to view.
 1. (Optional) To update the role of the user in an organization, click the dropdown in the **[!DNL Role]** column in the row of the organization where you want to change the user's role, then select the new role.
 
+<!--
+
 ### Considerations when adding or changing organization Owners
 
 Your organization can have more than one Owner. 
@@ -71,6 +73,8 @@ When assigning a user to or from an Owner role, consider the following.
 * When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
 * When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
 * When a new team is created, all Owners are automatically assigned as Team Admins.
+
+-->
 
 ## View or edit user roles for a team
 
