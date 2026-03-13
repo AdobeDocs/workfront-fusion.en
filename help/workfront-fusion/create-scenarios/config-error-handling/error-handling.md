@@ -24,6 +24,11 @@ For more information on default error handling, see [Error types](/help/workfron
 
 For more information on error handling directives, see [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
 
+>[!NOTE]
+>
+>Workfront Fusion supports route‑level error handling, allowing you to define error handling logic once per route, rather than attaching error handlers to each individual module. 
+>Because route-level error handling is a more scalable, consistent, and architecturally clean way to manage errors, especially in advanced, multi-branch automations, we recommend using route-level error handling as a best practice.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
