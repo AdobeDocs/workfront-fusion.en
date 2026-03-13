@@ -48,8 +48,7 @@ You must add a Router module before configuring routes.
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a router.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. In the scenario editor, Click on the right handle of the module after which you want to add the router.
-1. Select **[!UICONTROL Flow Control]** > **Router** in the list of modules that displays.
+1. In the scenario editor, click on the right handle of the module after which you want to add the router, then select **[!UICONTROL Flow Control]** > **Router** in the list of modules that displays.
 
    ![Connect the route](assets/connect-the-router-350x108.png)
 
@@ -63,7 +62,11 @@ You must add a Router module before configuring routes.
 
    You can add as many routes as you want.
 
-1. To verify the order of the routes, click the Auto-align icon ![Auto-align icon](assets/auto-align.png).
+1. To verify the order of the routes, check the label for each route. Route 1 executes first, then Route 2, and so on.
+
+   Or
+   
+   Click the Auto-align icon ![Auto-align icon](assets/auto-align.png).
 
    The routes are arranged in the order they execute. The top route executes first.
 
@@ -78,6 +81,8 @@ You must add a Router module before configuring routes.
 You can put a filter on a route after the Router module to filter bundles. Only bundles that pass through the filter will be handled by the modules on the route.
 
 If data passes the filter of more than one route, the data is handled by both routes. The top route handles the data first.
+
+Routers with filters display the filter icon ![Filter icon](assets/fusion-scenario-filter-icon.png) on the route label.
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.
@@ -96,6 +101,8 @@ If data passes the filter of more than one route, the data is handled by both ro
 ## Configure a fallback route
 
 The fallback route is the route that executes on any bundles that do not pass any filter to another route.
+
+Fallback routes display "Fallback" on the label.
 
 You can enable a fallback route in the filter panel.
 
