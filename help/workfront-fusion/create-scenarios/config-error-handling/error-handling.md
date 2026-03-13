@@ -59,13 +59,13 @@ You can add error handlers to individual modules, or to routers.
 
 An error handler attached to a module triggers only for errors encountered while processing that specific module.
 
-An error handler attached to a router triggers for errors encountered by any module on that route. This includes errors encountered on any child routes that do not have their own route-level error handler. 
+An error handler attached to a router triggers for errors encountered by any module on that router's route. This includes errors encountered on any child routes that do not have an error handler on their own router. 
 
 Errors are handled by the following hierarchy:
 
 1. Module
-2. Route
-3. Parent route
+2. Router
+3. Parent router
 4. Default error handling
 
 >[!BEGINSHADEBOX]
@@ -78,11 +78,11 @@ Consider the following example scenario:
 
 1. This module has an error handler. Any error on this module is handled by the Commit directive.
 1. This module does not have an error handler. If this module encounters an error, the error is handled by the handler on the router that created the module's route. Any error on this module is handled by the Rollback directive.
-1. This module does not have an error handler, nor does the router that created the module's route but the route's parent route does have an error handler. Any error on this module is handled by the Break directive.
+1. This module does not have an error handler, nor does the router that created the module's route, but there is an error handler on the next router up. Any error on this module is handled by the Break directive.
 
 >[!NOTE]
 >
->* If a module does not have an error handler on the module, its route, or any parent routes, any errors on that module are handled by default error handling.
+>* If a module does not have an error handler on the module, its router, or any parent routers, any errors on that module are handled by default error handling.
 >* To create a global error handler, create a router near the beginning of your scenario and attach error handling to that router.
 
 
@@ -90,10 +90,10 @@ Consider the following example scenario:
 
 ## Add an error handler
 
-You can add an error handler to a module or to a route.
+You can add an error handler to a module or to a router.
 
 * [Add an error handler to a module](#add-an-error-handler-to-a-module)
-* [Add an error handler to a route](#add-an-error-handler-to-a-route)
+* [Add an error handler to a router](#add-an-error-handler-to-a-router)
 
 ### Add an error handler to a module
 
@@ -128,7 +128,7 @@ To add an error handler to a module:
 >
 >Note that an error handler route is composed of transparent circles, while a regular route is composed of solid circles.
 
-### Add an error handler to a route
+### Add an error handler to a router
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add an error handling route.
