@@ -18,7 +18,7 @@ For example, an error can occur because:
 
 If a module encounters an error during the scenario execution, and there is no error handling route attached to the module or its route, the default error handling logic executes. 
 
-By adding an error handler route to a module or a route, you can replace the default error handling logic with your own. Adobe Workfront Fusion offers five different directives that can be inserted at the end of your error handler routes. 
+By adding an error handler to a module or a route, you can replace the default error handling logic with your own. Adobe Workfront Fusion offers five different directives that can be inserted at the end of your error handler routes. 
 
 For more information on default error handling, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
@@ -59,7 +59,7 @@ You can add error handlers to individual modules, or to routers.
 
 An error handler attached to a module triggers only for errors encountered while processing that specific module.
 
-An error handler attached to a route triggers for errors encountered by any module on that route. This includes errors encountered on any child routes that do not have their own route-level error handler. 
+An error handler attached to a router triggers for errors encountered by any module on that route. This includes errors encountered on any child routes that do not have their own route-level error handler. 
 
 Errors are handled by the following hierarchy:
 
@@ -77,8 +77,8 @@ Consider the following example scenario:
 ![Example scenario showing routes and error handlers](assets/error%20handling%20route%20example%20with%20numbers.png)
 
 1. This module has an error handler. Any error on this module is handled by the Commit directive.
-1. This module does not have an error handler. If this module encounters an error, the error is handled by the handler on the router closest to the module. Any error on this module by the Rollback directive.
-1. This module does not have an error handler, nor does the route to which the module belongs, but the route's parent route does have an error handler. Any error on this module is handled by the Break directive.
+1. This module does not have an error handler. If this module encounters an error, the error is handled by the handler on the router that created the module's route. Any error on this module is handled by the Rollback directive.
+1. This module does not have an error handler, nor does the router that created the module's route but the route's parent route does have an error handler. Any error on this module is handled by the Break directive.
 
 >[!NOTE]
 >
