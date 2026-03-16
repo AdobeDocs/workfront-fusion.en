@@ -74,6 +74,11 @@ You must add a Router module before configuring routes.
 
    ![Order route](assets/order-routes.png)
 
+1. (Optional) To disable a route, right click on the dots that lead from the router to that route, and select **Disable route**.
+
+   Disabled routes display gray dots leading from the router to the first module on the route, and show a the disabled route icon ![Disabled route icon](assets/disabled-route-icon.png) on the label.
+
+1. (Optional and conditional) To enable a disabled route, click the disabled route icon ![Disabled route icon](assets/disabled-route-icon.png) on the route's label.
 1. Continue to [Add a filter to a route](#add-a-filter-to-a-route).
 
 ## Add a filter to a route
@@ -95,6 +100,7 @@ Routers with filters display the filter icon ![Filter icon](assets/fusion-scenar
    For more information, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
 1. Click **[!UICONTROL OK]** to save the filter setup.
+1. (Conditional) If the filter name is too long to fit in the label, hover over the label to display the entire name.
 
 1. Continue to [Configure a fallback route](#configure-a-fallback-route).
 
