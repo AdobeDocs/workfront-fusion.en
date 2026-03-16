@@ -73,6 +73,22 @@ You must add both modules to a scenario before you can add a filter between them
 
 ## Copy a filter
 
+You can copy an existing filter and paste it elsewhere in the scenario.
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Right-click on the connecting dots between modules where the filter is located.
+1. Select **Copy filter**.
+1. Right-click on the connecting dots between modules where you want to paste the filter.
+1. Select **Paste filter
+1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules](#add-a-filter-between-two-modules) in this article.
+
+
+
+
+<!--
+
 Currently, the scenario editor does include a feature for copying a filter.
 
 >[!NOTE]
@@ -98,3 +114,5 @@ To copy a filter without copying modules, you can use the Fusion DevTool
    1. Set the **[!UICONTROL Target Module]** as the module that you want to place the filter directly after.
 
 1. Click **[!UICONTROL Run]**.
+
+-->
