@@ -140,13 +140,13 @@ To add an error handler to a module:
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. Right click the router where you want to add an error handler route, and select **[!UICONTROL Add error handler]**:
 
-    ![Error handler route](assets/error-handler-route.png)
+    ![Error handler route](assets/error-handler-on-router.png)
 
     An error handler route is added to the router. 
 
     The error handling module shows a list of Directives as well as the apps being used in your scenario. 
 
-    ![Error route](assets/error-route.png)
+    ![Error route](assets/error-handler-route-from-router.png)
     
 1. Select one of the directives. 
 
