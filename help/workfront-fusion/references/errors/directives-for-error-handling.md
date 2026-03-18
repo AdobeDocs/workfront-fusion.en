@@ -49,7 +49,7 @@ The following error handling directives are available in Workfront Fusion.
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>Rollback</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>Scenario execution is stopped immediately.</li><li>A Rollback phase is started on all the modules, in an attempt to revert them all to their initial state. </li><li>Subsequent modules are not processed.</p></li><li> <p>In most cases, the scenario is deactivated after the number of consecutive errors specified under Scenario settings. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Number of consecutive errors</a>.</p> </li><li><p>The scenario execution status is marked as "Error."</p></li></ul> <p><b>Note</b>: This is the default behavior if no error handler route is attached to the module and the <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Allow storing incomplete executions</a>Allow storing incomplete executions setting under [!UICONTROL Scenario settings] is not checked.</p> </td> 
+   <td> <ul><li><p>Scenario execution is stopped immediately.</li><li>A Rollback phase is started on all the modules, in an attempt to revert them all to their initial state. </li><li>Subsequent modules are not processed.</p></li><li> <p>In most cases, the scenario is deactivated after the number of consecutive errors specified under Scenario settings. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">Number of consecutive errors</a>.</p> </li><li><p>The scenario execution status is marked as "Error."</p></li></ul> <p><b>Note</b>: This is the default behavior if no error handler route is attached to the module and the <a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">Allow storing incomplete executions</a> scenario setting is not checked.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Commit</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -57,11 +57,11 @@ The following error handling directives are available in Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Resume</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>A substitute output is specified and supplied to the module that encounters an error.</p> </li><li><p>Subsequent modules are processed.</p></li><li> <p>The scenario execution status is marked as "success."</p></li></ul> </td> 
+   <td> <ul><li><p>A substitute output is specified and supplied to the module that encounters an error.</p> </li><li><p>Subsequent modules are processed.</p></li>If the error handler is on a router, the scenario proceeds through the routes as expected.<li></li><li> <p>The scenario execution status is marked as "success."</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Ignore</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>The error is ignored.</li><li> Subsequent modules are not processed.</p> </li><li><p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li><p>The scenario execution status is marked as "success."</p> </li></ul></td> 
+   <td><ul><li> <p>The error is ignored.</li><li> Subsequent modules are not processed.</p> </li><li><p>If there are unprocessed bundles, the scenario execution continues normally.</p> </li><li>If the error handler is on a router, subsequent routes from that router are skipped.</li><li><p>The scenario execution status is marked as "success."</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Break</p> <p> <img src="assets/break.png"> </p> </td> 

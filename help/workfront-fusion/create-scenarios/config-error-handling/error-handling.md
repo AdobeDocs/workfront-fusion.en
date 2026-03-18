@@ -16,13 +16,18 @@ For example, an error can occur because:
 * Validation of input data fails
 * Other reasons
 
-If a module encounters an error during the scenario execution, and there is no error handling route attached to the module, the default error handling logic executes. 
+If a module encounters an error during the scenario execution, and there is no error handling route attached to the module or its route, the default error handling logic executes. 
 
-By adding an error handler route to a module, you can replace the default error handling logic with your own. Adobe Workfront Fusion offers five different directives that can be inserted at the end of your error handler routes. 
+By adding an error handler to a module or a route, you can replace the default error handling logic with your own. Adobe Workfront Fusion offers five different directives that can be inserted at the end of your error handler routes. 
 
 For more information on default error handling, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
 
 For more information on error handling directives, see [Directives for error handling](/help/workfront-fusion/references/errors/directives-for-error-handling.md).
+
+>[!NOTE]
+>
+>Workfront Fusion supports route‑level error handling, allowing you to define error handling logic once per route, rather than attaching error handlers to each individual module. 
+>Because route-level error handling is a more scalable, consistent, and architecturally clean way to manage errors, especially in advanced, multi-branch automations, we recommend using route-level error handling as a best practice.
 
 ## Access requirements
 
@@ -53,7 +58,49 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
+## Error handler location and hierarchy
+
+You can add error handlers to individual modules, or to routers.
+
+An error handler attached to a module triggers only for errors encountered while processing that specific module.
+
+An error handler attached to a router triggers for errors encountered by any module on that router's route. This includes errors encountered on any child routes that do not have an error handler on their own router. 
+
+Errors are handled by the following hierarchy:
+
+1. Module
+2. Router
+3. Parent router
+4. Default error handling
+
+>[!BEGINSHADEBOX]
+
+### Example
+
+Consider the following example scenario:
+
+![Example scenario showing routes and error handlers](assets/error-handling-route-example-with-numbers.png)
+
+1. This module has an error handler. Any error on this module is handled by the Commit directive.
+1. This module does not have an error handler. If this module encounters an error, the error is handled by the handler on the router that created the module's route. Any error on this module is handled by the Rollback directive.
+1. This module does not have an error handler, nor does the router that created the module's route, but there is an error handler on the next router up. Any error on this module is handled by the Break directive.
+
+>[!NOTE]
+>
+>* If a module does not have an error handler on the module, its router, or any parent routers, any errors on that module are handled by default error handling.
+>* To create a global error handler, create a router near the beginning of your scenario and attach error handling to that router.
+
+
+>[!ENDSHADEBOX]
+
 ## Add an error handler
+
+You can add an error handler to a module or to a router.
+
+* [Add an error handler to a module](#add-an-error-handler-to-a-module)
+* [Add an error handler to a router](#add-an-error-handler-to-a-router)
+
+### Add an error handler to a module
 
 To add an error handler to a module:
 
@@ -64,7 +111,7 @@ To add an error handler to a module:
 
     ![Error handler route](assets/error-handler-route.png)
 
-    An error handler route is added to the module. If the module is the last module in a route, the error handler directlys follow the module. If the module has more modules after it, a separate error handler route is added. 
+    An error handler route is added to the module. If the module is the last module in a route, the error handler directly follow the module. If the module has more modules after it, a separate error handler route is added. 
 
     The error handling module shows a list of Directives as well as the apps being used in your scenario. 
 
@@ -85,6 +132,33 @@ To add an error handler to a module:
 >[!NOTE]
 >
 >Note that an error handler route is composed of transparent circles, while a regular route is composed of solid circles.
+
+### Add an error handler to a router
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add an error handling route.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Right click the router where you want to add an error handler route, and select **[!UICONTROL Add error handler]**:
+
+    ![Error handler route](assets/error-handler-on-router.png)
+
+    An error handler route is added to the router. 
+
+    The error handling module shows a list of Directives as well as the apps being used in your scenario. 
+
+    ![Error route](assets/error-handler-route-from-router.png)
+    
+1. Select one of the directives. 
+
+    Or 
+
+    Add one or more modules to the error handler route. 
+
+    If you add more modules to the route, the Ignore directive is applied by default. If there is an error, the subsequent modules on that route are processed.
+
+    For more information on directives, see [Error handling directives](#error-handling-directives) in this article.
+
+1. (Optional) Add a filter to the error handling route. For instructions, see [Add filtering and nesting to error handling routes](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
 
 ## Error handling directives
 
