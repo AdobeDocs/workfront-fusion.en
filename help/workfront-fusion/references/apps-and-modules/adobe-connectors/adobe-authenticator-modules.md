@@ -303,3 +303,88 @@ This action module allows you to make a call to any Adobe API.
      </div> </p> </td>     </tr>
   </tbody>
 </table>
+
+### Make a custom API call (Polling)
+
+This module make a custom call, and includes option to repeatedly execute the call until a specific condition is met or a defined limit is reached.
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+     <td role="rowheader">[!UICONTROL Connection]</td>
+     <td>For instructions on creating a connection to the Adobe Authenticator module, see <a href="#create-a-connection" class="MCXref xref" >Create a connection</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Base URL]</p>
+      </td>
+      <td>
+        <p>Enter the base URL of the API point you want to connect to.</p>
+      </td>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL URL]</p>
+      </td>
+      <td>
+        <p>Enter the path relative to the base URL.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>Add the headers of the request in the form of a standard JSON object.</p>
+        <p>For example, <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion adds authorization headers automatically.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td>
+        <p>Enter the request query string.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body Type]</td>
+   <td> Select the body type for this API request:
+   <ul>
+   <li>Raw</li>
+   <li>application/x-www-form-urlencoded</li>
+   <li>multipart/form-data</li>
+   </ul>
+      </td>
+      </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repeat Until]  </td>
+      <td>
+        <p>Configure a conditional filter that determines when polling should stop. You can reference response data using dot notation (such as <code>body.status</code>, <code>body.data.state</code>, or <code>headers.status</code>). The condition is evaluated after each execution, and polling continues until the condition evaluates to <code>true</code>. Supported operators include: <code>Equal to</code>, <code>Not equal to</code>, <code>Exists</code>, <code>Does not exist</code></p><p>For example, you could set <code>body.status not equal completed</code> to keep polling until the API response indicates the process is completed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repeat Delay]  </td>
+      <td>
+        <p>Enter or map the delay between executions, in seconds.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Repeat Limit]  </td>
+      <td>
+        <p>Enter or map the maximum number of times that you want the API call to execute.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output Type]  </td>
+      <td>
+        <p>Select the type of data that you want the module to output. If you do not select a type, the module selects a type automatically.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
