@@ -179,6 +179,7 @@ To create a connection:
 
 * [Make a custom API call](#make-a-custom-api-call)
 * [Make a custom API call (Legacy)](#make-a-custom-api-call-legacy)
+* [Make a custom API call (Polling)](#make-a-custom-api-call-polling)
 
 ### Make a custom API call 
 
