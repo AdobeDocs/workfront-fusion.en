@@ -363,21 +363,21 @@ This module make a custom call, and includes option to repeatedly execute the ca
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Repeat until]  </td>
+      <td role="rowheader">[!UICONTROL Repeat Until]  </td>
       <td>
         <p>Configure a conditional filter that determines when polling should stop. You can reference response data using dot notation (such as <code>body.status</code>, <code>body.data.state</code>, or <code>headers.status</code>). The condition is evaluated after each execution, and polling continues until the condition evaluates to <code>true</code>. Supported operators include: <code>Equal to</code>, <code>Not equal to</code>, <code>Exists</code>, <code>Does not exist</code></p><p>For example, you could set <code>body.status not equal completed</code> to keep polling until the API response indicates the process is completed.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Output Type]  </td>
+      <td role="rowheader">[!UICONTROL Repeat Delay]  </td>
       <td>
-        <p>Select the type of data that you want the module to output. If you do not select a type, the module selects a type automatically.</p>
+        <p>Enter or map the delay between executions, in seconds.</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Output Type]  </td>
+      <td role="rowheader">[!UICONTROL Repeat Limit]  </td>
       <td>
-        <p>Select the type of data that you want the module to output. If you do not select a type, the module selects a type automatically.</p>
+        <p>Enter or map the maximum number of times that you want the API call to execute.</p>
       </td>
     </tr>
     <tr>
