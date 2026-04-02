@@ -125,7 +125,7 @@ Before you can use a data store in a module, you must create the data store in W
 
 ### Set up the data structure 
 
-1. When creating or editing a data store, click **[!UICONTROL Add]**.
+1. When creating or editing a data store, click **[!UICONTROL Add]** next to the Data structure field.
 1. In the **[!UICONTROL Add data structure]** box that displays, configure the following fields:
 
    <table style="table-layout:auto">
@@ -178,7 +178,7 @@ You can edit the properties and contents of an existing data store in the [!UICO
 The properties of a data store include the data structure that the data store uses, as well as the data store's size.
 
 1. Click **[!UICONTROL Data stores]** ![Data store icon](assets/data-store-icon.png) in the left navigation panel to open the [!UICONTROL Data stores] area.
-1. Click **[!UICONTROL Edit]** ![Edit data store](assets/data-store-edit.png) next to the data store that you want to edit.
+1. Click the checkbox next to the data store that you want to edit, then click **Edit** in the banner at the bottom of the screen.
 1. (Optional) If you want to change the data structure used by this data store to another existing data structure, select it from the **[!UICONTROL Data structure]** drop-down.
 
    Or
@@ -191,10 +191,9 @@ The properties of a data store include the data structure that the data store us
 ### Edit the contents of a data store 
 
 1. Click the **[!UICONTROL Data Store]** icon ![Data store icon](assets/data-store-icon.png) in the left navigation panel to open the [!UICONTROL Data Store] area.
-1. Click **[!UICONTROL Browse]**  next to the data store that you want to edit.
-1. (Optional) Reorder columns by dragging them to the desired location.
-1. (Optional) [!UICONTROL Edit] a single cell by clicking the **[!UICONTROL Edit]** icon in that cell, then entering the desired value.
+1. Click the checkbox next to the data store that you want to edit, then click **Browse** in the banner at the bottom of the screen.
 1. (Optional) Add a new item to the data store by clicking **[!UICONTROL Add]**, then entering the information for the new item.
+1. (Optional) delete one or more items from the data store by clicking the checkbox for that item, then clicking **Delete selected** or **Delete all** in the upper-right corner of the screen.
 1. Click **[!UICONTROL Save]**.
 
 ## Troubleshooting
