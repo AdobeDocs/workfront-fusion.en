@@ -37,5 +37,18 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
+## View a map of chained relationships
 
+You can view a map of the current scenario and its parent or child scenarios. The map displays a diagram of data flow throughout the chained scenarios.
+
+![Chained scenario relationships](assets/chained%20scenario%20relationships.png)
+
+<!--get a better picture-->
+
+Each scenario has one or more of the following tags:
+
+* Root: The scenario is the beginning of the chain, and has no parent scenario.
+* Parent: The scenario is a parent scenario.
+* Child: The scenario is a child scenario. A scenario can be both a parent and a child.
+* Current: This is the scenario that the user is currently viewing. That is, this is the scenario from which the user opened the relationships map.
 
