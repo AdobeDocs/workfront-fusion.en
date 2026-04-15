@@ -4,7 +4,7 @@ description: You can a map of the relationships between parent and child scenari
 author: Becky
 feature: Workfront Fusion
 ---
-# View chained scenario relationships
+# View and manage chained scenario relationships
 
 You can a map of the relationships between parent and child scenarios. You can also use the map to jump to different scenarios in the chain.
 
@@ -57,9 +57,9 @@ To view the relationship map for a chained scenario:
 
    If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
 
-1. Click the **Relations** tab.
+1. Click the **Relationships** tab.
 
-   ![Relations tab](assets/relations-tab.png)
+   ![Relationships tab](assets/relations-tab.png)
 
 1. For general details about each chained scenario, check the tags.
 
