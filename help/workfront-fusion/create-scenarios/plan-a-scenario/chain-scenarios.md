@@ -96,6 +96,8 @@ When chaining scenarios, follow these practices to avoid recursion:
 >
 >* **When a scenario is causing recursion, it is deactivated by the Fusion engineering team to prevent further performance issues.**
 >* Because recursion is a result of scenario design, you must design your scenarios in a way that ensures that the scenario does not include actions that trigger the scenario.
+>* You can view a diagram of the relationships between parent and child scenarios. 
+>   For instructions, see [View chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md).
 
 ### Use error handling to ensure a response
 

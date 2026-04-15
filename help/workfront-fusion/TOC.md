@@ -10,6 +10,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2026 {#fusion-releases-2026}
+        * [Workfront Fusion release activity: Week of April 13, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
         * [Workfront Fusion release activity: Week of March 30, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md) 
         * [Workfront Fusion release activity: Week of March 23, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md) 
         * [Workfront Fusion release activity: Week of March 16, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md) 
@@ -260,6 +261,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
     * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
     * [View a specific scenario execution](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
+    * [View and manage chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
     * [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
     * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
     * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)

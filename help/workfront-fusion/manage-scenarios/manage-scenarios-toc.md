@@ -20,6 +20,7 @@ exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 * [View a specific scenario execution](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
 * [View a webhook's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
+* [View chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
 * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
