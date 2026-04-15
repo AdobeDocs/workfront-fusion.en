@@ -3,6 +3,7 @@ title: View chained scenario relationships
 description: You can a map of the relationships between parent and child scenarios.
 author: Becky
 feature: Workfront Fusion
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
 ---
 # View and manage chained scenario relationships
 
@@ -82,5 +83,3 @@ To view the relationship map for a chained scenario:
 
    * If you are viewing only a portion of the map, that portion is darker on the simplified map. 
    * The current scenario is marked in blue on the simplified map.
-
-
