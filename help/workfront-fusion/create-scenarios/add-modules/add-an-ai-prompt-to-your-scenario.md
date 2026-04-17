@@ -9,12 +9,6 @@ exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
 
 You can include an AI prompt in your scenario using Model Context Protocol (MCP) combined with large language models (LLMs). By configuring these in the MCP Agent module, you can use artificial intelligence to set up workflows that are efficient, secure, and flexible.
 
->[!NOTE]
->
->This functionality is separate from the ability to add modules to a scenario using AI.
->
->For information on adding modules with AI, see [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md).
-
 ## Overview of Model Context Protocol
 
 Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
