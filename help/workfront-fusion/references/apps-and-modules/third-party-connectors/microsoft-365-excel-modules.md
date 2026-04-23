@@ -518,7 +518,7 @@ This action module retrieves metadata for the specified table.
    </td> 
    <td> 
      <p>For instructions about connecting your Office 365 account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">Create a connection - Basic instructions</a>.</p>
-    --> </td> 
+     </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Get a table]</td> 

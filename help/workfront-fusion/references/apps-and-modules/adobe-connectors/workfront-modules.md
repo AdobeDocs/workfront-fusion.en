@@ -689,7 +689,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-### **Get a presigned file URL**
++++ **Get a presigned file URL**
 
 This action module gets presigned file URLs that can later be used by other APIs.
 
@@ -711,6 +711,8 @@ This action module gets presigned file URLs that can later be used by other APIs
   </tr> 
  </tbody> 
 </table>
+
++++
 
 +++ **[!UICONTROL Misc Action]**
 
