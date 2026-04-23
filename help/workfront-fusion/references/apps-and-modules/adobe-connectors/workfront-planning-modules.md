@@ -473,11 +473,14 @@ This action module retrieves all records of the specified type.
       <td role="rowheader">[!UICONTROL Record type]</td>
       <td>Select the type of record that you want to retrieve.</td>
     </tr>
-     <!--<tr>
+    <!--
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Maximum number of returned records]</p>
       </td>
-      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> -->
+      <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td>
+    </tr>
+    -->
   </tbody>
 </table>
 

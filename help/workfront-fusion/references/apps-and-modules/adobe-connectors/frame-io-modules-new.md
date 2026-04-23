@@ -337,10 +337,12 @@ This action module creates a new asset. You can upload a local file or provide t
    <td role="rowheader">[!UICONTROL Path] </td> 
    <td> <p>Select the path where you want to create an asset.</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">[!UICONTROL File Name] </td> 
    <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
-  </tr> -->
+  </tr>
+  -->
     <tr> 
     <td role="rowheader">Upload type </td> 
     <td> <p>Select whether you are creating an asset from a local file or a remote life.</p> </td> 
@@ -357,10 +359,12 @@ This action module creates a new asset. You can upload a local file or provide t
    <td>[!UICONTROL Source file]</td> 
    <td> <p>Select a source file from a previous module, or map the source file's name.</p> </td> 
   </tr> 
-<!--  <tr> 
-   <td role="rowheader">[!UICONTROL Media type] </td> 
-   <td> <p>Select the media type for this asset.</p> </td> 
-  </tr> -->
+  <!--
+  <tr>
+    <td role="rowheader">[!UICONTROL Media type] </td> 
+    <td> <p>Select the media type for this asset.</p> </td> 
+    </tr>
+  -->
   </tbody> 
 </table>
 
@@ -1313,7 +1317,7 @@ Select the webhook that you want to use for this module, or click Add next to th
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`

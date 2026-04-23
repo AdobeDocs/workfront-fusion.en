@@ -133,7 +133,8 @@ If you see the map button above a field or function, you can use it to set varia
 * [Actions](#actions)
 * [Searches](#searches)
 
-<!--### Triggers
+<!--
+### Triggers
 
 #### [!UICONTROL Watch records]
 
@@ -168,7 +169,8 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
   </tr> 
  </tbody> 
-</table>-->
+</table>
+-->
 
 
 ### Actions

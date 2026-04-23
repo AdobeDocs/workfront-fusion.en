@@ -1560,7 +1560,7 @@ Deletes an existing ticket by its ID.
 
 <!-- List Tickets  Need to find a working connection-->
 
-<!-- Update a Ticket Need to find a working connection--->
+<!-- Update a Ticket Need to find a working connection-->
 
 <!-- Watch Tickets Need to find a working connection-->
 
@@ -1976,7 +1976,8 @@ This search module retrieves posts from a HubSpot blog.
 
 <!--+++**Workflows**>
 
-<!--### Workflows May need connection
+<!--
+### Workflows May need connection
 
 #### Add a Contact to a Workflow
 
@@ -1985,7 +1986,9 @@ This search module retrieves posts from a HubSpot blog.
 
 -->
 
-<!--+++-->
+<!--
++++
+-->
 
 ### Subscriptions
 
@@ -2055,9 +2058,11 @@ This trigger module starts a scenario when a new email timeline subscription is 
 
 <!--### Associations-->
 
-<!--#### Associate CRM Objects  May need connection
+<!--
+#### Associate CRM Objects  May need connection
 
-This action module associates two CRM objects.-->
+This action module associates two CRM objects.
+-->
 
 <!--#### Associate Multiple CRM Objects  May need connection-->
 
@@ -2073,7 +2078,9 @@ This action module associates two CRM objects.-->
 
 <!--#### List Associations for a CRM Object May need connection-->
 
-<!--+++-->
+<!--
++++
+-->
 
 ### Other
 

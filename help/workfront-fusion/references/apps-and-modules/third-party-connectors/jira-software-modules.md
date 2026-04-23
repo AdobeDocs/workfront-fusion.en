@@ -607,7 +607,7 @@ When you are configuring this module, the following fields display.
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 
    </tr>
-  --> 
+--> 
  </tbody> 
 </table>
 

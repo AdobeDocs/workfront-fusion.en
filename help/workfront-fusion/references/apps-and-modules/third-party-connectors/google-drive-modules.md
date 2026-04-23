@@ -619,7 +619,8 @@ There are several reasons that uploading or updating a file fails:
 * The uploaded file is too big and exceeds the maximum file size limit allowed for your [!DNL Google Drive] plan, or you have exceeded your [!DNL Google Drive] storage limit. You can either upgrade your storage plan or delete existing files from the [!DNL Google Drive] service.
 * The selected folder where the file was to be uploaded to no longer exists. In this case, the scenario stops and you must select a different target folder in the module.
 
-<!-- Not present February 2025
+<!--
+Not present February 2025
 
 ## Search for files
 

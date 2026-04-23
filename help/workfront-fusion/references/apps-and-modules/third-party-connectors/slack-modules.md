@@ -271,14 +271,16 @@ This action module allows you to edit an existing message.
    <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>For instructions about connecting your [!DNL Slack] account to Workfront Fusion, see <a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to Adobe Workfront Fusion - Basic instructions</a>.</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader"> <p>[!UICONTROL Enter a channel ID or name]</p> </td> 
    <td> <p>Choose how you want to select the message you want to .</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>In the <strong>[!UICONTROL Channel ID or name]</strong> field, enter or map the Channel ID or of the channel that contains the message, then enter the <strong>[!UICONTROL Time Stamp (Message ID)]</strong> of the message.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</p> </li> 
      <li> <p><strong>[!UICONTROL Select from the list]</strong> </p> <p>Select the type of channel, then select the channel, then select the message.</p> </li> 
     </ul> </td> 
-  </tr> -->
+  </tr>
+  -->
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Channel ID]</p> </td> 
    <td> <p>Enter or map the ID of the channel that contains the message you want to update.</p> <p>Note: The Channel ID can be retrieved using the [!UICONTROL List Channels] module.</td> 
