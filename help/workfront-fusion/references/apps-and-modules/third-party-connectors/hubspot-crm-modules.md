@@ -1974,19 +1974,15 @@ This search module retrieves posts from a HubSpot blog.
 
 +++
 
-<!--+++**Workflows**>
-
 <!--
++++**Workflows**>
+
 ### Workflows May need connection
 
 #### Add a Contact to a Workflow
 
 
 #### Remove a Contact from a Workflow
-
--->
-
-<!--
 +++
 -->
 
