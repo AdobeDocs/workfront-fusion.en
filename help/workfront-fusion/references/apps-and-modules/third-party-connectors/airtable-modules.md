@@ -132,7 +132,8 @@ When you are configuring this module, the following fields display.
   <tr> 
    <td> <p>Record</p> </td> 
    <td> <p>Enter the values for the new record. Available fields are based on the table you selected.</p> 
-   <!--<p>For more information on field types, search for "Supported field types" in the Airtable documentation.</p> 
+   <!--
+   <p>For more information on field types, search for "Supported field types" in the Airtable documentation.</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
      <li> <p><strong>Long text</strong>: string</p> <p>Multiple lines of text, which may contain "mention tokens", for example:</p><pre>&lt;airtable:mention id="menE1i9oBaGX3DseR"&gt;@Alex&lt;/airtable:mention&gt;</pre> </li> 
@@ -370,7 +371,8 @@ When you are configuring this module, the following fields display.
   <tr> 
    <td> <p>Record</p> </td> 
    <td> <p>Enter the values for the new record. Available fields depend on the table you selected.</p> 
-   <!-- <p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
+   <!-- 
+   <p>In order to delete the content of the field, use the erase function. </p>  <p>Field types (via airtable.com/api):</p> 
     <ul> 
      <li> <p><strong>Text</strong>: string</p> <p>A single line of text.</p> </li> 
      <li> <p><strong>Long text</strong>: string</p> <p>The string can contain multiple lines of text with "mention tokens." For example:</p><pre>&lt;airtable:mention id="menE1i9oBaGX3DseR"&gt;@Alex&lt;/airtable:mention&gt;</pre> </li> 
