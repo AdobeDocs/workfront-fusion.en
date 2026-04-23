@@ -4,7 +4,7 @@ description: The Model Context Protocol (MCP) module allows you to process a use
 author: Becky
 feature: Workfront Fusion
 hide: yes
-hidefromtoc: yes
+
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 ---
 # MCP Agent module
