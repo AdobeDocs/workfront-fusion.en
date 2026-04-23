@@ -116,7 +116,8 @@ You can filter the execution history to view only executions with the specified 
 
 The filter icon is orange in columns with an active filter.
 
-<!-- don't see how to do this
+<!--
+don't see how to do this
 ## Sort the scenario execution history
 
 You can sort the scenario execution history.

@@ -1397,7 +1397,8 @@ When you are configuring this module, the following fields display.
 
 +++
 
-<!--not visible Jan 6, 2025
+<!--
+not visible Jan 6, 2025
 
 +++ **[!UICONTROL Search (Legacy)]**
 
@@ -1448,13 +1449,16 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++-->               
++++
+-->               
 
 ## Workfront object types available for each Workfront module
 
-<!-- [Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module) 
+<!--
+[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
 * [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
-* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)-->
+* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
+-->
 
 +++**Object types available for each Workfront trigger module**
 

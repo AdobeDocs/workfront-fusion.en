@@ -267,9 +267,11 @@ If a Workfront task is assigned, the issue in Jira is a Task. If a Workfront Iss
 
 1. Continue to [Map custom fields in Jira](#map-custom-fields-in-jira)
 
-<!--#### Map custom fields in Jira. 
+<!--
+#### Map custom fields in Jira.
 
-Awaiting feedback-->
+Awaiting feedback
+-->
 
 +++
 

@@ -105,10 +105,12 @@ Live Stream displays what is happening in the background when you click Run once
       <td role="rowheader"> <p>Clear list of requests </p> </td> 
       <td> <p>Click the trash bin icon in the top-right corner of the Devtool's left panel to clear the list of requests recorded by the Workfront Fusion Devtool. </p> </td> 
      </tr> 
-     <!--<tr> 
+     <!--
+     <tr>
       <td role="rowheader"> <p>Enable Console Logging</p> </td> 
       <td> <p>Click the computer icon <img src="assets/console-computer-icon.png"> in the top-right corner of the Devtool's left panel.</p> <p>Logging in the console is enabled when the computer icon is green.</p> </td> 
-     </tr>-->
+     </tr>
+     -->
      <tr> 
       <td role="rowheader"> <p>Retrieve the Request in the Raw JSON Format or cURL</p> </td> 
       <td> 

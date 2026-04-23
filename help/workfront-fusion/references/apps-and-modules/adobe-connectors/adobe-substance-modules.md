@@ -89,7 +89,8 @@ This action module generates content for a 3D composite that includes the select
    <td role="rowheader">Other fields</td> 
    <td>Configure other fields as desired. For details of fields, see the <a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">Adobe Substance API documentation</a>.</td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">Camera name</td> 
    <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
   </tr> 
@@ -100,7 +101,8 @@ This action module generates content for a 3D composite that includes the select
   <tr> 
    <td role="rowheader">Enable ground plane</td> 
    <td>Enable this to enable the auto-generated ground plane under the hero asset. This is useful if the 3D scene contains only a hero asset, without additional elements.</td> 
-  </tr> -->
+  </tr>
+  -->
  </tbody> 
 </table>
 

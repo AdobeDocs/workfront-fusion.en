@@ -127,7 +127,8 @@ To create a connection for your [!DNL Anaplan] modules:
 
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
-<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+<!--
+1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
 1. Select the connection type.
 
    <table style="table-layout:auto">
@@ -145,7 +146,8 @@ To create a connection for your [!DNL Anaplan] modules:
     </tbody> 
    </table>
 
-1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+-->
 
 ## [!DNL Anaplan] modules and their fields
 

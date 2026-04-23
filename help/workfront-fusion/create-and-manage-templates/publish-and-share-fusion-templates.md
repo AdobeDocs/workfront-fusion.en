@@ -87,7 +87,8 @@ The following statuses are available:
 * **[!UICONTROL Published]**: This template is visible only for the template author and their team. You can send published templates for approval and copy a shareable link.
 * **[!UICONTROL Approved]**: This template is visible for all Workfront Fusion users in the [!UICONTROL Public templates] tab. You can copy a shareable link by clicking [!UICONTROL Options] in the upper-right corner of the screen.
 
-<!--You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
+<!--
+You can also check the status from the [!UICONTROL Team templates] tab. If a template is published, it will have an icon to the right of the template name.
 
 * **Eye icon**: The template is published, it is visible only for the team, and the approval request was not sent.
 * **Yellow checkmark icon**: The template is published, it is visible only for the team, and the approval request was sent.

@@ -602,7 +602,8 @@ When you are configuring this module, the following fields display.
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Max Results]</p> </td> 
    <td> <p>Enter or map the maximum number of records you want the module to retrieve during each scenario execution cycle.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">Offset</td> 
     <td> Enter or map the ID of the first item you want to retrieve details for. This is a way to paginate the records. If you enter the 5000th item as the offset, the module would return items 5000-9999.</td> 

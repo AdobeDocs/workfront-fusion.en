@@ -333,13 +333,15 @@ This search module retrieves all events for a registration from a journal.
          <td>Enter or map a date. The module returns events that occurred after this date.
          </td>
        </tr>
-<!--       <tr>
+<!--
+<tr>
          <td role="rowheader">
            [!UICONTROL Seek]
          </td>
          <td>
          </td>
-       </tr>-->
+       </tr>
+-->
        <tr>
          <td role="rowheader">
            [!UICONTROL Latest]

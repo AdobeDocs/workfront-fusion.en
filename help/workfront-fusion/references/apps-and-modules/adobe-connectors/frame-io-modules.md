@@ -209,12 +209,12 @@ This action module creates a new asset.
   <tr> 
    <td role="rowheader">[!UICONTROL Name] </td> 
    <td> <p>Enter the name of the new file or folder.</p> </td> 
-  </tr> <!--
+  </tr> 
+  <!--
    <tr> 
     <td role="rowheader">File Type </td> 
     <td> <p>Select the type of file you want to upload.</p> </td> 
    </tr>
-  --> <!--
    <tr> 
     <td role="rowheader">File Size </td> 
     <td> <p>The file size in bytes.</p> </td> 
@@ -775,7 +775,7 @@ This module allows you to perform a custom API call.
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`
