@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity: Week of February 14, 2022
-description: Workfront Fusion release activity: Week of February 14, 2022
+title: "Workfront Fusion release activity: Week of February 14, 2022"
+description: "Workfront Fusion release activity: Week of February 14, 2022"
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
