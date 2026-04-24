@@ -8,7 +8,7 @@ description: This page describes all enhancements made in Adobe Workfront Fusion
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-
+hidefromtoc: true
 exl-id: 1a0a2b9f-a530-48aa-a627-d32c89d1dc60
 ---
 # Workfront Fusion release activity: Week of November 2, 2020

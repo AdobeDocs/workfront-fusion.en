@@ -5,7 +5,7 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-
+hidefromtoc: true
 exl-id: b532aabe-581b-401d-bf81-c5bd95dd60a0
 ---
 # Workfront Fusion release activity: Week of January 3, 2022
