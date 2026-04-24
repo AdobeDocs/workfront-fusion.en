@@ -327,7 +327,7 @@ The `formatDate` function returns a text representation of the given Date value 
 
 **Examples:** The Scenario and Web timezone were both set to `Europe/Prague` in these examples.
 
-![Date time function example](assets/date&time-functions-examples-350x61.png)
+![Date time function example](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -457,7 +457,7 @@ This section is adapted for Workfront Fusion from the [!DNL Exceljet] web page t
 
 If you need to calculate a date corresponding to n-th day of week in month (for example, first Tuesday, third Friday, and so on), you can use the following formula:
 
-![Calculate nth day](assets/date&time-functions-calc-nth-day-350x31.png)
+![Calculate nth day](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}

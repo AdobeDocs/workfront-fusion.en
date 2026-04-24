@@ -3,7 +3,7 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: 'Workfront Fusion release activity: Week of May 10, 2021'
+title: "Workfront Fusion release activity: Week of May 10, 2021"
 description: This page describes all enhancements made in Adobe Workfront Fusion the week of May 10, 2021.
 author: Luke
 feature: Product Announcements, Workfront Fusion
@@ -11,7 +11,7 @@ recommendations: noDisplay, noCatalog
 
 exl-id: 82aa7c95-da11-4d5d-8ccf-cddaefff7b36
 ---
-# Workfront Fusion release activity:&nbsp;Week of May 10, 2021
+# Workfront Fusion release activity: Week of May 10, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of May 10, 2021.
 

@@ -130,7 +130,7 @@ You can use the following links to download the Workfront Fusion public certific
 
 -->
 
-## Enabling Mutual TLS&nbsp;in Workfront Fusion HTTP modules
+## Enabling Mutual TLS in Workfront Fusion HTTP modules
 
 All Workfront Fusion [!UICONTROL HTTP] request modules have the option to enable Mutual TLS.
 

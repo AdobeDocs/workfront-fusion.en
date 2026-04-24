@@ -73,7 +73,7 @@ When this scenario converts a request to a project, the project's name is the sa
 1. Click the **Name** field. 
 
    The mapping panel opens.
-1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon](assets/toolbar-icon-text&binary-functions.png)
+1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon](assets/toolbar-icon-text-binary-functions.png)
 1. Select the function **upper**.
 
    The function appears in the Name field, including the formatting for the input it expects.

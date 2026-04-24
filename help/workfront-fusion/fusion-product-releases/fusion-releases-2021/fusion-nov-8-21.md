@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of November 8, 2021
-description: Workfront Fusion release activity:&nbsp;Week of November 8, 2021
+title: "Workfront Fusion release activity: Week of November 8, 2021"
+description: "Workfront Fusion release activity: Week of November 8, 2021"
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 
 exl-id: 98ee4e13-0862-4781-8d01-4ca8a169422c
 ---
-# Workfront Fusion release activity:&nbsp;Week of November 8, 2021
+# Workfront Fusion release activity: Week of November 8, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of November 8, 2021.
 

@@ -143,12 +143,12 @@ When you are configuring this module, the following fields display.
 * [[!UICONTROL Copy an email]](#copy-an-email)
 * [[!UICONTROL Create a draft]](#create-a-draft)
 * [[!UICONTROL Delete an email]](#delete-an-email)
-<!--* [Delete labels](#delete-labels)-->
 * [[!UICONTROL Mark an email as read]](#mark-an-email-as-read)
 * [[!UICONTROL Mark an email as unread]](#mark-an-email-as-unread)
 * [[!UICONTROL Move an email]](#move-an-email)
 * [[!UICONTROL Modify email labels]](#modify-email-labels)
 * [[!UICONTROL Send an email]](#send-an-email)
+<!--* [Delete labels](#delete-labels)-->
 <!--* [Set labels](#set-labels)-->
 
 <!--#### Add labels-->

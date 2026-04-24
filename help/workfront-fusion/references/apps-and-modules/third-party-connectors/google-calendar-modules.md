@@ -499,7 +499,7 @@ You can trigger a scenario a specified time before an event with the help of sta
    1. Open your **[!UICONTROL [!DNL Gmail] settings]**.
    1. Open the **[!UICONTROL Forwarding and POP/IMAP]** tab.
    1. Click **[!UICONTROL Add a forwarding address].**
-   1. Paste the copied mailhooks's email address, click&#x200B;**[!UICONTROL Next]**, confirm by pressing **[!UICONTROL Proceed]** in the popup window, then click **[!UICONTROL OK]**.
+   1. Paste the copied mailhooks's email address, click **[!UICONTROL Next]**, confirm by pressing **[!UICONTROL Proceed]** in the popup window, then click **[!UICONTROL OK]**.
 
    1. In Workfront Fusion, switch to the new scenario that should finish its execution by receiving the confirmation email.
    1. Click the bubble above the module to inspect the module's output.
@@ -507,13 +507,13 @@ You can trigger a scenario a specified time before an event with the help of sta
 
       ![Confirmation code](/help/workfront-fusion/references/apps-and-modules/assets/confirmation-code-350x252.png)
 
-   1. In Gmail, paste the Confirmation code in the edit box and click&#x200B;**[!UICONTROL Verify]**:
+   1. In Gmail, paste the Confirmation code in the edit box and click **[!UICONTROL Verify]**:
 
       ![Paste code](/help/workfront-fusion/references/apps-and-modules/assets/paste-code-350x46.png)
 
    1. Open the **[!UICONTROL Filters and Blocked Addresses]** tab.
    1. Click **[!UICONTROL Create a new filter]**.
-   1. Setup a filter for all emails coming from `     calendar-notification@google.com` and click&#x200B;**[!UICONTROL Create a filter]**:
+   1. Setup a filter for all emails coming from `     calendar-notification@google.com` and click **[!UICONTROL Create a filter]**:
    1. Select **[!UICONTROL Forward it to]** and choose the mailhooks's email address from the list.
    1. Click **[!UICONTROL Create filter]** to create the filter.
 

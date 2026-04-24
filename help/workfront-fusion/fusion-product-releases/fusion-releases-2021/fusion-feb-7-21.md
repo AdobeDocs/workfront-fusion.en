@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of February 7, 2022
-description: Workfront Fusion release activity:&nbsp;Week of February 7, 2022
+title: "Workfront Fusion release activity: Week of February 7, 2022"
+description: "Workfront Fusion release activity: Week of February 7, 2022"
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 
 exl-id: f20d93af-7d0a-4257-9146-a29999fbb0dd
 ---
-# Workfront Fusion release activity:&nbsp;Week of February 7, 2022
+# Workfront Fusion release activity: Week of February 7, 2022
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of February 7, 2022.
 

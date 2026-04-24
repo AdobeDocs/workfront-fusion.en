@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of April 26, 2021
-description: Workfront Fusion release activity:&nbsp;Week of April 26, 2021
+title: "Workfront Fusion release activity: Week of April 26, 2021"
+description: "Workfront Fusion release activity: Week of April 26, 2021"
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 
 exl-id: 5a70ed9e-9f70-40fb-b289-0955b951bf7a
 ---
-# Workfront Fusion release activity:&nbsp;Week of April 26, 2021
+# Workfront Fusion release activity: Week of April 26, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of April 26, 2021.
 

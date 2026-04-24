@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of August 2, 2021
-description: Workfront Fusion release activity:&nbsp;Week of August 2, 2021
+title: "Workfront Fusion release activity: Week of August 2, 2021"
+description: "Workfront Fusion release activity: Week of August 2, 2021"
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 
 exl-id: 90659af3-622c-4685-ae09-f117ea81db7d
 ---
-# Workfront Fusion release activity:&nbsp;Week of August 2, 2021
+# Workfront Fusion release activity: Week of August 2, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of August 2, 2021.
 
