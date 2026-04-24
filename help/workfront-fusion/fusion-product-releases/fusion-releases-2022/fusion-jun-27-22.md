@@ -23,14 +23,14 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 Now you can use Adobe Workfront Fusion to transfer files via FTP. With the FTP modules, you can:
 
-*   Trigger a scenario when a file is inserted in a folder on the FTP server
+* Trigger a scenario when a file is inserted in a folder on the FTP server
     
-*   Create folders on the server
+* Create folders on the server
     
-*   Upload, delete, or retrieve files
+* Upload, delete, or retrieve files
     
-*   List files in a given folder
+* List files in a given folder
     
-*   Move files or folders
+* Move files or folders
     
-*   Change permissions on a folder
+* Change permissions on a folder

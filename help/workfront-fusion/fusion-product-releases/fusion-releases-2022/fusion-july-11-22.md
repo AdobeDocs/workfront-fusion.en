@@ -23,46 +23,46 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 Now you can use Adobe Workfront Fusion to connect to your Figma account. With the Figma modules, you can:
 
-*   Trigger a scenario when an event occurs in your Figma account
+* Trigger a scenario when an event occurs in your Figma account
     
-*   Post or delete comments on a file
+* Post or delete comments on a file
     
-*   List comments on a file, file version history, project files, or projects.
+* List comments on a file, file version history, project files, or projects.
     
-*   Retrieve a file, image, style, or component
+* Retrieve a file, image, style, or component
     
-*   Make a call to the Figma API
+* Make a call to the Figma API
 
 ## Workday connector and modules now available
 
 Now you can use Adobe Workfront Fusion to connect to your Workday account. With the Workday modules, you can:
 
-*   Create, read, update, or delete a record
+* Create, read, update, or delete a record
     
-*   Retrieve a list of records
+* Retrieve a list of records
     
-*   Make a request to the Workday API
+* Make a request to the Workday API
 
 ## Adobe Creative Cloud Libraries connection and modules now available
 
 Now you can use Adobe Workfront Fusion to connect to your Adobe Creative Cloud Libraries. With the Adobe Creative Cloud Libraries modules, you can:
 
-*   Start a scenario when an element or library is created or updated
+* Start a scenario when an element or library is created or updated
     
-*   Upload, retrieve, or archive elements
+* Upload, retrieve, or archive elements
     
-*   List elements in a given library
+* List elements in a given library
     
-*   Perform a custom API call
+* Perform a custom API call
 
 ## Adobe Target connection and modules now available
 
 Now you can use Adobe Workfront Fusion to connect to your Adobe Target account. With the Adobe Target modules, you can:
 
-*   Create, read, update, or delete records such as Activities, Offers, Audiences, Properties, and Reports
+* Create, read, update, or delete records such as Activities, Offers, Audiences, Properties, and Reports
     
-*   List all records of a given type
+* List all records of a given type
     
-*   Search records based on criteria you specify
+* Search records based on criteria you specify
     
-*   Perform a custom API call
+* Perform a custom API call

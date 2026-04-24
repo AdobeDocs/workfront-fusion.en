@@ -73,7 +73,7 @@ In the Fusion performance dashboard, you can see the following metrics.
 
 ## View the Fusion Performance Dashboard
 
-1. In Fusion, click Performance in the left navigation.
+1. In Fusion, click **Performance** in the left navigation.
   
    The Dashboard opens.
 

@@ -69,7 +69,6 @@ In Workfront Fusion, the deactivation affects the user in one of the following w
 
 * If the user is in only one organization, the user is deactivated.
 * If the user is in more than one organization, the user is removed from the organization that the user was modified in on the [!DNL Adobe Admin Console].
-* Consider the following when deleting a user.
 
 ### Considerations when deleting a user in Workfront Fusion
 

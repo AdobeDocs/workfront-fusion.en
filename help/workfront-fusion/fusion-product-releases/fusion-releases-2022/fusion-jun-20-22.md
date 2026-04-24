@@ -23,14 +23,14 @@ For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenan
 
 Now you can use Adobe Workfront Fusion to connect to your Adobe AEM Assets account. With the Adobe AEM Assets modules, you can:
 
-*   Create, update, read, or delete folders, assets, or renditions
+* Create, update, read, or delete folders, assets, or renditions
     
-*   Upload assets
+* Upload assets
     
-*   Copy folders or assets
+* Copy folders or assets
+   
+* Retrieve folder listings
     
-*   Retrieve folder listings
+* Move records from one folder to another
     
-*   Move records from one folder to another
-    
-*   Make a custom API call
+* Make a custom API call

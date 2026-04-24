@@ -62,7 +62,7 @@ For more detail about the information in this table, see [Access requirements in
 
 Before using the [!DNL Admin Console] for Workfront, you should receive a receive an email inviting you to the console.
 
-1. If you are new to [!DNL Adobe] and you have received an email telling you that you now have administer rights to manage [!DNL Adobe] software and services for your organization, click the button in the email to create an [!DNL Adobe] account and open the [!DNL Admin Console].
+* If you are new to [!DNL Adobe] and you have received an email telling you that you now have administer rights to manage [!DNL Adobe] software and services for your organization, click the button in the email to create an [!DNL Adobe] account and open the [!DNL Admin Console].
     
     Or
     
@@ -93,7 +93,7 @@ Before using the [!DNL Admin Console] for Workfront, you should receive a receiv
     
     The user is created in Workfront Fusion.
     
-1. (Optional) Continue to [Change a user's access level in Workfront Fusion](#change-a-users-access-level-in-workfront-fusion)
+1. (Optional) Continue to [Change a user's access level in Workfront Fusion](#change-a-users-access-level-in-workfront-fusion).
 
 ## Change a user's access level in Workfront Fusion
 
