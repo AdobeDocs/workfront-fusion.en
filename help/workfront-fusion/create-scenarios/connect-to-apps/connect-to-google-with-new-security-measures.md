@@ -96,7 +96,7 @@ If your email address ends with @gmail.com or @googlemail.com, your account is n
 
 These new restrictions only apply if you are integrating Google Drive or Gmail. If you want to connect to Google Drive or Gmail, you can
 
-* Switch to Google Workspace
+* Switch to Google Workspace.
 
    or
 
