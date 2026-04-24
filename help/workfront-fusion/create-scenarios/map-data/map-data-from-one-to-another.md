@@ -72,7 +72,7 @@ For more information, see [Configure a module](/help/workfront-fusion/create-sce
 
 ### Problem: Missing items in the mapping panel
 
-The mapping panel displays output items from previous modules. Occasionally, some items might be missing from this panel. You can run the module that is missing output in the scenario editor, and the mapping panel can then include those items in later modules. The exact procedure differs depending on the module's type
+The mapping panel displays output items from previous modules. Occasionally, some items might be missing from this panel. You can run the module that is missing output in the scenario editor, and the mapping panel can then include those items in later modules. The exact procedure differs depending on the module's type.
 
 * [Instant trigger](#instant-trigger)
 * [Polling trigger](#polling-trigger)

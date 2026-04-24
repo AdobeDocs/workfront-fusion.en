@@ -156,8 +156,6 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Triggers
 
-<!--Becky start here-->
-
 #### Create an event registration
 
 This action module uses a webhook to create an event description. You can configure a webhook here. If you are using an existing webhook, the fields in this module are read-only.
@@ -352,7 +350,6 @@ This search module retrieves all events for a registration from a journal.
        </tr>
      </tbody>
    </table>
-<!--
 
 Watch Events
 

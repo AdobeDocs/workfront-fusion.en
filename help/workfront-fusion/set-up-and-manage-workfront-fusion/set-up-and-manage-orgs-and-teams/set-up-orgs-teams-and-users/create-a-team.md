@@ -57,7 +57,7 @@ Organization owners and administrators are able to create teams. Teams are creat
 
 To create a team:
 
-1. In the left navigation panel, click **[!UICONTROL Org overview]**
+1. In the left navigation panel, click **[!UICONTROL Org overview]**.
 1. Select the **[!UICONTROL Teams]** tab.
 1. Click **[!UICONTROL Add a new team]**. 
    ![Create a team](assets/create-new-team-button.png)
@@ -67,7 +67,7 @@ To create a team:
 
 You can edit the name of a team.
 
-1. In the left navigation panel, click **[!UICONTROL Org overview]**
+1. In the left navigation panel, click **[!UICONTROL Org overview]**.
 1. Select the **[!UICONTROL Teams]** tab.
 1. Locate the team that you want to edit the name of, then click **Edit** in the line for that team.
 1. Enter a new name for the team, then click **Save**.

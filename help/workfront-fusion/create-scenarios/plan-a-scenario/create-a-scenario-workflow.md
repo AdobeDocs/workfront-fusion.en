@@ -109,7 +109,7 @@ Testing your scenario enables you to determine if your scenario is working as in
 
 ## Activate the scenario
 
-This example scenario does not have a trigger module. If this were a scenario you would be using for real data it would start with a trigger module, and the last thing you would do is activate it. After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
+After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
 
 For more information about activating scenarios, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
 

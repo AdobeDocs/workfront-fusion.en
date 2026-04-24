@@ -54,7 +54,7 @@ Consider the following example use cases for chaining scenarios:
 
 * **Error handling**: It's common for organizations to have the same error handling actions across multiple scenarios, such as an error handling route that sends an error log to a data store and creates a slack notification. You can create a child scenario with these actions and chain that scenario in error handling routes in multiple scenarios.
 
-* **Extending time**: You can use chaining for large batch operations with long running actions, such as when you to export and import files. This operation takes some time if there are many files. Because child scenarios do not count against the parent scenario's timeout, you can exceed execution time by using multiple child scenarios to export or import the files.
+* **Extending time**: You can use chaining for large batch operations with long running actions, such as when you export and import files. This operation takes some time if there are many files. Because child scenarios do not count against the parent scenario's timeout, you can exceed execution time by using multiple child scenarios to export or import the files.
 
 * **Replacing iterators** Replacing iterators with child scenarios can reduce memory usage, such as in complex operations in an iteration that cause Out of Memory error. You can create a separate scenario for the complex operation and replace the iterator with Call a child scenario module
 

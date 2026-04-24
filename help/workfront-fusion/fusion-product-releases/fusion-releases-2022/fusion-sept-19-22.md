@@ -18,6 +18,7 @@ exl-id: 614fc0e0-4bee-4886-b6dc-5a95f89e4027
 Now you can connect Workfront Fusion to your Adobe Journey Optimizer account.
 
 With the Adobe Journey Optimizer modules, you can:
+
 * Create, read, update, and delete records in Adobe Journey Optimizer
 * Search for Adobe Journey Optimizer records using criteria you specify
 * Make a custom API call to the Adobe Journey Optimizer API
@@ -27,6 +28,7 @@ With the Adobe Journey Optimizer modules, you can:
 Now you can connect Workfront Fusion to your Adobe Campaign Classic account.
 
 With the Adobe Campaign Classic modules, you can:
+
 * Create, read, update, and delete records in Adobe Campaign Classic
 * Subscribe to or unsubscribe from an information service
 * Perform an action from the Adobe Campaign API

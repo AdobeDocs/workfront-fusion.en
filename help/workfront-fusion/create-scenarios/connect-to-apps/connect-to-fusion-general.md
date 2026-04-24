@@ -67,7 +67,7 @@ To create a connection inside a Workfront Fusion module:
 1. In the Type field, select whether this is a service or personal account.
 1. (Conditional) If the app requires advanced connection settings, such as an ID, key, or [!UICONTROL secret], enter that information.
 
-   You ay need to click **[!UICONTROL Show advanced settings]** to display the fields where you can enter this kind of information.
+   You may need to click **[!UICONTROL Show advanced settings]** to display the fields where you can enter this kind of information.
 
 1. Click **[!UICONTROL Continue]**.
 1. In the sign-in window that displays, enter your credentials to log in to the app if you haven't already done so.

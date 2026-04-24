@@ -60,7 +60,7 @@ To insert a function into a field:
 1. Select the tab in the mapping panel that contains the function you want to insert. 
 
    For information on mapping panel tabs, see [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
-   1. Click the function name.
+1. Click the function name.
 
       Or
 

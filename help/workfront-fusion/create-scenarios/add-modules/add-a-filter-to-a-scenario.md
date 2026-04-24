@@ -81,7 +81,7 @@ You can copy an existing filter and paste it elsewhere in the scenario.
 1. Right-click on the connecting dots between modules where the filter is located.
 1. Select **Copy filter**.
 1. Right-click on the connecting dots between modules where you want to paste the filter.
-1. Select **Paste filter
+1. Select **Paste** filter
 1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules](#add-a-filter-between-two-modules) in this article.
 
 

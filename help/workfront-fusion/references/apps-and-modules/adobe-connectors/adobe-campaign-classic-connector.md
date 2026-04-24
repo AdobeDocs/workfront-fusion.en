@@ -248,11 +248,13 @@ This module makes a custom API call to the [!DNL Adobe Campaign] API
     <tr>
       <td role="rowheader">[!UICONTROL Action]</td>
       <td><p>Select the action that you want the API call to perform.</p>
-      <p>[!UICONTROL Execute query]</p>
-      <p>[!UICONTROL Write]</p>
-      <p>[!UICONTROL Get entity if more recent]</p>
-      <p>[!UICONTROL Select all]</p>
-      <p>[!UICONTROL Push event]</p>
+      <ul>
+      <li><p>[!UICONTROL Execute query]</p></li>
+      <li><p>[!UICONTROL Write]</p></li>
+      <li><p>[!UICONTROL Get entity if more recent]</p></li>
+      <li><p>[!UICONTROL Select all]</p></li>
+      <li><p>[!UICONTROL Push event]</p></li>
+      </ul>
     </td>
     </tr>
     <tr>
