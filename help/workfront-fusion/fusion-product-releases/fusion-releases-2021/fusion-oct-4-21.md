@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity: Week of October 4, 2021
-description: Workfront Fusion release activity: Week of October 4, 2021
+title: "Workfront Fusion release activity: Week of October 4, 2021"
+description: "Workfront Fusion release activity: Week of October 4, 2021"
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
