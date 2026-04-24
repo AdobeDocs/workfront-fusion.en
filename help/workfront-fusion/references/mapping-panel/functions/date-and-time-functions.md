@@ -327,7 +327,7 @@ The `formatDate` function returns a text representation of the given Date value 
 
 **Examples:** The Scenario and Web timezone were both set to `Europe/Prague` in these examples.
 
-![Date time function example](assets/date&time-functions-examples-350x61.png)
+![Date time function example](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
