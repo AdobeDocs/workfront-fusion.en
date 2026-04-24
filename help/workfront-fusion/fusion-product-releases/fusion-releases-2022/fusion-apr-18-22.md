@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of April 18, 2022
-description: Workfront Fusion release activity:&nbsp;Week of April 18, 2022
+title: Workfront Fusion release activity: Week of April 18, 2022
+description: Workfront Fusion release activity: Week of April 18, 2022
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: 61307bb2-ff4e-461f-b3ce-a3e26b39e95e
 ---
-# Workfront Fusion release activity:&nbsp;Week of April 18, 2022
+# Workfront Fusion release activity: Week of April 18, 2022
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of April 18, 2022.
 

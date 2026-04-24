@@ -60,7 +60,7 @@ For more detail about the information in this table, see [Access requirements in
 ## Filter the Activity Logs
 
 1. In the left navigation panel, click **Org overview** ![Org overview icon](assets/org-overview-icon.png).
-1. If you are not currently in the organziation that you want to view the activity log for, click the organization name in the upper-right corner of the screen and select the organization from the dropdown.
+1. If you are not currently in the organization that you want to view the activity log for, click the organization name in the upper-right corner of the screen and select the organization from the dropdown.
 1. Click the **[!UICONTROL Activity Logs]** tab near the top of the screen.
 
    The Activity Log page opens.

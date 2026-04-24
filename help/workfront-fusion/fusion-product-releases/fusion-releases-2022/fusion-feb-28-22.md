@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of February 28, 2022
-description: Workfront Fusion release activity:&nbsp;Week of February 28, 2022
+title: Workfront Fusion release activity: Week of February 28, 2022
+description: Workfront Fusion release activity: Week of February 28, 2022
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: 1ed04f6e-0ab2-46f0-97de-f189be3ae23e
 ---
-# Workfront Fusion release activity:&nbsp;Week of February 28, 2022
+# Workfront Fusion release activity: Week of February 28, 2022
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of February 28, 2022.
 

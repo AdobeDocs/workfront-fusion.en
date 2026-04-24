@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of August 30, 2021
-description: Workfront Fusion release activity:&nbsp;Week of August 30, 2021
+title: Workfront Fusion release activity: Week of August 30, 2021
+description: Workfront Fusion release activity: Week of August 30, 2021
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: cac11147-5b3d-477b-869b-e255528c4bec
 ---
-# Workfront Fusion release activity:&nbsp;Week of August 30, 2021
+# Workfront Fusion release activity: Week of August 30, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of August 30, 2021.
 

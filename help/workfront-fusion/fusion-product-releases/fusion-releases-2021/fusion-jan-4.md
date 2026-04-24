@@ -11,7 +11,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: 4cd34f0e-bc03-4c2a-bedc-6042ffddef1e
 ---
-# Workfront Fusion release activity:&nbsp;Week of January 4, 2021
+# Workfront Fusion release activity: Week of January 4, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of January 4, 2021.
 

@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of October 4, 2021
-description: Workfront Fusion release activity:&nbsp;Week of October 4, 2021
+title: Workfront Fusion release activity: Week of October 4, 2021
+description: Workfront Fusion release activity: Week of October 4, 2021
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: 123f49bc-54fd-4f60-8a61-33fce5ec56a6
 ---
-# Workfront Fusion release activity:&nbsp;Week of October 4, 2021
+# Workfront Fusion release activity: Week of October 4, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of October 4, 2021.
 

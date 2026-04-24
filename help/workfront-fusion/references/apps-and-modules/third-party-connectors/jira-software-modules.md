@@ -127,7 +127,7 @@ To connect [!DNL Jira Software] to Workfront Fusion, you must create an API toke
    * **Type**
    * **[!UICONTROL Service URL]:** This is the base URL that you use to access your Jira account. Example: `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
-   * **[!UICONTROL API token]:**&nbsp;This is the API token you created in the [Create an API token in [!DNL Jira]](#create-an-api-token-in-jira) section of this article.
+   * **[!UICONTROL API token]:** This is the API token you created in the [Create an API token in [!DNL Jira]](#create-an-api-token-in-jira) section of this article.
 
 1. Click [!UICONTROL Continue] to create the connection and return to the module.
 

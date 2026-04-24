@@ -11,7 +11,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: 8d2e2662-139f-42e4-99d0-71abc95fcfcc
 ---
-# Workfront Fusion release activity:&nbsp;Week of June 27, 2022
+# Workfront Fusion release activity: Week of June 27, 2022
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of June 27, 2022.
 

@@ -761,7 +761,7 @@ For information on fields, see [List all merge request notes](https://docs.gitla
 
 This module gets a list of all notes for a single snippet. Snippet notes are comments users can post to a snippet.
 
-For information on fields, see [&#128279;](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) in the [!DNL GitLab] documentation.
+For information on fields, see [List all snippet notes](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) in the [!DNL GitLab] documentation.
 
 +++
 

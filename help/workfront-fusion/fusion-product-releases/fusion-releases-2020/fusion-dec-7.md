@@ -11,7 +11,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: ec68630c-e89f-465c-bb67-d9898e5b1c2b
 ---
-# Workfront Fusion release activity:&nbsp;Week of December 7, 2020
+# Workfront Fusion release activity: Week of December 7, 2020
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of December 7, 2020.
 

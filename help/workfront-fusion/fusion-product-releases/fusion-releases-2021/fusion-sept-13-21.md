@@ -1,6 +1,6 @@
 ---
-title: Workfront Fusion release activity:&nbsp;Week of September 13, 2021
-description: Workfront Fusion release activity:&nbsp;Week of September 13, 2021
+title: Workfront Fusion release activity: Week of September 13, 2021
+description: Workfront Fusion release activity: Week of September 13, 2021
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
@@ -8,7 +8,7 @@ recommendations: noDisplay, noCatalog
 hidefromtoc: yes
 exl-id: bc72bb8b-25d9-488f-a1f0-89d4f41a7e76
 ---
-# Workfront Fusion release activity:&nbsp;Week of September 13, 2021
+# Workfront Fusion release activity: Week of September 13, 2021
 
 This page describes all enhancements made in Adobe Workfront Fusion the week of September 23, 2021.
 
