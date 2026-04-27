@@ -176,6 +176,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Document](#document)
 * [Object](#object)
+* [Multi-file extract]()
+* [Multi-file load]()
+* [File staging]()
 * [Other](#other)
 
 ### Document
@@ -988,6 +991,79 @@ This module creates, copies, or deep copies a single object record.
   </tr> 
  </tbody> 
 </table>
+
+### Multi-file extract
+
+* []()
+* []()
+
+#### Multi-file extract
+
+This action module creates a Loader job to extract one or more data files.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Data files</td> 
+   <td>For each file that you want to extract, click <b>Add item</b> and enter the following:
+   <ul>
+   <li>Object type</li>
+   <li>VQL criteria (Optional): To filter the data set to include only files that meet specific criteria, enter the criteria in Vault Query Lanugage (VQL).</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Retrieve extract results
+
+This action module retrieves results of a specified extract request.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Job ID</p> </td> 
+   <td> <p>Enter or map the job that you want to retrieve results for. You can map this from the Extract data files module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Task ID</td> 
+   <td> <p>Enter or map the task that you want to retrieve results for. You can map this from the Extract data files module.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Multi-file load
+
+* []()
+* []()
+
+#### Multi-file load
+
+
+
+#### Retrieve log results
+
+
+
+### File staging
+
+#### List items at path
+
+
 
 ### Other
 
