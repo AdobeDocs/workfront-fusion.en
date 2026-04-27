@@ -214,6 +214,17 @@ The module displays all event subscriptions related to the webhook. This include
 
 The module returns any standard fields associated with the record, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
+>[!IMPORTANT]
+>
+>You can edit this module later, which will edit the webhook.
+>
+>Consider the following when updating a webhook:
+>
+>* The edited webhook is treated by Workfront event subscriptions as a new subscription. Event subscription history is not preserved for the previous webhook configuration, because that is considered a separate event subscription.
+>* The switch from old to new event subscription may not be perfectly synchronized. It is therefore possible to receive an event twice (if the new subscription begins running before the old one stops) or to miss an event (if the old subscription stops before the new one begins running). 
+>
+>For more information on editing webhooks, see [Edit webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
+
 1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
 
 1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.

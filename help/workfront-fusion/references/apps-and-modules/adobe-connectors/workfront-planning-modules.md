@@ -209,6 +209,17 @@ If you see the map button above a field or function, you can use it to set varia
 
 This trigger module starts a scenario when a record, record type, or workspace is created, updated, or deleted in Workfront Planning.
 
+>[!IMPORTANT]
+>
+>You can edit this module later, which will edit the webhook.
+>
+>Consider the following when updating a webhook:
+>
+>* The edited webhook is treated by Workfront event subscriptions as a new subscription. Event subscription history is not preserved for the previous webhook configuration, because that is considered a separate event subscription.
+>* The switch from old to new event subscription may not be perfectly synchronized. It is therefore possible to receive an event twice (if the new subscription begins running before the old one stops) or to miss an event (if the old subscription stops before the new one begins running). 
+>
+>For more information on editing webhooks, see [Edit webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
