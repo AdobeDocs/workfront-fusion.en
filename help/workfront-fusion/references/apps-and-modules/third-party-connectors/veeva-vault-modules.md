@@ -1109,7 +1109,30 @@ This action module retrieves a log of loader job results.
 
 #### List items at path
 
+This module returns a list of files and folders for the specified path.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">CHoose your home directory</td> 
+   <td>Select the home directory that you want to list items from.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order</td> 
+   <td>Enter or map the order for the file list.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">No triggers</td> 
+   <td>Select Yes to bypass record or document triggers.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Other
 
