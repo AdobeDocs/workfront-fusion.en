@@ -994,8 +994,8 @@ This module creates, copies, or deep copies a single object record.
 
 ### Multi-file extract
 
-* []()
-* []()
+* [Multi-file extract]()
+* [Retrieve extract results]()
 
 #### Multi-file extract
 
@@ -1048,16 +1048,62 @@ This action module retrieves results of a specified extract request.
 
 ### Multi-file load
 
-* []()
-* []()
+* [Multi-file load]()
+* [Retrieve log results]()
 
 #### Multi-file load
 
+This module creates a loader job and loads a set of data files.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File</td> 
+   <td>Enter or map the filepath to the CSV file that this job will use.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order</td> 
+   <td>Enter or map the order for the file list.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">No triggers</td> 
+   <td>Select Yes to bypass record or document triggers.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Retrieve log results
 
+This action module retrieves a log of loader job results.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Job ID</p> </td> 
+   <td> <p>Enter or map the job that you want to retrieve results for. You can map this from the Load data files module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Task ID</td> 
+   <td> <p>Enter or map the task that you want to retrieve results for. You can map this from the Load data files module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type</td> 
+   <td> <p>Select whether you want to retrieve successful jobs or failed jobs.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### File staging
 
