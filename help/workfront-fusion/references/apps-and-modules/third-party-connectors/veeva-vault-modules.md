@@ -999,7 +999,7 @@ This module creates, copies, or deep copies a single object record.
 
 #### Multi-file extract
 
-This action module creates a Loader job to extract one or more data files.
+This action module creates a loader job to extract one or more data files.
 
 <table style="table-layout:auto"> 
  <col> 
