@@ -176,9 +176,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Document](#document)
 * [Object](#object)
-* [Multi-file extract]()
-* [Multi-file load]()
-* [File staging]()
+* [Multi-file extract](#multi-file-extract)
+* [Multi-file load](#multi-file-load)
+* [File staging](#file-staging)
 * [Other](#other)
 
 ### Document
@@ -994,10 +994,10 @@ This module creates, copies, or deep copies a single object record.
 
 ### Multi-file extract
 
-* [Multi-file extract]()
-* [Retrieve extract results]()
+* [Extract multiple files](#extract-multiple-files)
+* [Retrieve extract results](#retrieve-extract-results)
 
-#### Multi-file extract
+#### Extract multiple files
 
 This action module creates a loader job to extract one or more data files.
 
@@ -1048,10 +1048,10 @@ This action module retrieves results of a specified extract request.
 
 ### Multi-file load
 
-* [Multi-file load]()
-* [Retrieve log results]()
+* [Load multiple files](#load-multiple-files)
+* [Retrieve log results](#retrieve-log-results)
 
-#### Multi-file load
+#### Load multiple files
 
 This module creates a loader job and loads a set of data files.
 
