@@ -146,23 +146,33 @@ This action module generates dubbed audio or video. It can also include lip sync
   </tr>
   <tr> 
    <td role="rowheader">Presigned URL</td> 
-   <td>Enter or map the presigned URL that the module will use for input.</td> 
+   <td>Enter or map the presigned URL that the module will use for input.<p>The following domains for media storage are accepted by Firefly Audio and Video</p>
+   <ul>
+   <li>adobe.io</li>
+   <li>frame.io</li>
+   <li>amazonaws.com</li>
+   <li>windows.net</li>
+   <li>dropboxusercontent.com</li>
+   <li>drive.google.com</li>
+   <li>cloudfront.net</li>
+   </ul>
+   </td> 
   </tr>
   <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Media type</td> 
+   <td>Select the media type of the input file</td> 
   </tr>
   <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Lip sync</td> 
+   <td>Select whether to generate a high-quality composited lip sync for the video output.</td> 
   </tr>
   <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Target locale codes</td> 
+   <td>For each locale code you want to add, click <b>Add item</b> and select the locale code.</td> 
   </tr>
   <tr> 
-   <td role="rowheader"></td> 
-   <td></td> 
+   <td role="rowheader">Transcripts</td> 
+   <td>For each transcript you want to add, click <b>Add item</b> and enter or map the presigned URLs for the transcript.</td> 
   </tr>
  </tbody> 
 </table> 
