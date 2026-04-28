@@ -179,7 +179,56 @@ This action module generates dubbed audio or video. It can also include lip sync
 
 #### Generate Avatar Video From Text or Audio
 
+This action module generates an avatar video from a transcript or audio file you provide.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Firefly, see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to Adobe Firefly</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Enter or map the presigned URL that the module will use for input.   </td> 
+  </tr>
+  <tr> 
+  <tr> 
+   <td role="rowheader">Locale code</td> 
+   <td>Select the locale code that represents the language you want to use in the result.</td> 
+  </tr>
+   <td role="rowheader">Media type (Source)</td> 
+   <td>Select the media type of the input file</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Avatar</td> 
+   <td>Select the avatar that you want to use for the generated video.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Media type</td> 
+   <td>Select the output media type for the generated video.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Width</td> 
+   <td>Enter or map the width for the generated video.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Height</td> 
+   <td>Enter or map the height for the generated video.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Background</td> 
+   <td>Select the type of background that you want to use for the generated video:
+   <ul>
+   <li><b>Video</b>: Enter or map the URL of the background video.</li> 
+   <li><b>Image</b>: Enter or map the URL of the background image.</li>< 
+   <li><b>Color</b>: Enter or map the hex value of the color you want to use for the video background.</li> 
+   </ul>
+   </td>
+  </tr>
+ </tbody> 
+</table> 
 
 #### Generate Speech From Text
 
