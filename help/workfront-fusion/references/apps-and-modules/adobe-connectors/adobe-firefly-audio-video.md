@@ -72,26 +72,26 @@ To create a connection for your Adobe Firefly Audio and Video modules:
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td role="rowheader">Connection name</td>
         <td>
           <p>Enter a name for this connection.</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td role="rowheader">Environment</td>
         <td>Select whether you are connecting to a production or non-production environment.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
+        <td role="rowheader">Type</td>
         <td>Select whether you are connecting to a service account or a personal account.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>Enter your [!UICONTROL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console].</td>
+        <td role="rowheader">Client ID</td>
+        <td>Enter your Adobe Client ID. This can be found in the Credentials details section of the Adobe Developer Console.</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console].</td>
+        <td role="rowheader">Client Secret</td>
+        <td>Enter your Adobe Client Secret. This can be found in the Credentials details section of the Adobe Developer Console.</td>
         </tr>
       </tbody>
     </table>
