@@ -222,7 +222,7 @@ This action module generates an avatar video from a transcript or audio file you
    <td>Select the type of background that you want to use for the generated video:
    <ul>
    <li><b>Video</b>: Enter or map the URL of the background video.</li> 
-   <li><b>Image</b>: Enter or map the URL of the background image.</li>< 
+   <li><b>Image</b>: Enter or map the URL of the background image.</li>
    <li><b>Color</b>: Enter or map the hex value of the color you want to use for the video background.</li> 
    </ul>
    </td>
@@ -232,11 +232,108 @@ This action module generates an avatar video from a transcript or audio file you
 
 #### Generate Speech From Text
 
+This action module generates speech from a transcript. You can provide either a plain text transcript or a presigned URL. The response includes a job ID and a status URL for tracking the job.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Firefly, see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to Adobe Firefly</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Script</td> 
+   <td>Select the type of script that you want to provide.
+   <ul>
+   <li><b>Text</b>: Enter or map the source text into the Text field.</li>
+   <li><b>Text file</b>: Enter or map the URL of the text file in the URL field.</li>
+   </ul>
+   </td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Locale code</td> 
+   <td>Select the locale code that represents the language you want to use in the result.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Media type</td> 
+   <td>This should be <code>text/plain</code>.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Voice</td> 
+   <td>Select the voice that you want to use. Available voices are from the Adobe Firefly catalog of voices.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Output</td> 
+   <td>This should be <code>audio/wav</code>.</td> 
+  </tr>
+ </tbody> 
+</table> 
 
 #### Reframe video V2
 
+This module reframes the media you provide. Media is provided via a presigned URL.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Firefly, see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to Adobe Firefly</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Presigned URL</td> 
+   <td>Enter or map the presigned URL that the module will use for input.<p>The following domains for media storage are accepted by Firefly Audio and Video</p>
+   <ul>
+   <li>adobe.io</li>
+   <li>frame.io</li>
+   <li>amazonaws.com</li>
+   <li>windows.net</li>
+   <li>dropboxusercontent.com</li>
+   <li>drive.google.com</li>
+   <li>cloudfront.net</li>
+   </ul>
+   </td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Scene edit detection</td> 
+   <td>Select whether to apply scene edit detection before reframing. </td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Focal point</td> 
+   <td>For each focal point you want to add, click <b>Add item</b> and enter or the keyword identifier for the focal point.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Overlays</td> 
+   <td>For each overlay you want to add, click <b>Add item</b> and enter the overlay information.
+   <ul>
+   <li><b>Source</b>: Enter or map the URL that points to the source media.</li> 
+   <li><b>Start time</b>: Enter or map the start time.</li>
+   <li><b>Duration</b>: Enter or map the duration of the overlay.</li> 
+   <li><b>Width</b>: Enter or map the width of the scaled overlay.</li> 
+   <li><b>Height</b>: Enter or map the height of the scaled overlay.</li> 
+   <li><b>Anchor point</b>: Select the anchor point for the overlay.</li> 
+   <li><b>Offset X</b>: Enter or map the horizontal offset for the overlay.</li> 
+   <li><b>Offset Y</b>: Enter or map the vertical offset for the overlay.</li> 
+   <li><b>Repeat</b>: Enter <code>loop</code> to cause a GIF to loop.</li> 
+   </ul>
+   </td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Media format</td> 
+   <td>Select the format for the reframed video.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Sidecar format</td> 
+   <td>Select the format for additional metadata.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Renditions</td> 
+   <td>To add additional renditions, click <b>Add item</b> and enter the rendition information.<!--add additional info--></td> 
+  </tr>
+ </tbody> 
+</table> 
 
 #### Render Template
 
