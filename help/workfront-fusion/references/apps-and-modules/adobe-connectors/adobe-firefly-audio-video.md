@@ -1,13 +1,13 @@
 ---
 title: Adobe Firefly modules
-description: In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Firefly], as well as connect it to multiple third-party applications and services.
+description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Adobe Firefly Audio and Video, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
 ---
-# [!DNL Adobe Firefly] modules
+# Adobe Firefly Audio and Video modules
 
-In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Firefly], as well as connect it to multiple third-party applications and services. 
+In an Adobe Workfront Fusion scenario, you can automate workflows that use Adobe Firefly Audio and Video, as well as connect it to multiple third-party applications and services. 
 
 If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
@@ -53,13 +53,13 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 ## Prerequisites
 
-Before you can use the [!DNL Adobe Firefly] connector, you must ensure that the following prerequisites are met:
+Before you can use the Adobe Firefly Audio and Video connector, you must ensure that the following prerequisites are met:
 
-* You must have an active [!DNL Adobe Firefly] account.
+* You must have an active Adobe Firefly Audio and Video account.
 
-## Create a connection to [!DNL Adobe Firefly]
+## Create a connection to Adobe Firefly Audio and Video
 
-To create a connection for your [!DNL Adobe Firefly] modules:
+To create a connection for your Adobe Firefly Audio and Video modules:
 
 1. In any module, click **[!UICONTROL Add]** next to the Connection box.
     
@@ -99,9 +99,9 @@ To create a connection for your [!DNL Adobe Firefly] modules:
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
 
-## [!DNL Adobe Firefly] modules and their fields
+## Adobe Firefly Audio and Video modules and their fields
 
-When you configure [!DNL Adobe Firefly] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL Adobe Firefly] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure Adobe Firefly Audio and Video modules, Workfront Fusion displays the fields listed below. Along with these, additional Adobe Firefly Audio and Video fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
