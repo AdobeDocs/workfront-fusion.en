@@ -337,9 +337,85 @@ This module reframes the media you provide. Media is provided via a presigned UR
 
 #### Render Template
 
+This module renders one or more video variations by applying overrides and export presets.
 
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Firefly, see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to Adobe Firefly</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Input template file URL</td> 
+   <td>Enter or map the presigned URL that represents the template that you want to render.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Fonts</td> 
+   <td>For each font that you want to add, click <b>Add item</b> and enter the postscript name of the font and the font file URL.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">When a font is missing</td> 
+   <td>Select whether you want to fail the render or use the default font if a font is missing.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Media assets</td> 
+   <td>For each media asset that you want to add, click <b>Add item</b> and enter or map the presigned URL that represents the asset.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Export presets</td> 
+   <td>For each export preset that you want to add, click <b>Add item</b> and select the video preset, and enter or map the presigned URL that represents the preset.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Variations</td> 
+   <td>For each variation that you want to add, click <b>Add item</b> and enter details for the variation. You must enter details for at least one variation.<!--add data here--></td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Output definitions</td> 
+   <td>Define outputs by clicking <b>Add item</b> and selecting which of the added variations and presets you want to use, and adding a filename. Variations and presets are indexed to 0 (the first item in the list of variations is 0, the next is 1, and so on).</td> 
+  </tr>
+ </tbody> 
+</table> 
 
 #### Transcribe media
+
+This module transcribes audio or video.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Firefly, see <a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >Create a connection to Adobe Firefly</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Transcription type</td> 
+   <td>Select whether you want to transcribe audio or video.   </td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Presigned URL</td> 
+   <td>Enter or map the presigned URL that the module will use for input.   </td> 
+  </tr>
+  <tr> 
+  </tr>
+   <td role="rowheader">Media type </td> 
+   <td>Select the media type of the input file</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Target locale codes</td> 
+   <td>For each locale code that you want to add, click <b>Add item</b> and select the locale code that represents the language you want to use in the result.</td> 
+  <tr> 
+   <td role="rowheader">Caption format</td> 
+   <td>Enter <code>SRT</code> to include captions, or leave blank if you do not want captions.</td> 
+  </tr>
+ </tbody> 
+</table> 
 
 
 
