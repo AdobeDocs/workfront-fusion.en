@@ -109,7 +109,15 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
-#### Describe Template
+* [Describe template](#describe-template)
+* [Dub audio or video](#dub-audio-or-video)
+* [Generate avatar video from text or audio](#generate-avatar-video-from-text-or-audio)
+* [Generate speech from text](#generate-speech-from-text)
+* [Reframe video](#reframe-video)
+* [Render template](#render-template)
+* [Transcribe media](#transcribe-media)
+
+#### Describe template
 
 This action module analyzes a MOGRT (video template) file and return a manifest of editable controls, fonts, images, audio, video, and other supported values.
 
@@ -128,7 +136,7 @@ This action module analyzes a MOGRT (video template) file and return a manifest 
  </tbody> 
 </table> 
 
-#### Dub Audio or Video
+#### Dub audio or video
 
 This action module generates dubbed audio or video. It can also include lip sync in the generated video.
 
@@ -177,7 +185,7 @@ This action module generates dubbed audio or video. It can also include lip sync
  </tbody> 
 </table> 
 
-#### Generate Avatar Video From Text or Audio
+#### Generate avatar video from text or audio
 
 This action module generates an avatar video from a transcript or audio file you provide.
 
@@ -230,7 +238,7 @@ This action module generates an avatar video from a transcript or audio file you
  </tbody> 
 </table> 
 
-#### Generate Speech From Text
+#### Generate speech from text
 
 This action module generates speech from a transcript. You can provide either a plain text transcript or a presigned URL. The response includes a job ID and a status URL for tracking the job.
 
@@ -270,7 +278,7 @@ This action module generates speech from a transcript. You can provide either a 
  </tbody> 
 </table> 
 
-#### Reframe video V2
+#### Reframe video
 
 This module reframes the media you provide. Media is provided via a presigned URL.
 
@@ -335,7 +343,7 @@ This module reframes the media you provide. Media is provided via a presigned UR
  </tbody> 
 </table> 
 
-#### Render Template
+#### Render template
 
 This module renders one or more video variations by applying overrides and export presets.
 
