@@ -49,6 +49,9 @@ For more detail about the information in this table, see [Access requirements in
 1. To search for a specific scenario, begin typing into the search bar. Scenarios are filtered as you type.
 1. To activate or deactivate a scenario, locate the scenario in the list, then switch the toggle in the **Status** column for that scenario.
 1. To go directly to a scenario's Details page, locate the scenario in the list, then click **Open** in the row for that scenario.
+1. To add a description to a scenario, click into the Description column for that scenario, and enter a description.
+
+   Descriptions can be up to 240 characters.
 1. To clone a scenario, click the checkbox in the row for that scenario, then select **Clone** from the bar at the bottom of the screen. 
 
    For more information on cloning scenarios, see [Copy a scenario by cloning](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning) in the article Copy modules or scenarios.
