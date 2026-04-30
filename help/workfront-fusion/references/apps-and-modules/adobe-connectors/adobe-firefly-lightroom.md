@@ -109,6 +109,13 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Add XMP to image](#add-xmp-to-image)
+* [Apply Lightroom edits](#apply-lightroom-edits)
+* [Apply Lightroom presets](#apply-lightroom-presets)
+* [Auto-straighten](#auto-straighten)
+* [Auto-tone](#auto-tone)
+
+
 ### Add XMP to image
 
 This module applies an XMP-based Lightroom preset to an image.
@@ -138,7 +145,7 @@ This module applies an XMP-based Lightroom preset to an image.
     <td>Enter or map the EXIF orientation to apply to the image.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Storage</td> 
+   <td role="rowheader">Output storage</td> 
     <td>Select where you want the output file to be stored. <p>Fusion internal storage does not store the image outside of the scenario, but allows other modules in the scenario to access the image.</p></td> 
   </tr> 
   <tr> 
@@ -181,7 +188,7 @@ This module applies one or more Lightroom edits to an image. Edits include expos
    <td>Set any edit options that you want to apply to the image.<p>For details on options, see <a href="https://developer.adobe.com/firefly-services/docs/lightroom/api/#operation/applyEdits">Apply Lightroom Edits</a> in the Adobe Firefly Lightroom API documentation.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Storage</td> 
+   <td role="rowheader">Output storage</td> 
     <td>Select where you want the output file to be stored. <p>Fusion internal storage does not store the image outside of the scenario, but allows other modules in the scenario to access the image.</p></td> 
   </tr> 
   <tr> 
@@ -224,7 +231,7 @@ This module applies one or more XMP Lightroom presets to the given image, by usi
    <td>For each preset that you want to apply, click <b>Add item</b>, enter the preset's presigned URL, and select its storage type.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Storage</td> 
+   <td role="rowheader">Output storage</td> 
     <td>Select where you want the output file to be stored. <p>Fusion internal storage does not store the image outside of the scenario, but allows other modules in the scenario to access the image.</p></td> 
   </tr> 
   <tr> 
@@ -271,7 +278,7 @@ This module auto-straightens an image by applying the Auto Upright transformatio
    <td>Select whether the straightened image should be cropped to remove all blank edges.</td> 
   </tr> 
  <tr> 
-   <td role="rowheader">Storage</td> 
+   <td role="rowheader">Output sorage</td> 
     <td>Select where you want the output file to be stored. <p>Fusion internal storage does not store the image outside of the scenario, but allows other modules in the scenario to access the image.</p></td> 
   </tr> 
   <tr> 
@@ -314,7 +321,7 @@ This module automatically corrects exposure, contrast, sharpness, and saturation
   </tr> 
   </tr> 
  <tr> 
-   <td role="rowheader">Storage</td> 
+   <td role="rowheader">Output storage</td> 
     <td>Select where you want the output file to be stored. <p>Fusion internal storage does not store the image outside of the scenario, but allows other modules in the scenario to access the image.</p></td> 
   </tr> 
   <tr> 
