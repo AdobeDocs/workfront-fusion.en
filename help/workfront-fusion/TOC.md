@@ -269,6 +269,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
     * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
     * [Manage scenarios from the Scenarios area](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+    * [Edit Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
