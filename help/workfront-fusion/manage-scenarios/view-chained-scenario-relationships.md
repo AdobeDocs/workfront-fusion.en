@@ -83,3 +83,6 @@ To view the relationship map for a chained scenario:
 
    * If you are viewing only a portion of the map, that portion is darker on the simplified map. 
    * The current scenario is marked in blue on the simplified map.
+1. To view execution history for the chain, click the History tab near the top of the view. 
+
+   You can click on a history to view the specific data passed between chained scenarios.
