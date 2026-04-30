@@ -231,6 +231,9 @@ yourArray = [3,4,5,6,7]
 
 ### [!UICONTROL arrayElement(array; index)]
 
+[!BADGE New!]{type=Informative}
+
+
 Returns the element at the specified 1-based index in the array. Returns `null` if the index is out of bounds or less than 1.
 
 >[!BEGINSHADEBOX]
