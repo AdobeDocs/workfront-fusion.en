@@ -1,12 +1,15 @@
 ---
 cloud: Experience Cloud
 solution: Workfront
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    label: "Workfront"
 feature-set: Workfront
 product: experience cloud
 type: Documentation
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/workfront-fusion.en
-index: yes
+index: true
 ---
 
 # Metadata for internal use
