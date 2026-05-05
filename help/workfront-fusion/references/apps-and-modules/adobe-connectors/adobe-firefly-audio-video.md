@@ -1,9 +1,8 @@
 ---
-title: Adobe Firefly modules
+title: Adobe Firefly Audio and Video modules
 description: In an Adobe Workfront Fusion scenario, you can automate workflows that use Adobe Firefly Audio and Video, as well as connect it to multiple third-party applications and services.
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
 ---
 # Adobe Firefly Audio and Video modules
 
