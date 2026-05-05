@@ -53,6 +53,10 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Scenario settings options
 
+### Description
+
+Here, you can enter a description for the scenario, which will appear in the Scenarios list. Descriptions are limited to 240 characters.
+
 ### [!UICONTROL Sequential processing]
 
 This option forces all executions to happen in order and is primarily relevant for Webhooks and for Incomplete Executions.
