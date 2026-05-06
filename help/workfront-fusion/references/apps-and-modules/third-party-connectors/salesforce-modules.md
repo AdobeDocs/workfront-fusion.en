@@ -75,7 +75,7 @@ The Salesforce connector uses the following:
  <tbody> 
   <tr> 
    <td role="rowheader">Base URL</td> 
-   <td> &#123;&#123;connection.instanceUrl&#125;&#125;</td>
+   <td><pre><code>&#123;&#123;connection.instanceUrl&#125;&#125;</code></pre></td>
   </tr> 
   <tr> 
    <td role="rowheader">API version</td> 
