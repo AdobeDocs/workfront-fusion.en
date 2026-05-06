@@ -6,7 +6,7 @@ product: experience cloud
 type: Documentation
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/workfront-fusion.en
-index: yes
+index: true
 ---
 
 # Metadata for internal use
