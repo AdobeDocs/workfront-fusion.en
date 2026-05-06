@@ -5,7 +5,7 @@ description: This section contains articles related to configuring your account 
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-hide: yes
+hide: true
 
 ---
 
