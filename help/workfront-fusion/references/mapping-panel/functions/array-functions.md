@@ -228,6 +228,30 @@ yourArray = [3,4,5,6,7]
 
 >[!ENDSHADEBOX]
 
+
+### [!UICONTROL arrayElement(array; index)]
+
+[!BADGE New!]{type=Informative}
+
+
+Returns the element at the specified 1-based index in the array. Returns `null` if the index is out of bounds or less than 1.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `arrayElement(\[10; 20; 30]; 2)`
+
+   Returns 20
+* `arrayElement(\[10; 20; 30]; 1)`
+
+   Returns 10
+* `arrayElement(\[10; 20; 30]; 5)`
+
+   Returns null
+
+>[!ENDSHADEBOX]
+
 ## deDuplicate
 
 ## Keywords
