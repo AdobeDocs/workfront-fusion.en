@@ -352,6 +352,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe Creative Cloud Libraries modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
             * [Adobe Experience Manager Assets modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
             * [Adobe Experience Manager Forms modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+            * [Adobe Firefly Audio and Video modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
             * [Adobe Firefly modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
             * [Adobe Frame.io Beta (V4) modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
             * [Adobe Frame.io Legacy (V3) modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
