@@ -14,6 +14,7 @@ You can use these general variables to identify details about an execution:
 * `executionID`: the ID of this scenario execution
 * `triggerTimestamp`: The time at which this execution was triggered
 * `scenarioID`: the ID of the currently opened scenario
+* `scenarioName`: the name of the currently running scenario
 * `operationsConsumed`: the number of operations used at that point in the scenario.
 
 ## [!UICONTROL get (object or array; path)]

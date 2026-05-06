@@ -288,6 +288,31 @@ Returns the earliest date from the list.
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the last moment of the month of the given date — the final millisecond of the last day (23:59:59.999). Automatically accounts for the number of days in the month, including leap years.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+    Returns 2016-06-30T23:59:59.999Z
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+    Returns 2016-01-31T23:59:59.999Z
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+    Returns 2016-02-29T23:59:59.999Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL hour(date)]
 
 [!BADGE New!]{type=Informative}
@@ -304,6 +329,35 @@ Returns the hour of the date as a number between 0 and 23.
 * `hour("2016-12-08T00:00:00.000Z")`
 
     Returns 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns `true` if the date falls on a Saturday or Sunday, and `false` for any other day. The result is determined in the scenario's configured timezone.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+    Returns true (Saturday)
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+    Returns true (Sunday)
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+    Returns false (Monday)
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+    Returns false (Friday)
 
 >[!ENDSHADEBOX]
 
@@ -364,6 +418,27 @@ Returns the second of the date as a number between 0 and 59.
 * `second("2016-12-08T15:55:00.000Z")`
 
     Returns 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the first moment of the month of the given date — midnight on the 1st day (00:00:00.000). The result is timezone-aware.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+    Returns 2016-06-01T00:00:00.000Z
+    
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+    Returns 2024-02-01T00:00:00.000Z
 
 >[!ENDSHADEBOX]
 
