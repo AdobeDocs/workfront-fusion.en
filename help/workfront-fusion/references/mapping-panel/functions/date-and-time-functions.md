@@ -91,6 +91,25 @@ Returns a new date as a result of adding a given number of days to a date. To su
 
 >[!ENDSHADEBOX]
 
+### [!UICONTROL addWeekDays(date; number)]
+
+[!BADGE New!]{type=Informative}
+
+Adds the number of weekdays to the date. Only whole integer values are added (fractional values are rounded down).
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+`addWeekDays("2016-12-08T15:55:57.536Z"; 2)`  
+   
+   Returns 2016-12-12T15:55:57.536Z
+`addWeekDays("2016-12-08T15:55:57.536Z"; -2)` 
+   Returns 2016-12-06T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL addMonths (date; number)] 
 
 Returns a new date as a result of adding a given number of months to a date. To subtract months, enter a negative number.
@@ -124,6 +143,287 @@ Returns a new date as a result of adding a given number of years to a date. To s
 * `addYears(2016-12-08T15:55:57.536Z; -2)`
 
     Returns 2014-08-08T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL dayOfMonth(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the day of the month for the date as a number between 1 and 31.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `dayOfMonth("2016-12-28T16:03:06.372Z")`
+
+    Returns 28
+* `dayOfMonth("2015-01-05T11:36:39.138Z")`
+
+    Returns 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dayOfWeek(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the day of the week for the date as a number between 1 (Sunday) and 7 (Saturday).
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `dayOfWeek("2016-12-28T16:03:06.372Z")`
+
+    Returns 4
+* `dayOfWeek("2016-12-25T16:03:06.372Z")`
+
+    Returns 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInMonth(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the total number of days in the month of the given date.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `daysInMonth("2016-01-01T00:00:00.000Z")`
+
+    Returns 31
+* `daysInMonth("2016-02-01T00:00:00.000Z")`
+
+    Returns 29
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInSplitWeek(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the total number of weekdays between the date and the end of the week, or the end of the month — whichever comes first.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
+
+    Returns 3
+* `daysInSplitWeek("2016-01-25T16:03:06.372Z")`
+
+    Returns 5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInYear(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the total number of days in the year of the given date (365 for a regular year, 366 for a leap year).
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `daysInYear("2016-06-01T00:00:00.000Z")`
+
+    Returns 366
+* `daysInYear("2015-06-01T00:00:00.000Z")`
+
+    Returns 365
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMax(date1; date2; ...)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the latest (most recent) date from the list.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
+
+    Returns 2016-12-01T00:00:00.000Z
+
+* `dateMax("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z")`
+
+    Returns 2016-06-15T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMin(date1; date2; ...)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the earliest date from the list.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
+
+    Returns 2016-06-01T00:00:00.000Z
+
+* `dateMin("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z") `
+
+    Returns 2014-03-20T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL hour(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the hour of the date as a number between 0 and 23.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `hour("2016-12-08T15:55:57.536Z")`
+
+    Returns 15
+* `hour("2016-12-08T00:00:00.000Z")`
+
+    Returns 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL minute(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the minute of the date as a number between 0 and 59.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `minute("2016-12-08T15:55:57.536Z")`
+
+    Returns 55
+* `minute("2016-12-08T15:00:00.000Z")`
+
+    Returns 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL month(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the month of the date as a number between 1 and 12.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `month("2016-12-08T15:55:57.536Z")`
+
+    Returns 12
+* `month("2016-01-08T15:55:57.536Z")`
+
+    Returns 1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL second(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the second of the date as a number between 0 and 59.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `second("2016-12-08T15:55:57.536Z")`
+
+    Returns 57
+* `second("2016-12-08T15:55:00.000Z")`
+
+    Returns 0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL weekDayDiff(date2; date1)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the number of weekdays between two dates, accounting for the timestamps on those days. For example, if the start time is 3 PM, the start day will not be counted as a full day.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
+
+    Returns 2.5
+* `weekDayDiff("2016-12-09T15:00:00.000Z"; "2016-12-05T15:00:00.000Z")`
+
+    Returns 4
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL workMinutesDiff(date1; date2)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the number of scheduled working minutes between two dates, based on a standard Monday–Friday, 9 AM–5 PM schedule.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
+
+    Returns 480
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-06T17:00:00.000Z")`
+
+    Returns 960
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL year(date)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the year of the date as a 4-digit number.
+
+>[!BEGINSHADEBOX]
+
+**Examples:**
+
+* `year("2016-12-08T15:55:57.536Z")`
+
+    Returns 2016
+* `year("2000-01-01T00:00:00.000Z")`
+
+    Returns 2000
 
 >[!ENDSHADEBOX]
 
@@ -459,9 +759,11 @@ If you need to calculate a date corresponding to n-th day of week in month (for 
 
 ![Calculate nth day](assets/date-time-functions-calc-nth-day-350x31.png)
 
+
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
-``` 
+
+```
 
 The formula contains the following items:
 
@@ -517,8 +819,10 @@ One possibility is to employ the following expression:
 
 ![Calculate days between dates](assets/calculate-days-between-dates-350x68.png)
 
+
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
+
 ```
 
 >[!NOTE]
@@ -537,9 +841,11 @@ The formula below shows one way how to calculate last day of the previous month:
 
 ![Last day of previous month](assets/last-day-prev-month.png)
 
+
 ```
 {{addDays(setDate(now; 1); -1)}}
-``` 
+
+```
 
 In some cases, you need to calculate not only the last day of month, but literally its last millisecond:
 
@@ -549,8 +855,10 @@ This formula shows one way how to calculate last millisecond of the previous mon
 
 ![Last millisecond of previous month](assets/last-millisecond-prev-month-350x45.png)
 
+
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
+
 ```
 
 If you need the result to use your timezone setting, omit the UTC argument:

@@ -176,6 +176,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Document](#document)
 * [Object](#object)
+* [Multi-file extract](#multi-file-extract)
+* [Multi-file load](#multi-file-load)
+* [File staging](#file-staging)
 * [Other](#other)
 
 ### Document
@@ -985,6 +988,148 @@ This module creates, copies, or deep copies a single object record.
   <tr> 
    <td role="rowheader">Record fields</td> 
    <td>If you are deep copying a record, select the fields that you want to provide values for, then provide those values.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Multi-file extract
+
+* [Extract multiple files](#extract-multiple-files)
+* [Retrieve extract results](#retrieve-extract-results)
+
+#### Extract multiple files
+
+This action module creates a loader job to extract one or more data files.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Data files</td> 
+   <td>For each file that you want to extract, click <b>Add item</b> and enter the following:
+   <ul>
+   <li>Object type</li>
+   <li>VQL criteria (Optional): To filter the data set to include only files that meet specific criteria, enter the criteria in Vault Query Lanugage (VQL).</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Retrieve extract results
+
+This action module retrieves results of a specified extract request.
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Job ID</p> </td> 
+   <td> <p>Enter or map the job that you want to retrieve results for. You can map this from the Extract data files module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Task ID</td> 
+   <td> <p>Enter or map the task that you want to retrieve results for. You can map this from the Extract data files module.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Multi-file load
+
+* [Load multiple files](#load-multiple-files)
+* [Retrieve log results](#retrieve-log-results)
+
+#### Load multiple files
+
+This module creates a loader job and loads a set of data files.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File</td> 
+   <td>Enter or map the filepath to the CSV file that this job will use.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order</td> 
+   <td>Enter or map the order for the file list.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">No triggers</td> 
+   <td>Select Yes to bypass record or document triggers.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Retrieve log results
+
+This action module retrieves a log of loader job results.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Job ID</p> </td> 
+   <td> <p>Enter or map the job that you want to retrieve results for. You can map this from the Load data files module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Task ID</td> 
+   <td> <p>Enter or map the task that you want to retrieve results for. You can map this from the Load data files module.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Type</td> 
+   <td> <p>Select whether you want to retrieve successful jobs or failed jobs.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### File staging
+
+#### List items at path
+
+This module returns a list of files and folders for the specified path.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection </td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">CHoose your home directory</td> 
+   <td>Select the home directory that you want to list items from.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order</td> 
+   <td>Enter or map the order for the file list.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">No triggers</td> 
+   <td>Select Yes to bypass record or document triggers.</td> 
   </tr> 
  </tbody> 
 </table>

@@ -386,3 +386,144 @@ Transforms text to base64.
 Returns: d29ya2Zyb250==  
 
 >[!ENDSHADEBOX]
+
+
+### [!UICONTROL concat(string1; separator; string2; ...)]
+
+[!BADGE New!]{type=Informative}
+
+Concatenates strings with a separator between each one.
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `concat("Hello"; " "; "World")`
+
+   Returns Hello World
+* `concat("a"; "-"; "b"; "c")`
+
+   Returns a-b-c
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL left(string; length)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the specified number of characters from the left side of a string.
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `left("Hello"; 3)`
+
+   Returns Hel
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL right(string; length)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the specified number of characters from the right side of a string.
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `right("Hello"; 3)`
+
+   Returns llo
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL removeAccents(string)]
+
+[!BADGE New!]{type=Informative}
+
+Removes diacritical marks (accents) from accented characters.
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `removeAccents("Héllo wörld")`
+
+   Returns Hello world
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL replacePattern(string; pattern; replacement)]
+
+[!BADGE New!]{type=Informative}
+
+Replaces all matches of a regular expression pattern with a 
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `replacePattern("foo123bar"; "\\d+"; "\_")`
+
+   Returns foo\_bar
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortAscString(string1; string2; ...)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the provided strings sorted in ascending (alphabetical) order.
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `sortAscString("banana"; "apple"; "cherry")`
+
+   Returns \["apple", "banana", "cherry"]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortDescString(string1; string2; ...)]
+
+[!BADGE New!]{type=Informative}
+
+Returns the provided strings sorted in descending (reverse alphabetical) order.
+
+**Syntax:** `sortDescString(string1; string2; ...)`
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `sortDescString("banana"; "apple"; "cherry")`
+
+   Returns \["cherry", "banana", "apple"]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL pascal(string)]
+
+[!BADGE New!]{type=Informative}
+
+Converts a string to PascalCase by capitalizing the first letter of each word and removing spaces.
+
+**Syntax:** `pascal(string)`
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `pascal("hello world")`
+
+   Returns HelloWorld
+* `pascal("foo bar baz")`
+
+   Returns FooBarBaz
+
+>[!ENDSHADEBOX]
+
+

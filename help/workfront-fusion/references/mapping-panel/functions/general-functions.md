@@ -136,3 +136,102 @@ Returns a collection of only the user's password and email address.
 ## mergeCollections(collection1; collection2)
 
 Merges two collections by combining their key-value pairs. If both collections contain the same key, the value from the second collection overwrites that value from the first collection.
+
+### [!UICONTROL isBlank(value)]
+
+Returns `true` if the value is `null` or an empty string, otherwise returns `false`. Unlike `ifEmpty`, this function does not treat the number `0` or whitespace-only strings as blank.
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `isBlank("")     `
+
+   Returns  true
+* `isBlank(null)   `
+
+   Returns  true
+* `isBlank("Hello")`
+
+   Returns  false
+* `isBlank(0)      `
+
+   Returns  false
+* `isBlank(" ")    `
+
+   Returns  false
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL in(value; value1; value2; ...)]
+
+Returns `true` if the value equals one of the provided values (strict equality, no type coercion).
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `in("B"; "A"; "B"; "C")`
+
+   Returns  true
+* `in("D"; "A"; "B"; "C")`
+
+   Returns  false
+* `in(2; 1; 2; 3)        `
+
+   Returns  true
+* `in("2"; 1; 2; 3)      `
+
+   Returns  false
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL ifin(value; value1; value2; ...; trueExpression; falseExpression)]
+
+Returns `trueExpression` if the value matches any of the provided match values, otherwise returns `falseExpression`. Requires at least 3 arguments (value, one match value, and trueExpression + falseExpression).
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `ifin("B"; "A"; "B"; "yes"; "no")`
+
+   Returns  yes
+* `ifin("D"; "A"; "B"; "yes"; "no")`
+
+   Returns  no
+* `ifin("X"; "X"; "found"; "not found")`
+
+   Returns  found
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL case(indexNumber; value1; value2; ...)]
+
+Returns the value at the position specified by the index number (1-based). Returns `null` if the index is out of bounds or is 0.
+
+>[!BEGINSHADEBOX]
+
+**Example:** 
+
+* `case(1; "Sun"; "Mon"; "Tue")`
+
+   Returns  Sun
+* `case(2; "Sun"; "Mon"; "Tue")`
+
+   Returns  Mon
+* `case(3; "Sun"; "Mon"; "Tue")`
+
+   Returns  Tue
+* `case(5; "a"; "b")           `
+
+   Returns  null
+
+>[!NOTE]
+>
+>We recommend using this to get day name from a date:
+>`case(dayOfWeek(date); "Sun"; "Mon"; "Tue"; "Wed"; "Thu"; "Fri"; "Sat")`
+
+>[!ENDSHADEBOX]
+
