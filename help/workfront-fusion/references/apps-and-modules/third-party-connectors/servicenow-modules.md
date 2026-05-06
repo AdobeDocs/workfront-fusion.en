@@ -65,7 +65,7 @@ The ServiceNow connector uses the following:
  <tbody> 
   <tr> 
    <td role="rowheader">Base URL</td> 
-   <td>https://&#123;&#123;connection.instance&#125;&#125;/api</td> 
+   <td><pre><code>https://&#123;&#123;connection.instance&#125;&#125;/api</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API tag</td> 
