@@ -5,80 +5,142 @@ description: Document a new Adobe Workfront Fusion connector module by adding it
 
 # Document a Fusion connector module
 
-Use this skill to add a new module to a Workfront Fusion connector article (for example, `adobe-firefly-modules.md`, `adobe-photoshop-modules.md`, `azure-dev-ops.md`).
+Use this skill to add one or more new modules to a Workfront Fusion connector article (for example, `adobe-firefly-modules.md`, `adobe-photoshop-modules.md`, `azure-dev-ops.md`).
 
-## Required inputs
+## Required inputs (per module)
 
-Before writing any documentation, the user **must** provide all three of the following. If any is missing, stop and ask for it.
+Before populating any module's fields, the user **must** provide all of the following. If any is missing, stop and ask for it before proceeding.
 
-1. **The connector article path** — for example, `help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md`. If the user gives only the connector name, infer the path from the directory layout under `help/workfront-fusion/references/apps-and-modules/`.
-2. **The API URL** for the underlying API operation (for example, an Adobe developer docs URL). This is required so each field's purpose can be cross-referenced against the API spec.
-3. **Two screenshots** of the module's configuration panel in Fusion:
-   - **Standard view** — `Show advanced settings` checkbox **unchecked**.
-   - **Advanced view** — `Show advanced settings` checkbox **checked**.
-
-If the module has no advanced fields, the user must say so explicitly. Don't assume.
+1. **The module name** — exactly as it appears in the Fusion UI (e.g., `Generate adaptive composite`).
+2. **The connector article path** — the agent locates this and confirms with the user (see Phase 1).
+3. **The API URL** for the underlying API operation. This is required so each field's purpose can be cross-referenced against the API spec.
+4. **A screenshot of the module's configuration panel in standard view** (`Show advanced settings` **unchecked**).
+5. **A screenshot of the module's configuration panel in advanced view** (`Show advanced settings` **checked**), or an explicit statement that the module has no advanced fields.
 
 ## Workflow
 
-Follow these phases in order. Don't skip ahead.
+This is a multi-phase process. The pacing matters — work *with* the user, not ahead of them. Confirm progress at each phase boundary, and stay open to corrections at any time.
 
-### Phase 1 — Place the placeholder
+### Phase 1 — Scope the work
 
-1. Read the connector article to understand its existing structure and conventions.
-2. Find the alphabetical position for the new module among the existing `### Module name` headings.
-3. Insert a placeholder section in that position with this shape:
+1. **Ask whether this is one module or multiple**: *"Are you adding a single module or multiple modules to a connector article?"*
 
-   ```markdown
-   ### Module name
+2. **Gather every module name upfront**, based on the answer:
+   - **Single module**: ask for its exact name as it appears in the Fusion UI.
+   - **Multiple modules**: ask for all of the names at once, OR ask for a screenshot of the connector that lists them (for example, the connector overview screen in Fusion that shows tile labels for each module). Either way, end this step with a confirmed list of every new module to be added.
 
-   <!-- PLACEHOLDER: Add description of the Module name module here. -->
+3. **Locate the connector article yourself** by searching `help/workfront-fusion/references/apps-and-modules/` based on the connector name implied by the module(s). Use the `Glob` or `Grep` tools.
 
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Connection]</td> 
-      <td>For instructions on creating a connection to [!DNL Connector Name], see <a href="#create-a-connection-to-connector-name" class="MCXref xref" >Create a connection to [!DNL Connector Name]</a> in this article.</td> 
-     </tr> 
-     <!-- PLACEHOLDER: Add field rows for the Module name module here. -->
-    </tbody> 
-   </table>
-   ```
+4. **Confirm the article path with the user**: *"Based on the module name(s), this should go in `help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md`. Is that correct?"*
 
-4. Confirm the placeholder is correctly positioned before continuing.
+5. **Read the connector article** to learn its existing structure and conventions. Pay attention to:
+   - Heading style (typically `### Module name` in sentence case)
+   - Existing module ordering (typically alphabetical)
+   - How `Connection` rows are worded
+   - How nested fields are written (e.g., `Image > Source`)
+   - Any existing footnote or annotation conventions
 
-### Phase 2 — Capture each visible field
+### Phase 2 — Place placeholders for every module up front
 
-Work through the screenshots top to bottom. For each visible field:
+Even if there's only one new module, this gives the user a clear visual roadmap. If there are multiple new modules, place all of them now.
 
-1. Use the field's exact UI label as the row header. For grouped fields (e.g., `Background → Image → Source`), join with ` > `:
+For each new module, insert a placeholder section in alphabetical position:
+
+```markdown
+### Module name
+
+<!-- PLACEHOLDER: Add description of the Module name module here. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>For instructions on creating a connection to [!DNL Connector Name], see <a href="#create-a-connection-to-connector-name" class="MCXref xref" >Create a connection to [!DNL Connector Name]</a> in this article.</td> 
+  </tr> 
+  <!-- PLACEHOLDER: Add field rows for the Module name module here. -->
+ </tbody> 
+</table>
+```
+
+Show the user the list of placeholders that were added (e.g., "Added placeholders for: Generate adaptive composite, Generate images with Image5, Generate precise composite, Generate video"). Then ask which to start with: *"Which would you like to start with?"*
+
+### Phase 3 — Per-module documentation loop
+
+For each module, complete this loop fully before moving on to the next:
+
+#### 3a. Get the API URL
+
+Ask the user for the API URL: *"Please share the API URL for `<module name>`'s underlying API operation."*
+
+When you have it:
+- Try `WebFetch` on the URL.
+- If the page is empty/JS-rendered (common with Adobe Developer docs), look for a related feature guide page — typically at a `.../guides/how-tos/...` URL — and fetch that instead.
+- If still no luck, fall back to `WebSearch` for the operation name.
+
+Use whatever you learn as background context for field descriptions later. Don't dump it on the user; just acknowledge it briefly: *"Got the API context — ready for the standard view screenshot."*
+
+#### 3b. Get the standard-view screenshot
+
+Ask: *"Please share a screenshot of the module's configuration panel with `Show advanced settings` **unchecked**. After we work through the standard fields, I'll ask for the advanced view, but don't send that yet."*
+
+#### 3c. Document the standard fields
+
+Working from the standard-view screenshot, capture every visible field top to bottom. For each field:
+
+1. Use the field's exact UI label as the row header. For grouped fields, join with ` > `:
    ```
    [!UICONTROL Background > Image > Source]
    ```
 2. Read the helper text under the field in the screenshot (the gray/yellow caption). Use it as the basis for the description.
-3. Cross-reference the API URL the user provided to identify what the field represents in the underlying API call (for example, `background.fillAreaMask` is "the area of the background where the object will be placed").
-4. Write the description by combining both: **what the field is** (from the API) plus **how to provide it** (from the UI helper text and field type).
+3. Cross-reference the API context from step 3a to identify what the field represents (for example, `background.fillAreaMask` is "the area of the background where the object will be placed").
+4. Write the description by combining **what the field is** (from the API) with **how to provide it** (from the UI helper text and field type).
 
-Skip any field that isn't visible in the screenshots, even if the API supports it. Don't invent fields.
+Skip any field that isn't visible in the screenshot, even if the API supports it. Don't invent fields.
 
-### Phase 3 — Mark advanced fields
+After the standard fields are in place, briefly summarize them to the user (e.g., "Standard fields added: Connection, Prompt, Aspect Ratio, ..."), then move to step 3d.
 
-For every field that only appears in the advanced view (not the standard view):
+#### 3d. Get the advanced-view screenshot
 
-1. Append `*` to the field name inside the `<td role="rowheader">`:
+Ask: *"Now please share a screenshot of the module's configuration panel with `Show advanced settings` **checked**. If the module has no advanced fields, say so and we'll skip ahead."*
+
+#### 3e. Document the advanced fields
+
+Working from the advanced-view screenshot:
+
+1. Identify the fields that *aren't* already in the standard view — those are the advanced fields.
+2. For each advanced field, follow the same description process from step 3c.
+3. Append `*` to the field name inside the `<td role="rowheader">`:
    ```html
    <td role="rowheader">[!UICONTROL Seeds]*</td>
    ```
-2. After the closing `</table>`, add this footnote on its own line (or reuse it if the article already has one for another module):
+4. After the closing `</table>`, add this footnote on its own line:
    ```markdown
    * These fields are advanced fields, and do not display unless you select **[!UICONTROL Show advanced settings]**.
    ```
 
-### Phase 4 — Verify against the conventions checklist
+If the user said the module has no advanced fields, skip steps 3d and 3e entirely.
 
-Before declaring the module done, confirm:
+#### 3f. Draft the module description
+
+Now (not earlier), replace the description placeholder at the top of the section with a one-sentence draft based on the API context and what the fields imply. Always offer it as a draft for the user's review:
+
+> *"I drafted this description: '...'. Want to use that, edit it, or replace it?"*
+
+#### 3g. Per-module wrap-up
+
+Give the user a final summary of the module's documented fields (standard + advanced), and surface any open questions:
+
+- Were any fields cut off in the screenshots?
+- Is the module description acceptable?
+- Should anything be flagged as deprecated or note-worthy?
+
+Wait for confirmation before saying the module is done. Then ask: *"Ready to move on to the next module?"* (or "We're all done with this connector article.")
+
+### Phase 4 — Final verification
+
+After all modules are documented, run through this checklist for each one:
 
 - [ ] Module heading is `### ` (H3) and uses sentence case.
 - [ ] Module appears in alphabetical order relative to its sibling modules.
@@ -87,7 +149,7 @@ Before declaring the module done, confirm:
 - [ ] Advanced fields are marked with `*` and a single footnote exists below the table.
 - [ ] No fields invented from the API alone.
 - [ ] Source dropdown descriptions use the exact UI option labels (see "Source field convention" below).
-- [ ] Module description at the top is one sentence, written in third person, describing what the module does.
+- [ ] Module description is a one-sentence summary describing what the module does.
 
 ## Source field convention
 
@@ -125,6 +187,12 @@ Reuse these for consistency across modules:
 **Locale**:
 > Enter or map a language and region code to tailor the generated content to a specific country and language. Locale must be provided in ISO 639-1 language code and ISO 3166-1 region. Example: `en-US`
 
+## Be open to corrections at any time
+
+The user may correct earlier work mid-flow — Seeds wording, dropdown labels, field positioning, advanced/standard split, etc. Treat any correction as authoritative and update without pushback. After the correction, briefly summarize what was changed.
+
+If the user introduces a new convention mid-flow (for example, "let's mark advanced fields with `*` and add a footnote"), adopt it for the rest of the session and apply it retroactively to any modules already documented.
+
 ## What to do if information is conflicting
 
 When the API spec and the UI disagree (this happens often):
@@ -133,12 +201,4 @@ When the API spec and the UI disagree (this happens often):
 2. **Note the discrepancy** in your reply to the user so they can decide whether to investigate further.
 3. **Don't invent an explanation** in the article body — keep it factual to what's in the UI.
 
-If two screenshots from the user contradict each other, stop and ask which one is correct before writing.
-
-## What to ask the user before finishing
-
-Before declaring the work complete, ask the user to confirm:
-
-1. Whether there are any fields above or below the visible screenshot area you didn't capture.
-2. The proposed module description at the top of the section.
-3. Whether the module has any deprecation status (a deprecated predecessor or an upcoming deprecation note).
+If two screenshots from the user contradict each other (e.g., one shows `Blend`, another shows `Harmonization` for the same module), stop and ask which one is correct before writing. Identify which screenshot likely belongs to a different module by cross-referencing the API spec.
