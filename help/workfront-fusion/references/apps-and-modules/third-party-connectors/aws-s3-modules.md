@@ -61,7 +61,7 @@ The AWS S3 connector uses the following:
  <tbody> 
   <tr> 
    <td role="rowheader">Base URL</td> 
-   <td>https://s3.&#123;&#123;parameters.region&#125;&#125;.amazonaws.com</td> 
+   <td><pre><code>https://s3.&#123;&#123;parameters.region&#125;&#125;.amazonaws.com</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API tag</td> 

@@ -3,6 +3,7 @@ title: Edit Webhooks
 description: You can edit existing webhooks for the Workfront and Workfront Planning connectors.
 author: Becky
 feature: Workfront Fusion
+exl-id: 86849d21-5a74-43f7-9ccf-dff4421cc981
 ---
 # Edit webhooks
 
@@ -45,4 +46,3 @@ You can edit webhooks from a scenario, or from the Webhooks list.
 1. In the blue banner at the bottom of the screen, click **Edit**.
 1. Make any desired edits to the webhook.
 1. Click **Save** to save the webhook and return to the Webhooks list.
-
