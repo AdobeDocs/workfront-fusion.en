@@ -68,7 +68,7 @@ The Adobe Journey Optimizer connector uses the following:
  <tbody> 
   <tr> 
    <td role="rowheader">Base URL</td> 
-   <td>&#123;&#123;connection.url&#125;&#125;</td> 
+   <td><pre><code>&#123;&#123;connection.url&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API tag</td> 
