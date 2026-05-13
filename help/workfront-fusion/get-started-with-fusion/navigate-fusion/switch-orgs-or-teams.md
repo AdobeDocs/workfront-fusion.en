@@ -4,6 +4,10 @@ description: Email notification options are set on the team level.
 author: Becky
 feature: Workfront Fusion
 exl-id: a70774e6-15ae-406b-b85e-640f9e0e3cc4
+TQID: https://experienceleague.adobe.com/7uzvCLeGJwTiVAEf6JYFfxhNTEYOQpEc714eQQnnZCI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Switch between orgs or teams
 

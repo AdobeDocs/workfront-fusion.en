@@ -4,6 +4,10 @@ description: The following tokens for date and time parsing are available in the
 author: Becky
 feature: Workfront Fusion
 exl-id: d3242af3-89e8-45ae-81a1-3b4dadf824fd
+TQID: https://experienceleague.adobe.com/ZU2fO6cE2nEceklQoIj6TrpETBbssJe3FuCpcXHZepI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Tokens for date and time parsing
 

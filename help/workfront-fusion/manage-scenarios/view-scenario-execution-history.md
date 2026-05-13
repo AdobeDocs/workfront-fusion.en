@@ -1,9 +1,13 @@
 ---
 title: View a scenario's execution history
-description: You can display information about a scenario's events or executions, or you can search all executions of the scenario for specific data. 
+description: You can display information about a scenario's events or executions, or you can search all executions of the scenario for specific data.
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
+TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # View a scenario's execution history
 

@@ -4,6 +4,10 @@ description: You can change information in your Adobe Workfront Fusion account p
 author: Becky
 feature: Workfront Fusion
 exl-id: f7d561d8-5189-4c7a-811d-8a2509638f75
+TQID: https://experienceleague.adobe.com/dlFklcRo1ODRq60yjf99cnSoR6wZ06nxGFZx37Av0xA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Change profile settings
 

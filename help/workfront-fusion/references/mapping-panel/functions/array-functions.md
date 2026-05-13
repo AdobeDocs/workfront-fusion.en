@@ -4,6 +4,10 @@ description: The following array functions are available in the Adobe Workfront 
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
+TQID: https://experienceleague.adobe.com/9ymbGLulR1RFFm15f76YA0qbp9sxPu1vVbTqnoE2ZEM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Array functions
 

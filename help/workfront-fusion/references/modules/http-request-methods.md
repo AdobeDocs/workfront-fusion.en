@@ -4,6 +4,10 @@ description: When you are configuring an API call in a module, you must select t
 author: Becky
 feature: Workfront Fusion
 exl-id: 481131c9-356a-4c62-a653-d6bba9be5be8
+TQID: https://experienceleague.adobe.com/Z11y3dk6PtoN11Gja8S2ZyJlTJZNZfXfcPPrNJWvbRk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # HTTP request methods
 

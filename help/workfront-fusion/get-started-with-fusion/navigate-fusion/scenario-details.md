@@ -4,6 +4,10 @@ description: Scenario details in Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
+TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Scenario details overview
 

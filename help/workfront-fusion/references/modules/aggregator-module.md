@@ -4,6 +4,13 @@ description: An aggregator module is a type of module designed to merge several 
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
+TQID: https://experienceleague.adobe.com/O99Y6rWAQUUaO20Ts2T87ZaDUayi6I5ZWsyKKqOyONw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # [!UICONTROL Aggregator] module
 

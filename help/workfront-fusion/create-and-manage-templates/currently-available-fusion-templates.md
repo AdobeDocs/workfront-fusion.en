@@ -4,6 +4,16 @@ description: The following public templates are currently available in Adobe Wor
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
+TQID: https://experienceleague.adobe.com/noPEh8h2yNo0bBTwCGyczYJAZyZfuh6U6jayF4JuByQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Currently available Adobe Workfront Fusion templates
 

@@ -4,6 +4,15 @@ description: In an Adobe Workfront Fusion scenario, you can automate workflows t
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
+TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # [!DNL Adobe Target] Modules
 

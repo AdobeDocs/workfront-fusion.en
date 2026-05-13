@@ -4,6 +4,15 @@ description: The Adobe Workfront Fusion HubSpot CRM modules enable you to monito
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
+TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # [!DNL HubSpot CRM] modules
 

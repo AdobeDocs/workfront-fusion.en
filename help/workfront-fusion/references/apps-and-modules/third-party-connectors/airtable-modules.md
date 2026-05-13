@@ -4,6 +4,13 @@ description: Adobe Workfront Fusion requires an Adobe Workfront Fusion license i
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
+TQID: https://experienceleague.adobe.com/Jm9c42LodUUcCVvGbXnQwS2lICMNY40y83Ju2SSmzHo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # Airtable modules
 

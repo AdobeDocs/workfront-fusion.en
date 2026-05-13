@@ -2,6 +2,10 @@
 title: Adobe Workfront Fusion
 description: Welcome to the Adobe Workfront Fusion product and technical documentation home page. Use the following links, help articles, and additional resources to learn how to implement and effectively use Adobe Workfront Fusion in your organization.
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
+TQID: https://experienceleague.adobe.com/IwGzn2TeOw9r-d2u9zdE7OKr5Q7AV5zoet1f9RHKP8o
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Workfront Fusion documentation
 

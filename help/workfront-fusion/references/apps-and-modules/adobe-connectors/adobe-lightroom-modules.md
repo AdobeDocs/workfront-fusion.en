@@ -4,6 +4,20 @@ description: With the Adobe Lightroom modules, you can start an Adobe Workfront 
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
+TQID: https://experienceleague.adobe.com/mpTM66zk6PRthMvpk302CQ6MkOs5qEqPODNcvv-Qauo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # [!DNL Adobe Lightroom] modules
 

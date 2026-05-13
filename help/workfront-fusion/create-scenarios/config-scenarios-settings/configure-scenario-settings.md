@@ -5,6 +5,10 @@ description: You can configure specific settings for scenarios in the scenario s
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
+TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Configure scenario settings
 

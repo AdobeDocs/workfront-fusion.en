@@ -7,6 +7,13 @@ description: Learn how to add a function to update a work item in Workfront.
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
+TQID: https://experienceleague.adobe.com/F0kYjSMVgit8t-gPAR4U7O-1v8Qxy7UxSRK6uYxKItg
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
 ---
 # Use a function to update a project in a basic scenario
 

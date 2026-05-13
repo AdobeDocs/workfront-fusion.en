@@ -1,11 +1,15 @@
 ---
 content-type: reference
-title: 'Create scenarios: article index'
+title: "Create scenarios: article index"
 description: This section contains articles related to creating scenarios in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 433e0730-1955-4582-984a-94b98e8366b5
+TQID: https://experienceleague.adobe.com/mdEuXi2Pwa4ARFyL9oWRU7S-SpchAbJV6Li6Lg-pajA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Create scenarios: article index
 

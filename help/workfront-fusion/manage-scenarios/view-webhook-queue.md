@@ -4,6 +4,10 @@ description: Many services provide webhooks to deliver instant notifications whe
 author: Becky
 feature: Workfront Fusion
 exl-id: 04aed0cb-e837-4c81-8eb1-113075d2ada8
+TQID: https://experienceleague.adobe.com/FtTjoNtYNM9kuPDMaHa4883m13pLO2MRat5ohnjXuAM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # View a webhook's queue
 

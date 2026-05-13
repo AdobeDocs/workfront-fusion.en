@@ -4,6 +4,10 @@ description: Some trigger modules allow you to select the first bundle from whic
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
+TQID: https://experienceleague.adobe.com/Lbl9yIbiWEhwajpe-9EEp513IN9ASXE3PZHP1gAktx4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Choose where a trigger module starts
 

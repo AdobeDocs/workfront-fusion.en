@@ -4,6 +4,10 @@ description: The following tokens for date and time formatting are available in 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
+TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Tokens for date and time formatting
 

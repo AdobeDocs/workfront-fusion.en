@@ -4,6 +4,10 @@ description: This article describes why active or deactivated scenarios are usef
 author: Becky
 feature: Workfront Fusion
 exl-id: ecfcab45-5492-4e20-af8d-63ec9d233046
+TQID: https://experienceleague.adobe.com/QaZIR-nQ7cvBLmy2XfGDfqm1C7KrZqoY9Kz4sqRPDFA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Activate or deactivate a scenario
 

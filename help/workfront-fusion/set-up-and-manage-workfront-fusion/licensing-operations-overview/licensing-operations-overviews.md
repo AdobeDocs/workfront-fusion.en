@@ -1,11 +1,15 @@
 ---
 content-type: reference
-title: 'Licenses and operations: article index'
+title: "Licenses and operations: article index"
 description: This section contains articles related to licenses and operations.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c69a1a27-a709-483a-b909-55b116b10f11
+TQID: https://experienceleague.adobe.com/Cv-YbmFJe2o-uVJNRwcXfWaZHMkDuVJKOyue4Gj0DGQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Licenses and operations: article index
 
