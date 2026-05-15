@@ -388,7 +388,7 @@ Returns: d29ya2Zyb250==
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL concat(string1; separator; string2; ...)]
+### [!UICONTROL concat(separator; string1; string2; …)]
 
 [!BADGE New!]{type=Informative}
 
@@ -401,7 +401,7 @@ Concatenates strings with a separator between each one.
 * `concat(; Hello ; World)`
 
    Returns Hello World
-* `concat(-; a ; b; c)`
+* `concat(- a ; b; c)`
 
    Returns a-b-c
 
