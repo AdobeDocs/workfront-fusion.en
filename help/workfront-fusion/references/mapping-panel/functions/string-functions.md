@@ -398,10 +398,10 @@ Concatenates strings with a separator between each one.
 
 **Example:** 
 
-* `concat("Hello"; " "; "World")`
+* `concat(; Hello ; World)`
 
    Returns Hello World
-* `concat("a"; "-"; "b"; "c")`
+* `concat(- a ; b; c)`
 
    Returns a-b-c
 
