@@ -401,7 +401,7 @@ Concatenates strings with a separator between each one.
 * `concat(; Hello ; World)`
 
    Returns Hello World
-* `concat(- a ; b; c)`
+* `concat(-; a ; b; c)`
 
    Returns a-b-c
 
