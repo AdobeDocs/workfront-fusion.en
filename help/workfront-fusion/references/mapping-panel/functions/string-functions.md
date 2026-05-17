@@ -388,7 +388,7 @@ Returns: d29ya2Zyb250==
 >[!ENDSHADEBOX]
 
 
-### [!UICONTROL concat(string1; separator; string2; ...)]
+### [!UICONTROL concat(separator; string1; string2; …)]
 
 [!BADGE New!]{type=Informative}
 
