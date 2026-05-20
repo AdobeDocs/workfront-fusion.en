@@ -4,6 +4,10 @@ description: Adobe Workfront FusionTemplates feature allow you to create and use
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
+TQID: https://experienceleague.adobe.com/U7C1PmiNClfdUnl0qj1j71dKt0eWINJgdwSEFYo7pgQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Create scenarios with templates
 

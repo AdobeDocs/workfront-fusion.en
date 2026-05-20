@@ -4,6 +4,18 @@ description: You can use Adobe Workfront Fusion to connect to Google Services us
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
+TQID: https://experienceleague.adobe.com/Y-cRr-lDvYKc83iwzPoB2Rs9gKD9LCZQFfiBgefal7I
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Connect Adobe Workfront Fusion to Google Services using a custom OAuth client
 

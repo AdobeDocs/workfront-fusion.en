@@ -4,6 +4,10 @@ description: In an Adobe Workfront Fusion scenario, you can use the Lexical modu
 author: Becky
 feature: Workfront Fusion
 exl-id: a8b8a1f3-d0f4-40bf-b5c1-dd0fb8100ec0
+TQID: https://experienceleague.adobe.com/pVoGQjfcVsJ7rme-jv2issE--0EUNq-VL3NDMbuh-Ko
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Lexical modules
 

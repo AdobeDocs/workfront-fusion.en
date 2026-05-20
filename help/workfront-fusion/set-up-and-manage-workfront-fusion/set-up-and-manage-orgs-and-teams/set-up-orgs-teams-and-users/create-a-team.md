@@ -4,6 +4,10 @@ description: Teams are smaller groups within the organization, and share Fusion 
 author: Becky
 feature: Workfront Fusion
 exl-id: 511b5a9c-0b7f-4003-ad86-4bbe630674e0
+TQID: https://experienceleague.adobe.com/-7x51V-z5F-LIK2eALXr66tPkSI5fJ4iLyXH28aR9CY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Create a team
 

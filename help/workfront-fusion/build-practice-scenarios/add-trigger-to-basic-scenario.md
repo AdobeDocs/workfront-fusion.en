@@ -7,6 +7,13 @@ description: Learn how to add a trigger module to allow the scenario to periodic
 author: Becky
 feature: Workfront Fusion
 exl-id: cd8ac958-b7a6-4536-89d8-c79a2f8940a6
+TQID: https://experienceleague.adobe.com/xepLecibr9U6FpQM0neDy15DbFGF55rR6gVYvo644H4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
 ---
 # Add a trigger module to a basic scenario
 

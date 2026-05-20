@@ -4,6 +4,10 @@ description: This document describes how Adobe Workfront Fusion behaves in situa
 author: Becky
 feature: Workfront Fusion
 exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
+TQID: https://experienceleague.adobe.com/rqDQTI-IuOW95TbguHt-F2-4lugdaOfJf-7dcwXk5ZE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Type coercion
 

@@ -9,6 +9,13 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: eb793c35-8709-48ab-8968-c9d553ba5ca0
+TQID: https://experienceleague.adobe.com/DK4QtOSIzhw45VV7eE9L4qsoVD6A3vOcO-KPrtZfJjo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
 ---
 # Workfront Fusion release activity: Week of April 19, 2021
 

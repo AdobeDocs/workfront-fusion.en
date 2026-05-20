@@ -1,9 +1,16 @@
 ---
-title: "HTTP > Other modules"
+title: HTTP > Other modules
 description: The Adobe Workfront Fusion HTTP app provides various modules for communication based on Hypertext Transfer Protocol (HTTP) protocol. HTTP is the foundation of data communication for the World Wide Web. You can use the modules to download web pages and files, call webhooks and API endpoints, and so on.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
+TQID: https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # HTTP > Other modules
 

@@ -4,6 +4,10 @@ description: You can view a list of your organization's users
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c6d6e01-b76c-4f1c-a310-e2b7fd48d1b2
+TQID: https://experienceleague.adobe.com/-Uv4ZTTIlP-XtRZHz7YGl9KpAyH5f2-lU-uPh51xXTI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # View users in an organization
 

@@ -1,11 +1,15 @@
 ---
 content-type: reference
-title: 'Build practice scenarios: article index'
+title: "Build practice scenarios: article index"
 description: This section contains articles that take you through the process of building simple scenarios.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 8e2779c3-dd54-44f8-9b38-5b308fc26bed
+TQID: https://experienceleague.adobe.com/2w6eHErImAgTHz9ZOX2ruiigVlHYyuQ1V1-SCmElImY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Build practice scenarios: article index
 

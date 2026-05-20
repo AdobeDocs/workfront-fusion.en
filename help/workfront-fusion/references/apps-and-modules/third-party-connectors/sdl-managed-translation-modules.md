@@ -4,6 +4,10 @@ description: In an Adobe Workfront Fusion scenario, you can connect your SDL Man
 author: Becky
 feature: Workfront Fusion
 exl-id: 41953b04-9011-4ddb-9f53-cdf11e807e04
+TQID: https://experienceleague.adobe.com/J6v5bxEi3MzcrkaiQQFOpToDzon0K-BhpmuJQe8sdgY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # [!DNL SDL Managed Translation] modules
 

@@ -1,9 +1,13 @@
 ---
-title: 'Plan a scenario: article index'
-description: 'Plan a scenario: article index'
+title: "Plan a scenario: article index"
+description: "Plan a scenario: article index"
 author: Becky
 feature: Workfront Fusion
 exl-id: a32140de-38b3-438b-bcb4-058a25896cb0
+TQID: https://experienceleague.adobe.com/0L-bl6bUfeHTrpoPSqZOwRu40e3q41d4f6pOPB3bLWs
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Plan a scenario: article index
 

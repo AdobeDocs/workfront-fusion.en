@@ -4,6 +4,13 @@ description: You can copy modules, groups of modules, or entire scenarios in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
+TQID: https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Copy modules or scenarios
 

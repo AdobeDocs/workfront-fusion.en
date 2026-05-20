@@ -4,6 +4,10 @@ description: Manage Adobe Workfront Fusion users in your organization
 author: Becky
 feature: Workfront Fusion
 exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
+TQID: https://experienceleague.adobe.com/UCFBSGkCJGq9p9uNPUstsf9ftH6tJ35bcPxOSI3HtNw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # View or edit user details
 

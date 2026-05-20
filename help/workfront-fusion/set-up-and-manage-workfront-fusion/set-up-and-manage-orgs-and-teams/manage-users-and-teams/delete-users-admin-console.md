@@ -1,11 +1,15 @@
 ---
 content-type: reference
-title: 'Set up and managing organizations and teams: article index'
+title: "Set up and managing organizations and teams: article index"
 description: This section contains articles related to setting up and managing organizations and teams in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa570f28-7387-47c5-9968-e3554921b0f5
+TQID: https://experienceleague.adobe.com/ouJ-qNCBSqKotZOJ7lGeOm2sAv6gqTPpUv8CpfaSg7M
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Delete users through the [!DNL Adobe Admin Console]
 

@@ -4,6 +4,13 @@ description: You can paste a cURL request into your scenario, and Fusion creates
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d466809-860d-4f72-9044-ebe2df943674
+TQID: https://experienceleague.adobe.com/vPAMsVLVV7C3ykPPXgbMgDTosd0M3hYKYVL-OFszXqw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Use cURL to add an HTTP module
 

@@ -4,6 +4,10 @@ description: Sometimes, it is useful to re-execute a failing module if there is 
 author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
+TQID: https://experienceleague.adobe.com/r1SIrrx4tb8p7urdzHacKlFTlYCv47tlsj7c5jT-k3w
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Configure `retry` error handling workaround
 

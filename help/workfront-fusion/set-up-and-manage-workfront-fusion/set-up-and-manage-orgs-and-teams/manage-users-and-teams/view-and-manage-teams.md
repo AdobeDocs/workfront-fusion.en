@@ -4,6 +4,10 @@ description: You can view a list of your organization's teams and edit the team 
 author: Becky
 feature: Workfront Fusion
 exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
+TQID: https://experienceleague.adobe.com/1cqWKL8dU7DQmLbQz8ig9az1pcDz1AOSE8G0RAOExss
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # View and manage teams
 

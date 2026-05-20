@@ -6,6 +6,10 @@ draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 1ed04f6e-0ab2-46f0-97de-f189be3ae23e
+TQID: https://experienceleague.adobe.com/ulm-bA-hp5ePfeaZEEEbCKNKMr-xMKLvmGu7S-s7stM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Workfront Fusion release activity: Week of February 28, 2022
 

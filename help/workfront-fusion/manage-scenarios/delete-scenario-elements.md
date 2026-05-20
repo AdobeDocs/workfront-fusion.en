@@ -4,6 +4,10 @@ description: You can view and manage your teams connections in the Connections a
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
+TQID: https://experienceleague.adobe.com/T1mLjporbj48nc4521HQllDf0Bw040XGqZG0upeTRrg
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Delete scenario elements
 

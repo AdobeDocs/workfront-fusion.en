@@ -4,6 +4,10 @@ description: The following string functions are available in the Adobe Workfront
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
+TQID: https://experienceleague.adobe.com/n1069qGTzCI9vCLsUgEF36uF0Hh9wZufa4xGTGoAeIc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # String functions
 

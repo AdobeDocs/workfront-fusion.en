@@ -4,6 +4,15 @@ description: In an Adobe Workfront Fusion scenario, you can automate workflows t
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
+TQID: https://experienceleague.adobe.com/pZThAMSHKt13YUQ3F3MABQiBmxH374XDZBRHElGj05s
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # Veeva Vault modules
 

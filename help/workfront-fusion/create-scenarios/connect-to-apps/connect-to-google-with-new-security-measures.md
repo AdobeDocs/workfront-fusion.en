@@ -4,6 +4,13 @@ description: Google has introduced restrictions on how users can use their API. 
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
+TQID: https://experienceleague.adobe.com/R2hPx1AF2Vul-mQFWYiZLOm63-o6QIhgW1Azn9AMOIg
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 ---
 # Connect Adobe Workfront Fusion to Google Services with updated security measures
 

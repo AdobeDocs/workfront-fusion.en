@@ -4,6 +4,10 @@ description: Your users are assigned to teams when you create them. If an existi
 author: Becky
 feature: Workfront Fusion
 exl-id: c972a9f0-5195-4d80-8a19-4251d8ec57de
+TQID: https://experienceleague.adobe.com/OrXq9QrehAn2GnWWvEjgj0rm4W9JEgRvhESMJIvRJEY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 ---
 # Add a user to a team
 
