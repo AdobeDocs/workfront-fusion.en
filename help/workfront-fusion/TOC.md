@@ -273,6 +273,8 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
     * [Manage scenarios from the Scenarios area](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
     * [Edit Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+    * [Retrigger a scenario execution](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution)
+
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)

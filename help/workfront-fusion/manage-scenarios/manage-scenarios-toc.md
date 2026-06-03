@@ -30,3 +30,4 @@ product_v2:
 * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
 * [Manage scenarios from the Scenarios area](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * [Edit Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+* [Retrigger a scenario execution](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution)
