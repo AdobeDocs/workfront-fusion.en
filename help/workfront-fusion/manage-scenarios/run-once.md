@@ -33,7 +33,7 @@ The Run once feature is found in the scenario editor.
 
       >[!NOTE]
       >
-      >This option is not available for child scenarios.
+      >This option is available for webhook scenarios only.
 
    * **Use a previous execution input**: You must select a previous execution. The "Run once" execution uses the input data that triggered the selected execution.
 

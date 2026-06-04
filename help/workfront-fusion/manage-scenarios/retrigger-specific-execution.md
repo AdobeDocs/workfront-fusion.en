@@ -3,7 +3,6 @@ title: Retrigger a specific scenario execution
 description: You can retrigger a specific scenario execution to process the data using an updated scenario blueprint, or to view its data flow.
 author: Becky
 feature: Workfront Fusion
-TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
@@ -12,9 +11,11 @@ product_v2:
 
 You can retrigger a specific scenario execution to process the data using an updated scenario blueprint, or to view its data flow. When you retrigger an execution, the scenario runs using that execution's data. 
 
-For example, if you update a scenario to add an action such as creating an issue, you can retrigger an execution that occurred before the update. The updated scenario will run using the original scenario's triggering event, but will include the updated action. In this example, the scenario creates an issue as part of the new ex ecution.
+For example, if you update a scenario to add an action such as creating an issue, you can retrigger an execution that occurred before the update. The updated scenario will run using the original scenario's triggering event, but will include the updated action. In this example, the scenario creates an issue as part of the new execution.
 
-Retriggering scenarios can be especially useful in scenarios that use webhooks, since the original webhook event can be used again, and you would not have to recreate the event to retrigger the scenario.
+Retriggering is available for scenarios that have webhook triggers, and for child scenarios.
+
+When retriggering a scenario that uses a webhook, the original webhook event can be used again, so you do not have to recreate the event to retrigger the scenario.
 
 When using chained scenarios, retriggering can also be applied to a child scenario. The child scenario can be retriggered using the data sent from the parent scenario in the original execution, without retriggering the parent.
 
