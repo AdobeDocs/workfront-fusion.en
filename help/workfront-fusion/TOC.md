@@ -269,7 +269,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [View and manage chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
     * [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
     * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-    * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+    * {hide-from-toc} [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
     * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
     * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
     * [Manage scenarios from the Scenarios area](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
