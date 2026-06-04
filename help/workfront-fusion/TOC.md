@@ -10,6 +10,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2026 {#fusion-releases-2026}
+        * [Workfront Fusion release activity: Week of June 1, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
         * [Workfront Fusion release activity: Week of May 25, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
         * [Workfront Fusion release activity: Week of May 11, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-11.md)
         * [Workfront Fusion release activity: Week of May 4, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
@@ -273,6 +274,8 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
     * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
     * [Manage scenarios from the Scenarios area](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
     * [Edit Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+    * [Retrigger a scenario execution](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
+    * [Use Run once to test a scenario](/help/workfront-fusion/manage-scenarios/run-once.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
