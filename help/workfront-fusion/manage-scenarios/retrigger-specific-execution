@@ -12,11 +12,15 @@ product_v2:
 
 You can retrigger a specific scenario execution to process the data using an updated scenario blueprint, or to view its data flow. When you retrigger an execution, the scenario runs using that execution's data. 
 
-For example, if you update a scenario to add an action such as creating an issue, you can retrigger an execution that occurred before the update. The updated scenario will run using the original scenario's triggering event, but will include the updated action. In this example, the scenario creates an issue as part of the new execution.
+For example, if you update a scenario to add an action such as creating an issue, you can retrigger an execution that occurred before the update. The updated scenario will run using the original scenario's triggering event, but will include the updated action. In this example, the scenario creates an issue as part of the new ex ecution.
 
 Retriggering scenarios can be especially useful in scenarios that use webhooks, since the original webhook event can be used again, and you would not have to recreate the event to retrigger the scenario.
 
-Retriggering can also be applied to a child scenario. The child scenario can be retriggered using the data sent from the parent scenario in the original execution, without retriggering the parent.
+When using chained scenarios, retriggering can also be applied to a child scenario. The child scenario can be retriggered using the data sent from the parent scenario in the original execution, without retriggering the parent.
+
+For more information on webhooks, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
+
+For more information on chaining scenarios, see [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
 ## Access requirements
 
