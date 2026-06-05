@@ -40,15 +40,32 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Adobe App Builder module
+## Adobe App Builder modules
 
-The only currently available Adobe App Builder module is Execute an action, which allows you to use a previously configured custom JavaScript function.
+### Run a custom code block
+
+This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Select the connection that contains the custom function that you want to run. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Code block]</td> 
+   <td>Enter the block of code that you want the module to run.<p>To format the code for easier reading, click the <b>Format code</b> icon.</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Run a custom function
+
+This module allows you to use a previously configured custom JavaScript function stored in the Functions area.
 
 For instructions on configuring a custom function, see [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
-
-### Execute an action
-
-This module executes a previously configured custom function.
 
 <table style="table-layout:auto"> 
  <col> 
