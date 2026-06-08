@@ -358,7 +358,7 @@ This module retrieves details of approvals for a list of documents of a specific
       </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Maximum number of returned results]
+           Maximum number of returned results
          </td>
          <td>
               Enter or map the maximum number of results you want the module to return during each scenario execution cycle. 
@@ -418,13 +418,63 @@ This module makes a custom API call to the Adobe Workfront Unified Review and Ap
 
 ### Uncategorized
 
-#### Bulk Delete Templates
+#### Bulk delete templates
 
-#### Create Approval
+This module deletes the specified approval templates.
 
-#### Create Stages
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template IDs</p></td>
+      <td>For each template that you want to delete, click <b>Add item</b> and enter the template ID.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of deleted templates
+         </td>
+         <td>
+              Enter or map the maximum number of templates you want the module to delete during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
 
-#### Create Template
+#### Create an approval
+
+This action module creates an approval for a document on Adobe cloud storage, including stage data or a template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to create an approval for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the template that you want to use for this approval.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Create a template
 
 #### Delete Approval
 
