@@ -385,7 +385,7 @@ This action module retrieves a list of records based on criteria you specify.
       <td role="rowheader">
         <p>[!UICONTROL Record Fields]</p>
       </td>
-      <td>For each field that you want to use in your search, locate that field, select the opertor, and enter or map the value that you want to search for. Field are available based on the record type selected.</td> 
+      <td>For each field that you want to use in your search, locate that field, select the operator, and enter or map the value that you want to search for. Field are available based on the record type selected.</td> 
       </tr>
      <tr>
       <td role="rowheader">

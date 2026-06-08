@@ -342,6 +342,31 @@ This action modules unlocks the specified approval stage and sets the stage to a
 
 #### Bulk lookup approvals
 
+This module retrieves details of approvals for a list of documents of a specific type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document IDs</p></td>
+      <td>For each document that you want to retrieve approval details for, click <b>Add item</b> and enter the document ID.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           [!UICONTROL Maximum number of returned results]
+         </td>
+         <td>
+              Enter or map the maximum number of results you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
 #### Make a custom API call
 
 ### Uncategorized
