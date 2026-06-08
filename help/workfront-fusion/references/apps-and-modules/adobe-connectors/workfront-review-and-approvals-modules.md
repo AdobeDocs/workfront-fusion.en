@@ -232,8 +232,6 @@ This action module creates or updates an approval stage with the given stage dat
 
 This action module deletes participants from an approval.
 
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -244,7 +242,7 @@ This action module deletes participants from an approval.
     </tr>
      <tr>
       <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to retrieve approval details for.</td> 
+      <td>Enter or map the ID of the asset that you want to delete participants from.</td> 
       </tr>
      <tr>
       <td role="rowheader">
@@ -263,9 +261,82 @@ This action module deletes participants from an approval.
 
 #### Lock a stage
 
+This action modules locks the specified approval stage and sets the stage to inactive.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to lock.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stage ID</p>
+      </td>
+      <td>Enter or map the ID of the stage that you want to lock.</td> 
+      </tr>
+  </tbody>
+</table>
+
 #### Make a decision
 
+This action module applies a decision to an approval or approval stage.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to lock.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Decision</p></td>
+      <td>Select the decision to apply to the approval or stage.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stage IDs</p>
+      </td>
+      <td>For each stage that you want to apply the decision to, click <b>Add item</b> and enter the stage ID.</td> 
+      </tr>
+  </tbody>
+</table>
+
 #### Unlock a stage
+
+This action modules unlocks the specified approval stage and sets the stage to active.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to unlock.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stage ID</p>
+      </td>
+      <td>Enter or map the ID of the stage that you want to lock.</td> 
+      </tr>
+  </tbody>
+</table>
 
 ### Other
 
