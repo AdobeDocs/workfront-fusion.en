@@ -48,7 +48,7 @@ If the first module returns a bundle, the bundle passes through the rest of the 
 
 The scenario's first step, performed by the first module, is to watch for documents in Workfront.. Each document that it finds is considered one bundle. If the module runs without finding any bundles, the scenario ends after the first module.
 
-If a bundle is returned, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the secondmodule, which uploads the bundle to the [!DNL Dropbox] folder.
+If a bundle is returned, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the second module, which uploads the bundle to the [!DNL Dropbox] folder.
 
 ![Execution flow of integration scenario](assets/example-execution-flow-wf-dropbox.png)
 
