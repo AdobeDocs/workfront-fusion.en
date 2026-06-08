@@ -563,7 +563,7 @@ This action module retrieves details of the specified comment.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Team ID] </td> 
-   <td> <p>Select or map the team that owns the project that contains the folder you want to retrieve assets from..</p> </td> 
+   <td> <p>Select or map the team that owns the project that contains the folder you want to retrieve assets from.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Project ID] </td> 

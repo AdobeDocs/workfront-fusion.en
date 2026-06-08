@@ -120,8 +120,8 @@ You may choose to execute:
 
 To execute the single module:
 
-1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays..
-1. Provide sample values for the input items, then click **[!UICONTROL OK]** .
+1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
+1. Provide sample values for the input items, then click **[!UICONTROL OK]**.
 1. When the module finishes running, click the bubble above the module to explore its full output.
 
    The mapping panel for later modules now contains all of the items in the module's output.

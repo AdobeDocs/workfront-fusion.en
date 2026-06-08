@@ -551,7 +551,7 @@ When you are configuring this module, the following fields display.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID or Key]</td> 
-   <td>Enter or map the ID or Key of the record you want to update, then fill in the other fields specific to that record type appear in the module..</td> 
+   <td>Enter or map the ID or Key of the record you want to update, then fill in the other fields specific to that record type appear in the module.</td> 
   </tr> 
  </tbody> 
 </table>

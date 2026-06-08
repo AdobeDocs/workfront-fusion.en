@@ -230,7 +230,7 @@ This action module retrieves the details of a message from a selected channel.
 
 +++ **[!UICONTROL Get a Public Channel Message]**
 
-This action module returns a message with a given ID from a specified public channel..
+This action module returns a message with a given ID from a specified public channel.
 
 <table style="table-layout:auto"> 
  <col> 

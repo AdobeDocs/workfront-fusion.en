@@ -167,7 +167,7 @@ When you are configuring this module, the following fields display.
 
 This action module copies an email or email draft into a folder you specify.
 
-You specify the folder, the destination folder, and the ID of the email..
+You specify the folder, the destination folder, and the ID of the email.
 
 The module returns the ID of the email and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 
@@ -367,7 +367,7 @@ When you are configuring this module, the following fields display.
 
 This action module moves an email or an email draft to a folder you specify.
 
-You specify the folder, the destination folder, and the ID of the email..
+You specify the folder, the destination folder, and the ID of the email.
 
 The module returns the ID of the  email and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
 

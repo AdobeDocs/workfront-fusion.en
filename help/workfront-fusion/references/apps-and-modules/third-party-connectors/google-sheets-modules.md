@@ -702,7 +702,7 @@ Returns results matching the given criteria.
   </tr> 
   <tr> 
    <td>[!UICONTROL Spreadsheet] </td> 
-   <td> <p>Select the Google spreadsheet that contains the sheet you want to search..</p> </td> 
+   <td> <p>Select the Google spreadsheet that contains the sheet you want to search.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Sheet] </td> 

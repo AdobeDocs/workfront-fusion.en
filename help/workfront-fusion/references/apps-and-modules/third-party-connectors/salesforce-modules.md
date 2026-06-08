@@ -252,7 +252,7 @@ This module requires some extra setup. There must be a Flow configured for outbo
 1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
 1. Click **[!UICONTROL Done]**.
-1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**.
 1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
 1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.

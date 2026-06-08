@@ -7,6 +7,14 @@ exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
 ---
 # View and manage chained scenario relationships
 
+>[!IMPORTANT]
+>
+>This feature is in Beta and is not recommended for mission-critical production workflows. As a Beta feature, behavior may change and edge cases may not be fully handled. 
+>
+>For stable integrations, consider triggering a second scenario via webhook using an HTTP Request module — this pattern uses fully supported primitives and gives each scenario independent execution control.
+>
+>If you choose to use chained scenarios, review [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) for design guidance.
+
 You can a map of the relationships between parent and child scenarios. You can also use the map to jump to different scenarios in the chain.
 
 For more information on chained scenarios, see [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
