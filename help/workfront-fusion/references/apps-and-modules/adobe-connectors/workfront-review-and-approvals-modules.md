@@ -63,7 +63,16 @@ You must have the following to access Workfront Content and Approvals:
 
 ## Adobe Workfront Unified Review and Approvals modules
 
+When you configure Workfront modules, Workfront Fusion displays the fields listed below. Along with these, additional Workfront fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
+If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+
+![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+
+* [Searches]()
+* [Actions]()
+* [Other]()
 
 ### Searches
 
@@ -96,9 +105,9 @@ This search module retrieves approval details for an asset.
 
 ### Actions
 
-* [Add or update participants]()
-* [Create or update an approval stage]()
-* [Delete participants]()
+* [Add or update participants](#add-or-update-participants)
+* [Create or update an approval stage](#create-or-update-an-approval-stage)
+* [Delete participants](#delete-participants)
 * [Lock a stage]()
 * [Make a decision]()
 * [Unlock a stage]()
@@ -120,20 +129,137 @@ This action module adds or updates participants on the default stage on an appro
       <td role="rowheader">
         <p>Document ID</p>
       </td>
-      <td>Enter or map the ID of the asset that you want to retrieve approval details for.</td> 
+      <td>Enter or map the ID of the asset that you want to add or update a participant for.</td> 
       </tr>
      <tr>
       <td role="rowheader">
         <p>Add participants to stages</p>
       </td>
-      <td>For each stage that you want to add participants to, click <b>Add item</b> and enter the stage.<p> Then, for each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.</p> </td> 
+      <td>For each stage that you want to add participants to, click <b>Add item</b> and enter the stage.<p> Then, for each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.</p>
+      <ul>
+      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Participant type</b><p>Select whether the participant is a user or a tea.</p></li>
+      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul> 
+      </td> 
       </tr>
   </tbody>
 </table>
 
 #### Create or update an approval stage
 
+This action module creates or updates an approval stage with the given stage data.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to create or update a stage for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to add participants to, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+  </tbody>
+</table>
+
+##### Stages fields
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Stage name</td>
+      <td>Enter or map a name for the stage.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Deadline date</p></td>
+      <td>If the deadline is a specific date, enter or map the date.</td> 
+      </tr>
+  </tbody>
+     <tr>
+      <td role="rowheader"><p>Deadline business days</p></td>
+      <td>If the deadline is after a specific number of business days, enter or map the number of days.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Deadline time</p></td>
+      <td>If the deadline is a specific time, enter or map the time.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Participants</p></td>
+      <td>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.      
+      <ul>
+      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Participant type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul> 
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Auto lock enabled</p></td>
+      <td>Specify whether you want to auto-lock the stage.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Parent IDs</p></td>
+      <td>For each parent that you want to add to the stage, click <b>Add item</b> and enter the Parent ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Triggers</p></td>
+      <td>To configure a trigger for this approval stage, click <b>Add item</b> and enter the trigger details.      <ul>
+      <li><b>Type</b><p>Select <b>Activation</b></p></li>
+      <li><b>When</b><p>Select whether to trigger the stage when the approval is created or when another stage is complete.</p></li>
+      <li><b>Stages</b><p>For each stage that you want to add to the trigger, click <b>Add item</b> and enter or map the stage ID.</p></li>
+      <li><b>Decisions</b><p>For each decision that you want to add to the trigger, click <b>Add item</b> and enter or map the decision.</p></li>
+      </ul> 
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Custom message</p></td>
+      <td>Enter or map a custom message for the stage.</td> 
+      </tr>
+</table>
+
 #### Delete participants
+
+This action module deletes participants from an approval.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to retrieve approval details for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant type</p>
+      </td>
+      <td>Select whether the participants is a user or a team.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant ID</p>
+      </td>
+      <td>Enter or map the ID of the participant.</td> 
+      </tr>
+  </tbody>
+</table>
 
 #### Lock a stage
 
@@ -143,7 +269,56 @@ This action module adds or updates participants on the default stage on an appro
 
 ### Other
 
+#### Bulk lookup approvals
+
 #### Make a custom API call
 
+### Uncategorized
+
+#### Bulk Delete Templates
+
+#### Create Approval
+
+#### Create Stages
+
+#### Create Template
+
+#### Delete Approval
+
+#### Delete a Stage
+
+#### Delete Decision on Stage
+
+#### Delete Decisions
+
+#### Delete Template
+
+#### Get Suggested Approvals
+
+#### Get Suggested Participants
+
+#### Get Template
+
+#### Make Decision on Stage
+
+#### Remind Participant
+
+#### Remind Participant on Stage
+
+#### Remind Undecided Participants
+
+#### Remind Undecided Participants on a Stage
+
+#### Search AI brand reviews
+
+#### Update all stages
+
+#### Update a stage
+
+#### Update Template
+
+#### List Bots
+
+#### List Templates
 
 
