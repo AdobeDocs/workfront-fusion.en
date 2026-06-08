@@ -166,7 +166,7 @@ When creating a connection, you can select whether to use a password, or whether
       <tr>
         <td role="rowheader">Your session expiration time in minutes</td>
         <td>
-          <p>Enter the expiration time of your session, in minutes..</p>
+          <p>Enter the expiration time of your session, in minutes.</p>
         </td>
       </tr>
      </tbody> 

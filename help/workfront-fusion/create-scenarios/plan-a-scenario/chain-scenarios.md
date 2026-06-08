@@ -11,9 +11,13 @@ product_v2:
 ---
 # Chain multiple scenarios together
 
->[!NOTE]
+>[!IMPORTANT]
 >
->This feature is currently in Beta.
+>This feature is in Beta and is not recommended for mission-critical production workflows. As a Beta feature, behavior may change and edge cases may not be fully handled. 
+>
+>For stable integrations, consider triggering a second scenario via webhook using an HTTP Request module — this pattern uses fully supported primitives and gives each scenario independent execution control.
+>
+>If you choose to use chained scenarios, carefully review the design guidance and constraints in this article, particularly the [Best Practices](#best-practices) section.
 
 You can chain scenarios together, allowing one scenario to trigger another, and returning the data output by the second scenario to the first. This allows more modular scenario creation, where you do not have to duplicate scenario sections in multiple scenarios.
 
@@ -58,7 +62,9 @@ Consider the following example use cases for chaining scenarios:
 
 * **Error handling**: It's common for organizations to have the same error handling actions across multiple scenarios, such as an error handling route that sends an error log to a data store and creates a slack notification. You can create a child scenario with these actions and chain that scenario in error handling routes in multiple scenarios.
 
-* **Extending time**: You can use chaining for large batch operations with long running actions, such as when you export and import files. This operation takes some time if there are many files. Because child scenarios do not count against the parent scenario's timeout, you can exceed execution time by using multiple child scenarios to export or import the files.
+* **Extending time**:  You can use chaining for large batch operations where total processing time would exceed a single scenario's 40-minute execution limit. However, treat this pattern with caution: a parent scenario that chains to multiple long-running child scenarios has no overall timeout boundary. If any child scenario hangs or a platform issue occurs, the parent waits indefinitely without surfacing an error.
+
+   Before using chaining to extend execution time, consider whether the batch size can be reduced, the frequency increased, or the design restructured to avoid long sequential chains. See [Best practices](#best-practices) below.  
 
 * **Replacing iterators** Replacing iterators with child scenarios can reduce memory usage, such as in complex operations in an iteration that cause Out of Memory error. You can create a separate scenario for the complex operation and replace the iterator with Call a child scenario module
 
@@ -106,3 +112,39 @@ When chaining scenarios, follow these practices to avoid recursion:
 ### Use error handling to ensure a response
 
 Because the parent scenario is waiting for a response from the child scenario before it can continue, you must ensure that the child scenario is built so that it will provide a response even if it encounters an error.
+
+### Do not use the "Commit Trigger Last (CTL)" setting
+
+We do not recommend using the scenario setting "Commit Trigger Last (CTL)" with chained scenarios. If you need retry behavior on a scenario that uses chaining, implement it explicitly using an error handling route with a defined maximum retry count.
+
+### Limit nesting depth
+
+Limit chained scenario networks to two levels of depth (parent → child). Scenarios nested three or more levels deep (parent → child → grandchild) significantly increase complexity, reduce observability, and make it difficult to diagnose failures without engineering support.
+
+If your design requires deeper nesting, document the full chain map and ensure monitoring is in place before deploying to production.
+
+### Use Fire and Forget carefully
+
+When **Fire and Forget** is enabled on the Call a child scenario module, the parent scenario dispatches the child and continues immediately without waiting for a response. The parent has no visibility into whether the child scenario ran, succeeded, or failed.
+
+Use Fire and Forget only when:
+
+* The child scenario performs logging, notifications, or audit writes that do not affect the parent scenario's logic
+* You have independent monitoring in place to detect silent child failures
+
+Do not use Fire and Forget when:
+
+* The child scenario performs writes that the parent depends on
+* You need to know whether the child scenario succeeded before the parent continues
+* The workflow is transactional or requires exactly-once processing guarantees
+
+### Avoid calling child scenarios inside iterators at high volume
+
+Placing a Call a child scenario module inside a BasicFeeder or other iterator dispatches a child scenario for every item processed. At high item counts (hundreds or more per run), this creates significant dispatch overhead and increases exposure to platform reliability issues.
+
+Before using this pattern:
+
+* Consider whether the child scenario's logic can be inlined directly into the parent scenario as modules
+* Pre-compute any lookups that return the same value for every iteration outside the iterator, rather than dispatching a chain call per item
+* Confirm the realistic maximum item count and review with your administrator before deploying to production
+

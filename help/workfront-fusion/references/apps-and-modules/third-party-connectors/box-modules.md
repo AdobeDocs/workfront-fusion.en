@@ -106,7 +106,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 #### [!UICONTROL New File Event] 
 
-This instant trigger module starts a scenario when a the selected action occurs on a file..
+This instant trigger module starts a scenario when a the selected action occurs on a file.
 
 <table style="table-layout:auto">
  <col> 

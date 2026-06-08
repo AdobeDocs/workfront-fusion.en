@@ -414,7 +414,7 @@ This action module adds or deletes rows of a specified push dataset table.
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Enter a table]</td>
-      <td>Select or map the option to select the dataset that contains the table you want to adjust..</td>
+      <td>Select or map the option to select the dataset that contains the table you want to adjust.</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Dataset ID]</td>

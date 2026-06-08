@@ -22,6 +22,12 @@ Work automation requires rapid processing, so Adobe Workfront Fusion is designed
 * The default scenario execution timeout is **40 minutes**. When the execution reaches this timeout, Workfront Fusion interrupts scenario execution after the next cycle or operation, depending on the scenario. This forces the scenario to stop shortly after the 40 minute limit is reached
 
    Chaining scenarios does not count toward scenario execution timeout. A parent scenario does not accrue time while waiting for a child scenario to execute.
+
+   >[!IMPORTANT]
+   >
+   > While chaining allows workflows to run beyond 40 minutes, this should be treated as a design risk signal, not a supported workaround. Parent scenarios that span multiple long-running child scenarios have no overall timeout boundary. If a child scenario hangs or encounters a platform issue, the parent waits indefinitely with no error and no automatic recovery.
+   >
+   > If your scenario design requires chaining to avoid the 40-minute limit, review your architecture before deploying to production. See [Chain multiple scenarios together](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios) for design guidance.
 * The maximum size of a scenario blueprint is **5 MB**, but we recommend keeping scenario size under **3 MB**.
 
   App modules that create or update data with large numbers of fields can cause very large blueprints.
@@ -30,6 +36,14 @@ Work automation requires rapid processing, so Adobe Workfront Fusion is designed
   * When using other apps, use custom API modules to interact with any record type that has a large number of fields.
 
 * While there is no cap for the number of modules in a scenario, scenarios with more than 150 modules negatively impact the performance of your Workfront Fusion system. For this reason, we do not recommend creating scenarios with over 150 modules.
+
+## Chained scenarios
+
+* Scenario chaining functionality is in Beta and is not recommended for mission-critical workflows. As a Beta feature, behavior may change and edge cases may not be fully handled. 
+
+   For stable integrations, consider triggering a second scenario via webhook using an HTTP Request module. This pattern uses fully supported primitives and gives each scenario independent execution control.
+
+   If you choose to use chained scenarios, review the design guidance and constraints in the article [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
 ## Operations
 
@@ -72,6 +86,8 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
 * Execution history logs are limited to a size of **100 MB**. If the execution history exceeds this size, only the first 100 MB will be shown.
 * If a single operation's input or output is larger than 15 MB, it does not appear in the execution history.
 * If a scenario has multiple concurrent executions, only 5 executions display in the Executions area of the scenario details page. This is true even when more than 5 executions are running.
+* If a scenario is part of a chained network, execution history is maintained separately for each scenario in the chain. There is no unified trace view across parent and child scenarios. To investigate a chained execution, open each scenario's execution history individually.
+* If a single operation's input or output exceeds 15 MB, it does not appear in execution history. This limit applies to data passed between parent and child scenarios via chain modules.
 
 ## Incomplete executions
 

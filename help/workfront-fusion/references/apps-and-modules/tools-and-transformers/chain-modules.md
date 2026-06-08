@@ -11,9 +11,13 @@ product_v2:
 ---
 # Chain modules
 
->[!NOTE]
+>[!IMPORTANT]
 >
->This feature is currently in Beta.
+>This feature is in Beta and is not recommended for mission-critical production workflows. As a Beta feature, behavior may change and edge cases may not be fully handled. 
+>
+>For stable integrations, consider triggering a second scenario via webhook using an HTTP Request module — this pattern uses fully supported primitives and gives each scenario independent execution control.
+>
+>If you choose to use chained scenarios, review [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md) for design guidance.
 
 Using the Chain modules, you can connect one scenario to another.
 
@@ -79,6 +83,16 @@ To configure the Receive data from parent module:
 
 This module is located in the parent scenario. The fields reflect the data structure set in the Receive data from parent module in the child scenario.
 
+>[!IMPORTANT]
+>
+> Review the following before configuring this module in a production scenario:
+>
+> * **Do not enable Commit Trigger Last (CTL)** on this scenario when Fire and Forget is disabled. CTL will retry the scenario when it suspends waiting for a child response, creating an unbounded retry loop.
+> * **Use caution when placing this module inside an iterator.** Dispatching a child scenario for each item in a large iterator creates significant platform load. Consider inlining the child scenario's logic or pre-computing shared lookups outside the iterator.
+> * **Fire and Forget** means the parent has no visibility into whether the child ran or succeeded. Use only when child failures are monitored independently.
+>
+> For full design guidance, see [Chain multiple scenarios together](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios).
+
 >[!NOTE]
 >
 >* You can select an existing child scenario, or create a new one through this module.
@@ -107,7 +121,11 @@ To configure the Call a child scenario module
 
 This is in the child scenario, and sends data in the selected structure to the parent scenario. You can map this data in later modules in the parent scenario.
 
-If your child scenario has multiple routes, we recommend adding this module to a route that always runs and executes after any other route.
+>[!IMPORTANT]
+>
+> If your child scenario has multiple routes, you **must** ensure the Return response to parent module is reachable from every execution path. If the Return response module is on a route that is skipped or not executed, the parent scenario will wait indefinitely for a response that never arrives.
+>
+> Add the Return response to parent module after your router, on a route that always executes regardless of the router's outcome, or add error handling to ensure a response is always returned even when an error occurs.
 
 To configure the Add Responder module:
 

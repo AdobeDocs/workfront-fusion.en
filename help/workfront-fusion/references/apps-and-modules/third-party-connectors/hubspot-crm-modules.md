@@ -721,7 +721,7 @@ This trigger module starts a scenario when a new contact is added to a list. Thi
 
 +++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
-Returns a specific deal pipeline..
+Returns a specific deal pipeline.
 
 <table style="table-layout:auto"> 
  <col> 

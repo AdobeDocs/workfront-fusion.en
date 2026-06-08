@@ -17,7 +17,7 @@ The information in this article may be useful as you begin creating scenarios in
 
 ### Answer
 
-A scenario defines a sequence of steps to be executed by Adobe Workfront Fusion. For each scenario, you specify the data source, which data to use, and how the data is to be processed. Fusion lets you create simple or complex of scenarios, able to meet the use cases for your organization..
+A scenario defines a sequence of steps to be executed by Adobe Workfront Fusion. For each scenario, you specify the data source, which data to use, and how the data is to be processed. Fusion lets you create simple or complex of scenarios, able to meet the use cases for your organization
 
 For more information on scenarios, see [Scenario overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md).
 
