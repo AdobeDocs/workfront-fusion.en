@@ -571,7 +571,7 @@ This module removes the current user's decision from the specified stage. The cu
   </tbody>
 </table>
 
-#### Delete Decisions
+#### Delete decisions
 
 This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
 
@@ -630,11 +630,86 @@ This action module deletes the specified stage from the approval.
   </tbody>
 </table>
 
-#### Delete Template
+#### Delete a template
 
-#### Get Suggested Approvals
+This module deletes the specified approval template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the template that you want to delete.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of deleted templates
+         </td>
+         <td>
+              Enter or map the maximum number of templates you want the module to delete during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+#### Get suggested approvals
+
+This module returns suggested approval payloads from prior document versions.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to get suggested approvals for.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned approvals
+         </td>
+         <td>
+              Enter or map the maximum number of approvals you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
 
 #### Get Suggested Participants
+
+This module returns participant suggestions from the approval for the previous document approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to get suggested approval participants for.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned participants
+         </td>
+         <td>
+              Enter or map the maximum number of participants you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
 
 #### Get Template
 
