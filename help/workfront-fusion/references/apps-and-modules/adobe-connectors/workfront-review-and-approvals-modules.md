@@ -861,7 +861,7 @@ This module updates fields on the specified approval template.
   </tbody>
 </table>
 
-#### Create Stages
+#### Create stages
 
 This action module creates an approval with the given stage data.
 
@@ -895,7 +895,7 @@ This action module creates an approval with the given stage data.
   </tbody>
 </table>
 
-#### Remind Participant on Stage
+#### Remind a participant on a stage
 
 This module sends a reminder to a specific participant on a specific stage.
 
@@ -928,7 +928,33 @@ This module sends a reminder to a specific participant on a specific stage.
       </tr>
   </tbody>
 
-#### Remind Undecided Participants on a Stage
+#### Remind undecided participants on a stage
+
+This module sends reminder notifications to all undecided participants on a stage.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stage ID</p>
+      </td>
+      <td>Enter or map the ID of the stage that you want to send a reminder for.</td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Maximum number of reminders</p></td>
+      <td>Enter or map maximum number of reminders that you want the module to send during one execution cycle.</td> 
+      </tr>
+  </tbody>
 
 #### Remind Participant
 
