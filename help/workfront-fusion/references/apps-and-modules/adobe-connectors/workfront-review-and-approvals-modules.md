@@ -476,13 +476,159 @@ This action module creates an approval for a document on Adobe cloud storage, in
 
 #### Create a template
 
+This action module creates an approval template
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Name</p></td>
+      <td>Enter or map a name for the template.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Company ID</p></td>
+      <td>If you want to add a company scope to the template, enter or map the company ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Shared with</p></td>
+      <td>For each user that you want to share the template with, click <b>Add item</b> and user ID and desired access level.</td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Maximum number of created templates</p></td>
+      <td>Enter or map maximum number of templates that you want the module to create during one execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
 #### Delete Approval
 
-#### Delete a Stage
+This action module deletes the approval for the given document.
 
-#### Delete Decision on Stage
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete an approval from.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of deleted templates
+         </td>
+         <td>
+              Enter or map the maximum number of templates you want the module to delete during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+#### Delete a decision on a stage
+
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of deleted decisions
+         </td>
+         <td>
+              Enter or map the maximum number of decisions you want the module to delete during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
 
 #### Delete Decisions
+
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of deleted decisions
+         </td>
+         <td>
+              Enter or map the maximum number of decisions you want the module to delete during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+
+#### Delete a stage
+
+This action module deletes the specified stage from the approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a stage from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of deleted stages
+         </td>
+         <td>
+              Enter or map the maximum number of stages you want the module to delete during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
 
 #### Delete Template
 
