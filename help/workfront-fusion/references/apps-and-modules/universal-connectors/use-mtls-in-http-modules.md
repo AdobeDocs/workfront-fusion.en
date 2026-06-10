@@ -88,27 +88,12 @@ You can use the following links to download the Workfront Fusion public certific
 >
 >* These are non-wildcard mTLS certificates.
 
-Download the following zip file, the unzip it and use the PEM file for your datacenter.
-
-[Download Workfront Fusion 2026 certificates](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
-
-| Datacenter | Download link | Dates valid |
-| --- | --- | --- |
-| US AWS Datacenter | `fusion-prod-us-mtls-certificate-2026.pem` | January 29, 2026 to March 2, 2027 |
-| US Azure Cluster | `fusion-prod-az-mtls-certificate.pem` | September 21, 2025 to October 23, 2026 |
-| EU AWS Datacenter | `fusion-prod-eu-mtls-certificate-2026.pem` | January 29, 2026 to March 2, 2027 |
-| EU Azure Cluster | `fusion-prod-eu-az-mtls-certificate-2026.pem` | February 4, 2026 to March 8, 2027 |
-
-<!--
-
 | Datacenter | Download link | Dates valid |
 | --- | --- | --- |
 | US AWS Datacenter | [Download Workfront Fusion US Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
 | US Azure Cluster | [Download Workfront Fusion US Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | September 21, 2025 to October 23, 2026 |
 | EU AWS Datacenter | [Download Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
 | EU Azure Cluster | [Download Workfront Fusion EU Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | February 4, 2026 to March 8, 2027 |
-
--->
 
 ### Certificates for 2025
 
@@ -122,26 +107,11 @@ Download the following zip file, the unzip it and use the PEM file for your data
 >
 >* These are non-wildcard mTLS certificates.
 
-Download the following zip file, the unzip it and use the PEM file for your datacenter.
-
-[Download Workfront Fusion 2025 certificates](assets/2025-certs/fusion-prod-mtls-certificate-2025.zip)
-
-| Datacenter | File | Dates valid |
-| --- | --- | --- |
-| US Datacenter | `fusion-prod-us-mtls-certificate.pem` | March 3, 2025 to April 4, 2026 |
-| EU Datacenter | `fusion-prod-eu-mtls-certificate.pem` | March 3, 2025 to April 4, 2026 |
-| Azure Cluster | `fusion-prod-az-mtls-certificate.pem` | October 24, 2024 to November 25, 2025 |
-
-
-<!--
-
 | Datacenter | Download link | Dates valid |
 | --- | --- | --- |
 | US Datacenter | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
 | EU Datacenter | [Download Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
 | Azure Cluster | [Download Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025 |
-
--->
 
 <!--
 
