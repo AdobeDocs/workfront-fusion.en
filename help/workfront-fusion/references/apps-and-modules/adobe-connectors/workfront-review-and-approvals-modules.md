@@ -927,6 +927,7 @@ This module sends a reminder to a specific participant on a specific stage.
       <td>Enter or map maximum number of reminders that you want the module to send during one execution cycle.</td> 
       </tr>
   </tbody>
+</table>
 
 #### Remind undecided participants on a stage
 
@@ -955,12 +956,82 @@ This module sends reminder notifications to all undecided participants on a stag
       <td>Enter or map maximum number of reminders that you want the module to send during one execution cycle.</td> 
       </tr>
   </tbody>
+</table>
 
-#### Remind Participant
+#### Remind participant
+
+This module sends a reminder notification to the specified participant.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant ID</p>
+      </td>
+      <td>Enter or map the ID of the participant that you want to remind.</td> 
+      </tr>
+      <tr>
+      <td role="rowheader">
+        <p>Participant type</p>
+      </td>
+      <td>Enter or map the type of the participant that you want to remind.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant role</p>
+      </td>
+      <td>Enter or map the role of the participant that you want to remind.</td> 
+      </tr>
+  </tbody>
+</table>
 
 #### Remind Undecided Participants
 
+This module sends reminder notifications to all undecided participants on the specified approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+  </tbody>
+</table>
+
 #### Search AI brand reviews
+
+This module returns AI brand review results that were produced for a document version as part of an approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+  </tbody>
+</table>
 
 #### Update all stages
 
