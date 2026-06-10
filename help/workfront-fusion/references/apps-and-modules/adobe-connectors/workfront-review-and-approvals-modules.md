@@ -57,9 +57,62 @@ You must have the following to access Workfront Content and Approvals:
 
 ## Connect to Adobe Workfront Unified Review and Approvals
 
-### Adobe Workfront Approvals connection
 
-### Adobe Workfront server-to-server connection
+1. In any Adobe Workfront Unified Review and Approvals module, click **Add** next to the Connection field.
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Select <b>Adobe Workfront Server-to-Server connection</b>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>Enter a name for the new connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance name]</td>
+        <td>
+          <p>Enter the name of your instance, also known as your domain.</p><p>Example: if your URL is <code>https://example.my.workfront.com</code>, enter <code>example</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Instance lane]</td>
+        <td>
+          <p>Enter the environment type that this connection will connect to.</p><p>Example: if your URL is <code>https://example.my.workfront.com</code>, enter <code>my</code>.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>Enter your Workfront Client ID. This can be found in the OAuth2 Applications area of the Setup area in Workfront. Open the specific application you are connecting to to see the Client ID.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>Enter your Workfront Client secret. This can be found in the OAuth2 Applications area of the Setup area in Workfront. If you do not have a Client Secret for your OAuth2 application in Workfront, you can generate another. For instructions, see the Workfront documentation.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Scopes]</td>
+        <td>Enter any applicable scopes for this connection.</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Host prefix]</td>
+        <td>In most cases, this value should be <code>origin</code>.
+      </tr>
+    </tbody>
+    </table>
+
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
+
+   If you are not logged in to Workfront Unified Review and Approvals, you are directed to a login screen. After you log in, you can allow the connection.
 
 ## Adobe Workfront Unified Review and Approvals modules
 
@@ -881,7 +934,7 @@ This action module creates an approval with the given stage data.
       <td role="rowheader">
         <p>Stages</p>
       </td>
-      <td>For each stage that you want to add participants to, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
       </tr>
     </tr>
      <tr>
@@ -1027,16 +1080,104 @@ This module returns AI brand review results that were produced for a document ve
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>Document ID</p></td>
+      <td role="rowheader"><p>Bot user ID</p></td>
+      <td>Enter or map the user ID of the bot that you want to search reviews for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Parent document ID</p></td>
+      <td>Enter or map the ID of the parent document that you want to search reviews for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Document version ID</p></td>
       <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
       </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map a stage ID to limit results to a specific stage of the approval.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Page</p></td>
+      <td>Enter or map a page number to limit results to that page.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned reviews
+         </td>
+         <td>
+              Enter or map the maximum number of reviews you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
   </tbody>
 </table>
 
 #### Update all stages
 
+THis module replaces all stages on an existing approval with the given stage data. The document must be in an editable state.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to update stages for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to update, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+  </tbody>
+</table>
+
 #### List Bots
+
+This module returns a paginated list of bot accounts.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Page</p></td>
+      <td>Enter or map the page of results that you want to return.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned results
+         </td>
+         <td>
+              Enter or map the maximum number of results you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
 
 #### List Templates
 
+This module returns a list of all approval templates available to the current user. The current user is the user whose credentials are used in the connection used in this module.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+   </tbody>
+</table>
 
