@@ -13,7 +13,7 @@ You can retrigger a specific scenario execution to process the data using an upd
 
 For example, if you update a scenario to add an action such as creating an issue, you can retrigger an execution that occurred before the update. The updated scenario will run using the original scenario's triggering event, but will include the updated action. In this example, the scenario creates an issue as part of the new execution.
 
-Retriggering is available for scenarios that have webhook triggers, and for child scenarios.
+Retriggering is available for scenarios that have webhook triggers, and for chained scenarios.
 
 When retriggering a scenario that uses a webhook, the original webhook event can be used again, so you do not have to recreate the event to retrigger the scenario.
 
