@@ -279,7 +279,7 @@ This module supports large files. For more information on large files, see [Work
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>For each edited file you want to create, click Add item and enter the storage, location, and type as listed in this table.</p>
+        <p>For each edited file you want to create, click Add item and enter the storage, location, and type as listed.</p>
       </td>
     </tr>
     <tr>
@@ -393,7 +393,7 @@ This action module converts a file to JPEG, PNG, PSD or TIFF.
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>For each converted file you want to create, click Add item and enter the storage, location, and type as listed in this table.</p>
+        <p>For each converted file you want to create, click Add item and enter the storage, location, and type as listed.</p>
       </td>
     </tr>
     <tr>
@@ -573,7 +573,7 @@ This action module creates a new PSD with optional layers, and generates renditi
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>For each file you want to create, click Add item and enter the storage, location, and type as listed in this table.</p>
+        <p>For each file you want to create, click Add item and enter the storage, location, and type as listed.</p>
       </td>
     </tr>
     <tr>
@@ -802,7 +802,7 @@ This action module executes Photoshop actions using JSON commands.
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>For each file you want to create, click Add item and enter the storage, location, type, and overwrite option as listed in this table.</p>
+        <p>For each file you want to create, click Add item and enter the storage, location, type, and overwrite option as listed.</p>
       </td>
     </tr>
     <tr>
@@ -1362,7 +1362,7 @@ This action resizes an image, using the same aspect ratio.
     <tr>
       <td role="rowheader">[!UICONTROL Outputs]</td>
       <td>
-        <p>For each converted file you want to create, click Add item and enter the storage, location, and other options as listed in this table.</p>
+        <p>For each converted file you want to create, click Add item and enter the storage, location, and other options as listed.</p>
       </td>
     </tr>
     <tr>
@@ -1495,3 +1495,137 @@ This action module adds a watermark to the selected image.
       </td>
     </tbody>
 </table>
+
+
+### Create an artboard
+
+This module creates a new artboard in Photoshop.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>For each image that you want to add to this artboard, click <b>Add item</b> and enter the image's source type and location.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Artboard spacing]</p>
+      </td>
+   <td>Enter or map the spacing, in pixels, that you want to have between each artboard.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each converted file you want to create, click Add item and enter the storage, location, and other options as listed.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### Create or edit a composite
+
+This module creates or edits a composite in Photoshop.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>For each image that you want to add to this artboard, click <b>Add item</b> and enter the image's source type and location.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td>If you are creating an image, enter the image width in pixels.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Height]</td>
+      <td>
+        <p>If you are creating an image, enter the image height in pixels.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Mode]</td>
+      <td>
+        <p>Select the color mode for this image.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Fill]</td>
+      <td>
+        <p>Select the type of fill for the background layer.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>
+        <p>Enter or map a name for the new image.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Pixel scale factor]</td>
+      <td>
+        <p>Enter or map the pixel scale factor. This must be a number between 0.1 and 1.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Resolution]</td>
+      <td>
+        <p>In the <b>Value</b> field, enter the value of the resolution in density units (pixels per inch). The default value is 72.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Profile Type]</td>
+      <td>
+        <p>If you want to override the default color profile, select a profile type and enter details as listed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Crop > Top / Left / Bottom / Right]</td>
+      <td>
+        <p>Enter the bounds that you want to crop the image to.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ]</td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL ]</td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### Edit an image with various adjustments
+
+
+
+### Execute Photoshop actions, scripts, and transformations
+
+
+
+### Generate a manifest for the given input image
+
+
+
