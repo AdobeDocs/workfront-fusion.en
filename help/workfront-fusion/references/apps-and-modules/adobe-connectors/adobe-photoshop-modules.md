@@ -1691,6 +1691,7 @@ This module creates or edits a composite in Photoshop.
       <td>
         <p>Enter or map the maximum number of results that you want the module to work with during one execution cycle.</p>
       </td>
+      </tr>
       </tbody>
 </table>
 
@@ -1721,14 +1722,119 @@ This module makes Lightroom-style adjustments to an image.
     </tbody>
 </table>
 
-
-
-
 ### Execute Photoshop actions, scripts, and transformations
 
+This module executes actions, scripts, and transformations available in the Firefly Photoshop API.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>Enter or map the image's source type and location.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Actions]</p>
+      </td>
+   <td><p>For each action that you want to add, click <b>Add item</b> and enter the action's source, URL, and name.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL UXP source]</p>
+      </td>
+   <td><p>If you are using a UXP script, select whether you are providing a URL or inline content, then enter or map the URL or content.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Additional contents]</p>
+      </td>
+   <td><p>Add up to 25 files referenced from the action or UXP.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each edited file you want to create, click Add item and enter the format, destination, and output pattern.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>Enter or map the maximum number of results that you want the module to work with during one execution cycle.</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+### Generate a manifest
+
+This module generates a PSD manifest for the given input image.
 
 
-### Generate a manifest for the given input image
 
-
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source]</td>
+      <td>
+        <p>Enter or map the image's source type and location.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each edited file you want to create, click Add item and enter the destination details.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Include layer thumbnails]</p>
+      </td>
+   <td><p>Select Yes if you want to module to generate a thumbnail rendition for each layer in the manifest.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum thumbnail depth]</p>
+      </td>
+   <td><p>Enter or map the maximum depth for thumbnail renditions. For no maximum depth, enter <code>0</code>.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layer thumbnail format]</p>
+      </td>
+   <td><p>Select whether you want the thumbnails to be in JPEG or PNG format.</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Extract Smart Object data]</td>
+      <td>
+        <p>Select whether to extract embedded smart objects and include a presigned URL in the manifest.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Trim to transparency]</td>
+      <td>
+        <p>Select whether to trim each layer thumbnail to remove transparent pixels.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>Enter or map the maximum number of results that you want the module to work with during one execution cycle.</p>
+      </td>
+      </tr>
+    </tbody>
+</table> 
 
