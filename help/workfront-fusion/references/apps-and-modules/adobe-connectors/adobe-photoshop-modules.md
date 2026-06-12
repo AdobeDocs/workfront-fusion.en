@@ -1627,18 +1627,71 @@ This module creates or edits a composite in Photoshop.
       </td>
     </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL ]</td>
+      <td role="rowheader">[!UICONTROL Resample]</td>
       <td>
-        <p></p>
+        <p>Select the resampling method to use when resizing.</p>
       </td>
     </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL ]</td>
+      <td role="rowheader">[!UICONTROL Constrain proportions]</td>
       <td>
-        <p></p>
+        <p>Select Yes to maintain the aspect ratio between width and height. Select No to allow independent adjustment of width and height.</p>
       </td>
     </tr>
-     </tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Rasterize]</td>
+      <td>
+        <p>Select whether you want to rasterize the image.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Scale styles]</td>
+      <td>
+        <p>Select whether you want to apply scaling to styles when you resize the image.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Trim upon]</td>
+      <td>
+        <p>Select whether you want to trim upon transparent pixels.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Layers]</td>
+      <td>
+        <p>For each later you want to add, click <b>Add item</b> and enter layer details. </p><p>For details, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Create or edit a composite</a> in the Adobe documentation.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Default font PostScript name]</td>
+      <td>
+        <p>Enter or map the PostScript name of the default font that you want to use.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Missing font strategy]</td>
+      <td>
+        <p>Select whether you want the creation or edit to fail or to use the default font if a font is not available.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Additional fonts]</td>
+      <td>
+        <p>For each font that you want to add, click <b>Add item</b> and enter the font's source URL. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each edited file you want to create, click Add item and enter the output details. </p><p>For details see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">Create or edit a composite</a> in the Adobe documentation.</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Maximum number of results]</td>
+      <td>
+        <p>Enter or map the maximum number of results that you want the module to work with during one execution cycle.</p>
+      </td>
+      </tbody>
 </table>
 
 ### Edit an image with various adjustments
