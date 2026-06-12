@@ -1696,6 +1696,32 @@ This module creates or edits a composite in Photoshop.
 
 ### Edit an image with various adjustments
 
+This module makes Lightroom-style adjustments to an image.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>Enter or map the image's source type and location.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+   <td><p>For details see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">Edit an image with various adjustments</a> in the Adobe documentation.</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+
 
 
 ### Execute Photoshop actions, scripts, and transformations
