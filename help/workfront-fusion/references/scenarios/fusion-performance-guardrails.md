@@ -36,6 +36,7 @@ Work automation requires rapid processing, so Adobe Workfront Fusion is designed
   * When using other apps, use custom API modules to interact with any record type that has a large number of fields.
 
 * While there is no cap for the number of modules in a scenario, scenarios with more than 150 modules negatively impact the performance of your Workfront Fusion system. For this reason, we do not recommend creating scenarios with over 150 modules.
+* Scenario names can have no more than 120 characters.
 
 ## Chained scenarios
 
