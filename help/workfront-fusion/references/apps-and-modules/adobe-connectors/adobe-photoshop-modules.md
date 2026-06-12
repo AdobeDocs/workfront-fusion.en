@@ -1603,18 +1603,42 @@ This module creates or edits a composite in Photoshop.
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL ]</td>
+      <td role="rowheader">[!UICONTROL Hide]</td>
       <td>
-        <p></p>
+        <p>Select yes to hide pixels outside of crop bounds. IF set to false, pixels outside of crop bounds are deleted. The default is false.</p>
       </td>
     </tr>
     <tr>
+      <td role="rowheader">[!UICONTROL Resize > Width]</td>
+      <td>
+        <p>Select the unit that you want to use for the width, then select the value that represents the width that you want. </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Resize > Height]</td>
+      <td>
+        <p>Select the unit that you want to use for the height, then select the value that represents the height that you want. </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Resolution]</td>
+      <td>
+        <p>Select the unit that you want to use for the resolution, then select the value that represents the resolution that you want.</p>
+      </td>
+    </tr>
+     <tr>
       <td role="rowheader">[!UICONTROL ]</td>
       <td>
         <p></p>
       </td>
     </tr>
-    </tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL ]</td>
+      <td>
+        <p></p>
+      </td>
+    </tr>
+     </tbody>
 </table>
 
 ### Edit an image with various adjustments
