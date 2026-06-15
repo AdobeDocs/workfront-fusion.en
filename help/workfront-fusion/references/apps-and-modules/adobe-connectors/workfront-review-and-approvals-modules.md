@@ -984,6 +984,10 @@ This module returns AI brand review results that were produced for a document ve
 
 ### Other
 
+* [Make a custom API call](#make-a-custom-api-call)
+* [Stages fields](#stages-fields)
+
+
 #### Make a custom API call
 
 This module makes a custom API call to the Adobe Workfront Unified Review and Approvals API.
@@ -1097,6 +1101,4 @@ The following fields are available when configuring stages. Not all fields may b
       <td>Enter or map a custom message for the stage.</td> 
       </tr>
 </table>
-
-### Uncategorized
 
