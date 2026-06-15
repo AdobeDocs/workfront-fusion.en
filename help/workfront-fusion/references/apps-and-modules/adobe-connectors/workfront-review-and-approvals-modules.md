@@ -123,37 +123,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Searches]()
 * [Actions]()
+* [Searches]()
 * [Other]()
-
-### Searches
-
-
-
-#### Get approval details
-
-This search module retrieves approval details for an asset.
-
-
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Document</p>
-      </td>
-      <td>Enter or map the ID of the asset that you want to retrieve approval details for.</td> 
-      </tr>
-  </tbody>
-</table>
-
 
 
 ### Actions
@@ -199,9 +171,90 @@ This action module adds or updates participants on the default stage on an appro
   </tbody>
 </table>
 
-#### Create or update an approval stage
+#### Bulk delete templates
 
-This action module creates or updates an approval stage with the given stage data.
+This module deletes the specified approval templates.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template IDs</p></td>
+      <td>For each template that you want to delete, click <b>Add item</b> and enter the template ID.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Create a template
+
+This action module creates an approval template
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Name</p></td>
+      <td>Enter or map a name for the template.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Company ID</p></td>
+      <td>If you want to add a company scope to the template, enter or map the company ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Shared with</p></td>
+      <td>For each user that you want to share the template with, click <b>Add item</b> and user ID and desired access level.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Create an approval
+
+This action module creates an approval for a document on Adobe cloud storage, including stage data or a template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to create an approval for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the template that you want to use for this approval.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Create stages
+
+This action module creates an approval with the given stage data.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -219,72 +272,118 @@ This action module creates or updates an approval stage with the given stage dat
       <td role="rowheader">
         <p>Stages</p>
       </td>
-      <td>For each stage that you want to add participants to, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the asset that you want to create stages for.</td> 
       </tr>
   </tbody>
 </table>
 
-##### Stages fields
+#### Delete a decision on a stage
 
-The following fields are available when configuring stages. Not all fields may be available for all modules.
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Stage name</td>
-      <td>Enter or map a name for the stage.</td>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>Deadline date</p></td>
-      <td>If the deadline is a specific date, enter or map the date.</td> 
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
+      </tr>
+   </tbody>
+</table>
+
+
+#### Delete a stage
+
+This action module deletes the specified stage from the approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a stage from.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to delete.</td> 
       </tr>
   </tbody>
+</table>
+
+#### Delete a template
+
+This module deletes the specified approval template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
      <tr>
-      <td role="rowheader"><p>Deadline business days</p></td>
-      <td>If the deadline is after a specific number of business days, enter or map the number of days.</td> 
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the template that you want to delete.</td> 
       </tr>
+  </tbody>
+</table>
+
+#### Delete an approval
+
+This action module deletes the approval for the given document.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
      <tr>
-      <td role="rowheader"><p>Deadline time</p></td>
-      <td>If the deadline is a specific time, enter or map the time.</td> 
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete an approval from.</td> 
       </tr>
+  </tbody>
+</table>
+
+#### Delete decisions
+
+This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
      <tr>
-      <td role="rowheader"><p>Participants</p></td>
-      <td>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.      
-      <ul>
-      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
-      <li><b>Participant type</b><p>Select whether the participant is a user or a team.</p></li>
-      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
-      </ul> 
-      </td> 
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
       </tr>
-     <tr>
-      <td role="rowheader"><p>Auto lock enabled</p></td>
-      <td>Specify whether you want to auto-lock the stage.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Decision rules</p></td>
-      <td>Select whether you want to require only one decision for the stage.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Parent IDs / Parent stage IDs</p></td>
-      <td>For each parent stage that you want to add to the stage, click <b>Add item</b> and enter the Parent ID.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Triggers</p></td>
-      <td>To configure a trigger for this approval stage, click <b>Add item</b> and enter the trigger details.      <ul>
-      <li><b>Type</b><p>Select <b>Activation</b></p></li>
-      <li><b>When</b><p>Select whether to trigger the stage when the approval is created or when another stage is complete.</p></li>
-      <li><b>Stages</b><p>For each stage that you want to add to the trigger, click <b>Add item</b> and enter or map the stage ID.</p></li>
-      <li><b>Decisions</b><p>For each decision that you want to add to the trigger, click <b>Add item</b> and enter or map the decision.</p></li>
-      </ul> 
-      </td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Custom message</p></td>
-      <td>Enter or map a custom message for the stage.</td> 
-      </tr>
+  </tbody>
 </table>
 
 #### Delete participants
@@ -372,6 +471,144 @@ This action module applies a decision to an approval or approval stage.
   </tbody>
 </table>
 
+#### Make a decision on a stage
+
+This module applies a decision to the specified stage.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to make a decision on.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to make a decision on.</td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Decision</p></td>
+      <td>Select the decision that you want to apply to this stage.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Remind a participant on a stage
+
+This module sends a reminder to a specific participant on a specific stage.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stage ID</p>
+      </td>
+      <td>Enter or map the ID of the stage that you want to send a reminder for.</td> 
+      </tr>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Participant ID</p></td>
+      <td>Enter or map the ID of the participant that you want to send a reminder to.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Remind participant
+
+This module sends a reminder notification to the specified participant.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant ID</p>
+      </td>
+      <td>Enter or map the ID of the participant that you want to remind.</td> 
+      </tr>
+      <tr>
+      <td role="rowheader">
+        <p>Participant type</p>
+      </td>
+      <td>Enter or map the type of the participant that you want to remind.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Participant role</p>
+      </td>
+      <td>Enter or map the role of the participant that you want to remind.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Remind undecided participants
+
+This module sends reminder notifications to all undecided participants on the specified approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Remind undecided participants on a stage
+
+This module sends reminder notifications to all undecided participants on a stage.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stage ID</p>
+      </td>
+      <td>Enter or map the ID of the stage that you want to send a reminder for.</td> 
+      </tr>
+  </tbody>
+</table>
+
 #### Unlock a stage
 
 This action modules unlocks the specified approval stage and sets the stage to active.
@@ -397,9 +634,162 @@ This action modules unlocks the specified approval stage and sets the stage to a
   </tbody>
 </table>
 
-### Other
 
-#### Bulk lookup approvals
+#### Update a stage
+
+This action module updates fields on the specified stage.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to make a decision on.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to make a decision on.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage name</p></td>
+      <td>Enter or map a name for the template.</td> 
+      </tr>
+      <td role="rowheader">
+        <p>Other fields</p>
+      </td>
+      <td>Enter data into the stage fields.<p>For more information, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Shared with</p></td>
+      <td>For each user that you want to share the template with, click <b>Add item</b> and user ID and desired access level.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Update a template
+
+This module updates fields on the specified approval template.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map a name for the template.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Name</p></td>
+      <td>Enter or map the ID of the template that you want to update.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Company ID</p></td>
+      <td>If you want to add a company scope to the template, enter or map the company ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+    <tr>
+      <td role="rowheader"><p>Shared with</p></td>
+      <td>For each user that you want to share the template with, click <b>Add item</b> and user ID and desired access level.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Update all stages
+
+THis module replaces all stages on an existing approval with the given stage data. The document must be in an editable state.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the asset that you want to update stages for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Stages</p>
+      </td>
+      <td>For each stage that you want to update, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      </tr>
+  </tbody>
+</table>
+
+### Searches
+
+#### Get a template
+
+This module returns the specified approval template.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>Enter or map the ID of the document that you want to get suggested approval participants for.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned templates
+         </td>
+         <td>
+              Enter or map the maximum number of templates you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+#### Get approval details
+
+This search module retrieves approval details for an asset.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Document</p>
+      </td>
+      <td>Enter or map the ID of the asset that you want to retrieve approval details for.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Get multiple approvals
 
 This module retrieves details of approvals for a list of documents of a specific type.
 
@@ -425,6 +815,149 @@ This module retrieves details of approvals for a list of documents of a specific
        </tr>
   </tbody>
 </table>
+
+#### Get suggested approvals
+
+This module returns suggested approval payloads from prior document versions.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to get suggested approvals for.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned approvals
+         </td>
+         <td>
+              Enter or map the maximum number of approvals you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+#### Get suggested participants
+
+This module returns participant suggestions from the approval for the previous document approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Document ID</p></td>
+      <td>Enter or map the ID of the document that you want to get suggested approval participants for.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned participants
+         </td>
+         <td>
+              Enter or map the maximum number of participants you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+#### List Bots
+
+This module returns a paginated list of bot accounts.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Page</p></td>
+      <td>Enter or map the page of results that you want to return.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned results
+         </td>
+         <td>
+              Enter or map the maximum number of results you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+#### List Templates
+
+This module returns a list of all approval templates available to the current user. The current user is the user whose credentials are used in the connection used in this module.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+   </tbody>
+</table>
+
+#### Search AI brand reviews
+
+This module returns AI brand review results that were produced for a document version as part of an approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Bot user ID</p></td>
+      <td>Enter or map the user ID of the bot that you want to search reviews for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Parent document ID</p></td>
+      <td>Enter or map the ID of the parent document that you want to search reviews for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Document version ID</p></td>
+      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map a stage ID to limit results to a specific stage of the approval.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Page</p></td>
+      <td>Enter or map a page number to limit results to that page.</td> 
+      </tr>
+       <tr>
+         <td role="rowheader">
+           Maximum number of returned reviews
+         </td>
+         <td>
+              Enter or map the maximum number of reviews you want the module to return during each scenario execution cycle. 
+         </td>
+       </tr>
+  </tbody>
+</table>
+
+### Other
 
 #### Make a custom API call
 
@@ -475,448 +1008,34 @@ This module makes a custom API call to the Adobe Workfront Unified Review and Ap
   </tbody>
 </table>
 
-### Uncategorized
-
-#### Bulk delete templates
-
-This module deletes the specified approval templates.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Template IDs</p></td>
-      <td>For each template that you want to delete, click <b>Add item</b> and enter the template ID.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of deleted templates
-         </td>
-         <td>
-              Enter or map the maximum number of templates you want the module to delete during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Create an approval
-
-This action module creates an approval for a document on Adobe cloud storage, including stage data or a template.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to create an approval for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stages</p>
-      </td>
-      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Template ID</p></td>
-      <td>Enter or map the ID of the template that you want to use for this approval.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Create a template
-
-This action module creates an approval template
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Name</p></td>
-      <td>Enter or map a name for the template.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Company ID</p></td>
-      <td>If you want to add a company scope to the template, enter or map the company ID.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stages</p>
-      </td>
-      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Shared with</p></td>
-      <td>For each user that you want to share the template with, click <b>Add item</b> and user ID and desired access level.</td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Maximum number of created templates</p></td>
-      <td>Enter or map maximum number of templates that you want the module to create during one execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Delete Approval
-
-This action module deletes the approval for the given document.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to delete an approval from.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of deleted templates
-         </td>
-         <td>
-              Enter or map the maximum number of templates you want the module to delete during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Delete a decision on a stage
-
-This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Stage ID</p></td>
-      <td>Enter or map the ID of the stage that you want to delete.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of deleted decisions
-         </td>
-         <td>
-              Enter or map the maximum number of decisions you want the module to delete during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Delete decisions
-
-This module removes the current user's decision from the specified stage. The current user is the user whose credentials are used in the connection used in this module.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to delete a decision from.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of deleted decisions
-         </td>
-         <td>
-              Enter or map the maximum number of decisions you want the module to delete during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-
-#### Delete a stage
-
-This action module deletes the specified stage from the approval.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to delete a stage from.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Stage ID</p></td>
-      <td>Enter or map the ID of the stage that you want to delete.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of deleted stages
-         </td>
-         <td>
-              Enter or map the maximum number of stages you want the module to delete during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Delete a template
-
-This module deletes the specified approval template.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Template ID</p></td>
-      <td>Enter or map the ID of the template that you want to delete.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of deleted templates
-         </td>
-         <td>
-              Enter or map the maximum number of templates you want the module to delete during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Get suggested approvals
-
-This module returns suggested approval payloads from prior document versions.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to get suggested approvals for.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of returned approvals
-         </td>
-         <td>
-              Enter or map the maximum number of approvals you want the module to return during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Get Suggested Participants
-
-This module returns participant suggestions from the approval for the previous document approval.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to get suggested approval participants for.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of returned participants
-         </td>
-         <td>
-              Enter or map the maximum number of participants you want the module to return during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Get a template
-
-This module returns the specified approval template.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Template ID</p></td>
-      <td>Enter or map the ID of the document that you want to get suggested approval participants for.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of returned templates
-         </td>
-         <td>
-              Enter or map the maximum number of templates you want the module to return during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Make a decision on a stage
-
-This module applies a decision to the specified stage.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to make a decision on.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Stage ID</p></td>
-      <td>Enter or map the ID of the stage that you want to make a decision on.</td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Decision</p></td>
-      <td>Select the decision that you want to apply to this stage.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of decisions
-         </td>
-         <td>
-              Enter or map the maximum number of decisions you want the module to make during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-
-#### Update a stage
-
-This action module updates fields on the specified stage.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the document that you want to make a decision on.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Stage ID</p></td>
-      <td>Enter or map the ID of the stage that you want to make a decision on.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Stage name</p></td>
-      <td>Enter or map a name for the template.</td> 
-      </tr>
-      <td role="rowheader">
-        <p>Other fields</p>
-      </td>
-      <td>Enter data into the stage fields.<p>For more information, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Shared with</p></td>
-      <td>For each user that you want to share the template with, click <b>Add item</b> and user ID and desired access level.</td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Maximum number of updates</p></td>
-      <td>Enter or map maximum number of updates that you want the module to make during one execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Update a template
-
-This module updates fields on the specified approval template.
 
 
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Template ID</p></td>
-      <td>Enter or map a name for the template.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Name</p></td>
-      <td>Enter or map the ID of the template that you want to update.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Company ID</p></td>
-      <td>If you want to add a company scope to the template, enter or map the company ID.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stages</p>
-      </td>
-      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Shared with</p></td>
-      <td>For each user that you want to share the template with, click <b>Add item</b> and user ID and desired access level.</td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Maximum number of updated templates</p></td>
-      <td>Enter or map maximum number of templates that you want the module to update during one execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
 
-#### Create stages
 
-This action module creates an approval with the given stage data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+#### Create or update an approval stage
+
+This action module creates or updates an approval stage with the given stage data.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -934,250 +1053,75 @@ This action module creates an approval with the given stage data.
       <td role="rowheader">
         <p>Stages</p>
       </td>
-      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Template ID</p></td>
-      <td>Enter or map the ID of the asset that you want to create stages for.</td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Maximum number of created stages</p></td>
-      <td>Enter or map maximum number of stages that you want the module to create during one execution cycle.</td> 
+      <td>For each stage that you want to add participants to, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
       </tr>
   </tbody>
 </table>
 
-#### Remind a participant on a stage
+-->
 
-This module sends a reminder to a specific participant on a specific stage.
+#### Stages fields
+
+The following fields are available when configuring stages. Not all fields may be available for all modules.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+      <td role="rowheader">Stage name</td>
+      <td>Enter or map a name for the stage.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stage ID</p>
-      </td>
-      <td>Enter or map the ID of the stage that you want to send a reminder for.</td> 
-      </tr>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Participant ID</p></td>
-      <td>Enter or map the ID of the participant that you want to send a reminder to.</td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Maximum number of reminders</p></td>
-      <td>Enter or map maximum number of reminders that you want the module to send during one execution cycle.</td> 
+      <td role="rowheader"><p>Deadline date</p></td>
+      <td>If the deadline is a specific date, enter or map the date.</td> 
       </tr>
   </tbody>
+     <tr>
+      <td role="rowheader"><p>Deadline business days</p></td>
+      <td>If the deadline is after a specific number of business days, enter or map the number of days.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Deadline time</p></td>
+      <td>If the deadline is a specific time, enter or map the time.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Participants</p></td>
+      <td>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.      
+      <ul>
+      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Participant type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul> 
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Auto lock enabled</p></td>
+      <td>Specify whether you want to auto-lock the stage.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Decision rules</p></td>
+      <td>Select whether you want to require only one decision for the stage.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Parent IDs / Parent stage IDs</p></td>
+      <td>For each parent stage that you want to add to the stage, click <b>Add item</b> and enter the Parent ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Triggers</p></td>
+      <td>To configure a trigger for this approval stage, click <b>Add item</b> and enter the trigger details.      <ul>
+      <li><b>Type</b><p>Select <b>Activation</b></p></li>
+      <li><b>When</b><p>Select whether to trigger the stage when the approval is created or when another stage is complete.</p></li>
+      <li><b>Stages</b><p>For each stage that you want to add to the trigger, click <b>Add item</b> and enter or map the stage ID.</p></li>
+      <li><b>Decisions</b><p>For each decision that you want to add to the trigger, click <b>Add item</b> and enter or map the decision.</p></li>
+      </ul> 
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Custom message</p></td>
+      <td>Enter or map a custom message for the stage.</td> 
+      </tr>
 </table>
 
-#### Remind undecided participants on a stage
-
-This module sends reminder notifications to all undecided participants on a stage.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stage ID</p>
-      </td>
-      <td>Enter or map the ID of the stage that you want to send a reminder for.</td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Maximum number of reminders</p></td>
-      <td>Enter or map maximum number of reminders that you want the module to send during one execution cycle.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Remind participant
-
-This module sends a reminder notification to the specified participant.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Participant ID</p>
-      </td>
-      <td>Enter or map the ID of the participant that you want to remind.</td> 
-      </tr>
-      <tr>
-      <td role="rowheader">
-        <p>Participant type</p>
-      </td>
-      <td>Enter or map the type of the participant that you want to remind.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Participant role</p>
-      </td>
-      <td>Enter or map the role of the participant that you want to remind.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Remind Undecided Participants
-
-This module sends reminder notifications to all undecided participants on the specified approval.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### Search AI brand reviews
-
-This module returns AI brand review results that were produced for a document version as part of an approval.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Bot user ID</p></td>
-      <td>Enter or map the user ID of the bot that you want to search reviews for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Parent document ID</p></td>
-      <td>Enter or map the ID of the parent document that you want to search reviews for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Document version ID</p></td>
-      <td>Enter or map the ID of the asset that you want to send a reminder for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Stage ID</p></td>
-      <td>Enter or map a stage ID to limit results to a specific stage of the approval.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader"><p>Page</p></td>
-      <td>Enter or map a page number to limit results to that page.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of returned reviews
-         </td>
-         <td>
-              Enter or map the maximum number of reviews you want the module to return during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### Update all stages
-
-THis module replaces all stages on an existing approval with the given stage data. The document must be in an editable state.
-
-
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to update stages for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stages</p>
-      </td>
-      <td>For each stage that you want to update, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-  </tbody>
-</table>
-
-#### List Bots
-
-This module returns a paginated list of bot accounts.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Page</p></td>
-      <td>Enter or map the page of results that you want to return.</td> 
-      </tr>
-       <tr>
-         <td role="rowheader">
-           Maximum number of returned results
-         </td>
-         <td>
-              Enter or map the maximum number of results you want the module to return during each scenario execution cycle. 
-         </td>
-       </tr>
-  </tbody>
-</table>
-
-#### List Templates
-
-This module returns a list of all approval templates available to the current user. The current user is the user whose credentials are used in the connection used in this module.
-
-
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-   </tbody>
-</table>
+### Uncategorized
 
