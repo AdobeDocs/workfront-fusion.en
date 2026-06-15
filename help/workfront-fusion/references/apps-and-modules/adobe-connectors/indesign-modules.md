@@ -449,3 +449,121 @@ This module makes a custom API call to the Adobe InDesign API
   </tr> 
   </tbody>
 </table>
+
+### Uncategorized
+
+#### Convert PDF to InDesign
+
+This module converts PDF document to editable InDesign (INDD or IDML) format. The output is a ZIP file (default name "output.zip") containing subfolders named after each input PDF, with the converted document and associated assets. If the Embed links option is false, assets are provided in a separate folder within the ZIP. If it is true, all links are embedded in the InDesign file.
+
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Input assets</td>
+      <td>For each asset that you want to convert, click <b>Add item</b> and enter the asset's URL and assign a local filename. The filename will be referenced later in the module.</td>
+    </tr>
+  <tr> 
+   <td>Target documents</td> 
+   <td>For each document you want to convert, click <b>Add item</b> and enter the assigned filename from the Input assets field.</td> 
+  </tr> 
+  <tr> 
+   <td>Output format</td> 
+   <td>Select whether you want to convert the files to INDD or IDML files.</td> 
+  </tr> 
+  <tr> 
+   <td>Embed links</td> 
+   <td>Select Yes if you want all image and asset links embedded directly in the INDD or IDML file. Select No to place these assets in a separate folder in the ZIP file.</td> 
+  </tr> 
+  <tr> 
+   <td>Output ZIP filename</td> 
+   <td>Enter or name a name for the output ZIP file.</td> 
+  </tr> 
+  <tr> 
+   <td>Outputs</td> 
+   <td>For each file you want to output, select the storage type and enter storage details.</td> 
+  </tr> 
+  <tr> 
+   <td>Maximum number of returned results</td> 
+   <td>Enter the maximum number of results that you want the module to return for each execution cycle.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Submit a custom script
+
+This module submits custom script bundles for registration, and returns a URL for posting execution requests for the registered script.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Script bundle</td>
+      <td>Map the source file from a previous module, such as a Download a document module. This should be a ZIP file.</td>
+    </tr>
+  <tr> 
+   <td>File name</td> 
+   <td>Enter or map the name of the uploaded file that contains the script bundle.</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Update custom script app version
+
+This module updates the InDesign app version configuration for a registered custom script. This allows you to specify version strategies includig using the latest version, fixing a major version, or fixing a specific major and minor version.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+    <tr>
+      <td role="rowheader">Script name</td>
+      <td>Enter or map the name of the custom script to update. This is the <code>capability</code> value returned when the script was registered.</td>
+    </tr>
+  <tr> 
+   <td>App version strategy</td> 
+   <td>Select the app version strategy that you want to use.
+   <ul>
+   <li><b>Always use the latest version</b></li>
+   <li><b>Pin to a major version</b><p>Enter or map the number for the major version that you want to apply this to.</p></li>
+   <li><b>Pin to a major and minor version</b><p>Enter the major and minor version that you want to apply this to.</p></li>
+   </ul></td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### Get current app versions
+
+This module retrieves information about all available InDesign app version, including major version, minor version, and status for each registered app version.
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe InDesign, see <a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">Create a connection to Adobe InDesign</a> in this article.</td>
+      </tr>
+  <tr> 
+   <td>Maximum number of returned results</td> 
+   <td>Enter the maximum number of results that you want the module to return for each execution cycle.</td> 
+  </tr> 
+  </tbody>
+</table>
+
