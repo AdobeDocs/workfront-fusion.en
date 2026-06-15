@@ -1837,3 +1837,4 @@ This module generates a PSD manifest for the given input image.
       </tr>
     </tbody>
 </table> 
+ 
