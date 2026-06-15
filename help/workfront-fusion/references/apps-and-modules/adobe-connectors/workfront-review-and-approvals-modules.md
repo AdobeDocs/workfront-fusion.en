@@ -123,19 +123,34 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Actions]()
-* [Searches]()
-* [Other]()
-
+* [Actions](#actions)
+* [Searches](#searches)
+* [Other](#other)
 
 ### Actions
 
 * [Add or update participants](#add-or-update-participants)
-* [Create or update an approval stage](#create-or-update-an-approval-stage)
+* [Bulk delete templates](#bulk-delete-templates)
+* [Create a template](#create-a-template)
+* [Create an approval](#create-an-approval)
+* [Create stages](#create-stages)
+* [Delete a decision on a stage](#delete-a-decision-on-a-stage)
+* [Delete a stage](#delete-a-stage)
+* [Delete a template](#delete-a-template)
+* [# Delete an approval](#delete-an-approval)
+* [Delete decisions](#delete-decisions)
 * [Delete participants](#delete-participants)
-* [Lock a stage]()
-* [Make a decision]()
-* [Unlock a stage]()
+* [Lock a stage](#lock-a-stage)
+* [Make a decision](#make-a-decision)
+* [Make a decision on a stage](#make-a-decision-on-a-stage)
+* [Remind a participant on a stage](#remind-a-participant-on-a-stage)
+* [Remind participant](#remind-participant)
+* [Remind undecided participants](#remind-undecided-participants)
+* [Remind undecided participants on a stage](#remind-undecided-participants-on-a-stage)
+* [Unlock a stage](#unlock-a-stage)
+* [Update a stage](#update-a-stage)
+* [Update a template](#update-a-template)
+* [Update all stages](#update-all-stages)
 
 
 #### Add or update participants
@@ -739,6 +754,16 @@ THis module replaces all stages on an existing approval with the given stage dat
 
 ### Searches
 
+* [Get a template](#get-a-template)
+* [Get approval details](#get-approval-details)
+* [Get multiple approvals](#get-multiple-approvals)
+* [Get suggested approvals](#get-suggested-approvals)
+* [Get suggested participants](#get-suggested-participants)
+* [List bots](#list-bots)
+* [List templates](#list-templates)
+* [Search AI brand reviewers](#search-ai-brand-reviews)
+
+
 #### Get a template
 
 This module returns the specified approval template.
@@ -1009,56 +1034,6 @@ This module makes a custom API call to the Adobe Workfront Unified Review and Ap
 </table>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-#### Create or update an approval stage
-
-This action module creates or updates an approval stage with the given stage data.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to create or update a stage for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stages</p>
-      </td>
-      <td>For each stage that you want to add participants to, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-  </tbody>
-</table>
-
--->
 
 #### Stages fields
 
