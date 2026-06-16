@@ -275,6 +275,8 @@ This trigger module starts a scenario when a record, record type, or workspace i
   </tbody>
 </table>
 
+For an example of using advanced logic on this module, see [Example of advanced logic in the watch Events module](#example-of-advanced-logic-in-the-watch-events-module).
+
 ### Actions
 
 * [Delete a record type](#delete-a-record-type)
@@ -568,3 +570,40 @@ The following JSONata expression creates a human-readable output of the Planning
 
 For information on using JSONata modules, see [JSONata modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md).
 
+## Example of advanced logic in the watch Events module
+
+This is an example of the format that advanced logic takes when using the Workfront Planning > Watch Events module.
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+Consider the following when using advanced logic in the Watch Event module:
+
+* The first `"fieldvalue":` entry is the Planning Record Type ID pulled from the URL. In this example, the Planning Record Type ID is `Rt68c886502d4b5554ee80896b`.
+* Planning data is returned inside an array called `data `, which appears in this example as `"fieldName": "data"`.
+* Planning fieldNames are returned as IDs that start with `F`.
+* Because this example is evaluating against an `OR` filter connector, it has two entries for the same field (`F68c886502d4b5554eec808975`).  The two drop down options that the module is filtering against are `"planning"` and `"active"`.
