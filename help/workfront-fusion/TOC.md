@@ -374,7 +374,7 @@ user-guide-description: Use the docs, tutorials, and additional resources to lea
             * [Adobe Target modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
             * [Adobe User Management modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
             * [Adobe Workfront modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-            * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+            * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Adobe Workfront Unified Review and Approvals modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
             * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
             * [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
         * Connectors for third-party applications {#third-party-app-connectors}

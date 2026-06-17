@@ -201,7 +201,7 @@ You can create a connection to your Workfront Planning account directly from ins
 
 ## [!DNL Adobe Workfront Planning] modules and their fields
 
-When you configure Workfront modules, Workfront Fusion displays the fields listed below. Along with these, additional Workfront fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+When you configure Workfront Planning  modules, Workfront Fusion displays the fields listed below. Along with these, additional Workfront fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
@@ -387,7 +387,7 @@ This action module retrieves a list of records based on criteria you specify.
       <td role="rowheader">
         <p>[!UICONTROL Record Fields]</p>
       </td>
-      <td>For each field that you want to use in your search, locate that field, select the opertor, and enter or map the value that you want to search for. Field are available based on the record type selected.</td> 
+      <td>For each field that you want to use in your search, locate that field, select the operator, and enter or map the value that you want to search for. Field are available based on the record type selected.</td> 
       </tr>
      <tr>
       <td role="rowheader">
