@@ -137,7 +137,7 @@ If you see the map button above a field or function, you can use it to set varia
 * [Delete a decision on a stage](#delete-a-decision-on-a-stage)
 * [Delete a stage](#delete-a-stage)
 * [Delete a template](#delete-a-template)
-* [# Delete an approval](#delete-an-approval)
+* [Delete an approval](#delete-an-approval)
 * [Delete decisions](#delete-decisions)
 * [Delete participants](#delete-participants)
 * [Lock a stage](#lock-a-stage)
