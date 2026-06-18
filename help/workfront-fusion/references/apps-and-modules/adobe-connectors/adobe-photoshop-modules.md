@@ -206,13 +206,32 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
-* [Convert HEX to RGB]()
+* [Convert HEX to RGB](#convert-hex-to-rgb)
 * [Create an artboard](#create-an-artboard)
 * [Create or edit a composite](#create-or-edit-a-composite)
 * [Edit an image with various adjustments](#edit-an-image-with-various-adjustments)
 * [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations)
 * [Generate a manifest](#generate-a-manifest)
 * [Remove background](#remove-background)
+
+#### Convert HEX to RGB
+
+This module converts a HEX color code to RGB color.
+
+
+
+This module makes Lightroom-style adjustments to an image.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL HEX]</td>
+      <td>Enter or map the HEX code that you want to convert to RGB.</td>
+    </tr>
+    </tbody>
+</table>
 
 #### Create an artboard
 
@@ -638,7 +657,7 @@ This action module identifies the main subject of your image and removes the bac
 * [Convert image format (Legacy)](#convert-image-format-legacy)
 * [Create a mask (Legacy)](#create-a-mask-legacy)
 * [Create a new PSD (Legacy)](#create-a-new-psd-legacy)
-* [Create renditions (Legacy)]()
+* [Create renditions (Legacy)](#create-renditions-legacy)
 * [Edit text layers (Legacy)](#edit-text-layers-legacy)
 * [Edit text layers 2 (Legacy)](#edit-text-layers-2-legacy)
 * [Execute an action JSON (Legacy)](#execute-an-action-json-legacy)
@@ -647,7 +666,7 @@ This action module identifies the main subject of your image and removes the bac
 * [Execute Product Crop (Legacy)](#execute-product-crop-legacy)
 * [Get layer info (Legacy)](#get-layer-info-legacy)
 * [Make a custom API call (Legacy)](#make-a-custom-api-call-legacy)
-* [Remove background (Legacy)](#remove-background-legacy)
+* [Remove background (Legacy)](#remove-background-legacy) 
 * [Replace a Smart Object (Legacy)](#replace-a-smart-object-legacy)
 * [Replace a Smart Object 2 (Legacy)](#replace-a-smart-object-2-legacy)
 * [Resize an image (Legacy)](#resize-an-image-legacy)
@@ -1085,6 +1104,61 @@ This action module creates a new PSD with optional layers, and generates renditi
       </td>
     </tr>
     </tbody>
+</table>
+
+#### Create renditions (Legacy)
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each file you want to create, click Add item and enter the storage, location, type, and overwrite option as listed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+      </tbody>
 </table>
 
 #### Edit text layers (Legacy)
