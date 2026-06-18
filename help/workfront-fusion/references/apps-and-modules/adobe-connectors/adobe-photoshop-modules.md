@@ -16,10 +16,21 @@ topic_v2:
 
 In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Photoshop], as well as connect it to multiple third-party applications and services. 
 
-
 If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
+
+>[!IMPORTANT]
+>
+>Adobe Photoshop has deprecated some elements of its API, which Fusion uses to perform actions in Photoshop. 
+>
+>**Therefore, some of the existing Photoshop modules will not work after July 30, 2026.**
+>
+>We recommend updating any scenarios that use these modules to the updated modules as soon as possible. 
+>
+>For a list of affected modules, see []().
+>
+>For an explanation of how API changes affect Workfront Fusion, see [Overview of APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
 ## Access requirements
 
@@ -66,6 +77,34 @@ Before you can use the [!DNL Adobe Photoshop] connector, you must ensure that th
 * You must have an active [!DNL Adobe Photoshop] account.
 * You must have a Firefly Services license.
 * You must have a Client ID and Client Secret. You can acquire these from the Adobe Developer Console.
+
+## Adobe Photoshop API deprecation updates
+
+Adobe Photoshop has deprecated some elements of its API, which Fusion uses to perform actions in Photoshop. 
+
+**Therefore, some of the existing Photoshop modules will not work after July 30, 2026.**
+
+This table documents which modules have been affected by this deprecation, and which module you should update to.
+
+|Deprecated legacy module|Update to new module|
+|---|---|
+|Apply PSD edits|Create or edit a composite|
+|Convert image format|Create or edit a composite|
+|Create a composite|Create or edit a composite|
+|Create a new PSD|Create or edit a composite|
+|Create renditions|Create or edit a composite|
+|Edit text layers|Execute Photoshop actions, scripts, and transformations|
+|Edit text layers 2|Execute Photoshop actions, scripts, and transformations|
+|Execute an action JSON|Execute Photoshop actions, scripts, and transformations|
+|Execute depth blur|(Not available)|
+|Execute Photoshop actions|Execute Photoshop actions, scripts, and transformations|
+|Execute product crop|Execute Photoshop actions, scripts, and transformations|
+|Get layer info|Generate a manifest|
+|Resize an image|Create or edit a composite|
+|Replace Smart Object|Create or edit a composite|
+|Replace Smart Object 2|Create or edit a composite|
+|Rotate an image|Execute Photoshop actions, scripts, and transformations|
+|Watermark an image|Create or edit a composite|
 
 ## Adobe Photoshop API information
 
@@ -185,6 +224,11 @@ If you see the map button above a field or function, you can use it to set varia
 * [Watermark an image](#watermark-an-image)
 
 ### Apply PSD edits
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
 
 This action module applies a variety of document and layer level edits. 
 
@@ -368,6 +412,11 @@ This action module auto color corrects the specified image.
 
 ### Convert image format
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
 This action module converts a file to JPEG, PNG, PSD or TIFF.
 
 <table style="table-layout:auto"> 
@@ -500,6 +549,11 @@ This action module returns a PNG file with a mask applied around the subject.
 
 ### Create a new PSD
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
 This action module creates a new PSD with optional layers, and generates renditions or saves as a PSD.
 
 <table style="table-layout:auto"> 
@@ -605,6 +659,11 @@ This action module creates a new PSD with optional layers, and generates renditi
 
 ### Edit text layers
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
 This action module edits text layers on a Photoshop file. You can enter separate edit details for multiple layers in the same file.
 
 <table style="table-layout:auto"> 
@@ -676,6 +735,11 @@ This action module edits text layers on a Photoshop file. You can enter separate
 </table>
 
 ### Edit text layers (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
 
 This action module edits a text layer on a Photoshop file.
 
@@ -758,6 +822,11 @@ To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
 
 ### Execute an action JSON
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
 This action module executes Photoshop actions using JSON commands.
 
 <table style="table-layout:auto"> 
@@ -834,6 +903,10 @@ This action module executes Photoshop actions using JSON commands.
 
 ### Execute Depth Blur
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+
 This action module executes Depth Blur on the selected file.
 
 <table style="table-layout:auto"> 
@@ -890,6 +963,11 @@ This action module executes Depth Blur on the selected file.
 </table>
 
 ### Execute Photoshop Actions
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
 
 This action module executes a Photoshop action on the selected image.
 
@@ -978,6 +1056,11 @@ This action module executes a Photoshop action on the selected image.
 
 ### Execute Product Crop
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
 This action module executes Product Crop on the selected image.
 
 <table style="table-layout:auto"> 
@@ -1052,6 +1135,11 @@ This action module executes Product Crop on the selected image.
 </table>
 
 ### Get layer info
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Generate a manifest](#generate-a-manifest) module.
 
 This action module retrieves layer information from the specified PSD file.
 
@@ -1208,6 +1296,16 @@ This action module identifies the main subject of your image and removes the bac
 
 ### Replace a smart object
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
 This action module replaces a Smart Object within a PSD layer, and generates new renditions.
 
 This module uses Smart Object API version 2.
@@ -1337,6 +1435,11 @@ This module uses the legacy version of Smart Objects.
 
 ### Resize an image
 
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
 This action resizes an image, using the same aspect ratio.
 
 <table style="table-layout:auto"> 
@@ -1406,6 +1509,11 @@ This action resizes an image, using the same aspect ratio.
 </table>
 
 ### Watermark an image
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
 
 This action module adds a watermark to the selected image.
 
