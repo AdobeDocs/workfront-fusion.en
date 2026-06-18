@@ -16,10 +16,21 @@ topic_v2:
 
 In an Adobe Workfront Fusion scenario, you can automate workflows that use [!DNL Adobe Photoshop], as well as connect it to multiple third-party applications and services. 
 
-
 If you need instructions on creating a scenario, see the articles under [Create a scenario: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
 
 For information about modules, see the articles under [Modules: article index](/help/workfront-fusion/references/modules/modules-toc.md).
+
+>[!IMPORTANT]
+>
+>Adobe Photoshop has deprecated some elements of its API, which Fusion uses to perform actions in Photoshop. 
+>
+>**Therefore, some of the existing Photoshop modules will not work after July 30, 2026.**
+>
+>We recommend updating any scenarios that use these modules to the updated modules as soon as possible. 
+>
+>For a list of affected modules, see [Adobe Photoshop API deprecation updates](#adobe-photoshop-api-deprecation-updates).
+>
+>For an explanation of how API changes affect Workfront Fusion, see [Overview of APIs in Fusion](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md).
 
 ## Access requirements
 
@@ -66,6 +77,34 @@ Before you can use the [!DNL Adobe Photoshop] connector, you must ensure that th
 * You must have an active [!DNL Adobe Photoshop] account.
 * You must have a Firefly Services license.
 * You must have a Client ID and Client Secret. You can acquire these from the Adobe Developer Console.
+
+## Adobe Photoshop API deprecation updates
+
+Adobe Photoshop has deprecated some elements of its API, which Fusion uses to perform actions in Photoshop. 
+
+**Therefore, some of the existing Photoshop modules will not work after July 30, 2026.**
+
+This table documents which modules have been affected by this deprecation, and which module you should update to.
+
+|Deprecated legacy module|Update to new module|
+|---|---|
+|Apply PSD edits|Create or edit a composite|
+|Convert image format|Create or edit a composite|
+|Create a composite|Create or edit a composite|
+|Create a new PSD|Create or edit a composite|
+|Create renditions|Create or edit a composite|
+|Edit text layers|Execute Photoshop actions, scripts, and transformations|
+|Edit text layers 2|Execute Photoshop actions, scripts, and transformations|
+|Execute an action JSON|Execute Photoshop actions, scripts, and transformations|
+|Execute depth blur|(Not available)|
+|Execute Photoshop actions|Execute Photoshop actions, scripts, and transformations|
+|Execute product crop|Execute Photoshop actions, scripts, and transformations|
+|Get layer info|Generate a manifest|
+|Resize an image|Create or edit a composite|
+|Replace Smart Object|Create or edit a composite|
+|Replace Smart Object 2|Create or edit a composite|
+|Rotate an image|Execute Photoshop actions, scripts, and transformations|
+|Watermark an image|Create or edit a composite|
 
 ## Adobe Photoshop API information
 
@@ -165,1339 +204,36 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [Apply PSD edits](#apply-psd-edits)
-* [Auto color correct an image](#auto-color-correct-an-image)
-* [Convert image format](#convert-image-format)
-* [Create a mask](#create-a-mask)
-* [Create a new PSD](#create-a-new-psd)
-* [Edit text layers](#edit-text-layers)
-* [Edit text layers (Legacy)](#edit-text-layers-legacy)
-* [Execute an action JSON](#execute-an-action-json)
-* [Execute Depth Blur](#execute-depth-blur)
-* [Execute Photoshop actions](#execute-photoshop-actions)
-* [Execute Product Crop](#execute-product-crop)
-* [Get layer info](#get-layer-info)
-* [Make a custom API call](#make-a-custom-api-call)
+### Actions
+
+* [Convert HEX to RGB](#convert-hex-to-rgb)
+* [Create an artboard](#create-an-artboard)
+* [Create or edit a composite](#create-or-edit-a-composite)
+* [Edit an image with various adjustments](#edit-an-image-with-various-adjustments)
+* [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations)
+* [Generate a manifest](#generate-a-manifest)
 * [Remove background](#remove-background)
-* [Replace a Smart Object](#replace-a-smart-object)
-* [Replace a Smart Object (Legacy)](#replace-a-smart-object-legacy)
-* [Resize an image](#resize-an-image)
-* [Watermark an image](#watermark-an-image)
 
-### Apply PSD edits
+#### Convert HEX to RGB
 
-This action module applies a variety of document and layer level edits. 
+This module converts a HEX color code to RGB color.
 
-This module supports large files. For more information on large files, see [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+
+
+This module makes Lightroom-style adjustments to an image.
 
 <table style="table-layout:auto"> 
   <col/>
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to edit is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to edit. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Image size) Height]</p>
-      </td>
-      <td> Enter or map the height of the image in pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Image size) Width]</p>
-      </td>
-      <td> Enter or map the width of the image in pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Top]</p>
-      </td>
-   <td> Enter or map, in pixels, the y coordinate of the document's upper-left corner. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Bottom]</p>
-      </td>
-   <td> Enter or map, in pixels, the y coordinate of the document's lower-right corner. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Left]</p>
-      </td>
-   <td> Enter or map, in pixels, the x coordinate of the document's upper-left corner. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Canvas size) Right]</p>
-      </td>
-   <td> Enter or map, in pixels, the x coordinate of the document's lower-right corner. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document) Trim]</p>
-      </td>
-   <td> Select Transparent pixels to base the trim on transparent pixels in the image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Default font]</p>
-      </td>
-   <td> Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> For each font that the document needs, click Add item and enter the font's storage location and file location. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Manage missing fonts]</p>
-      </td>
-   <td> Select the action to take if there are one or more missing fonts in the document. <ul><li><code>fail</code>: The job will not succeed and the status will be set to failed, with the details of the error provided in the details section in the status.</li><li><code>useDefault</code>: The job will succeed, and all the missing fonts will be replaced with ArialMT.</li></ul></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Layers]</p>
-      </td>
-   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Apply PSD Edits</a> in the Adobe Photoshop documentation.  </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each edited file you want to create, click Add item and enter the storage, location, and type as listed.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Select the file type that you want to convert the file to. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Trim to Canvas]</p>
-      </td>
-   <td>Select whether the renditions must be of Canvas size. True trims the renditions to Canvas size, while False makes the renditions layer Size</td> 
+      <td role="rowheader">[!UICONTROL HEX]</td>
+      <td>Enter or map the HEX code that you want to convert to RGB.</td>
     </tr>
     </tbody>
 </table>
 
-### Auto color correct an image
-
-This action module auto color corrects the specified image.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to color correct is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to color correct. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Select the file type that you want to convert the file to. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-    </tbody>
-</table>
-
-### Convert image format
-
-This action module converts a file to JPEG, PNG, PSD or TIFF.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to remove the background from is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to remove the background from. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each converted file you want to create, click Add item and enter the storage, location, and type as listed.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Select the file type that you want to convert the file to. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-    </tbody>
-</table>
-
-### Create a mask
-
-This action module returns a PNG file with a mask applied around the subject.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to create a mask from is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to create a mask from. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the mask file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the mask file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Color space]</p>
-      </td>
-   <td>Select whether the output image uses RGB or RGBA color. </td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Mask format]</p>
-      </td>
-   <td>Select whether the mask should be soft (feathered) or binary. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Optimize]</p>
-      </td>
-   <td>Select Performance to optimize for speed, or Batch to allow wait time. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Post process]</p>
-      </td>
-   <td>Select whether to enable post processing.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Version]</p>
-      </td>
-   <td>Default is 4.0</td> 
-    </tr> 
-    </tbody>
-</table>
-
-### Create a new PSD
-
-This action module creates a new PSD with optional layers, and generates renditions or saves as a PSD.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Image size) Height]</p>
-      </td>
-      <td> Enter or map the height of the image in pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document > Image size) Width]</p>
-      </td>
-      <td> Enter or map the width of the image in pixels. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document) Resolution]</p>
-      </td>
-   <td> Enter or map, in pixels per inch, the resolution for the image. This must be between 72 and 300. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document) Mode]</p>
-      </td>
-   <td> Select the mode for the image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document) Fill]</p>
-      </td>
-   <td> Select whether you want the fill for the background layer to be transparent, white, or the background color of the image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options > Document) Depth]</p>
-      </td>
-   <td> Select the bit depth of the image. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Layers]</p>
-      </td>
-   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Global font]</p>
-      </td>
-   <td> Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> For each font that the document needs, click Add item and enter the font's storage location and file location. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Manage missing fonts]</p>
-      </td>
-   <td> Select the action to take if there are one or more missing fonts in the document. <ul><li><code>fail</code>: The job will not succeed and the status will be set to failed, with the details of the error provided in the details section in the status.</li><li><code>useDefault</code>: The job will succeed, and all the missing fonts will be replaced with ArialMT.</li></ul></td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each file you want to create, click Add item and enter the storage, location, and type as listed.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Select the file type that you want to convert the file to. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
-      <td>
-        <p><p>For details about output options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </p>
-      </td>
-    </tr>
-    </tbody>
-</table>
-
-### Edit text layers
-
-This action module edits text layers on a Photoshop file. You can enter separate edit details for multiple layers in the same file.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Select the file service where the file you want to edit is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to edit. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Manage missing fonts]</td>
-      <td>
-        <p>Select the action to take if there are one or more missing fonts in the document. If the font is not provided, the module uses the default font.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Default font]  </td>
-      <td>
-        <p>Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> Enter the font's storage location and file location. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>For each text layer that you want to edit, click <b>Add item</b> and enter the layer options.<p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the edited file to be stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the edited file will be stored. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td> Select the file type for the edited file. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Edit text layers (Legacy)
-
-This action module edits a text layer on a Photoshop file.
-
-To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Select the file service where the file you want to edit is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to edit. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Manage missing fonts]</td>
-      <td>
-        <p>Select the action to take if there are one or more missing fonts in the document. If the font is not provided, the module uses the default font.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Default font]  </td>
-      <td>
-        <p>Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
-      </td>
-   <td> Enter the font's storage location and file location. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Layers]</td>
-   <td> <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text layer</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Output file storage]</td>
-      <td>
-        <p>Select the file service where the you want the edited file to be stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the edited file to be stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the edited file will be stored. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td> Select the file type for the edited file. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-### Execute an action JSON
-
-This action module executes Photoshop actions using JSON commands.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to edit is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to edit. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Action JSON]</td>
-      <td>
-        <p>Enter the JSON command for the action you want to take.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Fonts / Patterns / Brushes / Additional images]</td>
-      <td>
-        <p>For each font, pattern, brush, or additional image that you want to use in this action, click Add item and enter the item's storage and file location.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to use. </td> 
-    </tr>
-    <tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each file you want to create, click Add item and enter the storage, location, type, and overwrite option as listed.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) File URL]</p>
-      </td>
-   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) Type]</p>
-      </td>
-   <td> Select the file type for the edited file. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
-      </td>
-    </tr>
-      </tbody>
-</table>
-
-### Execute Depth Blur
-
-This action module executes Depth Blur on the selected file.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Select the file service where the file you want to edit is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to edit. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) File URL]</p>
-      </td>
-   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) Type]</p>
-      </td>
-   <td> Select the file type for the edited file. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
-      </td>
-    </tr>
-   <tr>
-      <td role="rowheader">[!UICONTROL Other fields]</td>
-      <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Execute Photoshop Actions
-
-This action module executes a Photoshop action on the selected image.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Select the file service where the file you want to edit is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to edit. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Actions file storage]</td>
-      <td>
-        <p>Select the file service where actions file is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Actions file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the actions file. </td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Action name]</p>
-      </td>
-   <td> If you only want to execute a particular action, you may specify which action to play from the ActionSet. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Font / Pattern / Brush storage]</td>
-      <td>
-        <p>Select the file service where the file you want to use is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to use. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) File URL]</p>
-      </td>
-   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) Type]</p>
-      </td>
-   <td> Select the file type for the edited file. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
-      </td>
-    </tr>
-   <tr>
-      <td role="rowheader">[!UICONTROL Other fields]</td>
-      <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Execute Product Crop
-
-This action module executes Product Crop on the selected image.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Select the file service where the file you want to crop is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to crop. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Unit]</p>
-      </td>
-   <td> Select whether you want to describe the height and width adjustment in pixels or as a percent. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Width]</p>
-      </td>
-   <td> Enter or map amount of width padding you want to add. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Height]</p>
-      </td>
-   <td> Enter or map amount of height padding you want to add. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) File URL]</p>
-      </td>
-   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) Type]</p>
-      </td>
-   <td> Select the file type for the edited file. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
-      </td>
-    </tr>
-   <tr>
-      <td role="rowheader">[!UICONTROL Other fields]</td>
-      <td>
-        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### Get layer info
-
-This action module retrieves layer information from the specified PSD file.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Input file storage]</td>
-      <td>
-        <p>Select the file service where the file you want to retrieve layer information from is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Input file URL]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to retrieve layer information from. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Thumbnails]</p>
-      </td>
-   <td> Select the type of file that you want the thumbnails to be. Thumbnails are small previews for any renderable layer.</td> 
-    </tr>
-  </tbody>
-</table>
-
-### Make a custom API call
-
-This action module makes a custom call to the Photoshop API.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL URL]</td>
-      <td>
-        <p>Enter a path relative to <code>https://image.adobe.io/pie/psdService</code>. Example: <code>/photoshopActions</code></p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
-      </td>
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
-      <td>
-        <p>Add the headers of the request in the form of a standard JSON object.</p>
-        <p>For example, <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion adds authorization headers automatically.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Query String]  </td>
-      <td>
-        <p>Enter the request query string.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td>     </tr>
-  </tbody>
-</table>
-
-### Remove background
-
-This action module identifies the main subject of your image and removes the background. 
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to remove the background from is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to remove the background from. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Color space]</p>
-      </td>
-   <td>Select whether the output image uses RGB or RGBA color. </td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Mask format]</p>
-      </td>
-   <td>Select whether the edges of the image should be soft (feathered) or binary. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Optimize]</p>
-      </td>
-   <td>Select Performance to optimize for speed, or Batch to allow wait time. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Post process]</p>
-      </td>
-   <td>Select whether to enable post processing.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Version]</p>
-      </td>
-   <td>Default is 4.0</td> 
-    </tr> 
-    </tbody>
-</table>
-
-### Replace a smart object
-
-This action module replaces a Smart Object within a PSD layer, and generates new renditions.
-
-This module uses Smart Object API version 2.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the Smart Object is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the Smart Object. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Layers]</p>
-      </td>
-   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resize image during place]</p>
-      </td>
-   <td> Select whether you want to resize the image.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each new rendition you want the module to produce, click Add item and fill in the following fields. You can have a maximum of 25 output files.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Outputs) Type]</p>
-      </td>
-   <td> Select the file type for the edited file. </td> 
-    </tr>
-     </tbody>
-</table>
-
-### Replace a smart object (Legacy)
-
-This action module replaces a Smart Object within a PSD layer, and generates new renditions.
-
-This module uses the legacy version of Smart Objects.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
-      <td>
-        <p>Select the file service where the Smart Object is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the Smart Object. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Layers]</p>
-      </td>
-   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each new rendition you want the module to produce, click Add item and fill in the following fields. You can have a maximum of 25 output files.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Width]</p>
-      </td>
-   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tbody>
-</table>
-
-### Resize an image
-
-This action resizes an image, using the same aspect ratio.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to resize is stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to resize.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Outputs]</td>
-      <td>
-        <p>For each converted file you want to create, click Add item and enter the storage, location, and other options as listed.</p>
-      </td>
-    </tr>
-    <tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Storage]</td>
-      <td>
-        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Width]</p>
-      </td>
-   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Max width]</p>
-      </td>
-   <td>When width is 0, Max with can be provided to get the size. Max width takes precedence with it is smaller than the document width.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tr>
-        <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Trim to canvas]</p>
-      </td>
-   <td>Select Yes to trim the renditions to Canvas size, or No to make the renditions Layer Size.</td> 
-    </tr>
-    </tbody>
-</table>
-
-### Watermark an image
-
-This action module adds a watermark to the selected image.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Base > Input) Storage]</td>
-      <td>
-        <p>Select the file service where the file you want to add a watermark to is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Base > Input) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of the file that you want to add a watermark to. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Watermark > Input) Storage]</td>
-      <td>
-        <p>Select the file service where the watermark you want to add is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Watermark > Input) Storage]</td>
-      <td>
-        <p>Select the file service where the watermark you want to add is stored.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Watermark > Bounds) Height]</p>
-      </td>
-   <td>Enter or map the desired height of the watermark in pixels.</td> 
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Watermark > Bounds) Width]</p>
-      </td>
-   <td> Enter or map the desired width of the watermark in pixels. </td> 
-    </tr>  
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Watermark > Bounds) Left]</p>
-      </td>
-   <td> Enter or map the distance in pixels from the left side of the image that the watermark should be.</td> 
-    </tr>  
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Watermark > Bounds) Top]</p>
-      </td>
-   <td> Enter or map the distance in pixels from the top of the image that the watermark should be.</td> 
-    </tr>  
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
-      <td>
-        <p>Select the file service where the you want the watermarked file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) File location]</p>
-      </td>
-   <td> Enter or map the URL or path of where the watermarked file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Type]</p>
-      </td>
-   <td>Select the file type that you want to convert the file to. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL (Output) Width]</p>
-      </td>
-   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
-      <td>
-        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
-      </td>
-    </tbody>
-</table>
-
-
-### Create an artboard
+#### Create an artboard
 
 This module creates a new artboard in Photoshop.
 
@@ -1530,7 +266,7 @@ This module creates a new artboard in Photoshop.
     </tbody>
 </table>
 
-### Create or edit a composite
+#### Create or edit a composite
 
 This module creates or edits a composite in Photoshop.
 
@@ -1695,7 +431,7 @@ This module creates or edits a composite in Photoshop.
       </tbody>
 </table>
 
-### Edit an image with various adjustments
+#### Edit an image with various adjustments
 
 This module makes Lightroom-style adjustments to an image.
 
@@ -1722,7 +458,7 @@ This module makes Lightroom-style adjustments to an image.
     </tbody>
 </table>
 
-### Execute Photoshop actions, scripts, and transformations
+#### Execute Photoshop actions, scripts, and transformations
 
 This module executes actions, scripts, and transformations available in the Firefly Photoshop API.
 
@@ -1773,7 +509,7 @@ This module executes actions, scripts, and transformations available in the Fire
     </tbody>
 </table>
 
-### Generate a manifest
+#### Generate a manifest
 
 This module generates a PSD manifest for the given input image.
 
@@ -1837,4 +573,1462 @@ This module generates a PSD manifest for the given input image.
       </tr>
     </tbody>
 </table> 
+
+#### Remove background
+
+This action module identifies the main subject of your image and removes the background. 
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to remove the background from is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to remove the background from. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Color space]</p>
+      </td>
+   <td>Select whether the output image uses RGB or RGBA color. </td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Mask format]</p>
+      </td>
+   <td>Select whether the edges of the image should be soft (feathered) or binary. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Optimize]</p>
+      </td>
+   <td>Select Performance to optimize for speed, or Batch to allow wait time. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Post process]</p>
+      </td>
+   <td>Select whether to enable post processing.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Version]</p>
+      </td>
+   <td>Default is 4.0</td> 
+    </tr> 
+    </tbody>
+</table>
  
+
+### Legacy
+
+* [Apply PSD edits (Legacy)](#apply-psd-edits-legacy)
+* [Auto color correct an image (Legacy)](#auto-color-correct-an-image-legacy)
+* [Convert image format (Legacy)](#convert-image-format-legacy)
+* [Create a mask (Legacy)](#create-a-mask-legacy)
+* [Create a new PSD (Legacy)](#create-a-new-psd-legacy)
+* [Create renditions (Legacy)](#create-renditions-legacy)
+* [Edit text layers (Legacy)](#edit-text-layers-legacy)
+* [Edit text layers 2 (Legacy)](#edit-text-layers-2-legacy)
+* [Execute an action JSON (Legacy)](#execute-an-action-json-legacy)
+* [Execute Depth Blur (Legacy)](#execute-depth-blur-legacy)
+* [Execute Photoshop actions (Legacy)](#execute-photoshop-actions-legacy)
+* [Execute Product Crop (Legacy)](#execute-product-crop-legacy)
+* [Get layer info (Legacy)](#get-layer-info-legacy)
+* [Make a custom API call (Legacy)](#make-a-custom-api-call-legacy)
+* [Remove background (Legacy)](#remove-background-legacy) 
+* [Replace a Smart Object (Legacy)](#replace-a-smart-object-legacy)
+* [Replace a Smart Object 2 (Legacy)](#replace-a-smart-object-2-legacy)
+* [Resize an image (Legacy)](#resize-an-image-legacy)
+* [Watermark an image (Legacy)](#watermark-an-image-legacy)
+
+#### Apply PSD edits (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+This action module applies a variety of document and layer level edits. 
+
+This module supports large files. For more information on large files, see [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Image size) Height]</p>
+      </td>
+      <td> Enter or map the height of the image in pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Image size) Width]</p>
+      </td>
+      <td> Enter or map the width of the image in pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Canvas size) Top]</p>
+      </td>
+   <td> Enter or map, in pixels, the y coordinate of the document's upper-left corner. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Canvas size) Bottom]</p>
+      </td>
+   <td> Enter or map, in pixels, the y coordinate of the document's lower-right corner. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Canvas size) Left]</p>
+      </td>
+   <td> Enter or map, in pixels, the x coordinate of the document's upper-left corner. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Canvas size) Right]</p>
+      </td>
+   <td> Enter or map, in pixels, the x coordinate of the document's lower-right corner. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Trim]</p>
+      </td>
+   <td> Select Transparent pixels to base the trim on transparent pixels in the image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Default font]</p>
+      </td>
+   <td> Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> For each font that the document needs, click Add item and enter the font's storage location and file location. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Manage missing fonts]</p>
+      </td>
+   <td> Select the action to take if there are one or more missing fonts in the document. <ul><li><code>fail</code>: The job will not succeed and the status will be set to failed, with the details of the error provided in the details section in the status.</li><li><code>useDefault</code>: The job will succeed, and all the missing fonts will be replaced with ArialMT.</li></ul></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Layers]</p>
+      </td>
+   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">Apply PSD Edits</a> in the Adobe Photoshop documentation.  </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each edited file you want to create, click Add item and enter the storage, location, and type as listed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Select the file type that you want to convert the file to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Trim to Canvas]</p>
+      </td>
+   <td>Select whether the renditions must be of Canvas size. True trims the renditions to Canvas size, while False makes the renditions layer Size</td> 
+    </tr>
+    </tbody>
+</table>
+
+#### Auto color correct an image (Legacy)
+
+This action module auto color corrects the specified image.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to color correct is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to color correct. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Select the file type that you want to convert the file to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+#### Convert image format (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+This action module converts a file to JPEG, PNG, PSD or TIFF.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to remove the background from is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to remove the background from. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each converted file you want to create, click Add item and enter the storage, location, and type as listed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Select the file type that you want to convert the file to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+#### Create a mask (Legacy)
+
+This action module returns a PNG file with a mask applied around the subject.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to create a mask from is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to create a mask from. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the mask file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the mask file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Color space]</p>
+      </td>
+   <td>Select whether the output image uses RGB or RGBA color. </td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Mask format]</p>
+      </td>
+   <td>Select whether the mask should be soft (feathered) or binary. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Optimize]</p>
+      </td>
+   <td>Select Performance to optimize for speed, or Batch to allow wait time. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Post process]</p>
+      </td>
+   <td>Select whether to enable post processing.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Version]</p>
+      </td>
+   <td>Default is 4.0</td> 
+    </tr> 
+    </tbody>
+</table>
+
+#### Create a new PSD (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+This action module creates a new PSD with optional layers, and generates renditions or saves as a PSD.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Image size) Height]</p>
+      </td>
+      <td> Enter or map the height of the image in pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document > Image size) Width]</p>
+      </td>
+      <td> Enter or map the width of the image in pixels. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Resolution]</p>
+      </td>
+   <td> Enter or map, in pixels per inch, the resolution for the image. This must be between 72 and 300. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Mode]</p>
+      </td>
+   <td> Select the mode for the image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Fill]</p>
+      </td>
+   <td> Select whether you want the fill for the background layer to be transparent, white, or the background color of the image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options > Document) Depth]</p>
+      </td>
+   <td> Select the bit depth of the image. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Layers]</p>
+      </td>
+   <td> For each layer you want to add, click Add item and and fill in the layer details. <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Global font]</p>
+      </td>
+   <td> Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> For each font that the document needs, click Add item and enter the font's storage location and file location. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Manage missing fonts]</p>
+      </td>
+   <td> Select the action to take if there are one or more missing fonts in the document. <ul><li><code>fail</code>: The job will not succeed and the status will be set to failed, with the details of the error provided in the details section in the status.</li><li><code>useDefault</code>: The job will succeed, and all the missing fonts will be replaced with ArialMT.</li></ul></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each file you want to create, click Add item and enter the storage, location, and type as listed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Select the file type that you want to convert the file to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Other fields]</td>
+      <td>
+        <p><p>For details about output options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">Create PSD</a> in the Adobe Photoshop documentation.  </p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+#### Create renditions (Legacy)
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each file you want to create, click Add item and enter the storage, location, type, and overwrite option as listed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+      </tbody>
+</table>
+
+#### Edit text layers (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
+This action module edits text layers on a Photoshop file. You can enter separate edit details for multiple layers in the same file.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Manage missing fonts]</td>
+      <td>
+        <p>Select the action to take if there are one or more missing fonts in the document. If the font is not provided, the module uses the default font.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
+      <td>
+        <p>Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Enter the font's storage location and file location. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Layers]</td>
+   <td> <p>For each text layer that you want to edit, click <b>Add item</b> and enter the layer options.<p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Edit text layers 2 (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
+This action module edits a text layer on a Photoshop file.
+
+To edit multiple layers, use the [Edit text layers](#edit-text-layers) module.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Manage missing fonts]</td>
+      <td>
+        <p>Select the action to take if there are one or more missing fonts in the document. If the font is not provided, the module uses the default font.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Default font]  </td>
+      <td>
+        <p>Enter the full postscript name of the font to be used as the global default for the document. This font will be used for any text layer which has a missing font and no other font has been specifically provided for that layer. If this font is missing, the option specified in Manage missing fonts will take effect.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Options) Fonts]</p>
+      </td>
+   <td> Enter the font's storage location and file location. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Layers]</td>
+   <td> <p>For details about layer options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">Edit text layer</a> in the Adobe Photoshop documentation.</p>  </td>     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Output file storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### Execute an action JSON (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
+This action module executes Photoshop actions using JSON commands.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Action JSON]</td>
+      <td>
+        <p>Enter the JSON command for the action you want to take.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Fonts / Patterns / Brushes / Additional images]</td>
+      <td>
+        <p>For each font, pattern, brush, or additional image that you want to use in this action, click Add item and enter the item's storage and file location.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to use. </td> 
+    </tr>
+    <tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each file you want to create, click Add item and enter the storage, location, type, and overwrite option as listed.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) File URL]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+      </tbody>
+</table>
+
+#### Execute Depth Blur (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+
+This action module executes Depth Blur on the selected file.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) File URL]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Execute Photoshop Actions (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
+This action module executes a Photoshop action on the selected image.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Select the file service where the file you want to edit is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to edit. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Actions file storage]</td>
+      <td>
+        <p>Select the file service where actions file is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Actions file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the actions file. </td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Action name]</p>
+      </td>
+   <td> If you only want to execute a particular action, you may specify which action to play from the ActionSet. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Font / Pattern / Brush storage]</td>
+      <td>
+        <p>Select the file service where the file you want to use is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Font / Pattern / Brush file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to use. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) File URL]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Execute Product Crop (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Execute Photoshop actions, scripts, and transformations](#execute-photoshop-actions-scripts-and-transformations) module.
+
+This action module executes Product Crop on the selected image.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Select the file service where the file you want to crop is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to crop. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Unit]</p>
+      </td>
+   <td> Select whether you want to describe the height and width adjustment in pixels or as a percent. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td> Enter or map amount of width padding you want to add. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Height]</p>
+      </td>
+   <td> Enter or map amount of height padding you want to add. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the edited file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) File URL]</p>
+      </td>
+   <td> Enter or map the URL or path of where the edited file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Outputs) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists.</p>
+      </td>
+    </tr>
+   <tr>
+      <td role="rowheader">[!UICONTROL Other fields]</td>
+      <td>
+        <p>For details about other Depth Blur options, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">Execute Depth Blur </a>in the Adobe Photoshop API documentation.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+#### Get layer info (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Generate a manifest](#generate-a-manifest) module.
+
+This action module retrieves layer information from the specified PSD file.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Input file storage]</td>
+      <td>
+        <p>Select the file service where the file you want to retrieve layer information from is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Input file URL]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to retrieve layer information from. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Thumbnails]</p>
+      </td>
+   <td> Select the type of file that you want the thumbnails to be. Thumbnails are small previews for any renderable layer.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Make a custom API call
+
+This action module makes a custom call to the Photoshop API.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL URL]</td>
+      <td>
+        <p>Enter a path relative to <code>https://image.adobe.io/pie/psdService</code>. Example: <code>/photoshopActions</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+      </td>
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>Add the headers of the request in the form of a standard JSON object.</p>
+        <p>For example, <code>{"Content-type":"application/json"}</code></p>
+        <p>Workfront Fusion adds authorization headers automatically.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Query String]  </td>
+      <td>
+        <p>Enter the request query string.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
+#### Replace a smart object (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+This action module replaces a Smart Object within a PSD layer, and generates new renditions.
+
+This module uses Smart Object API version 2.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the Smart Object is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the Smart Object. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layers]</p>
+      </td>
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resize image during place]</p>
+      </td>
+   <td> Select whether you want to resize the image.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each new rendition you want the module to produce, click Add item and fill in the following fields. You can have a maximum of 25 output files.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Outputs) Type]</p>
+      </td>
+   <td> Select the file type for the edited file. </td> 
+    </tr>
+     </tbody>
+</table>
+
+#### Replace a smart object 2 (Legacy)
+
+This action module replaces a Smart Object within a PSD layer, and generates new renditions.
+
+This module uses the legacy version of Smart Objects.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Input) Storage]</td>
+      <td>
+        <p>Select the file service where the Smart Object is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the Smart Object. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Layers]</p>
+      </td>
+   <td>For each layer you want to add to the Smart Object, click Add item and Enter the object's name or ID, the file service where the Smart Object is stored, and the the URL or path of the layer.<p>For descriptions of the advanced settings in this area, see <a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">Replace a Smart Object</a> in the Photoshop API documentation </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each new rendition you want the module to produce, click Add item and fill in the following fields. You can have a maximum of 25 output files.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Width]</p>
+      </td>
+   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tbody>
+</table>
+
+#### Resize an image (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+This action resizes an image, using the same aspect ratio.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to resize is stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to resize.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Outputs]</td>
+      <td>
+        <p>For each converted file you want to create, click Add item and enter the storage, location, and other options as listed.</p>
+      </td>
+    </tr>
+    <tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Storage]</td>
+      <td>
+        <p>Select the file service where the you want the new file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the new file will be stored.  This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Width]</p>
+      </td>
+   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Max width]</p>
+      </td>
+   <td>When width is 0, Max with can be provided to get the size. Max width takes precedence with it is smaller than the document width.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tr>
+        <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Trim to canvas]</p>
+      </td>
+   <td>Select Yes to trim the renditions to Canvas size, or No to make the renditions Layer Size.</td> 
+    </tr>
+    </tbody>
+</table>
+
+#### Watermark an image (Legacy)
+
+>[!NOTE]
+>
+>This module has been deprecated, and will no longer work after July 30, 2026.
+>Update this module to the [Create or edit a composite](#create-or-edit-a-composite) module.
+
+This action module adds a watermark to the selected image.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Photoshop], see <a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >Create a connection to [!DNL Adobe Photoshop]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Base > Input) Storage]</td>
+      <td>
+        <p>Select the file service where the file you want to add a watermark to is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Base > Input) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of the file that you want to add a watermark to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Watermark > Input) Storage]</td>
+      <td>
+        <p>Select the file service where the watermark you want to add is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Watermark > Input) Storage]</td>
+      <td>
+        <p>Select the file service where the watermark you want to add is stored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Watermark > Bounds) Height]</p>
+      </td>
+   <td>Enter or map the desired height of the watermark in pixels.</td> 
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Watermark > Bounds) Width]</p>
+      </td>
+   <td> Enter or map the desired width of the watermark in pixels. </td> 
+    </tr>  
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Watermark > Bounds) Left]</p>
+      </td>
+   <td> Enter or map the distance in pixels from the left side of the image that the watermark should be.</td> 
+    </tr>  
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Watermark > Bounds) Top]</p>
+      </td>
+   <td> Enter or map the distance in pixels from the top of the image that the watermark should be.</td> 
+    </tr>  
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Storage]</td>
+      <td>
+        <p>Select the file service where the you want the watermarked file to be stored.</p><p>Selecting Fusion internal storage makes the file available for later modules, but does not make the file available outside of the scenario.</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) File location]</p>
+      </td>
+   <td> Enter or map the URL or path of where the watermarked file will be stored. This is only necessary if you have not chosen Fusion internal storage for the output storage.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Type]</p>
+      </td>
+   <td>Select the file type that you want to convert the file to. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL (Output) Width]</p>
+      </td>
+   <td> The width, in pixels, of the output file. The module will preserve the original aspect ratio. </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL (Output) Overwrite]</td>
+      <td>
+        <p>Select whether the newly edited file will overwrite any output file that already exists. This applies only to files in Adobe storage.</p>
+      </td>
+    </tbody>
+</table>
