@@ -2,6 +2,7 @@
 user-guide-title: Adobe Workfront Fusion documentation
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: Use the docs, tutorials, and additional resources to learn how to implement and effectively use Adobe Workfront Fusion in your organization.
+nudge: true
 ---
 
 # Adobe Workfront Fusion documentation {#using}
