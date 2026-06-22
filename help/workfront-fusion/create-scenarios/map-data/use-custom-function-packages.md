@@ -1,0 +1,288 @@
+---
+title: Map data using custom functions
+description: When you map items, you can use functions to create simple or complex formulas.
+author: Becky
+feature: Workfront Fusion
+---
+
+# Packages
+
+Packages let you build and run your own custom logic inside Adobe Workfront Fusion, without leaving the Fusion interface. When the standard modules don't do exactly what you need, you can use a function to transform data, do a calculation, call an external service, or wrap a routine you want to reuse. You can then test it, make it live, and use it from your scenarios.
+
+Complex functions may require resources such as variables and dependencies such as libraries. For these functions, you can create a package that includes the function and its resources.
+
+A package can include:
+
+* **Functions**: The logic that runs during a scenario execution.
+* **Variables**: Reusable values, such as a base URL or an API key, that the function in the package uses.
+* **Dependencies**: Outside libraries your functions may rely on.
+* **History**: Earlier versions of each function, saved automatically, that you can reference.
+
+
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p><ul><li>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li><li>You must have an Adobe App Builder license to use custom functions.</ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Set up the runtime environment
+
+>[!NOTE]
+>
+>This is a one-time setup.
+
+The first time your team uses this feature, you must set up the environment that runs the functions. You only do this once per team.
+
+1. Click the **Packages** ![Packages icon](assets/packages%20icon.png) tab in the left navigation panel.
+
+   If setup is needed, the **Runtime Environment Not Configured** screen appears.
+
+1. Select **Initialize runtime**.
+
+1. In the dialog, enter a **Connection name**, or keep the suggested one.
+
+1. Choose where your functions live:
+
+   * Start typing to search for and select an existing project.
+   * To create a new one, type a name that doesn't already exist and select **Create new**.
+   * If you leave this empty, Fusion uses a default project.
+
+1. Select **Continue**.
+
+   Fusion finishes the setup and you're ready to create packages.
+
+After setup, your environment appears as a **connection** tab at the top of the page. You can have more than one connection—select a tab to switch between them, select the **+** tab to add another, or select the **✕** on a tab to remove one.
+
+>[!IMPORTANT]
+>
+>Removing a connection disconnects Fusion from that environment. The packages in it are no longer available in Fusion through that connection.
+
+## Create and open a package
+
+1. Select the connection you want to work in.
+
+1. Select **Create package**.
+
+1. Enter a name and select **Create**.
+
+   The package opens automatically.
+
+To reopen a package later, select it in the list and select **View**. To delete a package, select it and choose **Delete**.
+
+>[!WARNING]
+>
+>Deleting a package permanently removes it and everything inside it.
+
+## Inside a package
+
+An open package is organized into four areas:
+
+* **Functions** — create, test, and publish your logic.
+* **Variables** — reusable values your functions use.
+* **Dependencies** — extra libraries your functions need.
+* **History** — previous versions of your functions.
+
+A **Storage** meter at the top shows how much of your space is used. Each package has a total size limit of **21 MB**, which covers everything in it together—your functions, variables, and dependencies (including saved versions). The meter turns amber as you approach the limit and red when you're nearly full. If you run out of space, remove unused dependencies, variables, or older versions to free some up.
+
+To go back to the package list, select the back arrow next to the package name.
+
+## Functions
+
+The **Functions** area lists everything in the package. For each function you can see its name, status, and how many inputs it expects. Use the **All / Drafts / Published** buttons and the search box to find what you need.
+
+### Drafts and published versions
+
+A function can be a **draft**, a **published** version, or both:
+
+* A **draft** is your work in progress. You can edit and test it freely without affecting anything that's already live.
+* A **published** version is live—this is the version your scenarios actually run.
+
+This lets you safely make changes: keep refining a draft, test it, and only make it live when you're happy with it.
+
+|Status|What it means|
+|---|---|
+|**Published**|A live version exists.|
+|**Draft**|The function is still in progress, or a live function has changes you haven't published yet.|
+
+### Create a function
+
+1. In the **Functions** area, select **Create function**.
+
+1. Give the function a name.
+
+1. On the **Code** tab, write what the function should do.
+
+   Functions are written in JavaScript. You can read the inputs you define, reuse your variables, and even call your other functions. As you type, suggestions appear to help you. Select **Beautify** at any time to tidy up the formatting.
+
+1. (Optional) On the **Parameters** tab, define the inputs your function expects (see [Define inputs](#define-inputs)).
+
+1. Select **Save as draft**.
+
+1. When you're ready to make it live, select **Publish**.
+
+   >[!NOTE]
+   >
+   >Publishing a function clears its version history. The published version becomes the current starting point, and earlier draft versions are no longer kept.
+
+### Define inputs
+
+Use the **Parameters** tab to describe the information your function needs each time it runs. Select **Add Parameter** and set:
+
+* **Name** — what the input is called.
+* **Label** — a friendly name shown when you test the function.
+* **Type** — text, number, true/false, or a structured object.
+* **Required** — whether a value must be provided.
+
+These inputs become the fields you fill in when testing, and the values your scenario passes in when it runs the function.
+
+### Test a function
+
+Before relying on a function, try it on the **Test** tab:
+
+1. Fill in a value for each input.
+
+1. Run it:
+
+   * Select **Test Draft** to try your work-in-progress version.
+   * Select **Execute Published** to run the live version.
+
+1. Review the result, including whether it succeeded, how long it took, and the output it returned.
+
+>[!NOTE]
+>
+>**Execute Published** is available only after a function has been published.
+
+### Make changes to a live function
+
+After a function is published, the **Publish** button becomes a menu:
+
+* **Republish** — push your latest draft changes to the live version.
+* **Unpublish** — take the function out of service. Your work is kept as a draft so you can come back to it.
+
+### Rename a function
+
+Open the function, select the edit (pencil) icon next to its name, enter a new name, and select **Rename**. The new name applies everywhere, including past versions.
+
+### Delete a function
+
+Select the function and choose **Delete**.
+
+>[!WARNING]
+>
+>Deleting a function removes it completely, along with its history. Any scenario or function that uses it will stop working.
+
+## Variables
+
+Variables are reusable values—like a base URL, an account ID, or an API key—that your functions can use. Storing them as variables means you set a value once and update it in one place, instead of repeating it across many functions.
+
+### Create or edit a variable
+
+1. On the **Variables** tab, select **New variable** (or **Edit** on an existing one).
+
+1. Fill in the details:
+
+   * **Key** — the name your functions use to refer to the value.
+   * **Value** — the value to store.
+   * **Type** — text, number, true/false, or a structured object.
+   * **Description** — an optional note to remind you what it's for.
+   * **Public** — turn this on to also use the variable in the scenario designer. When off, the variable is only available inside the package's functions.
+   * **Secret** — turn this on to hide sensitive values (such as keys). The value is hidden in the variables list, and it's also kept out of sight in the scenario designer—its value is sanitized so it isn't exposed there. Your functions still receive the real value when they run.
+
+1. Select **Create variable** or **Save changes**.
+
+>[!NOTE]
+>
+>To rename a variable, change its **Key** while editing. Fusion replaces the old variable with a new one under the new name.
+
+### Delete a variable
+
+Select the delete icon on a variable and confirm.
+
+>[!WARNING]
+>
+>Functions that use a deleted variable will stop working.
+
+## Use a package in a scenario
+
+The point of building functions and variables is to put them to work in your scenarios. They become available in the scenario designer through the **Adobe App Builder** connector, which now includes two modules:
+
+* **Use function from package** — run one of your functions as a step in a scenario. Choose the package and function, fill in the inputs you defined, and the function's result is passed along to the modules that follow.
+* **Use variable from package** — bring one of your package variables into a scenario so you can map its value into other modules.
+
+To add one:
+
+1. In the scenario designer, add a module and choose the **Adobe App Builder** connector.
+
+1. Select **Use function from package** or **Use variable from package**.
+
+1. Choose the package and the function or variable you want, then map the inputs or value as needed.
+
+>[!NOTE]
+>
+>Publish a function before using it in a scenario, and turn on **Public** for any variable you want to use there.
+
+## Dependencies
+
+Some functions need extra libraries to do their job. The **Dependencies** tab is where you add and manage those libraries.
+
+### Add libraries
+
+1. On the **Dependencies** tab, enter one or more library names, separated by commas. You can request a specific version by adding it after the name (for example, `axios, lodash@4.17.21`).
+
+1. Select **Install**.
+
+### Remove a library
+
+Select the delete icon next to a library and confirm.
+
+>[!WARNING]
+>
+>Functions that rely on a removed library may stop working.
+
+## History
+
+Every time you save a function, Fusion keeps a copy. The **History** tab lets you look back at earlier versions and bring one back if you need to.
+
+* Select a function on the left to see its saved versions, newest first.
+* Select a version to view exactly what it contained at that time.
+
+This happens automatically—there's nothing to turn on. There's no set limit on how many versions are kept; they use part of your package's storage, so you can remove ones you no longer need.
+
+>[!NOTE]
+>
+>Publishing a function clears its history. History tracks the changes you make while working on a draft, up until you publish.
+
+### Restore an earlier version
+
+Select a function, choose a version, and select **Restore as Draft**. That version comes back as a new draft, so you can review and test it before publishing. Your live version stays in place until you publish.
+
+### Delete a version
+
+Select a function and a version, then select **Delete Version** and confirm.
+
+>[!WARNING]
+>
+>Deleting a version can't be undone.
