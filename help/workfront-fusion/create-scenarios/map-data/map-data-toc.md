@@ -16,5 +16,6 @@ product_v2:
 * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
 * [Map items using built-in functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
 * [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
+* [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)
 * [Map arrays](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
 * [Map files](/help/workfront-fusion/create-scenarios/map-data/map-files.md)

@@ -1,11 +1,11 @@
 ---
-title: Map data using custom functions
+title: Use Custom Function Packages
 description: When you map items, you can use functions to create simple or complex formulas.
 author: Becky
 feature: Workfront Fusion
 ---
 
-# Packages
+# Use custom function packages
 
 Packages let you build and run your own custom logic inside Adobe Workfront Fusion, without leaving the Fusion interface. When the standard modules don't do exactly what you need, you can use a function to transform data, do a calculation, call an external service, or wrap a routine you want to reuse. You can then test it, make it live, and use it from your scenarios.
 
@@ -48,7 +48,7 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Set up the runtime environment
+## Set up the runtime environment connection
 
 >[!NOTE]
 >
@@ -56,64 +56,75 @@ For more detail about the information in this table, see [Access requirements in
 
 The first time your team uses this feature, you must set up the environment that runs the functions. You only do this once per team.
 
-1. Click the **Packages** ![Packages icon](assets/packages%20icon.png) tab in the left navigation panel.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
 
-   If setup is needed, the **Runtime Environment Not Configured** screen appears.
+   If the environment has not been set up, the **Runtime Environment Not Configured** screen appears.
 
-1. Select **Initialize runtime**.
+1. Click **Initialize runtime**.
 
-1. In the dialog, enter a **Connection name**, or keep the suggested one.
+1. To enter a name other than the default name, type the name in the **Connection name** field.
 
-1. Choose where your functions live:
+1. Select the Adobe App Builder project that this package will belong to::
 
-   * Start typing to search for and select an existing project.
-   * To create a new one, type a name that doesn't already exist and select **Create new**.
+   * To select an existing project, begin typing the project name, then select it when it appears.
+   * To create a new project, enter a name that doesn't already exist and click **Create new**.
    * If you leave this empty, Fusion uses a default project.
 
 1. Select **Continue**.
 
    Fusion finishes the setup and you're ready to create packages.
 
-After setup, your environment appears as a **connection** tab at the top of the page. You can have more than one connection—select a tab to switch between them, select the **+** tab to add another, or select the **✕** on a tab to remove one.
+   Your environment appears as a connection tab at the top of the page. 
+   
+   ![Environment as connection tab](assets/package-environment-as-connection.png)
 
->[!IMPORTANT]
->
->Removing a connection disconnects Fusion from that environment. The packages in it are no longer available in Fusion through that connection.
+1. (Conditional) To add an additional environment, click the Plus icon and follow the instructions in this section.
+
+1. (Conditional) To remove an existing environment, hover over the environment connection tab and click **X** when it appears.
+
+   >[!WARNING]
+   >
+   >Removing a connection disconnects Fusion from that environment. The packages in it are no longer available in Fusion through that connection.
 
 ## Create and open a package
 
-1. Select the connection you want to work in.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
 
-1. Select **Create package**.
+1. Select the tab for the connection you want to work in.
+
+1. Click **Create package**.
 
 1. Enter a name and select **Create**.
 
    The package opens automatically.
 
-To reopen a package later, select it in the list and select **View**. To delete a package, select it and choose **Delete**.
+1. To reopen a package later, select it from the Packages list and select **View**. 
+1. To delete a package, select it from the Packages list and choose **Delete**.
 
->[!WARNING]
->
->Deleting a package permanently removes it and everything inside it.
+   >[!WARNING]
+   >
+   >Deleting a package permanently removes it and everything inside it.
 
-## Inside a package
+## Manage a package
 
 An open package is organized into four areas:
 
-* **Functions** — create, test, and publish your logic.
-* **Variables** — reusable values your functions use.
-* **Dependencies** — extra libraries your functions need.
-* **History** — previous versions of your functions.
+* **Functions**: Create, test, and publish the function.
+* **Variables**: Configure variables for the function.
+* **Dependencies**: Install dependencies, such as outside libraries, for this function.
+* **History**: View earlier versions of each function.
 
-A **Storage** meter at the top shows how much of your space is used. Each package has a total size limit of **21 MB**, which covers everything in it together—your functions, variables, and dependencies (including saved versions). The meter turns amber as you approach the limit and red when you're nearly full. If you run out of space, remove unused dependencies, variables, or older versions to free some up.
+In addition to these four areas, a Storage meter at the top shows how much of your space is used. Each package has a total size limit of **21 MB**. This includes functions, variables, and dependencies, including saved versions. 
+
+If you run out of space, we recommend removing unused dependencies, variables, or older versions to free some up.
 
 To go back to the package list, select the back arrow next to the package name.
 
-## Functions
+### Functions
 
-The **Functions** area lists everything in the package. For each function you can see its name, status, and how many inputs it expects. Use the **All / Drafts / Published** buttons and the search box to find what you need.
+The **Functions** area displays a list of functions in the package, including the function's name, its status, its size, and how many inputs it expects. Use the **All / Drafts / Published** buttons and the search box to find what you need.
 
-### Drafts and published versions
+#### Function status
 
 A function can be a **draft**, a **published** version, or both:
 
@@ -127,7 +138,7 @@ This lets you safely make changes: keep refining a draft, test it, and only make
 |**Published**|A live version exists.|
 |**Draft**|The function is still in progress, or a live function has changes you haven't published yet.|
 
-### Create a function
+#### Create a function
 
 1. In the **Functions** area, select **Create function**.
 
@@ -147,7 +158,7 @@ This lets you safely make changes: keep refining a draft, test it, and only make
    >
    >Publishing a function clears its version history. The published version becomes the current starting point, and earlier draft versions are no longer kept.
 
-### Define inputs
+#### Define inputs
 
 Use the **Parameters** tab to describe the information your function needs each time it runs. Select **Add Parameter** and set:
 
@@ -158,7 +169,7 @@ Use the **Parameters** tab to describe the information your function needs each 
 
 These inputs become the fields you fill in when testing, and the values your scenario passes in when it runs the function.
 
-### Test a function
+#### Test a function
 
 Before relying on a function, try it on the **Test** tab:
 
@@ -182,11 +193,11 @@ After a function is published, the **Publish** button becomes a menu:
 * **Republish** — push your latest draft changes to the live version.
 * **Unpublish** — take the function out of service. Your work is kept as a draft so you can come back to it.
 
-### Rename a function
+#### Rename a function
 
 Open the function, select the edit (pencil) icon next to its name, enter a new name, and select **Rename**. The new name applies everywhere, including past versions.
 
-### Delete a function
+#### Delete a function
 
 Select the function and choose **Delete**.
 
@@ -194,11 +205,11 @@ Select the function and choose **Delete**.
 >
 >Deleting a function removes it completely, along with its history. Any scenario or function that uses it will stop working.
 
-## Variables
+### Variables
 
 Variables are reusable values—like a base URL, an account ID, or an API key—that your functions can use. Storing them as variables means you set a value once and update it in one place, instead of repeating it across many functions.
 
-### Create or edit a variable
+#### Create or edit a variable
 
 1. On the **Variables** tab, select **New variable** (or **Edit** on an existing one).
 
@@ -217,7 +228,7 @@ Variables are reusable values—like a base URL, an account ID, or an API key—
 >
 >To rename a variable, change its **Key** while editing. Fusion replaces the old variable with a new one under the new name.
 
-### Delete a variable
+#### Delete a variable
 
 Select the delete icon on a variable and confirm.
 
