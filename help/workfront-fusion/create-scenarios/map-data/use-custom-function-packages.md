@@ -120,67 +120,112 @@ If you run out of space, we recommend removing unused dependencies, variables, o
 
 To go back to the package list, select the back arrow next to the package name.
 
+<!--Create toc here-->
+
 ### Functions
 
-The **Functions** area displays a list of functions in the package, including the function's name, its status, its size, and how many inputs it expects. Use the **All / Drafts / Published** buttons and the search box to find what you need.
+The **Functions** area displays a list of functions in the package, including the function's name, its status, its size, and how many inputs it expects. 
+
+To filter the functions list:
+
+1. Filter by status by clicking **All**, **Drafts**, or **Published**.
+1. Use the search bar to search for specific functions.
 
 #### Function status
 
-A function can be a **draft**, a **published** version, or both:
+A function can have the status of draft or published.
 
-* A **draft** is your work in progress. You can edit and test it freely without affecting anything that's already live.
-* A **published** version is live—this is the version your scenarios actually run.
+* **Draft**: Functions in Draft status are works in progress. You can edit and test freely without affecting live data.
+* **Published**: Published versions are live. Your scenarios run published versions of functions. 
 
-This lets you safely make changes: keep refining a draft, test it, and only make it live when you're happy with it.
+Using drafts allows you to safely make changes. You can refine a draft, test it, and then publish it when you are satisfied.
 
 |Status|What it means|
 |---|---|
 |**Published**|A live version exists.|
 |**Draft**|The function is still in progress, or a live function has changes you haven't published yet.|
 
-#### Create a function
+#### Create or edit a function in the Packages area
 
-1. In the **Functions** area, select **Create function**.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.1. In the **Functions** area, select **Create function**.
 
-1. Give the function a name.
+   Or
 
-1. On the **Code** tab, write what the function should do.
+   Click the checkbox next to an existing function, and select **Edit** in the action bar at the bottom of the page.
 
-   Functions are written in JavaScript. You can read the inputs you define, reuse your variables, and even call your other functions. As you type, suggestions appear to help you. Select **Beautify** at any time to tidy up the formatting.
+1. If you are creating a new function, in the **New function** field, enter a name for the function.
 
-1. (Optional) On the **Parameters** tab, define the inputs your function expects (see [Define inputs](#define-inputs)).
+1. On the **Code** tab, enter the function logic.
 
-1. Select **Save as draft**.
+   Consider the following when creating your function:
 
-1. When you're ready to make it live, select **Publish**.
+   * Functions must be written in JavaScript.
+   * You can read the inputs you define, reuse your variables, and call your other functions.
+   * As you type, suggestions appear. 
+   
+1. To clean up function formatting, click **Beautify**.
+
+1. (Optional) On the **Parameters** tab, define the inputs your function expects.
+
+   For information on inputs, see [Define inputs](#define-inputs) in this article.
+
+1. On the **Test** tab, test your function.
+
+   For instructions, see [Test a function](#test-a-function) in this article.
+
+1. To save this function as a draft, click **Save as draft**.
+
+   Or
+
+   To publish the function, click **Publish**.
 
    >[!NOTE]
    >
    >Publishing a function clears its version history. The published version becomes the current starting point, and earlier draft versions are no longer kept.
 
-#### Define inputs
+##### Define inputs
 
-Use the **Parameters** tab to describe the information your function needs each time it runs. Select **Add Parameter** and set:
+You can use the **Parameters** tab to describe the information your function needs each time it runs. 
 
-* **Name** — what the input is called.
-* **Label** — a friendly name shown when you test the function.
-* **Type** — text, number, true/false, or a structured object.
-* **Required** — whether a value must be provided.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.1. In the **Functions** area, select **Create function**.
+
+   Or
+
+   Click the checkbox next to an existing function, and select **Edit** in the action bar at the bottom of the page.
+
+1. Click the **Parameters** tab.
+
+1. For each parameter you want to add, click **Add Parameter** and configure the following:
+
+* **Name**: The name of the input
+* **Label**: A user-friendly name shown when you test the function
+* **Type**: The data type, such as text, number, true/false, or a structured object.
+* **Required**: Whether a value must be provided.
 
 These inputs become the fields you fill in when testing, and the values your scenario passes in when it runs the function.
 
-#### Test a function
+##### Test a function
 
-Before relying on a function, try it on the **Test** tab:
+We recommend testing a function before publishing it.
 
-1. Fill in a value for each input.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.1. In the **Functions** area, select **Create function**.
 
-1. Run it:
+   Or
+
+   Click the checkbox next to an existing function, and select **Edit** in the action bar at the bottom of the page.
+
+1. Click the **Test** tab.
+
+1. Enter a value for each input.
+
+1. Run the function:
 
    * Select **Test Draft** to try your work-in-progress version.
    * Select **Execute Published** to run the live version.
 
 1. Review the result, including whether it succeeded, how long it took, and the output it returned.
+
+<!--start here-->
 
 >[!NOTE]
 >
