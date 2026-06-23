@@ -48,9 +48,19 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Configure a custom function
 
-Custom functions are configured in the Functions area of Workfront Fusion. After a function is configured, you can add it to a scenario using the Adobe App Builder connector.
+You can create a custom function in the Functions area that can be used in multiple scenarios, or you can configure custom functions within individual scenarios. 
 
-### Initialize your runtime environment
+* [Create a custom function to use in multiple scenarios](#create-a-custom-function-to-use-in-multiple-scenarios)
+* [Create a custom function within a scenario](#create-a-custom-function-within-a-scenario)
+
+### Create a custom function to use in multiple scenarios
+
+Custom functions that can be used in multiple scenarios are configured in the Functions area of Workfront Fusion. After a function is configured, you can add it to a scenario using the Adobe App Builder connector.
+
+* [Initialize your runtime environment](#initialize-your-runtime-environment)
+* [Create a custom function in the Functions area](#create-a-custom-function-in-the-functions-area)
+
+#### Initialize your runtime environment
 
 Before you can create custom functions, you must initialize your runtime environment. This needs to be done only if your team does not have any custom functions.
 
@@ -67,7 +77,7 @@ Before you can create custom functions, you must initialize your runtime environ
 
    After some time, a Functions list appears, with two sample functions.
 
-### Create a custom function
+#### Create a custom function in the Functions area
 
 After your runtime environment is configured, you can begin creating custom functions.
 
@@ -90,6 +100,12 @@ After your runtime environment is configured, you can begin creating custom func
 
    You can override default parameters when adding the function to a scenario.
 1. Click **Save**
+
+### Create a custom function within a scenario
+
+To create a custom function within a scenario, use the **Run a custom code block** module in the Adobe App Builder connector.
+
+For instructions, see [Adobe App Builder module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
 
 ## Add a custom function to a scenario
 
