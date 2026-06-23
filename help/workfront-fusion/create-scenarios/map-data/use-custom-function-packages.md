@@ -147,13 +147,16 @@ Using drafts allows you to safely make changes. You can refine a draft, test it,
 
 #### Create or edit a function in the Packages area
 
-1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.1. In the **Functions** area, select **Create function**.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. In the **Functions** area, select **Create function**.
 
    Or
 
    Click the checkbox next to an existing function, and select **Edit** in the action bar at the bottom of the page.
 
-1. If you are creating a new function, in the **New function** field, enter a name for the function.
+1. (Conditional) If you are creating a new function, in the **New function** field, enter a name for the function.
+
+1. (Optional and conditional) To rename an existing function, click the Edit icon next to the name of the function and enter the new name.
 
 1. On the **Code** tab, enter the function logic.
 
@@ -208,7 +211,8 @@ These inputs become the fields you fill in when testing, and the values your sce
 
 We recommend testing a function before publishing it.
 
-1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.1. In the **Functions** area, select **Create function**.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. In the **Functions** area, select **Create function**.
 
    Or
 
@@ -225,26 +229,21 @@ We recommend testing a function before publishing it.
 
 1. Review the result, including whether it succeeded, how long it took, and the output it returned.
 
-<!--start here-->
-
 >[!NOTE]
 >
 >**Execute Published** is available only after a function has been published.
 
-### Make changes to a live function
+#### Make changes to a live function
 
 After a function is published, the **Publish** button becomes a menu:
 
 * **Republish** — push your latest draft changes to the live version.
 * **Unpublish** — take the function out of service. Your work is kept as a draft so you can come back to it.
 
-#### Rename a function
-
-Open the function, select the edit (pencil) icon next to its name, enter a new name, and select **Rename**. The new name applies everywhere, including past versions.
-
 #### Delete a function
 
-Select the function and choose **Delete**.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. Click the checkbox next to an existing function, and select **Delete** in the action bar at the bottom of the page.
 
 >[!WARNING]
 >
