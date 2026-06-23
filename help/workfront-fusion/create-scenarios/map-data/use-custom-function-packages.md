@@ -190,7 +190,8 @@ Using drafts allows you to safely make changes. You can refine a draft, test it,
 
 You can use the **Parameters** tab to describe the information your function needs each time it runs. 
 
-1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.1. In the **Functions** area, select **Create function**.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. In the **Functions** area, select **Create function**.
 
    Or
 
@@ -249,43 +250,91 @@ After a function is published, the **Publish** button becomes a menu:
 >
 >Deleting a function removes it completely, along with its history. Any scenario or function that uses it will stop working.
 
-### Variables
+## Variables
 
-Variables are reusable values—like a base URL, an account ID, or an API key—that your functions can use. Storing them as variables means you set a value once and update it in one place, instead of repeating it across many functions.
+Variables are reusable values that your functions can use, such as a base URL, an account ID, or an API key. Storing these as variables means you set a value once and update it in one place, instead of updating it across many functions.
 
-#### Create or edit a variable
+### Create or edit a variable
 
-1. On the **Variables** tab, select **New variable** (or **Edit** on an existing one).
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. On the **Variables** tab, select **New variable**.
+
+   Or
+   
+   
+   Click the **Edit** icon next to the variable you want to edit.
 
 1. Fill in the details:
 
-   * **Key** — the name your functions use to refer to the value.
-   * **Value** — the value to store.
-   * **Type** — text, number, true/false, or a structured object.
-   * **Description** — an optional note to remind you what it's for.
-   * **Public** — turn this on to also use the variable in the scenario designer. When off, the variable is only available inside the package's functions.
-   * **Secret** — turn this on to hide sensitive values (such as keys). The value is hidden in the variables list, and it's also kept out of sight in the scenario designer—its value is sanitized so it isn't exposed there. Your functions still receive the real value when they run.
+   * **Key**: Enter the name your functions use to refer to the value.
+
+   To rename this variable, change the Key value.
+   * **Value**: Enter the value to store.
+   * **Type**: Select whether the value type is text, a number, boolean (true/false), or a structured object.
+   * **Description**: Enter an optional note to remind you what it's for.
+   * **Public**: Turn this option on if you want to use the variable in the scenario designer. When off, the variable is only available inside the package's functions.
+   * **Secret**: Turn this option on to hide sensitive values, such as keys. The value is hidden in the variables list, and is also  is sanitized so it isn't exposed in the scenario designer. Your functions still receive the real value when they run.
 
 1. Select **Create variable** or **Save changes**.
 
->[!NOTE]
->
->To rename a variable, change its **Key** while editing. Fusion replaces the old variable with a new one under the new name.
+### Delete a variable
 
-#### Delete a variable
-
-Select the delete icon on a variable and confirm.
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. On the **Variables** tab, click the **Delete** icon next to the variable you want to delete.
 
 >[!WARNING]
 >
 >Functions that use a deleted variable will stop working.
 
+## Dependencies
+
+Some functions require extra libraries to do their job. The **Dependencies** tab is where you add and manage those libraries.
+
+### Add libraries
+
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. On the **Dependencies** tab, enter one or more library names, separated by commas. You can request a specific version by adding it after the name (for example, `axios, lodash@4.17.21`).
+
+1. Click **Install**.
+
+### Remove a library
+
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. On the **Dependencies** tab, click the **Delete** icon next to the library you want to remove.
+
+>[!WARNING]
+>
+>Functions that rely on a removed library may stop working.
+
+## History
+
+Every time you save a draft of a function, Fusion keeps a copy. The **History** tab lets you view and restore earlier versions.
+
+1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
+1. On the **History** tab, select a function on the left to see its saved versions, newest first.
+1. Select a version to view exactly what it contained at that time.
+1. To restore a version, click **Restore as draft**.
+
+   The version is restored as a new draft, so you can review and test it before publishing. Your live version stays in place until you publish.
+1. To delete a version, select the version, Click **Delete version** and confirm.
+
+>[!NOTE]
+>
+>* Publishing a function clears its history. History tracks the changes you make while working on a draft, up until you publish.
+>* Deleting a version can't be undone.
+
+
+
 ## Use a package in a scenario
 
-The point of building functions and variables is to put them to work in your scenarios. They become available in the scenario designer through the **Adobe App Builder** connector, which now includes two modules:
+The purpose of building functions and variables is to put them to work in your scenarios. To use functions and variables, use the **Adobe App Builder** connector.
 
-* **Use function from package** — run one of your functions as a step in a scenario. Choose the package and function, fill in the inputs you defined, and the function's result is passed along to the modules that follow.
-* **Use variable from package** — bring one of your package variables into a scenario so you can map its value into other modules.
+* **Use function from package**: This module runs one of your functions as a step in a scenario. Choose the package and function, fill in the inputs you defined, and the function's result is passed along to the modules that follow.
+* **Use variable from package**: This module brings one of your package variables into a scenario so you can map its value into other modules.
+
+For information and instructions, see [Adobe App Builder modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
+<!--
 
 To add one:
 
@@ -299,45 +348,4 @@ To add one:
 >
 >Publish a function before using it in a scenario, and turn on **Public** for any variable you want to use there.
 
-## Dependencies
-
-Some functions need extra libraries to do their job. The **Dependencies** tab is where you add and manage those libraries.
-
-### Add libraries
-
-1. On the **Dependencies** tab, enter one or more library names, separated by commas. You can request a specific version by adding it after the name (for example, `axios, lodash@4.17.21`).
-
-1. Select **Install**.
-
-### Remove a library
-
-Select the delete icon next to a library and confirm.
-
->[!WARNING]
->
->Functions that rely on a removed library may stop working.
-
-## History
-
-Every time you save a function, Fusion keeps a copy. The **History** tab lets you look back at earlier versions and bring one back if you need to.
-
-* Select a function on the left to see its saved versions, newest first.
-* Select a version to view exactly what it contained at that time.
-
-This happens automatically—there's nothing to turn on. There's no set limit on how many versions are kept; they use part of your package's storage, so you can remove ones you no longer need.
-
->[!NOTE]
->
->Publishing a function clears its history. History tracks the changes you make while working on a draft, up until you publish.
-
-### Restore an earlier version
-
-Select a function, choose a version, and select **Restore as Draft**. That version comes back as a new draft, so you can review and test it before publishing. Your live version stays in place until you publish.
-
-### Delete a version
-
-Select a function and a version, then select **Delete Version** and confirm.
-
->[!WARNING]
->
->Deleting a version can't be undone.
+-->
