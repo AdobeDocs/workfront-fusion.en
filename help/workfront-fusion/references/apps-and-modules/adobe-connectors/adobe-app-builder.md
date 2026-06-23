@@ -42,6 +42,8 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Adobe App Builder modules
 
+<!--
+
 ### Run a custom code block
 
 This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
@@ -61,7 +63,9 @@ This module allows you to run a code block. You configure the code block when yo
    </tbody> 
 </table>
 
-### Run a custom function
+-->
+
+### Run a custom function or code block
 
 This module allows you to use a previously configured custom JavaScript function stored in the Functions area.
 
