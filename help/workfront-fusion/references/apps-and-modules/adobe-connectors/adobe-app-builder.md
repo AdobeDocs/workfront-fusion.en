@@ -42,8 +42,6 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Adobe App Builder modules
 
-<!--
-
 ### Run a custom code block
 
 This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
@@ -63,13 +61,11 @@ This module allows you to run a code block. You configure the code block when yo
    </tbody> 
 </table>
 
--->
-
 ### Run a custom function from package
 
 This module runs a function from a package.
 
-<!--For information on packages, see []().-->
+For information on packages, see [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
@@ -94,7 +90,7 @@ This module runs a function from a package.
 
 This module brings a variable configured in a package into your scenario.
 
-<!--For information on packages, see []().-->
+For information on packages, see [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 <table style="table-layout:auto"> 
  <col> 
