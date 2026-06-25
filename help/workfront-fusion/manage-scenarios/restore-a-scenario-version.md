@@ -65,7 +65,9 @@ For more detail about the information in this table, see [Access requirements in
    >The restored version of the scenario is not automatically saved. If you want to save the restored version of the scenario, you must save it manually.
 
 
+
 ## Compare scenario versions
+
 ​
 View changes functionality shows what is different between two scenario versions, side by side, so you can see exactly what changed before you decide to restore an older one.
 
