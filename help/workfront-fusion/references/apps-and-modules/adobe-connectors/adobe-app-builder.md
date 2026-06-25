@@ -69,7 +69,7 @@ This module allows you to run a code block. You configure the code block when yo
 
 This module runs a function from a package.
 
-For information on packages, see []().
+<!--For information on packages, see []().-->
 
 <table style="table-layout:auto"> 
  <col> 
@@ -94,7 +94,7 @@ For information on packages, see []().
 
 This module brings a variable configured in a package into your scenario.
 
-For information on packages, see []().
+<!--For information on packages, see []().-->
 
 <table style="table-layout:auto"> 
  <col> 
