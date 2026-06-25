@@ -233,6 +233,7 @@ nudge: true
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
         * [Map items using built-in functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
         * [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
+        * [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)
         * [Map arrays and array elements](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
         * [Map a file between modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
         * [Data stores](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)

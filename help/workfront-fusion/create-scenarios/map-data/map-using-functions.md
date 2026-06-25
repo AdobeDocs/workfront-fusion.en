@@ -13,9 +13,11 @@ product_v2:
 
 Workfront Fusion includes built-in functions that allow you to create simple or complex formulas. These functions cover a wide variety of use cases, including functions for arrays, strings, numbers, and data from previous modules.
 
-In addition, you can create custom functions that your scenarios can then use to transform and manipulate data.
+In addition, you can create custom functions and packages that your scenarios can then use to transform and manipulate data.
 
 For information and instructions on custom functions, see [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
+
+For information and instructions on function packages, see [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
 
 ## Access requirements
 
