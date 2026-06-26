@@ -250,7 +250,7 @@ After a function is published, the **Publish** button becomes a menu:
 >
 >Deleting a function removes it completely, along with its history. Any scenario or function that uses it will stop working.
 
-## Variables
+### Variables
 
 Variables are reusable values that your functions can use, such as a base URL, an account ID, or an API key. Storing these as variables means you set a value once and update it in one place, instead of updating it across many functions.
 
@@ -306,7 +306,7 @@ Some functions require extra libraries to do their job. The **Dependencies** tab
 >
 >Functions that rely on a removed library may stop working.
 
-## History
+### History
 
 Every time you save a draft of a function, Fusion keeps a copy. The **History** tab lets you view and restore earlier versions.
 
