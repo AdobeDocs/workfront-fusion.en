@@ -105,43 +105,19 @@ To install it globally:
 1. (Optional) To sign out later, (for example to switch accounts), use the command: `aio logout`.
 1. Continue to [Confirm your active organization](#confirm-your-active-organization).
 
-<!--
-
-## Set up the Developer Console using `aio`
-
-The **Adobe Developer Console** (<https://developer.adobe.com/console>) is the web dashboard where your project lives. The `aio` command can create everything for you in the next page â&euro;" but it helps to know the vocabulary:
-
-| Term | What it means |
-|------|---------------|
-| **Organization** | Your company's Adobe org. The same org you use in Fusion. |
-| **Project** | A container for one app/extension. You will create one project for your extension. |
-| **Workspace** | A copy of the project's configuration for a stage of work. Every project has a **Production** workspace, and you typically also use a **Stage** workspace for testing. Think of workspaces like "environments." |
-| **Credentials / Services** | Permissions your app is allowed to use. The defaults created for you are enough to start. |
-
-You have two ways to create the project:
-
-* **Recommended (automatic):** let `aio app init` create the project and workspaces for you while generating the code. This is what the next page does.
-* **Manual:** create the project yourself in the Developer Console first (**Create new project â†' Add App Builder**), then point `aio` at it. Only do this if your organization requires projects to be created centrally.
-
-> **Which workspace should I use?** Start in **Stage**. Fusion discovers Stage-published extensions during development and testing. You promote to **Production** later. See [Publish your extension](./07-publish.md).
-
-=-->
-
 ## Confirm your active organization
 
 Check which organization the CLI is pointed at:
 
-```sh
-aio console org list      # see organizations you can use
-aio console where         # see your currently selected org/project/workspace
+   ```sh
+   aio console org list      # see organizations you can use
+   aio console where         # see your currently selected org/project/workspace
 ```
 
 If you belong to several organizations, select the correct one:
 
-```sh
-aio console org select
-```
+   ```sh
+   aio console org select
+   ```
 
 You are now ready to create the project.
-
-Next: [Create the project â†'](./03-create-project.md)
