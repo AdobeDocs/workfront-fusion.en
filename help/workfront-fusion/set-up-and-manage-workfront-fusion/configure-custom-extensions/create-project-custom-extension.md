@@ -1,86 +1,147 @@
-﻿# 3. Create the project
+﻿---
+product-previous: workfront-fusion
+product-area: workfront-integrations
+keywords: fusion
+navigation-topic: workfront-fusion-navigation-topic
+title: Create a project for UI Extensibility
+description:  Create a project for UI Extensibility
+author: Becky
+feature: Workfront Fusion
+recommendations: noDisplay, noCatalog
+exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+---
+#  Create a project for UI Extensibility
 
-In this step you generate a **generic** App Builder project with the `aio` command line. "Generic" means we do **not** start from a product-specific template (such as the AEM template). Starting generic keeps the project simple and lets us wire it to Fusion ourselves in the next page, which is the part you most want to understand.
+To create a custom UI extension, you must create an App Builder project for it.
 
-## Step 1 â€” Pick a folder and run `aio app init`
+This page describes how to generate a generic App Builder project with the `aio` command line. "Generic" means the project does **not** start from a product-specific template. Starting with a generic app keeps the project simple and allows it to connect with Workfront Fusion.
 
-Open a terminal, move to the folder where you keep projects, and run:
+It may be useful to familiarize yourself with the following concepts and terminology regarding creating a project for use with Adobe Fusion AI Extensibility.
 
-```sh
-aio app init my-fusion-extension --standalone-app
-```
+* The **Adobe Developer Console** (<https://developer.adobe.com/console>) is the web dashboard where your project lives. 
 
-* `my-fusion-extension` is the folder/app name. Choose anything you like
-  (lowercase, hyphens, no spaces).
-* `--standalone-app` tells the CLI to create a **plain application skeleton** instead of asking you to pick a product template. This is the key to avoiding the AEM (or any other) template.
+* **Terminology**:
 
-The command will:
+   | Term | What it means |
+   | ------ | --------------- |
+   | **Organization** | Your company's Adobe org. The same org you use in Fusion. |
+   | **Project** | A container for one app/extension. You will create one project for your extension. |
+   | **Workspace** | A copy of the project's configuration for a stage of work. Every project has a **Production** workspace, and you typically also use a **Stage** workspace for testing. Think of workspaces like "environments." |
+   | **Credentials / Services** | Permissions your app is allowed to use. The defaults created for you are enough to start. |
 
-1. Ask you to **select your Organization** (if you belong to more than one).
-2. Ask you to **select or create a Project** â€” choose **Create new project** and accept the suggested name, or pick an existing empty project.
-3. Set up the **Stage** and **Production** workspaces automatically.
-4. Generate files into the `my-fusion-extension` folder and run `npm install`.
+* There are two ways to create a project:
 
-> **If you prefer the interactive menu:** run `aio app init my-fusion-extension`
-> (without `--standalone-app`). When it asks **"What templates do you want to search for?"** or shows a checklist of templates, **do not** select a product template like *AEM*. Choose the option to create a **standalone application** / **"All extension points â†’ none"**. The goal is an empty skeleton you control.
+   * **Automatic (recommended):** The command `aio app init` creates the project and workspaces for you while generating the code. This article describes this process.
+   * **Manual:** You create the project yourself in the Developer Console first, then point `aio` at it. We recommend doing this only  if your organization requires projects to be created centrally.
 
-## Step 2 â€” Look at what was created
+* When deciding which workspace to use, we recommend starting in **Stage**. Fusion discovers Stage-published extensions during development and testing. You can promote to **Production** later. 
 
-Move into the folder:
+   For more information on promoting to production, see [Publish your extension](./07-publish.md).
 
-```sh
-cd my-fusion-extension
-```
 
-You will see a structure similar to this (some files omitted):
+## Run `aio app init`
 
-```
-my-fusion-extension/
-â”œâ”€â”€ app.config.yaml        â† main configuration (you will edit this)
-â”œâ”€â”€ package.json           â† dependencies and scripts
-â”œâ”€â”€ src/                   â† your source code
-â””â”€â”€ web-src/  or  src/.../web-src/   â† front-end files (HTML/JS)
-```
+1. Open a terminal.
+1. In the terminal, move to the folder where you keep projects
+1. Run:
 
-The two files you care about most are:
+   ```sh
+   aio app init my-fusion-extension --standalone-app
+   ```
 
-* **`app.config.yaml`**: The central configuration. In the next page you add an `extensions:` section here that connects your app to a Fusion extension point.
-* **`package.json`**: Lists the libraries your app uses. You will add the Adobe UI Extensibility guest library here.
+   * `my-fusion-extension` is the folder/app name. You can select this name, but use lowercase letters, hyphens, and no spaces.
+   * `--standalone-app` tells the CLI to create a **plain application skeleton** instead of asking you to pick a product template. This is the key to avoiding the AEM (or any other) template.
 
-> Don't worry if your generated layout differs slightly between CLI versions. The next page tells you exactly which files to create and what to put in them, so you can match the expected structure regardless of the starting point.
+1. When prompted, **select your Organization** (if you belong to more than one).
+1. When prompted, select **Create new project** and accept the suggested name, or pick an existing empty project.
+   
+   The command sets up the **Stage** and **Production** workspaces automatically.
 
-## Step 3 â€” Add the libraries you need
+   The command also generates files into the `my-fusion-extension` folder and runs `npm install`.
+
+1. Continue to [Confirm project creation](#confirm-project-creation).
+
+>[!NOTE]
+>
+> **If you prefer the interactive menu:** run `aio app init my-fusion-extension` > (without `--standalone-app`). When it asks **"What templates do you want to search for?"** or shows a checklist of templates, do not select a product template like AEM. Choose the option to create a **standalone application** / **"All extension points &rarr; none"**.
+
+## Check project creation
+
+1. In the terminal, move into the created folder:
+
+   ```sh
+   cd my-fusion-extension
+   ```
+
+   You should see a structure similar to this (some files omitted):
+
+   ```
+   my-fusion-extension/
+   |--- app.config.yaml   // main configuration (you will edit this)
+   |---  package.json   //dependencies and scripts
+   |---  src/    // your source code
+   |---  web-src/  or  src/.../web-src/  // front-end files (HTML/JS)
+   ```
+
+   The two files you care about most are:
+
+   * **`app.config.yaml`**: The central configuration. Later in the process you will add an `extensions:` section here that connects your app to a Fusion extension point.
+   * **`package.json`**: Lists the libraries your app uses. You will add the Adobe UI Extensibility guest library here.
+
+1. Continue to [Add required libraries](#add-required-libraries).
+
+>[!TIP]
+>
+> Don't worry if your generated layout differs slightly between CLI versions. This procedure tells you exactly which files to create and what to put in them, so you can match the expected structure regardless of the starting point.
+
+## Add required libraries
 
 Your extension needs two libraries:
 
 * **`@adobe/uix-guest`**: Lets your app talk to Fusion (the host).
 * **`@adobe/react-spectrum`**: Adobe's React UI components, so your screen matches Adobe's look and feel. (Optional, but recommended; you can use plain HTML instead.)
 
-Install them:
+To install these libraries:
 
-```sh
-npm install @adobe/uix-guest @adobe/react-spectrum
-```
+1. In the terminal, run:
 
-If your generated project does not already include React, also install it:
+   ```sh
+   npm install @adobe/uix-guest @adobe/react-spectrum
+   ```
 
-```sh
-npm install react react-dom react-router-dom
-```
+1. (Conditional) If your generated project does not already include React, also install it:
 
-## Step 4 â€” Confirm the project builds
+   ```sh
+   npm install react react-dom react-router-dom
+   ``` 
 
-Before changing anything, make sure the empty project builds:
+1. Continue to [Confirm the project builds](#confirm-the-project-builds).
 
-```sh
-aio app build
-```
+## Confirm the project builds
 
-If this completes without errors, your tools and project are healthy. You are ready to connect it to Fusion.
+Before changing anything, make sure the empty project builds
 
-> **Build fails?** The most common cause is an unsupported Node.js version. Run `node --version` and make sure it is 18 or 20 (see [Set up your tools](./02-setup.md)). For other errors, see [Troubleshooting](./08-troubleshooting.md).
+1. In the terminal, run:
 
-Next: [Configure it for Fusion â†’](./04-configure-for-fusion.md)
+   ```sh
+   aio app build
+   ```
+
+If this completes without errors, your tools and project are correctly configured. You are ready to connect the project it to Fusion.
+
+>[!TIP]
+>
+> **If the build fails,** the most common cause is an unsupported Node.js version. Run `node --version` and make sure it is 18 or 20 (see [Set up your tools]()). For other errors, see [Troubleshooting]().
+
+<!--BECKY START HERE-->
+
+Next: [Configure it for Fusion â†'](./04-configure-for-fusion.md)
 
 # 4. Configure it for Fusion
 
@@ -99,22 +160,22 @@ Create your files so the project looks like this:
 
 ```
 my-fusion-extension/
-â”œâ”€â”€ app.config.yaml
-â””â”€â”€ src/
-    â””â”€â”€ fusion-nav-organization-1/          â† one folder per extension point
-        â”œâ”€â”€ ext.config.yaml
-        â””â”€â”€ web-src/
-            â””â”€â”€ src/
-                â””â”€â”€ components/
-                    â”œâ”€â”€ App.js
-                    â”œâ”€â”€ ExtensionRegistration.js
-                    â”œâ”€â”€ DashboardWidget.js
-                    â””â”€â”€ Constants.js
+â"œâ"&euro;â"&euro; app.config.yaml
+â""â"&euro;â"&euro; src/
+    â""â"&euro;â"&euro; fusion-nav-organization-1/          â† one folder per extension point
+        â"œâ"&euro;â"&euro; ext.config.yaml
+        â""â"&euro;â"&euro; web-src/
+            â""â"&euro;â"&euro; src/
+                â""â"&euro;â"&euro; components/
+                    â"œâ"&euro;â"&euro; App.js
+                    â"œâ"&euro;â"&euro; ExtensionRegistration.js
+                    â"œâ"&euro;â"&euro; DashboardWidget.js
+                    â""â"&euro;â"&euro; Constants.js
 ```
 
 Naming the folder after the extension point (`fusion-nav-organization-1`) keeps things obvious, but the exact name is up to you, as long as it matches what you reference in `app.config.yaml`.
 
-## Step 1 â€” Declare the extension point in `app.config.yaml`
+## Step 1 â&euro;" Declare the extension point in `app.config.yaml`
 
 Open `app.config.yaml` and make its contents look like this:
 
@@ -126,9 +187,9 @@ extensions:
 
 What this says:
 
-* `extensions:` â€” this app implements one or more extension points.
-* `fusion/nav-organization/1` â€” the Fusion slot you are plugging into. **The name must match exactly**, including the `1` version.
-* `$include:` â€” points to a second config file (next step) that describes this extension's contents. Keeping it in a separate file keeps `app.config.yaml` clean and lets you add more extension points later.
+* `extensions:` â&euro;" this app implements one or more extension points.
+* `fusion/nav-organization/1` â&euro;" the Fusion slot you are plugging into. **The name must match exactly**, including the `1` version.
+* `$include:` â&euro;" points to a second config file (next step) that describes this extension's contents. Keeping it in a separate file keeps `app.config.yaml` clean and lets you add more extension points later.
 
 > **Targeting both sections?** List both, each with its own folder:
 >
@@ -140,7 +201,7 @@ What this says:
 >     $include: src/fusion-nav-team-1/ext.config.yaml
 > ```
 
-## Step 2 â€” Describe the extension in `ext.config.yaml`
+## Step 2 â&euro;" Describe the extension in `ext.config.yaml`
 
 Create `src/fusion-nav-organization-1/ext.config.yaml` with:
 
@@ -163,7 +224,7 @@ What each part means:
 
 > **Need server-side logic too?** You can also add serverless `actions` (small backend functions). They are optional and not required to render a UI, so we leave them out to keep this guide focused. If you add them later, declare an `actions:` folder here and a `runtimeManifest:` in `app.config.yaml`.
 
-## Step 3 â€” Set a stable extension id
+## Step 3 â&euro;" Set a stable extension id
 
 Your extension needs a unique id that both frames share. Create `src/fusion-nav-organization-1/web-src/src/components/Constants.js`:
 
@@ -175,7 +236,7 @@ module.exports = {
 
 Use the same value everywhere your code refers to the extension id.
 
-## Step 4 â€” Register your widget
+## Step 4 â&euro;" Register your widget
 
 "Registration" is how the hidden background frame tells Fusion what your extension offers. You declare a `dashboard.getWidget()` method that returns your widget's title and the URL of its visible UI.
 
@@ -219,4 +280,4 @@ Key points:
 
 You now have the wiring. Next you build the actual screen and connect it to Fusion.
 
-Next: [Build the UI â†’](./05-build-the-ui.md)
+Next: [Build the UI â†'](./05-build-the-ui.md)
