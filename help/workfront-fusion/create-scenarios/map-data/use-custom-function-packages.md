@@ -121,17 +121,26 @@ If you run out of space, we recommend removing unused dependencies, variables, o
 To go back to the package list, select the back arrow next to the package name.
 
 <!--Create toc here-->
+* [Functions](#functions)
+* [Variables](#variables)
+* [Dependencies](#dependencies)
+* [History](#history)
 
 ### Functions
 
 The **Functions** area displays a list of functions in the package, including the function's name, its status, its size, and how many inputs it expects. 
 
-To filter the functions list:
+* [View and manage the Functions list](#view-and-manage-the-functions-list)
+* [Create or edit a function in the Packages area](#create-or-edit-a-function-in-the-packages-area)
+* [Make changes to a live function](#make-changes-to-a-live-function)
+* [Delete a function](#delete-a-function)
+
+#### View and manage the Functions list
+
+To filter the Functions list:
 
 1. Filter by status by clicking **All**, **Drafts**, or **Published**.
 1. Use the search bar to search for specific functions.
-
-#### Function status
 
 A function can have the status of draft or published.
 
@@ -185,6 +194,9 @@ Using drafts allows you to safely make changes. You can refine a draft, test it,
    >[!NOTE]
    >
    >Publishing a function clears its version history. The published version becomes the current starting point, and earlier draft versions are no longer kept.
+
+* [Define inputs](#define-inputs)
+* [Test a function](#test-a-function)
 
 ##### Define inputs
 
@@ -250,11 +262,14 @@ After a function is published, the **Publish** button becomes a menu:
 >
 >Deleting a function removes it completely, along with its history. Any scenario or function that uses it will stop working.
 
-## Variables
+### Variables
 
 Variables are reusable values that your functions can use, such as a base URL, an account ID, or an API key. Storing these as variables means you set a value once and update it in one place, instead of updating it across many functions.
 
-### Create or edit a variable
+* [Create or edit a variable](#create-or-edit-a-variable)
+* [Delete a variable](#delete-a-variable)
+
+#### Create or edit a variable
 
 1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
 1. On the **Variables** tab, select **New variable**.
@@ -277,7 +292,7 @@ Variables are reusable values that your functions can use, such as a base URL, a
 
 1. Select **Create variable** or **Save changes**.
 
-### Delete a variable
+#### Delete a variable
 
 1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
 1. On the **Variables** tab, click the **Delete** icon next to the variable you want to delete.
@@ -286,18 +301,21 @@ Variables are reusable values that your functions can use, such as a base URL, a
 >
 >Functions that use a deleted variable will stop working.
 
-## Dependencies
+### Dependencies
 
 Some functions require extra libraries to do their job. The **Dependencies** tab is where you add and manage those libraries.
 
-### Add libraries
+* [Add libraries](#add-libraries)
+* [Remove a library](#remove-a-library)
+
+#### Add libraries
 
 1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
 1. On the **Dependencies** tab, enter one or more library names, separated by commas. You can request a specific version by adding it after the name (for example, `axios, lodash@4.17.21`).
 
 1. Click **Install**.
 
-### Remove a library
+#### Remove a library
 
 1. Click the **Packages** ![Packages icon](assets/packages-icon.png) tab in the left navigation panel.
 1. On the **Dependencies** tab, click the **Delete** icon next to the library you want to remove.
@@ -306,7 +324,7 @@ Some functions require extra libraries to do their job. The **Dependencies** tab
 >
 >Functions that rely on a removed library may stop working.
 
-## History
+### History
 
 Every time you save a draft of a function, Fusion keeps a copy. The **History** tab lets you view and restore earlier versions.
 
