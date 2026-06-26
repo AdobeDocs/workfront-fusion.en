@@ -1,14 +1,11 @@
-# 6. The Fusion context reference
+﻿# 6. The Fusion context reference
 
-When your UI calls `attach(...)`, Fusion shares a **context** object describing
-the current session. This page lists every field, what it means, and how the
-Fusion and Adobe IMS identifiers relate.
+When your UI calls `attach(...)`, Fusion shares a **context** object describing the current session. This page lists every field, what it means, and how the Fusion and Adobe IMS identifiers relate.
 
 ## How to read the context
 
-- **Initial values:** `connection.sharedContext.get("<key>")`
-- **Updates:** listen for the `contextchange` event; the latest object arrives on
-  `event.detail.context`.
+* **Initial values:** `connection.sharedContext.get("<key>")`
+* **Updates:** listen for the `contextchange` event; the latest object arrives on `event.detail.context`.
 
 See [Build the UI](./05-build-the-ui.md) for the full code pattern.
 
@@ -22,7 +19,7 @@ const imsOrgId     = connection.sharedContext.get("imsOrgId"); // Adobe IMS org 
 
 | Key | Type | Description |
 |-----|------|-------------|
-| `imsToken` | string | The signed-in user's Adobe **IMS access token**. Use it as a `Bearer` token to call Adobe or Fusion APIs on the user's behalf. **Sensitive — never log or display it.** |
+| `imsToken` | string | The signed-in user's Adobe **IMS access token**. Use it as a `Bearer` token to call Adobe or Fusion APIs on the user's behalf. **Sensitive â€” never log or display it.** |
 | `imsOrgId` | string | The Adobe **IMS organization id**, in the form `XXXXXXXXXXXX@AdobeOrg`. |
 | `imsUserId` | string | The Adobe **IMS user id** of the signed-in user. |
 | `organization` | object | The **full active Fusion organization**. See table below. |
@@ -31,8 +28,7 @@ const imsOrgId     = connection.sharedContext.get("imsOrgId"); // Adobe IMS org 
 
 ### Fusion id vs. IMS id at a glance
 
-Each entity has a **Fusion id** (used by Fusion's own APIs) and, where it exists,
-an **Adobe IMS id** (used by Adobe platform APIs):
+Each entity has a **Fusion id** (used by Fusion's own APIs) and, where it exists, an **Adobe IMS id** (used by Adobe platform APIs):
 
 | Entity | Fusion id | Adobe IMS id |
 |--------|-----------|--------------|
@@ -42,8 +38,7 @@ an **Adobe IMS id** (used by Adobe platform APIs):
 
 ## `organization` fields
 
-The active organization record. Most extensions need only `id`, `name`, and the
-identifiers; the rest is available if useful.
+The active organization record. Most extensions need only `id`, `name`, and the identifiers; the rest is available if useful.
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -69,8 +64,7 @@ identifiers; the rest is available if useful.
 
 ## `team` fields
 
-Present when a team is active. Always provide a fallback in case it is
-`undefined` (for example on an organization-level screen with no team selected).
+Present when a team is active. Always provide a fallback in case it is `undefined` (for example on an organization-level screen with no team selected).
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -105,15 +99,11 @@ The signed-in Fusion user.
 | `features` | object | Per-user feature flags (e.g. `allow_apps`, `public_templates`). |
 | `usersAdminsRoleId` | string | The user's admin role id, when applicable. |
 
-> The `user` object may include additional internal fields. Rely only on the
-> ones documented here; others can change without notice and some
-> (authentication-related) must never be logged or displayed.
+> The `user` object may include additional internal fields. Rely only on the ones documented here; others can change without notice and some (authentication-related) must never be logged or displayed.
 
 ## A note on dates
 
-The context is serialized before it reaches your extension, so **date fields
-arrive as strings** (ISO 8601, e.g. `"2026-06-24T00:00:00.000Z"`), not
-JavaScript `Date` objects. Convert them yourself if needed:
+The context is serialized before it reaches your extension, so **date fields arrive as strings** (ISO 8601, e.g. `"2026-06-24T00:00:00.000Z"`), not JavaScript `Date` objects. Convert them yourself if needed:
 
 ```js
 const resetDate = new Date(context.organization.nextReset);
@@ -123,18 +113,16 @@ const resetDate = new Date(context.organization.nextReset);
 
 Fusion re-sends the whole context (via `contextchange`) when:
 
-- the user **switches organization**,
-- the user **switches team**, or
-- the **signed-in user's** information changes.
+* the user **switches organization**,
+* the user **switches team**, or
+* the **signed-in user's** information changes.
 
-Always re-read all the keys you use inside your `contextchange` handler rather
-than assuming only one value changed.
+Always re-read all the keys you use inside your `contextchange` handler rather than assuming only one value changed.
 
 ## Security reminders
 
-- **Never log, display, or persist `imsToken`.** Treat it like a password.
-- Send the token only to trusted Adobe/Fusion endpoints, over HTTPS, as a
-  `Bearer` token.
-- Do not store personal data from the context beyond what your feature needs.
+* **Never log, display, or persist `imsToken`.** Treat it like a password.
+* Send the token only to trusted Adobe/Fusion endpoints, over HTTPS, as a `Bearer` token.
+* Do not store personal data from the context beyond what your feature needs.
 
-Next: [Publish your extension →](./07-publish.md)
+Next: [Publish your extension â†’](./07-publish.md)

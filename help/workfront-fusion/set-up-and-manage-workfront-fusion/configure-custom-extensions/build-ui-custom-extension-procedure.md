@@ -1,15 +1,10 @@
-# 5. Build the UI
+﻿# 5. Build the UI
 
-Now you build the screen users actually see, and complete the **connection
-("handshake")** with Fusion. Recall from the [overview](./01-overview.md) that
-your extension runs in two frames: the hidden **registration** frame (done on
-the previous page) and the visible **UI** frame (this page).
+Now you build the screen users actually see, and complete the **connection ("handshake")** with Fusion. Recall from the [overview](./01-overview.md) that your extension runs in two frames: the hidden **registration** frame (done on the previous page) and the visible **UI** frame (this page).
 
-## Step 1 — Route between the two frames
+## Step 1 â€” Route between the two frames
 
-Both frames load the same `index.html`; a small front-end router decides which
-component to show based on the URL. Set up the routes in
-`web-src/src/components/App.js`. The essential part is:
+Both frames load the same `index.html`; a small front-end router decides which component to show based on the URL. Set up the routes in `web-src/src/components/App.js`. The essential part is:
 
 ```jsx
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -34,21 +29,14 @@ export default function App() {
 
 How the routes map to what you wrote earlier:
 
-- The default route (`index`) renders **`ExtensionRegistration`** — the hidden
-  frame that calls `register(...)`.
-- The `my-widget` route renders **`DashboardWidget`** — your visible UI. This
-  matches the `url: "/index.html#/my-widget"` you returned from `getWidget()` in
-  [the previous page](./04-configure-for-fusion.md).
+* The default route (`index`) renders **`ExtensionRegistration`** â€” the hidden frame that calls `register(...)`.
+* The `my-widget` route renders **`DashboardWidget`** â€” your visible UI. This matches the `url: "/index.html#/my-widget"` you returned from `getWidget()` in [the previous page](./04-configure-for-fusion.md).
 
-> **The routes and the `getWidget` url must agree.** If you change the route
-> name, change the `url` too, or Fusion will load a blank page.
+> **The routes and the `getWidget` url must agree.** If you change the route name, change the `url` too, or Fusion will load a blank page.
 
-## Step 2 — Complete the handshake with `attach`
+## Step 2 â€” Complete the handshake with `attach`
 
-This is the single most important line in your visible UI. When Fusion opens
-your UI frame, it waits for that frame to "check in." Your code checks in by
-calling `attach({ id })`. **If you skip this, Fusion times out** with an error
-like *"awaiting initial message from target iframe."*
+This is the single most important line in your visible UI. When Fusion opens your UI frame, it waits for that frame to "check in." Your code checks in by calling `attach({ id })`. **If you skip this, Fusion times out** with an error like *"awaiting initial message from target iframe."*
 
 In `web-src/src/components/DashboardWidget.js`:
 
@@ -68,7 +56,7 @@ export default function DashboardWidget() {
   }, []);
 
   if (!connection) {
-    return <p>Connecting to Fusion…</p>;
+    return <p>Connecting to Fusionâ€¦</p>;
   }
 
   return <h2>Hello from my Fusion extension!</h2>;
@@ -77,19 +65,15 @@ export default function DashboardWidget() {
 
 What happens here:
 
-- `attach({ id })` returns a **connection object** once Fusion responds. Store
-  it; you will use it in the next step to read the context Fusion sends.
-- Until the connection resolves, show a short "Connecting…" message.
-- Use the **same `extensionId`** you set in `Constants.js`.
+* `attach({ id })` returns a **connection object** once Fusion responds. Store it; you will use it in the next step to read the context Fusion sends.
+* Until the connection resolves, show a short "Connectingâ€¦" message.
+* Use the **same `extensionId`** you set in `Constants.js`.
 
-At this point you have a working extension: it registers, attaches, and shows a
-message. Everything after this is about using the data Fusion gives you.
+At this point you have a working extension: it registers, attaches, and shows a message. Everything after this is about using the data Fusion gives you.
 
-## Step 3 — Read the context Fusion shares
+## Step 3 â€” Read the context Fusion shares
 
-Once attached, the connection exposes a **shared context** with information
-about the current user, organization, and team. Read individual values with
-`connection.sharedContext.get("<key>")`:
+Once attached, the connection exposes a **shared context** with information about the current user, organization, and team. Read individual values with `connection.sharedContext.get("<key>")`:
 
 ```jsx
 const orgId = connection.sharedContext.get("imsOrgId");
@@ -97,8 +81,7 @@ const organization = connection.sharedContext.get("organization"); // full Fusio
 const user = connection.sharedContext.get("user");                 // full Fusion user
 ```
 
-A complete, reactive example that also updates when the user switches org or
-team:
+A complete, reactive example that also updates when the user switches org or team:
 
 ```jsx
 import { useEffect, useState } from "react";
@@ -134,7 +117,7 @@ export default function DashboardWidget() {
     return () => cleanup();
   }, []);
 
-  if (!context) return <p>Connecting to Fusion…</p>;
+  if (!context) return <p>Connecting to Fusionâ€¦</p>;
 
   return (
     <div>
@@ -148,12 +131,9 @@ export default function DashboardWidget() {
 
 The two things to remember:
 
-1. **Read initial values** from `connection.sharedContext.get(key)` right after
-   `attach`.
-2. **Subscribe to `contextchange`** to stay in sync. Fusion fires this event
-   whenever the active organization, team, or user changes. The new values
-   arrive on `event.detail.context`.
+1. **Read initial values** from `connection.sharedContext.get(key)` right after `attach`.
+2. **Subscribe to `contextchange`** to stay in sync. Fusion fires this event whenever the active organization, team, or user changes. The new values arrive on `event.detail.context`.
 
 The full list of keys and what each contains is the next page.
 
-Next: [The Fusion context reference →](./06-fusion-context-reference.md)
+Next: [The Fusion context reference â†’](./06-fusion-context-reference.md)
