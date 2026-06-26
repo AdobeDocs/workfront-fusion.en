@@ -1,70 +1,115 @@
-﻿# 2. Set up your tools & Adobe account
+﻿---
+product-previous: workfront-fusion
+product-area: workfront-integrations
+keywords: fusion
+navigation-topic: workfront-fusion-navigation-topic
+title: Set up UI Extension tools and account
+description: Set up UI Extension tools and account
+author: Becky
+feature: Workfront Fusion
+recommendations: noDisplay, noCatalog
+exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+---
 
-This page gets your computer and your Adobe account ready. You only do this once. Allow about 20â€“30 minutes the first time.
+# Set up UI Extension tools and account
 
-## What you need before you start
+Before you can create a UI Extension for Workfront Fusion, you must set up your tools and account. This only needs to be done once.
 
-* **An Adobe ID** with access to an Adobe organization. This is the account you use to sign in to Fusion. If you can sign in to Fusion, you have this.
-* **Developer access to App Builder.** Your organization administrator may need to grant you the **Developer** role and add you to a **Product Profile** that includes App Builder. If commands later fail with "you are not a developer" or you cannot see your organization, ask your Adobe org admin to add you.
-* **A System Administrator** (possibly someone else on your team) for the final release step. Creating and deploying needs only the Developer role, but **submitting an extension for approval/publishing requires the System Administrator role**. See Adobe's
-  [How to Get Access](https://developer.adobe.com/uix/docs/guides/get-access/).
+>[!NOTE]
+>
+>This article assumes some familiarity with software development tools. 
+
+<!--Access requirements-->
+
+## Prerequisites
+
+To set up your UI Extensibility tools and account, you need the following:
+
+* **An Adobe ID** with access to an Adobe organization. This is the account you use to sign in to Fusion. 
+* **Developer access to App Builder.** Your organization administrator may need to grant you the **Developer** role and add you to a **Product Profile** that includes App Builder. If commands later fail with "you are not a developer" or you cannot see your organization, ask your Adobe org administrator to add you.
+* **A System Administrator** <!--Adobe? Fusion?--> (possibly someone else on your team) for the final release step. Creating and deploying needs only the Developer role, but **submitting an extension for approval/publishing requires the System Administrator role**. 
+
+   For more information on Adobe access levels, see
+  [How to Get Access](https://developer.adobe.com/uix/docs/guides/get-access/) in the Adobe documentation.
+
 * **A computer where you can install software** and run terminal commands (macOS, Windows, or Linux).
 
-## Step 1 â€” Install Node.js
+## Install Node.js
 
-The Adobe tooling runs on **Node.js**. Install the **LTS** version (18 or 20).
+The Adobe tooling runs on **Node.js**. You must install the **LTS** version (18 or 20).
 
 1. Go to <https://nodejs.org> and download the **LTS** installer.
-2. Run the installer and accept the defaults.
-3. Confirm it worked by opening a terminal and running:
+1. Run the installer and accept the defaults.
+1. Confirm it worked by opening a terminal and running:
 
    ```sh
    node --version
    npm --version
    ```
 
-   You should see version numbers (for example `v20.17.0` and `10.x`). If `node` is not found, close and reopen your terminal, or restart your computer.
+   You should see version numbers (for example `v20.17.0` and `10.x`). 
+   
+1. (Conditional) If `node` is not found, close and reopen your terminal, or restart your computer.
 
-> **Tip:** If you work with multiple Node versions, a version manager such as
-> `nvm` is convenient, but it is optional. The Adobe CLI requires Node 18 or
-> newer; very new, non-LTS versions can occasionally cause issues, so stick to
-> LTS.
+1. Continue to [Install the Adobe I/O CLI (`aio`)](#install-the-adobe-io-cli-aio).
 
-## Step 2 â€” Install the Adobe I/O CLI (`aio`)
+>[!TIP]
+>
+>* If you work with multiple Node versions, a version manager such as `nvm` is convenient, but it is optional. 
+>* The Adobe CLI requires Node 18 or newer. very new, non-LTS versions can occasionally cause issues, so we recommend using LTS.
 
-`aio` is the command-line tool you use to create, build, and publish your extension. Install it globally with npm:
+## Install the Adobe I/O CLI (`aio`)
 
-```sh
-npm install -g @adobe/aio-cli
-```
+The command-line tool that you use to create, build, and publish your extension is called `aio`.
 
-Confirm it installed:
+To install it globally: 
 
-```sh
-aio --version
-```
+1. Use the following `npm` command on your command line.
 
-You should see something like `@adobe/aio-cli/11.x.x`.
+   ```sh
+   npm install -g @adobe/aio-cli
+   ```
 
-> If you see a permissions error on macOS/Linux, do **not** use `sudo`. Instead
-> fix npm's global folder permissions, or use a Node version manager that
-> installs into your home directory.
+1. Confirm that it installed by using the following command:
 
-## Step 3 â€” Sign in to Adobe
+   ```sh
+   aio --version
+   ```
 
-Connect the CLI to your Adobe account:
+   You should see something like `@adobe/aio-cli/11.x.x`.
 
-```sh
-aio login
-```
+1. Continue to [Sign in to Adobe](#sign-in-to-adobe).
 
-This opens a browser window. Sign in with your Adobe ID and approve access. When it succeeds you can close the browser tab and return to the terminal.
+>[!NOTE]
+>
+> If you see a permissions error on macOS/Linux, do **not** use `sudo`. Instead, fix npm's global folder permissions, or use a Node version manager that installs into your home directory.
 
-To sign out later (for example to switch accounts): `aio logout`.
+## Sign in to Adobe
 
-## Step 4 â€” Understand the Developer Console (and let `aio` set it up for you)
+1. Connect the CLI to your Adobe account with the following command:
 
-The **Adobe Developer Console** (<https://developer.adobe.com/console>) is the web dashboard where your project officially lives. You do not have to click through it manually â€” the `aio` command can create everything for you in the next page â€” but it helps to know the vocabulary:
+   ```sh
+   aio login
+   ```
+
+1. In the browser window that opens, sign in with your Adobe ID and approve access. 
+
+1. After sign-in is successful, close the browser tab and return to the terminal.
+
+1. (Optional) To sign out later, (for example to switch accounts), use the command: `aio logout`.
+1. Continue to [Confirm your active organization](#confirm-your-active-organization).
+
+<!--
+
+## Set up the Developer Console using `aio`
+
+The **Adobe Developer Console** (<https://developer.adobe.com/console>) is the web dashboard where your project lives. The `aio` command can create everything for you in the next page â&euro;" but it helps to know the vocabulary:
 
 | Term | What it means |
 |------|---------------|
@@ -76,11 +121,13 @@ The **Adobe Developer Console** (<https://developer.adobe.com/console>) is the w
 You have two ways to create the project:
 
 * **Recommended (automatic):** let `aio app init` create the project and workspaces for you while generating the code. This is what the next page does.
-* **Manual:** create the project yourself in the Developer Console first (**Create new project â†’ Add App Builder**), then point `aio` at it. Only do this if your organization requires projects to be created centrally.
+* **Manual:** create the project yourself in the Developer Console first (**Create new project â†' Add App Builder**), then point `aio` at it. Only do this if your organization requires projects to be created centrally.
 
 > **Which workspace should I use?** Start in **Stage**. Fusion discovers Stage-published extensions during development and testing. You promote to **Production** later. See [Publish your extension](./07-publish.md).
 
-## Step 5 â€” Confirm your active org (optional but recommended)
+=-->
+
+## Confirm your active organization
 
 Check which organization the CLI is pointed at:
 
@@ -97,4 +144,4 @@ aio console org select
 
 You are now ready to create the project.
 
-Next: [Create the project â†’](./03-create-project.md)
+Next: [Create the project â†'](./03-create-project.md)

@@ -24,6 +24,9 @@ This article gives an overview of UI Extensibility and how your custom extension
 
 ## Extension structure 
 
+* [Hosts and Guests](#hosts-and-guests)
+* [The technology underneath](#the-technology-underneath)
+
 ### Hosts and Guests
 
 Fusion can display UI that was not created by the Workfront Fusion team. To ensure that these UI changes do not affect the core functionality of Fusion, the UI runs in its own isolated browser frame (an `<iframe>`), completely separate from Fusion's code.
@@ -80,7 +83,7 @@ One extension can implement one or both extension points. Most extensions use on
 
 Based on which extension point is selected, Fusion adds a button with the extension's title to the matching navigation section. Clicking it opens a dedicated page in Fusion's main content area and loads your UI there.
 
-## The two iframes: registration vs. your visible UI
+## Frames included in a UI Extension
 
 >[!IMPORTANT]
 >
