@@ -67,7 +67,7 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Prerequisites
 
-Before using the [!DNL Admin Console] for Workfront, you should receive a receive an email inviting you to the console.
+Before using the [!DNL Admin Console] for Workfront, you should receive an email inviting you to the console.
 
 * If you are new to [!DNL Adobe] and you have received an email telling you that you now have administer rights to manage [!DNL Adobe] software and services for your organization, click the button in the email to create an [!DNL Adobe] account and open the [!DNL Admin Console].
     
