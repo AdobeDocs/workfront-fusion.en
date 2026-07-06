@@ -1,77 +1,116 @@
-﻿# 5. Build the UI
+﻿---
+product-previous: workfront-fusion
+product-area: workfront-integrations
+keywords: fusion
+navigation-topic: workfront-fusion-navigation-topic
+title: Build the custom extension UI
+description:  Build the custom extension UI
+author: Becky
+feature: Workfront Fusion
+recommendations: noDisplay, noCatalog
+exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+---
 
-Now you build the screen users actually see, and complete the **connection ("handshake")** with Fusion. Recall from the [overview](./01-overview.md) that your extension runs in two frames: the hidden **registration** frame (done on the previous page) and the visible **UI** frame (this page).
+# Build the custom extension UI
 
-## Step 1 â€” Route between the two frames
+>[!NOTE]
+>
+>This article assumes some familiarity with software development tools. 
 
-Both frames load the same `index.html`; a small front-end router decides which component to show based on the URL. Set up the routes in `web-src/src/components/App.js`. The essential part is:
+This procedure describes how to build the screen users actually see, and complete the **connection ("handshake")** with Fusion. 
 
-```jsx
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import ExtensionRegistration from "./ExtensionRegistration";
-import DashboardWidget from "./DashboardWidget";
+During this process, it is important to recallthat your extension runs in two frames: the hidden **registration** frame and the visible **UI** frame.
 
-export default function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* Background frame: registers the extension with Fusion */}
-        <Route index element={<ExtensionRegistration />} />
-        <Route path="index.html" element={<ExtensionRegistration />} />
+For information on frames in relation to custom extensions, see [Frames included in a UI Extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md#frames-included-in-a-ui-extension).
 
-        {/* Visible frame: the URL you returned from getWidget() */}
-        <Route path="my-widget" element={<DashboardWidget />} />
-      </Routes>
-    </Router>
-  );
-}
-```
+For instructions on building the registration frame, see [Create a project for UI Extensibility](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md).
 
-How the routes map to what you wrote earlier:
+## Route between the two frames
 
-* The default route (`index`) renders **`ExtensionRegistration`** â€” the hidden frame that calls `register(...)`.
-* The `my-widget` route renders **`DashboardWidget`** â€” your visible UI. This matches the `url: "/index.html#/my-widget"` you returned from `getWidget()` in [the previous page](./04-configure-for-fusion.md).
+Both frames load the same `index.html`; a small front-end router decides which component to show based on the URL. 
 
-> **The routes and the `getWidget` url must agree.** If you change the route name, change the `url` too, or Fusion will load a blank page.
+1. Set up the routes in `web-src/src/components/App.js`. The essential part is:
 
-## Step 2 â€” Complete the handshake with `attach`
+   ```jsx
+   import { HashRouter as Router, Routes, Route } from "react-router-dom";
+   import ExtensionRegistration from "./ExtensionRegistration";
+   import DashboardWidget from "./DashboardWidget";
+   
+   export default function App() {
+     return (
+       <Router>
+         <Routes>
+           {/* Background frame: registers the extension with Fusion */}
+           <Route index element={<ExtensionRegistration />} />
+           <Route path="index.html" element={<ExtensionRegistration />} />
+   
+           {/* Visible frame: the URL you returned from getWidget() */}
+           <Route path="my-widget" element={<DashboardWidget />} />
+         </Routes>
+       </Router>
+     );
+   }
+   ```
 
-This is the single most important line in your visible UI. When Fusion opens your UI frame, it waits for that frame to "check in." Your code checks in by calling `attach({ id })`. **If you skip this, Fusion times out** with an error like *"awaiting initial message from target iframe."*
+   These routes map to previous configuration as follows:
 
-In `web-src/src/components/DashboardWidget.js`:
+   * The default route (`index`) renders **`ExtensionRegistration`**, the hidden frame that calls `register(...)`.
+   * The `my-widget` route renders **`DashboardWidget`**, your visible UI. This matches the `url: "/index.html#/my-widget"` you returned from `getWidget()` in [the previous page](./04-configure-for-fusion.md).
 
-```jsx
-import { useEffect, useState } from "react";
-import { attach } from "@adobe/uix-guest";
-import { extensionId } from "./Constants";
+   >[!NOTE]
+   >
+   > **The routes and the `getWidget` url must agree.** If you change the route name, change the `url` too, or Fusion will load a blank page.
 
-export default function DashboardWidget() {
-  const [connection, setConnection] = useState(null);
+1. Continue to [Complete the handshake with `attach`](#complete-the-handshake-with-attach).
 
-  useEffect(() => {
-    // Tell Fusion this UI frame is ready. Required.
-    attach({ id: extensionId })
-      .then(setConnection)
-      .catch((e) => console.error("attach failed", e));
-  }, []);
+## Complete the handshake with `attach`
 
-  if (!connection) {
-    return <p>Connecting to Fusionâ€¦</p>;
-  }
+This is the single most important line in your visible UI. When Fusion opens your UI frame, it waits for that frame to "check in." Your code checks in by calling `attach({ id })`. 
 
-  return <h2>Hello from my Fusion extension!</h2>;
-}
-```
+**If this is omitted, Fusion times out** with an error such as *"awaiting initial message from target iframe."*
 
-What happens here:
+1. Add the following to `web-src/src/components/DashboardWidget.js`:
+
+   ```jsx
+   import { useEffect, useState } from "react";
+   import { attach } from "@adobe/uix-guest";
+   import { extensionId } from "./Constants";
+   
+   export default function DashboardWidget() {
+     const [connection, setConnection] = useState(null);
+   
+     useEffect(() => {
+       // Tell Fusion this UI frame is ready. Required.
+       attach({ id: extensionId })
+         .then(setConnection)
+         .catch((e) => console.error("attach failed", e));
+     }, []);
+   
+     if (!connection) {
+       return <p>Connecting to Fusionâ&euro;¦</p>;
+     }
+   
+     return <h2>Hello from my Fusion extension!</h2>;
+   }
+   ```
+
+   This code does the following:
+
+<!--Becky start here-->
 
 * `attach({ id })` returns a **connection object** once Fusion responds. Store it; you will use it in the next step to read the context Fusion sends.
-* Until the connection resolves, show a short "Connectingâ€¦" message.
+* Until the connection resolves, show a short "Connectingâ&euro;¦" message.
 * Use the **same `extensionId`** you set in `Constants.js`.
 
 At this point you have a working extension: it registers, attaches, and shows a message. Everything after this is about using the data Fusion gives you.
 
-## Step 3 â€” Read the context Fusion shares
+## Step 3 â&euro;" Read the context Fusion shares
 
 Once attached, the connection exposes a **shared context** with information about the current user, organization, and team. Read individual values with `connection.sharedContext.get("<key>")`:
 
@@ -117,7 +156,7 @@ export default function DashboardWidget() {
     return () => cleanup();
   }, []);
 
-  if (!context) return <p>Connecting to Fusionâ€¦</p>;
+  if (!context) return <p>Connecting to Fusionâ&euro;¦</p>;
 
   return (
     <div>
@@ -136,4 +175,4 @@ The two things to remember:
 
 The full list of keys and what each contains is the next page.
 
-Next: [The Fusion context reference â†’](./06-fusion-context-reference.md)
+Next: [The Fusion context reference â†'](./06-fusion-context-reference.md)
