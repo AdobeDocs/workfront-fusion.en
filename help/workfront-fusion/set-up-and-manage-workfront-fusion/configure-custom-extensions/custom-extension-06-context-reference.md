@@ -1,5 +1,7 @@
 ﻿# 6. The Fusion context reference
 
+<!--Becky start here-->
+
 When your UI calls `attach(...)`, Fusion shares a **context** object describing the current session. This page lists every field, what it means, and how the Fusion and Adobe IMS identifiers relate.
 
 ## How to read the context

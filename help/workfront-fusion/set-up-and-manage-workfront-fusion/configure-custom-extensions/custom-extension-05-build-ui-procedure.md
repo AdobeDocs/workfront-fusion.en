@@ -93,7 +93,7 @@ This is the single most important line in your visible UI. When Fusion opens you
      }, []);
    
      if (!connection) {
-       return <p>Connecting to Fusionâ&euro;¦</p>;
+       return <p>Connecting to Fusion...</p>;
      }
    
      return <h2>Hello from my Fusion extension!</h2>;
@@ -102,17 +102,17 @@ This is the single most important line in your visible UI. When Fusion opens you
 
    This code does the following:
 
-<!--Becky start here-->
+   * `attach({ id })` returns a **connection object** once Fusion responds. We recommend saving this, because you will use it in the next step to read the context Fusion sends.
+   * Until the connection resolves, a short "Connecting..." message displays.
+   * Uses the **same `extensionId`** you set in `Constants.js`.
 
-* `attach({ id })` returns a **connection object** once Fusion responds. Store it; you will use it in the next step to read the context Fusion sends.
-* Until the connection resolves, show a short "Connectingâ&euro;¦" message.
-* Use the **same `extensionId`** you set in `Constants.js`.
+   At this point you have a working extension: it registers, attaches, and shows a message. Everything after this is about using the data Fusion gives you.
 
-At this point you have a working extension: it registers, attaches, and shows a message. Everything after this is about using the data Fusion gives you.
+1. Continue to [Read the context Fusion shares](#read-the-context-fusion-shares).
 
-## Step 3 â&euro;" Read the context Fusion shares
+## Read the context Fusion shares
 
-Once attached, the connection exposes a **shared context** with information about the current user, organization, and team. Read individual values with `connection.sharedContext.get("<key>")`:
+After it is attached, the connection exposes a **shared context** with information about the current user, organization, and team. You can read individual values with `connection.sharedContext.get("<key>")`:
 
 ```jsx
 const orgId = connection.sharedContext.get("imsOrgId");
@@ -120,7 +120,7 @@ const organization = connection.sharedContext.get("organization"); // full Fusio
 const user = connection.sharedContext.get("user");                 // full Fusion user
 ```
 
-A complete, reactive example that also updates when the user switches org or team:
+This example shows a complete, reactive example that also updates when the user switches org or team:
 
 ```jsx
 import { useEffect, useState } from "react";
@@ -168,11 +168,11 @@ export default function DashboardWidget() {
 }
 ```
 
-The two things to remember:
+Remember the following:
 
-1. **Read initial values** from `connection.sharedContext.get(key)` right after `attach`.
-2. **Subscribe to `contextchange`** to stay in sync. Fusion fires this event whenever the active organization, team, or user changes. The new values arrive on `event.detail.context`.
+* **Read initial values** from `connection.sharedContext.get(key)` right after `attach`.
+* **Subscribe to `contextchange`** to stay in sync. Fusion fires this event whenever the active organization, team, or user changes. The new values arrive on `event.detail.context`.
 
-The full list of keys and what each contains is the next page.
+For the full list of keys and what each contains is included in the [The Fusion context reference](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md).
 
-Next: [The Fusion context reference â†'](./06-fusion-context-reference.md)
+To continue the process of configuring your custom extension, go to  [The Fusion context reference](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md).
