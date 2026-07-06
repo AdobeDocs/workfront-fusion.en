@@ -1,15 +1,31 @@
-﻿# 6. The Fusion context reference
-
-<!--Becky start here-->
+﻿---
+product-previous: workfront-fusion
+product-area: workfront-integrations
+keywords: fusion
+navigation-topic: workfront-fusion-navigation-topic
+title: The Fusion context reference
+description:  The Fusion context reference
+author: Becky
+feature: Workfront Fusion
+recommendations: noDisplay, noCatalog
+exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+---
+# 6. The Fusion context reference
 
 When your UI calls `attach(...)`, Fusion shares a **context** object describing the current session. This page lists every field, what it means, and how the Fusion and Adobe IMS identifiers relate.
 
 ## How to read the context
 
 * **Initial values:** `connection.sharedContext.get("<key>")`
-* **Updates:** listen for the `contextchange` event; the latest object arrives on `event.detail.context`.
+* **Updates:** Listen for the `contextchange` event. The latest object arrives on `event.detail.context`.
 
-See [Build the UI](./05-build-the-ui.md) for the full code pattern.
+For the full code pattern, see See [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
 
 ```js
 const organization = connection.sharedContext.get("organization");
@@ -20,13 +36,13 @@ const imsOrgId     = connection.sharedContext.get("imsOrgId"); // Adobe IMS org 
 ## Top-level keys
 
 | Key | Type | Description |
-|-----|------|-------------|
-| `imsToken` | string | The signed-in user's Adobe **IMS access token**. Use it as a `Bearer` token to call Adobe or Fusion APIs on the user's behalf. **Sensitive â&euro;" never log or display it.** |
+| ----- | ------ | ------------- |
+| `imsToken` | string | The signed-in user's Adobe **IMS access token**. Use this as a `Bearer` token to call Adobe or Fusion APIs on the user's behalf. **Because this is sensitive, never log or display it.** |
 | `imsOrgId` | string | The Adobe **IMS organization id**, in the form `XXXXXXXXXXXX@AdobeOrg`. |
 | `imsUserId` | string | The Adobe **IMS user id** of the signed-in user. |
-| `organization` | object | The **full active Fusion organization**. See table below. |
-| `team` | object \| undefined | The **full active Fusion team**, when one is active (always relevant for `fusion/nav-team/1`). See table below. |
-| `user` | object | The **full signed-in Fusion user**. See table below. |
+| `organization` | object | The **full active Fusion organization**. For more information, see [`organization` fields](#organization-fields) in this article. |
+| `team` | object \| undefined | The **full active Fusion team**, when one is active (always relevant for `fusion/nav-team/1`). For more information, see [`team` fields](#team-fields) in this article. |
+| `user` | object | The **full signed-in Fusion user**. For more information, see [`user` fields](#user-fields) in this article. |
 
 ### Fusion id vs. IMS id at a glance
 
