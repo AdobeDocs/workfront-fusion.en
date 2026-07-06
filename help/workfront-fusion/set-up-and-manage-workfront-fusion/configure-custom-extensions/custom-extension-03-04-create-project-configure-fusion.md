@@ -16,7 +16,11 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
 ---
-#  Create a project for UI Extensibility
+# Create a project for UI Extensibility
+
+>[!NOTE]
+>
+>This article assumes some familiarity with software development tools. 
 
 To create a custom UI extension, you must create an App Builder project for it.
 
@@ -133,151 +137,170 @@ Before changing anything, make sure the empty project builds
    aio app build
    ```
 
-If this completes without errors, your tools and project are correctly configured. You are ready to connect the project it to Fusion.
+   If this completes without errors, your tools and project are correctly configured. You are ready to connect the project it to Fusion.
 
->[!TIP]
->
-> **If the build fails,** the most common cause is an unsupported Node.js version. Run `node --version` and make sure it is 18 or 20 (see [Set up your tools]()). For other errors, see [Troubleshooting]().
+   >[!TIP]
+   >
+   > **If the build fails,** the most common cause is an unsupported Node.js version. Run `node --version` and make sure it is 18 or 20.
+   >
+   >* For information on installing Node.js, see [Set up your tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md). 
+   >* For information on other possible errors, see [Troubleshooting](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
 
-<!--BECKY START HERE-->
+1. Continue to [Configure the project for Fusion](#configure-the-project-for-fusion).
 
-Next: [Configure it for Fusion â†'](./04-configure-for-fusion.md)
+## Configure the project for Fusion
 
-# 4. Configure it for Fusion
+The next step in setting up your custom extension is to connect your generic project to Workfront Fusion.
 
-This page connects your generic project to Fusion. You will:
+You will:
 
-1. Create a folder for your extension.
-2. Tell App Builder about a Fusion **extension point** (in `app.config.yaml`).
-3. Describe your extension's pieces (in `ext.config.yaml`).
-4. **Register** your widget so Fusion knows its title and where its UI lives.
+1. [Create a folder for your extension](#create-a-folder-for-your-extension)
+1. Tell App Builder about a Fusion **extension point** (in `app.config.yaml`).
+1. Describe your extension's pieces (in `ext.config.yaml`).
+1. **Register** your widget so Fusion knows its title and where its UI lives.
 
 We use `fusion/nav-organization/1` throughout. To target the Team section instead, swap in `fusion/nav-team/1` everywhere. To support both, repeat the pattern for each.
 
-## The folder layout you are aiming for
+## Create a folder for your extension
 
-Create your files so the project looks like this:
+1. Create your files so the project looks like this:
 
-```
-my-fusion-extension/
-â"œâ"&euro;â"&euro; app.config.yaml
-â""â"&euro;â"&euro; src/
-    â""â"&euro;â"&euro; fusion-nav-organization-1/          â† one folder per extension point
-        â"œâ"&euro;â"&euro; ext.config.yaml
-        â""â"&euro;â"&euro; web-src/
-            â""â"&euro;â"&euro; src/
-                â""â"&euro;â"&euro; components/
-                    â"œâ"&euro;â"&euro; App.js
-                    â"œâ"&euro;â"&euro; ExtensionRegistration.js
-                    â"œâ"&euro;â"&euro; DashboardWidget.js
-                    â""â"&euro;â"&euro; Constants.js
-```
+   ```
+   my-fusion-extension/
+   |-- app.config.yaml
+   |-- src/
+          |-- fusion-nav-organization-1/          // one folder per extension point
+             |-- ext.config.yaml
+             |-- web-src/
+                |-- src/
+                   |-- components/
+                      |-- App.js
+                      |-- ExtensionRegistration.js
+                      |-- DashboardWidget.js
+                      |-- Constants.js
+   ```
 
-Naming the folder after the extension point (`fusion-nav-organization-1`) keeps things obvious, but the exact name is up to you, as long as it matches what you reference in `app.config.yaml`.
+   We recommend naming the folder after the extension point (`fusion-nav-organization-1`). The exact name is up to you, but it must match what you reference in `app.config.yaml`.
 
-## Step 1 â&euro;" Declare the extension point in `app.config.yaml`
+1. Continue to [Declare the extension point in `app.config.yaml`](#declare-the-extension-point-in-appconfigyaml).
 
-Open `app.config.yaml` and make its contents look like this:
+## Declare the extension point in `app.config.yaml`
 
-```yaml
-extensions:
-  fusion/nav-organization/1:
-    $include: src/fusion-nav-organization-1/ext.config.yaml
-```
+1. Open `app.config.yaml` and update its contents to:
 
-What this says:
+   ```yaml
+   extensions:
+     fusion/nav-organization/1:
+       $include: src/fusion-nav-organization-1/ext.config.yaml
+   ```
 
-* `extensions:` â&euro;" this app implements one or more extension points.
-* `fusion/nav-organization/1` â&euro;" the Fusion slot you are plugging into. **The name must match exactly**, including the `1` version.
-* `$include:` â&euro;" points to a second config file (next step) that describes this extension's contents. Keeping it in a separate file keeps `app.config.yaml` clean and lets you add more extension points later.
+   These contents describe the following:
 
-> **Targeting both sections?** List both, each with its own folder:
->
-> ```yaml
-> extensions:
->   fusion/nav-organization/1:
->     $include: src/fusion-nav-organization-1/ext.config.yaml
->   fusion/nav-team/1:
->     $include: src/fusion-nav-team-1/ext.config.yaml
-> ```
+   * `extensions:`: This app implements one or more extension points.
+   * `fusion/nav-organization/1`: The Fusion slot you are plugging into. **The name must match exactly**, including version `1`.
+   * `$include:`: This points to a second config file (created in the next step) that describes this extension's contents. Keeping it in a separate file keeps `app.config.yaml` clean and lets you add more extension points later.
 
-## Step 2 â&euro;" Describe the extension in `ext.config.yaml`
+   >[!NOTE]
+   >
+   >If you are targeting both extensions, list both, each with its own folder:
+   >
+   > ```yaml
+   > extensions:
+   >   fusion/nav-organization/1:
+   >     $include: src/fusion-nav-organization-1/ext.config.yaml
+   >   fusion/nav-team/1:
+   >     $include: src/fusion-nav-team-1/ext.config.yaml
+   > ```
 
-Create `src/fusion-nav-organization-1/ext.config.yaml` with:
+   1. Continue to [Describe the extension in `ext.config.yaml`](#describe-the-extension-in-extconfigyaml)
 
-```yaml
-operations:
-  view:
-    - type: web
-      impl: index.html
-web: web-src
-hooks:
-  pre-app-build: node node_modules/@adobe/uix-guest/scripts/generate-metadata.js
-  pre-app-run: node node_modules/@adobe/uix-guest/scripts/generate-metadata.js
-```
+## Describe the extension in `ext.config.yaml`
 
-What each part means:
+1. Create `src/fusion-nav-organization-1/ext.config.yaml` with:
 
-* **`operations.view`**: Declares that your extension provides a **view** (a visible UI), served from `index.html`. This is what makes your extension show a screen rather than run only in the background.
-* **`web: web-src`**: The folder that holds your front-end files. App Builder builds everything under here and hosts it on Adobe's CDN.
-* **`hooks`**: Small commands that run automatically at build/run time. The `generate-metadata.js` script ships with `@adobe/uix-guest`; it produces an `app-metadata.json` file that your registration code needs (see Step 4). You do not write this script; you just reference it.
+   ```yaml
+   operations:
+      view:
+       - type: web
+         impl: index.html
+   web: web-src
+   hooks:
+     pre-app-build: node node_modules/@adobe/uix-guest/scripts/generate-metadata.js
+      pre-app-run: node node_modules/@adobe/uix-guest/scripts/generate-metadata.js
+   ```
 
-> **Need server-side logic too?** You can also add serverless `actions` (small backend functions). They are optional and not required to render a UI, so we leave them out to keep this guide focused. If you add them later, declare an `actions:` folder here and a `runtimeManifest:` in `app.config.yaml`.
+   These contents describe the following:
 
-## Step 3 â&euro;" Set a stable extension id
+   * **`operations.view`**: Declares that your extension provides a **view** (a visible UI), served from `index.html`. This is what makes your extension show a screen rather than run only in the background.
+   * **`web: web-src`**: The folder that holds your front-end files. App Builder builds everything under here and hosts it on Adobe's Content Delivery Network (CDN).
+   * **`hooks`**: Small commands that run automatically at build/run time. The `generate-metadata.js` script ships with `@adobe/uix-guest`, and produces an `app-metadata.json` file that your registration code needs (see Step 4). You do not write this script; you just reference it.
 
-Your extension needs a unique id that both frames share. Create `src/fusion-nav-organization-1/web-src/src/components/Constants.js`:
+   >[!NOTE]
+   >
+   > If you also need server-side logic too, you can also add serverless `actions` (small backend functions). Actions are optional and not required to render a UI, so we leave them out to keep this guide focused. If you add them later, declare an `actions:` folder here and a `runtimeManifest:` in `app.config.yaml`. The most common reason to add one is to call Workfront/Fusion APIs without hitting browser CORS.
+   > For information on calling APIs, see [Calling Workfront & Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom%20extension-10-calling-apis.md).
+1. Continue to [Set a stable extension ID](#set-a-stable-extension-id).
 
-```js
-module.exports = {
-  extensionId: 'my-fusion-extension'
-};
-```
+## Set a stable extension ID
 
-Use the same value everywhere your code refers to the extension id.
+Your extension requires a unique id that both frames share. 
 
-## Step 4 â&euro;" Register your widget
+For information on frames in relation to custom extensions, see [Frames included in a UI Extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md#frames-included-in-a-ui-extension).
+
+1. Create `src/fusion-nav-organization-1/web-src/src/components/Constants.js`:
+
+   ```js
+   module.exports = {
+     extensionId: 'my-fusion-extension'
+   };
+   ```
+
+   Use the same value everywhere your code refers to the extension id.
+1. Continue to [Register your widget](#register-your-widget).
+
+
+## Register your widget
 
 "Registration" is how the hidden background frame tells Fusion what your extension offers. You declare a `dashboard.getWidget()` method that returns your widget's title and the URL of its visible UI.
 
-Create `src/fusion-nav-organization-1/web-src/src/components/ExtensionRegistration.js`.
+1. Create `src/fusion-nav-organization-1/web-src/src/components/ExtensionRegistration.js`.
 The important part is the `register(...)` call:
 
-```js
-import { register } from "@adobe/uix-guest";
-import metadata from "../../../../app-metadata.json";
-import { extensionId } from "./Constants";
+   ```js
+   import { register } from "@adobe/uix-guest";
+   import metadata from "../../../../app-metadata.json";
+   import { extensionId } from "./Constants";
 
-async function init() {
-  await register({
-    id: extensionId,
-    metadata,
-    methods: {
-      dashboard: {
-        getWidget() {
-          return {
-            id: extensionId,
-            title: "My Fusion tool",        // shown on the Fusion nav button
-            description: "What this tool does",
-            url: "/index.html#/my-widget",  // route to your visible UI
-            hideWidgetHeader: false          // false = Fusion shows the title
-          };
-        }
-      }
-    }
-  });
-}
+   async function init() {
+     await register({
+       id: extensionId,
+       metadata,
+       methods: {
+         dashboard: {
+           getWidget() {
+             return {
+               id: extensionId,
+               title: "My Fusion tool",        // shown on the Fusion nav button
+               description: "What this tool does",
+               url: "/index.html#/my-widget",  // route to your visible UI
+               hideWidgetHeader: false          // false = Fusion shows the title
+             };
+           }
+         }
+       }
+      });
+   }
+   
+   init().catch(console.error);
+   ```
 
-init().catch(console.error);
-```
+   Key points:
 
-Key points:
+   * **`title`** is the label Fusion puts on the navigation button. If `hideWidgetHeader` is `false`, Fusion also shows the title as a header above your UI.
+   * **`url`** is the route to your *visible* UI inside this same app. Here it is a hash route (`#/my-widget`) handled by your front-end router (set up on the next page). It must resolve to the component that renders your screen.
+   * **`metadata`** comes from `app-metadata.json`, which the `generate-metadata` hook creates for you at build time. Import it as shown.
+   * The `dashboard.getWidget` method name is the agreed contract Fusion calls to discover your widget. Keep the `dashboard` namespace and `getWidget` name.
 
-* **`title`** is the label Fusion puts on the navigation button. If `hideWidgetHeader` is `false`, Fusion also shows the title as a header above your UI.
-* **`url`** is the route to your *visible* UI inside this same app. Here it is a hash route (`#/my-widget`) handled by your front-end router (set up on the next page). It must resolve to the component that renders your screen.
-* **`metadata`** comes from `app-metadata.json`, which the `generate-metadata` hook creates for you at build time. Just import it as shown.
-* The `dashboard.getWidget` method name is the agreed contract Fusion calls to discover your widget. Keep the `dashboard` namespace and `getWidget` name.
+The backend of your extension is now complete. The next step into build the extension's UI.
 
-You now have the wiring. Next you build the actual screen and connect it to Fusion.
-
-Next: [Build the UI â†'](./05-build-the-ui.md)
+For instructions ob building the UI, see [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
