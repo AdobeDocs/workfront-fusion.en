@@ -19,7 +19,7 @@ const imsOrgId     = connection.sharedContext.get("imsOrgId"); // Adobe IMS org 
 
 | Key | Type | Description |
 |-----|------|-------------|
-| `imsToken` | string | The signed-in user's Adobe **IMS access token**. Use it as a `Bearer` token to call Adobe or Fusion APIs on the user's behalf. **Sensitive â€” never log or display it.** |
+| `imsToken` | string | The signed-in user's Adobe **IMS access token**. Use it as a `Bearer` token to call Adobe or Fusion APIs on the user's behalf. **Sensitive â&euro;" never log or display it.** |
 | `imsOrgId` | string | The Adobe **IMS organization id**, in the form `XXXXXXXXXXXX@AdobeOrg`. |
 | `imsUserId` | string | The Adobe **IMS user id** of the signed-in user. |
 | `organization` | object | The **full active Fusion organization**. See table below. |
@@ -125,4 +125,12 @@ Always re-read all the keys you use inside your `contextchange` handler rather t
 * Send the token only to trusted Adobe/Fusion endpoints, over HTTPS, as a `Bearer` token.
 * Do not store personal data from the context beyond what your feature needs.
 
-Next: [Publish your extension â†’](./07-publish.md)
+## Using the token to call APIs
+
+To turn `imsToken` (plus `organization.id` / `team.id`) into real Workfront or
+Fusion data, you cannot call those APIs directly from the browser - CORS blocks
+it. Route the call through a small App Builder runtime action instead. See
+[Calling Workfront & Fusion APIs](./10-calling-apis.md).
+
+
+Next: [Publish your extension â†'](./07-publish.md)

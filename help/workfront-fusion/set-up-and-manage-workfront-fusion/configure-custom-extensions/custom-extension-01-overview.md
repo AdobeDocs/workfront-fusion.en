@@ -139,11 +139,12 @@ For the complete list of context fields, see [The Fusion context reference]().
 To create a UI Extension, follow these steps:
 
 1. [Install tools and create an Adobe project](./02-setup.md).
-2. [Generate a blank App Builder project](./03-create-project.md).
-3. [Point it at a Fusion extension point and register your widget](./04-configure-for-fusion.md).
-4. [Build the UI and connect to Fusion](./05-build-the-ui.md).
-5. [Use the context Fusion sends](./06-fusion-context-reference.md).
-6. [Publish so Fusion can find it](./07-publish.md).
+1. [Generate a blank App Builder project](./03-create-project.md).
+1. [Point it at a Fusion extension point and register your widget](./04-configure-for-fusion.md).
+1. [Build the UI and connect to Fusion](./05-build-the-ui.md).
+1. [Use the context Fusion sends](./06-fusion-context-reference.md).
+1. [Publish so Fusion can find it](./07-publish.md).
+1. (Optional) Call Workfront/Fusion APIs for real data without CORS — page 10.
 
 To begin the process, go to [Set up your tools & Adobe account](./02-setup.md).
 
