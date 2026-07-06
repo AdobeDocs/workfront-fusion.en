@@ -16,7 +16,7 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
 ---
-# 6. The Fusion context reference
+# The Fusion context reference
 
 When your UI calls `attach(...)`, Fusion shares a **context** object describing the current session. This page lists every field, what it means, and how the Fusion and Adobe IMS identifiers relate.
 
@@ -44,7 +44,7 @@ const imsOrgId     = connection.sharedContext.get("imsOrgId"); // Adobe IMS org 
 | `team` | object \| undefined | The **full active Fusion team**, when one is active (always relevant for `fusion/nav-team/1`). For more information, see [`team` fields](#team-fields) in this article. |
 | `user` | object | The **full signed-in Fusion user**. For more information, see [`user` fields](#user-fields) in this article. |
 
-### Fusion id vs. IMS id at a glance
+### Fusion ID and IMS ID
 
 Each entity has a **Fusion id** (used by Fusion's own APIs) and, where it exists, an **Adobe IMS id** (used by Adobe platform APIs):
 
