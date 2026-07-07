@@ -141,3 +141,4 @@ If Workfront Fusion does not feature a function you want to use, but it is featu
 1. Configure the module, using the same Cell ID that you used in step 4.
 
    ![Use Google Sheets functions](assets/exploit-google-sheet-functions-2-350x187.png)
+

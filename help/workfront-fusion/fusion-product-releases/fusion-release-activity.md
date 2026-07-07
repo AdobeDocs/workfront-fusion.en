@@ -413,3 +413,4 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 * [Workfront Fusion release activity: Week of August 17, 2020](/help/workfront-fusion/fusion-product-releases/fusion-releases-2020/fusion-aug-17.md)
 
 +++
+
