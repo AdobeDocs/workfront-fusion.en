@@ -46,21 +46,22 @@ The Production environment workflow is as follows:
 >
 > **Roles:** creating and deploying needs the **Developer** role; submitting the approval request to publish needs a **System Administrator** role. 
 >For more information, see:
+>
 > * [Set up UI Extension tools and account](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md) 
 > * [How to Get Access](https://developer.adobe.com/uix/docs/guides/get-access/) in the Adobe documentation.
-<!--Becky start here-->
----
 
-## Part A — Test on Stage
+## Test on Stage
 
-### Step 1 — Select the Stage workspace
+Follow these steps to test your extension on the stage workspace.
+
+### Step 1: Select the Stage workspace
 
 ```sh
 aio console where                  # shows current org / project / workspace
 aio console workspace select       # choose Stage
 ```
 
-### Step 2 — Build
+### Step 2: Build
 
 ```sh
 aio app build
@@ -68,7 +69,7 @@ aio app build
 
 This compiles your front-end and runs the metadata hook (which generates `app-metadata.json`). Fix any reported errors before continuing.
 
-### Step 3 — Deploy
+### Step 3: Deploy
 
 ```sh
 aio app deploy
@@ -76,17 +77,22 @@ aio app deploy
 
 `deploy` does two things:
 
-1. **Hosts your UI** on Adobe's content delivery network, at a URL like `https://<project>-stage.adobeio-static.net`. The CLI prints this **extension endpoint URL** when it finishes. This is the URL Fusion loads in its iframe.
-2. **Registers your extension's endpoints** for the extension point (`fusion/nav-organization/1`) in the Stage workspace, which is what lets Fusion discover it.
+* **Hosts your UI** on Adobe's content delivery network, at a URL like `https://<project>-stage.adobeio-static.net`. The CLI prints this **extension endpoint URL** when it finishes. This is the URL Fusion loads in its iframe.
+* **Registers your extension's endpoints** for the extension point (`fusion/nav-organization/1`) in the Stage workspace, which is what lets Fusion discover it.
 
-> **If deploy fails with "Extension point 'fusion/nav-organization/1' does not exist" (error 1060):** the Fusion extension point is not enabled for your organization yet. This is an onboarding step, not a mistake in your code. See [Troubleshooting](./08-troubleshooting.md#error-1060-extension-point-does-not-exist).
+>[!TIP]
+>
+> **If deploy fails with "Extension point 'fusion/nav-organization/1' does not exist" (error 1060):** the Fusion extension point is not enabled for your organization yet. This is an onboarding step, not a mistake in your code. 
+>For more information, see [Extension point does not exist](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md#error-1060-extension-point-does-not-exist) in the article Custom extensions troubleshooting.
 
-### Step 4 — Verify in Fusion
+<!--Becky start here-->
+
+### Step 4: Verify in Fusion
 
 1. Sign in to Fusion with an account in the **same organization** you deployed to.
 2. Open the section that matches your extension point:
-   - `fusion/nav-organization/1` → the **Organization** area of the left navigation.
-   - `fusion/nav-team/1` → the **Team** area (select a team first).
+   * `fusion/nav-organization/1` → the **Organization** area of the left navigation.
+   * `fusion/nav-team/1` → the **Team** area (select a team first).
 3. You should see a button with the **title** you set in `getWidget()`. Click it; your UI loads and receives the [Fusion context](./06-fusion-context-reference.md).
 
 If the button does not appear or the panel shows an error, see [Troubleshooting](./08-troubleshooting.md).
