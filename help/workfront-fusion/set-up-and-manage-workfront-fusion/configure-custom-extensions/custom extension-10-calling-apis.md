@@ -1,29 +1,41 @@
-# 10. Calling Workfront & Fusion APIs from your extension
+---
+product-previous: workfront-fusion
+product-area: workfront-integrations
+keywords: fusion
+navigation-topic: workfront-fusion-navigation-topic
+title: Troubleshooting custom extensions
+description:  Troubleshooting custom extensions
+author: Becky
+feature: Workfront Fusion
+recommendations: noDisplay, noCatalog
+exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+---
 
-The [context](./06-fusion-context-reference.md) gives you the signed-in user's
-**IMS token**, so a natural next step is to call Workfront or Fusion APIs and
-show real data. This page covers the one thing that surprises everyone when they
-try it - **CORS** - and the clean way around it using an App Builder **runtime
-action** as a server-side proxy. It ends with a worked example (the event
-subscriptions dashboard).
+# Calling Workfront & Fusion APIs from your extension
+
+>[!NOTE]
+>
+>This article assumes some familiarity with software development tools. 
+
+The Fusion context reference gives you the signed-in user's IMS token, so a natural next step is to call Workfront or Fusion APIs and show real data. This is not possible due to CORS. This article shows how to get around that limitation using an App Builder runtime action as a server-side proxy, and includes an example (the event subscriptions dashboard).
 
 ## Why a direct browser call fails (CORS)
 
-Your visible UI runs in an `<iframe>` served from Adobe's CDN
-(`https://<your-app>.adobeio-static.net`). When that page does `fetch(...)` to a
-Workfront or Fusion API on a **different** origin, the browser enforces
-[CORS](https://developer.mozilla.org/docs/Web/HTTP/CORS): unless the API
-explicitly returns `Access-Control-Allow-Origin` for your CDN origin, the browser
-blocks the response. These APIs do not allowlist arbitrary extension origins, so
-**direct calls from the guest fail.**
+Your visible UI runs in an `<iframe>` served from Adobe's CDN (`https://<your-app>.adobeio-static.net`). When that page does `fetch(...)` to a Workfront or Fusion API on a **different** origin, the browser enforces Cross-Origin Resource Sharing (CORS). Unless the API explicitly returns `Access-Control-Allow-Origin` for your CDN origin, the browser blocks the response. These APIs do not allowlist arbitrary extension origins, so direct calls from the guest fail.
 
-## The fix: call your own runtime action (no CORS)
+For information on CORS, see [CORS](https://developer.mozilla.org/docs/Web/HTTP/CORS).
 
-App Builder apps can include **runtime actions** - small serverless functions
-that run on Adobe I/O Runtime, *server-side*. Server-to-server calls are not
-subject to browser CORS. And because the action is part of *your* app, the guest
-can call it with a **relative URL**, which is **same-origin** - so that call is
-not blocked either.
+## Call your own runtime action without CORS
+
+The fix for this is to call your own runtime action without CORS.
+
+App Builder apps can include runtime actions, which are small serverless functions that run on Adobe I/O Runtime, server-side. Server-to-server calls are not subject to browser CORS. And because the action is part of your app, the guest can call it with a relative URL, which is same-origin and therefore not blocked.
 
 ```
   Guest UI (browser, adobeio-static.net)
@@ -35,13 +47,11 @@ not blocked either.
   Workfront / Fusion API
 ```
 
-The action receives the user's IMS token from the guest and **forwards it
-upstream**, so calls are still made on the user's behalf with their permissions.
+The action receives the user's IMS token from the guest and forwards it upstream, so calls are still made on the user's behalf with their permissions.
 
-## Step 1 - Declare the action
+## Step 1: Declare the action
 
-Runtime actions are declared in `app.config.yaml` under the extension's
-`runtimeManifest`. Add a `wf-proxy` action next to your extension:
+Runtime actions are declared in `app.config.yaml` under the extension's `runtimeManifest`. Add a `wf-proxy` action next to your extension:
 
 ```yaml
 extensions:
@@ -71,28 +81,18 @@ The action becomes reachable at:
 
 ### `require-adobe-auth`: true vs. false
 
-This annotation controls whether Adobe's gateway validates an IMS token
-**before** your action runs.
+This annotation controls whether Adobe's gateway validates an IMS token before your action runs.
 
-- **`true`** is the secure default: the gateway rejects unauthenticated calls.
-  However, the validator is strict about which headers it expects and **can
-  reject requests or drop custom headers** that your upstream call needs - which
-  shows up as a confusing `401` even though your token is valid.
-- **`false`** skips the gateway check. Your action is then publicly invocable, so
-  you **must** enforce auth yourself: require an `Authorization` bearer in the
-  action (reject if missing) and forward it upstream, where Workfront/Fusion
-  validate it. Combined with a strict **target allowlist** (Step 2), this is the
-  reliable path for a proxy that needs to pass custom headers.
+* **`true`:** The secure default.  The gateway rejects unauthenticated calls. However, the validator is strict about which headers it expects and can reject requests or drop custom headers that your upstream call needs. If that happens, it shows up as a `401` even though your token is valid.
+* **`false`:** Skips the gateway check. Your action is then publicly invocable, so you **must** enforce authorization yourself. Require an `Authorization` bearer in the action and reject if missing, then and forward it upstream, where Workfront and Fusion validate it. Combined with a strict target allowlist, described in Step 2, this is the reliable path for a proxy that needs to pass custom headers.
 
-> Try `true` first. If you hit a `401` that you cannot explain (token is valid,
-> works elsewhere), switch to `false` **and** keep the bearer check + allowlist
-> in your action so security is still enforced upstream.
+>[!TIP]
+>
+> Try `true` first. If you see a `401` that you cannot explain because the token is valid and works elsewhere, switch to `false` **and** keep the bearer check and allowlist in your action so security is still enforced upstream.
 
-## Step 2 - Write the action (allowlisted proxy)
+## Step 2: Write the action for an allowlisted proxy
 
-Create `src/fusion-nav-organization-1/actions/wf-proxy/index.js`. Two rules keep
-this safe: an **allowlist** of upstream targets (so the action can't be used as
-an open relay) and a **required bearer token** that is forwarded upstream.
+Create `src/fusion-nav-organization-1/actions/wf-proxy/index.js`. Two rules keep this safe: an allowlist of upstream targets so the action can't be used as an open relay, and a required bearer token that is forwarded upstream.
 
 ```js
 const fetch = require('node-fetch')
@@ -149,16 +149,11 @@ async function main (params) {
 exports.main = main
 ```
 
-`getBearerToken`, `errorResponse`, and `checkMissingRequestInputs` come from the
-generated `actions/utils.js` (the template scaffolds them). `getBearerToken`
-reads `params.__ow_headers.authorization`, which is where the gateway puts the
-incoming `Authorization` header.
+`getBearerToken`, `errorResponse`, and `checkMissingRequestInputs` come from the generated `actions/utils.js`, where the template scaffolds them. `getBearerToken` reads `params.__ow_headers.authorization`, which is where the gateway puts the incoming `Authorization` header.
 
-## Step 3 - Call the action from the guest
+## Step 3:  Call the action from the guest
 
-From your UI, `fetch` the action with a **relative** URL (same-origin) and send
-the IMS token as a bearer. Pass the org/team ids the upstream needs as query
-params.
+From your UI, `fetch` the action with a relative (same-origin) URL and send the IMS token as a bearer. Pass the organization and team IDs that the upstream needs as query params.
 
 ```js
 const PROXY_URL = "/api/v1/web/fusion-uix-guest/wf-proxy";
@@ -176,64 +171,53 @@ async function callProxy(target, token, { imsOrgId, fusionOrgId, teamId } = {}) 
 }
 ```
 
-Get `token`, `imsOrgId`, `fusionOrgId`, and `teamId` from the
-[context](./06-fusion-context-reference.md):
+Get `token`, `imsOrgId`, `fusionOrgId`, and `teamId` from the context:
 
 ```js
 const token       = connection.sharedContext.get("imsToken");
 const imsOrgId    = connection.sharedContext.get("imsOrgId");
 const fusionOrgId = connection.sharedContext.get("organization")?.id; // Fusion tenant id
 const teamId      = connection.sharedContext.get("team")?.id;
-```
+``` 
+
+For information on the context, see [The Fusion context reference](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md).
 
 ## Fusion v3 API specifics
 
 What worked for the dashboard against `https://fusion.adobe.com/api/v3`:
 
 | Header / param | Value | Notes |
-|----------------|-------|-------|
+| ---------------- | ------- | ------- |
 | `Authorization` | `Bearer <imsToken>` | The user's IMS token from the context. |
-| `x-organization-id` | `organization.id` | **Fusion's own tenant id**, not the IMS org id. Fusion identifies the tenant by this. |
+| `x-organization-id` | `organization.id` | Fusion's own tenant ID, not the IMS org ID. Fusion identifies the tenant by this. |
 | `x-team-id` | `team.id` | Send when the call is team-scoped. |
-| `x-gw-ims-org-id` | `imsOrgId` | Adobe IMS org id, for the gateway. |
+| `x-gw-ims-org-id` | `imsOrgId` | Adobe IMS org ID, for the gateway. |
 
-Endpoint quirks that cost us time:
+Note the following caveats:
 
-- **`GET /api/v3/hooks` is team-scoped:** `teamId` is a **required query param**
-  (`/api/v3/hooks?teamId=...`). Without it you get a `400`. This means hooks come
-  back for the *active team only*; to cover an org, loop teams and merge.
-- **`GET /api/v3/scenarios`** works with `organizationId`
-  (`/api/v3/scenarios?organizationId=...`).
+* **`GET /api/v3/hooks` is team-scoped:** `teamId` is a **required query param** (`/api/v3/hooks?teamId=...`). Without it you get a `400`. This means hooks come back for the *active team only*; to cover an org, loop teams and merge.
+* **`GET /api/v3/scenarios`** works with `organizationId` (`/api/v3/scenarios?organizationId=...`).
 
-> The official reference is Adobe's
-> [Workfront Fusion APIs](https://developer.adobe.com/workfront-fusion-apis/).
-> Header/auth requirements vary by gateway; the table above reflects what the
-> demo actually needed. If a call returns `401`/`400`, re-check these headers
-> first.
+>[!NOTE]
+>
+> The official reference is Adobe's [Workfront Fusion APIs](https://developer.adobe.com/workfront-fusion-apis/). Header/auth requirements vary by gateway. This table reflects what the demo actually needed. If a call returns `401`/`400`, re-check these headers first.
 
 ## Security checklist
 
-- **Allowlist upstreams.** Never construct the target URL from raw client input;
-  map a short `target` key to a fixed URL (Step 2). This prevents your action
-  from becoming an open relay.
-- **Require the bearer token** in the action and forward it upstream; let
-  Workfront/Fusion enforce the user's permissions.
-- **Never log the token** (`imsToken` is a credential). Keep `LOG_LEVEL` mindful
-  of what `stringParameters` prints.
-- **Forward only over HTTPS** to trusted Adobe/Workfront hosts.
+* **Allowlist upstreams.** Never construct the target URL from raw client input. Map a short `target` key to a fixed URL, as in Step 2. This prevents your action from becoming an open relay.
+* **Require the bearer token** in the action and forward it upstream. Let Workfront and Fusion enforce the user's permissions.
+* **Never log the token.** `imsToken` is a credential. Keep `LOG_LEVEL` mindful of what `stringParameters` prints.
+* **Forward only over HTTPS** to trusted Adobe and Workfront hosts.
 
 ## Worked example: the event subscriptions dashboard
 
-The demo dashboard joins three sources to show, per Workfront event
-subscription, whether a matching Fusion scenario is healthy:
+The demo dashboard joins three sources to show, per Workfront event subscription, whether a matching Fusion scenario is healthy:
 
-1. `fetchSubscriptions()` → Workfront event subscriptions (with received/passed
-   counters).
-2. `fetchHooks(teamId)` → Fusion hooks for the active team.
-3. `fetchScenarios(fusionOrgId)` → Fusion scenarios for the org.
+1. `fetchSubscriptions()` → Workfront event subscriptions (with received/passed counters).
+1. `fetchHooks(teamId)` → Fusion hooks for the active team.
+1. `fetchScenarios(fusionOrgId)` → Fusion scenarios for the org.
 
-The **join** chains them: a subscription's `targetUrl` matches a hook's `url`;
-the hook's `scenarioId` matches a scenario's `id`:
+The **join** chains them: a subscription's `targetUrl` matches a hook's `url`; the hook's `scenarioId` matches a scenario's `id`:
 
 ```
 subscription.targetUrl  ──▶  hook.url
@@ -242,13 +226,11 @@ subscription.targetUrl  ──▶  hook.url
 
 Status is derived from the join:
 
-- **Broken** - no matching hook, or the hook is `gone`.
-- **Filtering** - matched, but `passed < received` (events arrive but are
-  filtered out before the scenario runs).
-- **Healthy** - matched and passing.
+* **Broken**: no matching hook, or the hook is `gone`.
+* **Filtering**: matched, but `passed < received` (events arrive but are filtered out before the scenario runs).
+* **Healthy**: matched and passing.
 
-Because real payload shapes vary, the client maps fields defensively (try several
-candidate keys per field) so a minor API difference does not break the table:
+Because real payload shapes vary, the client maps fields defensively, trying several candidate keys per field, so a minor API difference does not break the table:
 
 ```js
 function pick(obj, keys, fallback) {
@@ -261,7 +243,4 @@ function pick(obj, keys, fallback) {
 // e.g. targetUrl: pick(sub, ["url", "endpointUrl", "targetUrl", "target.url", "callbackUrl"], "")
 ```
 
-This is just one example; the same proxy pattern works for any Workfront or
-Fusion API you need.
-
-Next: [Troubleshooting →](./08-troubleshooting.md)
+This is just one example. The same proxy pattern works for any Workfront or Fusion API you need.
