@@ -16,7 +16,11 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
 ---
-# Publish your extension
+# Publish your custom extension
+
+>[!NOTE]
+>
+>This article assumes some familiarity with software development tools. 
 
 Your extension runs in Fusion only after it is **built**, **deployed** to Adobe, and (for general availability) **approved** for your organization. The procedures on this page show how publish your extension and how to verify the result.
 
@@ -85,23 +89,24 @@ aio app deploy
 > **If deploy fails with "Extension point 'fusion/nav-organization/1' does not exist" (error 1060):** the Fusion extension point is not enabled for your organization yet. This is an onboarding step, not a mistake in your code. 
 >For more information, see [Extension point does not exist](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md#error-1060-extension-point-does-not-exist) in the article Custom extensions troubleshooting.
 
-<!--Becky start here-->
-
 ### Step 4: Verify in Fusion
 
 1. Sign in to Fusion with an account in the **same organization** you deployed to.
 2. Open the section that matches your extension point:
    * `fusion/nav-organization/1` → the **Organization** area of the left navigation.
    * `fusion/nav-team/1` → the **Team** area (select a team first).
-3. You should see a button with the **title** you set in `getWidget()`. Click it; your UI loads and receives the [Fusion context](./06-fusion-context-reference.md).
+3. You should see a button with the **title** you set in `getWidget()`. Click it.
 
-If the button does not appear or the panel shows an error, see [Troubleshooting](./08-troubleshooting.md).
+Your UI loads and receives the [Fusion context](./06-fusion-context-reference.md).
 
-> You can also preview the extension locally with `aio app run` before deploying. See Adobe's [Local Preview of UI Extensions](https://developer.adobe.com/uix/docs/guides/preview-extension-locally/).
+If the button does not appear or the panel shows an error, see [Troubleshooting](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
 
----
+>[!NOTE]
+>
+> You can also preview the extension locally with `aio app run` before deploying. For more information, see [Local Preview of UI Extensions](https://developer.adobe.com/uix/docs/guides/preview-extension-locally/) in the Adobe documentation.
 
-## Part B — Release on Production
+
+## Release on Production
 
 When your extension works on Stage and you are ready for all users.
 
@@ -111,7 +116,7 @@ When your extension works on Stage and you are ready for all users.
 aio console workspace select       # choose Production
 ```
 
-When the CLI asks about the `.env` file, choose **Merge** so you keep your environment variables.
+When the CLI prompts about the `.env` file, select **Merge** so you keep your environment variables.
 
 ### Step 2 — Build and deploy to Production
 
@@ -128,13 +133,11 @@ Publishing is an **approval request submitted from the Production workspace**:
 2. Submit your app for **approval / publishing** (this requires the **System Administrator** role).
 3. After approval, your extension is added to the **Adobe App Registry** and becomes available across [Adobe Experience Cloud](https://experience.adobe.com), including Fusion, for your organization.
 
-The full publication UI and states are documented in Adobe's [UI Extensions Management](https://developer.adobe.com/uix/docs/guides/publication/) guide.
+For detailed instructions, see  [UI Extensions Management](https://developer.adobe.com/uix/docs/guides/publication/) in the Adobe Developer documentation.
 
----
+## Updating your extension
 
-## Updating your extension later
-
-To ship changes, repeat **build → deploy** in the appropriate workspace (and, for Production, re-submit for approval if required). Users pick up the new version the next time they open your extension; there is nothing for them to install.
+To publish updates to your extension, repeat the build and deploy workflow in the appropriate workspace. For Production, you must re-submit the extension for approval if required. Users will see the new version the next time they open your extension. There is nothing for them to install.
 
 ## Removing (revoking) your extension
 
@@ -144,22 +147,21 @@ Removing an extension is done by **revoking** it in Adobe Exchange:
 2. Go to **Manage > App Builder Apps**.
 3. Click **Revoke** next to the extension you want to remove, and confirm.
 
-After revoking, the extension shows a *revoked* status in the Extension Manager. To remove it completely, delete the project in the Developer Console (a project **cannot** be deleted until its extension is revoked).
+After revoking, the extension shows a *revoked* status in the Extension Manager. To remove it completely, delete the project in the Developer Console. A project **cannot** be deleted until its extension is revoked.
 
-For Stage-only test deployments you can also tear down the deployment with:
+For Stage-only test deployments, you can also remove the deployment with:
 
 ```sh
 aio app undeploy
 ```
 
----
+## Additional resources
 
-## Official references
+The following resources are available in the Adobe documentation.
 
-- [UI Extension development flow](https://developer.adobe.com/uix/docs/guides/development-flow/)
-- [UI Extensions Management (publish / approve / revoke)](https://developer.adobe.com/uix/docs/guides/publication/)
-- [Create a Project in Developer Console](https://developer.adobe.com/uix/docs/guides/creating-project-in-dev-console/)
-- [How to Get Access (roles)](https://developer.adobe.com/uix/docs/guides/get-access/)
-- [Local preview of UI Extensions](https://developer.adobe.com/uix/docs/guides/preview-extension-locally/)
+* [UI Extension development flow](https://developer.adobe.com/uix/docs/guides/development-flow/)
+* [UI Extensions Management (publish / approve / revoke)](https://developer.adobe.com/uix/docs/guides/publication/)
+* [Create a Project in Developer Console](https://developer.adobe.com/uix/docs/guides/creating-project-in-dev-console/)
+* [How to Get Access (roles)](https://developer.adobe.com/uix/docs/guides/get-access/)
+* [Local preview of UI Extensions](https://developer.adobe.com/uix/docs/guides/preview-extension-locally/)
 
-Next: [Troubleshooting →](./08-troubleshooting.md)

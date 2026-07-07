@@ -18,6 +18,10 @@ feature_v2:
 ---
 # The Fusion context reference
 
+>[!NOTE]
+>
+>This article assumes some familiarity with software development tools. 
+
 When your UI calls `attach(...)`, Fusion shares a **context** object describing the current session. This page lists every field, what it means, and how the Fusion and Adobe IMS identifiers relate.
 
 ## How to read the context
@@ -78,7 +82,7 @@ THese fields are found in the active organization record. Most extensions requir
 | `isDeleted` | boolean | Whether the organization is marked deleted |
 | `imsEnabled` | boolean | Whether the organization is linked to Adobe IMS |
 | `usersCount` | number | Number of users in the organization |
-| `nextReset` | string (date) | When usage counters next reset. See [Dates](#a-note-on-dates) |
+| `nextReset` | string (date) | When usage counters next reset. See [Dates](#dates) |
 
 ## `team` fields
 

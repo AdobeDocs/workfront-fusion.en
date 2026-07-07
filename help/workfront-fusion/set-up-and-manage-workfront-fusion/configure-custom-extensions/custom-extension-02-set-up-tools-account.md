@@ -112,7 +112,7 @@ Check which organization the CLI is pointed at:
    ```sh
    aio console org list      # see organizations you can use
    aio console where         # see your currently selected org/project/workspace
-```
+   ```
 
 If you belong to several organizations, select the correct one:
 
