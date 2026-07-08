@@ -671,12 +671,29 @@ This action module retrieves a record, specified by its ID.
       <td role="rowheader">
         <p>[!UICONTROL Workspace ID]</p>
       </td>
-      <td>Enter or map the ID of the record that you want to retrieve .</td> 
+      <td>Enter or map the ID of the record that you want to retrieve.</td> 
     </tr>
   </tbody>
 </table>
 
 #### Get auth ID from Workfront ID (V2)
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workfront User ID]</p>
+      </td>
+      <td>Enter or map the Workfront ID of the user that you want to retrieve an authorization ID for.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Get the current user's effective permissions on a resource (V2)
 
