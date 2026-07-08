@@ -262,20 +262,20 @@ This trigger module starts a scenario when a record, record type, or workspace i
       <td>If watching records, select the type of record you want to watch for.</td>
     </tr>
     </tr>
-     <tr data-mc-conditions=""> 
+    <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
       <td> <p>You can set filters to watch for only records that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND rules.</p> <p>Note: You cannot edit filters in existing Workfront webhooks. To set up different filters for Workfront event subscriptions, remove the current webhook and create a new one.</p> <p>For more information on event filters, see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Event subscription filters in the Workfront &gt; [!UICONTROL Watch Events] modules</a> in the Workfront modules article.</p> </td> 
-     </tr> 
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
       <td>Select whether you want to watch for new. updated, new and updated, or deleted records.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Exclude updates made by this connection]</p>
       </td>
       <td>Enable this option to prevent the scenario from triggering when a change is made by the connection used by this module. This prevents another instance of the scenario being triggered if this scenario performs a triggering action.</td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
@@ -296,24 +296,24 @@ This action creates a single record in Workfront Planning.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Workspace]</p>
       </td>
       <td>Select the workspace where you want to create a record.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record type]</p>
       </td>
       <td>Select the type of record that you want to create.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Other fields</p>
       </td>
       <td>Enter the values that you want the new record to have. These fields are based on the record type you selected, and are unique to your Workfront Planning organization.</td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
@@ -329,46 +329,48 @@ This action module creates a new field on the specified record type.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Workspace]</p>
       </td>
       <td>Select the workspace where you want to create a field.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record type]</p>
       </td>
       <td>Select the record type that you want to create a field for.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Display name</p>
       </td>
       <td>Enter or map a name for the new field.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Description</p>
       </td>
       <td>Enter or map a description for the new field.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Field type</p>
       </td>
       <td>Select the data type for the field.</td> 
-      </tr>
-      <tr>
-     <td role="rowheader">
+    </tr>
+    <tr>
+      <td role="rowheader">
         <p>Other fields</p>
       </td>
       <td>Other fields specific to the selected field type may be available. Fill in values for these fields.</td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
 #### Create a record type (V2)
+
+This action module creates a new record type in the selected workspace.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -378,62 +380,301 @@ This action module creates a new field on the specified record type.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Workspace]</p>
       </td>
       <td>Select the workspace where you want to create a record type.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Display name</p>
       </td>
       <td>Enter or map a name for the new record type.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Description</p>
       </td>
       <td>Enter or map a description for the new record type.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Icon</p>
       </td>
       <td>Map the icon that you want to use for this record type.</td> 
-      </tr>
-      <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Color</p>
       </td>
       <td>Select the color that you want to use to represent the new record type</td> 
-      </tr>
-      <tr>
-     <td role="rowheader">
+    </tr>
+    <tr>
+      <td role="rowheader">
         <p>Source record type</p>
       </td>
       <td>If you are using another record type to copy as a starting point, select that record type.</td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
 #### Create a view (V2)
 
+This action module creates a new view for the selected record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to create a view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to create a view for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View name</p>
+      </td>
+      <td>Enter or map a name for the new view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View type</p>
+      </td>
+      <td>Select whether the new view is a table, timeline, or calendar view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Start date field</p>
+      </td>
+      <td>If the view will be a timeline or calendar view, select the field that the view will use to place the record on the timeline.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>End date field.</p>
+      </td>
+      <td>If the view will be a timeline or calendar view, select the field that the view will use to determine the end date on the timeline.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Create a workspace (V2)
+
+This action module creates a new workspace in Planning.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace name]</p>
+      </td>
+      <td>Enter or map a name for the new workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the new workspace/td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Color</p>
+      </td>
+      <td>Select the color that you want to use to represent the new record type</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Icon</p>
+      </td>
+      <td>Map the icon that you want to use for this record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Owner</p>
+      </td>
+      <td>Enter or map the Adobe IMS user ID of the user that you want to own the workspace.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Delete a record (V2)
 
+This action module deletes a single record, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record ID]</p>
+      </td>
+      <td>Enter or map the ID of the record that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Delete a record type (V2)
+
+This action module deletes a single record type, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>Enter or map the ID of the record type that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Delete a field (V2)
 
+This action module deletes a single field, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Field ID]</p>
+      </td>
+      <td>Enter or map the ID of the field that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Delete a view (V2)
+
+This action module deletes a single view, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL View ID]</p>
+      </td>
+      <td>Enter or map the ID of the view that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Delete a workspace (V2)
 
+This action module deletes a single workspace, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Enter or map the ID of the workspace that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Dismiss access requests (V2)
 
+This action module dismisses one or more access requests, specified by ID.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Enter or map the ID of the Workspace that you want to delete.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to dismiss access requests for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Request IDs]</p>
+      </td>
+      <td>For each access request that you want to dismiss, click <b>Add item</b> and enter the request ID.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Get a record (V2)
+
+This action module retrieves a record, specified by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Enter or map the ID of the record that you want to retrieve .</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Get auth ID from Workfront ID (V2)
 
@@ -554,20 +795,20 @@ This trigger module starts a scenario when a record, record type, or workspace i
       <td>If watching records, select the type of record you want to watch for.</td>
     </tr>
     </tr>
-     <tr data-mc-conditions=""> 
+    <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL Events filters]</p> </td> 
       <td> <p>You can set filters to watch for only records that meet criteria you select.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND rules.</p> <p>Note: You cannot edit filters in existing Workfront webhooks. To set up different filters for Workfront event subscriptions, remove the current webhook and create a new one.</p> <p>For more information on event filters, see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Event subscription filters in the Workfront &gt; [!UICONTROL Watch Events] modules</a> in the Workfront modules article.</p> </td> 
-     </tr> 
+    </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Objects to watch]</td>
       <td>Select whether you want to watch for new. updated, new and updated, or deleted records.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Exclude updates made by this connection]</p>
       </td>
       <td>Enable this option to prevent the scenario from triggering when a change is made by the connection used by this module. This prevents another instance of the scenario being triggered if this scenario performs a triggering action.</td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
@@ -594,12 +835,12 @@ This action module deletes a single record type in Workfront Planning by its ID.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
       <td>Enter or map the ID of the record type you want to delete.</td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
@@ -615,7 +856,7 @@ This module makes a custom API call to the [!DNL Adobe Workfront Planning] API.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL URL]</p>
       </td>
@@ -667,36 +908,36 @@ This action module retrieves a list of records based on criteria you specify.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Workspace]</p>
       </td>
       <td>Enter or map the Workspace that contains the records that you want to search.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record type]</p>
       </td>
       <td>Select the record type that you want to search.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record Fields]</p>
       </td>
       <td>For each field that you want to use in your search, locate that field, select the operator, and enter or map the value that you want to search for. Field are available based on the record type selected.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Condition for filters]</p>
       </td>
       <td>Select the condition for your filters:<ul><li><b>AND</b><p>The module returns records that meet <b>all</b> of the field values you selected.</p></li><li><b>OR</b><p>The module returns records that meet <b>any</b> of the field values you selected.</p></li></ul></td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Limit]</p>
       </td>
    <td> <p>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</p> </td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
@@ -716,19 +957,19 @@ This action creates a single record in Workfront Planning.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record type ID]</p>
       </td>
       <td>Enter or map the type of record you want to create. Available record types are based on your Workfront Planning account.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Other fields</p>
       </td>
       <td>Enter the values that you want the new record to have. These fields are based on the record type you selected.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
   </tbody>
 </table>
 
@@ -744,12 +985,12 @@ This action module deletes the specified record in Workfront Planning.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record ID]</p>
       </td>
       <td>Enter or map the ID of the record you want to delete.</td> 
-      </tr>
+    </tr>
   </tbody>
 </table>
 
@@ -834,19 +1075,19 @@ This action updates a single record in Workfront Planning.
       <td role="rowheader">[!UICONTROL Connection]</td>
       <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
     </tr>
-     <tr>
+    <tr>
       <td role="rowheader">
         <p>[!UICONTROL Record ID]</p>
       </td>
       <td>Enter or map the type of record you want to update . Available record types are based on your Workfront Planning account.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
       <td role="rowheader">
         <p>Other fields</p>
       </td>
       <td>Enter the new values that you want the record to have. These fields are based on the record type you selected.</td> 
-      </tr>
-     <tr>
+    </tr>
+    <tr>
   </tbody>
 </table>
 
