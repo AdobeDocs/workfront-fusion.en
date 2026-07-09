@@ -747,21 +747,317 @@ This module retrieves a field by its ID.
 
 #### Get a record type (V2)
 
+This module retrieves a record type by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>Enter or map the ID of the record type that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Get a view (V2)
+
+This module retrieves a view by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL View ID]</p>
+      </td>
+      <td>Enter or map the ID of the view that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Get a workspace (V2)
 
-#### Make a custom API call (V2)
+This module retrieves a workspace by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Enter or map the ID of the workspace that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Make a custom API call (V2)<table 
+
+This module make a custom call to the Workfront Planning API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td> <p>Enter a path relative to<code> https://&lt;WORKFRONT_DOMAIN>/maestro/api/.</code>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL API Version]</td> 
+   <td>Select the version of the Workfront API that you want the module to use.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in Adobe Workfront Fusion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object. This determines the content type of the request.</p> <p>For example,<code> {"Content-type":"application/json"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> <p>Tip: We recommend that you send information through the JSON body rather than as query parameters.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Move records (V2)
 
+This module reorders one or more records within a record type by specifying where to place them.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the records you want to move.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the type of record that you want to move.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the records you want to move.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the records you want to move.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Request access to a resource (V2)
+
+This module creates or updates an access request for the current user on the given resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the type of resource that you want to create or update an access request for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to create or update an access request for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Message]</p>
+      </td>
+      <td>Enter or map the text of a message that you want to include with the access request.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Update a field (V2)
 
+This module partially updates a field by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the resource type that contains the field you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Field ID]</p>
+      </td>
+      <td>Select the field that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Display name]</p>
+      </td>
+      <td>Enter or map a name for the field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Description]</p>
+      </td>
+      <td>Enter or map a description for the field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other parameters]</p>
+      </td>
+      <td>Enter values for other field parameters. Available parameters depend on the selected field.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Update a record (V2)
 
+This module updates the specified record.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the record that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>Select the type of record that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record ID]</p>
+      </td>
+      <td>Enter or map the ID of the record that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>Enter values for other fields. Available fields depend on the selected record.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Update a record type (V2)
+
+This module updates a record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to create a record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Display name</p>
+      </td>
+      <td>Enter or map a name for the new record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the new record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Icon</p>
+      </td>
+      <td>Map the icon that you want to use for this record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Color</p>
+      </td>
+      <td>Select the color that you want to use to represent the new record type</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Source record type</p>
+      </td>
+      <td>If you are using another record type to copy as a starting point, select that record type.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Update a view (V2)
 
