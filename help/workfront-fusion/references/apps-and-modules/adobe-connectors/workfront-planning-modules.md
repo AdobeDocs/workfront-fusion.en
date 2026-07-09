@@ -1024,21 +1024,33 @@ This module updates a record type.
       <td role="rowheader">
         <p>[!UICONTROL Workspace]</p>
       </td>
-      <td>Select the workspace where you want to create a record type.</td> 
+      <td>Select the workspace where you want to update a record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the workspace where you want to update a record type.</td> 
     </tr>
     <tr>
       <td role="rowheader">
         <p>Display name</p>
       </td>
-      <td>Enter or map a name for the new record type.</td> 
+      <td>Enter or map a name for the record type.</td> 
     </tr>
     <tr>
       <td role="rowheader">
         <p>Description</p>
       </td>
-      <td>Enter or map a description for the new record type.</td> 
+      <td>Enter or map a description for the record type.</td> 
     </tr>
     <tr>
+      <td role="rowheader">
+        <p>Primary field ID</p>
+      </td>
+      <td>Enter or map the ID of the field that is used as the title of the record type.</td> 
+    </tr>
+     <tr>
       <td role="rowheader">
         <p>Icon</p>
       </td>
@@ -1052,16 +1064,133 @@ This module updates a record type.
     </tr>
     <tr>
       <td role="rowheader">
-        <p>Source record type</p>
+        <p>Linkable with Workspace IDs</p>
       </td>
-      <td>If you are using another record type to copy as a starting point, select that record type.</td> 
+      <td>For each workspace that you want this record type to be able to link to, click <b>Add item</b> and enter the workspace's ID.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Linkable with Workspace IDs > Overwrite</p>
+      </td>
+      <td>Select whether to replace existing workspaces with the ones from the module. If no, workspaces from the module are added to the existing list of workspaces.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Authorized to create dynamic record type</p>
+      </td>
+      <td>For each subject authorized to create dynamic record types from this record type, click <b>Add item</b> and enter the subject's type and ID.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Authorized to create dynamic record type > Overwrite</p>
+      </td>
+      <td>Select whether to replace existing subjects with the ones from the module. If no, subjects from the module are added to the existing list of subjects.</td> 
     </tr>
   </tbody>
 </table>
 
 #### Update a view (V2)
 
+This action module updates the specified view.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to update a view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to update a view for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View ID</p>
+      </td>
+      <td>Select the view that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View name</p>
+      </td>
+      <td>Enter or map a name for the new view.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
 #### Update a workspace (V2)
+
+This action module updates a new workspace in Planning.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace name]</p>
+      </td>
+      <td>Enter or map a name for the new workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the new workspace/td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Color</p>
+      </td>
+      <td>Select the color that you want to use to represent the new record type</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Icon</p>
+      </td>
+      <td>Map the icon that you want to use for this record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Owner</p>
+      </td>
+      <td>Enter or map the Adobe IMS user ID of the user that you want to own the workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Record type sections</p>
+      </td>
+      <td>For each record type section you want to add to this workspace, click <b>Add item</b> and enter the section's name, record type IDs, and whether you want to overwrite existing record type IDs.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Record type sections > Overwrite</p>
+      </td>
+      <td>Select whether to replace existing sections with the ones from the module. If no, sections from the module are added to the existing list of sections.</td> 
+    </tr>
+  </tbody>
+</table>
 
 ### Searches (V2)
 
