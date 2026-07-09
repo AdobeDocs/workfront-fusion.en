@@ -678,6 +678,8 @@ This action module retrieves a record, specified by its ID.
 
 #### Get auth ID from Workfront ID (V2)
 
+This module takes a Workfront user ID and returns the matching authorization ID that Planning uses.
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -697,7 +699,51 @@ This action module retrieves a record, specified by its ID.
 
 #### Get the current user's effective permissions on a resource (V2)
 
+This module returns the current user's view, edit, delete, and add permissions for a given resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the resource type that you want to retrieve permissions for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to retrieve permissions for.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Get a field (V2)
+
+This module retrieves a field by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Field ID]</p>
+      </td>
+      <td>Enter or map the ID of the field that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Get a record type (V2)
 
