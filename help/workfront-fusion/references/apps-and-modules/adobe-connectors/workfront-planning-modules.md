@@ -1119,7 +1119,222 @@ This action module deletes a single view, specified by ID.
   </tbody>
 </table>
 
+#### Get a view (V2)
+
+This module retrieves a view by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL View ID]</p>
+      </td>
+      <td>Enter or map the ID of the view that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get views by record type (V2)
+
+This module retrieves a list of views for the specific record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the views you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that contains the views you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned views]</p>
+      </td>
+      <td>Enter or map the maximum number of views that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Update a view (V2)
+
+This action module updates the specified view.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to update a view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to update a view for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View ID</p>
+      </td>
+      <td>Select the view that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View name</p>
+      </td>
+      <td>Enter or map a name for the new view.</td> 
+    </tr>
+  </tbody>
+</table>
+
 ### Permissions (V2)
+
+#### Dismiss access requests (V2)
+
+This action module dismisses one or more access requests, specified by ID.
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Enter or map the ID of the Workspace that you want to delete.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to dismiss access requests for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Request IDs]</p>
+      </td>
+      <td>For each access request that you want to dismiss, click <b>Add item</b> and enter the request ID.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get all members and their roles for a resource (V2)
+
+This module lists all users, groups, and teams that have an explicit sharing relation on the resource. The credentials used in the connection for this module must have Manage permission on the resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the type of resource that you want to retrieve information for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### List pending access requests for a resource (V2)
+
+This module returns all pending access requests for the given resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the type of resource that you want to retrieve information for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Request access to a resource (V2)
+
+This module creates or updates an access request for the current user on the given resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the type of resource that you want to create or update an access request for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to create or update an access request for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Message]</p>
+      </td>
+      <td>Enter or map the text of a message that you want to include with the access request.</td> 
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -1201,41 +1416,6 @@ For an example of using advanced logic on this module, see [Example of advanced 
 
 ### Actions (V2)
 
-#### Dismiss access requests (V2)
-
-This action module dismisses one or more access requests, specified by ID.
-
-
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource type]</p>
-      </td>
-      <td>Enter or map the ID of the Workspace that you want to delete.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource ID]</p>
-      </td>
-      <td>Enter or map the ID of the resource that you want to dismiss access requests for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Request IDs]</p>
-      </td>
-      <td>For each access request that you want to dismiss, click <b>Add item</b> and enter the request ID.</td> 
-    </tr>
-  </tbody>
-</table>
-
 #### Get auth ID from Workfront ID (V2)
 
 This module takes a Workfront user ID and returns the matching authorization ID that Planning uses.
@@ -1284,27 +1464,6 @@ This module returns the current user's view, edit, delete, and add permissions f
   </tbody>
 </table>
 
-#### Get a view (V2)
-
-This module retrieves a view by its ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL View ID]</p>
-      </td>
-      <td>Enter or map the ID of the view that you want to retrieve.</td> 
-    </tr>
-  </tbody>
-</table>
-
 #### Make a custom API call (V2)<table 
 
 This module make a custom call to the Workfront Planning API.
@@ -1347,167 +1506,8 @@ This module make a custom call to the Workfront Planning API.
  </tbody> 
 </table>
 
-#### Request access to a resource (V2)
-
-This module creates or updates an access request for the current user on the given resource.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource type]</p>
-      </td>
-      <td>Select the type of resource that you want to create or update an access request for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource ID]</p>
-      </td>
-      <td>Enter or map the ID of the resource that you want to create or update an access request for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Message]</p>
-      </td>
-      <td>Enter or map the text of a message that you want to include with the access request.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Update a view (V2)
-
-This action module updates the specified view.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace where you want to update a view.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
-      </td>
-      <td>Select the record type that you want to update a view for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>View ID</p>
-      </td>
-      <td>Select the view that you want to update.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>View name</p>
-      </td>
-      <td>Enter or map a name for the new view.</td> 
-    </tr>
-  </tbody>
-</table>
-
 
 ### Searches (V2)
-
-#### Get all member and their roles for a resource (V2)
-
-This module lists all users, groups, and teams that have an explicit sharing relation on the resource. The credentials used in the connection for this module must have Manage permission on the resource.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource type]</p>
-      </td>
-      <td>Select the type of resource that you want to retrieve information for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource ID]</p>
-      </td>
-      <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get views by record type (V2)
-
-This module retrieves a list of views for the specific record type.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace that contains the views you want to retrieve.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
-      </td>
-      <td>Select the record type that contains the views you want to retrieve.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned views]</p>
-      </td>
-      <td>Enter or map the maximum number of views that the module will return during one execution cycle.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### List pending access requests for a resource (V2)
-
-This module returns all pending access requests for the given resource.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource type]</p>
-      </td>
-      <td>Select the type of resource that you want to retrieve information for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource ID]</p>
-      </td>
-      <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
-    </tr>
-  </tbody>
-</table>
 
  
 
