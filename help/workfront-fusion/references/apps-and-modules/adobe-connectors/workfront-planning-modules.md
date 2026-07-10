@@ -209,15 +209,15 @@ When you configure Workfront Planning  modules, Workfront Fusion displays the fi
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-* [Workspaces](#workspaces)
-* []()
+* [Workspaces](#workspaces-v2)
+* [Record types](#record-types-v2)
 * []()
 * []()
 * []()
 * []()
 * []()
 
-### Workspaces
+### Workspaces (V2)
 
 * [Create a workspace](#create-a-workspace-v2)
 * [Delete a workspace](#delete-a-workspace-v2)
@@ -397,7 +397,246 @@ This action module updates a new workspace in Planning.
 </table>
 
 
-### Record types
+### Record types (V2)
+
+* [Create a record type](#create-a-record-type-v2)
+* [Delete a record type](#delete-a-record-type-v2)
+* [Get global record types](#get-global-record-types-v2)
+* [Get a record type](#get-a-record-type-v2)
+* [Get record types](#get-record-types-v2)
+* [Update a record type](#update-a-record-type-v2)
+
+#### Create a record type (V2)
+
+This action module creates a new record type in the selected workspace.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to create a record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Display name</p>
+      </td>
+      <td>Enter or map a name for the new record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the new record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Icon</p>
+      </td>
+      <td>Map the icon that you want to use for this record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Color</p>
+      </td>
+      <td>Select the color that you want to use to represent the new record type</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Source record type</p>
+      </td>
+      <td>If you are using another record type to copy as a starting point, select that record type.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Delete a record type (V2)
+
+This action module deletes a single record type, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>Enter or map the ID of the record type that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get global record types (V2)
+
+This module retrieves a list of record types in an Adobe Workfront Planning account.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select a workspace. The module will return global record types that are available to add to this workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned record types]</p>
+      </td>
+      <td>Enter or map the maximum number of record types that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get a record type (V2)
+
+This module retrieves a record type by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>Enter or map the ID of the record type that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get record types (V2)
+
+This module retrieves a list of record types available in a given workspace.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that you want to retrieve record types for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned record types]</p>
+      </td>
+      <td>Enter or map the maximum number of record types that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Update a record type (V2)
+
+This module updates a record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to update a record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the workspace where you want to update a record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Display name</p>
+      </td>
+      <td>Enter or map a name for the record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Primary field ID</p>
+      </td>
+      <td>Enter or map the ID of the field that is used as the title of the record type.</td> 
+    </tr>
+     <tr>
+      <td role="rowheader">
+        <p>Icon</p>
+      </td>
+      <td>Map the icon that you want to use for this record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Color</p>
+      </td>
+      <td>Select the color that you want to use to represent the new record type</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Linkable with Workspace IDs</p>
+      </td>
+      <td>For each workspace that you want this record type to be able to link to, click <b>Add item</b> and enter the workspace's ID.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Linkable with Workspace IDs > Overwrite</p>
+      </td>
+      <td>Select whether to replace existing workspaces with the ones from the module. If no, workspaces from the module are added to the existing list of workspaces.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Authorized to create dynamic record type</p>
+      </td>
+      <td>For each subject authorized to create dynamic record types from this record type, click <b>Add item</b> and enter the subject's type and ID.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Authorized to create dynamic record type > Overwrite</p>
+      </td>
+      <td>Select whether to replace existing subjects with the ones from the module. If no, subjects from the module are added to the existing list of subjects.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+
+### Records (V2)
 
 * []()
 * []()
@@ -405,20 +644,10 @@ This action module updates a new workspace in Planning.
 * []()
 * []()
 * []()
-
-
-### Records
-
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
 * []()
 
 
-### Fields
+### Fields (V2)
 
 * []()
 * []()
@@ -427,7 +656,7 @@ This action module updates a new workspace in Planning.
 * []()
 
 
-### Views
+### Views (V2)
 
 * []()
 * []()
@@ -436,7 +665,7 @@ This action module updates a new workspace in Planning.
 * []()
 
 
-### Permissions
+### Permissions (V2)
 
 * []()
 * []()
@@ -445,7 +674,7 @@ This action module updates a new workspace in Planning.
 * []()
 
 
-### Other
+### Other (V2)
 
 * []()
 * []()
@@ -611,57 +840,6 @@ This action module creates a new field on the specified record type.
   </tbody>
 </table>
 
-#### Create a record type (V2)
-
-This action module creates a new record type in the selected workspace.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace where you want to create a record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Display name</p>
-      </td>
-      <td>Enter or map a name for the new record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Description</p>
-      </td>
-      <td>Enter or map a description for the new record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Icon</p>
-      </td>
-      <td>Map the icon that you want to use for this record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Color</p>
-      </td>
-      <td>Select the color that you want to use to represent the new record type</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Source record type</p>
-      </td>
-      <td>If you are using another record type to copy as a starting point, select that record type.</td> 
-    </tr>
-  </tbody>
-</table>
-
 #### Create a view (V2)
 
 This action module creates a new view for the selected record type.
@@ -730,27 +908,6 @@ This action module deletes a single record, specified by ID.
         <p>[!UICONTROL Record ID]</p>
       </td>
       <td>Enter or map the ID of the record that you want to delete.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Delete a record type (V2)
-
-This action module deletes a single record type, specified by ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type ID]</p>
-      </td>
-      <td>Enter or map the ID of the record type that you want to delete.</td> 
     </tr>
   </tbody>
 </table>
@@ -918,27 +1075,6 @@ This module retrieves a field by its ID.
         <p>[!UICONTROL Field ID]</p>
       </td>
       <td>Enter or map the ID of the field that you want to retrieve.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get a record type (V2)
-
-This module retrieves a record type by its ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type ID]</p>
-      </td>
-      <td>Enter or map the ID of the record type that you want to retrieve.</td> 
     </tr>
   </tbody>
 </table>
@@ -1164,87 +1300,6 @@ This module updates the specified record.
   </tbody>
 </table>
 
-#### Update a record type (V2)
-
-This module updates a record type.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace where you want to update a record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
-      </td>
-      <td>Select the workspace where you want to update a record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Display name</p>
-      </td>
-      <td>Enter or map a name for the record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Description</p>
-      </td>
-      <td>Enter or map a description for the record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Primary field ID</p>
-      </td>
-      <td>Enter or map the ID of the field that is used as the title of the record type.</td> 
-    </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Icon</p>
-      </td>
-      <td>Map the icon that you want to use for this record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Color</p>
-      </td>
-      <td>Select the color that you want to use to represent the new record type</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Linkable with Workspace IDs</p>
-      </td>
-      <td>For each workspace that you want this record type to be able to link to, click <b>Add item</b> and enter the workspace's ID.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Linkable with Workspace IDs > Overwrite</p>
-      </td>
-      <td>Select whether to replace existing workspaces with the ones from the module. If no, workspaces from the module are added to the existing list of workspaces.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Authorized to create dynamic record type</p>
-      </td>
-      <td>For each subject authorized to create dynamic record types from this record type, click <b>Add item</b> and enter the subject's type and ID.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Authorized to create dynamic record type > Overwrite</p>
-      </td>
-      <td>Select whether to replace existing subjects with the ones from the module. If no, subjects from the module are added to the existing list of subjects.</td> 
-    </tr>
-  </tbody>
-</table>
-
 #### Update a view (V2)
 
 This action module updates the specified view.
@@ -1343,60 +1398,6 @@ This module retrieves a list of fields for a specific record type.
         <p>[!UICONTROL Maximum number of returned fields]</p>
       </td>
       <td>Enter or map the maximum number of fields that the module will return during one execution cycle.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get global record types (V2)
-
-This module retrieves a list of record types in an Adobe Workfront Planning account.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select a workspace. The module will return global record types that are available to add to this workspace.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned record types]</p>
-      </td>
-      <td>Enter or map the maximum number of record types that the module will return during one execution cycle.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get record types (V2)
-
-This module retrieves a list of record types available in a given workspace.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace that you want to retrieve record types for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned record types]</p>
-      </td>
-      <td>Enter or map the maximum number of record types that the module will return during one execution cycle.</td> 
     </tr>
   </tbody>
 </table>
