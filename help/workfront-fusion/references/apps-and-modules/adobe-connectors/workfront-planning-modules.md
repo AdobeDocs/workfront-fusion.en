@@ -1196,15 +1196,171 @@ This action module updates a new workspace in Planning.
 
 #### Get all member and their roles for a resource (V2)
 
+This module lists all users, groups, and teams that have an explicit sharing relation on the resource. The credentials used in the connection for this module must have Manage permission on the resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the type of resource that you want to retrieve information for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Get all workspaces (V2)
+
+This module retrieves a list of all workspaces.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned workspaces]</p>
+      </td>
+      <td>Enter or map the maximum number of workspaces that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Get fields by record type (V2)
 
+This module retrieves a list of fields for a specific record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the fields you want to return.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to return fields for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned fields]</p>
+      </td>
+      <td>Enter or map the maximum number of fields that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Get global record types (V2)
+
+This module retrieves a list of record types in an Adobe Workfront Planning account.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select a workspace. The module will return global record types that are available to add to this workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned record types]</p>
+      </td>
+      <td>Enter or map the maximum number of record types that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Get record types (V2)
 
+This module retrieves a list of record types available in a given workspace.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that you want to retrieve record types for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned record types]</p>
+      </td>
+      <td>Enter or map the maximum number of record types that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### Get records by record type (V2)
+
+This module retrieves a list of all records of the given record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that you want to retrieve records for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the type of record that you want to return.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned records]</p>
+      </td>
+      <td>Enter or map the maximum number of records that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Get views by record type (V2)
 
