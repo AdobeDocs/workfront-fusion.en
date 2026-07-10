@@ -870,36 +870,261 @@ This module updates the specified record.
 
 ### Fields (V2)
 
-* []()
-* []()
-* []()
-* []()
-* []()
+
+#### Create a field (V2)
+
+This action module creates a new field on the specified record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to create a field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to create a field for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Display name</p>
+      </td>
+      <td>Enter or map a name for the new field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the new field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Field type</p>
+      </td>
+      <td>Select the data type for the field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Other fields</p>
+      </td>
+      <td>Other fields specific to the selected field type may be available. Fill in values for these fields.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Delete a field (V2)
+
+This action module deletes a single field, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Field ID]</p>
+      </td>
+      <td>Enter or map the ID of the field that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get a field (V2)
+
+This module retrieves a field by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Field ID]</p>
+      </td>
+      <td>Enter or map the ID of the field that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get fields by record type (V2)
+
+This module retrieves a list of fields for a specific record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the fields you want to return.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to return fields for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned fields]</p>
+      </td>
+      <td>Enter or map the maximum number of fields that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Update a field (V2)
+
+This module partially updates a field by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the resource type that contains the field you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Field ID]</p>
+      </td>
+      <td>Select the field that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Display name]</p>
+      </td>
+      <td>Enter or map a name for the field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Description]</p>
+      </td>
+      <td>Enter or map a description for the field.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other parameters]</p>
+      </td>
+      <td>Enter values for other field parameters. Available parameters depend on the selected field.</td> 
+    </tr>
+  </tbody>
+</table>
 
 
 ### Views (V2)
 
-* []()
-* []()
-* []()
-* []()
-* []()
 
+
+#### Create a view (V2)
+
+This action module creates a new view for the selected record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to create a view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that you want to create a view for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View name</p>
+      </td>
+      <td>Enter or map a name for the new view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>View type</p>
+      </td>
+      <td>Select whether the new view is a table, timeline, or calendar view.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Start date field</p>
+      </td>
+      <td>If the view will be a timeline or calendar view, select the field that the view will use to place the record on the timeline.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>End date field.</p>
+      </td>
+      <td>If the view will be a timeline or calendar view, select the field that the view will use to determine the end date on the timeline.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Delete a view (V2)
+
+This action module deletes a single view, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL View ID]</p>
+      </td>
+      <td>Enter or map the ID of the view that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
 
 ### Permissions (V2)
 
-* []()
-* []()
-* []()
-* []()
-* []()
 
 
 ### Other (V2)
-
-* []()
-* []()
-* []()
+  
 
 
 #### Watch Events (V2)
@@ -975,151 +1200,6 @@ For an example of using advanced logic on this module, see [Example of advanced 
 
 
 ### Actions (V2)
-
-
-#### Create a field (V2)
-
-This action module creates a new field on the specified record type.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace where you want to create a field.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
-      </td>
-      <td>Select the record type that you want to create a field for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Display name</p>
-      </td>
-      <td>Enter or map a name for the new field.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Description</p>
-      </td>
-      <td>Enter or map a description for the new field.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Field type</p>
-      </td>
-      <td>Select the data type for the field.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Other fields</p>
-      </td>
-      <td>Other fields specific to the selected field type may be available. Fill in values for these fields.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Create a view (V2)
-
-This action module creates a new view for the selected record type.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace where you want to create a view.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
-      </td>
-      <td>Select the record type that you want to create a view for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>View name</p>
-      </td>
-      <td>Enter or map a name for the new view.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>View type</p>
-      </td>
-      <td>Select whether the new view is a table, timeline, or calendar view.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Start date field</p>
-      </td>
-      <td>If the view will be a timeline or calendar view, select the field that the view will use to place the record on the timeline.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>End date field.</p>
-      </td>
-      <td>If the view will be a timeline or calendar view, select the field that the view will use to determine the end date on the timeline.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Delete a field (V2)
-
-This action module deletes a single field, specified by ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Field ID]</p>
-      </td>
-      <td>Enter or map the ID of the field that you want to delete.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Delete a view (V2)
-
-This action module deletes a single view, specified by ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL View ID]</p>
-      </td>
-      <td>Enter or map the ID of the view that you want to delete.</td> 
-    </tr>
-  </tbody>
-</table>
 
 #### Dismiss access requests (V2)
 
@@ -1200,27 +1280,6 @@ This module returns the current user's view, edit, delete, and add permissions f
         <p>[!UICONTROL Resource ID]</p>
       </td>
       <td>Enter or map the ID of the resource that you want to retrieve permissions for.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get a field (V2)
-
-This module retrieves a field by its ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Field ID]</p>
-      </td>
-      <td>Enter or map the ID of the field that you want to retrieve.</td> 
     </tr>
   </tbody>
 </table>
@@ -1321,51 +1380,6 @@ This module creates or updates an access request for the current user on the giv
   </tbody>
 </table>
 
-#### Update a field (V2)
-
-This module partially updates a field by its ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource type]</p>
-      </td>
-      <td>Select the resource type that contains the field you want to update.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Field ID]</p>
-      </td>
-      <td>Select the field that you want to update.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Display name]</p>
-      </td>
-      <td>Enter or map a name for the field.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Description]</p>
-      </td>
-      <td>Enter or map a description for the field.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Other parameters]</p>
-      </td>
-      <td>Enter values for other field parameters. Available parameters depend on the selected field.</td> 
-    </tr>
-  </tbody>
-</table>
-
 #### Update a view (V2)
 
 This action module updates the specified view.
@@ -1431,39 +1445,6 @@ This module lists all users, groups, and teams that have an explicit sharing rel
         <p>[!UICONTROL Resource ID]</p>
       </td>
       <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get fields by record type (V2)
-
-This module retrieves a list of fields for a specific record type.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace that contains the fields you want to return.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Record type]</p>
-      </td>
-      <td>Select the record type that you want to return fields for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned fields]</p>
-      </td>
-      <td>Enter or map the maximum number of fields that the module will return during one execution cycle.</td> 
     </tr>
   </tbody>
 </table>
