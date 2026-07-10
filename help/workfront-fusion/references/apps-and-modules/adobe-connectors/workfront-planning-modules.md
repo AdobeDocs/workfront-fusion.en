@@ -209,7 +209,248 @@ When you configure Workfront Planning  modules, Workfront Fusion displays the fi
 
 If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
 
-### Triggers (V2)
+* [Workspaces](#workspaces)
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+
+### Workspaces
+
+* [Create a workspace](#create-a-workspace-v2)
+* [Delete a workspace](#delete-a-workspace-v2)
+* [Get all workspaces](#get-all-workspaces-v2)
+* [Get a workspace](#get-a-workspace-v2)
+* [Update a workspace](#update-a-workspace-v2)
+
+#### Create a workspace (V2)
+
+This action module creates a new workspace in Planning.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace name]</p>
+      </td>
+      <td>Enter or map a name for the new workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the new workspace/td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Color</p>
+      </td>
+      <td>Select the color that you want to use to represent the new record type</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Icon</p>
+      </td>
+      <td>Map the icon that you want to use for this record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Owner</p>
+      </td>
+      <td>Enter or map the Adobe IMS user ID of the user that you want to own the workspace.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Delete a workspace (V2)
+
+This action module deletes a single workspace, specified by ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Enter or map the ID of the workspace that you want to delete.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get all workspaces (V2)
+
+This module retrieves a list of all workspaces.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned workspaces]</p>
+      </td>
+      <td>Enter or map the maximum number of workspaces that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get a workspace (V2)
+
+This module retrieves a workspace by its ID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Enter or map the ID of the workspace that you want to retrieve.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Update a workspace (V2)
+
+This action module updates a new workspace in Planning.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace name]</p>
+      </td>
+      <td>Enter or map a name for the new workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Description</p>
+      </td>
+      <td>Enter or map a description for the new workspace/td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Color</p>
+      </td>
+      <td>Select the color that you want to use to represent the new record type</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Icon</p>
+      </td>
+      <td>Map the icon that you want to use for this record type.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Owner</p>
+      </td>
+      <td>Enter or map the Adobe IMS user ID of the user that you want to own the workspace.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Record type sections</p>
+      </td>
+      <td>For each record type section you want to add to this workspace, click <b>Add item</b> and enter the section's name, record type IDs, and whether you want to overwrite existing record type IDs.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Record type sections > Overwrite</p>
+      </td>
+      <td>Select whether to replace existing sections with the ones from the module. If no, sections from the module are added to the existing list of sections.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+### Record types
+
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+
+
+### Records
+
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+
+
+### Fields
+
+* []()
+* []()
+* []()
+* []()
+* []()
+
+
+### Views
+
+* []()
+* []()
+* []()
+* []()
+* []()
+
+
+### Permissions
+
+* []()
+* []()
+* []()
+* []()
+* []()
+
+
+### Other
+
+* []()
+* []()
+* []()
+
 
 #### Watch Events (V2)
 
@@ -280,6 +521,8 @@ This trigger module starts a scenario when a record, record type, or workspace i
 </table>
 
 For an example of using advanced logic on this module, see [Example of advanced logic in the watch Events module](#example-of-advanced-logic-in-the-watch-events-module).
+
+
 
 ### Actions (V2)
 
@@ -470,51 +713,6 @@ This action module creates a new view for the selected record type.
   </tbody>
 </table>
 
-#### Create a workspace (V2)
-
-This action module creates a new workspace in Planning.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace name]</p>
-      </td>
-      <td>Enter or map a name for the new workspace.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Description</p>
-      </td>
-      <td>Enter or map a description for the new workspace/td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Color</p>
-      </td>
-      <td>Select the color that you want to use to represent the new record type</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Icon</p>
-      </td>
-      <td>Map the icon that you want to use for this record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Owner</p>
-      </td>
-      <td>Enter or map the Adobe IMS user ID of the user that you want to own the workspace.</td> 
-    </tr>
-  </tbody>
-</table>
-
 #### Delete a record (V2)
 
 This action module deletes a single record, specified by ID.
@@ -595,27 +793,6 @@ This action module deletes a single view, specified by ID.
         <p>[!UICONTROL View ID]</p>
       </td>
       <td>Enter or map the ID of the view that you want to delete.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Delete a workspace (V2)
-
-This action module deletes a single workspace, specified by ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace ID]</p>
-      </td>
-      <td>Enter or map the ID of the workspace that you want to delete.</td> 
     </tr>
   </tbody>
 </table>
@@ -783,27 +960,6 @@ This module retrieves a view by its ID.
         <p>[!UICONTROL View ID]</p>
       </td>
       <td>Enter or map the ID of the view that you want to retrieve.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get a workspace (V2)
-
-This module retrieves a workspace by its ID.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace ID]</p>
-      </td>
-      <td>Enter or map the ID of the workspace that you want to retrieve.</td> 
     </tr>
   </tbody>
 </table>
@@ -1129,69 +1285,6 @@ This action module updates the specified view.
 </table>
 
 
-#### Update a workspace (V2)
-
-This action module updates a new workspace in Planning.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
-      </td>
-      <td>Select the workspace that you want to update.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workspace name]</p>
-      </td>
-      <td>Enter or map a name for the new workspace.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Description</p>
-      </td>
-      <td>Enter or map a description for the new workspace/td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Color</p>
-      </td>
-      <td>Select the color that you want to use to represent the new record type</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Icon</p>
-      </td>
-      <td>Map the icon that you want to use for this record type.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Owner</p>
-      </td>
-      <td>Enter or map the Adobe IMS user ID of the user that you want to own the workspace.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Record type sections</p>
-      </td>
-      <td>For each record type section you want to add to this workspace, click <b>Add item</b> and enter the section's name, record type IDs, and whether you want to overwrite existing record type IDs.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>Record type sections > Overwrite</p>
-      </td>
-      <td>Select whether to replace existing sections with the ones from the module. If no, sections from the module are added to the existing list of sections.</td> 
-    </tr>
-  </tbody>
-</table>
-
 ### Searches (V2)
 
 #### Get all member and their roles for a resource (V2)
@@ -1217,27 +1310,6 @@ This module lists all users, groups, and teams that have an explicit sharing rel
         <p>[!UICONTROL Resource ID]</p>
       </td>
       <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get all workspaces (V2)
-
-This module retrieves a list of all workspaces.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Maximum number of returned workspaces]</p>
-      </td>
-      <td>Enter or map the maximum number of workspaces that the module will return during one execution cycle.</td> 
     </tr>
   </tbody>
 </table>
@@ -1455,7 +1527,7 @@ Return records based on criteria you specify
   </tbody>
 </table>
 
-
+ 
 
 
 
