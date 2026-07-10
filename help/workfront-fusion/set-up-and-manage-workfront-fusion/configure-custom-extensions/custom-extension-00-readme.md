@@ -74,7 +74,7 @@ Read the pages in order the first time. Later you can jump straight to the one y
 | 7 | [Publish your extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md) | Build, deploy, and make your extension visible in Fusion. |
 | 8 | [Troubleshooting](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md) | Fixes for the most common errors. |
 | 9 | [Demo walkthrough](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-09-demo-walkthrough.md) | One linear, copy-paste script: scaffold from the generic Experience Cloud Shell template → retarget to Fusion → deploy to Stage → run in Fusion. Best for a live demo. |
-| 10 | [Calling Workfront and Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom%20extension-10-calling-apis.md) | Call backend APIs from your extension without hitting browser CORS, using a runtime-action proxy. Covers `require-adobe-auth`, Fusion v3 headers, and a worked example. |
+| 10 | [Calling Workfront and Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md) | Call backend APIs from your extension without hitting browser CORS, using a runtime-action proxy. Covers `require-adobe-auth`, Fusion v3 headers, and a worked example. |
 
 ## Availability note
 
