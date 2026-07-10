@@ -65,7 +65,7 @@ Fusion is the **host**. Your extension is the **guest**. They run in separate br
 Read the pages in order the first time. Later you can jump straight to the one you need.
 
 | # | Page | What it covers |
-|---|------|----------------|
+| --- | ------ | ---------------- |
 | 1 | [Overview and key concepts](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md) | The vocabulary , the architecture, and what each Fusion extension point is for. |
 | 2 | [Set up your tools and Adobe account](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md) | Node.js, the Adobe I/O CLI, signing in, and creating your project in the Adobe Developer Console. |
 | 3 | [Create the project and configure it for Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md) | Generate a generic App Builder project with the `aio` command line (not a product-specific template). Then, point your project at a Fusion extension point and register your widget. |
