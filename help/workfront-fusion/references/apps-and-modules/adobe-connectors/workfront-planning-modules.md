@@ -211,11 +211,11 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Workspaces](#workspaces-v2)
 * [Record types](#record-types-v2)
-* []()
-* []()
-* []()
-* []()
-* []()
+* [Records](#records-v2)
+* [Fields](#fields-v2)
+* [Views](#views-v2)
+* [Permissions](#permissions-v2)
+* [Other](#other-v2)
 
 ### Workspaces (V2)
 
@@ -870,6 +870,11 @@ This module updates the specified record.
 
 ### Fields (V2)
 
+* [Create a field](#create-a-field-v2)
+* [Delete a field](#delete-a-field-v2)
+* [Get a field](#get-a-field-v2)
+* [Get fields by record type](#get-fields-by-record-type-v2)
+* [Update a field](#update-a-field-v2)
 
 #### Create a field (V2)
 
@@ -1045,7 +1050,11 @@ This module partially updates a field by its ID.
 
 ### Views (V2)
 
-
+* [Create a view](#create-a-view-v2)
+* [Delete a view](#delete-a-view-v2)
+* [Get a view](#get-a-view-v2)
+* [Get views by record type](#get-views-by-record-type-v2)
+* [Update a view](#update-a-view-v2)
 
 #### Create a view (V2)
 
@@ -1214,6 +1223,12 @@ This action module updates the specified view.
 
 ### Permissions (V2)
 
+* [Dismiss access requests](#dismiss-access-requests-v2)
+* [Get all members and their roles for a resource](#get-all-members-and-their-roles-for-a-resource-v2)
+* [Get the current user's effective permissions on a resource](#get-the-current-users-effective-permissions-on-a-resource-v2)
+* [List pending access requests for a resource](#list-pending-access-requests-for-a-resource-v2)
+* [Request access to a resource](#request-access-to-a-resource-v2)
+
 #### Dismiss access requests (V2)
 
 This action module dismisses one or more access requests, specified by ID.
@@ -1272,6 +1287,33 @@ This module lists all users, groups, and teams that have an explicit sharing rel
         <p>[!UICONTROL Resource ID]</p>
       </td>
       <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Get the current user's effective permissions on a resource (V2)
+
+This module returns the current user's view, edit, delete, and add permissions for a given resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the resource type that you want to retrieve permissions for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to retrieve permissions for.</td> 
     </tr>
   </tbody>
 </table>
@@ -1339,8 +1381,73 @@ This module creates or updates an access request for the current user on the giv
 
 
 ### Other (V2)
-  
 
+* [Get auth ID from Workfront ID](#get-auth-id-from-workfront-id-v2)
+* [Make a custom API call](#make-a-custom-api-call-v2)
+* [Watch Events](#watch-events-v2)
+
+#### Get auth ID from Workfront ID (V2)
+
+This module takes a Workfront user ID and returns the matching authorization ID that Planning uses.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workfront User ID]</p>
+      </td>
+      <td>Enter or map the Workfront ID of the user that you want to retrieve an authorization ID for.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Make a custom API call (V2)<table 
+
+This module make a custom call to the Workfront Planning API.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td> <p>Enter a path relative to<code> https://&lt;WORKFRONT_DOMAIN>/maestro/api/.</code>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL API Version]</td> 
+   <td>Select the version of the Workfront API that you want the module to use.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in Adobe Workfront Fusion</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object. This determines the content type of the request.</p> <p>For example,<code> {"Content-type":"application/json"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> <p>Tip: We recommend that you send information through the JSON body rather than as query parameters.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### Watch Events (V2)
 
@@ -1413,103 +1520,6 @@ This trigger module starts a scenario when a record, record type, or workspace i
 For an example of using advanced logic on this module, see [Example of advanced logic in the watch Events module](#example-of-advanced-logic-in-the-watch-events-module).
 
 
-
-### Actions (V2)
-
-#### Get auth ID from Workfront ID (V2)
-
-This module takes a Workfront user ID and returns the matching authorization ID that Planning uses.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Workfront User ID]</p>
-      </td>
-      <td>Enter or map the Workfront ID of the user that you want to retrieve an authorization ID for.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Get the current user's effective permissions on a resource (V2)
-
-This module returns the current user's view, edit, delete, and add permissions for a given resource.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource type]</p>
-      </td>
-      <td>Select the resource type that you want to retrieve permissions for.</td> 
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Resource ID]</p>
-      </td>
-      <td>Enter or map the ID of the resource that you want to retrieve permissions for.</td> 
-    </tr>
-  </tbody>
-</table>
-
-#### Make a custom API call (V2)<table 
-
-This module make a custom call to the Workfront Planning API.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">Connect Workfront to Workfront Fusion</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">URL</td> 
-   <td> <p>Enter a path relative to<code> https://&lt;WORKFRONT_DOMAIN>/maestro/api/.</code>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL API Version]</td> 
-   <td>Select the version of the Workfront API that you want the module to use.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods in Adobe Workfront Fusion</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object. This determines the content type of the request.</p> <p>For example,<code> {"Content-type":"application/json"}</code></p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> <p>Tip: We recommend that you send information through the JSON body rather than as query parameters.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-
-### Searches (V2)
-
- 
 
 
 
