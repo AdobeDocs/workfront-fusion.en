@@ -1345,7 +1345,7 @@ This module retrieves a list of all records of the given record type.
       <td role="rowheader">
         <p>[!UICONTROL Workspace]</p>
       </td>
-      <td>Select the workspace that you want to retrieve records for.</td> 
+      <td>Select the workspace that contains the records you want to retrieve.</td> 
     </tr>
     <tr>
       <td role="rowheader">
@@ -1364,11 +1364,96 @@ This module retrieves a list of all records of the given record type.
 
 #### Get views by record type (V2)
 
+This module retrieves a list of views for the specific record type.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the views you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that contains the views you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Maximum number of returned views]</p>
+      </td>
+      <td>Enter or map the maximum number of views that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
 #### List pending access requests for a resource (V2)
+
+This module returns all pending access requests for the given resource.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource type]</p>
+      </td>
+      <td>Select the type of resource that you want to retrieve information for.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Resource ID]</p>
+      </td>
+      <td>Enter or map the ID of the resource that you want to retrieve information for.</td> 
+    </tr>
+  </tbody>
+</table>
 
 #### Search records (V2)
 
+Return records based on criteria you specify
 
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the records you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that contains the records you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>For each field that you want to filter by, enter the operator and value for that field. These fields are based on the record type you selected, and are unique to your Workfront Planning organization.</td> 
+    </tr>
+  </tbody>
+</table>
 
 
 
