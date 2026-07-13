@@ -74,7 +74,8 @@ To use a webhook to connect an app to Workfront Fusion:
 1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
 
    For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
-1. In the **Credentials** field, you can enter credentials to be used for authorization. To enter credentials, click **Add** and enter the credential information.
+1. In the **Authorization type** field, select whether this webhook uses basic authorization or a client certificate.
+1. In the **Credentials** field, you can enter credentials to be used for authorization. To enter credentials, click **Add** and enter the credential information. This can be the username and password for basic authentication, or the client certificate and public key for certificate authentication.
 1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
 
