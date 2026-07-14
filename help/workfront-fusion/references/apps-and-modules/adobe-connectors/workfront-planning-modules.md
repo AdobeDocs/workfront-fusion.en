@@ -1938,3 +1938,4 @@ Consider the following when using advanced logic in the Watch Event module:
 * Planning data is returned inside an array called `data `, which appears in this example as `"fieldName": "data"`.
 * Planning fieldNames are returned as IDs that start with `F`.
 * Because this example is evaluating against an `OR` filter connector, it has two entries for the same field (`F68c886502d4b5554eec808975`).  The two drop down options that the module is filtering against are `"planning"` and `"active"`.
+
