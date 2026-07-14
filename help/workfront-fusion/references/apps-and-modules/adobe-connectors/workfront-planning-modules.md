@@ -1,4 +1,4 @@
-﻿---
+---
 title: Adobe Workfront Planning modules
 description: With the [!DNL Adobe Workfront Planning] modules, you can start an Adobe Workfront Fusion scenario based on events in your [!DNL Adobe] Workfront Planning account, create, read, or update agreements and other records, search for records using criteria you set, and upload documents.
 author: Becky
