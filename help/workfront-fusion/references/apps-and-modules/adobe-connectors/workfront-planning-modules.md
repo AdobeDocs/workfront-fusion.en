@@ -57,8 +57,6 @@ You must have the following to access Workfront Planning:
 * A Workfront Planning package.
 * Your organization's instance of Workfront must be onboarded to the Adobe Unified Experience.
 
-<!--
-
 ## Adobe Workfront Planning API information
 
 The Adobe Workfront Planning connector uses the following:
@@ -77,8 +75,6 @@ The Adobe Workfront Planning connector uses the following:
   </tr>
  </tbody> 
  </table>
-
- -->
 
 ## Connect Workfront Planning to Workfront Fusion 
 
