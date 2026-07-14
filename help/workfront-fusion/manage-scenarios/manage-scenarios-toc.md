@@ -32,3 +32,4 @@ product_v2:
 * [Edit Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
 * [Retrigger a scenario execution](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
 * [Use Run once to test a scenario](/help/workfront-fusion/manage-scenarios/run-once.md)
+* [Restore a deleted scenario](/help/workfront-fusion/manage-scenarios/restore-deleted-scenario.md)
