@@ -154,7 +154,7 @@ Always re-read all the keys you use inside your `contextchange` handler rather t
 To turn `imsToken` (plus `organization.id` / `team.id`) into real Workfront or
 Fusion data, you cannot call those APIs directly from the browser, because CORS blocks
 it. Route the call through a small App Builder runtime action instead. See
-[Calling Workfront & Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom%20extension-10-calling-apis.md).
+[Calling Workfront and Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom%20extension-10-calling-apis.md).
 
 
 To continue the process of creating a custom extension, see [Publish your extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).

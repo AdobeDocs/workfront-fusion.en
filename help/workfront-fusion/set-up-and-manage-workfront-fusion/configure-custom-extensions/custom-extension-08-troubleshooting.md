@@ -106,7 +106,7 @@ Fusion only allows extensions hosted on Adobe's App Builder CDN (`*.adobeio-stat
 
 **Symptom:** The browser Console shows *"No 'Access-Control-Allow-Origin' header"* (or the request is blocked) when your UI calls a Workfront/Fusion API directly.
 
-**Fix:** Do not call those APIs from the browser. Route the call through your own App Builder **runtime action** (server-side, no CORS) and have the guest call the action with a relative, same-origin URL. For more information, see [Calling Workfront & Fusion APIs](./10-calling-apis.md).
+**Fix:** Do not call those APIs from the browser. Route the call through your own App Builder **runtime action** (server-side, no CORS) and have the guest call the action with a relative, same-origin URL. For more information, see [Calling Workfront and Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md).
 
 
 ## Proxy action returns 401 even with a valid token

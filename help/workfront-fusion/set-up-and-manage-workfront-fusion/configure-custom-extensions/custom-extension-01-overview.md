@@ -119,7 +119,7 @@ This example shows the flow when a user clicks the extension button.
 
 Both frames are written when you build the UI. The important thing is to remember that the visible page **must** call `attach`.
 
-For more information on building the UI, see []().
+For more information on building the UI, see [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
 
 ## Context from Fusion
 
@@ -132,20 +132,19 @@ After the extension is attached, Fusion shares a `context` object with your gues
 
 Fusion also pushes updates. For example, if the user switches organization or team while your UI is open, Fusion sends the new context so your UI can react instantly.
 
-For the complete list of context fields, see [The Fusion context reference]().
+For the complete list of context fields, see [The Fusion context reference](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md).
 
 ## Creating a UI Extension
 
 To create a UI Extension, follow these steps:
 
-1. [Install tools and create an Adobe project](./02-setup.md).
-1. [Generate a blank App Builder project](./03-create-project.md).
-1. [Point it at a Fusion extension point and register your widget](./04-configure-for-fusion.md).
-1. [Build the UI and connect to Fusion](./05-build-the-ui.md).
-1. [Use the context Fusion sends](./06-fusion-context-reference.md).
-1. [Publish so Fusion can find it](./07-publish.md).
-1. (Optional) Call Workfront/Fusion APIs for real data without CORS — page 10.
+1. [Install tools and create an Adobe project](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md).
+1. [Generate a blank App Builder project, point it at a Fusion extension point and register your widget](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md).
+1. [Build the UI and connect to Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
+1. [Use the context Fusion sends](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-06-context-reference.md).
+1. [Publish so Fusion can find it](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).
+1. (Optional) [Call Workfront/Fusion APIs for real data without CORS](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md).
 
-To begin the process, go to [Set up your tools & Adobe account](./02-setup.md).
+To begin the process, go to [Set up your tools and Adobe account](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md).
 
 

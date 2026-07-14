@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
 ---
 
-# Calling Workfront & Fusion APIs from your extension
+# Calling Workfront and Fusion APIs from your extension
 
 >[!NOTE]
 >

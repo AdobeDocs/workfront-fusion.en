@@ -238,7 +238,7 @@ We use `fusion/nav-organization/1` throughout. To target the Team section instea
    >[!NOTE]
    >
    > If you also need server-side logic too, you can also add serverless `actions` (small backend functions). Actions are optional and not required to render a UI, so we leave them out to keep this guide focused. If you add them later, declare an `actions:` folder here and a `runtimeManifest:` in `app.config.yaml`. The most common reason to add one is to call Workfront/Fusion APIs without hitting browser CORS.
-   > For information on calling APIs, see [Calling Workfront & Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom%20extension-10-calling-apis.md).
+   > For information on calling APIs, see [Calling Workfront and Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md).
 1. Continue to [Set a stable extension ID](#set-a-stable-extension-id).
 
 ## Set a stable extension ID
