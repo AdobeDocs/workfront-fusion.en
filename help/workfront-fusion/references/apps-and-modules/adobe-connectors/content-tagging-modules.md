@@ -102,9 +102,9 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
-#### Color tagging
+#### Tag colors
 
-This module returns histogram of pixel colors, sorted into 40 color categories.
+This module returns the percentage of an image covered by different pixel colors, sorted into 40 color categories.
 
 
 <table style="table-layout:auto"> 
@@ -116,31 +116,104 @@ This module returns histogram of pixel colors, sorted into 40 color categories.
    <td>For instructions on creating a connection to Adobe Content Tagger, see <a href="#create-a-connection-to-adobe-content-tagger" class="MCXref xref" >Create a connection to Adobe Content Tagger</a> in this article.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Image URL</td> 
-   <td>Enter or map a presigned URL that represents the image you want to apply XMP to.</td> 
+   <td role="rowheader">Image file name</td> 
+   <td>Enter or map the file name of the image that you want to tag colors for.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Storage type</td> 
-   <td>Select the type of storage that the image is stored in.</td> 
+   <td role="rowheader">Image data</td> 
+   <td>Enter or map the file data of the image you want to tag colors for.</td> 
   </tr> 
   </tr> 
  <tr> 
-   <td role="rowheader">Output storage</td> 
-    <td>Select where you want the output file to be stored. <p>Fusion internal storage does not store the image outside of the scenario, but allows other modules in the scenario to access the image.</p></td> 
+   <td role="rowheader">Image format</td> 
+    <td>Select the image type for the image you want to tag colors for.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Output type</td> 
-   <td>Select the file type for the output file.</td> 
+   <td role="rowheader">Number of colors</td> 
+    <td>Enter or map the number of colors to return. To return all results, enter 0.</p></td> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">Minimum coverage</td> 
+   <td>Enter or map the minimum coverage that you want to tag colors for. Only colors covering at least this amount of the image will be returned. A value of 1 is 100% of the image, and a value of .5 represents 50% of the image.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Overwrite</td> 
-   <td>Select yes if you want to allow the module to overwrite output if it already exists. This applies only to Adobe cloud storage.</td> 
+   <td role="rowheader">Resize image before extraction.</td> 
+   <td>Select Yes to resize the image to 320x320 before extracting the colors. Select No to extract colors from the full-size image.</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Quality</td> 
-   <td>Enter or map the quality of the output image. 1 is the lowest quality, and 12 is the highest. This applies only to JPEG files.</td> 
+   <td role="rowheader">Enable foreground/background mask</td> 
+   <td>Select Yes if you want to report colors separately for the overall image, foreground, and background.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Retrieve tones</td> 
+   <td>Select Yes if you want to retrieve data about warm, neutral, and cool tones in addition to colors.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned colors</td> 
+   <td>Enter or map the maximum number of colors that the module with return for one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
 
 
+
+#### Tag keywords
+
+This module extracts keywords or key phrases that best describe the subject of the document.
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Content Tagger, see <a href="#create-a-connection-to-adobe-content-tagger" class="MCXref xref" >Create a connection to Adobe Content Tagger</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Document file name</td> 
+   <td>Enter or map the file name of the document that you want to extract keywords from.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Image data</td> 
+   <td>Enter or map the file data of the document that you want to extract keywords from.</td> 
+  </tr> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">Image format</td> 
+    <td>Select the format of the document that you want to extract keywords from.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Application ID</td> 
+   <td>Enter or map the application ID for the document.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Number of key phrases</td> 
+   <td>Enter or map the number of key phrases that you want the module to return. To return all results, enter 0.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Minimal relevance</td> 
+   <td>Enter or map the score threshold below which results will not be returned.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Minimum key phrase length (words)</td> 
+   <td>Enter or map the minimum number of words required in key phrases.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum key phrase length (words)</td> 
+   <td>Enter or map the maximum number of words required in key phrases.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Semantic unit depth</td> 
+   <td>Select how deep you want the hierarchical responses to go.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Entity types</td> 
+   <td>For each entity type that you want to restrict key phrases to, click <b>Add item</b> and enter the information for the entity type.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Tag text in an image
+
+This module indicates if text is present in an image, and returns the text if present.
