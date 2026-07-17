@@ -13,6 +13,8 @@ product_v2:
 
 Workfront Fusion administrators can restore recently deleted scenarios.
 
+Scenarios are available to restore for 7 days after deletion. After that, they cannot be restored.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
