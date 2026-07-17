@@ -73,6 +73,8 @@ To use a webhook to connect an app to Workfront Fusion, you can set up the webho
 
 With mTLS, you supply a client certificate and private key. Fusion uses the certificate and key to authenticate itself to the destination service when calling the webhook. This two-way authentication allows your webhook to be more secure than basic authentication.
 
+For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md#mutual-tls-overview) in the article Use mTLS in HTTP modules.
+
 1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
 
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
