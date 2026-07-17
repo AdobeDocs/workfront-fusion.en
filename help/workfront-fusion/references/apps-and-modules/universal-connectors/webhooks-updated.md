@@ -64,7 +64,16 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 >
 >To call a third party webhook (an outgoing webhook) use one of the HTTP modules. For more information, see [HTTP modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-To use a webhook to connect an app to Workfront Fusion:
+To use a webhook to connect an app to Workfront Fusion, you can set up the webhook to authenticate using either a client certificate (mTLS) or basic authentication.
+
+* [Use a webhook with a client certificate(mTLS)](#use-a-webhook-with-a-client-certificate-mtls)
+* [Use a webhook with basic authentication](#use-a-webhook-with-basic-authentication)
+
+### Use a webhook with a client certificate (mTLS)
+
+With mTLS, you supply a client certificate and private key. Fusion uses the certificate and key to authenticate itself to the destination service when calling the webhook. This two-way authentication allows your webhook to be more secure than basic authentication.
+
+For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md#mutual-tls-overview) in the article Use mTLS in HTTP modules.
 
 1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
 
@@ -74,8 +83,42 @@ To use a webhook to connect an app to Workfront Fusion:
 1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
 
    For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
-1. In the **Authorization type** field, select whether this webhook uses basic authorization or a client certificate.
-1. In the **Credentials** field, you can enter credentials to be used for authorization. To enter credentials, click **Add** and enter the credential information. This can be the username and password for basic authentication, or the client certificate and public key for certificate authentication.
+1. In the **Authorization type** field, select **[!UICONTROL Client certificate]**.
+1. In the **Credentials** field, select the credentials to be used for authorization, or add new credentials. 
+1. (Conditional) To add credentials:
+   1. Click **Add**
+   1. Enter a name for the new credentials key
+   1. In the **Certificate** field, paste your certificate. 
+   1. In the **Private key** field, paste your private key.
+   
+      >[!TIP]
+      >
+      >If you need to extract the certificate or private key out of a combined file, click **Extract** next to that field, select what you are extracting, and provide the file and password. 
+   1. Click **Create a key**.
+   1. Back in the webhook panel, in the **Credentials** field, select the new key.
+1. Enable other settings as desired.
+1. Click **[!UICONTROL Save]**
+
+After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
+
+>[!NOTE]
+>
+>After you create a webhook, you can use it in more than one scenario at a time.
+
+### Use a webhook with basic authentication
+
+Basic authentication uses a username and password to authenticate to the service you are connecting to.
+
+1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
+
+1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
+1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
+1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
+
+   For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. In the **Authorization type** field, select **[!UICONTROL Basic auth]**.
+1. In the **Credentials** field, enter credentials to be used for authorization. To enter credentials, click **Add** and enter the username and password for basic authentication.
 1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
 
