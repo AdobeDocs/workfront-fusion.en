@@ -84,7 +84,18 @@ For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/r
 
    For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 1. In the **Authorization type** field, select **[!UICONTROL Client certificate]**.
-1. In the **Credentials** field, enter credentials to be used for authorization. To enter credentials, click **Add** and enter the client certificate and public key for certificate authentication.
+1. In the **Credentials** field, select the credentials to be used for authorization, or add new credentials. 
+1. (Conditional) To add credentials:
+   1. Click **Add**
+   1. Enter a name for the new credentials key
+   1. In the **Certificate** field, paste your certificate. 
+   1. In the **Private key** field, paste your private key.
+   
+      >[!TIP]
+      >
+      >If you need to extract the certificate or private key out of a combined file, click **Extract** next to that field, select what you are extracting, and provide the file and password. 
+   1. Click **Create a key**.
+   1. Back in the webhook panel, in the **Credentials** field, select the new key.
 1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
 
