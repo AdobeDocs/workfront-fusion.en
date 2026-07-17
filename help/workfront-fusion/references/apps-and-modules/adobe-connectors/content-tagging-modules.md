@@ -102,6 +102,10 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
+* [Tag colors](#tag-colors)
+* [Tag keywords](#tag-keywords)
+* [Tag text in an image](#tag-text-in-an-image)
+
 #### Tag colors
 
 This module returns the percentage of an image covered by different pixel colors, sorted into 40 color categories.
