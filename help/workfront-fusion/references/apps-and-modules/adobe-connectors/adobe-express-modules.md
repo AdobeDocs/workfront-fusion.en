@@ -154,7 +154,31 @@ This module exports a document into JPG or PNG format. It can provide pre-signed
   </tr>
   <tr> 
    <td role="rowheader">Accessibility tage</td> 
-   <td>If you are exporting a PDF, select whether to include accessibility tags in the PDF.</td> 
+   <td>If you are exporting a standard PDF, select whether to include accessibility tags in the PDF.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Bleed</td> 
+   <td>If you are exporting a print PDF, select whether to include bleed settings in the export</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Bleed settings > Amount</td> 
+   <td>Enter the amount of bleed margin.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Bleed settings > Units</td> 
+   <td>Select whether the amount refers to inches or millimeters.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Crop</td> 
+   <td>If you are exporting a print PDF, select whether to include crop settings in the export</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Crop settings > Amount</td> 
+   <td>Enter the amount of crop margin.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Crop settings > Units</td> 
+   <td>Select whether the amount refers to inches or millimeters.</td> 
   </tr>
  </tbody> 
 </table> 
