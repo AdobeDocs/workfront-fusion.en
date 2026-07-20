@@ -108,17 +108,160 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Actions
 
-#### Export renditions
+#### Export a rendition
 
-This module exports a document, identified by its document ID, into JPG or PNG format. It can provide pre-signed URLs for the page renditions, which are valid for four hours.
+This module exports a document into JPG or PNG format. It can provide pre-signed URLs for the page renditions, which are valid for four hours.
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Express, see <a href="#create-a-connection-to-adobe-express" class="MCXref xref" >Create a connection to Adobe Express</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Document</td> 
+   <td>Select the document that you want to export a rendition for.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Page numbers</td> 
+   <td>Enter or map the page numbers that you want to include in the rendition. A comma-separated string of page numbers for which the rendition request is made. For example, "1,2,3". Page ranges can also be specified. For example, "1-3" includes pages 1, 2, and 3. Another example is "1,3-5", which includes pages 1, 3, 4, and 5. "1-" can be used to specify all pages, while "5-" indicates page 5 to the last page. If not provided, the first page is considered by default. Page numbers start from 1.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Rendition type</td> 
+   <td>Select the type of rendition that you want to export: image, video, or PDF</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Format</td> 
+   <td>Select the file format for your rendition.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">PDF type</td> 
+   <td>If you are exporting a PDF, select whether to export a standard or print PDF.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Size</td> 
+   <td>If you are exporting an image or video, enter or map the size, in pixels, of the longest side. The aspect ratio is maintained. For image the minimum size supported is 1px and maximum size supported is 8192px. If not provided, the default size of page is considered.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Download individual PDF files</td> 
+   <td>If you are exporting a PDF, select whether pages are downloaded as separate PDF files. When true, each page is downloaded as its own PDF file. When false, all pages are combined into a single PDF file.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Configuration</td> 
+   <td>If you are exporting a PDF, select whether you want the PDF in standard or print configuration.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Accessibility tage</td> 
+   <td>If you are exporting a PDF, select whether to include accessibility tags in the PDF.</td> 
+  </tr>
+ </tbody> 
+</table> 
 
 #### Generate variations
+
+This module creates a document variation based on provided input parameters. After processing, it temporarily stores the generated document and makes it available to the user within a designated folder. The document remains accessible for 30 days, after which the system automatically removes it.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Express, see <a href="#create-a-connection-to-adobe-express" class="MCXref xref" >Create a connection to Adobe Express</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Document</td> 
+   <td>Select the document that you want to generate variations for.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Page numbers</td> 
+   <td>Enter or map the page numbers that you want to include in the rendition. A comma-separated string of page numbers for which the variation request is made. For example, "1,2,3". Page ranges can also be specified. For example, "1-3" includes pages 1, 2, and 3. Another example is "1,3-5", which includes pages 1, 3, 4, and 5. "1-" can be used to specify all pages, while "5-" indicates page 5 to the last page. If not provided, the first page is considered by default. Page numbers start from 1.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Preferred document name.</td> 
+   <td>Enter or map a name for the new document. If you do not provide a name or the name is already in use, the system will generate a unique name.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Project ID</td> 
+   <td>Enter the ID of the project where the variations will be stored.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Other fields</td> 
+   <td>Enter values for other fields. Available fields are based on the selected document.</td> 
+  </tr>
+ </tbody> 
+</table> 
+
 
 ### Searches
 
 #### Retrieve tagged documents
 
-#### Retrieve the tagged element details
+This module retrieves a list of tagged documents, along with relevant metadata.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Express, see <a href="#create-a-connection-to-adobe-express" class="MCXref xref" >Create a connection to Adobe Express</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Start index</td> 
+   <td>Enter or map the pagination start index. Use this when you have retrieved another list of results, and you want to continue that list. Default index is 0.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of results that you want the module to return for each execution cycle.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Sort by</td> 
+   <td>Select the attribute by which you want to sort results.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Direction</td> 
+   <td>Select whether you want to sort results ascending or descending.</td> 
+  </tr>
+ </tbody> 
+</table> 
+
+#### Retrieve document details
+
+This module retrieves details of the pages and tagged elements within a specified document. It returns a paginated list of the document's pages and metadata about each page. If the document has tagged elements, the API includes their respective details, such as size and position. If the document does not have tagged elements, it returns an empty array. The response includes pagination information to help users navigate the document's pages. A maximum of 10 pages can be returned in 1 cycle.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Express, see <a href="#create-a-connection-to-adobe-express" class="MCXref xref" >Create a connection to Adobe Express</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Document</td> 
+   <td>Select the document that you want to return pages and details for.</td> 
+  </tr>
+  <tr> 
+   <td role="rowheader">Starting page</td> 
+   <td>Enter or map the the page number of the first page from which details will be retrieved.</td> 
 
 #### Retrieve a job's status
+
+This module retrieves a job's status by its job ID. Depending on the job type, the response may include job-specific details.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Express, see <a href="#create-a-connection-to-adobe-express" class="MCXref xref" >Create a connection to Adobe Express</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Job ID</td> 
+   <td>Enter or map the ID of the job that you want to retrieve details for.</td> 
+  </tr>
+
