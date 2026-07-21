@@ -165,7 +165,6 @@ This module returns the percentage of an image covered by different pixel colors
 
 This module extracts keywords or key phrases that best describe the subject of the document.
 
-
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -221,3 +220,43 @@ This module extracts keywords or key phrases that best describe the subject of t
 #### Tag text in an image
 
 This module indicates if text is present in an image, and returns the text if present.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Content Tagger, see <a href="#create-a-connection-to-adobe-content-tagger" class="MCXref xref" >Create a connection to Adobe Content Tagger</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Image file name</td> 
+   <td>Enter or map the file name of the document that you want to extract text from.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Image data</td> 
+   <td>Enter or map the file data of the document that you want to extract text from.</td> 
+  </tr> 
+  </tr> 
+ <tr> 
+   <td role="rowheader">Image format</td> 
+    <td>Select the format of the document that you want to extract text from.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filter with dictionary</td> 
+   <td>Select whether to return only words that are in the English dictionary.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Minimum probability</td> 
+   <td>Enter or map the minimum probability, where the module will return only words recognized with at least this much probability. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Minimum relevance</td> 
+   <td>Enter the minimum percent of the image that returned text should cover. The relevance is computed as the fraction of the area of the extracted text's bounding box in comparison to the full image. 0.01 would translate to a text occupying at least 1% of the image.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of results that the module will return for one execution cycle.</td> 
+  </tr> 
+ </tbody> 
+</table>
