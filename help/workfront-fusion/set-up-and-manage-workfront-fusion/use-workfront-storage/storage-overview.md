@@ -1,0 +1,97 @@
+---
+title: Storage overview
+description: Storage is a page in Workfront Fusion that gives teams direct access to their Adobe Enterprise Storage Management (ESM) repositories, letting users browse folders, upload and download files, view version history, and create automation scenarios.
+author: Becky
+feature: Workfront Fusion
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+---
+# Storage overview
+
+## What is Storage?
+
+Storage is a new page in Workfront Fusion that gives teams direct access to their Adobe Enterprise Storage Management (ESM) repositories. Users can browse folders, upload and download files, view version history, and create automation scenarios — all without leaving Fusion.
+
+Storage appears as a sidebar item labeled **"Storage"** with a **Beta** badge. It is available per-team and requires the organization to be onboarded to Adobe Identity Management System (IMS) with access to Adobe Storage.
+
+For instructions on using Storage, see:
+
+* [Storage prerequisites](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-prerequisites.md)
+* [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)
+* [Upload files to Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/upload-files-to-storage.md)
+* [Download files from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/download-files-from-storage.md)
+* [Delete files from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/delete-files-from-storage.md)
+* [View file version history in Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)
+* [Create scenarios from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)
+* [Manage multiple Storage connections](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/manage-multiple-storage-connections.md)
+
+## Browsing Storage
+
+After initialization, the user sees their storage repositories.
+
+### Repository list
+
+* If the team has **one repository**, Fusion opens it automatically
+* If the team has **multiple repositories**, a table lists them with columns: **Name** and **Region**
+* Click **Open** on any repository to browse its contents
+
+### Navigating folders and files
+
+* The top-level view shows **Folders** within the repository
+* Clicking a folder opens it and displays its **Files**
+* A **breadcrumb trail** at the top shows the current location; click any breadcrumb to navigate back
+* An empty folder displays the message: *"This folder is empty"*
+
+### File information
+
+Each file in the table shows:
+
+| Column | Description |
+|--------|-------------|
+| **Name** | File name with a document icon |
+| **Type** | File extension badge (e.g., PNG, PDF, JPG) |
+| **Size** | File size. Shows *"Processing…"* if the file was recently uploaded and the backend is still processing it |
+| **Created** | Creation date |
+
+Files also show a **version badge** (e.g., `v2`, `v3`) when multiple versions exist.
+
+### Table controls
+
+* **Search/filter**: Filter files by name using the global search bar
+* **Sorting**: Click column headers to sort
+* **Pagination**: Choose 10, 25, 50, or 100 items per page (default: 25)
+
+## Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Repository** | A top-level storage container in Adobe ESM, typically mapped to a project or workspace |
+| **Connection** | A secure link between Fusion and Adobe Storage, created automatically during initialization. Uses Adobe IMS authentication with automatic token refresh |
+| **Scenario** | A Fusion automation workflow that can be triggered on a schedule or manually |
+| **ESM** | Enterprise Storage Management — Adobe's cloud file storage service |
+| **IMS** | Adobe Identity Management System — Adobe's authentication and identity platform |
+
+## UI Reference — Key Screens
+
+### 1. Initialization Screen
+* Cloud icon with **"Adobe Storage"** heading
+* Description text explaining the feature
+* **"Initialize Storage"** button (primary action)
+* Error variants for access restriction, org mismatch, access denied, no storage found
+
+### 2. Repository List
+* Table with **Name** and **Region** columns
+* **"Open"** action button per row
+
+### 3. File Browser
+* Breadcrumb navigation bar
+* **"Upload File"** dropdown button (with "Upload File" and "Upload File in Scenario" options)
+* File/folder table with **Name**, **Type**, **Size**, **Created** columns
+* Floating action bar on file selection with: **Download**, **Download in Scenario**, **Versions**, **Delete**
+* Upload/download progress banners (top-right corner)
+
+### 4. Version History Panel
+* Right-side slide-out panel
+* Version list with date, version badge, and download button per entry
+* **"current"** label on the latest version
