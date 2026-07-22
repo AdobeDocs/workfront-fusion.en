@@ -17,7 +17,6 @@ Storage appears as a sidebar item labeled **"Storage"** with a **Beta** badge. I
 
 For instructions on using Storage, see:
 
-* [Storage prerequisites](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-prerequisites.md)
 * [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)
 * [Upload files to Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/upload-files-to-storage.md)
 * [Download files from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/download-files-from-storage.md)
@@ -25,6 +24,15 @@ For instructions on using Storage, see:
 * [View file version history in Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)
 * [Create scenarios from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)
 * [Manage multiple Storage connections](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/manage-multiple-storage-connections.md)
+
+## Storage prerequisites
+
+To use Storage, the following must be true:
+
+* The organization is onboarded to **Adobe IMS**
+* The organization has **Adobe Storage** available
+* The user is signed into the **correct Adobe IMS organization** (the one matching the selected Fusion organization)
+* The user's account has **access to Adobe Storage**
 
 ## Browsing Storage
 
@@ -48,7 +56,7 @@ After initialization, the user sees their storage repositories.
 Each file in the table shows:
 
 | Column | Description |
-|--------|-------------|
+| -------- | ------------- |
 | **Name** | File name with a document icon |
 | **Type** | File extension badge (e.g., PNG, PDF, JPG) |
 | **Size** | File size. Shows *"Processing…"* if the file was recently uploaded and the backend is still processing it |
@@ -62,10 +70,17 @@ Files also show a **version badge** (e.g., `v2`, `v3`) when multiple versions ex
 * **Sorting**: Click column headers to sort
 * **Pagination**: Choose 10, 25, 50, or 100 items per page (default: 25)
 
-## Glossary
+## Manage multiple Storage connections
+
+* A team can have multiple Adobe Storage connections
+* When multiple connections exist, **tabs** appear at the top of the Storage page, labeled with each connection's name
+* Clicking a tab switches to that connection's repositories
+* The first connection is selected by default
+
+If a connection becomes invalid (e.g., token expired and could not be refreshed), it is automatically filtered out and does not appear as a tab. Fusion's scheduled token refresh keeps connections valid automatically.## Glossary
 
 | Term | Definition |
-|------|-----------|
+| ------ | ----------- |
 | **Repository** | A top-level storage container in Adobe ESM, typically mapped to a project or workspace |
 | **Connection** | A secure link between Fusion and Adobe Storage, created automatically during initialization. Uses Adobe IMS authentication with automatic token refresh |
 | **Scenario** | A Fusion automation workflow that can be triggered on a schedule or manually |
@@ -75,16 +90,19 @@ Files also show a **version badge** (e.g., `v2`, `v3`) when multiple versions ex
 ## UI Reference — Key Screens
 
 ### 1. Initialization Screen
+
 * Cloud icon with **"Adobe Storage"** heading
 * Description text explaining the feature
 * **"Initialize Storage"** button (primary action)
 * Error variants for access restriction, org mismatch, access denied, no storage found
 
 ### 2. Repository List
+
 * Table with **Name** and **Region** columns
 * **"Open"** action button per row
 
 ### 3. File Browser
+
 * Breadcrumb navigation bar
 * **"Upload File"** dropdown button (with "Upload File" and "Upload File in Scenario" options)
 * File/folder table with **Name**, **Type**, **Size**, **Created** columns
@@ -92,6 +110,7 @@ Files also show a **version badge** (e.g., `v2`, `v3`) when multiple versions ex
 * Upload/download progress banners (top-right corner)
 
 ### 4. Version History Panel
+
 * Right-side slide-out panel
 * Version list with date, version badge, and download button per entry
 * **"current"** label on the latest version

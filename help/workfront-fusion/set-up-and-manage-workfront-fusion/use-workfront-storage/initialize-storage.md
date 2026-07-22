@@ -23,7 +23,7 @@ When a user navigates to **Storage** for the first time (or if no valid connecti
 ## What can go wrong
 
 | Screen | Reason | What the user should do |
-|--------|--------|------------------------|
+| -------- | -------- | ------------------------ |
 | **Access Restricted** | The organization is not onboarded to Adobe IMS | Contact the organization admin to complete IMS onboarding |
 | **Organization Mismatch** | The user is signed into a different Adobe organization than the one selected in Fusion | Sign out, then sign back in with the correct Adobe IMS organization |
 | **Access Denied** | The user's account does not have the required permissions, or Adobe Storage is not available for the organization | Verify account permissions with the organization admin; click **Retry** after resolving |

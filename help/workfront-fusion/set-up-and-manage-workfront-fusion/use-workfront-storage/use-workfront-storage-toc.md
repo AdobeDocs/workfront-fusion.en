@@ -12,11 +12,9 @@ product_v2:
 # Using Workfront Storage: article index
 
 * [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)
-* [Storage prerequisites](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-prerequisites.md)
 * [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)
 * [Upload files to Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/upload-files-to-storage.md)
 * [Download files from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/download-files-from-storage.md)
 * [Delete files from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/delete-files-from-storage.md)
 * [View file version history in Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)
 * [Create scenarios from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)
-* [Manage multiple Storage connections](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/manage-multiple-storage-connections.md)
