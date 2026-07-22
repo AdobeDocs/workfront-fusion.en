@@ -9,11 +9,11 @@ product_v2:
 ---
 # Storage overview
 
-## What is Storage?
+<!--Add to navigation articles once this goes to production-->
 
-Storage is a new page in Workfront Fusion that gives teams direct access to their Adobe Enterprise Storage Management (ESM) repositories. Users can browse folders, upload and download files, view version history, and create automation scenarios — all without leaving Fusion.
+The Storage area in Workfront Fusion gives teams direct access to their Adobe Enterprise Storage Management (ESM) repositories. Users can browse folders, upload and download files, view version history, and create automation scenarios, all without leaving Fusion.
 
-Storage appears as a sidebar item labeled **"Storage"** with a **Beta** badge. It is available per-team and requires the organization to be onboarded to Adobe Identity Management System (IMS) with access to Adobe Storage.
+Storage is owned by teams, and requires the organization to be onboarded to Adobe Identity Management System (IMS) with access to Adobe Storage.
 
 For instructions on using Storage, see:
 
@@ -29,14 +29,20 @@ For instructions on using Storage, see:
 
 To use Storage, the following must be true:
 
-* The organization is onboarded to **Adobe IMS**
+* The organization is onboarded to **Adobe Identity Management System (IMS)**
 * The organization has **Adobe Storage** available
 * The user is signed into the **correct Adobe IMS organization** (the one matching the selected Fusion organization)
 * The user's account has **access to Adobe Storage**
 
 ## Browsing Storage
 
-After initialization, the user sees their storage repositories.
+The Storage area lists the repositories that are available.
+
+>[!TIP]
+>
+>Storage must be initialized before you can see repositories. For instructions, see [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md).
+
+<!--Different article - navigate storage?-->
 
 ### Repository list
 
