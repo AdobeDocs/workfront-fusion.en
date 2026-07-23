@@ -27,23 +27,16 @@ For instructions on using Storage, see:
 
 ## Storage prerequisites
 
-To use Storage, the following must be true:
+To use the Workfront Fusion Storage area, the following must be true:
 
 * The organization is onboarded to **Adobe Identity Management System (IMS)**
 * The organization has **Adobe Storage** available
 * The user is signed into the **correct Adobe IMS organization** (the one matching the selected Fusion organization)
 * The user's account has **access to Adobe Storage**
 
-## Manage multiple Storage connections
-
-* A team can have multiple Adobe Storage connections
-* When multiple connections exist, **tabs** appear at the top of the Storage page, labeled with each connection's name
-* Clicking a tab switches to that connection's repositories
-* The first connection is selected by default
-
-If a connection becomes invalid (e.g., token expired and could not be refreshed), it is automatically filtered out and does not appear as a tab. Fusion's scheduled token refresh keeps connections valid automatically.
-
 ## Glossary
+
+When using 
 
 | Term | Definition |
 | ------ | ----------- |
