@@ -18,12 +18,12 @@ Storage is owned by teams, and requires the organization to be onboarded to Adob
 For instructions on using Storage, see:
 
 * [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)
+* [View and manage Storage in Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-and-manage-storage-in-workfront-fusion.md)
 * [Upload files to Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/upload-files-to-storage.md)
 * [Download files from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/download-files-from-storage.md)
 * [Delete files from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/delete-files-from-storage.md)
 * [View file version history in Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/view-storage-file-version-history.md)
 * [Create scenarios from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md)
-* [Manage multiple Storage connections](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/manage-multiple-storage-connections.md)
 
 ## Storage prerequisites
 
@@ -34,48 +34,6 @@ To use Storage, the following must be true:
 * The user is signed into the **correct Adobe IMS organization** (the one matching the selected Fusion organization)
 * The user's account has **access to Adobe Storage**
 
-## Browsing Storage
-
-The Storage area lists the repositories that are available.
-
->[!TIP]
->
->Storage must be initialized before you can see repositories. For instructions, see [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md).
-
-<!--Different article - navigate storage?-->
-
-### Repository list
-
-* If the team has **one repository**, Fusion opens it automatically
-* If the team has **multiple repositories**, a table lists them with columns: **Name** and **Region**
-* Click **Open** on any repository to browse its contents
-
-### Navigating folders and files
-
-* The top-level view shows **Folders** within the repository
-* Clicking a folder opens it and displays its **Files**
-* A **breadcrumb trail** at the top shows the current location; click any breadcrumb to navigate back
-* An empty folder displays the message: *"This folder is empty"*
-
-### File information
-
-Each file in the table shows:
-
-| Column | Description |
-| -------- | ------------- |
-| **Name** | File name with a document icon |
-| **Type** | File extension badge (e.g., PNG, PDF, JPG) |
-| **Size** | File size. Shows *"Processing…"* if the file was recently uploaded and the backend is still processing it |
-| **Created** | Creation date |
-
-Files also show a **version badge** (e.g., `v2`, `v3`) when multiple versions exist.
-
-### Table controls
-
-* **Search/filter**: Filter files by name using the global search bar
-* **Sorting**: Click column headers to sort
-* **Pagination**: Choose 10, 25, 50, or 100 items per page (default: 25)
-
 ## Manage multiple Storage connections
 
 * A team can have multiple Adobe Storage connections
@@ -83,7 +41,9 @@ Files also show a **version badge** (e.g., `v2`, `v3`) when multiple versions ex
 * Clicking a tab switches to that connection's repositories
 * The first connection is selected by default
 
-If a connection becomes invalid (e.g., token expired and could not be refreshed), it is automatically filtered out and does not appear as a tab. Fusion's scheduled token refresh keeps connections valid automatically.## Glossary
+If a connection becomes invalid (e.g., token expired and could not be refreshed), it is automatically filtered out and does not appear as a tab. Fusion's scheduled token refresh keeps connections valid automatically.
+
+## Glossary
 
 | Term | Definition |
 | ------ | ----------- |

@@ -9,7 +9,7 @@ product_v2:
 ---
 # Initialize Storage
 
-For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md). For requirements before you begin, see [Storage prerequisites](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-prerequisites.md).
+For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md). For requirements before you begin, see [Storage prerequisites](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md#storage-prerequisites).
 
 When a user navigates to **Storage** for the first time (or if no valid connection exists), they see an initialization screen.
 
