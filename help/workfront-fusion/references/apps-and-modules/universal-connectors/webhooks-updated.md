@@ -64,10 +64,11 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 >
 >To call a third party webhook (an outgoing webhook) use one of the HTTP modules. For more information, see [HTTP modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-To use a webhook to connect an app to Workfront Fusion, you can set up the webhook to authenticate using either a client certificate (mTLS) or basic authentication.
+To use a webhook to connect an app to Workfront Fusion, you can set up the webhook to authenticate using a client certificate (mTLS), basic authentication, or Adobe Identity Management System (IMS).
 
 * [Use a webhook with a client certificate(mTLS)](#use-a-webhook-with-a-client-certificate-mtls)
 * [Use a webhook with basic authentication](#use-a-webhook-with-basic-authentication)
+* [Use a webhook with Adobe Identity Management System (IMS)](#use-a-webhook-with-adobe-identity-management-system-ims)
 
 ### Use a webhook with a client certificate (mTLS)
 
@@ -80,6 +81,13 @@ For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/r
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+
+   This field accepts the following patterns:
+
+   * Exact hostname: `app.example.com`
+   * Wildcard subdomain: `*.example.com`
+   * Scheme-qualified:` https://app.example.com` or `https://*.example.com`
 1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
 
    For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
@@ -114,11 +122,50 @@ Basic authentication uses a username and password to authenticate to the service
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+
+   This field accepts the following patterns:
+
+   * Exact hostname: `app.example.com`
+   * Wildcard subdomain: `*.example.com`
+   * Scheme-qualified:` https://app.example.com` or `https://*.example.com`
 1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
 
    For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 1. In the **Authorization type** field, select **[!UICONTROL Basic auth]**.
 1. In the **Credentials** field, enter credentials to be used for authorization. To enter credentials, click **Add** and enter the username and password for basic authentication.
+1. Enable other settings as desired.
+1. Click **[!UICONTROL Save]**
+
+After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
+
+>[!NOTE]
+>
+>After you create a webhook, you can use it in more than one scenario at a time.
+
+### Use a webhook with Adobe Identity Management System (IMS)
+
+Adobe Identity Management System (IMS) authentication uses your organization's Adobe IMS credentials to authenticate to the service you are connecting to.
+
+1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
+
+1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
+1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
+1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+
+   This field accepts the following patterns:
+
+   * Exact hostname: `app.example.com`
+   * Wildcard subdomain: `*.example.com`
+   * Scheme-qualified:` https://app.example.com` or `https://*.example.com`
+1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
+
+   For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. In the **Authorization type** field, select **Adobe IMS (Bearer token in authorization header)**.
+1. (Optional) In the **Allowed clients** field, enter a comma-separated list of client IDs permitted to call this webhook. Leave this setting empty to accept any client whose token is validly signed by the trusted issuer and audience. 
+1. (Optional) In the **Allowed users** field, enter a comma-separated list of user IDs permitted to call this webhook. Leave this setting empty to allow any user. 
+1. (Optional) In the **Required scopes** field, enter a comma-separated list of scopes that must be present in the token's `scope` claim. Leave this empty to skip the scope check. 
 1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
 
