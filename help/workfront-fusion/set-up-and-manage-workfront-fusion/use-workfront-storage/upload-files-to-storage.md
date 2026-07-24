@@ -9,29 +9,34 @@ product_v2:
 ---
 # Upload files to Storage
 
-For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md).
+You can upload a file to Adobe cloud storage from inside Workfront Fusion using the Storage area.
 
 Upload is available when browsing inside a folder (not at the top-level folder list).
 
-## How to upload
+* For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md).
+* For instructions on creating an upload scenario, see [Create scenarios from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md).
 
-1. Click the **"Upload File"** dropdown button
-2. Select **"Upload File"** to upload directly, or **"Upload File in Scenario"** to create an automation scenario instead
-3. For direct upload: a file picker opens — select the file to upload
-4. A **progress banner** appears at the top-right showing:
+
+## Upload a file
+
+1. In Workfront Fusion, click **Storage** in the left navigation. 
+1. Navigate to the repository and folder where you want to upload a file.
+1. Click the **"Upload File"** dropdown button.
+1. Select **"Upload File"** to upload directly.
+
+   A file picker opens.
+1. Select the file to upload.
+  
+   A **progress banner** appears at the top-right showing:
+
    * File name
    * Upload progress percentage
    * Bytes transferred
-   * A **Cancel** button to abort the upload
+   * A **Cancel** button to stop the upload
+
+After upload, the file appears in the folder listing. The **Size** column may temporarily show *"Processing…"* while Adobe Storage processes the file on the backend. The actual file size appears after processing completes. This can be verified by refreshing the page.
 
 ## Upload limits
 
-* Maximum file size: **5 GB**
-* If a file exceeds this limit, a toast notification appears: *"File too large — Maximum upload size is {max}. Selected file is {actual}."*
+* Maximum file size: **5 GB**. 
 
-## After upload
-
-* The file appears in the folder listing once the upload completes
-* The **Size** column may temporarily show *"Processing…"* while Adobe Storage processes the file on the backend. The actual file size appears after processing completes (this can be verified by refreshing the page)
-
-For instructions on creating an upload scenario, see [Create scenarios from Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/create-scenarios-from-storage.md).

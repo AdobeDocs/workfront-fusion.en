@@ -33,7 +33,7 @@ The file is saved to the browser's default download location.
 
 1. In Workfront Fusion, click **Storage** in the left navigation. 
 1. Navigate to the repository and folder that contains the file you want to download.
-1. Select a file and click **"Versions"** in the action bar
+1. Select a file and click **"Versions"** in the action bar.
 1. In the **Version History** panel, click **Download** next to the version that you want to download.
 
 If a download fails, a toast notification appears: *"Download failed — The file could not be downloaded. Please try again."*

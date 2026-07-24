@@ -9,14 +9,14 @@ product_v2:
 ---
 # Initialize Storage in Workfront Fusion
 
-The Fusion Storage area must be initialized before you can view repositories, folders, and files in you Adobe cloud storage. 
+The Fusion Storage area must be initialized before you can view repositories, folders, and files in your Adobe cloud storage. 
 
 For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md).
 
 ## Initialize Storage
 
 1. In Workfront Fusion, click **Storage** in the left navigation. 
-1. Clicks **Initialize Storage**.
+1. Click **Initialize Storage**.
 
 Fusion automatically creates a secure connection to Adobe Storage on behalf of the team.
 

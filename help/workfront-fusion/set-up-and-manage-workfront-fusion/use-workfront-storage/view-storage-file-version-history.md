@@ -15,12 +15,15 @@ Files in Adobe Storage can have multiple versions.
 
 ## Viewing version history
 
-1. Select a file and click **"Versions"** from the floating action bar
-2. A **Version History** panel slides open on the right, titled *"Version History — {filename}"*
-3. Versions are listed newest-first, each showing:
+1. In Workfront Fusion, click **Storage** in the left navigation. 
+1. Navigate to the repository and folder that contains the file you want to view versions for.
+1. Select a file and click **"Versions"** from the action bar.
+   A **Version History** panel opens.
+   Versions are listed newest-first, each showing:
    * Version number
    * Date
    * A **Download** button
-4. The current (latest) version is labeled with a **"current"** badge
+    
+   The current (latest) version is labeled with a **"current"** badge
 
 To download a specific version, see [Download a specific version](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/download-files-from-storage.md#download-a-specific-version) in the article Download files from Storage.

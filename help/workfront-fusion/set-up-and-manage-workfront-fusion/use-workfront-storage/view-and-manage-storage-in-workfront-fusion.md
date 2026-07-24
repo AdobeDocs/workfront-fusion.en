@@ -9,32 +9,41 @@ product_v2:
 ---
 # View and manage Storage in Workfront Fusion
 
-For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md).
+The Storage area in Workfront Fusion allows you to view and interact with repositories in your Adobe cloud storage. 
 
-The Storage area lists the repositories that are available.
+For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md).
 
 >[!TIP]
 >
 >Storage must be initialized before you can see repositories. For instructions, see [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md).
 
-## Repository list
+## View repositories, folders, and files
 
-Clicking on the Storage area opens a list of available repositories.
+1. In Workfront Fusion, click **Storage** in the left navigation. 
+   A list of repositories opens.
+   
+   If there is only one repository available, the repository opens directly.
 
-If a team only has one repository, opening the Storage area opens the repository directly.
+1. Click **Open** on any repository to browse its contents.
 
-To open a repository from the list, click **Open** next to the repository you want to open.
+   Opening a repository shows Folders within the repository.
+1. Click a folder to open it and display its Files.
+1. To navigate back up through the folder structure, click the breadcrumbs.
 
-* If the team only has **one repository**, Fusion opens it automatically
-* If the team has **multiple repositories**, a table lists them with columns: **Name** and **Region**
-* Click **Open** on any repository to browse its contents
 
-## Navigating folders and files
+>[!NOTE]
+>
+>An empty folder displays the message: *"This folder is empty"*
 
-* The top-level view shows **Folders** within the repository
-* Clicking a folder opens it and displays its **Files**
-* A **breadcrumb trail** at the top shows the current location; click any breadcrumb to navigate back
-* An empty folder displays the message: *"This folder is empty"*
+## Manage multiple Storage connections
+
+A team can have multiple Adobe Storage connections.
+
+1. In Workfront Fusion, click **Storage** in the left navigation. 
+   When multiple connections exist, tabs appear at the top of the Storage page, labeled with each connection's name.
+1. To switch to a different connection's repositories, click the tab for that connection.
+
+If a connection becomes invalid, such as if its token expired and could not be refreshed, it is automatically filtered out and does not appear as a tab. Fusion's scheduled token refresh keeps connections valid automatically.
 
 ## File information
 
@@ -42,15 +51,15 @@ Each file in the table shows:
 
 | Column | Description |
 | -------- | ------------- |
-| **Name** | File name with a document icon |
-| **Type** | File extension badge (e.g., PNG, PDF, JPG) |
-| **Size** | File size. Shows *"Processing…"* if the file was recently uploaded and the backend is still processing it |
-| **Created** | Creation date |
+| **Name** | File name with a document icon. |
+| **Type** | File extension badge, such as PNG, PDF, or JPG. |
+| **Size** | File size. Shows *"Processing…"* if the file was recently uploaded and the backend is still processing it. |
+| **Created** | Creation date. |
 
 Files also show a **version badge** (e.g., `v2`, `v3`) when multiple versions exist.
 
 ## Table controls
 
-* **Search/filter**: Filter files by name using the global search bar
-* **Sorting**: Click column headers to sort
-* **Pagination**: Choose 10, 25, 50, or 100 items per page (default: 25)
+* **Search/filter**: Filter files by name using the global search bar.
+* **Sorting**: Click column headers to sort.
+* **Pagination**: Choose 10, 25, 50, or 100 items per page. The default is 25.
