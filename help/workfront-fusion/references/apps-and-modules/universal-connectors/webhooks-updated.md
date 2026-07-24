@@ -81,7 +81,7 @@ For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/r
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -122,7 +122,7 @@ Basic authentication uses a username and password to authenticate to the service
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -152,7 +152,7 @@ Adobe Identity Management System (IMS) authentication uses your organization's A
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -229,6 +229,10 @@ Or, you can send the sample data via the [!UICONTROL HTTP] > [!UICONTROL Make a 
 1. Click **[!UICONTROL OK]** to save the data structure.
 
    The webhook's items are now available in the mapping panel for use with subsequent modules in the scenario.
+
+## Allowed origins / CORS
+
+When creating or editing a custom webhook in Fusion, the Allowed Origins field  lets you restrict which browser origins (websites) are allowed to call the webhook endpoint directly from client-side JavaScript, such as fetch/XHR. This is a CORS (Cross-Origin Resource Sharing) control, which is a separate boundary from IP restrictions and from the Authorization type (Basic auth / Client certificate / Adobe IMS).
 
 ## The webhook queue
 
