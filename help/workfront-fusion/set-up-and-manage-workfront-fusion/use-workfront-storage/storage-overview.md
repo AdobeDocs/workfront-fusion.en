@@ -42,9 +42,10 @@ When using
 | ------ | ----------- |
 | **Repository** | A top-level storage container in Adobe ESM, typically mapped to a project or workspace |
 | **Connection** | A secure link between Fusion and Adobe Storage, created automatically during initialization. Uses Adobe IMS authentication with automatic token refresh |
-| **Scenario** | A Fusion automation workflow that can be triggered on a schedule or manually |
-| **ESM** | Enterprise Storage Management — Adobe's cloud file storage service |
-| **IMS** | Adobe Identity Management System — Adobe's authentication and identity platform |
+| **ESM** | Enterprise Storage Management, Adobe's cloud file storage service |
+| **IMS** | Adobe Identity Management System, Adobe's authentication and identity platform |
+
+<!--
 
 ## UI Reference — Key Screens
 
@@ -73,3 +74,5 @@ When using
 * Right-side slide-out panel
 * Version list with date, version badge, and download button per entry
 * **"current"** label on the latest version
+
+-->
