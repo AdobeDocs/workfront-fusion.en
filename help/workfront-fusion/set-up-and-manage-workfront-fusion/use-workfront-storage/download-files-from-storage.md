@@ -9,13 +9,19 @@ product_v2:
 ---
 # Download files from Storage
 
+Using the Fusion Storage area, you can download files from your Adobe Storage.
+
 For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md).
 
-## How to download
+## Download a file
 
-1. Select a file by clicking on it in the table
-2. From the floating action bar that appears, click **"Download"**
-3. A **progress banner** appears at the top-right showing:
+1. In Workfront Fusion, click **Storage** in the left navigation. 
+1. Navigate to the repository and folder that contains the file you want to download.
+1. Select a file by clicking on it in the table.
+1. In the action bar that appears, click **Download**.
+
+A **progress banner** appears at the top-right showing:
+
    * File name
    * Download progress percentage
    * Bytes transferred
@@ -23,11 +29,12 @@ For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up
 
 The file is saved to the browser's default download location.
 
-## Download a specific version
+## Download a specific version of a file
 
-1. Select a file and click **"Versions"** from the action bar
-2. In the **Version History** panel, each version has its own **Download** button
-3. Click the download button next to the desired version
+1. In Workfront Fusion, click **Storage** in the left navigation. 
+1. Navigate to the repository and folder that contains the file you want to download.
+1. Select a file and click **"Versions"** in the action bar
+1. In the **Version History** panel, click **Download** next to the version that you want to download.
 
 If a download fails, a toast notification appears: *"Download failed — The file could not be downloaded. Please try again."*
 

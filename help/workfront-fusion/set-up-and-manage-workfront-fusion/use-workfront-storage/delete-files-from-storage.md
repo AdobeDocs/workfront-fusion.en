@@ -11,10 +11,14 @@ product_v2:
 
 For an overview of Storage, see [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md).
 
-1. Select a file by clicking on it in the table
-2. Click **"Delete"** from the floating action bar
-3. A **confirmation prompt** appears — confirm to proceed
-4. The file is removed from the listing
+1. In Workfront Fusion, click **Storage** in the left navigation. 
+1. Navigate to the repository and folder that contains the file you want to delete.
+1. Select a file by clicking on it in the table.
+1. Click **"Delete"** from the action bar.
+1. Confirm that you want to delete the file.
+
+
+The file is removed from the Storage area.
 
 >[!NOTE]
 >
