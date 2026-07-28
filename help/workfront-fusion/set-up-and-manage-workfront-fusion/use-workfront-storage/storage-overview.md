@@ -15,6 +15,8 @@ The Storage area in Workfront Fusion gives teams direct access to their Adobe En
 
 Storage is owned by teams, and requires the organization to be onboarded to Adobe Identity Management System (IMS) with access to Adobe Storage.
 
+Files in Fusion Storage are mirrored in Adobe Files (adobe.com/files), so any files that can be accessed in Adobe Files can be accessed in Fusion Storage. 
+
 For instructions on using Storage, see:
 
 * [Initialize Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/initialize-storage.md)
