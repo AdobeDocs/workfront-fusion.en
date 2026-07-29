@@ -2382,6 +2382,10 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Event subscription filters in the Workfront > [!UICONTROL Watch Events] modules 
 
+Filters in event subscriptions allow you to ensure that your scenarios run only when certain parameters are met. 
+
+### Event subscription filter best practices
+
 >[!NOTE]
 >
 >* We highly recommend using event subscription filters in your [!UICONTROL Watch Events] modules.
@@ -2390,7 +2394,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   For more information on the new event subscription version, see [Event subscription versioning](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning) in the Workfront documentation
 >
->   For resources on preserving your Workfront Fusion scenarios during the event subscription upgrade,  including a webinar recording, see [Preserving Your Fusion Scenarios During the Event Subscriptions V2 Upgrade(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)].
+>   For resources on preserving your Workfront Fusion scenarios during the event subscription upgrade,  including a webinar recording, see [Preserving Your Fusion Scenarios During the Event Subscriptions V2 Upgrade](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182).
 
 The Workfront [!UICONTROL Watch Events] module triggers scenarios based on a webhook that creates an event subscription in the Workfront API. The event subscription is a set of data that determines which events are sent to the webhook. For example, if you set up a [!UICONTROL Watch Events] module that is watching for issues, then the event subscription sends only events related to issues.
 
@@ -2424,7 +2428,7 @@ The following operators are available in the Workfront > Watch events filter:
 >
 >**Example:** Consider a scenario that processes new issues that are assigned to a specific user, Ana.
 >
->### Filter events by using an event subscription filter (recommended)
+>#### Filter events by using an event subscription filter (recommended)
 >
 >Using the event filter, you can set up the webhook to trigger the scenario when an issue is assigned to Ana when the issue is created. Ana has the userID b378489d8f7cd3cee0539260720a84b7.
 >
@@ -2432,7 +2436,7 @@ The following operators are available in the Workfront > Watch events filter:
 >
 >If 100 issues are created in a day, but only two of them are assigned to Ana, the scenario would execute twice.
 >
->### Filter events inside the scenario (not recommended)
+>#### Filter events inside the scenario (not recommended)
 >
 >To filter events so that only issues assigned to Ana are processed, you could create a filter after the [!UICONTROL Watch Events] module.
 >
@@ -2445,3 +2449,22 @@ For more information on Workfront event subscriptions, see [FAQs - Event Subscri
 For more information on webhooks, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
 For more information on filters in scenarios, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
+
+### Using Advanced filters
+
+The Workfront > Watch events module offers two types of filters. 
+
+* **Simple**: This filter provides an interface that allows you to select fields, operators, and values, along with AND and OR operators to create a filter.
+* **Advanced**: This filter allows you to upload JSON that represents your filter.
+
+#### Simple vs. Advanced filters
+
+The main difference between the two types is the State of the filter. 
+
+* **Simple**: When setting up a simple filter, you select whether you want to filter on a field's old state or new state. That is, you decide whether you want to activate the scenario when the field changes **from** a given value, or whether to activate when it changes **to** a given value. Using AND and OR allows you to include multiple fields and values, but they must share the same state. You cannot use the old state for some fields and the new state for others.
+* **Advanced**: You can configure the JSON in an advanced filter to specify values for both old and new states in the same filter. For example, you could specify that you want to trigger a scenario when a project moves from a Planning status to a Current status. This would exclude projects that move from Planning to Dead, or that move from On Hold to Current.
+
+#### Advanced filter examples
+
+<!--CHECK ON EDITING FILTERS-->
+
