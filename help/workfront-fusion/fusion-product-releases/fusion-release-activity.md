@@ -25,6 +25,8 @@ Adobe Workfront Fusion connects your apps and web services seamlessly so that yo
 
 ### July 2026
 
+* [Workfront Fusion release activity: Week of July 27, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-27.md)
+* [Workfront Fusion release activity: Week of July 20, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
 * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md) 
 
 

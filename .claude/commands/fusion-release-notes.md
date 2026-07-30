@@ -25,19 +25,6 @@ Ask the user (if not already provided) for the list of features/changes to docum
 - The help article(s) it links to (verify the path exists — do not guess)
 - Whether it requires user/admin action or is a deprecation (needs an `>[!IMPORTANT]` callout)
 
-### New connector? Offer a redirect
-
-If a feature is a **new connector launch** (the "{Connector} connector and modules now available" pattern), ask the user: *"Do you want to set up a redirect for this connector?"*
-
-- If they say no, move on.
-- If they say yes, ask for both:
-  - What it should redirect **from** (the source path)
-  - What it should redirect **to** (the destination path or URL)
-
-  Then follow Step 7 to add the entry.
-
-(This flow is a first pass — expect to refine the exact questions/behavior later.)
-
 ## Step 2: Determine the file name and date
 
 - Find the Monday (or release date) for the week being documented and confirm it with the user if ambiguous.
@@ -64,7 +51,7 @@ hidefromtoc: true
 Rules:
 - `title` and `description` are identical.
 - Always include the comma in the date (`July 20, 2026`), even though some older pages omit it — don't copy that inconsistency.
-- **Use `hidefromtoc: true` for every new page. Do not add an `exl-id` or `TQID`.** Those are assigned later once the page is published; inventing one is wrong.
+- **Use `hidefromtoc: true` for every new page. Do not add an `exl-id` or `TQID`.** Those are assigned later once the page is published; inventing one is wrong. (Pages from mid-2026 onward all follow this pattern — see `_fusion-release-notes-reference.md` if you need to check an example.)
 
 ### Body
 
@@ -104,19 +91,6 @@ Notes:
   {Regular description paragraph(s).}
   ```
 - Every feature should end with a "For more information, see [...]" link to the relevant help article. Verify the link target exists in the repo.
-- For a new connector, use the established pattern:
-  ```markdown
-  ## {Connector} connector and modules now available
-
-  You can now use Workfront Fusion to {what the connector lets you do, in plain terms}.
-
-  With the {Connector} modules, you can:
-
-  * {capability}
-  * {capability}
-
-  For more information, see [{Connector} modules](/help/workfront-fusion/references/apps-and-modules/{path}.md).
-  ```
 
 ## Step 4: Add the page to the overview index
 
@@ -158,23 +132,6 @@ Edit `help/workfront-fusion/TOC.md`:
 - [ ] New page added as the newest entry in `fusion-release-activity.md`, under the correct year/month
 - [ ] New page added as the newest entry in `TOC.md`, under the correct year heading
 - [ ] New year/month headings created if needed, with the previous year collapsed in `fusion-release-activity.md`
-- [ ] If a new connector: user was asked about a redirect, and it was handled per Step 7 if requested
-
-## Step 7: Handling a requested redirect
-
-This only applies if, in Step 1, the user said yes to setting up a redirect for a new connector.
-
-Redirects for this org live in a separate sibling repo, `redirects` (e.g. `C:\Users\rebeccas\Documents\GitHub\redirects` alongside this repo). Adding one:
-
-1. Open `redirects/redirects-prod.csv` in that repo (a 1:1 redirect CSV with `source`/`destination` columns).
-2. Build the new row from the from/to values the user gave you:
-   - `source` must start with `/en` (no spaces).
-   - `destination` can be a relative path starting with `/en`, or a full URL starting with `https` (no spaces).
-3. **Show the user the exact row you're about to add and ask them to confirm/check it** before writing anything.
-4. Once confirmed, append the row to `redirects/redirects-prod.csv`.
-5. Tell the user a PR still needs to be raised and merged in the `redirects` repo before the redirect goes live (per that repo's README) — this skill does not open the PR for them.
-
-Do not add regex redirects (`dangerous-regex-redirects/`) through this flow — only simple 1:1 redirects.
 
 ## Additional resources
 
