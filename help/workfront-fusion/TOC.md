@@ -362,6 +362,7 @@ nudge: true
             * [Adobe Acrobat Sign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
             * [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
             * [Adobe Campaign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
+            * [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
             * [Adobe Creative Cloud Libraries modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
             * [Adobe Experience Manager Assets modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
             * [Adobe Experience Manager Forms modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
@@ -383,7 +384,8 @@ nudge: true
             * [Adobe Target modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
             * [Adobe User Management modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
             * [Adobe Workfront modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-            * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Adobe Workfront Unified Review and Approvals modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
+            * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+            * [Adobe Workfront Unified Review and Approvals modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
             * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
             * [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
         * Connectors for third-party applications {#third-party-app-connectors}
