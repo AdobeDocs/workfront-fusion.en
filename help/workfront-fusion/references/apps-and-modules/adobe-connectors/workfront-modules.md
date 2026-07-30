@@ -791,6 +791,10 @@ See a list of the Workfront object types for which you can use this module in [W
 
 #### Misc action options
 
+* [Task](#task)
+* [Issue](#issue)
+* [Project](#project)
+
 ##### Task
 
 <table style="table-layout:auto">
@@ -2384,6 +2388,9 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Filters in event subscriptions allow you to ensure that your scenarios run only when certain parameters are met. 
 
+* [Event subscription filter best practices](#event-subscription-filter-best-practices)
+* [Using Advanced filters](#using-advanced-filters)
+
 ### Event subscription filter best practices
 
 >[!NOTE]
@@ -2464,7 +2471,11 @@ The main difference between the two types is the State of the filter.
 * **Simple**: When setting up a simple filter, you select whether you want to filter on a field's old state or new state. That is, you decide whether you want to activate the scenario when the field changes **from** a given value, or whether to activate when it changes **to** a given value. Using AND and OR allows you to include multiple fields and values, but they must share the same state. You cannot use the old state for some fields and the new state for others.
 * **Advanced**: You can configure the JSON in an advanced filter to specify values for both old and new states in the same filter. For example, you could specify that you want to trigger a scenario when a project moves from a Planning status to a Current status. This would exclude projects that move from Planning to Dead, or that move from On Hold to Current.
 
+<!--
+
 #### Advanced filter examples
+
+-->
 
 <!--CHECK ON EDITING FILTERS-->
 
