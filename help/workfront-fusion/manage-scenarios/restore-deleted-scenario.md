@@ -50,7 +50,7 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Restore a deleted scenario
 
-1. In the left navigation, click Team Overview.
+1. In the left navigation, click Org Overview.
 1. Click the **Recycle Bin** tab near the top of the window.
 1. (Optional) Filter the list of deleted scenarios by entering a search term in the **Search** bar, selecting a date range in the **Deleted between** field, or selecting a specific team from the **Team** dropdown.
 1. Select one or more scenarios that you want to restore, then click **Restore** in the bar at the bottom of the screen.
