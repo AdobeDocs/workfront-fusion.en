@@ -1,5 +1,5 @@
 ---
-title: Set Team Notification Options
+title: Set Notification Options
 description: Email notification options are set on the team level.
 author: Becky
 feature: Workfront Fusion
@@ -9,11 +9,21 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 ---
-# Set Team Notification Options
+# Set notification options
 
 In your organization uses the Adobe Unified Shell, you receive notifications through the Adobe Notifications area. 
 
 If your organization has not been migrated to the Adobe Unified Shell, you can choose the notifications a team receives. Notifications are set on the team level.
+
+You can control which situations notifications are sent for:
+
+* Notify on warning: Fusion sends a notification when a scenario execution logs a warning.
+* Notify on error: Fusion sends a notification when a scenario execution fails.
+* Notify when scenario is disabled: Fusion sends a notification when a scenario gets auto-deactivated, such as after too many consecutive errors.
+
+You can set notifications at the team or scenario level. Scenario-level notifications override notifications set at the team level. That is, if a scenario setting directly contradicts a team setting, the scenario setting is followed. The team notification settings display whether there are any overrides for that setting.
+
+By default, all notifications are enabled.
 
 ## Access requirements
 
@@ -51,6 +61,54 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
+## View and manage team-level notification settings
+
+1. In Workfront Fusion, click **Team overview** in the left navigation.
+1. Click the **Notification options** tab.
+
+   The Notification options list opens. If there are any overrides, the number of overrides appears next to that setting.
+
+1. (Conditional) If there are any overrides, to view which scenarios override the team notification setting, click the three-dot menu for that setting.
+
+   You can click on a scenario in this menu to go directly to that scenario.
+
+   ![Override scenario menu](assets/view-notification-override.png)
+
+1. To restore default settings for a notification type, see [Restore notification defaults](#restore-notification-defaults) int his article.
+
+Changes to the Notifications options list are saved automatically.
+
+## Set scenario-level notification settings
+
+Notification setting for individual scenarios are set in that scenario's Scenario settings panel.
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Click the [!UICONTROL Scenario settings] icon ![Scenario settings icon](assets/scenario-settings-icon.png) at the bottom of your scenario.
+1. In the Scenario Settings panel, click **Show advanced settings** at the bottom of the panel.
+1. Adjust the **Notify on warning**, **Notify on error**, and **Notify when scenario is disabled** settings as desired.
+1. Click **OK** to save and exit the scenario settings.
+
+## Restore notification defaults
+
+You can restore a team notification setting to the defaultfrom the Notification options tab. This sets the notification option to enabled and removes any scenario notification overrides for that notification type.
+
+If the notification type is currently set to the default, the **Restore to default** icon is not visible.
+
+1. In Workfront Fusion, click **Team overview** in the left navigation.
+1. Click the **Notification options** tab.
+
+   The Notification options list opens. If a notification type is not currently set to the default, the Restore to default icon is visible for that notification type.
+
+   ![Restore to default visible](assets/restore-notification-defaults.png)
+
+1. To restore default settings for that notification type, including any scenario overrides, click the **Reset to default** icon ![Reset to default](assets/restore-default-icon.png) for that notification type.
+
+Changes to the Notifications options list are saved automatically.
+
+<!--
+
 ## Set notification options
 
 If your organization is not on the Adobe Unified Shell, you can set notification settings directly in Fusion.
@@ -82,3 +140,5 @@ Email notification options are set on the team level.
 </table>
 
 Changes to notification options save automatically.
+
+-->
