@@ -18,7 +18,7 @@ topic_v2:
 
 ### now
 
-Gets the current time in YYYY-MM-DD-hh:mm:ss format.
+Gets the current time in` YYYY-MM-DD-hh:mm:ss` format.
 
 ### timestamp
 
