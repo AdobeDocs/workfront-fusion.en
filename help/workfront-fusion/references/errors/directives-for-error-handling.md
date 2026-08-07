@@ -76,6 +76,7 @@ The following error handling directives are available in Workfront Fusion.
   </tr> 
 
   <!--
+  
   <tr> 
    <td role="rowheader"> <p>Retry</p> <p> <img src="assets/retry.png"> </p> </td> 
    <td> <p>In some cases it may be useful to re-execute a failing module when there is a chance that the reason for the failure might pass over time.</p> <p>Workfront Fusion currently does not offer the Retry directive, though several workarounds can be employed to mimic its functionality. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/retry.md" class="MCXref xref">Retry error handling</a>.</p> </td> 
