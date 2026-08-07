@@ -23,7 +23,11 @@ You can control which situations notifications are sent for:
 
 You can set notifications at the team or scenario level. Scenario-level notifications override notifications set at the team level. That is, if a scenario setting directly contradicts a team setting, the scenario setting is followed. The team notification settings display whether there are any overrides for that setting.
 
-By default, all notifications are enabled.
+By default, all notifications types are enabled in Workfront Fusion.
+
+>[!IMPORTANT]
+>
+>To receive any notifications from Workfront Fusion, you must have Fusion notifications enabled in your Adobe CX Enterprise notification settings. You can access these settings by clicking the notification bell in the upper-right corner of the screen and clicking the settings icon.
 
 ## Access requirements
 
@@ -48,10 +52,9 @@ By default, all notifications are enabled.
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Access level configurations</td> 
+   <td role="rowheader">Role</td> 
    <td> 
-     <p>You must be a Workfront Fusion administrator for your organization.</p>
-     <p>You must be a Workfront Fusion administrator for your team.</p>
+     <p>You must be a member of the Fusion organization and team that you are adjusting notification settings for.</p>
    </td> 
   </tr> 
  </tbody> 
