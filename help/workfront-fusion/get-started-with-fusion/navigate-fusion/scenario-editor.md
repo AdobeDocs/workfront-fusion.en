@@ -75,7 +75,7 @@ You may need to click on the three-dot icon in the Controls area to view some of
 
 | Action | Details |
 | ---------- | ---------- |
-| Save <p>![Save icon](assets/save-icon.png)</p> | After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are only available for 60 days. |
+| Save <p>![Save icon](assets/save-icon.png)</p> | <p>After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are available for 60 days after the next scenario version is created. </p><p>To retain scenario version history beyond 60 days for audit purposes, we recommend saving and archiving a blueprint of the scenario in another location.</p> |
 | Scenario settings <p>![Scenario settings icon](assets/scenario-settings-icon.png)</p> | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notes  <p>![Notes icon](assets/notes-icon.png)</p> | Make notes about the scenario. Other users can view these notes when they are in the scenario. |
 | Auto-align <p>![Auto-align icon](assets/auto-align-icon.png)</p> | Auto-align the modules in your scenario. |
