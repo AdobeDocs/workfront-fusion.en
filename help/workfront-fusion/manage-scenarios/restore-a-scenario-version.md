@@ -15,6 +15,11 @@ Adobe Workfront Fusion saves a version of your scenario every time it changes.
 
 You can view, restore, rename, or download blueprints for previous versions of a scenario.
 
+>[!NOTE]
+>
+>Previously saved scenario versions are available for 60 days after the next scenario version is created. 
+>To retain scenario version history beyond that time frame for audit purposes, we recommend saving and archiving a blueprint of the scenario in another location.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
