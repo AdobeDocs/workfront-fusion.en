@@ -217,13 +217,11 @@ If you see the map button above a field or function, you can use it to set varia
 
 ### Triggers 
 
-<!--
-* [Watch Events](#watch-events) 
-* [Watch Record](#watch-record) 
+* [Watch Events](#watch-events)
 * [Watch Field](#watch-field)
--->
+* [Watch Record](#watch-record)
 
-+++ **[!UICONTROL Watch Events]**
+#### [!UICONTROL Watch Events]
 
 This trigger module executes a scenario in real time when objects of a specific type are added, updated, or deleted in Workfront.
 
@@ -294,9 +292,7 @@ For more information, see the section [Examples of Event Payloads](https://exper
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Watch Field]**
+#### [!UICONTROL Watch Field]
 
 This trigger module executes a scenario when a field that you specify is updated. The module returns both the old and the new value of the specified field. You can map this information in subsequent modules in the scenario.
 
@@ -331,9 +327,7 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Watch Record]**
+#### [!UICONTROL Watch Record]
 
 This trigger module executes a scenario when objects of a specific type are added, updated, or both. The module returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario. 
 
@@ -384,25 +378,21 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-
 ### Actions
 
-<!--
-* [Convert object](#convert-object) 
-* [Create a record (attaching custom forms)](#create-a-record-attaching-custom-forms) 
-* [Create a record](#create-a-record) 
-* [Custom API Call](#custom-api-call) 
-* [Delete Record](#delete-record) 
-* [Download Document](#download-document) 
-* [Misc Action](#misc-action) 
-* [Read a Record](#read-a-record) 
-* [Update Record](#update-record) 
+* [Convert object](#convert-object)
+* [Create a record](#create-a-record)
+* [Custom API Call](#custom-api-call)
+* [Delete Record](#delete-record)
+* [Download Document](#download-document)
+* [Get a presigned file URL](#get-a-presigned-file-url)
+* [Misc Action](#misc-action)
+* [Read a Record](#read-a-record)
+* [Update Events Payload Version](#update-events-payload-version)
+* [Update a record](#update-a-record)
 * [Upload Document](#upload-document)
--->
 
-+++ **[!UICONTROL Convert object]**
+#### [!UICONTROL Convert object]
 
 This action module makes one of the following conversions:
 
@@ -457,9 +447,7 @@ This action module makes one of the following conversions:
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Create a record]** 
+#### [!UICONTROL Create a record]
 
 This action module creates an object, such as a project, task, or issue in Workfront, and allows you to add a custom form to the new object. The module allows you to select which of the object's fields are available in the module.
 
@@ -525,8 +513,6 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   For instructions, see [Manage multiple users | Bulk CSV upload](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html) in the Adobe documentation.
 
-+++
-
 <!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
@@ -580,7 +566,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL Custom API Call]**
+#### [!UICONTROL Custom API Call]
 
 This action module lets you make a custom authenticated call to the Workfront API. This way, you can create a data flow automation that can't be accomplished by the other Workfront modules.
 
@@ -637,9 +623,7 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **[!UICONTROL Delete Record]**
+#### [!UICONTROL Delete Record]
 
 This action module deletes an object, such as a project, task, or issue in Workfront.
 
@@ -686,9 +670,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >1. Add error handling to the Delete Record module to Ignore the error caused by the 40 second timeout. 
 
 
-+++
-
-+++ **[!UICONTROL Download Document]**
+#### [!UICONTROL Download Document]
 
 This action module downloads a document from Workfront.
 
@@ -715,9 +697,7 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
-+++ **Get a presigned file URL**
+#### Get a presigned file URL
 
 This action module gets presigned file URLs that can later be used by other APIs.
 
@@ -740,9 +720,7 @@ This action module gets presigned file URLs that can later be used by other APIs
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Misc Action]**
+#### [!UICONTROL Misc Action]
 
 This action module lets you perform actions against the API.
 
@@ -789,13 +767,13 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-#### Misc action options
+##### Misc action options
 
 * [Task](#task)
 * [Issue](#issue)
 * [Project](#project)
 
-##### Task
+###### Task
 
 <table style="table-layout:auto">
  <col> 
@@ -843,7 +821,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-##### Issue
+###### Issue
 
 <table style="table-layout:auto">
  <col> 
@@ -890,7 +868,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-##### Project
+###### Project
 
 <table style="table-layout:auto">
  <col> 
@@ -943,9 +921,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-+++
-
-+++ **[!UICONTROL Read a Record]**
+#### [!UICONTROL Read a Record]
 
 This action module retrieves data from a single record.
 
@@ -995,8 +971,6 @@ When you are configuring this module, the following fields display.
 </table>
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
-
-+++
 
 <!--
 
@@ -1052,11 +1026,9 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
 -->
 
-+++ **Update Events Payload Version**
+#### Update Events Payload Version
 
 Workfront recently released a new version of its event subscription service. The new version is not a change to the Workfront API, but rather a change to the event subscription functionality. This action module updates the event payload version used for this scenario.
 
@@ -1080,9 +1052,7 @@ For resources on preserving your Workfront Fusion scenarios during the event sub
 </table>
 
 
-+++
-
-+++ **Update a record**
+#### Update a record
 
 
 This action module updates an object, such as a project, task, or issue. The module allows you to select which of the object's fields are available in the module.
@@ -1128,8 +1098,6 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 > When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-
-+++
 
 <!--
 
@@ -1180,11 +1148,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-+++
-
 -->
 
-+++ **[!UICONTROL Upload Document]**
+#### [!UICONTROL Upload Document]
 
 This action module uploads a document to a Workfront object, such as a project, task, or issue. This module uploads the document in chunks, which makes the upload process smoother for Workfront. 
 
@@ -1224,8 +1190,6 @@ When you are configuring this module, the following fields display.
 </table>
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
-
-+++
 
 <!--
 
@@ -1274,12 +1238,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ### Searches
 
-<!--
-* [Read Related Records](#read-related-records) 
+* [Read Related Records](#read-related-records)
 * [Search](#search)
--->
+* [Search (Legacy)](#search-legacy)
 
-+++ **[!UICONTROL Read Related Records]**
+#### [!UICONTROL Read Related Records]
 
 This search module reads records that match the search query you specify, in a particular parent object.
 
@@ -1314,9 +1277,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Search]**
+#### [!UICONTROL Search]
 
 This search module looks for records in an object in Workfront that match the search query you specify.
 
@@ -1371,9 +1332,7 @@ When you are configuring this module, the following fields display.
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL Search (Legacy)]**
+#### [!UICONTROL Search (Legacy)]
 
 >[!IMPORTANT]
 >
@@ -1428,8 +1387,6 @@ When you are configuring this module, the following fields display.
   </tr> 
  </tbody> 
 </table>
-
-+++
 
 <!--
 not visible Jan 6, 2025
@@ -1488,13 +1445,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Workfront object types available for each Workfront module
 
-<!--
-[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
-* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
+* [Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
+* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module)
 * [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
--->
 
-+++**Object types available for each Workfront trigger module**
+### Object types available for each Workfront trigger module
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1758,9 +1713,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Object types available for each Workfront action module**
+### Object types available for each Workfront action module
 
 >[!NOTE]
 >
@@ -2181,9 +2134,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**Object types available for each Workfront search module**
+### Object types available for each Workfront search module
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2381,8 +2332,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
  We recommend that you double check to ensure this works the way you would expect it to.
-
-+++
 
 ## Event subscription filters in the Workfront > [!UICONTROL Watch Events] modules 
 
