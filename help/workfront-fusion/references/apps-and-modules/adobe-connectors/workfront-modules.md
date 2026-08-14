@@ -279,6 +279,13 @@ The module returns any standard fields associated with the record, along with an
        <p><b>NOTE</b>: If you choose [!UICONTROL New and Updated Records], the webhook creation creates 2 event subscriptions (for the same webhook address).</p>
        </td> 
      </tr> 
+     <tr> 
+      <td>[!UICONTROL Enable secured hooks]</td> 
+      <td>
+       <p>Choose whether you want enableauthToken-based security for this webhook.</p><p>
+       <b>NOTE</b>: After August 23, 2026, Fusion will enable authToken-based security by default for all Workfront > Watch Event modules, including existing ones. If a specific webhooks breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option before August 23, 2026.</p>
+       </td> 
+     </tr> 
     </tbody> 
    </table>
 

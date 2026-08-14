@@ -1465,6 +1465,11 @@ This trigger module starts a scenario when a record, record type, or workspace i
 >
 >For more information on editing webhooks, see [Edit webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
+>[!NOTE]
+>
+>After August 23, 2026, Fusion will enable authToken-based security by default for all Workfront Planning > Watch Event modules, including existing ones.
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
