@@ -3,8 +3,8 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
-title: The Fusion context reference
-description:  The Fusion context reference
+title: Publish your custom extension
+description: Publish your custom extension
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -22,7 +22,7 @@ feature_v2:
 >
 >This article assumes some familiarity with software development tools. 
 
-Your extension runs in Fusion only after it is **built**, **deployed** to Adobe, and (for general availability) **approved** for your organization. The procedures on this page show how publish your extension and how to verify the result.
+Your extension runs in Fusion only after it is **built**, **deployed** to Adobe, and (for general availability) **approved** for your organization. The procedures on this page show how to publish your extension and how to verify the result.
 
 This information has been adapted from Adobe's official documentation and applies specifically to Workfront Fusion.
 

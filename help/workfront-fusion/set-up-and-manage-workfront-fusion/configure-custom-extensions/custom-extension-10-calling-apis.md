@@ -3,8 +3,8 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
-title: Troubleshooting custom extensions
-description:  Troubleshooting custom extensions
+title: Calling Workfront and Fusion APIs from your extension
+description: Calling Workfront and Fusion APIs from your extension
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog

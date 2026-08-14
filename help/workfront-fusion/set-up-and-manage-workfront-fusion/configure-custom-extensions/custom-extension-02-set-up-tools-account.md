@@ -62,7 +62,7 @@ The Adobe tooling runs on **Node.js**. You must install the **LTS** version (18 
 >[!TIP]
 >
 >* If you work with multiple Node versions, a version manager such as `nvm` is convenient, but it is optional. 
->* The Adobe CLI requires Node 18 or newer. very new, non-LTS versions can occasionally cause issues, so we recommend using LTS.
+>* The Adobe CLI requires Node 18 or newer. Very new, non-LTS versions can occasionally cause issues, so we recommend using LTS.
 
 ## Install the Adobe I/O CLI (`aio`)
 

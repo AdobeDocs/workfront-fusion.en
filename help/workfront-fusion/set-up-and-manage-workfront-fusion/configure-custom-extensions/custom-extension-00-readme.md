@@ -3,7 +3,7 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
-title: "UI Extensibility overview"
+title: "Custom UI extensions: article index"
 description: Custom extensions in Workfront Fusion
 author: Becky
 feature: Workfront Fusion
@@ -36,7 +36,7 @@ By the end of this guide you will have:
 1. A free Adobe **App Builder** project. This is where your extension lives.
 2. A small web app that renders your custom UI.
 3. That web app connected to one of Fusion's extension points so it appears in the Fusion navigation.
-4. Your UI reading live*context from Fusion, such as current user, organization, and team, and reacting when the user switches org or team.
+4. Your UI reading live context from Fusion, such as current user, organization, and team, and reacting when the user switches org or team.
 5. The extension published so other users in your organization can see it.
 
 <!--
@@ -45,10 +45,10 @@ By the end of this guide you will have:
 
 ```
   Fusion (the "Host")                         Your extension (the "Guest")
-  â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;                         â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;â"&euro;
+  ───────────────────────────────                         ──────────────────────────────
   Left navigation                             A web app hosted by Adobe
-   â""â"&euro; Organization                            (App Builder + UI Extensibility)
-       â""â"&euro; [Your extension button]  â"&euro;â"&euro; click â"&euro;â–¶ Fusion opens your UI in an iframe
+   └── Organization                            (App Builder + UI Extensibility)
+       └── [Your extension button]  ── click ──▶ Fusion opens your UI in an iframe
                                               and sends it live context:
                                                * signed-in user
                                                * active organization
@@ -66,7 +66,7 @@ Read the pages in order the first time. Later you can jump straight to the one y
 
 | # | Page | What it covers |
 | --- | ------ | ---------------- |
-| 1 | [Overview and key concepts](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md) | The vocabulary , the architecture, and what each Fusion extension point is for. |
+| 1 | [Overview and key concepts](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md) | The vocabulary, the architecture, and what each Fusion extension point is for. |
 | 2 | [Set up your tools and Adobe account](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md) | Node.js, the Adobe I/O CLI, signing in, and creating your project in the Adobe Developer Console. |
 | 3 | [Create the project and configure it for Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md) | Generate a generic App Builder project with the `aio` command line (not a product-specific template). Then, point your project at a Fusion extension point and register your widget. |
 | 5 | [Build the UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md) | Render your custom screen and complete the connection ("handshake") with Fusion. |
@@ -80,8 +80,8 @@ Read the pages in order the first time. Later you can jump straight to the one y
 
 Fusion currently exposes these extension points:
 
-* `fusion/nav-organization/1` â&euro;" appears under the **Organization** section.
-* `fusion/nav-team/1` â&euro;" appears under the **Team** section.
+* `fusion/nav-organization/1` — appears under the **Organization** section.
+* `fusion/nav-team/1` — appears under the **Team** section.
 
 Before you can publish against one of these, the extension point must be onboarded for your Adobe organization. If your publish step fails saying the extension point "does not exist," see [Troubleshooting](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
 

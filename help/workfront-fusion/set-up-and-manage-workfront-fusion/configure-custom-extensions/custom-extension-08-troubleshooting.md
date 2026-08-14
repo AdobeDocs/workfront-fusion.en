@@ -4,7 +4,7 @@ product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
 title: Troubleshooting custom extensions
-description:  Troubleshooting custom extensions
+description: Troubleshooting custom extensions
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -59,7 +59,7 @@ Once onboarding is confirmed, re-run `aio app deploy`.
 
 * `attach` is only in the registration component, not in the visible widget.
 * The `url` in `getWidget()` points to a route that renders the **registration** component (or a blank page) instead of your widget.
-* The `id` passed to `attach` differs from the `id` used in `register`. They must be identica, so keep both in `Constants.js`.
+* The `id` passed to `attach` differs from the `id` used in `register`. They must be identical, so keep both in `Constants.js`.
 
 **Fix:** Make sure your **visible** component calls `attach({ id })`:
 
@@ -69,7 +69,7 @@ useEffect(() => {
 }, []);
 ```
 
-For more information, see [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md)
+For more information, see [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
 
 
 
@@ -113,13 +113,13 @@ Fusion only allows extensions hosted on Adobe's App Builder CDN (`*.adobeio-stat
 
 **Meaning:** With `require-adobe-auth: true`, Adobe's gateway validates the call before your action runs and can reject it or drop custom headers your upstream needs, surfacing as a `401`.
 
-**Fix:** Set `require-adobe-auth: false` on the action **and** enforce authorization.  Require an `Authorization` bearer in the action, forward it upstream, and keep a strict target allowlist. See [require-adobe-auth: true vs. false](./10-calling-apis.md#require-adobe-auth-true-vs-false).
+**Fix:** Set `require-adobe-auth: false` on the action **and** enforce authorization yourself. Require an `Authorization` bearer in the action, forward it upstream, and keep a strict target allowlist. See [require-adobe-auth: true vs. false](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md#require-adobe-auth-true-vs-false).
 
 ## Fusion `GET /api/v3/hooks` returns 400
 
 **Meaning:** The hooks endpoint is **team-scoped**, so `teamId` is a required query parameter.
 
-**Fix:** Call `/api/v3/hooks?teamId=<team.id>`. Hooks come back for the active team only. To cover an organization, loop its teams and merge. Scenarios, by contrast, accept `organizationId`. See [Fusion v3 API specifics](./10-calling-apis.md#fusion-v3-api-specifics).
+**Fix:** Call `/api/v3/hooks?teamId=<team.id>`. Hooks come back for the active team only. To cover an organization, loop its teams and merge. Scenarios, by contrast, accept `organizationId`. See [Fusion v3 API specifics](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md#fusion-v3-api-specifics).
 
 
 ## `aio` errors

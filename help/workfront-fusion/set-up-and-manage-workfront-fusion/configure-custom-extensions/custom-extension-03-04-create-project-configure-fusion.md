@@ -4,7 +4,7 @@ product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
 title: Create a project for UI Extensibility
-description:  Create a project for UI Extensibility
+description: Create a project for UI Extensibility
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -42,7 +42,7 @@ It may be useful to familiarize yourself with the following concepts and termino
 * There are two ways to create a project:
 
    * **Automatic (recommended):** The command `aio app init` creates the project and workspaces for you while generating the code. This article describes this process.
-   * **Manual:** You create the project yourself in the Developer Console first, then point `aio` at it. We recommend doing this only  if your organization requires projects to be created centrally.
+   * **Manual:** You create the project yourself in the Developer Console first, then point `aio` at it. We recommend doing this only if your organization requires projects to be created centrally.
 
 * When deciding which workspace to use, we recommend starting in **Stage**. Fusion discovers Stage-published extensions during development and testing. You can promote to **Production** later. 
 
@@ -52,7 +52,7 @@ It may be useful to familiarize yourself with the following concepts and termino
 ## Run `aio app init`
 
 1. Open a terminal.
-1. In the terminal, move to the folder where you keep projects
+1. In the terminal, move to the folder where you keep projects.
 1. Run:
 
    ```sh
@@ -137,7 +137,7 @@ Before changing anything, make sure the empty project builds
    aio app build
    ```
 
-   If this completes without errors, your tools and project are correctly configured. You are ready to connect the project it to Fusion.
+   If this completes without errors, your tools and project are correctly configured. You are ready to connect the project to Fusion.
 
    >[!TIP]
    >
@@ -303,4 +303,4 @@ The important part is the `register(...)` call:
 
 The backend of your extension is now complete. The next step into build the extension's UI.
 
-For instructions ob building the UI, see [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
+For instructions on building the UI, see [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).

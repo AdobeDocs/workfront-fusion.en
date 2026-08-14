@@ -4,7 +4,7 @@ product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
 title: The Fusion context reference
-description:  The Fusion context reference
+description: The Fusion context reference
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -29,7 +29,7 @@ When your UI calls `attach(...)`, Fusion shares a **context** object describing 
 * **Initial values:** `connection.sharedContext.get("<key>")`
 * **Updates:** Listen for the `contextchange` event. The latest object arrives on `event.detail.context`.
 
-For the full code pattern, see See [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
+For the full code pattern, see [Build the custom extension UI](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-05-build-ui-procedure.md).
 
 ```js
 const organization = connection.sharedContext.get("organization");
@@ -60,7 +60,7 @@ Each entity has a **Fusion ID** (used by Fusion's own APIs) and, where it exists
 
 ## `organization` fields
 
-THese fields are found in the active organization record. Most extensions require only `id`, `name`, and the identifiers. 
+These fields are found in the active organization record. Most extensions require only `id`, `name`, and the identifiers. 
 
 | Field | Type | Description |
 | ------- | ------ | ------------- |
@@ -112,7 +112,7 @@ These fields apply to the signed-in Fusion user.
 | `name` | string | Full name. |
 | `email` | string | Email address. |
 | `avatar` | string | Avatar image URL. |
-| `locale` | string | User locale , such as `en`. |
+| `locale` | string | User locale, such as `en`. |
 | `language` | string | Preferred language, when set. |
 | `timezone` | string | Time zone name. |
 | `timezoneId` | string | Time zone setting id. |
@@ -123,7 +123,7 @@ These fields apply to the signed-in Fusion user.
 
 >[!NOTE]
 >
-> The `user` object may include additional internal fields. You should rely only on the fields documented her. Other fields can change without notice, and some authentication-related must never be logged or displayed.
+> The `user` object may include additional internal fields. You should rely only on the fields documented here. Other fields can change without notice, and some authentication-related fields must never be logged or displayed.
 
 ## Dates 
 
@@ -154,7 +154,7 @@ Always re-read all the keys you use inside your `contextchange` handler rather t
 To turn `imsToken` (plus `organization.id` / `team.id`) into real Workfront or
 Fusion data, you cannot call those APIs directly from the browser, because CORS blocks
 it. Route the call through a small App Builder runtime action instead. See
-[Calling Workfront and Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom%20extension-10-calling-apis.md).
+[Calling Workfront and Fusion APIs](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-10-calling-apis.md).
 
 
 To continue the process of creating a custom extension, see [Publish your extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).

@@ -4,7 +4,7 @@ product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
 title: Build the custom extension UI
-description:  Build the custom extension UI
+description: Build the custom extension UI
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -25,7 +25,7 @@ feature_v2:
 
 This procedure describes how to build the screen users actually see, and complete the **connection ("handshake")** with Fusion. 
 
-During this process, it is important to recallthat your extension runs in two frames: the hidden **registration** frame and the visible **UI** frame.
+During this process, it is important to recall that your extension runs in two frames: the hidden **registration** frame and the visible **UI** frame.
 
 For information on frames in relation to custom extensions, see [Frames included in a UI Extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-01-overview.md#frames-included-in-a-ui-extension).
 
@@ -61,7 +61,7 @@ Both frames load the same `index.html`; a small front-end router decides which c
    These routes map to previous configuration as follows:
 
    * The default route (`index`) renders **`ExtensionRegistration`**, the hidden frame that calls `register(...)`.
-   * The `my-widget` route renders **`DashboardWidget`**, your visible UI. This matches the `url: "/index.html#/my-widget"` you returned from `getWidget()` in [the previous page](./04-configure-for-fusion.md).
+   * The `my-widget` route renders **`DashboardWidget`**, your visible UI. This matches the `url: "/index.html#/my-widget"` you returned from `getWidget()` in [the previous page](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-03-04-create-project-configure-fusion.md).
 
    >[!NOTE]
    >
@@ -156,7 +156,7 @@ export default function DashboardWidget() {
     return () => cleanup();
   }, []);
 
-  if (!context) return <p>Connecting to Fusionâ&euro;¦</p>;
+  if (!context) return <p>Connecting to Fusion...</p>;
 
   return (
     <div>

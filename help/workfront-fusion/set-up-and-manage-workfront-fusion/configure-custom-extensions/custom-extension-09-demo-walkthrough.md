@@ -3,8 +3,8 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 keywords: fusion
 navigation-topic: workfront-fusion-navigation-topic
-title: Troubleshooting custom extensions
-description:  Troubleshooting custom extensions
+title: Demo walkthrough of a custom extension
+description: Demo walkthrough of a custom extension
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -52,7 +52,7 @@ aio console org select  # pick the org you'll demo in (same org as Fusion)
 
 Two things must be true in the demo org:
 
-* The `fusion/nav-organization/1` extension point is onboarded for the org. If it is not onboarded, deploy fails with error 1060. FOr more information, see [Troubleshooting custom extensions](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
+* The `fusion/nav-organization/1` extension point is onboarded for the org. If it is not onboarded, deploy fails with error 1060. For more information, see [Troubleshooting custom extensions](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
 * In the Fusion host, the `fusion-ui-extensions` Split flag is **on** (it defaults to `on`). The host discovers from the Stage workspace and auto-selects the stage vs. prod App Registry from your IMS token, so a Stage deploy is all you need to demo.
 
 ## Step 1: Generate the app from the generic template
@@ -67,7 +67,7 @@ cd my-fusion-extension
 
 >[!NOTE]
 >
->If you Prefer the menu, run `aio app init my-fusion-extension`, choose **Add extensions or standalone app** > **Templates**, and select **"App Builder UIX Extension for Experience Cloud Shell"**.
+>If you prefer the menu, run `aio app init my-fusion-extension`, choose **Add extensions or standalone app** > **Templates**, and select **"App Builder UIX Extension for Experience Cloud Shell"**.
 
 You will get a set of files, including the following:
 
@@ -86,7 +86,7 @@ my-fusion-extension/
 
 ## Step 2: Add the Fusion guest library
 
-The template already includes React, React Spectrum and exc-app. Add the one library that talks to the Fusion host:
+The template already includes React, React Spectrum, and exc-app. Add the one library that talks to the Fusion host:
 
 ```sh
 npm install @adobe/uix-guest
@@ -102,7 +102,7 @@ extensions:
     $include: src/dx-excshell-1/ext.config.yaml
 ```
 
-You do not need to change anything else in the config. The folder name `dx-excshell-1` is internal and doesn't affect Fusion, so you can leave it. Rrenaming would also mean updating any action paths. Skip that for the demo.
+You do not need to change anything else in the config. The folder name `dx-excshell-1` is internal and doesn't affect Fusion, so you can leave it. Renaming would also mean updating any action paths. Skip that for the demo.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ function ExtensionRegistration() {
   };
   init().catch(console.error);
 
-  return <Text>Registering with Fusionâ&euro;¦</Text>;
+  return <Text>Registering with Fusion...</Text>;
 }
 
 export default ExtensionRegistration;
@@ -185,14 +185,14 @@ export default function DashboardWidget() {
 
   return (
     <View padding="size-300">
-      <Heading level={2}>Hello from App Builder ðŸ'‹</Heading>
+      <Heading level={2}>Hello from App Builder</Heading>
       {!ctx ? (
-        <Text>Connecting to Fusionâ&euro;¦</Text>
+        <Text>Connecting to Fusion...</Text>
       ) : (
         <Flex direction="column" gap="size-100" marginTop="size-200">
           <Text>User: {ctx.user?.name ?? ctx.imsUserId}</Text>
           <Text>Organization: {ctx.organization?.name} (id {ctx.organization?.id})</Text>
-          <Text>Team: {ctx.team?.name ?? "â&euro;""}</Text>
+          <Text>Team: {ctx.team?.name ?? "-"}</Text>
         </Flex>
       )}
     </View>
@@ -200,7 +200,7 @@ export default function DashboardWidget() {
 }
 ```
 
-## `App.js`
+### `App.js`
 
 The generated router already sends `index` / `index.html` to `ExtensionRegistration`. Add a route for the widget and import it:
 
@@ -263,7 +263,7 @@ Stage is enough to demo. To release organization-wide, switch to the Production 
 You may want to make the following points during your live demo:
 
 * **"I started from the generic Experience Cloud Shell template."** It scaffolds the whole SPA shell, so I only retargeted the extension point and edited two files.
-* **"Fusion is the host, my app is the guest."** They run in separate frames and talk over Adobe's UI Extensibility SDK â&euro;" no custom networking.
+* **"Fusion is the host, my app is the guest."** They run in separate frames and talk over Adobe's UI Extensibility SDK, with no custom networking.
 * **"Registration vs. view."** The hidden frame *registers* what I offer (`dashboard.getWidget`), and the visible frame *attaches* and reads context.
 * **"Stage is enough."** The host reads the Stage workspace and auto-picks the stage/prod registry from my token, so I didn't need a production release.
 * **"Live context."** Switching org or team re-sends context, and the guest re-renders.
