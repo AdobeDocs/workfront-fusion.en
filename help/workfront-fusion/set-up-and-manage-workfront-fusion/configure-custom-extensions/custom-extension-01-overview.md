@@ -92,7 +92,7 @@ Based on which extension point is selected, Fusion adds a button with the extens
 When Fusion loads your guest, your extension runs in **two** frames:
 
 1. **The registration frame (invisible).** Runs first, in the background. The registration frame tells Fusion what your extension offers. For example, it may indicate that it has a dashboard widget, and send the widget's title and the URL of its UI. The registration frame does this by calling `register(...)`. It renders no visible UI.
-2. **The UI frame (visible).** This is the page Fusion shows to the user. It must announce itself to the host by calling `attach(...)`. If it never calls `attach`, Fusion waits and eventually times out with an error.
+1. **The UI frame (visible).** This is the page Fusion shows to the user. It must announce itself to the host by calling `attach(...)`. If it never calls `attach`, Fusion waits and eventually times out with an error.
 
 >[!BEGINSHADEBOX]
 

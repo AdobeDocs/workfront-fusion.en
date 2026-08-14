@@ -29,12 +29,14 @@ This article presents some solutions to the problems you are most likely to enco
 
 If something does not work, verify these first:
 
-* Node.js is version **18 or 20** (`node --version`).
-* You are signed in (`aio login`) and on the **correct org/project/workspace** (`aio console where`).
-* The extension point name matches **exactly**, including the version: `fusion/nav-organization/1`.
-* The `url` in `getWidget()` matches a **route** in your app.
-* Your visible UI calls **`attach({ id })`**.
-* You deployed **and** published to the workspace Fusion is reading (`Stage` during testing).
+* Node.js is version 18 or 20 (`node --version`).
+* You are signed in (`aio login`) and on the correct org/project/workspace (`aio console where`).
+* The extension point name matches exactly, including the version: `fusion/nav-organization/1`.
+* The `url` in `getWidget()` matches a route in your app.
+* Your visible UI calls `attach({ id })`.
+* You are looking at the right set of extensions in Fusion:
+   * To see a Stage build, deploy to Stage and turn on the Stage extensions switch in your Fusion profile (Product Settings > Fusion Profile > Preferences).
+   * To see a published extension, deploy to Production and get it approved.
 
 ## Error 1060: "Extension point does not exist"
 
@@ -75,13 +77,15 @@ For more information, see [Build the custom extension UI](/help/workfront-fusion
 
 ## The nav button does not appear in Fusion
 
-If the navigation button for your custom extension does not appear in Fusion, check these items in the following order:
+If the navigation button for your custom extension does not appear in Fusion, check these items in order:
 
-1. **Is it approved for production?** On **Stage**, a successful `aio app deploy` is enough for Fusion to discover the extension (no approval needed). On **Production**, you must also submit and obtain **approval** before it appears. For more information, see [Publish your custom extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).
-2. **Is it deployed to the correct workspace?** Fusion discovers from a specific workspace (`Stage` during testing). Deploy to that same workspace.
-3. **Is it deployed to the correct organization?** Sign in to Fusion with an account in the **same** IMS organization you published to.
-4. **Is it deployed to the correct section?** `fusion/nav-organization/1` shows under **Organization**; `fusion/nav-team/1` shows under **Team** (you must select a team first).
-5. **Is there an extension point name typo?** It must read exactly `fusion/nav-organization/1` in both `app.config.yaml` and the folder's `ext.config.yaml` include path.
+1. **Are you looking at the right set of extensions?** By default Fusion shows only published extensions, which have been deployed to Production and approved. If you are testing a Stage build, turn on the Stage extensions switch in your Fusion profile (Product Settings > Fusion Profile > Preferences) and reload. Stage items are labeled **(Stage)**. 
+   For more information, see [Publish your custom extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).
+1. **Was it revoked or retracted?** A revoked or retracted extension stops appearing in Fusion with no error. If a previously working button disappeared, confirm it is still active in Adobe Exchange before looking for a code problem.
+1. **Is it deployed to the correct workspace?** Deploy to the workspace you are actually loading, the Stage workspace when you are using the Stage testing switch.
+1. **Is it deployed to the correct organization?** Sign in to Fusion with an account in the **same** IMS organization you deployed to.
+1. **Is it in the correct section?** `fusion/nav-organization/1` shows under **Organization**; `fusion/nav-team/1` shows under **Team** (you must select a team first).
+1. **Is there an extension point name typo?** It must read exactly `fusion/nav-organization/1` in both `app.config.yaml` and the folder's `ext.config.yaml` include path.
 
 
 ## The button appears but the panel is blank
@@ -127,15 +131,14 @@ Fusion only allows extensions hosted on Adobe's App Builder CDN (`*.adobeio-stat
 * **`aio: command not found`:** The CLI is not installed or not on your PATH. Re-run `npm install -g @adobe/aio-cli`, then open a new terminal.
 * **Build/deploy fails on a brand-new Node version:** Use Node **18 or 20 LTS**. Very new, non-LTS releases sometimes break the toolchain.
 * **"You are not a developer" / cannot see your org:** Your Adobe org admin must grant you the **Developer** role and App Builder access. For more information, see [Set up UI Extension tools and account](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md).
-* **401 / invalid token during deploy or discovery:** Your session expired or you are mixing environments. Run `aio logout` then `aio login`, confirm `aio console where`, and deploy to the workspace Fusion reads.
+* **401 / invalid token during deploy or discovery:** Your session expired or you are mixing environments. Run `aio logout` then `aio login`, confirm `aio console where`, and deploy to the workspace you are loading.
 
+## Collecting information for support
 
-## Troubleshooting best practices
+Collect this information to make diagnosis much faster:
 
-When seeking assistance with this process, collecting this information makes diagnosis much faster:
-
-* The exact command you ran and the **full** error output,
-* Your **IMS organization ID**, **project**, and **workspace**,
-* The **extension point** you are targeting,
-* Whether `aio app deploy` succeeded, and whether the extension is **Published**,
+* The exact command you ran and the **full** error output.
+* Your **IMS organization ID**, **project**, and **workspace**.
+* The **extension point** you are targeting.
+* Whether `aio app deploy` succeeded, and whether the extension is **published** (or, for a Stage test, whether the Stage extensions switch is on).
 * Any errors in the browser **Console** (F12) when opening the panel in Fusion.

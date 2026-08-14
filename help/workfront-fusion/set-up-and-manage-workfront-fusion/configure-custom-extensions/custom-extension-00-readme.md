@@ -34,10 +34,10 @@ To create a custom UI extension, you will need an Adobe ID and access to an Adob
 By the end of this guide you will have:
 
 1. A free Adobe **App Builder** project. This is where your extension lives.
-2. A small web app that renders your custom UI.
-3. That web app connected to one of Fusion's extension points so it appears in the Fusion navigation.
-4. Your UI reading live context from Fusion, such as current user, organization, and team, and reacting when the user switches org or team.
-5. The extension published so other users in your organization can see it.
+1. A small web app that renders your custom UI.
+1. That web app connected to one of Fusion's extension points so it appears in the Fusion navigation.
+1. Your UI reading live context from Fusion, such as current user, organization, and team, and reacting when the user switches org or team.
+1. The extension published so other users in your organization can see it.
 
 <!--
 

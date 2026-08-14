@@ -99,6 +99,14 @@ const fetch = require('node-fetch')
 const { Core } = require('@adobe/aio-sdk')
 const { errorResponse, getBearerToken, checkMissingRequestInputs } = require('../utils')
 
+// Page-through query params (see "Paginate list results" below).
+const pageQuery = (p) => {
+  const q = new URLSearchParams()
+  if (p.start != null) q.set('start', p.start)
+  if (p.limit != null) q.set('limit', p.limit)
+  return q
+}
+
 // Only these upstreams may be reached. Never build the URL from arbitrary input.
 const TARGETS = {
   subscriptions: {
@@ -108,11 +116,19 @@ const TARGETS = {
   hooks: {
     method: 'GET',
     // Fusion hooks are team-scoped: teamId is a REQUIRED query param (see below).
-    url: (p) => `https://fusion.adobe.com/api/v3/hooks${p.teamId ? `?teamId=${encodeURIComponent(p.teamId)}` : ''}`,
+    url: (p) => {
+      const q = pageQuery(p)
+      if (p.teamId) q.set('teamId', p.teamId)
+      return `https://fusion.adobe.com/api/v3/hooks?${q.toString()}`
+    },
   },
   scenarios: {
     method: 'GET',
-    url: (p) => `https://fusion.adobe.com/api/v3/scenarios${p.fusionOrgId ? `?organizationId=${encodeURIComponent(p.fusionOrgId)}` : ''}`,
+    url: (p) => {
+      const q = pageQuery(p)
+      if (p.fusionOrgId) q.set('organizationId', p.fusionOrgId)
+      return `https://fusion.adobe.com/api/v3/scenarios?${q.toString()}`
+    },
   },
 }
 
@@ -158,11 +174,13 @@ From your UI, `fetch` the action with a relative (same-origin) URL and send the 
 ```js
 const PROXY_URL = "/api/v1/web/fusion-uix-guest/wf-proxy";
 
-async function callProxy(target, token, { imsOrgId, fusionOrgId, teamId } = {}) {
+async function callProxy(target, token, { imsOrgId, fusionOrgId, teamId, start, limit } = {}) {
   const params = new URLSearchParams({ target });
   if (imsOrgId) params.set("orgId", imsOrgId);          // → x-gw-ims-org-id
   if (fusionOrgId) params.set("fusionOrgId", fusionOrgId); // → x-organization-id
   if (teamId) params.set("teamId", teamId);             // → x-team-id
+  if (start != null) params.set("start", start);        // pagination offset
+  if (limit != null) params.set("limit", limit);        // pagination page size
   const res = await fetch(`${PROXY_URL}?${params.toString()}`, {
     headers: { authorization: `Bearer ${token}` },
   });
@@ -202,6 +220,42 @@ Note the following caveats:
 >
 > The official reference is Adobe's [Workfront Fusion APIs](https://developer.adobe.com/workfront-fusion-apis/). Header/auth requirements vary by gateway. This table reflects what the demo actually needed. If a call returns `401`/`400`, re-check these headers first.
 
+## Paginate list results
+
+Fusion v3 list endpoints (hooks, scenarios) return one **page** at a time, not the whole set. A response looks like this:
+
+```json
+{
+  "items": [ /* ...this page of records... */ ],
+  "_page": { "start": 0, "limit": 100, "total": 342 }
+}
+```
+
+The records are under **`items`**, and pagination metadata is under **`_page`**. You page with the **`start`** (offset) and **`limit`** (page size) query params. The proxy above passes both through, so page in the guest by looping until you have collected everything:
+
+```js
+const PAGE_LIMIT = 100;
+
+async function fetchAllPages(target, token, opts = {}) {
+  const all = [];
+  let start = 0;
+  // Stop when a page returns fewer than PAGE_LIMIT items, or when _page.total is reached.
+  for (;;) {
+    const res = await callProxy(target, token, { ...opts, start, limit: PAGE_LIMIT });
+    const items = res.items ?? [];
+    all.push(...items);
+
+    const total = res._page?.total;
+    const done = items.length < PAGE_LIMIT || (total != null && all.length >= total);
+    if (done) break;
+    start += PAGE_LIMIT;
+  }
+  return all;
+}
+```
+
+If you would rather keep paging out of the browser, do the same loop inside the runtime action and return the merged `items` array in one response. Either way, do not assume the first page is the whole result set. A team with more than one page of hooks would otherwise look like it has missing scenarios.
+
 ## Security checklist
 
 * **Allowlist upstreams.** Never construct the target URL from raw client input. Map a short `target` key to a fixed URL, as in Step 2. This prevents your action from becoming an open relay.
@@ -214,14 +268,28 @@ Note the following caveats:
 The demo dashboard joins three sources to show, per Workfront event subscription, whether a matching Fusion scenario is healthy:
 
 1. `fetchSubscriptions()` → Workfront event subscriptions (with received/passed counters).
-1. `fetchHooks(teamId)` → Fusion hooks for the active team.
-1. `fetchScenarios(fusionOrgId)` → Fusion scenarios for the org.
+1. `fetchHooks(teamId)` → Fusion hooks for the active team (paged with `fetchAllPages`).
+1. `fetchScenarios(fusionOrgId)` → Fusion scenarios for the org (paged with `fetchAllPages`).
 
-The **join** chains them: a subscription's `targetUrl` matches a hook's `url`; the hook's `scenarioId` matches a scenario's `id`:
+The **join** chains them, but there is a catch worth calling out: a Workfront subscription and the Fusion hook it points at live on **different hosts**, so their URL fields are not byte-for-byte equal. What is stable is the **token at the end of the webhook URL** (the last path segment). Match on that trailing token, not the full URL. The hook's `scenarioId` then matches a scenario's `id`:
 
 ```
-subscription.targetUrl  ──▶  hook.url
-                              hook.scenarioId  ──▶  scenario.id
+subscription.targetUrl  ──(trailing token)──▶  hook.url
+                                                hook.scenarioId  ──▶  scenario.id
+```
+
+```js
+// Reduce a webhook URL to its trailing token so hosts/bases can differ.
+function hookKey(url) {
+  if (!url) return "";
+  const path = String(url).trim().toLowerCase().split(/[?#]/)[0].replace(/\/+$/, "");
+  const i = path.lastIndexOf("/");
+  return i >= 0 ? path.slice(i + 1) : path;
+}
+
+// Index hooks by token, then look each subscription up by the same token.
+const hooksByToken = new Map(hooks.map((h) => [hookKey(pick(h, ["url", "address", "targetUrl"], "")), h]));
+const hook = hooksByToken.get(hookKey(pick(sub, ["url", "endpointUrl", "targetUrl", "target.url", "callbackUrl"], "")));
 ```
 
 Status is derived from the join:
@@ -240,7 +308,6 @@ function pick(obj, keys, fallback) {
   }
   return fallback;
 }
-// e.g. targetUrl: pick(sub, ["url", "endpointUrl", "targetUrl", "target.url", "callbackUrl"], "")
 ```
 
 This is just one example. The same proxy pattern works for any Workfront or Fusion API you need.

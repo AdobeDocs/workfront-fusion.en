@@ -27,10 +27,10 @@ This demo walks through creating a custom extension, deploying it, and running i
 
 It includes:
 
-* Scaffold an App Builder app from the generic Experience Cloud Shell template
-* Retarget the app to a Fusion extension point
-* Deploy the app to Stage
-* Show the app running inside Fusion
+* Scaffold an App Builder app from the generic Experience Cloud Shell template.
+* Retarget the app to a Fusion extension point.
+* Deploy the app to the Stage workspace.
+* Turn on Stage testing in Fusion and show the app running.
 
 Starting from the template rather than an empty `--standalone-app` means the SPA bootstrap is generated for you:  `index.js`, `exc-runtime.js`, `App.js` with routing and `ErrorBoundary`, and a sample `ExtensionRegistration`. Live steps in the demo are to retarget the config and edit two files, which is exactly how the real `fusion-uix-guest` was built.
 
@@ -53,7 +53,7 @@ aio console org select  # pick the org you'll demo in (same org as Fusion)
 Two things must be true in the demo org:
 
 * The `fusion/nav-organization/1` extension point is onboarded for the org. If it is not onboarded, deploy fails with error 1060. For more information, see [Troubleshooting custom extensions](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
-* In the Fusion host, the `fusion-ui-extensions` Split flag is **on** (it defaults to `on`). The host discovers from the Stage workspace and auto-selects the stage vs. prod App Registry from your IMS token, so a Stage deploy is all you need to demo.
+* The custom extensions feature is enabled in the Fusion host. (This feature is on by default). Because you will demo a Stage build rather than a published one, you will also turn on the **Stage extensions** switch in your Fusion profile. (This switch is shown in Step 7.) Fusion shows only published extensions until you do.
 
 ## Step 1: Generate the app from the generic template
 
@@ -229,21 +229,25 @@ aio app deploy
 
 `deploy` hosts your UI on Adobe's CDN and registers the extension endpoint in the Stage workspace, which is what lets Fusion discover it. The CLI prints the endpoint URL, such as `https://<project>-stage.adobeio-static.net`.
 
-## Step 7: Show the extension in Fusion
+## Step 7: Turn on Stage testing and show the extension in Fusion
 
 1. Open Fusion on the Experience Cloud, signed in to the same organization you deployed to.
+1. Open the user avatar menu and go to **Product Settings** > **Fusion Profile** > **Preferences**.
+1. Turn on the **Stage extensions** switch and confirm the reload.
+
+   Fusion now loads extensions from the Stage workspace and marks them **(Stage)**.
 1. Go to the **Organization** area of the left navigation.
 
-   Your **"My Fusion tool"** button appears
-1. Click the **My Fusion tool** button.
-1. Your UI loads in the main panel and shows the live user, organization, and team.
+   Your **"My Fusion tool (Stage)"** button appears.
+1. Click the **"My Fusion tool (Stage)"** button.
+   Your UI loads in the main panel and shows the live user, organization, and team.
 1. **Switch the active organization or team** in Fusion.
 
-   The panel updates, demonstrating live context (`contextchange`).
+   The panel updates, which demonstrates live context (`contextchange`).
 
 >[!TIP]
 >
->If the button does not appear, hard-refresh once, because discovery is cached per session. Then see [Troubleshooting custom extensions](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
+>If the button does not appear, reload once, because discovery is cached per session. Then see [Troubleshooting custom extensions](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md).
 
 
 ## Iterating during the demo
@@ -265,5 +269,5 @@ You may want to make the following points during your live demo:
 * **"I started from the generic Experience Cloud Shell template."** It scaffolds the whole SPA shell, so I only retargeted the extension point and edited two files.
 * **"Fusion is the host, my app is the guest."** They run in separate frames and talk over Adobe's UI Extensibility SDK, with no custom networking.
 * **"Registration vs. view."** The hidden frame *registers* what I offer (`dashboard.getWidget`), and the visible frame *attaches* and reads context.
-* **"Stage is enough."** The host reads the Stage workspace and auto-picks the stage/prod registry from my token, so I didn't need a production release.
+* **"Stage testing is a per-user switch."** Fusion shows only published extensions by default. I flipped on Stage extensions in my Fusion profile to load my Stage build, without a production release.
 * **"Live context."** Switching org or team re-sends context, and the guest re-renders.

@@ -44,9 +44,9 @@ It may be useful to familiarize yourself with the following concepts and termino
    * **Automatic (recommended):** The command `aio app init` creates the project and workspaces for you while generating the code. This article describes this process.
    * **Manual:** You create the project yourself in the Developer Console first, then point `aio` at it. We recommend doing this only if your organization requires projects to be created centrally.
 
-* When deciding which workspace to use, we recommend starting in **Stage**. Fusion discovers Stage-published extensions during development and testing. You can promote to **Production** later. 
+* When deciding which workspace to use, develop and deploy to **Stage** first. Fusion loads a Stage build only when the user turns on Stage testing in their Fusion profile (user avatar menu > Product Settings > Fusion Profile > Preferences > Stage extensions); otherwise, only published Production extensions appear. You can also preview locally with `aio app run`, then promote to **Production** later.
 
-   For more information on promoting to production, see [Publish your extension](./07-publish.md).
+   For more information on promoting to production, see [Publish your extension](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-07-publish.md).
 
 
 ## Run `aio app init`
