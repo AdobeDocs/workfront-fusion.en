@@ -1,4 +1,4 @@
-﻿---
+---
 product-previous: workfront-fusion
 product-area: workfront-integrations
 keywords: fusion
