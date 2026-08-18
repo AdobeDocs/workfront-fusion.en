@@ -11,6 +11,11 @@ nudge: true
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2026 {#fusion-releases-2026}
+        * [Workfront Fusion release activity: Week of August 10, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-8-10.md)
+        * [Workfront Fusion release activity: Week of July 27, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-27.md)
+        * [Workfront Fusion release activity: Week of July 20, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
+        * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
+        * [Workfront Fusion release activity: Week of June 22, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-22.md)
         * [Workfront Fusion release activity: Week of June 15, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-15.md)
         * [Workfront Fusion release activity: Week of June 1, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
         * [Workfront Fusion release activity: Week of May 25, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
@@ -183,7 +188,7 @@ nudge: true
         * [Licensing and operations overviews](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
         * [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
         * [Operations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        [Worker pools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+        * [Worker pools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
     * Set up and manage orgs and teams {#set-up-and-manage-orgs-and-teams}
         * [Set up and manage organizations and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
         * Set up organizations and teams {#set-up-orgs-teams-and-users}
@@ -193,7 +198,7 @@ nudge: true
             * [Create a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)
             * [Add users to Adobe Workfront Fusion through the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
             * [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
-            * [Set Team Notification Options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
+            * [Set notification options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
             * [View activity log for an organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
             * [View the performance dashboard for an organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
         * Manage users and teams {#manage-users-and-teams}
@@ -244,6 +249,7 @@ nudge: true
         * [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
         * [Map items using built-in functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
         * [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
+        * [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)
         * [Map arrays and array elements](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
         * [Map a file between modules](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
         * [Data stores](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
@@ -289,6 +295,7 @@ nudge: true
     * [Edit Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
     * [Retrigger a scenario execution](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
     * [Use Run once to test a scenario](/help/workfront-fusion/manage-scenarios/run-once.md)
+    * [Restore a deleted scenario](/help/workfront-fusion/manage-scenarios/restore-deleted-scenario.md)
 * Build practice scenarios {#build-practice-scenarios}
     * [Build practice scenarios](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
     * [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
@@ -367,9 +374,11 @@ nudge: true
             * [Adobe Acrobat Sign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
             * [Adobe Authenticator module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
             * [Adobe Campaign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
+            * [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
             * [Adobe Creative Cloud Libraries modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
             * [Adobe Experience Manager Assets modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
             * [Adobe Experience Manager Forms modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+            * [Adobe Express modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
             * [Adobe Firefly Audio and Video modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
             * [Adobe Firefly modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
             * [Adobe Firefly Lightroom modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
@@ -387,7 +396,8 @@ nudge: true
             * [Adobe Target modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
             * [Adobe User Management modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
             * [Adobe Workfront modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
-            * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)* [Adobe Workfront Unified Review and Approvals modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
+            * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
+            * [Adobe Workfront Unified Review and Approvals modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
             * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
             * [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
         * Connectors for third-party applications {#third-party-app-connectors}
@@ -462,7 +472,7 @@ nudge: true
             * [Markdown modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
             * [Math module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
             * [MIME modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-            * {hide-from-toc} [Model Context Protocol (MCP) module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+            * {hide-from-toc} [MCP Agent (Model Context Protocol) module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
             * [Text parser modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
             * [Tools modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
             * [XML modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)

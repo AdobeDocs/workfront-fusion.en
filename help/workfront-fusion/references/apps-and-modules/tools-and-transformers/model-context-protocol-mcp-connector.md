@@ -12,8 +12,6 @@ product_v2:
 ---
 # MCP Agent module
 
-<!--SET UP REDIRECTS-->
-
 Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
 
 For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
@@ -78,7 +76,7 @@ This action module processes a prompt, using the language model and MCP servers 
        <li><b>LLM</b>: Select the large language model that this key is associated with.</li>
        <li><b>Key</b>: Enter or map your API key for the selected model.</li>
        <li><b>Model</b>: Select the LLM model that the key will use.</li>
-       <li><b>Max Tokens</b>: Enter or map the maximum number of tokens that the LLM can generate in its response.<p>One token usually equals four characters, or .75 of a word in English. "Hello world" would equal two tokens, and "Authentication" would equal one to two tokens.</li>
+       <li><b>Maximum number of tokens</b>: Enter or map the maximum number of tokens that the LLM can generate in its response.<p>One token usually equals four characters, or .75 of a word in English. "Hello world" would equal two tokens, and "Authentication" would equal one to two tokens.</li>
       </ul>
     </td> 
   </tr> 
