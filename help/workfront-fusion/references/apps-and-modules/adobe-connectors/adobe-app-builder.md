@@ -42,8 +42,6 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Adobe App Builder modules
 
-<!--
-
 ### Run a custom code block
 
 This module allows you to run a code block. You configure the code block when you set up the module, and it is run when the module runs during a scenario execution.
@@ -63,7 +61,55 @@ This module allows you to run a code block. You configure the code block when yo
    </tbody> 
 </table>
 
--->
+### Run a custom function from package
+
+This module runs a function from a package.
+
+For information on packages, see [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Select the connection that contains the custom function that you want to run. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Package]</td> 
+   <td>Select the package that includes the function that you want to run in the scenario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Select the function that you want to run in the scenario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### Use variable from package
+
+This module brings a variable configured in a package into your scenario.
+
+For information on packages, see [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td>
+   <td>Select the connection that contains the custom function that you want to run. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Package]</td> 
+   <td>Select the package that includes the variable that you want to bring into the scenario.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variable] </td> 
+   <td>Select the variable that you want to bring into the scenario.</p></td> 
+  </tr> 
+   </tbody> 
+</table>
 
 ### Run a custom function or code block
 
@@ -89,3 +135,5 @@ For instructions on configuring a custom function, see [Map data using custom fu
   </tr> 
    </tbody> 
 </table>
+
+

@@ -24,7 +24,7 @@ The Run once feature is found in the scenario editor.
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to run the Scenario Scoring Expert.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Click **Run once** at the lower-left corner of th Scenario editor.
+1. Click **Run once** at the lower-left corner of the Scenario editor.
 1. (Conditional) If the scenario is triggered by a webhook or is a child scenario, select the input for the test run.
 
    * **Wait for an external webhook call**: The scenario will start listening for an incoming webhook call. You must trigger the webhook from the external system to provide the webhook. 

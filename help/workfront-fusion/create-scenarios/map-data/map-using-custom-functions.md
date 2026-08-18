@@ -13,6 +13,10 @@ Because custom functions work through Adobe App Builder, your organization must 
 
 Custom functions, like most scenario elements, are owned by teams.
 
+Functions are simple JavaScript functions. To include variables or dependencies in your function logic, use packages.
+
+For information on packages, see [Use custom function packages](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md).
+
 Workfront Fusion also includes built-in functions that allow you to create simple or complex formulas. These functions cover a wide variety of use cases, including functions for arrays, strings, numbers, and data from previous modules.
 
 For information and instructions on built-in functions, see [Map an item using built-in functions](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md).
@@ -112,3 +116,4 @@ For instructions, see [Adobe App Builder module](/help/workfront-fusion/referenc
 To add a custom function to a scenario, use the Adobe App Builder connector.
 
 For instructions, see [Adobe App Builder module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md).
+
