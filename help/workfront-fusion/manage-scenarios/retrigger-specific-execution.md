@@ -54,6 +54,10 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Retrigger an execution
 
+>[!NOTE]
+>
+>Only up to 256 KB of data is retained in the execution history. As a result, executions with input data exceeding 256 KB cannot be retriggered. Any attempt to retrigger such an execution fails with an error message.
+
 You can retrigger a scenario execution from the scenario's Diagram, the scenario's History area, or the specific scenario execution's page.
 
 ### Retrigger an execution from the Scenario Diagram 
