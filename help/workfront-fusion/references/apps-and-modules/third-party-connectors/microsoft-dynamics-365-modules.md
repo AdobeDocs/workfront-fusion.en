@@ -106,7 +106,7 @@ You can create a connection to your [!DNL Microsoft Dynamics 365] account direct
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Select whether you care connecting to a service account or a personal account.</td>
+          <td>Select whether you are connecting to a service account or a personal account.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Optional)</p></td>
