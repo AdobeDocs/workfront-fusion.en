@@ -13,6 +13,8 @@ product_v2:
 
 You can view details of a specific scenario execution, including filtering and searching for scenario events.
 
+You can also view scenario execution details for each module and filter.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -90,3 +92,21 @@ You can view an execution from the scenario's scenario history.
 >`<module-id>` refers to the number next to the module label when viewing the scenario.
 >
 >This can be useful when debugging scenarios or copying module configuration.
+
+
+## Examine the output from modules and filters
+
+You can examine the scenario output to see whether the scenario behaved as expected.
+
+1. To view output from a module, click the output details bubble near the module. The number in the bubble represents the number of bundles that the module output.
+
+   To view specific bundles in the module output, you can use the output panel's search bar, or filter for bundles with a specific status (such as Success, Warning, or Failed.)
+
+   ![Output bubble near a module](assets/output-bubble.png)
+
+1. To view the bundles that passed through a filter, click the filter. The number near the filter represents the number of bundles that passed through the filter.
+
+   To view specific bundles handled by the filter, you can use the filter's search bar, or filter for bundles with a specific status (such as Passed or Failed.)
+1. To search for a specific module or event in the execution panel, enter the search term into the **Search execution events** box. Results appear as you type.
+1. To limit execution panel search results by status such as Success or Warning, click the **Status Filter** dropdown and select the status.
+
