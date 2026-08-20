@@ -287,6 +287,7 @@ nudge: true
     * [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
     * [View a specific scenario execution](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
     * [View and manage chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+    * [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
     * [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
     * [View a webhooks's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
     * {hide-from-toc} [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
