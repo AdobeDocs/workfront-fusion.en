@@ -396,6 +396,7 @@ nudge: true
             * [Adobe Storage modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
             * [Adobe Target modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
             * [Adobe User Management modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
+            * [Adobe Workfront MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)
             * [Adobe Workfront modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
             * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
             * [Adobe Workfront Unified Review and Approvals modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)

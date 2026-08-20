@@ -76,7 +76,7 @@ To connect your SFTP account to Workfront Fusion you need create a connection th
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Type]</td>
-    <td>Select whether you care connecting to a service account or a personal account.</td>
+    <td>Select whether you are connecting to a service account or a personal account.</td>
   </tr>
   <tr>
    <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 
