@@ -1597,11 +1597,6 @@ This trigger module starts a scenario when a record, record type, or workspace i
 >
 >For more information on editing webhooks, see [Edit webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md).
 
->[!NOTE]
->
->After August 23, 2026, Fusion will enable authToken-based security by default for all Workfront Planning > Watch Event modules, including existing ones.
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1651,6 +1646,13 @@ This trigger module starts a scenario when a record, record type, or workspace i
         <p>[!UICONTROL Exclude updates made by this connection]</p>
       </td>
       <td>Enable this option to prevent the scenario from triggering when a change is made by the connection used by this module. This prevents another instance of the scenario being triggered if this scenario performs a triggering action.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Enable secured hooks]</td>
+      <td>
+       <p>Choose whether you want to enable authToken-based security for this webhook.</p><p>
+       <b>NOTE</b>: As of August 23, 2026, Fusion enables authToken-based security by default for all Workfront Planning > Watch Event modules, including existing ones. If a specific webhook breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option.</p>
+      </td>
     </tr>
   </tbody>
 </table>

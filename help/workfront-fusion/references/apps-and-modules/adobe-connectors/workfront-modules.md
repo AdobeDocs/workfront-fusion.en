@@ -282,8 +282,8 @@ The module returns any standard fields associated with the record, along with an
      <tr> 
       <td>[!UICONTROL Enable secured hooks]</td> 
       <td>
-       <p>Choose whether you want enableauthToken-based security for this webhook.</p><p>
-       <b>NOTE</b>: After August 23, 2026, Fusion will enable authToken-based security by default for all Workfront > Watch Event modules, including existing ones. If a specific webhooks breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option before August 23, 2026.</p>
+       <p>Choose whether you want to enable authToken-based security for this webhook.</p><p>
+       <b>NOTE</b>: As of August 23, 2026, Fusion enables authToken-based security by default for all Workfront > Watch Event modules, including existing ones. If a specific webhook breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option.</p>
        </td> 
      </tr> 
     </tbody> 
