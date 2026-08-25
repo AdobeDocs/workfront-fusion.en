@@ -15,6 +15,12 @@ For example, you could enter the prompt "Find all my active projects that are be
 
 You can restrict which Workfront actions the AI is allowed to take, so that even an unattended scenario can guarantee no unexpected destructive action is taken.
 
+By default, this module uses Adobe Managed AI, which uses the `claude-sonnet-5` model. You can configure the module to use a different LLM, using a key and other credentials you provide.
+
+>[!NOTE]
+>
+>Usage of Adobe Managed AI is limited to $25 per organization, per month.
+
 For more information about MCP in Fusion scenarios, see [Add an AI prompt to your scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Access requirements
