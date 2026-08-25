@@ -25,6 +25,10 @@ Using the Chain modules, you can connect one scenario to another.
 
 For instructions on planning chained scenarios, see [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
+>[!NOTE]
+>
+>Instead of configuring these modules manually, you can select existing modules in a scenario and move them into a new child scenario. For instructions, see [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
+
 
 ## Access requirements
 
