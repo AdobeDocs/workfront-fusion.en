@@ -405,6 +405,7 @@ This action module updates a new workspace in Planning.
 * [Get global record types](#get-global-record-types-v2)
 * [Get a record type](#get-a-record-type-v2)
 * [Get record types](#get-record-types-v2)
+* [Recast record type configuration](#recast-record-type-configuration-v2)
 * [Update a record type](#update-a-record-type-v2)
 
 #### Create a record type (V2)
@@ -550,6 +551,27 @@ This module retrieves a list of record types available in a given workspace.
         <p>[!UICONTROL Maximum number of returned record types]</p>
       </td>
       <td>Enter or map the maximum number of record types that the module will return during one execution cycle.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Recast record type configuration (V2)
+
+This module retrieves all record types in the workspace, grouped by their section, along with each record type's fields and each field's select options. The output is structured as section > record type > fields.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace ID]</p>
+      </td>
+      <td>Enter or map the ID of the workspace that you want to retrieve record type configuration for.</td> 
     </tr>
   </tbody>
 </table>
