@@ -9,10 +9,6 @@ product_v2:
 ---
 # Workfront Fusion modules
 
->[!IMPORTANT]
->
->BECKY CHECK ME: This article is a skeleton, created from a screenshot of the module picker. The introduction, Connect section, and the fields for each module below all need to be confirmed with engineering before this is published.
-
 With the Workfront Fusion connector, you can manage your own Fusion organization from within a scenario. Unlike other connectors, which connect Fusion to a third-party app or service, this connector lets a scenario call Fusion's own API, similar to how the Adobe Workfront connector lets a scenario manage Workfront.
 
 For instructions on creating a scenario, see the articles under [Create scenarios: article index](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md).
@@ -50,12 +46,40 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Connect Workfront Fusion to Workfront Fusion
 
->[!IMPORTANT]
->
->BECKY CHECK ME: Confirm the connection type and fields for this connector. The steps below are a placeholder.
-
 1. In any Workfront Fusion module, click **[!UICONTROL Add]** next to the Connection field.
-1. Fill in the required fields.
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Connection type]</td> 
+      <td>Select <b>[!UICONTROL IMS User authentication]</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Connection name]</td> 
+      <td>Enter a name for the connection.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Client ID]</td> 
+      <td>Enter your [!DNL Adobe] [!UICONTROL Client ID]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console].</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Client Secret]</td> 
+      <td>Enter your [!DNL Adobe] [!UICONTROL Client Secret]. This can be found in the [!UICONTROL Credentials] details section of the [!DNL Adobe Developer Console].</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Organization ID]</td> 
+      <td>Enter your [!DNL Adobe] IMS Organization ID.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Region]</td> 
+      <td>Select the Fusion region for this connection.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.
 
 ## Workfront Fusion modules and their fields
