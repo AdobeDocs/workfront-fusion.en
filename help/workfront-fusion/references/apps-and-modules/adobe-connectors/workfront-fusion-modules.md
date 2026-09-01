@@ -93,10 +93,10 @@ If you see the map button above a field or function, you can use it to set varia
 * [Actions](#actions)
 * [Export](#export)
 * [Misc](#misc)
-* [Uncategorized](#uncategorized)
 
 ### Actions
 
+* [Clone a record](#clone-a-record)
 * [Create a record](#create-a-record)
 * [Delete a record](#delete-a-record)
 * [List records](#list-records)
