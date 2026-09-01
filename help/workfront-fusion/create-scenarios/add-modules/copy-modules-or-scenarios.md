@@ -80,6 +80,10 @@ Copying a group of modules is similar to copying a single module.
 
    You can also use keyboard shortcuts to copy and paste.
 
+>[!NOTE]
+>
+>Instead of copying a group of modules, you can move a group of modules into a new chained scenario. For instructions, see [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
+
 ## Copy a scenario by cloning
 
 Cloning a scenario creates a copy of the scenario, which you can then edit.

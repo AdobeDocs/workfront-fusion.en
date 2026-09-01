@@ -91,6 +91,28 @@ For more information on routes, see [Add a Router module and configure routes](/
 
 ---
 
+## Example 3: New connector launch
+
+Based on `fusion-2026-7-27.md`.
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+For a connector launch like this, always ask (per Step 1 of the skill) whether the user wants a redirect set up for it.
+
+---
+
 ## Overview page (`fusion-release-activity.md`) update pattern
 
 Adding the week of July 20, 2026 to an existing July 2026 month section:
@@ -136,6 +158,21 @@ Adding the week of July 20, 2026 as the newest entry:
         * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
         ...
 ```
+
+---
+
+## Redirects repo reference (for Step 7)
+
+The sibling `redirects` repo (`Adobe-Enterprise-Docs/redirects`) holds 1:1 redirects in CSV files under `redirects/`, one per environment: `redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`.
+
+Row rules (from that repo's README):
+
+- `source` must start with `/en` (language variations are auto-created) and contain no spaces.
+- `destination` can be a relative path starting with `/en`, or a full URL starting with `https`, and must contain no spaces.
+- No duplicate `source`, and no duplicate `source`/`destination` pair.
+- A redirect must not cause a redirect loop.
+
+After adding a row, a PR still needs to be raised in the `redirects` repo and merged before it goes live (~5 minutes after merge for 1:1 redirects). This skill only adds the row after the user confirms it — it does not raise the PR.
 
 ---
 

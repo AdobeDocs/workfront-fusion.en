@@ -639,17 +639,61 @@ This module updates a record type.
 
 ### Records (V2)
 
-* [Create a record](#create-a-record-v2)
+* [Create a record (V2)](#create-a-record-v2)
+* [Create a record (Legacy)](#create-a-record-legacy)
 * [Delete a record](#delete-a-record-v2)
 * [Get a record](#get-a-record-v2)
 * [Get records by record type](#get-records-by-record-type-v2)
 * [Move records](#move-records-v2)
-* [Search records](#search-records-v2)
-* [Update a record](#update-a-record-v2)
+* [Search records (V2)](#search-records-v2)
+* [Search records (Legacy)](#search-records-legacy)
+* [Update a record (V2)](#update-a-record-v2)
+* [Update a record (Legacy)](#update-a-record-legacy)
 
 #### Create a record (V2)
 
+This action creates a single record in Workfront Planning. This version of the module allows you to select the fields that you want to provide values for, which creates a smaller, more efficient payload when creating the record.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace where you want to create a record.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the type of record that you want to create.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Select fields to map</p>
+      </td>
+      <td>Select the fields that you want to provide values for when creating the module.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Other fields</p>
+      </td>
+      <td>Enter the values that you want the new record to have. These fields are based on the record type and fields you selected, and are unique to your Workfront Planning organization.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Create a record (Legacy)
+
 This action creates a single record in Workfront Planning.
+
+We recommend using the new Create a record module, which allows you to select the fields that you want to provide values for. Selecting fields creates a smaller, more efficient payload when creating the record.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -796,7 +840,48 @@ This module reorders one or more records within a record type by specifying wher
 
 #### Search records (V2)
 
+Return records based on criteria you specify.This version of the module allows you to select the fields that you want to provide values for, which creates a smaller, more efficient payload when searching the records.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the records you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type]</p>
+      </td>
+      <td>Select the record type that contains the records you want to retrieve.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Select fields to map</p>
+      </td>
+      <td>Select the fields that you want to update values fore.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>For each field that you want to filter by, enter the operator and value for that field. These fields are based on the record type and fields you selected, and are unique to your Workfront Planning organization.</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### Search records (Legacy)
+
 Return records based on criteria you specify
+
+We recommend using the new Update a record module, which allows you to select the fields that you want to provide values for. Selecting fields creates a smaller, more efficient payload when updating the record.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -829,8 +914,56 @@ Return records based on criteria you specify
 
 #### Update a record (V2)
 
+This module updates the specified record. This version of the module allows you to select the fields that you want to provide values for, which creates a smaller, more efficient payload when updating the record.
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>For instructions on creating a connection to [!DNL Adobe Workfront Planning], see <a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >Create a connection to [!DNL Adobe Workfront Planning]</a> in this article.</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>Select the workspace that contains the record that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record type ID]</p>
+      </td>
+      <td>Select the type of record that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Record ID]</p>
+      </td>
+      <td>Enter or map the ID of the record that you want to update.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>Select fields to map</p>
+      </td>
+      <td>Select the fields that you want to update values fore.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Other fields]</p>
+      </td>
+      <td>Enter values for other fields. Available fields depend on the selected record and fields.</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### Update a record (Legacy)
+
 This module updates the specified record.
 
+We recommend using the new Update a record module, which allows you to select the fields that you want to provide values for. Selecting fields creates a smaller, more efficient payload when updating the record.
 
 
 <table style="table-layout:auto"> 
@@ -867,7 +1000,6 @@ This module updates the specified record.
     </tr>
   </tbody>
 </table>
-
 
 ### Fields (V2)
 
@@ -1514,6 +1646,13 @@ This trigger module starts a scenario when a record, record type, or workspace i
         <p>[!UICONTROL Exclude updates made by this connection]</p>
       </td>
       <td>Enable this option to prevent the scenario from triggering when a change is made by the connection used by this module. This prevents another instance of the scenario being triggered if this scenario performs a triggering action.</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Enable secured hooks]</td>
+      <td>
+       <p>Choose whether you want to enable authToken-based security for this webhook.</p><p>
+       <b>NOTE</b>: As of August 23, 2026, Fusion enables authToken-based security by default for all Workfront Planning > Watch Event modules, including existing ones. If a specific webhook breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option.</p>
+      </td>
     </tr>
   </tbody>
 </table>

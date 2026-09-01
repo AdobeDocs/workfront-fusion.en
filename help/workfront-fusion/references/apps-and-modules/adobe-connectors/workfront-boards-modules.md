@@ -105,7 +105,7 @@ To create a Workfront Boards connection:
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Select whether you care connecting to a service account or a personal account.</td>
+          <td>Select whether you are connecting to a service account or a personal account.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Optional)</p></td>

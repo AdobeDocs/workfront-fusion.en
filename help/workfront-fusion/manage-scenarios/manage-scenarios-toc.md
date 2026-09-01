@@ -25,6 +25,7 @@ product_v2:
 * [View a webhook's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
 * [View chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+* [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
 * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

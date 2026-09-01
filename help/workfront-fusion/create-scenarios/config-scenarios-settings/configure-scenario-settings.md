@@ -178,6 +178,12 @@ For more information on errors, see [Error types](/help/workfront-fusion/referen
 >
 >If a scenario starts with an instant trigger, the setting is ignored and the scenario is deactivated immediately once the first error has occurred.
 
+### Notify on warning / Notify on error / Notify when scenario is disabled
+
+To set a scenario-level override for a notification type, check or uncheck the box next to the notification type. 
+
+For information on notification settings, including scenario-level overrides, see [Set notification options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
+
 ### Worker pool
 
 >[!NOTE]

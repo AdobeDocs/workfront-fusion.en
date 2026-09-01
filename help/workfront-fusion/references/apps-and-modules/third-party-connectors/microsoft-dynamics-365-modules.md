@@ -50,7 +50,7 @@ For information about modules, see the articles under [Modules: article index](/
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Operation-based: Available to organizations with operation-based licenses</p>
    <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -106,7 +106,7 @@ You can create a connection to your [!DNL Microsoft Dynamics 365] account direct
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Type]</td>
-          <td>Select whether you care connecting to a service account or a personal account.</td>
+          <td>Select whether you are connecting to a service account or a personal account.</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL Client ID]<p>(Optional)</p></td>

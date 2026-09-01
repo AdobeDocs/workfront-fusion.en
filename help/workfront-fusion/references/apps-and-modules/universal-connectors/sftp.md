@@ -35,7 +35,7 @@ The Adobe Workfront Fusion SF[!UICONTROL ]TP modules allow you to monitor file c
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Operation-based: Available to organizations with operation-based licenses</p>
    <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -76,7 +76,7 @@ To connect your SFTP account to Workfront Fusion you need create a connection th
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Type]</td>
-    <td>Select whether you care connecting to a service account or a personal account.</td>
+    <td>Select whether you are connecting to a service account or a personal account.</td>
   </tr>
   <tr>
    <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 

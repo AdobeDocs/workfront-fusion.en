@@ -24,6 +24,7 @@ Ask the user (if not already provided) for the list of features/changes to docum
 - A plain description of what changed and why it matters
 - The help article(s) it links to (verify the path exists — do not guess)
 - Whether it requires user/admin action or is a deprecation (needs an `>[!IMPORTANT]` callout)
+- **Whether it's a new connector launch** (a brand-new connector/app becoming available, not just new modules added to an existing connector). If yes, this triggers **Step 7** — do not skip asking about a redirect just because the release note itself is done.
 
 ## Step 2: Determine the file name and date
 
@@ -122,7 +123,23 @@ Edit `help/workfront-fusion/TOC.md`:
 - Several early-2026 TOC entries are nested under the `Fusion releases - 2025` heading by mistake, even though the pages themselves are 2026 releases. When adding a new entry, always double check it lands under the heading matching **its own year**, not wherever the previous entry happens to sit.
 - Some older page titles/H1s omit the comma before the year (`July 13 2026` instead of `July 13, 2026`). Always use the comma in new pages.
 
-## Step 6: Final checklist
+## Step 7: New connector launches — ask about a redirect (do not skip)
+
+**This step applies whenever Step 1 identified a new connector launch.** It is easy to consider the release note "done" after Step 5 and forget this — treat a new connector feature as incomplete until this step has been addressed one way or the other.
+
+Ask the user: *"Do you want a redirect set up for the new connector article?"*
+
+- If **no**, note that and move on — nothing else to do.
+- If **yes**, gather:
+  - The **source path** (must start with `/en`, no spaces)
+  - The **destination** — a relative path starting with `/en`, or a full `https` URL (no spaces)
+- Add the row to the sibling `Adobe-Enterprise-Docs/redirects` repo, under `redirects/`, one file per environment (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Row rules (from that repo's README):
+  - No duplicate `source`, and no duplicate `source`/`destination` pair.
+  - The redirect must not cause a redirect loop.
+- **This skill only adds the CSV row after the user confirms it.** Raising the PR in the `redirects` repo is a separate step this skill does not do — tell the user a PR still needs to be opened and merged there before the redirect goes live (~5 minutes after merge for 1:1 redirects).
+
+## Step 8: Final checklist
 
 - [ ] File created at the correct path with no leading zeros in the date
 - [ ] Frontmatter uses `hidefromtoc: true`, no invented `exl-id`/`TQID`
@@ -132,6 +149,7 @@ Edit `help/workfront-fusion/TOC.md`:
 - [ ] New page added as the newest entry in `fusion-release-activity.md`, under the correct year/month
 - [ ] New page added as the newest entry in `TOC.md`, under the correct year heading
 - [ ] New year/month headings created if needed, with the previous year collapsed in `fusion-release-activity.md`
+- [ ] **If any feature was a new connector launch: asked about a redirect (Step 7), and either set one up or explicitly declined**
 
 ## Additional resources
 

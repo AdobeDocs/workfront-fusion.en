@@ -44,7 +44,7 @@ For information about modules, see the articles under [Modules: article index](/
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Operation-based: Available to organizations with operation-based licenses</p>
    <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -95,6 +95,7 @@ The SharePoint connector uses the following:
 * [Connect Microsoft SharePoint Online to Workfront Fusion using a [!DNL Microsoft] account](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [Connect Microsoft SharePoint Online to Workfront Fusion using advanced settings](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [Connect Microsoft SharePoint Online to Workfront Fusion using certificate authorization](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [Connect Microsoft SharePoint Online to Workfront Fusion using a service principal](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### Connect Microsoft SharePoint Online to Workfront Fusion using a [!DNL Microsoft] account 
 
@@ -202,6 +203,97 @@ You can use certificate authorization to connect to SharePoint.
 
 1. Click **Continue** to save the connection and return to the module.
 
+### Connect Microsoft SharePoint Online to Workfront Fusion using a service principal
+
+You can create a connection that uses a service principal (an Application API connection) instead of a personal account. This is useful when you want the connection to run as an application or service identity rather than a specific person — for example, so the integration doesn't break if that person leaves the company or changes their password.
+
+>[!IMPORTANT]
+>
+>This connection type is available only for the [Make an API Call](#make-an-api-call) module. Other SharePoint modules require one of the other connection types described in this article.
+
+* [Prerequisites to connecting Microsoft SharePoint Online to Workfront Fusion using a service principal](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [Create the app registration in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Create a client secret](#create-a-client-secret)
+* [Grant API permissions](#grant-api-permissions)
+* [Collect your connection details](#collect-your-connection-details)
+* [Create the connection](#create-the-connection)
+
+#### Prerequisites to connecting Microsoft SharePoint Online to Workfront Fusion using a service principal
+
+You need **Global Administrator**, **Application Administrator**, or **Privileged Role Administrator** access in Microsoft Entra ID, to register the app and grant it permissions. If you do not have this access, ask someone on your IT or identity team to complete those steps for you.
+
+Continue to [Create the app registration in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id).
+
+#### Create the app registration in Microsoft Entra ID
+
+1. Sign in to the [!DNL Microsoft Entra] admin center.
+1. Go to **[!UICONTROL App registrations]** > **[!UICONTROL New registration]**.
+1. Give the app a clear, recognizable name. For example, `Make - SharePoint Integration`.
+1. Leave **[!UICONTROL Redirect URI]** blank. This connection does not involve anyone signing in through a browser.
+1. Select **[!UICONTROL Register]**.
+1. Continue to [Create a client secret](#create-a-client-secret).
+
+#### Create a client secret
+
+1. In your new app registration, go to **[!UICONTROL Certificates & secrets]**.
+1. Select **[!UICONTROL New client secret]**, add a description, and choose an expiry period.
+1. Select **[!UICONTROL Add]**.
+1. Copy the secret's **[!UICONTROL Value]** immediately. It is displayed only once. If you navigate away before copying it, you must create a new one.
+1. Continue to [Grant API permissions](#grant-api-permissions).
+
+#### Grant API permissions
+
+>[!IMPORTANT]
+>
+>BECKY CHECK ME: unlike Azure DevOps, Microsoft Graph supports Application permissions directly in this step. Confirm the exact permission(s) the Make an API Call module needs (for example, a Sites permission scope) before publishing this section, and update the steps below accordingly.
+
+1. In your app registration, go to **[!UICONTROL API permissions]**.
+1. Select **[!UICONTROL Add a permission]**, then select **[!UICONTROL Microsoft Graph]**.
+1. Select **[!UICONTROL Application permissions]**.
+1. Select the permission or permissions your API calls need, then select **[!UICONTROL Add permissions]**.
+1. Select **[!UICONTROL Grant admin consent for]** your organization, then confirm.
+1. Continue to [Collect your connection details](#collect-your-connection-details).
+
+#### Collect your connection details
+
+From the app registration's **[!UICONTROL Overview]** page, note the following values. You enter these when creating the connection in the module.
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL Tenant ID]</td>
+   <td>On the Overview page, labeled <b>Directory (tenant) ID</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client ID]</td>
+   <td>On the Overview page, labeled <b>Application (client) ID</b>.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Client Secret]</td>
+   <td>The value you copied in <a href="#create-a-client-secret" class="MCXref xref">Create a client secret</a>.</td>
+  </tr>
+ </tbody>
+</table>
+
+Continue to [Create the connection](#create-the-connection).
+
+#### Create the connection
+
+1. In the [!UICONTROL Make an API Call] module, click **[!UICONTROL Add]** near the Connection field to open the **[!UICONTROL Create a connection]** box.
+1. Click **[!UICONTROL Show advanced settings]**.
+1. In the [!UICONTROL Connection type] field, select **[!UICONTROL Service Principal]**.
+1. Enter the following:
+
+   * [!UICONTROL Tenant ID]
+   * [!UICONTROL Client ID]
+   * [!UICONTROL Client Secret]
+
+1. Click **Continue** to save the connection and return to the module.
+
+   If everything is set up correctly, the connection validates successfully.
+
 ## Microsoft SharePoint modules and their fields
 
 When you configure Microsoft SharePoint Online modules, Workfront Fusion displays the fields listed below. Along with these, additional Microsoft SharePoint Online fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
@@ -220,6 +312,7 @@ If you see the map button above a field or function, you can use it to set varia
 ### Drive item
 
 * [Create a file](#create-a-file)
+* [Create a file (Legacy)](#create-a-file-legacy)
 * [Create a folder](#create-a-folder)
 * [Get a file](#get-a-file)
 * [Get a folder](#get-a-folder)
@@ -411,14 +504,14 @@ This trigger module starts a scenario when an item is updated in a folder you se
 
 ### Item
 
-* [[!UICONTROL Copy an item]](#copy-an-item)
+* [[!UICONTROL Copy an Item]](#copy-an-item)
 * [[!UICONTROL Create an item]](#create-an-item)
 * [[!UICONTROL Delete an item]](#delete-an-item)
 * [[!UICONTROL Get an Item]](#get-an-item)
-* [Get Details](#get-details)
+* [Get details](#get-details)
 * [[!UICONTROL List Items]](#list-items)
 * [[!UICONTROL Move an Item]](#move-an-item)
-* [[!UICONTROL Update an Item]](#update-an-item)
+* [[!UICONTROL Update an item]](#update-an-item)
 * [[!UICONTROL Watch Items] (Scheduled)](#watch-items-scheduled)
 
 
@@ -950,7 +1043,7 @@ This action module searches for sites by a parameter you specify.
 
 * [Get Changes](#get-changes)
 * [Make an API Call](#make-an-api-call)
-* [Watch Events](#watch-events)
+* [Watch events](#watch-events)
 
 #### Get Changes
 

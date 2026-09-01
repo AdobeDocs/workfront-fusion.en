@@ -40,7 +40,7 @@ For information about modules, see the articles under [Modules: article index](/
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Operation-based: Available to organizations with operation-based licenses</p>
    <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

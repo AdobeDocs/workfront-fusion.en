@@ -18,7 +18,7 @@ topic_v2:
 
 ### now
 
-Gets the current time in YYYY-MM-DD-hh:mm:ss format.
+Gets the current time in` YYYY-MM-DD-hh:mm:ss` format.
 
 ### timestamp
 
@@ -954,3 +954,4 @@ However, it is preferable to use half-open interval instead (the interval that e
 `2019-09-01 ≤ D < 2019-10-01`
 
 `2019-09-01T00:00:00.000Z ≤ D < 2019-10-01T00:00:00.000Z`
+

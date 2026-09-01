@@ -42,7 +42,7 @@ For information about modules, see the articles under [Modules: article index](/
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Operation-based: Available to organizations with operation-based licenses</p>
    <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -86,6 +86,11 @@ The Azure DevOps connector uses the following:
 
 ## Connect [!DNL Azure DevOps] to Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [Connect Azure DevOps to Workfront Fusion using EntraApp](#connect-azure-devops-to-workfront-fusion-using-entraapp)
+* [Connect Azure DevOps to Workfront Fusion using a service principal](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
+
+### Connect Azure DevOps to Workfront Fusion using EntraApp
+
 1. Add an [!DNL Azure DevOps] module to your scenario.
 1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
 1. In the [!UICONTROL Connection Type] field, select the type of connection that you want to use.
@@ -121,6 +126,112 @@ The Azure DevOps connector uses the following:
 
 1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
 1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.
+
+### Connect Azure DevOps to Workfront Fusion using a service principal
+
+You can create a connection that uses a service principal (an Application API connection) instead of a personal account. This is useful when you want the connection to run as an application or service identity rather than a specific person. This may be useful so the integration doesn't break if, for example, that person leaves the company or changes their password.
+
+This connection type is available for all Azure DevOps modules.
+
+>[!NOTE]
+>
+>Service principal authentication does not support every Azure DevOps feature. A small number of admin-level actions, such as managing user licenses, still require a personal account connection. Use service principal authentication if you only need this for work items, boards, repos, or pipelines.
+
+* [Prerequisites to connecting Azure DevOps to Workfront Fusion using a service principal](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
+* [Create the app registration in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Create a client secret](#create-a-client-secret)
+* [Collect your connection details](#collect-your-connection-details)
+* [Add the service principal to your Azure DevOps organization](#add-the-service-principal-to-your-azure-devops-organization)
+* [Create the connection](#create-the-connection)
+
+#### Prerequisites to connecting Azure DevOps to Workfront Fusion using a service principal
+
+To create this connection, you need the following:
+
+* **Global Administrator** or **Application Administrator** access in Microsoft Entra ID, to register the app. If you do not have this access, ask someone on your IT or identity team to complete that step for you.
+* **Project Collection Administrator** access in your Azure DevOps organization, to add the service principal as a member. This is often a different person than the person that manages Microsoft Entra ID.
+* The name of your Azure DevOps organization. You can find this in your Azure DevOps URL: `dev.azure.com/<your organization name>`.
+
+#### Create the app registration in Microsoft Entra ID
+
+1. Sign in to the [!DNL Microsoft Entra] admin center.
+1. Go to **[!UICONTROL App registrations]** > **[!UICONTROL New registration]**.
+1. Give the app a clear, recognizable name. For example, `Workfront Fusion Azure DevOps Integration`.
+1. Leave **[!UICONTROL Redirect URI]** blank. This connection does not involve signing in through a browser.
+1. Select **[!UICONTROL Register]**.
+1. Continue to [Create a client secret](#create-a-client-secret).
+
+#### Create a client secret
+
+1. In your new app registration, go to **[!UICONTROL Certificates & secrets]**.
+1. Select **[!UICONTROL New client secret]**, add a description, and choose an expiry period.
+1. Select **[!UICONTROL Add]**.
+1. Copy the secret's **[!UICONTROL Value]** immediately. It is displayed only once. If you navigate away before copying it, you must create a new one.
+1. Continue to [Collect your connection details](#collect-your-connection-details).
+
+#### Collect your connection details
+
+1. From the app registration's **[!UICONTROL Overview]** page, note the following values. You enter these when creating the connection in the module.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Tenant ID]</td>
+      <td>On the Overview page, labeled <b>Directory (tenant) ID</b>.</td>
+      </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>On the Overview page, labeled <b>Application (client) ID</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client Secret]</td>
+      <td>The value you copied in <a href="#create-a-client-secret" class="MCXref xref">Create a client secret</a>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Organization]</td>
+      <td>Your Azure DevOps organization name. For example, if your URL is <code>dev.azure.com/yourorg</code>, enter <code>yourorg</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]
+   >
+   >You can skip the app registration's **API permissions** area. If you add Azure DevOps there, only **Delegated permissions** are available. **Application permissions** appear greyed out. This is expected, because Azure DevOps does not support granting access this way. Instead, access is granted directly inside Azure DevOps, in the next part.
+
+1. Continue to [Add the service principal to your Azure DevOps organization](#add-the-service-principal-to-your-azure-devops-organization).
+
+#### Add the service principal to your Azure DevOps organization
+
+Registering the app in Microsoft Entra ID only creates its identity. It does not yet give the app any access to your Azure DevOps data. This procedure grants that access.
+
+1. Sign in to your Azure DevOps organization, at `dev.azure.com/<your organization name>`.
+1. Select **[!UICONTROL Organization settings]** in the lower left, then select **[!UICONTROL Users]**.
+1. Select **[!UICONTROL Add users]**.
+1. In the search box, search by the app's display name, which is the name you gave it when you registered the app. Do not search by the Client ID.
+1. Select an access level:
+
+   * **[!UICONTROL Basic]** is usually enough for reading and writing work items, boards, and repos.
+   * If your workflow needs to browse available processes, such as Agile, Scrum, or custom templates, as part of setup, add the service principal to the **[!UICONTROL Project Collection Administrators]** group instead. This is a broader level of access, so only grant it if you need that capability.
+
+1. Assign the service principal to the specific project or projects it needs, following your organization's usual access practices.
+1. Select **[!UICONTROL Add]**.
+1. Continue to [Create the connection](#create-the-connection).
+
+#### Create the connection
+
+1. In the module's connection setup screen, select the **[!UICONTROL Service Principal]** connection type.
+1. Enter the following:
+
+   * [!UICONTROL Tenant ID]
+   * [!UICONTROL Client ID]
+   * [!UICONTROL Client Secret]
+   * [!UICONTROL Organization]
+
+1. Save the connection.
+
+   If everything is set up correctly, the connection validates successfully.
 
 ## [!UICONTROL Azure DevOps] modules and their fields
 

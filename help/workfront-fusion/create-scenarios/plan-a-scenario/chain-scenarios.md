@@ -29,6 +29,8 @@ For more information on Fusion's performance guardrails, including timeouts, see
 
 For instructions on configuring Chain modules, see [Chain modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
 
+For instructions on selecting existing modules in a scenario and moving them into a new child scenario, see [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
+
 ## Parent and child scenarios
 
 * The **parent** scenario calls another scenario, using the **Chain** > **Call a child scenario** module. It receives the output of the child scenario, which it can process in later scenario modules. 

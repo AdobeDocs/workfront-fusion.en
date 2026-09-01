@@ -23,6 +23,12 @@ For more information on webhooks, see [Instant triggers (webhooks)](/help/workfr
 
 For more information on chaining scenarios, see [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
 
+
+
+>[!NOTE]
+>
+>Only up to 256 KB of data is retained in the execution history. As a result, executions with input data exceeding 256 KB cannot be retriggered. Any attempt to retrigger such an execution fails with an error message.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -53,6 +59,10 @@ For more detail about the information in this table, see [Access requirements in
 +++
 
 ## Retrigger an execution
+
+>[!NOTE]
+>
+>Only up to 256 KB of data is retained in the execution history. As a result, executions with input data exceeding 256 KB cannot be retriggered. Any attempt to retrigger such an execution fails with an error message.
 
 You can retrigger a scenario execution from the scenario's Diagram, the scenario's History area, or the specific scenario execution's page.
 
