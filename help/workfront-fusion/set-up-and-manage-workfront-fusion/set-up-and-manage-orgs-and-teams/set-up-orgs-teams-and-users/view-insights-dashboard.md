@@ -1,5 +1,5 @@
 ---
-title: View the performance dashboard for an organization
+title: View the Insights dashboard for an organization
 description: Fusion administrators can view a dashboard that shows execution metrics for an organization.
 author: Becky
 feature: Workfront Fusion
@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 ---
-# View the performance dashboard for an organization
+# View the Insights dashboard for an organization
 
-The Fusion Performance Dashboard allows you to quickly see which scenarios are running the most, where delays are occurring, and how effectively your worker pools are operating. This provides real-time visibility into execution volumes, queue depth, pool utilization, and scenario-level performance.
+The Fusion Insights Dashboard allows you to quickly see which scenarios are running the most, where delays are occurring, and how effectively your worker pools are operating. This provides real-time visibility into execution volumes, queue depth, pool utilization, and scenario-level performance.
 
 ## Access requirements
 
@@ -42,7 +42,7 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Performance dashboard components
+## Insights dashboard components
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ For more detail about the information in this table, see [Access requirements in
 
 -->
 
-In the Fusion performance dashboard, you can see the following metrics.
+In the Fusion Insights dashboard, you can see the following metrics.
 
 * **Executions waiting to be processed**
    This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time. 
@@ -75,9 +75,9 @@ In the Fusion performance dashboard, you can see the following metrics.
 
    You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
 
-## View the Fusion Performance Dashboard
+## View the Fusion Insights Dashboard
 
-1. In Fusion, click **Performance** in the left navigation.
+1. In Fusion, click **Insights** in the left navigation.
   
    The Dashboard opens.
 
