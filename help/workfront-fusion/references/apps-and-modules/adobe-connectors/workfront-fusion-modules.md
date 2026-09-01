@@ -55,7 +55,7 @@ For more detail about the information in this table, see [Access requirements in
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL Connection type]</td> 
-      <td>Select <b>[!UICONTROL IMS User authentication]</b>.</td> 
+      <td>Select the type of connection you want to create.</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name]</td> 
@@ -103,9 +103,9 @@ If you see the map button above a field or function, you can use it to set varia
 * [Read a record](#read-a-record)
 * [Update a record](#update-a-record)
 
-#### Create a record
+#### Clone a record
 
-Creates a specified record.
+This module makes a copy of the specified record.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -114,13 +114,52 @@ Creates a specified record.
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td> Select the type of record that you want to clone. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Scenario ID</td> 
+   <td> Enter or map the ID of the scenario that you want to clone. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td> Enter or map a name for the new scenario.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Create a record
+
+This module creates a record with the specified data.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td> Select the type of record that you want to create. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Team ID</td> 
+   <td> Enter or map the ID of the team that will own this record. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td> Enter or map a name for the new record.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Delete a record
 
-Deletes a specified record.
+This module deletes a specified record.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -129,13 +168,21 @@ Deletes a specified record.
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td> Select the type of record that you want to delete. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Other fields</td> 
+   <td>Enter values for any other fields. Available fields depend on the selected record type. </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### List records
 
-Returns a paged list of records using cursor-based paging and property filters.
+This module returns a paged list of records using cursor-based paging and property filters.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,12 +192,36 @@ Returns a paged list of records using cursor-based paging and property filters.
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td>Select the type of record that you want to return a list of.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Property</td> 
+   <td>For each property filter that you want to return results for, click <b>Add item</b> and enter the field, operator, and value that you want to filter for.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Start</td> 
+   <td>Enter the location where you want to start the returned results. This is used for pagination.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of records that you want the module to return for each execution cycle.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order by</td> 
+   <td>Select the field that you want to order results by.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Direction</td> 
+   <td>Select whether you want to order results ascending or descending.</td> 
+  </tr> 
  </tbody> 
 </table>
 
 #### Read a record
 
-Gets a specified record.
+This module retrieves the specified record
 
 <table style="table-layout:auto"> 
  <col> 
@@ -159,6 +230,14 @@ Gets a specified record.
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td> Select the type of record that you want to delete. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Other fields</td> 
+   <td>Enter values for any other fields. Available fields depend on the selected record type. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -175,6 +254,18 @@ Updates a specified record.
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td> Select the type of record that you want to update. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Name</td> 
+   <td> Enter or map a new name for the record.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td> Enter or map the ID of the record that you want to update. </td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -182,7 +273,7 @@ Updates a specified record.
 
 #### Export activity logs
 
-Exports activity logs.
+This module exports activity logs.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -191,6 +282,30 @@ Exports activity logs.
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File type</td> 
+   <td>Select the file format that you want to export logs into.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Property</td> 
+   <td>For each property filter that you want to return results for, click <b>Add item</b> and enter the field, operator, and value that you want to filter for. You can also filter by whether or not the field exists.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Start</td> 
+   <td>Enter the location where you want to start the returned results. This is used for pagination.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of records that you want the module to return for each execution cycle.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order by</td> 
+   <td>Select the field that you want to order results by.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Direction</td> 
+   <td>Select whether you want to order results ascending or descending.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -198,12 +313,13 @@ Exports activity logs.
 ### Misc
 
 * [Get queue statistics for a hook](#get-queue-statistics-for-a-hook)
+* [Get record dependencies](#get-record-dependencies)
 * [List scenarios for a connection](#list-scenarios-for-a-connection)
 * [List the Fusion regions and organizations](#list-the-fusion-regions-and-organizations)
 
 #### Get queue statistics for a hook
 
-Returns queue statistics for the specified hook: the number of events currently queued, the queue limit, and whether the hook is enabled.
+This module returns queue statistics for the specified hook: the number of events currently queued, the queue limit, and whether the hook is enabled.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -212,63 +328,78 @@ Returns queue statistics for the specified hook: the number of events currently 
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### List scenarios for a connection
-
-Returns a paginated list of scenarios that reference the given connection.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### List the Fusion regions and organizations
-
-Returns `{ region, organizationId }` for every Fusion organization the caller can access, read from the caller's IMS profile.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### Uncategorized
-
-* [Clone a record](#clone-a-record)
-* [Get record dependencies](#get-record-dependencies)
-
-#### Clone a record
-
-Creates a copy of the record.
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+   <td role="rowheader">Hook ID</td> 
+   <td> Enter or map the ID of the hook that you want to return details for.</td> 
   </tr> 
  </tbody> 
 </table>
 
 #### Get record dependencies
 
-Get the dependencies of the record.
+This module gets the dependencies of the record.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td> Select the type of record that you want to retrieve dependencies for. </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Scenario ID</td> 
+   <td> Enter or map the ID of the record that you want to retrieve dependencies for. </td> 
+  </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### List scenarios for a connection
+
+This module returns a paginated list of scenarios that reference the given connection.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Connection ID</td> 
+   <td>Enter or map the ID of the connection that you want to return scenarios for.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Property</td> 
+   <td>For each property filter that you want to return results for, click <b>Add item</b> and enter the field, operator, and value that you want to filter for. You can also filter by whether or not the field exists.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Start</td> 
+   <td>Enter the location where you want to start the returned results. This is used for pagination.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Maximum number of returned results</td> 
+   <td>Enter or map the maximum number of records that you want the module to return for each execution cycle.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Order by</td> 
+   <td>Select the field that you want to order results by.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Direction</td> 
+   <td>Select whether you want to order results ascending or descending.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### List the Fusion regions and organizations
+
+This module returns the region and organization ID for every Fusion organization the connection can access, based on the credentials and access in the IMS user profile of the credentials used in the connection.
 
 <table style="table-layout:auto"> 
  <col> 
@@ -280,3 +411,4 @@ Get the dependencies of the record.
   </tr> 
  </tbody> 
 </table>
+
