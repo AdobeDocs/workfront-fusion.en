@@ -50,6 +50,7 @@ Task fields:
 | `DE:Release notes` | a formatted release note, see format below |
 | `DE:Preview Date Known` | `Yes`, by default |
 | `DE:Preview Date` | the request's **Expected release date**, by default |
+| Product/Area | select `Fusion` (an enum field on the Product Documentation form; confirm the exact field name with `insights_search_fields` if it's ever unclear) |
 
 Set the preview date fields as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
 
