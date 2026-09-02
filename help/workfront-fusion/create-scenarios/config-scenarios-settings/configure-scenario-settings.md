@@ -61,6 +61,8 @@ For more detail about the information in this table, see [Access requirements in
 
 Here, you can enter a description for the scenario, which will appear in the Scenarios list. Descriptions are limited to 240 characters.
 
+Click **[!UICONTROL Describe with AI]** to have AI generate a description of the scenario for you automatically, based on the scenario's modules and configuration.
+
 ### [!UICONTROL Sequential processing]
 
 This option forces all executions to happen in order and is primarily relevant for Webhooks and for Incomplete Executions.
