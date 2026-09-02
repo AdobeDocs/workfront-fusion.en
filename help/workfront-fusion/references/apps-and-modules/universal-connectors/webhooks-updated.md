@@ -64,11 +64,17 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 >
 >To call a third party webhook (an outgoing webhook) use one of the HTTP modules. For more information, see [HTTP modules](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors).
 
-To use a webhook to connect an app to Workfront Fusion, you can set up the webhook to authenticate using a client certificate (mTLS), basic authentication, or Adobe Identity Management System (IMS).
+To use a webhook to connect an app to Workfront Fusion, you can set up the webhook to authenticate using a client certificate (mTLS), basic authentication, Adobe Identity Management System (IMS), an API key, or an HMAC signature.
+
+>[!NOTE]
+>
+>**API key auth is now the default authorization type** for new webhooks. Previously, no authorization was pre-selected. You can still change a webhook's Authorization type to any other type, or select the empty value for no authorization.
 
 * [Use a webhook with a client certificate(mTLS)](#use-a-webhook-with-a-client-certificate-mtls)
 * [Use a webhook with basic authentication](#use-a-webhook-with-basic-authentication)
 * [Use a webhook with Adobe Identity Management System (IMS)](#use-a-webhook-with-adobe-identity-management-system-ims)
+* [Use a webhook with API key authentication](#use-a-webhook-with-api-key-authentication)
+* [Use a webhook with HMAC signature authentication](#use-a-webhook-with-hmac-signature-authentication)
 
 ### Use a webhook with a client certificate (mTLS)
 
@@ -166,6 +172,84 @@ Adobe Identity Management System (IMS) authentication uses your organization's A
 1. (Optional) In the **Allowed clients** field, enter a comma-separated list of client IDs permitted to call this webhook. Leave this setting empty to accept any client whose token is validly signed by the trusted issuer and audience. 
 1. (Optional) In the **Allowed users** field, enter a comma-separated list of user IDs permitted to call this webhook. Leave this setting empty to allow any user. 
 1. (Optional) In the **Required scopes** field, enter a comma-separated list of scopes that must be present in the token's `scope` claim. Leave this empty to skip the scope check. 
+1. Enable other settings as desired.
+1. Click **[!UICONTROL Save]**
+
+After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
+
+>[!NOTE]
+>
+>After you create a webhook, you can use it in more than one scenario at a time.
+
+### Use a webhook with API key authentication
+
+API key authentication protects a webhook endpoint with a single key, sent either as a request header or a query parameter. This is the default authorization type for new webhooks.
+
+1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
+
+1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
+1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
+1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+
+   This field accepts the following patterns:
+
+   * Exact hostname: `app.example.com`
+   * Wildcard subdomain: `*.example.com`
+   * Scheme-qualified:` https://app.example.com` or `https://*.example.com`
+1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
+
+   For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. In the **Authorization type** field, select **[!UICONTROL API key auth]** if it is not already selected.
+1. In the **Credentials** field, select the credentials to be used for authorization, or add new credentials.
+1. (Conditional) To add credentials:
+   1. Click **Add**
+   1. Enter a name for the new credentials key.
+   1. In the **Key** field, enter the key value that you want to authenticate with. Use the eye icon next to the field to reveal or hide it while typing.
+   1. In the **API Key placement** field, select whether the key is sent in the header or as a query parameter.
+   1. In the **API Key parameter name** field, enter the header or query parameter name that the key is sent under, for example `X-API-Key`.
+   1. Click **Create a key**.
+   1. Back in the webhook panel, in the **Credentials** field, select the new key.
+1. Enable other settings as desired.
+1. Click **[!UICONTROL Save]**
+
+After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
+
+>[!NOTE]
+>
+>After you create a webhook, you can use it in more than one scenario at a time.
+
+### Use a webhook with HMAC signature authentication
+
+HMAC signature authentication validates that incoming requests were signed with a shared signing secret, protecting against tampering and spoofed calls without sending the secret itself on every request.
+
+1. Add the **[!UICONTROL Webhooks]** > **[!UICONTROL Custom Webhook]** instant trigger module to your scenario.
+
+1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
+1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
+1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
+1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+
+   This field accepts the following patterns:
+
+   * Exact hostname: `app.example.com`
+   * Wildcard subdomain: `*.example.com`
+   * Scheme-qualified:` https://app.example.com` or `https://*.example.com`
+1. If you want to validate incoming data, in the **Data structure** field, select or add the data structure that you want to use.
+
+   For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
+1. In the **Authorization type** field, select **[!UICONTROL HMAC signature]**.
+1. In the **Credentials** field, select the credentials to be used for authorization, or add new credentials.
+1. (Conditional) To add credentials:
+   1. Click **Add**
+   1. Enter a name for the new credentials key.
+   1. In the **Signing secret** field, enter the shared secret that you want to use. Use the eye icon next to the field to reveal or hide it while typing.
+   1. In the **Algorithm** field, select the hashing algorithm to use, for example SHA-256.
+   1. In the **Signature header** field, enter the name of the header that the signature is read from, for example `x-fusion-signature-256`.
+   1. In the **Signature encoding** field, select the encoding of the signature value, for example Hexadecimal.
+   1. (Optional) In the **Signature prefix** field, enter a prefix if the signature value is expected to be prefixed, for example `sha256=`.
+   1. Click **Create a key**.
+   1. Back in the webhook panel, in the **Credentials** field, select the new key.
 1. Enable other settings as desired.
 1. Click **[!UICONTROL Save]**
 
