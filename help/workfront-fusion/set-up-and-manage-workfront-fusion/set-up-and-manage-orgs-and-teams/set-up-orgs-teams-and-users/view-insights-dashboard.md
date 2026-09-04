@@ -58,6 +58,9 @@ For more detail about the information in this table, see [Access requirements in
 
 In the Fusion Insights dashboard, you can see the following metrics.
 
+* **Failed Executions Logs**
+   This table lists every failed or warning scenario execution across your organization, so you can find and troubleshoot problem runs without leaving the dashboard.
+
 * **Executions waiting to be processed**
    This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time. 
 
@@ -74,8 +77,6 @@ In the Fusion Insights dashboard, you can see the following metrics.
    This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
 
    You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
-* **Execution Log**
-   This table lists every failed or warning scenario execution across your organization, so you can find and troubleshoot problem runs without leaving the dashboard.
 
 ## View the Fusion Insights Dashboard
 
@@ -111,6 +112,6 @@ Use the Execution Log to find scenario executions that failed or returned a warn
 1. Click an execution to view more detail about its error.
 1. To reactivate one or more scenarios that were automatically deactivated after repeated failures, select the executions, then click **Activate**.
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   Before reactivating a scenario, investigate the cause of the failures, such as expired credentials or a connector issue, so the scenario doesn't immediately fail again.
+   >[!NOTE]
+   >
+   >Before reactivating a scenario, investigate the cause of the failures, such as expired credentials or a connector issue, so the scenario doesn't immediately fail again.
