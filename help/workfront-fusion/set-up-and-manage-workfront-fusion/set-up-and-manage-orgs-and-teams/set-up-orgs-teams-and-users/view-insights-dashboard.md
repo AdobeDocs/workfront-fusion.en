@@ -74,6 +74,8 @@ In the Fusion Insights dashboard, you can see the following metrics.
    This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
 
    You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
+* **Execution Log**
+   This table lists every failed or warning scenario execution across your organization, so you can find and troubleshoot problem runs without leaving the dashboard.
 
 ## View the Fusion Insights Dashboard
 
@@ -90,3 +92,25 @@ In the Fusion Insights dashboard, you can see the following metrics.
 1. To change the time range of the dashboard, the Time Range field in the upper-right corner of the dashboard, then select a new time frame. The longest available time frame is 24 hours, and the shortest is 15 minutes.
 1. To refresh the charts, click the Refresh icon near the upper-right corner of the dashboard.
 1. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view.
+
+## Filter and triage executions in the Execution Log
+
+Use the Execution Log to find scenario executions that failed or returned a warning across your organization, and reactivate any scenarios that were automatically deactivated after repeated failures.
+
+1. In the Execution Log, filter executions by any of the following:
+
+   * [!UICONTROL Team]
+   * [!UICONTROL Scenario]
+   * [!UICONTROL Run type]
+   * [!UICONTROL Date range]
+   * [!UICONTROL Deactivation state]
+   * [!UICONTROL Error message]
+
+   For most filters, you can choose to match only the values you select, or everything except them.
+
+1. Click an execution to view more detail about its error.
+1. To reactivate one or more scenarios that were automatically deactivated after repeated failures, select the executions, then click **Activate**.
+
+   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
+
+   Before reactivating a scenario, investigate the cause of the failures, such as expired credentials or a connector issue, so the scenario doesn't immediately fail again.
