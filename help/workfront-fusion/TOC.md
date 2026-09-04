@@ -414,6 +414,7 @@ nudge: true
             * [Adobe Workfront Planning modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
             * [Adobe Workfront Unified Review and Approvals modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-review-and-approvals-modules.md)
             * [Workfront Boards modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+            * [Workfront Fusion modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-fusion-modules.md)
             * [Workfront Proof modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
         * Connectors for third-party applications {#third-party-app-connectors}
             * [Airtable modules](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/airtable-modules.md)
