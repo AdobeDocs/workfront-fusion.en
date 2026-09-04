@@ -27,12 +27,18 @@ The request template has these fields - extract each one:
 
 If the request links to a Confluence wiki page with the full spec, fetch it (`get_wiki_content`) before writing documentation. Don't rely on the Slack summary alone for technical details (exact field names, steps, UI labels) - pull those from the wiki spec when one is linked.
 
+If the request instead links to a non-Confluence secondary source (e.g. an Experience League Community post, a support article, an AI-generated summary) rather than an authoritative spec, you may use it to fill in technical detail the Slack text lacks, but treat it as lower-confidence than the Slack request itself. Where it conflicts with or adds to the Slack text (a different name for the same button/field, a detail not mentioned in Slack at all), don't silently pick one - write the doc using the Slack request's wording as the primary source, and flag the discrepancy inline with an HTML comment (e.g. `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) per the guidance in Step 2.
+
 ## Step 2: Update the documentation
 
 Find the relevant existing article(s) in this repo (grep for related module names, UI labels, or settings names - don't guess the file). Update them to reflect the change, following that article's existing structure, heading level, and house style.
 
 * Do not invent technical details (exact field names, permission scopes, config steps) that aren't in the Slack request or linked wiki spec. If something is unconfirmed, flag it inline as an HTML comment (e.g. `<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`) rather than guessing - never as a visible callout. It must not render on the published page.
-* If this requires a brand-new article file (not just an edit to an existing one), follow this repo's standing conventions: no fabricated `exl-id`/`TQID` in frontmatter, wire the new page into the relevant TOC, and convert the file to CRLF/no-BOM after creating it (the `Write` tool defaults to LF).
+* If this requires a brand-new article file (not just an edit to an existing one), follow this repo's standing conventions: no fabricated `exl-id`/`TQID` in frontmatter, and convert the file to CRLF/no-BOM after creating it (the `Write` tool defaults to LF).
+* Wiring a new page into "the TOC" means BOTH of these, not just one - a page can be linked from a sub-index while still being invisible to readers:
+  - The master navigation file for the product area (e.g. `help/workfront-fusion/TOC.md`) - this is what actually drives the published nav tree.
+  - Any in-content sub-index/landing page that also links to articles of this kind (e.g. `apps-and-modules-toc.md` for a new connector modules page).
+  Check both explicitly and confirm the new entry sits in the same list, at the same nesting level, as its closest sibling articles in each file - don't assume adding it to one covers the other.
 
 ## Step 3: Create the Workfront task
 
@@ -44,6 +50,7 @@ Task fields:
 |---|---|
 | `name` | `Becky - {Feature Title}` |
 | `projectID` | from the project lookup above |
+| `parentID` | the parent task ID (`parentID`, a system field - no `DE:` prefix) - see Known values below. This makes the new task a subtask, not a top-level task in the project. |
 | `assignedToID` | the current user, from `insights_get_current_user` |
 | `categoryID` | the Product Documentation custom form ID - see Known values below. If it's ever unclear, query `task.task_categoryID` on any recent sibling task in this project to confirm. |
 | `description` | the **complete Slack message text** (all fields from the request template, not a paraphrase), followed by a link to the Slack conversation |
@@ -82,5 +89,6 @@ Report plainly:
 Confirm these still resolve rather than assuming they're permanent:
 
 * Project "Product Documentation tasks - for development Issues that require messaging" maps to ID `5e69583f00236b9f767c3e3944100ee4`
+* Parent task "Becky - Tasks from Fusion-Documentation channel" maps to ID `6a9b065100003a7554832780c2015e93` (in the same project) - resolve with `insights_find_id_by_name` (entity `task`) rather than hardcoding, in case it ever changes
 * Product Documentation custom form (`categoryID`) is `5d7275b9000514604bd969d418725843`
 * Custom fields used: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
