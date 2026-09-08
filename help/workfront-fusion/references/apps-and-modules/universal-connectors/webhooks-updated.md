@@ -70,13 +70,18 @@ To use a webhook to connect an app to Workfront Fusion, you can set up the webho
 >
 >**API key auth is now the default authorization type** for new webhooks. Previously, no authorization was pre-selected. You can still change a webhook's Authorization type to any other type, or select the empty value for no authorization.
 
+* [Configure a webhook](#configure-a-webhook)
+* [Configure the webhook's data structure](#configure-the-webhook-s-data-structure)
+
+### Configure a webhook
+
 * [Use a webhook with a client certificate(mTLS)](#use-a-webhook-with-a-client-certificate-mtls)
 * [Use a webhook with basic authentication](#use-a-webhook-with-basic-authentication)
 * [Use a webhook with Adobe Identity Management System (IMS)](#use-a-webhook-with-adobe-identity-management-system-ims)
 * [Use a webhook with API key authentication](#use-a-webhook-with-api-key-authentication)
 * [Use a webhook with HMAC signature authentication](#use-a-webhook-with-hmac-signature-authentication)
 
-### Use a webhook with a client certificate (mTLS)
+#### Use a webhook with a client certificate (mTLS)
 
 With mTLS, you supply a client certificate and private key. Fusion uses the certificate and key to authenticate itself to the destination service when calling the webhook. This two-way authentication allows your webhook to be more secure than basic authentication.
 
@@ -119,7 +124,7 @@ After you create a webhook, a unique URL displays. This is the address where the
 >
 >After you create a webhook, you can use it in more than one scenario at a time.
 
-### Use a webhook with basic authentication
+#### Use a webhook with basic authentication
 
 Basic authentication uses a username and password to authenticate to the service you are connecting to.
 
@@ -149,7 +154,7 @@ After you create a webhook, a unique URL displays. This is the address where the
 >
 >After you create a webhook, you can use it in more than one scenario at a time.
 
-### Use a webhook with Adobe Identity Management System (IMS)
+#### Use a webhook with Adobe Identity Management System (IMS)
 
 Adobe Identity Management System (IMS) authentication uses your organization's Adobe IMS credentials to authenticate to the service you are connecting to.
 
@@ -181,7 +186,7 @@ After you create a webhook, a unique URL displays. This is the address where the
 >
 >After you create a webhook, you can use it in more than one scenario at a time.
 
-### Use a webhook with API key authentication
+#### Use a webhook with API key authentication
 
 API key authentication protects a webhook endpoint with a single key, sent either as a request header or a query parameter. This is the default authorization type for new webhooks.
 
@@ -219,7 +224,7 @@ After you create a webhook, a unique URL displays. This is the address where the
 >
 >After you create a webhook, you can use it in more than one scenario at a time.
 
-### Use a webhook with HMAC signature authentication
+#### Use a webhook with HMAC signature authentication
 
 HMAC signature authentication validates that incoming requests were signed with a shared signing secret, protecting against tampering and spoofed calls without sending the secret itself on every request.
 
