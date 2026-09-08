@@ -69,6 +69,11 @@ Task fields:
 
 Set the preview date fields as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
 
+The `description` field has a hard 4000-character limit. If the complete Slack message text doesn't fit:
+
+1. Create the task first with a short `description` instead: Feature Title, Expected release date, Needs announcement, a one-line summary of the request, a note that the full request text is posted as the first comment on the task, and the Slack thread link.
+1. Then post the complete, verbatim Slack message text (all template fields, not a paraphrase) as a comment on the newly created task, via `comment-stream_create_comment` (`objectCode` `task`, `objectID` the new task's ID) - this tool has no comparable length limit. Include both `content` (plain text) and `contentHTML` (structured with headings/lists, not just bare `<p>` tags).
+
 Release note format for the `DE:Release notes` field. Always start with `***FUSION***` on its own line, then a blank line, then the title - this marks the note as belonging to Fusion (as opposed to core Workfront) at a glance:
 
 ```markdown
