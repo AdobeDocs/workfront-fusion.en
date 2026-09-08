@@ -92,7 +92,7 @@ For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/r
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Allowed Origins]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -133,7 +133,7 @@ Basic authentication uses a username and password to authenticate to the service
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Allowed Origins]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -163,7 +163,7 @@ Adobe Identity Management System (IMS) authentication uses your organization's A
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Allowed Origins]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -195,7 +195,7 @@ API key authentication protects a webhook endpoint with a single key, sent eithe
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Allowed origins]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -206,9 +206,7 @@ API key authentication protects a webhook endpoint with a single key, sent eithe
 
    For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 1. In the **Authorization type** field, select **[!UICONTROL API key auth]** if it is not already selected.
-1. In the **Credentials** field, select the credentials to be used for authorization, or add new credentials.
-1. (Conditional) To add credentials:
-   1. Click **Add**
+1. In the **Key** field, select the API key to be used for authorization, or add a new API key by clicking **Add** and entering new credentials:
    1. Enter a name for the new credentials key.
    1. In the **Key** field, enter the key value that you want to authenticate with. Use the eye icon next to the field to reveal or hide it while typing.
    1. In the **API Key placement** field, select whether the key is sent in the header or as a query parameter.
@@ -233,7 +231,7 @@ HMAC signature authentication validates that incoming requests were signed with 
 1. Click **[!UICONTROL Add]** next to the Webhook field and enter a name for the new webhook.
 1. (Optional) Click **[!UICONTROL Advanced Settings]**. 
 1. In the **[!UICONTROL IP restrictions]** field, enter a comma-separated list of the IP addresses that the module can accept data from.
-1. (Optional) In the **[!UICONTROL Origin restrictions]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
+1. (Optional) In the **[!UICONTROL Allowed Origins]** field, for each origin that you want to allow to call this webhook, click **Add item** and enter the origin pattern. If you want to allow any origin, leave this field blank.
 
    This field accepts the following patterns:
 
@@ -244,9 +242,7 @@ HMAC signature authentication validates that incoming requests were signed with 
 
    For information on data structures, see [Data structures](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md).
 1. In the **Authorization type** field, select **[!UICONTROL HMAC signature]**.
-1. In the **Credentials** field, select the credentials to be used for authorization, or add new credentials.
-1. (Conditional) To add credentials:
-   1. Click **Add**
+1. In the **key** field, select the signature to be used for authorization, or add a new signature by clicking **Add** and entering new credentials.
    1. Enter a name for the new credentials key.
    1. In the **Signing secret** field, enter the shared secret that you want to use. Use the eye icon next to the field to reveal or hide it while typing.
    1. In the **Algorithm** field, select the hashing algorithm to use, for example SHA-256.
