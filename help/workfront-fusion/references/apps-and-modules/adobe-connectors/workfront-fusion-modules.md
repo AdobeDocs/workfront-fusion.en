@@ -271,6 +271,9 @@ Updates a specified record.
 
 ### Export
 
+* [Export activity logs](#export-activity-logs)
+* [Export Scenarios](#export-scenarios)
+
 #### Export activity logs
 
 This module exports activity logs.
@@ -309,6 +312,23 @@ This module exports activity logs.
   </tr> 
  </tbody> 
 </table>
+
+#### Export Scenarios
+
+This module exports Fusion blueprints for one or more scenarios.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!-- BECKY CHECK ME: confirm the exact field name(s) for selecting which scenario(s) to export (e.g. a single "Scenario ID" vs. a repeatable "Scenario IDs" list) and the shape of the returned blueprint output, before publishing - the Slack request described this module only by its purpose ("allows users to export blueprints for one or multiple scenarios"), not its field-level UI. -->
 
 ### Misc
 
