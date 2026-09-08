@@ -11,7 +11,7 @@ This is a different workflow from the `fusion-release-notes` skill. This skill u
 
 ## Step 1: Get the request details
 
-If given a Slack link, parse the `channel_id` and `message_ts` out of the URL and fetch the thread (`slack_get_thread_replies` or `slack_read_thread`, depending on which Slack MCP tool is connected - try both if one fails). Keep the thread's permalink/URL - it's needed in Step 3.
+If given a Slack link, parse the `channel_id` and `message_ts` out of the URL and fetch the thread (`slack_get_thread_replies` or `slack_read_thread`, depending on which Slack MCP tool is connected - try both if one fails). Keep the thread's permalink/URL - it's needed in Step 4.
 
 Slack connections in this environment are flaky (expired tokens, disconnects mid-session). If a fetch fails:
 - Retry once.
@@ -27,9 +27,17 @@ The request template has these fields - extract each one:
 
 If the request links to a Confluence wiki page with the full spec, fetch it (`get_wiki_content`) before writing documentation. Don't rely on the Slack summary alone for technical details (exact field names, steps, UI labels) - pull those from the wiki spec when one is linked.
 
-If the request instead links to a non-Confluence secondary source (e.g. an Experience League Community post, a support article, an AI-generated summary) rather than an authoritative spec, you may use it to fill in technical detail the Slack text lacks, but treat it as lower-confidence than the Slack request itself. Where it conflicts with or adds to the Slack text (a different name for the same button/field, a detail not mentioned in Slack at all), don't silently pick one - write the doc using the Slack request's wording as the primary source, and flag the discrepancy inline with an HTML comment (e.g. `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) per the guidance in Step 2.
+If the request instead links to a non-Confluence secondary source (e.g. an Experience League Community post, a support article, an AI-generated summary) rather than an authoritative spec, you may use it to fill in technical detail the Slack text lacks, but treat it as lower-confidence than the Slack request itself. Where it conflicts with or adds to the Slack text (a different name for the same button/field, a detail not mentioned in Slack at all), don't silently pick one - write the doc using the Slack request's wording as the primary source, and flag the discrepancy inline with an HTML comment (e.g. `<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`) per the guidance in Step 3.
 
-## Step 2: Update the documentation
+## Step 2: Create a branch for the request
+
+Before touching any files, create a new git branch for this request and check it out. Branch off the current default branch (`main`), not off whatever branch happens to be checked out.
+
+Name the branch `becky-{short-kebab-case-description}`, derived from the **Feature Title** - the first word must be `becky`, matching this repo's existing branch convention (e.g. `becky-webhook-update`, `becky-storage-beta-sos`). Keep it short - a few words, not the full title verbatim.
+
+If the working tree isn't clean (uncommitted changes from unrelated work), stop and tell the user rather than branching over it.
+
+## Step 3: Update the documentation
 
 Find the relevant existing article(s) in this repo (grep for related module names, UI labels, or settings names - don't guess the file). Update them to reflect the change, following that article's existing structure, heading level, and house style.
 
@@ -40,7 +48,7 @@ Find the relevant existing article(s) in this repo (grep for related module name
   - Any in-content sub-index/landing page that also links to articles of this kind (e.g. `apps-and-modules-toc.md` for a new connector modules page).
   Check both explicitly and confirm the new entry sits in the same list, at the same nesting level, as its closest sibling articles in each file - don't assume adding it to one covers the other.
 
-## Step 3: Create the Workfront task
+## Step 4: Create the Workfront task
 
 Project: **Product Documentation tasks - for development Issues that require messaging**. Resolve its ID with `insights_find_id_by_name` (entity `project`) rather than hardcoding it, in case it ever changes - see Known values below for the last resolved ID.
 
@@ -75,10 +83,11 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 Before the create call, call `read_workflow_docs` with `workfront://tools/create-any-object` - this call sets custom fields and an enum value (`DE:Preview Date Known`), which requires it per the MCP server's rules.
 
-## Step 4: Confirm back to the user
+## Step 5: Confirm back to the user
 
 Report plainly:
 
+* The branch you created.
 * Which doc file(s) you changed and what you added.
 * The task name and URL.
 * The exact field values you set, including the preview date fields.
