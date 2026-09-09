@@ -90,12 +90,12 @@ You can use the following links to download the Workfront Fusion public certific
 
 Download the following zip file, the unzip it and use the PEM file for your datacenter.
 
-[Download Workfront Fusion 2026 certificates](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[Download Workfront Fusion 2026 certificates](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | Datacenter | Download link | Dates valid |
 | --- | --- | --- |
 | US AWS Datacenter | `fusion-prod-us-mtls-certificate-2026.pem` | January 29, 2026 to March 2, 2027 |
-| US Azure Cluster | `fusion-prod-az-mtls-certificate.pem` | September 21, 2025 to October 23, 2026 |
+| US Azure Cluster | `fusion-prod-az-mtls-certificate-2026-sept.pem` | August 19, 2026 to March 6, 2027 |
 | EU AWS Datacenter | `fusion-prod-eu-mtls-certificate-2026.pem` | January 29, 2026 to March 2, 2027 |
 | EU Azure Cluster | `fusion-prod-eu-az-mtls-certificate-2026.pem` | February 4, 2026 to March 8, 2027 |
 
