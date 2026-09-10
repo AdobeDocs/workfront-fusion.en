@@ -64,10 +64,13 @@ Task fields:
 | `description` | the **complete Slack message text** (all fields from the request template, not a paraphrase), followed by a link to the Slack conversation |
 | `DE:Release notes` | a formatted release note, see format below |
 | `DE:Preview Date Known` | `Yes`, by default |
-| `DE:Preview Date` | the request's **Expected release date**, by default |
+| `DE:Preview Date` | the date cited in the original Slack message (the request's **Expected release date**), by default |
+| `taskConstraint` + `constraintDate` | Set `taskConstraint` to `MFO` (Must Finish On) with `constraintDate` = the date cited in the original Slack message (the request's **Expected release date**), so the task's planned completion date matches it too. |
 | Product/Area | select `Fusion` (an enum field on the Product Documentation form; confirm the exact field name with `insights_search_fields` if it's ever unclear) |
 
-Set the preview date fields as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
+Set the preview date fields and the planned completion date as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
+
+New tasks default to an As Soon As Possible constraint with 0 duration, under which `plannedStartDate`/`plannedCompletionDate` are scheduler-derived and a direct write to either is silently dropped (no error, the date just doesn't change). Setting `taskConstraint: "MFO"` with `constraintDate` is the reliable way to pin the planned completion date to the date cited in the Slack message. Read `workfront://knowledge/task/update` before this write - it's a scheduling/date field per the MCP server's rules.
 
 Release note format for the `DE:Release notes` field. Always start with `***FUSION***` on its own line, then a blank line, then the title - this marks the note as belonging to Fusion (as opposed to core Workfront) at a glance:
 
