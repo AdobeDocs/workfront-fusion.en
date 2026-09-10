@@ -133,10 +133,11 @@ Ask the user: *"Do you want a redirect set up for the new connector article?"*
 - If **yes**, gather:
   - The **source path** (must start with `/en`, no spaces)
   - The **destination** — a relative path starting with `/en`, or a full `https` URL (no spaces)
-- Add the row to the sibling `Adobe-Enterprise-Docs/redirects` repo, under `redirects/redirects-prod.csv` **only**. Never add it to `redirects-dev.csv` or `redirects-stage.csv` — prod is the only environment this skill ever touches.
+- Add the row to the sibling `Adobe-Enterprise-Docs/redirects` repo, to `redirects/redirects-prod.csv` **and no other file**. Never add it to `redirects-dev.csv`, `redirects-stage.csv`, or any other file in that repo — prod is the only environment this skill ever touches, and the branch should contain that one file's change only.
 - Row rules (from that repo's README):
   - No duplicate `source`, and no duplicate `source`/`destination` pair.
   - The redirect must not cause a redirect loop.
+- Make the change on a new branch in the `redirects` repo, named `workfront-{month}-{day}-{year}-{topic}` (lowercase, e.g. `workfront-sep-10-2026-aem-mcp-redirect`) — never commit straight to `main` there.
 - **This skill only adds the CSV row after the user confirms it.** Raising the PR in the `redirects` repo is a separate step this skill does not do — tell the user a PR still needs to be opened and merged there before the redirect goes live (~5 minutes after merge for 1:1 redirects).
 
 ## Step 8: Final checklist
