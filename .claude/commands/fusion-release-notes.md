@@ -133,7 +133,7 @@ Ask the user: *"Do you want a redirect set up for the new connector article?"*
 - If **yes**, gather:
   - The **source path** (must start with `/en`, no spaces)
   - The **destination** — a relative path starting with `/en`, or a full `https` URL (no spaces)
-- Add the row to the sibling `Adobe-Enterprise-Docs/redirects` repo, under `redirects/`, one file per environment (`redirects-dev.csv`, `redirects-stage.csv`, `redirects-prod.csv`).
+- Add the row to the sibling `Adobe-Enterprise-Docs/redirects` repo, under `redirects/redirects-prod.csv` **only**. Never add it to `redirects-dev.csv` or `redirects-stage.csv` — prod is the only environment this skill ever touches.
 - Row rules (from that repo's README):
   - No duplicate `source`, and no duplicate `source`/`destination` pair.
   - The redirect must not cause a redirect loop.

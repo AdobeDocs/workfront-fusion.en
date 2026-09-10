@@ -131,3 +131,4 @@ For information on Data Stores, see [Data Store](/help/workfront-fusion/create-s
 </table>
 
 The module returns the AI's final answer, as text, along with a record of what happened while producing that answer, including which tools were called, whether each call succeeded, and how long processing took.
+
