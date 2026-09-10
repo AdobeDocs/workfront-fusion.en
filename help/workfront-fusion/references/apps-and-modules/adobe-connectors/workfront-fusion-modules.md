@@ -271,6 +271,9 @@ Updates a specified record.
 
 ### Export
 
+* [Export activity logs](#export-activity-logs)
+* [Export Scenarios](#export-scenarios)
+
 #### Export activity logs
 
 This module exports activity logs.
@@ -306,6 +309,25 @@ This module exports activity logs.
   <tr> 
    <td role="rowheader">Direction</td> 
    <td>Select whether you want to order results ascending or descending.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Export Scenarios
+
+This module exports Fusion blueprints for one or more scenarios.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  <tr> 
+   <td role="rowheader">Scenario IDs</td> 
+   <td>For each scenario that you want to export, click <b>Add item</b> and enter the scenario ID.</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>
