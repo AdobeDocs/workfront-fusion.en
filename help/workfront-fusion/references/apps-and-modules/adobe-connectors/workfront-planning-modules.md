@@ -1676,6 +1676,12 @@ This trigger module starts a scenario when a record, record type, or workspace i
        <b>NOTE</b>: As of August 23, 2026, Fusion enables authToken-based security by default for all Workfront Planning > Watch Event modules, including existing ones. If a specific webhook breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option.</p>
       </td>
     </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Custom token]</td>
+      <td>
+       <p>(Optional) If [!UICONTROL Enable secured hooks] is set to [!UICONTROL Yes], you can enter your own token value to secure the webhook. If you leave this field blank, Fusion automatically generates a token for you.</p>
+      </td>
+    </tr>
   </tbody>
 </table>
 
