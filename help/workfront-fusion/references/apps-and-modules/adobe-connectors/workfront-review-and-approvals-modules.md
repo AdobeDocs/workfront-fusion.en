@@ -1010,10 +1010,36 @@ This action module creates a grouped approval: a set of document versions that m
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Name</p></td>
+      <td>Enter or map a display name for the grouped approval. Must be between 1-255 characters.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Assets</p></td>
+      <td>For each document version that you want to include in the group, click <b>Add item</b> and enter the document version (DOCV) ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Paths</p></td>
+      <td>For each approval path that you want to add, click <b>Add item</b> and enter the path data. Each path contains an ordered sequence of stages.<!-- BECKY CHECK ME: confirm the exact sub-fields for a path (and whether they reuse the Stages fields table in this article) before publishing - the screenshot only showed the collapsed "Add item" control for Paths, not its expanded fields. --></td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Parent Object ID</p></td>
+      <td>Enter or map the ID of the Workfront parent object (for example, a project or task) that you want to associate with the grouped approval. If you use this field, you must also enter the Object Code.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Object Code</p></td>
+      <td>Enter or map the Workfront object type code for the parent object (for example, <code>PROJ</code> or <code>TASK</code>). Required if you enter a Parent Object ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Template ID</p></td>
+      <td>(Optional) Enter or map a template ID to record on the grouped approval for traceability.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail. -->
 
 #### Delete grouped approval
 
@@ -1027,10 +1053,16 @@ This action module deletes a grouped approval, cascading to its child asset appr
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to delete.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail. -->
 
 #### Get approvals in a grouped approval
 
@@ -1044,10 +1076,20 @@ This search module returns the individual asset approvals that make up a grouped
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to get approvals for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Document version data</p></td>
+      <td>Select whether to attach the Redrock documentVersion record to each document version (DOCV) approval. <ul><li><b>Yes</b><p>The Redrock documentVersion record is attached to each DOCV approval.</p></li><li><b>No</b><p>The Redrock documentVersion record is not attached to each DOCV approval.</p></li><li><b>Not defined</b><p>Use the default behavior for this option.</p></li></ul></td>
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail. -->
 
 #### Get grouped approval details
 
@@ -1061,10 +1103,16 @@ This search module returns a grouped approval by its GUID.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to get details for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail. -->
 
 #### List grouped approvals by parent
 
@@ -1078,10 +1126,20 @@ This search module returns the grouped approvals associated with a Workfront par
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Parent ID</p></td>
+      <td>Enter or map the ID of the Workfront parent object (for example, a project or task) that you want to get grouped approvals for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Object code</p></td>
+      <td>(Optional) Enter or map the Workfront object type code for the parent object (for example, <code>PROJ</code> or <code>TASK</code>).</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail. -->
 
 #### Make a custom API call
 
@@ -1146,10 +1204,24 @@ This action module adds and/or removes document versions on a grouped approval.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to manage assets on.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Add Assets</p></td>
+      <td>For each document version that you want to add to the group, click <b>Add item</b> and enter the document version (DOCV) ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Remove Assets</p></td>
+      <td>For each document version that you want to remove from the group, click <b>Add item</b> and enter the document version (DOCV) ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail. -->
 
 #### Manage stage participants
 
@@ -1163,10 +1235,34 @@ This action module adds, updates, and/or removes participants on a specific stag
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to manage participants on.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Add Participants</p></td>
+      <td>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Update Participants</p></td>
+      <td>For each participant that you want to update on the stage, click <b>Add item</b> and enter the participant details.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Remove Participants</p></td>
+      <td>For each participant that you want to remove from the stage, click <b>Add item</b> and enter the participant details.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail. -->
+<!-- BECKY CHECK ME: confirm the exact sub-fields under Add/Update/Remove Participants before publishing - the screenshot only showed the collapsed "Add item" controls, not the expanded participant fields (e.g. whether they match the Participant ID/type/role pattern used in Add or update participants). -->
 
 #### Manage stages on a grouped approval
 
@@ -1180,10 +1276,30 @@ This action module adds, updates, and/or removes stages on a grouped approval.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Add Stages</p></td>
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p></td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Update Stages</p></td>
+      <td>For each stage that you want to update, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p></td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Remove Stages</p></td>
+      <td>For each stage that you want to remove, click <b>Add item</b> and enter the stage ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail. -->
+<!-- BECKY CHECK ME: confirm the exact sub-fields under Add/Update/Remove Stages before publishing - the screenshot only showed the collapsed "Add item" controls. Add/Update Stages are assumed to reuse the Stages fields table used elsewhere in this article; Remove Stages is assumed to take only a stage ID. Neither assumption is confirmed. -->
 
 #### Search grouped approvals
 
@@ -1197,10 +1313,30 @@ This search module searches grouped approvals using a named view.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>View</p></td>
+      <td>(Optional) Select or map the named view that determines the shape of the response. Currently, only Awaiting Approvals is supported.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>(Optional) Enter or map the page size for the first page of results. The maximum is 100; the default is 20.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Cursor</p></td>
+      <td>(Optional) Enter or map the opaque cursor from a previous response, to fetch the next page of results. If you provide a cursor, the module ignores the Limit field.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Team IDs</p></td>
+      <td>(Optional) For each team that you also want to match grouped approvals by (where the team is a participant), click <b>Add item</b> and enter the team ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail. -->
+<!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
 
 #### Stages fields
 
@@ -1277,8 +1413,28 @@ This action module applies a full-state update to a grouped approval.
       <td role="rowheader">Connection</td>
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to update. For example, <code>9f8b60820000462ecf66c409d1248fa9</code>.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Paths</p></td>
+      <td>For each approval path that you want the grouped approval to have, click <b>Add item</b> and enter the path data. Fusion reconciles this against the current state, adding, updating, and removing paths to match what you send.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Assets</p></td>
+      <td>(Optional) For each document version that you want the group to contain, click <b>Add item</b> and enter the document version (DOCV) ID. If you omit this field, the current assets are left unchanged.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Idempotency Key</p></td>
+      <td>(Optional) Enter or map a client-supplied key (maximum 128 characters) that makes a retried request safe. If you send the same key again, the module does not apply the update a second time.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
   </tbody>
 </table>
 
-<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail. -->
+<!-- BECKY CHECK ME: confirm the exact sub-fields for a path before publishing - the screenshot only showed the collapsed "Add item" control for Paths, not its expanded fields (same open question noted under Create grouped approval). -->
 
