@@ -132,7 +132,6 @@ If you see the map button above a field or function, you can use it to set varia
 * [Add or update participants](#add-or-update-participants)
 * [Bulk delete templates](#bulk-delete-templates)
 * [Create a template](#create-a-template)
-* [Create an approval](#create-an-approval)
 * [Create stages](#create-stages)
 * [Delete a decision on a stage](#delete-a-decision-on-a-stage)
 * [Delete a stage](#delete-a-stage)
