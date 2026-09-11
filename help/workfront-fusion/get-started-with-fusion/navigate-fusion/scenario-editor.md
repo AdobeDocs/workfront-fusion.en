@@ -83,6 +83,7 @@ You may need to click on the three-dot icon in the Controls area to view some of
 | Explain flow  <p>![Explain Flow icon](assets/explain-flow-icon.png) </p> | View an animation where moving dots show how data flows through the scenario. |
 | DevTool <p>![DevTool icon](assets/devtool-icon.png)</p> | Using the DevTool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Export Blueprint  <p>![Export Blueprint icon](assets/export-blueprint-icon.png) </p> | Export a blueprint of the current scenario. |
+| Export as headless template  <p>![Export as headless template icon](assets/export-as-headless-template-icon.png) </p> | Export the scenario as a headless template. |
 | Import Blueprint  <p>![Import Blueprint icon](assets/import-blueprint-icon.png) </p> | Import a previously exported scenario blueprint. |
 | Previous Version  <p>![Previous version icon](assets//previous-version-icon.png) </p> | View previous versions of this scenario. |
 
