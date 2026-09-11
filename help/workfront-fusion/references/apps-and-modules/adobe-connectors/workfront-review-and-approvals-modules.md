@@ -1012,7 +1012,7 @@ This action module creates a grouped approval: a set of document versions that m
     </tr>
      <tr>
       <td role="rowheader"><p>Name</p></td>
-      <td>Enter or map a display name for the grouped approval. Must be between 1-255 characters.</td> 
+      <td>Enter or map a display name for the grouped approval. The name must be between 1-255 characters.</td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Assets</p></td>
@@ -1020,7 +1020,25 @@ This action module creates a grouped approval: a set of document versions that m
       </tr>
      <tr>
       <td role="rowheader"><p>Paths</p></td>
-      <td>For each approval path that you want to add, click <b>Add item</b> and enter the path data. Each path contains an ordered sequence of stages.<!-- BECKY CHECK ME: confirm the exact sub-fields for a path (and whether they reuse the Stages fields table in this article) before publishing - the screenshot only showed the collapsed "Add item" control for Paths, not its expanded fields. --></td> 
+      <td>For each approval path that you want to add, click <b>Add item</b> and enter the path ID, name, and stages. Each path contains an ordered sequence of stages. For each stage, in the Stages field, click <b>Add item</b> and enter the following data:
+      <ul>
+      <li><b>Stage ID</b><p>Enter a client-assigned identifier for the stage, unique across all paths. Must be alphanumeric, with underscores or hyphens allowed, and no more than 64 characters.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Parent Stage IDs</b><p>For each parent stage that you want to add to the stage, click <b>Add item</b> and enter the Parent ID.</p></li>
+      <li><b>Participants</b><p>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.
+      <ul>
+      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Participant type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Deadline Time: Hours</b><p>Enter or map the hour of day for the deadline (0-23). Pair with Deadline Time: Minutes.</p></li>
+      <li><b>Deadline Time: Minutes</b><p>Enter or map the minute of hour for the deadline (0-59). Pair with Deadline Time: Hours.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Parent Object ID</p></td>
@@ -1082,7 +1100,7 @@ This search module returns the individual asset approvals that make up a grouped
       </tr>
      <tr>
       <td role="rowheader"><p>Document version data</p></td>
-      <td>Select whether to attach the Redrock documentVersion record to each document version (DOCV) approval. <ul><li><b>Yes</b><p>The Redrock documentVersion record is attached to each DOCV approval.</p></li><li><b>No</b><p>The Redrock documentVersion record is not attached to each DOCV approval.</p></li><li><b>Not defined</b><p>Use the default behavior for this option.</p></li></ul></td>
+      <td>Select whether to attach the Redrock documentVersion record to each document version (DOCV) approval. </td>
       </tr>
      <tr>
       <td role="rowheader"><p>Limit</p></td>
@@ -1245,15 +1263,32 @@ This action module adds, updates, and/or removes participants on a specific stag
       </tr>
      <tr>
       <td role="rowheader"><p>Add Participants</p></td>
-      <td>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.</td> 
+      <td>For each participant that you want to add to the stage, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Participant Type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Update Participants</p></td>
-      <td>For each participant that you want to update on the stage, click <b>Add item</b> and enter the participant details.</td> 
+      <td>For each participant that you want to update on the stage, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Participant Type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Remove Participants</p></td>
-      <td>For each participant that you want to remove from the stage, click <b>Add item</b> and enter the participant details.</td> 
+      <td>For each participant that you want to remove from the stage, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Participant Type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant</b><p>Enter or map the ID of the participant.</p></li>
+      </ul>
+      </td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Limit</p></td>
@@ -1261,8 +1296,6 @@ This action module adds, updates, and/or removes participants on a specific stag
       </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm the exact sub-fields under Add/Update/Remove Participants before publishing - the screenshot only showed the collapsed "Add item" controls, not the expanded participant fields (e.g. whether they match the Participant ID/type/role pattern used in Add or update participants). -->
 
 #### Manage stages on a grouped approval
 
@@ -1282,11 +1315,27 @@ This action module adds, updates, and/or removes stages on a grouped approval.
       </tr>
      <tr>
       <td role="rowheader"><p>Add Stages</p></td>
-      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p></td> 
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Stage ID</b><p>Enter or map an identifier for the stage.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Update Stages</p></td>
-      <td>For each stage that you want to update, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p></td> 
+      <td>For each stage that you want to update, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Stage ID</b><p>Enter or map the ID of the stage that you want to update.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Remove Stages</p></td>
@@ -1298,8 +1347,6 @@ This action module adds, updates, and/or removes stages on a grouped approval.
       </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm the exact sub-fields under Add/Update/Remove Stages before publishing - the screenshot only showed the collapsed "Add item" controls. Add/Update Stages are assumed to reuse the Stages fields table used elsewhere in this article; Remove Stages is assumed to take only a stage ID. Neither assumption is confirmed. -->
 
 #### Search grouped approvals
 
@@ -1319,7 +1366,7 @@ This search module searches grouped approvals using a named view.
       </tr>
      <tr>
       <td role="rowheader"><p>Limit</p></td>
-      <td>(Optional) Enter or map the page size for the first page of results. The maximum is 100; the default is 20.</td> 
+      <td>(Optional) Enter or map the page size for the first page of results. The maximum is 100, and  the default is 20.</td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Cursor</p></td>
@@ -1419,7 +1466,25 @@ This action module applies a full-state update to a grouped approval.
       </tr>
      <tr>
       <td role="rowheader"><p>Paths</p></td>
-      <td>For each approval path that you want the grouped approval to have, click <b>Add item</b> and enter the path data. Fusion reconciles this against the current state, adding, updating, and removing paths to match what you send.</td> 
+      <td>For each approval path that you want the grouped approval to have, click <b>Add item</b> and enter the path ID, name, and stages. Fusion reconciles this against the current state, adding, updating, and removing paths to match what you send. Each path contains an ordered sequence of stages. For each stage, in the Stages field, click <b>Add item</b> and enter the following data:
+      <ul>
+      <li><b>Stage ID</b><p>Enter a client-assigned identifier for the stage, unique across all paths. Must be alphanumeric, with underscores or hyphens allowed, and no more than 64 characters.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Parent Stage IDs</b><p>For each parent stage that you want to add to the stage, click <b>Add item</b> and enter the Parent ID.</p></li>
+      <li><b>Participants</b><p>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.
+      <ul>
+      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Participant type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Deadline Time: Hours</b><p>Enter or map the hour of day for the deadline (0-23). Pair with Deadline Time: Minutes.</p></li>
+      <li><b>Deadline Time: Minutes</b><p>Enter or map the minute of hour for the deadline (0-59). Pair with Deadline Time: Hours.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
       </tr>
      <tr>
       <td role="rowheader"><p>Assets</p></td>
@@ -1435,6 +1500,4 @@ This action module applies a full-state update to a grouped approval.
       </tr>
   </tbody>
 </table>
-
-<!-- BECKY CHECK ME: confirm the exact sub-fields for a path before publishing - the screenshot only showed the collapsed "Add item" control for Paths, not its expanded fields (same open question noted under Create grouped approval). -->
 
