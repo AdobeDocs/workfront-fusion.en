@@ -238,35 +238,6 @@ This action module creates an approval template
   </tbody>
 </table>
 
-#### Create an approval
-
-This action module creates an approval for a document on Adobe cloud storage, including stage data or a template.
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">Connection</td>
-      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to create an approval for.</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>Stages</p>
-      </td>
-      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>Template ID</p></td>
-      <td>Enter or map the ID of the template that you want to use for this approval.</td> 
-      </tr>
-  </tbody>
-</table>
-
 <!--
 
 #### Create Grouped Approval
