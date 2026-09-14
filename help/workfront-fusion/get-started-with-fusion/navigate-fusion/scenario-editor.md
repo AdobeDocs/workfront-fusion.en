@@ -13,6 +13,12 @@ product_v2:
 
 The scenario editor allows you to create and edit scenarios in a visual interface.
 
+The new scenario editor experience:
+
+![New scenario editor](assets/scenario-editor-new.png)
+
+The classic scenario editor experience
+
 ![Scenario editor](assets/scenario-editor.jpg)
 
 ## Access requirements
@@ -44,23 +50,47 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Use the scenario editor in the new Fusion experience
+## New and classic experiences
 
-<!-- BECKY CHECK ME: take a new hero screenshot of the new-experience scenario editor to match the classic hero image (assets/scenario-editor.jpg) at the top of this article. -->
+Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time.
+
+<!-- BECKY CHECK ME: keep this summary brief and high-level - full details for each experience are documented in their own sections below. Update this list as more of the new experience is confirmed. -->
+
+The new experience includes:
+
+* A redesigned canvas, with card-style modules, a minimap, and zoom controls.
+* New scenario editor controls, including Find and replace, Snippets, and Undo/Redo.
+* An Ask AI button.
+* An updated connector picker with category navigation and the ability to mark favorites inline.
+
+To switch between the classic and new experiences:
+
+1. In the scenario editor, locate the **[!UICONTROL Try the new design]** toggle in the upper-right corner.
+1. Click the toggle to switch to the new experience. Click it again to return to the classic experience.
+
+## Use the scenario editor in the new experience
 
 ### Open the scenario editor and add a module:
 
 1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel.
-1. Click the placeholder module, then find and click the app or service that you want to start with. For detailed information about configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
+1. Click the placeholder module to open the list of apps and services.
+1. Select the app or service that you want to start with:
 
-<!-- BECKY CHECK ME: this is covered by the separately-tracked module/connector picker task - confirm final steps and screenshot with that task before publishing, don't duplicate work. -->
+   * Browse by category using the panel on the left ([!UICONTROL Favorites], [!UICONTROL All apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative & Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI], or [!UICONTROL Built-in]).
+   * Enter a term in the search box to filter the list.
+   * Click the star icon next to an app or service to add it to your favorites.
+
+   For detailed information about configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
+
+<!-- BECKY CHECK ME: this new select-a-module functionality (category navigation, search, the ability to mark favorites inline) is based on screenshots only, and overlaps with the separately-tracked module/connector picker task - confirm exact steps, wording, and screenshot with that task before publishing, don't duplicate work. -->
 
 ### Available scenario editor actions
 
 #### Run your scenario
 
-<!-- BECKY CHECK ME: new screenshot needed - Run once is icon-only in the new design, no adjacent text label per the comparison spreadsheet. Confirm whether a hover tooltip exists before rewording the instruction. -->
-<!-- BECKY CHECK ME: take a new screenshot of the Run once button to match the classic screenshot (assets/run-your-scenario.png). -->
+Run once is icon-only in the new design. Hover over the icon to see the **[!UICONTROL Run once]** tooltip.
+
+![run scenario button](assets/run-once-new.png)
 
 |Action|Details|
 |----------|----------|
@@ -69,9 +99,9 @@ For more detail about the information in this table, see [Access requirements in
 #### Scheduling
 
 <!-- Unchanged from classic - confirmed by comparison spreadsheet -->
-<!-- BECKY CHECK ME: this still shows the classic screenshot (assets/scheduling-scenario-editor.png). The control itself is unchanged, but take a new screenshot in the new-experience canvas styling before publishing - don't leave the classic image in this section. -->
+<!-- BECKY CHECK ME: this screenshot shows the label "Immediately as data arrives" instead of "Each 15 minutes" - confirm whether this is a wording change or just this particular scenario's own trigger/schedule setting before updating the Details text below. -->
 
-![scheduling panel](assets/scheduling-scenario-editor.png)
+![scheduling panel](assets/scheduling-new.png)
 
 | Action | Details |
 | ---------- | ---------- |
@@ -81,7 +111,7 @@ For more detail about the information in this table, see [Access requirements in
 
 You may need to click on the three-dot icon in the Controls area to view some of these controls.
 
-<!-- BECKY CHECK ME: take a new screenshot of the Controls area to match the classic screenshot (assets/controls-editor-scenario.png). -->
+![controls panel](assets/controls-new.png)
 
 | Action | Details |
 | ---------- | ---------- |
@@ -103,7 +133,7 @@ You may need to click on the three-dot icon in the Controls area to view some of
 
 #### Tools
 
-<!-- BECKY CHECK ME: take a new screenshot of the Tools panel to match the classic screenshot (assets/tools-scenario-editor.png). -->
+![tools panel](assets/tools-new.png)
 
 | Action | Details |
 |---------- | ---------- |
@@ -113,7 +143,9 @@ You may need to click on the three-dot icon in the Controls area to view some of
 
 #### Favorites
 
-<!-- BECKY CHECK ME: take a new screenshot of the Favorites panel to match the classic screenshot (assets/favorites-scenario-editor.png). -->
+<!-- BECKY CHECK ME: this screenshot shows 4 icons with no overflow "..." icon - confirm whether the ellipsis seen in the earlier full-picker screenshot was removed, or just not present when the favorites list is short enough to fit. -->
+
+![Favorites panel](assets/favorites-new.png)
 
 You can use the Favorites icon to add modules you use often.
 
@@ -121,9 +153,19 @@ You can use the Favorites icon to add modules you use often.
 | ---------- | ---------- |
 | New favorite icon (unnamed) | <!-- BECKY CHECK ME: a new favorite/module icon (red "A") appears in the new design - identity and function not yet confirmed. --> |
 
+#### Ask AI
+
+<!-- New subsection - no classic equivalent. Description is a guess based on the button's name/placement only - not confirmed. -->
+
+![Ask AI button](assets/ask-ai-new.png)
+
+Click **Ask AI** to <!-- BECKY CHECK ME: confirm what this feature actually does before writing real copy -->.
+
 #### Canvas navigation
 
 <!-- New subsection - no classic equivalent -->
+
+![Canvas navigation controls](assets/canvas-navigation-new.png)
 
 | Action | Details |
 | ---------- | ---------- |
@@ -131,13 +173,7 @@ You can use the Favorites icon to add modules you use often.
 | Center view | Re-center the canvas on your scenario. |
 | Minimap | View a thumbnail overview of the entire scenario, and click within it to jump to that area of the canvas. |
 
-#### Ask AI
-
-<!-- New subsection - no classic equivalent. Description is a guess based on the button's name/placement only - not confirmed. -->
-
-Click **Ask AI** to <!-- BECKY CHECK ME: confirm what this feature actually does before writing real copy -->.
-
-## Use the scenario editor in the classic Fusion experience
+## Use the scenario editor in the classic experience
 
 ### Open the scenario editor and add a module:
 
