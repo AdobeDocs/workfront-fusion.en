@@ -54,8 +54,6 @@ For more detail about the information in this table, see [Access requirements in
 
 Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time.
 
-<!-- BECKY CHECK ME: keep this summary brief and high-level - full details for each experience are documented in their own sections below. Update this list as more of the new experience is confirmed. -->
-
 The new experience includes:
 
 * A redesigned canvas, with card-style modules, a minimap, and zoom controls.
@@ -78,13 +76,25 @@ To switch between the classic and new experiences:
 
    * Browse by category using the panel on the left ([!UICONTROL Favorites], [!UICONTROL All apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative & Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI], or [!UICONTROL Built-in]).
    * Enter a term in the search box to filter the list.
-   * Click the star icon next to an app or service to add it to your favorites.
+   * To add a connector to your favorites, hover over the connecter, then click the star icon next the connector.
 
    For detailed information about configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
-<!-- BECKY CHECK ME: this new select-a-module functionality (category navigation, search, the ability to mark favorites inline) is based on screenshots only, and overlaps with the separately-tracked module/connector picker task - confirm exact steps, wording, and screenshot with that task before publishing, don't duplicate work. -->
-
 ### Available scenario editor actions
+
+#### Editing actions
+
+These actions are available at the top of the screen, rather than in the bottom toolbar.
+
+![Top of the screen](assets/top-bar-new.png)
+
+| Action | Details |
+| ---------- | ---------- |
+| Scenario name | The scenario's name is shown at the top-left of the screen. To rename the scenario, click on the name and enter a new one. |
+| Compact view | Toggle a view where the modules on the canvas turn into icons, similar to the modules view in the classic experience. |
+| Undo | Undo the most recent actions, most recent first. You can undo actions from the current session only.|
+| Redo | Redo recent actions. You can redo actions from the current session only. |
+| History | View a history of changes made in this session. You can also undo all session changes. |
 
 #### Run your scenario
 
@@ -98,14 +108,11 @@ Run once is icon-only in the new design. Hover over the icon to see the **[!UICO
 
 #### Scheduling
 
-<!-- Unchanged from classic - confirmed by comparison spreadsheet -->
-<!-- BECKY CHECK ME: this screenshot shows the label "Immediately as data arrives" instead of "Each 15 minutes" - confirm whether this is a wording change or just this particular scenario's own trigger/schedule setting before updating the Details text below. -->
-
 ![scheduling panel](assets/scheduling-new.png)
 
 | Action | Details |
 | ---------- | ---------- |
-| Schedule the scenario | By default, a scenario runs every 15 minutes. You can change this by defining when and how often an activated scenario runs. Fusion scenarios can be scheduled to run as often as every 5 minutes. For more information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
+| Schedule the scenario | By default, a scenario with a polling trigger runs every 15 minutes. You can change this by defining when and how often an activated scenario runs. Polled fusion scenarios can be scheduled to run as often as every 5 minutes. For more information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
 
 #### Controls
 
@@ -118,18 +125,16 @@ You may need to click on the three-dot icon in the Controls area to view some of
 | Save | <p>After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are available for 60 days after the next scenario version is created. </p><p>To retain scenario version history beyond 60 days for audit purposes, we recommend saving and archiving a blueprint of the scenario in another location.</p> |
 | Scenario settings | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
 | Notes | Make notes about the scenario. Other users can view these notes when they are in the scenario. For more information, see [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
-| Search modules | Enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application. |
-| Find and replace | Search for and replace text or values across the scenario's modules. |
-| Snippets | <!-- BECKY CHECK ME: confirm what this does - "Snippets" is a guess at behavior based on the icon/name only, not confirmed. --> |
+| Auto-align | Auto-align the modules in your scenario. |
+| Search modules | Select a module from that list to go to that module in the scenario, or enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application. |
+| Find and replace | Search for and replace variables, mapped value sources, or connections across the scenario's modules. |
+| Snippets | Snippets are scenario sections that are saved as a unit. Here, you can select a scenario snippet to add to your scenario. |
 | Explain flow | View an animation where moving dots show how data flows through the scenario. |
-| DevTool | Using the DevTool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Export Blueprint | Export a blueprint of the current scenario. For more information, see [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
 | Export as headless template | Export the scenario as a headless template. |
 | Import Blueprint | Import a previously exported scenario blueprint. For more information, see [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
+| DevTool | Using the DevTool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Previous Versions | View previous versions of this scenario. For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md). |
-| Undo / Redo | <!-- BECKY CHECK ME: new in this design - confirm exact behavior and whether it's scoped to the current session only. --> |
-
-<!-- BECKY CHECK ME: Auto-align was not located anywhere in the new design's toolbar screenshots. Confirm whether it was removed, merged into another control, or just not visible in the captures reviewed so far - do not drop it from documentation without confirming. -->
 
 #### Tools
 
@@ -137,13 +142,11 @@ You may need to click on the three-dot icon in the Controls area to view some of
 
 | Action | Details |
 |---------- | ---------- |
-| Flow control | Configure settings to control the way data flows through it. For more information, see [Flow control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md). |
+| Flow control | Configure settings to control the way data flows through the scenario. For more information, see [Flow control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md). |
 | Tools | The tools section contains several useful modules that can enhance your scenarios. For more information, see [Tools](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md). |
-| Text parser | Use the Text parser tool to parse text for use in other scenario modules. The Text parser does not require a connection. For more information, see [Text parser](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md). |
+| Text parser | Use the Text parser tool to parse text for use in other scenario modules. For more information, see [Text parser](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md). |
 
 #### Favorites
-
-<!-- BECKY CHECK ME: this screenshot shows 4 icons with no overflow "..." icon - confirm whether the ellipsis seen in the earlier full-picker screenshot was removed, or just not present when the favorites list is short enough to fit. -->
 
 ![Favorites panel](assets/favorites-new.png)
 
@@ -151,26 +154,24 @@ You can use the Favorites icon to add modules you use often.
 
 | Action | Details |
 | ---------- | ---------- |
-| New favorite icon (unnamed) | <!-- BECKY CHECK ME: a new favorite/module icon (red "A") appears in the new design - identity and function not yet confirmed. --> |
+| Your favorite connectors | The connectors you've marked as favorites are shown here. |
+| Add favorite icon | Click this icon to select another connector to add to the favorites section. |
+| Overflow icon | If you have more favorites than can fit in the toolbar, an overflow (three-dot) icon displays so you can access the rest. |
 
 #### Ask AI
 
-<!-- New subsection - no classic equivalent. Description is a guess based on the button's name/placement only - not confirmed. -->
-
 ![Ask AI button](assets/ask-ai-new.png)
 
-Click **Ask AI** to <!-- BECKY CHECK ME: confirm what this feature actually does before writing real copy -->.
+Click **Ask AI** to open Adobe's AI Assistant. This option may not be available based on your organization's AI settings.
 
 #### Canvas navigation
-
-<!-- New subsection - no classic equivalent -->
 
 ![Canvas navigation controls](assets/canvas-navigation-new.png)
 
 | Action | Details |
 | ---------- | ---------- |
 | Zoom in / zoom out | Zoom the canvas view in or out. |
-| Center view | Re-center the canvas on your scenario. |
+| Focus | Re-center the canvas on your scenario. |
 | Minimap | View a thumbnail overview of the entire scenario, and click within it to jump to that area of the canvas. |
 
 ## Use the scenario editor in the classic experience
