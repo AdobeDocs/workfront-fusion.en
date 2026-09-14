@@ -92,7 +92,7 @@ These actions are available at the top of the screen, rather than in the bottom 
 | ---------- | ---------- |
 | Scenario name | The scenario's name is shown at the top-left of the screen. To rename the scenario, click on the name and enter a new one. |
 | Compact view | Toggle a view where the modules on the canvas turn into icons, similar to the modules view in the classic experience. |
-| Undo | Undo the most recent actions, most recent first. You can undo actions from the current session only.|
+| Undo | Undo the most recent actions, most recent first. You can undo actions from the current session only. |
 | Redo | Redo recent actions. You can redo actions from the current session only. |
 | History | View a history of changes made in this session. You can also undo all session changes. |
 
@@ -141,7 +141,7 @@ You may need to click on the three-dot icon in the Controls area to view some of
 ![tools panel](assets/tools-new.png)
 
 | Action | Details |
-|---------- | ---------- |
+| ---------- | ---------- |
 | Flow control | Configure settings to control the way data flows through the scenario. For more information, see [Flow control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md). |
 | Tools | The tools section contains several useful modules that can enhance your scenarios. For more information, see [Tools](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md). |
 | Text parser | Use the Text parser tool to parse text for use in other scenario modules. For more information, see [Text parser](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md). |
@@ -224,7 +224,7 @@ You may need to click on the three-dot icon in the Controls area to view some of
 ![tools panel](assets/tools-scenario-editor.png)
 
 | Action | Details |
-|---------- | ---------- |
+| ---------- | ---------- |
 | Flow control | Configure settings to control the way data flows through it. For more information, see [Flow control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md). |
 | Tools | The tools section contains several useful modules that can enhance your scenarios. For more information, see [Tools](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md). |
 | Text parser | Use the Text parser tool to parse text for use in other scenario modules. The Text parser does not require a connection. For more information, see [Text parser](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md). |
