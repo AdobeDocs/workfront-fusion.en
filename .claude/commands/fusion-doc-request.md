@@ -37,6 +37,8 @@ Name the branch `becky-{short-kebab-case-description}`, derived from the **Featu
 
 If the working tree isn't clean (uncommitted changes from unrelated work), stop and tell the user rather than branching over it.
 
+This skill creates and commits to the branch, but does not push it or open a pull request - leave that to the user unless they separately ask you to.
+
 ## Step 3: Update the documentation
 
 Find the relevant existing article(s) in this repo (grep for related module names, UI labels, or settings names - don't guess the file). Update them to reflect the change, following that article's existing structure, heading level, and house style.
@@ -47,6 +49,7 @@ Find the relevant existing article(s) in this repo (grep for related module name
   - The master navigation file for the product area (e.g. `help/workfront-fusion/TOC.md`) - this is what actually drives the published nav tree.
   - Any in-content sub-index/landing page that also links to articles of this kind (e.g. `apps-and-modules-toc.md` for a new connector modules page).
   Check both explicitly and confirm the new entry sits in the same list, at the same nesting level, as its closest sibling articles in each file - don't assume adding it to one covers the other.
+* Leave the doc changes uncommitted on the branch. Do not run `git commit` (or `git add`) as part of this skill - the user commits when they're ready, after reviewing the changes. Only commit if the user explicitly asks you to.
 
 ## Step 4: Create the Workfront task
 
@@ -64,10 +67,18 @@ Task fields:
 | `description` | the **complete Slack message text** (all fields from the request template, not a paraphrase), followed by a link to the Slack conversation |
 | `DE:Release notes` | a formatted release note, see format below |
 | `DE:Preview Date Known` | `Yes`, by default |
-| `DE:Preview Date` | the request's **Expected release date**, by default |
+| `DE:Preview Date` | the date cited in the original Slack message (the request's **Expected release date**), by default |
+| `taskConstraint` + `constraintDate` | Set `taskConstraint` to `MFO` (Must Finish On) with `constraintDate` = the date cited in the original Slack message (the request's **Expected release date**), so the task's planned completion date matches it too. |
 | Product/Area | select `Fusion` (an enum field on the Product Documentation form; confirm the exact field name with `insights_search_fields` if it's ever unclear) |
 
-Set the preview date fields as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
+Set the preview date fields and the planned completion date as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
+
+New tasks default to an As Soon As Possible constraint with 0 duration, under which `plannedStartDate`/`plannedCompletionDate` are scheduler-derived and a direct write to either is silently dropped (no error, the date just doesn't change). Setting `taskConstraint: "MFO"` with `constraintDate` is the reliable way to pin the planned completion date to the date cited in the Slack message. Read `workfront://knowledge/task/update` before this write - it's a scheduling/date field per the MCP server's rules.
+
+The `description` field has a hard 4000-character limit. If the complete Slack message text doesn't fit:
+
+1. Create the task first with a short `description` instead: Feature Title, Expected release date, Needs announcement, a one-line summary of the request, a note that the full request text is posted as the first comment on the task, and the Slack thread link.
+1. Then post the complete, verbatim Slack message text (all template fields, not a paraphrase) as a comment on the newly created task, via `comment-stream_create_comment` (`objectCode` `task`, `objectID` the new task's ID) - this tool has no comparable length limit. Include both `content` (plain text) and `contentHTML` (structured with headings/lists, not just bare `<p>` tags).
 
 Release note format for the `DE:Release notes` field. Always start with `***FUSION***` on its own line, then a blank line, then the title - this marks the note as belonging to Fusion (as opposed to core Workfront) at a glance:
 
@@ -87,8 +98,9 @@ Before the create call, call `read_workflow_docs` with `workfront://tools/create
 
 Report plainly:
 
-* The branch you created.
+* The branch you created (committed locally, not pushed, and no pull request opened - per Step 2).
 * Which doc file(s) you changed and what you added.
+* That the changes are uncommitted on the branch, awaiting the user's review.
 * The task name and URL.
 * The exact field values you set, including the preview date fields.
 * Anything you weren't fully confident about - e.g. Slack was unreachable and you worked from pasted text only, the target doc article was ambiguous, or a technical detail wasn't in the source material and got flagged instead of guessed.
