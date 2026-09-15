@@ -73,6 +73,11 @@ Set the preview date fields and the planned completion date as part of this same
 
 New tasks default to an As Soon As Possible constraint with 0 duration, under which `plannedStartDate`/`plannedCompletionDate` are scheduler-derived and a direct write to either is silently dropped (no error, the date just doesn't change). Setting `taskConstraint: "MFO"` with `constraintDate` is the reliable way to pin the planned completion date to the date cited in the Slack message. Read `workfront://knowledge/task/update` before this write - it's a scheduling/date field per the MCP server's rules.
 
+The `description` field has a hard 4000-character limit. If the complete Slack message text doesn't fit:
+
+1. Create the task first with a short `description` instead: Feature Title, Expected release date, Needs announcement, a one-line summary of the request, a note that the full request text is posted as the first comment on the task, and the Slack thread link.
+1. Then post the complete, verbatim Slack message text (all template fields, not a paraphrase) as a comment on the newly created task, via `comment-stream_create_comment` (`objectCode` `task`, `objectID` the new task's ID) - this tool has no comparable length limit. Include both `content` (plain text) and `contentHTML` (structured with headings/lists, not just bare `<p>` tags).
+
 Release note format for the `DE:Release notes` field. Always start with `***FUSION***` on its own line, then a blank line, then the title - this marks the note as belonging to Fusion (as opposed to core Workfront) at a glance:
 
 ```markdown
