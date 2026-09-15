@@ -141,7 +141,6 @@ To create a connection for your [!DNL Salesforce] modules, you can authenticate 
         <td role="rowheader">[!UICONTROL Connection type]</td>
         <td>
           <p>Select whether you want to authenticate using OAuth 2 or PKCE.</p>
-          <!-- BECKY CHECK ME: confirm the exact field label for this dropdown, and whether selecting PKCE changes which of the fields below (e.g. Client Secret) are required or displayed - the Slack request only said "a dropdown appears with OAuth 2 and PKCE", without further field-level detail. -->
         </td>
       </tr>
       <tr>
