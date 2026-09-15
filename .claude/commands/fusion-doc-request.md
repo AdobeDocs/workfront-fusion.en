@@ -37,6 +37,8 @@ Name the branch `becky-{short-kebab-case-description}`, derived from the **Featu
 
 If the working tree isn't clean (uncommitted changes from unrelated work), stop and tell the user rather than branching over it.
 
+This skill creates and commits to the branch, but does not push it or open a pull request - leave that to the user unless they separately ask you to.
+
 ## Step 3: Update the documentation
 
 Find the relevant existing article(s) in this repo (grep for related module names, UI labels, or settings names - don't guess the file). Update them to reflect the change, following that article's existing structure, heading level, and house style.
@@ -96,7 +98,7 @@ Before the create call, call `read_workflow_docs` with `workfront://tools/create
 
 Report plainly:
 
-* The branch you created.
+* The branch you created (committed locally, not pushed, and no pull request opened - per Step 2).
 * Which doc file(s) you changed and what you added.
 * That the changes are uncommitted on the branch, awaiting the user's review.
 * The task name and URL.
