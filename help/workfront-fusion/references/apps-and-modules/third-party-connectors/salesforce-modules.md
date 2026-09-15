@@ -107,7 +107,7 @@ For more information about search possibilities, see the [!DNL Salesforce] devel
 
 ## Create a connection to [!DNL Salesforce]
 
-To create a connection for your [!DNL Salesforce] modules:
+To create a connection for your [!DNL Salesforce] modules, you can authenticate using OAuth 2 or PKCE.
 
 1. In any [!DNL Salesforce] module, click **[!UICONTROL Add]** next to the Connection box.
 
@@ -135,6 +135,12 @@ To create a connection for your [!DNL Salesforce] modules:
         <td role="rowheader">[!UICONTROL Type]</td>
         <td>
           <p>Select whether you are connecting to a service account or a personal account.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>
+          <p>Select whether you want to authenticate using OAuth 2 or PKCE.</p>
         </td>
       </tr>
       <tr>

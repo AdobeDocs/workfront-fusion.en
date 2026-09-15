@@ -47,6 +47,7 @@ Find the relevant existing article(s) in this repo (grep for related module name
   - The master navigation file for the product area (e.g. `help/workfront-fusion/TOC.md`) - this is what actually drives the published nav tree.
   - Any in-content sub-index/landing page that also links to articles of this kind (e.g. `apps-and-modules-toc.md` for a new connector modules page).
   Check both explicitly and confirm the new entry sits in the same list, at the same nesting level, as its closest sibling articles in each file - don't assume adding it to one covers the other.
+* Leave the doc changes uncommitted on the branch. Do not run `git commit` (or `git add`) as part of this skill - the user commits when they're ready, after reviewing the changes. Only commit if the user explicitly asks you to.
 
 ## Step 4: Create the Workfront task
 
@@ -92,6 +93,7 @@ Report plainly:
 
 * The branch you created.
 * Which doc file(s) you changed and what you added.
+* That the changes are uncommitted on the branch, awaiting the user's review.
 * The task name and URL.
 * The exact field values you set, including the preview date fields.
 * Anything you weren't fully confident about - e.g. Slack was unreachable and you worked from pasted text only, the target doc article was ambiguous, or a technical detail wasn't in the source material and got flagged instead of guessed.
