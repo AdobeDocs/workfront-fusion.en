@@ -52,7 +52,7 @@ For more detail about the information in this table, see [Access requirements in
 
 ## New and classic experiences
 
-Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time.
+Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience.
 
 The new experience includes:
 
@@ -66,7 +66,7 @@ To switch between the classic and new experiences:
 1. In the scenario editor, locate the **[!UICONTROL Try the new design]** toggle in the upper-right corner.
 1. Click the toggle to switch to the new experience. Click it again to return to the classic experience.
 
-## Use the scenario editor in the new experience
+## Use the scenario editor in the new experience (Recommended)
 
 * [Open the scenario editor and add a module:](#open-the-scenario-editor-and-add-a-module)
 * [Available scenario editor actions](#available-scenario-editor-actions)

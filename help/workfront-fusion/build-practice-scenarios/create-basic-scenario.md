@@ -21,6 +21,10 @@ The role of Adobe Workfront Fusion is to automate your processes so that you can
 
 This example takes you through the process of creating a scenario that searches for a request in Workfront and the converts it to a project.
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -50,9 +54,179 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Create a practice scenario
+## Create a practice scenario in the new experience (Recommended)
+
+* [Begin creating the scenario](#begin-creating-the-scenario)
+* [Add and configure the first module](#add-and-configure-the-first-module)
+* [Add and configure the second module](#add-and-configure-the-second-module)
+* [Test the scenario](#test-the-scenario)
+* [Activate the scenario](#activate-the-scenario)
 
 ### Begin creating the scenario
+
+1. In the **Scenarios** area, click **Create a new scenario**.
+
+   To locate the Scenarios area, see [Navigate Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md).
+
+   The scenario editor displays, containing an empty placeholder module in the center.
+
+   <!-- BECKY CHECK ME: need a screenshot of the new experience's empty canvas/placeholder module (card style) to replace or accompany the classic screenshot referenced in this section. -->
+
+1. Click the scenario name in the upper-left corner, then enter a name.
+1. Continue with [Add and configure the first module](#add-and-configure-the-first-module).
+
+### Add and configure the first module
+
+1. Click the placeholder module to open the list of apps and services.
+
+   A panel opens to the right of the module.
+
+   <!-- BECKY CHECK ME: need a screenshot of the new experience's app/service picker panel (category list on the left, search box, favorites) opened from the placeholder module, to pair with the step below. -->
+
+1. Select **Adobe Workfront**:
+
+   * Browse by category using the panel on the left ([!UICONTROL Favorites], [!UICONTROL All apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative & Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI], or [!UICONTROL Built-in]), or
+   * Enter a term in the search box to filter the list.
+
+   The list changes to display all Workfront modules that you can use.
+
+1. Click the **[!UICONTROL Search]** module.
+
+   The module configuration window opens.
+
+1. In the [!UICONTROL Connection] box, select your Workfront connection. 
+
+   If you do not have a Workfront connection, see [Create a connection](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
+1. In the [!UICONTROL Record Type] box, select **[!UICONTROL Issue]**. This sets the module to search only issues, which include requests.
+
+   You can find **[!UICONTROL Issue]** in the list if you start typing the word "[!UICONTROL Issue]."
+
+1. In the **[!UICONTROL Result Set]** box, select **[!UICONTROL First Matching Record]**. 
+
+   This sets the module to return only the first record it finds that meets the criteria. 
+1. In the **[!UICONTROL Search criteria]** area, configure the criteria to return the specific task.
+
+   1. In the first box under [!UICONTROL Search Criteria], select the field that you want to include in your search. For this example, select **[!UICONTROL Name]**.
+
+      You can find **[!UICONTROL Name]** in the list if you start typing the word "[!UICONTROL name]."
+   1. For the operator, click the dropdown arrow next to **Exist** and change it to [!UICONTROL **Contains (case insensitive)**]. 
+      
+      This allows the module to find projects with your chosen words in its name, even if you do not enter the entire name, or enter the name with the incorrect case (such as all caps).
+   1. In the last field under [!UICONTROL Search Criteria], enter a word or phrase that you know is in the name of the task you are searching for.
+
+1. In the **[!UICONTROL Outputs]** list, select the fields that you want the module to output. For this example, select the **[!UICONTROL ID]** and **[!UICONTROL Name]** fields.
+
+   >[!TIP]
+   >
+   >You can use **Cmd+F** ([!DNL Mac] OS) or **Ctrl-F** ([!DNL Windows] OS) to find a field quickly.
+
+1. Click **[!UICONTROL OK]** to save the module configuration.
+
+1. Right-click the module, click **[!UICONTROL Rename]**, then type a name the describes what you want the module to do (such as "Search for requests)," then click **[!UICONTROL OK]**.
+
+   The name appears just below the module. Below that, Workfront Fusion includes a brief description of the type of action performed by the module.
+
+   <!-- BECKY CHECK ME: need a screenshot of a renamed card-style module in the new experience to replace assets/module-renamed-wf.png (classic). -->
+
+1. Continue with [Add and configure the second module](#add-and-configure-the-second-module).
+
+### Add and configure the second module
+
+1. Hover over the right edge of the module, then click **[!UICONTROL Add another module]** when it appears.
+
+   <!-- BECKY CHECK ME: confirm this hover-to-add interaction and its exact affordance (icon/handle shape) on the new card-style canvas - the canonical reference for this action, Add a module to a scenario, has not yet been updated for the new experience either. -->
+
+1. Select **Adobe Workfront** from the list of applications, then choose the module **[!UICONTROL Convert object]**.
+1. In the [!UICONTROL Connection] field, select  the same Workfront connection that you used in the previous module . 
+1. In the **[!UICONTROL Record type]** field, select **[!UICONTROL issue]**, because the module will convert an issue.
+1. In the **[!UICONTROL Convert to]** field, select **Project**. 
+1. Next to the Task ID field, click the map toggle to enable it. 
+
+   The toggle turns blue when it is enabled. This allows you to map the task ID from the previous module.
+
+   <!-- BECKY CHECK ME: need a screenshot of the map toggle in the new experience's mapping panel to replace assets/map-toggle.png (classic). -->
+1. Click the **[!UICONTROL Task ID]** field.  
+
+   A panel opens that allows you to select what to use as the ID of the task you want to convert to a project. Because you enabled mapping, the panel includes output from any previous modules. You selected ID as an output of the previous module, so it is now available in the panel.
+
+   This panel is called the mapping panel. For more information on the mapping panel, see [Mapping overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md).
+1. Select **ID** in the mapping panel.
+
+   An ID block appears in the ID field. It shows the number of the module it is mapped from, and the field that is mapped.
+
+   <!-- BECKY CHECK ME: need a screenshot of a mapped ID block in the new experience to replace assets/map-id.png (classic). -->
+
+1. Click the **Template ID** field, begin typing the name of the Workfront template you want to use for this project, then select it when it appears in the list.
+1. Click **[!UICONTROL OK]** to save the module configuration.
+
+1. Right-click the module, click **[!UICONTROL Rename]**, then type a name the describes what you want the module to do (such as "Convert to project)," then click **[!UICONTROL OK]**.
+
+1. Continue to [Test the scenario](#test-the-scenario).
+
+### Test the scenario
+
+Before you activate your scenario, it's important to test it by running it at least once and viewing the results. This helps you understand how data flows through the scenario and find any errors.
+
+For this scenario, a successful test would result in locating the request and converting it to a project.
+
+1. Click the **[!UICONTROL Run once]** icon.
+
+   Run once is icon-only in the new experience. Hover over the icon to see the **[!UICONTROL Run once]** tooltip.
+
+   ![run scenario button](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. After the scenario finishes running, click the bubble above the first module to view information about the bundle of data that the module processed, including data pulled from the request that the module returned.
+
+1. Click the execution inspector bubble above the second module to see the input (the request) and the output (the converted project).
+
+   <!-- BECKY CHECK ME: need a screenshot of the new experience's execution inspector bubbles to replace assets/output-bubble.png (classic). -->
+
+   For more information about the data in the inspection bubbles, see:
+
+   * For general information, see [Scenario execution flow](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md).
+   * For information about processed bundles, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
+
+1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
+
+   >[!IMPORTANT]
+   >
+   >Save often as you hone and test a scenario. You may need to create a new issue in your Workfront account to trigger the scenario.
+
+>[!TIP]
+>
+>We recommend the optional but useful practice of adding notes about each module.
+>
+>1. Right-click a module, then select **[!UICONTROL Add a note]**.
+>1. In the note that displays, type an overview for the module.
+>
+>    You can add multiple notes for a module.
+>
+>1. Close the **[!UICONTROL Notes]** area.
+>
+>     After you add a note to a scenario, a dot displays on the **[!UICONTROL Notes]** icon ![Notes icon with dot](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png) in the Controls area.
+>
+>1. Click the **[!UICONTROL Notes]** icon ![Notes icon with dot](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/notes-icon-new.png) to view your notes. When notes are open, a circle appears around the Notes icon.
+>
+
+### Activate the scenario
+
+The last step in creating a scenario is activating it.
+
+Because this scenario is searching for a specific issue, there is no need to activate it. Activating a scenario causes it to run on a schedule or when a specific action occurs in an application. After you activate a scenario, by default, it runs every 15 minutes. You can change this by defining when and how often you want it to run.
+
+For more information about activating scenarios, see [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md).
+
+For information about schedules, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md).
+
+## Create a practice scenario in the classic experience
+
+* [Begin creating the scenario (Classic)](#begin-creating-the-scenario-classic)
+* [Add and configure the first module (Classic)](#add-and-configure-the-first-module-classic)
+* [Add and configure the second module (Classic)](#add-and-configure-the-second-module-classic)
+* [Test the scenario (Classic)](#test-the-scenario-classic)
+* [Activate the scenario (Classic)](#activate-the-scenario-classic)
+
+### Begin creating the scenario (Classic)
 
 1. In the **Scenarios** area, click **Create a new scenario**.
 
@@ -61,9 +235,9 @@ For more detail about the information in this table, see [Access requirements in
    The scenario editor displays, containing an empty module in the center.
 
 1. Select the **[!UICONTROL New scenario]** placeholder name in the upper-left corner, then enter a name.
-1. Continue with [Add and configure the first module](#add-and-configure-the-first-module).
+1. Continue with [Add and configure the first module (Classic)](#add-and-configure-the-first-module-classic).
 
-### Add and configure the first module
+### Add and configure the first module (Classic)
 
 1. Click the empty module to choose the app from which you will select a module.
 
@@ -111,9 +285,9 @@ For more detail about the information in this table, see [Access requirements in
 
    ![Renamed module](assets/module-renamed-wf.png)
 
-1. Continue with [Add and configure the second module](#add-and-configure-the-second-module).
+1. Continue with [Add and configure the second module (Classic)](#add-and-configure-the-second-module-classic).
 
-## Add and configure the second module
+### Add and configure the second module (Classic)
 
 1. Hover over the partial circle to the right of the of the module, then click **[!UICONTROL Add another module]**. 
 1. Select Adobe Workfront from the list of applications, then choose the module **[!UICONTROL Convert object]**.
@@ -141,9 +315,9 @@ For more detail about the information in this table, see [Access requirements in
 
 1. Right-click the module, click **[!UICONTROL Rename]**, then type a name the describes what you want the module to do (such as "Convert to project)," then click **[!UICONTROL OK]**.
 
-1. Continue to [Test the scenario](#test-the-scenario).
+1. Continue to [Test the scenario (Classic)](#test-the-scenario-classic).
 
-## Test the scenario
+### Test the scenario (Classic)
 
 Before you activate your scenario, it's important to test it by running it at least once and viewing the results. This helps you understand how data flows through the scenario and find any errors.
 
@@ -181,7 +355,7 @@ For this scenario, a successful test would result in locating the request and co
 >1. Click the **[!UICONTROL Notes]** icon ![Notes icon with dot](assets/notes-icon-w-dot.png) to view your notes. When notes are open, a circle appears around the Notes icon.
 >
 
-## Activate the scenario
+### Activate the scenario (Classic)
 
 The last step in creating a scenario is activating it.
 
