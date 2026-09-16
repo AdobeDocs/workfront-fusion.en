@@ -93,7 +93,7 @@ Each run of this module is a single, self-contained execution, similar to sendin
 
 Because each run is independent, the module has no memory of previous runs by itself. To create a multi-turn, conversational experience across several runs, store the previous question and answer. You can use a Data Store for this, and then include that history as text at the start of your next prompt, followed by the new question. 
 
-For information on Data Stores, see [Data Store](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md). 
+For information on Data Stores, see [Data Store](/help/workfront-fusion/create-scenarios/map-data/data-stores.md). 
 
 <table style="table-layout:auto"> 
  <col/>
