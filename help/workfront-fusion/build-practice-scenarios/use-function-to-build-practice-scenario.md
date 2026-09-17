@@ -62,18 +62,18 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
 ## Use a function to update a project in the new experience (Recommended)
 
-* [Add the Update Record module to your scenario](#add-the-update-record-module-to-your-scenario)
+* [Add the Update a record module to your scenario](#add-the-update-a-record-module-to-your-scenario)
 * [Map the function for the name update](#map-the-function-for-the-name-update)
 * [Test and activate](#test-and-activate)
 
-### Add the Update Record module to your scenario
+### Add the Update a record module to your scenario
 
 1. Open the scenario in the scenario editor.
 1. Hover over the right edge of the second module, then click **[!UICONTROL Add another module]** when it appears.
-1. Select Adobe Workfront from the list of applications, then choose the module **[!UICONTROL Update Record]**.
+1. Select Adobe Workfront from the list of applications, then choose the module **[!UICONTROL Update a record]**.
 1. In the ID field, select the ID block that is under the Convert object module. This is the ID of the project that was output by that module. 
 
-   <!-- BECKY CHECK ME: need a screenshot of the mapped ID block in the new experience's mapping panel to replace assets/id-convert-object.png (classic). -->
+   ![Mapped ID in the Update a record module](assets/new-mapped-update-record.png)
 
 1. In the Record Type field, select Project, because the object to be updated is a project.
 1. In the Select Fields to Map area, select Name. 
@@ -88,10 +88,7 @@ When this scenario converts a request to a project, the project's name is the sa
 1. Click the **Name** field. 
 
    The mapping panel opens.
-1. In the mapping panel, click the **Text and binary functions** icon. 
-
-   <!-- BECKY CHECK ME: need a screenshot of the Text and binary functions icon in the new experience's mapping panel to replace assets/toolbar-icon-text-binary-functions.png (classic). -->
-
+1. In the mapping panel, click the **Text and binary functions** icon. ![Text functions icon](assets/new-text-binary-function.png)
 1. Select the function **upper**.
 
    The function appears in the Name field, including the formatting for the input it expects.
@@ -99,15 +96,12 @@ When this scenario converts a request to a project, the project's name is the sa
    The input for this example is the name of the issue the project was converted from.
 
 1. Move your cursor between the parentheses, because this is where the input will go.
-1. In the mapping panel, click the **Module output** icon. 
-
-   <!-- BECKY CHECK ME: need a screenshot of the Module output icon in the new experience's mapping panel to replace assets/toolbar-icon-functions-you-map-from-other-modules.png (classic). -->
-
+1. In the mapping panel, click the **Module output** icon. ![Module output icon](assets/new-module-output-icon.png)
 1. Select the name block that was output by your first module.
 
    The name block appears in the function.
 
-   <!-- BECKY CHECK ME: need a screenshot of the mapped name block in the new experience to replace assets/map-name.png (classic). -->
+   ![Name block in function](assets/new-mapped-name-block.png)
 
 1. Click **OK** to save the module settings.
 
@@ -134,15 +128,15 @@ When this scenario converts a request to a project, the project's name is the sa
 
 ## Use a function to update a project in the classic experience
 
-* [Add the Update Record module to your scenario (Classic)](#add-the-update-record-module-to-your-scenario-classic)
+* [Add the Update a record module to your scenario (Classic)](#add-the-update-a-record-module-to-your-scenario-classic)
 * [Map the function for the name update (Classic)](#map-the-function-for-the-name-update-classic)
 * [Test and activate (Classic)](#test-and-activate-classic)
 
-### Add the Update Record module to your scenario (Classic)
+### Add the Update a record module to your scenario (Classic)
 
 1. Open the scenario in the scenario editor.
 1. Hover over the partial circle to the right of the of the second module, then click **[!UICONTROL Add another module]**. 
-1. Select Adobe Workfront from the list of applications, then choose the module **[!UICONTROL Update Record]**.
+1. Select Adobe Workfront from the list of applications, then choose the module **[!UICONTROL Update a record]**.
 1. In the ID field, select the ID block that is under the Convert object module. This is the ID of the project that was output by that module. 
 
    ![ID from Convert object](assets/id-convert-object.png)

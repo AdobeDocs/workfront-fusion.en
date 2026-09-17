@@ -86,14 +86,14 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 ### Add and configure the filter
 
 1. Return to the scenario in the scenario editor.
-1. Click the dotted path between the first and second module, then select **[!UICONTROL Set up a filter]**.
+1. Left-click the path between the first and second module.
 
-   <!-- BECKY CHECK ME: need confirmation/screenshot of this route/filter menu on the new card-style canvas - assets/wrench-icon.png is the classic-era filter icon and may not apply in the new experience. -->
+   The **[!UICONTROL Set up a filter]** window opens.
 
 1. In the Label field, enter a label for this filter, such as "Filter for request queue."
 1. In the **Condition** area, in the top field, map the `projectID` from the first module.
 
-   <!-- BECKY CHECK ME: need a screenshot of the mapped project ID in the new experience's mapping panel to replace assets/map-proj-id.png (classic). -->
+   ![Map project ID](assets/new-map-in-filter.png)
 
 1. Leave the **Condition** operator as Equal to.
 1. In the bottom field of the **Condition** area, paste in the project ID that you made note of from the project URL in [Prepare to add the filter](#prepare-to-add-the-filter).

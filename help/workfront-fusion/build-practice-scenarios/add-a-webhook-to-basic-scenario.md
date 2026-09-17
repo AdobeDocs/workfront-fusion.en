@@ -73,8 +73,6 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
    The module is deleted, leaving a blank placeholder.
 
-   <!-- BECKY CHECK ME: confirm the right-click context menu and "Delete module" wording are unchanged for card-style modules in the new experience. -->
-
 1. Click the blank module to open the list of apps and services.
 
    ![App and service picker](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
@@ -92,9 +90,6 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 1. Open the scenario.
 1. Click the **Convert object** module to open it.
 1. In the Issue ID field, delete the black ID block. The block is black because the module it was mapped from is no longer available.
-
-   <!-- BECKY CHECK ME: confirm the mapped/unmapped ID block appearance in the new experience's mapping panel (see also Create a basic scenario). -->
-
 1. Select the ID block under the first module (Watch Events) to map it to the second module.
 1. Click **OK**.
 
