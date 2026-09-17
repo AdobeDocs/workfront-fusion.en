@@ -75,10 +75,11 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
    <!-- BECKY CHECK ME: confirm the right-click context menu and "Delete module" wording are unchanged for card-style modules in the new experience. -->
 
-1. Click the blank module, and select **Adobe Workfront** from the list of apps.
+1. Click the blank module to open the list of apps and services.
 
-   <!-- BECKY CHECK ME: this opens the same app/service picker flagged in Create a basic scenario (category list, search box) - no new experience screenshot yet. -->
+   ![App and service picker](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
 
+1. Select **Adobe Workfront**.
 1. Select **Watch Events**.
 1. Click **Add** next to the Webhook field.
 1. in the Record Type field, select **Issue**, so the module will trigger for changes in issues.
@@ -114,7 +115,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
    This activates the scenario. 
 
-   <!-- BECKY CHECK ME: confirm the exact location/appearance of the scenario activation (Scheduling) toggle in the new experience - the Scheduling section of The scenario editor covers the schedule configuration panel, but not an explicit on/off activation toggle. -->
+   ![Scheduling toggle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
 
 1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
 

@@ -76,12 +76,11 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
    The module is deleted, leaving a blank placeholder.
 
-   <!-- BECKY CHECK ME: confirm the right-click context menu and "Delete module" wording are unchanged for card-style modules in the new experience. -->
+1. Click the blank module to open the list of apps and services.
 
-1. Click the blank module, and select **Adobe Workfront** from the list of apps.
+   ![App and service picker](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
 
-   <!-- BECKY CHECK ME: this opens the same app/service picker flagged in Create a basic scenario (category list, search box) - no new experience screenshot yet. -->
-
+1. Select **Adobe Workfront**.
 1. Select **Watch Record**.
 1. Make sure that the module uses the same connection as the rest of the modules in the scenario.
 1. In the Record Type field, select **Issue**.
@@ -95,9 +94,9 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
 ### Schedule the trigger module
 
-1. Click the clock icon on the Watch Records module.
+1. Click the clock icon on the Watch Record module.
 
-   <!-- BECKY CHECK ME: need confirmation/screenshot of the module-level schedule (clock) icon on card-style modules in the new experience. -->
+   ![Clock icon on the Watch Record module](assets/clock-icon-on-watch-record.png)
 
    The Schedule setting window opens.
 
@@ -111,10 +110,7 @@ Because the first module has been replaced, the second module must be mapped to 
 
 1. Open the Convert object module.
 1. In the Issue ID field, delete the black ID block. The block is black because the module it was mapped from is no longer available.
-
-   <!-- BECKY CHECK ME: confirm the mapped/unmapped ID block appearance in the new experience's mapping panel (see also Create a basic scenario). -->
-
-1. Select the ID block under the first module (Watch Records) to map it to the second module.
+1. Select the ID block under the first module (Watch Record) to map it to the second module.
 1. Click **OK**.
 
 ### Test and activate
@@ -131,7 +127,7 @@ Because the first module has been replaced, the second module must be mapped to 
 
    This activates the scenario. 
 
-   <!-- BECKY CHECK ME: confirm the exact location/appearance of the scenario activation (Scheduling) toggle in the new experience - the Scheduling section of The scenario editor covers the schedule configuration panel, but not an explicit on/off activation toggle. -->
+   ![Scheduling toggle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
 
 1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
 
@@ -167,7 +163,7 @@ Because the first module has been replaced, the second module must be mapped to 
 
 ### Schedule the trigger module (Classic)
 
-1. Click the clock on the Watch Records module.
+1. Click the clock on the Watch Record module.
 
    The Schedule setting window opens.
 
@@ -181,7 +177,7 @@ Because the first module has been replaced, the second module must be mapped to 
 
 1. Open the Convert object module.
 1. In the Issue ID field, delete the black ID block. The block is black because the module it was mapped from is no longer available.
-1. Select the ID block under the first module (Watch Records) to map it to the second module.
+1. Select the ID block under the first module (Watch Record) to map it to the second module.
 1. Click **OK**.
 
 ### Test and activate (Classic)

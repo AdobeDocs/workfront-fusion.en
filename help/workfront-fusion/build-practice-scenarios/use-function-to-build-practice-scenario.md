@@ -70,9 +70,6 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
 1. Open the scenario in the scenario editor.
 1. Hover over the right edge of the second module, then click **[!UICONTROL Add another module]** when it appears.
-
-   <!-- BECKY CHECK ME: confirm this hover-to-add interaction and its exact affordance (icon/handle shape) on the new card-style canvas - see also Create a basic scenario. -->
-
 1. Select Adobe Workfront from the list of applications, then choose the module **[!UICONTROL Update Record]**.
 1. In the ID field, select the ID block that is under the Convert object module. This is the ID of the project that was output by that module. 
 
@@ -127,7 +124,7 @@ When this scenario converts a request to a project, the project's name is the sa
 
    This activates the scenario. Active scenarios run according to the schedule set in the trigger module.
 
-   <!-- BECKY CHECK ME: confirm the exact location/appearance of the scenario activation (Scheduling) toggle in the new experience - the Scheduling section of The scenario editor covers the schedule configuration panel, but not an explicit on/off activation toggle. -->
+   ![Scheduling toggle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
 
 1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
 

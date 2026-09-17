@@ -115,7 +115,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
    This activates the scenario. 
 
-   <!-- BECKY CHECK ME: confirm the exact location/appearance of the scenario activation (Scheduling) toggle in the new experience - the Scheduling section of The scenario editor covers the schedule configuration panel, but not an explicit on/off activation toggle. -->
+   ![Scheduling toggle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
 
 1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
 

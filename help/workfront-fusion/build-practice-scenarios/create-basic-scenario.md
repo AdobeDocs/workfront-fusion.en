@@ -70,7 +70,7 @@ For more detail about the information in this table, see [Access requirements in
 
    The scenario editor displays, containing an empty placeholder module in the center.
 
-   <!-- BECKY CHECK ME: need a screenshot of the new experience's empty canvas/placeholder module (card style) to replace or accompany the classic screenshot referenced in this section. -->
+   ![Placeholder module](assets/new-placeholder-module.png)
 
 1. Click the scenario name in the upper-left corner, then enter a name.
 1. Continue with [Add and configure the first module](#add-and-configure-the-first-module).
@@ -81,7 +81,7 @@ For more detail about the information in this table, see [Access requirements in
 
    A panel opens to the right of the module.
 
-   <!-- BECKY CHECK ME: need a screenshot of the new experience's app/service picker panel (category list on the left, search box, favorites) opened from the placeholder module, to pair with the step below. -->
+   ![App and service picker](assets/new-connector-picker.png)
 
 1. Select **Adobe Workfront**:
 
@@ -126,16 +126,13 @@ For more detail about the information in this table, see [Access requirements in
 
    The name appears just below the module. Below that, Workfront Fusion includes a brief description of the type of action performed by the module.
 
-   <!-- BECKY CHECK ME: need a screenshot of a renamed card-style module in the new experience to replace assets/module-renamed-wf.png (classic). -->
+   ![Renamed module](assets/new-renamed-module.png)
 
 1. Continue with [Add and configure the second module](#add-and-configure-the-second-module).
 
 ### Add and configure the second module
 
 1. Hover over the right edge of the module, then click **[!UICONTROL Add another module]** when it appears.
-
-   <!-- BECKY CHECK ME: confirm this hover-to-add interaction and its exact affordance (icon/handle shape) on the new card-style canvas - the canonical reference for this action, Add a module to a scenario, has not yet been updated for the new experience either. -->
-
 1. Select **Adobe Workfront** from the list of applications, then choose the module **[!UICONTROL Convert object]**.
 1. In the [!UICONTROL Connection] field, select  the same Workfront connection that you used in the previous module . 
 1. In the **[!UICONTROL Record type]** field, select **[!UICONTROL issue]**, because the module will convert an issue.
@@ -144,7 +141,7 @@ For more detail about the information in this table, see [Access requirements in
 
    The toggle turns blue when it is enabled. This allows you to map the task ID from the previous module.
 
-   <!-- BECKY CHECK ME: need a screenshot of the map toggle in the new experience's mapping panel to replace assets/map-toggle.png (classic). -->
+   ![Map toggle](assets/new-map-toggle.png)
 1. Click the **[!UICONTROL Task ID]** field.  
 
    A panel opens that allows you to select what to use as the ID of the task you want to convert to a project. Because you enabled mapping, the panel includes output from any previous modules. You selected ID as an output of the previous module, so it is now available in the panel.
@@ -154,7 +151,7 @@ For more detail about the information in this table, see [Access requirements in
 
    An ID block appears in the ID field. It shows the number of the module it is mapped from, and the field that is mapped.
 
-   <!-- BECKY CHECK ME: need a screenshot of a mapped ID block in the new experience to replace assets/map-id.png (classic). -->
+   ![Map ID](assets/new-map-id.png)
 
 1. Click the **Template ID** field, begin typing the name of the Workfront template you want to use for this project, then select it when it appears in the list.
 1. Click **[!UICONTROL OK]** to save the module configuration.
@@ -179,7 +176,7 @@ For this scenario, a successful test would result in locating the request and co
 
 1. Click the execution inspector bubble above the second module to see the input (the request) and the output (the converted project).
 
-   <!-- BECKY CHECK ME: need a screenshot of the new experience's execution inspector bubbles to replace assets/output-bubble.png (classic). -->
+   ![Execution inspector bubble](assets/new-execution-bubble.png)
 
    For more information about the data in the inspection bubbles, see:
 
