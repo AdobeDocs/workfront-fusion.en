@@ -152,7 +152,7 @@ Routers with filters display the filter icon ![Filter icon](assets/fusion-scenar
 
    For more information, see [Add a filter to a scenario](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md).
 
-   <!-- BECKY CHECK ME: need a screenshot of the Set up a filter window used on a route path in the new experience, to replace assets/set-up-a-filter-2-350x242.png (classic). -->
+   ![Set up a filter on a route](assets/new-filter-specific-user.png)
 
 1. Click **[!UICONTROL OK]** to save the filter setup.
 1. (Conditional) If the filter name is too long to fit in the label, hover over the label to display the entire name.
@@ -199,13 +199,11 @@ You can enable a fallback route in the filter panel.
 1. In the label field of the panel that displays, add a label. This label displays in the scenario.
 1. Enable the fallback route checkbox.
 
-   <!-- BECKY CHECK ME: need a screenshot of the fallback route checkbox in the new experience's Set up a filter window, to replace assets/fallback-route-350x260.png (classic). -->
+   ![Fallback route](assets/fallback-route-new.png)
 
 1. Click **[!UICONTROL OK]** to save the filter setup.
 
-The Fallback route is marked with a different arrow in the Router module:
-
-<!-- BECKY CHECK ME: need a screenshot of the fallback route's arrow marker on the new card-style Router module, to replace assets/arrow-sign-in-router-module-350x361.png (classic). -->
+The fallback route's label displays **Fallback** in green.
 
 ### Configure a fallback route in the classic experience
 
@@ -233,14 +231,10 @@ A typical use case of the fallback route is to continue the flow with one route 
 
 In this example, the first route is configured with a filter. This represents the `if` component. 
 
-   ![Set up a filter in route](assets/set-up-a-filter-2-350x242.png)
-
-   <!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+   ![Set up a filter in route](assets/new-filter-specific-user-unmarked.png)
 
 The second route is configured as a fallback route. This represents the `else` component.
 
-   ![Enable fallback option](assets/enable-fallback-route-option-350x238.png)
-
-   <!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+   ![Enable fallback option](assets/new-not-specific-user-unmarked.png)
 
 >[!ENDSHADEBOX]
