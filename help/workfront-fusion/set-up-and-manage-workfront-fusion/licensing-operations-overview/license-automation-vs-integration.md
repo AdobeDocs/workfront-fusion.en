@@ -15,7 +15,7 @@ Workfront Fusion has two licensing models, a new operations-based model, and a l
 
 >[!NOTE]
 >
->Large file support in Workfront Fusion scenarios is available only to organizations on the Workfront Ultimate package, regardless of which Fusion licensing model you use.
+>Large file support in Workfront Fusion scenarios is available only to organizations on the Workfront Ultimate package, regardless of which Fusion licensing model your organization uses.
 >
 >For more information, see [Working with large files](/help/workfront-fusion/references/scenarios/fusion-large-files.md).
 
