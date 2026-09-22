@@ -85,11 +85,9 @@ Errors are handled by the following hierarchy:
 
 ### Example
 
-Consider the following example scenario:
+Consider the following example scenario, shown here in compact view for readability:
 
-![Example scenario showing routes and error handlers](assets/error-handling-route-example-with-numbers.png)
-
-<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+![Example scenario showing routes and error handlers](assets/new-error-handler-examples-with-numbers.png)
 
 1. This module has an error handler. Any error on this module is handled by the Commit directive.
 1. This module does not have an error handler. If this module encounters an error, the error is handled by the handler on the router that created the module's route. Any error on this module is handled by the Rollback directive.

@@ -14,6 +14,10 @@ product_v2:
 
 You can configure specific settings for scenarios in the scenario settings panel. 
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -44,6 +48,23 @@ For more detail about the information in this table, see [Access requirements in
 +++
 
 ## Open the scenario settings
+
+* [Open the scenario settings in the new experience (Recommended)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [Open the scenario settings in the classic experience](#open-the-scenario-settings-in-the-classic-experience)
+
+### Open the scenario settings in the new experience (Recommended)
+
+1. Click **Scenarios** in the left panel.
+1. Find the scenario you want, then click the name.
+1. Click anywhere on the scenario to enter the scenario editor.
+1. Click the **Scenario settings** icon ![Scenario settings icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png) in the Controls area.
+
+   You may need to click the three-dot icon in the Controls area first to view it.
+
+   In the [!UICONTROL Scenario settings] panel that displays, you can configure various advanced settings for the scenario.
+1. Enable or disable the Scenario settings as needed. See [Scenario settings options](#scenario-settings-options) below.
+
+### Open the scenario settings in the classic experience
 
 1. Click **Scenarios** in the left panel.
 1. Find the scenario you want, then click the name.
@@ -145,11 +166,15 @@ Setting more cycles can be useful when you want to prevent connection interrupti
 
 ![Scenario settings](assets/scenario-settings-ex-1-350x157.png)
 
+<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+
 A [!UICONTROL more cycles] setting is applied only when you schedule your scenario execution. When you use the [!UICONTROL Run once] button, cycle settings are taken into account.
 
 #### Max number of cycles is set to 1 (default)
 
 ![Maximum number of cycles](assets/max-number-cycles-1-350x201.png)
+
+<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
 
 The Max number of cycles in the Workfront > Watch records module is set to `10`.
 If 100 requests are submitted to Workfront, and the Max number of cycles field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
@@ -165,6 +190,8 @@ All files are processed within 1 scenario run.
 You can see the already-run cycles in the Scenario details:
 
 ![Scenario detail](assets/scenario-detail-350x207.png)
+
+<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
 
 For more information about this page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
