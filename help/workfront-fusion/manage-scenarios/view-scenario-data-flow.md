@@ -13,13 +13,21 @@ product_v2:
 
 You can watch a running scenario to see how data flows through it. 
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 While a scenario runs, the active module is marked by a growing ring around the module. The ring shows only that the module is running, not its progress. Modules that run quickly may only display a small part of the ring. 
 
 ![Ring around module](assets/ring-around-module.png)
 
+<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+
 After the module has run, an output indicator appears.
 
 ![Output indicator](assets/data-flow-output.png)
+
+<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
 
 If the module processes more than one bumdle, the ring appears for each processed bundle, and the output indicator counts up for each bundle it outputs.
 
@@ -55,6 +63,21 @@ For more detail about the information in this table, see [Access requirements in
 +++
 
 ## View data flow in a running scenario
+
+* [View data flow in a running scenario in the new experience (Recommended)](#view-data-flow-in-a-running-scenario-in-the-new-experience-recommended)
+* [View data flow in a running scenario in the classic experience](#view-data-flow-in-a-running-scenario-in-the-classic-experience)
+
+### View data flow in a running scenario in the new experience (Recommended)
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to view data flow.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. If the scenario is not running, activate it or click **Run once** to start the scenario execution.
+1. Select the execution that you want to view in the Currently Running section of the execution history panel.
+
+  <!-- BECKY CHECK ME: need confirmation that the execution history panel and its "Currently Running" section are unchanged in the new experience, plus a new-experience screenshot to replace assets/currently-running.png (classic). -->
+
+### View data flow in a running scenario in the classic experience
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to view data flow.

@@ -15,6 +15,10 @@ The role of Adobe Workfront Fusion is to automate your processes so that your us
 
 A scenario is comprised of a series of modules that indicate how data should be transformed within an app or transferred between apps and web services. 
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 ## Scenario elements overview
 
 A scenario is built of different elements. Understanding the terminology of those elements makes it easier to use the documentation.
@@ -30,37 +34,37 @@ A scenario is built of different elements. Understanding the terminology of thos
 
 A **scenario** is a user-created series of automated steps, created to move and manipulate data. The term "scenario" refers to the entire group of connected steps.
 
-![Scenario](assets/entire-scenario-scenario.png)
+![Scenario](assets/new-entire-scenario-scenario.png)
 
 ### Trigger
 
 A scenario begins with a **trigger**. The trigger watches for new and updated data, and starts the scenario when certain conditions configured in the module apply. Triggers can be configured to start a scenario on a schedule (polling), or whenever data changes occur (instant). 
 
-![Trigger](assets/scenario-trigger.png)
+![Trigger](assets/new-scenario-trigger.png)
 
 ### Module
 
-The trigger is followed by a number of **modules**. A module represents single step in a scenario that performs a specific action. Modules are configured and chained together to create scenarios.
+The trigger is followed by a number of **modules**. A module represents a single step in a scenario that performs a specific action. Modules are configured and chained together to create scenarios.
 
-![Module](assets/scenario-module.png)
+![Module](assets/new-scenario-module.png)
 
 ### Route
 
 A scenario may be divided into **routes**. A route is a section of the scenario that may or may not be used for a given bundle of data. Routes are set up using a router module and filters.
 
-![Route](assets/scenario-route.png)
+![Route](assets/new-scenario-route.png)
 
 ### Scenario segment
 
 A scenario segment is a section of a scenario that consists of a series of contiguous modules that all connect to the same application. Scenario segments often represent a short workflow in the application.
 
-![Scenario segment](assets/scenario-segment.png)
+![Scenario segment](assets/new-scenario-segment.png)
 
 ### Connector
 
 A connector is the set of modules for a given application. Workfront Fusion offers connectors to many common work applications, such as Workfront, Salesforce, and Jira, as well as generic connectors that can be used for any web service.
 
-![Connectors](assets/scenario-connectors.png)
+![Connectors](assets/new-scenario-connectors.png)
 
 ## Examples
 
@@ -72,7 +76,7 @@ Workfront Fusion enables you to automate simple or complex workflows within Work
 
 In this example, the scenario triggers when a specified field changes in a Task or Issue in Workfront. When triggered, the scenario gets information in the related project and creates a tailored update for a person assigned to a specific role on the project.
 
-![Template example](assets/fusion-template-example.png)
+![Template example](assets/new-fusion-automation-example.png)
 
 +++
 
@@ -88,7 +92,7 @@ Many applications have dedicated Workfront Fusion connectors. If there is no ded
 
 In this example, the scenario triggers when a user is added to an [!DNL Excel] spreadsheet. The scenario checks whether the user is in Workfront. If not, the scenario creates the user in Workfront and adds their Workfront user ID back to the spreadsheet.
 
-![Integration example](assets/fusion-integration-example.png)
+![Integration example](assets/new-scenario-example-unmarked.png)
 
 For a list of dedicated connectors, see [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
