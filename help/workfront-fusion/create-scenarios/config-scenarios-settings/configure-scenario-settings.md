@@ -164,17 +164,13 @@ Setting more cycles can be useful when you want to prevent connection interrupti
 
 **Examples:**  Workfront > [!UICONTROL Watch record] watches for new issues that come in, and Workfront >[!UICONTROL Convert object] converts the new request into a project and assigns it the appropriate template.
 
-![Scenario settings](assets/scenario-settings-ex-1-350x157.png)
-
-<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+![Scenario settings](assets/new-scenario-settings-ex-1.png)
 
 A [!UICONTROL more cycles] setting is applied only when you schedule your scenario execution. When you use the [!UICONTROL Run once] button, cycle settings are taken into account.
 
 #### Max number of cycles is set to 1 (default)
 
-![Maximum number of cycles](assets/max-number-cycles-1-350x201.png)
-
-<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+![Maximum number of cycles](assets/new-max-number-cycles.png)
 
 The Max number of cycles in the Workfront > Watch records module is set to `10`.
 If 100 requests are submitted to Workfront, and the Max number of cycles field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
@@ -187,11 +183,7 @@ If 100 files are added to the Dropbox folder and the Max number of cycles option
 
 All files are processed within 1 scenario run.
 
-You can see the already-run cycles in the Scenario details:
-
-![Scenario detail](assets/scenario-detail-350x207.png)
-
-<!-- BECKY CHECK ME: this screenshot is classic-experience only. Need a new-experience equivalent, or confirmation that reusing a classic screenshot in this shared illustrative example is acceptable. -->
+You can see the already-run cycles in the History area of the Scenario Details page.
 
 For more information about this page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
