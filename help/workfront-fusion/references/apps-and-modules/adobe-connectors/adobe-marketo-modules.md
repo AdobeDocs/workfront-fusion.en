@@ -207,9 +207,12 @@ This trigger module starts a scenario when a record is created or updated.
 
 * [[!UICONTROL Add Leads to a List]](#add-leads-to-a-list)
 * [[!UICONTROL Clone a Program]](#clone-a-program)
+* [[!UICONTROL Create a Bulk Extract Job]](#create-a-bulk-extract-job)
 * [[!UICONTROL Create a record]](#create-a-record)
 * [[!UICONTROL Custom API call]](#custom-api-call)
+* [[!UICONTROL Download a Bulk Extract File]](#download-a-bulk-extract-file)
 * [[!UICONTROL Download a File]](#download-a-file)
+* [[!UICONTROL Get Bulk Extract Job Status]](#get-bulk-extract-job-status)
 * [[!UICONTROL Read a record]](#read-a-record)
 * [[!UICONTROL Remove Leads from a List]](#remove-leads-from-a-list)
 * [[!UICONTROL Schedule a Campaign]](#schedule-a-campaign)
@@ -262,6 +265,39 @@ This action module makes a copy of a program using the existing program's ID.
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID]</td> 
    <td>Enter or map the ID of the folder where you want the new program to be located.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Create a Bulk Extract Job]
+
+This action module creates a bulk extract job for Lead and Person records. Use [!UICONTROL Get Bulk Extract Job Status] to check on the job, then [!UICONTROL Download a Bulk Extract File] to retrieve the completed export.
+
+<!-- BECKY CHECK ME: confirm this module's exact field-level UI before publishing. The request described it as exposing "Smart List / filter selection, field selection, and output format (CSV/TSV/SSV) as native inputs," and specified Leads/Persons "at minimum" for record type, but did not give exact field names/labels. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Marketo] account to Workfront Fusion, see <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connect [!DNL Marketo] to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Record Type]</td> 
+   <td> <p>Select the type of record that you want to extract (Lead or Person).</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Smart List]</td> 
+   <td> <p>Select or map the Smart List that defines which records to extract.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>Select the fields that you want included in the extract.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output format]</td> 
+   <td> <p>Select the file format for the extract: CSV, TSV, or SSV.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -355,6 +391,33 @@ This action module lets you make a custom authenticated call to the [!DNL Market
    <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>For each field that you want to add to your API call, click <b>Add item</b> and enter the field's key and value.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!-- BECKY CHECK ME: confirm the exact label and position of this new Body field before publishing. The request describes it as "a first-class, documented field for a raw JSON body, replacing the undocumented Map-toggle workaround" on this module, but does not give its exact label or whether it fully replaces the Fields field above or is additive to it. -->
+
+#### [!UICONTROL Download a Bulk Extract File]
+
+This action module retrieves the file for a completed bulk extract job.
+
+<!-- BECKY CHECK ME: confirm this module's exact name and field-level UI before publishing - the request only described it as retrieving "the completed export file," without field detail. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Marketo] account to Workfront Fusion, see <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connect [!DNL Marketo] to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td>Enter or map the ID of the bulk extract job you want to download the file for.</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -373,6 +436,27 @@ This action module downloads a file by using the file ID.
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the ID of the file you want to download.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get Bulk Extract Job Status]
+
+This action module retrieves the status of a bulk extract job, by using its job ID.
+
+<!-- BECKY CHECK ME: confirm this module's exact field-level UI before publishing - the request only described it as polling job status by job ID, without full field detail. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Marketo] account to Workfront Fusion, see <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connect [!DNL Marketo] to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Job ID]</td> 
+   <td>Enter or map the ID of the bulk extract job you want to check the status of.</td> 
   </tr> 
  </tbody> 
 </table>
