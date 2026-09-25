@@ -4,10 +4,13 @@ description: In an Adobe Workfront Fusion scenario, you can use the Draft.js mod
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-TQID: https://experienceleague.adobe.com/pb-FZkt8RBx3uQ2wGuABn5hwXawLvSpC9WGulistNWU
+TQID: 'https://experienceleague.adobe.com/pb-FZkt8RBx3uQ2wGuABn5hwXawLvSpC9WGulistNWU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # [!UICONTROL Draft.js] modules
 

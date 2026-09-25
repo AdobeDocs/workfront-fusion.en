@@ -4,13 +4,20 @@ description: The [!DNL Adobe Workfront Fusion Google Drive] modules enable you t
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-TQID: https://experienceleague.adobe.com/CZbsq-vawa775PIQ-LzGRxjRIaiHJinVSrwikRnsNPs
+TQID: 'https://experienceleague.adobe.com/CZbsq-vawa775PIQ-LzGRxjRIaiHJinVSrwikRnsNPs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
     internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata

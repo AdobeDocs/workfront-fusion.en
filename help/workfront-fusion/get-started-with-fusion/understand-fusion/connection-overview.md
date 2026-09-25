@@ -4,10 +4,13 @@ description: For most apps, it is necessary to create a connection, through whic
 author: Becky
 feature: Workfront Fusion
 exl-id: 01132df7-4cc0-4ff3-b4d7-607a06558735
-TQID: https://experienceleague.adobe.com/WPX-TdEbhwv4bArOp6xwhVFZTmdHznLg4CMiZDeV70s
+TQID: 'https://experienceleague.adobe.com/WPX-TdEbhwv4bArOp6xwhVFZTmdHznLg4CMiZDeV70s'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Connection overview
 
