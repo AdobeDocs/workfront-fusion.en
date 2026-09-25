@@ -74,6 +74,10 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
 * The default maximum size of a payload is **5 MB**.
 * Webhooks are limited to **100 requests per second**. When this limit is reached, Workfront Fusion sends a 429 ([!UICONTROL Too Many Requests]) status.
 * Workfront Fusion stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was received results in the error "[!UICONTROL Failed to read file from storage.]"
+* A webhook's queue can hold up to **100,000** queued events. The queue fills when a scenario that uses the webhook is turned off, or is set to run on a schedule instead of instantly. When the queue reaches 100,000 events, new events are rejected with a "Queue is full" error and a 400 status code.
+
+  For Workfront and Planning events, if the queue remains full for an extended period, the event subscription is disabled, then frozen, and Workfront Fusion stops receiving events for that subscription.
+
 * Webhooks are deactivated automatically if either of the following applies:
 
   * The webhook has not been connected to any scenario for more than 5 days
