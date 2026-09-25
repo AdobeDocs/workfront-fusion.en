@@ -4,19 +4,26 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: "Workfront Fusion release activity: Week of May 9, 2022"
+title: 'Workfront Fusion release activity: Week of May 9, 2022'
 description: This page describes all enhancements made in Adobe Workfront Fusion the week of May 9, 2022.
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 5727d1bd-6b1d-4c99-90b5-68a555751e8c
-TQID: https://experienceleague.adobe.com/Xfh6j7DGaUBM2hnMCv0Z-WcS87Z7VFgoOzUXJ6P8qJs
+TQID: 'https://experienceleague.adobe.com/Xfh6j7DGaUBM2hnMCv0Z-WcS87Z7VFgoOzUXJ6P8qJs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
 ---
 # Workfront Fusion release activity: Week of May 9, 2022
 

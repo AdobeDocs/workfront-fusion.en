@@ -5,10 +5,18 @@ author: Becky
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: aa71be54-f956-438d-a84b-a6e80f6a1431
-TQID: https://experienceleague.adobe.com/ww7bXq4OoYuwkW6wB02papsstb7YHJ8Ow5phkn1OT7w
+TQID: 'https://experienceleague.adobe.com/ww7bXq4OoYuwkW6wB02papsstb7YHJ8Ow5phkn1OT7w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
 ---
 # Workfront Fusion release activity: Week of December 12, 2022
 

@@ -1,6 +1,6 @@
 ---
 content-type: reference
-title: "Using Workfront Storage: article index"
+title: 'Using Workfront Storage: article index'
 description: This section contains articles related to using Storage in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
@@ -8,6 +8,9 @@ recommendations: noDisplay, noCatalog
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Using Workfront Storage: article index
 

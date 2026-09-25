@@ -5,6 +5,12 @@ description: This section contains articles related to managing scenarios in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Manage scenarios from the Scenarios area
 

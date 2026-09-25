@@ -4,10 +4,13 @@ description: When you are creating or editing a scenario, you can configure sett
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-TQID: https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w
+TQID: 'https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Flow control
 

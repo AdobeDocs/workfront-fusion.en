@@ -4,6 +4,12 @@ description: A worker pool is a quantity of Workfront Fusion processing resource
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Worker pools
 

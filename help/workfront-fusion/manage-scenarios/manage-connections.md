@@ -4,10 +4,13 @@ description: You can view and manage your teams connections in the Connections a
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e4d3ac-ccbe-4ee2-ba73-b37032980696
-TQID: https://experienceleague.adobe.com/xFZcmAmM-VcJnDeO36aeLzQQaYNN0vm1plXdhMs7u60
+TQID: 'https://experienceleague.adobe.com/xFZcmAmM-VcJnDeO36aeLzQQaYNN0vm1plXdhMs7u60'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Manage connections
 
