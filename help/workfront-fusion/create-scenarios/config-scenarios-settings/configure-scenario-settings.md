@@ -74,9 +74,9 @@ When sequential processing is enabled, parallel executions of the scenario are d
 
 **Instant Webhooks**: If a webhook trigger is configured as `instant` and "Sequential processing" is enabled, then all instant webhook payloads will be queued and processed in the order that they arrive. This can be useful when processing events from external systems in an exact order.
 
-   >[!NOTE]
-   >
-   >There will be automatic processing delays as each payload is processed before the next is started.
+>[!NOTE]
+>
+>There will be automatic processing delays as each payload is processed before the next is started.
 
 **Incomplete Executions**: If "Incomplete Executions" is also enabled, if an error occurs during the execution of a scenario, the scenario is paused. One of the following then occurs:
 
