@@ -11,23 +11,25 @@ The Adobe Workfront Fusion MCP server lets you work with your Fusion organizatio
 
 ## Supported AI agentic platforms
 
-The Fusion MCP server works with any AI agentic platform that supports the Model Context Protocol (MCP) and remote (Streamable HTTP) MCP servers with OAuth.
+The Fusion MCP server works with any AI agentic platform that supports Model Context Protocol (MCP) and remote (Streamable HTTP) MCP servers with OAuth.
 
 > **NOTE**
 > Adobe does not currently publish a Workfront Fusion connector in the Claude connectors directory or the ChatGPT app/plugin directory. To use Fusion with Claude, ChatGPT, or Microsoft Copilot, add it as a **custom MCP server** by URL, as described in this article.
 
 This article walks through the connection steps for:
 
-* [Adobe Coworker](#use-fusion-with-coworker) — standalone and in the Fusion right rail
-* [Claude](#connect-fusion-to-claude) (custom connector)
-* [ChatGPT](#connect-fusion-to-chatgpt) (custom MCP server)
+* [Adobe Coworker](#use-fusion-with-coworker): Coworker as a standalone and Coworker in the Fusion right rail
+* [Claude](#connect-fusion-to-claude): Custom connector
+* [ChatGPT](#connect-fusion-to-chatgpt): Custom MCP server
 * [A custom MCP solution](#connect-fusion-to-a-custom-mcp-solution)
 
-If you use a different MCP-compatible platform (for example, Gemini, Cursor, or VS Code), follow that platform's documentation for adding a custom MCP server. When prompted for the MCP server URL, enter:
-
-```
-https://mcp.fusion.adobe.com/mcp
-```
+>[!IMPORTANT]
+>
+>If you use a different MCP-compatible platform such as Gemini, Cursor, or VS Code, follow that platform's documentation for adding a custom MCP server. When prompted for the MCP server URL, enter:
+>
+>```
+>https://mcp.fusion.adobe.com/mcp
+>```
 
 ## Prerequisites
 
