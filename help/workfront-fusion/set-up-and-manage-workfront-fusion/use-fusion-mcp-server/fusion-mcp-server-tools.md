@@ -16,8 +16,8 @@ The agent acts in Fusion using your Adobe ID, your Fusion organization role, and
 
 Each tool is classified as:
 
-* **Read** — retrieves information without changing anything (for example, listing scenarios or getting an execution).
-* **Write** — creates, changes, runs, or deletes Fusion data (for example, cloning a scenario or clearing a webhook queue).
+* **Read**: Retrieves information without changing anythin, such as listing scenarios or getting an execution.
+* **Write**: Creates, changes, runs, or deletes Fusion data, such as cloning a scenario or clearing a webhook queue.
 
 ## Organization tools
 
@@ -99,7 +99,7 @@ Example prompts:
 
 ## Connection and key tools
 
-These tools return metadata only. They don't return credentials, tokens, or secret values. `[TBD: confirm]`
+These tools return metadata only. They don't return credentials, tokens, or secret values. 
 
 | Tool | Name | Action | Description |
 | --- | --- | --- | --- |
@@ -125,11 +125,11 @@ Example prompts:
 ### Webhook queue
 
 | Tool | Name | Action | Description |
-| --- | --- |--------| --- |
-| Get queue stats | `fusion_queue_stats` | Read   | Returns the number of queued events, the queue limit, and whether the webhook is enabled. |
-| List queue | `fusion_queue_list` | Read   | Lists received webhook events waiting to be processed. |
-| Get queue item | `fusion_queue_get` | Read   | Returns a single queued event, including its decoded payload. |
-| Delete queue items | `fusion_queue_delete` | Write  | Deletes specific queued events (up to 50) or clears the queue, optionally excluding some events. Events currently processing can't be deleted. |
+| --- | --- | -------- | --- |
+| Get queue stats | `fusion_queue_stats` | Read | Returns the number of queued events, the queue limit, and whether the webhook is enabled. |
+| List queue | `fusion_queue_list` | Read | Lists received webhook events waiting to be processed. |
+| Get queue item | `fusion_queue_get` | Read | Returns a single queued event, including its decoded payload. |
+| Delete queue items | `fusion_queue_delete` | Write | Deletes specific queued events (up to 50) or clears the queue, optionally excluding some events. Events currently processing can't be deleted. |
 
 Example prompts:
 
@@ -166,7 +166,7 @@ Example prompts:
 
 ## Coworker
 
-All tools in this article are available in Coworker, both standalone and in the Fusion right rail, subject to the same Read/Write settings and your permissions. `[TBD: list any tools that are hidden or behave differently in these surfaces, e.g. org switching in Coworker in the Fusion right rail follows the org selected in the UI]`
+All tools in this article are available in Coworker, both standalone and in the Fusion right rail, subject to the same Read/Write settings and your permissions.
 
 ## How tools are updated
 

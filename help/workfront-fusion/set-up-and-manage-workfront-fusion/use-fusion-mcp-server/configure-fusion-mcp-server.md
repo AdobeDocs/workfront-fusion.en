@@ -3,17 +3,16 @@ title: Configure the Adobe Workfront Fusion MCP server
 description: Connect Adobe Workfront Fusion to an MCP-compatible AI agentic platform, or to Coworker (standalone or in the Fusion right rail).
 ---
 
-# Configure the Adobe Workfront Fusion MCP server
+# Configure the Adobe Workfront Fusion MCP server\
 
-<!-- BECKY CHECK ME: verify all remaining draft placeholders in this article before publishing. -->
-
-The Adobe Workfront Fusion MCP server lets you work with your Fusion organization — scenarios, executions, connections, webhooks, data stores, and more — through natural-language conversation in a supported AI agentic platform.
+The Adobe Workfront Fusion MCP server lets you work with your Fusion organization's' scenarios, executions, connections, webhooks, data stores, and more, through natural-language conversation in a supported AI agentic platform.
 
 ## Supported AI agentic platforms
 
 The Fusion MCP server works with any AI agentic platform that supports Model Context Protocol (MCP) and remote (Streamable HTTP) MCP servers with OAuth.
 
-> **NOTE**
+>[!NOTE]
+>
 > Adobe does not currently publish a Workfront Fusion connector in the Claude connectors directory or the ChatGPT app/plugin directory. To use Fusion with Claude, ChatGPT, or Microsoft Copilot, add it as a **custom MCP server** by URL, as described in this article.
 
 This article walks through the connection steps for:
@@ -44,10 +43,10 @@ Before you can connect Fusion to an AI agentic platform, you must:
 
 Coworker is Adobe's AI agent. Fusion is built into Coworker, so you don't need to enter an MCP URL or register an OAuth app. You can use Coworker with Fusion in two places:
 
-* [Coworker (standalone)](#use-fusion-in-coworker) — work with Fusion alongside your other Adobe apps.
-* [Coworker in the Fusion right rail](#use-coworker-in-the-fusion-right-rail) — open Coworker in a panel inside the Fusion UI.
+* [Coworker (standalone)](#use-fusion-in-coworker): Work with Fusion alongside your other Adobe apps.
+* [Coworker in the Fusion right rail](#use-coworker-in-the-fusion-right-rail): Open Coworker in a panel inside the Fusion UI.
 
-Both use the same Fusion MCP tools, your Adobe ID, and your Fusion permissions. The Read-only / Write MCP tools settings apply in both. Destructive actions (delete, clear queue, overwrite) always ask for confirmation.
+Both use the same Fusion MCP tools, your Adobe ID, and your Fusion permissions. The Read or Write MCP tools settings apply in both. Destructive actions, such as delete, clear queue, or overwrite, always ask for confirmation.
 
 ### Use Fusion in Coworker
 
