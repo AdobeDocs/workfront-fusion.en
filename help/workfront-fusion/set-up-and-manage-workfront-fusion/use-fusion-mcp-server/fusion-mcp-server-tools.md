@@ -172,3 +172,4 @@ All tools in this article are available in Coworker, both standalone and in the 
 
 When Adobe releases a new version of the Fusion MCP server, connected agents pick up the updated tool set automatically. You don't need to reconnect.
 
+

@@ -174,3 +174,4 @@ The agent acts as you, using your Fusion role and team permissions. It can't acc
 ### Does the agent see my connection secrets?
 
 No. Connection and key tools return metadata (name, type, scopes, expiration), not credentials or secret values.
+ 
