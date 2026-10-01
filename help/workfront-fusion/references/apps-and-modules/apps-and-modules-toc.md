@@ -51,6 +51,7 @@ Fusion offers connectors for many of Adobe's products and services.
 * [Adobe Experience Manager Assets modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Experience Manager MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
+* [Adobe Marketo Engage MCP module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md)
 * [Adobe Express modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
 * [Adobe Firefly Audio and Video modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Adobe Firefly modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
