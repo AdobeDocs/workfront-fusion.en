@@ -145,69 +145,100 @@ This is the only module the connector provides. A scenario uses it by supplying:
 
 It returns the AI's final answer as text, plus a full audit trail of what happened while producing that answer.
 
-### What comes back
+## Adobe Marketo Engage MCP module and its fields
 
-The output is a single **Data** bundle containing three parts:
+### Process a user prompt
 
-- **Response** — the AI's final answer, as text. This is what most scenarios will map into the next module.
-- **Audit Trail** — the detailed record of the run: a session ID, the original prompt, start/end times, total duration, overall status, the final response, and a **Tool Calls** list. Each tool call entry records which Marketo tool ran, its arguments, its output, its start/end time and duration, whether it succeeded, and its order in the sequence.
-- **Summary** — the same run condensed to counts: total tool calls, successful calls, failed calls, processing time, and status.
+This action module sends a plain-English instruction to Adobe Marketo Engage's MCP server and returns the AI's response.
 
-The audit trail is useful material for the docs: it's what lets a user see *how* the AI arrived at an answer and exactly which changes it made in Marketo — worth calling out for anyone running this unattended or needing a record for compliance.
+<table style="table-layout:auto"> 
+ <col/>
+ <col/>
+ <tbody>
+  <tr>
+   <td role="rowheader">LLM key <i>(Optional, advanced)</i></td>
+   <td><p>By default, this module processes your prompt using Adobe's own AI service, and you do not need to select a key.</p><p>To use your own AI provider instead, select an existing LLM key, or create a new one by clicking <b>Add</b> and entering the following information:</p>
+    <ul>
+     <li><b>Key name</b>: Enter a name for the new key.</li>
+     <li><b>LLM</b>: Select the large language model that this key is associated with. Supported providers are OpenAI, Anthropic Claude, and Amazon Bedrock.</li>
+     <li><b>Key</b>: Enter or map your API key for the selected provider.</li>
+     <li><b>Model</b>: Select the LLM model that the key will use.</li>
+     <li><b>Other fields</b>: Enter values for any other fields that your LLM requires.</li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td role="rowheader">Connection</td>
+   <td><p>For instructions about connecting your Marketo account to Workfront Fusion, see <a href="#connect-adobe-marketo-engage-mcp-to-workfront-fusion" class="MCXref xref">Connect Adobe Marketo Engage MCP to Workfront Fusion</a> in this article.</p></td>
+  </tr>
+  <tr>
+   <td role="rowheader">User prompt</td>
+   <td><p>Enter or map the instruction, in plain English, that you want the AI to carry out.</p><p>Example: <i>Find all leads added to the Spring Webinar list in the last 7 days and summarize which industries are most common.</i></p></td>
+  </tr>
+ </tbody>
+</table>
 
-### Which AI model answers the prompt
+### Module output
 
-By default, **no configuration is needed at all** — the module uses Adobe's own managed AI service automatically, with no key or credentials to enter. This is the expected, zero-setup path for most users.
+The output is a single bundle containing the following:
 
-Advanced users can instead select a specific "LLM key" (a saved API credential) to use a different AI provider — OpenAI, Anthropic Claude, or Amazon Bedrock — if they have their own account with one of those and want to use it instead of Adobe's default service. The field is marked advanced and is optional; most users will never need it.
+* Response: The AI's final answer, as text. You can map this data into subsequent modules.
+* Audit Trail: The detailed record of the run, including a session ID, the original prompt, start and end times, total duration, overall status, the final response, and a Tool Calls list. Each tool call entry records which Marketo tool ran, its arguments, its output, its start and end time and duration, whether it succeeded, and its order in the sequence.
+* Summary: The same run condensed to counts: total tool calls, successful calls, failed calls, processing time, and status.
+
+### AI Models
+
+By default, the module uses Adobe's own managed AI service automatically, with no key or credentials to enter. 
+
+You can instead select a specific LLM key to use  OpenAI, Anthropic Claude, or Amazon Bedrock, if your organization has an account with one of these.
 
 ### Choosing which Marketo actions the AI is allowed to take
 
-Once a connection is selected, the module asks the Marketo MCP server what tools it offers and presents them as multi-select lists, each showing how many tools it contains:
+After a connection is selected, the module asks the Marketo MCP server what tools it offers and presents them as multi-select lists, each showing how many tools it contains:
 
-- **Read-only tools** — actions that only look something up (find a lead, list campaign members, read a program's details) and never change anything.
-- **Write/delete tools** — actions that change something (create or update a lead, add someone to a list, activate a campaign, approve or send an email).
-- **Other tools** — a third list that appears only if the Marketo server offers tools it hasn't labelled as read-only or not. These are shown separately rather than being assumed safe or unsafe. If the server labels everything, this list doesn't appear at all.
+* Read-only tools: Actions that only look something up and never change anything, such as finding a lead, listing campaign members, or reading a program's details.
+* Write/delete tools: Actions that change something, such as creating or updating a lead, adding someone to a list, activating a campaign, or approving or sending an email.
+* Other tools: A third list that appears only if the Marketo server offers tools it has not labeled as read-only or not. These are shown separately rather than being assumed safe or unsafe. If the server labels everything, this list does not appear.
 
-A user can leave the lists untouched to let the AI use anything it needs. Or they can restrict a list to specific actions — for example, selecting only 2 specific "write" actions while leaving "read-only" alone means the AI can look up whatever it needs freely, but can only make those 2 specific kinds of changes, nothing else. **Leaving a list empty means "all actions in that category are allowed," not "none"** — restricting the AI requires actively choosing which specific actions to allow in that category.
+If no tools are selected, the AI can use them all. You can restrict a list to specific actions. For example,  selecting only 2 specific "write" actions while leaving "read-only" alone means the AI can look up whatever it needs freely, but can only make those 2 specific kinds of changes. Leaving a list empty means all actions in that category are allowed. Restricting the AI requires actively choosing which specific actions to allow in that category. This way you can ensure that the AI won't take an unexpected destructive action against live marketing data, while still letting it freely gather information.
 
-This exists so a cautious user (or a scenario meant to run unattended, without anyone watching) can guarantee the AI won't take an unexpected destructive action against live marketing data, while still letting it freely gather information.
+Because the lists are read live from the Marketo server, the exact tools shown can change as Adobe updates that server. 
 
-Because the lists are read live from the Marketo server, the exact tools shown — and the counts in the field labels — can change as Adobe updates that server. Docs shouldn't promise a fixed list.
+### No persistent conversation history
 
-### One prompt, one answer — no back-and-forth
+Each run of this module is a single, self-contained execution. The AI cannot ask a follow-up question and wait for a reply. It must instead make its best judgment and produce a complete, final answer in one pass. If a request is ambiguous, the AI will make a reasonable assumption, state that assumption as part of its answer, and proceed. It will not stop and ask the user to clarify, because there's no way for it to receive a reply within a single run.
 
-Each run of this module is a single, self-contained execution — like asking someone a question over email rather than a live phone call. The AI cannot ask a follow-up question and wait for a reply; it must make its best judgment and produce a complete, final answer in one pass. If a request is ambiguous, the AI will make a reasonable assumption, state that assumption as part of its answer, and proceed — it will not stop and ask the user to clarify, because there's no way for it to receive a reply within a single run.
+The AI is also instructed to verify facts with a tool call rather than rely on memory, because Marketo data may have changed since the previous run.
 
-The AI is also instructed to verify facts with a tool call rather than rely on memory — checking a lead's current state, a list's membership, or a campaign's status before acting — because Marketo data may have changed since anything it saw earlier.
+The AI only takes a write, update, or delete action when the prompt actually asked for one. It won't take an action that wasn't requested, including activating or deactivating campaigns, creating or deleting leads and lists, and approving or sending emails, even in the same run where it's doing something else the user did ask for.
 
-And it is instructed to only take a write, update, or delete action when the prompt actually asked for one. It won't take an extra "helpful" action that wasn't requested — explicitly including activating or deactivating campaigns, creating or deleting leads and lists, and approving or sending emails — even in the same run where it's doing something else the user did ask for.
+Because each run is independent, the AI has no memory of a previous run by itself. A scenario that wants a multi-turn, chat-like experienc emust explicitly provide that history as part of the new prompt, such as by storing the previous question and answer in Fusion's Data Store, or passed between modules, and including it as text at the start of the new prompt, followed by the new question. There is no session or conversation ID that automatically remembers prior runs. 
 
-### Continuing a conversation across multiple runs
+## Example prompts
 
-Because each run is independent, the AI has no memory of a previous run by itself. A scenario that wants a multi-turn, chat-like experience (for example, "ask a follow-up about the previous answer") has to explicitly provide that history as part of the new prompt — for example, by storing the previous question and answer (in Fusion's Data Store, or passed between modules) and including it as text at the start of the new prompt, followed by the new question. This is a scenario-design pattern, not something the module does automatically — there is no "session" or "conversation ID" that automatically remembers prior runs. (The session ID in the audit trail identifies one run for tracing; it is not a handle for resuming anything.)
+You can use prompts such as the following:
 
-## Good example prompts to draw from
+* *List the leads that joined the 'Q3 Product Launch' program in the last 7 days and summarize which industries they're from.*
+* *Check whether the 'Welcome Series' smart campaign is currently active, and tell me how many people are in it.*
+* *Find the form used on our pricing page and tell me which fields are marked required.*
+* *Add the lead with email jane@example.com to the 'VIP Customers' static list.*
+* *Summarize the performance of every email in the 'Spring Newsletter' program.*
 
-These illustrate the intended range without naming internal tools:
-
-- "List the leads that joined the 'Q3 Product Launch' program in the last 7 days and summarize which industries they're from."
-- "Check whether the 'Welcome Series' smart campaign is currently active, and tell me how many people are in it."
-- "Find the form used on our pricing page and tell me which fields are marked required."
-- "Add the lead with email jane@example.com to the 'VIP Customers' static list."
-- "Summarize the performance of every email in the 'Spring Newsletter' program."
+<!--
 
 ## What a content writer should NOT claim
 
-- **Don't describe the connection as an OAuth or "sign in with Adobe" flow.** It isn't one. It's three credential fields the user copies out of Marketo's LaunchPoint and Munchkin admin pages. Screenshots or steps borrowed from the AEM MCP connector docs would be wrong here.
-- **Don't imply the connection form validates the credentials.** It saves them without testing them.
-- Not a substitute for individual Marketo action-modules — it's a single, flexible AI-driven module, not a set of deterministic single-purpose modules.
-- Results are AI-generated and can occasionally be imperfect, even with every safeguard above in place — appropriate for automation where a human isn't reviewing every single run in real time, but not a guarantee of 100% deterministic behavior the way a traditional Marketo module is. This deserves extra emphasis for Marketo specifically, because a write action here can email real customers or alter real lead records.
-- The read/write tool split limits what categories of *Marketo actions* the AI can take — it is not a way to sandbox or limit what the AI is capable of reasoning about or discussing in its answer text.
-- Don't name specific Marketo MCP tools/actions unless verified against the live tool list — this document intentionally describes capability areas (leads, lists, campaigns, programs, emails, forms, snippets, bulk operations) rather than exact tool names, since the server's exact tool set may evolve.
-- Don't state Marketo API rate limits, quotas, or daily call caps as if this connector defines them. Any such limit comes from the user's own Marketo subscription and REST API allowance; verify with the Marketo team before publishing numbers.
+* Connection form: Do not describe the connection as an OAuth or "sign in with Adobe" flow. It is not one. It is three credential fields that the user copies out of Marketo's LaunchPoint and Munchkin admin pages. Screenshots or steps borrowed from the AEM MCP connector docs would be wrong here.
+* Credential validation: Do not imply that the connection form validates the credentials. It saves them without testing them.
+* Module scope: This is not a substitute for individual Marketo action modules. It is a single, flexible AI-driven module, not a set of deterministic single-purpose modules.
+* Reliability: Results are AI-generated and can occasionally be imperfect, even with every safeguard above in place. This is appropriate for automation where a human is not reviewing every single run in real time, but it is not a guarantee of 100% deterministic behavior the way a traditional Marketo module is. This deserves extra emphasis for Marketo specifically, because a write action here can email real customers or alter real lead records.
+* Tool restrictions: The read/write tool split limits what categories of Marketo actions the AI can take. It is not a way to sandbox or limit what the AI is capable of reasoning about or discussing in its answer text.
+* Tool naming: Do not name specific Marketo MCP tools or actions unless they are verified against the live tool list. This document intentionally describes capability areas, such as leads, lists, campaigns, programs, emails, forms, snippets, and bulk operations, rather than exact tool names, since the server's exact tool set may evolve.
+* API limits: Do not state Marketo API rate limits, quotas, or daily call caps as if this connector defines them. Any such limit comes from the user's own Marketo subscription and REST API allowance; verify with the Marketo team before publishing numbers.
 
 ## Reference links used while compiling this
 
-- Adobe Marketo Engage MCP server (developer documentation):
+* Adobe Marketo Engage MCP server (developer documentation):
   https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/mcp-server
+
+  -->
