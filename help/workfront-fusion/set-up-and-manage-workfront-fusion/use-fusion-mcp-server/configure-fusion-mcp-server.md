@@ -3,9 +3,11 @@ title: Configure the Adobe Workfront Fusion MCP server
 description: Connect Adobe Workfront Fusion to an MCP-compatible AI agentic platform, or to Coworker (standalone or in the Fusion right rail).
 ---
 
-# Configure the Adobe Workfront Fusion MCP server\
+# Configure the Adobe Workfront Fusion MCP server
 
 The Adobe Workfront Fusion MCP server lets you work with your Fusion organization's' scenarios, executions, connections, webhooks, data stores, and more, through natural-language conversation in a supported AI agentic platform.
+
+For a list of tools available in the Adobe Workfront Fusion MCP server, see [Adobe Workfront Fusion MCP server tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md).
 
 ## Supported AI agentic platforms
 
@@ -53,31 +55,30 @@ Both use the same Fusion MCP tools, your Adobe ID, and your Fusion permissions. 
 1. Open Coworker.
 2. Open **Customization** > **Integrations**
 3. Find **fusion-mcp** and click **Test**.
-4. If you have access to more than one Fusion organization it will be auto selected, can ask Coworker to switch later.
+4. If you have access to more than one Fusion organization it will be auto selected. You can ask Coworker to switch organization later if necessary.
 
 ### Use Coworker in the Fusion right rail
 
 In Fusion, Coworker opens in the right rail
 
 1. Sign in to Workfront Fusion.
-2. Click the **Coworker** icon in the right rail. <!-- BECKY CHECK ME: confirm the exact icon/label wording for the Coworker entry in the right rail. -->
+2. Click the **Coworker** icon in the right rail.
 3. Ask a question in the panel.
-
-How Coworker behaves in the Fusion right rail:
 
 ### Example prompts
 
-Show me all scenarios that failed to execute in the last 24 hours.
-List all scenarios created or deleted this week, sorted by most recent first.
-What is this scenario doing?
-Why did this execution fail?
+* *Show me all scenarios that failed to execute in the last 24 hours.*
+* *List all scenarios created or deleted this week, sorted by most recent first.*
+* *What is this scenario doing?*
+* *Why did this execution fail?*
 
 ## Connect Fusion to Claude
 
 Add Fusion as a custom connector.
 
-> **NOTE**
-> In Claude Team/Enterprise, you must be an owner to add a custom connector. See [Get started with custom connectors using remote MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp).
+>[!NOTE]
+>
+> In Claude Team/Enterprise, you must be an owner to add a custom connector. For information, see [Get started with custom connectors using remote MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) in the Claude documentation..
 
 1. Sign in to [Claude](https://claude.ai).
 2. In the left menu, select **Customize**.
@@ -141,14 +142,14 @@ You don't need to disconnect to change organizations. The Fusion MCP server can 
 * _Which Fusion organizations do I have?_
 * _Switch to the 1234 organization._
 
-The agent uses `fusion_orgs_list` and `fusion_orgs_set`. The switch applies to the current conversation/session only. Organizations in different data-center zones (for example, US and EU) are all available through the same MCP URL. <!-- BECKY CHECK ME: confirm this statement before publishing. -->
+The agent uses `fusion_orgs_list` and `fusion_orgs_set`. The switch applies to the current conversation/session only. Organizations in different data-center zones (for example, US and EU) are all available through the same MCP URL.
 
 ## Troubleshoot setup and authentication
 
 | Problem | Likely cause | Fix |
 | --- | --- | --- |
 | You can't find a Fusion connector in the Claude or ChatGPT directory. | Adobe doesn't publish a directory connector for Fusion. | Add Fusion as a custom MCP server using the URL in this article. |
-| You can't add a custom connector in Claude or ChatGPT. | Your plan restricts custom connectors to owners/admins. | Ask your Claude or ChatGPT administrator to add the connector or allow custom MCP servers. |
+| You can't add a custom connector in Claude or ChatGPT. | Your plan restricts custom connectors to owners or administrators. | Ask your Claude or ChatGPT administrator to add the connector or allow custom MCP servers. |
 | You connected but see no data, or the wrong data. | The wrong Fusion organization is active. | Ask the agent to list your organizations and switch to the right one. |
 | Authentication failed or the connection stopped working. | Session expired or connection error. | Disconnect and reconnect the server. |
 | You see a message that MCP access is disabled. | MCP access is turned off for your Fusion organization. | Ask your Fusion administrator to enable it. |
