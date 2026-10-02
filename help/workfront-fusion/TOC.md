@@ -229,6 +229,10 @@ nudge: true
         * [Manage templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/manage-templates-toc.md)
         * [Approve or disapprove templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/approve-templates.md)
         * [Edit templates](/help/workfront-fusion/set-up-and-manage-workfront-fusion/manage-templates/edit-templates.md)
+    * Use Fusion MCP Server {#use-fusion-mcp-server}
+        * [Use Fusion MCP Server: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/use-fusion-mcp-server-toc.md)
+        * [Configure the Adobe Workfront Fusion MCP server](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md)
+        * [Adobe Workfront Fusion MCP server tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md)
     * Use Workfront Storage {#use-workfront-storage}
         * [Using Workfront Storage](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/use-workfront-storage-toc.md)
         * [Storage overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-workfront-storage/storage-overview.md)
@@ -407,6 +411,7 @@ nudge: true
             * [Adobe Journey Optimizer modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
             * [Adobe Lightroom modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-lightroom-modules.md)
             * [Adobe Marketo Modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
+            * [Adobe Marketo Engage MCP module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md)
             * [Adobe PDF Services modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
             * [Adobe Photoshop modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
             * [Adobe Substance modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-substance-modules.md)

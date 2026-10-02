@@ -65,9 +65,9 @@ You can also configure the scenario to automatically process an incomplete execu
 
 With this option enabled, when an error takes place, the incomplete execution is retrieved (after the time specified in the [!UICONTROL Interval between attempts] field) and executed with the original input data. This will repeat until the execution of the module completes without an error or until the Number of attempts specified is reached.
 
-   >[!NOTE]
-   >
-   >If the initial retry attempt fails, the interval between retries increases exponentially every other attempt.
+>[!NOTE]
+>
+>If the initial retry attempt fails, the interval between retries increases exponentially every other attempt.
 
 
 When the Automatically complete execution option is enabled, the scenario run is marked as "Success" because the Break error handler's auto-retry is handling the issue automatically. In this case, users do not receive an email about the failed run.
