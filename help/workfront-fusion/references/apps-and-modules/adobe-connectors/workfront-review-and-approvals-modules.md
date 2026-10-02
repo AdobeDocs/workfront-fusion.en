@@ -127,6 +127,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Actions](#actions)
 * [Searches](#searches)
+* [Triggers](#triggers)
 * [Other](#other)
 
 ### Actions
@@ -1349,6 +1350,89 @@ This search module searches grouped approvals using a named view.
 </table>
 
 <!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
+
+### Triggers
+
+* [Watch approval events](#watch-approval-events)
+
+#### Watch approval events
+
+This trigger module executes a scenario in real time when approval-related events occur in Adobe Workfront Unified Review and Approvals.
+
+The module returns any standard fields associated with the approval event, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+
+To configure the webhook for the Watch approval events module:
+
+1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
+
+1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Webhook name]</td> 
+      <td>Enter a name for the webhook</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Connection]</td> 
+      <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Type]</td> 
+      <td>Select the type of approval record that you want the module to watch.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Configuration Type]</td> 
+      <td>Select whether you want to use a simple or advanced filter.<p>For information on simple or advanced filters, see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">Using Advanced filters</a> in the Workfront modules article.</p></td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Events filter payload]</td> 
+      <td>If you are using advanced filters, enter the JSON that describes the filter.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Filter Connector]</td> 
+      <td>If you are using advanced filters, select the connector that you want to use for the filter.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL State]</td> 
+      <td>If you are using a simple filter, select whether you want to watch the old state or the new state.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Trigger a scenario when the record changes <b>to</b> a given value.</p><p>For example, if the state is set to [!UICONTROL New State] and the filter is set to [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], the webhook triggers a scenario when the [!UICONTROL Status] changes to [!UICONTROL In Progress], regardless of what the status was before.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Trigger a scenario when the record changes <b>from</b> a given value.</p><p>For example, if the state is set to [!UICONTROL Old State] and the filter is set to [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], the webhook triggers a scenario when a [!UICONTROL Status] that is currently [!UICONTROL In Progress] changes to another status.</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[!UICONTROL Event filters]</p> </td> 
+      <td> <p>If you are using a simple filter, set filters.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND rules.</p> <p><b>NOTE</b>: You cannot edit filters in existing Workfront webhooks. To set up different filters for Workfront event subscriptions, remove the current webhook and create a new one.</p> <p>For more information on event filters, see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Event subscription filters in the Workfront &gt; [!UICONTROL Watch Events] modules</a> in the Workfront modules article.</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>Exclude events made by this connection</td> 
+      <td>If you are using a simple filter, enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop. This option may not be available for all approval event types.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Origin]</td> 
+      <td>
+       <p>Choose whether you want the scenario to watch [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], [!UICONTROL New and Updated Records], or [!DNL Deleted Records Only].</p>
+       <p><b>NOTE</b>: If you choose [!UICONTROL New and Updated Records], the webhook creation creates 2 event subscriptions (for the same webhook address).</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Enable secured hooks]</td> 
+      <td>
+       <p>Choose whether you want to enable authToken-based security for this webhook.</p><p>
+       <b>NOTE</b>: As of August 23, 2026, Fusion enables authToken-based security by default for all Workfront > Watch Event modules, including existing ones. If a specific webhook breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Custom token]</td> 
+      <td>
+       <p>(Optional) If [!UICONTROL Enable secured hooks] is set to [!UICONTROL Yes], you can enter your own token value to secure the webhook. If you leave this field blank, Fusion automatically generates a token for you.</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+After the webhook is created, you can view the address of the endpoint that events are sent to.
+
+For more information, see the section [Examples of Event Payloads](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) in the article Event Subscription API in the Workfront documentation.
 
 ### Other
 
