@@ -221,7 +221,7 @@ You can use prompts such as the following:
 * *List the leads that joined the 'Q3 Product Launch' program in the last 7 days and summarize which industries they're from.*
 * *Check whether the 'Welcome Series' smart campaign is currently active, and tell me how many people are in it.*
 * *Find the form used on our pricing page and tell me which fields are marked required.*
-* *Add the lead with email jane@example.com to the 'VIP Customers' static list.*
+* *Add the lead with email `jane@example.com` to the 'VIP Customers' static list.*
 * *Summarize the performance of every email in the 'Spring Newsletter' program.*
 
 <!--
