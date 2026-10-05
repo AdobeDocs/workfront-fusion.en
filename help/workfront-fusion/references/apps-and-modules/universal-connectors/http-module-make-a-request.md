@@ -126,6 +126,14 @@ When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a request] module, A
    <td> <p>Specify the request timeout in seconds (1-300). The default is 40 seconds.</p> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Retry Count]</td> 
+   <td> <p>Specify the number of times to retry the request on connection errors (ETIMEDOUT, ECONNRESET, EPROTO). The default is 3. Set to 0 to disable retries.</p> <p>This setting only has effect when [!UICONTROL Evaluate all states as errors] is enabled.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Additional Retry Status Codes]</td> 
+   <td> <p>Specify additional HTTP status codes that should be treated as retryable when [!UICONTROL Evaluate all states as errors] is enabled. By default, only 408, 429, and all 5xx codes are retryable.</p> <p>When you add a status code to this field, it becomes a retryable connection error and triggers retries according to the [!UICONTROL Retry Count] setting. Status codes not listed here keep their default behavior. Codes that are not usually retryable, such as 404 or 422, can be made retryable by adding them here.</p> <p><b>Example:</b> If you enable [!UICONTROL Evaluate all states as errors], set [!UICONTROL Retry Count] to 4, and add 422 to this field, an HTTP 422 response will be treated as retryable and retried like other connection-type failures.</p> <p><b>Note:</b> The [!UICONTROL Timeout] setting controls how long each attempt may wait. It does not define a pause between retries. This setting only has effect when [!UICONTROL Evaluate all states as errors] is enabled.</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules]</td> 
    <td> <p> Enable this option to share cookies from the server with all HTTP modules in your scenario.</p> </td> 
   </tr> 
