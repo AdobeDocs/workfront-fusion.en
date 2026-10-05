@@ -112,6 +112,13 @@ For more information about search possibilities, see the [!DNL Salesforce] devel
 
 To create a connection for your [!DNL Salesforce] modules, you can authenticate using OAuth 2 or PKCE.
 
+>[NOTE]
+>
+>If you are authenticating with PKCE, you must have the following scopes enabled in Salesforce.
+>
+>* Full access: `full`
+>* Perform requests at any time: `refresh_token`, `offline_access`
+
 1. In any [!DNL Salesforce] module, click **[!UICONTROL Add]** next to the Connection box.
 
 1. Fill in the following fields:
