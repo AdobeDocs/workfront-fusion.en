@@ -112,7 +112,7 @@ For more information about search possibilities, see the [!DNL Salesforce] devel
 
 To create a connection for your [!DNL Salesforce] modules, you can authenticate using OAuth 2 or PKCE.
 
->[NOTE]
+>[!NOTE]
 >
 >If you are authenticating with PKCE, you must have the following scopes enabled in Salesforce.
 >
