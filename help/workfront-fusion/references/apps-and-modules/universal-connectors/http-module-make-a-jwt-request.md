@@ -265,6 +265,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 You likely entered a bare number for `expiresIn` such as `3600`. The `jsonwebtoken` library interprets plain numbers as milliseconds. Use a unit string such as `"1h"` or `"3600s"` instead.
 
+### When is the token created?
+
+The module signs a fresh JWT each time the module runs, not when you create the connection. The connection stores only the signing material and algorithm, so claims such as `iat` and `exp` reflect the moment of that module run.
+
+If the request retries within the same module execution, Fusion reuses the same signed token for those retry attempts instead of signing a new token for each attempt. Because of this, a very short `expiresIn` value can expire before a retry occurs and cause a retry to send an already-expired token. To avoid this, use a clear unit string such as `"1h"` or `"3600s"` and avoid overly short token lifetimes.
+
 ### Can I change the algorithm per request?
 
 No. The algorithm is fixed by the connection. If you need a different algorithm, create a different JWT connection.
