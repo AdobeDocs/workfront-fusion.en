@@ -208,15 +208,15 @@ When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] modul
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Sign Options] (advanced)</p></td>
-   <td><p>Additional options passed to the JWT signer, such as <code>expiresIn</code>, <code>issuer</code>, <code>audience</code>, <code>subject</code>, and <code>keyid</code>. Duration values such as <code>expiresIn</code> are interpreted by the <code>jsonwebtoken</code> library. A plain number is treated as milliseconds, so use a unit string such as <code>"1h"</code> or <code>"3600s"</code> to be explicit. The algorithm is taken from the connection and cannot be overridden here.</p></td>
+   <td><p>For each sign option that you want to add to the request, click <b>Add item</b> and enter the parameter's name and value.</p><p>Additional options passed to the JWT signer, such as <code>expiresIn</code>, <code>issuer</code>, <code>audience</code>, <code>subject</code>, and <code>keyid</code>. Duration values such as <code>expiresIn</code> are interpreted by the <code>jsonwebtoken</code> library. A plain number is treated as milliseconds, so use a unit string such as <code>"1h"</code> or <code>"3600s"</code> to be explicit. The algorithm is taken from the connection and cannot be overridden here.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Header Name] (advanced)</p></td>
-   <td><p>Name of the request header that receives the signed JWT. Default: <code>Authorization</code>. The header name must not contain a dot (<code>.</code>), because dotted names are rejected and cannot be masked in request logs.</p></td>
+   <td><p>Enter or map the name of the request header that receives the signed JWT. Default: <code>Authorization</code>. The header name must not contain a dot (<code>.</code>), because dotted names are rejected and cannot be masked in request logs.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Token Type] (advanced)</p></td>
-   <td><p>Authentication scheme placed before the token, such as <code>Bearer</code>. Leave this blank to send the raw token without a prefix.</p></td>
+   <td><p>Enter or map the authentication scheme placed before the token, such as <code>Bearer</code>. Leave this blank to send the raw token without a prefix.</p></td>
   </tr>
  </tbody>
 </table>
