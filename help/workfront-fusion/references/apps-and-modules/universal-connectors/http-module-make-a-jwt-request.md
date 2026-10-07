@@ -126,7 +126,7 @@ The module requires a JWT connection. The connection stores the signing material
 >
 >A JWT connection signs with one algorithm only. If your scenario requires more than one signing algorithm, create a separate connection for each algorithm. This matches the existing standalone JWT app behavior.
 
-## [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] module configuration
+## [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] module and its fields
 
 When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] module, Adobe Workfront Fusion displays the fields listed below in the same order they appear in the module UI. A bolded title in a module indicates a required field. Fields marked as advanced are hidden unless you select **[!UICONTROL Show advanced settings]**.
 
@@ -168,19 +168,19 @@ When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] modul
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Timeout] (advanced)</p></td>
-   <td><p>Specifies the request timeout in seconds.</p></td>
+   <td><p>Specify the request timeout in seconds (1-300). The default is 40 seconds.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Retry Count] (advanced)</p></td>
-   <td><p>Specifies how many times the request should retry if the request fails due to a retryable error.</p></td>
+   <td><p>Specify how many times the request should retry if the request fails due to a retryable error.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Additional Retry Status Codes] (advanced)</p></td>
-   <td><p>Defines additional HTTP status codes that should be treated as retryable.</p></td>
+   <td><p>Specify additional HTTP status codes that should be treated as retryable.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Share cookies with other HTTP modules] (advanced)</p></td>
-   <td><p>Shares cookies from the server with other HTTP modules in the scenario.</p></td>
+   <td><p>Enable this option to share cookies from the server with all HTTP modules in your scenario.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Self-signed certificate] (advanced)</p></td>
@@ -188,23 +188,23 @@ When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] modul
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Reject connections that are using unverified (self-signed) certificates] (advanced)</p></td>
-   <td><p>Rejects connections that use unverified or self-signed certificates.</p></td>
+   <td><p>Enable this option to reject connections that are using unverified TLS certificates.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Follow redirect] (advanced)</p></td>
-   <td><p>Follows URL redirects returned with 3xx responses.</p></td>
+   <td><p>Enable this option to follow the URL redirects with 3xx responses.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Disable serialization of multiple same query string keys as arrays] (advanced)</p></td>
-   <td><p>By default, Workfront Fusion handles multiple values for the same URL query string parameter key as arrays. Disable this feature to treat repeated keys as a single value instead.</p></td>
+   <td><p>By default, Workfront Fusion handles multiple values for the same URL query string parameter key as arrays. For example, <code>www.test.com?foo=bar&amp;foo=baz</code> will be converted to <code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>. Activate this option to disable this feature.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Request compressed content] (advanced)</p></td>
-   <td><p>Adds an <code>Accept-Encoding</code> header to the request so the server can send compressed content.</p></td>
+   <td><p>Enable this option to request a compressed version of the website. Adds an <code>[!UICONTROL Accept-Encoding]</code> header to request compressed content.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Use Mutual TLS] (advanced)</p></td>
-   <td><p>Uses Mutual TLS for the HTTP request.</p></td>
+   <td><p>Enable this option to use Mutual TLS in the HTTP request.</p></td>
   </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL Sign Options] (advanced)</p></td>
