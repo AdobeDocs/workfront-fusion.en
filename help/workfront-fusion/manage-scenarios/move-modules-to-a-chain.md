@@ -15,6 +15,10 @@ product_v2:
 
 You can select a group of modules in a scenario and move them into a new chained scenario, without manually recreating mappings or data structures. This provides an easy way to modularize large scenarios.
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 When you move a group of modules into a chain, Workfront Fusion:
 
 * Moves the selected modules into a newly created scenario.

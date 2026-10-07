@@ -14,6 +14,10 @@ product_v2:
 
 This article explains how a scenario executes and how data flows through it, and how to view the data processed by each module.
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 To view how data is flowing through an active scenario, see [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md).
 
 ## Scenario execution flow
@@ -36,6 +40,8 @@ The scenario's first step, performed by the first module, is to watch for reques
 
 If the first module returns a bundle, the bundle passes through the rest of the scenario. In this example, the bundle would go to the second module, which converts the request to a project.
 
+<!--BECKY CHECK ME: Replace this classic execution-flow screenshot with a new-experience version. Confirm whether the existing example scenario is still the best visual for this section, or whether another Workfront-only example from the redesign work should be reused here instead. -->
+
 ![Execution flow of Workfront scenario](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
@@ -44,11 +50,13 @@ If the first module returns a bundle, the bundle passes through the rest of the 
 
 >[!BEGINSHADEBOX]
 
-**Example:** In This scenario that downloads documents from Adobe Workfront and sends them to a folder in [!DNL Dropbox], data would flow as follows:
+**Example:** In this scenario that downloads documents from Adobe Workfront and sends them to a folder in [!DNL Dropbox], data would flow as follows:
 
 The scenario's first step, performed by the first module, is to watch for documents in Workfront. Each document that it finds is considered one bundle. If the module runs without finding any bundles, the scenario ends after the first module.
 
 If a bundle is returned, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the second module, which uploads the bundle to the [!DNL Dropbox] folder.
+
+<!--BECKY CHECK ME: Replace this classic execution-flow screenshot with a new-experience version. A new asset named new-upload-document.png exists in this folder; confirm whether it is the correct replacement for this example and update the image reference if so. -->
 
 ![Execution flow of integration scenario](assets/example-execution-flow-wf-dropbox.png)
 
@@ -70,6 +78,8 @@ For each module, the bundle goes through a 4-step process before going on to the
 >The larger scenario goes through this process as well. For information about this process on the scenario level, see [Scenario execution, cycles, and phases](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md).
 
 After a scenario run is complete, each module displays an icon showing the number of operations performed. You can click this icon to display the detailed information about the processed bundles for each step in the process. You can see which module settings were used, and which bundles were returned by each module.
+
+<!--BECKY CHECK ME: Replace this processed-bundles screenshot with a new-experience version if the module detail view or operation-count icon looks different in the redesigned UI. If the panel is unchanged, confirm that this classic screenshot can remain. -->
 
 ![Processed bundles](assets/Info-processed-bundles.png)
 
