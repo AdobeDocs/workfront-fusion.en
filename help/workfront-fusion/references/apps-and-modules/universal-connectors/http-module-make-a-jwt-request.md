@@ -128,16 +128,16 @@ The module requires a JWT connection. The connection stores the signing material
 
 ## [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] module configuration
 
-When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] module, Adobe Workfront Fusion displays the fields listed below. A bolded title in a module indicates a required field.
-
-<!-- Becky check me: the module fields below should be kept in the same order they appear in the module UI once the final field list is confirmed. -->
-
-### Standard request fields
+When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] module, Adobe Workfront Fusion displays the fields listed below in the same order they appear in the module UI. A bolded title in a module indicates a required field. Fields marked as advanced are hidden unless you select **[!UICONTROL Show advanced settings]**.
 
 <table style="table-layout:auto">
  <col>
  <col>
  <tbody>
+  <tr>
+   <td role="rowheader"><p>[!UICONTROL Connection]</p></td>
+   <td><p>Select an existing JWT connection or create a new one.</p></td>
+  </tr>
   <tr>
    <td role="rowheader"><p>[!UICONTROL URL]</p></td>
    <td><p>The target URL for the request.</p></td>
@@ -162,79 +162,61 @@ When you configure the [!UICONTROL HTTP] > [!UICONTROL Make a JWT request] modul
    <td role="rowheader"><p>[!UICONTROL Parse response]</p></td>
    <td><p>When enabled, Fusion parses the response body based on the response content type.</p></td>
   </tr>
- </tbody>
-</table>
-
-### JWT-specific fields
-
-<table style="table-layout:auto">
- <col>
- <col>
- <tbody>
   <tr>
    <td role="rowheader"><p>[!UICONTROL JWT Payload (Claims)]</p></td>
    <td><p>Key/value pairs included as claims in the JWT payload. The reserved claims <code>exp</code>, <code>iat</code>, and <code>nbf</code> must be a NumericDate — a number of seconds since the Unix epoch. Claim values keep their JSON type, so numbers stay numbers and booleans stay booleans.</p></td>
   </tr>
- </tbody>
-</table>
-
-### Advanced fields
-
-<table style="table-layout:auto">
- <col>
- <col>
- <tbody>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Sign Options]</p></td>
-   <td><p>Additional options passed to the JWT signer, such as <code>expiresIn</code>, <code>issuer</code>, <code>audience</code>, <code>subject</code>, and <code>keyid</code>. Duration values such as <code>expiresIn</code> are interpreted by the <code>jsonwebtoken</code> library. A plain number is treated as milliseconds, so use a unit string such as <code>"1h"</code> or <code>"3600s"</code> to be explicit. The algorithm is taken from the connection and cannot be overridden here.</p></td>
-  </tr>
-  <tr>
-   <td role="rowheader"><p>[!UICONTROL Header Name]</p></td>
-   <td><p>Name of the request header that receives the signed JWT. Default: <code>Authorization</code>. The header name must not contain a dot (<code>.</code>), because dotted names are rejected and cannot be masked in request logs.</p></td>
-  </tr>
-  <tr>
-   <td role="rowheader"><p>[!UICONTROL Token Type]</p></td>
-   <td><p>Authentication scheme placed before the token, such as <code>Bearer</code>. Leave this blank to send the raw token without a prefix.</p></td>
-  </tr>
-  <tr>
-   <td role="rowheader"><p>[!UICONTROL Timeout]</p></td>
+   <td role="rowheader"><p>[!UICONTROL Timeout] (advanced)</p></td>
    <td><p>Specifies the request timeout in seconds.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Retry count]</p></td>
+   <td role="rowheader"><p>[!UICONTROL Retry Count] (advanced)</p></td>
    <td><p>Specifies how many times the request should retry if the request fails due to a retryable error.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Additional retry status codes]</p></td>
+   <td role="rowheader"><p>[!UICONTROL Additional Retry Status Codes] (advanced)</p></td>
    <td><p>Defines additional HTTP status codes that should be treated as retryable.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Share cookies]</p></td>
+   <td role="rowheader"><p>[!UICONTROL Share cookies with other HTTP modules] (advanced)</p></td>
    <td><p>Shares cookies from the server with other HTTP modules in the scenario.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Self-signed certificate (CA)]</p></td>
-   <td><p>Lets you add a certificate file for secure connection setup.</p></td>
+   <td role="rowheader"><p>[!UICONTROL Self-signed certificate] (advanced)</p></td>
+   <td><p>Upload your certificate if you want to use TLS using your self-signed certificate.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Reject unauthorized]</p></td>
+   <td role="rowheader"><p>[!UICONTROL Reject connections that are using unverified (self-signed) certificates] (advanced)</p></td>
    <td><p>Rejects connections that use unverified or self-signed certificates.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Follow redirect]</p></td>
+   <td role="rowheader"><p>[!UICONTROL Follow redirect] (advanced)</p></td>
    <td><p>Follows URL redirects returned with 3xx responses.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Use querystring]</p></td>
-   <td><p>Includes the query string when sending the request.</p></td>
+   <td role="rowheader"><p>[!UICONTROL Disable serialization of multiple same query string keys as arrays] (advanced)</p></td>
+   <td><p>By default, Workfront Fusion handles multiple values for the same URL query string parameter key as arrays. Disable this feature to treat repeated keys as a single value instead.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL GZIP]</p></td>
-   <td><p>Requests compressed content from the server.</p></td>
+   <td role="rowheader"><p>[!UICONTROL Request compressed content] (advanced)</p></td>
+   <td><p>Adds an <code>Accept-Encoding</code> header to the request so the server can send compressed content.</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[!UICONTROL Use mTLS]</p></td>
-   <td><p>Uses Mutual TLS in the HTTP request.</p></td>
+   <td role="rowheader"><p>[!UICONTROL Use Mutual TLS] (advanced)</p></td>
+   <td><p>Uses Mutual TLS for the HTTP request.</p></td>
+  </tr>
+  <tr>
+   <td role="rowheader"><p>[!UICONTROL Sign Options] (advanced)</p></td>
+   <td><p>Additional options passed to the JWT signer, such as <code>expiresIn</code>, <code>issuer</code>, <code>audience</code>, <code>subject</code>, and <code>keyid</code>. Duration values such as <code>expiresIn</code> are interpreted by the <code>jsonwebtoken</code> library. A plain number is treated as milliseconds, so use a unit string such as <code>"1h"</code> or <code>"3600s"</code> to be explicit. The algorithm is taken from the connection and cannot be overridden here.</p></td>
+  </tr>
+  <tr>
+   <td role="rowheader"><p>[!UICONTROL Header Name] (advanced)</p></td>
+   <td><p>Name of the request header that receives the signed JWT. Default: <code>Authorization</code>. The header name must not contain a dot (<code>.</code>), because dotted names are rejected and cannot be masked in request logs.</p></td>
+  </tr>
+  <tr>
+   <td role="rowheader"><p>[!UICONTROL Token Type] (advanced)</p></td>
+   <td><p>Authentication scheme placed before the token, such as <code>Bearer</code>. Leave this blank to send the raw token without a prefix.</p></td>
   </tr>
  </tbody>
 </table>
