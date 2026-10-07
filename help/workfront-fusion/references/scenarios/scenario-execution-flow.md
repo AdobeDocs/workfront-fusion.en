@@ -40,9 +40,7 @@ The scenario's first step, performed by the first module, is to watch for reques
 
 If the first module returns a bundle, the bundle passes through the rest of the scenario. In this example, the bundle would go to the second module, which converts the request to a project.
 
-<!--BECKY CHECK ME: Replace this classic execution-flow screenshot with a new-experience version. Confirm whether the existing example scenario is still the best visual for this section, or whether another Workfront-only example from the redesign work should be reused here instead. -->
-
-![Execution flow of Workfront scenario](assets/example-execution-flow-wf-only.png)
+![Execution flow of Workfront scenario](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -56,9 +54,7 @@ The scenario's first step, performed by the first module, is to watch for docume
 
 If a bundle is returned, the bundle passes through the rest of the scenario. In this example, the rest of the scenario consists of the second module, which uploads the bundle to the [!DNL Dropbox] folder.
 
-<!--BECKY CHECK ME: Replace this classic execution-flow screenshot with a new-experience version. A new asset named new-upload-document.png exists in this folder; confirm whether it is the correct replacement for this example and update the image reference if so. -->
-
-![Execution flow of integration scenario](assets/example-execution-flow-wf-dropbox.png)
+![Execution flow of integration scenario](assets/new-example-execution-flow-wf-dropbox.png)
 
 If the first module returns multiple bundles, the first bundle is uploaded to [!DNL Dropbox] before the second bundle is uploaded. Then the second bundle uploads, then the third, and so on.
 
@@ -79,9 +75,7 @@ For each module, the bundle goes through a 4-step process before going on to the
 
 After a scenario run is complete, each module displays an icon showing the number of operations performed. You can click this icon to display the detailed information about the processed bundles for each step in the process. You can see which module settings were used, and which bundles were returned by each module.
 
-<!--BECKY CHECK ME: Replace this processed-bundles screenshot with a new-experience version if the module detail view or operation-count icon looks different in the redesigned UI. If the panel is unchanged, confirm that this classic screenshot can remain. -->
-
-![Processed bundles](assets/Info-processed-bundles.png)
+![Processed bundles](assets/new-Info-processed-bundles.png)
 
 In this example, the module received input information such as:
 
