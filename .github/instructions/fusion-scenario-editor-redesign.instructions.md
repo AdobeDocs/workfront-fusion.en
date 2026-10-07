@@ -84,4 +84,6 @@ Blocked (same treatment as `debug-a-scenario.md` — flagged, not edited beyond 
 
 `scenario-execution-flow.md` (row 40 — spreadsheet now marked `Yes`): fully done, 0 flags. Added the standard transitioning NOTE. Conceptual article, so no new/classic split was needed. Replaced the three classic screenshots with new-experience assets: `new-example-execution-flow-wf-only.png`, `new-example-execution-flow-wf-dropbox.png`, and `new-Info-processed-bundles.png`.
 
+`flow-control.md` (row 42 — spreadsheet marked `In progress`): added the standard transitioning NOTE. Flagged three screenshot follow-ups inline in the Repeater example: the bottom-screen `flow-control-icon.gif` path for opening Flow Control, plus the two Repeater screenshots `repeater-2-350x207.png` and `repeater-3-350x207.png`, all of which likely show the classic scenario editor.
+
 Not started: everything else in the tracking spreadsheet (`debug-a-scenario.md` blocked on DevTool confirmation; the rest untouched).
