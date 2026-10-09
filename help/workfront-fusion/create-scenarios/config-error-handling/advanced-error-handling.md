@@ -75,6 +75,10 @@ For information on how Fusion evaluates and processes various data types, see [E
 
 >[!BEGINSHADEBOX]
 
+>[!NOTE]
+>
+>This example uses the classic scenario editor.
+
 This example scenario shows how these filters work for error handling.
 
 If you use the Dropbox > Create a folder module, and a folder with the same name already exists, the module throws a DataError:
