@@ -76,6 +76,7 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 See the following articles for specific request module instructions:
 
 * [[!UICONTROL HTTP] > [!UICONTROL Make a request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL Make a JWT request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request] module](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
