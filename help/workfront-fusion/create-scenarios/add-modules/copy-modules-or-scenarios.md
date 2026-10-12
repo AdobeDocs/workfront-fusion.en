@@ -62,18 +62,22 @@ Consider the following when pasting modules into a different scenario:
 
 ### Copy modules
 
-Copying a group of modules is similar to copying a single module.
+You can copy a single module or a group of modules. 
 
-1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
-1. Select the scenario where you want to copy a module.
-1. Click anywhere on the scenario to enter the Scenario editor.
-1. Right-click on the module that you want to copy.
 
    >[!NOTE]
    >
    >You can select more than one module by holding [!UICONTROL shift] and clicking on the modules that you want to copy. Copying a group of modules also copies any connecting lines, filters, or routing logic between them.
 
-1. Select **[!UICONTROL Copy module]**.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to copy a module.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. If you are copying multiple modules, hold Shift and click on the modules that you want to copy.
+1. Right-click on the module, or one of the modules,  that you want to copy.
+
+   <!-- BECKY CHECK ME: replace or confirm the module-copy screenshot if the new editor changed the contextual menu or the copy/paste interaction. -->
+
+1. Select **[!UICONTROL Copy module]** or **[!UICONTROL Copy modules]**.
 1. Move the cursor to the area of the scenario where you want the copy of the scenario.
 1. Right click, and select **[!UICONTROL Paste]**.
 1. Connect the pasted modules to the scenario by dragging them to the appropriate location in the scenario.

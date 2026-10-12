@@ -57,7 +57,7 @@ For more detail about the information in this table, see [Access requirements in
 
    Right-click the icon for the trigger module, and select **Choose where to start**.
 
-   ![Choose where to start](assets/choose-where-to-start.png)
+   ![Choose where to start](assets/new-choose-where-to-start.png)
 
 1. Select an option in the **[!UICONTROL Choose where to start]** box that appears.
 
