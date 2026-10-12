@@ -125,7 +125,7 @@ To create this connection, you need the following:
 
 1. Sign in to the Microsoft Entra admin center.
 1. Go to App registrations > New registration.
-1. Give the app a clear, recognizable name. For example,    .
+1. Give the app a clear, recognizable name. For example, `Workfront Fusion Azure DevOps Integration`.
 1. Leave Redirect URI blank. This connection does not involve signing in through a browser.
 1. Select Register.
 1. Do not create a client secret. A federated connection does not use one.
