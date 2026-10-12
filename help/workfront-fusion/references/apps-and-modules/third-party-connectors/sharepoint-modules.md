@@ -101,9 +101,15 @@ The SharePoint connector uses the following:
 
 ### Connect Microsoft SharePoint Online to Workfront Fusion using a [!DNL Microsoft] account 
 
-You can use your [!DNL Microsoft] account to create a connection to Microsoft SharePoint Online. For instructions about connecting your [!DNL Sharepoint] account to Workfront Fusion, see [Create a connection to Adobe Workfront Fusion - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using a Microsoft account.
+
+You can use your [!DNL Microsoft] account to create a connection to Microsoft SharePoint Online. For instructions about connecting your [!DNL Sharepoint] account to Workfront Fusion, see [Create a connection to Adobe Workfront Fusion - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+
++++
 
 ### Connect Microsoft SharePoint Online to Workfront Fusion using advanced settings
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using advanced settings.
 
 To include credentials in the connection, enable the Show advanced settings option. For this type of connection,  you need a Client ID, Client Secret, and Tenant ID.
 
@@ -140,7 +146,11 @@ To include credentials in the connection, enable the Show advanced settings opti
 
 1. Click **Continue** to save the connection and return to the module.
 
++++
+
 ### Connect Microsoft SharePoint Online to Workfront Fusion using certificate authorization
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using certificate authorization.
 
 You can use certificate authorization to connect to SharePoint.
 
@@ -205,7 +215,11 @@ You can use certificate authorization to connect to SharePoint.
 
 1. Click **Continue** to save the connection and return to the module.
 
++++
+
 ### Connect Microsoft SharePoint Online to Workfront Fusion using a service principal
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using a service principal.
 
 You can create a connection that uses a service principal (an Application API connection) instead of a personal account. This is useful when you want the connection to run as an application or service identity rather than a specific person — for example, so the integration doesn't break if that person leaves the company or changes their password.
 
@@ -296,7 +310,11 @@ Continue to [Create the connection](#create-the-connection).
 
    If everything is set up correctly, the connection validates successfully.
 
++++
+
 ### Connect Microsoft SharePoint Online to Adobe Workfront Fusion using a federated connection
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Adobe Workfront Fusion using a federated connection.
 
 A federated connection works like the service principal connection, except that it does not use a client secret.
 Instead of storing a secret, you tell Microsoft Entra ID to trust tokens that Workfront Fusion issues for one specific connection. When the connection runs, Fusion presents a short-lived proof of identity and Microsoft Entra ID returns an access token. Because there is no client secret, there is nothing that expires and no secret to rotate or store.
@@ -470,7 +488,7 @@ This procedure is what replaces the client secret. It tells Microsoft Entra ID t
  </tbody>
 </table>
 
-
++++
 
 ## Microsoft SharePoint modules and their fields
 
