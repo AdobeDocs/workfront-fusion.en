@@ -91,6 +91,17 @@ The Azure DevOps connector uses the following:
 * [Connect Azure DevOps to Workfront Fusion using EntraApp](#connect-azure-devops-to-workfront-fusion-using-entraapp)
 * [Connect Azure DevOps to Workfront Fusion using a service principal](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
 
+### Connect Azure DevOps to Adobe Workfront Fusion using a federated connection
+
+A federated connection works like the service principal connection, except that it does not use a client secret.
+Instead of storing a secret, you tell Microsoft Entra ID to trust tokens that Workfront Fusion issues for one specifi cconnection. When the connection runs, Fusion presents a short-lived proof of identity and Microsoft Entra ID returns anaccess token. Because there is no client secret, there is nothing that expires and no secret to rotate or store.
+
++++ Expand to view instructions for connecting  Azure DevOps to Adobe Workfront Fusion using a federated connection.
+
+
+
++++
+
 ### Connect Azure DevOps to Workfront Fusion using EntraApp
 
 1. Add an [!DNL Azure DevOps] module to your scenario.
