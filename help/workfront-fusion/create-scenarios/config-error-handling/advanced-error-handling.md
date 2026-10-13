@@ -129,6 +129,10 @@ Error handler routes can be created and configured on all modules, except router
 
 >[!BEGINSHADEBOX]
 
+>[!NOTE]
+>
+>This example uses the classic scenario editor.
+
 Example:
 
 A nested error handler route with filters:

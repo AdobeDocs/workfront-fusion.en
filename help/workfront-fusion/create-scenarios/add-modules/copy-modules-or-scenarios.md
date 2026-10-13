@@ -74,9 +74,6 @@ You can copy a single module or a group of modules.
 1. Click anywhere on the scenario to enter the Scenario editor.
 1. If you are copying multiple modules, hold Shift and click on the modules that you want to copy.
 1. Right-click on the module, or one of the modules,  that you want to copy.
-
-   <!-- BECKY CHECK ME: replace or confirm the module-copy screenshot if the new editor changed the contextual menu or the copy/paste interaction. -->
-
 1. Select **[!UICONTROL Copy module]** or **[!UICONTROL Copy modules]**.
 1. Move the cursor to the area of the scenario where you want the copy of the scenario.
 1. Right click, and select **[!UICONTROL Paste]**.
