@@ -72,8 +72,6 @@ For more information on incomplete executions, see [View and resolve incomplete 
 
 ### Use the Repeater module
 
-<!-- BECKY CHECK ME: Verify that the Retry flow in the new scenario editor still uses the same Flow Control entry point and panel labels. Replace any remaining classic-editor screenshots with new-experience screenshots if the UI differs. -->
-
 The Repeater module workaround is more complex, but more customizable.
 
 #### Configure the error handler route
@@ -110,7 +108,7 @@ The Repeater module workaround is more complex, but more customizable.
 
 In this sample scenario, the [!UICONTROL HTTP] > [!UICONTROL Make a request] module represents the potentially failing module:
 
-![HTTP Make a request](assets/http-make-request.png)
+![HTTP Make a request](assets/new-http-make-request.png)
 
 >[!ENDSHADEBOX]
 
