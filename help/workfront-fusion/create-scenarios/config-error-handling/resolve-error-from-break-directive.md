@@ -46,6 +46,8 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Resolve errors resulting from the Break directive
 
+<!-- BECKY CHECK ME: Confirm the Break directive workflow and menu labels still match the new scenario editor. Update this article to the current UI if the Flow Control icon or directive selection changed. -->
+
 You can resolve the error manually by updating the scenario (if needed) and running it once.
 
 You can also configure the scenario to automatically process an incomplete execution by re-executing the scenario. To configure the module to process incomplete executions:
