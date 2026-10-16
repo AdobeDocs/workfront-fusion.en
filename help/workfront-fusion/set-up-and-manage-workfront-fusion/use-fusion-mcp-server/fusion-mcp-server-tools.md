@@ -27,6 +27,25 @@ The active organization applies to all other tools in the current session.
 | --- | --- | --- | --- |
 | List organizations | `fusion_orgs_list` | Read | Lists the Fusion organizations you can access, with ID, region (zone), and label. |
 | Set active organization | `fusion_orgs_set` | Session | Switches the active organization for the current session. Doesn't change any Fusion data. |
+| Get current organization | `fusion_organizations_get` | Read | Returns the current organization. |
+| List organizations | `fusion_organizations_list` | Read | Lists every organization you can view. |
+
+## Teams
+
+| Tool | Name | Action | Description |
+| --- | --- | --- | --- |
+| List teams | `fusion_teams_list` | Read | Lists the organization's teams that you can view. |
+| Get team | `fusion_teams_get` | Read | Returns a single team in an organization. |
+| Delete team | `fusion_teams_delete` | Write | Deletes a team. This also stops its scenarios and removes its permissions. It can't be undone through the API and requires confirmation. |
+
+## Users
+
+| Tool | Name | Action | Description |
+| --- | --- | --- | --- |
+| Get Fusion regions | `fusion_users_get_regions` | Read | Returns the Fusion regions and organizations you can access. Use it to find valid organization IDs. |
+| Get current user | `fusion_users_get_me` | Read | Returns your profile with your organization and team roles. |
+| List users | `fusion_users_list` | Read | Lists the organization's users. |
+| Get user | `fusion_users_get` | Read | Returns a single user in an organization. |
 
 ## Scenario tools
 
@@ -36,6 +55,7 @@ The active organization applies to all other tools in the current session.
 | --- | --- | --- | --- |
 | List scenarios | `fusion_scenarios_list` | Read | Lists scenarios in the organization. |
 | Get scenario | `fusion_scenarios_get` | Read | Returns a scenario, including its full blueprint. |
+| Get scenario link | `fusion_scenarios_get_link` | Read | Returns the Fusion UI link to open a scenario in the browser. |
 | Get scenario dependencies | `fusion_scenarios_getDependencies` | Read | Returns the connections, keys, data stores, data structures, and webhooks the scenario's blueprint references. |
 | Find dependent scenarios | `fusion_scenarios_dependents` | Read | Finds scenarios that reference a given webhook, data store, data structure, connection, key, or scenario. Useful for impact analysis before changing or deleting a resource. |
 | Validate blueprint | `fusion_scenarios_validate_blueprint` | Read | Structurally validates a blueprint against a team (module references, connections, required fields) without saving anything. |
@@ -59,6 +79,7 @@ Example prompts:
 | --- | --- | --- | --- |
 | List scenario versions | `fusion_scenario_versions_list` | Read | Lists saved versions of a scenario. Filter by `version`, `createdAt`, `comment`. |
 | Get scenario version | `fusion_scenario_versions_get` | Read | Returns the blueprint and metadata for a specific version. |
+| Create scenario version | `fusion_scenario_versions_create` | Write | Publishes a blueprint as a new scenario version, which becomes the live blueprint. Earlier versions are kept, and publishing an identical blueprint does nothing. |
 
 Example prompts:
 
@@ -105,8 +126,10 @@ These tools return metadata only. They don't return credentials, tokens, or secr
 | --- | --- | --- | --- |
 | Search connections | `fusion_connections_search` | Read | Lists connections. Filter by `name`, `accountName`, `accountType`, `expire`, `teamId`, `scopesCount`, `editable`, `environmentType`, `authenticationType`. |
 | Get connection | `fusion_connections_get` | Read | Returns details for a single connection. |
+| Delete connection | `fusion_connections_delete` | Write | Deletes a connection. Fails if a webhook still depends on it. Scenarios that use it are detached rather than blocking the delete. |
 | Search keys | `fusion_keys_search` | Read | Lists keys. Filter by `name`, `typeName`, `teamId`. |
 | Get key | `fusion_keys_get` | Read | Returns details for a single key. |
+| Delete key | `fusion_keys_delete` | Write | Deletes a key. Scenarios that use it don't block the delete. |
 
 Example prompts:
 
@@ -120,6 +143,9 @@ Example prompts:
 | --- | --- | --- | --- |
 | List webhooks | `fusion_hooks_list` | Read | Lists webhooks (hooks). Filter by `name`, `teamId`, `type`, `enabled`, `gone`, `typeName`, `scenarioId`, `priority`, `detached`, and more. |
 | Get webhook | `fusion_hooks_get` | Read | Returns a webhook's configuration, owner binding, and external references. |
+| Get webhook dependencies | `fusion_hooks_dependencies` | Read | Lists the connection, data structure, and key that a webhook references. Run it before cloning. |
+| Clone webhook | `fusion_hooks_clone` | Write | Copies a webhook with a new URL, optionally into another team. Can replace its connection, data structure, or key. |
+| Delete webhook | `fusion_hooks_delete` | Write | Deletes a webhook and its queued events. Only the webhook's creator can delete it. |
 | Find dependent webhooks | `fusion_hooks_dependents` | Read | Finds webhooks that reference a given connection. |
 
 ### Webhook queue
@@ -129,7 +155,7 @@ Example prompts:
 | Get queue stats | `fusion_queue_stats` | Read | Returns the number of queued events, the queue limit, and whether the webhook is enabled. |
 | List queue | `fusion_queue_list` | Read | Lists received webhook events waiting to be processed. |
 | Get queue item | `fusion_queue_get` | Read | Returns a single queued event, including its decoded payload. |
-| Delete queue items | `fusion_queue_delete` | Write | Deletes specific queued events (up to 50) or clears the queue, optionally excluding some events. Events currently processing can't be deleted. |
+| Delete queue items | `fusion_hook_queue_delete` | Write | Deletes queued webhook events by ID (up to 50), or all of them with optional exclusions. The connected tool name is `fusion_hook_queue_delete` and does not match the older `fusion_queue_delete` name. |
 
 Example prompts:
 
@@ -142,10 +168,14 @@ Example prompts:
 | --- | --- | --- | --- |
 | List data stores | `fusion_datastores_list` | Read | Lists data stores with record count, size, and maximum size. |
 | Get data store | `fusion_datastores_get` | Read | Returns a data store's metadata and usage, linked data structure, and strict-validation setting. |
+| Delete data store | `fusion_datastores_delete` | Write | Deletes a data store and all of its records. Fails if a scenario still uses it. |
 | List data store records | `fusion_data_list` | Read | Reads records (key + JSON data) from a data store, with offset paging. |
+| Delete data store records | `fusion_data_stores_data_delete` | Write | Deletes several records by key, or all records with optional exclusions. |
+| Delete data store record | `fusion_data_stores_data_key_delete` | Write | Deletes one record by key. Succeeds even if the key doesn't exist. |
 | Find dependent data stores | `fusion_datastores_dependents` | Read | Finds data stores that use a given data structure. |
 | Search data structures | `fusion_data_structures_search` | Read | Lists data structures. Filter by `name`, `strict`, `teamId`. |
 | Get data structure | `fusion_data_structures_get` | Read | Returns a data structure, including its full field specification. |
+| Delete data structure | `fusion_data_structures_delete` | Write | Deletes a data structure. Fails if a data store still uses it. |
 
 Example prompts:
 
@@ -163,6 +193,12 @@ Example prompts:
 
 * _Who deleted scenarios in the last 7 days?_
 * _Export all connection changes this quarter to Excel._
+
+## Feedback
+
+| Tool | Name | Action | Description |
+| --- | --- | --- | --- |
+| Submit feedback | `fusion_feedback_submit` | Write | Sends your feedback (bug, wrong result, feature request, praise, or other) to the Fusion team. |
 
 ## Coworker
 
