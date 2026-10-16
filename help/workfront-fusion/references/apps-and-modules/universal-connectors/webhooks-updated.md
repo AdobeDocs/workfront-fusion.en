@@ -543,3 +543,4 @@ If some items are missing in the mapping panel in the setup of the modules follo
 ![Redetermine data structure](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Then follow the steps described in the section [Configure the webhook's data structure](#configure-the-webhook-s-data-structure) in this article.
+
