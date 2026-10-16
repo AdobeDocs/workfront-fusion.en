@@ -67,7 +67,7 @@ You can view an execution from the scenario's scenario history.
 
 1. To view output from a module, click the output details bubble near the module. The number in the bubble represents the number of bundles that the module output.
 
-   ![Output bubble near a module](assets/output-bubble.png)
+   ![Output bubble near a module](assets/new-output-bubble.png)
 
 1. To view the bundles that passed through a filter, click the filter. The number near the filter represents the number of bundles that passed through the filter.
 1. To search for a specific module or event in the execution panel, enter the search term into the **Search execution events** box. Results appear as you type.
