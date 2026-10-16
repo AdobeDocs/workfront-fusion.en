@@ -123,10 +123,6 @@ For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/r
 
 After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
 
->[!NOTE]
->
->After you create a webhook, you can use it in more than one scenario at a time.
-
 #### Use a webhook with basic authentication
 
 Basic authentication uses a username and password to authenticate to the service you are connecting to.
@@ -547,3 +543,4 @@ If some items are missing in the mapping panel in the setup of the modules follo
 ![Redetermine data structure](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Then follow the steps described in the section [Configure the webhook's data structure](#configure-the-webhook-s-data-structure) in this article.
+
