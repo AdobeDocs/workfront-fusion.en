@@ -84,7 +84,7 @@ You can view an execution from the scenario's scenario history.
 >To create a link to a specific module, add `?moduleId=<module-id>` to the URL when viewing the following pages:
 >
 >* Scenario edit page (URL ends in `/edit`)
->* A specific scenarion execution (URL ends in `/logs/<log-id>`)
+>* A specific scenario execution (URL ends in `/logs/<log-id>`)
 >
 >`<module-id>` refers to the number next to the module label when viewing the scenario.
 >

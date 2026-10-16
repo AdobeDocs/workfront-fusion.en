@@ -129,7 +129,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 #### [!UICONTROL Watch all files]
 
-This trigger module starts a scenarion when a file in your [!DNL Google Drive] is added or modified.
+This trigger module starts a scenario when a file in your [!DNL Google Drive] is added or modified.
 
 <table style="table-layout:auto"> 
  <col> 
