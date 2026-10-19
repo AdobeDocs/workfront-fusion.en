@@ -38,7 +38,7 @@ The mapping panel includes the following tabs. Each tab includes functions and k
 | **Date and time** <br> ![Date and time functions](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Date and time functions](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tokens for date and time formatting](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tokens for date and time parsing](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Functions for working with arrays**<br> ![Array functions](assets/toolbar-icon-functions-for-arrays.png) | [Array functions](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![Functions toolbar](assets/functions-toolbar-350x189.png)
+![Functions toolbar](assets/new-functions-toolbar.png)
 
 ## Custom functions
 
@@ -46,4 +46,4 @@ You can create custom functions in the Functions area of Fusion. You then add th
 
 Because custom functions work through Adobe App Builder, your organization must have an Adobe App Builder license to use them.
 
-For information and instructions for custom functions, see ap data using custom functions.
+For information and instructions for custom functions, see [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).
