@@ -16,13 +16,9 @@ The Adobe Fusion MCP connector sends one plain-English prompt to the Adobe Fusio
 
 The connector works only with the hosted Adobe Fusion MCP server. You cannot point it at another MCP server.
 
-<!-- BECKY CHECK ME: Confirm the module label in the UI, for example "Adobe Fusion MCP" and "Process a user prompt". -->
-
 For more information about MCP in Fusion scenarios, see [Add an AI prompt to your scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md).
 
 ## Access requirements
-
-<!-- BECKY CHECK ME: This table is copied from the Adobe Workfront MCP modules article. Confirm the access requirements for the Fusion MCP connector. -->
 
 +++ Expand to view access requirements for the functionality in this article.
 
