@@ -409,6 +409,7 @@ nudge: true
             * [Adobe Firefly Lightroom modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
             * [Adobe Frame.io Beta (V4) modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
             * [Adobe Frame.io Legacy (V3) modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
+            * [Adobe Fusion MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-fusion-mcp-modules.md)
             * [Adobe I/O Events modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
             * [Adobe InDesign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/indesign-modules.md)
             * [Adobe Journey Optimizer modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-journey-optimizer-modules.md)
