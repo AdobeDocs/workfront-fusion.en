@@ -322,10 +322,6 @@ When creating or editing a custom webhook in Fusion, the Allowed Origins field  
 
 If a webhook receives data and there is not an active scenario that is expecting that data, the data is stored in the queue. Once you activate the scenario, it processes all bundles waiting in the queue sequentially.
 
->[!IMPORTANT]
->
->Webhook queues are shared among scenarios that employ the same webhook. If one of the scenarios is disabled, all incoming data is held in the queue.
-
 ## Supported incoming data formats
 
 Workfront Fusion supports 3 incoming data formats: [!UICONTROL Query String], [!UICONTROL Form Data] and [!UICONTROL JSON].
