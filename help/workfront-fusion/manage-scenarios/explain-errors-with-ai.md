@@ -12,23 +12,19 @@ feature_v2:
 ---
 # Explain a scenario error with AI
 
-When a scenario run fails, you can click **[!UICONTROL Explain]** next to the error. AI gives you a short, plain-language description of what went wrong and how to fix it. The explanation appears next to the original error, so you can read both together.
+When a scenario run fails, AI can give you a short, plain-language description of what went wrong and how to fix it. The explanation appears next to the original error, so you can read both together.
 
 You can explain errors in the following areas of Workfront Fusion:
 
 * The module error details in the scenario designer
 * The run details in a scenario's execution history
-* The [!UICONTROL Failed executions] table on the Insights page
-
-<!-- BECKY CHECK ME: The Slack request calls it the "Failed executions table" on the Insights page. The existing Insights dashboard article calls it the "Failed Executions Logs" table and the "Execution Log". Confirm the label in the UI. -->
+* The [!UICONTROL Failed Executions Logs] table on the Insights page
 
 >[!NOTE]
 >
 >The **[!UICONTROL Explain]** button is available only in the new scenario designer. It is not available in the legacy scenario designer.
 
 ## Access requirements
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion articles. The source says only that the organization needs an AI license. Confirm whether the access requirements are the same. -->
 
 +++ Expand to view access requirements for the functionality in this article.
 
@@ -60,8 +56,6 @@ For more detail about the information in this table, see [Access requirements in
 ## Prerequisites
 
 Your organization must have an AI license.
-
-<!-- BECKY CHECK ME: Confirm the name of the license and whether there is an existing article to link to. -->
 
 ## How the Explain button works
 

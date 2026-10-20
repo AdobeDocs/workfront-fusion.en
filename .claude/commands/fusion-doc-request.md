@@ -69,7 +69,10 @@ Task fields:
 | `DE:Preview Date Known` | `Yes`, by default |
 | `DE:Preview Date` | the date cited in the original Slack message (the request's **Expected release date**), by default |
 | `taskConstraint` + `constraintDate` | Set `taskConstraint` to `MFO` (Must Finish On) with `constraintDate` = the date cited in the original Slack message (the request's **Expected release date**), so the task's planned completion date matches it too. |
+| `DE:Articles to update` | the list of articles you created or updated for this request (see below) |
 | Product/Area | select `Fusion` (an enum field on the Product Documentation form; confirm the exact field name with `insights_search_fields` if it's ever unclear) |
+
+`DE:Articles to update` (a text field on the Product Documentation form) lists every article file you created or changed in Step 3, one repo-relative path per line (for example `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Include new articles (add `(new)` after the path) and any TOC or index files you edited. Because the doc edits happen in Step 3, the list is known by the time the task is created, so set it in the same create call. If the user asks you to create the task without making doc edits, leave the field empty, and update it later if doc edits are made.
 
 Set the preview date fields and the planned completion date as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
 
@@ -100,6 +103,7 @@ Report plainly:
 
 * The branch you created (committed locally, not pushed, and no pull request opened - per Step 2).
 * Which doc file(s) you changed and what you added.
+* That the changed articles are listed in the task's `Articles to update` field.
 * That the changes are uncommitted on the branch, awaiting the user's review.
 * The task name and URL.
 * The exact field values you set, including the preview date fields.
