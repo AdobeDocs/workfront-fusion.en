@@ -301,6 +301,7 @@ nudge: true
     * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
     * [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
     * [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+    * [Explain a scenario error with AI](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
     * [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
     * [Update a module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
     * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)

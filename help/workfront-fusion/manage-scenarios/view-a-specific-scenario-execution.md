@@ -75,6 +75,7 @@ You can view an execution from the scenario's scenario history.
 1. To view the bundles that passed through a filter, click the filter. The number near the filter represents the number of bundles that passed through the filter.
 1. To search for a specific module or event in the execution panel, enter the search term into the **Search execution events** box. Results appear as you type.
 1. To limit execution panel search results by status such as Success or Warning, click the **Status Filter** dropdown and select the status.
+1. To get a plain-language explanation of an error in the execution, click **[!UICONTROL Explain]** under the error. For more information, see [Explain a scenario error with AI](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 
 
 
