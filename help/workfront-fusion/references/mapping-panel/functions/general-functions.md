@@ -18,11 +18,39 @@ feature_v2:
 
 You can use these general variables to identify details about an execution:
 
-* `executionID`: the ID of this scenario execution
-* `triggerTimestamp`: The time at which this execution was triggered
-* `scenarioID`: the ID of the currently opened scenario
+* `executionId`: the ID of this scenario execution
+* `scenarioId`: the ID of the currently opened scenario
 * `scenarioName`: the name of the currently running scenario
+* `scenarioUrl`: a link to the current scenario in the Fusion user interface
+* `executionUrl`: a link to the current scenario execution in the Fusion user interface
+* `scenarioApiUrl`: the Fusion API URL for the current scenario
+* `executionApiUrl`: the Fusion API URL for the details of the current execution
+* `teamId`: the ID of the Fusion team that owns the current scenario
+* `organizationId`: the ID of the Fusion organization associated with the current execution. This is not an Adobe IMS organization ID.
+* `triggerTimestamp`: The time at which this execution was triggered
 * `operationsConsumed`: the number of operations used at that point in the scenario.
+
+Variable names are case-sensitive. For example, use `scenarioUrl`, not `scenarioURL`.
+
+You can use these variables in mapped fields without building URLs or hardcoding team and organization IDs. For example, you can include the following in a mapped text field in a notification:
+
+<pre><code>
+Scenario: &#123;&#123;scenarioName&#125;&#125;
+Open scenario: &#123;&#123;scenarioUrl&#125;&#125;
+Open execution: &#123;&#123;executionUrl&#125;&#125;
+Team: &#123;&#123;teamId&#125;&#125;
+Organization: &#123;&#123;organizationId&#125;&#125;
+</code></pre>
+
+Keep the following in mind when you use these variables:
+
+* The values are resolved when the scenario runs. The mapping panel lists the variables, but it does not preview their values.
+* `scenarioUrl` and `executionUrl` link to the scenario and to the execution in the Fusion user interface. `scenarioApiUrl` and `executionApiUrl` are API endpoint URLs, not links to Fusion pages.
+* The API URL variables return text only. They do not make a request or provide authentication credentials. Normal API authentication and permissions still apply.
+* Links do not grant additional access. Normal Fusion permissions apply.
+* `executionUrl` is not generated for runs that are not saved to execution history, such as sandbox runs or runs with history synchronization turned off. A generated link does not guarantee that the execution details are available at the moment you use it.
+* `scenarioUrl` cannot be generated for a template or an unsaved scenario.
+* If a URL cannot be generated, the variable has no value.
 
 ## [!UICONTROL get (object or array; path)]
 
