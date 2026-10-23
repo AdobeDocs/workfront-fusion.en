@@ -17,6 +17,35 @@ A worker pool is a quantity of Workfront Fusion processing resources dedicated t
 
 Worker pools allow your scenarios to run more efficiently, and eliminate the chances of competing with other organizations for Fusion processing capacity. 
 
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
 ## Worker pool overview
 
 A worker pool is a way to process scenario executions in parallel. Each worker pool is associated with: 
@@ -32,23 +61,21 @@ The Workfront Fusion team continuously monitors utilization and scaling behavior
 
 ## Rename a worker pool
 
-Organization owners and admins can rename the worker pools assigned to their organization. Each pool shows a system-generated name by default. You can give a pool a clear, friendly name, such as "Marketing EU" or "High-volume integrations", and change it whenever you need to.
+Organization owners and admins can rename the worker pools assigned to their organization. Each pool shows a system-generated name by default. You can give a pool a custom name, such as `Marketing EU` or `High-volume integrations`, and change it whenever you need to.
 
-Renaming a pool changes only how it is labeled. Scenarios, executions, and pool capacity are not affected. The new name appears wherever the pool is shown, for example when you assign scenarios to a pool.
+Renaming a pool changes only how it is labeled. Scenarios, executions, and pool capacity are not affected. The new name appears wherever the pool is shown, such as when you assign scenarios to a pool.
 
 >[!NOTE]
 >
 >The **[!UICONTROL Worker pools]** tab appears only when more than one worker pool is assigned to your organization. If your organization has a single worker pool, or uses the shared pool, you do not see the tab.
 
-<!-- BECKY CHECK ME: Confirm the exact roles that can rename a pool. The request says "organization owners and admins". -->
-
 To rename a worker pool:
 
-1. Go to your organization and open the **[!UICONTROL Worker pools]** tab, next to **[!UICONTROL Recycle bin]**.
+1. In the left navigation, click **Org overview**
+1. Click the **[!UICONTROL Worker pools]** tab, near the top of the page.
 
    The tab lists each pool and shows how many scenarios are assigned to it.
 
-1. Click **[!UICONTROL Rename]** next to the pool.
-1. Enter the new name, and save.
-
-<!-- BECKY CHECK ME: Confirm the label of the save button and whether renaming is inline or in a dialog. The request says only "enter the new name, and save." -->
+1. Click **[!UICONTROL Rename]** next to the pool that you want to rename.
+1. In the panel that opens, enter the new name.
+1. Click **Save**.

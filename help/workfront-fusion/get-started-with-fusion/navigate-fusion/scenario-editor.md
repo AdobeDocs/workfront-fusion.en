@@ -94,7 +94,7 @@ You may need to click on the three-dot icon in the Controls area to view some of
 ![tools panel](assets/tools-scenario-editor.png)
 
 | Action | Details |
-|---------- | ---------- |
+| ---------- | ---------- |
 | Flow control | Configure settings to control the way data flows through it. For more information, [see link needed]. |
 | Tools | The tools section contains several useful modules that can enhance your scenarios. For more information, [see link needed]. |
 | Text parser | Use the Text parser tool to parse text for use in other scenario modules. The Text parser does not require a connection. For more information, [see link needed]. |
