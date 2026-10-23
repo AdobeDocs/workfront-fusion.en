@@ -53,27 +53,26 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Prerequisites
+## Explain an error in the module output details
 
-Your organization must have an AI license.
-
-## How the Explain button works
-
-* The **[!UICONTROL Explain]** button is a pill with an AI gradient. When you hover over it, the tooltip "Explain with AI" appears.
-* The explanation appears under the error. To hide the explanation, click **[!UICONTROL Explain]** again.
-* Explanations are short, about 100 words at most.
-* While AI generates the explanation, a loading state appears. If the explanation fails to generate, click **[!UICONTROL Try again]**.
-* If your organization reaches its AI usage limit, a usage-limit message appears instead of an explanation.
-
-## Explain an error in the scenario designer
-
-1. Open the scenario in the scenario designer, and run the scenario.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to explain an error.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Run the scenario, either as scheduled, or by clicking **Run once**.
 1. When a module fails, open the module's error details.
 1. Click **[!UICONTROL Explain]**.
 
-   The button is under the error, below "More information about error handling."
+   The button is under the error.
+
+   ![Explain error in module output](assets/explain-in-module-output.png)
 
 The explanation appears under the error.
+
+>[!NOTE]
+>
+> * While AI generates the explanation, a loading state appears.
+> * If the explanation fails to generate, click **[!UICONTROL Try again]**.
+> * If your organization reaches its AI usage limit, a usage-limit message appears instead of an explanation.
 
 ## Explain an error in a scenario's execution history
 
@@ -87,7 +86,15 @@ The explanation appears under the error.
 
    If several modules failed in the run, you can explain each error on its own.
 
+   ![Explain in execution history](assets/explain-in-execution-details.png)
+
 For more information about viewing a run, see [View a scenario's execution history](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md) and [View a specific scenario execution](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md).
+
+>[!NOTE]
+>
+> * While AI generates the explanation, a loading state appears.
+> * If the explanation fails to generate, click **[!UICONTROL Try again]**.
+> * If your organization reaches its AI usage limit, a usage-limit message appears instead of an explanation.
 
 ## Explain an error on the Insights page
 
@@ -98,6 +105,14 @@ For more information about viewing a run, see [View a scenario's execution histo
 
 1. Click **[!UICONTROL Explain]**.
 
+   ![Explain in insights page](assets/explain-failed-execution-log.png)
+
    A popup opens that shows the error and the AI explanation.
 
 For more information about the Insights page, see [View the Insights dashboard for an organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-insights-dashboard.md).
+
+>[!NOTE]
+>
+> * While AI generates the explanation, a loading state appears.
+> * If the explanation fails to generate, click **[!UICONTROL Try again]**.
+> * If your organization reaches its AI usage limit, a usage-limit message appears instead of an explanation.
