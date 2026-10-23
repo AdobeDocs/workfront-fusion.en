@@ -17,6 +17,10 @@ You can also run a scenario once to configure data structures
 >
 >We recommend testing frequently as you create and refine scenarios.
 
+>[!NOTE]
+>
+>In the new experience, Run once always keeps request and response details. For the scenario's regular runs, you can collect them by turning on Temporary debug logs in the scenario settings. For more information, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).
+
 ## Use Run once functionality
 
 The Run once feature is found in the scenario editor.

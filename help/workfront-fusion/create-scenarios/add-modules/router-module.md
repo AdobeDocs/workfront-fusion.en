@@ -223,6 +223,25 @@ The Fallback route is marked with a different arrow in the Router module:
 
 ![Arrow sign in router](assets/arrow-sign-in-router-module-350x361.png)
 
+## Fold a router
+
+>[!NOTE]
+>
+>This feature is only available in the new scenario editor experience.
+
+In the new experience, you can fold a router to temporarily hide its routes. This is useful in large scenarios.
+
+1. Open the scenario in the scenario editor, in edit mode.
+1. Right click on the router that you want to fold, then select **Fold routes**
+
+The folded router shows how many routes and modules are hidden, including the severity of any hidden warnings or errors.
+
+![Folded router](assets/fold-router.png)
+
+Folding a router does not remove or disable anything. Search, validation, Live Trail, and execution history automatically expand a folded router when they need to show a module that is inside it.
+
+The folded state is saved with the scenario and works with undo and redo. When you review a scenario execution, the complete scenario always displays.
+
 ## Example: `if/else` use case
 
 >[!BEGINSHADEBOX]

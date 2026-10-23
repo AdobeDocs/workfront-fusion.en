@@ -21,6 +21,11 @@ A scenario event is a modification to the scenario, such as editing, activating,
 >
 >A scenario's history displays all of a scenario's executions for the last 30 days.
 
+>[!NOTE]
+>
+>In the new experience, the scenario editor also has an Execution history panel. It shows each run's status, duration, operations, and data size, and you can filter by status and search events. Use **Previous** and **Next** to move between runs without returning to the execution list. Select an event to center and highlight the matching module on the canvas. When operation details are available, the request and response panel opens for that event.
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes. Confirm how to open the Execution history panel from the editor, and whether this deserves its own section with screenshots. -->
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.

@@ -205,6 +205,34 @@ To set a scenario-level override for a notification type, check or uncheck the b
 
 For information on notification settings, including scenario-level overrides, see [Set notification options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
 
+### Temporary debug logs
+
+>[!NOTE]
+>
+>* Temporary debug logs are available only in the new scenario designer, and only if the feature is enabled for your organization. 
+>* Changing the setting requires permission to edit the scenario.
+
+Request and response details are not kept for every scheduled or triggered run, because they take a lot of storage. Run once always keeps them.
+
+To collect request and response details for the scenario's regular runs, choose how long to collect them:
+
+* For the next 1 hour
+* For the next 1 day
+* For the next run
+* For the next 10 runs
+
+The change applies right away. You do not need to save the scenario.
+
+While temporary debug logs are on, the setting shows when they stay on until, or how many runs are left. To stop collecting request and response details before then, click **Turn off**.
+
+Debug logs switch off automatically when the time or the number of runs is used up. Every run counts, including scheduled runs that find no new data.
+
+>[!NOTE]
+>
+>Temporary debug logs are available only in the new experience, and only if the feature is enabled for your organization. To change this setting, you must have permission to edit the scenario.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
+
 ### Worker pool
 
 >[!NOTE]

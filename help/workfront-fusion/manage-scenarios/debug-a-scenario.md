@@ -22,6 +22,25 @@ The Adobe Workfront Fusion Devtool helps you to understand and troubleshoot scen
 >
 >Logging in the debugger panel will be limited or unavailable for confidential scenarios, automatic executions, and successful operations.
 
+>[!NOTE]
+>
+>In the new experience, several DevTool tools are built into the scenario editor, so you no longer need to open the DevTool to use them:
+>
+>| Tool | Where to find it in the new experience |
+>| ---------- | ---------- |
+>| Get app metadata | Right-click a module and select **App metadata**. |
+>| Copy mapping | Right-click the source module, select **Copy mapping**, then paste it on a compatible module. |
+>| Copy filter | Right-click the filtered link, select **Copy filter**, then paste it on another link. |
+>| Copy module name | Right-click a module and select **Copy module name** or **Paste module name**. |
+>| Swap connection | Open Find and replace, then use the **Connection** tab. |
+>| Swap variable | Open Find and replace, then use the **Variable** tab. |
+>| Remap source | Open Find and replace, then use the **Source** tab. |
+>
+>Focus a module, Find modules by mapping, and the Base64 text converter remain in the DevTool. You can also use the `base64()` and binary-conversion functions in mappings.
+>
+>You can also view request and response details directly from Live Trail and execution history in the scenario editor.
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
+
 For a video introduction and walkthrough of the Fusion Devtool, see 
 
 * [Fusion Development Tool](https://video.tv.adobe.com/v/3427031/){target=_blank}

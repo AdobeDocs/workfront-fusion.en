@@ -60,11 +60,21 @@ The new experience includes:
 * New scenario editor controls, including Find and replace, Snippets, and Undo/Redo.
 * An Ask AI button.
 * An updated connector picker with category navigation and the ability to mark favorites inline.
+* A dark mode that follows your appearance setting.
+* The ability to fold a router to hide its routes.
+* Live Trail, a panel that shows a scenario run as it happens.
+* Several Developer Tools that are now built into the scenario editor.
+* Temporary debug logs, which you can turn on in the scenario settings.
 
 To switch between the classic and new experiences:
 
 1. In the scenario editor, locate the **[!UICONTROL Try the new design]** toggle in the upper-right corner.
-1. Click the toggle to switch to the new experience. Click it again to return to the classic experience.
+1. Click the toggle to switch to the new experience. 
+1. To return to the classic experience, click the toggle again.
+
+The scenario reloads when you switch. Your choice is saved for your user, so it does not change the experience that your teammates see. Switching does not change the scenario itself.
+
+If you do not see the toggle, the new experience might not be available to your organization yet. Contact your Workfront Fusion administrator.
 
 ## Use the scenario editor in the new experience (Recommended)
 
@@ -86,13 +96,13 @@ To switch between the classic and new experiences:
 ### Available scenario editor actions
 
 * [Editing actions](#editing-actions)
-* [Run your scenario](#run-your-scenario)
 * [Scheduling](#scheduling)
 * [Controls](#controls)
 * [Tools](#tools)
 * [Favorites](#favorites)
 * [Ask AI](#ask-ai)
 * [Canvas navigation](#canvas-navigation)
+* [Canvas display](#canvas-display)
 
 #### Editing actions
 
@@ -103,27 +113,19 @@ These actions are available at the top of the screen, rather than in the bottom 
 | Action | Details |
 | ---------- | ---------- |
 | Scenario name | The scenario's name is shown at the top-left of the screen. To rename the scenario, click on the name and enter a new one. |
-| Compact view | Toggle a view where the modules on the canvas turn into icons, similar to the modules view in the classic experience. |
+| Compact view | Toggle a view where modules on the canvas shrink to small tiles, the grid tightens, and long module names wrap instead of being cut off. Switching views does not reload the scenario. <!-- BECKY CHECK ME: old text said modules 'turn into icons', but the release notes say Compact view shrinks cards to small tiles. Icons appear when you zoom out (see Canvas display). Confirm and retake screenshots if needed. --> |
 | Undo | Undo the most recent actions, most recent first. You can undo actions from the current session only. |
 | Redo | Redo recent actions. You can redo actions from the current session only. |
-| History | View a history of changes made in this session. You can also undo all session changes. |
-
-#### Run your scenario
-
-Run once is icon-only in the new design. Hover over the icon to see the **[!UICONTROL Run once]** tooltip.
-
-![run scenario button](assets/run-once-new.png)
-
-|Action|Details|
-|----------|----------|
-|Test-run the scenario|Verify that the scenario runs as you expect before you activate it. Once activated, the scenario will execute according to its schedule. If everything does not run as expected, see [Add error handling](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) to learn how to handle errors.|
+| History | View a history of changes made in this session. You can also undo all session changes. <!-- BECKY CHECK ME: release notes call this 'Undo all' (return to the state from when you opened the scenario). Confirm the label that shows in the UI. --> |
 
 #### Scheduling
 
-![scheduling panel](assets/scheduling-new.png)
+![scheduling panel](assets/new-scheduling-area.png)
 
 | Action | Details |
 | ---------- | ---------- |
+| Run once | Run once is icon-only in the new design. Hover over the icon to see the **[!UICONTROL Run once]** tooltip. Here, you can test run the scenario and verify that the it runs as you expect before you activate it |
+| Activation toggle | Activate or deactivate your scenario. After you activate it, the scenario will execute according to its schedule.  |
 | Schedule the scenario | By default, a scenario with a polling trigger runs every 15 minutes. You can change this by defining when and how often an activated scenario runs. Polled fusion scenarios can be scheduled to run as often as every 5 minutes. For more information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
 
 #### Controls
@@ -139,8 +141,8 @@ You may need to click on the three-dot icon in the Controls area to view some of
 | Notes <p>![Notes icon](assets/notes-icon-new.png)</p> | Make notes about the scenario. Other users can view these notes when they are in the scenario. For more information, see [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Auto-align <p>![Auto-align icon](assets/auto-align-icon-new.png)</p> | Auto-align the modules in your scenario. |
 | Search modules <p>![Search modules icon](assets/search-modules-icon-new.png)</p> | Select a module from that list to go to that module in the scenario, or enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application. |
-| Find and replace <p>![Find and replace icon](assets/find-and-replace-icon-new.png)</p> | Search for and replace variables, mapped value sources, or connections across the scenario's modules. |
-| Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | Snippets are scenario sections that are saved as a unit. Here, you can select a scenario snippet to add to your scenario. |
+| Find and replace <p>![Find and replace icon](assets/find-and-replace-icon-new.png)</p> | <p>Search for and replace variables, mapped value sources, or connections across the scenario's modules. Use the tabs to:</p><ul><li>Replace a mapped variable across the whole scenario or in one module.</li><li>Remap references from one source module to another.</li><li>Copy a connection to one or all compatible modules from the same app.</li></ul><p>The panel previews the modules that will be affected before you make the change. Select a row in the preview to go to that module on the canvas.</p>  |
+| Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | <p>Snippets are scenario sections that are saved as a unit. To create one, select modules and save them as a snippet. In the Snippets panel, you can search, tag, preview, pin, sort, and drag and drop snippets, and import and export them. You can share snippets with teams or organizations, or send a copy directly to another user. Shared snippets display on their own tab.</p>  |
 | Explain flow <p>![Explain flow icon](assets/explain-flow-icon-new.png)</p> | View an animation where moving dots show how data flows through the scenario. |
 | Export Blueprint <p>![Export Blueprint icon](assets/export-blueprint-icon-new.png)</p> | Export a blueprint of the current scenario. For more information, see [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
 | Export as headless template <p>![Export as headless template icon](assets/export-as-headless-template-icon-new.png)</p> | Export the scenario as a headless template. |
@@ -183,8 +185,22 @@ Click **Ask AI** to open Adobe's AI Assistant. This option may not be available 
 | Action | Details |
 | ---------- | ---------- |
 | Zoom in / zoom out | Zoom the canvas view in or out. |
-| Focus | Re-center the canvas on your scenario. |
-| Minimap | View a thumbnail overview of the entire scenario, and click within it to jump to that area of the canvas. |
+| Focus | Return to a view that fits your whole scenario on the screen.  |
+| Minimap | View a thumbnail overview of the entire scenario. The minimap shows your current viewport. Click within it, or click and drag, to move around the canvas.  |
+
+#### Canvas display
+
+The new canvas also changes how scenarios look as you work.
+
+| Feature | Details |
+| ---------- | ---------- |
+| Module cards | Each module is a horizontal card that shows the app icon, module name, description, and module ID. Routers display as a compact branch tile, and directives display as small accent cards. |
+| Links | Links between modules are curved and end in arrowheads that show direction. Error handler links are dashed. |
+| Module status | Green, yellow, and red indicators show the status of each module. |
+| Zoom detail | Card details display as you zoom in. When you zoom out, modules simplify to icons so that you can still see the whole scenario. |
+| Fold a router | In edit mode, you can fold a router to hide its routes. For more information, see [Fold a router](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
+| Dark mode | The canvas follows your dark appearance setting under your Adobe preferences, including module cards, links, panels, controls, and status information. |
+| Right-side panel | Module setup, module inspection, the module browser, Find and replace, Snippets, Live Trail, and request and response details open in the same panel on the right side of the canvas. |
 
 ## Use the scenario editor in the classic experience
 
