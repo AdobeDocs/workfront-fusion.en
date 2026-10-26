@@ -62,7 +62,7 @@ The new experience includes:
 * An updated connector picker with category navigation and the ability to mark favorites inline.
 * A dark mode that follows your appearance setting.
 * The ability to fold a router to hide its routes.
-* Live Trail, a panel that shows a scenario run as it happens.
+* [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), a panel that shows a scenario run as it happens.
 * Several Developer Tools that are now built into the scenario editor.
 * Temporary debug logs, which you can turn on in the scenario settings.
 
@@ -141,8 +141,8 @@ You may need to click on the three-dot icon in the Controls area to view some of
 | Notes <p>![Notes icon](assets/notes-icon-new.png)</p> | Make notes about the scenario. Other users can view these notes when they are in the scenario. For more information, see [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Auto-align <p>![Auto-align icon](assets/auto-align-icon-new.png)</p> | Auto-align the modules in your scenario. |
 | Search modules <p>![Search modules icon](assets/search-modules-icon-new.png)</p> | Select a module from that list to go to that module in the scenario, or enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application. |
-| Find and replace <p>![Find and replace icon](assets/find-and-replace-icon-new.png)</p> | <p>Search for and replace variables, mapped value sources, or connections across the scenario's modules. Use the tabs to:</p><ul><li>Replace a mapped variable across the whole scenario or in one module.</li><li>Remap references from one source module to another.</li><li>Copy a connection to one or all compatible modules from the same app.</li></ul><p>The panel previews the modules that will be affected before you make the change. Select a row in the preview to go to that module on the canvas.</p>  |
-| Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | <p>Snippets are scenario sections that are saved as a unit. To create one, select modules and save them as a snippet. In the Snippets panel, you can search, tag, preview, pin, sort, and drag and drop snippets, and import and export them. You can share snippets with teams or organizations, or send a copy directly to another user. Shared snippets display on their own tab.</p>  |
+| Find and replace <p>![Find and replace icon](assets/find-and-replace-icon-new.png)</p> | <p>Search for and replace variables, mapped value sources, or connections across the scenario's modules. Use the tabs to:</p><ul><li>Replace a mapped variable across the whole scenario or in one module.</li><li>Remap references from one source module to another.</li><li>Copy a connection to one or all compatible modules from the same app.</li></ul><p>The panel previews the modules that will be affected before you make the change. Select a row in the preview to go to that module on the canvas.</p> <p>For more information, see [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
+| Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | <p>Snippets are scenario sections that are saved as a unit. To create one, select modules and save them as a snippet. In the Snippets panel, you can search, tag, preview, pin, sort, and drag and drop snippets, and import and export them. You can share snippets with teams or organizations, or send a copy directly to another user. Shared snippets display on their own tab.</p> <p>For more information, see [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> <!-- BECKY CHECK ME: links added to the new articles for Find and replace, Snippets, and Live Trail (created 10/26/26). Confirm link text and that the new articles' filenames are final. --> |
 | Explain flow <p>![Explain flow icon](assets/explain-flow-icon-new.png)</p> | View an animation where moving dots show how data flows through the scenario. |
 | Export Blueprint <p>![Export Blueprint icon](assets/export-blueprint-icon-new.png)</p> | Export a blueprint of the current scenario. For more information, see [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
 | Export as headless template <p>![Export as headless template icon](assets/export-as-headless-template-icon-new.png)</p> | Export the scenario as a headless template. |
@@ -200,7 +200,7 @@ The new canvas also changes how scenarios look as you work.
 | Zoom detail | Card details display as you zoom in. When you zoom out, modules simplify to icons so that you can still see the whole scenario. |
 | Fold a router | In edit mode, you can fold a router to hide its routes. For more information, see [Fold a router](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
 | Dark mode | The canvas follows your dark appearance setting under your Adobe preferences, including module cards, links, panels, controls, and status information. |
-| Right-side panel | Module setup, module inspection, the module browser, Find and replace, Snippets, Live Trail, and request and response details open in the same panel on the right side of the canvas. |
+| Right-side panel | Module setup, module inspection, the module browser, Find and replace, Snippets, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), and request and response details open in the same panel on the right side of the canvas. |
 
 ## Use the scenario editor in the classic experience
 

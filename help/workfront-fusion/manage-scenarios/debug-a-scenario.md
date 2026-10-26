@@ -38,7 +38,7 @@ The Adobe Workfront Fusion Devtool helps you to understand and troubleshoot scen
 >
 >Focus a module, Find modules by mapping, and the Base64 text converter remain in the DevTool. You can also use the `base64()` and binary-conversion functions in mappings.
 >
->You can also view request and response details directly from Live Trail and execution history in the scenario editor.
+>You can also view request and response details directly from [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md) and execution history in the scenario editor. For more information about Find and replace, see [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
 <!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
 
 For a video introduction and walkthrough of the Fusion Devtool, see 
