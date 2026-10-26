@@ -11,14 +11,13 @@ product_v2:
 
 # Save and reuse scenario sections with snippets
 
-A snippet is a group of modules that you save as a unit. You can add a snippet to other scenarios, so you do not have to build the same section of a scenario more than once.
-
-With the Snippets panel, you can search, tag, preview, pin, and sort snippets; drag and drop them into a scenario; import and export them; and share them with teams or organizations or send a copy to another user.
-
 >[!NOTE]
 >
 >This functionality is available in the new scenario editor experience only. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
-<!-- BECKY CHECK ME: confirm this feature is not available in the classic experience, and whether this standard note wording should be used instead of the transitioning note. -->
+
+A snippet is a group of modules that you save as a unit. You can add a snippet to other scenarios, so you do not have to build the same section of a scenario more than once.
+
+With the Snippets panel, you can search, tag, preview, pin, and sort snippets; drag and drop them into a scenario; import and export them; and share them with teams or organizations or send a copy to another user.
 
 ## Access requirements
 
@@ -54,51 +53,59 @@ For more detail about the information in this table, see [Access requirements in
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario that contains the modules that you want to save.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Select the modules that you want to include in the snippet.
-1. Save the selected modules as a snippet.
-
-   <!-- BECKY CHECK ME: how do you save the selection as a snippet (right-click menu, a button on the selection, or from the Snippets panel)? What do you enter (name, description, tags)? Add the exact labels and a screenshot. -->
+1. Shift + click any modules that you want to include in the snippet.
+1. Right click on one of the selected modules, then select Create snippet.
+1. Enter a name for the snippet.
+1. Click **Save**
 
 ## Add a snippet to a scenario
 
-1. In the Scenario editor, click the **Snippets** icon in the Controls area.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a snippet.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Click the **Snippets** icon ![Snippets](assets/snippets-icon.png) in the Controls area.
 
-   You might need to click the three-dot icon in the Controls area to see the Snippets icon.
+   You may need to click the three-dot icon in the Controls area to see the Snippets icon.
 
 1. (Optional) Select a snippet to preview it.
-1. Drag the snippet onto the canvas.
-
-<!-- BECKY CHECK ME: confirm drag and drop is the way to insert a snippet, or whether there is also an Add/Insert button. Describe what happens to connections and mappings that the snippet's modules used. -->
+1. Click the snippet to add it to the editor.
+1. Connect the snippet to your scenario.
+1. Update any fields in the snippet to work with the scenario it has been added to.
 
 ## Organize snippets
 
 In the Snippets panel, you can:
 
 * Search for a snippet.
-* Add tags to a snippet, and use tags to find it later.
-* Preview a snippet before you add it to a scenario.
 * Pin snippets that you use often.
+* Export a snippet as a JSON file.
+* Share snippets with other organizations, teams, or users.
+* Preview a snippet before you add it to a scenario.
 * Sort the list of snippets.
-
-<!-- BECKY CHECK ME: confirm the controls and labels for each of these (tags, pin, sort options), and convert this list to a table of Action / Details once confirmed. -->
+<!--* Add tags to a snippet, and use tags to find it later.-->
 
 ## Share a snippet
 
 You can share a snippet with a team or an organization, or send a copy directly to another user.
 
+You can:
+
 * **Share with a team or organization**: Share the snippet so that other members can use it.
 * **Send a copy to a user**: Send a copy to one user. The user receives their own copy.
 
-Snippets that are shared with you display on the **Shared** tab of the Snippets panel.
 
-<!-- BECKY CHECK ME: write the real steps. Confirm how sharing works (who can edit a shared snippet, whether changes to the original update shared copies), what "send a copy" produces for the recipient, and how recipients are notified. -->
+1. Click the **Snippets** icon ![Snippets](assets/snippets-icon.png) in the Controls area.
+1. Hover over the snippet that you want to share, then click the share icon when it appears.
+1. Select whether you are sharing the snippet with other organizations, teams, or users.
+1. Click **Next**.
+1. Select the organization or team that you want to share the snippet with, or enter the user ID of the user that you want to share the snippet with. 
+1. Click **Share**.
+
+Snippets that are shared with you display on the **Shared with me** tab of the Snippets panel.
 
 ## Import and export snippets
 
-You can export a snippet to a file and import it into another scenario or environment.
+You can export a snippet to a JSON file and import it into another scenario or environment.
 
-<!-- BECKY CHECK ME: write the real steps. Confirm the file format, where the import and export actions are located, and how this differs from Export Blueprint and Import Blueprint. -->
-
-## Related information
-
-* [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+1. Click the **Snippets** icon ![Snippets](assets/snippets-icon.png) in the Controls area.
+1. Hover over the snippet that you want to share, then click the export icon when it appears.

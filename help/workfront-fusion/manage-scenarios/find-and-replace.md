@@ -7,9 +7,12 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 ---
-<!-- BECKY CHECK ME (article-level): New article, drafted from the 10/23/26 release notes (release 2026-10-28) with no access to the live UI. Verify every label, tab name, and step against the product, and add screenshots. The Variable, Source, and Connection tab names come from the release notes' table of built-in Developer Tools. Also decide whether this should stay a separate article or be folded into scenario-editor.md. The exl-id and TQID front matter fields are intentionally absent. -->
 
 # Find and replace variables, sources, and connections in a scenario
+
+>[!NOTE]
+>
+>This functionality is available in the new scenario editor experience only. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
 
 Find and replace lets you make the same change across many modules at once. You can:
 
@@ -19,12 +22,7 @@ Find and replace lets you make the same change across many modules at once. You 
 
 Before it makes a change, Find and replace shows a preview of the modules that will be affected.
 
-In the classic experience, you used the Swap variable, Remap source, and Swap connection tools in the DevTool to do these tasks. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md).
-
->[!NOTE]
->
->This functionality is available in the new scenario editor experience only. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
-<!-- BECKY CHECK ME: confirm this feature is not available in the classic experience, and whether this standard note wording should be used instead of the transitioning note. -->
+In the classic experience, you can use the Swap variable, Remap source, and Swap connection tools in the DevTool to do these tasks. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md).
 
 ## Access requirements
 
@@ -60,7 +58,7 @@ For more detail about the information in this table, see [Access requirements in
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to make changes.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Click the **Find and replace** icon in the Controls area.
+1. Click the **Find and replace** icon ![Find and replace](assets/find-replace-icon.png) in the Controls area.
 
    You might need to click the three-dot icon in the Controls area to see the Find and replace icon.
 
@@ -71,38 +69,30 @@ Find and replace opens in the panel on the right side of the canvas.
 Use the **Variable** tab to replace a mapped variable.
 
 1. Open Find and replace, then click the **Variable** tab.
-1. Select the variable that you want to replace, and the variable that you want to replace it with.
-1. Choose whether the change applies to the whole scenario or to one module.
+1. In the Variable to find field, paste in the variable that you want to replace.
+1. In the Replace with field, paste in the variable that will replace the previous variable.
+1. In the Module field, choose the module that the change will apply to, or select **Whole scenario** to apply the change to all affected modules in the scenario.
+1. Click **Replace**
 1. Review the preview of the modules that will be affected. To go to a module on the canvas, select its row in the preview.
-1. Apply the change.
-
-<!-- BECKY CHECK ME: confirm the exact fields and button labels on the Variable tab, how you choose the variable (type, pick from a list, or map it?), and how you set whole scenario vs. one module. -->
+1. Click **Apply**.
 
 ## Remap a source
 
 Use the **Source** tab to change which module the mappings in other modules refer to.
 
 1. Open Find and replace, then click the **Source** tab.
-1. Select the source module that the mappings currently refer to, and the module that they should refer to instead.
+1. In the Source module field, Select the source module that the mappings currently refer to.
+1. In the Target module fields, select the module that they should refer to instead.
+1. In the Module field, choose the module that the change will apply to, or select **Whole scenario** to apply the change to all affected modules in the scenario.
+1. Click **Replace**
 1. Review the preview of the modules that will be affected. To go to a module on the canvas, select its row in the preview.
-1. Apply the change.
-
-<!-- BECKY CHECK ME: confirm the fields and labels on the Source tab, and whether the scope can be limited to one module as it can on the Variable tab. -->
+1. Click **Apply**.
 
 ## Copy a connection to other modules
 
 Use the **Connection** tab to use the same connection in more than one module of the same app.
 
 1. Open Find and replace, then click the **Connection** tab.
-1. Select the connection that you want to copy.
-1. Choose whether to copy it to one module or to all compatible modules from the same app.
-1. Review the preview of the modules that will be affected. To go to a module on the canvas, select its row in the preview.
-1. Apply the change.
-
-<!-- BECKY CHECK ME: the release notes say "copy a connection", while the old DevTool tool was called "Swap connection". Confirm whether this replaces the existing connection in the target modules, and add that detail. Confirm labels and the meaning of "compatible modules". -->
-
-## Related information
-
-* [Undo and redo your changes](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#editing-actions)
-<!-- BECKY CHECK ME: confirm that changes made with Find and replace can be undone with Undo, and whether to keep this related link. Remove it if not. -->
-* [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
+1. In the Connection from field, select a module that currently has the connection that you want to use for other modules.
+1. In the Apply to field, choose the module that the change will apply to, or whether to apply the change to all compatible modules in the scenario.
+1. Click **Apply**.
