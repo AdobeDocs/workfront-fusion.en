@@ -91,7 +91,11 @@ Source: Fusion Scenario Designer: New UI/UX doc request; **expected release 2026
 
 **Left `Yes` but with a verify note appended:** `retrigger-specific-execution.md` (raw JSON / previous input / webhook options), `copy-modules-or-scenarios.md` (optional link to built-in Copy mapping / module name).
 
-**New article candidates (added to the spreadsheet):** Live Trail; Snippets; Find & Replace. **Other additions:** `run-once.md` (Run once keeps request/response), `manage-connections.md` (speculative), scenario-editor FAQ content, video audit scope, release note (release 2026-10-28). `debug-a-scenario.md` is no longer blocked on the DevTool question, but needs a restructure plus pointers to the built-in tools and Live Trail.
+**New articles created 10/26/26 (spreadsheet rows 48–50, all `Yes`; linked from `scenario-editor.md` and added to `TOC.md` plus the folder TOCs):** `create-scenarios/add-modules/use-snippets.md` (Save and reuse scenario sections with snippets), `manage-scenarios/live-trail.md` (Use Live Trail to review a scenario run), and `manage-scenarios/find-and-replace.md` (Find and replace variables, sources, and connections in a scenario). New articles omit `exl-id`/`TQID` front matter (add if the pipeline needs them). `debug-a-scenario.md` links to Live Trail and Find and replace.
+
+**Status update 10/26/26:** `router-module.md`, `configure-scenario-settings.md`, `view-a-specific-scenario-execution.md`, and `run-once.md` are `Yes`. Still `CHECK ME` (outstanding BECKY CHECK ME comments): `scenario-editor.md` (rows 2 and 53), `debug-a-scenario.md` (row 22, also needs the full new/classic restructure), and `view-scenario-execution-history.md` (row 33). `add-a-module-basic.md` and `add-a-filter-to-a-scenario.md` are still `Reopen` (the filter article needs no edit; the new-experience Copy filter steps already exist, so it can be set back to `Yes`).
+
+**Older note, superseded:** previously proposed new-article candidates were Live Trail, Snippets, and Find & Replace; they now exist (above). **Other additions:** `run-once.md` (Run once keeps request/response), `manage-connections.md` (speculative), scenario-editor FAQ content, video audit scope, release note (release 2026-10-28). `debug-a-scenario.md` is no longer blocked on the DevTool question, but needs a restructure plus pointers to the built-in tools and Live Trail.
 
 ## Per-article status (spreadsheet is the source of truth; status below as of 2026-09-22 unless noted — see 2026-10-23 section above for reopened rows)
 
