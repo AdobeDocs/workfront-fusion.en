@@ -7,7 +7,6 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 ---
-<!-- BECKY CHECK ME (article-level): New article, drafted from the 10/23/26 release notes (release 2026-10-28) with no access to the live UI. The release notes list snippet capabilities but not the steps, so nearly every procedure below is a placeholder that needs the real steps, labels, and screenshots. Also confirm whether snippets are scoped to a user, team, or organization by default, and what permissions are needed to share. The exl-id and TQID front matter fields are intentionally absent. -->
 
 # Save and reuse scenario sections with snippets
 
