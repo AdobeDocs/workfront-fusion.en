@@ -120,3 +120,26 @@ Blocked (same treatment as `debug-a-scenario.md` — flagged, not edited beyond 
 Spreadsheet status as of 2026-10-23 for rows not covered above: `Yes` for rows 9, 12–15, 17–19, 21, 27, 29–31, 36–38, 42 (`flow-control.md` is `Yes` in the spreadsheet even though the older note above says In progress). `Blocked`: `run-scenario-scoring.md`. `On Hold`: `view-and-resolve-incomplete-executions.md`. Blank/not started: `advanced-error-handling.md` (needs new example scenario), `debug-a-scenario.md` (needs restructure), `scenario-details.md`, `scenario-execution-cycles-phases.md`, `view-chained-scenario-relationships.md`, `fusion-basics-videos.md`, the release-note row, and `create-a-scenario-workflow.md` (keep the DevTool shortcut row).
 
 (Earlier "not yet updated in the spreadsheet" remarks above are stale — the spreadsheet has been updated for those articles.)
+
+
+## Final status sync (2026-10-27) — supersedes status statements above
+
+Spreadsheet ("Affected articles", column G) is the source of truth. Release: new scenario editor experience, 2026-10-28.
+
+**`Yes` (complete):** all rows not listed below, including the previously `Reopen` articles (`scenario-editor.md`, `add-a-module-basic.md`, `router-module.md`, `add-a-filter-to-a-scenario.md`, `configure-scenario-settings.md`, `view-a-specific-scenario-execution.md`, `view-scenario-execution-history.md`), the ten-plus articles edited 10/27 (`scenario-details.md`, `manage-connections.md`, `scenario-execution-cycles-phases.md`, `view-chained-scenario-relationships.md`, `run-once.md`), the three new articles, and the release note.
+
+**`OK for now - revisit`:** `advanced-error-handling.md` (example scenario is still classic; has an inline note; rebuild in the new experience later) and `fusion-basics-videos.md` (rows 45 and 54; video audit comment is in the article; Live Trail/DevTool walkthrough videos are a possible addition).
+
+**`Check after release`:** `debug-a-scenario.md` (Live Stream section on HOLD because it shows "no events available" in the new experience, possibly a bug; confirm whether the seven built-in tools are removed from the DevTool; may need a new/classic split of the Scenario Debugger), `run-scenario-scoring.md`, and `view-and-resolve-incomplete-executions.md`.
+
+**New/changed 10/27 (all resolved by Becky):**
+- `debug-a-scenario.md`: DevTool left nav now has a fourth item, **DevTool help** (question mark icon); Tools panel has a **Search tool by name** field and a select-a-tool prompt; all ten tools remain in the DevTool; DevTool opens from the Controls three-dot menu or by right-clicking an empty area of the canvas; Scenario Debugger steps expanded (module list with ID badges, search by name or ID, cycles/operations, Request Headers/Request Body/Response Headers/Response Body tabs, **Copy RAW** and **Copy cURL**).
+- `add-a-module-basic.md`: search-first picker, right-side panel with **Back**, badges (private, premium, beta), connector-defined module groups, directives first when adding an error handler. Still unconfirmed: picker info icon, version chevron, quick-access bubble.
+- `scenario-editor.md`: **Feedback** button (upper right, next to Compact view) added to Editing actions; Scenario settings row links to Temporary debug logs; switch is per user and may not be available to every org.
+- `scenario-details.md` and `view-chained-scenario-relationships.md` now use `/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png`.
+- `manage-connections.md` links to Find and replace.
+- Release note: `fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md` (week of Oct 26), added to `fusion-release-activity.md` and `TOC.md`.
+
+**Open follow-ups after release:** screenshots for the new sections and articles; how to fold/unfold a router; how to open the Execution history panel from the editor; picker info icon/chevron/bubble; picker vs. editor Favorites; retake classic screenshots in `scenario-execution-cycles-phases.md` (ACID badges), `scenario-details.md`, and the DataError filter in `advanced-error-handling.md`.
+
+**Repo notes:** do not commit unless asked; ~466 files show as modified only because of line endings (CRLF); do not run `git status` from the sandbox (it can leave `.git/index.lock`).

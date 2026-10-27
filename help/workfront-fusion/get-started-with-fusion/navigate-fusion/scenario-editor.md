@@ -113,10 +113,11 @@ These actions are available at the top of the screen, rather than in the bottom 
 | Action | Details |
 | ---------- | ---------- |
 | Scenario name | The scenario's name is shown at the top-left of the screen. To rename the scenario, click on the name and enter a new one. |
-| Compact view | Toggle a view where modules on the canvas shrink to small tiles, the grid tightens, and long module names wrap instead of being cut off. Switching views does not reload the scenario. <!-- BECKY CHECK ME: old text said modules 'turn into icons', but the release notes say Compact view shrinks cards to small tiles. Icons appear when you zoom out (see Canvas display). Confirm and retake screenshots if needed. --> |
-| Undo | Undo the most recent actions, most recent first. You can undo actions from the current session only. |
-| Redo | Redo recent actions. You can redo actions from the current session only. |
-| History | View a history of changes made in this session. You can also undo all session changes. <!-- BECKY CHECK ME: release notes call this 'Undo all' (return to the state from when you opened the scenario). Confirm the label that shows in the UI. --> |
+| Compact view | Toggle a view where modules on the canvas shrink to small tiles, the grid tightens, and long module names wrap instead of being cut off. Switching views does not reload the scenario. |
+| Feedback | Send feedback about the new experience. This button is in the upper-right corner of the scenario editor, next to the Compact view toggle. |
+| Undo </br>![Undo icon](assets/undo-icon.png) | Undo the most recent actions, most recent first. You can undo actions from the current session only. |
+| Redo </br>![Redo icon](assets/redo-icon.png) | Redo recent actions. You can redo actions from the current session only. |
+| History  </br>![Edit history icon](assets/edit-history-icon.png) | View a history of changes made in this session. You can also undo all session changes. |
 
 #### Scheduling
 
@@ -125,7 +126,7 @@ These actions are available at the top of the screen, rather than in the bottom 
 | Action | Details |
 | ---------- | ---------- |
 | Run once | Run once is icon-only in the new design. Hover over the icon to see the **[!UICONTROL Run once]** tooltip. Here, you can test run the scenario and verify that the it runs as you expect before you activate it |
-| Activation toggle | Activate or deactivate your scenario. After you activate it, the scenario will execute according to its schedule.  |
+| Activation toggle | Activate or deactivate your scenario. After you activate it, the scenario will execute according to its schedule. |
 | Schedule the scenario | By default, a scenario with a polling trigger runs every 15 minutes. You can change this by defining when and how often an activated scenario runs. Polled fusion scenarios can be scheduled to run as often as every 5 minutes. For more information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
 
 #### Controls
@@ -137,12 +138,12 @@ You may need to click on the three-dot icon in the Controls area to view some of
 | Action | Details |
 | ---------- | ---------- |
 | Save <p>![Save icon](assets/save-icon-new.png)</p> | <p>After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are available for 60 days after the next scenario version is created. </p><p>To retain scenario version history beyond 60 days for audit purposes, we recommend saving and archiving a blueprint of the scenario in another location.</p> |
-| Scenario settings <p>![Scenario settings icon](assets/scenario-settings-icon-new.png)</p> | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). |
+| Scenario settings <p>![Scenario settings icon](assets/scenario-settings-icon-new.png)</p> | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). Request and response details are not kept for every run. To collect them for the scenario's regular runs, turn on Temporary debug logs. For more information, see [Temporary debug logs](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).  |
 | Notes <p>![Notes icon](assets/notes-icon-new.png)</p> | Make notes about the scenario. Other users can view these notes when they are in the scenario. For more information, see [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Auto-align <p>![Auto-align icon](assets/auto-align-icon-new.png)</p> | Auto-align the modules in your scenario. |
 | Search modules <p>![Search modules icon](assets/search-modules-icon-new.png)</p> | Select a module from that list to go to that module in the scenario, or enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application. |
 | Find and replace <p>![Find and replace icon](assets/find-and-replace-icon-new.png)</p> | <p>Search for and replace variables, mapped value sources, or connections across the scenario's modules. Use the tabs to:</p><ul><li>Replace a mapped variable across the whole scenario or in one module.</li><li>Remap references from one source module to another.</li><li>Copy a connection to one or all compatible modules from the same app.</li></ul><p>The panel previews the modules that will be affected before you make the change. Select a row in the preview to go to that module on the canvas.</p> <p>For more information, see [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
-| Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | <p>Snippets are scenario sections that are saved as a unit. To create one, select modules and save them as a snippet. In the Snippets panel, you can search, tag, preview, pin, sort, and drag and drop snippets, and import and export them. You can share snippets with teams or organizations, or send a copy directly to another user. Shared snippets display on their own tab.</p> <p>For more information, see [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> <!-- BECKY CHECK ME: links added to the new articles for Find and replace, Snippets, and Live Trail (created 10/26/26). Confirm link text and that the new articles' filenames are final. --> |
+| Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | <p>Snippets are scenario sections that are saved as a unit. To create one, select modules and save them as a snippet. In the Snippets panel, you can search, tag, preview, pin, sort, and drag and drop snippets, and import and export them. You can share snippets with teams or organizations, or send a copy directly to another user. Shared snippets display on their own tab.</p> <p>For more information, see [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
 | Explain flow <p>![Explain flow icon](assets/explain-flow-icon-new.png)</p> | View an animation where moving dots show how data flows through the scenario. |
 | Export Blueprint <p>![Export Blueprint icon](assets/export-blueprint-icon-new.png)</p> | Export a blueprint of the current scenario. For more information, see [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
 | Export as headless template <p>![Export as headless template icon](assets/export-as-headless-template-icon-new.png)</p> | Export the scenario as a headless template. |
@@ -185,8 +186,8 @@ Click **Ask AI** to open Adobe's AI Assistant. This option may not be available 
 | Action | Details |
 | ---------- | ---------- |
 | Zoom in / zoom out | Zoom the canvas view in or out. |
-| Focus | Return to a view that fits your whole scenario on the screen.  |
-| Minimap | View a thumbnail overview of the entire scenario. The minimap shows your current viewport. Click within it, or click and drag, to move around the canvas.  |
+| Focus | Return to a view that fits your whole scenario on the screen. |
+| Minimap | View a thumbnail overview of the entire scenario. The minimap shows your current viewport. Click within it, or click and drag, to move around the canvas. |
 
 #### Canvas display
 
