@@ -15,3 +15,6 @@ feature_v2:
 ---
 
 # Configuring your Fusion account: article index
+
+* [Change profile settings](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/change-profile-settings.md)
+* [View and manage time zones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)

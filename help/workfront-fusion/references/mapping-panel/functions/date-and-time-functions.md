@@ -17,6 +17,8 @@ topic_v2:
 ---
 # Date and time functions
 
+For information about viewing and managing the time zone settings used by your Fusion profile, see [View and manage time zones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).
+
 ## Variables
 
 ### now
