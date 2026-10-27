@@ -145,11 +145,13 @@ You can use the following keyboard shortcuts when creating or editing a scenario
    <td>Ctrl+Shift+Enter</td> 
    <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
+<!--
   <tr> 
    <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Select multiple modules]</td> 
    <td>Shift+Drag</td> 
