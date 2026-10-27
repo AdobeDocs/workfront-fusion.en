@@ -13,6 +13,8 @@ product_v2:
 
 These videos are available to help familiarize you with some of the functionality of Adobe Workfront Fusion.
 
+<!-- BECKY CHECK ME: video audit needed for the new scenario editor (release 2026-10-28). Check each video for classic canvas footage: 'Workfront Fusion on the Adobe Unified Shell' (Navigation); 'Intro to Webhooks', 'Intermediate Webhooks', 'Data Stores', 'Synchronizing Folders' (Basics, scenario canvas footage); and 'Fusion Development Tool' (the DevTool now opens from the Controls three-dot menu, and several of its tools are built into the editor). Decide which to re-record, and whether to add walkthrough videos for Live Trail and the DevTool. Add a note here for any video that shows the classic experience. -->
+
 ## Navigation
 
 * [Workfront Fusion on the Adobe Unified Shell](https://video.tv.adobe.com/v/3412392/){target=_blank}

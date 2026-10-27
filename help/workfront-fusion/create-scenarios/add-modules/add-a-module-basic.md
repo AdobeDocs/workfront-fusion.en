@@ -71,11 +71,22 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 1. Select the connector or webhook that will start this scenario:
 
    * Browse by category using the panel on the left ([!UICONTROL Favorites], [!UICONTROL All apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative & Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI], or [!UICONTROL Built-in]), or
-   * Enter a term in the search box to filter the list.
+   * Enter a term in the search box. Results update as you type, and connector matches are listed before module name and description matches. 
+
+1. Click the module that you want to add to the scenario.
 
 1. Configure the module.
 
+   The module's settings open in the panel on the right side of the canvas.
+
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
+
+>[!NOTE]
+>
+>* In the list of connectors, badges identify private, premium, and beta apps. 
+>* Modules for large apps are organized into groups. 
+>* When you add an error handler, directives are listed first.
+>* If a connector has more than one version, you will be able to select the version after selecting the connector.
 
 >[!NOTE]
 >
@@ -115,9 +126,13 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 1. (Optional) To select another connector, click **Add another module** in the list, then select the connector:
 
    * Browse by category using the panel on the left ([!UICONTROL Favorites], [!UICONTROL All apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative & Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI], or [!UICONTROL Built-in]), or
-   * Enter a term in the search box to filter the list.
+   * Enter a term in the search box. Results update as you type, and connector matches are listed before module name and description matches.
+
+1. Click the module that you want to add to the scenario.
 
 1. Configure the module.
+
+   The module's settings open in the panel on the right side of the canvas. 
 
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -152,9 +167,13 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 1. (Optional) To select another connector, click **Add another module** in the list, then select the connector:
 
    * Browse by category using the panel on the left ([!UICONTROL Favorites], [!UICONTROL All apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative & Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI], or [!UICONTROL Built-in]), or
-   * Enter a term in the search box to filter the list.
+   * Enter a term in the search box. Results update as you type, and connector matches are listed before module name and description matches. 
+   
+1. Click the module that you want to add to the scenario.
 
 1. Configure the module.
+
+   The module's settings open in the panel on the right side of the canvas. 
 
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -163,7 +182,7 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 >To create a link to a specific module, add `?moduleId=<module-id>` to the URL when viewing the following pages:
 >
 >* Scenario edit page (URL ends in `/edit`)
->* A specific scenarion execution (URL ends in `/logs/<log-id>`)
+>* A specific scenario execution (URL ends in `/logs/<log-id>`)
 >
 >`<module-id>` refers to the number next to the module label when viewing the scenario.
 >

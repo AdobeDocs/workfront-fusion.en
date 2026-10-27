@@ -54,21 +54,17 @@ For more detail about the information in this table, see [Access requirements in
 
 You can view a map of the current scenario and its parent or child scenarios. The map displays a diagram of data flow throughout the chained scenarios.
 
-![Chained scenario relationships](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 To view the relationship map for a chained scenario:
 
 1. Click the **[!UICONTROL Scenario]** tab in the left panel, then click the scenario.
 
    Or
 
-   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) near the upper-left corner of the window. 
 
 1. Click the **Relationships** tab.
 
-   ![Relationships tab](assets/relations-tab.png)
+   ![Relationships tab](assets/new-relationships-tab.png)
 
 1. For general details about each chained scenario, check the tags.
 
