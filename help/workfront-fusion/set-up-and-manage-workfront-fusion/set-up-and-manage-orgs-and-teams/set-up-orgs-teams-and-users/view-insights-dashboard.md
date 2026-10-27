@@ -97,6 +97,102 @@ In the Fusion Insights dashboard, you can see the following metrics.
 1. To refresh the charts, click the Refresh icon near the upper-right corner of the dashboard.
 1. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view.
 
+## Customize the Insights dashboard
+
+You can choose which widgets appear on the Insights dashboard, and in what order.
+
+<!-- BECKY CHECK ME: The widget list in "Insights dashboard components" above does not describe the Organization Operations, Top Scenarios by Operations, or Performance widgets that this section refers to. Add descriptions of these widgets. -->
+
+### Add or remove widgets
+
+1. Click **[!UICONTROL Customize]** in the Insights header.
+
+   A side panel opens. It lists every widget as a card that shows a preview, the widget name, and a description.
+
+1. To show or hide a widget, click its card, or click the **[!UICONTROL Add widget]** or **[!UICONTROL Remove widget]** button on the card.
+
+   Widgets that are shown have a checkmark.
+
+Your choices are saved per browser. Widgets that are added in later releases appear in the panel automatically.
+
+If you remove all of the widgets, the page displays a "No widgets on this page" message.
+
+### Change the order of widgets
+
+1. Click **[!UICONTROL Customize]** in the Insights header.
+1. Drag a widget card to a new position in the panel.
+
+   A dashed placeholder and a drop bar show where the card will land.
+
+The new order is saved with your layout.
+
+>[!NOTE]
+>
+>You can reorder widgets only by dragging them with the mouse. Reordering with the keyboard is not supported.
+
+## Refresh the Insights dashboard
+
+To reload the data of every widget, click **[!UICONTROL Refresh]** next to **[!UICONTROL Customize]**.
+
+* Each widget keeps its filters.
+* The **[!UICONTROL Refresh]** button shows a pending state until all widgets finish loading.
+* Charts keep the previous chart under a loading spinner, and the Executions Log dims its table under a spinner while the data reloads.
+* If a refresh fails, widgets keep their last good data.
+
+## Take the Insights tour
+
+The first time you open the Insights dashboard, a welcome dialog gives you the option to start a tour or skip it.
+
+The tour highlights each widget, in your saved order, as well as the **[!UICONTROL Customize]** button and panel, the **[!UICONTROL Refresh]** button, and the **[!UICONTROL Replay tour]** button in the title bar.
+
+To restart the tour at any time, click **[!UICONTROL Replay tour]** in the title bar.
+
+The tour does not start when you open the Insights dashboard from a link in a scenario. For more information, see [Open the Insights dashboard from a scenario](#open-the-insights-dashboard-from-a-scenario) in this article.
+
+<!-- BECKY CHECK ME: Confirm that "Replay tour" is the button label and that the tour remembers that you've seen it for each user, not per browser. -->
+
+## Search for scenarios and teams by ID
+
+In the **[!UICONTROL Organization Operations]** and **[!UICONTROL Top Scenarios by Operations]** widgets, the **[!UICONTROL Scenario]** and **[!UICONTROL Team]** fields match on ID as well as name. Each option shows its ID under the name, for example "ID 123".
+
+* The lists load the first 500 scenarios and the first 200 teams. If you enter an ID that is not in the loaded list, Fusion looks it up automatically after a short delay.
+* If you clear a scenario, the team that was filled in automatically for that scenario is also cleared.
+
+>[!NOTE]
+>
+>The scenario filter in the Executions Log does not match on ID.
+
+## Open the Insights dashboard from a scenario
+
+You can open the Insights dashboard with the **[!UICONTROL Organization Operations]** widget filtered to a specific scenario and team.
+
+<!-- BECKY CHECK ME: The request says the entry point is the scenario's Reports tab in the shell. Confirm the tab name, the control that the user clicks, and the exact steps. -->
+
+When the link includes a valid scenario and team:
+
+* The **[!UICONTROL Organization Operations]** widget opens filtered to that scenario and team, and the page scrolls to the widget.
+* If you have removed the widget from the page, a warning with an **[!UICONTROL Add widget]** button appears instead.
+* If the scenario was deleted or is unknown, the filter is ignored.
+
+A link without a valid scenario and team opens the dashboard as usual.
+
+## Use dark mode
+
+The Insights dashboard and its widgets automatically follow your dark mode setting. When you change the setting, the page updates immediately, without reloading, and keeps your current state. Light mode is unchanged.
+
+<!-- BECKY CHECK ME: The request says dark mode "requires the matching fusion-frontend change; without it the page stays light". Confirm that both parts have shipped, and confirm where users change the dark mode setting (the source calls it the Unified Shell's dark mode setting) and how to refer to it in customer docs. -->
+
+## Performance widget access
+
+The **[!UICONTROL Performance]** widget is shown only to users who have one of the following permissions:
+
+* Organization Edit in the active organization
+* Organization View on the admin page
+
+The widget is hidden from the page and from the **[!UICONTROL Customize]** panel for other users. If a user is granted access later, the widget returns in its saved position. Opening the Insights URL directly does not bypass this check.
+
+<!-- BECKY CHECK ME: Confirm the permission names ("Organization Edit", "Organization View") and where an administrator grants them. -->
+
 ## Filter and triage executions in the Execution Log
 
 Use the Execution Log to find scenario executions that failed or returned a warning across your organization, and reactivate any scenarios that were automatically deactivated after repeated failures.
