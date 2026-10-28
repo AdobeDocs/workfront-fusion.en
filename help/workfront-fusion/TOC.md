@@ -405,6 +405,7 @@ nudge: true
             * [Adobe Campaign modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
             * [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
             * [Adobe Creative Cloud Libraries modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+            * [Adobe CX Enterprise Coworker modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md)
             * [Adobe Experience Manager Assets modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
             * [Adobe Experience Manager Forms modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
             * [Adobe Experience Manager MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
