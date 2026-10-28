@@ -63,6 +63,12 @@ In the Fusion Insights dashboard, you can see the following metrics.
 
 * **Failed Executions Logs**
    This table lists every failed or warning scenario execution across your organization, so you can find and troubleshoot problem runs without leaving the dashboard.
+* **Organization Operations**
+   This chart allows you to view the number of operations used in your organization. You can select specific teams or scenarios, and view operations in the last week, month, or year.
+* **Top scenarios by operations**
+   This chart allows you to view which scenarios are using the most operations. You can select specific teams, or view data for the last day, week, or month.
+
+<!--
 
 * **Executions waiting to be processed**
    This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time. 
@@ -80,6 +86,8 @@ In the Fusion Insights dashboard, you can see the following metrics.
    This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
 
    You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
+
+-->
 
 ## View the Fusion Insights Dashboard
 
@@ -101,10 +109,9 @@ In the Fusion Insights dashboard, you can see the following metrics.
 
 You can choose which widgets appear on the Insights dashboard, and in what order.
 
-<!-- BECKY CHECK ME: The widget list in "Insights dashboard components" above does not describe the Organization Operations, Top Scenarios by Operations, or Performance widgets that this section refers to. Add descriptions of these widgets. -->
+### Add, remove, or reorder widgets
 
-### Add or remove widgets
-
+1. In the left navigation, click **Insights** ![Insights icon](assets/insights-icon.png).
 1. Click **[!UICONTROL Customize]** in the Insights header.
 
    A side panel opens. It lists every widget as a card that shows a preview, the widget name, and a description.
@@ -112,23 +119,13 @@ You can choose which widgets appear on the Insights dashboard, and in what order
 1. To show or hide a widget, click its card, or click the **[!UICONTROL Add widget]** or **[!UICONTROL Remove widget]** button on the card.
 
    Widgets that are shown have a checkmark.
+1. To reorder widgets, drag a widget card to a new position in the panel.
+
+   A dashed placeholder and a drop bar show where the card will land.
 
 Your choices are saved per browser. Widgets that are added in later releases appear in the panel automatically.
 
 If you remove all of the widgets, the page displays a "No widgets on this page" message.
-
-### Change the order of widgets
-
-1. Click **[!UICONTROL Customize]** in the Insights header.
-1. Drag a widget card to a new position in the panel.
-
-   A dashed placeholder and a drop bar show where the card will land.
-
-The new order is saved with your layout.
-
->[!NOTE]
->
->You can reorder widgets only by dragging them with the mouse. Reordering with the keyboard is not supported.
 
 ## Refresh the Insights dashboard
 
@@ -145,11 +142,9 @@ The first time you open the Insights dashboard, a welcome dialog gives you the o
 
 The tour highlights each widget, in your saved order, as well as the **[!UICONTROL Customize]** button and panel, the **[!UICONTROL Refresh]** button, and the **[!UICONTROL Replay tour]** button in the title bar.
 
-To restart the tour at any time, click **[!UICONTROL Replay tour]** in the title bar.
+To restart the tour at any time, click the tour information icon ![information icon](assets/insights-tour-information.png) in the title bar.
 
 The tour does not start when you open the Insights dashboard from a link in a scenario. For more information, see [Open the Insights dashboard from a scenario](#open-the-insights-dashboard-from-a-scenario) in this article.
-
-<!-- BECKY CHECK ME: Confirm that "Replay tour" is the button label and that the tour remembers that you've seen it for each user, not per browser. -->
 
 ## Search for scenarios and teams by ID
 
@@ -166,21 +161,23 @@ In the **[!UICONTROL Organization Operations]** and **[!UICONTROL Top Scenarios 
 
 You can open the Insights dashboard with the **[!UICONTROL Organization Operations]** widget filtered to a specific scenario and team.
 
-<!-- BECKY CHECK ME: The request says the entry point is the scenario's Reports tab in the shell. Confirm the tab name, the control that the user clicks, and the exact steps. -->
+To go to the Insights page from a scenario:
 
-When the link includes a valid scenario and team:
+1. Open the scenario detail page:
+
+   1. Click the **[!UICONTROL Scenario]** tab in the left panel, then click a scenario you would like details on.
+
+      Or
+
+      If you are working on the scenario in the the scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+      1. Click the **Reports** tab near the top of the page.
 
 * The **[!UICONTROL Organization Operations]** widget opens filtered to that scenario and team, and the page scrolls to the widget.
 * If you have removed the widget from the page, a warning with an **[!UICONTROL Add widget]** button appears instead.
-* If the scenario was deleted or is unknown, the filter is ignored.
-
-A link without a valid scenario and team opens the dashboard as usual.
 
 ## Use dark mode
 
 The Insights dashboard and its widgets automatically follow your dark mode setting. When you change the setting, the page updates immediately, without reloading, and keeps your current state. Light mode is unchanged.
-
-<!-- BECKY CHECK ME: The request says dark mode "requires the matching fusion-frontend change; without it the page stays light". Confirm that both parts have shipped, and confirm where users change the dark mode setting (the source calls it the Unified Shell's dark mode setting) and how to refer to it in customer docs. -->
 
 ## Performance widget access
 
@@ -190,8 +187,6 @@ The **[!UICONTROL Performance]** widget is shown only to users who have one of t
 * Organization View on the admin page
 
 The widget is hidden from the page and from the **[!UICONTROL Customize]** panel for other users. If a user is granted access later, the widget returns in its saved position. Opening the Insights URL directly does not bypass this check.
-
-<!-- BECKY CHECK ME: Confirm the permission names ("Organization Edit", "Organization View") and where an administrator grants them. -->
 
 ## Filter and triage executions in the Execution Log
 
