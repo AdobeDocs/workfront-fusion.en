@@ -1,15 +1,18 @@
 ---
 content-type: reference
-title: "Add modules: article index"
+title: 'Add modules: article index'
 description: This section contains articles related to adding modules in Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 45935dab-199b-46b8-a339-abfea8650320
-TQID: https://experienceleague.adobe.com/hyhyVjuXROjY6SdjwjiBAAl6oNRy1H-Id0D867BLi5s
+TQID: 'https://experienceleague.adobe.com/hyhyVjuXROjY6SdjwjiBAAl6oNRy1H-Id0D867BLi5s'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Add modules: article index
 

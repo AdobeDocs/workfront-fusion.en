@@ -4,13 +4,15 @@ description: In an Adobe Workfront Fusion scenario, you can automate workflows t
 author: Becky
 feature: Workfront Fusion
 exl-id: c0919a9a-ce99-485c-9627-45353741f6d8
-TQID: https://experienceleague.adobe.com/RFI6MFgF-C1Cnn0bvjOLVf3qahyRblEp4dtypNrxqzE
+TQID: 'https://experienceleague.adobe.com/RFI6MFgF-C1Cnn0bvjOLVf3qahyRblEp4dtypNrxqzE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
     internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -86,10 +88,200 @@ The Azure DevOps connector uses the following:
 
 ## Connect [!DNL Azure DevOps] to Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [Connect Azure DevOps to Workfront Fusion using a federated connection](#connect-azure-devops-to-workfront-fusion-using-a-federated-connection)
 * [Connect Azure DevOps to Workfront Fusion using EntraApp](#connect-azure-devops-to-workfront-fusion-using-entraapp)
 * [Connect Azure DevOps to Workfront Fusion using a service principal](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
 
+### Connect Azure DevOps to Adobe Workfront Fusion using a federated connection
+
+A federated connection works like the service principal connection, except that it does not use a client secret.
+
+Instead of storing a secret, you tell Microsoft Entra ID to trust tokens that Workfront Fusion issues for one specific connection. When the connection runs, Fusion presents a short-lived proof of identity and Microsoft Entra ID returns an access token. Because there is no client secret, there is nothing that expires and no secret to rotate or store.
+
++++ Expand to view instructions for connecting  Azure DevOps to Adobe Workfront Fusion using a federated connection.
+
+>[!NOTE]
+>
+>* Setting up this connection requires two visits to the Microsoft Entra admin center. You register the app first, then create the connection in Workfront Fusion, the return to Microsoft Entra ID to add the federated credential. This is because the federated credential identified one specific connection, and that identifier does not exist until the connection is created.
+>* The same limits apply to this connection as the service principal connection. A small number of admin-level actions, such as managing user licenses, still require a personal account connection.
+
+* [Prerequisites to connecting Azure DevOps to Workfront Fusion using a federated connection](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-federated-connection)
+* [Create the app registration in Microsoft Entra ID (Federated connection)](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [Collect your connection details (Federated connection)](#collect-your-connection-details-federated-connection)
+* [Create the connection in Workfront Fusion (Federated connection)](#create-the-connection-in-workfront-fusion-federated-connection)
+* [Add the federated credential in Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id)
+* [Verify the connection (Federated connection)](#verify-the-connection-federated-connection)
+
+#### Prerequisites to connecting Azure DevOps to Workfront Fusion using a federated connection
+
+
+To create this connection, you need the following:
+
+* Global Administrator or Application Administrator access in Microsoft Entra ID, to register the app and add the federated credential. If you do not have this access, ask someone on your IT or identity team to complete those steps for you.
+* Project Collection Administrator access in your Azure DevOps organization, to add the service principal as a member. This is often a different person than the person that manages Microsoft Entra ID.
+* The name of your Azure DevOps organization. You can find this in your Azure DevOps URL: `dev.azure.com/<your organization name>`.
+
+#### Create the app registration in Microsoft Entra ID (Federated connection)
+
+1. Sign in to the Microsoft Entra admin center.
+1. Go to App registrations > New registration.
+1. Give the app a clear, recognizable name. For example, `Workfront Fusion Azure DevOps Integration`.
+1. Leave Redirect URI blank. This connection does not involve signing in through a browser.
+1. Select Register.
+1. Do not create a client secret. A federated connection does not use one.
+1. Continue to [Collect your connection details](#collect-your-connection-details-federated-connection).
+
+
+#### Collect your connection details (Federated connection)
+
+1. From the app registration's Overview page, note the following values. You enter these when creating the connection in the module.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Tenant ID]</td>
+      <td>On the Overview page, labeled <b>Directory (tenant) ID</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>On the Overview page, labeled <b>Application (client) ID</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Organization]</td>
+      <td>Your Azure DevOps organization name. For example, if your URL is <code>dev.azure.com/yourorg</code>, enter <code>yourorg</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Continue to [Create the connection in Workfront Fusion](#create-the-connection-in-workfront-fusion-federated-connection).
+
+>[!NOTE]
+>
+>As with the service principal connection, you can skip the app registration's API permissions area. Access toAzure DevOps is granted inside Azure DevOps, in the next procedure.
+
+#### Create the connection in Workfront Fusion (Federated connection)
+
+1. In the module's connection setup screen, select the federated connection type.
+1. Enter the following:
+
+   * Tenant ID
+   * Client ID
+   * Organization
+
+1. Select **Create**.
+
+   Workfront Fusion displays three values. Leave this page open, because you will need these values later in the process of creating the connection.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject]</td>
+      <td>This identifies this connection. It looks like <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. It is different for every connection you create.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Audience]</td>
+      <td><code>api://AzureADTokenExchange</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!IMPORTANT]
+   >
+   >Do not close the panel or select Cancel. The connection is not finished until you complete the rest of the procedure. If you close the panel, you must delete the connection and start again, because a new connection receives a new Subject.
+
+1. Copy the **Subject** value.
+1. Continue to [Add the federated credential in Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id).
+
+#### Add the federated credential in Microsoft Entra ID
+
+This procedure is what replaces the client secret. It tells Microsoft Entra ID to accept tokens that Workfront Fusion issues for this one connection.
+
+1. In a new browser tab, return to the Microsoft Entra admin center and open your app registration.
+1. Go to Certificates & secrets > Federated credentials.
+1. Select Add credential.
+1. In Federated credential scenario, select Other issuer.
+1. Enter the following:
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td><code>https://oidc.automations.adobe.com</code></td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject identifier]</td>
+      <td>The Subject you copied from Workfront Fusion. Paste it exactly, with no added spaces.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>A name that identifies this connection, so you can find it later. For example, <code>workfront-fusion-connection-28964</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Audience]</td>
+      <td><code>api://AzureADTokenExchange</code>. This is usually filled in for you. Leave the default value.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Click **Add**.
+1. Continue to [Verify the connection](#verify-the-connection-federated-connection).
+
+>[!NOTE]
+>
+>Microsoft Entra ID allows a maximum of 20 federated credentials on a single app registration, and the Subject identifier must match exactly. Wildcards are not supported. Because each Workfront Fusion connection has its own Subject, each connection needs its own federated credential. If you expect more than 20 connections, register more than one app and spread the connections across them.
+
+ 
+#### Verify the connection (Federated connection)
+
+1. Return to the Workfront Fusion browser tab, where the connection panel is still open.
+1. Click **Save**.
+
+   * If everything is set up correctly, the connection validates successfully, and you can proceed with configuring the module.
+   * If verification fails, the panel stays open and displays the error. Correct the problem in Microsoft Entra ID or Azure DevOps and select Save again. You do not need to recreate the connection, and the Subject does not change.
+
+>[!NOTE]
+>
+>A federated credential that you add in Microsoft Entra ID can take a short time to become active. If verification fails immediately after you add the credential, wait a minute and select Save again before investigating further.
+
+
+Troubleshooting
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">The connection fails verification with an invalid client or invalid request error</td>
+   <td>Microsoft Entra ID could not match the token to a federated credential. Check that the Issuer is exactly <code>https://oidc.automations.adobe.com</code> with no trailing slash, and that the Subject identifier is character-for-character identical to the Subject shown in Workfront Fusion. A Subject copied from a different connection is the most common cause.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">The connection verifies, but modules return 401 or 403 from Azure DevOps</td>
+   <td>The identity is trusted, but it has no access to your Azure DevOps data. Confirm you completed <a href="#add-the-service-principal-to-your-azure-devops-organization">Add the service principal to your Azure DevOps organization</a>, and that the service principal is assigned to the specific project the module uses.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">You cannot add another federated credential</td>
+   <td>You have reached the limit of 20 federated credentials for that app registration. Register an additional app and create further connections against it.</td>
+  </tr>
+ </tbody>
+</table>
+
++++
+
 ### Connect Azure DevOps to Workfront Fusion using EntraApp
+
+You can connect Azure DevOps to Workfront Fusion using EntraApp.
+
++++ Expand to view instructions for connecting Azure DevOps to Workfront Fusion using EntraApp
 
 1. Add an [!DNL Azure DevOps] module to your scenario.
 1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] field.
@@ -127,20 +319,25 @@ The Azure DevOps connector uses the following:
 1. To enter an Azure DevOps App ID or Client Secret, click <b>Show advanced settings</b> and enter them in the fields that open.
 1. Click **[!UICONTROL Continue]** to finish setting up the connection and continue creating your scenario.
 
++++
+
 ### Connect Azure DevOps to Workfront Fusion using a service principal
 
 You can create a connection that uses a service principal (an Application API connection) instead of a personal account. This is useful when you want the connection to run as an application or service identity rather than a specific person. This may be useful so the integration doesn't break if, for example, that person leaves the company or changes their password.
 
 This connection type is available for all Azure DevOps modules.
 
++++ Expand to view instructions for connecting  Azure DevOps to Adobe Workfront Fusion using a service principal.
+
+
 >[!NOTE]
 >
 >Service principal authentication does not support every Azure DevOps feature. A small number of admin-level actions, such as managing user licenses, still require a personal account connection. Use service principal authentication if you only need this for work items, boards, repos, or pipelines.
 
 * [Prerequisites to connecting Azure DevOps to Workfront Fusion using a service principal](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
-* [Create the app registration in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)
+* [Create the app registration in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id-service-principal)
 * [Create a client secret](#create-a-client-secret)
-* [Collect your connection details](#collect-your-connection-details)
+* [Collect your connection details](#collect-your-connection-details-service-principal)
 * [Add the service principal to your Azure DevOps organization](#add-the-service-principal-to-your-azure-devops-organization)
 * [Create the connection](#create-the-connection)
 
@@ -152,7 +349,7 @@ To create this connection, you need the following:
 * **Project Collection Administrator** access in your Azure DevOps organization, to add the service principal as a member. This is often a different person than the person that manages Microsoft Entra ID.
 * The name of your Azure DevOps organization. You can find this in your Azure DevOps URL: `dev.azure.com/<your organization name>`.
 
-#### Create the app registration in Microsoft Entra ID
+#### Create the app registration in Microsoft Entra ID (Service principal)
 
 1. Sign in to the [!DNL Microsoft Entra] admin center.
 1. Go to **[!UICONTROL App registrations]** > **[!UICONTROL New registration]**.
@@ -169,7 +366,7 @@ To create this connection, you need the following:
 1. Copy the secret's **[!UICONTROL Value]** immediately. It is displayed only once. If you navigate away before copying it, you must create a new one.
 1. Continue to [Collect your connection details](#collect-your-connection-details).
 
-#### Collect your connection details
+#### Collect your connection details (Service principal)
 
 1. From the app registration's **[!UICONTROL Overview]** page, note the following values. You enter these when creating the connection in the module.
 
@@ -217,9 +414,9 @@ Registering the app in Microsoft Entra ID only creates its identity. It does not
 
 1. Assign the service principal to the specific project or projects it needs, following your organization's usual access practices.
 1. Select **[!UICONTROL Add]**.
-1. Continue to [Create the connection](#create-the-connection).
+1. Continue to [Create the connection in Workfront Fusion ](#create-the-connection-in-workfront-fusion-service-principal).
 
-#### Create the connection
+#### Create the connection in Workfront Fusion (Service principal)
 
 1. In the module's connection setup screen, select the **[!UICONTROL Service Principal]** connection type.
 1. Enter the following:
@@ -232,6 +429,8 @@ Registering the app in Microsoft Entra ID only creates its identity. It does not
 1. Save the connection.
 
    If everything is set up correctly, the connection validates successfully.
+
++++
 
 ## [!UICONTROL Azure DevOps] modules and their fields
 

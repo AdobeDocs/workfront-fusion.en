@@ -4,10 +4,13 @@ description: An Iterator module is a special type of module that converts an arr
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-TQID: https://experienceleague.adobe.com/FYIH3-R283fCXOmTCvpoGaQb5V05dWU-EHIjYf3IhyM
+TQID: 'https://experienceleague.adobe.com/FYIH3-R283fCXOmTCvpoGaQb5V05dWU-EHIjYf3IhyM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting

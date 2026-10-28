@@ -4,10 +4,13 @@ description: In an Adobe Workfront Fusion scenario, you can automate workflows t
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-TQID: https://experienceleague.adobe.com/7slKvK8YZmGtubvR-n5D2jx7EDqh07td3Ow9n01PXo8
+TQID: 'https://experienceleague.adobe.com/7slKvK8YZmGtubvR-n5D2jx7EDqh07td3Ow9n01PXo8'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -207,9 +210,12 @@ This trigger module starts a scenario when a record is created or updated.
 
 * [[!UICONTROL Add Leads to a List]](#add-leads-to-a-list)
 * [[!UICONTROL Clone a Program]](#clone-a-program)
+* [[!UICONTROL Create a Bulk Extract Job]](#create-a-bulk-extract-job)
 * [[!UICONTROL Create a record]](#create-a-record)
 * [[!UICONTROL Custom API call]](#custom-api-call)
+* [[!UICONTROL Download a Bulk Extract File]](#download-a-bulk-extract-file)
 * [[!UICONTROL Download a File]](#download-a-file)
+* [[!UICONTROL Get Bulk Extract Job Status]](#get-bulk-extract-job-status)
 * [[!UICONTROL Read a record]](#read-a-record)
 * [[!UICONTROL Remove Leads from a List]](#remove-leads-from-a-list)
 * [[!UICONTROL Schedule a Campaign]](#schedule-a-campaign)
@@ -262,6 +268,45 @@ This action module makes a copy of a program using the existing program's ID.
   <tr> 
    <td role="rowheader">[!UICONTROL Folder ID]</td> 
    <td>Enter or map the ID of the folder where you want the new program to be located.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Create a Bulk Extract Job]
+
+This action module creates a bulk extract job for Lead and Person records. Use [!UICONTROL Get Bulk Extract Job Status] to check on the job, then [!UICONTROL Download a Bulk Extract File] to retrieve the completed export. This module returns the Export ID used by the status and download modules.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Marketo] account to Workfront Fusion, see <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connect [!DNL Marketo] to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Fields]</td> 
+   <td> <p>For each field that you want to add to the bulk extract job, click <b>Add item</b> and enter the field API name.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output format]</td> 
+   <td> <p>Select the file format for the extract: CSV, TSV, or SSV.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Filter by]</td> 
+   <td> <p>Select the filter for this module, then enter the requested information into the fields that appear:</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL Smart List]</strong> </p> <p>Enter or map the Smart List ID.</p> </li> 
+    <li> <p><strong>[!UICONTROL Created date range]</strong> </p> <p>Select the start and end dates that you want to search between.</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Custom column headers]</td> 
+   <td> <p>For each custom column header that you want to include in the extract job, click <b>Add item</b> and enter the field's API name and the column header text.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enqueue job immediately]</td> 
+   <td> <p>Select Yes to enqueue the job to run immediately after creation. Select No to enqueue the job later with a separate step.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -355,6 +400,33 @@ This action module lets you make a custom authenticated call to the [!DNL Market
    <td role="rowheader">[!UICONTROL Fields]</td> 
    <td> <p>For each field that you want to add to your API call, click <b>Add item</b> and enter the field's key and value.</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body Type]</td> 
+   <td> <p>Select the format of the request body: <b>[!UICONTROL URL-encoded (Fields)]</b> or <b>[!UICONTROL JSON]</b>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Request Body (JSON)]</td> 
+   <td> <p>Used only when [!UICONTROL Body Type] is set to [!UICONTROL JSON]. Enter a raw JSON body.</p> <p>Important: When using JSON, change the [!UICONTROL Content-Type] header above from <code>application/x-www-form-urlencoded</code> to <code>application/json</code>, otherwise Marketo may reject the request.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download a Bulk Extract File]
+
+This action module retrieves the file for a completed bulk extract job.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Marketo] account to Workfront Fusion, see <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connect [!DNL Marketo] to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export ID]</td> 
+   <td>Enter or map the ID of the bulk extract job you want to download the file for.</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -373,6 +445,25 @@ This action module downloads a file by using the file ID.
   <tr> 
    <td role="rowheader">[!UICONTROL File ID]</td> 
    <td>Enter or map the ID of the file you want to download.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get Bulk Extract Job Status]
+
+This action module retrieves the status of a bulk extract job, by using its job ID.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>For instructions about connecting your [!DNL Marketo] account to Workfront Fusion, see <a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">Connect [!DNL Marketo] to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Export ID]</td> 
+   <td>Enter or map the ID of the bulk extract job you want to check the status of.</td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,10 +4,13 @@ description: These videos may be helpful as you plan a scenario
 author: Becky
 feature: Workfront Fusion
 exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
-TQID: https://experienceleague.adobe.com/aWLSSTNkbmQAePryPq8-WPMR6dEhVG1XYiVcKNahRfs
+TQID: 'https://experienceleague.adobe.com/aWLSSTNkbmQAePryPq8-WPMR6dEhVG1XYiVcKNahRfs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Video overviews
 

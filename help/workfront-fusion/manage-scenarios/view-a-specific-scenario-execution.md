@@ -4,10 +4,13 @@ description: You can view details of a specific scenario execution, including fi
 author: Becky
 feature: Workfront Fusion
 exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
-TQID: https://experienceleague.adobe.com/Msh3ArxBUIu6YDZjL7eXpxlEBiYABHN-Q7xUlJ-qU0g
+TQID: 'https://experienceleague.adobe.com/Msh3ArxBUIu6YDZjL7eXpxlEBiYABHN-Q7xUlJ-qU0g'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # View a specific scenario execution
 
@@ -81,7 +84,7 @@ You can view an execution from the scenario's scenario history.
 >To create a link to a specific module, add `?moduleId=<module-id>` to the URL when viewing the following pages:
 >
 >* Scenario edit page (URL ends in `/edit`)
->* A specific scenarion execution (URL ends in `/logs/<log-id>`)
+>* A specific scenario execution (URL ends in `/logs/<log-id>`)
 >
 >`<module-id>` refers to the number next to the module label when viewing the scenario.
 >

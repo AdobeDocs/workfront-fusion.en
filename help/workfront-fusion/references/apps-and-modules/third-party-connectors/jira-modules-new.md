@@ -4,10 +4,13 @@ description: In an  Adobe Workfront Fusion scenario, you can automate workflows 
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
+TQID: 'https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -71,10 +74,14 @@ For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion 
 
 ## Connect Jira to Workfront Fusion 
 
-The procedure for creating a connection to Jira differs based on whether you are creating a basic connection or an OAuth2 connection.
+The procedure for creating a connection to Jira depends on the account type and authentication method you are using. Use a personal account connection when a connection is associated with an individual Jira user. Use a service account connection when the connection is intended to run using a dedicated automation or non-user identity.
+
+In the **Connection type** field, select the appropriate authentication method for your Jira account:
 
 * [Create an OAuth2 connection to Jira](#create-an-oauth2-connection-to-jira)
 * [Create a basic connection to Jira](#create-a-basic-connection-to-jira)
+* [Create a service account API token connection to Jira](#create-a-service-account-api-token-connection-to-jira)
+* [Create a service account OAuth2 connection to Jira](#create-a-service-account-oauth2-connection-to-jira)
 
 ### Create an OAuth2 connection to Jira
 
@@ -188,7 +195,7 @@ Creating a basic connection to Jira differs depending on whether you are creatin
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Connection type</p> </td> 
-      <td> <p>Select whether you are creating a basic connection or an OAuth 2 connection.</p> </td> 
+      <td> <p>Select <b>Basic</b> for this connection.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Connection name</p> </td> 
@@ -236,7 +243,7 @@ Creating a basic connection to Jira differs depending on whether you are creatin
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>Connection type</p> </td> 
-      <td> <p>Select whether you are creating a basic connection or an OAuth 2 connection.</p> </td> 
+      <td> <p>Select <b>Basic</b> for this connection.</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>Connection name</p> </td> 
@@ -287,6 +294,33 @@ To use a PAT, you must enable the following in the files `jira/bin/WEB-INF/class
 * `jira.rest.csrf.disabled = true`
 
 If this file does not exist, you must create it.
+
+### Create a service account API token connection to Jira
+
+Use this option for a Jira service account that authenticates with an API token. In the **Connection type** field, select **Service account API token**.
+
+1. In any Jira module, click **Add** next to the **Connection** field.
+1. In the **Connection type** field, select **Service account API token**.
+1. Enter a **Connection name**.
+1. Enter the **Service URL** for your Jira instance.
+1. Select the appropriate **Jira account type**.
+1. Enter the API token for the Jira service account.
+1. Select the **API version** that you want this connection to use.
+1. Click **Continue** to create the connection and return to the module.
+
+### Create a service account OAuth2 connection to Jira
+
+Use this option for a Jira service account that authenticates with OAuth 2. In the **Connection type** field, select **Service account OAuth 2**.
+
+1. In any Jira module, click **Add** next to the **Connection** field.
+1. In the **Connection type** field, select **Service account OAuth 2**.
+1. Enter a **Connection name**.
+1. Enter the **Service URL** for your Jira instance.
+1. Select the appropriate **Jira account type**.
+1. Enter the **Client ID** and **Client secret** for the Jira OAuth 2 application associated with the service account.
+1. Optionally, enter any **Additional scopes** required for the connection.
+1. Select the **API version** that you want this connection to use.
+1. Click **Continue** to create the connection and return to the module.
 
 ## Jira modules and their fields
 

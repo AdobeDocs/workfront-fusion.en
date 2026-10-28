@@ -4,10 +4,13 @@ description: A webhook is an HTTP call that is triggered by an event. You can us
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-TQID: https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y
+TQID: 'https://experienceleague.adobe.com/VuJQ4w3kfMUJ4H-m1PdN-F8242KOJRPz1holJRxSE0Y'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -119,10 +122,6 @@ For more information on mTLS, see [Mutual TLS overview](/help/workfront-fusion/r
 1. Click **[!UICONTROL Save]**
 
 After you create a webhook, a unique URL displays. This is the address where the webhook sends data. Workfront Fusion validates the data sent to this address, then passes it on for processing in the scenario.
-
->[!NOTE]
->
->After you create a webhook, you can use it in more than one scenario at a time.
 
 #### Use a webhook with basic authentication
 
@@ -322,10 +321,6 @@ When creating or editing a custom webhook in Fusion, the Allowed Origins field  
 ## The webhook queue
 
 If a webhook receives data and there is not an active scenario that is expecting that data, the data is stored in the queue. Once you activate the scenario, it processes all bundles waiting in the queue sequentially.
-
->[!IMPORTANT]
->
->Webhook queues are shared among scenarios that employ the same webhook. If one of the scenarios is disabled, all incoming data is held in the queue.
 
 ## Supported incoming data formats
 
@@ -544,3 +539,4 @@ If some items are missing in the mapping panel in the setup of the modules follo
 ![Redetermine data structure](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 Then follow the steps described in the section [Configure the webhook's data structure](#configure-the-webhook-s-data-structure) in this article.
+
