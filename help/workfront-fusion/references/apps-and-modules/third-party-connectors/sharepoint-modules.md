@@ -243,10 +243,6 @@ Continue to [Create the app registration in Microsoft Entra ID](#create-the-app-
 
 #### Grant API permissions
 
->[!IMPORTANT]
->
->BECKY CHECK ME: unlike Azure DevOps, Microsoft Graph supports Application permissions directly in this step. Confirm the exact permission(s) the Make an API Call module needs (for example, a Sites permission scope) before publishing this section, and update the steps below accordingly.
-
 1. In your app registration, go to **[!UICONTROL API permissions]**.
 1. Select **[!UICONTROL Add a permission]**, then select **[!UICONTROL Microsoft Graph]**.
 1. Select **[!UICONTROL Application permissions]**.
