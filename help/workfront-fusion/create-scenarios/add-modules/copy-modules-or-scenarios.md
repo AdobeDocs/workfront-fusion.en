@@ -65,9 +65,9 @@ Consider the following when pasting modules into a different scenario:
 You can copy a single module or a group of modules. 
 
 
-   >[!NOTE]
-   >
-   >You can select more than one module by holding [!UICONTROL shift] and clicking on the modules that you want to copy. Copying a group of modules also copies any connecting lines, filters, or routing logic between them.
+>[!NOTE]
+>
+>You can select more than one module by holding [!UICONTROL shift] and clicking on the modules that you want to copy. Copying a group of modules also copies any connecting lines, filters, or routing logic between them.
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to copy a module.
