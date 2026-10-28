@@ -23,6 +23,10 @@ You can add a filter between two modules and check whether bundles received from
 * If they do, the bundles pass on to the next module in the scenario.
 * If they don't, processing for the bundles terminates.
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -56,7 +60,37 @@ For more detail about the information in this table, see [Access requirements in
 
 You must add both modules to a scenario before you can add a filter between them.
 
-## Add a filter between two modules:
+## Add a filter between two modules
+
+* [Add a filter between two modules in the new experience (Recommended)](#add-a-filter-between-two-modules-in-the-new-experience-recommended)
+* [Add a filter between two modules in the classic experience](#add-a-filter-between-two-modules-in-the-classic-experience)
+
+### Add a filter between two modules in the new experience (Recommended)
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Left-click the path between the modules where you want to add a filter.
+
+   The **[!UICONTROL Set up a filter]** window opens directly. (Right-clicking the path opens a different menu instead.)
+
+1. In the box that displays, enter a **[!UICONTROL Label]** for the filter.
+1. Define the filter **[!UICONTROL Condition]**.
+
+   Enter the field that you want to filter by in the first field, the operator, and (if necessary) the value that you want to compare the field to.
+
+   >[!TIP]
+   >
+   >You can enter values into filter fields from the mapping panel
+   >For more information on mapping, see [Map information from one module to another](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md).
+
+   For example, if you wanted the filter to pass files in Adobe Workfront ending with XML, you would enter **[!UICONTROL File name]** in the first box and .**[!UICONTROL xml]** in the second box. In the drop-down menu between them, you would select **[!UICONTROL Ends with (case insensitive)]**. This filter would apply to incoming bundles from the first module (Workfront). Only bundles containing XML files would pass on to the next module.
+
+   ![Set up a filter](assets/new-filter-setup-xml-example.png)
+
+1. Click **[!DNL OK]**.
+
+### Add a filter between two modules in the classic experience
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.
@@ -82,6 +116,22 @@ You must add both modules to a scenario before you can add a filter between them
 
 You can copy an existing filter and paste it elsewhere in the scenario.
 
+* [Copy a filter in the new experience (Recommended)](#copy-a-filter-in-the-new-experience-recommended)
+* [Copy a filter in the classic experience](#copy-a-filter-in-the-classic-experience)
+
+### Copy a filter in the new experience (Recommended)
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Right-click the path between modules where the filter is located.
+1. Select **Copy filter**.
+1. Right-click the path between modules where you want to paste the filter.
+1. Select **Paste filter**.
+1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules in the new experience](#add-a-filter-between-two-modules-in-the-new-experience-recommended) in this article.
+
+### Copy a filter in the classic experience
+
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add a filter.
 1. Click anywhere on the scenario to enter the Scenario editor.
@@ -89,7 +139,7 @@ You can copy an existing filter and paste it elsewhere in the scenario.
 1. Select **Copy filter**.
 1. Right-click on the connecting dots between modules where you want to paste the filter.
 1. Select **Paste** filter
-1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules](#add-a-filter-between-two-modules) in this article.
+1. (Optional) To adjust the filter, click the filter icon or label, and enter values as described in [Add a filter between two modules in the classic experience](#add-a-filter-between-two-modules-in-the-classic-experience) in this article.
 
 
 

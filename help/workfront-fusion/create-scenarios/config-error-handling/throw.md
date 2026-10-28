@@ -63,7 +63,7 @@ For more detail about the information in this table, see [Access requirements in
 
 To conditionally throw an error, you can configure a module to make it purposely fail during its operation. One possibility is to employ the [!UICONTROL JSON] > [!UICONTROL Parse JSON] module, configured to optionally throw an error (`BundleValidationError` in this case):
 
-![JSON error](assets/json-parse-json.png)
+![JSON error](assets/new-json-parse-json.png)
 
 You can then attach one of the error handling directives to the error handling route:
 
@@ -74,4 +74,4 @@ You can then attach one of the error handling directives to the error handling r
 
 The following example shows the use of the [!DNL Rollback] directive:
 
-![Rollback directive](assets/rollback-directive.png)
+![Rollback directive](assets/new-rollback-directive.png)

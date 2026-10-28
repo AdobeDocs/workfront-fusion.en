@@ -22,9 +22,11 @@ The [!UICONTROL Incomplete executions] folder stores scenario executions that we
 >
 >For more information about scenario settings, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-## Highlighted Preview for full article {#highlighted-preview-article-level}
+Highlighted Preview for full article {#highlighted-preview-article-level}
 
-<span class="preview">The information on this page refers to functionality not yet generally available. It is available only in the Preview Sandbox environment.</span>## View incomplete executions
+<span class="preview">The information on this page refers to functionality not yet generally available. It is available only in the Preview Sandbox environment.</span>
+
+## View incomplete executions
 
 If a module encounters an error during its operation, a new incomplete execution is added to the Incomplete executions folder. Each incomplete execution contains the scenario's blueprint and all the bundles that can be mapped into the failed module. The list of incomplete executions can be opened by clicking on the [!UICONTROL Incomplete Executions] tab on the scenario detail page.
 
@@ -57,7 +59,7 @@ When a new incomplete execution is stored, you can resolve it as follows:
 1. Open the module's log where all the module's operations are shown.
 1. Locate the failed operation and click **[!UICONTROL Resolve]**:
 
-   ![Resolve button](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -71,7 +73,7 @@ If you want to see the log of all module's operations before you attempt to reso
 1. Open the module's log where all the module's operations are shown.
 1. Locate the failed operation and click **[!UICONTROL Resolve]**:
 
-   ![Resolve button](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## Options related to incomplete executions
 

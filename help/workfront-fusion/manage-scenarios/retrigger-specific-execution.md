@@ -78,7 +78,7 @@ You can retrigger a scenario execution from the scenario's Diagram, the scenario
 1. Locate the execution that you want to retrigger in the Executions list on the right side of the page. 
 1. Click **Retrigger** for that scenario. 
   
-![Retrigger from diagram](assets/retrigger-from-diagram.png)
+![Retrigger from diagram](assets/new-retrigger-from-diagram.png)
 
 ### Retrigger an execution from the Scenario History 
 
@@ -91,7 +91,7 @@ You can retrigger a scenario execution from the scenario's Diagram, the scenario
 1. Locate the execution that you want to retrigger. You can use Fulltext search to locate it if necessary.
 1. Click **Retrigger** for that scenario. 
   
-![Retrigger from history](assets/retrigger-from-history.png)
+![Retrigger from history](assets/new-retrigger-from-history.png)
 
 ### Retrigger a scenario from the scenario execution page
 
@@ -104,7 +104,7 @@ You can retrigger a scenario execution from the scenario's Diagram, the scenario
 1. On the execution page, click **Retrigger**.
   
  
-![Retrigger from execution](assets/retrigger-from-execution.png)
+![Retrigger from execution](assets/new-retrigger-from-execution.png)
 
 
 

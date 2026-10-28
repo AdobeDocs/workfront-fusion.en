@@ -11,6 +11,7 @@ nudge: true
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2026 {#fusion-releases-2026}
+        * [Workfront Fusion release activity: Week of October 26, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
         * [Workfront Fusion release activity: Week of October 19, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
         * [Workfront Fusion release activity: Week of October 12, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
         * [Workfront Fusion release activity: Week of October 5, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)
@@ -261,6 +262,7 @@ nudge: true
         * [Add an AI prompt to your scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
         * {hide-from-toc} [Generate a scenario segment using AI](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
         * [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+        * [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
         * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
         * [Use cURL to add an HTTP module](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
         * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -302,6 +304,8 @@ nudge: true
     * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
     * [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
     * [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+    * [Use Live Trail to review a scenario run](/help/workfront-fusion/manage-scenarios/live-trail.md)
+    * [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
     * [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
     * [Update a module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
     * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)

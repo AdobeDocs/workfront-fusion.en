@@ -65,18 +65,19 @@ Consider the following when pasting modules into a different scenario:
 
 ### Copy modules
 
-Copying a group of modules is similar to copying a single module.
+You can copy a single module or a group of modules. 
+
+
+>[!NOTE]
+>
+>You can select more than one module by holding [!UICONTROL shift] and clicking on the modules that you want to copy. Copying a group of modules also copies any connecting lines, filters, or routing logic between them.
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to copy a module.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Right-click on the module that you want to copy.
-
-   >[!NOTE]
-   >
-   >You can select more than one module by holding [!UICONTROL shift] and clicking on the modules that you want to copy. Copying a group of modules also copies any connecting lines, filters, or routing logic between them.
-
-1. Select **[!UICONTROL Copy module]**.
+1. If you are copying multiple modules, hold Shift and click on the modules that you want to copy.
+1. Right-click on the module, or one of the modules,  that you want to copy.
+1. Select **[!UICONTROL Copy module]** or **[!UICONTROL Copy modules]**.
 1. Move the cursor to the area of the scenario where you want the copy of the scenario.
 1. Right click, and select **[!UICONTROL Paste]**.
 1. Connect the pasted modules to the scenario by dragging them to the appropriate location in the scenario.
@@ -97,7 +98,7 @@ Cloning a scenario creates a copy of the scenario, which you can then edit.
 
       Or
 
-      If you are working on the scenario in the the scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+      If you are working on the scenario in the the scenario editor, click the left arrow ![Exit editing arrow](assets/new-exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. Right click **[!UICONTROL Options]** at the upper-right of the page.
 1. Select **[!UICONTROL Clone]**.

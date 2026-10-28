@@ -23,6 +23,10 @@ In this example, you will add a webhook to start a scenario as soon as any reque
 
 This example modifies the scenario created in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -56,10 +60,67 @@ For more detail about the information in this table, see [Access requirements in
 
 You must create the scenario described in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) before following this procedure.
 
-## Add and configure the webhook
+## Add and configure the webhook in the new experience (Recommended)
 
+* [Add the webhook module](#add-the-webhook-module)
+* [Update the second module](#update-the-second-module)
+* [Test and activate](#test-and-activate)
 
 ### Add the webhook module
+
+1. Open the scenario in the scenario editor.
+1. Right-click the first module and select **[!UICONTROL Delete module]**.
+
+   The module is deleted, leaving a blank placeholder.
+
+1. Click the blank module to open the list of apps and services.
+
+   ![App and service picker](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+
+1. Select **Adobe Workfront**.
+1. Select **Watch Events**.
+1. Click **Add** next to the Webhook field.
+1. in the Record Type field, select **Issue**, so the module will trigger for changes in issues.
+1. In the State field, select **New state**. This is a required field that is used for the filter, which this example does not cover.
+1. In the Record Origin field, select **New Record Only**. This allows the scenario to trigger when an issue is added, not when one is updated or deleted.
+1. Click **Save** to save the module configuration.
+
+### Update the second module
+
+1. Open the scenario.
+1. Click the **Convert object** module to open it.
+1. In the Issue ID field, delete the black ID block. The block is black because the module it was mapped from is no longer available.
+1. Select the ID block under the first module (Watch Events) to map it to the second module.
+1. Click **OK**.
+
+### Test and activate
+
+1. Click the **[!UICONTROL Run once]** icon.
+
+   Run once is icon-only in the new experience. Hover over the icon to see the **[!UICONTROL Run once]** tooltip.
+
+   ![run scenario button](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+   The scenario must be running to watch for the new request.
+1. Go to the Workfront environment that Fusion is connecting to and add an issue. 
+
+   The scenario should run.
+1. Examine the output to ensure that the scenario ran as expected.
+1. When you are satisfied that the scenario is working as expected, click the **Scheduling** toggle to **On**.
+
+   This activates the scenario. 
+
+   ![Scheduling toggle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
+
+## Add and configure the webhook in the classic experience
+
+* [Add the webhook module (Classic)](#add-the-webhook-module-classic)
+* [Update the second module (Classic)](#update-the-second-module-classic)
+* [Test and activate (Classic)](#test-and-activate-classic)
+
+### Add the webhook module (Classic)
 
 1. Open the scenario in the scenario editor.
 1. Right click on the first module and select **Delete module**.
@@ -74,7 +135,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 1. In the Record Origin field, select **New Record Only**. This allows the scenario to trigger when an issue is added, not when one is updated or deleted.
 1. Click **Save** to save the module configuration.
 
-## Update the second module
+### Update the second module (Classic)
 
 1. Open the scenario.
 1. Click the **Convert object** module to open it.
@@ -82,9 +143,7 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 1. Select the ID block under the first module (Watch Events) to map it to the second module.
 1. Click **OK**.
 
-
-
-### Test and activate
+### Test and activate (Classic)
 
 1. Click **[!UICONTROL Run once]** in the lower-left corner of the scenario editor.
 

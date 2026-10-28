@@ -20,6 +20,7 @@ feature_v2:
 * [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 * [Add an AI prompt to your scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+* [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
 * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
 * [Use cURL to add an HTTP module](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
 * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)

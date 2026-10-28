@@ -20,6 +20,10 @@ The operation of a module produces zero, one, or more bundles as its output. A b
 
 You can map these items to fields in later modules.
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 When you click a field where you can insert a value outputted from a preceding module in a scenario, the mapping panel displays. Here, you can select the item that you want to map. A mapping can include one or more of the following:
 
 * A single item
@@ -33,15 +37,15 @@ When you click a field where you can insert a value outputted from a preceding m
 
 Single item
 
-![Map single item](assets/map-single.png)
+![Map single item](assets/new-map-single.png)
 
 Multiple items with text
 
-![Map multiple items](assets/map-multiple-with-text.png)
+![Map multiple items](assets/new-map-multiple-with-text.png)
 
 Function with multiple items and text
 
-![Map formula with text](assets/map-formula-with-text.png)
+![Map formula with text](assets/new-map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -57,11 +61,11 @@ For instructions on mapping, see the articles under [Map data: article index](/h
 
 When you click into a field where you can map data, the mapping panel opens.
 
-The first tab ![Map from other modules](assets/toolbar-icon-functions-you-map-from-other-modules.png) displays the items that you can map from other modules.
+The first tab displays the items that you can map from other modules.
 
 The other tabs include functions, operators, and keywords that you can use to create formulas. These are sorted into different tabs based on the type of data they handle.
 
-![Mapping panel](assets/mapping-panel-blank.png)
+![Mapping panel](assets/new-mapping-panel-blank.png)
 
 
 For more information on function tabs, see [Function overview](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md).
@@ -74,13 +78,13 @@ Items can contain multiple values of various types. These are collection-type it
 
 Collection-type bundles display `(Collection)` next to the bundle label in the module output. 
 
-![Collection](assets/collection.png)
+![Collection](assets/new-collection.png)
 
 In most cases, you map the collection's elements instead of mapping the item that represents the whole collection.
 
 To locate a collection's element in the mapping panel, click the arrow next to the collection.
 
-![Collection dropdown](assets/collection-dropdown.png)
+![Collection dropdown](assets/new-collection-dropdown.png)
 
 For more information about collections, see [Item data types](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md).
 
@@ -92,8 +96,8 @@ Items can contain multiple values of the same type. These are array-type items.
 
 Array-type bundles display `(Array)` next to the bundle label in the module output.
 
-In the mapping panel, arrays display with square bracksts. You can identify an array type item by the square brackets at the end of the item's label. To locate specific array element in the mapping panel, click the arrow next to the array.
+In the mapping panel, arrays display with square brackets. You can identify an array-type item by the square brackets at the end of the item's label. To locate a specific array element in the mapping panel, click the arrow next to the array.
 
-![Array](assets/array.png)
+![Array](assets/new-array.png)
 
 For information and instructions about mapping arrays and array elements, see [Map arrays and array elements](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md).

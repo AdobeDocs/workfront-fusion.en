@@ -19,6 +19,8 @@ feature_v2:
 * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [Use Live Trail to review a scenario run](/help/workfront-fusion/manage-scenarios/live-trail.md)
+* [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
 * [Update a module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
 * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)

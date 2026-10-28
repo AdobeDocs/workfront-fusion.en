@@ -25,6 +25,10 @@ In this example, you will add a trigger module that runs every 15 minutes and st
 
 This example modifies the scenario created in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md).
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -58,9 +62,87 @@ For more detail about the information in this table, see [Access requirements in
 
 You must create the scenario described in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) before following this procedure.
 
-## Add and configure the trigger module
+## Add and configure the trigger module in the new experience (Recommended)
+
+* [Add the trigger module](#add-the-trigger-module)
+* [Schedule the trigger module](#schedule-the-trigger-module)
+* [Update the second module](#update-the-second-module)
+* [Test and activate](#test-and-activate)
 
 ### Add the trigger module
+
+1. Open the scenario in the scenario editor.
+1. Right-click the first (Search) module and select **[!UICONTROL Delete module]**.
+
+   The module is deleted, leaving a blank placeholder.
+
+1. Click the blank module to open the list of apps and services.
+
+   ![App and service picker](/help/workfront-fusion/build-practice-scenarios/assets/new-connector-picker.png)
+
+1. Select **Adobe Workfront**.
+1. Select **Watch Record**.
+1. Make sure that the module uses the same connection as the rest of the modules in the scenario.
+1. In the Record Type field, select **Issue**.
+1. In the Filter field, select **New Records Only**.
+1. In the Outputs box, select `ID`, `Name`, and `Project ID`.
+1. Click **OK** to save the module settings.
+   
+   A Choose where to start window appears.
+
+1. Select **From now on**.
+
+### Schedule the trigger module
+
+1. Click the clock icon on the Watch Record module.
+
+   ![Clock icon on the Watch Record module](assets/clock-icon-on-watch-record.png)
+
+   The Schedule setting window opens.
+
+1. In the Run scenario field, select **At regular intervals**.  
+
+1. Click **OK**.
+
+### Update the second module
+
+Because the first module has been replaced, the second module must be mapped to the new first module.
+
+1. Open the Convert object module.
+1. In the Issue ID field, delete the black ID block. The block is black because the module it was mapped from is no longer available.
+1. Select the ID block under the first module (Watch Record) to map it to the second module.
+1. Click **OK**.
+
+### Test and activate
+
+1. Go to the Workfront environment that Fusion is connecting to and add an issue. 
+1. Click the **[!UICONTROL Run once]** icon.
+
+   Run once is icon-only in the new experience. Hover over the icon to see the **[!UICONTROL Run once]** tooltip.
+
+   ![run scenario button](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Examine the output to ensure that the scenario ran as expected.
+1. When you are satisfied that the scenario is working as expected, click the **Scheduling** toggle to **On**.
+
+   This activates the scenario. 
+
+   ![Scheduling toggle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
+
+   >[!IMPORTANT]
+   >
+   >Save often as you hone and test a scenario.
+
+## Add and configure the trigger module in the classic experience
+
+* [Add the trigger module (Classic)](#add-the-trigger-module-classic)
+* [Schedule the trigger module (Classic)](#schedule-the-trigger-module-classic)
+* [Update the second module (Classic)](#update-the-second-module-classic)
+* [Test and activate (Classic)](#test-and-activate-classic)
+
+### Add the trigger module (Classic)
 
 1. Open the scenario in the scenario editor.
 1. Right click on the first (Search) module and select **Delete module**.
@@ -79,9 +161,9 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
 1. Select **From now on**.
 
-### Schedule the trigger module
+### Schedule the trigger module (Classic)
 
-1. Click the clock on the Watch Records module.
+1. Click the clock on the Watch Record module.
 
    The Schedule setting window opens.
 
@@ -89,16 +171,16 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 
 1. Click **OK**.
 
-### Update the second module
+### Update the second module (Classic)
 
 Because the first module has been replaced, the second module must be mapped to the new first module.
 
 1. Open the Convert object module.
 1. In the Issue ID field, delete the black ID block. The block is black because the module it was mapped from is no longer available.
-1. Select the ID block under the first module (Watch Records) to map it to the second module.
+1. Select the ID block under the first module (Watch Record) to map it to the second module.
 1. Click **OK**.
 
-### Test and activate
+### Test and activate (Classic)
 
 1. Go to the Workfront environment that Fusion is connecting to and add an issue. 
 1. Click **[!UICONTROL Run once]** in the lower-left corner of the scenario editor.

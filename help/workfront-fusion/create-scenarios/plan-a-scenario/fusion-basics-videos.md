@@ -16,6 +16,8 @@ feature_v2:
 
 These videos are available to help familiarize you with some of the functionality of Adobe Workfront Fusion.
 
+This videos show the classic scenario editor.
+
 ## Navigation
 
 * [Workfront Fusion on the Adobe Unified Shell](https://video.tv.adobe.com/v/3412392/){target=_blank}

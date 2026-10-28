@@ -68,6 +68,10 @@ You can manage all connections from the Connections area.
 1. (Optional) To verify that the connection to the service was is working, click **Verify** in the row for that connection.
 1. (Optional) To delete a connection, click **Delete** in the row for that connection, then click **Really?**.
 
+>[!NOTE]
+>
+>To use a different connection in the modules of a scenario, you can copy a connection to one or all compatible modules from the same app in the scenario editor. For more information, see [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).
+
 ## Renew a connection
 
 Workfront Fusion usually obtains access rights to a given service for an unlimited period of time. Some applications require the access permission to be renewed after a certain period of time. In these cases, Workfront Fusion notifies you via email shortly before its access rights expire.

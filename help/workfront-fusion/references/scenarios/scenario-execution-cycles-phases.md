@@ -64,6 +64,8 @@ If the operation phase is successful, the commit phase begins during which all o
 
 If an error occurs during the operation or commit phase on any module, the phase is aborted and the rollback phase is started, making all operations during the given cycle void. 
 
+<!-- BECKY CHECK ME: acid-modules.png shows the classic module list with ACID badges (Watch Events, Watch Field, Watch Record). Retake it from the new module browser, and confirm the ACID badge still displays there (the release notes mention badges for private, premium, and beta apps only). -->
+
 >[!IMPORTANT]
 >
 >All Workfront Fusion modules that support rollback (also known as transactionality) are marked with the ACID tag.

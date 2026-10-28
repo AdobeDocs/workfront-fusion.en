@@ -16,6 +16,12 @@ feature_v2:
 
 The scenario editor allows you to create and edit scenarios in a visual interface.
 
+The new scenario editor experience:
+
+![New scenario editor](assets/scenario-editor-new.png)
+
+The classic scenario editor experience
+
 ![Scenario editor](assets/scenario-editor.jpg)
 
 ## Access requirements
@@ -47,14 +53,178 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
-## Open the scenario editor and add a module:
+## New and classic experiences
+
+Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience.
+
+The new experience includes:
+
+* A redesigned canvas, with card-style modules, a minimap, and zoom controls.
+* New scenario editor controls, including Find and replace, Snippets, and Undo/Redo.
+* An Ask AI button.
+* An updated connector picker with category navigation and the ability to mark favorites inline.
+* A dark mode that follows your appearance setting.
+* The ability to fold a router to hide its routes.
+* [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), a panel that shows a scenario run as it happens.
+* Several Developer Tools that are now built into the scenario editor.
+* Temporary debug logs, which you can turn on in the scenario settings.
+
+To switch between the classic and new experiences:
+
+1. In the scenario editor, locate the **[!UICONTROL Try the new design]** toggle in the upper-right corner.
+1. Click the toggle to switch to the new experience. 
+1. To return to the classic experience, click the toggle again.
+
+The scenario reloads when you switch. Your choice is saved for your user, so it does not change the experience that your teammates see. Switching does not change the scenario itself.
+
+If you do not see the toggle, the new experience might not be available to your organization yet. Contact your Workfront Fusion administrator.
+
+## Use the scenario editor in the new experience (Recommended)
+
+* [Open the scenario editor and add a module:](#open-the-scenario-editor-and-add-a-module)
+* [Available scenario editor actions](#available-scenario-editor-actions)
+
+### Open the scenario editor and add a module:
+
+1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel.
+1. Click the placeholder module to open the list of apps and services.
+1. Select the app or service that you want to start with:
+
+   * Browse by category using the panel on the left ([!UICONTROL Favorites], [!UICONTROL All apps], [!UICONTROL Adobe Workfront], [!UICONTROL Adobe Firefly Services], [!UICONTROL Adobe Creative & Content], [!UICONTROL Adobe Cloud Services], [!UICONTROL Generative AI], or [!UICONTROL Built-in]).
+   * Enter a term in the search box to filter the list.
+   * To add a connector to your favorites, hover over the connecter, then click the star icon next the connector.
+
+   For detailed information about configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
+
+### Available scenario editor actions
+
+* [Editing actions](#editing-actions)
+* [Scheduling](#scheduling)
+* [Controls](#controls)
+* [Tools](#tools)
+* [Favorites](#favorites)
+* [Ask AI](#ask-ai)
+* [Canvas navigation](#canvas-navigation)
+* [Canvas display](#canvas-display)
+
+#### Editing actions
+
+These actions are available at the top of the screen, rather than in the bottom toolbar.
+
+![Top of the screen](assets/top-bar-new.png)
+
+| Action | Details |
+| ---------- | ---------- |
+| Scenario name | The scenario's name is shown at the top-left of the screen. To rename the scenario, click on the name and enter a new one. |
+| Compact view | Toggle a view where modules on the canvas shrink to small tiles, the grid tightens, and long module names wrap instead of being cut off. Switching views does not reload the scenario. |
+| Feedback | Send feedback about the new experience. This button is in the upper-right corner of the scenario editor, next to the Compact view toggle. |
+| Undo </br>![Undo icon](assets/undo-icon.png) | Undo the most recent actions, most recent first. You can undo actions from the current session only. |
+| Redo </br>![Redo icon](assets/redo-icon.png) | Redo recent actions. You can redo actions from the current session only. |
+| History  </br>![Edit history icon](assets/edit-history-icon.png) | View a history of changes made in this session. You can also undo all session changes. |
+
+#### Scheduling
+
+![scheduling panel](assets/new-scheduling-area.png)
+
+| Action | Details |
+| ---------- | ---------- |
+| Run once | Run once is icon-only in the new design. Hover over the icon to see the **[!UICONTROL Run once]** tooltip. Here, you can test run the scenario and verify that the it runs as you expect before you activate it |
+| Activation toggle | Activate or deactivate your scenario. After you activate it, the scenario will execute according to its schedule. |
+| Schedule the scenario | By default, a scenario with a polling trigger runs every 15 minutes. You can change this by defining when and how often an activated scenario runs. Polled fusion scenarios can be scheduled to run as often as every 5 minutes. For more information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
+
+#### Controls
+
+You may need to click on the three-dot icon in the Controls area to view some of these controls.
+
+![controls panel](assets/controls-new.png)
+
+| Action | Details |
+| ---------- | ---------- |
+| Save <p>![Save icon](assets/save-icon-new.png)</p> | <p>After saving your scenario, a new version will be available under the three-dot menu in case you need to access it in the future. Previously saved scenario versions are available for 60 days after the next scenario version is created. </p><p>To retain scenario version history beyond 60 days for audit purposes, we recommend saving and archiving a blueprint of the scenario in another location.</p> |
+| Scenario settings <p>![Scenario settings icon](assets/scenario-settings-icon-new.png)</p> | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). Request and response details are not kept for every run. To collect them for the scenario's regular runs, turn on Temporary debug logs. For more information, see [Temporary debug logs](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).  |
+| Notes <p>![Notes icon](assets/notes-icon-new.png)</p> | Make notes about the scenario. Other users can view these notes when they are in the scenario. For more information, see [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
+| Auto-align <p>![Auto-align icon](assets/auto-align-icon-new.png)</p> | Auto-align the modules in your scenario. |
+| Search modules <p>![Search modules icon](assets/search-modules-icon-new.png)</p> | Select a module from that list to go to that module in the scenario, or enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application. |
+| Find and replace <p>![Find and replace icon](assets/find-and-replace-icon-new.png)</p> | <p>Search for and replace variables, mapped value sources, or connections across the scenario's modules. Use the tabs to:</p><ul><li>Replace a mapped variable across the whole scenario or in one module.</li><li>Remap references from one source module to another.</li><li>Copy a connection to one or all compatible modules from the same app.</li></ul><p>The panel previews the modules that will be affected before you make the change. Select a row in the preview to go to that module on the canvas.</p> <p>For more information, see [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
+| Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | <p>Snippets are scenario sections that are saved as a unit. To create one, select modules and save them as a snippet. In the Snippets panel, you can search, tag, preview, pin, sort, and drag and drop snippets, and import and export them. You can share snippets with teams or organizations, or send a copy directly to another user. Shared snippets display on their own tab.</p> <p>For more information, see [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
+| Explain flow <p>![Explain flow icon](assets/explain-flow-icon-new.png)</p> | View an animation where moving dots show how data flows through the scenario. |
+| Export Blueprint <p>![Export Blueprint icon](assets/export-blueprint-icon-new.png)</p> | Export a blueprint of the current scenario. For more information, see [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
+| Export as headless template <p>![Export as headless template icon](assets/export-as-headless-template-icon-new.png)</p> | Export the scenario as a headless template. |
+| Import Blueprint <p>![Import Blueprint icon](assets/import-blueprint-icon-new.png)</p> | Import a previously exported scenario blueprint. For more information, see [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md). |
+| DevTool <p>![DevTool icon](assets/devtool-icon-new.png)</p> | Using the DevTool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
+| Previous Versions <p>![Previous version icon](assets/previous-version-icon-new.png)</p> | View previous versions of this scenario. For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md). |
+
+#### Tools
+
+![tools panel](assets/tools-new.png)
+
+| Action | Details |
+| ---------- | ---------- |
+| Flow control | Configure settings to control the way data flows through the scenario. For more information, see [Flow control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md). |
+| Tools | The tools section contains several useful modules that can enhance your scenarios. For more information, see [Tools](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md). |
+| Text parser | Use the Text parser tool to parse text for use in other scenario modules. For more information, see [Text parser](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md). |
+
+#### Favorites
+
+![Favorites panel](assets/favorites-new.png)
+
+You can use the Favorites icon to add modules you use often.
+
+| Action | Details |
+| ---------- | ---------- |
+| Your favorite connectors | The connectors you've marked as favorites are shown here. |
+| Add favorite icon | Click this icon to select another connector to add to the favorites section. |
+| Overflow icon | If you have more favorites than can fit in the toolbar, an overflow (three-dot) icon displays so you can access the rest. |
+
+#### Ask AI
+
+![Ask AI button](assets/ask-ai-new.png)
+
+Click **Ask AI** to open Adobe's AI Assistant. This option may not be available based on your organization's AI settings.
+
+#### Canvas navigation
+
+![Canvas navigation controls](assets/canvas-navigation-new.png)
+
+| Action | Details |
+| ---------- | ---------- |
+| Zoom in / zoom out | Zoom the canvas view in or out. |
+| Focus | Return to a view that fits your whole scenario on the screen. |
+| Minimap | View a thumbnail overview of the entire scenario. The minimap shows your current viewport. Click within it, or click and drag, to move around the canvas. |
+
+#### Canvas display
+
+The new canvas also changes how scenarios look as you work.
+
+| Feature | Details |
+| ---------- | ---------- |
+| Module cards | Each module is a horizontal card that shows the app icon, module name, description, and module ID. Routers display as a compact branch tile, and directives display as small accent cards. |
+| Links | Links between modules are curved and end in arrowheads that show direction. Error handler links are dashed. |
+| Module status | Green, yellow, and red indicators show the status of each module. |
+| Zoom detail | Card details display as you zoom in. When you zoom out, modules simplify to icons so that you can still see the whole scenario. |
+| Fold a router | In edit mode, you can fold a router to hide its routes. For more information, see [Fold a router](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
+| Dark mode | The canvas follows your dark appearance setting under your Adobe preferences, including module cards, links, panels, controls, and status information. |
+| Right-side panel | Module setup, module inspection, the module browser, Find and replace, Snippets, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), and request and response details open in the same panel on the right side of the canvas. |
+
+## Use the scenario editor in the classic experience
+
+* [Open the scenario editor and add a module: (Classic)](#open-the-scenario-editor-and-add-a-module-classic)
+* [Available scenario editor actions (Classic)](#available-scenario-editor-actions-classic)
+
+### Open the scenario editor and add a module: (Classic)
 
 1. Click **[!UICONTROL Scenarios]** ![Scenarios icon](assets/scenarios-icon.png) in the left panel.
 1. Click the question mark icon ![question icon](assets/question-mark-full-size.png), then find and click the app or service that you want to start with. For detailed information about configuring a module, see [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md).
 
-## Available scenario editor actions
+### Available scenario editor actions (Classic)
 
-### Run your scenario
+* [Run your scenario (Classic)](#run-your-scenario-classic)
+* [Scheduling (Classic)](#scheduling-classic)
+* [Controls (Classic)](#controls-classic)
+* [Tools (Classic)](#tools-classic)
+* [Favorites (Classic)](#favorites-classic)
+
+#### Run your scenario (Classic)
 
 ![run scenario button](assets/run-your-scenario.png)
 
@@ -62,7 +232,7 @@ For more detail about the information in this table, see [Access requirements in
 |----------|----------|
 |Test-run the scenario|Verify that the scenario runs as you expect before you activate it. Once activated, the scenario will execute according to its schedule. If everything does not run as expected, see [Add error handling](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md) to learn how to handle errors.|
 
-### Scheduling 
+#### Scheduling (Classic)
 
 ![scheduling panel](assets/scheduling-scenario-editor.png)
 
@@ -70,7 +240,7 @@ For more detail about the information in this table, see [Access requirements in
 | ---------- | ---------- |
 | Schedule the scenario | By default, a scenario runs every 15 minutes. You can change this by defining when and how often an activated scenario runs. Fusion scenarios can be scheduled to run as often as every 5 minutes. For more information, see [Schedule a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md). |
 
-### Controls
+#### Controls (Classic)
 
 You may need to click on the three-dot icon in the Controls area to view some of these controls.
 
@@ -86,20 +256,21 @@ You may need to click on the three-dot icon in the Controls area to view some of
 | Explain flow  <p>![Explain Flow icon](assets/explain-flow-icon.png) </p> | View an animation where moving dots show how data flows through the scenario. |
 | DevTool <p>![DevTool icon](assets/devtool-icon.png)</p> | Using the DevTool, you can check all the manual runs of your scenario, review all the performed operations, and see the details of every API call performed. You can see which module, operation, or single response caused the error, and use that knowledge to refine your scenario. For more information, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md). |
 | Export Blueprint  <p>![Export Blueprint icon](assets/export-blueprint-icon.png) </p> | Export a blueprint of the current scenario. |
+| Export as headless template  <p>![Export as headless template icon](assets/export-as-headless-template-icon.png) </p> | Export the scenario as a headless template. |
 | Import Blueprint  <p>![Import Blueprint icon](assets/import-blueprint-icon.png) </p> | Import a previously exported scenario blueprint. |
 | Previous Version  <p>![Previous version icon](assets//previous-version-icon.png) </p> | View previous versions of this scenario. |
 
-### Tools
+#### Tools (Classic)
 
 ![tools panel](assets/tools-scenario-editor.png)
 
 | Action | Details |
 | ---------- | ---------- |
-| Flow control | Configure settings to control the way data flows through it. For more information, [see link needed]. |
-| Tools | The tools section contains several useful modules that can enhance your scenarios. For more information, [see link needed]. |
-| Text parser | Use the Text parser tool to parse text for use in other scenario modules. The Text parser does not require a connection. For more information, [see link needed]. |
+| Flow control | Configure settings to control the way data flows through it. For more information, see [Flow control](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/flow-control.md). |
+| Tools | The tools section contains several useful modules that can enhance your scenarios. For more information, see [Tools](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md). |
+| Text parser | Use the Text parser tool to parse text for use in other scenario modules. The Text parser does not require a connection. For more information, see [Text parser](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md). |
 
-### Favorites
+#### Favorites (Classic)
 
 ![Favorites panel](assets/favorites-scenario-editor.png)
 
