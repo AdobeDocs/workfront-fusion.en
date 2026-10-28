@@ -4,10 +4,13 @@ description: Your Adobe Workfront Fusion scenarios can contain the types of item
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-TQID: https://experienceleague.adobe.com/mZQcg6jwJFDuyI45vATzKOl4X7ROiTurGheyWvC0s5w
+TQID: 'https://experienceleague.adobe.com/mZQcg6jwJFDuyI45vATzKOl4X7ROiTurGheyWvC0s5w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience

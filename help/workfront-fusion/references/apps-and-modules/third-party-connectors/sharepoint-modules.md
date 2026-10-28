@@ -4,13 +4,15 @@ description: In an Adobe Workfront Fusion scenario, you can automate workflows t
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+TQID: 'https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
     internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
@@ -99,9 +101,15 @@ The SharePoint connector uses the following:
 
 ### Connect Microsoft SharePoint Online to Workfront Fusion using a [!DNL Microsoft] account 
 
-You can use your [!DNL Microsoft] account to create a connection to Microsoft SharePoint Online. For instructions about connecting your [!DNL Sharepoint] account to Workfront Fusion, see [Create a connection to Adobe Workfront Fusion - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using a Microsoft account.
+
+You can use your [!DNL Microsoft] account to create a connection to Microsoft SharePoint Online. For instructions about connecting your [!DNL Sharepoint] account to Workfront Fusion, see [Create a connection to Adobe Workfront Fusion - Basic instructions](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md).
+
++++
 
 ### Connect Microsoft SharePoint Online to Workfront Fusion using advanced settings
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using advanced settings.
 
 To include credentials in the connection, enable the Show advanced settings option. For this type of connection,  you need a Client ID, Client Secret, and Tenant ID.
 
@@ -138,7 +146,11 @@ To include credentials in the connection, enable the Show advanced settings opti
 
 1. Click **Continue** to save the connection and return to the module.
 
++++
+
 ### Connect Microsoft SharePoint Online to Workfront Fusion using certificate authorization
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using certificate authorization.
 
 You can use certificate authorization to connect to SharePoint.
 
@@ -203,7 +215,11 @@ You can use certificate authorization to connect to SharePoint.
 
 1. Click **Continue** to save the connection and return to the module.
 
++++
+
 ### Connect Microsoft SharePoint Online to Workfront Fusion using a service principal
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Workfront Fusion using a service principal.
 
 You can create a connection that uses a service principal (an Application API connection) instead of a personal account. This is useful when you want the connection to run as an application or service identity rather than a specific person — for example, so the integration doesn't break if that person leaves the company or changes their password.
 
@@ -224,7 +240,7 @@ You need **Global Administrator**, **Application Administrator**, or **Privilege
 
 Continue to [Create the app registration in Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id).
 
-#### Create the app registration in Microsoft Entra ID
+#### Create the app registration in Microsoft Entra ID (Service principal)
 
 1. Sign in to the [!DNL Microsoft Entra] admin center.
 1. Go to **[!UICONTROL App registrations]** > **[!UICONTROL New registration]**.
@@ -233,7 +249,7 @@ Continue to [Create the app registration in Microsoft Entra ID](#create-the-app-
 1. Select **[!UICONTROL Register]**.
 1. Continue to [Create a client secret](#create-a-client-secret).
 
-#### Create a client secret
+#### Create a client secret (Service principal)
 
 1. In your new app registration, go to **[!UICONTROL Certificates & secrets]**.
 1. Select **[!UICONTROL New client secret]**, add a description, and choose an expiry period.
@@ -241,7 +257,7 @@ Continue to [Create the app registration in Microsoft Entra ID](#create-the-app-
 1. Copy the secret's **[!UICONTROL Value]** immediately. It is displayed only once. If you navigate away before copying it, you must create a new one.
 1. Continue to [Grant API permissions](#grant-api-permissions).
 
-#### Grant API permissions
+#### Grant API permissions (Service principal)
 
 1. In your app registration, go to **[!UICONTROL API permissions]**.
 1. Select **[!UICONTROL Add a permission]**, then select **[!UICONTROL Microsoft Graph]**.
@@ -250,7 +266,7 @@ Continue to [Create the app registration in Microsoft Entra ID](#create-the-app-
 1. Select **[!UICONTROL Grant admin consent for]** your organization, then confirm.
 1. Continue to [Collect your connection details](#collect-your-connection-details).
 
-#### Collect your connection details
+#### Collect your connection details (Service principal)
 
 From the app registration's **[!UICONTROL Overview]** page, note the following values. You enter these when creating the connection in the module.
 
@@ -275,7 +291,7 @@ From the app registration's **[!UICONTROL Overview]** page, note the following v
 
 Continue to [Create the connection](#create-the-connection).
 
-#### Create the connection
+#### Create the connection (Service principal)
 
 1. In the [!UICONTROL Make an API Call] module, click **[!UICONTROL Add]** near the Connection field to open the **[!UICONTROL Create a connection]** box.
 1. Click **[!UICONTROL Show advanced settings]**.
@@ -289,6 +305,186 @@ Continue to [Create the connection](#create-the-connection).
 1. Click **Continue** to save the connection and return to the module.
 
    If everything is set up correctly, the connection validates successfully.
+
++++
+
+### Connect Microsoft SharePoint Online to Adobe Workfront Fusion using a federated connection
+
++++ Expand to view instructions for connecting Microsoft SharePoint Online to Adobe Workfront Fusion using a federated connection.
+
+A federated connection works like the service principal connection, except that it does not use a client secret.
+Instead of storing a secret, you tell Microsoft Entra ID to trust tokens that Workfront Fusion issues for one specific connection. When the connection runs, Fusion presents a short-lived proof of identity and Microsoft Entra ID returns an access token. Because there is no client secret, there is nothing that expires and no secret to rotate or store.
+
+>[!NOTE]
+>
+>Setting up this connection takes two visits to the Microsoft Entra admin center. You register the app first, then create the connection in Workfront Fusion, then return to Microsoft Entra ID to add the federated credential. This is because the federated credential identifies one specific connection, and that identifier does not exist until the connection is created.
+
+* [Prerequisites to connecting Microsoft SharePoint Online to Workfront Fusion using a federated connection](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-federated-connection)
+* [Create the app registration in Microsoft Entra ID (Federated connection)](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [Grant API permissions (Federated connection)](#grant-api-permissions-federated-connection)
+* [Collect your connection details (Federated connection)](#collect-your-connection-details-federated-connection)
+* [Create the connection in Workfront Fusion (Federated connection)](#create-the-connection-in-workfront-fusion-federated-connection)
+* [Add the federated credential in Microsoft Entra ID (Federated connection)](#add-the-federated-credential-in-microsoft-entra-id-federated-connection)
+* [Verify the connection (Federated connection)](#verify-the-connection-federated-connection)
+* [Troubleshooting](#troubleshooting)
+
+#### Prerequisites to connecting Microsoft SharePoint Online to Workfront Fusion using a federated connection
+
+You need Global Administrator, Application Administrator, or Privileged Role Administrator access in Microsoft Entra ID, to register the app, grant it permissions, and add the federated credential. If you do not have this access, ask someone on your IT or identity team to complete those steps for you.
+ 
+#### Create the app registration in Microsoft Entra ID (Federated connection)
+
+1. Sign in to the Microsoft Entra admin center.
+1. Go to App registrations > New registration.
+1. Give the app a clear, recognizable name. For example, `Workfront Fusion SharePoint Integration`.
+1. Leave Redirect URI blank. This connection does not involve anyone signing in through a browser.
+1. Select **Register**.
+   Do not create a client secret. A federated connection does not use one.
+1. Continue to Grant API permissions.
+
+
+#### Grant API permissions (Federated connection)
+
+1. In your app registration, go to **API permissions**.
+1. Select **Add a permission**, then select **Microsoft Graph**.
+1. Select **Application permissions**.
+1. Select the permission or permissions your API calls need, then select **Add permissions**.
+1. Select **Grant admin consent** for your organization, then confirm.
+1. Continue to [Collect your connection details](#collect-your-connection-details-federated-connection).
+
+
+#### Collect your connection details (Federated connection)
+
+1. From the app registration's Overview page, note the following values. You enter these when creating the connection in the module.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Tenant ID]</td>
+      <td>On the Overview page, labeled <b>Directory (tenant) ID</b>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Client ID]</td>
+      <td>On the Overview page, labeled <b>Application (client) ID</b>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Continue to [Create the connection in Workfront Fusion](#create-the-connection-in-workfront-fusion-federated-connection).
+
+#### Create the connection in Workfront Fusion (Federated connection)
+
+1. In the Make an API Call module, click b near the Connection field to open the Create a connection box.
+1. Click  (Federated connection).
+1. In the Connection type field, select the federated connection type.
+1. Enter the following:
+
+   * Tenant ID
+   * Client ID
+
+1. Select **Create**.
+   Workfront Fusion displays three values. You use them in the next procedure.
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td>Always <code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject]</td>
+      <td>Identifies this one connection. It looks like <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. It is different for every connection you create.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Audience]</td>
+      <td>Always <code>api://AzureADTokenExchange</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+
+1. Leave this panel open and copy the **Subject** value.
+
+   >[!NOTE]
+   >
+   >Do not close the panel or select Cancel. The connection is not finished until you complete the remaining procedures. If you close the panel, you must delete the connection and start again, because a new connection receives a new Subject.
+
+
+1. Continue to [Add the federated credential in Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id-federated-connection).
+
+#### Add the federated credential in Microsoft Entra ID (Federated connection)
+
+This procedure is what replaces the client secret. It tells Microsoft Entra ID to accept tokens that Workfront Fusion issues for this one connection.
+
+1. In a new browser tab, return to the Microsoft Entra admin center and open your app registration.
+1. Go to **Certificates & secrets** > **Federated credentials**.
+1. Select **Add credential**.
+1. In Federated credential scenario, select **Other issuer**.
+1. Enter the following:
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Subject identifier]</td>
+      <td>The Subject you copied from Workfront Fusion. Paste it exactly, with no added spaces.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Name]</td>
+      <td>A name that identifies this connection, so you can find it later. For example, <code>workfront-fusion-connection-28964</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Audience]</td>
+      <td><code>api://AzureADTokenExchange</code>. This is usually filled in for you. Leave the default value.</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. Select **Add**.
+1. Continue to [Verify the connection](#verify-the-connection-federated-connection).
+
+ 
+#### Verify the connection (Federated connection)
+
+1. Return to the Workfront Fusion browser tab, where the connection panel is still open.
+2. Select **Save**.
+
+   * If everything is set up correctly, the connection validates successfully and you can proceed with setting up the module.
+   * If verification fails, the panel stays open and displays the error. Correct the problem in Microsoft Entra ID and select Save again. You do not need to recreate the connection, and the Subject does not change.
+
+
+#### Troubleshooting
+
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">The connection fails verification with an invalid client or invalid request error</td>
+   <td>Microsoft Entra ID could not match the token to a federated credential. Check that the Issuer is exactly <code>https://oidc.automations.adobe.com</code> with no trailing slash, and that the Subject identifier is character-for-character identical to the Subject shown in Workfront Fusion. A Subject copied from a different connection is the most common cause.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">The connection verifies, but API calls return 403</td>
+   <td>The identity is trusted, but the app does not have the Microsoft Graph permissions your call needs. Return to Grant API permissions, add the required application permission, and grant admin consent.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">You cannot add another federated credential</td>
+   <td>You have reached the limit of 20 federated credentials for that app registration. Register an additional app and create further connections against it.</td>
+  </tr>
+ </tbody>
+</table>
+
++++
 
 ## Microsoft SharePoint modules and their fields
 

@@ -4,10 +4,13 @@ description: In an Adobe Workfront Fusion scenario, you can automate workflows t
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
+TQID: 'https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -108,6 +111,13 @@ For more information about search possibilities, see the [!DNL Salesforce] devel
 ## Create a connection to [!DNL Salesforce]
 
 To create a connection for your [!DNL Salesforce] modules, you can authenticate using OAuth 2 or PKCE.
+
+>[!NOTE]
+>
+>If you are authenticating with PKCE, you must have the following scopes enabled in Salesforce.
+>
+>* Full access: `full`
+>* Perform requests at any time: `refresh_token`, `offline_access`
 
 1. In any [!DNL Salesforce] module, click **[!UICONTROL Add]** next to the Connection box.
 

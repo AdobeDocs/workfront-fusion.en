@@ -5,10 +5,13 @@ description: You can configure specific settings for scenarios in the scenario s
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
+TQID: 'https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Configure scenario settings
 
@@ -92,9 +95,9 @@ When sequential processing is enabled, parallel executions of the scenario are d
 
 **Instant Webhooks**: If a webhook trigger is configured as `instant` and "Sequential processing" is enabled, then all instant webhook payloads will be queued and processed in the order that they arrive. This can be useful when processing events from external systems in an exact order.
 
-   >[!NOTE]
-   >
-   >There will be automatic processing delays as each payload is processed before the next is started.
+>[!NOTE]
+>
+>There will be automatic processing delays as each payload is processed before the next is started.
 
 **Incomplete Executions**: If "Incomplete Executions" is also enabled, if an error occurs during the execution of a scenario, the scenario is paused. One of the following then occurs:
 

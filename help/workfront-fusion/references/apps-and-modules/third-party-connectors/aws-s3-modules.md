@@ -4,10 +4,13 @@ description: The [!DNL Adobe Workfront Fusion AWS] S3 modules let you perform op
 author: Becky
 feature: Workfront Fusion
 exl-id: 6b2d9dd5-0b33-4297-aea0-aba26072b26a
-TQID: https://experienceleague.adobe.com/FDkre6osF2kT7Kz-5VGradQLa7GPSJ6MHPH9-FgM-ag
+TQID: 'https://experienceleague.adobe.com/FDkre6osF2kT7Kz-5VGradQLa7GPSJ6MHPH9-FgM-ag'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -81,6 +84,195 @@ The AWS S3 connector uses the following:
 
 ## Connect [!DNL AWS] to Workfront Fusion {#connect-aws-to-workfront-fusion}
 
+* [Connect AWS to Workfront Fusion using a federated connection](#connect-aws-to-workfront-fusion-using-a-federated-connection)
+* [Connect AWS to Workfront Fusion using an API user](#connect-aws-to-workfront-fusion-using-an-api-user)
+
+### Connect AWS to Workfront Fusion using a federated connection
+
++++ Expand to view instructions for this connection type.
+
+* [Prerequisites to connecting AWS to Workfront Fusion using a federated connection](#prerequisites-to-connecting-aws-to-workfront-fusion-using-a-federated-connection)
+* [Add Workfront Fusion as an identity provider in AWS](#add-workfront-fusion-as-an-identity-provider-in-aws)
+* [Create the IAM role](#create-the-iam-role)
+* [Create the connection in Workfront Fusion](#create-the-connection-in-workfront-fusion)
+* [Add the connection to the role's trust policy](#add-the-connection-to-the-roles-trust-policy)
+* [Verify the connection](#verify-the-connection)
+* [Troubleshooting](#troubleshooting)
+
+A federated connection lets Workfront Fusion access your AWS account without you creating an IAM user or storing an access key in Fusion.
+Instead, you register Workfront Fusion as a trusted identity provider in your AWS account, and you configure which single Fusion connection is allowed to use a particular IAM role. When the connection runs, Fusion presents a short-lived proof of identity, and AWS returns temporary credentials that expire on their own. No long-lived key is ever created, stored, or rotated.
+
+>[!NOTE]
+>
+>Setting up this connection takes two visits to the AWS console. You create the role first, then create the connection in Workfront Fusion, then return to AWS to finish the trust policy. This is because part of the trust policy identifies one specific connection, and that identifier does not exist until the connection is created.
+
+#### Prerequisites to connecting AWS to Workfront Fusion using a federated connection
+
+To create this connection, you need the following:
+
+* Permission in AWS IAM to create an identity provider and to create and edit roles. This usually means the policy or equivalent. If you do not have this access, ask someone on your cloud or
+security team to complete the AWS steps for you.
+* The ability to create connections in Workfront Fusion.
+ 
+ 
+#### Add Workfront Fusion as an identity provider in AWS
+
+This step tells AWS that tokens issued by Workfront Fusion can be trusted. You do this once per AWS account. If someone in your organization has already added this provider, skip to [Create the IAM role](#create-the-iam-role).
+
+1. Sign in to the AWS console and go to **IAM** > **Identity providers**.
+1. Select **Add provider**.
+1. For Provider type, select **OpenID Connect**.
+1. In Provider URL, enter the following, then select **Get thumbprint**:
+
+   ```
+   https://oidc.automations.adobe.com
+   ```
+
+1. In Audience, enter the following:
+
+   ```
+   sts.amazonaws.com
+   ```
+
+1. Select **Add provider**.
+1. Continue to [Create the IAM role](#create-the-iam-role).
+
+#### Create the IAM role
+
+The role defines what the connection is allowed to do in your AWS account. You create one role per connection, so that each connection's access can be granted and revoked independently.
+
+1. In IAM, go to **Roles** and select **Create role**.
+1. For Trusted entity type, select **Web identity**.
+1. In Identity provider, select `oidc.automations.adobe.com`.
+1. In Audience, select `sts.amazonaws.com`.
+1. Select **Next**, then attach the permissions policies this connection needs.
+   Grant only the permissions the connection actually uses. For example, a connection that only reads from
+one bucket does not need `AmazonS3FullAccess`.
+1. Give the role a clear, recognizable name. For example, `WorkfrontFusionFederatedConnection`.
+1. Select **Create role**.
+1. Open the role you just created and copy its ARN from the Summary area. It looks like this: `arn:aws:iam::123456789012:role/WorkfrontFusionFederatedConnection`
+
+1. Continue to [Create the connection in Workfront Fusion](#create-the-connection-in-workfront-fusion).
+ 
+#### Create the connection in Workfront Fusion
+
+1. In the module's connection setup screen, select the federated connection type.
+1. Enter the Role ARN you copied in [Create the IAM role](#create-the-iam-role).
+1. Select **Create**.
+   Workfront Fusion displays three values. You use them in the next procedure.
+
+<table>
+  <tr>
+    <td>Issuer</td>
+    <td>Always <code>https://oidc.automations.adobe.com</code>. This matches the identity provider you added in AWS.</td>
+  </tr>
+  <tr>
+    <td>Subject</td>
+    <td>Identifies this one connection. It looks like <code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>. It is different for every connection you create.</td>
+  </tr>
+  <tr>
+    <td>Audience</td>
+    <td>Always <code>sts.amazonaws.com</code>.</td>
+  </tr>
+</table>
+
+1. Leave this panel open and copy the Subject value.
+
+   >[!NOTE]
+   >
+   >Do not close the panel or select Cancel. The connection is not finished until you complete the remaining procedures. If you close the panel, you must delete the connection and start again, because a new connection receives a new Subject.
+
+1. Continue to [Add the connection to the role's trust policy](#add-the-connection-to-the-roles-trust-policy).
+
+#### Add the connection to the role's trust policy
+
+Until you complete this procedure, the role trusts Workfront Fusion in general but does not yet allow this specific connection to use it.
+
+1. In a new browser tab, return to the AWS console and open the role you created.
+1. Select the **Trust relationships** tab, then select **Edit trust policy**.
+1. Replace the policy with the following, substituting your own values:
+ 
+   * Replace `123456789012` with your AWS account ID
+   * Replace the `sub` value with the Subject you copied from Workfront Fusion.
+
+
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow", 
+         "Principal": {
+           "Federated": "arn:aws:iam::123456789012:oidc-provider/oidc.automations.adobe.com"
+       },
+       "Action": "sts:AssumeRoleWithWebIdentity", "Condition": {
+        "StringEquals": {
+          "oidc.automations.adobe.com:sub": "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", 
+          "oidc.automations.adobe.com:aud": "sts.amazonaws.com"
+        }
+       }
+      }
+    ]
+   }
+   ```
+
+1. Select **Update policy**.
+1. Continue to [Verify the connection](#verify-the-connection).
+
+>[!TIP]
+>
+>To let more than one connection use the same role, list the subjects as an array. AWS allows the role to be used if the token matches any value in the list:
+>
+>```
+>"oidc.automations.adobe.com:sub": [ "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:29011"
+>]
+>```
+>
+>Do not replace the sub value with a wildcard. Doing so lets any connection in your organization use the role, including connections created later by other people
+
+
+#### Verify the connection
+
+1. Return to the Workfront Fusion browser tab, where the connection panel is still open.
+1. Click **Save**.
+ 
+   Workfront Fusion contacts AWS, which checks the trust policy and returns temporary credentials. If everything is set up correctly, the connection validates successfully and you can proceed with setting up the module.
+   If verification fails, the panel stays open and displays the error. Correct the problem in AWS and select Save again. You do not need to recreate the connection, and the Subject does not change.
+
+From this point on, the connection renews its own credentials. There is no key to rotate and nothing expires that you need to maintain.
+
+#### Troubleshooting
+
+
+<table>
+  <tr>
+    <th>Error</th>
+    <th>What it means</th>
+    <th>What to check</th>
+  </tr>
+  <tr>
+    <td>InvalidIdentityToken</td>
+    <td>AWS could not match the token to a registered identity provider.</td>
+    <td>Check that you added the identity provider described in Add Workfront Fusion as an identity provider in AWS, and that its URL is exactly https://oidc.automations.adobe.com, with no trailing slash.</td>
+  </tr>
+  <tr>
+    <td>AccessDenied when assuming the role</td>
+    <td>The identity provider is registered, but the trust policy does not match this connection.</td>
+    <td>Check that the sub value in the trust policy is character-for-character identical to the Subject shown in Workfront Fusion, and that aud is sts.amazonaws.com. A Subject copied from a different connection is the most common cause.</td>
+  </tr>
+  <tr>
+    <td>The connection works, then fails later</td>
+    <td> </td>
+    <td>Check whether the role's permissions policies changed, or whether the role was deleted and recreated. Recreating a role does not change its ARN, but it does reset its trust policy.</td>
+  </tr>
+</table>
+
++++
+
+### Connect AWS to Workfront Fusion using an API user
+
++++ Expand to view instructions for this connection type.
+
 To connect [!DNL AWS S3] to Workfront Fusion you must connect your [!DNL AWS] account to Workfront Fusion. To do so, you'll first need to create an API user in [!DNL AWS] [!UICONTROL IAM].
 
 1. Sign in to your [!DNL AWS] [!UICONTROL IAM] account.
@@ -98,7 +290,12 @@ To connect [!DNL AWS S3] to Workfront Fusion you must connect your [!DNL AWS] ac
 
 The connection has been established. You can proceed with setting up the module.
 
++++
+
 ## [!DNL AWS S3] modules and their fields
+
+* [Actions](#actions)
+* [Searches](#searches)
 
 When you configure [!DNL AWS S3] modules, Workfront Fusion displays the fields listed below. Along with these, additional [!DNL AWS S3] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
 
