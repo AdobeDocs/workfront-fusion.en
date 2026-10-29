@@ -309,6 +309,13 @@ For more information, see the section [Examples of Event Payloads](https://exper
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
+>[!NOTE]
+>
+>Duplicate detection applies to notifications that include an `x-event-id` header and identify their `User-Agent` as `Workfront Event Subscription`.
+>
+>When Fusion receives an eligible notification, it records the event ID for that webhook for **one hour**. If another notification with the same event ID arrives at the same webhook during this period, Fusion acknowledges it without forwarding it for scenario processing.
+>Duplicate detection is specific to each webhook. The same event can be processed independently by different webhooks. Receiving a duplicate does not restart the one-hour period.
+
 #### [!UICONTROL Watch Field]
 
 This trigger module executes a scenario when a field that you specify is updated. The module returns both the old and the new value of the specified field. You can map this information in subsequent modules in the scenario.
