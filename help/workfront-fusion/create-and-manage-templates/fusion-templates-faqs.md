@@ -4,10 +4,13 @@ description: This article addresses common questions about [!DNL Adobe Workfront
 author: Becky
 feature: Workfront Fusion
 exl-id: 479b1ee5-5bde-465e-a269-61a49640699e
-TQID: https://experienceleague.adobe.com/7vcKvFskdlSF-0aGVFtyA6JWqMemNMXpsRfEgQWBcUA
+TQID: 'https://experienceleague.adobe.com/7vcKvFskdlSF-0aGVFtyA6JWqMemNMXpsRfEgQWBcUA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Adobe Workfront Fusion templates FAQs
 

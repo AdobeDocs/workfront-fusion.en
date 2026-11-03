@@ -4,10 +4,13 @@ description: In an Adobe Workfront Fusion scenario, you can use the Markdown mod
 author: Becky
 feature: Workfront Fusion
 exl-id: f1134bbf-c244-4f52-8744-f97453b2ce8a
-TQID: https://experienceleague.adobe.com/Ln5HrKaXwymcd5PN8WyiQ7v9F3eYoD7-8P1NNFacwyU
+TQID: 'https://experienceleague.adobe.com/Ln5HrKaXwymcd5PN8WyiQ7v9F3eYoD7-8P1NNFacwyU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # [!UICONTROL Markdown] modules
 

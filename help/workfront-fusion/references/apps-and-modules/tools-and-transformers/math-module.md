@@ -4,10 +4,13 @@ description: In an Adobe Workfront Fusion scenario, you can use the math module 
 author: Becky
 feature: Workfront Fusion
 exl-id: ebbe74ea-d274-481d-8584-a71ddb1d959b
-TQID: https://experienceleague.adobe.com/4TaxxJxhszGpSGBnMCGPQ4uKH-AfkV9jDRRXhbCh-Eo
+TQID: 'https://experienceleague.adobe.com/4TaxxJxhszGpSGBnMCGPQ4uKH-AfkV9jDRRXhbCh-Eo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # [!UICONTROL Math]
 

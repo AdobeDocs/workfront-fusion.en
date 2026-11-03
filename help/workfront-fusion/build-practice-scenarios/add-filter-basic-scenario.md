@@ -25,7 +25,8 @@ This example modifies the scenario created in [Create a basic scenario](/help/wo
 
 >[!NOTE]
 >
->Workfront trigger modules include filters that allow a scenario to start only if certain conditions are met. However, because between-module filters are used for every non-trigger and non-Workfront use case, it is important to learn how to use filters between modules. This example uses a between-module filter for functionality that could be met with an in-module filter.
+>* Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+>* Workfront trigger modules include filters that allow a scenario to start only if certain conditions are met. However, because between-module filters are used for every non-trigger and non-Workfront use case, it is important to learn how to use filters between modules. This example uses a between-module filter for functionality that could be met with an in-module filter.
 
 ## Access requirements
 
@@ -60,7 +61,11 @@ For more detail about the information in this table, see [Access requirements in
 
 You must create the scenario described in [Create a basic scenario](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md) before following this procedure.
 
-## Add a filter 
+## Add a filter in the new experience (Recommended)
+
+* [Prepare to add the filter](#prepare-to-add-the-filter)
+* [Add and configure the filter](#add-and-configure-the-filter)
+* [Test and activate](#test-and-activate)
 
 ### Prepare to add the filter
 
@@ -81,16 +86,78 @@ You must create the scenario described in [Create a basic scenario](/help/workfr
 ### Add and configure the filter
 
 1. Return to the scenario in the scenario editor.
+1. Left-click the path between the first and second module.
+
+   The **[!UICONTROL Set up a filter]** window opens.
+
+1. In the Label field, enter a label for this filter, such as "Filter for request queue."
+1. In the **Condition** area, in the top field, map the `projectID` from the first module.
+
+   ![Map project ID](assets/new-map-in-filter.png)
+
+1. Leave the **Condition** operator as Equal to.
+1. In the bottom field of the **Condition** area, paste in the project ID that you made note of from the project URL in [Prepare to add the filter](#prepare-to-add-the-filter).
+1. Click **OK** to save the filter settings.
+
+### Test and activate
+
+1. Go to the Workfront environment that Fusion is connecting to and add an issue to the project that you specified in the filter. Add another issue to a different project. 
+1. Click the **[!UICONTROL Run once]** icon.
+
+   Run once is icon-only in the new experience. Hover over the icon to see the **[!UICONTROL Run once]** tooltip.
+
+   ![run scenario button](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. Examine the output to ensure that the scenario ran as expected.
+
+   Both issues should appear in the output of the first module, but only the issue in the specified project should appear as input into the second module.
+1. When you are satisfied that the scenario is working as expected, click the **Scheduling** toggle to **On**.
+
+   This activates the scenario. 
+
+   ![Scheduling toggle](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. Click the **Save** icon ![Save icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png) in the Controls area to save your progress on the scenario.
+
+   >[!IMPORTANT]
+   >
+   >Save often as you hone and test a scenario. You may need to create a new issue in your Workfront account to trigger the scenario.
+
+## Add a filter in the classic experience
+
+* [Prepare to add the filter (Classic)](#prepare-to-add-the-filter-classic)
+* [Add and configure the filter (Classic)](#add-and-configure-the-filter-classic)
+* [Test and activate (Classic)](#test-and-activate-classic)
+
+### Prepare to add the filter (Classic)
+
+1. Open the scenario.
+1. Click the first module to open it.
+1. In the **Outputs** area, select `Project`. 
+   You should now have `ID`, `Name`, and `Project` selected.
+1. Click OK to save the module settings.
+1. Open Workfront. 
+1. In Workfront, locate the project that represents the request queue that the Fusion scenario will be working with. 
+
+   This project must be in the same Workfront account that the Fusion connection is set up for.
+   
+1. Make note of the project ID in the URL.
+
+   Example: https://\<MyDomain\>.my.workfront.com/project/\<ProjectID\>/tasks
+
+### Add and configure the filter (Classic)
+
+1. Return to the scenario in the scenario editor.
 1. Click the wrench icon ![Wrench icon](assets/wrench-icon.png) between the first and second module, and select **Set up a filter**.
 1. In the Label field, enter a label for this filter, such as "Filter for request queue."
 1. In the **Condition** area, in the top field, map the `projectID` from the first module.
 
    ![Map project ID](assets/map-proj-id.png)
 1. Leave the **Condition** operator as Equal to.
-1. In the bottom field of the **Condition** area, paste in the project ID that you made note of from the project URL in [Prepare to add the filter](#prepare-to-add-the-filter).
+1. In the bottom field of the **Condition** area, paste in the project ID that you made note of from the project URL in [Prepare to add the filter (Classic)](#prepare-to-add-the-filter-classic).
 1. Click **OK** to save the filter settings.
 
-### Test and activate
+### Test and activate (Classic)
 
 1. Go to the Workfront environment that Fusion is connecting to and add an issue to the project that you specified in the filter. Add another issue to a different project. 
 1. Click **[!UICONTROL Run once]** in the lower-left corner of the scenario editor.

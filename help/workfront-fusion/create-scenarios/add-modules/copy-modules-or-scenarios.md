@@ -4,10 +4,13 @@ description: You can copy modules, groups of modules, or entire scenarios in Ado
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-TQID: https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo
+TQID: 'https://experienceleague.adobe.com/JLouqKhRBefW2RU5BnwYQfapJz-SWcSmtqAqg--kOjo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -62,23 +65,28 @@ Consider the following when pasting modules into a different scenario:
 
 ### Copy modules
 
-Copying a group of modules is similar to copying a single module.
+You can copy a single module or a group of modules. 
+
+
+>[!NOTE]
+>
+>You can select more than one module by holding [!UICONTROL shift] and clicking on the modules that you want to copy. Copying a group of modules also copies any connecting lines, filters, or routing logic between them.
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to copy a module.
 1. Click anywhere on the scenario to enter the Scenario editor.
-1. Right-click on the module that you want to copy.
-
-   >[!NOTE]
-   >
-   >You can select more than one module by holding [!UICONTROL shift] and clicking on the modules that you want to copy. Copying a group of modules also copies any connecting lines, filters, or routing logic between them.
-
-1. Select **[!UICONTROL Copy module]**.
+1. If you are copying multiple modules, hold Shift and click on the modules that you want to copy.
+1. Right-click on the module, or one of the modules,  that you want to copy.
+1. Select **[!UICONTROL Copy module]** or **[!UICONTROL Copy modules]**.
 1. Move the cursor to the area of the scenario where you want the copy of the scenario.
 1. Right click, and select **[!UICONTROL Paste]**.
 1. Connect the pasted modules to the scenario by dragging them to the appropriate location in the scenario.
 
    You can also use keyboard shortcuts to copy and paste.
+
+>[!NOTE]
+>
+>Instead of copying a group of modules, you can move a group of modules into a new chained scenario. For instructions, see [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Copy a scenario by cloning
 
@@ -90,7 +98,7 @@ Cloning a scenario creates a copy of the scenario, which you can then edit.
 
       Or
 
-      If you are working on the scenario in the the scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+      If you are working on the scenario in the the scenario editor, click the left arrow ![Exit editing arrow](assets/new-exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. Right click **[!UICONTROL Options]** at the upper-right of the page.
 1. Select **[!UICONTROL Clone]**.

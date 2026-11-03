@@ -4,13 +4,15 @@ description: The following glossary explains some common terms in Adobe Workfron
 author: Becky
 feature: Workfront Fusion
 exl-id: 7f098ec2-8594-4e5d-9ce7-d1738a05f9a6
-TQID: https://experienceleague.adobe.com/3qVkZnMHsCJX8htr8-BheNyOiQM8WReuRzEYCA70pGw
+TQID: 'https://experienceleague.adobe.com/3qVkZnMHsCJX8htr8-BheNyOiQM8WReuRzEYCA70pGw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
     internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -19,6 +21,9 @@ topic_v2:
 
 The following glossary explains some common terms in Adobe Workfront Fusion.
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
 
 <table style="table-layout:auto">
  <col> 
@@ -82,7 +87,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Module</p> </td> 
-   <td> <p>A single step within a scenario that performs a function, such as creating a record, within the associated app or service.</p> <p>Each app or service has various modules that define the way it responds to a request.</p>  <p> <img src="assets/module.png"> </p> <p>For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Module overview</a>.</p> </td> 
+   <td> <p>A single step within a scenario that performs a function, such as creating a record, within the associated app or service.</p> <p>Each app or service has various modules that define the way it responds to a request.</p>  <p> <img src="assets/new-module.png"> </p> <p>For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">Module overview</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Operation</p> </td> 
@@ -98,7 +103,7 @@ The following glossary explains some common terms in Adobe Workfront Fusion.
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario</p> </td> 
-   <td> <p>A user-created series of automated steps, each represented and performed by a module. The purpose of a scenario is to move and manipulate data.</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Scenario overview</a>.</p> </td> 
+   <td> <p>A user-created series of automated steps, each represented and performed by a module. The purpose of a scenario is to move and manipulate data.</p> <p> <img src="assets/new-scenario-example-unmarked.png" style="width: 350;height: 92;"> </p> <p> For more information, see <a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">Scenario overview</a>.</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>Scenario segment</p> </td> 

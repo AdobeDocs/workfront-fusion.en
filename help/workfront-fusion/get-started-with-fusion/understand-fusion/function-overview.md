@@ -4,13 +4,15 @@ description: When you map items, you can use functions to create simple or compl
 author: Becky
 feature: Workfront Fusion
 exl-id: e07730cb-52be-46db-a365-93cdbed1021c
-TQID: https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4
+TQID: 'https://experienceleague.adobe.com/qms9CZ6iX1V4AtOotaaLWy3FxiTm5C7S9hYgJmx-7S4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
     internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Function overview
 
@@ -38,7 +40,7 @@ The mapping panel includes the following tabs. Each tab includes functions and k
 | **Date and time** <br> ![Date and time functions](assets/toolbar-icon-date-time-functions.png) | <ul><li>[Date and time functions](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[Tokens for date and time formatting](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [Tokens for date and time parsing](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **Functions for working with arrays**<br> ![Array functions](assets/toolbar-icon-functions-for-arrays.png) | [Array functions](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![Functions toolbar](assets/functions-toolbar-350x189.png)
+![Functions toolbar](assets/new-functions-toolbar.png)
 
 ## Custom functions
 
@@ -46,4 +48,4 @@ You can create custom functions in the Functions area of Fusion. You then add th
 
 Because custom functions work through Adobe App Builder, your organization must have an Adobe App Builder license to use them.
 
-For information and instructions for custom functions, see ap data using custom functions.
+For information and instructions for custom functions, see [Map data using custom functions](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md).

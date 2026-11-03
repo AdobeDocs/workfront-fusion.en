@@ -1,21 +1,26 @@
 ---
 content-type: reference
-title: "Manage scenarios: article index"
+title: 'Manage scenarios: article index'
 description: This section contains articles related to managing scenarios in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-TQID: https://experienceleague.adobe.com/EUSuZIyMovl2W3PlmmGaJ6rivpwQWZIJMKbZ4VGJDgw
+TQID: 'https://experienceleague.adobe.com/EUSuZIyMovl2W3PlmmGaJ6rivpwQWZIJMKbZ4VGJDgw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Manage scenarios: article index
 
 * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [Use Live Trail to review a scenario run](/help/workfront-fusion/manage-scenarios/live-trail.md)
+* [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
 * [Update a module to a new version](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
 * [Manage locked scenarios](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
@@ -25,6 +30,7 @@ product_v2:
 * [View a webhook's queue](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [View data flow in a running scenario](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
 * [View chained scenario relationships](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+* [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
 * [AI Assistant in Workfront Fusion](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [Run the Scenario Scoring Expert](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [Delete scenario elements](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
@@ -32,3 +38,4 @@ product_v2:
 * [Edit Webhooks](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
 * [Retrigger a scenario execution](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
 * [Use Run once to test a scenario](/help/workfront-fusion/manage-scenarios/run-once.md)
+* [Restore a deleted scenario](/help/workfront-fusion/manage-scenarios/restore-deleted-scenario.md)

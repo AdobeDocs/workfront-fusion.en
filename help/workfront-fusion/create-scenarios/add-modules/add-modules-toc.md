@@ -1,15 +1,18 @@
 ---
 content-type: reference
-title: "Add modules: article index"
+title: 'Add modules: article index'
 description: This section contains articles related to adding modules in Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 45935dab-199b-46b8-a339-abfea8650320
-TQID: https://experienceleague.adobe.com/hyhyVjuXROjY6SdjwjiBAAl6oNRy1H-Id0D867BLi5s
+TQID: 'https://experienceleague.adobe.com/hyhyVjuXROjY6SdjwjiBAAl6oNRy1H-Id0D867BLi5s'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Add modules: article index
 
@@ -17,6 +20,7 @@ product_v2:
 * [Configure a module](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 * [Add an AI prompt to your scenario](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [Copy modules or scenarios](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+* [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
 * [Create scenarios with Adobe Workfront Fusion templates](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
 * [Use cURL to add an HTTP module](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
 * [Configure a webhook for a web service without a connectors](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)

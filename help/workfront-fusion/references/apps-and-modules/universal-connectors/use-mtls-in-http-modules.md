@@ -4,10 +4,13 @@ description: You can use Mutual TLS in your Adobe Workfront Fusion HTTP modules,
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
+TQID: 'https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Use Mutual TLS in HTTP modules in Adobe Workfront Fusion
 
@@ -46,7 +49,7 @@ Mutual TLS allows this identity confirmation to go both ways. When the server se
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Operation-based: Available to organizations with operation-based licenses</p>
    <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -90,12 +93,12 @@ You can use the following links to download the Workfront Fusion public certific
 
 Download the following zip file, the unzip it and use the PEM file for your datacenter.
 
-[Download Workfront Fusion 2026 certificates](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[Download Workfront Fusion 2026 certificates](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | Datacenter | Download link | Dates valid |
 | --- | --- | --- |
 | US AWS Datacenter | `fusion-prod-us-mtls-certificate-2026.pem` | January 29, 2026 to March 2, 2027 |
-| US Azure Cluster | `fusion-prod-az-mtls-certificate.pem` | September 21, 2025 to October 23, 2026 |
+| US Azure Cluster | `fusion-prod-az-mtls-certificate-2026-sept.pem` | August 19, 2026 to March 6, 2027 |
 | EU AWS Datacenter | `fusion-prod-eu-mtls-certificate-2026.pem` | January 29, 2026 to March 2, 2027 |
 | EU Azure Cluster | `fusion-prod-eu-az-mtls-certificate-2026.pem` | February 4, 2026 to March 8, 2027 |
 

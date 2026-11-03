@@ -1,15 +1,18 @@
 ---
 content-type: reference
-title: "Set up organizations, teams, and users: article index"
+title: 'Set up organizations, teams, and users: article index'
 description: This section contains articles related to setting up organizations and teams and teams in Adobe Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 56837f45-12f9-44b7-b48f-9a3a4fa966c8
-TQID: https://experienceleague.adobe.com/hIUqXXvCzmn-uAnDxJFDJ-jPY2JgE5smZzryufBbwtA
+TQID: 'https://experienceleague.adobe.com/hIUqXXvCzmn-uAnDxJFDJ-jPY2JgE5smZzryufBbwtA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Set up organizations, teams, and users: article index
 
@@ -18,5 +21,5 @@ product_v2:
 * [Create a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)
 * [Add users to Adobe Workfront Fusion through the Adobe Admin Console](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-fusion-users-admin-console.md)
 * [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
-* [Set Team Notification Options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
+* [Set notification options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
 * [View activity log for an organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)

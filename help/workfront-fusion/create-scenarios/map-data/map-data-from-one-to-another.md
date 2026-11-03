@@ -4,10 +4,13 @@ description: Mapping is the process of assigning a module's outputs, structured 
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-TQID: https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk
+TQID: 'https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
@@ -68,7 +71,7 @@ To assign output items to a module's input fields:
    Search results contain the search term and are not case sensitive.
 1. To select a value that is an element of a collection, click the arrow next to that collection, then select the element when it appears.
     
-    ![Collection element](assets/collection-dropdown.png)
+   ![Collection element](/help/workfront-fusion/get-started-with-fusion/understand-fusion/assets/new-collection-dropdown.png)
 
 1. Click an item from the mapping panel to insert it into the field.
 

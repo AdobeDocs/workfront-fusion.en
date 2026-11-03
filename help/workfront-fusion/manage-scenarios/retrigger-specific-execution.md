@@ -6,6 +6,9 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Retrigger a specific scenario execution
 
@@ -22,6 +25,12 @@ When using chained scenarios, retriggering can also be applied to a child scenar
 For more information on webhooks, see [Instant triggers (webhooks)](/help/workfront-fusion/references/modules/webhooks-reference.md).
 
 For more information on chaining scenarios, see [Chain multiple scenarios together](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md).
+
+
+
+>[!NOTE]
+>
+>Only up to 256 KB of data is retained in the execution history. As a result, executions with input data exceeding 256 KB cannot be retriggered. Any attempt to retrigger such an execution fails with an error message.
 
 ## Access requirements
 
@@ -54,6 +63,10 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Retrigger an execution
 
+>[!NOTE]
+>
+>Only up to 256 KB of data is retained in the execution history. As a result, executions with input data exceeding 256 KB cannot be retriggered. Any attempt to retrigger such an execution fails with an error message.
+
 You can retrigger a scenario execution from the scenario's Diagram, the scenario's History area, or the specific scenario execution's page.
 
 ### Retrigger an execution from the Scenario Diagram 
@@ -65,7 +78,7 @@ You can retrigger a scenario execution from the scenario's Diagram, the scenario
 1. Locate the execution that you want to retrigger in the Executions list on the right side of the page. 
 1. Click **Retrigger** for that scenario. 
   
-![Retrigger from diagram](assets/retrigger-from-diagram.png)
+![Retrigger from diagram](assets/new-retrigger-from-diagram.png)
 
 ### Retrigger an execution from the Scenario History 
 
@@ -78,7 +91,7 @@ You can retrigger a scenario execution from the scenario's Diagram, the scenario
 1. Locate the execution that you want to retrigger. You can use Fulltext search to locate it if necessary.
 1. Click **Retrigger** for that scenario. 
   
-![Retrigger from history](assets/retrigger-from-history.png)
+![Retrigger from history](assets/new-retrigger-from-history.png)
 
 ### Retrigger a scenario from the scenario execution page
 
@@ -91,7 +104,7 @@ You can retrigger a scenario execution from the scenario's Diagram, the scenario
 1. On the execution page, click **Retrigger**.
   
  
-![Retrigger from execution](assets/retrigger-from-execution.png)
+![Retrigger from execution](assets/new-retrigger-from-execution.png)
 
 
 

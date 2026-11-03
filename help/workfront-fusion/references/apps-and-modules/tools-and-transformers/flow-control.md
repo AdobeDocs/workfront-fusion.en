@@ -4,14 +4,21 @@ description: When you are creating or editing a scenario, you can configure sett
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-TQID: https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w
+TQID: 'https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Flow control
 
 When you are creating or editing a scenario, you can configure settings to control the way data flows through it.
+
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
 
 ## Access requirements
 
@@ -68,7 +75,7 @@ You can use a [!UICONTROL Repeater] module to repeat a task a given number of ti
 
 For example, you could use a [!UICONTROL Repeater] module to send five emails with the subjects "Hello 1," "Hello 2," and so on, by connecting the **[!UICONTROL Email] >[!UICONTROL Send me an email]** module to the [!UICONTROL Repeater] module.
 
-1. Click the [!UICONTROL Flow Control] icon ![Flow control icon](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif) at the bottom of the screen, then click **[!UICONTROL Repeater]** in the menu that displays.
+1. Click the [!UICONTROL Flow Control] icon ![Flow control icon](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png) at the bottom of the screen, then click **[!UICONTROL Repeater]** in the menu that displays.
 1. Click the [!UICONTROL Repeater] module, then click **[!UICONTROL Connect automatically]** in the box that displays.
 
    The Repeater module opens.
@@ -77,7 +84,7 @@ For example, you could use a [!UICONTROL Repeater] module to send five emails wi
 
    In this example, you would enter 5.
 
-   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    The value of the item increases in each repetition by this value specified in the **[!UICONTROL Step]** field, which you can view by selecting **[!UICONTROL Show advanced settings]**. This number is 1 by default.
 
@@ -88,7 +95,7 @@ For example, you could use a [!UICONTROL Repeater] module to send five emails wi
 
    In our email example, you would type Hello in the [!UICONTROL Subject] box, then map `i` from the repeater module.
 
-   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![Repeater](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 

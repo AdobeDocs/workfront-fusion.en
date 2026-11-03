@@ -4,6 +4,12 @@ description: You can include an AI prompt in your scenario that connects to your
 author: Becky
 feature: Workfront Fusion
 exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Add an AI prompt to your scenario
 
@@ -34,4 +40,9 @@ Using MCP in your scenarios offers the following benefits:
 
 You can add an AI prompt to your scenario by using the MCP Agent module.
 
-For instructions, see [MCP Agent module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).
+For instructions, see the following articles for specific servers:
+
+* [Adobe Experience Manager MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
+* [Adobe Marketo Engage MCP module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md).
+* [Adobe Workfront MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
+* [MCP Agent module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).

@@ -1,15 +1,23 @@
 ---
-title: "Workfront Fusion release activity: Week of November 8, 2021"
-description: "Workfront Fusion release activity: Week of November 8, 2021"
+title: 'Workfront Fusion release activity: Week of November 8, 2021'
+description: 'Workfront Fusion release activity: Week of November 8, 2021'
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 98ee4e13-0862-4781-8d01-4ca8a169422c
-TQID: https://experienceleague.adobe.com/Gi7WdNUkAQbEBzOz6HJHP8iLkaiC6ojBulf94Nf7f-Q
+TQID: 'https://experienceleague.adobe.com/Gi7WdNUkAQbEBzOz6HJHP8iLkaiC6ojBulf94Nf7f-Q'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
 ---
 # Workfront Fusion release activity: Week of November 8, 2021
 

@@ -4,10 +4,13 @@ description: You can chain scenarios together, allowing one scenario to trigger 
 author: Becky
 feature: Workfront Fusion
 exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
-TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
+TQID: 'https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Chain multiple scenarios together
 
@@ -28,6 +31,8 @@ When a parent scenario is waiting for a child scenario to return data, that time
 For more information on Fusion's performance guardrails, including timeouts, see [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md).
 
 For instructions on configuring Chain modules, see [Chain modules](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md).
+
+For instructions on selecting existing modules in a scenario and moving them into a new child scenario, see [Move modules to a chain](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md).
 
 ## Parent and child scenarios
 

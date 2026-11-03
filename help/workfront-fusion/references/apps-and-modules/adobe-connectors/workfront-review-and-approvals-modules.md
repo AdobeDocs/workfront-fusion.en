@@ -10,6 +10,8 @@ product_v2:
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -125,6 +127,7 @@ If you see the map button above a field or function, you can use it to set varia
 
 * [Actions](#actions)
 * [Searches](#searches)
+* [Triggers](#triggers)
 * [Other](#other)
 
 ### Actions
@@ -132,17 +135,14 @@ If you see the map button above a field or function, you can use it to set varia
 * [Add or update participants](#add-or-update-participants)
 * [Bulk delete templates](#bulk-delete-templates)
 * [Create a template](#create-a-template)
-* [Create an approval](#create-an-approval)
+* [Create grouped approval](#create-grouped-approval)
 * [Create stages](#create-stages)
-* [Delete a decision on a stage](#delete-a-decision-on-a-stage)
-* [Delete a stage](#delete-a-stage)
-* [Delete a template](#delete-a-template)
-* [Delete an approval](#delete-an-approval)
-* [Delete decisions](#delete-decisions)
-* [Delete participants](#delete-participants)
 * [Lock a stage](#lock-a-stage)
 * [Make a decision](#make-a-decision)
 * [Make a decision on a stage](#make-a-decision-on-a-stage)
+* [Manage assets on a grouped approval](#manage-assets-on-a-grouped-approval)
+* [Manage stage participants](#manage-stage-participants)
+* [Manage stages on a grouped approval](#manage-stages-on-a-grouped-approval)
 * [Remind a participant on a stage](#remind-a-participant-on-a-stage)
 * [Remind participant](#remind-participant)
 * [Remind undecided participants](#remind-undecided-participants)
@@ -151,6 +151,7 @@ If you see the map button above a field or function, you can use it to set varia
 * [Update a stage](#update-a-stage)
 * [Update a template](#update-a-template)
 * [Update all stages](#update-all-stages)
+* [Update grouped approval (full state)](#update-grouped-approval-full-state)
 
 
 #### Add or update participants
@@ -238,9 +239,9 @@ This action module creates an approval template
   </tbody>
 </table>
 
-#### Create an approval
+#### Create grouped approval
 
-This action module creates an approval for a document on Adobe cloud storage, including stage data or a template.
+This action module creates a grouped approval: a set of document versions that move together through one or more approval paths, each an ordered sequence of stages with its own participants.
 
 <table style="table-layout:auto"> 
   <col/>
@@ -251,18 +252,50 @@ This action module creates an approval for a document on Adobe cloud storage, in
       <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
     </tr>
      <tr>
-      <td role="rowheader"><p>Document ID</p></td>
-      <td>Enter or map the ID of the asset that you want to create an approval for.</td> 
+      <td role="rowheader"><p>Name</p></td>
+      <td>Enter or map a display name for the grouped approval. The name must be between 1-255 characters.</td> 
       </tr>
      <tr>
-      <td role="rowheader">
-        <p>Stages</p>
-      </td>
-      <td>For each stage that you want to add, click <b>Add item</b> and enter the stage data.<p>For specifics, see <a href="#stages-fields" class="MCXref xref" >Stages fields</a> in this article. </p> </td> 
+      <td role="rowheader"><p>Assets</p></td>
+      <td>For each document version that you want to include in the group, click <b>Add item</b> and enter the document version (DOCV) ID.</td> 
       </tr>
-    <tr>
+     <tr>
+      <td role="rowheader"><p>Paths</p></td>
+      <td>For each approval path that you want to add, click <b>Add item</b> and enter the path ID, name, and stages. Each path contains an ordered sequence of stages. For each stage, in the Stages field, click <b>Add item</b> and enter the following data:
+      <ul>
+      <li><b>Stage ID</b><p>Enter a client-assigned identifier for the stage, unique across all paths. Must be alphanumeric, with underscores or hyphens allowed, and no more than 64 characters.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Parent Stage IDs</b><p>For each parent stage that you want to add to the stage, click <b>Add item</b> and enter the Parent ID.</p></li>
+      <li><b>Participants</b><p>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.
+      <ul>
+      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Participant type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Deadline Time: Hours</b><p>Enter or map the hour of day for the deadline (0-23). Pair with Deadline Time: Minutes.</p></li>
+      <li><b>Deadline Time: Minutes</b><p>Enter or map the minute of hour for the deadline (0-59). Pair with Deadline Time: Hours.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Parent Object ID</p></td>
+      <td>Enter or map the ID of the Workfront parent object (for example, a project or task) that you want to associate with the grouped approval. If you use this field, you must also enter the Object Code.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Object Code</p></td>
+      <td>Enter or map the Workfront object type code for the parent object (for example, <code>PROJ</code> or <code>TASK</code>). Required if you enter a Parent Object ID.</td> 
+      </tr>
+     <tr>
       <td role="rowheader"><p>Template ID</p></td>
-      <td>Enter or map the ID of the template that you want to use for this approval.</td> 
+      <td>(Optional) Enter or map a template ID to record on the grouped approval for traceability.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
       </tr>
   </tbody>
 </table>
@@ -296,6 +329,14 @@ This action module creates an approval with the given stage data.
       </tr>
   </tbody>
 </table>
+
+<!--
+
+AUTHOR: The following block of Delete-prefixed Actions modules (Delete a decision on a stage, Delete a stage, Delete a template, Delete an approval, Delete decisions, Delete grouped approval, Delete participants) is not confirmed to be current in the live connector as of this update - status uncertain. Commented out for now; restore (and remove this comment) once confirmed, or delete for good if confirmed removed.
+
+-->
+
+<!--
 
 #### Delete a decision on a stage
 
@@ -401,6 +442,29 @@ This module removes the current user's decision from the specified stage. The cu
   </tbody>
 </table>
 
+#### Delete grouped approval
+
+This action module deletes a grouped approval, cascading to its child asset approvals and paths.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to delete.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
 #### Delete participants
 
 This action module deletes participants from an approval.
@@ -431,6 +495,7 @@ This action module deletes participants from an approval.
       </tr>
   </tbody>
 </table>
+-->
 
 #### Lock a stage
 
@@ -509,6 +574,144 @@ This module applies a decision to the specified stage.
     <tr>
       <td role="rowheader"><p>Decision</p></td>
       <td>Select the decision that you want to apply to this stage.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Manage assets on a grouped approval
+
+This action module adds and/or removes document versions on a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to manage assets on.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Add Assets</p></td>
+      <td>For each document version that you want to add to the group, click <b>Add item</b> and enter the document version (DOCV) ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Remove Assets</p></td>
+      <td>For each document version that you want to remove from the group, click <b>Add item</b> and enter the document version (DOCV) ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Manage stage participants
+
+This action module adds, updates, and/or removes participants on a specific stage of a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Stage ID</p></td>
+      <td>Enter or map the ID of the stage that you want to manage participants on.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Add Participants</p></td>
+      <td>For each participant that you want to add to the stage, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Participant Type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Update Participants</p></td>
+      <td>For each participant that you want to update on the stage, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Participant Type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Remove Participants</p></td>
+      <td>For each participant that you want to remove from the stage, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Participant Type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant</b><p>Enter or map the ID of the participant.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Manage stages on a grouped approval
+
+This action module adds, updates, and/or removes stages on a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Add Stages</p></td>
+      <td>For each stage that you want to add, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Stage ID</b><p>Enter or map an identifier for the stage.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Update Stages</p></td>
+      <td>For each stage that you want to update, click <b>Add item</b> and enter the following details:
+      <ul>
+      <li><b>Stage ID</b><p>Enter or map the ID of the stage that you want to update.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Remove Stages</p></td>
+      <td>For each stage that you want to remove, click <b>Add item</b> and enter the stage ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
       </tr>
   </tbody>
 </table>
@@ -752,16 +955,73 @@ THis module replaces all stages on an existing approval with the given stage dat
   </tbody>
 </table>
 
+#### Update grouped approval (full state)
+
+This action module applies a full-state update to a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Grouped Approval ID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to update. For example, <code>9f8b60820000462ecf66c409d1248fa9</code>.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Paths</p></td>
+      <td>For each approval path that you want the grouped approval to have, click <b>Add item</b> and enter the path ID, name, and stages. Fusion reconciles this against the current state, adding, updating, and removing paths to match what you send. Each path contains an ordered sequence of stages. For each stage, in the Stages field, click <b>Add item</b> and enter the following data:
+      <ul>
+      <li><b>Stage ID</b><p>Enter a client-assigned identifier for the stage, unique across all paths. Must be alphanumeric, with underscores or hyphens allowed, and no more than 64 characters.</p></li>
+      <li><b>Stage Name</b><p>Enter or map a name for the stage.</p></li>
+      <li><b>Parent Stage IDs</b><p>For each parent stage that you want to add to the stage, click <b>Add item</b> and enter the Parent ID.</p></li>
+      <li><b>Participants</b><p>For each participant that you want to add to the stage, click <b>Add item</b> and enter the participant details.
+      <ul>
+      <li><b>Participant ID</b><p>Enter or map the ID of the participant.</p></li>
+      <li><b>Participant type</b><p>Select whether the participant is a user or a team.</p></li>
+      <li><b>Participant role</b><p>Select whether the participant is an approver or a reviewer.</p></li>
+      </ul>
+      </p></li>
+      <li><b>Deadline Date</b><p>If the deadline is a specific date, enter or map the date.</p></li>
+      <li><b>Business Days Until Deadline</b><p>If the deadline is after a specific number of business days, enter or map the number of days.</p></li>
+      <li><b>Deadline Time: Hours</b><p>Enter or map the hour of day for the deadline (0-23). Pair with Deadline Time: Minutes.</p></li>
+      <li><b>Deadline Time: Minutes</b><p>Enter or map the minute of hour for the deadline (0-59). Pair with Deadline Time: Hours.</p></li>
+      <li><b>Custom Message</b><p>Enter or map a custom message for the stage.</p></li>
+      </ul>
+      </td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Assets</p></td>
+      <td>(Optional) For each document version that you want the group to contain, click <b>Add item</b> and enter the document version (DOCV) ID. If you omit this field, the current assets are left unchanged.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Idempotency Key</p></td>
+      <td>(Optional) Enter or map a client-supplied key (maximum 128 characters) that makes a retried request safe. If you send the same key again, the module does not apply the update a second time.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
 ### Searches
 
 * [Get a template](#get-a-template)
 * [Get approval details](#get-approval-details)
+* [Get approvals in a grouped approval](#get-approvals-in-a-grouped-approval)
+* [Get grouped approval details](#get-grouped-approval-details)
 * [Get multiple approvals](#get-multiple-approvals)
 * [Get suggested approvals](#get-suggested-approvals)
 * [Get suggested participants](#get-suggested-participants)
 * [List bots](#list-bots)
+* [List grouped approvals by parent](#list-grouped-approvals-by-parent)
 * [List templates](#list-templates)
-* [Search AI brand reviewers](#search-ai-brand-reviews)
+* [Search AI brand reviews](#search-ai-brand-reviews)
+* [Search grouped approvals](#search-grouped-approvals)
 
 
 #### Get a template
@@ -810,6 +1070,56 @@ This search module retrieves approval details for an asset.
         <p>Document</p>
       </td>
       <td>Enter or map the ID of the asset that you want to retrieve approval details for.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Get approvals in a grouped approval
+
+This search module returns the individual asset approvals that make up a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to get approvals for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Document version data</p></td>
+      <td>Select whether to attach the Redrock documentVersion record to each document version (DOCV) approval. </td>
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### Get grouped approval details
+
+This search module returns a grouped approval by its GUID.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Group GUID</p></td>
+      <td>Enter or map the GUID of the grouped approval that you want to get details for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
       </tr>
   </tbody>
 </table>
@@ -895,7 +1205,7 @@ This module returns participant suggestions from the approval for the previous d
   </tbody>
 </table>
 
-#### List Bots
+#### List bots
 
 This module returns a paginated list of bot accounts.
 
@@ -922,7 +1232,34 @@ This module returns a paginated list of bot accounts.
   </tbody>
 </table>
 
-#### List Templates
+#### List grouped approvals by parent
+
+This search module returns the grouped approvals associated with a Workfront parent object.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>Parent ID</p></td>
+      <td>Enter or map the ID of the Workfront parent object (for example, a project or task) that you want to get grouped approvals for.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Object code</p></td>
+      <td>(Optional) Enter or map the Workfront object type code for the parent object (for example, <code>PROJ</code> or <code>TASK</code>).</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+#### List templates
 
 This module returns a list of all approval templates available to the current user. The current user is the user whose credentials are used in the connection used in this module.
 
@@ -981,6 +1318,124 @@ This module returns AI brand review results that were produced for a document ve
        </tr>
   </tbody>
 </table>
+
+#### Search grouped approvals
+
+This search module searches grouped approvals using a named view.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+     <tr>
+      <td role="rowheader"><p>View</p></td>
+      <td>(Optional) Select or map the named view that determines the shape of the response. Currently, only Awaiting Approvals is supported.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>(Optional) Enter or map the page size for the first page of results. The maximum is 100, and  the default is 20.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Cursor</p></td>
+      <td>(Optional) Enter or map the opaque cursor from a previous response, to fetch the next page of results. If you provide a cursor, the module ignores the Limit field.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Team IDs</p></td>
+      <td>(Optional) For each team that you also want to match grouped approvals by (where the team is a participant), click <b>Add item</b> and enter the team ID.</td> 
+      </tr>
+     <tr>
+      <td role="rowheader"><p>Limit</p></td>
+      <td>Enter or map the maximum number of results you want the module to work with during each scenario execution cycle.</td> 
+      </tr>
+  </tbody>
+</table>
+
+### Triggers
+
+* [Watch approval events](#watch-approval-events)
+
+#### Watch approval events
+
+This trigger module executes a scenario in real time when approval-related events occur in Adobe Workfront Unified Review and Approvals.
+
+The module returns any standard fields associated with the approval event, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+
+To configure the webhook for the Watch approval events module:
+
+1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
+
+1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Webhook name]</td> 
+      <td>Enter a name for the webhook</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Connection]</td> 
+      <td> <p>For instructions about connecting your Workfront app to Workfront Fusion, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Type]</td> 
+      <td>Select the type of approval record that you want the module to watch.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Configuration Type]</td> 
+      <td>Select whether you want to use a simple or advanced filter.<p>For information on simple or advanced filters, see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">Using Advanced filters</a> in the Workfront modules article.</p></td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Events filter payload]</td> 
+      <td>If you are using advanced filters, enter the JSON that describes the filter.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Filter Connector]</td> 
+      <td>If you are using advanced filters, select the connector that you want to use for the filter.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL State]</td> 
+      <td>If you are using a simple filter, select whether you want to watch the old state or the new state.<ul><li><p><b>[!UICONTROL New state]</b></p><p>Trigger a scenario when the record changes <b>to</b> a given value.</p><p>For example, if the state is set to [!UICONTROL New State] and the filter is set to [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], the webhook triggers a scenario when the [!UICONTROL Status] changes to [!UICONTROL In Progress], regardless of what the status was before.</p></li><li><p><b>[!UICONTROL Old state]</b></p><p>Trigger a scenario when the record changes <b>from</b> a given value.</p><p>For example, if the state is set to [!UICONTROL Old State] and the filter is set to [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress], the webhook triggers a scenario when a [!UICONTROL Status] that is currently [!UICONTROL In Progress] changes to another status.</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[!UICONTROL Event filters]</p> </td> 
+      <td> <p>If you are using a simple filter, set filters.</p> <p>For each filter, enter the field you want the filter to evaluate, the operator, and the value that you want the filter to allow. You can use more than one filter by adding AND rules.</p> <p><b>NOTE</b>: You cannot edit filters in existing Workfront webhooks. To set up different filters for Workfront event subscriptions, remove the current webhook and create a new one.</p> <p>For more information on event filters, see <a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Event subscription filters in the Workfront &gt; [!UICONTROL Watch Events] modules</a> in the Workfront modules article.</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>Exclude events made by this connection</td> 
+      <td>If you are using a simple filter, enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop. This option may not be available for all approval event types.</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Record Origin]</td> 
+      <td>
+       <p>Choose whether you want the scenario to watch [!UICONTROL New Records Only], [!UICONTROL Updated Records Only], [!UICONTROL New and Updated Records], or [!DNL Deleted Records Only].</p>
+       <p><b>NOTE</b>: If you choose [!UICONTROL New and Updated Records], the webhook creation creates 2 event subscriptions (for the same webhook address).</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Enable secured hooks]</td> 
+      <td>
+       <p>Choose whether you want to enable authToken-based security for this webhook.</p><p>
+       <b>NOTE</b>: As of August 23, 2026, Fusion enables authToken-based security by default for all Workfront > Watch Event modules, including existing ones. If a specific webhook breaks or you need to disable this for compatibility reasons, you can turn off the Enable secured hooks option.</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL Custom token]</td> 
+      <td>
+       <p>(Optional) If [!UICONTROL Enable secured hooks] is set to [!UICONTROL Yes], you can enter your own token value to secure the webhook. If you leave this field blank, Fusion automatically generates a token for you.</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+After the webhook is created, you can view the address of the endpoint that events are sent to.
+
+For more information, see the section [Examples of Event Payloads](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads) in the article Event Subscription API in the Workfront documentation.
 
 ### Other
 
@@ -1101,4 +1556,3 @@ The following fields are available when configuring stages. Not all fields may b
       <td>Enter or map a custom message for the stage.</td> 
       </tr>
 </table>
-

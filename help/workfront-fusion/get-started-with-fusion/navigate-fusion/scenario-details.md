@@ -4,10 +4,13 @@ description: Scenario details in Adobe Workfront Fusion
 author: Becky
 feature: Workfront Fusion
 exl-id: a6d07ed9-aa55-4993-9f78-7e691aa61049
-TQID: https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q
+TQID: 'https://experienceleague.adobe.com/-pnW047HSeE6M1LujbfSW6RScI8rY392d7Lmr343q4Q'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Scenario details overview
 
@@ -52,11 +55,11 @@ For more detail about the information in this table, see [Access requirements in
 
    Or
 
-   If you are working on the scenario in the scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+   If you are working on the scenario in the scenario editor, click the left arrow ![Exit editing arrow](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. On the page that displays, you can review the elements listed in the table below:
 
-   ![Scenario detail](assets/scenario-detail-350x207.png)
+   ![Scenario detail](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -104,9 +107,11 @@ For more detail about the information in this table, see [Access requirements in
       <td role="rowheader">[!UICONTROL Options]</td> 
       <td> <p>This menu provides you with extra options without having to open the scenario editor. These include:</p> 
        <ul> 
+        <li>[!UICONTROL Unlock execution]</li> 
         <li>[!UICONTROL Scheduling]</li> 
         <li>[!UICONTROL Rename]</li> 
         <li>[!UICONTROL Clone]</li> 
+        <li>[!UICONTROL Clone as template]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 

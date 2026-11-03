@@ -4,22 +4,41 @@ description: You can watch a running scenario to see how data flows through it.
 author: Becky
 feature: Workfront Fusion
 exl-id: 24eeb1d3-b5a7-4486-8d0b-0a43eb154e8e
-TQID: https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM
+TQID: 'https://experienceleague.adobe.com/Ni0X8egfhVILudqNjtxx8iiMmlSrJa-0JPH-XGeqYeM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # View data flow in a running scenario
 
 You can watch a running scenario to see how data flows through it. 
 
-While a scenario runs, the active module is marked by a growing ring around the module. The ring shows only that the module is running, not its progress. Modules that run quickly may only display a small part of the ring. 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
 
-![Ring around module](assets/ring-around-module.png)
+While a scenario runs, the active module is marked by a spinning ring on the module's icon in the new experience, or by a growing ring around the module in the classic experience. The ring shows only that the module is running, not its progress. Modules that run quickly may only display a small part of the ring.
+
+New experience
+
+![Spinning ring on the module's icon in the new experience](assets/new-spinning-icon.png)
+
+Classic experience
+
+![Ring around module in the classic experience](assets/ring-around-module.png)
 
 After the module has run, an output indicator appears.
 
-![Output indicator](assets/data-flow-output.png)
+New experience
+
+![Output indicator in the new experience](assets/new-output-indicator.png)
+
+Classic experience
+
+![Output indicator in the classic experience](assets/data-flow-output.png)
 
 If the module processes more than one bumdle, the ring appears for each processed bundle, and the output indicator counts up for each bundle it outputs.
 
@@ -58,6 +77,7 @@ For more detail about the information in this table, see [Access requirements in
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to view data flow.
+1. Click anywhere on the scenario to enter the Scenario editor.
 1. If the scenario is not running, activate it or click **Run once** to start the scenario execution.
 1. Select the execution that you want to view in the Currently Running section of the execution history panel.
 

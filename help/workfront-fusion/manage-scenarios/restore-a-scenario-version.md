@@ -4,16 +4,24 @@ description: You can view, restore, rename, or download blueprints for previous 
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
+TQID: 'https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # View and manage scenario versions
 
 Adobe Workfront Fusion saves a version of your scenario every time it changes.
 
 You can view, restore, rename, or download blueprints for previous versions of a scenario.
+
+>[!NOTE]
+>
+>Previously saved scenario versions are available for 60 days after the next scenario version is created. 
+>To retain scenario version history beyond that time frame for audit purposes, we recommend saving and archiving a blueprint of the scenario in another location.
 
 ## Access requirements
 

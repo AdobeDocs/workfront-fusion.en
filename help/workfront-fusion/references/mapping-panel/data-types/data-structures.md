@@ -4,10 +4,13 @@ description: A data structure is a document that describes in detail the format 
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-TQID: https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg
+TQID: 'https://experienceleague.adobe.com/e8cGFEEP3-wxExVZNNRG8bf-6CbpN56xGTGbHSV6MVg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Data structures
 

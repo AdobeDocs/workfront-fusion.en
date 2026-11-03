@@ -4,10 +4,13 @@ description: The [!DNL Adobe Workfront Fusion SFTP] modules allow you to monitor
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
+TQID: 'https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
@@ -35,7 +38,7 @@ The Adobe Workfront Fusion SF[!UICONTROL ]TP modules allow you to monitor file c
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion license</td> 
    <td>
-   <p>Operation-based: No Workfront Fusion license requirement</p>
+   <p>Operation-based: Available to organizations with operation-based licenses</p>
    <p>Connector-based (legacy): Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -76,7 +79,7 @@ To connect your SFTP account to Workfront Fusion you need create a connection th
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL Type]</td>
-    <td>Select whether you care connecting to a service account or a personal account.</td>
+    <td>Select whether you are connecting to a service account or a personal account.</td>
   </tr>
   <tr>
    <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 

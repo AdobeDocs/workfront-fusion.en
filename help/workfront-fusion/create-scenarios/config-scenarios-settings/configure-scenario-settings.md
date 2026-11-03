@@ -5,14 +5,21 @@ description: You can configure specific settings for scenarios in the scenario s
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
+TQID: 'https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Configure scenario settings
 
 You can configure specific settings for scenarios in the scenario settings panel. 
+
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
 
 ## Access requirements
 
@@ -45,6 +52,23 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Open the scenario settings
 
+* [Open the scenario settings in the new experience (Recommended)](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [Open the scenario settings in the classic experience](#open-the-scenario-settings-in-the-classic-experience)
+
+### Open the scenario settings in the new experience (Recommended)
+
+1. Click **Scenarios** in the left panel.
+1. Find the scenario you want, then click the name.
+1. Click anywhere on the scenario to enter the scenario editor.
+1. Click the **Scenario settings** icon ![Scenario settings icon](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png) in the Controls area.
+
+   You may need to click the three-dot icon in the Controls area first to view it.
+
+   In the [!UICONTROL Scenario settings] panel that displays, you can configure various advanced settings for the scenario.
+1. Enable or disable the Scenario settings as needed. See [Scenario settings options](#scenario-settings-options) below.
+
+### Open the scenario settings in the classic experience
+
 1. Click **Scenarios** in the left panel.
 1. Find the scenario you want, then click the name.
 1. Click anywhere on the scenario to enter the scenario editor.
@@ -61,6 +85,8 @@ For more detail about the information in this table, see [Access requirements in
 
 Here, you can enter a description for the scenario, which will appear in the Scenarios list. Descriptions are limited to 240 characters.
 
+Click **[!UICONTROL Describe with AI]** to have AI generate a description of the scenario for you automatically, based on the scenario's modules and configuration.
+
 ### [!UICONTROL Sequential processing]
 
 This option forces all executions to happen in order and is primarily relevant for Webhooks and for Incomplete Executions.
@@ -69,9 +95,9 @@ When sequential processing is enabled, parallel executions of the scenario are d
 
 **Instant Webhooks**: If a webhook trigger is configured as `instant` and "Sequential processing" is enabled, then all instant webhook payloads will be queued and processed in the order that they arrive. This can be useful when processing events from external systems in an exact order.
 
-   >[!NOTE]
-   >
-   >There will be automatic processing delays as each payload is processed before the next is started.
+>[!NOTE]
+>
+>There will be automatic processing delays as each payload is processed before the next is started.
 
 **Incomplete Executions**: If "Incomplete Executions" is also enabled, if an error occurs during the execution of a scenario, the scenario is paused. One of the following then occurs:
 
@@ -141,13 +167,13 @@ Setting more cycles can be useful when you want to prevent connection interrupti
 
 **Examples:**  Workfront > [!UICONTROL Watch record] watches for new issues that come in, and Workfront >[!UICONTROL Convert object] converts the new request into a project and assigns it the appropriate template.
 
-![Scenario settings](assets/scenario-settings-ex-1-350x157.png)
+![Scenario settings](assets/new-scenario-settings-ex-1.png)
 
 A [!UICONTROL more cycles] setting is applied only when you schedule your scenario execution. When you use the [!UICONTROL Run once] button, cycle settings are taken into account.
 
 #### Max number of cycles is set to 1 (default)
 
-![Maximum number of cycles](assets/max-number-cycles-1-350x201.png)
+![Maximum number of cycles](assets/new-max-number-cycles.png)
 
 The Max number of cycles in the Workfront > Watch records module is set to `10`.
 If 100 requests are submitted to Workfront, and the Max number of cycles field is set to 10, then 90 files are left unprocessed after one scenario run. The next 10 files are processed in the next scheduled scenario execution.
@@ -160,9 +186,7 @@ If 100 files are added to the Dropbox folder and the Max number of cycles option
 
 All files are processed within 1 scenario run.
 
-You can see the already-run cycles in the Scenario details:
-
-![Scenario detail](assets/scenario-detail-350x207.png)
+You can see the already-run cycles in the History area of the Scenario Details page.
 
 For more information about this page, see [Scenario details](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md).
 
@@ -177,6 +201,40 @@ For more information on errors, see [Error types](/help/workfront-fusion/referen
 >[!NOTE]
 >
 >If a scenario starts with an instant trigger, the setting is ignored and the scenario is deactivated immediately once the first error has occurred.
+
+### Notify on warning / Notify on error / Notify when scenario is disabled
+
+To set a scenario-level override for a notification type, check or uncheck the box next to the notification type. 
+
+For information on notification settings, including scenario-level overrides, see [Set notification options](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md).
+
+### Temporary debug logs
+
+>[!NOTE]
+>
+>* Temporary debug logs are available only in the new scenario designer, and only if the feature is enabled for your organization. 
+>* Changing the setting requires permission to edit the scenario.
+
+Request and response details are not kept for every scheduled or triggered run, because they take a lot of storage. Run once always keeps them.
+
+To collect request and response details for the scenario's regular runs, choose how long to collect them:
+
+* For the next 1 hour
+* For the next 1 day
+* For the next run
+* For the next 10 runs
+
+The change applies right away. You do not need to save the scenario.
+
+While temporary debug logs are on, the setting shows when they stay on until, or how many runs are left. To stop collecting request and response details before then, click **Turn off**.
+
+Debug logs switch off automatically when the time or the number of runs is used up. Every run counts, including scheduled runs that find no new data.
+
+>[!NOTE]
+>
+>Temporary debug logs are available only in the new experience, and only if the feature is enabled for your organization. To change this setting, you must have permission to edit the scenario.
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### Worker pool
 

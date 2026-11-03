@@ -8,13 +8,15 @@ description: In some cases you may want to forcibly stop the scenario execution 
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-TQID: https://experienceleague.adobe.com/zdEDHRJhIt8dc4Ql835IDypV-CM3YRT5w41mjGDVpSE
+TQID: 'https://experienceleague.adobe.com/zdEDHRJhIt8dc4Ql835IDypV-CM3YRT5w41mjGDVpSE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
     internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Configure `throw` error workaround
 
@@ -61,7 +63,7 @@ For more detail about the information in this table, see [Access requirements in
 
 To conditionally throw an error, you can configure a module to make it purposely fail during its operation. One possibility is to employ the [!UICONTROL JSON] > [!UICONTROL Parse JSON] module, configured to optionally throw an error (`BundleValidationError` in this case):
 
-![JSON error](assets/json-parse-json.png)
+![JSON error](assets/new-json-parse-json.png)
 
 You can then attach one of the error handling directives to the error handling route:
 
@@ -72,4 +74,4 @@ You can then attach one of the error handling directives to the error handling r
 
 The following example shows the use of the [!DNL Rollback] directive:
 
-![Rollback directive](assets/rollback-directive.png)
+![Rollback directive](assets/new-rollback-directive.png)

@@ -4,14 +4,21 @@ description: You an add advanced error handling techniques to your error handlin
 author: Becky
 feature: Workfront Fusion
 exl-id: 745bfdc4-1327-4a28-a863-c217f15a7fc5
-TQID: https://experienceleague.adobe.com/rbQYzfld2LTiuYP90Hz5HzIXpWx7XzqEjdBTf9YszDo
+TQID: 'https://experienceleague.adobe.com/rbQYzfld2LTiuYP90Hz5HzIXpWx7XzqEjdBTf9YszDo'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Add filtering and nesting to error handling routes
 
 You an add advanced error handling techniques to your error handling route by including filtering and nesting.
+
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
 
 ## Access requirements
 
@@ -67,7 +74,13 @@ For information on how Fusion evaluates and processes various data types, see [E
 
 ### Example: Error handling with filters
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>This example uses the classic scenario editor.
 
 This example scenario shows how these filters work for error handling.
 
@@ -115,7 +128,13 @@ The Resume directive then supplies the Folder path as the output for the failed 
 
 Error handler routes can be created and configured on all modules, except routers. Therefore, you can  create an error handler route for a module that is already part of an existing error handler route.
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>This example uses the classic scenario editor.
 
 Example:
 

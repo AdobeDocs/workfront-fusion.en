@@ -4,10 +4,13 @@ description: Because the applications that Workfront Fusion connects to may upda
 author: Becky
 feature: Workfront Fusion
 exl-id: b7f07fa5-9d81-48b3-b0ce-7a18b3b44508
-TQID: https://experienceleague.adobe.com/UZ0f1dI1YPiM9C7dYJYyCg0dhd5F025yG10K5-M5YrM
+TQID: 'https://experienceleague.adobe.com/UZ0f1dI1YPiM9C7dYJYyCg0dhd5F025yG10K5-M5YrM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Upgrade a module to a new version
 
@@ -67,7 +70,7 @@ For more detail about the information in this table, see [Access requirements in
 ## Upgrade a non-Workfront module to a new version
 
 1. Click the **Upgrade module** icon ![Upgrade icon](assets/upgrade-icon.png) on the module you want to upgrade to a new version.
-    ![Update icon](assets/update-indicator.png)
+    <!--![Update icon](assets/update-indicator.png)-->
 1. Click **Choose new**.
 1. Select the module that you want to replace the previous module.
 1. Configure the module with the same settings as the existing module.

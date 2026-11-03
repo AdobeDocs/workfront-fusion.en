@@ -4,10 +4,13 @@ description: Work automation requires rapid processing, so Adobe Workfront Fusio
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
+TQID: 'https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 ---
 # Fusion performance guardrails
 
@@ -74,6 +77,10 @@ For more information, see [Working with large files](/help/workfront-fusion/refe
 * The default maximum size of a payload is **5 MB**.
 * Webhooks are limited to **100 requests per second**. When this limit is reached, Workfront Fusion sends a 429 ([!UICONTROL Too Many Requests]) status.
 * Workfront Fusion stores webhook payloads for 30 days. Accessing a webhook payload more than 30 days after it was received results in the error "[!UICONTROL Failed to read file from storage.]"
+* A webhook's queue can hold up to **100,000** queued events. The queue fills when a scenario that uses the webhook is turned off, or is set to run on a schedule instead of instantly. When the queue reaches 100,000 events, new events are rejected with a "Queue is full" error and a 400 status code.
+
+  For Workfront and Planning events, if the queue remains full for an extended period, the event subscription is disabled, then frozen, and Workfront Fusion stops receiving events for that subscription.
+
 * Webhooks are deactivated automatically if either of the following applies:
 
   * The webhook has not been connected to any scenario for more than 5 days
