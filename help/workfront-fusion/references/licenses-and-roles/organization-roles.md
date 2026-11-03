@@ -81,7 +81,7 @@ This article describes the access and functionality available to the different t
 
 >[!NOTE]
 >
->The following tables show the permissions of the predefined team roles. In addition to these roles, you can create custom roles for a team. For more information, see [Custom team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#custom-team-roles).
+>The following tables show the permissions of the predefined team roles. In addition to these roles, you can create custom roles for a team. For more information, see [Custom team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md#custom-team-roles) and [View and manage team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
 
 ### Scenarios
 

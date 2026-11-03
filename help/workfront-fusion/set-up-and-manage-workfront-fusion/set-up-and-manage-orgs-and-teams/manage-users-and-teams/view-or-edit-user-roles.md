@@ -83,6 +83,10 @@ When assigning a user to or from an Owner role, consider the following.
 
 Adobe Workfront Fusion administrators and team administrators can view and update user roles.
 
+>[!NOTE]
+>
+>In addition to the predefined roles, a team can have custom roles. For information about creating and managing custom roles, see [View and manage team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
 1. While logged in as a Workfront Fusion administrator, select **[!UICONTROL All users]** in the left navigation.
 1. Click **[!UICONTROL Details]** in the row of the user that you want to view.
 1. Click the Teams icon in the **[!DNL Role]** column in the row of the organization that contains the team where you want to view or edit the user's role.

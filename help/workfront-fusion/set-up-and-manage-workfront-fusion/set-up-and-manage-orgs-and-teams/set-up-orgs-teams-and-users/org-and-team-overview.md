@@ -90,6 +90,8 @@ For information on specific actions available to users in each team role, see [O
 
 In addition to the predefined team roles, each team has a **[!UICONTROL Roles]** tab where you can create your own roles. You can create, update, and delete roles, and choose exactly which permissions each role includes. You are no longer limited to a fixed set of roles.
 
+For instructions, see [View and manage team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
 With custom roles, you can:
 
 * Give each person only the access that their job needs, which reduces the risk of accidental changes to critical scenarios.
@@ -103,5 +105,3 @@ Anyone with the **[!UICONTROL Manage members]** permission in a team can create,
 * Team Admins can manage roles in their teams.
 
 <!-- BECKY CHECK ME: The source does not describe the steps in the Roles tab, the list of permissions that you can choose from, or whether you can edit or delete the predefined roles. Add the steps and permissions list once confirmed. Also confirm that Team Admins can manage roles (the source says the Manage members permission was previously given to Team Admin and Org Owner roles, and that team and org admins can create roles only in the teams where they are admins). -->
-
-<!-- BECKY CHECK ME: The Slack thread mentions an endpoint that clones roles from one team to another (available in stage at the time). Confirm whether to document it, and whether you can define a role that is available in all teams (the discussion says that is out of scope for the initial release). -->
