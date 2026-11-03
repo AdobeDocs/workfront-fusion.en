@@ -12,21 +12,17 @@ feature_v2:
 ---
 # View and manage team roles
 
-Each team in Adobe Workfront Fusion has a **[!UICONTROL Roles]** tab. On this tab, you can view the roles available in the team, create your own roles, and choose exactly which permissions each role includes. You can also update and delete roles. You are no longer limited to a fixed set of roles.
+You can view the roles available in a team, create your own roles, and choose which permissions each role includes. You can also update and delete roles. 
 
-With custom roles, you can:
+Custom roles offer the following benefits: 
 
-* Give each person only the access that their job needs, which reduces the risk of accidental changes to critical scenarios.
-* Set up access to match how your organization works, instead of fitting your teams into the predefined roles.
-* Manage access yourself, without contacting support.
+* Each team member has only the access that their job needs, which reduces the risk of accidental changes to critical scenarios.
+* Custom roles can better match how your organization works, instead of fitting your teams into the predefined roles.
+* You can manage access yourself, without contacting support.
 
 For an overview of organizations, teams, and the predefined team roles, see [Organization and team overview](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md). For the permissions included in the predefined roles, see [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
 
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release, and whether this article should say that custom roles are available only to some organizations. -->
-
 ## Access requirements
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion articles. The source says that anyone with the Manage members permission can create, update, delete, and assign users to roles. Confirm the access level configurations. -->
 
 +++ Expand to view access requirements for the functionality in this article.
 
@@ -69,34 +65,21 @@ Anyone with the **[!UICONTROL Manage members]** permission in a team can create,
 * Organization Admins can manage roles only in the teams that they are members of and where they have the **[!UICONTROL Manage members]** permission.
 * Team Admins can manage roles in their teams.
 
-<!-- BECKY CHECK ME: Confirm that Team Admins can manage roles. The source says that the Manage members permission was given to the Team Admin and Org Owner roles in the legacy system, and that team admins and org admins can create roles only in the teams where they are admins. -->
+## Create or edit a role
 
-## View the roles in a team
+1. In Fusion, in the left navigation, click **Team overview**.
+1. (Conditional) If you are not on the page for the team that you want to view roles for, click the **Team** dropdown near the top of the page and select the correct team.
+1. Open the **[!UICONTROL Roles]** tab.
 
-1. Open the team.
+   The tab lists the roles that are available in the team, including the predefined roles. For each role, the list shows the role's name and a summary of its permissions, such as "No permissions", "Member", or "Custom · 19 permissions".
 
-   <!-- BECKY CHECK ME: Confirm how users open a team (for example, select the team in the left navigation, or open it from the Teams list under Org overview). -->
+1. To create a role, click **[!UICONTROL Create role]**.
 
-1. Click the **[!UICONTROL Roles]** tab.
+   Or
 
-   The **[!UICONTROL Roles]** tab is next to the **[!UICONTROL Team]**, **[!UICONTROL Users]**, and **[!UICONTROL Notification options]** tabs. It lists the roles that are available in the team, including the predefined roles. For each role, the list shows the following:
+   To edit a role, click **[!UICONTROL Edit]** in the row of the role that you want to edit.
 
-   * **[!UICONTROL Name]**: The name of the role.
-   * **[!UICONTROL Permissions]**: A summary of the permissions that the role includes. For example, a role might show "No permissions", the name of a set of permissions, such as "Member", or "Custom" and the number of permissions, such as "Custom · 19 permissions".
-   * **[!UICONTROL Edit]** and **[!UICONTROL Delete]** buttons for the role.
-
-1. (Optional) To find a role, enter text in the **[!UICONTROL Search]** field above the list, or in the search field in the **[!UICONTROL Name]** column.
-1. (Optional) To sort the list by name, click the **[!UICONTROL Sort]** icon in the **[!UICONTROL Name]** column.
-1. (Optional) To hide or display columns, click the **[!UICONTROL Columns]** icon near the upper-right corner of the list, then enable or disable columns.
-
-<!-- BECKY CHECK ME: Confirm the label and function of the icons next to the Name column and above the list on the right (the sort icon and the columns icon). -->
-
-## Create a role
-
-1. Open the team's **[!UICONTROL Roles]** tab, as described in [View the roles in a team](#view-the-roles-in-a-team) in this article.
-1. Click **[!UICONTROL Create role]**.
-
-   The **[!UICONTROL Create role]** page opens.
+   <!-- BECKY CHECK ME: The Edit button is available for the predefined roles as well as custom roles. Confirm the title of the edit page, whether you can rename the predefined roles, and what happens to users who already have the role. -->
 
 1. Enter a name for the role in the **[!UICONTROL Role name]** field.
 1. In the **[!UICONTROL Role template]** dropdown, select the template that you want to start from.
@@ -112,11 +95,14 @@ Anyone with the **[!UICONTROL Manage members]** permission in a team can create,
 
    For a list of the permissions, see [Permissions that you can include in a role](#permissions-that-you-can-include-in-a-role) in this article.
 
-1. Click **[!UICONTROL Save]**. To close the page without creating the role, click **[!UICONTROL Cancel]**.
+   <!-- BECKY CHECK ME: Confirm the options in the Role template dropdown and what each one selects. Confirm exactly what No access, View only, and Full access select in each area (in the screenshot, View only selects the view permissions). Confirm whether there is a Description field, and whether there are areas below Team on the page (the screenshots end at Team). -->
 
-<!-- BECKY CHECK ME: Confirm the options in the Role template dropdown and what each one selects. Confirm exactly what No access, View only, and Full access select in each area (in the screenshot, View only selects the view permissions). Confirm whether there is a Description field, and whether there are areas below Team on the page (the screenshots end at Team). -->
+1. Click **[!UICONTROL Save]**. To close the page without saving, click **[!UICONTROL Cancel]**.
+1. (Optional) To delete a role, click **[!UICONTROL Delete]** in the row of the role on the **[!UICONTROL Roles]** tab.
 
-The role is available in the team. You can assign it to team members.
+   <!-- BECKY CHECK ME: Confirm why the Delete button is unavailable (dimmed) for some roles, such as Team Operator, Team Member, and Team Admin in the screenshot, whether there is a confirmation prompt, and what happens to users who have the role. Update this step and add a note, if needed. -->
+
+A role that you create is available in the team. You can assign it to team members.
 
 ### Permissions that you can include in a role
 
@@ -171,30 +157,11 @@ The role is available in the team. You can assign it to team members.
 
 <!-- BECKY CHECK ME: Confirm that this list is complete, and add a description of what each permission allows, if needed. The list is taken from the Create role page, which may have more areas below Team. -->
 
-## Update a role
-
-1. Open the team's **[!UICONTROL Roles]** tab.
-1. Click **[!UICONTROL Edit]** in the row of the role that you want to update.
-
-   The page for editing the role opens. It has the same fields as the **[!UICONTROL Create role]** page.
-
-1. Change the name or the permissions of the role. For information about the fields, see [Create a role](#create-a-role) in this article.
-1. Click **[!UICONTROL Save]**.
-
-<!-- BECKY CHECK ME: The Edit button is confirmed by the screenshot, and it is available for the predefined roles as well as custom roles. Confirm the title of the edit page, whether you can rename the predefined roles, and what happens to users who already have the role. -->
-
-## Delete a role
-
-1. Open the team's **[!UICONTROL Roles]** tab.
-1. Click **[!UICONTROL Delete]** in the row of the role that you want to delete.
-
-<!-- BECKY CHECK ME: Confirm why the Delete button is unavailable (dimmed) for some roles, such as Team Operator, Team Member, and Team Admin in the screenshot, whether there is a confirmation prompt, and what happens to users who have the role. Update this procedure and add a note, if needed. -->
-
 ## Clone roles to another team
 
 You can copy the roles in one team to another team, so that you do not have to re-create the same roles in each team.
 
-1. Open the team's **[!UICONTROL Roles]** tab, as described in [View the roles in a team](#view-the-roles-in-a-team) in this article.
+1. Open the team's **[!UICONTROL Roles]** tab, as described in [Create or edit a role](#create-or-edit-a-role) in this article.
 1. Click **[!UICONTROL Clone to team]**.
 
    The **[!UICONTROL Clone roles to another team]** page opens.
