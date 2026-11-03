@@ -55,6 +55,4 @@ The Run once feature is found in the scenario editor.
    * **Provide input manually**: You must provide the webhook payload for the scenario input. This must be in JSON format.
 
       To provide the input, enter the text into the **Webhook payload** box and click **Run**.
-
-
-
+      
