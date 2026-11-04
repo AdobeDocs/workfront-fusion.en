@@ -254,7 +254,7 @@ This action module creates a new folder in the specified location.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Set the desired folder permissions. Use chmod parameters. For example, <code>777</code> or <code>-rwxrwxrwx</code>.</p> <p>These permissions must match the pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>For more information about chmod, see the <a href="https://ss64.com/bash/chmod.html">chmod documentation</a>.</p> </td> 
+   <td> <p>Set the desired folder permissions. Use chmod parameters. For example, <code>777</code> or <code>-rwxrwxrwx</code>.</p> <p>These permissions must match the pattern <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>For more information about chmod, see the <a href="https://ss64.com/bash/chmod.html">chmod documentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -462,7 +462,7 @@ Allows you to change permissions of the file.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Set the desired file permissions. Use chmod parameters. For example, <code>777</code> or <code>-rwxrwxrwx</code>.</p> <p>These permissions must match the pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>For more information about chmod, see the <a href="https://ss64.com/bash/chmod.html">chmod documentation</a>.</p> </td> 
+   <td> <p>Set the desired file permissions. Use chmod parameters. For example, <code>777</code> or <code>-rwxrwxrwx</code>.</p> <p>These permissions must match the pattern <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>For more information about chmod, see the <a href="https://ss64.com/bash/chmod.html">chmod documentation</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -489,7 +489,7 @@ This module allows you to upload a file to the SFTP server.
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Permissions]</p> </td> 
-   <td> <p>Set the desired permissions for the file or folder. Use chmod parameters. For example, <code>777</code> or <code>-rwxrwxrwx</code>.</p> <p>These permissions must match the pattern <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>For more information about chmod, see the <a href="https://ss64.com/bash/chmod.html">chmod documentation</a>.</p> </td> 
+   <td> <p>Set the desired permissions for the file or folder. Use chmod parameters. For example, <code>777</code> or <code>-rwxrwxrwx</code>.</p> <p>These permissions must match the pattern <code>/(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3}/.</code></p> <p>For more information about chmod, see the <a href="https://ss64.com/bash/chmod.html">chmod documentation</a>.</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Buffer size (B)]</p> </td> 
