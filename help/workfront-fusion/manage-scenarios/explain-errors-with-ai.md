@@ -23,6 +23,8 @@ You can explain errors in the following areas of Workfront Fusion:
 >[!NOTE]
 >
 >The **[!UICONTROL Explain]** button is available only in the new scenario designer. It is not available in the legacy scenario designer.
+>
+>Your organization must have an AI license to use this feature.
 
 ## Access requirements
 

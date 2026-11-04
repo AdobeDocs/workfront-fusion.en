@@ -178,7 +178,7 @@ A discussion of regular expressions is beyond the scope of this article. We reco
  <tbody> 
   <tr> 
    <td>[!UICONTROL Pattern] </td> 
-   <td> <p>Enter the regular expression pattern. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code> extracts all numerals in the provided text.</p> <p>Note:  <p>The pattern should contain at least one capture group in parenthesis <code>()</code>. If the pattern does not contain any capture groups, the output bundle is empty.</p> </p> </td> 
+   <td> <p>Enter the regular expression pattern. </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span> <code>&#91;+-&#93;?(\d+(\.\d+)?|\.\d+)(&#91;eE&#93;&#91;+-&#93;?\d+)?</code> extracts all numerals in the provided text.</p> <p>Note:  <p>The pattern should contain at least one capture group in parenthesis <code>()</code>. If the pattern does not contain any capture groups, the output bundle is empty.</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Global match]</td> 
