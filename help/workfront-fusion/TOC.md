@@ -11,6 +11,7 @@ nudge: true
 * Fusion release activity {#fusion-release-activity}
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2026 {#fusion-releases-2026}
+        * [Workfront Fusion release activity: Week of November 2, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-2.md)
         * [Workfront Fusion release activity: Week of October 26, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
         * [Workfront Fusion release activity: Week of October 19, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
         * [Workfront Fusion release activity: Week of October 12, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
@@ -191,7 +192,6 @@ nudge: true
         * [Scenario editor overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
         * [Scenario details overview](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
         * [Switch between orgs or teams](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
-        * [Change profile settings](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
 * Set up and manage Workfront Fusion {#set-up-and-manage-fusion}
     * [Set up and manage Workfront Fusion](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-workfront-fusion-toc.md)
     * Licensing and operations overviews {#licensing-and-operations-overviews}
@@ -199,6 +199,10 @@ nudge: true
         * [Adobe Workfront Fusion licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
         * [Operations](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
         * [Worker pools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+    * Configure your Fusion account {#configure-fusion-account}
+        * [Configuring your Fusion account: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/configure-fusion-account-toc.md)
+        * [Change profile settings](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/change-profile-settings.md)
+        * [View and manage time zones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)
     * Set up and manage orgs and teams {#set-up-and-manage-orgs-and-teams}
         * [Set up and manage organizations and teams: article index](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
         * Set up organizations and teams {#set-up-orgs-teams-and-users}

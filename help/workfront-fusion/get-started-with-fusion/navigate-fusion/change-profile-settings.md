@@ -55,3 +55,5 @@ This menu allows you to:
 * Set **[!UICONTROL Preferences]** for [!DNL Adobe Experience Cloud], including primary and secondary language preferences.
 * Access your **[!UICONTROL Workfront Profile]**. Once you are on the profile, click the **[!UICONTROL More]** menu and select **[!UICONTROL Edit]**. 
 * **[!UICONTROL Sign out]** of Adobe Experience Cloud.
+
+Your Fusion profile also includes time zone settings that affect how dates and times are displayed and interpreted. For more information, see [View and manage time zones](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md).
