@@ -79,7 +79,7 @@ For more detail about the information in this table, see [Access requirements in
 1. Click **Save**.
 
 
-## View and manage your user time zone
+## View and manage your organization's time zone
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ For more detail about the information in this table, see [Access requirements in
 
    The organization's current time zone setting is displayed to the right of the organization name.
 1. To edit the time zone, click Edit ![Edit time zone](assets/edit-timezone-icon.png) next to the time zone.
-1. In the Change details window, in the **Timezone** field, select the timezone that you want to set for yourself.
+1. In the Change details window, in the **Timezone** field, select the timezone that you want to set for your organization.
 1. Click **Save**.
 
 
