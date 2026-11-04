@@ -74,6 +74,12 @@ You must add both modules to a scenario before you can add a filter between them
 
    The **[!UICONTROL Set up a filter]** window opens directly. (Right-clicking the path opens a different menu instead.)
 
+   The filter panel shows which two modules the filter sits between. Next to the panel title, you see the module IDs, for example **#12 → #13**. Above the filter settings, a line such as **Between ● Router #12 → ● HTTP #13** shows each module's color and name. Hover a module name to see its action. While the panel is open, the filter's label on the connection has a moving dashed outline.
+
+   ![Filter panel](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
+
+   <!-- BECKY CHECK ME: filter panel details and screenshot added from the 11/2/26 release note (fusion-2026-11-2.md). The screenshot is reused by absolute path from the release note assets; confirm it matches the example in this article or swap it for a new one. -->
+
 1. In the box that displays, enter a **[!UICONTROL Label]** for the filter.
 1. Define the filter **[!UICONTROL Condition]**.
 

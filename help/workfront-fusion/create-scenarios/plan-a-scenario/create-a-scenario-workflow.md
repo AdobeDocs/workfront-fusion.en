@@ -182,6 +182,11 @@ You can use the following keyboard shortcuts when creating or editing a scenario
  </tbody> 
 </table>
 
+>[!NOTE]
+>
+>The new scenario editor has additional keyboard shortcuts, including shortcuts to confirm or close panels, move between modules, and open a list of all shortcuts. For more information, see [Keyboard shortcuts](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts) in the article Scenario editor.
+<!-- BECKY CHECK ME: note added from the 11/2/26 release note (fusion-2026-11-2.md). In the new editor, Ctrl+Shift+Enter (Run once) also confirms the open panel first, and the Search shortcut now opens Search (renamed from Search modules). Decide whether to update the table rows below or leave them as the classic shortcuts. -->
+
 
 
 

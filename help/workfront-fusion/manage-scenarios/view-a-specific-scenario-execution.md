@@ -123,7 +123,7 @@ In the new experience, when you open an execution from the execution history, th
 | Control | Details |
 | ---------- | ---------- |
 | Go to next error or warning | Shows how many modules had a problem in the current cycle. Each click moves to the next one, errors first and then warnings, from left to right. It centers the module and opens the first failed operation. The button is hidden when the execution had no errors or warnings. |
-| Search modules | Find a module by name and center it on the canvas. Press Ctrl+K (Windows) or Command+K (Mac). |
+| Search | Find a module by name or ID and center it on the canvas. Press Ctrl+K (Windows) or Command+K (Mac). <!-- BECKY CHECK ME: control renamed from Search modules to Search, per from the 11/2/26 release note (fusion-2026-11-2.md). Confirm whether Search in run review also finds mapped values, settings, and filter conditions as it does in edit mode (see Scenario editor); if so, expand this row. --> |
 | Notes | Show or hide the scenario's notes. This control displays only when the scenario has notes, and the notes are read-only here. |
 | Explain flow | Animate the order in which the scenario's modules run. Click it again, or press Esc, to stop. |
 | Zoom in, Zoom out, Focus, and minimap | Work the same way as in edit mode. |

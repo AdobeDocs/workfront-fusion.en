@@ -68,6 +68,7 @@ The new experience includes:
 * [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), a panel that shows a scenario run as it happens.
 * Several Developer Tools that are now built into the scenario editor.
 * Temporary debug logs, which you can turn on in the scenario settings.
+* A Search that finds module names, mapped values, module settings, and filter conditions, and keyboard shortcuts for common panel actions. 
 
 To switch between the classic and new experiences:
 
@@ -106,6 +107,7 @@ If you do not see the toggle, the new experience might not be available to your 
 * [Ask AI](#ask-ai)
 * [Canvas navigation](#canvas-navigation)
 * [Canvas display](#canvas-display)
+* [Keyboard shortcuts](#keyboard-shortcuts)
 
 #### Editing actions
 
@@ -144,7 +146,7 @@ You may need to click on the three-dot icon in the Controls area to view some of
 | Scenario settings <p>![Scenario settings icon](assets/scenario-settings-icon-new.png)</p> | The scenario settings panel contains advanced settings for the scenario. For more information about the settings available, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md). Request and response details are not kept for every run. To collect them for the scenario's regular runs, turn on Temporary debug logs. For more information, see [Temporary debug logs](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).  |
 | Notes <p>![Notes icon](assets/notes-icon-new.png)</p> | Make notes about the scenario. Other users can view these notes when they are in the scenario. For more information, see [Add notes to a scenario](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md). |
 | Auto-align <p>![Auto-align icon](assets/auto-align-icon-new.png)</p> | Auto-align the modules in your scenario. |
-| Search modules <p>![Search modules icon](assets/search-modules-icon-new.png)</p> | Select a module from that list to go to that module in the scenario, or enter a search term to locate a module, then click the search results to be taken to that module. You can search by module name, ID, type, or application. |
+| Search <p>![Search icon](assets/search-modules-icon-new.png)</p> | Open Search (press **Ctrl + K** on Windows or **⌘ K** on Mac). Search finds modules by name or ID. It also finds every mapped value, every module setting, and every filter condition in the scenario. Each result shows where the match was found, for example _Mapper · Approval ID_, with the matching text highlighted. Filters are listed in their own section. To find every place that uses a value, paste a reference such as `{{1.name}}`. Search finds exactly that reference, but not `{{21.name}}` or `{{1.names}}`. Click a result to open the module or filter. The matching field is briefly highlighted and scrolled into view. As you move through filter results with the arrow keys, the canvas shows the filter and the two modules that it connects. <!-- BECKY CHECK ME: Search row rewritten from the 11/2/26 release note (fusion-2026-11-2.md) (renamed from 'Search modules' to 'Search'). The old text also said you can search by module type or application; the release note does not mention that, so I removed it. Confirm, and confirm the icon and the tool tip label. --> |
 | Find and replace <p>![Find and replace icon](assets/find-and-replace-icon-new.png)</p> | <p>Search for and replace variables, mapped value sources, or connections across the scenario's modules. Use the tabs to:</p><ul><li>Replace a mapped variable across the whole scenario or in one module.</li><li>Remap references from one source module to another.</li><li>Copy a connection to one or all compatible modules from the same app.</li></ul><p>The panel previews the modules that will be affected before you make the change. Select a row in the preview to go to that module on the canvas.</p> <p>For more information, see [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md).</p> |
 | Snippets <p>![Snippets icon](assets/snippets-icon-new.png)</p> | <p>Snippets are scenario sections that are saved as a unit. To create one, select modules and save them as a snippet. In the Snippets panel, you can search, tag, preview, pin, sort, and drag and drop snippets, and import and export them. You can share snippets with teams or organizations, or send a copy directly to another user. Shared snippets display on their own tab.</p> <p>For more information, see [Save and reuse scenario sections with snippets](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md).</p> |
 | Explain flow <p>![Explain flow icon](assets/explain-flow-icon-new.png)</p> | View an animation where moving dots show how data flows through the scenario. |
@@ -204,7 +206,25 @@ The new canvas also changes how scenarios look as you work.
 | Zoom detail | Card details display as you zoom in. When you zoom out, modules simplify to icons so that you can still see the whole scenario. |
 | Fold a router | In edit mode, you can fold a router to hide its routes. For more information, see [Fold a router](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router). |
 | Dark mode | The canvas follows your dark appearance setting under your Adobe preferences, including module cards, links, panels, controls, and status information. |
-| Right-side panel | Module setup, module inspection, the module browser, Find and replace, Snippets, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), and request and response details open in the same panel on the right side of the canvas. |
+| Open module or filter | When you open a module, the canvas no longer moves. Instead, the module gets a moving dashed outline. When you open a filter, its label on the connection gets the same outline. The outline color matches the module's color and adjusts automatically so that it stays visible in light and dark mode. |
+| Right-side panel | Module setup, module inspection, the module browser, Find and replace, Snippets, [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md), and request and response details open in the same panel on the right side of the canvas. </br>To resize the panel, drag its left edge to make it wider or narrower, or double-click the edge to return to the default width. Your width is remembered, including when you sign in from another browser. On a smaller screen, the panel automatically fits the window. While a panel is maximized, you can't change its width. |
+
+#### Keyboard shortcuts
+
+These shortcuts help you work in panels without moving the mouse.
+
+| Shortcut (Mac / Windows) | What it does |
+| ---------- | ---------- |
+| **⌘ Enter** / **Ctrl + Enter** | Confirms the open panel (same as **OK**). Works while you type. With no panel open, runs the scenario once. |
+| **Esc** | Closes the open panel without saving. If the mapping panel is open, closes only that panel. |
+| **⌥ ←** / **⌥ →** (Mac), **Alt + ←** / **Alt + →** (Windows) | Confirms the panel and opens the previous or next module. Also available as the **‹ ›** buttons in the panel header. Works when the cursor is not in a text field. |
+| **⌘ Shift + Enter** / **Ctrl + Shift + Enter** | Confirms the open panel and runs the scenario once. Nothing runs if the panel has errors. |
+| **⌘ K** / **Ctrl + K** | Opens Search. |
+| **?** | Shows the list of all scenario designer shortcuts. Also available from the three-dot menu, under **Keyboard shortcuts**. |
+
+* Wide panels show a reminder of the confirm and cancel shortcuts at the bottom.
+* The **Run once** and **Save** buttons show their shortcuts in their tooltips.
+* When you move to the next or previous module and it is hidden behind the panel or off-screen, the canvas moves just enough to show it.
 
 ## Use the scenario editor in the classic experience
 

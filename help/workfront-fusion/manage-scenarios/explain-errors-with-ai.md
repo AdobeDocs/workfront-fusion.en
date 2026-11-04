@@ -23,6 +23,9 @@ You can explain errors in the following areas of Workfront Fusion:
 >[!NOTE]
 >
 >The **[!UICONTROL Explain]** button is available only in the new scenario designer. It is not available in the legacy scenario designer.
+>
+>Your organization must have an AI license to use this feature.
+<!-- BECKY CHECK ME: AI license requirement added from the 11/2/26 release note, which says the feature requires an AI license. Confirm the wording and whether it belongs in the Access requirements table instead. Also, the release note calls the Insights table 'Failed executions', while this article calls it 'Failed Executions Logs'; confirm the UI label. -->
 
 ## Access requirements
 

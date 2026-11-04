@@ -54,7 +54,7 @@ For more detail about the information in this table, see [Access requirements in
 
 
 
-Live Trail opens in the panel on the right side of the canvas. If you close the panel during a run, a small tab on the right of the screen lets you open it again without losing the events that were captured.
+Live Trail opens in the panel on the right side of the canvas. You can resize the panel by dragging its left edge. <!-- BECKY CHECK ME: resize note added from the 11/2/26 release note (fusion-2026-11-2.md); confirm it applies to the Live Trail panel. --> If you close the panel during a run, a small tab on the right of the screen lets you open it again without losing the events that were captured.
 
 ## Review events in Live Trail
 
