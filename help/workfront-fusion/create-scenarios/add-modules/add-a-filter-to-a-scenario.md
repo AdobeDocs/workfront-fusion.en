@@ -78,8 +78,6 @@ You must add both modules to a scenario before you can add a filter between them
 
    ![Filter panel](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
-   <!-- BECKY CHECK ME: filter panel details and screenshot added from the 11/2/26 release note (fusion-2026-11-2.md). The screenshot is reused by absolute path from the release note assets; confirm it matches the example in this article or swap it for a new one. -->
-
 1. In the box that displays, enter a **[!UICONTROL Label]** for the filter.
 1. Define the filter **[!UICONTROL Condition]**.
 
