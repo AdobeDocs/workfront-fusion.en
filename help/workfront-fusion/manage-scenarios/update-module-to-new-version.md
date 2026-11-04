@@ -70,7 +70,7 @@ For more detail about the information in this table, see [Access requirements in
 ## Upgrade a non-Workfront module to a new version
 
 1. Click the **Upgrade module** icon ![Upgrade icon](assets/upgrade-icon.png) on the module you want to upgrade to a new version.
-    ![Update icon](assets/update-indicator.png)
+    <!--![Update icon](assets/update-indicator.png)-->
 1. Click **Choose new**.
 1. Select the module that you want to replace the previous module.
 1. Configure the module with the same settings as the existing module.

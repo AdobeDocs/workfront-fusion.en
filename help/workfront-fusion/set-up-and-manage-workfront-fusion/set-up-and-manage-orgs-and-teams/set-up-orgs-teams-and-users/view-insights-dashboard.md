@@ -63,6 +63,12 @@ In the Fusion Insights dashboard, you can see the following metrics.
 
 * **Failed Executions Logs**
    This table lists every failed or warning scenario execution across your organization, so you can find and troubleshoot problem runs without leaving the dashboard.
+* **Organization Operations**
+   This chart allows you to view the number of operations used in your organization. You can select specific teams or scenarios, and view operations in the last week, month, or year.
+* **Top scenarios by operations**
+   This chart allows you to view which scenarios are using the most operations. You can select specific teams, or view data for the last day, week, or month.
+
+<!--
 
 * **Executions waiting to be processed**
    This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time. 
@@ -81,6 +87,8 @@ In the Fusion Insights dashboard, you can see the following metrics.
 
    You can use this chart to identify scenarios that are taking longer than usual, including those affected by issues with a connected app or service.
 
+-->
+
 ## View the Fusion Insights Dashboard
 
 1. In Fusion, click **Insights** in the left navigation.
@@ -96,6 +104,89 @@ In the Fusion Insights dashboard, you can see the following metrics.
 1. To change the time range of the dashboard, the Time Range field in the upper-right corner of the dashboard, then select a new time frame. The longest available time frame is 24 hours, and the shortest is 15 minutes.
 1. To refresh the charts, click the Refresh icon near the upper-right corner of the dashboard.
 1. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view.
+
+## Customize the Insights dashboard
+
+You can choose which widgets appear on the Insights dashboard, and in what order.
+
+### Add, remove, or reorder widgets
+
+1. In the left navigation, click **Insights** ![Insights icon](assets/insights-icon.png).
+1. Click **[!UICONTROL Customize]** in the Insights header.
+
+   A side panel opens. It lists every widget as a card that shows a preview, the widget name, and a description.
+
+1. To show or hide a widget, click its card, or click the **[!UICONTROL Add widget]** or **[!UICONTROL Remove widget]** button on the card.
+
+   Widgets that are shown have a checkmark.
+1. To reorder widgets, drag a widget card to a new position in the panel.
+
+   A dashed placeholder and a drop bar show where the card will land.
+
+Your choices are saved per browser. Widgets that are added in later releases appear in the panel automatically.
+
+If you remove all of the widgets, the page displays a "No widgets on this page" message.
+
+## Refresh the Insights dashboard
+
+To reload the data of every widget, click **[!UICONTROL Refresh]** next to **[!UICONTROL Customize]**.
+
+* Each widget keeps its filters.
+* The **[!UICONTROL Refresh]** button shows a pending state until all widgets finish loading.
+* Charts keep the previous chart under a loading spinner, and the Executions Log dims its table under a spinner while the data reloads.
+* If a refresh fails, widgets keep their last good data.
+
+## Take the Insights tour
+
+The first time you open the Insights dashboard, a welcome dialog gives you the option to start a tour or skip it.
+
+The tour highlights each widget, in your saved order, as well as the **[!UICONTROL Customize]** button and panel, the **[!UICONTROL Refresh]** button, and the **[!UICONTROL Replay tour]** button in the title bar.
+
+To restart the tour at any time, click the tour information icon ![information icon](assets/insights-tour-information.png) in the title bar.
+
+The tour does not start when you open the Insights dashboard from a link in a scenario. For more information, see [Open the Insights dashboard from a scenario](#open-the-insights-dashboard-from-a-scenario) in this article.
+
+## Search for scenarios and teams by ID
+
+In the **[!UICONTROL Organization Operations]** and **[!UICONTROL Top Scenarios by Operations]** widgets, the **[!UICONTROL Scenario]** and **[!UICONTROL Team]** fields match on ID as well as name. Each option shows its ID under the name, for example "ID 123".
+
+* The lists load the first 500 scenarios and the first 200 teams. If you enter an ID that is not in the loaded list, Fusion looks it up automatically after a short delay.
+* If you clear a scenario, the team that was filled in automatically for that scenario is also cleared.
+
+>[!NOTE]
+>
+>The scenario filter in the Executions Log does not match on ID.
+
+## Open the Insights dashboard from a scenario
+
+You can open the Insights dashboard with the **[!UICONTROL Organization Operations]** widget filtered to a specific scenario and team.
+
+To go to the Insights page from a scenario:
+
+1. Open the scenario detail page:
+
+   1. Click the **[!UICONTROL Scenario]** tab in the left panel, then click a scenario you would like details on.
+
+      Or
+
+      If you are working on the scenario in the the scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+      1. Click the **Reports** tab near the top of the page.
+
+* The **[!UICONTROL Organization Operations]** widget opens filtered to that scenario and team, and the page scrolls to the widget.
+* If you have removed the widget from the page, a warning with an **[!UICONTROL Add widget]** button appears instead.
+
+## Use dark mode
+
+The Insights dashboard and its widgets automatically follow your dark mode setting. When you change the setting, the page updates immediately, without reloading, and keeps your current state. Light mode is unchanged.
+
+## Performance widget access
+
+The **[!UICONTROL Performance]** widget is shown only to users who have one of the following permissions:
+
+* Organization Edit in the active organization
+* Organization View on the admin page
+
+The widget is hidden from the page and from the **[!UICONTROL Customize]** panel for other users. If a user is granted access later, the widget returns in its saved position. Opening the Insights URL directly does not bypass this check.
 
 ## Filter and triage executions in the Execution Log
 

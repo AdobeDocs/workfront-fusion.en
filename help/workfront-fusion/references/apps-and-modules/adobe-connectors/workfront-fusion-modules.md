@@ -123,12 +123,12 @@ This module makes a copy of the specified record.
    <td> Select the type of record that you want to clone. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Scenario ID</td> 
-   <td> Enter or map the ID of the scenario that you want to clone. </td> 
+   <td role="rowheader">Scenario ID / Hook ID / Data structure ID</td> 
+   <td> Enter or map the ID of the item that you want to clone. </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Name</td> 
-   <td> Enter or map a name for the new scenario.</td> 
+   <td> Enter or map a name for the new scenario, hook, or data structure.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -198,6 +198,10 @@ This module returns a paged list of records using cursor-based paging and proper
   <tr> 
    <td role="rowheader">Record type</td> 
    <td>Select the type of record that you want to return a list of.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fields</td> 
+   <td>Select any fields that you want to include in the results.</td> 
   </tr> 
   <tr> 
    <td role="rowheader">Property</td> 
@@ -376,9 +380,36 @@ This module gets the dependencies of the record.
    <td> Select the type of record that you want to retrieve dependencies for. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Scenario ID</td> 
+   <td role="rowheader">Scenario ID / Hook ID</td> 
    <td> Enter or map the ID of the record that you want to retrieve dependencies for. </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### Get record dependents
+
+This module identifies what depends on a given resource. Use this module before deleting a resource, to check whether anything depends on that resource and may be affected by its deletion.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td>Select the type of record that you want to check for dependents.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Kind</td> 
+   <td>Select the kind of dependents that you want to check for..</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td>Enter or map the ID of the record that you want to return dependents for.</td> 
   </tr> 
  </tbody> 
 </table>
