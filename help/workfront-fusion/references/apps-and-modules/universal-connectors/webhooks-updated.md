@@ -296,7 +296,7 @@ Or, you can send the sample data via the [!UICONTROL HTTP] > [!UICONTROL Make a 
     </tbody> 
    </table>
 
-   ![New scneario setup](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![New scenario setup](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. Open the scenario with the [!UICONTROL Webhooks] module in a separate browser tab or window.
 1. In the webhooks module, click **[!UICONTROL Redetermine data structure]**.

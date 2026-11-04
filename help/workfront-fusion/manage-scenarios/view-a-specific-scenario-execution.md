@@ -16,6 +16,8 @@ feature_v2:
 
 You can view details of a specific scenario execution, including filtering and searching for scenario events.
 
+You can also view scenario execution details for each module and filter.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -70,11 +72,16 @@ You can view an execution from the scenario's scenario history.
 
 1. To view output from a module, click the output details bubble near the module. The number in the bubble represents the number of bundles that the module output.
 
-   ![Output bubble near a module](assets/output-bubble.png)
+   To view specific bundles in the module output, you can use the output panel's search bar, or filter for bundles with a specific status (such as Success, Warning, or Failed.)
+
+   ![Output bubble near a module](assets/new-output-bubble.png)
 
 1. To view the bundles that passed through a filter, click the filter. The number near the filter represents the number of bundles that passed through the filter.
+
+   To view specific bundles handled by the filter, you can use the filter's search bar, or filter for bundles with a specific status (such as Passed or Failed.)
 1. To search for a specific module or event in the execution panel, enter the search term into the **Search execution events** box. Results appear as you type.
 1. To limit execution panel search results by status such as Success or Warning, click the **Status Filter** dropdown and select the status.
+1. To get a plain-language explanation of an error in the execution, click **[!UICONTROL Explain]** under the error. For more information, see [Explain a scenario error with AI](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 
 
 
@@ -89,3 +96,38 @@ You can view an execution from the scenario's scenario history.
 >`<module-id>` refers to the number next to the module label when viewing the scenario.
 >
 >This can be useful when debugging scenarios or copying module configuration.
+
+
+## Examine the output from modules and filters
+
+You can examine the scenario output to see whether the scenario behaved as expected.
+
+1. To view output from a module, click the output details bubble near the module. The number in the bubble represents the number of bundles that the module output.
+
+   To view specific bundles in the module output, you can use the output panel's search bar, or filter for bundles with a specific status (such as Success, Warning, or Failed.)
+
+   ![Output bubble near a module](assets/output-bubble.png)
+
+1. To view the bundles that passed through a filter, click the filter. The number near the filter represents the number of bundles that passed through the filter.
+
+   To view specific bundles handled by the filter, you can use the filter's search bar, or filter for bundles with a specific status (such as Passed or Failed.)
+1. To search for a specific module or event in the execution panel, enter the search term into the **Search execution events** box. Results appear as you type.
+1. To limit execution panel search results by status such as Success or Warning, click the **Status Filter** dropdown and select the status.
+
+## Review an execution in the new scenario editor
+
+In the new experience, when you open an execution from the execution history, the controls near the right side of the canvas help you find what went wrong without editing the scenario:
+
+![Review an execution](assets/review-an-execution.png)
+
+| Control | Details |
+| ---------- | ---------- |
+| Go to next error or warning | Shows how many modules had a problem in the current cycle. Each click moves to the next one, errors first and then warnings, from left to right. It centers the module and opens the first failed operation. The button is hidden when the execution had no errors or warnings. |
+| Search modules | Find a module by name and center it on the canvas. Press Ctrl+K (Windows) or Command+K (Mac). |
+| Notes | Show or hide the scenario's notes. This control displays only when the scenario has notes, and the notes are read-only here. |
+| Explain flow | Animate the order in which the scenario's modules run. Click it again, or press Esc, to stop. |
+| Zoom in, Zoom out, Focus, and minimap | Work the same way as in edit mode. |
+
+The **Compact view** switch is also available in the upper-right corner. When you review an execution, it changes the layout only while you look at that execution. It does not change your Compact view setting for editing, and nothing is saved to the scenario.
+
+Select an event in the execution to center and highlight the matching module. When operation details are available, the request and response panel opens. If the panel has no data, request and response details were not kept for that run. To collect them for future runs, see [Temporary debug logs](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs).

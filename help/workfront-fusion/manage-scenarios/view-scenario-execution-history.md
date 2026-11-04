@@ -22,7 +22,13 @@ A scenario event is a modification to the scenario, such as editing, activating,
 
 >[!NOTE]
 >
->A scenario's history displays all of a scenario's executions for the last 30 days.
+>* A scenario's history displays all of a scenario's executions for the last 30 days.
+>* In the new experience, the scenario editor also has an Execution history panel. It shows each run's status, duration, operations, and data size. Here, you can:
+>
+>   * Filter by status
+>   * Search events
+>   * Use **Previous** and **Next** to move between runs without returning to the execution list
+>   * Select an event to center and highlight the matching module on the canvas. When operation details are available, the request and response panel opens for that event.
 
 ## Access requirements
 
@@ -68,7 +74,7 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
 
    Or
 
-   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/new-exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. Click **History** near the name of the scenario.
     ![history tab](assets/history-tab.png)
@@ -99,7 +105,7 @@ The [!UICONTROL History] tab shows more detail than is available on the [!UICONT
 
    Or
 
-   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/exit-editing-arrow.png) near the upper-left corner of the window.
+   If you are working on the scenario in the Scenario editor, click the left arrow ![Exit editing arrow](assets/new-exit-editing-arrow.png) near the upper-left corner of the window.
 
 1. Click the **[!UICONTROL History]** tab in the right panel.
 1. (Optional) For detailed information about a selected scenario run, click on the execution in the right panel.

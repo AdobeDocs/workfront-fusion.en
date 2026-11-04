@@ -36,6 +36,10 @@ For more information on error handling directives, see [Directives for error han
 >Workfront Fusion supports route‑level error handling, allowing you to define error handling logic once per route, rather than attaching error handlers to each individual module. 
 >Because route-level error handling is a more scalable, consistent, and architecturally clean way to manage errors, especially in advanced, multi-branch automations, we recommend using route-level error handling as a best practice.
 
+>[!NOTE]
+>
+>Workfront Fusion is transitioning the scenario editor to a new experience. During this transition, both the classic and new experiences are available, and you can switch between them at any time. We recommend using the new experience. For more information, see [New and classic experiences](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences) in the article Scenario editor.
+
 ## Access requirements
 
 +++ Expand to view access requirements for the functionality in this article.
@@ -84,9 +88,9 @@ Errors are handled by the following hierarchy:
 
 ### Example
 
-Consider the following example scenario:
+Consider the following example scenario, shown here in compact view for readability:
 
-![Example scenario showing routes and error handlers](assets/error-handling-route-example-with-numbers.png)
+![Example scenario showing routes and error handlers](assets/new-error-handler-examples-with-numbers.png)
 
 1. This module has an error handler. Any error on this module is handled by the Commit directive.
 1. This module does not have an error handler. If this module encounters an error, the error is handled by the handler on the router that created the module's route. Any error on this module is handled by the Rollback directive.
@@ -109,7 +113,41 @@ You can add an error handler to a module or to a router.
 
 ### Add an error handler to a module
 
-To add an error handler to a module:
+* [Add an error handler to a module in the new experience (Recommended)](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [Add an error handler to a module in the classic experience](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### Add an error handler to a module in the new experience (Recommended)
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add an error handling route.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Right-click the module after which you want to add an error handler route, and select **[!UICONTROL Add error handler]**:
+
+    ![Add error handler in menu](assets/new-add-error-handler-in-menu.png)
+
+    An error handler route is added to the module. If the module is the last module in a route, the error handler directly follows the module. If the module has more modules after it, a separate error handler route is added. 
+
+    The error handling module shows a list of Directives as well as the apps being used in your scenario. 
+
+    ![Error handling directives](assets/new-error-handling-directives.png)
+    
+1. Select one of the directives. 
+
+    Or 
+
+    Add one or more modules to the error handler route. 
+
+    If you add more modules to the route, the Ignore directive is applied by default. If there is an error, the subsequent modules on that route are processed.
+
+    For more information on directives, see [Error handling directives](#error-handling-directives) in this article.
+
+1. (Optional) Add a filter to the error handling route. For instructions, see [Add filtering and nesting to error handling routes](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>An error handler route is marked by a dotted line with a red **[!UICONTROL Error handler]** label.
+
+#### Add an error handler to a module in the classic experience
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add an error handling route.
@@ -141,6 +179,40 @@ To add an error handler to a module:
 >Note that an error handler route is composed of transparent circles, while a regular route is composed of solid circles.
 
 ### Add an error handler to a router
+
+* [Add an error handler to a router in the new experience (Recommended)](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [Add an error handler to a router in the classic experience](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### Add an error handler to a router in the new experience (Recommended)
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add an error handling route.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Right-click the router where you want to add an error handler route, and select **[!UICONTROL Add error handler]**.
+
+    An error handler route is added to the router. 
+
+    The error handling module shows a list of Directives as well as the apps being used in your scenario. 
+
+    ![Error handling directives](assets/new-error-handling-directives.png)
+    
+1. Select one of the directives. 
+
+    Or 
+
+    Add one or more modules to the error handler route. 
+
+    If you add more modules to the route, the Ignore directive is applied by default. If there is an error, the subsequent modules on that route are processed.
+
+    For more information on directives, see [Error handling directives](#error-handling-directives) in this article.
+
+1. (Optional) Add a filter to the error handling route. For instructions, see [Add filtering and nesting to error handling routes](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md).
+
+>[!NOTE]
+>
+>An error handler route is marked by a dotted line with a red **[!UICONTROL Error handler]** label.
+
+#### Add an error handler to a router in the classic experience
 
 1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
 1. Select the scenario where you want to add an error handling route.
