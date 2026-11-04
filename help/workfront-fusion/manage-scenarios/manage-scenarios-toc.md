@@ -19,6 +19,7 @@ feature_v2:
 * [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [Activate or deactivate a scenario](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [Explain a scenario error with AI](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)
 * [Use Live Trail to review a scenario run](/help/workfront-fusion/manage-scenarios/live-trail.md)
 * [Find and replace variables, sources, and connections in a scenario](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [Restore a scenario version](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)

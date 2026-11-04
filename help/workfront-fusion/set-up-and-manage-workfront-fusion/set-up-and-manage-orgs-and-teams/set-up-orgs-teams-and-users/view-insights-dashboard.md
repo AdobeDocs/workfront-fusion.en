@@ -204,6 +204,7 @@ Use the Execution Log to find scenario executions that failed or returned a warn
    For most filters, you can choose to match only the values you select, or everything except them.
 
 1. Click an execution to view more detail about its error.
+1. To get a plain-language explanation of an error, hover over the failed execution and click **[!UICONTROL Explain]**. For more information, see [Explain a scenario error with AI](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md).
 1. To reactivate one or more scenarios that were automatically deactivated after repeated failures, select the executions, then click **Activate**.
 
    >[!NOTE]
