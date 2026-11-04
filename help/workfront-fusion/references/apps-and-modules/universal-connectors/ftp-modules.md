@@ -192,7 +192,7 @@ This action module changes permission settings of a file or folder.
             <td>[!UICONTROL Permissions]</td>
             <td>
                <p>Set the desired file or folder permissions. Use the chmod parameters. For example: <code>777 </code>or <code>-rwxrwxrwx</code>.</p>
-               <p>Permissions must match the pattern <code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>.</p>
+               <p>Permissions must match the pattern <code> /(.?(&#91;r-&#93;&#91;w-&#93;&#91;x-&#93;){3})|&#91;0-7&#93;{3,4}/</code>.</p>
             </td>
          </tr>
    </tbody>
