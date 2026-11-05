@@ -84,8 +84,6 @@ You can create a connection to your Workfront account directly from inside a Wor
 
 New connections, and connections that you reauthorize, sign in with your Adobe account (Adobe IMS or Experience Cloud sign-in). They do not use a Workfront OAuth2 application.
 
-<!-- BECKY CHECK ME: The original text said that the Workfront connector uses OAuth 2.0 to connect to Workfront. I replaced it based on the request. Confirm whether to keep a mention of OAuth 2.0 here. -->
-
 * [Connect to Workfront using your Adobe account](#connect-to-workfront-using-your-adobe-account)
 * [Reauthorize an existing connection](#reauthorize-an-existing-connection)
 * [Connect to Workfront using a Server-to-Server connection](#connect-to-workfront-using-a-server-to-server-connection)
@@ -142,21 +140,10 @@ New connections, and connections that you reauthorize, sign in with your Adobe a
 
 >[!NOTE]
 >
->Connections that you created before November 5, 2026 continue to work. To switch an existing connection to Adobe sign-in, reauthorize it. For instructions, see [Reauthorize an existing connection](#reauthorize-an-existing-connection) in this article.
-
-<!-- BECKY CHECK ME: The request says "Connections created before [release date]". I used the expected release date, November 5, 2026. Confirm the date. -->
-
-<!-- BECKY CHECK ME: The previous version of this procedure included a note that OAuth 2.0 connections no longer rely on API keys, and a note that connecting to a Workfront Sandbox environment requires an OAuth2 application with a Client ID and Client Secret. I removed them from this procedure because the new connection signs in with an Adobe account. Confirm how to connect to a Sandbox environment now, and whether to keep the API key note. -->
-
-### Reauthorize an existing connection
-
-Existing connections keep working without changes. When you reauthorize a connection, it moves to the new Adobe sign-in.
-
-The previous sign-in flow, which used a Workfront OAuth2 application with a Client ID and Client Secret, is deprecated. We recommend that you reauthorize your existing Workfront connections.
+>Connections that you created before November 5, 2026 continue to work. To switch an existing connection to Adobe sign-in, reauthorize it. 
 
 To reauthorize a connection, see [Manage connections](/help/workfront-fusion/manage-scenarios/manage-connections.md).
 
-<!-- BECKY CHECK ME: Confirm that the standard Reauthorize procedure in Manage connections applies to Workfront connections, and whether the user needs to enter any of the new fields (Instance name, Instance lane) when reauthorizing. Consider adding the steps here. Also confirm whether the deprecation applies to Server-to-Server connections (the request describes only the Adobe Workfront auth connection type). -->
 
 ### Connect to Workfront using a Server-to-Server connection
 
