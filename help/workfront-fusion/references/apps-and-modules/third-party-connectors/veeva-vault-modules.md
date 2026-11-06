@@ -1148,13 +1148,65 @@ This module returns a list of files and folders for the specified path.
 
 ### Other
 
-* [Make a custom API call](#make-a-custom-api-call)
+* [Make a Custom API Call](#make-a-custom-api-call)
+* [Make a custom API call (Legacy)](#make-a-custom-api-call-legacy)
 * [Make a VQL query](#make-a-vql-query)
 * [Read logs](#read-logs)
 
-#### Make a custom API call
+#### Make a Custom API Call
 
-This action module makes a custom call to the Veeva Vault API.
+This action module makes a custom call to the Veeva Vault API. It supports multiple request body types.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td> <p>For instructions about connecting your Veeva Vault account to Workfront Fusion, see <a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">Connect Veeva Vault to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>Enter a path relative to <code>baseurl/api/v</code>.  For example: <code>/objects/documents</code>. Do not include <code>baseurl/api/v/</code>, as it is already included.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Method</td> 
+   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP request methods</a>.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Headers</td> 
+   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion adds the authorization headers for you.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Query String</td> 
+   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Body type</td> 
+   <td> <p>Select the type of body that you want to send with the request:</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Request content</td> 
+   <td> <p>If you are using a raw or binary body type, enter or map the body content for the API call.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fields</td> 
+   <td> <p>If you are using a urlencoded or multipart form data body type,  or binary body type, for each field that you want to add data for, click <b>Add item</b> and enter the field's key and value.</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### Make a custom API call (Legacy)
+
+This action module makes a custom call to the Veeva Vault API. This module supports only the `raw` body type. To use other body types, use the [Make a Custom API Call](#make-a-custom-api-call) module.
 
 <table style="table-layout:auto"> 
  <col> 
