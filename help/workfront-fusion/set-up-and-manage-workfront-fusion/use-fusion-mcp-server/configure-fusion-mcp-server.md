@@ -9,11 +9,47 @@ The Adobe Workfront Fusion MCP server lets you work with your Fusion organizatio
 
 For a list of tools available in the Adobe Workfront Fusion MCP server, see [Adobe Workfront Fusion MCP server tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md).
 
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Prerequisites
+
+Before you can connect Fusion to an AI agentic platform, you must:
+
+* Have an active Adobe Workfront Fusion license and access to at least one Fusion organization.
+* Have a Fusion user role and team roles that grant access to the data you want to work with.
+* Sign in with an Adobe ID (Adobe Identity Management System, IMS).
+* Have access to an MCP-compatible AI agentic platform, or to Coworker.
+
 ## Supported MCP applications
 
 The Fusion MCP server works with the following applications.
-
-<!-- BECKY CHECK ME: This section replaces the previous statement that the Fusion MCP server works with any AI agentic platform that supports MCP and remote (Streamable HTTP) MCP servers with OAuth. The request says that only the applications listed here can connect. Confirm that the previous statement should be removed. Also confirm whether the requested heading "Supported MCP applications" should replace the previous heading "Supported AI agentic platforms". -->
 
 **Chat applications**
 
@@ -67,21 +103,12 @@ This article walks through the connection steps for:
 
 <!-- BECKY CHECK ME: This note might conflict with the Supported MCP applications section, which says that only the listed applications can connect. Gemini is not on the supported list, and Cursor and VS Code are. Confirm whether to remove or reword this note. -->
 
-## Prerequisites
-
-Before you can connect Fusion to an AI agentic platform, you must:
-
-* Have an active Adobe Workfront Fusion license and access to at least one Fusion organization.
-* Have a Fusion user role and team roles that grant access to the data you want to work with.
-* Sign in with an Adobe ID (Adobe Identity Management System, IMS).
-* Have access to an MCP-compatible AI agentic platform, or to Coworker.
-
 ## Use Fusion with Coworker
 
 Coworker is Adobe's AI agent. Fusion is built into Coworker, so you don't need to enter an MCP URL or register an OAuth app. You can use Coworker with Fusion in two places:
 
-* [Coworker (standalone)](#use-fusion-in-coworker): Work with Fusion alongside your other Adobe apps.
-* [Coworker in the Fusion right rail](#use-coworker-in-the-fusion-right-rail): Open Coworker in a panel inside the Fusion UI.
+* Coworker (standalone): Work with Fusion alongside your other Adobe apps.
+* Coworker in the Fusion right rail: Open Coworker in a panel inside the Fusion UI.
 
 Both use the same Fusion MCP tools, your Adobe ID, and your Fusion permissions. The Read or Write MCP tools settings apply in both. Destructive actions, such as delete, clear queue, or overwrite, always ask for confirmation.
 
