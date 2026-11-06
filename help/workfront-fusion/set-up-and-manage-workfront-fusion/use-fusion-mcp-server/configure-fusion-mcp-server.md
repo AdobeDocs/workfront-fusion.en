@@ -211,8 +211,8 @@ The agent uses `fusion_orgs_list` and `fusion_orgs_set`. The switch applies to t
 | Authentication failed or the connection stopped working. | Session expired or connection error. | Disconnect and reconnect the server. |
 | You see a message that MCP access is disabled. | MCP access is turned off for your Fusion organization. | Ask your Fusion administrator to enable it. |
 | The agent can read scenarios but can't create, run, update, or delete them. | Write MCP tools are disabled, or your team role doesn't allow it. | Ask your Fusion administrator to enable write tools, or to grant you the required team role. |
-| Custom app authentication is rejected. | Callback URL isn't on the authorized list.  | Ask your administrator to add the exact callback URL. |
-| Fusion isn't listed in Coworker, or Coworker is missing from the Fusion right rail. | Feature not enabled for your organization.| Contact your Fusion administrator. |
+| Custom app authentication is rejected. | Callback URL isn't on the authorized list. | Ask your administrator to add the exact callback URL. |
+| Fusion isn't listed in Coworker, or Coworker is missing from the Fusion right rail. | Feature not enabled for your organization. | Contact your Fusion administrator. |
 
 ## Frequently asked questions
 
