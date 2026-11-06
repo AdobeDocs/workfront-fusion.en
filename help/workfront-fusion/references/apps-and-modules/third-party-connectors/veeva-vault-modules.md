@@ -1193,15 +1193,16 @@ This action module makes a custom call to the Veeva Vault API. It supports multi
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Body</td> 
-   <td> <p>Add the body content for the API call. The fields that are available depend on the body type that you select.</p> </td> 
+   <td role="rowheader">Request content</td> 
+   <td> <p>If you are using a raw or binary body type, enter or map the body content for the API call.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Fields</td> 
+   <td> <p>If you are using a urlencoded or multipart form data body type,  or binary body type, for each field that you want to add data for, click <b>Add item</b> and enter the field's key and value.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-<!-- BECKY CHECK ME: The request says only that the new module supports four body types (urlencoded, multipart_form_data, raw, binary), and that the previous module supported only raw. I copied the other fields (Connection, URL, Method, Headers, Query String) from the legacy module. Confirm the field labels and order in the new module, the exact label of the body type field and its options, and the fields that appear for each body type (for example, how to add fields for urlencoded and multipart_form_data, and how to select the file for binary). -->
-
-<!-- BECKY CHECK ME: Confirm the module labels in the UI. The request calls the new module "Make a Custom API Call" and the previous module "(Legacy)". -->
 
 #### Make a custom API call (Legacy)
 
