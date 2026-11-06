@@ -9,9 +9,42 @@ The Adobe Workfront Fusion MCP server lets you work with your Fusion organizatio
 
 For a list of tools available in the Adobe Workfront Fusion MCP server, see [Adobe Workfront Fusion MCP server tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md).
 
-## Supported AI agentic platforms
+## Supported MCP applications
 
-The Fusion MCP server works with any AI agentic platform that supports Model Context Protocol (MCP) and remote (Streamable HTTP) MCP servers with OAuth.
+The Fusion MCP server works with the following applications.
+
+<!-- BECKY CHECK ME: This section replaces the previous statement that the Fusion MCP server works with any AI agentic platform that supports MCP and remote (Streamable HTTP) MCP servers with OAuth. The request says that only the applications listed here can connect. Confirm that the previous statement should be removed. Also confirm whether the requested heading "Supported MCP applications" should replace the previous heading "Supported AI agentic platforms". -->
+
+**Chat applications**
+
+* Anthropic Claude
+* OpenAI ChatGPT
+* Microsoft 365 Copilot
+
+**Developer tools**
+
+* Anthropic Claude Code
+* Cursor
+* GitHub Copilot
+* VS Code
+* OpenAI Codex
+* MCP Inspector, mcp-remote, and other tools that use a local callback
+
+**Automation and AI platforms**
+
+* Adobe Workfront Fusion
+* Google Vertex AI Search
+* Glean
+* Writer AI Studio
+* Postman
+
+### Limitations
+
+* Only the applications listed in this section can connect to the Fusion MCP server.
+* Desktop apps and command-line interfaces (CLIs) work if they receive the sign-in callback on your own machine (`localhost`).
+* You cannot add your own applications. To request support for a new application, contact the Fusion team at [fusiondev@adobe.com](mailto:fusiondev@adobe.com).
+
+<!-- BECKY CHECK ME: Other parts of this article might conflict with these limitations. See the comments in the important note below, in the section Connect Fusion to a custom MCP solution, and in the troubleshooting table. -->
 
 >[!NOTE]
 >
@@ -31,6 +64,8 @@ This article walks through the connection steps for:
 >```
 >https://mcp.fusion.adobe.com/mcp
 >```
+
+<!-- BECKY CHECK ME: This note might conflict with the Supported MCP applications section, which says that only the listed applications can connect. Gemini is not on the supported list, and Cursor and VS Code are. Confirm whether to remove or reword this note. -->
 
 ## Prerequisites
 
@@ -133,6 +168,8 @@ Add Fusion as a custom MCP server.
 
 ## Connect Fusion to a custom MCP solution
 
+<!-- BECKY CHECK ME: This section might conflict with the Supported MCP applications section, which says that you cannot add your own applications. Confirm whether to remove this section or reword it. -->
+
 If you're building your own application or agent, connect to the Fusion MCP server directly.
 
 ## Switch to a different Fusion organization
@@ -154,7 +191,7 @@ The agent uses `fusion_orgs_list` and `fusion_orgs_set`. The switch applies to t
 | Authentication failed or the connection stopped working. | Session expired or connection error. | Disconnect and reconnect the server. |
 | You see a message that MCP access is disabled. | MCP access is turned off for your Fusion organization. | Ask your Fusion administrator to enable it. |
 | The agent can read scenarios but can't create, run, update, or delete them. | Write MCP tools are disabled, or your team role doesn't allow it. | Ask your Fusion administrator to enable write tools, or to grant you the required team role. |
-| Custom app authentication is rejected. | Callback URL isn't on the authorized list. | Ask your administrator to add the exact callback URL. |
+| Custom app authentication is rejected. | Callback URL isn't on the authorized list. <!-- BECKY CHECK ME: This row might conflict with the Supported MCP applications section, which says that you cannot add your own applications. Confirm whether to remove this row or reword it. --> | Ask your administrator to add the exact callback URL. |
 | Fusion isn't listed in Coworker, or Coworker is missing from the Fusion right rail. | Feature not enabled for your organization. <!-- BECKY CHECK ME: confirm whether this is the correct admin guidance before publishing. --> | Contact your Fusion administrator. |
 
 ## Frequently asked questions
