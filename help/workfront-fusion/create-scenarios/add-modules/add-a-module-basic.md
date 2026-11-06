@@ -80,7 +80,7 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 
 1. Configure the module.
 
-   The module's settings open in the panel on the right side of the canvas.
+   The module's settings open in the panel on the right side of the canvas. You can resize the panel by dragging its left edge. 
 
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -135,7 +135,7 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 
 1. Configure the module.
 
-   The module's settings open in the panel on the right side of the canvas. 
+   The module's settings open in the panel on the right side of the canvas. You can resize the panel by dragging its left edge.
 
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
@@ -176,7 +176,7 @@ For more information on trigger modules, see [Trigger modules](/help/workfront-f
 
 1. Configure the module.
 
-   The module's settings open in the panel on the right side of the canvas. 
+   The module's settings open in the panel on the right side of the canvas. You can resize the panel by dragging its left edge.
 
    For instructions on configuring specific modules, see the article for the chosen applications, listed in [Fusion applications and their modules references: article index](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md).
 
