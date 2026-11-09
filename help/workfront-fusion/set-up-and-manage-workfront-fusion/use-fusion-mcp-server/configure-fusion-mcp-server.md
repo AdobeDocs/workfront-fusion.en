@@ -9,9 +9,78 @@ The Adobe Workfront Fusion MCP server lets you work with your Fusion organizatio
 
 For a list of tools available in the Adobe Workfront Fusion MCP server, see [Adobe Workfront Fusion MCP server tools](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md).
 
-## Supported AI agentic platforms
+## Access requirements
 
-The Fusion MCP server works with any AI agentic platform that supports Model Context Protocol (MCP) and remote (Streamable HTTP) MCP servers with OAuth.
++++ Expand to view access requirements for the functionality in this article.
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Product</td> 
+   <td>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
+
++++
+
+## Prerequisites
+
+Before you can connect Fusion to an AI agentic platform, you must:
+
+* Have an active Adobe Workfront Fusion license and access to at least one Fusion organization.
+* Have a Fusion user role and team roles that grant access to the data you want to work with.
+* Sign in with an Adobe ID (Adobe Identity Management System, IMS).
+* Have access to an MCP-compatible AI agentic platform, or to Coworker.
+
+## Supported MCP applications
+
+The Fusion MCP server works with the following applications.
+
+**Chat applications**
+
+* Anthropic Claude
+* OpenAI ChatGPT
+* Microsoft 365 Copilot
+
+**Developer tools**
+
+* Anthropic Claude Code
+* Cursor
+* GitHub Copilot
+* VS Code
+* OpenAI Codex
+* MCP Inspector, mcp-remote, and other tools that use a local callback
+
+**Automation and AI platforms**
+
+* Adobe Workfront Fusion
+* Google Vertex AI Search
+* Glean
+* Writer AI Studio
+* Postman
+
+### Limitations
+
+* Only the applications listed in this section can connect to the Fusion MCP server.
+* Desktop apps and command-line interfaces (CLIs) work if they receive the sign-in callback on your own machine (`localhost`).
+* You cannot add your own applications. To request support for a new application, contact the Fusion team at [fusiondev@adobe.com](mailto:fusiondev@adobe.com).
+
+<!-- BECKY CHECK ME: Other parts of this article might conflict with these limitations. See the comments in the important note below, in the section Connect Fusion to a custom MCP solution, and in the troubleshooting table. -->
 
 >[!NOTE]
 >
@@ -26,44 +95,36 @@ This article walks through the connection steps for:
 
 >[!IMPORTANT]
 >
->If you use a different MCP-compatible platform such as Gemini, Cursor, or VS Code, follow that platform's documentation for adding a custom MCP server. When prompted for the MCP server URL, enter:
+>If you use a different MCP-compatible platform, follow that platform's documentation for adding a custom MCP server. When prompted for the MCP server URL, enter:
 >
 >```
 >https://mcp.fusion.adobe.com/mcp
 >```
 
-## Prerequisites
-
-Before you can connect Fusion to an AI agentic platform, you must:
-
-* Have an active Adobe Workfront Fusion license and access to at least one Fusion organization.
-* Have a Fusion user role and team roles that grant access to the data you want to work with.
-* Sign in with an Adobe ID (Adobe Identity Management System, IMS).
-* Have access to an MCP-compatible AI agentic platform, or to Coworker.
-
 ## Use Fusion with Coworker
 
 Coworker is Adobe's AI agent. Fusion is built into Coworker, so you don't need to enter an MCP URL or register an OAuth app. You can use Coworker with Fusion in two places:
 
-* [Coworker (standalone)](#use-fusion-in-coworker): Work with Fusion alongside your other Adobe apps.
-* [Coworker in the Fusion right rail](#use-coworker-in-the-fusion-right-rail): Open Coworker in a panel inside the Fusion UI.
+* Coworker (standalone): Work with Fusion alongside your other Adobe apps.
+* Coworker in the Fusion right rail: Open Coworker in a panel inside the Fusion UI.
 
 Both use the same Fusion MCP tools, your Adobe ID, and your Fusion permissions. The Read or Write MCP tools settings apply in both. Destructive actions, such as delete, clear queue, or overwrite, always ask for confirmation.
 
 ### Use Fusion in Coworker
 
-1. Open Coworker.
-2. Open **Customization** > **Integrations**
-3. Find **fusion-mcp** and click **Test**.
-4. If you have access to more than one Fusion organization it will be auto selected. You can ask Coworker to switch organization later if necessary.
+1. Open Coworker. You can find it at https://experience.adobe.com/#/coworker.
+1. Open **Customizations** > **Integrations**
+1. Search for or locate **fusion-mcp** and click it.
+1. In the window that opens, click **Test**.
+1. If you have access to more than one Fusion organization it will be auto selected. You can ask Coworker to switch organization later if necessary.
 
 ### Use Coworker in the Fusion right rail
 
 In Fusion, Coworker opens in the right rail
 
 1. Sign in to Workfront Fusion.
-2. Click the **Coworker** icon in the right rail.
-3. Ask a question in the panel.
+1. Click the **Coworker** icon in the right rail.
+1. Ask a question in the panel.
 
 ### Example prompts
 
@@ -81,17 +142,17 @@ Add Fusion as a custom connector.
 > In Claude Team/Enterprise, you must be an owner to add a custom connector. For information, see [Get started with custom connectors using remote MCP](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) in the Claude documentation..
 
 1. Sign in to [Claude](https://claude.ai).
-2. In the left menu, select **Customize**.
-3. Select **Connectors**.
-4. Select **+**, then **Add custom connector**.
-5. Enter a name (for example, "Workfront Fusion") and the MCP server URL:
+1. In the left menu, select **Customize**.
+1. Select **Connectors**.
+1. Select **+**, then **Add custom connector**.
+1. Enter a name (for example, "Workfront Fusion") and the MCP server URL:
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-6. Click **Connect**.
-7. Sign in. Select a profile and Fusion organization.
+1. Click **Connect**.
+1. Sign in. Select a profile and Fusion organization.
 
 For Claude Code, you can add the server from the command line:
 
@@ -106,34 +167,30 @@ Add Fusion as a custom MCP server.
 ### ChatGPT Desktop or Codex
 
 1. In ChatGPT, open **Settings**.
-2. Click **Plugins**.
-3. Click **Add server**.
-4. Enter a name for the server.
-5. For the type, select **Streamable HTTP**.
-6. Enter the MCP server URL:
+1. Click **Plugins**.
+1. Click **Add server**.
+1. Enter a name for the server.
+1. For the type, select **Streamable HTTP**.
+1. Enter the MCP server URL:
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-7. Click **Save**.
-8. Click **Authenticate** for the new server and sign in.
-9. Make sure the toggle next to the server is on.
+1. Click **Save**.
+1. Click **Authenticate** for the new server and sign in.
+1. Make sure the toggle next to the server is on.
 
 ### ChatGPT on the web
 
 1. Sign in to [ChatGPT](https://chatgpt.com).
-2. Go to [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Developer mode may need to be enabled under **Settings**; on Business/Enterprise plans, an admin must allow custom connectors.)
-3. Click **+**.
-4. Enter a **Name**.
-5. For **Connection**, select **Server URL** and enter the MCP server URL.
-6. Leave **Authentication** set to **OAuth**.
-7. Read the risk message and select the checkbox.
-8. Click **Create**, then sign in with your.
-
-## Connect Fusion to a custom MCP solution
-
-If you're building your own application or agent, connect to the Fusion MCP server directly.
+1. Go to [https://chatgpt.com/plugins](https://chatgpt.com/plugins). (Developer mode may need to be enabled under **Settings**; on Business/Enterprise plans, an admin must allow custom connectors.)
+1. Click **+**.
+1. Enter a **Name**.
+1. For **Connection**, select **Server URL** and enter the MCP server URL.
+1. Leave **Authentication** set to **OAuth**.
+1. Read the risk message and select the checkbox.
+1. Click **Create**, then sign in with your.
 
 ## Switch to a different Fusion organization
 
@@ -155,7 +212,7 @@ The agent uses `fusion_orgs_list` and `fusion_orgs_set`. The switch applies to t
 | You see a message that MCP access is disabled. | MCP access is turned off for your Fusion organization. | Ask your Fusion administrator to enable it. |
 | The agent can read scenarios but can't create, run, update, or delete them. | Write MCP tools are disabled, or your team role doesn't allow it. | Ask your Fusion administrator to enable write tools, or to grant you the required team role. |
 | Custom app authentication is rejected. | Callback URL isn't on the authorized list. | Ask your administrator to add the exact callback URL. |
-| Fusion isn't listed in Coworker, or Coworker is missing from the Fusion right rail. | Feature not enabled for your organization. <!-- BECKY CHECK ME: confirm whether this is the correct admin guidance before publishing. --> | Contact your Fusion administrator. |
+| Fusion isn't listed in Coworker, or Coworker is missing from the Fusion right rail. | Feature not enabled for your organization. | Contact your Fusion administrator. |
 
 ## Frequently asked questions
 
