@@ -2399,11 +2399,11 @@ The following operators are available in the Workfront > Watch events filter:
 * Less than or equal to
 * Contains
 * Exists
-    * This operator does not require a value, and the value field is absent.
+    * This operator does not require a value, so the value field is not included in the filter.
 * Does not exist
-    * This operator does not require a value, and the value field is absent.
+    * This operator does not require a value, so the value field is not included in the filter.
 * Changed
-    * This operator does not require a value, and the value field is absent.
+    * This operator does not require a value, so the value field is not included in the filter.
     * This operator ignores the State field.
     * When using `Changed`, select **Updated Events Only** in the **Record Origin** field. 
 
