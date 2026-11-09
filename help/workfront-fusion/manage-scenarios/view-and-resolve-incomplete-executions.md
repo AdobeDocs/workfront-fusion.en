@@ -22,10 +22,6 @@ The [!UICONTROL Incomplete executions] folder stores scenario executions that we
 >
 >For more information about scenario settings, see [Configure scenario settings](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md).
 
-Highlighted Preview for full article {#highlighted-preview-article-level}
-
-<span class="preview">The information on this page refers to functionality not yet generally available. It is available only in the Preview Sandbox environment.</span>
-
 ## View incomplete executions
 
 If a module encounters an error during its operation, a new incomplete execution is added to the Incomplete executions folder. Each incomplete execution contains the scenario's blueprint and all the bundles that can be mapped into the failed module. The list of incomplete executions can be opened by clicking on the [!UICONTROL Incomplete Executions] tab on the scenario detail page.
