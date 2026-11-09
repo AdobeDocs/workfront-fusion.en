@@ -18,7 +18,7 @@ Because the applications that Workfront Fusion connects to may update or release
 
 If you see a green Upgrade module icon on a module in a scenario, Workfront Fusion has released a new version of that module. 
 
-![Update icon](assets/update-indicator-workfront.png)
+![Update icon](assets/new-update-indicator-workfront.png)
 
 You can update the module without creating a new scenario.
 
@@ -53,8 +53,8 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Upgrade a Workfront module to a new version
 
-1. Click the **Upgrade module** icon ![Upgrade icon](assets/upgrade-icon.png) on the module you want to upgrade to a new version.
-    ![Update icon](assets/update-indicator-workfront.png)
+1. Click the **Upgrade module** icon ![Upgrade icon](assets/new-upgrade-icon.png) on the module you want to upgrade to a new version.
+    ![Update icon](assets/new-update-indicator-workfront.png)
 1. Choose one of the following:
 
    * To select a new module to replace this module (instead of upgrading the module), click **Choose new**, then proceed as described in [Upgrade a non-Workfront module to a new version](#upgrade-a-non-workfront-module-to-a-new-version).
@@ -69,7 +69,7 @@ For more detail about the information in this table, see [Access requirements in
 
 ## Upgrade a non-Workfront module to a new version
 
-1. Click the **Upgrade module** icon ![Upgrade icon](assets/upgrade-icon.png) on the module you want to upgrade to a new version.
+1. Click the **Upgrade module** icon ![Upgrade icon](assets/new-upgrade-icon.png) on the module you want to upgrade to a new version.
     <!--![Update icon](assets/update-indicator.png)-->
 1. Click **Choose new**.
 1. Select the module that you want to replace the previous module.
