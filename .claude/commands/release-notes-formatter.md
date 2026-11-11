@@ -77,13 +77,17 @@ Rules:
 3. **`>[!IMPORTANT]` block** with release schedule table
 
 4. **H2 `Adobe Workfront enhancements`** with bullet list of anchor links:
+
 ```markdown
 * [Administrator enhancements](#administrator-enhancements)
 * [Document enhancements](#document-enhancements)
 ```
 
+   - If a product-area section is commented out, remove its link from this list entirely. Do not comment the link out.
+
 5. **H3 per product area** with HTML feature table (see .claude/commands/_release-notes-formatter-reference.md#overview-feature-table)
    - Within each table, **newest features first** — the most recent row appears at the top of the table (after the header row)
+   - If a feature has a badge (such as `[!BADGE Off schedule]{type=Neutral}`), put it in its own `<p>` directly under the feature link paragraph, before the description paragraph.
 
 6. **Trailing sections** (H2): Release notes for other areas, Desktop proofing viewer updates, Announcements, API version, Maintenance Updates, Training updates
 
@@ -116,6 +120,9 @@ Apply these fixes when formatting:
 | Extra spaces in callout lines | Trim trailing whitespace |
 | HTML in product area pages | Keep as markdown (HTML is for overview tables only) |
 | Missing `exl-id` | Leave it out — do not generate one |
+| Badge placed after the description in an overview table | Move it into its own `<p>` directly under the feature link |
+| Mini TOC link to a commented-out section | Remove the link from the list; don't comment it out |
+| Enhancement table in the overview with no mini TOC link | Add a link to the Adobe Workfront enhancements list, in the same order as the tables |
 
 ### Step 6: Update the TOC
 
@@ -176,6 +183,8 @@ When reviewing a release note file, verify:
 - [ ] Feature table rows in overview match product area page content
 - [ ] No broken internal links
 - [ ] Anchor links in overview match H3 section IDs
+- [ ] Every enhancement table in the overview that is not commented out has a matching link in the mini TOC, so sections added back when uncommented aren't missed
+- [ ] Overview mini TOC has no links to commented-out sections, and badges sit directly under the feature link
 - [ ] Features are ordered newest-first (both product area pages and overview tables)
 - [ ] New release-note pages are listed in `help/quicksilver/TOC.md` under the correct quarter, with the overview first and product areas in alphabetical order (Other last)
 
