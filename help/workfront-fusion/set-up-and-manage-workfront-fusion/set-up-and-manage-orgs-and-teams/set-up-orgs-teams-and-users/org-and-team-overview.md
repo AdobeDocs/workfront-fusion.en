@@ -83,3 +83,25 @@ A user has one of the following roles in each of their teams:
 * **[!UICONTROL Team Restricted Member]**: Functionality for this role is currently unavailable, and will be made available in the near future. We do not recommend assigning users to this role at this time.
 
 For information on specific actions available to users in each team role, see [Organization and team roles](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md).
+
+### Custom team roles
+
+<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
+
+In addition to the predefined team roles, each team has a **[!UICONTROL Roles]** tab where you can create your own roles. You can create, update, and delete roles, and choose exactly which permissions each role includes. You are no longer limited to a fixed set of roles.
+
+For instructions, see [View and manage team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
+With custom roles, you can:
+
+* Give each person only the access that their job needs, which reduces the risk of accidental changes to critical scenarios.
+* Set up access to match how your organization works, instead of fitting your teams into the predefined roles.
+* Manage access yourself, without contacting support.
+
+Anyone with the **[!UICONTROL Manage members]** permission in a team can create, update, delete, and assign users to roles in that team. In the predefined roles, this permission is included in the Team Admin and Organization Owner roles.
+
+* Organization Owners can create and manage roles in all teams.
+* Organization Admins can manage roles only in the teams that they are members of and where they have the **[!UICONTROL Manage members]** permission.
+* Team Admins can manage roles in their teams.
+
+<!-- BECKY CHECK ME: The source does not describe the steps in the Roles tab, the list of permissions that you can choose from, or whether you can edit or delete the predefined roles. Add the steps and permissions list once confirmed. Also confirm that Team Admins can manage roles (the source says the Manage members permission was previously given to Team Admin and Org Owner roles, and that team and org admins can create roles only in the teams where they are admins). -->

@@ -26,6 +26,8 @@ Teams are groups of users that share access to specific resources. These resourc
 
 You can view a list of your organization's teams, and edit the names of the teams.
 
+To create and manage the roles in a team, see [View and manage team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
+
 To add users to teams, see [Add a user to a team](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md).
 
 ## Access requirements

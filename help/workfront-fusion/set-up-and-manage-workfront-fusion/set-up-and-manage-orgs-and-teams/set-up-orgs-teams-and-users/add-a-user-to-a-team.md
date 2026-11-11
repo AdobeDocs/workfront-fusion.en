@@ -62,3 +62,7 @@ Adding a user to a team is handled from the page for that team.
 1. Click **None** to the right of the user's name, then select the role you want them to have on the team.
 
     The user is added to the team, with the role you selected.
+
+   >[!NOTE]
+   >
+   >In addition to the predefined roles, a team can have custom roles. For information about creating custom roles, see [View and manage team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
