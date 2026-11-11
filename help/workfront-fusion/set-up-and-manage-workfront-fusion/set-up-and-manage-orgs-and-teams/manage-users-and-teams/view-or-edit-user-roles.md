@@ -91,3 +91,4 @@ Adobe Workfront Fusion administrators and team administrators can view and updat
 1. Click **[!UICONTROL Details]** in the row of the user that you want to view.
 1. Click the Teams icon in the **[!DNL Role]** column in the row of the organization that contains the team where you want to view or edit the user's role.
 1. (Optional) To update the role of the user in a team, click the dropdown in the **[!DNL Role]** column in the row of the team where you want to change the user's role, then select the new role.
+
