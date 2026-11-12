@@ -40,6 +40,62 @@ For more detail about the information in this table, see [Access requirements in
 
 +++
 
+## Create a connection to Adobe App Builder
+
+The connection uses the Adobe I/O Runtime credentials of an App Builder project workspace. Before you create the connection, get these credentials from the Adobe Developer Console.
+
+### Get your Runtime credentials
+
+1. Sign in to the [Adobe Developer Console](https://developer.adobe.com/console) with the organization that has your App Builder license.
+1. Open the App Builder project that contains your functions, then select the workspace you want to connect to (for example, **Production**).
+1. Click **Download all** in the upper-right corner to download the workspace configuration JSON file.
+1. Open the file and locate the `runtime` section. It contains:
+
+   * `namespace`: the value to enter in the **Namespace** field
+   * `auth`: a value in the format `username:password`. The part before the colon is the **Username**, and the part after the colon is the **Password**.
+
+   >[!NOTE]
+   >
+   >You can also find the namespace and auth values by running `aio runtime namespace get` or `aio app use` in the Adobe I/O CLI.
+
+### Create the connection
+
+1. In the module, click **Add** next to the **Connection** field.
+1. Fill in the following fields:
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Connection name]</td> 
+      <td>Enter a name for this connection.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Environment]</td> 
+      <td>Select whether you are connecting to a production or non-production environment.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Type]</td> 
+      <td>Select <b>Service account</b>.</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Username]</td> 
+      <td>Enter the username from the <code>auth</code> value of your workspace (the part before the colon).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Password]</td> 
+      <td>Enter the password from the <code>auth</code> value of your workspace (the part after the colon).</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL Namespace]</td> 
+      <td>Enter the <code>namespace</code> value from the <code>runtime</code> section of your workspace configuration file.</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. Click **Continue** to save the connection.
+
 ## Adobe App Builder modules
 
 ### Run a custom code block
