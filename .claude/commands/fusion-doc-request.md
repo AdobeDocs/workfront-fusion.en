@@ -33,6 +33,8 @@ If the request instead links to a non-Confluence secondary source (e.g. an Exper
 
 Before touching any files, create a new git branch for this request and check it out. Branch off the current default branch (`main`), not off whatever branch happens to be checked out.
 
+If the user has already created and named the branch, use it instead of creating a new one, and record that name in the task's `Documentation Branch` field in Step 4.
+
 Name the branch `becky-{short-kebab-case-description}`, derived from the **Feature Title** - the first word must be `becky`, matching this repo's existing branch convention (e.g. `becky-webhook-update`, `becky-storage-beta-sos`). Keep it short - a few words, not the full title verbatim.
 
 If the working tree isn't clean (uncommitted changes from unrelated work), stop and tell the user rather than branching over it.
@@ -70,9 +72,12 @@ Task fields:
 | `DE:Preview Date` | the date cited in the original Slack message (the request's **Expected release date**), by default |
 | `taskConstraint` + `constraintDate` | Set `taskConstraint` to `MFO` (Must Finish On) with `constraintDate` = the date cited in the original Slack message (the request's **Expected release date**), so the task's planned completion date matches it too. |
 | `DE:Articles to update` | the list of articles you created or updated for this request (see below) |
+| `DE:Documentation Branch` | the name of the git branch the doc changes are on (see below) |
 | Product/Area | select `Fusion` (an enum field on the Product Documentation form; confirm the exact field name with `insights_search_fields` if it's ever unclear) |
 
 `DE:Articles to update` (a text field on the Product Documentation form) lists every article file you created or changed in Step 3, one repo-relative path per line (for example `help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`). Include new articles (add `(new)` after the path) and any TOC or index files you edited. Because the doc edits happen in Step 3, the list is known by the time the task is created, so set it in the same create call. If the user asks you to create the task without making doc edits, leave the field empty, and update it later if doc edits are made.
+
+`DE:Documentation Branch` (a text field on the Product Documentation form) holds the exact name of the git branch the doc edits are on, for example `becky-explain-errors-with-ai`. Use the branch the user named or the one currently checked out in the repo you edited; don't invent a name. Set it in the same create call as the other fields. If the user asks you to create the task without making doc edits and no branch exists yet, leave the field empty and update it later.
 
 Set the preview date fields and the planned completion date as part of this same create call - don't leave them for later or wait to be asked. If the user gives a different date later, or says the date isn't actually known yet, update accordingly, but default to filling them in every time.
 
@@ -104,6 +109,7 @@ Report plainly:
 * The branch you created (committed locally, not pushed, and no pull request opened - per Step 2).
 * Which doc file(s) you changed and what you added.
 * That the changed articles are listed in the task's `Articles to update` field.
+* The branch name you entered in the task's `Documentation Branch` field.
 * That the changes are uncommitted on the branch, awaiting the user's review.
 * The task name and URL.
 * The exact field values you set, including the preview date fields.
@@ -116,4 +122,4 @@ Confirm these still resolve rather than assuming they're permanent:
 * Project "Product Documentation tasks - for development Issues that require messaging" maps to ID `5e69583f00236b9f767c3e3944100ee4`
 * Parent task "Becky - Tasks from Fusion-Documentation channel" maps to ID `6a9b065100003a7554832780c2015e93` (in the same project) - resolve with `insights_find_id_by_name` (entity `task`) rather than hardcoding, in case it ever changes
 * Product Documentation custom form (`categoryID`) is `5d7275b9000514604bd969d418725843`
-* Custom fields used: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`
+* Custom fields used: `DE:Release notes`, `DE:Preview Date Known`, `DE:Preview Date`, `DE:Articles to update`, `DE:Documentation Branch`
