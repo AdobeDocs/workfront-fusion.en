@@ -31,8 +31,6 @@ These templates automate Workfront processes and workflows.
 
 ### Workfront – Automatically Adjust Project Timeline When Tasks Are Completed Early
 
-<!--New June 10, 2025-->
-
 This template is designed to support organizations that follow a more flexible, "plan-as-you-go" approach rather than strict PMI-based methodology for Project Management.
 
 If your team struggles to maintain momentum because project timelines don't adjust dynamically, this solution is for you. Often, when tasks are completed ahead of schedule, it makes sense to accelerate the overall timeline — but manually updating dates can be tedious.
@@ -161,13 +159,41 @@ This template numbers your projects sequentially. It assumes you created a custo
 
 This template numbers your issues sequentially. It assumes you created a custom form and field using the Workfront - Sequential Numbering Series: Create Object Custom Form and Field template but you can use an existing form and field.
 
+### Workfront - Create project with AEM workflow
+
+[!BADGE New!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
+
+This template creates a project from a project template, and can create the AEM linked folders that are configured for the project template and link them to the new project.
+
+>[!TIP]
+>
+>* AEM linked folders are created only when the selected project template has an enabled [AEM workflow](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional) with at least one folder tree. If it does not, the project is created without linked folders.
+>* The folder trees are taken from the project template when you save the automation. If you later add or remove folder trees on the project template, you must edit and save the automation again to include the changes.
+
+### Workfront - Create multiple records
+
+[!BADGE New!]{type=Informative}
+
+<!--New November 11, 2026-->
+
+This template creates one or more records on a record type, based on the choices in a field on the current record.
+
+>[!TIP]
+>
+>* One record is created for each choice that is both present on the current record and has a field mapping. Choices with no mapping are skipped, and no record is created for them.
+>* To name the created records, map a source field to the primary (name) field of the new record type. Each record is then named *[current record name] choice value*. If you do not map the primary field, the name of the record is left empty.
+>* If none of the selected records holds a mapped choice in the chosen field, no records are created, and a message tells you which field is empty.
+>* The field choices and mappings are read from the current record type when you save the automation. If you later add or change fields or choices, you must edit and save the automation again to include the changes.
+
 ## Workfront - Workfront Proof templates
 
 These templates automate workflows that combine Workfront with Workfront Proof.
 
 ### Workfront > Workfront Proof - Change Proof user Role to Read Only and lock Proof upon project closure
-
-<!--New March 12, 2025-->
 
 This template watches for projects updating to statuses that equate with rejected, completed, or dead. Then, it changes any users with Pending Proof decisions to Read Only. Finally, it locks the Proofs and sends an update to the documents.
 
