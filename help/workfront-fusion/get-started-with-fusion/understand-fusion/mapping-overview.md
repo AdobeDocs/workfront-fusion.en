@@ -65,6 +65,9 @@ The first tab displays the items that you can map from other modules.
 
 The other tabs include functions, operators, and keywords that you can use to create formulas. These are sorted into different tabs based on the type of data they handle.
 
+The **[!UICONTROL Fill by AI]** tab lets you describe in plain language what you want a field to contain, and AI generates an expression for you. For more information, see [Generate an expression with AI](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai).
+
+
 ![Mapping panel](assets/new-mapping-panel-blank.png)
 
 

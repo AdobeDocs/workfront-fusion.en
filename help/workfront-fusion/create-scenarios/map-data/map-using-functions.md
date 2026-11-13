@@ -127,19 +127,45 @@ To nest a function:
 
 Instead of writing the syntax of an expression yourself, you can describe what you want in plain language, and AI generates the expression for you. For example, you can ask for the following:
 
-* *Join these names with a comma.*
-* *Add three days to the due date.*
+* Join these names with a comma.
+* Add three days to the due date.
 
 AI turns your request into an expression that uses Workfront Fusion's built-in functions, so the result is readable and easy to review before you use it.
 
-<!-- BECKY CHECK ME: The request describes how the feature works, but not where it appears in the UI or what the steps are. The steps below are placeholders. Confirm where the feature appears (for example, a button in the mapping panel or in a field), the labels, whether the generated expression is inserted directly into the field or shown first, and any access requirements (for example, an AI license or usage limits). -->
-
 To generate an expression:
 
-1. Open the scenario in the Scenario editor, and click the field where you want to insert an expression.
-1. Start the AI-assisted expression generation.
-1. Describe the result that you want in plain language.
-1. Review the generated expression, and insert it into the field.
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to map data.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Click the module where you want to add an expression, then click the field.
+
+   The mapping panel opens.
+
+1. Click the **[!UICONTROL Fill by AI]** tab (the magic wand icon) in the mapping panel.
+
+   ![Fill by AI tab](assets/fill-by-ai-tab.png)
+
+1. In the **[!UICONTROL Describe what this field should contain]** box, describe the result that you want in plain language.
+
+   To add a field from a previous module to your prompt, click it in the **[!UICONTROL Available fields]** list. To start a new line in the prompt, press Shift+Enter.
+
+   For example, to get only the domain from an email address, you could enter the following prompt:
+
+   `Show only the domain of {{1.data.json.email}} like "user@acme.com" -> "acme.com"`
+
+1. Click **[!UICONTROL Generate]**.
+
+   The expression that AI generates appears under **[!UICONTROL Suggested expression]**.
+
+   ![Suggested expression](assets/fill-by-ai-suggested-expression.png)
+
+1. Review the expression, then do one of the following:
+
+   * Click **[!UICONTROL Apply]** to insert the expression into the field.
+   * Click **[!UICONTROL Regenerate]** to have AI generate a different expression.
+
+1. (Optional) Edit the expression in the field if desired.
+
 1. Continue configuring the module, or click **[!UICONTROL OK]**.
 
 #### How AI generates expressions
@@ -154,8 +180,6 @@ When AI generates an expression, it does the following:
 >[!NOTE]
 >
 >AI-generated expressions can be incomplete or inaccurate. Review each expression, and test your scenario, before you rely on the result.
-
-<!-- BECKY CHECK ME: The note above is general guidance for AI-generated content. Confirm whether to keep it. -->
 
 ### Use [!DNL Google Sheets] functions
 
