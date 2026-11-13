@@ -123,6 +123,64 @@ To nest a function:
 1. Continue configuring the function as desired.
 1. Continue configuring the module, or click **OK**.
 
+### Generate an expression with AI
+
+Instead of writing the syntax of an expression yourself, you can describe what you want in plain language, and AI generates the expression for you. For example, you can ask for the following:
+
+* Join these names with a comma.
+* Add three days to the due date.
+
+AI turns your request into an expression that uses Workfront Fusion's built-in functions, so the result is readable and easy to review before you use it.
+
+To generate an expression:
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to map data.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Click the module where you want to add an expression, then click the field.
+
+   The mapping panel opens.
+
+1. Click the **[!UICONTROL Fill by AI]** tab (the magic wand icon) in the mapping panel.
+
+   ![Fill by AI tab](assets/fill-by-ai-tab.png)
+
+1. In the **[!UICONTROL Describe what this field should contain]** box, describe the result that you want in plain language.
+
+   To add a field from a previous module to your prompt, click it in the **[!UICONTROL Available fields]** list. To start a new line in the prompt, press Shift+Enter.
+
+   For example, to get only the domain from an email address, you could enter the following prompt:
+
+   `Show only the domain of {{1.data.json.email}} like "user@acme.com" -> "acme.com"`
+
+1. Click **[!UICONTROL Generate]**.
+
+   The expression that AI generates appears under **[!UICONTROL Suggested expression]**.
+
+   ![Suggested expression](assets/fill-by-ai-suggested-expression.png)
+
+1. Review the expression, then do one of the following:
+
+   * Click **[!UICONTROL Apply]** to insert the expression into the field.
+   * Click **[!UICONTROL Regenerate]** to have AI generate a different expression.
+
+1. (Optional) Edit the expression in the field if desired.
+
+1. Continue configuring the module, or click **[!UICONTROL OK]**.
+
+#### How AI generates expressions
+
+When AI generates an expression, it does the following:
+
+* **Uses the context of your scenario.** AI considers the fields that are available to map, their types, the destination field, and your locale and time zone settings.
+* **Validates the expression.** Before AI returns an expression as successful, it checks for unsupported functions, missing arguments, unknown field references, and common mistakes with arrays and dates.
+* **Corrects and simplifies the expression.** AI fixes common syntax mistakes, and replaces recognized workarounds with built-in functions.
+* **Tries again if validation fails.** AI uses the specific feedback from the validation to regenerate the expression. If it still cannot create a valid expression, it returns a clear error instead of an invalid result.
+
+>[!NOTE]
+>
+>AI-generated expressions can be incomplete or inaccurate. Review each expression, and test your scenario, before you rely on the result.
+
 ### Use [!DNL Google Sheets] functions
 
 If Workfront Fusion does not feature a function you want to use, but it is featured by [!DNL Google Sheets], you can use it by following these steps:
