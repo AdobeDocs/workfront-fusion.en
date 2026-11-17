@@ -154,6 +154,7 @@ If you see the map button above a field or function, you can use it to set varia
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [ESM stores](#esm-stores)
+* [Files](#files)
 * [Invitations](#invitations)
 * [Other](#other)
 
@@ -236,6 +237,47 @@ This action module recovers a previously deleted ESM store and restores access t
   <tr> 
    <td role="rowheader">Store ID</td> 
    <td>Enter or map the ID of the store you want to restore.</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### Files
+
+#### Upload a file
+
+This action module uploads a file to Adobe Storage in a single step. It creates the destination file, initializes the upload, transfers the file content through a presigned URL, and finalizes the upload. You do not need to configure separate transfer and finalization steps.
+
+The module supports large files.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Storage, see <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Create a connection to Adobe Storage</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project</td> 
+   <td>Select the project that contains the folder where you want to upload the file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Folder</td> 
+   <td>Select the folder where you want to upload the file. To upload the file to the root of the project, select <code>/</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File Name</td> 
+   <td>Enter or map the name of the uploaded file, including its extension (for example, <code>report.pdf</code>).</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">File Content</td> 
+   <td>Enter or map the binary or text data that you want to store in the file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limit</td> 
+   <td>Enter or map the maximum number of results that Workfront Fusion works with during one execution cycle.</td> 
   </tr> 
  </tbody> 
 </table>
