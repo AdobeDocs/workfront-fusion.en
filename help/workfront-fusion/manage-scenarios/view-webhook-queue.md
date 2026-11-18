@@ -57,12 +57,40 @@ If a scenario currently has a queue, a banner displays in that scenario:
 
 ![Queue banner](assets/queue-banner.png)
 
-To view a webhook's queue:
+The webhook's queue page has the same layout as the **[!UICONTROL Scenarios]** and **[!UICONTROL Webhooks]** lists.
+
+>[!NOTE]
+>
+>Search and sorting apply only to the events that are currently loaded in the table, not to the entire queue. To include more events, load additional events first.
+
+To view and manage a webhook's queue:
 
 1. Click **[!UICONTROL Webhooks]** in the menu on left.
 1. Locate the Webhook for which you want to view the queue.
-1. Locate the number of events in the Events received button. 
+1. Locate the number of events Full Queue column. 
 
    ![Webhook queue](assets/webhook-queue.png)
    
-1. Click the button to view details about events in the queue.
+1. Click the **Operations** button to view details about events in the queue.
+
+   The webhook's queue page opens. The page lists the events in the queue in a table with the following columns: **[!UICONTROL ID]**, **[!UICONTROL Created at]**, **[!UICONTROL Size]**, and **[!UICONTROL Details]**.
+
+1. (Optional) To filter the events in the table, enter text in the **[!UICONTROL Search]** field above the table.
+1. (Optional) To sort the events, click the the **[!UICONTROL ID]**, **[!UICONTROL Created at]**, or **[!UICONTROL Size]** column header.
+1. (Optional) To change the number of events that display on each page, select a number in the **[!UICONTROL Show]** drop-down list at the bottom of the page.
+1. (Optional) To move between pages of events, click **[!UICONTROL First]**, **[!UICONTROL Previous]**, **[!UICONTROL Next]**, or **[!UICONTROL Last]** at the bottom of the page.
+
+   These buttons are unavailable when the queue has only one page of events.
+
+1. (Optional) To view an event's payload, click **[!UICONTROL Details]** in the row for the event.
+
+   The details dialog opens and displays the event's payload.
+
+1. (Optional) To delete events:
+
+   1. Select the events that you want to delete, by doing one of the following:
+
+      * Select the checkbox next to each event that you want to select.
+      * Select the **[!UICONTROL Select all]** checkbox to select the entire queue, not just the events that are currently loaded. You can then clear the checkbox for any events that you want to exclude from the selection.
+
+   1. In the bar near the bottom of the screen, click **Delete**.
