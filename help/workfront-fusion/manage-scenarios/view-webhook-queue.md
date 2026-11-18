@@ -57,64 +57,40 @@ If a scenario currently has a queue, a banner displays in that scenario:
 
 ![Queue banner](assets/queue-banner.png)
 
-To view a webhook's queue:
-
-1. Click **[!UICONTROL Webhooks]** in the menu on left.
-1. Locate the Webhook for which you want to view the queue.
-1. Locate the number of events in the Events received button. 
-
-   ![Webhook queue](assets/webhook-queue.png)
-   
-1. Click the button to view details about events in the queue.
-
-   The webhook's queue page opens. The page lists the events in the queue in a table with the following columns: **[!UICONTROL ID]**, **[!UICONTROL Created at]**, **[!UICONTROL Size]**, and **[!UICONTROL Details]**.
-
-<!-- BECKY CHECK ME: The request does not describe how to open the queue page. The steps above are from the existing article. Confirm that clicking the Events received button still opens the queue page, and retake the Webhook queue screenshot above if the Webhooks list changed. -->
-
-<!-- BECKY CHECK ME: Add a screenshot of the queue page. The screenshot in the Slack thread is from a staging org, so retake it in a production environment. -->
-
-## Manage events in a webhook's queue
-
-The queue page has the same layout as the **[!UICONTROL Scenarios]** and **[!UICONTROL Webhooks]** lists.
+The webhook's queue page has the same layout as the **[!UICONTROL Scenarios]** and **[!UICONTROL Webhooks]** lists.
 
 >[!NOTE]
 >
 >Search and sorting apply only to the events that are currently loaded in the table, not to the entire queue. To include more events, load additional events first.
 
-### Search for events
+To view and manage a webhook's queue:
 
-To filter the events in the table, enter text in the **[!UICONTROL Search]** field above the table.
+1. Click **[!UICONTROL Webhooks]** in the menu on left.
+1. Locate the Webhook for which you want to view the queue.
+1. Locate the number of events Full Queue column. 
 
-### Sort events
+   ![Webhook queue](assets/webhook-queue.png)
+   
+1. Click the **Operations** button to view details about events in the queue.
 
-To sort the events, click the sort icon in the **[!UICONTROL ID]**, **[!UICONTROL Created at]**, or **[!UICONTROL Size]** column header.
+   The webhook's queue page opens. The page lists the events in the queue in a table with the following columns: **[!UICONTROL ID]**, **[!UICONTROL Created at]**, **[!UICONTROL Size]**, and **[!UICONTROL Details]**.
 
-<!-- BECKY CHECK ME: Confirm whether clicking the sort icon again reverses the sort order, and whether the sort icon shows the current direction. -->
+1. (Optional) To filter the events in the table, enter text in the **[!UICONTROL Search]** field above the table.
+1. (Optional) To sort the events, click the the **[!UICONTROL ID]**, **[!UICONTROL Created at]**, or **[!UICONTROL Size]** column header.
+1. (Optional) To change the number of events that display on each page, select a number in the **[!UICONTROL Show]** drop-down list at the bottom of the page.
+1. (Optional) To move between pages of events, click **[!UICONTROL First]**, **[!UICONTROL Previous]**, **[!UICONTROL Next]**, or **[!UICONTROL Last]** at the bottom of the page.
 
-### Change the page size, navigate pages, and load more events
+   These buttons are unavailable when the queue has only one page of events.
 
-Use the controls below the table to change the number of events that display on each page, move between pages, and load additional events.
-
-<!-- BECKY CHECK ME: The request mentions changing the page size, navigating pages, and loading additional entries, but the screenshot does not show these controls. Confirm their labels and location, the available page sizes, and how many events load at a time. -->
-
-### View an event's payload
-
-1. In the row for the event, click **[!UICONTROL Details]**.
+1. (Optional) To view an event's payload, click **[!UICONTROL Details]** in the row for the event.
 
    The details dialog opens and displays the event's payload.
 
-<!-- BECKY CHECK ME: Confirm what the details dialog shows (for example, only the payload, or also the ID and creation date) and how to close it. The request says the dialog is updated, but does not describe what changed. -->
+1. (Optional) To delete events:
 
-### Select and delete events
+   1. Select the events that you want to delete, by doing one of the following:
 
-1. Select the checkbox next to each event that you want to select.
+      * Select the checkbox next to each event that you want to select.
+      * Select the **[!UICONTROL Select all]** checkbox to select the entire queue, not just the events that are currently loaded. You can then clear the checkbox for any events that you want to exclude from the selection.
 
-   Or
-
-   Select the **[!UICONTROL Select all]** checkbox to select the entire queue, not just the events that are currently loaded. You can then clear the checkbox for any events that you want to exclude from the selection.
-
-1. Delete the selected events.
-
-   Deleting all events empties the queue. It does not delete the webhook.
-
-<!-- BECKY CHECK ME: The request does not say where the delete button appears, what it is labeled, or whether a confirmation dialog appears. Confirm the label and the step. Also confirm that Select all selects every event in the queue (not just the loaded ones), and how the exclusions work. -->
+   1. In the bar near the bottom of the screen, click **Delete**.
