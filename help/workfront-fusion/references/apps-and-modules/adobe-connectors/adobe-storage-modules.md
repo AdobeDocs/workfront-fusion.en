@@ -363,3 +363,34 @@ This action module makes a custom HTTP request to the Adobe Storage API.
      </div> </p> </td>     </tr>
   </tbody>
 </table>
+
+#### Upload a file
+
+This action module uploads a file to Adobe Storage in a single step. It creates the destination file, initializes the upload, transfers the file content through a presigned URL, and finalizes the upload. You do not need to configure separate transfer and finalization steps.
+
+The module supports large files.
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Connection</td> 
+   <td>For instructions on creating a connection to Adobe Storage, see <a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >Create a connection to Adobe Storage</a> in this article.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Project</td> 
+   <td>Select the project that contains the folder where you want to upload the file.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Folder</td> 
+   <td>Select the folder where you want to upload the file. To upload the file to the root of the project, select <code>/</code>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Source file</td> 
+   <td>Select a file from a previous module, or map the file's name, content, and content type.</td> 
+  </tr> 
+ </tbody> 
+</table>
