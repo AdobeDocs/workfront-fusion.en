@@ -93,10 +93,53 @@ If you see the map button above a field or function, you can use it to set varia
 
 ![Map toggle](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [Triggers](#triggers)
 * [Actions](#actions)
 * [Export](#export)
 * [Misc](#misc)
-* [Triggers](#triggers)
+
+### Triggers
+
+* [Watch records](#watch-records)
+
+#### Watch records
+
+This trigger module starts a scenario when Workfront Fusion records are created, updated, or both. You can use filters to focus on the changes that matter to your team, so you do not have to check Workfront Fusion manually.
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Watch</td> 
+   <td>Select the type of change that you want the module to watch for.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Record type</td> 
+   <td>Select the type of record that you want to watch: <b>Scenario</b> or <b>Execution</b>.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Scenario ID</td> 
+   <td><p>If you are watching executions, select or map the scenario that you want to watch executions for.</p><p>This field is optional. If you leave it empty, the module searches for executions across the organization.</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Show check runs</td> 
+   <td><p>If you are watching execution, select whether the results include check runs:</p><ul><li><b>Yes</b>: Include check runs.</li><li><b>No</b>: Do not include check runs.</li><li><b>Not defined</b>: Do not filter results by check runs.</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Filtering</td> 
+   <td>Under <b>Property</b>, for each property filter that you want to use, click <b>Add item</b>, select the field and the operator, and then enter or map the value that you want to filter for. A value field appears only for operators that need one. For example, an operator such as <b>Exists</b> does not require a value. The property filters are the same for the Scenario and Execution record types.</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Limit</td> 
+   <td>Enter or map the maximum number of results that Workfront Fusion works with during one execution cycle. The default is 200.</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### Actions
 
@@ -465,51 +508,6 @@ This module returns the region and organization ID for every Fusion organization
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### Triggers
-
-* [Watch records](#watch-records)
-
-#### Watch records
-
-This trigger module starts a scenario when Workfront Fusion records are created, updated, or both. You can use filters to focus on the changes that matter to your team, so you do not have to check Workfront Fusion manually.
-
-<!-- BECKY CHECK ME: The Watch field currently shows only the "New records only" option. Confirm the options and their labels before publishing (the request says the module can watch for new records, updated records, or both), and update the Watch row. Also confirm whether the Scenario ID field lists scenarios for the organization or only for the team. -->
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting Workfront Fusion to Workfront Fusion, see <a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">Connect Workfront Fusion to Workfront Fusion</a> in this article.</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Watch</td> 
-   <td>Select the type of change that you want the module to watch for.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Record type</td> 
-   <td>Select the type of record that you want to watch: <b>Scenario</b> or <b>Execution</b>.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Scenario ID</td> 
-   <td><p>(Execution record type only) Select or map the scenario that you want to watch executions for.</p><p>This field is optional. If you leave it empty, the module searches for executions across the organization.</p></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Show check runs</td> 
-   <td><p>(Execution record type only) Select whether the results include check runs:</p><ul><li><b>Yes</b>: Include check runs.</li><li><b>No</b>: Do not include check runs.</li><li><b>Not defined</b>: Do not filter results by check runs.</li></ul></td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Filtering</td> 
-   <td>Under <b>Property</b>, for each property filter that you want to use, click <b>Add item</b>, select the field and the operator, and then enter or map the value that you want to filter for. A value field appears only for operators that need one. For example, an operator such as <b>Exists</b> does not require a value. The property filters are the same for the Scenario and Execution record types.</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Limit</td> 
-   <td>Enter or map the maximum number of results that Workfront Fusion works with during one execution cycle. The default is 200.</td> 
   </tr> 
  </tbody> 
 </table>
