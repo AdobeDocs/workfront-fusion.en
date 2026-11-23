@@ -12,6 +12,7 @@ nudge: true
     * [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
     * Fusion releases - 2026 {#fusion-releases-2026}
         * [Workfront Fusion release activity: Week of November 23, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-23.md)
+        * [Workfront Fusion release activity: Week of November 16, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-16.md)
         * [Workfront Fusion release activity: Week of November 9, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-9.md)
         * [Workfront Fusion release activity: Week of November 2, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-2.md)
         * [Workfront Fusion release activity: Week of October 26, 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
