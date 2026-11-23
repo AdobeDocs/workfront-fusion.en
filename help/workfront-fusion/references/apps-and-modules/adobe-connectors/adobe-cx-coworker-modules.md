@@ -21,8 +21,6 @@ The connector provides two modules:
 
 ## Access requirements
 
-<!-- BECKY CHECK ME: This table is copied from other Fusion connector articles. The source material does not list access requirements, but says you need an Adobe account that has access to Coworker. Confirm the requirements and whether Coworker needs its own license or entitlement. -->
-
 +++ Expand to view access requirements for the functionality in this article.
 
 <table style="table-layout:auto">
@@ -199,9 +197,7 @@ When **[!UICONTROL Confirm all tool actions]** is on, the module automatically a
 The following conditions apply:
 
 * This option requires **[!UICONTROL Wait for completion]** and a compatible live permission stream.
-* Limits, replayed requests, sign-in, questions, and other approvals still need manual review. When one of these occurs, **[!UICONTROL Requires attention]** is true.
-
-<!-- BECKY CHECK ME: Confirm what happens when Confirm all tool actions is on and Wait for completion is off (for example, whether the module shows an error or ignores the option), and what "a compatible live permission stream" means for a user, and whether it should be explained. Also confirm what the module returns when it reaches the 20 approval round or 100 tool call limit. The hint under Wait for completion says it checks status every 5 seconds "with Confirm all tool actions off", which suggests different behavior when it is on. Confirm that behavior and update the Wait for completion section if needed. Confirm whether the WARNING callout is the right treatment. -->
+* Limits, replayed requests, sign-in, questions and other approvals need manual review.
 
 
 ## Module output
