@@ -73,6 +73,36 @@ Firefly authorization and LLM credentials serve different purposes. Selecting an
 
 1. Add **[!UICONTROL Adobe Firefly Creative Production MCP]** > **[!UICONTROL Process a user prompt]** to your scenario.
 1. Click **[!UICONTROL Add]** next to the **[!UICONTROL Connection]** field.
+1. In the **[!UICONTROL Create a connection]** window, fill in the following fields:
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+      <tr>
+        <td role="rowheader">Connection name</td>
+        <td>
+          <p>Enter a name for this connection.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Environment</td>
+        <td>
+          <p>Select whether you are connecting to a production or non-production environment.</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">Type</td>
+        <td>
+          <p>Select whether you are connecting to a service account or a personal account.</p>
+        </td>
+      </tr>
+    </tbody>
+   </table>
+
+   ![Create a connection](/help/workfront-fusion/references/apps-and-modules/assets/firefly-creative-production-mcp-connection.png)
+
+1. Click **[!UICONTROL Continue]**.
 1. Follow the authorization flow, sign in with the appropriate Adobe account, and authorize access.
 1. Return to the module and review the tools that are loaded for the connection.
 
@@ -80,7 +110,7 @@ Workfront Fusion handles the OAuth client registration and token management. You
 
 If authorization fails or you do not see the tools that you expect, confirm your access and your environment's configuration with your administrator.
 
-<!-- BECKY CHECK ME: The request describes the connection flow only in general terms. Confirm the connection dialog (for example, whether it has the Connection name, Environment, and Type fields that the Adobe Fusion MCP connection has), and add a screenshot. -->
+<!-- BECKY CHECK ME: The Environment and Type fields are described the same way as in the Adobe Fusion MCP connection. The screenshot shows only the selected values (Production and Service account). Confirm the available options for each field, and whether a personal account is supported. -->
 
 ## Adobe Firefly Creative Production MCP module and its fields
 
@@ -92,6 +122,10 @@ This action module processes your prompt with the selected LLM and the Firefly C
  <col> 
  <col> 
  <tbody> 
+  <tr> 
+   <td>[!UICONTROL LLM key] <i>(Optional, advanced)</i></td> 
+   <td> <p>Leave this field empty to use the Adobe Managed AI that your Fusion administrator configured. To use your own key instead, select an existing OpenAI, Anthropic, or Amazon Bedrock key, or click <b>[!UICONTROL Add]</b> to create one.</p><p>Your Firefly sign-in is separate from your LLM credentials.</p> </td> 
+  </tr> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
    <td> <p>The Adobe Firefly Creative Production connection that the module uses to discover and call tools. For instructions, see <a href="#connect-adobe-firefly-creative-production-mcp-to-workfront-fusion" class="MCXref xref">Connect Adobe Firefly Creative Production MCP to Workfront Fusion</a> in this article.</p> </td> 
@@ -110,16 +144,14 @@ This action module processes your prompt with the selected LLM and the Firefly C
   </tr> 
   <tr> 
    <td>[!UICONTROL Enter your prompt]</td> 
-   <td> <p>Describe your request and its constraints. The maximum length is 10,000 JavaScript string units. Some characters, including many emoji, count as two units.</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL LLM key] <i>(Optional, advanced)</i></td> 
-   <td> <p>Leave this field empty to use the Adobe Managed AI that your administrator configured. To use your own key, select a supported OpenAI, Anthropic, or Amazon Bedrock key.</p> </td> 
+   <td> <p>Describe the workflow discovery, composition, or execution that you want. The maximum length is 10,000 JavaScript string units. Some characters, including many emoji, count as two units.</p><p>Explicitly request execution or publishing when you need it. Running a workflow can consume credits. Asynchronous runs can return a batch ID before the run is complete.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-<!-- BECKY CHECK ME: The request does not include a screenshot of the module. Confirm the field labels and their order against the released UI, confirm which fields are required, and add a screenshot. Also confirm the LLM key options (the request lists OpenAI, Anthropic, and Bedrock) and whether the Add button for creating a key is available, as it is in the Adobe Fusion MCP module. -->
+![Process a user prompt module](/help/workfront-fusion/references/apps-and-modules/assets/firefly-creative-production-mcp-process-prompt.png)
+
+<!-- BECKY CHECK ME: The screenshot shows only the LLM key, Connection, and Enter your prompt fields, because the tool selectors load after you select a connection. Add a screenshot that shows the Read-only tools, Write/delete tools, and Other tools fields, and confirm their labels and which fields are required. -->
 
 The tool lists vary with the server's availability and your account's access. The number of tools appears in each selector's label.
 
