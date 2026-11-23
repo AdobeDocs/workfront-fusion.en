@@ -221,18 +221,18 @@ The setting applies to the whole organization. After you save it, every user who
 
 To manage MCP preferences:
 
-1. In Fusion, open **[!UICONTROL Organization]**, then click **[!UICONTROL Edit organization details]**.
+1. In Fusion, click **[!UICONTROL Organization]** in the left navigation.
+
+1. Click **[!UICONTROL Change details]**.
 
    The **[!UICONTROL Change details]** window opens.
 
 1. Under **[!UICONTROL MCP preferences]**, select or clear **[!UICONTROL Read-only MCP tools]** and **[!UICONTROL Write MCP tools]**.
 1. Click **[!UICONTROL Save]**.
 
-If AI features are disabled for the organization, you cannot edit MCP preferences. The following message is displayed: *AI features are disabled for this organization. Please contact the support team for further assistance.*
-
-<!-- BECKY CHECK ME: Confirm the path to the Change details window. The request says "Open Organization, then Edit organization details," but the time zone article describes it as Fusion Profile > Time Zone Options > Edit. Confirm the labels, and add the screenshot of the Change details window (the one in the Slack thread has a dark theme and the organization name "Activity Logs Org"). -->
-
-<!-- BECKY CHECK ME: Confirm that the Learn more link next to MCP preferences should point to this article, and confirm the default state of the two options for existing organizations. -->
+>[!NOTE]
+>
+>If AI features are disabled for the organization, you cannot edit MCP preferences.
 
 ## Switch to a different Fusion organization
 
