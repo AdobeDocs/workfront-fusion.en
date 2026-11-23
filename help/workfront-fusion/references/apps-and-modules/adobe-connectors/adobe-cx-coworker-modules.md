@@ -162,6 +162,10 @@ Each run sends the prompt once and starts a new conversation. You do not need to
    <td> <p>This option is on by default. Enable this option if you want the module to wait for the task to finish or require attention. Turn it off to return the initial result immediately.</p><p>For more information, see <a href="#wait-for-completion">Wait for completion</a> in this article.</p> </td> 
   </tr> 
   <tr> 
+   <td>[!UICONTROL Confirm all tool actions] <i>(Optional, advanced)</i></td> 
+   <td> <p>This option is off by default. Enable this option if you want Coworker to automatically approve supported tool permission requests during this run. Tools might modify or delete data.</p><p>For more information, see <a href="#confirm-all-tool-actions">Confirm all tool actions</a> in this article.</p> </td> 
+  </tr> 
+  <tr> 
    <td>[!UICONTROL Include raw result] <i>(Optional, advanced)</i></td> 
    <td> <p>This option is off by default. Enable this option if you want the module to include the full Coworker response in the output. The response might contain sensitive information.</p> </td> 
   </tr> 
@@ -183,6 +187,21 @@ When **[!UICONTROL Wait for completion]** is off, the module returns the first r
 Waiting is subject to Fusion's module timeout. If the module times out or stops, Coworker might continue working. In that case, you might not receive an output or a task ID.
 
 For longer work, turn waiting off and save the initial **[!UICONTROL Task ID]** so you can check the task later. Do not automatically run the prompt again after a timeout. The first request might already be in progress, and repeating it can duplicate changes.
+
+#### Confirm all tool actions
+
+When **[!UICONTROL Confirm all tool actions]** is on, the module automatically approves supported tool permission requests during the run, up to 20 approval rounds and 100 tool calls. This option is off by default.
+
+>[!WARNING]
+>
+>Tools might modify or delete data. Turning this option on is your consent for this execution only. It is not a permanent permission grant.
+
+The following conditions apply:
+
+* This option requires **[!UICONTROL Wait for completion]** and a compatible live permission stream.
+* Limits, replayed requests, sign-in, questions, and other approvals still need manual review. When one of these occurs, **[!UICONTROL Requires attention]** is true.
+
+<!-- BECKY CHECK ME: Confirm what happens when Confirm all tool actions is on and Wait for completion is off (for example, whether the module shows an error or ignores the option), and what "a compatible live permission stream" means for a user, and whether it should be explained. Also confirm what the module returns when it reaches the 20 approval round or 100 tool call limit. The hint under Wait for completion says it checks status every 5 seconds "with Confirm all tool actions off", which suggests different behavior when it is on. Confirm that behavior and update the Wait for completion section if needed. Confirm whether the WARNING callout is the right treatment. -->
 
 
 ## Module output
@@ -234,7 +253,7 @@ Use **[!UICONTROL Final assistant text]** for the answer instead of combining al
 
 Coworker might need more information or authorization before it can continue. When this happens, **[!UICONTROL Requires attention]** is true and **[!UICONTROL Completed]** is false. Route the result to a person instead of treating it as completed work.
 
-These modules cannot answer a follow-up question or approve an action on your behalf. **[!UICONTROL Get Execution Status]** can check whether the task's state has changed, but it does not resolve the request for input or authorization.
+These modules cannot answer a follow-up question or approve an action on your behalf, except for the supported tool permission requests that **[!UICONTROL Confirm all tool actions]** approves automatically. **[!UICONTROL Get Execution Status]** can check whether the task's state has changed, but it does not resolve the request for input or authorization.
 
 ### Use previous answers
 
@@ -314,6 +333,7 @@ Do not run the original prompt again just to check its progress.
 * These modules do not provide a way to restrict individual tools. Instructions such as "do not change anything" describe your intent, but they are not an enforced read-only mode.
 * Available tools and skills vary by account. The connector does not provide a skill selector or guarantee a particular action, such as creating a journey or updating a project. Do not assume that requests that need approval will complete unattended.
 * The connector starts and checks Coworker requests. It does not monitor project changes or automatically save answers to another application. Add the appropriate trigger, storage, and follow-on modules to your scenario as needed.
+* Turn on **[!UICONTROL Confirm all tool actions]** only for trusted prompts. When this option is on, Coworker automatically approves supported tool permission requests, and tools might modify or delete data.
 * AI-generated answers can be incomplete or inaccurate. Validate important results before you use them to make changes or decisions.
 * The connector does not automatically retry a failed request. Make sure your scenario's error handling does not repeat a prompt whose outcome is uncertain.
 
