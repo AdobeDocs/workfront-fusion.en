@@ -100,8 +100,6 @@ Firefly authorization and LLM credentials serve different purposes. Selecting an
     </tbody>
    </table>
 
-   ![Create a connection](/help/workfront-fusion/references/apps-and-modules/assets/firefly-creative-production-mcp-connection.png)
-
 1. Click **[!UICONTROL Continue]**.
 1. Follow the authorization flow, sign in with the appropriate Adobe account, and authorize access.
 1. Return to the module and review the tools that are loaded for the connection.
@@ -132,11 +130,11 @@ This action module processes your prompt with the selected LLM and the Firefly C
   </tr> 
   <tr> 
    <td>[!UICONTROL Read-only tools] <i>(Optional)</i></td> 
-   <td> <p>Select the tools that the server identifies as read-only.</p> </td> 
+   <td> <p>Select the tools that the server identifies as read-only. To select every tool that is currently listed, select <b>Select all</b>.</p><p>The number of listed tools appears in the field's label.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Write/delete tools] <i>(Optional)</i></td> 
-   <td> <p>Select the tools that the server does not identify as read-only. These operations can change data or run workflows.</p> </td> 
+   <td> <p>Select the tools that the server does not identify as read-only. These operations can change data or run workflows. To select every tool that is currently listed, select <b>Select all</b>.</p><p>The number of listed tools appears in the field's label.</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Other tools (unknown permissions)] <i>(Optional)</i></td> 
@@ -149,9 +147,9 @@ This action module processes your prompt with the selected LLM and the Firefly C
  </tbody> 
 </table>
 
-![Process a user prompt module](/help/workfront-fusion/references/apps-and-modules/assets/firefly-creative-production-mcp-process-prompt.png)
+The **[!UICONTROL LLM key]** field appears when you select **[!UICONTROL Show advanced settings]**.
 
-<!-- BECKY CHECK ME: The screenshot shows only the LLM key, Connection, and Enter your prompt fields, because the tool selectors load after you select a connection. Add a screenshot that shows the Read-only tools, Write/delete tools, and Other tools fields, and confirm their labels and which fields are required. -->
+<!-- BECKY CHECK ME: The screenshot does not show the Other tools (unknown permissions) field, because it appears only when the server returns tools without a read-only annotation. Confirm its label, and confirm the order of the fields. Also confirm that the tool lists are not required. -->
 
 The tool lists vary with the server's availability and your account's access. The number of tools appears in each selector's label.
 
