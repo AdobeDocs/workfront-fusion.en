@@ -108,7 +108,7 @@ Coworker is Adobe's AI agent. Fusion is built into Coworker, so you don't need t
 * Coworker (standalone): Work with Fusion alongside your other Adobe apps.
 * Coworker in the Fusion right rail: Open Coworker in a panel inside the Fusion UI.
 
-Both use the same Fusion MCP tools, your Adobe ID, and your Fusion permissions. The Read or Write MCP tools settings apply in both. Destructive actions, such as delete, clear queue, or overwrite, always ask for confirmation.
+Both use the same Fusion MCP tools, your Adobe ID, and your Fusion permissions. The organization's MCP preferences for read-only and write tools apply in both. For more information, see [Manage MCP preferences for your organization](#manage-mcp-preferences-for-your-organization). Destructive actions, such as delete, clear queue, or overwrite, always ask for confirmation.
 
 ### Use Fusion in Coworker
 
@@ -192,6 +192,48 @@ Add Fusion as a custom MCP server.
 1. Read the risk message and select the checkbox.
 1. Click **Create**, then sign in with your.
 
+## Manage MCP preferences for your organization
+
+Organization owners and administrators can choose which Fusion MCP tools are available to the organization. Other users cannot change this setting.
+
+You can allow or disable the following types of tools:
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL Read-only MCP tools]</td>
+   <td>Tools that only read data, such as listing and getting scenarios, executions, connections, and data stores.</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL Write MCP tools]</td>
+   <td><p>Tools that create, update, delete, or run things, such as creating or updating scenarios, running a scenario, or deleting a connection.</p><p>You cannot enable <b>[!UICONTROL Write MCP tools]</b> unless <b>[!UICONTROL Read-only MCP tools]</b> is also enabled.</p></td>
+  </tr>
+ </tbody>
+</table>
+
+The setting applies to the whole organization. After you save it, every user who connects to the Fusion MCP server for that organization gets only the allowed tools. Disabled tools do not appear in the tool list, and Fusion rejects them if an agent calls them.
+
+>[!IMPORTANT]
+>
+>This setting limits only tool calls made through the official Fusion MCP server, using the MCP server URL in this article. Actions that users perform in the Fusion user interface, through the API, or through any other integration are still controlled by each user's own permissions in Fusion.
+
+To manage MCP preferences:
+
+1. In Fusion, click **[!UICONTROL Organization]** in the left navigation.
+
+1. Click **[!UICONTROL Change details]**.
+
+   The **[!UICONTROL Change details]** window opens.
+
+1. Under **[!UICONTROL MCP preferences]**, select or clear **[!UICONTROL Read-only MCP tools]** and **[!UICONTROL Write MCP tools]**.
+1. Click **[!UICONTROL Save]**.
+
+>[!NOTE]
+>
+>If AI features are disabled for the organization, you cannot edit MCP preferences.
+
 ## Switch to a different Fusion organization
 
 You don't need to disconnect to change organizations. The Fusion MCP server can switch the active organization within a session:
@@ -209,8 +251,8 @@ The agent uses `fusion_orgs_list` and `fusion_orgs_set`. The switch applies to t
 | You can't add a custom connector in Claude or ChatGPT. | Your plan restricts custom connectors to owners or administrators. | Ask your Claude or ChatGPT administrator to add the connector or allow custom MCP servers. |
 | You connected but see no data, or the wrong data. | The wrong Fusion organization is active. | Ask the agent to list your organizations and switch to the right one. |
 | Authentication failed or the connection stopped working. | Session expired or connection error. | Disconnect and reconnect the server. |
-| You see a message that MCP access is disabled. | MCP access is turned off for your Fusion organization. | Ask your Fusion administrator to enable it. |
-| The agent can read scenarios but can't create, run, update, or delete them. | Write MCP tools are disabled, or your team role doesn't allow it. | Ask your Fusion administrator to enable write tools, or to grant you the required team role. |
+| You see a message that MCP access is disabled. | MCP access is turned off for your Fusion organization. | Ask your Fusion administrator to enable it. For more information, see [Manage MCP preferences for your organization](#manage-mcp-preferences-for-your-organization). |
+| The agent can read scenarios but can't create, run, update, or delete them. | Write MCP tools are disabled, or your team role doesn't allow it. | Ask your Fusion administrator to enable write tools in the organization's MCP preferences, or to grant you the required team role. For more information, see [Manage MCP preferences for your organization](#manage-mcp-preferences-for-your-organization). |
 | Custom app authentication is rejected. | Callback URL isn't on the authorized list. | Ask your administrator to add the exact callback URL. |
 | Fusion isn't listed in Coworker, or Coworker is missing from the Fusion right rail. | Feature not enabled for your organization. | Contact your Fusion administrator. |
 

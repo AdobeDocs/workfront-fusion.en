@@ -19,6 +19,8 @@ Each tool is classified as:
 * **Read**: Retrieves information without changing anythin, such as listing scenarios or getting an execution.
 * **Write**: Creates, changes, runs, or deletes Fusion data, such as cloning a scenario or clearing a webhook queue.
 
+Organization owners and administrators can allow or disable read-only tools and write tools for the entire organization. Disabled tools do not appear in the tool list, and Fusion rejects them if an agent calls them. This setting limits only tool calls made through the official Fusion MCP server. Actions that users perform in the Fusion user interface, through the API, or through any other integration are still controlled by each user's own permissions in Fusion. For more information, see [Manage MCP preferences for your organization](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md#manage-mcp-preferences-for-your-organization).
+
 ## Organization tools
 
 The active organization applies to all other tools in the current session.

@@ -60,6 +60,8 @@ The connection uses the Adobe I/O Runtime credentials of an App Builder project 
 
 ### Create the connection
 
+Use these steps to connect an App Builder project that already exists. For the steps to use this connection to set up custom functions in Fusion, see [Connect an existing App Builder project](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
+
 1. In the module, click **Add** next to the **Connection** field.
 1. Fill in the following fields:
 
