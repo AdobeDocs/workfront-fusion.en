@@ -86,8 +86,6 @@ For information on specific actions available to users in each team role, see [O
 
 ### Custom team roles
 
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
-
 In addition to the predefined team roles, each team has a **[!UICONTROL Roles]** tab where you can create your own roles. You can create, update, and delete roles, and choose exactly which permissions each role includes. You are no longer limited to a fixed set of roles.
 
 For instructions, see [View and manage team roles](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md).
