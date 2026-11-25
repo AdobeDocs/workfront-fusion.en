@@ -76,6 +76,8 @@ The first time your team uses this feature, you must set up the environment that
    * To create a new project, enter a name that doesn't already exist and click **Create new**.
    * If you leave this empty, Fusion uses a default project.
 
+   If an existing project does not work with **Initialize runtime**, connect it manually. For instructions, see [Connect an existing App Builder project](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project).
+
 1. Select **Continue**.
 
    Fusion finishes the setup and you're ready to create packages.
