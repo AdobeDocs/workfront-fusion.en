@@ -68,6 +68,7 @@ You can create a custom function in the Functions area that can be used in multi
 Custom functions that can be used in multiple scenarios are configured in the Functions area of Workfront Fusion. After a function is configured, you can add it to a scenario using the Adobe App Builder connector.
 
 * [Initialize your runtime environment](#initialize-your-runtime-environment)
+* [Connect an existing App Builder project](#connect-an-existing-app-builder-project)
 * [Create a custom function in the Functions area](#create-a-custom-function-in-the-functions-area)
 
 #### Initialize your runtime environment
@@ -86,6 +87,30 @@ Before you can create custom functions, you must initialize your runtime environ
 1. Click **Initialize runtime**.
 
    After some time, a Functions list appears, with two sample functions.
+
+#### Connect an existing App Builder project
+
+When Fusion creates the App Builder project, it handles the runtime setup for you. If your team already has an App Builder project that was created before you used Fusion, you must connect it manually, by creating an App Builder connection that uses that project's Runtime namespace and credentials. You do not need to recreate the project.
+
+>[!NOTE]
+>
+>The credentials that you enter in Fusion are Runtime credentials. They are not your Adobe sign-in details. Keep the configuration file that you download secure, and do not share its `auth` value.
+
+1. In Fusion, select the team that needs the connection.
+1. Click the **Connections** tab in the left panel, then click **Create connection**.
+1. Select **Adobe App Builder** as the connection type, and enter a name that identifies the existing project.
+1. In the [Adobe Developer Console](https://developer.adobe.com/console), open the existing project, then select the workspace that you want to connect to.
+1. From the project overview, click **Download all** to download the workspace configuration JSON file, and open the file in a text editor.
+1. In the `runtime` section of the file, locate the `namespace` value. In Fusion, enter it in the **Namespace** field.
+1. In the `runtime` section, locate the `auth` value. It has the format `username:password`.
+
+   * In Fusion, enter the part before the colon in the **Username** field.
+   * In Fusion, enter the part after the colon in the **Password** field.
+
+1. Click **Continue** to save the connection.
+1. Return to the **Functions** tab in Fusion, and refresh the page if necessary.
+
+For more information about the connection fields, see [Adobe App Builder modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md#create-a-connection-to-adobe-app-builder).
 
 #### Create a custom function in the Functions area
 
