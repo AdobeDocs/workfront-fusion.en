@@ -42,7 +42,10 @@ You can add an AI prompt to your scenario by using the MCP Agent module.
 
 For instructions, see the following articles for specific servers:
 
+* [Adobe CX Enterprise Coworker modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md).
 * [Adobe Experience Manager MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md).
+* [Adobe Firefly Creative Production MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-creative-production-mcp-modules.md).
+* [Adobe Fusion MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-fusion-mcp-modules.md).
 * [Adobe Marketo Engage MCP module](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md).
 * [Adobe Workfront MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md).
 * [MCP Agent module](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md).

@@ -55,6 +55,7 @@ Fusion offers connectors for many of Adobe's products and services.
 * [Adobe Experience Manager MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
 * [Adobe Express modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
 * [Adobe Firefly Audio and Video modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
+* [Adobe Firefly Creative Production MCP modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-creative-production-mcp-modules.md)
 * [Adobe Firefly modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Adobe Firefly Lightroom modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
 * [Adobe Frame.io Beta (V4) modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
